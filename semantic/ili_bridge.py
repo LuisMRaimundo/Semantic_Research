@@ -174,6 +174,10 @@ def build_table(class_id: str, wordnet_path: Optional[Path] = None,
                 carried += 1
         doc["review"] = [r for r in doc["review"]
                          if (r["oewn_ili"], r["pulo_ili"]) not in have]
+        # um oewn_ili já mapeado (decisão humana) não é «unmatched»
+        mapped_oewn = {r["oewn_ili"] for r in doc["map"]}
+        doc["unmatched"] = [r for r in doc.get("unmatched", [])
+                            if r.get("oewn_ili") not in mapped_oewn]
 
     path = save_table(ws, doc)
     return {"ok": True, "path": str(path),

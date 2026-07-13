@@ -1,6 +1,6 @@
 {
   "class": "TexturaUniforme",
-  "generated": "2026-07-13T13:00:30",
+  "generated": "2026-07-13T13:06:43",
   "map": [
     {
       "oewn_ili": "i60712",
@@ -103,12 +103,6 @@
   ],
   "unmatched": [
     {
-      "oewn_ili": "i4126",
-      "pos": "a",
-      "lemmas": [],
-      "why": "sem lemas PT para evidência"
-    },
-    {
       "oewn_ili": "i6560",
       "pos": "a",
       "lemmas": [],
@@ -130,6 +124,6 @@
   "coverage": {
     "map": 3,
     "review": 5,
-    "unmatched": 4
+    "unmatched": 3
   }
 }

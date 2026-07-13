@@ -1,5 +1,22 @@
 # CHANGELOG — LexWarrant
 
+## [versão a fixar] — 2026-07-13 — Tarefa A: geração NÃO-destrutiva da tabela ILI (GUI)
+
+- Botão «Ponte ILI…» no workbench (`semantic/ili_bridge.py` + painel em
+  `semantic/workbench.py`): (re)gera `classes/<Classe>/out/ili_equivalence.json`
+  — o caminho exacto que `run_report/_discover_map` lê.
+- MERGE, nunca overwrite: linhas `map` existentes são preservadas; linhas com
+  `source: "human-adjudicated…"` são imutáveis (não rebaixadas nem reescritas);
+  linhas antigas sem proveniência são transportadas como `legacy`.
+- O gerador PROPÕE, nunca decide: toda a linha automática (mesmo par único)
+  entra em `review` com `source: "auto: shared-lemma (par único|ambíguo)"`;
+  a promoção review→map é exclusivamente humana (checkbox no painel, com
+  glosa PULO visível; `source: "human-adjudicated (GUI Ponte ILI) — nota"`).
+- `coverage` recalculado após o merge; um `oewn_ili` mapeado por decisão
+  humana deixa de figurar em `unmatched`.
+- Aceitação: partir de 3 mapeados → botão → continua 3 mapeados, humanas
+  intactas byte a byte, 0 autos em map, coverage coerente.
+
 ## [versão a fixar] — 2026-07-13 — Tarefa 1: reticulado de estatutos no veredicto
 
 - `project_status_for_comparison(status)` + tabela declarada `STATUS_COMPAT`:
