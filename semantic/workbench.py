@@ -38,29 +38,41 @@ GUIDE_TEXT = """\
 SEMANTIC RESEARCH — QUICK GUIDE
 ════════════════════════════════
 
-Daily path (3 steps)
-────────────────────
-1 · SEARCH
-   Pick a class. Search a Portuguese lemma in PULO (ILI-anchored,
-   sense-disambiguated) and/or Onto.PT (broader, fuzzy).
-   Each synset becomes a sense card on the left.
+ORDEM DE TRABALHO (numerada — igual ao checklist do painel direito)
+───────────────────────────────────────────────────────────────────
+1 · CLASSE
+   Criar/abrir a classe e preencher pref_label (lema preferido) e
+   axis (a propriedade que define a classe).
 
-2 · DECIDE
-   For every sense, choose one label (see Glossary).
-   Options differ by source:
+2 · PESQUISAR   (2a antes de 2b)
+   2a  PULO — âncora ILI, desambiguado por sentido. SEMPRE primeiro.
+   2b  Onto.PT — cobertura difusa. Depois do PULO.
+   Cada synset vira um cartão de sentido à esquerda.
+
+3 · DECIDIR
+   Para cada cartão, escolher um rótulo (ver Glossário).
+   Opções por fonte:
      PULO  → — UF RT exclude atributo contraste
-     Onto  → — UF RT exclude contraste   (no atributo)
-   Fill meta: pref_label (preferred lemma) and axis (the property
-   that defines the class, e.g. “invariance along a parameter”).
-   Click Save decisions.
+     Onto  → — UF RT exclude contraste   (sem atributo)
 
-3 · RUN
-   ▶ Run pipeline compiles your choices, runs the PULO / Onto
-   engines, then LexWarrant (cross-source concordance).
-   Read FINAL_RESULTS/<Class>.concordance.md — that is the deliverable
-   (Onto.PT + PULO). Scratch files stay in out/ / results/.
-   Resolve the “worklist” (divergences) by hand; the tool never
-   auto-promotes a term.
+4 · GUARDAR DECISÕES
+   Botão «4 · Guardar decisões». Escreve decisions.json.
+
+5 · PONTE ILI   (opcional, recomendado)
+   Botão «5 · Ponte ILI…»: gera candidatos OEWN↔PULO (CILI confirma
+   identidades canónicas automaticamente; ambíguos ficam em review
+   para a SUA adjudicação com a glosa à vista). Requer um export
+   WordNet (WordNet GUI → «💾→ exports/»).
+
+6 · RUN
+   Botão «6 · ▶ Run»: compila as decisões, corre PULO + Onto,
+   convoca a faixa WordNet (se houver tabela adjudicada) e funde
+   com o LexWarrant.
+
+7 · FINAL_RESULTS
+   Botão «7 · FINAL RESULTS»: o deliverable da classe.
+   Resolver a «worklist» (divergências) à mão; a ferramenta nunca
+   auto-promove um termo.
 
 
 What each source is for
@@ -187,8 +199,9 @@ class Workbench(tk.Tk):
         self._refresh_classes()
 
     def _build(self):
-        top = ttk.Frame(self, padding=10)
-        top.pack(fill="x")
+        top = ttk.LabelFrame(self, text="PASSO 1 · Classe  (criar/abrir; preencher pref_label e axis)",
+                             padding=8)
+        top.pack(fill="x", padx=10, pady=(8, 0))
         ttk.Label(top, text="Class").pack(side="left")
         self.class_combo = ttk.Combobox(top, textvariable=self.class_var, width=28)
         self.class_combo.pack(side="left", padx=6)
@@ -202,7 +215,10 @@ class Workbench(tk.Tk):
             side="right"
         )
 
-        search = ttk.LabelFrame(self, text="1 · Search  (pick ONE lexicon)", padding=8)
+        search = ttk.LabelFrame(
+            self,
+            text="PASSO 2 · Pesquisar  (primeiro PULO — âncora ILI; depois Onto.PT — cobertura)",
+            padding=8)
         search.pack(fill="x", padx=10, pady=(0, 6))
         ttk.Radiobutton(
             search, text="PULO  — ILI / WordNet.PT",
@@ -225,12 +241,15 @@ class Workbench(tk.Tk):
 
         left = ttk.Frame(mid)
         right = ttk.LabelFrame(
-            mid, text="3 · Run  →  FINAL_RESULTS (Onto + PULO)", padding=6
+            mid,
+            text="PASSOS 4–7 · Ponte ILI (opcional) → Run → FINAL_RESULTS",
+            padding=6,
         )
         mid.add(left, weight=3)
         mid.add(right, weight=2)
 
-        filt = ttk.LabelFrame(left, text="2 · Decide — show cards from", padding=6)
+        filt = ttk.LabelFrame(
+            left, text="PASSO 3 · Decidir sentidos — mostrar cartões de", padding=6)
         filt.pack(fill="x")
         ttk.Radiobutton(
             filt, text="PULO only", variable=self.filter_var, value="pulo",
@@ -267,12 +286,17 @@ class Workbench(tk.Tk):
 
         btnrow = ttk.Frame(left)
         btnrow.pack(fill="x", pady=(6, 0))
-        ttk.Button(btnrow, text="Save decisions", command=self._save_decisions).pack(
-            side="left"
-        )
+        ttk.Button(btnrow, text="4 · Guardar decisões",
+                   command=self._save_decisions).pack(side="left")
         ttk.Button(btnrow, text="? Guide", command=self._open_guide).pack(
             side="left", padx=8
         )
+
+        self.steps_box = tk.Label(
+            right, text="", justify="left", anchor="w",
+            font=("Consolas", 9), bg="#F4F6F8", padx=8, pady=6,
+        )
+        self.steps_box.pack(fill="x", pady=(0, 6))
 
         ttk.Label(right, text="Meta (axis / pref label)", font=("", 9, "bold")).pack(
             anchor="w"
@@ -282,17 +306,18 @@ class Workbench(tk.Tk):
 
         runrow = ttk.Frame(right)
         runrow.pack(fill="x")
-        ttk.Button(runrow, text="▶ Run pipeline", command=self._run).pack(side="left")
         ttk.Button(
-            runrow, text="Ponte ILI…",
+            runrow, text="5 · Ponte ILI…",
             command=self._open_ili_bridge,
-        ).pack(side="left", padx=6)
+        ).pack(side="left")
+        ttk.Button(runrow, text="6 · ▶ Run", command=self._run).pack(
+            side="left", padx=6)
         ttk.Button(
-            runrow, text="Open FINAL RESULTS",
+            runrow, text="7 · FINAL RESULTS",
             command=self._open_final_results,
         ).pack(side="left", padx=(0, 6))
         ttk.Button(
-            runrow, text="Open concordance",
+            runrow, text="concordância",
             command=self._open_concordance,
         ).pack(side="left")
 
@@ -587,10 +612,55 @@ class Workbench(tk.Tk):
         except FileNotFoundError:
             return None
 
+    def _render_steps(self, ws):
+        """Checklist numerado e vivo: ✓ feito · ▶ próximo · ○ pendente."""
+        from semantic import decisions as _dec
+        from semantic import ili_bridge as _ib
+
+        meta = ws.load_meta()
+        dec = _dec.load_decisions(ws.decisions_json)
+        senses = dec.get("senses") or []
+        n_pulo = sum(1 for s in senses if (s.get("source") or "") == "pulo")
+        n_onto = sum(1 for s in senses if (s.get("source") or "") == "onto")
+        decided = sum(1 for s in senses if (s.get("decision") or "").strip())
+        table = _ib.load_table(ws)
+        n_map = len((table or {}).get("map", []))
+        has_run = ((ws.results / f"{ws.class_id}.PULO.result.json").exists()
+                   or (ws.results / f"{ws.class_id}.ONTO.result.json").exists())
+        has_final = ws.concordance_md().exists()
+
+        steps = [
+            ("1", "Classe criada + meta (pref_label, axis)",
+             bool(meta.get("pref_label")) and bool(meta.get("axis")), False),
+            ("2a", f"Pesquisar PULO  ({n_pulo} cartões)", n_pulo > 0, False),
+            ("2b", f"Pesquisar Onto.PT  ({n_onto} cartões)", n_onto > 0, False),
+            ("3", f"Decidir sentidos  ({decided}/{len(senses)})",
+             len(senses) > 0 and decided == len(senses), False),
+            ("4", "Guardar decisões", len(senses) > 0 and decided == len(senses),
+             False),
+            ("5", f"Ponte ILI  ({n_map} pares em map)", n_map > 0, True),
+            ("6", "▶ Run (motores + fusão)", has_run and has_final, False),
+            ("7", "Ler FINAL_RESULTS (resolver worklist)", has_final, False),
+        ]
+        lines = ["ORDEM DE TRABALHO"]
+        next_marked = False
+        for num, txt, done, optional in steps:
+            if done:
+                mark = "✓"
+            elif not next_marked and not optional:
+                mark = "▶"
+                next_marked = True
+            else:
+                mark = "○"
+            suffix = "   (opcional)" if optional and not done else ""
+            lines.append(f" {mark} {num:>2} · {txt}{suffix}")
+        self.steps_box.configure(text="\n".join(lines))
+
     def _load_class(self):
         ws = self._ws()
         if not ws:
             return
+        self._render_steps(ws)
         meta = ws.load_meta()
         self.meta_box.delete("1.0", "end")
         self.meta_box.insert(
