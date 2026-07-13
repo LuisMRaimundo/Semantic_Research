@@ -1,0 +1,134 @@
+{
+  "class_id": "TexturaUniforme",
+  "pref_label": "TexturaUniforme",
+  "axis": "(referência WordNet — corroboração por termo/ILI; sem adjudicação humana)",
+  "generated": "2026-07-09T21:08:03",
+  "source": "WordNet (OEWN via wn)",
+  "oewn_version": "oewn:2024",
+  "own_pt_installed": true,
+  "pt_coverage": "2/6 synsets com pt_lemmas",
+  "query": {
+    "term": "uniform",
+    "pos": "Todos",
+    "language": "English"
+  },
+  "provenance": [],
+  "synsets": [
+    {
+      "name": "oewn-01973553-a",
+      "ili": "i10771",
+      "pos": "a",
+      "pt_lemmas": [
+        "invariável",
+        "uniforme"
+      ],
+      "lemmas": [
+        "uniform",
+        "unvarying"
+      ]
+    },
+    {
+      "name": "oewn-00748118-a",
+      "ili": "i4126",
+      "pos": "a",
+      "pt_lemmas": [],
+      "lemmas": [
+        "undifferentiated",
+        "uniform"
+      ]
+    },
+    {
+      "name": "oewn-04516887-n",
+      "ili": "i60712",
+      "pos": "n",
+      "pt_lemmas": [
+        "farda",
+        "fardamento",
+        "uniforme"
+      ],
+      "lemmas": [
+        "uniform"
+      ]
+    },
+    {
+      "name": "oewn-01203638-s",
+      "ili": "i6560",
+      "pos": "s",
+      "pt_lemmas": [],
+      "lemmas": [
+        "consistent",
+        "uniform"
+      ]
+    },
+    {
+      "name": "oewn-01967120-s",
+      "ili": "i10734",
+      "pos": "s",
+      "pt_lemmas": [],
+      "lemmas": [
+        "uniform"
+      ]
+    },
+    {
+      "name": "oewn-02336782-v",
+      "ili": "i33388",
+      "pos": "v",
+      "pt_lemmas": [],
+      "lemmas": [
+        "uniform"
+      ]
+    }
+  ],
+  "sinalizacao": {
+    "invariavel": {
+      "display": "invariável",
+      "reason": "atestado na WordNet [pt_lemma (ILI)] · oewn-01973553-a · ILI i10771",
+      "offsets_ili": [
+        "i10771"
+      ]
+    },
+    "uniforme": {
+      "display": "uniforme",
+      "reason": "atestado na WordNet [pt_lemma (ILI)] · oewn-01973553-a · ILI i10771",
+      "offsets_ili": [
+        "i10771"
+      ]
+    },
+    "undifferentiated": {
+      "display": "undifferentiated",
+      "reason": "atestado na WordNet [en_lemma (este synset sem correspondência em own-pt)] · oewn-00748118-a · ILI i4126",
+      "offsets_ili": [
+        "i4126"
+      ]
+    },
+    "uniform": {
+      "display": "uniform",
+      "reason": "atestado na WordNet [en_lemma (este synset sem correspondência em own-pt)] · oewn-00748118-a · ILI i4126",
+      "offsets_ili": [
+        "i4126"
+      ]
+    },
+    "farda": {
+      "display": "farda",
+      "reason": "atestado na WordNet [pt_lemma (ILI)] · oewn-04516887-n · ILI i60712",
+      "offsets_ili": [
+        "i60712"
+      ]
+    },
+    "fardamento": {
+      "display": "fardamento",
+      "reason": "atestado na WordNet [pt_lemma (ILI)] · oewn-04516887-n · ILI i60712",
+      "offsets_ili": [
+        "i60712"
+      ]
+    },
+    "consistent": {
+      "display": "consistent",
+      "reason": "atestado na WordNet [en_lemma (este synset sem correspondência em own-pt)] · oewn-01203638-s · ILI i6560",
+      "offsets_ili": [
+        "i6560"
+      ]
+    }
+  },
+  "_note": "A WordNet entra na LexWarrant como CORROBORAÇÃO (sinalização). Não propõe UF/RT; confirma pelo ILI/termo o que o ONTO/PULO admitem."
+}

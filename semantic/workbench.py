@@ -284,9 +284,13 @@ class Workbench(tk.Tk):
         runrow.pack(fill="x")
         ttk.Button(runrow, text="▶ Run pipeline", command=self._run).pack(side="left")
         ttk.Button(
+            runrow, text="Ponte ILI…",
+            command=self._open_ili_bridge,
+        ).pack(side="left", padx=6)
+        ttk.Button(
             runrow, text="Open FINAL RESULTS",
             command=self._open_final_results,
-        ).pack(side="left", padx=6)
+        ).pack(side="left", padx=(0, 6))
         ttk.Button(
             runrow, text="Open concordance",
             command=self._open_concordance,
@@ -305,6 +309,163 @@ class Workbench(tk.Tk):
 
         ttk.Label(self, textvariable=self.status_var, relief="sunken",
                   anchor="w", padding=(6, 2)).pack(fill="x", side="bottom")
+
+    # -- Ponte ILI ---------------------------------------------------------
+    def _open_ili_bridge(self):
+        """Gerar a tabela ili_equivalence.json e adjudicar review→map."""
+        ws = self._ws()
+        if not ws:
+            messagebox.showinfo(APP, "Escolha uma classe primeiro.")
+            return
+        from semantic import ili_bridge
+
+        win = tk.Toplevel(self)
+        win.title(f"Ponte ILI — {ws.class_id}")
+        win.geometry("880x640")
+        win.minsize(720, 480)
+        win.transient(self)
+
+        head = ttk.Frame(win, padding=(10, 8))
+        head.pack(fill="x")
+        status_var = tk.StringVar(value="")
+        ttk.Label(head, textvariable=status_var, font=("", 9, "bold")).pack(
+            side="left")
+        note = ttk.Label(
+            win, padding=(10, 0), foreground="#555", wraplength=840,
+            justify="left",
+            text="O gerador PROPÕE, nunca decide: TODOS os candidatos "
+                 "automáticos (mesmo pares únicos) entram em «review» com "
+                 "proveniência «auto: shared-lemma». Só a sua promoção escreve "
+                 "em «map» (proveniência «human-adjudicated»). Regenerar é um "
+                 "merge que preserva sempre as decisões humanas — nunca um "
+                 "overwrite. Leia a glosa PULO e promova apenas o(s) "
+                 "correspondente(s) conceptual(is).")
+        note.pack(anchor="w")
+
+        btns = ttk.Frame(win, padding=(10, 6))
+        btns.pack(fill="x")
+
+        body = ttk.Frame(win)
+        body.pack(fill="both", expand=True, padx=10, pady=(0, 8))
+        canvas = tk.Canvas(body, highlightthickness=0)
+        scroll = ttk.Scrollbar(body, orient="vertical", command=canvas.yview)
+        inner = tk.Frame(canvas)
+        inner.bind("<Configure>",
+                   lambda e: canvas.configure(scrollregion=canvas.bbox("all")))
+        canvas.create_window((0, 0), window=inner, anchor="nw")
+        canvas.configure(yscrollcommand=scroll.set)
+        canvas.pack(side="left", fill="both", expand=True)
+        scroll.pack(side="right", fill="y")
+
+        check_vars: dict[tuple, tk.BooleanVar] = {}
+
+        def refresh():
+            for child in inner.winfo_children():
+                child.destroy()
+            check_vars.clear()
+            cand = ili_bridge.candidates(ws.class_id)
+            if not cand["exists"]:
+                status_var.set("Tabela inexistente — clique «Gerar/atualizar».")
+                tk.Label(inner, text="(sem tabela — gere-a primeiro)",
+                         fg="#777").pack(anchor="w", padx=8, pady=10)
+                return
+            n_map, n_rev = len(cand["map"]), len(cand["review"])
+            status_var.set(
+                f"{cand['path']}  ·  map: {n_map} · review: {n_rev} · "
+                f"unmatched: {len(cand['unmatched'])}")
+
+            if cand["map"]:
+                tk.Label(inner, text="MAP (alta confiança — usados na fusão)",
+                         font=("", 10, "bold"), fg="#1B5E20").pack(
+                    anchor="w", padx=4, pady=(6, 2))
+                for r in cand["map"]:
+                    src = r.get("source", "(tabela antiga, sem proveniência)")
+                    txt = (f"{r['oewn_ili']} ↔ {r['pulo_ili']}   "
+                           f"[{', '.join(r['evidence']['shared_lemmas'])}]\n"
+                           f"    PULO: {', '.join(r['pulo_members'][:8])} — "
+                           f"{r['pulo_gloss'][:140]}\n    origem: {src}")
+                    tk.Label(inner, text=txt, justify="left", anchor="w",
+                             bg="#EAF5EA", wraplength=800).pack(
+                        fill="x", padx=4, pady=2)
+
+            if cand["review"]:
+                tk.Label(inner,
+                         text="REVIEW (ambíguos — decida pela glosa e promova)",
+                         font=("", 10, "bold"), fg="#8A5A00").pack(
+                    anchor="w", padx=4, pady=(10, 2))
+                for r in cand["review"]:
+                    key = (r["oewn_ili"], r["pulo_ili"])
+                    var = tk.BooleanVar(value=False)
+                    check_vars[key] = var
+                    row = tk.Frame(inner, bg="#FFF6E5")
+                    row.pack(fill="x", padx=4, pady=2)
+                    tk.Checkbutton(
+                        row, variable=var, bg="#FFF6E5",
+                        activebackground="#FFF6E5").pack(side="left", anchor="n")
+                    txt = (f"{r['oewn_ili']} ↔ {r['pulo_ili']}   "
+                           f"[{', '.join(r['evidence']['shared_lemmas'])}]\n"
+                           f"PULO: {', '.join(r['pulo_members'][:10])}\n"
+                           f"glosa: {r['pulo_gloss'][:200]}")
+                    tk.Label(row, text=txt, justify="left", anchor="w",
+                             bg="#FFF6E5", wraplength=770).pack(
+                        side="left", fill="x", expand=True)
+
+            if cand["unmatched"]:
+                tk.Label(inner, text="UNMATCHED (sem ponte possível — informativo)",
+                         font=("", 10, "bold"), fg="#666").pack(
+                    anchor="w", padx=4, pady=(10, 2))
+                for r in cand["unmatched"]:
+                    tk.Label(inner,
+                             text=f"{r.get('oewn_ili')}  ({r.get('why', '')})",
+                             fg="#666", anchor="w").pack(fill="x", padx=8)
+
+        def do_generate():
+            status_var.set("A gerar…")
+            win.update_idletasks()
+            res = ili_bridge.build_table(ws.class_id)
+            if not res.get("ok"):
+                messagebox.showwarning("Ponte ILI", res.get("error", "falhou"),
+                                       parent=win)
+                refresh()
+                return
+            cov = res["coverage"]
+            msg = (f"Tabela gerada: {cov['map']} map · {cov['review']} review · "
+                   f"{cov['unmatched']} unmatched")
+            if res.get("carried_human"):
+                msg += f" · {res['carried_human']} promoção(ões) humana(s) preservada(s)"
+            self._log(msg + f"\nWordNet: {res['wordnet']}\nPULO: {res['pulo']}\n")
+            refresh()
+
+        def do_promote():
+            chosen = [k for k, v in check_vars.items() if v.get()]
+            if not chosen:
+                messagebox.showinfo("Ponte ILI",
+                                    "Marque pelo menos um par em REVIEW.",
+                                    parent=win)
+                return
+            res = ili_bridge.promote(ws.class_id, chosen)
+            if not res.get("ok"):
+                messagebox.showwarning("Ponte ILI", res.get("error", "falhou"),
+                                       parent=win)
+                return
+            self._log(f"Promovidos para map: {res['moved']} · "
+                      f"coverage agora {res['coverage']}\n")
+            refresh()
+            if messagebox.askyesno(
+                    "Ponte ILI",
+                    "Promovido. Voltar a correr a fusão agora para usar as "
+                    "novas junções por ILI?", parent=win):
+                win.destroy()
+                self._run()
+
+        ttk.Button(btns, text="⚙ Gerar/atualizar tabela",
+                   command=do_generate).pack(side="left")
+        ttk.Button(btns, text="✓ Promover selecionados → map",
+                   command=do_promote).pack(side="left", padx=8)
+        ttk.Button(btns, text="↻", width=3, command=refresh).pack(side="left")
+        ttk.Button(btns, text="Fechar", command=win.destroy).pack(side="right")
+
+        refresh()
 
     def _open_guide(self):
         """Show the quick-reference guide (steps + glossary)."""

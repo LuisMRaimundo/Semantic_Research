@@ -1,6 +1,6 @@
 {
   "class": "TexturaUniforme",
-  "generated": "2026-07-09T21:08:03",
+  "generated": "2026-07-13T13:00:30",
   "map": [
     {
       "oewn_ili": "i60712",
@@ -11,7 +11,32 @@
         ],
         "pos": "n"
       },
-      "confidence": "high"
+      "confidence": "high",
+      "source": "legacy: tabela anterior (pré-proveniência)"
+    },
+    {
+      "oewn_ili": "i10771",
+      "pulo_ili": "ili-30-01966488-a",
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "pos": "a"
+      },
+      "confidence": "high",
+      "source": "human-adjudicated (GUI Ponte ILI) — glosa literal de i10771 («sempre o mesmo…»)"
+    },
+    {
+      "oewn_ili": "i4126",
+      "pulo_ili": "ili-30-00744506-a",
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "pos": "a"
+      },
+      "confidence": "high",
+      "source": "human-adjudicated (GUI Ponte ILI) — «not differentiated» ↔ «não diferenciado»"
     }
   ],
   "review": [
@@ -24,7 +49,8 @@
         ],
         "pos": "a"
       },
-      "confidence": "review"
+      "confidence": "review",
+      "source": "auto: shared-lemma (ambíguo)"
     },
     {
       "oewn_ili": "i10771",
@@ -35,7 +61,8 @@
         ],
         "pos": "a"
       },
-      "confidence": "review"
+      "confidence": "review",
+      "source": "auto: shared-lemma (ambíguo)"
     },
     {
       "oewn_ili": "i10771",
@@ -46,7 +73,8 @@
         ],
         "pos": "a"
       },
-      "confidence": "review"
+      "confidence": "review",
+      "source": "auto: shared-lemma (ambíguo)"
     },
     {
       "oewn_ili": "i10771",
@@ -57,18 +85,8 @@
         ],
         "pos": "a"
       },
-      "confidence": "review"
-    },
-    {
-      "oewn_ili": "i10771",
-      "pulo_ili": "ili-30-01966488-a",
-      "evidence": {
-        "shared_lemmas": [
-          "uniforme"
-        ],
-        "pos": "a"
-      },
-      "confidence": "review"
+      "confidence": "review",
+      "source": "auto: shared-lemma (ambíguo)"
     },
     {
       "oewn_ili": "i10771",
@@ -79,7 +97,8 @@
         ],
         "pos": "a"
       },
-      "confidence": "review"
+      "confidence": "review",
+      "source": "auto: shared-lemma (ambíguo)"
     }
   ],
   "unmatched": [
@@ -109,8 +128,8 @@
     }
   ],
   "coverage": {
-    "map": 1,
-    "review": 6,
+    "map": 3,
+    "review": 5,
     "unmatched": 4
   }
 }
