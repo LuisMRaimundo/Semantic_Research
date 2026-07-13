@@ -1,7 +1,7 @@
 {
   "class": "TexturaUniforme",
   "policy": "conservative",
-  "generated": "2026-07-13T14:16:59",
+  "generated": "2026-07-13T16:24:14",
   "columns": [
     "ONTO",
     "PULO",
@@ -15,7 +15,7 @@
   "ili_equivalence_map": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\classes\\TexturaUniforme\\out\\ili_equivalence.json",
   "ili_equivalence_counts": {
     "mapped": 3,
-    "review": 5,
+    "review": 0,
     "unmatched": 3
   },
   "ili_equivalence_loaded": true,

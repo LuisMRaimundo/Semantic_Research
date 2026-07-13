@@ -1,18 +1,19 @@
 {
   "class": "TexturaUniforme",
-  "generated": "2026-07-13T14:17:22",
+  "generated": "2026-07-13T16:24:12",
   "map": [
     {
       "oewn_ili": "i60712",
       "pulo_ili": "ili-30-04509592-n",
       "evidence": {
+        "cili_identity": "i60712",
         "shared_lemmas": [
           "uniforme"
         ],
         "pos": "n"
       },
       "confidence": "high",
-      "source": "legacy: tabela anterior (pré-proveniência)"
+      "source": "cili:cili@eeab8003 (master, 2016-01-26)"
     },
     {
       "oewn_ili": "i10771",
@@ -39,68 +40,7 @@
       "source": "human-adjudicated (GUI Ponte ILI) — «not differentiated» ↔ «não diferenciado»"
     }
   ],
-  "review": [
-    {
-      "oewn_ili": "i10771",
-      "pulo_ili": "ili-30-00744506-a",
-      "evidence": {
-        "shared_lemmas": [
-          "uniforme"
-        ],
-        "pos": "a"
-      },
-      "confidence": "review",
-      "source": "auto: shared-lemma (ambíguo)"
-    },
-    {
-      "oewn_ili": "i10771",
-      "pulo_ili": "ili-30-00910101-a",
-      "evidence": {
-        "shared_lemmas": [
-          "uniforme"
-        ],
-        "pos": "a"
-      },
-      "confidence": "review",
-      "source": "auto: shared-lemma (ambíguo)"
-    },
-    {
-      "oewn_ili": "i10771",
-      "pulo_ili": "ili-30-00909545-a",
-      "evidence": {
-        "shared_lemmas": [
-          "uniforme"
-        ],
-        "pos": "a"
-      },
-      "confidence": "review",
-      "source": "auto: shared-lemma (ambíguo)"
-    },
-    {
-      "oewn_ili": "i10771",
-      "pulo_ili": "ili-30-01200095-a",
-      "evidence": {
-        "shared_lemmas": [
-          "uniforme"
-        ],
-        "pos": "a"
-      },
-      "confidence": "review",
-      "source": "auto: shared-lemma (ambíguo)"
-    },
-    {
-      "oewn_ili": "i10771",
-      "pulo_ili": "ili-30-02302187-a",
-      "evidence": {
-        "shared_lemmas": [
-          "uniforme"
-        ],
-        "pos": "a"
-      },
-      "confidence": "review",
-      "source": "auto: shared-lemma (ambíguo)"
-    }
-  ],
+  "review": [],
   "unmatched": [
     {
       "oewn_ili": "i6560",
@@ -123,7 +63,7 @@
   ],
   "coverage": {
     "map": 3,
-    "review": 5,
+    "review": 0,
     "unmatched": 3
   }
 }

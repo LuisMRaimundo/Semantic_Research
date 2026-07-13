@@ -128,14 +128,17 @@ def build_table(class_id: str, wordnet_path: Optional[Path] = None,
     bie = _import_builder()
     doc = bie.build_from_files(Path(wordnet_path), Path(pulo_path), ws.class_id)
 
-    # POLÍTICA DA PONTE: o gerador PROPÕE, nunca decide.
-    # 1) Toda a linha automática vai para `review` (mesmo os pares únicos, que
-    #    o construtor legado colocava em map como "high") — só a mão humana
-    #    promove para `map`.
-    # 2) Cada linha leva proveniência explícita (auto vs human).
-    proposals = []
+    # POLÍTICA DA PONTE: o gerador PROPÕE, nunca decide — com UMA excepção
+    # autoritativa: identidade directa CILI (id↔offset do catálogo canónico
+    # GWA), que entra em `map` com source "cili:<versão>". Tudo o que assenta
+    # em coincidência de lema vai para `review`; só a mão humana promove.
+    cili_map: list[dict] = []
+    proposals: list[dict] = []
     for r in doc.get("map", []):
         r = dict(r)
+        if str(r.get("source", "")).startswith("cili:"):
+            cili_map.append(r)          # identidade canónica — permitida em map
+            continue
         r["confidence"] = "review"
         r.setdefault("source", AUTO_SOURCE_UNIQUE)
         proposals.append(r)
@@ -143,38 +146,50 @@ def build_table(class_id: str, wordnet_path: Optional[Path] = None,
         r = dict(r)
         r.setdefault("source", AUTO_SOURCE_AMBIG)
         proposals.append(r)
-    doc["map"] = []
+    doc["map"] = cili_map
     doc["review"] = proposals
 
     # 3) Preservar SEMPRE o `map` existente (merge, nunca overwrite):
-    #    - linhas humanas: intocáveis, com a sua proveniência;
-    #    - linhas legadas sem proveniência: transportadas e marcadas como
-    #      «legacy» (a regeneração não rebaixa o que estava em vigor).
+    #    - linhas humanas: INTOCÁVEIS (vencem duplicados CILI, que passam a
+    #      corroboração reportada);
+    #    - linhas legadas sem proveniência: transportadas; se o CILI confirma
+    #      o mesmo par, a linha é substituída pela versão canónica (upgrade,
+    #      nunca downgrade);
     #    A regeneração só mexe no que ainda está por decidir (review).
     old = load_table(ws)
     carried = 0
+    corroborated: list[tuple] = []   # pares humanos confirmados pelo CILI
+    upgraded: list[tuple] = []       # pares legacy/auto substituídos por cili
     if old:
-        have = {(r["oewn_ili"], r["pulo_ili"]) for r in doc["map"]}
+        new_by_key = {(r["oewn_ili"], r["pulo_ili"]): r for r in doc["map"]}
+        merged: dict[tuple, dict] = {}
         for r in old.get("map", []):
             key = (r.get("oewn_ili"), r.get("pulo_ili"))
-            if key in have:
-                continue
             r = dict(r)
             if not r.get("source"):
                 r["source"] = "legacy: tabela anterior (pré-proveniência)"
-            doc["map"].append(r)
-            have.add(key)
-            carried += 1
+            if key in new_by_key:                 # CILI confirma este par
+                if is_human_row(r):
+                    merged[key] = r               # humano vence; CILI corrobora
+                    corroborated.append(key)
+                else:
+                    merged[key] = new_by_key[key]  # upgrade legacy→cili
+                    upgraded.append(key)
+            else:
+                merged[key] = r                   # transportado (human/legacy)
+                carried += 1
+        for key, r in new_by_key.items():          # pares CILI novos
+            merged.setdefault(key, r)
         # promoções humanas que estivessem (por erro) em review também sobem
         for r in old.get("review", []):
             key = (r.get("oewn_ili"), r.get("pulo_ili"))
-            if is_human_row(r) and key not in have:
-                doc["map"].append(dict(r))
-                have.add(key)
+            if is_human_row(r) and key not in merged:
+                merged[key] = dict(r)
                 carried += 1
+        doc["map"] = list(merged.values())
         doc["review"] = [r for r in doc["review"]
-                         if (r["oewn_ili"], r["pulo_ili"]) not in have]
-        # um oewn_ili já mapeado (decisão humana) não é «unmatched»
+                         if (r["oewn_ili"], r["pulo_ili"]) not in merged]
+        # um oewn_ili já mapeado não é «unmatched»
         mapped_oewn = {r["oewn_ili"] for r in doc["map"]}
         doc["unmatched"] = [r for r in doc.get("unmatched", [])
                             if r.get("oewn_ili") not in mapped_oewn]
@@ -182,7 +197,11 @@ def build_table(class_id: str, wordnet_path: Optional[Path] = None,
     path = save_table(ws, doc)
     return {"ok": True, "path": str(path),
             "wordnet": str(wordnet_path), "pulo": str(pulo_path),
-            "carried_human": carried, "coverage": doc["coverage"]}
+            "carried_human": carried, "coverage": doc["coverage"],
+            "cili_corroborated": corroborated, "cili_upgraded": upgraded,
+            "cili_new": [(r["oewn_ili"], r["pulo_ili"]) for r in doc["map"]
+                         if str(r.get("source", "")).startswith("cili:")
+                         and (r["oewn_ili"], r["pulo_ili"]) not in upgraded]}
 
 
 # ---------------------------------------------------------------------------

@@ -40,6 +40,16 @@ import unicodedata
 from pathlib import Path
 from typing import Optional
 
+# CILI (catálogo canónico GWA, vendorizado) — identidade directa de ids.
+# Sem CILI disponível, o construtor degrada para a inferência por lema.
+try:
+    from cili_resolver import CILI_VERSION, cili_resolve
+except ImportError:  # pragma: no cover
+    CILI_VERSION = None
+
+    def cili_resolve(_id):  # type: ignore
+        return None
+
 _OEWN_ID_RE = re.compile(r"oewn-\d+-([a-z])\b")
 _ILI_RE = re.compile(r"\b(i\d+)\b")
 
@@ -131,8 +141,13 @@ def load_pulo_synsets(data: dict) -> list[dict]:
 def build_equivalence(wn_synsets: list[dict], pulo_synsets: list[dict],
                       class_id: str = "") -> dict:
     pulo_index = []
+    # índice por identidade CILI: cili_resolve(ili-30-…) -> "i…"
+    pulo_by_cili: dict[str, dict] = {}
     for s in pulo_synsets:
         pulo_index.append((s, {norm_lemma(w) for w in s["synonyms"] if norm_lemma(w)}))
+        ic = cili_resolve(s.get("ili_offset"))
+        if ic and ic not in pulo_by_cili:
+            pulo_by_cili[ic] = s
 
     map_rows: list[dict] = []
     review_rows: list[dict] = []
@@ -140,6 +155,25 @@ def build_equivalence(wn_synsets: list[dict], pulo_synsets: list[dict],
 
     for w in wn_synsets:
         w_pos = norm_pos(w["pos"])
+
+        # --- passo CILI: identidade canónica id↔offset (substitui a
+        # inferência por lema quando existe mapeamento autoritativo) ---
+        ic = cili_resolve(w.get("ili"))
+        if ic and ic in pulo_by_cili:
+            s = pulo_by_cili[ic]
+            w_norm0 = {norm_lemma(x) for x in w.get("lemmas", []) if norm_lemma(x)}
+            shared_disp = sorted({syn for syn in s["synonyms"]
+                                  if norm_lemma(syn) in w_norm0})
+            map_rows.append({
+                "oewn_ili": w["ili"],
+                "pulo_ili": s["ili_offset"],
+                "evidence": {"cili_identity": ic,
+                             "shared_lemmas": shared_disp, "pos": w_pos},
+                "confidence": "high",
+                "source": f"cili:{CILI_VERSION}",
+            })
+            continue    # identidade autoritativa: sem candidatos por lema
+
         w_norm = {norm_lemma(x) for x in w["lemmas"] if norm_lemma(x)}
         if not w_norm:
             unmatched.append({"oewn_ili": w["ili"], "pos": w_pos, "lemmas": list(w["lemmas"]),
@@ -167,6 +201,7 @@ def build_equivalence(wn_synsets: list[dict], pulo_synsets: list[dict],
                 "pulo_ili": s["ili_offset"],
                 "evidence": {"shared_lemmas": shared_disp, "pos": w_pos},
                 "confidence": "high",
+                "source": "auto: shared-lemma (par único)",
             })
         else:  # ambiguous → surface each, never auto-pick
             for s, shared_disp in candidates:
@@ -175,6 +210,7 @@ def build_equivalence(wn_synsets: list[dict], pulo_synsets: list[dict],
                     "pulo_ili": s["ili_offset"],
                     "evidence": {"shared_lemmas": shared_disp, "pos": w_pos},
                     "confidence": "review",
+                    "source": "auto: shared-lemma (ambíguo)",
                 })
 
     from datetime import datetime

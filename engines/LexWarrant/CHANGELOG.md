@@ -1,5 +1,38 @@
 # CHANGELOG — LexWarrant
 
+## [versão a fixar] — 2026-07-13 — CILI Tarefa 2: geração ancorada no catálogo canónico
+
+- `build_ili_equivalence.py`: novo passo CILI antes da inferência por lema —
+  quando `cili_resolve(oewn i-code)` e `cili_resolve(pulo ili-30-…)` devolvem a
+  MESMA identidade canónica, o par sai como alta confiança com
+  `source: "cili:<versão>"` e `evidence.cili_identity`; a inferência por lema
+  é suprimida para esse synset (o catálogo substitui a heurística onde existe
+  mapeamento autoritativo). Sem identidade CILI, mantém-se o comportamento
+  por lema, agora com proveniência explícita (`auto: shared-lemma …`).
+- Ponte GUI (`semantic/ili_bridge.py`): linhas `cili:` são a única excepção
+  autorizada a entrar em `map` sem promoção humana (identidade directa
+  id↔offset); linhas humanas continuam imutáveis e VENCEM duplicados CILI
+  (o CILI passa a corroboração reportada); linhas legacy confirmadas pelo
+  CILI são substituídas pela versão canónica (upgrade, nunca downgrade).
+- Aceitação TexturaUniforme: 3 mapeados mantidos — 2 humanos intactos e
+  CORROBORADOS pelo CILI (i10771↔01966488-a; i4126↔00744506-a), 1 legacy
+  promovido a `cili:` (i60712↔04509592-n); as 5 candidatas ambíguas de
+  i10771 saem de `review` (a identidade canónica dispensa-as); round-trip
+  JSON ✓; suíte 22 testes OK; fusão 11/11 PASS.
+
+## [registo] — 2026-07-13 — Tarefa 3 NÃO executada: limitação estrutural do ONTO
+
+- Descoberta documentada: no `ontopt.sqlite` real, os `sid` de TODOS os
+  recursos ONTO (`contopt`, `clip21`, `fuzzythes`, `thes5rec`, `top01`,
+  `clip01`, `polaridades`, `ontopt06`) são inteiros sequenciais SEM traço
+  PWN-3.0 (esquema `synset(res,sid,pos,gloss)`, sem campo de mapeamento).
+  «Sentidos ONTO com offset PWN resolvível» = conjunto vazio nesta base.
+- Consequência: o lado ONTO é corroboração-só POR NATUREZA DO RECURSO, não
+  por tabela em falta. Ancorá-lo exigiria uma distribuição do Onto.PT/ECO
+  que exporte o mapeamento para PWN, ou re-projecção própria dos synsets —
+  projectos autónomos, fora de âmbito. Os namespaces continuam flagueados
+  como não-juntáveis (T3 preservada).
+
 ## [versão a fixar] — 2026-07-13 — CILI Tarefa 1: vendor + resolver
 
 - Vendorizado o catálogo canónico CILI (GWA) em `data/cili/ili-map-pwn30.tab`

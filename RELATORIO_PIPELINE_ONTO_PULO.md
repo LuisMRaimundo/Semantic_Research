@@ -276,6 +276,14 @@ nenhum só-pendente na matriz, e *round-trip* do JSON.
 
 ## 8. Limitações conhecidas (estado actual)
 
+- **O lado ONTO não ancora em ILI por natureza do recurso** (verificado no
+  esquema real do `ontopt.sqlite`, 2026-07-13): os `sid` de todos os recursos
+  (`contopt`, `clip21`, `fuzzythes`, `ontopt06`, …) são inteiros sequenciais
+  sem qualquer traço de offset PWN-3.0 — não há campo de mapeamento no esquema.
+  O CILI (catálogo canónico, vendorizado em `engines/LexWarrant/data/cili/`)
+  resolve a perna OEWN↔PULO, mas não tem onde agarrar na perna ONTO. Ancorá-la
+  exigiria uma distribuição do Onto.PT/ECO com mapeamento PWN exportado, ou
+  re-projecção própria — fora de âmbito. O ONTO fica **corroboração-só**.
 - Sem `ili_equivalence.json` na classe, as junções ONTO↔PULO são **weak(term)** →
   nunca há «convergência plena» (só «convergência (termo)»). Foi o caso do
   `TexturaUniforme`.
