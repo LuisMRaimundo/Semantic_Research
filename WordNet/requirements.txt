@@ -1,0 +1,4 @@
+wn>=1.1.0
+nltk>=3.8
+matplotlib>=3.5
+networkx>=2.6

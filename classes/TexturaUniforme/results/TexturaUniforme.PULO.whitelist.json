@@ -1,0 +1,110 @@
+{
+  "class_id": "TexturaUniforme",
+  "pref_label": "uniforme",
+  "axis": "invariância face a um parâmetro",
+  "stage1_whitelist": [
+    {
+      "ili_offset": "ili-30-01200095-a",
+      "glosa": "que se mantém o mesmo; constante e invariável ao longo do parâmetro",
+      "decision": "UF",
+      "members": [
+        "uniforme",
+        "constante",
+        "invariável"
+      ]
+    },
+    {
+      "ili_offset": "ili-30-01966488-a",
+      "glosa": "sempre o mesmo parâmetro; imutável e uniforme",
+      "decision": "UF",
+      "members": [
+        "imutável",
+        "uniforme"
+      ]
+    },
+    {
+      "ili_offset": "ili-30-00909545-a",
+      "glosa": "sem variações; regular e uniforme face ao parâmetro",
+      "decision": "UF",
+      "members": [
+        "igual",
+        "regular"
+      ]
+    },
+    {
+      "ili_offset": "ili-30-04745370-n",
+      "glosa": "ausência de variação; invariância e uniformidade de um parâmetro",
+      "decision": "UF",
+      "members": [
+        "uniformidade",
+        "invariância",
+        "periódico"
+      ]
+    },
+    {
+      "ili_offset": "ili-30-02302187-a",
+      "glosa": "que ocorre em intervalos fixos e regulares",
+      "decision": "exclude",
+      "members": [
+        "periódico",
+        "regular"
+      ]
+    },
+    {
+      "ili_offset": "ili-30-00910101-a",
+      "glosa": "de aparência agradável aos olhos",
+      "decision": "exclude",
+      "members": [
+        "bonito"
+      ]
+    },
+    {
+      "ili_offset": "ili-30-04509592-n",
+      "glosa": "instrumento de medição de comprimento",
+      "decision": "exclude",
+      "members": [
+        "medidor"
+      ]
+    },
+    {
+      "ili_offset": "ili-30-00744506-a",
+      "glosa": "relativo ao fardamento militar",
+      "decision": "exclude",
+      "members": [
+        "fardado"
+      ]
+    },
+    {
+      "ili_offset": "",
+      "glosa": "acepção local sem correspondência interlingual",
+      "decision": "exclude",
+      "members": [
+        "idiossincrático"
+      ]
+    }
+  ],
+  "dictionary_attestations": [
+    "constante",
+    "igual",
+    "imutável",
+    "invariável",
+    "invariância",
+    "periódico",
+    "regular",
+    "uniforme",
+    "uniformidade"
+  ],
+  "admitted_offsets": [
+    "ili-30-01200095-a",
+    "ili-30-01966488-a",
+    "ili-30-00909545-a",
+    "ili-30-04745370-n"
+  ],
+  "excluded_offsets": [
+    "ili-30-02302187-a",
+    "ili-30-00910101-a",
+    "ili-30-04509592-n",
+    "ili-30-00744506-a",
+    null
+  ]
+}

@@ -1,0 +1,7108 @@
+{
+  "type": "thesaurus_search",
+  "query": {
+    "query": "uniforme",
+    "resource": null,
+    "pos": null,
+    "mode": "Starts with"
+  },
+  "count": 40,
+  "synsets": [
+    {
+      "resource": "clip01",
+      "resource_label": "clip01",
+      "synset_id": "6948",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "encadernação",
+          "weight": 1.0
+        },
+        {
+          "word": "entraje",
+          "weight": 1.0
+        },
+        {
+          "word": "farda",
+          "weight": 1.0
+        },
+        {
+          "word": "fardamenta",
+          "weight": 1.0
+        },
+        {
+          "word": "fardamento",
+          "weight": 1.0
+        },
+        {
+          "word": "fatiota",
+          "weight": 1.0
+        },
+        {
+          "word": "fato",
+          "weight": 1.0
+        },
+        {
+          "word": "libré",
+          "weight": 1.0
+        },
+        {
+          "word": "roupa",
+          "weight": 1.0
+        },
+        {
+          "word": "toilette",
+          "weight": 1.0
+        },
+        {
+          "word": "trajadura",
+          "weight": 1.0
+        },
+        {
+          "word": "trajar",
+          "weight": 1.0
+        },
+        {
+          "word": "traje",
+          "weight": 1.0
+        },
+        {
+          "word": "trajo",
+          "weight": 1.0
+        },
+        {
+          "word": "uniforme",
+          "weight": 1.0
+        },
+        {
+          "word": "vestido",
+          "weight": 1.0
+        },
+        {
+          "word": "vestidura",
+          "weight": 1.0
+        },
+        {
+          "word": "vestuário",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "clip21",
+      "resource_label": "clip21",
+      "synset_id": "12405",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "farda",
+          "weight": 2.8333333
+        },
+        {
+          "word": "fardamento",
+          "weight": 2.1666667
+        },
+        {
+          "word": "uniforme",
+          "weight": 2.0
+        },
+        {
+          "word": "fardamenta",
+          "weight": 0.6666667
+        },
+        {
+          "word": "libré",
+          "weight": 0.6666667
+        },
+        {
+          "word": "libreia",
+          "weight": 0.33333334
+        },
+        {
+          "word": "aparência",
+          "weight": 0.14285715
+        },
+        {
+          "word": "roupa",
+          "weight": 0.14285715
+        },
+        {
+          "word": "vestuário",
+          "weight": 0.14285715
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "clip21",
+      "resource_label": "clip21",
+      "synset_id": "16596",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "semelhante",
+          "weight": 1.6393442
+        },
+        {
+          "word": "idêntico",
+          "weight": 1.0819672
+        },
+        {
+          "word": "análogo",
+          "weight": 0.9836066
+        },
+        {
+          "word": "igual",
+          "weight": 0.852459
+        },
+        {
+          "word": "conforme",
+          "weight": 0.75409836
+        },
+        {
+          "word": "afim",
+          "weight": 0.704918
+        },
+        {
+          "word": "parecido",
+          "weight": 0.6721311
+        },
+        {
+          "word": "comparável",
+          "weight": 0.55737704
+        },
+        {
+          "word": "congênere",
+          "weight": 0.5081967
+        },
+        {
+          "word": "parecente",
+          "weight": 0.5081967
+        },
+        {
+          "word": "cômpar",
+          "weight": 0.4918033
+        },
+        {
+          "word": "mesmo",
+          "weight": 0.4918033
+        },
+        {
+          "word": "paralelo",
+          "weight": 0.4918033
+        },
+        {
+          "word": "aparente",
+          "weight": 0.46774194
+        },
+        {
+          "word": "convizinho",
+          "weight": 0.46774194
+        },
+        {
+          "word": "símile",
+          "weight": 0.45901638
+        },
+        {
+          "word": "assemelhado",
+          "weight": 0.44262296
+        },
+        {
+          "word": "par",
+          "weight": 0.32786885
+        },
+        {
+          "word": "parelho",
+          "weight": 0.29508197
+        },
+        {
+          "word": "equivalente",
+          "weight": 0.26229507
+        },
+        {
+          "word": "congénere",
+          "weight": 0.24590164
+        },
+        {
+          "word": "parceiro",
+          "weight": 0.24590164
+        },
+        {
+          "word": "similar",
+          "weight": 0.24590164
+        },
+        {
+          "word": "tal",
+          "weight": 0.16393442
+        },
+        {
+          "word": "correspondente",
+          "weight": 0.16129032
+        },
+        {
+          "word": "uniforme",
+          "weight": 0.16129032
+        },
+        {
+          "word": "vizinho",
+          "weight": 0.12903225
+        },
+        {
+          "word": "gêmeo",
+          "weight": 0.09836066
+        },
+        {
+          "word": "homogéneo",
+          "weight": 0.09836066
+        },
+        {
+          "word": "concorde",
+          "weight": 0.09677419
+        },
+        {
+          "word": "casal",
+          "weight": 0.08196721
+        },
+        {
+          "word": "equipolente",
+          "weight": 0.08196721
+        },
+        {
+          "word": "homogêneo",
+          "weight": 0.08196721
+        },
+        {
+          "word": "homólogo",
+          "weight": 0.08196721
+        },
+        {
+          "word": "parelha",
+          "weight": 0.08196721
+        },
+        {
+          "word": "parente",
+          "weight": 0.08196721
+        },
+        {
+          "word": "resignado",
+          "weight": 0.08064516
+        },
+        {
+          "word": "assim",
+          "weight": 0.06557377
+        },
+        {
+          "word": "este",
+          "weight": 0.06557377
+        },
+        {
+          "word": "símil",
+          "weight": 0.06557377
+        },
+        {
+          "word": "comparado",
+          "weight": 0.06451613
+        },
+        {
+          "word": "liso",
+          "weight": 0.06451613
+        },
+        {
+          "word": "congenérico",
+          "weight": 0.04918033
+        },
+        {
+          "word": "cotejável",
+          "weight": 0.04918033
+        },
+        {
+          "word": "equiparente",
+          "weight": 0.04918033
+        },
+        {
+          "word": "homogênea",
+          "weight": 0.04918033
+        },
+        {
+          "word": "indistiguivel",
+          "weight": 0.04918033
+        },
+        {
+          "word": "irmão",
+          "weight": 0.04918033
+        },
+        {
+          "word": "outro-tanto",
+          "weight": 0.04918033
+        },
+        {
+          "word": "pessoa",
+          "weight": 0.04918033
+        },
+        {
+          "word": "qualquer",
+          "weight": 0.04918033
+        },
+        {
+          "word": "que não pode ser distinguido",
+          "weight": 0.04918033
+        },
+        {
+          "word": "quejando",
+          "weight": 0.04918033
+        },
+        {
+          "word": "semelhável",
+          "weight": 0.04918033
+        },
+        {
+          "word": "tanto",
+          "weight": 0.04918033
+        },
+        {
+          "word": "aparentado",
+          "weight": 0.048387095
+        },
+        {
+          "word": "colateral",
+          "weight": 0.048387095
+        },
+        {
+          "word": "concordante",
+          "weight": 0.048387095
+        },
+        {
+          "word": "conformado",
+          "weight": 0.048387095
+        },
+        {
+          "word": "próprio",
+          "weight": 0.048387095
+        },
+        {
+          "word": "próximo",
+          "weight": 0.048387095
+        },
+        {
+          "word": "comparte",
+          "weight": 0.032786883
+        },
+        {
+          "word": "consubstanciado",
+          "weight": 0.032786883
+        },
+        {
+          "word": "cossanguineo",
+          "weight": 0.032786883
+        },
+        {
+          "word": "engembrado",
+          "weight": 0.032786883
+        },
+        {
+          "word": "homográfico",
+          "weight": 0.032786883
+        },
+        {
+          "word": "homótipo",
+          "weight": 0.032786883
+        },
+        {
+          "word": "leste",
+          "weight": 0.032786883
+        },
+        {
+          "word": "mabaça",
+          "weight": 0.032786883
+        },
+        {
+          "word": "não ressentido",
+          "weight": 0.032786883
+        },
+        {
+          "word": "o mesmo",
+          "weight": 0.032786883
+        },
+        {
+          "word": "paralela",
+          "weight": 0.032786883
+        },
+        {
+          "word": "pário",
+          "weight": 0.032786883
+        },
+        {
+          "word": "quejendo",
+          "weight": 0.032786883
+        },
+        {
+          "word": "semeável",
+          "weight": 0.032786883
+        },
+        {
+          "word": "semiparente",
+          "weight": 0.032786883
+        },
+        {
+          "word": "achegado",
+          "weight": 0.032258064
+        },
+        {
+          "word": "acomodado",
+          "weight": 0.032258064
+        },
+        {
+          "word": "adequado",
+          "weight": 0.032258064
+        },
+        {
+          "word": "adjacente",
+          "weight": 0.032258064
+        },
+        {
+          "word": "adjeto",
+          "weight": 0.032258064
+        },
+        {
+          "word": "adjunto",
+          "weight": 0.032258064
+        },
+        {
+          "word": "apegado",
+          "weight": 0.032258064
+        },
+        {
+          "word": "certo",
+          "weight": 0.032258064
+        },
+        {
+          "word": "chato",
+          "weight": 0.032258064
+        },
+        {
+          "word": "chegado",
+          "weight": 0.032258064
+        },
+        {
+          "word": "chão",
+          "weight": 0.032258064
+        },
+        {
+          "word": "coerente",
+          "weight": 0.032258064
+        },
+        {
+          "word": "comum",
+          "weight": 0.032258064
+        },
+        {
+          "word": "conexo",
+          "weight": 0.032258064
+        },
+        {
+          "word": "conjunto",
+          "weight": 0.032258064
+        },
+        {
+          "word": "contíguo",
+          "weight": 0.032258064
+        },
+        {
+          "word": "gémeo",
+          "weight": 0.032258064
+        },
+        {
+          "word": "imediato",
+          "weight": 0.032258064
+        },
+        {
+          "word": "junto",
+          "weight": 0.032258064
+        },
+        {
+          "word": "pegado",
+          "weight": 0.032258064
+        },
+        {
+          "word": "perto",
+          "weight": 0.032258064
+        },
+        {
+          "word": "plaino",
+          "weight": 0.032258064
+        },
+        {
+          "word": "plano",
+          "weight": 0.032258064
+        },
+        {
+          "word": "propínquo",
+          "weight": 0.032258064
+        },
+        {
+          "word": "raso",
+          "weight": 0.032258064
+        },
+        {
+          "word": "simultâneo",
+          "weight": 0.032258064
+        },
+        {
+          "word": "acordante",
+          "weight": 0.016129032
+        },
+        {
+          "word": "ajustado",
+          "weight": 0.016129032
+        },
+        {
+          "word": "apropriado",
+          "weight": 0.016129032
+        },
+        {
+          "word": "assentado",
+          "weight": 0.016129032
+        },
+        {
+          "word": "capaz",
+          "weight": 0.016129032
+        },
+        {
+          "word": "consonante",
+          "weight": 0.016129032
+        },
+        {
+          "word": "contínuo",
+          "weight": 0.016129032
+        },
+        {
+          "word": "conveniente",
+          "weight": 0.016129032
+        },
+        {
+          "word": "cúmplice",
+          "weight": 0.016129032
+        },
+        {
+          "word": "dependente",
+          "weight": 0.016129032
+        },
+        {
+          "word": "digno",
+          "weight": 0.016129032
+        },
+        {
+          "word": "equipendente",
+          "weight": 0.016129032
+        },
+        {
+          "word": "harmónico",
+          "weight": 0.016129032
+        },
+        {
+          "word": "imitante",
+          "weight": 0.016129032
+        },
+        {
+          "word": "inalterável",
+          "weight": 0.016129032
+        },
+        {
+          "word": "maluquete",
+          "weight": 0.016129032
+        },
+        {
+          "word": "meu",
+          "weight": 0.016129032
+        },
+        {
+          "word": "participante",
+          "weight": 0.016129032
+        },
+        {
+          "word": "regular",
+          "weight": 0.016129032
+        },
+        {
+          "word": "tirante",
+          "weight": 0.016129032
+        },
+        {
+          "word": "todo",
+          "weight": 0.016129032
+        },
+        {
+          "word": "unívoco",
+          "weight": 0.016129032
+        },
+        {
+          "word": "équo",
+          "weight": 0.016129032
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "clip21",
+      "resource_label": "clip21",
+      "synset_id": "17576",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "aborrecido",
+          "weight": 1.1261262
+        },
+        {
+          "word": "enfadonho",
+          "weight": 1.0
+        },
+        {
+          "word": "fastidioso",
+          "weight": 0.8468468
+        },
+        {
+          "word": "fatigante",
+          "weight": 0.8378378
+        },
+        {
+          "word": "monótono",
+          "weight": 0.8108108
+        },
+        {
+          "word": "maçante",
+          "weight": 0.7927928
+        },
+        {
+          "word": "tedioso",
+          "weight": 0.7927928
+        },
+        {
+          "word": "triste",
+          "weight": 0.7567568
+        },
+        {
+          "word": "soporífero",
+          "weight": 0.7477477
+        },
+        {
+          "word": "enfastioso",
+          "weight": 0.7027027
+        },
+        {
+          "word": "chato",
+          "weight": 0.6936937
+        },
+        {
+          "word": "maçador",
+          "weight": 0.6936937
+        },
+        {
+          "word": "soporífico",
+          "weight": 0.6846847
+        },
+        {
+          "word": "árido",
+          "weight": 0.6666667
+        },
+        {
+          "word": "enjoado",
+          "weight": 0.6486486
+        },
+        {
+          "word": "molesto",
+          "weight": 0.6486486
+        },
+        {
+          "word": "entediante",
+          "weight": 0.6306306
+        },
+        {
+          "word": "aborrido",
+          "weight": 0.5945946
+        },
+        {
+          "word": "maldito",
+          "weight": 0.5855856
+        },
+        {
+          "word": "enfastiadiço",
+          "weight": 0.5765766
+        },
+        {
+          "word": "fastiento",
+          "weight": 0.5765766
+        },
+        {
+          "word": "soporativo",
+          "weight": 0.5765766
+        },
+        {
+          "word": "amolador",
+          "weight": 0.5675676
+        },
+        {
+          "word": "enfastiante",
+          "weight": 0.5675676
+        },
+        {
+          "word": "enfadoso",
+          "weight": 0.5585586
+        },
+        {
+          "word": "peto",
+          "weight": 0.5585586
+        },
+        {
+          "word": "amolante",
+          "weight": 0.5495495
+        },
+        {
+          "word": "fastioso",
+          "weight": 0.5495495
+        },
+        {
+          "word": "massacrante",
+          "weight": 0.5495495
+        },
+        {
+          "word": "paulificante",
+          "weight": 0.5495495
+        },
+        {
+          "word": "secador",
+          "weight": 0.5495495
+        },
+        {
+          "word": "anojado",
+          "weight": 0.36036035
+        },
+        {
+          "word": "enojado",
+          "weight": 0.3243243
+        },
+        {
+          "word": "enfastiado",
+          "weight": 0.3063063
+        },
+        {
+          "word": "entediado",
+          "weight": 0.2882883
+        },
+        {
+          "word": "enfadado",
+          "weight": 0.2792793
+        },
+        {
+          "word": "cansado",
+          "weight": 0.24107143
+        },
+        {
+          "word": "cansativo",
+          "weight": 0.23423423
+        },
+        {
+          "word": "farto",
+          "weight": 0.22522523
+        },
+        {
+          "word": "saturado",
+          "weight": 0.21621622
+        },
+        {
+          "word": "desagradável",
+          "weight": 0.1981982
+        },
+        {
+          "word": "maçudo",
+          "weight": 0.1981982
+        },
+        {
+          "word": "amolado",
+          "weight": 0.1891892
+        },
+        {
+          "word": "antojado",
+          "weight": 0.1891892
+        },
+        {
+          "word": "atediado",
+          "weight": 0.1891892
+        },
+        {
+          "word": "fadigoso",
+          "weight": 0.17857143
+        },
+        {
+          "word": "descontente",
+          "weight": 0.16964285
+        },
+        {
+          "word": "desgostoso",
+          "weight": 0.15315315
+        },
+        {
+          "word": "fastisioso",
+          "weight": 0.15315315
+        },
+        {
+          "word": "agoniado",
+          "weight": 0.15178572
+        },
+        {
+          "word": "incômodo",
+          "weight": 0.14414415
+        },
+        {
+          "word": "estafante",
+          "weight": 0.13513513
+        },
+        {
+          "word": "nauseado",
+          "weight": 0.13513513
+        },
+        {
+          "word": "importuno",
+          "weight": 0.13392857
+        },
+        {
+          "word": "desconfortável",
+          "weight": 0.12612613
+        },
+        {
+          "word": "dormitivo",
+          "weight": 0.12612613
+        },
+        {
+          "word": "impertinente",
+          "weight": 0.125
+        },
+        {
+          "word": "adormecente",
+          "weight": 0.117117114
+        },
+        {
+          "word": "afadigador",
+          "weight": 0.117117114
+        },
+        {
+          "word": "afadigoso",
+          "weight": 0.117117114
+        },
+        {
+          "word": "fadigador",
+          "weight": 0.117117114
+        },
+        {
+          "word": "incómodo",
+          "weight": 0.10810811
+        },
+        {
+          "word": "sonífero",
+          "weight": 0.0990991
+        },
+        {
+          "word": "sonífico",
+          "weight": 0.0990991
+        },
+        {
+          "word": "penoso",
+          "weight": 0.09821428
+        },
+        {
+          "word": "lúgubre",
+          "weight": 0.08928572
+        },
+        {
+          "word": "melancólico",
+          "weight": 0.08928572
+        },
+        {
+          "word": "inconfortável",
+          "weight": 0.08108108
+        },
+        {
+          "word": "narcótico",
+          "weight": 0.08108108
+        },
+        {
+          "word": "cheio",
+          "weight": 0.08035714
+        },
+        {
+          "word": "dissaboroso",
+          "weight": 0.08035714
+        },
+        {
+          "word": "estéril",
+          "weight": 0.08035714
+        },
+        {
+          "word": "molestoso",
+          "weight": 0.072072074
+        },
+        {
+          "word": "agastado",
+          "weight": 0.071428575
+        },
+        {
+          "word": "amofinado",
+          "weight": 0.071428575
+        },
+        {
+          "word": "apoquentado",
+          "weight": 0.071428575
+        },
+        {
+          "word": "contrariado",
+          "weight": 0.071428575
+        },
+        {
+          "word": "duro",
+          "weight": 0.071428575
+        },
+        {
+          "word": "negro",
+          "weight": 0.071428575
+        },
+        {
+          "word": "seco",
+          "weight": 0.071428575
+        },
+        {
+          "word": "sombrio",
+          "weight": 0.071428575
+        },
+        {
+          "word": "adormecedor",
+          "weight": 0.06306306
+        },
+        {
+          "word": "engulhado",
+          "weight": 0.06306306
+        },
+        {
+          "word": "monocórdico",
+          "weight": 0.06306306
+        },
+        {
+          "word": "monocórdio",
+          "weight": 0.06306306
+        },
+        {
+          "word": "agarradiço",
+          "weight": 0.0625
+        },
+        {
+          "word": "causticante",
+          "weight": 0.0625
+        },
+        {
+          "word": "dissaborido",
+          "weight": 0.0625
+        },
+        {
+          "word": "ingrato",
+          "weight": 0.0625
+        },
+        {
+          "word": "jururu",
+          "weight": 0.0625
+        },
+        {
+          "word": "malcontente",
+          "weight": 0.0625
+        },
+        {
+          "word": "penalizado",
+          "weight": 0.0625
+        },
+        {
+          "word": "árduo",
+          "weight": 0.0625
+        },
+        {
+          "word": "desaprazível",
+          "weight": 0.054054055
+        },
+        {
+          "word": "desprazível",
+          "weight": 0.054054055
+        },
+        {
+          "word": "abundante",
+          "weight": 0.05357143
+        },
+        {
+          "word": "amaldiçoado",
+          "weight": 0.05357143
+        },
+        {
+          "word": "amargo",
+          "weight": 0.05357143
+        },
+        {
+          "word": "azucrinante",
+          "weight": 0.05357143
+        },
+        {
+          "word": "cabuloso",
+          "weight": 0.05357143
+        },
+        {
+          "word": "desagradado",
+          "weight": 0.05357143
+        },
+        {
+          "word": "doloroso",
+          "weight": 0.05357143
+        },
+        {
+          "word": "importunador",
+          "weight": 0.05357143
+        },
+        {
+          "word": "infeliz",
+          "weight": 0.05357143
+        },
+        {
+          "word": "insistente",
+          "weight": 0.05357143
+        },
+        {
+          "word": "insípido",
+          "weight": 0.05357143
+        },
+        {
+          "word": "liso",
+          "weight": 0.05357143
+        },
+        {
+          "word": "macambúzio",
+          "weight": 0.05357143
+        },
+        {
+          "word": "miserável",
+          "weight": 0.05357143
+        },
+        {
+          "word": "nojoso",
+          "weight": 0.05357143
+        },
+        {
+          "word": "sorumbático",
+          "weight": 0.05357143
+        },
+        {
+          "word": "trabalhoso",
+          "weight": 0.05357143
+        },
+        {
+          "word": "ímprobo",
+          "weight": 0.05357143
+        },
+        {
+          "word": "entojado",
+          "weight": 0.045045044
+        },
+        {
+          "word": "laudânico",
+          "weight": 0.045045044
+        },
+        {
+          "word": "abetumado",
+          "weight": 0.04464286
+        },
+        {
+          "word": "consternado",
+          "weight": 0.04464286
+        },
+        {
+          "word": "detestável",
+          "weight": 0.04464286
+        },
+        {
+          "word": "difícil",
+          "weight": 0.04464286
+        },
+        {
+          "word": "displicente",
+          "weight": 0.04464286
+        },
+        {
+          "word": "enfezado",
+          "weight": 0.04464286
+        },
+        {
+          "word": "irritado",
+          "weight": 0.04464286
+        },
+        {
+          "word": "lôbrego",
+          "weight": 0.04464286
+        },
+        {
+          "word": "oneroso",
+          "weight": 0.04464286
+        },
+        {
+          "word": "pesado",
+          "weight": 0.04464286
+        },
+        {
+          "word": "plangente",
+          "weight": 0.04464286
+        },
+        {
+          "word": "plano",
+          "weight": 0.04464286
+        },
+        {
+          "word": "repleto",
+          "weight": 0.04464286
+        },
+        {
+          "word": "sinistro",
+          "weight": 0.04464286
+        },
+        {
+          "word": "taciturno",
+          "weight": 0.04464286
+        },
+        {
+          "word": "tétrico",
+          "weight": 0.04464286
+        },
+        {
+          "word": "afiador",
+          "weight": 0.036036037
+        },
+        {
+          "word": "banzeiro",
+          "weight": 0.036036037
+        },
+        {
+          "word": "feduço",
+          "weight": 0.036036037
+        },
+        {
+          "word": "mesto",
+          "weight": 0.036036037
+        },
+        {
+          "word": "pouco à vontade",
+          "weight": 0.036036037
+        },
+        {
+          "word": "acerbo",
+          "weight": 0.035714287
+        },
+        {
+          "word": "afanoso",
+          "weight": 0.035714287
+        },
+        {
+          "word": "afiado",
+          "weight": 0.035714287
+        },
+        {
+          "word": "aguçado",
+          "weight": 0.035714287
+        },
+        {
+          "word": "amazorrado",
+          "weight": 0.035714287
+        },
+        {
+          "word": "assoberbante",
+          "weight": 0.035714287
+        },
+        {
+          "word": "atristurado",
+          "weight": 0.035714287
+        },
+        {
+          "word": "cacete",
+          "weight": 0.035714287
+        },
+        {
+          "word": "capiongo",
+          "weight": 0.035714287
+        },
+        {
+          "word": "casmurro",
+          "weight": 0.035714287
+        },
+        {
+          "word": "chateado",
+          "weight": 0.035714287
+        },
+        {
+          "word": "cimério",
+          "weight": 0.035714287
+        },
+        {
+          "word": "condenado",
+          "weight": 0.035714287
+        },
+        {
+          "word": "copioso",
+          "weight": 0.035714287
+        },
+        {
+          "word": "custoso",
+          "weight": 0.035714287
+        },
+        {
+          "word": "dificultoso",
+          "weight": 0.035714287
+        },
+        {
+          "word": "encaramujado",
+          "weight": 0.035714287
+        },
+        {
+          "word": "encorujado",
+          "weight": 0.035714287
+        },
+        {
+          "word": "fatigoso",
+          "weight": 0.035714287
+        },
+        {
+          "word": "funesto",
+          "weight": 0.035714287
+        },
+        {
+          "word": "grudento",
+          "weight": 0.035714287
+        },
+        {
+          "word": "insignificante",
+          "weight": 0.035714287
+        },
+        {
+          "word": "insuportável",
+          "weight": 0.035714287
+        },
+        {
+          "word": "jaruru",
+          "weight": 0.035714287
+        },
+        {
+          "word": "juruju",
+          "weight": 0.035714287
+        },
+        {
+          "word": "laborioso",
+          "weight": 0.035714287
+        },
+        {
+          "word": "lastimoso",
+          "weight": 0.035714287
+        },
+        {
+          "word": "lutuoso",
+          "weight": 0.035714287
+        },
+        {
+          "word": "mazorro",
+          "weight": 0.035714287
+        },
+        {
+          "word": "merencório",
+          "weight": 0.035714287
+        },
+        {
+          "word": "nefando",
+          "weight": 0.035714287
+        },
+        {
+          "word": "odioso",
+          "weight": 0.035714287
+        },
+        {
+          "word": "operoso",
+          "weight": 0.035714287
+        },
+        {
+          "word": "perverso",
+          "weight": 0.035714287
+        },
+        {
+          "word": "precito",
+          "weight": 0.035714287
+        },
+        {
+          "word": "prejudicial",
+          "weight": 0.035714287
+        },
+        {
+          "word": "prolixo",
+          "weight": 0.035714287
+        },
+        {
+          "word": "prostrado",
+          "weight": 0.035714287
+        },
+        {
+          "word": "raso",
+          "weight": 0.035714287
+        },
+        {
+          "word": "repugnante",
+          "weight": 0.035714287
+        },
+        {
+          "word": "saciado",
+          "weight": 0.035714287
+        },
+        {
+          "word": "sentido",
+          "weight": 0.035714287
+        },
+        {
+          "word": "tristonho",
+          "weight": 0.035714287
+        },
+        {
+          "word": "uniforme",
+          "weight": 0.035714287
+        },
+        {
+          "word": "árdego",
+          "weight": 0.035714287
+        },
+        {
+          "word": "atucanado",
+          "weight": 0.027027028
+        },
+        {
+          "word": "chungoso",
+          "weight": 0.027027028
+        },
+        {
+          "word": "enfarado",
+          "weight": 0.027027028
+        },
+        {
+          "word": "entorpecente",
+          "weight": 0.027027028
+        },
+        {
+          "word": "infarento",
+          "weight": 0.027027028
+        },
+        {
+          "word": "injucundo",
+          "weight": 0.027027028
+        },
+        {
+          "word": "nicotino",
+          "weight": 0.027027028
+        },
+        {
+          "word": "sacal",
+          "weight": 0.027027028
+        },
+        {
+          "word": "aborrecível",
+          "weight": 0.026785715
+        },
+        {
+          "word": "achatado",
+          "weight": 0.026785715
+        },
+        {
+          "word": "alentado",
+          "weight": 0.026785715
+        },
+        {
+          "word": "danado",
+          "weight": 0.026785715
+        },
+        {
+          "word": "deplorável",
+          "weight": 0.026785715
+        },
+        {
+          "word": "desolado",
+          "weight": 0.026785715
+        },
+        {
+          "word": "dolente",
+          "weight": 0.026785715
+        },
+        {
+          "word": "empanturrado",
+          "weight": 0.026785715
+        },
+        {
+          "word": "endoado",
+          "weight": 0.026785715
+        },
+        {
+          "word": "enlutado",
+          "weight": 0.026785715
+        },
+        {
+          "word": "escuro",
+          "weight": 0.026785715
+        },
+        {
+          "word": "exaustivo",
+          "weight": 0.026785715
+        },
+        {
+          "word": "fúnebre",
+          "weight": 0.026785715
+        },
+        {
+          "word": "invariável",
+          "weight": 0.026785715
+        },
+        {
+          "word": "lamentável",
+          "weight": 0.026785715
+        },
+        {
+          "word": "maldisposto",
+          "weight": 0.026785715
+        },
+        {
+          "word": "maligno",
+          "weight": 0.026785715
+        },
+        {
+          "word": "mau",
+          "weight": 0.026785715
+        },
+        {
+          "word": "mesquinho",
+          "weight": 0.026785715
+        },
+        {
+          "word": "morno",
+          "weight": 0.026785715
+        },
+        {
+          "word": "nebuloso",
+          "weight": 0.026785715
+        },
+        {
+          "word": "nocivo",
+          "weight": 0.026785715
+        },
+        {
+          "word": "nojado",
+          "weight": 0.026785715
+        },
+        {
+          "word": "pernicioso",
+          "weight": 0.026785715
+        },
+        {
+          "word": "regalado",
+          "weight": 0.026785715
+        },
+        {
+          "word": "ridículo",
+          "weight": 0.026785715
+        },
+        {
+          "word": "satisfeito",
+          "weight": 0.026785715
+        },
+        {
+          "word": "sem-sabor",
+          "weight": 0.026785715
+        },
+        {
+          "word": "sensabor",
+          "weight": 0.026785715
+        },
+        {
+          "word": "soturno",
+          "weight": 0.026785715
+        },
+        {
+          "word": "sáfaro",
+          "weight": 0.026785715
+        },
+        {
+          "word": "abudante",
+          "weight": 0.018018018
+        },
+        {
+          "word": "acanhotado",
+          "weight": 0.018018018
+        },
+        {
+          "word": "adelgaçador",
+          "weight": 0.018018018
+        },
+        {
+          "word": "aladainhado",
+          "weight": 0.018018018
+        },
+        {
+          "word": "brunal",
+          "weight": 0.018018018
+        },
+        {
+          "word": "brundúsio",
+          "weight": 0.018018018
+        },
+        {
+          "word": "cabreado",
+          "weight": 0.018018018
+        },
+        {
+          "word": "cambaleante",
+          "weight": 0.018018018
+        },
+        {
+          "word": "constrangedor",
+          "weight": 0.018018018
+        },
+        {
+          "word": "desaconchegado",
+          "weight": 0.018018018
+        },
+        {
+          "word": "desalegre",
+          "weight": 0.018018018
+        },
+        {
+          "word": "destestável",
+          "weight": 0.018018018
+        },
+        {
+          "word": "esplenético",
+          "weight": 0.018018018
+        },
+        {
+          "word": "estressado",
+          "weight": 0.018018018
+        },
+        {
+          "word": "fedúncio",
+          "weight": 0.018018018
+        },
+        {
+          "word": "hamlético",
+          "weight": 0.018018018
+        },
+        {
+          "word": "hipnagógico",
+          "weight": 0.018018018
+        },
+        {
+          "word": "hipnógeno",
+          "weight": 0.018018018
+        },
+        {
+          "word": "inameno",
+          "weight": 0.018018018
+        },
+        {
+          "word": "maldita",
+          "weight": 0.018018018
+        },
+        {
+          "word": "meselo",
+          "weight": 0.018018018
+        },
+        {
+          "word": "monotônico",
+          "weight": 0.018018018
+        },
+        {
+          "word": "planiforme",
+          "weight": 0.018018018
+        },
+        {
+          "word": "prato",
+          "weight": 0.018018018
+        },
+        {
+          "word": "saturante",
+          "weight": 0.018018018
+        },
+        {
+          "word": "sem conforto",
+          "weight": 0.018018018
+        },
+        {
+          "word": "sêco",
+          "weight": 0.018018018
+        },
+        {
+          "word": "tristeiro",
+          "weight": 0.018018018
+        },
+        {
+          "word": "xato",
+          "weight": 0.018018018
+        },
+        {
+          "word": "abarrotado",
+          "weight": 0.017857144
+        },
+        {
+          "word": "abastado",
+          "weight": 0.017857144
+        },
+        {
+          "word": "abominoso",
+          "weight": 0.017857144
+        },
+        {
+          "word": "abominável",
+          "weight": 0.017857144
+        },
+        {
+          "word": "aborrecedor",
+          "weight": 0.017857144
+        },
+        {
+          "word": "aborrível",
+          "weight": 0.017857144
+        },
+        {
+          "word": "acerado",
+          "weight": 0.017857144
+        },
+        {
+          "word": "aceroso",
+          "weight": 0.017857144
+        },
+        {
+          "word": "agudo",
+          "weight": 0.017857144
+        },
+        {
+          "word": "amargoso",
+          "weight": 0.017857144
+        },
+        {
+          "word": "amuado",
+          "weight": 0.017857144
+        },
+        {
+          "word": "apoucado",
+          "weight": 0.017857144
+        },
+        {
+          "word": "arisco",
+          "weight": 0.017857144
+        },
+        {
+          "word": "arruá",
+          "weight": 0.017857144
+        },
+        {
+          "word": "astroso",
+          "weight": 0.017857144
+        },
+        {
+          "word": "atestado",
+          "weight": 0.017857144
+        },
+        {
+          "word": "atravessado",
+          "weight": 0.017857144
+        },
+        {
+          "word": "avarento",
+          "weight": 0.017857144
+        },
+        {
+          "word": "avaro",
+          "weight": 0.017857144
+        },
+        {
+          "word": "baixo",
+          "weight": 0.017857144
+        },
+        {
+          "word": "baldio",
+          "weight": 0.017857144
+        },
+        {
+          "word": "banzo",
+          "weight": 0.017857144
+        },
+        {
+          "word": "calvo",
+          "weight": 0.017857144
+        },
+        {
+          "word": "carpido",
+          "weight": 0.017857144
+        },
+        {
+          "word": "carregoso",
+          "weight": 0.017857144
+        },
+        {
+          "word": "caído",
+          "weight": 0.017857144
+        },
+        {
+          "word": "choroso",
+          "weight": 0.017857144
+        },
+        {
+          "word": "chão",
+          "weight": 0.017857144
+        },
+        {
+          "word": "completo",
+          "weight": 0.017857144
+        },
+        {
+          "word": "cortante",
+          "weight": 0.017857144
+        },
+        {
+          "word": "cruel",
+          "weight": 0.017857144
+        },
+        {
+          "word": "debiqueiro",
+          "weight": 0.017857144
+        },
+        {
+          "word": "deletério",
+          "weight": 0.017857144
+        },
+        {
+          "word": "depravado",
+          "weight": 0.017857144
+        },
+        {
+          "word": "descalvado",
+          "weight": 0.017857144
+        },
+        {
+          "word": "dessaborido",
+          "weight": 0.017857144
+        },
+        {
+          "word": "dessaboroso",
+          "weight": 0.017857144
+        },
+        {
+          "word": "doente",
+          "weight": 0.017857144
+        },
+        {
+          "word": "escalvado",
+          "weight": 0.017857144
+        },
+        {
+          "word": "escasseado",
+          "weight": 0.017857144
+        },
+        {
+          "word": "escasso",
+          "weight": 0.017857144
+        },
+        {
+          "word": "esgotante",
+          "weight": 0.017857144
+        },
+        {
+          "word": "espalmado",
+          "weight": 0.017857144
+        },
+        {
+          "word": "esparramado",
+          "weight": 0.017857144
+        },
+        {
+          "word": "esquivo",
+          "weight": 0.017857144
+        },
+        {
+          "word": "execrando",
+          "weight": 0.017857144
+        },
+        {
+          "word": "execrável",
+          "weight": 0.017857144
+        },
+        {
+          "word": "extenuante",
+          "weight": 0.017857144
+        },
+        {
+          "word": "feio",
+          "weight": 0.017857144
+        },
+        {
+          "word": "feral",
+          "weight": 0.017857144
+        },
+        {
+          "word": "fino",
+          "weight": 0.017857144
+        },
+        {
+          "word": "flébil",
+          "weight": 0.017857144
+        },
+        {
+          "word": "furreca",
+          "weight": 0.017857144
+        },
+        {
+          "word": "generoso",
+          "weight": 0.017857144
+        },
+        {
+          "word": "grave",
+          "weight": 0.017857144
+        },
+        {
+          "word": "guerrento",
+          "weight": 0.017857144
+        },
+        {
+          "word": "harto",
+          "weight": 0.017857144
+        },
+        {
+          "word": "igual",
+          "weight": 0.017857144
+        },
+        {
+          "word": "improducente",
+          "weight": 0.017857144
+        },
+        {
+          "word": "improdutivo",
+          "weight": 0.017857144
+        },
+        {
+          "word": "improlífero",
+          "weight": 0.017857144
+        },
+        {
+          "word": "improlífico",
+          "weight": 0.017857144
+        },
+        {
+          "word": "inculto",
+          "weight": 0.017857144
+        },
+        {
+          "word": "indigesto",
+          "weight": 0.017857144
+        },
+        {
+          "word": "infando",
+          "weight": 0.017857144
+        },
+        {
+          "word": "infecundo",
+          "weight": 0.017857144
+        },
+        {
+          "word": "infrutuoso",
+          "weight": 0.017857144
+        },
+        {
+          "word": "infrutífero",
+          "weight": 0.017857144
+        },
+        {
+          "word": "infértil",
+          "weight": 0.017857144
+        },
+        {
+          "word": "lamentoso",
+          "weight": 0.017857144
+        },
+        {
+          "word": "lasso",
+          "weight": 0.017857144
+        },
+        {
+          "word": "lotado",
+          "weight": 0.017857144
+        },
+        {
+          "word": "macabro",
+          "weight": 0.017857144
+        },
+        {
+          "word": "macio",
+          "weight": 0.017857144
+        },
+        {
+          "word": "magoado",
+          "weight": 0.017857144
+        },
+        {
+          "word": "malgostoso",
+          "weight": 0.017857144
+        },
+        {
+          "word": "malvado",
+          "weight": 0.017857144
+        },
+        {
+          "word": "maléfico",
+          "weight": 0.017857144
+        },
+        {
+          "word": "maninho",
+          "weight": 0.017857144
+        },
+        {
+          "word": "mixe",
+          "weight": 0.017857144
+        },
+        {
+          "word": "mixo",
+          "weight": 0.017857144
+        },
+        {
+          "word": "molestado",
+          "weight": 0.017857144
+        },
+        {
+          "word": "mortificado",
+          "weight": 0.017857144
+        },
+        {
+          "word": "murcho",
+          "weight": 0.017857144
+        },
+        {
+          "word": "mísero",
+          "weight": 0.017857144
+        },
+        {
+          "word": "nefasto",
+          "weight": 0.017857144
+        },
+        {
+          "word": "nefário",
+          "weight": 0.017857144
+        },
+        {
+          "word": "nu",
+          "weight": 0.017857144
+        },
+        {
+          "word": "nutrido",
+          "weight": 0.017857144
+        },
+        {
+          "word": "obscuro",
+          "weight": 0.017857144
+        },
+        {
+          "word": "ominoso",
+          "weight": 0.017857144
+        },
+        {
+          "word": "parco",
+          "weight": 0.017857144
+        },
+        {
+          "word": "pesadão",
+          "weight": 0.017857144
+        },
+        {
+          "word": "pesaroso",
+          "weight": 0.017857144
+        },
+        {
+          "word": "plaino",
+          "weight": 0.017857144
+        },
+        {
+          "word": "planturoso",
+          "weight": 0.017857144
+        },
+        {
+          "word": "pobre",
+          "weight": 0.017857144
+        },
+        {
+          "word": "praguejado",
+          "weight": 0.017857144
+        },
+        {
+          "word": "puto",
+          "weight": 0.017857144
+        },
+        {
+          "word": "queixoso",
+          "weight": 0.017857144
+        },
+        {
+          "word": "rabugento",
+          "weight": 0.017857144
+        },
+        {
+          "word": "rente",
+          "weight": 0.017857144
+        },
+        {
+          "word": "repulsivo",
+          "weight": 0.017857144
+        },
+        {
+          "word": "rico",
+          "weight": 0.017857144
+        },
+        {
+          "word": "ruim",
+          "weight": 0.017857144
+        },
+        {
+          "word": "réprobo",
+          "weight": 0.017857144
+        },
+        {
+          "word": "rés",
+          "weight": 0.017857144
+        },
+        {
+          "word": "secante",
+          "weight": 0.017857144
+        },
+        {
+          "word": "sicativo",
+          "weight": 0.017857144
+        },
+        {
+          "word": "substancial",
+          "weight": 0.017857144
+        },
+        {
+          "word": "suculento",
+          "weight": 0.017857144
+        },
+        {
+          "word": "trasvisto",
+          "weight": 0.017857144
+        },
+        {
+          "word": "vexatório",
+          "weight": 0.017857144
+        },
+        {
+          "word": "vulgar",
+          "weight": 0.017857144
+        },
+        {
+          "word": "úbere",
+          "weight": 0.017857144
+        },
+        {
+          "word": "abodegado",
+          "weight": 0.008928572
+        },
+        {
+          "word": "abusado",
+          "weight": 0.008928572
+        },
+        {
+          "word": "acanhado",
+          "weight": 0.008928572
+        },
+        {
+          "word": "acaçapado",
+          "weight": 0.008928572
+        },
+        {
+          "word": "acromático",
+          "weight": 0.008928572
+        },
+        {
+          "word": "adusto",
+          "weight": 0.008928572
+        },
+        {
+          "word": "amargado",
+          "weight": 0.008928572
+        },
+        {
+          "word": "amargurado",
+          "weight": 0.008928572
+        },
+        {
+          "word": "antipático",
+          "weight": 0.008928572
+        },
+        {
+          "word": "anátema",
+          "weight": 0.008928572
+        },
+        {
+          "word": "aperreado",
+          "weight": 0.008928572
+        },
+        {
+          "word": "apertado",
+          "weight": 0.008928572
+        },
+        {
+          "word": "arreliado",
+          "weight": 0.008928572
+        },
+        {
+          "word": "azarado",
+          "weight": 0.008928572
+        },
+        {
+          "word": "azedo",
+          "weight": 0.008928572
+        },
+        {
+          "word": "bagunceiro",
+          "weight": 0.008928572
+        },
+        {
+          "word": "bastante",
+          "weight": 0.008928572
+        },
+        {
+          "word": "basto",
+          "weight": 0.008928572
+        },
+        {
+          "word": "bisbilhoteiro",
+          "weight": 0.008928572
+        },
+        {
+          "word": "broxante",
+          "weight": 0.008928572
+        },
+        {
+          "word": "bruno",
+          "weight": 0.008928572
+        },
+        {
+          "word": "brusco",
+          "weight": 0.008928572
+        },
+        {
+          "word": "caricato",
+          "weight": 0.008928572
+        },
+        {
+          "word": "carrancudo",
+          "weight": 0.008928572
+        },
+        {
+          "word": "cevado",
+          "weight": 0.008928572
+        },
+        {
+          "word": "chocante",
+          "weight": 0.008928572
+        },
+        {
+          "word": "coercivo",
+          "weight": 0.008928572
+        },
+        {
+          "word": "coitado",
+          "weight": 0.008928572
+        },
+        {
+          "word": "comesto",
+          "weight": 0.008928572
+        },
+        {
+          "word": "comprido",
+          "weight": 0.008928572
+        },
+        {
+          "word": "compungido",
+          "weight": 0.008928572
+        },
+        {
+          "word": "contrito",
+          "weight": 0.008928572
+        },
+        {
+          "word": "denso",
+          "weight": 0.008928572
+        },
+        {
+          "word": "depressivo",
+          "weight": 0.008928572
+        },
+        {
+          "word": "deprimido",
+          "weight": 0.008928572
+        },
+        {
+          "word": "desabrido",
+          "weight": 0.008928572
+        },
+        {
+          "word": "desabrigado",
+          "weight": 0.008928572
+        },
+        {
+          "word": "desajeitado",
+          "weight": 0.008928572
+        },
+        {
+          "word": "desalentador",
+          "weight": 0.008928572
+        },
+        {
+          "word": "desanimado",
+          "weight": 0.008928572
+        },
+        {
+          "word": "desconsolado",
+          "weight": 0.008928572
+        },
+        {
+          "word": "desengraçado",
+          "weight": 0.008928572
+        },
+        {
+          "word": "deserto",
+          "weight": 0.008928572
+        },
+        {
+          "word": "desgostosamente",
+          "weight": 0.008928572
+        },
+        {
+          "word": "desgrenhado",
+          "weight": 0.008928572
+        },
+        {
+          "word": "desprezado",
+          "weight": 0.008928572
+        },
+        {
+          "word": "desértico",
+          "weight": 0.008928572
+        },
+        {
+          "word": "dolorido",
+          "weight": 0.008928572
+        },
+        {
+          "word": "dorido",
+          "weight": 0.008928572
+        },
+        {
+          "word": "elegíaco",
+          "weight": 0.008928572
+        },
+        {
+          "word": "empachoso",
+          "weight": 0.008928572
+        },
+        {
+          "word": "empinado",
+          "weight": 0.008928572
+        },
+        {
+          "word": "enfartado",
+          "weight": 0.008928572
+        },
+        {
+          "word": "enjoativo",
+          "weight": 0.008928572
+        },
+        {
+          "word": "entristecedor",
+          "weight": 0.008928572
+        },
+        {
+          "word": "entristecido",
+          "weight": 0.008928572
+        },
+        {
+          "word": "ermo",
+          "weight": 0.008928572
+        },
+        {
+          "word": "escamoso",
+          "weight": 0.008928572
+        },
+        {
+          "word": "escroto",
+          "weight": 0.008928572
+        },
+        {
+          "word": "esgotador",
+          "weight": 0.008928572
+        },
+        {
+          "word": "esmarrido",
+          "weight": 0.008928572
+        },
+        {
+          "word": "estopador",
+          "weight": 0.008928572
+        },
+        {
+          "word": "estopante",
+          "weight": 0.008928572
+        },
+        {
+          "word": "estrábico",
+          "weight": 0.008928572
+        },
+        {
+          "word": "estrênuo",
+          "weight": 0.008928572
+        },
+        {
+          "word": "estúpido",
+          "weight": 0.008928572
+        },
+        {
+          "word": "fedonho",
+          "weight": 0.008928572
+        },
+        {
+          "word": "ferrugíneo",
+          "weight": 0.008928572
+        },
+        {
+          "word": "flagelativo",
+          "weight": 0.008928572
+        },
+        {
+          "word": "fusco",
+          "weight": 0.008928572
+        },
+        {
+          "word": "gordo",
+          "weight": 0.008928572
+        },
+        {
+          "word": "homótono",
+          "weight": 0.008928572
+        },
+        {
+          "word": "horrendo",
+          "weight": 0.008928572
+        },
+        {
+          "word": "horrível",
+          "weight": 0.008928572
+        },
+        {
+          "word": "hostil",
+          "weight": 0.008928572
+        },
+        {
+          "word": "inclemente",
+          "weight": 0.008928572
+        },
+        {
+          "word": "incomodado",
+          "weight": 0.008928572
+        },
+        {
+          "word": "incomodativo",
+          "weight": 0.008928572
+        },
+        {
+          "word": "incomodo",
+          "weight": 0.008928572
+        },
+        {
+          "word": "inconveniente",
+          "weight": 0.008928572
+        },
+        {
+          "word": "incultivável",
+          "weight": 0.008928572
+        },
+        {
+          "word": "infesto",
+          "weight": 0.008928572
+        },
+        {
+          "word": "insatisfeito",
+          "weight": 0.008928572
+        },
+        {
+          "word": "interminável",
+          "weight": 0.008928572
+        },
+        {
+          "word": "inviso",
+          "weight": 0.008928572
+        },
+        {
+          "word": "inóspito",
+          "weight": 0.008928572
+        },
+        {
+          "word": "junto",
+          "weight": 0.008928572
+        },
+        {
+          "word": "lastimável",
+          "weight": 0.008928572
+        },
+        {
+          "word": "lauto",
+          "weight": 0.008928572
+        },
+        {
+          "word": "magro",
+          "weight": 0.008928572
+        },
+        {
+          "word": "mal-assombrado",
+          "weight": 0.008928572
+        },
+        {
+          "word": "marrano",
+          "weight": 0.008928572
+        },
+        {
+          "word": "maçado",
+          "weight": 0.008928572
+        },
+        {
+          "word": "mocho",
+          "weight": 0.008928572
+        },
+        {
+          "word": "morrinha",
+          "weight": 0.008928572
+        },
+        {
+          "word": "morrinhoso",
+          "weight": 0.008928572
+        },
+        {
+          "word": "mortal",
+          "weight": 0.008928572
+        },
+        {
+          "word": "nauseante",
+          "weight": 0.008928572
+        },
+        {
+          "word": "nojento",
+          "weight": 0.008928572
+        },
+        {
+          "word": "nublado",
+          "weight": 0.008928572
+        },
+        {
+          "word": "nédio",
+          "weight": 0.008928572
+        },
+        {
+          "word": "paregórico",
+          "weight": 0.008928572
+        },
+        {
+          "word": "penado",
+          "weight": 0.008928572
+        },
+        {
+          "word": "penível",
+          "weight": 0.008928572
+        },
+        {
+          "word": "ponderado",
+          "weight": 0.008928572
+        },
+        {
+          "word": "pontiagudo",
+          "weight": 0.008928572
+        },
+        {
+          "word": "preguiçoso",
+          "weight": 0.008928572
+        },
+        {
+          "word": "preocupante",
+          "weight": 0.008928572
+        },
+        {
+          "word": "pêco",
+          "weight": 0.008928572
+        },
+        {
+          "word": "pêto",
+          "weight": 0.008928572
+        },
+        {
+          "word": "quezilento",
+          "weight": 0.008928572
+        },
+        {
+          "word": "ramerraneiro",
+          "weight": 0.008928572
+        },
+        {
+          "word": "rasteiro",
+          "weight": 0.008928572
+        },
+        {
+          "word": "rebarbativo",
+          "weight": 0.008928572
+        },
+        {
+          "word": "rebelde",
+          "weight": 0.008928572
+        },
+        {
+          "word": "rejeitado",
+          "weight": 0.008928572
+        },
+        {
+          "word": "repimpado",
+          "weight": 0.008928572
+        },
+        {
+          "word": "ressabiado",
+          "weight": 0.008928572
+        },
+        {
+          "word": "rude",
+          "weight": 0.008928572
+        },
+        {
+          "word": "ríspido",
+          "weight": 0.008928572
+        },
+        {
+          "word": "saudoso",
+          "weight": 0.008928572
+        },
+        {
+          "word": "sensaborão",
+          "weight": 0.008928572
+        },
+        {
+          "word": "seringador",
+          "weight": 0.008928572
+        },
+        {
+          "word": "severo",
+          "weight": 0.008928572
+        },
+        {
+          "word": "sobrado",
+          "weight": 0.008928572
+        },
+        {
+          "word": "sorna",
+          "weight": 0.008928572
+        },
+        {
+          "word": "terrível",
+          "weight": 0.008928572
+        },
+        {
+          "word": "tiririca",
+          "weight": 0.008928572
+        },
+        {
+          "word": "toldado",
+          "weight": 0.008928572
+        },
+        {
+          "word": "torvado",
+          "weight": 0.008928572
+        },
+        {
+          "word": "trivial",
+          "weight": 0.008928572
+        },
+        {
+          "word": "unissonante",
+          "weight": 0.008928572
+        },
+        {
+          "word": "vadio",
+          "weight": 0.008928572
+        },
+        {
+          "word": "vaidoso",
+          "weight": 0.008928572
+        },
+        {
+          "word": "viscoso",
+          "weight": 0.008928572
+        },
+        {
+          "word": "xaroposo",
+          "weight": 0.008928572
+        },
+        {
+          "word": "zangado",
+          "weight": 0.008928572
+        },
+        {
+          "word": "áspero",
+          "weight": 0.008928572
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "clip21",
+      "resource_label": "clip21",
+      "synset_id": "17930",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "lógico",
+          "weight": 1.5833334
+        },
+        {
+          "word": "coerente",
+          "weight": 1.4166666
+        },
+        {
+          "word": "harmónico",
+          "weight": 1.1666666
+        },
+        {
+          "word": "proporcionado",
+          "weight": 1.0833334
+        },
+        {
+          "word": "consequente",
+          "weight": 0.9166667
+        },
+        {
+          "word": "proporcional",
+          "weight": 0.8333333
+        },
+        {
+          "word": "procedente",
+          "weight": 0.7692308
+        },
+        {
+          "word": "concludente",
+          "weight": 0.6923077
+        },
+        {
+          "word": "congruente",
+          "weight": 0.6923077
+        },
+        {
+          "word": "correspondente",
+          "weight": 0.6923077
+        },
+        {
+          "word": "producente",
+          "weight": 0.6666667
+        },
+        {
+          "word": "regular",
+          "weight": 0.53846157
+        },
+        {
+          "word": "simétrico",
+          "weight": 0.5
+        },
+        {
+          "word": "harmonioso",
+          "weight": 0.46153846
+        },
+        {
+          "word": "coeso",
+          "weight": 0.33333334
+        },
+        {
+          "word": "adequado",
+          "weight": 0.30769232
+        },
+        {
+          "word": "harmônico",
+          "weight": 0.30769232
+        },
+        {
+          "word": "coesivo",
+          "weight": 0.25
+        },
+        {
+          "word": "conseqüente",
+          "weight": 0.25
+        },
+        {
+          "word": "conexo",
+          "weight": 0.23076923
+        },
+        {
+          "word": "conforme",
+          "weight": 0.23076923
+        },
+        {
+          "word": "conseguinte",
+          "weight": 0.23076923
+        },
+        {
+          "word": "decorrente",
+          "weight": 0.23076923
+        },
+        {
+          "word": "resultante",
+          "weight": 0.23076923
+        },
+        {
+          "word": "logical",
+          "weight": 0.16666667
+        },
+        {
+          "word": "apropriado",
+          "weight": 0.15384616
+        },
+        {
+          "word": "bem-proporcionado",
+          "weight": 0.15384616
+        },
+        {
+          "word": "concorde",
+          "weight": 0.15384616
+        },
+        {
+          "word": "condizente",
+          "weight": 0.15384616
+        },
+        {
+          "word": "consentâneo",
+          "weight": 0.15384616
+        },
+        {
+          "word": "consistente",
+          "weight": 0.15384616
+        },
+        {
+          "word": "elegante",
+          "weight": 0.15384616
+        },
+        {
+          "word": "esbelto",
+          "weight": 0.15384616
+        },
+        {
+          "word": "natural",
+          "weight": 0.15384616
+        },
+        {
+          "word": "racional",
+          "weight": 0.15384616
+        },
+        {
+          "word": "relativo",
+          "weight": 0.15384616
+        },
+        {
+          "word": "tenaz",
+          "weight": 0.15384616
+        },
+        {
+          "word": "acorde",
+          "weight": 0.07692308
+        },
+        {
+          "word": "anexado",
+          "weight": 0.07692308
+        },
+        {
+          "word": "arrazoado",
+          "weight": 0.07692308
+        },
+        {
+          "word": "belo",
+          "weight": 0.07692308
+        },
+        {
+          "word": "claro",
+          "weight": 0.07692308
+        },
+        {
+          "word": "concomitante",
+          "weight": 0.07692308
+        },
+        {
+          "word": "concordante",
+          "weight": 0.07692308
+        },
+        {
+          "word": "consectário",
+          "weight": 0.07692308
+        },
+        {
+          "word": "consecutivo",
+          "weight": 0.07692308
+        },
+        {
+          "word": "constante",
+          "weight": 0.07692308
+        },
+        {
+          "word": "côngruo",
+          "weight": 0.07692308
+        },
+        {
+          "word": "cônsono",
+          "weight": 0.07692308
+        },
+        {
+          "word": "doado",
+          "weight": 0.07692308
+        },
+        {
+          "word": "justo",
+          "weight": 0.07692308
+        },
+        {
+          "word": "organizado",
+          "weight": 0.07692308
+        },
+        {
+          "word": "produtivo",
+          "weight": 0.07692308
+        },
+        {
+          "word": "rectilíneo",
+          "weight": 0.07692308
+        },
+        {
+          "word": "subsequente",
+          "weight": 0.07692308
+        },
+        {
+          "word": "unido",
+          "weight": 0.07692308
+        },
+        {
+          "word": "uniforme",
+          "weight": 0.07692308
+        },
+        {
+          "word": "óbvio",
+          "weight": 0.07692308
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "clip21",
+      "resource_label": "clip21",
+      "synset_id": "19004",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "contínuo",
+          "weight": 1.7954545
+        },
+        {
+          "word": "constante",
+          "weight": 1.7272727
+        },
+        {
+          "word": "ininterrupto",
+          "weight": 1.3181819
+        },
+        {
+          "word": "sucessivo",
+          "weight": 1.3181819
+        },
+        {
+          "word": "permanente",
+          "weight": 1.2727273
+        },
+        {
+          "word": "frequente",
+          "weight": 1.2272727
+        },
+        {
+          "word": "incessante",
+          "weight": 1.1363636
+        },
+        {
+          "word": "perpétuo",
+          "weight": 1.1363636
+        },
+        {
+          "word": "continuado",
+          "weight": 1.0454545
+        },
+        {
+          "word": "assíduo",
+          "weight": 1.0
+        },
+        {
+          "word": "seguido",
+          "weight": 0.97727275
+        },
+        {
+          "word": "perene",
+          "weight": 0.8888889
+        },
+        {
+          "word": "aturado",
+          "weight": 0.72727275
+        },
+        {
+          "word": "porfioso",
+          "weight": 0.7111111
+        },
+        {
+          "word": "incessável",
+          "weight": 0.6818182
+        },
+        {
+          "word": "ininterrompido",
+          "weight": 0.6818182
+        },
+        {
+          "word": "afio",
+          "weight": 0.65909094
+        },
+        {
+          "word": "consecutivo",
+          "weight": 0.6136364
+        },
+        {
+          "word": "estável",
+          "weight": 0.53333336
+        },
+        {
+          "word": "imutável",
+          "weight": 0.4318182
+        },
+        {
+          "word": "imudável",
+          "weight": 0.4090909
+        },
+        {
+          "word": "invariável",
+          "weight": 0.3409091
+        },
+        {
+          "word": "amiudado",
+          "weight": 0.3181818
+        },
+        {
+          "word": "repetido",
+          "weight": 0.3181818
+        },
+        {
+          "word": "manente",
+          "weight": 0.29545453
+        },
+        {
+          "word": "duradouro",
+          "weight": 0.26666668
+        },
+        {
+          "word": "imediato",
+          "weight": 0.26666668
+        },
+        {
+          "word": "jacente",
+          "weight": 0.25
+        },
+        {
+          "word": "conseguinte",
+          "weight": 0.20454545
+        },
+        {
+          "word": "subsecutivo",
+          "weight": 0.20454545
+        },
+        {
+          "word": "persistente",
+          "weight": 0.2
+        },
+        {
+          "word": "eterno",
+          "weight": 0.17777778
+        },
+        {
+          "word": "miúdo",
+          "weight": 0.17777778
+        },
+        {
+          "word": "vitalício",
+          "weight": 0.1590909
+        },
+        {
+          "word": "firme",
+          "weight": 0.15555556
+        },
+        {
+          "word": "inalterável",
+          "weight": 0.15555556
+        },
+        {
+          "word": "infindável",
+          "weight": 0.15555556
+        },
+        {
+          "word": "regular",
+          "weight": 0.15555556
+        },
+        {
+          "word": "crebro",
+          "weight": 0.13636364
+        },
+        {
+          "word": "periódico",
+          "weight": 0.13636364
+        },
+        {
+          "word": "permanecente",
+          "weight": 0.13636364
+        },
+        {
+          "word": "diligente",
+          "weight": 0.13333334
+        },
+        {
+          "word": "fiel",
+          "weight": 0.13333334
+        },
+        {
+          "word": "sempiterno",
+          "weight": 0.13333334
+        },
+        {
+          "word": "jazente",
+          "weight": 0.11363637
+        },
+        {
+          "word": "reiterado",
+          "weight": 0.11363637
+        },
+        {
+          "word": "sem paradas",
+          "weight": 0.11363637
+        },
+        {
+          "word": "aplicado",
+          "weight": 0.11111111
+        },
+        {
+          "word": "habitual",
+          "weight": 0.11111111
+        },
+        {
+          "word": "imóvel",
+          "weight": 0.11111111
+        },
+        {
+          "word": "ordinário",
+          "weight": 0.11111111
+        },
+        {
+          "word": "uniforme",
+          "weight": 0.11111111
+        },
+        {
+          "word": "usual",
+          "weight": 0.11111111
+        },
+        {
+          "word": "áfio",
+          "weight": 0.09090909
+        },
+        {
+          "word": "comum",
+          "weight": 0.08888889
+        },
+        {
+          "word": "consequente",
+          "weight": 0.08888889
+        },
+        {
+          "word": "consistente",
+          "weight": 0.08888889
+        },
+        {
+          "word": "duplicado",
+          "weight": 0.08888889
+        },
+        {
+          "word": "duradoiro",
+          "weight": 0.08888889
+        },
+        {
+          "word": "mencionado",
+          "weight": 0.08888889
+        },
+        {
+          "word": "perdurável",
+          "weight": 0.08888889
+        },
+        {
+          "word": "perenal",
+          "weight": 0.08888889
+        },
+        {
+          "word": "pontual",
+          "weight": 0.08888889
+        },
+        {
+          "word": "renovado",
+          "weight": 0.08888889
+        },
+        {
+          "word": "seguinte",
+          "weight": 0.08888889
+        },
+        {
+          "word": "usado",
+          "weight": 0.08888889
+        },
+        {
+          "word": "contino",
+          "weight": 0.06818182
+        },
+        {
+          "word": "redito",
+          "weight": 0.06818182
+        },
+        {
+          "word": "definitivo",
+          "weight": 0.06666667
+        },
+        {
+          "word": "esforçado",
+          "weight": 0.06666667
+        },
+        {
+          "word": "imanente",
+          "weight": 0.06666667
+        },
+        {
+          "word": "inabalável",
+          "weight": 0.06666667
+        },
+        {
+          "word": "interminável",
+          "weight": 0.06666667
+        },
+        {
+          "word": "irretratável",
+          "weight": 0.06666667
+        },
+        {
+          "word": "iterativo",
+          "weight": 0.06666667
+        },
+        {
+          "word": "monótono",
+          "weight": 0.06666667
+        },
+        {
+          "word": "perseverante",
+          "weight": 0.06666667
+        },
+        {
+          "word": "acontecedeiro",
+          "weight": 0.045454547
+        },
+        {
+          "word": "consignado",
+          "weight": 0.045454547
+        },
+        {
+          "word": "freqüente",
+          "weight": 0.045454547
+        },
+        {
+          "word": "inflexivo",
+          "weight": 0.045454547
+        },
+        {
+          "word": "invariante",
+          "weight": 0.045454547
+        },
+        {
+          "word": "jornal",
+          "weight": 0.045454547
+        },
+        {
+          "word": "periodico",
+          "weight": 0.045454547
+        },
+        {
+          "word": "por toda vida",
+          "weight": 0.045454547
+        },
+        {
+          "word": "sequencial",
+          "weight": 0.045454547
+        },
+        {
+          "word": "acostumado",
+          "weight": 0.044444446
+        },
+        {
+          "word": "adotado",
+          "weight": 0.044444446
+        },
+        {
+          "word": "atento",
+          "weight": 0.044444446
+        },
+        {
+          "word": "atilado",
+          "weight": 0.044444446
+        },
+        {
+          "word": "cadimo",
+          "weight": 0.044444446
+        },
+        {
+          "word": "consueto",
+          "weight": 0.044444446
+        },
+        {
+          "word": "consuetudinário",
+          "weight": 0.044444446
+        },
+        {
+          "word": "correntio",
+          "weight": 0.044444446
+        },
+        {
+          "word": "costumado",
+          "weight": 0.044444446
+        },
+        {
+          "word": "costumeiro",
+          "weight": 0.044444446
+        },
+        {
+          "word": "costumário",
+          "weight": 0.044444446
+        },
+        {
+          "word": "durador",
+          "weight": 0.044444446
+        },
+        {
+          "word": "durável",
+          "weight": 0.044444446
+        },
+        {
+          "word": "escrito",
+          "weight": 0.044444446
+        },
+        {
+          "word": "escrupuloso",
+          "weight": 0.044444446
+        },
+        {
+          "word": "exato",
+          "weight": 0.044444446
+        },
+        {
+          "word": "futuro",
+          "weight": 0.044444446
+        },
+        {
+          "word": "incansável",
+          "weight": 0.044444446
+        },
+        {
+          "word": "irretractável",
+          "weight": 0.044444446
+        },
+        {
+          "word": "irrevogável",
+          "weight": 0.044444446
+        },
+        {
+          "word": "metódico",
+          "weight": 0.044444446
+        },
+        {
+          "word": "ordenado",
+          "weight": 0.044444446
+        },
+        {
+          "word": "pertinaz",
+          "weight": 0.044444446
+        },
+        {
+          "word": "religioso",
+          "weight": 0.044444446
+        },
+        {
+          "word": "rente",
+          "weight": 0.044444446
+        },
+        {
+          "word": "resultante",
+          "weight": 0.044444446
+        },
+        {
+          "word": "rotineiro",
+          "weight": 0.044444446
+        },
+        {
+          "word": "rítmico",
+          "weight": 0.044444446
+        },
+        {
+          "word": "sólito",
+          "weight": 0.044444446
+        },
+        {
+          "word": "tenaz",
+          "weight": 0.044444446
+        },
+        {
+          "word": "vulgar",
+          "weight": 0.044444446
+        },
+        {
+          "word": "acompanhado",
+          "weight": 0.022222223
+        },
+        {
+          "word": "activo",
+          "weight": 0.022222223
+        },
+        {
+          "word": "adamantino",
+          "weight": 0.022222223
+        },
+        {
+          "word": "adoptado",
+          "weight": 0.022222223
+        },
+        {
+          "word": "alterno",
+          "weight": 0.022222223
+        },
+        {
+          "word": "ativo",
+          "weight": 0.022222223
+        },
+        {
+          "word": "coerente",
+          "weight": 0.022222223
+        },
+        {
+          "word": "crónico",
+          "weight": 0.022222223
+        },
+        {
+          "word": "cíclico",
+          "weight": 0.022222223
+        },
+        {
+          "word": "deitado",
+          "weight": 0.022222223
+        },
+        {
+          "word": "durativo",
+          "weight": 0.022222223
+        },
+        {
+          "word": "efectivo",
+          "weight": 0.022222223
+        },
+        {
+          "word": "escolhido",
+          "weight": 0.022222223
+        },
+        {
+          "word": "estendido",
+          "weight": 0.022222223
+        },
+        {
+          "word": "estereotipado",
+          "weight": 0.022222223
+        },
+        {
+          "word": "eterna",
+          "weight": 0.022222223
+        },
+        {
+          "word": "eternas",
+          "weight": 0.022222223
+        },
+        {
+          "word": "eternos",
+          "weight": 0.022222223
+        },
+        {
+          "word": "fixo",
+          "weight": 0.022222223
+        },
+        {
+          "word": "frequentado",
+          "weight": 0.022222223
+        },
+        {
+          "word": "hereditário",
+          "weight": 0.022222223
+        },
+        {
+          "word": "homogéneo",
+          "weight": 0.022222223
+        },
+        {
+          "word": "imperecível",
+          "weight": 0.022222223
+        },
+        {
+          "word": "inamovível",
+          "weight": 0.022222223
+        },
+        {
+          "word": "inextinguível",
+          "weight": 0.022222223
+        },
+        {
+          "word": "infinita",
+          "weight": 0.022222223
+        },
+        {
+          "word": "infinito",
+          "weight": 0.022222223
+        },
+        {
+          "word": "intemporal",
+          "weight": 0.022222223
+        },
+        {
+          "word": "intermitente",
+          "weight": 0.022222223
+        },
+        {
+          "word": "laborioso",
+          "weight": 0.022222223
+        },
+        {
+          "word": "localizado",
+          "weight": 0.022222223
+        },
+        {
+          "word": "matraqueado",
+          "weight": 0.022222223
+        },
+        {
+          "word": "normal",
+          "weight": 0.022222223
+        },
+        {
+          "word": "novo",
+          "weight": 0.022222223
+        },
+        {
+          "word": "nutrido",
+          "weight": 0.022222223
+        },
+        {
+          "word": "ocasional",
+          "weight": 0.022222223
+        },
+        {
+          "word": "operoso",
+          "weight": 0.022222223
+        },
+        {
+          "word": "pegado",
+          "weight": 0.022222223
+        },
+        {
+          "word": "porfiado",
+          "weight": 0.022222223
+        },
+        {
+          "word": "próximo",
+          "weight": 0.022222223
+        },
+        {
+          "word": "recalcado",
+          "weight": 0.022222223
+        },
+        {
+          "word": "revezado",
+          "weight": 0.022222223
+        },
+        {
+          "word": "sazonal",
+          "weight": 0.022222223
+        },
+        {
+          "word": "seguro",
+          "weight": 0.022222223
+        },
+        {
+          "word": "sem idade",
+          "weight": 0.022222223
+        },
+        {
+          "word": "sistemático",
+          "weight": 0.022222223
+        },
+        {
+          "word": "situado",
+          "weight": 0.022222223
+        },
+        {
+          "word": "sucedido",
+          "weight": 0.022222223
+        },
+        {
+          "word": "sínoco",
+          "weight": 0.022222223
+        },
+        {
+          "word": "trabalhador",
+          "weight": 0.022222223
+        },
+        {
+          "word": "trilhado",
+          "weight": 0.022222223
+        },
+        {
+          "word": "ulterior",
+          "weight": 0.022222223
+        },
+        {
+          "word": "unânime",
+          "weight": 0.022222223
+        },
+        {
+          "word": "vital",
+          "weight": 0.022222223
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "clip21",
+      "resource_label": "clip21",
+      "synset_id": "19228",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "ordenado",
+          "weight": 1.2857143
+        },
+        {
+          "word": "sistemático",
+          "weight": 1.1428572
+        },
+        {
+          "word": "metódico",
+          "weight": 1.0714285
+        },
+        {
+          "word": "metodizado",
+          "weight": 0.64285713
+        },
+        {
+          "word": "sistêmico",
+          "weight": 0.64285713
+        },
+        {
+          "word": "prescrito",
+          "weight": 0.42857143
+        },
+        {
+          "word": "regular",
+          "weight": 0.4
+        },
+        {
+          "word": "constante",
+          "weight": 0.33333334
+        },
+        {
+          "word": "arranjadeiro",
+          "weight": 0.26666668
+        },
+        {
+          "word": "uniforme",
+          "weight": 0.26666668
+        },
+        {
+          "word": "receitado",
+          "weight": 0.21428572
+        },
+        {
+          "word": "sistémico",
+          "weight": 0.21428572
+        },
+        {
+          "word": "taxonômico",
+          "weight": 0.21428572
+        },
+        {
+          "word": "arrumado",
+          "weight": 0.2
+        },
+        {
+          "word": "mandado",
+          "weight": 0.2
+        },
+        {
+          "word": "organizado",
+          "weight": 0.2
+        },
+        {
+          "word": "pautado",
+          "weight": 0.2
+        },
+        {
+          "word": "ditado",
+          "weight": 0.14285715
+        },
+        {
+          "word": "imperado",
+          "weight": 0.14285715
+        },
+        {
+          "word": "metódica",
+          "weight": 0.14285715
+        },
+        {
+          "word": "prescripto",
+          "weight": 0.14285715
+        },
+        {
+          "word": "taxeonômico",
+          "weight": 0.14285715
+        },
+        {
+          "word": "acomodado",
+          "weight": 0.13333334
+        },
+        {
+          "word": "acondicionado",
+          "weight": 0.13333334
+        },
+        {
+          "word": "ajeitado",
+          "weight": 0.13333334
+        },
+        {
+          "word": "amanhado",
+          "weight": 0.13333334
+        },
+        {
+          "word": "arranjado",
+          "weight": 0.13333334
+        },
+        {
+          "word": "caduco",
+          "weight": 0.13333334
+        },
+        {
+          "word": "cuidadoso",
+          "weight": 0.13333334
+        },
+        {
+          "word": "cuidoso",
+          "weight": 0.13333334
+        },
+        {
+          "word": "nulo",
+          "weight": 0.13333334
+        },
+        {
+          "word": "ordeiro",
+          "weight": 0.13333334
+        },
+        {
+          "word": "regrado",
+          "weight": 0.13333334
+        },
+        {
+          "word": "sensato",
+          "weight": 0.13333334
+        },
+        {
+          "word": "comedido",
+          "weight": 0.06666667
+        },
+        {
+          "word": "composto",
+          "weight": 0.06666667
+        },
+        {
+          "word": "determinado",
+          "weight": 0.06666667
+        },
+        {
+          "word": "disposto",
+          "weight": 0.06666667
+        },
+        {
+          "word": "generalizado",
+          "weight": 0.06666667
+        },
+        {
+          "word": "inspirado",
+          "weight": 0.06666667
+        },
+        {
+          "word": "pontual",
+          "weight": 0.06666667
+        },
+        {
+          "word": "sugerido",
+          "weight": 0.06666667
+        },
+        {
+          "word": "sério",
+          "weight": 0.06666667
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "clip21",
+      "resource_label": "clip21",
+      "synset_id": "19272",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "mediano",
+          "weight": 2.6363637
+        },
+        {
+          "word": "médio",
+          "weight": 2.4545455
+        },
+        {
+          "word": "meão",
+          "weight": 2.3636363
+        },
+        {
+          "word": "regular",
+          "weight": 1.7272727
+        },
+        {
+          "word": "medíocre",
+          "weight": 1.2727273
+        },
+        {
+          "word": "medial",
+          "weight": 1.1818181
+        },
+        {
+          "word": "uniforme",
+          "weight": 1.0909091
+        },
+        {
+          "word": "central",
+          "weight": 1.0
+        },
+        {
+          "word": "ordinário",
+          "weight": 1.0
+        },
+        {
+          "word": "meio",
+          "weight": 0.8181818
+        },
+        {
+          "word": "normal",
+          "weight": 0.5833333
+        },
+        {
+          "word": "constante",
+          "weight": 0.41666666
+        },
+        {
+          "word": "igual",
+          "weight": 0.41666666
+        },
+        {
+          "word": "metódico",
+          "weight": 0.41666666
+        },
+        {
+          "word": "monótono",
+          "weight": 0.41666666
+        },
+        {
+          "word": "fraco",
+          "weight": 0.33333334
+        },
+        {
+          "word": "moderado",
+          "weight": 0.33333334
+        },
+        {
+          "word": "ordenado",
+          "weight": 0.33333334
+        },
+        {
+          "word": "vulgar",
+          "weight": 0.33333334
+        },
+        {
+          "word": "homótono",
+          "weight": 0.27272728
+        },
+        {
+          "word": "unímodo",
+          "weight": 0.27272728
+        },
+        {
+          "word": "corrente",
+          "weight": 0.25
+        },
+        {
+          "word": "harmonioso",
+          "weight": 0.25
+        },
+        {
+          "word": "harmónico",
+          "weight": 0.25
+        },
+        {
+          "word": "idêntico",
+          "weight": 0.25
+        },
+        {
+          "word": "insignificante",
+          "weight": 0.25
+        },
+        {
+          "word": "invariável",
+          "weight": 0.25
+        },
+        {
+          "word": "mesquinho",
+          "weight": 0.25
+        },
+        {
+          "word": "proporcionado",
+          "weight": 0.25
+        },
+        {
+          "word": "razoável",
+          "weight": 0.25
+        },
+        {
+          "word": "metade",
+          "weight": 0.18181819
+        },
+        {
+          "word": "comum",
+          "weight": 0.16666667
+        },
+        {
+          "word": "frequente",
+          "weight": 0.16666667
+        },
+        {
+          "word": "habitual",
+          "weight": 0.16666667
+        },
+        {
+          "word": "harmônico",
+          "weight": 0.16666667
+        },
+        {
+          "word": "homogéneo",
+          "weight": 0.16666667
+        },
+        {
+          "word": "humilde",
+          "weight": 0.16666667
+        },
+        {
+          "word": "intermédio",
+          "weight": 0.16666667
+        },
+        {
+          "word": "meridiano",
+          "weight": 0.16666667
+        },
+        {
+          "word": "periódico",
+          "weight": 0.16666667
+        },
+        {
+          "word": "satisfatório",
+          "weight": 0.16666667
+        },
+        {
+          "word": "sofrível",
+          "weight": 0.16666667
+        },
+        {
+          "word": "suficiente",
+          "weight": 0.16666667
+        },
+        {
+          "word": "trivial",
+          "weight": 0.16666667
+        },
+        {
+          "word": "coerente",
+          "weight": 0.083333336
+        },
+        {
+          "word": "entrefino",
+          "weight": 0.083333336
+        },
+        {
+          "word": "equável",
+          "weight": 0.083333336
+        },
+        {
+          "word": "estável",
+          "weight": 0.083333336
+        },
+        {
+          "word": "exacto",
+          "weight": 0.083333336
+        },
+        {
+          "word": "indiferente",
+          "weight": 0.083333336
+        },
+        {
+          "word": "infeliz",
+          "weight": 0.083333336
+        },
+        {
+          "word": "intermediário",
+          "weight": 0.083333336
+        },
+        {
+          "word": "interno",
+          "weight": 0.083333336
+        },
+        {
+          "word": "interposto",
+          "weight": 0.083333336
+        },
+        {
+          "word": "legal",
+          "weight": 0.083333336
+        },
+        {
+          "word": "magro",
+          "weight": 0.083333336
+        },
+        {
+          "word": "modesto",
+          "weight": 0.083333336
+        },
+        {
+          "word": "média",
+          "weight": 0.083333336
+        },
+        {
+          "word": "natural",
+          "weight": 0.083333336
+        },
+        {
+          "word": "pautado",
+          "weight": 0.083333336
+        },
+        {
+          "word": "pendular",
+          "weight": 0.083333336
+        },
+        {
+          "word": "pobre",
+          "weight": 0.083333336
+        },
+        {
+          "word": "pontual",
+          "weight": 0.083333336
+        },
+        {
+          "word": "proporcional",
+          "weight": 0.083333336
+        },
+        {
+          "word": "rastejante",
+          "weight": 0.083333336
+        },
+        {
+          "word": "regrado",
+          "weight": 0.083333336
+        },
+        {
+          "word": "semelhante",
+          "weight": 0.083333336
+        },
+        {
+          "word": "sistemático",
+          "weight": 0.083333336
+        },
+        {
+          "word": "standard",
+          "weight": 0.083333336
+        },
+        {
+          "word": "usual",
+          "weight": 0.083333336
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "clip21",
+      "resource_label": "clip21",
+      "synset_id": "19790",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "justo",
+          "weight": 2.2857144
+        },
+        {
+          "word": "imparcial",
+          "weight": 1.4285715
+        },
+        {
+          "word": "equitativo",
+          "weight": 1.3571428
+        },
+        {
+          "word": "merecido",
+          "weight": 1.0
+        },
+        {
+          "word": "reto",
+          "weight": 1.0
+        },
+        {
+          "word": "recto",
+          "weight": 0.93333334
+        },
+        {
+          "word": "equânime",
+          "weight": 0.85714287
+        },
+        {
+          "word": "íntegro",
+          "weight": 0.8
+        },
+        {
+          "word": "devido",
+          "weight": 0.78571427
+        },
+        {
+          "word": "equânimo",
+          "weight": 0.78571427
+        },
+        {
+          "word": "justiceiro",
+          "weight": 0.6666667
+        },
+        {
+          "word": "condigno",
+          "weight": 0.64285713
+        },
+        {
+          "word": "ajustado",
+          "weight": 0.53333336
+        },
+        {
+          "word": "cabido",
+          "weight": 0.53333336
+        },
+        {
+          "word": "apertado",
+          "weight": 0.4
+        },
+        {
+          "word": "legítimo",
+          "weight": 0.4
+        },
+        {
+          "word": "neutral",
+          "weight": 0.33333334
+        },
+        {
+          "word": "neutro",
+          "weight": 0.33333334
+        },
+        {
+          "word": "distributivo",
+          "weight": 0.2857143
+        },
+        {
+          "word": "équo",
+          "weight": 0.2857143
+        },
+        {
+          "word": "desinteressado",
+          "weight": 0.26666668
+        },
+        {
+          "word": "equilibrado",
+          "weight": 0.26666668
+        },
+        {
+          "word": "estreito",
+          "weight": 0.26666668
+        },
+        {
+          "word": "isento",
+          "weight": 0.26666668
+        },
+        {
+          "word": "preciso",
+          "weight": 0.26666668
+        },
+        {
+          "word": "equável",
+          "weight": 0.21428572
+        },
+        {
+          "word": "segregativo",
+          "weight": 0.21428572
+        },
+        {
+          "word": "certo",
+          "weight": 0.2
+        },
+        {
+          "word": "exacto",
+          "weight": 0.2
+        },
+        {
+          "word": "exato",
+          "weight": 0.2
+        },
+        {
+          "word": "razoável",
+          "weight": 0.2
+        },
+        {
+          "word": "partitivo",
+          "weight": 0.14285715
+        },
+        {
+          "word": "santoral",
+          "weight": 0.14285715
+        },
+        {
+          "word": "afinado",
+          "weight": 0.13333334
+        },
+        {
+          "word": "colante",
+          "weight": 0.13333334
+        },
+        {
+          "word": "desapaixonado",
+          "weight": 0.13333334
+        },
+        {
+          "word": "direito",
+          "weight": 0.13333334
+        },
+        {
+          "word": "indiferente",
+          "weight": 0.13333334
+        },
+        {
+          "word": "insuspeito",
+          "weight": 0.13333334
+        },
+        {
+          "word": "probo",
+          "weight": 0.13333334
+        },
+        {
+          "word": "rectificado",
+          "weight": 0.13333334
+        },
+        {
+          "word": "são",
+          "weight": 0.13333334
+        },
+        {
+          "word": "acurado",
+          "weight": 0.06666667
+        },
+        {
+          "word": "adequado",
+          "weight": 0.06666667
+        },
+        {
+          "word": "apropriado",
+          "weight": 0.06666667
+        },
+        {
+          "word": "bom",
+          "weight": 0.06666667
+        },
+        {
+          "word": "cingido",
+          "weight": 0.06666667
+        },
+        {
+          "word": "competente",
+          "weight": 0.06666667
+        },
+        {
+          "word": "correto",
+          "weight": 0.06666667
+        },
+        {
+          "word": "esguio",
+          "weight": 0.06666667
+        },
+        {
+          "word": "esquipado",
+          "weight": 0.06666667
+        },
+        {
+          "word": "fundado",
+          "weight": 0.06666667
+        },
+        {
+          "word": "igual",
+          "weight": 0.06666667
+        },
+        {
+          "word": "impessoal",
+          "weight": 0.06666667
+        },
+        {
+          "word": "indispensável",
+          "weight": 0.06666667
+        },
+        {
+          "word": "inexorável",
+          "weight": 0.06666667
+        },
+        {
+          "word": "justificado",
+          "weight": 0.06666667
+        },
+        {
+          "word": "legal",
+          "weight": 0.06666667
+        },
+        {
+          "word": "lógico",
+          "weight": 0.06666667
+        },
+        {
+          "word": "necessário",
+          "weight": 0.06666667
+        },
+        {
+          "word": "obrigatório",
+          "weight": 0.06666667
+        },
+        {
+          "word": "respectivo",
+          "weight": 0.06666667
+        },
+        {
+          "word": "salutar",
+          "weight": 0.06666667
+        },
+        {
+          "word": "uniforme",
+          "weight": 0.06666667
+        },
+        {
+          "word": "verdadeiro",
+          "weight": 0.06666667
+        },
+        {
+          "word": "válido",
+          "weight": 0.06666667
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "contopt",
+      "resource_label": "contopt",
+      "synset_id": "9180",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "farda",
+          "weight": 2.8333333
+        },
+        {
+          "word": "fardamento",
+          "weight": 2.1666667
+        },
+        {
+          "word": "uniforme",
+          "weight": 2.0
+        },
+        {
+          "word": "fardamenta",
+          "weight": 0.6666667
+        },
+        {
+          "word": "libré",
+          "weight": 0.6666667
+        },
+        {
+          "word": "libreia",
+          "weight": 0.33333334
+        },
+        {
+          "word": "aparência",
+          "weight": 0.14285715
+        },
+        {
+          "word": "roupa",
+          "weight": 0.14285715
+        },
+        {
+          "word": "vestuário",
+          "weight": 0.14285715
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "contopt",
+      "resource_label": "contopt",
+      "synset_id": "9502",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "ordenado",
+          "weight": 1.2857143
+        },
+        {
+          "word": "sistemático",
+          "weight": 1.1428572
+        },
+        {
+          "word": "metódico",
+          "weight": 1.0714285
+        },
+        {
+          "word": "metodizado",
+          "weight": 0.64285713
+        },
+        {
+          "word": "sistêmico",
+          "weight": 0.64285713
+        },
+        {
+          "word": "prescrito",
+          "weight": 0.42857143
+        },
+        {
+          "word": "regular",
+          "weight": 0.4
+        },
+        {
+          "word": "constante",
+          "weight": 0.33333334
+        },
+        {
+          "word": "arranjadeiro",
+          "weight": 0.26666668
+        },
+        {
+          "word": "uniforme",
+          "weight": 0.26666668
+        },
+        {
+          "word": "receitado",
+          "weight": 0.21428572
+        },
+        {
+          "word": "sistémico",
+          "weight": 0.21428572
+        },
+        {
+          "word": "taxonômico",
+          "weight": 0.21428572
+        },
+        {
+          "word": "arrumado",
+          "weight": 0.2
+        },
+        {
+          "word": "mandado",
+          "weight": 0.2
+        },
+        {
+          "word": "organizado",
+          "weight": 0.2
+        },
+        {
+          "word": "pautado",
+          "weight": 0.2
+        },
+        {
+          "word": "ditado",
+          "weight": 0.14285715
+        },
+        {
+          "word": "imperado",
+          "weight": 0.14285715
+        },
+        {
+          "word": "metódica",
+          "weight": 0.14285715
+        },
+        {
+          "word": "prescripto",
+          "weight": 0.14285715
+        },
+        {
+          "word": "taxeonômico",
+          "weight": 0.14285715
+        },
+        {
+          "word": "acomodado",
+          "weight": 0.13333334
+        },
+        {
+          "word": "acondicionado",
+          "weight": 0.13333334
+        },
+        {
+          "word": "ajeitado",
+          "weight": 0.13333334
+        },
+        {
+          "word": "amanhado",
+          "weight": 0.13333334
+        },
+        {
+          "word": "arranjado",
+          "weight": 0.13333334
+        },
+        {
+          "word": "caduco",
+          "weight": 0.13333334
+        },
+        {
+          "word": "cuidadoso",
+          "weight": 0.13333334
+        },
+        {
+          "word": "cuidoso",
+          "weight": 0.13333334
+        },
+        {
+          "word": "nulo",
+          "weight": 0.13333334
+        },
+        {
+          "word": "ordeiro",
+          "weight": 0.13333334
+        },
+        {
+          "word": "regrado",
+          "weight": 0.13333334
+        },
+        {
+          "word": "sensato",
+          "weight": 0.13333334
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "contopt",
+      "resource_label": "contopt",
+      "synset_id": "15361",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "mediano",
+          "weight": 2.6363637
+        },
+        {
+          "word": "médio",
+          "weight": 2.4545455
+        },
+        {
+          "word": "meão",
+          "weight": 2.3636363
+        },
+        {
+          "word": "regular",
+          "weight": 1.7272727
+        },
+        {
+          "word": "medíocre",
+          "weight": 1.2727273
+        },
+        {
+          "word": "medial",
+          "weight": 1.1818181
+        },
+        {
+          "word": "uniforme",
+          "weight": 1.0909091
+        },
+        {
+          "word": "central",
+          "weight": 1.0
+        },
+        {
+          "word": "ordinário",
+          "weight": 1.0
+        },
+        {
+          "word": "meio",
+          "weight": 0.8181818
+        },
+        {
+          "word": "normal",
+          "weight": 0.5833333
+        },
+        {
+          "word": "constante",
+          "weight": 0.41666666
+        },
+        {
+          "word": "igual",
+          "weight": 0.41666666
+        },
+        {
+          "word": "metódico",
+          "weight": 0.41666666
+        },
+        {
+          "word": "monótono",
+          "weight": 0.41666666
+        },
+        {
+          "word": "fraco",
+          "weight": 0.33333334
+        },
+        {
+          "word": "moderado",
+          "weight": 0.33333334
+        },
+        {
+          "word": "ordenado",
+          "weight": 0.33333334
+        },
+        {
+          "word": "vulgar",
+          "weight": 0.33333334
+        },
+        {
+          "word": "homótono",
+          "weight": 0.27272728
+        },
+        {
+          "word": "unímodo",
+          "weight": 0.27272728
+        },
+        {
+          "word": "corrente",
+          "weight": 0.25
+        },
+        {
+          "word": "harmonioso",
+          "weight": 0.25
+        },
+        {
+          "word": "harmónico",
+          "weight": 0.25
+        },
+        {
+          "word": "idêntico",
+          "weight": 0.25
+        },
+        {
+          "word": "insignificante",
+          "weight": 0.25
+        },
+        {
+          "word": "invariável",
+          "weight": 0.25
+        },
+        {
+          "word": "mesquinho",
+          "weight": 0.25
+        },
+        {
+          "word": "proporcionado",
+          "weight": 0.25
+        },
+        {
+          "word": "razoável",
+          "weight": 0.25
+        },
+        {
+          "word": "metade",
+          "weight": 0.18181819
+        },
+        {
+          "word": "comum",
+          "weight": 0.16666667
+        },
+        {
+          "word": "frequente",
+          "weight": 0.16666667
+        },
+        {
+          "word": "habitual",
+          "weight": 0.16666667
+        },
+        {
+          "word": "harmônico",
+          "weight": 0.16666667
+        },
+        {
+          "word": "homogéneo",
+          "weight": 0.16666667
+        },
+        {
+          "word": "humilde",
+          "weight": 0.16666667
+        },
+        {
+          "word": "intermédio",
+          "weight": 0.16666667
+        },
+        {
+          "word": "meridiano",
+          "weight": 0.16666667
+        },
+        {
+          "word": "periódico",
+          "weight": 0.16666667
+        },
+        {
+          "word": "satisfatório",
+          "weight": 0.16666667
+        },
+        {
+          "word": "sofrível",
+          "weight": 0.16666667
+        },
+        {
+          "word": "suficiente",
+          "weight": 0.16666667
+        },
+        {
+          "word": "trivial",
+          "weight": 0.16666667
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "contopt",
+      "resource_label": "contopt",
+      "synset_id": "16491",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "semelhante",
+          "weight": 1.6393442
+        },
+        {
+          "word": "idêntico",
+          "weight": 1.0819672
+        },
+        {
+          "word": "análogo",
+          "weight": 0.9836066
+        },
+        {
+          "word": "igual",
+          "weight": 0.852459
+        },
+        {
+          "word": "conforme",
+          "weight": 0.75409836
+        },
+        {
+          "word": "afim",
+          "weight": 0.704918
+        },
+        {
+          "word": "parecido",
+          "weight": 0.6721311
+        },
+        {
+          "word": "comparável",
+          "weight": 0.55737704
+        },
+        {
+          "word": "congênere",
+          "weight": 0.5081967
+        },
+        {
+          "word": "parecente",
+          "weight": 0.5081967
+        },
+        {
+          "word": "cômpar",
+          "weight": 0.4918033
+        },
+        {
+          "word": "mesmo",
+          "weight": 0.4918033
+        },
+        {
+          "word": "paralelo",
+          "weight": 0.4918033
+        },
+        {
+          "word": "aparente",
+          "weight": 0.46774194
+        },
+        {
+          "word": "convizinho",
+          "weight": 0.46774194
+        },
+        {
+          "word": "símile",
+          "weight": 0.45901638
+        },
+        {
+          "word": "assemelhado",
+          "weight": 0.44262296
+        },
+        {
+          "word": "par",
+          "weight": 0.32786885
+        },
+        {
+          "word": "parelho",
+          "weight": 0.29508197
+        },
+        {
+          "word": "equivalente",
+          "weight": 0.26229507
+        },
+        {
+          "word": "congénere",
+          "weight": 0.24590164
+        },
+        {
+          "word": "parceiro",
+          "weight": 0.24590164
+        },
+        {
+          "word": "similar",
+          "weight": 0.24590164
+        },
+        {
+          "word": "tal",
+          "weight": 0.16393442
+        },
+        {
+          "word": "correspondente",
+          "weight": 0.16129032
+        },
+        {
+          "word": "uniforme",
+          "weight": 0.16129032
+        },
+        {
+          "word": "vizinho",
+          "weight": 0.12903225
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "contopt",
+      "resource_label": "contopt",
+      "synset_id": "28395",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "contínuo",
+          "weight": 1.7954545
+        },
+        {
+          "word": "constante",
+          "weight": 1.7272727
+        },
+        {
+          "word": "ininterrupto",
+          "weight": 1.3181819
+        },
+        {
+          "word": "sucessivo",
+          "weight": 1.3181819
+        },
+        {
+          "word": "permanente",
+          "weight": 1.2727273
+        },
+        {
+          "word": "frequente",
+          "weight": 1.2272727
+        },
+        {
+          "word": "incessante",
+          "weight": 1.1363636
+        },
+        {
+          "word": "perpétuo",
+          "weight": 1.1363636
+        },
+        {
+          "word": "continuado",
+          "weight": 1.0454545
+        },
+        {
+          "word": "assíduo",
+          "weight": 1.0
+        },
+        {
+          "word": "seguido",
+          "weight": 0.97727275
+        },
+        {
+          "word": "perene",
+          "weight": 0.8888889
+        },
+        {
+          "word": "aturado",
+          "weight": 0.72727275
+        },
+        {
+          "word": "porfioso",
+          "weight": 0.7111111
+        },
+        {
+          "word": "incessável",
+          "weight": 0.6818182
+        },
+        {
+          "word": "ininterrompido",
+          "weight": 0.6818182
+        },
+        {
+          "word": "afio",
+          "weight": 0.65909094
+        },
+        {
+          "word": "consecutivo",
+          "weight": 0.6136364
+        },
+        {
+          "word": "estável",
+          "weight": 0.53333336
+        },
+        {
+          "word": "imutável",
+          "weight": 0.4318182
+        },
+        {
+          "word": "imudável",
+          "weight": 0.4090909
+        },
+        {
+          "word": "invariável",
+          "weight": 0.3409091
+        },
+        {
+          "word": "amiudado",
+          "weight": 0.3181818
+        },
+        {
+          "word": "repetido",
+          "weight": 0.3181818
+        },
+        {
+          "word": "manente",
+          "weight": 0.29545453
+        },
+        {
+          "word": "duradouro",
+          "weight": 0.26666668
+        },
+        {
+          "word": "imediato",
+          "weight": 0.26666668
+        },
+        {
+          "word": "jacente",
+          "weight": 0.25
+        },
+        {
+          "word": "conseguinte",
+          "weight": 0.20454545
+        },
+        {
+          "word": "subsecutivo",
+          "weight": 0.20454545
+        },
+        {
+          "word": "persistente",
+          "weight": 0.2
+        },
+        {
+          "word": "eterno",
+          "weight": 0.17777778
+        },
+        {
+          "word": "miúdo",
+          "weight": 0.17777778
+        },
+        {
+          "word": "vitalício",
+          "weight": 0.1590909
+        },
+        {
+          "word": "firme",
+          "weight": 0.15555556
+        },
+        {
+          "word": "inalterável",
+          "weight": 0.15555556
+        },
+        {
+          "word": "infindável",
+          "weight": 0.15555556
+        },
+        {
+          "word": "regular",
+          "weight": 0.15555556
+        },
+        {
+          "word": "crebro",
+          "weight": 0.13636364
+        },
+        {
+          "word": "periódico",
+          "weight": 0.13636364
+        },
+        {
+          "word": "permanecente",
+          "weight": 0.13636364
+        },
+        {
+          "word": "diligente",
+          "weight": 0.13333334
+        },
+        {
+          "word": "fiel",
+          "weight": 0.13333334
+        },
+        {
+          "word": "sempiterno",
+          "weight": 0.13333334
+        },
+        {
+          "word": "jazente",
+          "weight": 0.11363637
+        },
+        {
+          "word": "reiterado",
+          "weight": 0.11363637
+        },
+        {
+          "word": "sem paradas",
+          "weight": 0.11363637
+        },
+        {
+          "word": "aplicado",
+          "weight": 0.11111111
+        },
+        {
+          "word": "habitual",
+          "weight": 0.11111111
+        },
+        {
+          "word": "imóvel",
+          "weight": 0.11111111
+        },
+        {
+          "word": "ordinário",
+          "weight": 0.11111111
+        },
+        {
+          "word": "uniforme",
+          "weight": 0.11111111
+        },
+        {
+          "word": "usual",
+          "weight": 0.11111111
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "fuzzythes",
+      "resource_label": "fuzzythes",
+      "synset_id": "1661",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "libré",
+          "weight": 0.44244015
+        },
+        {
+          "word": "libreia",
+          "weight": 0.33844703
+        },
+        {
+          "word": "farda",
+          "weight": 0.115626045
+        },
+        {
+          "word": "uniforme",
+          "weight": 0.039645076
+        },
+        {
+          "word": "fardamento",
+          "weight": 0.028420426
+        },
+        {
+          "word": "aparência",
+          "weight": 0.01365833
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "fuzzythes",
+      "resource_label": "fuzzythes",
+      "synset_id": "1920",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "toilette",
+          "weight": 0.9939697
+        },
+        {
+          "word": "vestuário",
+          "weight": 0.25824624
+        },
+        {
+          "word": "fardamenta",
+          "weight": 0.18306687
+        },
+        {
+          "word": "roupa",
+          "weight": 0.1655168
+        },
+        {
+          "word": "trajo",
+          "weight": 0.15486479
+        },
+        {
+          "word": "trajar",
+          "weight": 0.15438437
+        },
+        {
+          "word": "vestido",
+          "weight": 0.14645523
+        },
+        {
+          "word": "indumentária",
+          "weight": 0.14365917
+        },
+        {
+          "word": "vestidura",
+          "weight": 0.14306915
+        },
+        {
+          "word": "induto",
+          "weight": 0.14255999
+        },
+        {
+          "word": "veste",
+          "weight": 0.1272749
+        },
+        {
+          "word": "traje",
+          "weight": 0.11449358
+        },
+        {
+          "word": "indumento",
+          "weight": 0.111129425
+        },
+        {
+          "word": "fatiota",
+          "weight": 0.11043106
+        },
+        {
+          "word": "vestimenta",
+          "weight": 0.109476745
+        },
+        {
+          "word": "fato",
+          "weight": 0.08635545
+        },
+        {
+          "word": "fardamento",
+          "weight": 0.0754409
+        },
+        {
+          "word": "farpela",
+          "weight": 0.05268107
+        },
+        {
+          "word": "uniforme",
+          "weight": 0.031972818
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "fuzzythes",
+      "resource_label": "fuzzythes",
+      "synset_id": "2140",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "libreia",
+          "weight": 0.65554214
+        },
+        {
+          "word": "libré",
+          "weight": 0.38758582
+        },
+        {
+          "word": "farda",
+          "weight": 0.33102936
+        },
+        {
+          "word": "uniforme",
+          "weight": 0.22098085
+        },
+        {
+          "word": "fardamento",
+          "weight": 0.17857713
+        },
+        {
+          "word": "fardamenta",
+          "weight": 0.09038223
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "fuzzythes",
+      "resource_label": "fuzzythes",
+      "synset_id": "3480",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "fardamento",
+          "weight": 0.7175616
+        },
+        {
+          "word": "uniforme",
+          "weight": 0.7074013
+        },
+        {
+          "word": "fardamenta",
+          "weight": 0.69279337
+        },
+        {
+          "word": "farda",
+          "weight": 0.5262981
+        },
+        {
+          "word": "libré",
+          "weight": 0.099960685
+        },
+        {
+          "word": "roupa",
+          "weight": 0.048003066
+        },
+        {
+          "word": "vestuário",
+          "weight": 0.033844307
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "fuzzythes",
+      "resource_label": "fuzzythes",
+      "synset_id": "23180",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "distributivo",
+          "weight": 0.35307637
+        },
+        {
+          "word": "equitativo",
+          "weight": 0.2164289
+        },
+        {
+          "word": "equável",
+          "weight": 0.1219693
+        },
+        {
+          "word": "equânime",
+          "weight": 0.06456062
+        },
+        {
+          "word": "equânimo",
+          "weight": 0.064521536
+        },
+        {
+          "word": "segregativo",
+          "weight": 0.06271266
+        },
+        {
+          "word": "recto",
+          "weight": 0.027104877
+        },
+        {
+          "word": "justiceiro",
+          "weight": 0.02476438
+        },
+        {
+          "word": "imparcial",
+          "weight": 0.023829987
+        },
+        {
+          "word": "justo",
+          "weight": 0.021782247
+        },
+        {
+          "word": "reto",
+          "weight": 0.012406022
+        },
+        {
+          "word": "uniforme",
+          "weight": 0.0108972555
+        },
+        {
+          "word": "íntegro",
+          "weight": 0.010077524
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "fuzzythes",
+      "resource_label": "fuzzythes",
+      "synset_id": "23298",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "consignado",
+          "weight": 0.9964887
+        },
+        {
+          "word": "constante",
+          "weight": 0.13889901
+        },
+        {
+          "word": "imudável",
+          "weight": 0.1233429
+        },
+        {
+          "word": "imutável",
+          "weight": 0.0639247
+        },
+        {
+          "word": "invariável",
+          "weight": 0.055124983
+        },
+        {
+          "word": "manente",
+          "weight": 0.03876395
+        },
+        {
+          "word": "incessável",
+          "weight": 0.028845234
+        },
+        {
+          "word": "estável",
+          "weight": 0.028662285
+        },
+        {
+          "word": "ininterrompido",
+          "weight": 0.028135272
+        },
+        {
+          "word": "aturado",
+          "weight": 0.0280388
+        },
+        {
+          "word": "afio",
+          "weight": 0.027877936
+        },
+        {
+          "word": "incessante",
+          "weight": 0.0274127
+        },
+        {
+          "word": "perseverante",
+          "weight": 0.02717227
+        },
+        {
+          "word": "permanente",
+          "weight": 0.024824688
+        },
+        {
+          "word": "continuado",
+          "weight": 0.024632199
+        },
+        {
+          "word": "imanente",
+          "weight": 0.023860445
+        },
+        {
+          "word": "escrito",
+          "weight": 0.02168839
+        },
+        {
+          "word": "ininterrupto",
+          "weight": 0.021437757
+        },
+        {
+          "word": "jazente",
+          "weight": 0.020110792
+        },
+        {
+          "word": "permanecente",
+          "weight": 0.019179676
+        },
+        {
+          "word": "contínuo",
+          "weight": 0.018716354
+        },
+        {
+          "word": "diamantino",
+          "weight": 0.018606834
+        },
+        {
+          "word": "estóico",
+          "weight": 0.018575309
+        },
+        {
+          "word": "assíduo",
+          "weight": 0.018266192
+        },
+        {
+          "word": "seguido",
+          "weight": 0.016712029
+        },
+        {
+          "word": "firme",
+          "weight": 0.015740376
+        },
+        {
+          "word": "sistemático",
+          "weight": 0.01565122
+        },
+        {
+          "word": "uniforme",
+          "weight": 0.015491333
+        },
+        {
+          "word": "jacente",
+          "weight": 0.015438916
+        },
+        {
+          "word": "sucessivo",
+          "weight": 0.013108045
+        },
+        {
+          "word": "adamantino",
+          "weight": 0.0130419275
+        },
+        {
+          "word": "persistente",
+          "weight": 0.0129957395
+        },
+        {
+          "word": "porfioso",
+          "weight": 0.012806966
+        },
+        {
+          "word": "mencionado",
+          "weight": 0.012058282
+        },
+        {
+          "word": "perene",
+          "weight": 0.011705598
+        },
+        {
+          "word": "metódico",
+          "weight": 0.011146016
+        },
+        {
+          "word": "perpétuo",
+          "weight": 0.01113362
+        },
+        {
+          "word": "ordenado",
+          "weight": 0.010134121
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "fuzzythes",
+      "resource_label": "fuzzythes",
+      "synset_id": "23495",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "metodizado",
+          "weight": 0.3586877
+        },
+        {
+          "word": "sistêmico",
+          "weight": 0.35868764
+        },
+        {
+          "word": "sistemático",
+          "weight": 0.34403566
+        },
+        {
+          "word": "metódico",
+          "weight": 0.23632255
+        },
+        {
+          "word": "ordenado",
+          "weight": 0.1715653
+        },
+        {
+          "word": "arranjadeiro",
+          "weight": 0.122474946
+        },
+        {
+          "word": "ordeiro",
+          "weight": 0.0650655
+        },
+        {
+          "word": "regrado",
+          "weight": 0.0536323
+        },
+        {
+          "word": "pautado",
+          "weight": 0.052305866
+        },
+        {
+          "word": "regular",
+          "weight": 0.03394766
+        },
+        {
+          "word": "relacionado",
+          "weight": 0.022871139
+        },
+        {
+          "word": "cuidoso",
+          "weight": 0.017791843
+        },
+        {
+          "word": "cuidadoso",
+          "weight": 0.01503241
+        },
+        {
+          "word": "sensato",
+          "weight": 0.011814756
+        },
+        {
+          "word": "económico",
+          "weight": 0.011638808
+        },
+        {
+          "word": "uniforme",
+          "weight": 0.010954182
+        },
+        {
+          "word": "comedido",
+          "weight": 0.010834951
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "fuzzythes",
+      "resource_label": "fuzzythes",
+      "synset_id": "23527",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "engembrado",
+          "weight": 0.99502635
+        },
+        {
+          "word": "consubstanciado",
+          "weight": 0.99502623
+        },
+        {
+          "word": "gémeo",
+          "weight": 0.59035534
+        },
+        {
+          "word": "idêntico",
+          "weight": 0.27119532
+        },
+        {
+          "word": "homogêneo",
+          "weight": 0.15869486
+        },
+        {
+          "word": "conato",
+          "weight": 0.10607123
+        },
+        {
+          "word": "congénere",
+          "weight": 0.09618786
+        },
+        {
+          "word": "gêmeo",
+          "weight": 0.09124211
+        },
+        {
+          "word": "irmão",
+          "weight": 0.08276421
+        },
+        {
+          "word": "igual",
+          "weight": 0.07476386
+        },
+        {
+          "word": "similar",
+          "weight": 0.06450439
+        },
+        {
+          "word": "homogéneo",
+          "weight": 0.043367855
+        },
+        {
+          "word": "cômpar",
+          "weight": 0.03147153
+        },
+        {
+          "word": "análogo",
+          "weight": 0.030674951
+        },
+        {
+          "word": "parecente",
+          "weight": 0.030296408
+        },
+        {
+          "word": "assemelhado",
+          "weight": 0.030040687
+        },
+        {
+          "word": "símile",
+          "weight": 0.030038448
+        },
+        {
+          "word": "afim",
+          "weight": 0.024857653
+        },
+        {
+          "word": "mesmo",
+          "weight": 0.024542429
+        },
+        {
+          "word": "conforme",
+          "weight": 0.024343235
+        },
+        {
+          "word": "paralelo",
+          "weight": 0.023536414
+        },
+        {
+          "word": "parecido",
+          "weight": 0.019084675
+        },
+        {
+          "word": "congênere",
+          "weight": 0.01809858
+        },
+        {
+          "word": "comparável",
+          "weight": 0.016240062
+        },
+        {
+          "word": "semelhante",
+          "weight": 0.016178882
+        },
+        {
+          "word": "convizinho",
+          "weight": 0.014218342
+        },
+        {
+          "word": "uniforme",
+          "weight": 0.011710548
+        },
+        {
+          "word": "aparente",
+          "weight": 0.010779028
+        },
+        {
+          "word": "tal",
+          "weight": 0.010138688
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "fuzzythes",
+      "resource_label": "fuzzythes",
+      "synset_id": "24915",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "metodizado",
+          "weight": 0.44832268
+        },
+        {
+          "word": "sistêmico",
+          "weight": 0.44832262
+        },
+        {
+          "word": "sistemático",
+          "weight": 0.3706016
+        },
+        {
+          "word": "meio",
+          "weight": 0.3522672
+        },
+        {
+          "word": "médio",
+          "weight": 0.19976604
+        },
+        {
+          "word": "metódico",
+          "weight": 0.1993358
+        },
+        {
+          "word": "ordenado",
+          "weight": 0.17874429
+        },
+        {
+          "word": "meão",
+          "weight": 0.124174714
+        },
+        {
+          "word": "satisfatório",
+          "weight": 0.11973451
+        },
+        {
+          "word": "regular",
+          "weight": 0.11082811
+        },
+        {
+          "word": "medial",
+          "weight": 0.08105108
+        },
+        {
+          "word": "mediano",
+          "weight": 0.07484853
+        },
+        {
+          "word": "cabal",
+          "weight": 0.066247426
+        },
+        {
+          "word": "medíocre",
+          "weight": 0.05328714
+        },
+        {
+          "word": "periódico",
+          "weight": 0.04859043
+        },
+        {
+          "word": "proporcional",
+          "weight": 0.042705987
+        },
+        {
+          "word": "normal",
+          "weight": 0.03178535
+        },
+        {
+          "word": "proporcionado",
+          "weight": 0.031037213
+        },
+        {
+          "word": "pendular",
+          "weight": 0.030976444
+        },
+        {
+          "word": "sofrível",
+          "weight": 0.028540334
+        },
+        {
+          "word": "suficiente",
+          "weight": 0.024067366
+        },
+        {
+          "word": "harmónico",
+          "weight": 0.023390612
+        },
+        {
+          "word": "gratificante",
+          "weight": 0.02214591
+        },
+        {
+          "word": "oscilatório",
+          "weight": 0.021859173
+        },
+        {
+          "word": "regrado",
+          "weight": 0.021558776
+        },
+        {
+          "word": "rítmico",
+          "weight": 0.020383408
+        },
+        {
+          "word": "simétrico",
+          "weight": 0.020347035
+        },
+        {
+          "word": "pautado",
+          "weight": 0.018232478
+        },
+        {
+          "word": "perpendicular",
+          "weight": 0.017465834
+        },
+        {
+          "word": "uniforme",
+          "weight": 0.016547503
+        },
+        {
+          "word": "costumário",
+          "weight": 0.0146225
+        },
+        {
+          "word": "costumeiro",
+          "weight": 0.014165608
+        },
+        {
+          "word": "exemplar",
+          "weight": 0.013826589
+        },
+        {
+          "word": "coerente",
+          "weight": 0.01303732
+        },
+        {
+          "word": "perturbatório",
+          "weight": 0.012959644
+        },
+        {
+          "word": "frequente",
+          "weight": 0.012725045
+        },
+        {
+          "word": "consuetudinário",
+          "weight": 0.011819123
+        },
+        {
+          "word": "habitual",
+          "weight": 0.011489862
+        },
+        {
+          "word": "harmônico",
+          "weight": 0.011262312
+        },
+        {
+          "word": "central",
+          "weight": 0.011129341
+        },
+        {
+          "word": "homótono",
+          "weight": 0.010833349
+        },
+        {
+          "word": "oscilante",
+          "weight": 0.010529764
+        },
+        {
+          "word": "usual",
+          "weight": 0.010253037
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "fuzzythes",
+      "resource_label": "fuzzythes",
+      "synset_id": "25600",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "unímodo",
+          "weight": 0.96960855
+        },
+        {
+          "word": "uniforme",
+          "weight": 0.42941058
+        },
+        {
+          "word": "homótono",
+          "weight": 0.308007
+        },
+        {
+          "word": "equável",
+          "weight": 0.077843525
+        },
+        {
+          "word": "homogéneo",
+          "weight": 0.03892812
+        },
+        {
+          "word": "monótono",
+          "weight": 0.014046491
+        },
+        {
+          "word": "recto",
+          "weight": 0.010199677
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "fuzzythes",
+      "resource_label": "fuzzythes",
+      "synset_id": "26445",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "homogéneo",
+          "weight": 0.34197807
+        },
+        {
+          "word": "unívoco",
+          "weight": 0.2240187
+        },
+        {
+          "word": "similar",
+          "weight": 0.100494124
+        },
+        {
+          "word": "inequívoco",
+          "weight": 0.08027354
+        },
+        {
+          "word": "uniforme",
+          "weight": 0.027670892
+        },
+        {
+          "word": "análogo",
+          "weight": 0.020313172
+        },
+        {
+          "word": "idêntico",
+          "weight": 0.015939334
+        },
+        {
+          "word": "contínuo",
+          "weight": 0.01520794
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "fuzzythes",
+      "resource_label": "fuzzythes",
+      "synset_id": "26484",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "equável",
+          "weight": 0.6383929
+        },
+        {
+          "word": "santoral",
+          "weight": 0.25640696
+        },
+        {
+          "word": "recto",
+          "weight": 0.20209508
+        },
+        {
+          "word": "consciencioso",
+          "weight": 0.12533665
+        },
+        {
+          "word": "equitativo",
+          "weight": 0.10114313
+        },
+        {
+          "word": "directo",
+          "weight": 0.06666788
+        },
+        {
+          "word": "uniforme",
+          "weight": 0.060230114
+        },
+        {
+          "word": "justo",
+          "weight": 0.056969605
+        },
+        {
+          "word": "vertical",
+          "weight": 0.027500302
+        },
+        {
+          "word": "probo",
+          "weight": 0.024714148
+        },
+        {
+          "word": "salutar",
+          "weight": 0.023160556
+        },
+        {
+          "word": "direito",
+          "weight": 0.022415517
+        },
+        {
+          "word": "imparcial",
+          "weight": 0.018535135
+        },
+        {
+          "word": "equânime",
+          "weight": 0.016083702
+        },
+        {
+          "word": "desinclinado",
+          "weight": 0.016021071
+        },
+        {
+          "word": "neutral",
+          "weight": 0.01443882
+        },
+        {
+          "word": "terra-a-terra",
+          "weight": 0.014057605
+        },
+        {
+          "word": "neutro",
+          "weight": 0.013445139
+        },
+        {
+          "word": "aprumado",
+          "weight": 0.0131206615
+        },
+        {
+          "word": "equânimo",
+          "weight": 0.012737176
+        },
+        {
+          "word": "escrupuloso",
+          "weight": 0.012314566
+        },
+        {
+          "word": "ereto",
+          "weight": 0.011043928
+        },
+        {
+          "word": "frontal",
+          "weight": 0.010602547
+        },
+        {
+          "word": "perpendicular",
+          "weight": 0.010555288
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "fuzzythes",
+      "resource_label": "fuzzythes",
+      "synset_id": "27091",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "inflexivo",
+          "weight": 0.99206144
+        },
+        {
+          "word": "invariável",
+          "weight": 0.34454864
+        },
+        {
+          "word": "intemporal",
+          "weight": 0.17976852
+        },
+        {
+          "word": "imudável",
+          "weight": 0.123489074
+        },
+        {
+          "word": "estereotipado",
+          "weight": 0.101159215
+        },
+        {
+          "word": "imutável",
+          "weight": 0.054363355
+        },
+        {
+          "word": "constante",
+          "weight": 0.024816489
+        },
+        {
+          "word": "imaterial",
+          "weight": 0.01890496
+        },
+        {
+          "word": "irretratável",
+          "weight": 0.018849812
+        },
+        {
+          "word": "estereótipo",
+          "weight": 0.014055775
+        },
+        {
+          "word": "imóvel",
+          "weight": 0.013188649
+        },
+        {
+          "word": "eterno",
+          "weight": 0.01181682
+        },
+        {
+          "word": "uniforme",
+          "weight": 0.011715959
+        },
+        {
+          "word": "inalterável",
+          "weight": 0.011570948
+        },
+        {
+          "word": "estável",
+          "weight": 0.010003497
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "fuzzythes",
+      "resource_label": "fuzzythes",
+      "synset_id": "27110",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "aladainhado",
+          "weight": 0.99522585
+        },
+        {
+          "word": "homótono",
+          "weight": 0.64214367
+        },
+        {
+          "word": "monocórdico",
+          "weight": 0.23456967
+        },
+        {
+          "word": "monocórdio",
+          "weight": 0.23456964
+        },
+        {
+          "word": "uniforme",
+          "weight": 0.17595848
+        },
+        {
+          "word": "monótono",
+          "weight": 0.1551523
+        },
+        {
+          "word": "sem-sabor",
+          "weight": 0.10034591
+        },
+        {
+          "word": "ramerraneiro",
+          "weight": 0.07613056
+        },
+        {
+          "word": "maçudo",
+          "weight": 0.032101937
+        },
+        {
+          "word": "fastisioso",
+          "weight": 0.031744715
+        },
+        {
+          "word": "enfadonho",
+          "weight": 0.022293635
+        },
+        {
+          "word": "unissonante",
+          "weight": 0.019151568
+        },
+        {
+          "word": "tíbio",
+          "weight": 0.017723715
+        },
+        {
+          "word": "uníssono",
+          "weight": 0.017111354
+        },
+        {
+          "word": "enfastioso",
+          "weight": 0.016332615
+        },
+        {
+          "word": "maçante",
+          "weight": 0.016253583
+        },
+        {
+          "word": "fastidioso",
+          "weight": 0.01563862
+        },
+        {
+          "word": "tedioso",
+          "weight": 0.0155845005
+        },
+        {
+          "word": "tépido",
+          "weight": 0.012547592
+        },
+        {
+          "word": "invariável",
+          "weight": 0.011779048
+        },
+        {
+          "word": "equíssono",
+          "weight": 0.011306371
+        },
+        {
+          "word": "acromático",
+          "weight": 0.010996285
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "ontopt06",
+      "resource_label": "ontopt06",
+      "synset_id": "787",
+      "pos": "a",
+      "gloss": "que envolve a maior parte do organismo.",
+      "members": [
+        {
+          "word": "constante",
+          "weight": 1.0
+        },
+        {
+          "word": "metodizado",
+          "weight": 1.0
+        },
+        {
+          "word": "metódico",
+          "weight": 1.0
+        },
+        {
+          "word": "ordenado",
+          "weight": 1.0
+        },
+        {
+          "word": "regular",
+          "weight": 1.0
+        },
+        {
+          "word": "sistemático",
+          "weight": 1.0
+        },
+        {
+          "word": "sistêmico",
+          "weight": 1.0
+        },
+        {
+          "word": "uniforme",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "ontopt06",
+      "resource_label": "ontopt06",
+      "synset_id": "803",
+      "pos": "a",
+      "gloss": "que contém elementos ou características iguais ou parecidas com outra coisa.",
+      "members": [
+        {
+          "word": "afim",
+          "weight": 1.0
+        },
+        {
+          "word": "análogo",
+          "weight": 1.0
+        },
+        {
+          "word": "aparentado",
+          "weight": 1.0
+        },
+        {
+          "word": "aparente",
+          "weight": 1.0
+        },
+        {
+          "word": "assemelhado",
+          "weight": 1.0
+        },
+        {
+          "word": "comparado",
+          "weight": 1.0
+        },
+        {
+          "word": "comparável",
+          "weight": 1.0
+        },
+        {
+          "word": "comum",
+          "weight": 1.0
+        },
+        {
+          "word": "conforme",
+          "weight": 1.0
+        },
+        {
+          "word": "congénere",
+          "weight": 1.0
+        },
+        {
+          "word": "congênere",
+          "weight": 1.0
+        },
+        {
+          "word": "consubstanciado",
+          "weight": 1.0
+        },
+        {
+          "word": "convizinho",
+          "weight": 1.0
+        },
+        {
+          "word": "cômpar",
+          "weight": 1.0
+        },
+        {
+          "word": "engembrado",
+          "weight": 1.0
+        },
+        {
+          "word": "equipendente",
+          "weight": 1.0
+        },
+        {
+          "word": "este",
+          "weight": 1.0
+        },
+        {
+          "word": "gémeo",
+          "weight": 1.0
+        },
+        {
+          "word": "homográfico",
+          "weight": 1.0
+        },
+        {
+          "word": "homogéneo",
+          "weight": 1.0
+        },
+        {
+          "word": "homogêneo",
+          "weight": 1.0
+        },
+        {
+          "word": "homólogo",
+          "weight": 1.0
+        },
+        {
+          "word": "homótipo",
+          "weight": 1.0
+        },
+        {
+          "word": "idêntico",
+          "weight": 1.0
+        },
+        {
+          "word": "igual",
+          "weight": 1.0
+        },
+        {
+          "word": "mesmo",
+          "weight": 1.0
+        },
+        {
+          "word": "outro-tanto",
+          "weight": 1.0
+        },
+        {
+          "word": "paralelo",
+          "weight": 1.0
+        },
+        {
+          "word": "parecente",
+          "weight": 1.0
+        },
+        {
+          "word": "parecido",
+          "weight": 1.0
+        },
+        {
+          "word": "parente",
+          "weight": 1.0
+        },
+        {
+          "word": "pessoa",
+          "weight": 1.0
+        },
+        {
+          "word": "quejando",
+          "weight": 1.0
+        },
+        {
+          "word": "semelhante",
+          "weight": 1.0
+        },
+        {
+          "word": "semelhável",
+          "weight": 1.0
+        },
+        {
+          "word": "semeável",
+          "weight": 1.0
+        },
+        {
+          "word": "símil",
+          "weight": 1.0
+        },
+        {
+          "word": "símile",
+          "weight": 1.0
+        },
+        {
+          "word": "tal",
+          "weight": 1.0
+        },
+        {
+          "word": "tirante",
+          "weight": 1.0
+        },
+        {
+          "word": "uniforme",
+          "weight": 1.0
+        },
+        {
+          "word": "vizinho",
+          "weight": 1.0
+        },
+        {
+          "word": "équo",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "ontopt06",
+      "resource_label": "ontopt06",
+      "synset_id": "1186",
+      "pos": "a",
+      "gloss": "sucessivo, que não tem interrupção. que não cessa. que dura ou se repete incessantemente.",
+      "members": [
+        {
+          "word": "adamantino",
+          "weight": 1.0
+        },
+        {
+          "word": "afio",
+          "weight": 1.0
+        },
+        {
+          "word": "assíduo",
+          "weight": 1.0
+        },
+        {
+          "word": "aturado",
+          "weight": 1.0
+        },
+        {
+          "word": "consecutivo",
+          "weight": 1.0
+        },
+        {
+          "word": "consignado",
+          "weight": 1.0
+        },
+        {
+          "word": "consistente",
+          "weight": 1.0
+        },
+        {
+          "word": "constante",
+          "weight": 1.0
+        },
+        {
+          "word": "contino",
+          "weight": 1.0
+        },
+        {
+          "word": "continuado",
+          "weight": 1.0
+        },
+        {
+          "word": "contínuo",
+          "weight": 1.0
+        },
+        {
+          "word": "durativo",
+          "weight": 1.0
+        },
+        {
+          "word": "frequente",
+          "weight": 1.0
+        },
+        {
+          "word": "homogéneo",
+          "weight": 1.0
+        },
+        {
+          "word": "imanente",
+          "weight": 1.0
+        },
+        {
+          "word": "imudável",
+          "weight": 1.0
+        },
+        {
+          "word": "incessante",
+          "weight": 1.0
+        },
+        {
+          "word": "incessável",
+          "weight": 1.0
+        },
+        {
+          "word": "ininterrompido",
+          "weight": 1.0
+        },
+        {
+          "word": "ininterrupto",
+          "weight": 1.0
+        },
+        {
+          "word": "metódico",
+          "weight": 1.0
+        },
+        {
+          "word": "ordenado",
+          "weight": 1.0
+        },
+        {
+          "word": "perene",
+          "weight": 1.0
+        },
+        {
+          "word": "permanente",
+          "weight": 1.0
+        },
+        {
+          "word": "perpétuo",
+          "weight": 1.0
+        },
+        {
+          "word": "persistente",
+          "weight": 1.0
+        },
+        {
+          "word": "porfioso",
+          "weight": 1.0
+        },
+        {
+          "word": "repetido",
+          "weight": 1.0
+        },
+        {
+          "word": "seguido",
+          "weight": 1.0
+        },
+        {
+          "word": "sempiterno",
+          "weight": 1.0
+        },
+        {
+          "word": "sistemático",
+          "weight": 1.0
+        },
+        {
+          "word": "sucessivo",
+          "weight": 1.0
+        },
+        {
+          "word": "uniforme",
+          "weight": 1.0
+        },
+        {
+          "word": "unânime",
+          "weight": 1.0
+        },
+        {
+          "word": "áfio",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "ontopt06",
+      "resource_label": "ontopt06",
+      "synset_id": "2131",
+      "pos": "a",
+      "gloss": "que, comparado a outro, é igual.",
+      "members": [
+        {
+          "word": "equável",
+          "weight": 1.0
+        },
+        {
+          "word": "uniforme",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "ontopt06",
+      "resource_label": "ontopt06",
+      "synset_id": "2133",
+      "pos": "a",
+      "gloss": "que tem uma só forma. que tem só uma forma.",
+      "members": [
+        {
+          "word": "uniforme",
+          "weight": 1.0
+        },
+        {
+          "word": "unímodo",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "ontopt06",
+      "resource_label": "ontopt06",
+      "synset_id": "2945",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "homótono",
+          "weight": 1.0
+        },
+        {
+          "word": "invariável",
+          "weight": 1.0
+        },
+        {
+          "word": "monótono",
+          "weight": 1.0
+        },
+        {
+          "word": "uniforme",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "ontopt06",
+      "resource_label": "ontopt06",
+      "synset_id": "28292",
+      "pos": "n",
+      "gloss": "farda ou vestuário, feito segundo um modelo comum, para uma corporação ou uma classe.",
+      "members": [
+        {
+          "word": "farda",
+          "weight": 1.0
+        },
+        {
+          "word": "fardamenta",
+          "weight": 1.0
+        },
+        {
+          "word": "fardamento",
+          "weight": 1.0
+        },
+        {
+          "word": "libré",
+          "weight": 1.0
+        },
+        {
+          "word": "uniforme",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "polaridades",
+      "resource_label": "polaridades",
+      "synset_id": "1656",
+      "pos": "a",
+      "gloss": "Polaridade: 0 (método BASE)",
+      "members": [
+        {
+          "word": "equável",
+          "weight": 1.0
+        },
+        {
+          "word": "uniforme",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "polaridades",
+      "resource_label": "polaridades",
+      "synset_id": "4425",
+      "pos": "a",
+      "gloss": "Polaridade: 1 (método BASE)",
+      "members": [
+        {
+          "word": "constante",
+          "weight": 1.0
+        },
+        {
+          "word": "metodizado",
+          "weight": 1.0
+        },
+        {
+          "word": "metódico",
+          "weight": 1.0
+        },
+        {
+          "word": "ordenado",
+          "weight": 1.0
+        },
+        {
+          "word": "regular",
+          "weight": 1.0
+        },
+        {
+          "word": "sistemático",
+          "weight": 1.0
+        },
+        {
+          "word": "sistêmico",
+          "weight": 1.0
+        },
+        {
+          "word": "uniforme",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "polaridades",
+      "resource_label": "polaridades",
+      "synset_id": "4484",
+      "pos": "a",
+      "gloss": "Polaridade: 0 (método BASE)",
+      "members": [
+        {
+          "word": "homótono",
+          "weight": 1.0
+        },
+        {
+          "word": "invariável",
+          "weight": 1.0
+        },
+        {
+          "word": "monótono",
+          "weight": 1.0
+        },
+        {
+          "word": "uniforme",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "polaridades",
+      "resource_label": "polaridades",
+      "synset_id": "5083",
+      "pos": "a",
+      "gloss": "Polaridade: 1 (método BASE)",
+      "members": [
+        {
+          "word": "adamantino",
+          "weight": 1.0
+        },
+        {
+          "word": "afio",
+          "weight": 1.0
+        },
+        {
+          "word": "assíduo",
+          "weight": 1.0
+        },
+        {
+          "word": "aturado",
+          "weight": 1.0
+        },
+        {
+          "word": "consecutivo",
+          "weight": 1.0
+        },
+        {
+          "word": "consignado",
+          "weight": 1.0
+        },
+        {
+          "word": "consistente",
+          "weight": 1.0
+        },
+        {
+          "word": "constante",
+          "weight": 1.0
+        },
+        {
+          "word": "contino",
+          "weight": 1.0
+        },
+        {
+          "word": "continuado",
+          "weight": 1.0
+        },
+        {
+          "word": "contínuo",
+          "weight": 1.0
+        },
+        {
+          "word": "durativo",
+          "weight": 1.0
+        },
+        {
+          "word": "frequente",
+          "weight": 1.0
+        },
+        {
+          "word": "homogéneo",
+          "weight": 1.0
+        },
+        {
+          "word": "imanente",
+          "weight": 1.0
+        },
+        {
+          "word": "imudável",
+          "weight": 1.0
+        },
+        {
+          "word": "incessante",
+          "weight": 1.0
+        },
+        {
+          "word": "incessável",
+          "weight": 1.0
+        },
+        {
+          "word": "ininterrompido",
+          "weight": 1.0
+        },
+        {
+          "word": "ininterrupto",
+          "weight": 1.0
+        },
+        {
+          "word": "metódico",
+          "weight": 1.0
+        },
+        {
+          "word": "ordenado",
+          "weight": 1.0
+        },
+        {
+          "word": "perene",
+          "weight": 1.0
+        },
+        {
+          "word": "permanente",
+          "weight": 1.0
+        },
+        {
+          "word": "perpétuo",
+          "weight": 1.0
+        },
+        {
+          "word": "persistente",
+          "weight": 1.0
+        },
+        {
+          "word": "porfioso",
+          "weight": 1.0
+        },
+        {
+          "word": "repetido",
+          "weight": 1.0
+        },
+        {
+          "word": "seguido",
+          "weight": 1.0
+        },
+        {
+          "word": "sempiterno",
+          "weight": 1.0
+        },
+        {
+          "word": "sistemático",
+          "weight": 1.0
+        },
+        {
+          "word": "sucessivo",
+          "weight": 1.0
+        },
+        {
+          "word": "uniforme",
+          "weight": 1.0
+        },
+        {
+          "word": "unânime",
+          "weight": 1.0
+        },
+        {
+          "word": "áfio",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "polaridades",
+      "resource_label": "polaridades",
+      "synset_id": "5938",
+      "pos": "a",
+      "gloss": "Polaridade: 0 (método BASE)",
+      "members": [
+        {
+          "word": "afim",
+          "weight": 1.0
+        },
+        {
+          "word": "análogo",
+          "weight": 1.0
+        },
+        {
+          "word": "aparentado",
+          "weight": 1.0
+        },
+        {
+          "word": "aparente",
+          "weight": 1.0
+        },
+        {
+          "word": "assemelhado",
+          "weight": 1.0
+        },
+        {
+          "word": "comparado",
+          "weight": 1.0
+        },
+        {
+          "word": "comparável",
+          "weight": 1.0
+        },
+        {
+          "word": "comum",
+          "weight": 1.0
+        },
+        {
+          "word": "conforme",
+          "weight": 1.0
+        },
+        {
+          "word": "congénere",
+          "weight": 1.0
+        },
+        {
+          "word": "congênere",
+          "weight": 1.0
+        },
+        {
+          "word": "consubstanciado",
+          "weight": 1.0
+        },
+        {
+          "word": "convizinho",
+          "weight": 1.0
+        },
+        {
+          "word": "cômpar",
+          "weight": 1.0
+        },
+        {
+          "word": "engembrado",
+          "weight": 1.0
+        },
+        {
+          "word": "equipendente",
+          "weight": 1.0
+        },
+        {
+          "word": "este",
+          "weight": 1.0
+        },
+        {
+          "word": "gémeo",
+          "weight": 1.0
+        },
+        {
+          "word": "homográfico",
+          "weight": 1.0
+        },
+        {
+          "word": "homogéneo",
+          "weight": 1.0
+        },
+        {
+          "word": "homogêneo",
+          "weight": 1.0
+        },
+        {
+          "word": "homólogo",
+          "weight": 1.0
+        },
+        {
+          "word": "homótipo",
+          "weight": 1.0
+        },
+        {
+          "word": "idêntico",
+          "weight": 1.0
+        },
+        {
+          "word": "igual",
+          "weight": 1.0
+        },
+        {
+          "word": "mesmo",
+          "weight": 1.0
+        },
+        {
+          "word": "outro-tanto",
+          "weight": 1.0
+        },
+        {
+          "word": "paralelo",
+          "weight": 1.0
+        },
+        {
+          "word": "parecente",
+          "weight": 1.0
+        },
+        {
+          "word": "parecido",
+          "weight": 1.0
+        },
+        {
+          "word": "parente",
+          "weight": 1.0
+        },
+        {
+          "word": "pessoa",
+          "weight": 1.0
+        },
+        {
+          "word": "quejando",
+          "weight": 1.0
+        },
+        {
+          "word": "semelhante",
+          "weight": 1.0
+        },
+        {
+          "word": "semelhável",
+          "weight": 1.0
+        },
+        {
+          "word": "semeável",
+          "weight": 1.0
+        },
+        {
+          "word": "símil",
+          "weight": 1.0
+        },
+        {
+          "word": "símile",
+          "weight": 1.0
+        },
+        {
+          "word": "tal",
+          "weight": 1.0
+        },
+        {
+          "word": "tirante",
+          "weight": 1.0
+        },
+        {
+          "word": "uniforme",
+          "weight": 1.0
+        },
+        {
+          "word": "vizinho",
+          "weight": 1.0
+        },
+        {
+          "word": "équo",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    }
+  ]
+}

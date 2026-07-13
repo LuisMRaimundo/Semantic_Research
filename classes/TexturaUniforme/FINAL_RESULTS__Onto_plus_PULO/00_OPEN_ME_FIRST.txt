@@ -1,0 +1,9 @@
+FINAL RESULTS — Onto.PT + PULO
+==============================
+
+This folder is the class DELIVERABLE.
+
+1) Open:  OPEN_ME__FINAL_RESULTS.html  (green page)
+2) Or open:  FINAL__Onto_plus_PULO__TexturaUniforme.concordance.md
+
+WordNet is not included unless you add it later.

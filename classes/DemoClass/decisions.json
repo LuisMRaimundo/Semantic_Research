@@ -1,0 +1,22 @@
+{
+  "class_id": "DemoClass",
+  "senses": [
+    {
+      "source": "pulo",
+      "key": "ili-30-1-a",
+      "ili": "ili-30-1-a",
+      "local_id": "por-30-1-a",
+      "pos": "a",
+      "gloss": "g",
+      "members": [
+        "alpha",
+        "beta"
+      ],
+      "decision": "UF",
+      "note": ""
+    }
+  ],
+  "terms": [],
+  "manual_terms": [],
+  "exclude_terms": []
+}

@@ -1,0 +1,24 @@
+{
+  "class_id": "TexturaUniforme",
+  "pref_label": "uniforme",
+  "axis": "invariância face a um parâmetro",
+  "focus_stems": [
+    "uniform",
+    "invari",
+    "constant"
+  ],
+  "axis_terms": [
+    "constant",
+    "fixos",
+    "intervalos",
+    "invari",
+    "mesmo",
+    "uniform",
+    "variacao",
+    "variacoes"
+  ],
+  "disjoint_classes": {
+    "TexturaHeterogenea": []
+  },
+  "superclass": "Textura"
+}

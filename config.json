@@ -1,0 +1,10 @@
+{
+  "legacy_root": "C:\\Users\\lmr20\\Desktop\\Tesaurus e Dicionários",
+  "pulo_sqlite": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\engines\\PULO Thesaurus GUI\\pulo.sqlite",
+  "onto_sqlite": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\engines\\ONTO\\ontopt.sqlite",
+  "pulo_engine_dir": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\engines\\PULO Thesaurus GUI",
+  "onto_engine_dir": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\engines\\ONTO",
+  "lexwarrant_dir": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\engines\\LexWarrant",
+  "default_policy": "conservative",
+  "hide_pulo_signals": true
+}

@@ -1,0 +1,966 @@
+{
+  "type": "pulo_thesaurus_search",
+  "query": {
+    "query": "uniforme",
+    "pos": null,
+    "mode": "Exact"
+  },
+  "count": 7,
+  "synsets": [
+    {
+      "synset_offset": "por-30-00744506-a",
+      "pos": "a",
+      "gloss": "não diferenciado\n",
+      "synonyms": [
+        "uniforme"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-00744506-a",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "antonym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "fez diferentes (especialmente no decurso do desenvolvimento) ou mostrado para ser diferente\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "fez diferentes (especialmente no decurso do desenvolvimento) ou mostrado para ser diferente\n"
+            }
+          ]
+        },
+        {
+          "relation": "similar to",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "tendo desdiferenciação experiente ou sofrido ou a perda de especialização em forma ou função\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "tendo desdiferenciação experiente ou sofrido ou a perda de especialização em forma ou função\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "nivelamento, nivelação",
+              "gloss": "o ato de fazer igual ou uniforme\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "de maneira uniforme\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "fazer uniforme\n"
+            },
+            {
+              "words": "sensibilidade",
+              "gloss": "a prontidão para perceber sensações; consciência elementar ou indiferenciado\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma massa de células indiferenciadas do qual uma órgão ou parte do corpo se desenvolve\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma células embrionárias indiferenciadas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma célula indiferenciada, cujas células podem se diferenciar em outros tipos de células (como células do sangue)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estado de consciência elementar ou indiferenciada\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma parte indiferenciada de um perianto que não pode ser distinguido como um sepal ou uma pétala (como em lírios e tulipas)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "tecido indiferenciado, do qual as novas células são formadas, como na ponta de uma haste ou raiz\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um tumor composto de células imaturas indiferenciado\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "fazer uniforme\n"
+            },
+            {
+              "words": "uniformidade",
+              "gloss": "a qualidade de falta de diversidade ou variação (até mesmo ao ponto de tédio)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma condição na qual tudo é regular e invariável\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "fazer uniforme\n"
+            },
+            {
+              "words": "uniformidade",
+              "gloss": "a qualidade de falta de diversidade ou variação (até mesmo ao ponto de tédio)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma condição na qual tudo é regular e invariável\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "não",
+              "gloss": "negação de uma palavra ou grupo de palavras\n"
+            },
+            {
+              "words": "mudar",
+              "gloss": "tornam-se diferentes durante o desenvolvimento\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-00910101-a",
+      "pos": "a",
+      "gloss": "que tem uma superfície sem inclinação, de inclinação em que nenhuma parte seja superior ou inferior à outra\n",
+      "synonyms": [
+        "amachucado",
+        "amarfanhado",
+        "chato",
+        "chã",
+        "chão",
+        "direito",
+        "igual",
+        "liso",
+        "raso",
+        "regular",
+        "reto",
+        "uniforme",
+        "plano"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-00910101-a",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "similar to",
+          "targets": [
+            {
+              "words": "uniforme, regular, igual",
+              "gloss": "sendo nível ou reto ou regular e sem variações como por exemplo, na forma ou textura; ou estar no mesmo plano ou na mesma altura que outra coisa (isto é, mesmo com)\n"
+            },
+            {
+              "words": "uniforme, regular, igual",
+              "gloss": "sendo nível ou reto ou regular e sem variações como por exemplo, na forma ou textura; ou estar no mesmo plano ou na mesma altura que outra coisa (isto é, mesmo com)\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "a propriedade de ter duas dimensões\n"
+            },
+            {
+              "words": "plano",
+              "gloss": "(matemática) uma forma bidimensional ilimitada\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a propriedade de ter duas dimensões\n"
+            },
+            {
+              "words": "plano",
+              "gloss": "(matemática) uma forma bidimensional ilimitada\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "inclinar",
+              "gloss": "calcanhar\n"
+            },
+            {
+              "words": "pendente",
+              "gloss": "a propriedade possuída por uma linha ou uma superfície que se afasta a partir da horizontal\n"
+            },
+            {
+              "words": "superfície",
+              "gloss": "o limite externo bidimensional estendido de um objeto tridimensional\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-00909545-a",
+      "pos": "a",
+      "gloss": "sendo nível ou reto ou regular e sem variações como por exemplo, na forma ou textura; ou estar no mesmo plano ou na mesma altura que outra coisa (isto é, mesmo com)\n",
+      "synonyms": [
+        "uniforme",
+        "regular",
+        "igual"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-00909545-a",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "attribute",
+          "targets": [
+            {
+              "words": "igualdade",
+              "gloss": "a qualidade da uniformidade e da falta de variação\n"
+            },
+            {
+              "words": "igualdade",
+              "gloss": "a qualidade da uniformidade e da falta de variação\n"
+            }
+          ]
+        },
+        {
+          "relation": "antonym",
+          "targets": [
+            {
+              "words": "desigual, irregular",
+              "gloss": "nem mesmo ou uniforme como por exemplo, na forma ou textura\n"
+            },
+            {
+              "words": "desigual, irregular",
+              "gloss": "nem mesmo ou uniforme como por exemplo, na forma ou textura\n"
+            }
+          ]
+        },
+        {
+          "relation": "similar to",
+          "targets": [
+            {
+              "words": "amachucado, amarfanhado, chato, chã, chão, direito, igual, liso, raso, regular, reto, uniforme, plano",
+              "gloss": "que tem uma superfície sem inclinação, de inclinação em que nenhuma parte seja superior ou inferior à outra\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "tendo um fundo plano\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "de uma superfície exactamente mesmo com um um adjacente, formando o mesmo plano\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "ter palavras tão espaçadas que as linhas retas têm até as margens\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "articulada, de modo a produzir uma superfície nivelada\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "de madeira; ter fibras que são executados em paralelo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "orientadas perpendicularmente ao prumo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "com precisão equipada; nível\n"
+            },
+            {
+              "words": "amachucado, amarfanhado, chato, chã, chão, direito, igual, liso, raso, regular, reto, uniforme, plano",
+              "gloss": "que tem uma superfície sem inclinação, de inclinação em que nenhuma parte seja superior ou inferior à outra\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "tendo um fundo plano\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "de uma superfície exactamente mesmo com um um adjacente, formando o mesmo plano\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "ter palavras tão espaçadas que as linhas retas têm até as margens\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "articulada, de modo a produzir uma superfície nivelada\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "de madeira; ter fibras que são executados em paralelo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "orientadas perpendicularmente ao prumo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "com precisão equipada; nível\n"
+            }
+          ]
+        },
+        {
+          "relation": "see also",
+          "targets": [
+            {
+              "words": "brando, macio, liso, plano, suave",
+              "gloss": "tendo uma superfície livre de aspereza ou solavancos ou cristas ou irregularidades\n"
+            },
+            {
+              "words": "regular, constante, estável",
+              "gloss": "não sujeitos a mudança ou variação, especialmente no comportamento\n"
+            },
+            {
+              "words": "brando, macio, liso, plano, suave",
+              "gloss": "tendo uma superfície livre de aspereza ou solavancos ou cristas ou irregularidades\n"
+            },
+            {
+              "words": "regular, constante, estável",
+              "gloss": "não sujeitos a mudança ou variação, especialmente no comportamento\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "tornar-se o nível ou mesmo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "tornar ainda mais ou mesmo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "tornam-se ainda mais ou mesmo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "de uma superfície exactamente mesmo com um um adjacente, formando o mesmo plano\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "ter palavras tão espaçadas que as linhas retas têm até as margens\n"
+            },
+            {
+              "words": "desigual, irregular",
+              "gloss": "nem mesmo ou uniforme como por exemplo, na forma ou textura\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "tendo em pedaços; Não suave e até mesmo na textura\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "fazer mesmo ou liso, com ou como com plano de um carpinteiro\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Certifique-se por pequenos toques curtos que juntos produzem uma sombra suavemente classificada ou mesmo, como na pintura ou tinta\n"
+            },
+            {
+              "words": "paciente",
+              "gloss": "duradoura circunstâncias difíceis com temperamento ou caracterizada por tal resistência\n"
+            },
+            {
+              "words": "brilhar",
+              "gloss": "emitem uma luz constante mesmo sem chamas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "tendo uma textura mesmo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma máquina agrícola que trata feno para causar mais rápido e até mesmo a secagem\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "pequeno, até mesmo, mão pontos correr dentro e fora\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma faixa nivelado com precisão de material colocado em uma parede ou no chão como guia para a aplicação, mesmo de gesso ou concreto\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a qualidade de ter um nível de superfície e ainda\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma linha correspondente à superfície da água quando o navio está flutuando o equilíbrio; muitas vezes pintado no casco de um navio\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma luz constante, mesmo sem chamas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um fungo venenoso; amarelo em forma de sela e sem graça a parte fértil marrom é ainda relativamente\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma dobra irregular em uma superfície de outro modo, mesmo (como em pano)\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "a qualidade de ser equilibrado\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a qualidade de ser equilibrado\n"
+            }
+          ]
+        },
+        {
+          "relation": "has derived form",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "de uma forma nível e regular\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "forma",
+              "gloss": "o arranjo espacial de algo como distinto de sua substância\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Por exemplo:\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Isso quer dizer; em outras palavras\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a sensação de uma superfície ou de um tecido\n"
+            },
+            {
+              "words": "altura",
+              "gloss": "a dimensão vertical de extensão; distância da base do algo para o topo\n"
+            },
+            {
+              "words": "variação",
+              "gloss": "uma instância de mudança; a taxa ou a magnitude da mudança\n"
+            },
+            {
+              "words": "plano",
+              "gloss": "(matemática) uma forma bidimensional ilimitada\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-01200095-a",
+      "pos": "a",
+      "gloss": "o mesmo em toda a estrutura ou composição\n",
+      "synonyms": [
+        "uniforme",
+        "coerente"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-01200095-a",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "similar to",
+          "targets": [
+            {
+              "words": "homogéneo",
+              "gloss": "todos do mesmo tipo ou semelhante ou a natureza\n"
+            },
+            {
+              "words": "homogéneo",
+              "gloss": "todos do mesmo tipo ou semelhante ou a natureza\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "uniformidade",
+              "gloss": "a qualidade de falta de diversidade ou variação (até mesmo ao ponto de tédio)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma condição na qual tudo é regular e invariável\n"
+            },
+            {
+              "words": "uniformidade",
+              "gloss": "a qualidade de falta de diversidade ou variação (até mesmo ao ponto de tédio)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma condição na qual tudo é regular e invariável\n"
+            }
+          ]
+        },
+        {
+          "relation": "has derived form",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "de maneira uniforme\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "estruturação, estrutura",
+              "gloss": "o modo de construção de alguma coisa e o arranjo das suas partes\n"
+            },
+            {
+              "words": "constituição, composição",
+              "gloss": "a maneira em que alguém ou alguma coisa é composto\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-01966488-a",
+      "pos": "a",
+      "gloss": "sempre o mesmo; mostrando um único formulário ou personagem em todas as ocorrências\n",
+      "synonyms": [
+        "uniforme"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-01966488-a",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "antonym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "ocorrendo em ou tendo muitas formas ou formas ou aparências\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "ocorrendo em ou tendo muitas formas ou formas ou aparências\n"
+            }
+          ]
+        },
+        {
+          "relation": "similar to",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "tendo a aplicação uniforme\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "tendo a aplicação uniforme\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "nivelamento, nivelação",
+              "gloss": "o ato de fazer igual ou uniforme\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "de maneira uniforme\n"
+            },
+            {
+              "words": "comparar, compensar, empatar, equiparar, igualar, nivelar",
+              "gloss": "fazer igual, uniforme, correspondente, ou correspondência\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "fazer uniforme\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "característica ou sugestiva de uma instituição especialmente em ser uniforme ou aborrecido ou sem imaginação\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "esfregar a um tamanho uniforme\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Tendo em propriedades, com valores uniformes ao longo de todos os eixos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "tendo a aplicação uniforme\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma fornalha que alimenta-se de modo a manter uma temperatura uniforme; usado pelos alquimistas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um desenho do contorno de um objeto; preenchido com uma cor uniforme\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Dentre uma série de projeções uniformes em uma engrenagem\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Física) uma lei universal que diz que as leis da mecânica não são afetados por um movimento retilíneo uniforme do sistema de coordenadas a que se refere\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Física) o princípio de que um observador não tem como distinguir se o seu laboratório está em um campo gravitacional uniforme ou está em um referencial acelerado\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a um componente isolado de um espectro formado por radiação a uma frequência uniforme\n"
+            },
+            {
+              "words": "inércia",
+              "gloss": "(Física) a tendência de um corpo para manter o seu estado de repouso ou de movimento uniforme, a menos que influenciado por uma força externa\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma condição atmosférica ártico com as nuvens sobre a neve produzir uma brancura uniforme e objetos são difíceis de ver; ocorre quando a luz refletida na neve é ​​igual à luz que vem através das nuvens\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma grande massa de ar com características uniformes horizontalmente\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "uniformidade",
+              "gloss": "a qualidade de falta de diversidade ou variação (até mesmo ao ponto de tédio)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma condição na qual tudo é regular e invariável\n"
+            },
+            {
+              "words": "uniformidade",
+              "gloss": "a qualidade de falta de diversidade ou variação (até mesmo ao ponto de tédio)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma condição na qual tudo é regular e invariável\n"
+            }
+          ]
+        },
+        {
+          "relation": "see also",
+          "targets": [
+            {
+              "words": "homogéneo",
+              "gloss": "todos do mesmo tipo ou semelhante ou a natureza\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "afetar, afigurar, apresentar, assumir, badalar, descobrir, desenfardar, desfraldar, desinternar, divulgar, estampar, exibir, expandir, exteriorizar, fazer ver, franquear, patentear, representar, reproduzir, revelar-se, revestir, simular, soltar, suar, vestir, ensinar, manifestar, mostrar",
+              "gloss": "fazer visível ou perceptível\n"
+            },
+            {
+              "words": "casta, condição, espécie, género, nação, raça, simulacro, sorte, tipo, forma, classe",
+              "gloss": "uma categoria de coisas distinguidos por alguma característica ou qualidade comum\n"
+            },
+            {
+              "words": "existência",
+              "gloss": "um exemplo de algo que ocorre\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-02302187-a",
+      "pos": "a",
+      "gloss": "ocorrendo em intervalos fixos\n",
+      "synonyms": [
+        "uniforme",
+        "regular"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-02302187-a",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "similar to",
+          "targets": [
+            {
+              "words": "regular, constante, estável",
+              "gloss": "não sujeitos a mudança ou variação, especialmente no comportamento\n"
+            },
+            {
+              "words": "regular, constante, estável",
+              "gloss": "não sujeitos a mudança ou variação, especialmente no comportamento\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "regularidade",
+              "gloss": "a qualidade de ser caracterizado por um princípio fixo ou taxa\n"
+            },
+            {
+              "words": "igualdade",
+              "gloss": "a qualidade da uniformidade e da falta de variação\n"
+            },
+            {
+              "words": "regularidade",
+              "gloss": "a qualidade de ser caracterizado por um princípio fixo ou taxa\n"
+            },
+            {
+              "words": "igualdade",
+              "gloss": "a qualidade da uniformidade e da falta de variação\n"
+            }
+          ]
+        },
+        {
+          "relation": "has derived form",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "de forma regular, sem variação\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "intervalo",
+              "gloss": "um comprimento definido de tempo demarcada por dois instantes\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-04509592-n",
+      "pos": "n",
+      "gloss": "roupas de design distintivo usado por membros de um grupo em particular como meio de identificação\n",
+      "synonyms": [
+        "uniforme"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-04509592-n",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "hyponym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "uniforme de uma peça usada por pára-quedistas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uniforme usado por alguns servos e motoristas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "prescrito uniforme de identificação para soldados\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "vestido com um uniforme\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "usado para significar que a União de forças na Guerra Civil americana (que usava uniformes azuis)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "usado para significar o confederado forças na Guerra Civil americana (que usavam uniformes cinzentos)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "fornecer com uniformes\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "ornamental marcado cordão ou trança sobre o ombro de um uniforme\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um tecido de algodão grosso twilled freqüentemente usado para uniformes\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "roupas comuns como distinguido de uniformes, roupa de trabalho, trajes clericais, etc.\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um em forma de cunha de lã ou algodão cap; usado como parte de um uniforme\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma túnica sem mangas, usada por garotas inglesas como parte de um uniforme escolar\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uniforme de uma peça usada por pára-quedistas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "de uma peça de vestuário formado após um uniforme de pára-quedista\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uniforme usado por alguns servos e motoristas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "prescrito uniforme de identificação para soldados\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "conjunto de um menino; copiado de um uniforme de marinheiro\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma subcultura jovem intimamente associada com a música punk rock no final de 1970; em parte uma reação à subcultura hippie; vestido era opcional, mas a intenção de chocar (sacos de lixo de plástico ou uniformes escolares de idade) e os cabelos tingidos em cores brilhantes (em cortes de cabelo Moicano ou, por vezes, cravado em plumas brilhantes)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer organização ou partido cuja uniformes ou distintivos são azuis\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer organização ou partido cuja uniformes ou distintivos são cinza\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um recruta Inglês (que usava um uniforme que era preto e tan) servindo na polícia irlandesa para reprimir a rebelião Sinn Fein de 1919-1921\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um membro da SA nazista que usavam uniformes marrons\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "`Johnny &#39;foi aplicado como um apelido para soldados confederados pelos soldados federais na Guerra Civil norte-americana; `Greyback &#39;derivada de seus uniformes confederados cinza\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um técnico que usa listras no uniforme para indicar posição ou anos de serviço\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "fornecer com uniformes\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "fornecer com uniformes\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "compostura, copa, fato, hábito, indumentária, paramentos, roupa, traje, trajo, veste, vestiaria, vestidura, vestimenta, vestuário",
+              "gloss": "uma cobertura projetado para ser usado no corpo de uma pessoa\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "agrupamento, agrupação, categoria, coletivo, grupo",
+              "gloss": "qualquer número de entidades (Membros), considerado como uma unidade\n"
+            },
+            {
+              "words": "compostura, copa, fato, hábito, indumentária, paramentos, roupa, traje, trajo, veste, vestiaria, vestidura, vestimenta, vestuário",
+              "gloss": "uma cobertura projetado para ser usado no corpo de uma pessoa\n"
+            },
+            {
+              "words": "método, meio, médio",
+              "gloss": "uma instrumentalidade para a realização de algum fim\n"
+            },
+            {
+              "words": "projecto, plano",
+              "gloss": "um esquema de arranjo\n"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,637 @@
+{
+  "class_id": "TexturaUniforme",
+  "count": 90,
+  "note": "PULO relation harvest (unnamed #NN / similar-to off-axis). Not decisions — review only if something looks useful; otherwise ignore.",
+  "sinalizacao": {
+    "estruturacao": {
+      "display": "estruturação",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01200095-a",
+      "target_gloss": "o modo de construção de alguma coisa e o arranjo das suas partes\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "estrutura": {
+      "display": "estrutura",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01200095-a",
+      "target_gloss": "o modo de construção de alguma coisa e o arranjo das suas partes\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "constituicao": {
+      "display": "constituição",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01200095-a",
+      "target_gloss": "a maneira em que alguém ou alguma coisa é composto\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "composicao": {
+      "display": "composição",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01200095-a",
+      "target_gloss": "a maneira em que alguém ou alguma coisa é composto\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "nivelamento": {
+      "display": "nivelamento",
+      "via": "relation #61",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "o ato de fazer igual ou uniforme\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "nivelacao": {
+      "display": "nivelação",
+      "via": "relation #61",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "o ato de fazer igual ou uniforme\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "comparar": {
+      "display": "comparar",
+      "via": "relation #61",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "fazer igual, uniforme, correspondente, ou correspondência\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "compensar": {
+      "display": "compensar",
+      "via": "relation #61",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "fazer igual, uniforme, correspondente, ou correspondência\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "empatar": {
+      "display": "empatar",
+      "via": "relation #61",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "fazer igual, uniforme, correspondente, ou correspondência\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "equiparar": {
+      "display": "equiparar",
+      "via": "relation #61",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "fazer igual, uniforme, correspondente, ou correspondência\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "igualar": {
+      "display": "igualar",
+      "via": "relation #61",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "fazer igual, uniforme, correspondente, ou correspondência\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "nivelar": {
+      "display": "nivelar",
+      "via": "relation #61",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "fazer igual, uniforme, correspondente, ou correspondência\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "inercia": {
+      "display": "inércia",
+      "via": "relation #61",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "(Física) a tendência de um corpo para manter o seu estado de repouso ou de movimento uniforme, a menos que influenciado por uma força externa\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "homogeneo": {
+      "display": "homogéneo",
+      "via": "see also",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "todos do mesmo tipo ou semelhante ou a natureza\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "afetar": {
+      "display": "afetar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "fazer visível ou perceptível\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "afigurar": {
+      "display": "afigurar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "fazer visível ou perceptível\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "apresentar": {
+      "display": "apresentar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "fazer visível ou perceptível\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "assumir": {
+      "display": "assumir",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "fazer visível ou perceptível\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "badalar": {
+      "display": "badalar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "fazer visível ou perceptível\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "descobrir": {
+      "display": "descobrir",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "fazer visível ou perceptível\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "desenfardar": {
+      "display": "desenfardar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "fazer visível ou perceptível\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "desfraldar": {
+      "display": "desfraldar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "fazer visível ou perceptível\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "desinternar": {
+      "display": "desinternar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "fazer visível ou perceptível\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "divulgar": {
+      "display": "divulgar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "fazer visível ou perceptível\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "estampar": {
+      "display": "estampar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "fazer visível ou perceptível\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "exibir": {
+      "display": "exibir",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "fazer visível ou perceptível\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "expandir": {
+      "display": "expandir",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "fazer visível ou perceptível\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "exteriorizar": {
+      "display": "exteriorizar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "fazer visível ou perceptível\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "fazer_ver": {
+      "display": "fazer ver",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "fazer visível ou perceptível\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "franquear": {
+      "display": "franquear",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "fazer visível ou perceptível\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "patentear": {
+      "display": "patentear",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "fazer visível ou perceptível\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "representar": {
+      "display": "representar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "fazer visível ou perceptível\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "reproduzir": {
+      "display": "reproduzir",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "fazer visível ou perceptível\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "revelar-se": {
+      "display": "revelar-se",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "fazer visível ou perceptível\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "revestir": {
+      "display": "revestir",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "fazer visível ou perceptível\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "simular": {
+      "display": "simular",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "fazer visível ou perceptível\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "soltar": {
+      "display": "soltar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "fazer visível ou perceptível\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "suar": {
+      "display": "suar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "fazer visível ou perceptível\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "vestir": {
+      "display": "vestir",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "fazer visível ou perceptível\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "ensinar": {
+      "display": "ensinar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "fazer visível ou perceptível\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "manifestar": {
+      "display": "manifestar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "fazer visível ou perceptível\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "mostrar": {
+      "display": "mostrar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "fazer visível ou perceptível\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "casta": {
+      "display": "casta",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "uma categoria de coisas distinguidos por alguma característica ou qualidade comum\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "condicao": {
+      "display": "condição",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "uma categoria de coisas distinguidos por alguma característica ou qualidade comum\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "especie": {
+      "display": "espécie",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "uma categoria de coisas distinguidos por alguma característica ou qualidade comum\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "genero": {
+      "display": "género",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "uma categoria de coisas distinguidos por alguma característica ou qualidade comum\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "nacao": {
+      "display": "nação",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "uma categoria de coisas distinguidos por alguma característica ou qualidade comum\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "raca": {
+      "display": "raça",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "uma categoria de coisas distinguidos por alguma característica ou qualidade comum\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "simulacro": {
+      "display": "simulacro",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "uma categoria de coisas distinguidos por alguma característica ou qualidade comum\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "sorte": {
+      "display": "sorte",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "uma categoria de coisas distinguidos por alguma característica ou qualidade comum\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "tipo": {
+      "display": "tipo",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "uma categoria de coisas distinguidos por alguma característica ou qualidade comum\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "forma": {
+      "display": "forma",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "uma categoria de coisas distinguidos por alguma característica ou qualidade comum\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "classe": {
+      "display": "classe",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "uma categoria de coisas distinguidos por alguma característica ou qualidade comum\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "existencia": {
+      "display": "existência",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-01966488-a",
+      "target_gloss": "um exemplo de algo que ocorre\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "amachucado": {
+      "display": "amachucado",
+      "via": "similar to",
+      "source_ili": "ili-30-00909545-a",
+      "target_gloss": "que tem uma superfície sem inclinação, de inclinação em que nenhuma parte seja superior ou inferior à outra\n",
+      "reason": "similar-to fora do eixo (glosa)"
+    },
+    "amarfanhado": {
+      "display": "amarfanhado",
+      "via": "similar to",
+      "source_ili": "ili-30-00909545-a",
+      "target_gloss": "que tem uma superfície sem inclinação, de inclinação em que nenhuma parte seja superior ou inferior à outra\n",
+      "reason": "similar-to fora do eixo (glosa)"
+    },
+    "chato": {
+      "display": "chato",
+      "via": "similar to",
+      "source_ili": "ili-30-00909545-a",
+      "target_gloss": "que tem uma superfície sem inclinação, de inclinação em que nenhuma parte seja superior ou inferior à outra\n",
+      "reason": "similar-to fora do eixo (glosa)"
+    },
+    "cha": {
+      "display": "chã",
+      "via": "similar to",
+      "source_ili": "ili-30-00909545-a",
+      "target_gloss": "que tem uma superfície sem inclinação, de inclinação em que nenhuma parte seja superior ou inferior à outra\n",
+      "reason": "similar-to fora do eixo (glosa)"
+    },
+    "chao": {
+      "display": "chão",
+      "via": "similar to",
+      "source_ili": "ili-30-00909545-a",
+      "target_gloss": "que tem uma superfície sem inclinação, de inclinação em que nenhuma parte seja superior ou inferior à outra\n",
+      "reason": "similar-to fora do eixo (glosa)"
+    },
+    "direito": {
+      "display": "direito",
+      "via": "similar to",
+      "source_ili": "ili-30-00909545-a",
+      "target_gloss": "que tem uma superfície sem inclinação, de inclinação em que nenhuma parte seja superior ou inferior à outra\n",
+      "reason": "similar-to fora do eixo (glosa)"
+    },
+    "igual": {
+      "display": "igual",
+      "via": "similar to",
+      "source_ili": "ili-30-00909545-a",
+      "target_gloss": "que tem uma superfície sem inclinação, de inclinação em que nenhuma parte seja superior ou inferior à outra\n",
+      "reason": "similar-to fora do eixo (glosa)"
+    },
+    "liso": {
+      "display": "liso",
+      "via": "similar to",
+      "source_ili": "ili-30-00909545-a",
+      "target_gloss": "que tem uma superfície sem inclinação, de inclinação em que nenhuma parte seja superior ou inferior à outra\n",
+      "reason": "similar-to fora do eixo (glosa)"
+    },
+    "raso": {
+      "display": "raso",
+      "via": "similar to",
+      "source_ili": "ili-30-00909545-a",
+      "target_gloss": "que tem uma superfície sem inclinação, de inclinação em que nenhuma parte seja superior ou inferior à outra\n",
+      "reason": "similar-to fora do eixo (glosa)"
+    },
+    "regular": {
+      "display": "regular",
+      "via": "similar to",
+      "source_ili": "ili-30-00909545-a",
+      "target_gloss": "que tem uma superfície sem inclinação, de inclinação em que nenhuma parte seja superior ou inferior à outra\n",
+      "reason": "similar-to fora do eixo (glosa)"
+    },
+    "reto": {
+      "display": "reto",
+      "via": "similar to",
+      "source_ili": "ili-30-00909545-a",
+      "target_gloss": "que tem uma superfície sem inclinação, de inclinação em que nenhuma parte seja superior ou inferior à outra\n",
+      "reason": "similar-to fora do eixo (glosa)"
+    },
+    "uniforme": {
+      "display": "uniforme",
+      "via": "similar to",
+      "source_ili": "ili-30-00909545-a",
+      "target_gloss": "que tem uma superfície sem inclinação, de inclinação em que nenhuma parte seja superior ou inferior à outra\n",
+      "reason": "similar-to fora do eixo (glosa)"
+    },
+    "plano": {
+      "display": "plano",
+      "via": "similar to",
+      "source_ili": "ili-30-00909545-a",
+      "target_gloss": "que tem uma superfície sem inclinação, de inclinação em que nenhuma parte seja superior ou inferior à outra\n",
+      "reason": "similar-to fora do eixo (glosa)"
+    },
+    "brando": {
+      "display": "brando",
+      "via": "see also",
+      "source_ili": "ili-30-00909545-a",
+      "target_gloss": "tendo uma superfície livre de aspereza ou solavancos ou cristas ou irregularidades\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "macio": {
+      "display": "macio",
+      "via": "see also",
+      "source_ili": "ili-30-00909545-a",
+      "target_gloss": "tendo uma superfície livre de aspereza ou solavancos ou cristas ou irregularidades\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "suave": {
+      "display": "suave",
+      "via": "see also",
+      "source_ili": "ili-30-00909545-a",
+      "target_gloss": "tendo uma superfície livre de aspereza ou solavancos ou cristas ou irregularidades\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "constante": {
+      "display": "constante",
+      "via": "see also",
+      "source_ili": "ili-30-00909545-a",
+      "target_gloss": "não sujeitos a mudança ou variação, especialmente no comportamento\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "estavel": {
+      "display": "estável",
+      "via": "see also",
+      "source_ili": "ili-30-00909545-a",
+      "target_gloss": "não sujeitos a mudança ou variação, especialmente no comportamento\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "desigual": {
+      "display": "desigual",
+      "via": "relation #61",
+      "source_ili": "ili-30-00909545-a",
+      "target_gloss": "nem mesmo ou uniforme como por exemplo, na forma ou textura\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "irregular": {
+      "display": "irregular",
+      "via": "relation #61",
+      "source_ili": "ili-30-00909545-a",
+      "target_gloss": "nem mesmo ou uniforme como por exemplo, na forma ou textura\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "paciente": {
+      "display": "paciente",
+      "via": "relation #61",
+      "source_ili": "ili-30-00909545-a",
+      "target_gloss": "duradoura circunstâncias difíceis com temperamento ou caracterizada por tal resistência\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "brilhar": {
+      "display": "brilhar",
+      "via": "relation #61",
+      "source_ili": "ili-30-00909545-a",
+      "target_gloss": "emitem uma luz constante mesmo sem chamas\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "altura": {
+      "display": "altura",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-00909545-a",
+      "target_gloss": "a dimensão vertical de extensão; distância da base do algo para o topo\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "variacao": {
+      "display": "variação",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-00909545-a",
+      "target_gloss": "uma instância de mudança; a taxa ou a magnitude da mudança\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "ainda": {
+      "display": "ainda",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04745370-n",
+      "target_gloss": "em toda a extensão\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "carecer": {
+      "display": "carecer",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04745370-n",
+      "target_gloss": "ser sem\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "manquejar": {
+      "display": "manquejar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04745370-n",
+      "target_gloss": "ser sem\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "faltar": {
+      "display": "faltar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04745370-n",
+      "target_gloss": "ser sem\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "qualidade": {
+      "display": "qualidade",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04745370-n",
+      "target_gloss": "um atributo essencial e distintiva de algo ou alguém\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "variedade": {
+      "display": "variedade",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04745370-n",
+      "target_gloss": "heterogeneidade notável\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "diversidade": {
+      "display": "diversidade",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04745370-n",
+      "target_gloss": "heterogeneidade notável\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "etapa": {
+      "display": "etapa",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04745370-n",
+      "target_gloss": "uma posição específica identificável num contínuo ou em série ou em um processo especialmente\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "fase": {
+      "display": "fase",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04745370-n",
+      "target_gloss": "uma posição específica identificável num contínuo ou em série ou em um processo especialmente\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "grau": {
+      "display": "grau",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04745370-n",
+      "target_gloss": "uma posição específica identificável num contínuo ou em série ou em um processo especialmente\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "nivel": {
+      "display": "nível",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04745370-n",
+      "target_gloss": "uma posição específica identificável num contínuo ou em série ou em um processo especialmente\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "ponto": {
+      "display": "ponto",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04745370-n",
+      "target_gloss": "uma posição específica identificável num contínuo ou em série ou em um processo especialmente\n",
+      "reason": "relação não-nomeada / #NN"
+    }
+  }
+}

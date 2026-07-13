@@ -1,0 +1,18 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix : <http://example.org/textura#> .
+
+:TexturaUniforme a skos:Concept, owl:Class ;
+    skos:prefLabel "uniforme"@pt ;
+    skos:scopeNote "Eixo definidor: invariância face a um parâmetro"@pt ;
+    skosxl:altLabel [ skosxl:literalForm "constante"@pt ] ;
+    skosxl:altLabel [ skosxl:literalForm "imutável"@pt ] ;
+    skosxl:altLabel [ skosxl:literalForm "invariável"@pt ] ;
+    skosxl:altLabel [ skosxl:literalForm "uniformidade"@pt ] ;
+    skos:related :regular ;
+    skos:related :periodico ;
+    skos:related :igual ;
+    :contrastaCom :politipica ;
+    skos:scopeNote "Contraste lexical (eixo): politípica"@pt .
+:TexturaUniforme owl:disjointWith :TexturaHeterogenea .

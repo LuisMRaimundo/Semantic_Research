@@ -1,0 +1,19 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tex: <http://example.org/textura#> .
+
+tex:TexturaUniforme a owl:Class,
+        skos:Concept ;
+    tex:contrastaCom tex:desigual,
+        tex:irregular,
+        tex:politipica ;
+    tex:temAtributo tex:igual,
+        tex:igualdade,
+        tex:regular ;
+    owl:disjointWith tex:TexturaHeterogenea ;
+    skos:prefLabel "uniforme"@pt ;
+    skos:scopeNote "Contraste lexical (eixo): desigual"@pt,
+        "Contraste lexical (eixo): irregular"@pt,
+        "Contraste lexical (eixo): politípica"@pt,
+        "Eixo definidor: invariância face a um parâmetro"@pt .
+

@@ -1,0 +1,6 @@
+Class: TexturaUniforme
+Deliverable: Onto.PT + PULO concordance
+Files:
+  TexturaUniforme.concordance.md
+  TexturaUniforme.concordance.json
+Generated from LexWarrant merge (WordNet column empty unless supplied).
