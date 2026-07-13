@@ -1,5 +1,18 @@
 # CHANGELOG — LexWarrant
 
+## [versão a fixar] — 2026-07-13 — CILI Tarefa 1: vendor + resolver
+
+- Vendorizado o catálogo canónico CILI (GWA) em `data/cili/ili-map-pwn30.tab`
+  (117 659 pares `i-id ↔ offset PWN-3.0`; TSV 2 colunas sem cabeçalho), com
+  `HEADER.txt` a registar URL, commit (`eeab8003`, master) e data. Offline —
+  zero rede em runtime.
+- Novo `cili_resolver.py`: `cili_resolve(id) -> "i…" | None` e
+  `cili_offset("i…") -> offset`. Lookup puro (aceita `i…`, `ili-30-…`/`por-30-…`
+  e offset nu `XXXXXXXX-p`); sem inferência, sem efeitos laterais, nunca
+  levanta; desconhecido/lixo → None (nunca ILI fabricado).
+- 6 testes novos (`tests/test_cili_resolver.py`): round-trip de i-code OEWN,
+  resolução de offset PWN-3.0, lixo→None, nunca-levanta. Suíte total: 22 OK.
+
 ## [versão a fixar] — 2026-07-13 — Tarefa B: faixa WordNet na fusão
 
 - Novo `semantic/wordnet_track.py`: adapta o export OEWN de facetas

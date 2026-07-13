@@ -3,7 +3,7 @@
 - **Política de divergência:** conservative
 - **Fontes:** PULO, ONTO, WordNet  (colunas: ONTO, PULO, WordNet)
 - **Tabela de equivalência ILI:** C:\Users\lmr20\Desktop\Semantic_Research\classes\TexturaUniforme\out\ili_equivalence.json  (3 mapeados, 5 revisão, 3 sem correspondência)
-- **Gerado:** 2026-07-13T14:09:23
+- **Gerado:** 2026-07-13T14:16:59
 - **Descartados (só pendentes):** 9 (termos ainda por adjudicar; contados, não listados)
 - **Asserções:** 11/11 PASS ✅
 

@@ -1,0 +1,13 @@
+CILI — Collaborative Inter-Lingual Index (vendored, offline)
+=============================================================
+Ficheiro:  ili-map-pwn30.tab
+Fonte:     https://raw.githubusercontent.com/globalwordnet/cili/master/ili-map-pwn30.tab
+Repo:      https://github.com/globalwordnet/cili  (branch master)
+Commit:    eeab8003a3200e6293e8f7569de7d15a7a426d76  (2016-01-26, "back to old mapping")
+Descarregado: 2026-07-13
+Formato:   TSV sem cabeçalho, 2 colunas:  <ili-id>\t<pwn30-offset-pos>
+           ex.:  i1<TAB>00001740-a
+Linhas:    117659
+Licença:   CC BY 4.0 (ver LICENSE no repo CILI)
+Uso:       cili_resolver.py — resolução PURA de identificadores (sem inferência,
+           sem rede em runtime). Nunca fabrica ILI: id sem entrada → None.

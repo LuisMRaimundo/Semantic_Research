@@ -2,7 +2,7 @@
 
 - **Eixo definidor:** invariância face a um parâmetro
 - **Fonte:** PULO / WordNet.PT export (âncora ILI; sem porta estatística)
-- **Gerado:** 2026-07-13T14:09:22
+- **Gerado:** 2026-07-13T14:16:58
 - **Estado global:** ✅ TODAS AS ASSERÇÕES PASSARAM
 
 ## Quadro de asserções (protocolo)
