@@ -203,10 +203,25 @@ def run_class(class_id: str, policy: Optional[str] = None,
             except Exception as exc:  # noqa: BLE001
                 summary["errors"].append(f"ONTO engine: {exc}")
 
+    # --- WordNet (faixa de corroboração; regenerada se houver facets + tabela) ---
+    try:
+        from .wordnet_track import build_wordnet_result
+        wn_res = build_wordnet_result(ws.class_id)
+        if wn_res.get("ok"):
+            summary["wordnet_track"] = {
+                "path": wn_res["path"], "convoked": wn_res["convoked"],
+                "skipped": wn_res["skipped"],
+                "n_sinalizacao": wn_res["n_sinalizacao"]}
+        else:
+            summary["wordnet_track"] = {"skipped_because": wn_res.get("error")}
+    except Exception as exc:  # noqa: BLE001
+        summary["errors"].append(f"WordNet track: {exc}")
+
     # --- Merge ---
     inputs = []
     pulo_r = ws.results / f"{ws.class_id}.PULO.result.json"
     onto_r = ws.results / f"{ws.class_id}.ONTO.result.json"
+    wn_r = ws.results / f"{ws.class_id}.WordNet.result.json"
     if pulo_r.exists():
         if hide_pulo_signals:
             data = json.loads(pulo_r.read_text(encoding="utf-8"))
@@ -221,6 +236,8 @@ def run_class(class_id: str, policy: Optional[str] = None,
             inputs.append(("PULO", pulo_r))
     if onto_r.exists():
         inputs.append(("ONTO", onto_r))
+    if wn_r.exists():
+        inputs.append(("WordNet", wn_r))
 
     if len(inputs) >= 2:
         try:

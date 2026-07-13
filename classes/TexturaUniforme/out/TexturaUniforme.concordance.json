@@ -1,7 +1,7 @@
 {
   "class": "TexturaUniforme",
   "policy": "conservative",
-  "generated": "2026-07-13T13:00:32",
+  "generated": "2026-07-13T14:09:23",
   "columns": [
     "ONTO",
     "PULO",
@@ -9,13 +9,14 @@
   ],
   "sources": [
     "PULO",
-    "ONTO"
+    "ONTO",
+    "WordNet"
   ],
   "ili_equivalence_map": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\classes\\TexturaUniforme\\out\\ili_equivalence.json",
   "ili_equivalence_counts": {
     "mapped": 3,
     "review": 5,
-    "unmatched": 4
+    "unmatched": 3
   },
   "ili_equivalence_loaded": true,
   "concepts": [
@@ -209,13 +210,15 @@
     },
     {
       "term": "invariável",
-      "ili": [],
+      "ili": [
+        "oewn-ili:i10771"
+      ],
       "sources": {
         "ONTO": "UF",
         "PULO": "—",
-        "WordNet": "—"
+        "WordNet": "sinalizacao"
       },
-      "join": "single",
+      "join": "weak(term)",
       "veredicto": "fonte única",
       "proposta_final": "UF",
       "unmapped_flag": true,
@@ -228,10 +231,14 @@
         "ONTO:ontopt06",
         "ONTO:polaridades",
         "ONTO:seed (Etapa 1/2)",
-        "ONTO:thes5rec"
+        "ONTO:thes5rec",
+        "WordNet:sinalização(atestado na WordNet [pt_lemma (ILI)] · oewn-01973553-a · ILI i10771)"
       ],
       "notes": [
-        "namespace não-mapeada (não-juntável): clip21:19004, contopt:28395, fuzzythes:23298, fuzzythes:27091, ontopt06:2945, polaridades:4484"
+        "junção por termo — as fontes não partilham um ILI comum (fiabilidade menor)",
+        "sinalizado por WordNet enquanto admitido por ONTO",
+        "namespace não-mapeada (não-juntável): clip21:19004, contopt:28395, fuzzythes:23298, fuzzythes:27091, ontopt06:2945, polaridades:4484",
+        "WordNet: atestado na WordNet [pt_lemma (ILI)] · oewn-01973553-a · ILI i10771"
       ]
     },
     {
@@ -309,12 +316,174 @@
       "notes": [
         "namespace não-mapeada (não-juntável): clip01:4659"
       ]
+    },
+    {
+      "term": "dedifferentiated",
+      "ili": [
+        "oewn-ili:i4127"
+      ],
+      "sources": {
+        "ONTO": "—",
+        "PULO": "—",
+        "WordNet": "sinalizacao"
+      },
+      "join": "single",
+      "veredicto": "sinalização",
+      "proposta_final": null,
+      "unmapped_flag": false,
+      "status_projection": {},
+      "divergences": [],
+      "union_of_provenance": [
+        "WordNet:sinalização(vizinho similar_to de i4126 (oewn-00748118-a) — sem estatuto; adjudicação humana)"
+      ],
+      "notes": [
+        "WordNet: vizinho similar_to de i4126 (oewn-00748118-a) — sem estatuto; adjudicação humana"
+      ]
+    },
+    {
+      "term": "differentiated",
+      "ili": [
+        "oewn-ili:i4125"
+      ],
+      "sources": {
+        "ONTO": "—",
+        "PULO": "—",
+        "WordNet": "sinalizacao"
+      },
+      "join": "single",
+      "veredicto": "sinalização",
+      "proposta_final": null,
+      "unmapped_flag": false,
+      "status_projection": {},
+      "divergences": [],
+      "union_of_provenance": [
+        "WordNet:sinalização(material de contraste (antonym) de i4126 (oewn-00748118-a) — sem estatuto; adjudicação humana)"
+      ],
+      "notes": [
+        "WordNet: material de contraste (antonym) de i4126 (oewn-00748118-a) — sem estatuto; adjudicação humana"
+      ]
+    },
+    {
+      "term": "multiform",
+      "ili": [
+        "oewn-ili:i10773"
+      ],
+      "sources": {
+        "ONTO": "—",
+        "PULO": "—",
+        "WordNet": "sinalizacao"
+      },
+      "join": "single",
+      "veredicto": "sinalização",
+      "proposta_final": null,
+      "unmapped_flag": false,
+      "status_projection": {},
+      "divergences": [],
+      "union_of_provenance": [
+        "WordNet:sinalização(material de contraste (antonym) de i10771 (oewn-01973553-a) — sem estatuto; adjudicação humana)"
+      ],
+      "notes": [
+        "WordNet: material de contraste (antonym) de i10771 (oewn-01973553-a) — sem estatuto; adjudicação humana"
+      ]
+    },
+    {
+      "term": "single",
+      "ili": [
+        "oewn-ili:i10772"
+      ],
+      "sources": {
+        "ONTO": "—",
+        "PULO": "—",
+        "WordNet": "sinalizacao"
+      },
+      "join": "single",
+      "veredicto": "sinalização",
+      "proposta_final": null,
+      "unmapped_flag": false,
+      "status_projection": {},
+      "divergences": [],
+      "union_of_provenance": [
+        "WordNet:sinalização(vizinho similar_to de i10771 (oewn-01973553-a) — sem estatuto; adjudicação humana)"
+      ],
+      "notes": [
+        "WordNet: vizinho similar_to de i10771 (oewn-01973553-a) — sem estatuto; adjudicação humana"
+      ]
+    },
+    {
+      "term": "undifferentiated",
+      "ili": [
+        "oewn-ili:i4126"
+      ],
+      "sources": {
+        "ONTO": "—",
+        "PULO": "—",
+        "WordNet": "sinalizacao"
+      },
+      "join": "single",
+      "veredicto": "sinalização",
+      "proposta_final": null,
+      "unmapped_flag": false,
+      "status_projection": {},
+      "divergences": [],
+      "union_of_provenance": [
+        "WordNet:sinalização(atestado na WordNet [en_lemma (sem correspondência own-pt)] · oewn-00748118-a · ILI i4126)"
+      ],
+      "notes": [
+        "WordNet: atestado na WordNet [en_lemma (sem correspondência own-pt)] · oewn-00748118-a · ILI i4126"
+      ]
+    },
+    {
+      "term": "uniform",
+      "ili": [
+        "oewn-ili:i4126"
+      ],
+      "sources": {
+        "ONTO": "—",
+        "PULO": "—",
+        "WordNet": "sinalizacao"
+      },
+      "join": "single",
+      "veredicto": "sinalização",
+      "proposta_final": null,
+      "unmapped_flag": false,
+      "status_projection": {},
+      "divergences": [],
+      "union_of_provenance": [
+        "WordNet:sinalização(atestado na WordNet [en_lemma (sem correspondência own-pt)] · oewn-00748118-a · ILI i4126)"
+      ],
+      "notes": [
+        "WordNet: atestado na WordNet [en_lemma (sem correspondência own-pt)] · oewn-00748118-a · ILI i4126"
+      ]
+    },
+    {
+      "term": "uniforme",
+      "ili": [
+        "oewn-ili:i10771"
+      ],
+      "sources": {
+        "ONTO": "—",
+        "PULO": "—",
+        "WordNet": "sinalizacao"
+      },
+      "join": "single",
+      "veredicto": "sinalização",
+      "proposta_final": null,
+      "unmapped_flag": false,
+      "status_projection": {},
+      "divergences": [],
+      "union_of_provenance": [
+        "WordNet:sinalização(atestado na WordNet [pt_lemma (ILI)] · oewn-01973553-a · ILI i10771)"
+      ],
+      "notes": [
+        "WordNet: atestado na WordNet [pt_lemma (ILI)] · oewn-01973553-a · ILI i10771"
+      ]
     }
   ],
   "summary": {
     "veredicto_totals": {
       "convergência (termo)": 3,
-      "fonte única": 8
+      "fonte única": 8,
+      "sinalização": 7
     },
     "descartados_pendentes": 9,
     "convergencia_plena": [],
@@ -346,7 +515,7 @@
       "id": "T2",
       "text": "Junção weak(term) só ocorre sem ILI partilhado entre fontes (caso contrário aplicar-se-ia a junção por ILI).",
       "passed": true,
-      "evidence": "3 conceito(s) weak(term)"
+      "evidence": "4 conceito(s) weak(term)"
     },
     {
       "id": "T3",
@@ -368,9 +537,9 @@
     },
     {
       "id": "T6",
-      "text": "Fonte WordNet ausente ⇒ coluna toda «—»; execução continua (exit 0).",
+      "text": "Fonte WordNet ausente ⇒ coluna toda «—».",
       "passed": true,
-      "evidence": "coluna WordNet ausente e uniformemente «—»"
+      "evidence": "WordNet presente — N/A"
     },
     {
       "id": "T7",
@@ -400,7 +569,7 @@
       "id": "T9",
       "text": "concordance.json faz round-trip (contagens de term/ili estáveis).",
       "passed": true,
-      "evidence": "11 conceitos"
+      "evidence": "18 conceitos"
     }
   ],
   "all_passed": true

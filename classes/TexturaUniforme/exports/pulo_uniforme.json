@@ -3,7 +3,7 @@
   "query": {
     "query": "uniforme",
     "pos": null,
-    "mode": "Exact"
+    "mode": "Contains"
   },
   "count": 7,
   "synsets": [

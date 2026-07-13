@@ -1,0 +1,101 @@
+{
+  "class_id": "TexturaUniforme",
+  "pref_label": "uniforme",
+  "axis": "(faixa WordNet — corroboração ancorada em ILI; sem adjudicação)",
+  "generated": "2026-07-13T14:09:23",
+  "source": "WordNet (OEWN facets export)",
+  "facets_export": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\WordNet\\exports\\uniform_20260713_123000\\uniform.facets.json",
+  "convoked_ilis": [
+    "i10771",
+    "i4126"
+  ],
+  "skipped_ilis": [
+    "i60712",
+    "i33388"
+  ],
+  "provenance": [],
+  "synsets": [
+    {
+      "name": "oewn-01973553-a",
+      "ili": "i10771",
+      "pos": "a",
+      "pt_lemmas": [
+        "invariável",
+        "uniforme"
+      ],
+      "lemmas": [
+        "uniform",
+        "unvarying"
+      ]
+    },
+    {
+      "name": "oewn-00748118-a",
+      "ili": "i4126",
+      "pos": "a",
+      "pt_lemmas": [],
+      "lemmas": [
+        "undifferentiated",
+        "uniform"
+      ]
+    }
+  ],
+  "sinalizacao": {
+    "invariavel": {
+      "display": "invariável",
+      "reason": "atestado na WordNet [pt_lemma (ILI)] · oewn-01973553-a · ILI i10771",
+      "offsets_ili": [
+        "i10771"
+      ]
+    },
+    "uniforme": {
+      "display": "uniforme",
+      "reason": "atestado na WordNet [pt_lemma (ILI)] · oewn-01973553-a · ILI i10771",
+      "offsets_ili": [
+        "i10771"
+      ]
+    },
+    "multiform": {
+      "display": "multiform",
+      "reason": "material de contraste (antonym) de i10771 (oewn-01973553-a) — sem estatuto; adjudicação humana",
+      "offsets_ili": [
+        "i10773"
+      ]
+    },
+    "single": {
+      "display": "single",
+      "reason": "vizinho similar_to de i10771 (oewn-01973553-a) — sem estatuto; adjudicação humana",
+      "offsets_ili": [
+        "i10772"
+      ]
+    },
+    "undifferentiated": {
+      "display": "undifferentiated",
+      "reason": "atestado na WordNet [en_lemma (sem correspondência own-pt)] · oewn-00748118-a · ILI i4126",
+      "offsets_ili": [
+        "i4126"
+      ]
+    },
+    "uniform": {
+      "display": "uniform",
+      "reason": "atestado na WordNet [en_lemma (sem correspondência own-pt)] · oewn-00748118-a · ILI i4126",
+      "offsets_ili": [
+        "i4126"
+      ]
+    },
+    "differentiated": {
+      "display": "differentiated",
+      "reason": "material de contraste (antonym) de i4126 (oewn-00748118-a) — sem estatuto; adjudicação humana",
+      "offsets_ili": [
+        "i4125"
+      ]
+    },
+    "dedifferentiated": {
+      "display": "dedifferentiated",
+      "reason": "vizinho similar_to de i4126 (oewn-00748118-a) — sem estatuto; adjudicação humana",
+      "offsets_ili": [
+        "i4127"
+      ]
+    }
+  },
+  "_note": "Faixa de CORROBORAÇÃO: só sentidos do eixo adjudicados na tabela ILI; entradas em sinalizacao, nunca estatutos."
+}

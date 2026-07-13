@@ -1,5 +1,24 @@
 # CHANGELOG — LexWarrant
 
+## [versão a fixar] — 2026-07-13 — Tarefa B: faixa WordNet na fusão
+
+- Novo `semantic/wordnet_track.py`: adapta o export OEWN de facetas
+  (`uniform.facets.json`) a `<Classe>.WordNet.result.json`, consumido pelo
+  `run_report` como TERCEIRA fonte (rótulo WordNet), ao lado de PULO e ONTO.
+- Disciplina: a faixa CORROBORA — todas as entradas em `sinalizacao`, nunca
+  estatutos; só são convocados os OEWN ILIs com linha `map` human-adjudicated
+  na tabela (i10771, i4126); vestuário/verbo (i60712, i33388) explicitamente
+  não convocados (`skipped_ilis`).
+- Relações tipadas do OEWN (antonym: multiform/differentiated; similar_to)
+  entram como material de contraste ancorado em ILI, sem estatuto.
+- `pipeline.run_class` (re)gera a faixa quando existem facets + adjudicações e
+  junta-a à fusão se o ficheiro existir; sem faixa, T6 continua no ramo
+  «coluna toda —».
+- Resultado TexturaUniforme: coluna WordNet preenchida (8/18), T6 passa a
+  «WordNet presente — N/A», T1–T11 = 11/11 PASS; sem junções ILI novas —
+  ver nota no relatório (faixa é sinalização-só e as pernas PULO/ONTO não
+  transportam os ILIs mapeados nos mesmos termos).
+
 ## [versão a fixar] — 2026-07-13 — Tarefa A: geração NÃO-destrutiva da tabela ILI (GUI)
 
 - Botão «Ponte ILI…» no workbench (`semantic/ili_bridge.py` + painel em
