@@ -54,6 +54,55 @@ class WorkspaceTests(unittest.TestCase):
         self.assertEqual(len(spec["stage1_whitelist"]), 1)
         self.assertEqual(spec["stage1_whitelist"][0]["decision"], "UF")
 
+    def test_rename_preserves_decisions(self):
+        ws = ClassWorkspace.create(
+            "TexturaMetamrfica", pref_label="metamórfica", axis="mudança"
+        )
+        dec = decmod.blank_decisions(ws.class_id)
+        dec["senses"] = [{
+            "source": "pulo",
+            "key": "ili-30-1-n",
+            "ili": "ili-30-1-n",
+            "gloss": "g",
+            "members": ["a"],
+            "decision": "UF",
+            "note": "keep me",
+        }]
+        decmod.save_decisions(ws.decisions_json, dec)
+        # fake artefacts keyed by class_id
+        (ws.results / f"{ws.class_id}.PULO.result.json").write_text(
+            json.dumps({"class_id": ws.class_id, "stage5": {"admitted": {}}},
+                       ensure_ascii=False),
+            encoding="utf-8",
+        )
+        (ws.final_results / f"FINAL__Onto_plus_PULO__{ws.class_id}.concordance.md"
+         ).write_text("# ok\n", encoding="utf-8")
+
+        renamed = ws.rename("TexturaMetamorfica")
+        self.assertEqual(renamed.class_id, "TexturaMetamorfica")
+        self.assertFalse((settings.CLASSES_DIR / "TexturaMetamrfica").exists())
+        self.assertTrue(renamed.root.exists())
+        meta = renamed.load_meta()
+        self.assertEqual(meta["class_id"], "TexturaMetamorfica")
+        self.assertEqual(meta["pref_label"], "metamórfica")  # untouched
+        self.assertEqual(meta["axis"], "mudança")
+        new_dec = json.loads(renamed.decisions_json.read_text(encoding="utf-8"))
+        self.assertEqual(new_dec["class_id"], "TexturaMetamorfica")
+        self.assertEqual(new_dec["senses"][0]["decision"], "UF")
+        self.assertEqual(new_dec["senses"][0]["note"], "keep me")
+        self.assertTrue(
+            (renamed.results / "TexturaMetamorfica.PULO.result.json").exists()
+        )
+        self.assertTrue(
+            (renamed.final_results
+             / "FINAL__Onto_plus_PULO__TexturaMetamorfica.concordance.md").exists()
+        )
+        payload = json.loads(
+            (renamed.results / "TexturaMetamorfica.PULO.result.json")
+            .read_text(encoding="utf-8")
+        )
+        self.assertEqual(payload["class_id"], "TexturaMetamorfica")
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -207,6 +207,9 @@ class Workbench(tk.Tk):
         self.class_combo.pack(side="left", padx=6)
         self.class_combo.bind("<<ComboboxSelected>>", lambda e: self._load_class())
         ttk.Button(top, text="New…", command=self._new_class).pack(side="left")
+        ttk.Button(top, text="Rename…", command=self._rename_class).pack(
+            side="left", padx=(4, 0)
+        )
         ttk.Button(top, text="Open folder", command=self._open_folder).pack(
             side="left", padx=4
         )
@@ -600,6 +603,64 @@ class Workbench(tk.Tk):
             self._refresh_classes(select=cid.get().strip().replace(" ", ""))
 
         ttk.Button(win, text="Create", command=ok).grid(
+            row=3, column=1, sticky="e", padx=8, pady=10
+        )
+
+    def _rename_class(self):
+        ws = self._ws()
+        if not ws:
+            messagebox.showinfo(APP, "Open a class first.")
+            return
+        win = tk.Toplevel(self)
+        win.title(f"Rename class — {ws.class_id}")
+        win.transient(self)
+        ttk.Label(win, text="Current").grid(row=0, column=0, sticky="w", padx=8, pady=4)
+        ttk.Label(win, text=ws.class_id).grid(row=0, column=1, sticky="w", padx=8, pady=4)
+        new_var = tk.StringVar(value=ws.class_id)
+        ttk.Label(win, text="New class_id").grid(
+            row=1, column=0, sticky="w", padx=8, pady=4
+        )
+        ttk.Entry(win, textvariable=new_var, width=40).grid(
+            row=1, column=1, padx=8, pady=4
+        )
+        ttk.Label(
+            win,
+            text="Renames the folder and id only — decisions, senses, "
+                 "pref_label and results stay the same.",
+            wraplength=360,
+            foreground="#333",
+        ).grid(row=2, column=0, columnspan=2, sticky="w", padx=8, pady=(0, 4))
+
+        def ok():
+            raw = new_var.get().strip()
+            if not raw:
+                messagebox.showerror(APP, "New class_id required")
+                return
+            try:
+                from semantic.workspace import slug_class
+                new_id = slug_class(raw)
+            except ValueError as exc:
+                messagebox.showerror(APP, str(exc))
+                return
+            if new_id == ws.class_id:
+                win.destroy()
+                return
+            if not messagebox.askyesno(
+                APP,
+                f"Rename «{ws.class_id}» → «{new_id}»?\n\n"
+                "Only the class name/folder changes.",
+            ):
+                return
+            try:
+                renamed = ws.rename(raw)
+            except (FileExistsError, FileNotFoundError, ValueError) as exc:
+                messagebox.showerror(APP, str(exc))
+                return
+            win.destroy()
+            self._refresh_classes(select=renamed.class_id)
+            self._log(f"Renamed {ws.class_id} → {renamed.class_id}\n")
+
+        ttk.Button(win, text="Rename", command=ok).grid(
             row=3, column=1, sticky="e", padx=8, pady=10
         )
 

@@ -3,6 +3,7 @@
 """CLI for Semantic Research workbench.
 
   sr new <Class> [--pref LABEL] [--axis TEXT]
+  sr rename <OldClass> <NewClass>
   sr search <Class> <query> [--source pulo|onto]
   sr status <Class>
   sr run <Class>
@@ -38,6 +39,18 @@ def cmd_new(args):
 def cmd_list(_args):
     for name in ClassWorkspace.list_classes():
         print(name)
+    return 0
+
+
+def cmd_rename(args):
+    ws = ClassWorkspace.open(args.old)
+    try:
+        renamed = ws.rename(args.new)
+    except (FileExistsError, ValueError) as exc:
+        print(f"Error: {exc}", file=sys.stderr)
+        return 1
+    print(f"Renamed {args.old} → {renamed.class_id}")
+    print(json.dumps(renamed.status(), ensure_ascii=False, indent=2))
     return 0
 
 
@@ -91,6 +104,11 @@ def main(argv=None) -> int:
 
     p = sub.add_parser("list", help="list classes")
     p.set_defaults(func=cmd_list)
+
+    p = sub.add_parser("rename", help="rename class (folder + id only)")
+    p.add_argument("old", help="current class_id")
+    p.add_argument("new", help="new class_id")
+    p.set_defaults(func=cmd_rename)
 
     p = sub.add_parser("status", help="show next step")
     p.add_argument("cls")
