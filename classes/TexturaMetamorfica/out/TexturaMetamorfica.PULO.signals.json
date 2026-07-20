@@ -1,0 +1,532 @@
+{
+  "class_id": "TexturaMetamorfica",
+  "count": 75,
+  "note": "PULO relation harvest (unnamed #NN / similar-to off-axis). Not decisions — review only if something looks useful; otherwise ignore.",
+  "sinalizacao": {
+    "cambiar": {
+      "display": "cambiar",
+      "via": "relation #61",
+      "source_ili": "ili-30-07359599-n",
+      "target_gloss": "causar à mudança; fazer diferente; causar uma transformação\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "converter": {
+      "display": "converter",
+      "via": "relation #61",
+      "source_ili": "ili-30-07359599-n",
+      "target_gloss": "causar à mudança; fazer diferente; causar uma transformação\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "demudar": {
+      "display": "demudar",
+      "via": "relation #61",
+      "source_ili": "ili-30-07359599-n",
+      "target_gloss": "causar à mudança; fazer diferente; causar uma transformação\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "evolucionar": {
+      "display": "evolucionar",
+      "via": "relation #61",
+      "source_ili": "ili-30-07359599-n",
+      "target_gloss": "causar à mudança; fazer diferente; causar uma transformação\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "evoluir": {
+      "display": "evoluir",
+      "via": "relation #61",
+      "source_ili": "ili-30-07359599-n",
+      "target_gloss": "causar à mudança; fazer diferente; causar uma transformação\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "falsificar": {
+      "display": "falsificar",
+      "via": "relation #61",
+      "source_ili": "ili-30-07359599-n",
+      "target_gloss": "causar à mudança; fazer diferente; causar uma transformação\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "metamorfosear": {
+      "display": "metamorfosear",
+      "via": "relation #61",
+      "source_ili": "ili-30-07359599-n",
+      "target_gloss": "causar à mudança; fazer diferente; causar uma transformação\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "perturbar": {
+      "display": "perturbar",
+      "via": "relation #61",
+      "source_ili": "ili-30-07359599-n",
+      "target_gloss": "causar à mudança; fazer diferente; causar uma transformação\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "tornar": {
+      "display": "tornar",
+      "via": "relation #61",
+      "source_ili": "ili-30-07359599-n",
+      "target_gloss": "causar à mudança; fazer diferente; causar uma transformação\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "tranformar": {
+      "display": "tranformar",
+      "via": "relation #61",
+      "source_ili": "ili-30-07359599-n",
+      "target_gloss": "causar à mudança; fazer diferente; causar uma transformação\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "transformar": {
+      "display": "transformar",
+      "via": "relation #61",
+      "source_ili": "ili-30-07359599-n",
+      "target_gloss": "causar à mudança; fazer diferente; causar uma transformação\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "alterar": {
+      "display": "alterar",
+      "via": "relation #61",
+      "source_ili": "ili-30-07359599-n",
+      "target_gloss": "causar à mudança; fazer diferente; causar uma transformação\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "mudar": {
+      "display": "mudar",
+      "via": "relation #61",
+      "source_ili": "ili-30-07359599-n",
+      "target_gloss": "causar à mudança; fazer diferente; causar uma transformação\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "modificar": {
+      "display": "modificar",
+      "via": "relation #61",
+      "source_ili": "ili-30-07359599-n",
+      "target_gloss": "causar à mudança; fazer diferente; causar uma transformação\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "pirolise": {
+      "display": "pirólise",
+      "via": "relation #61",
+      "source_ili": "ili-30-07359599-n",
+      "target_gloss": "transformação de uma substância produzida pela acção do calor\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "passagem": {
+      "display": "passagem",
+      "via": "relation #61",
+      "source_ili": "ili-30-07359599-n",
+      "target_gloss": "um evento que resulta numa transformação\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "transicao": {
+      "display": "transição",
+      "via": "relation #61",
+      "source_ili": "ili-30-07359599-n",
+      "target_gloss": "um evento que resulta numa transformação\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "conversao": {
+      "display": "conversão",
+      "via": "relation #61",
+      "source_ili": "ili-30-07359599-n",
+      "target_gloss": "um evento que resulta numa transformação\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "qualitativo": {
+      "display": "qualitativo",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-07359599-n",
+      "target_gloss": "envolvendo distinções com base em qualidades\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "alteracao": {
+      "display": "alteração",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-07359599-n",
+      "target_gloss": "um evento que ocorre quando algo passa de um estado ou fase para outra\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "modificacao": {
+      "display": "modificação",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-07359599-n",
+      "target_gloss": "um evento que ocorre quando algo passa de um estado ou fase para outra\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "variacao": {
+      "display": "variação",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-07359599-n",
+      "target_gloss": "um evento que ocorre quando algo passa de um estado ou fase para outra\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "cambio": {
+      "display": "câmbio",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-07359599-n",
+      "target_gloss": "um evento que ocorre quando algo passa de um estado ou fase para outra\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "mudanca": {
+      "display": "mudança",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-07359599-n",
+      "target_gloss": "um evento que ocorre quando algo passa de um estado ou fase para outra\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "troca": {
+      "display": "troca",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-07359599-n",
+      "target_gloss": "um evento que ocorre quando algo passa de um estado ou fase para outra\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "sorrir": {
+      "display": "sorrir",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "alterar a expressão facial, espalhando os lábios, muitas vezes para sinalizar o prazer\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "inativo": {
+      "display": "inativo",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "não exercer influência ou mudança\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "desenvolver": {
+      "display": "desenvolver",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "alterar o uso de e tornar disponível ou utilizáveis\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "degradacao": {
+      "display": "degradação",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "mudando para um estado inferior (um estado menos respeitado)\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "ajustar": {
+      "display": "ajustar",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "alteram ou regulam de modo a alcançar a precisão ou conforme com a norma\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "colocar": {
+      "display": "colocar",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "alteram ou regulam de modo a alcançar a precisão ou conforme com a norma\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "corrigir": {
+      "display": "corrigir",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "alteram ou regulam de modo a alcançar a precisão ou conforme com a norma\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "adaptar": {
+      "display": "adaptar",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "tornar apto para, ou mudar para se adequar a uma nova finalidade\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "acomodar": {
+      "display": "acomodar",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "tornar apto para, ou mudar para se adequar a uma nova finalidade\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "reorganizacao": {
+      "display": "reorganização",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "mudando um arranjo\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "fixo": {
+      "display": "fixo",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "incapaz de ser alterado ou movido ou desfeito; por exemplo, preços\"congelados\"\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "giro": {
+      "display": "giro",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "o ato de mudar ou inverter a direção do curso\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "transfigurar": {
+      "display": "transfigurar",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "mudar completamente a natureza ou a aparência de\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "aleijar": {
+      "display": "aleijar",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "alterar, de modo a tornar irreconhecível\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "amputar": {
+      "display": "amputar",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "alterar, de modo a tornar irreconhecível\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "assassinar": {
+      "display": "assassinar",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "alterar, de modo a tornar irreconhecível\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "decotar": {
+      "display": "decotar",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "alterar, de modo a tornar irreconhecível\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "deformar": {
+      "display": "deformar",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "alterar, de modo a tornar irreconhecível\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "desmembrar": {
+      "display": "desmembrar",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "alterar, de modo a tornar irreconhecível\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "estropiar": {
+      "display": "estropiar",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "alterar, de modo a tornar irreconhecível\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "fanar": {
+      "display": "fanar",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "alterar, de modo a tornar irreconhecível\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "mutilar": {
+      "display": "mutilar",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "alterar, de modo a tornar irreconhecível\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "troncar": {
+      "display": "troncar",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "alterar, de modo a tornar irreconhecível\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "tronchar": {
+      "display": "tronchar",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "alterar, de modo a tornar irreconhecível\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "truncar": {
+      "display": "truncar",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "alterar, de modo a tornar irreconhecível\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "privatizacao": {
+      "display": "privatização",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "mudar alguma coisa de estado para a propriedade ou controle privado\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "secularizacao": {
+      "display": "secularização",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "a atividade de mudar alguma coisa (a arte ou a educação ou a sociedade ou a moral etc.) para que ele não está mais sob o controle ou influência da religião\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "agitar": {
+      "display": "agitar",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "alterar a disposição ou a posição de\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "remover": {
+      "display": "remover",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "alterar a disposição ou a posição de\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "ave": {
+      "display": "ave",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "warm-blooded vertebrados postura caracteriza-se pelas penas e patas dianteiras modificadas como asas\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "passaro": {
+      "display": "pássaro",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "warm-blooded vertebrados postura caracteriza-se pelas penas e patas dianteiras modificadas como asas\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "subjectivo": {
+      "display": "subjectivo",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "tendo lugar dentro da mente e modificado pelo viés individual\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "elaborar": {
+      "display": "elaborar",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "produção de elementos básicos ou fontes; transformar em um produto mais desenvolvido\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "deslocar": {
+      "display": "deslocar",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "mudar de lugar ou direção\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "girar": {
+      "display": "girar",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "alterar a orientação ou direção, também no sentido abstrato\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "escaravelho": {
+      "display": "escaravelho",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "inseto ter mordendo bucais e asas dianteiras modificadas para formar o tesão cobre cobrem as asas traseiras membranosas\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "maquina": {
+      "display": "máquina",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "qualquer dispositivo mecânico ou elétrico que transmite ou modifica a energia para executar ou auxiliar na execução de tarefas humanas\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "sintetizador": {
+      "display": "sintetizador",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "(música) instrumento eletrônico (normalmente jogado com um teclado) que gera e modifica os sons eletronicamente e pode imitar uma variedade de outros instrumentos musicais\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "modulacao": {
+      "display": "modulação",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "(eletrônica) a transmissão de um sinal ao utilizá-lo para variar uma onda portadora; alterar a amplitude do transportador ou a freqüência ou a fase\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "voz": {
+      "display": "voz",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "o som feito pela vibração das pregas vocais modificado pela ressonância do trato vocal\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "mutacao": {
+      "display": "mutação",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "(genética) qualquer evento que muda a estrutura genética; qualquer alteração na sequência de ácido nucleico herdada do genótipo de um organismo\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "fusao": {
+      "display": "fusão",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "o processo pelo qual o calor muda algo a partir de um sólido para um líquido\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "transformacao": {
+      "display": "transformação",
+      "via": "relation #61",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "(Matemática) uma função que muda a posição ou a orientação dos eixos de um sistema de coordenadas\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "recrescer": {
+      "display": "recrescer",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "dar determinadas propriedades para alguma coisa\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "obter": {
+      "display": "obter",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "dar determinadas propriedades para alguma coisa\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "recriar": {
+      "display": "recriar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "dar determinadas propriedades para alguma coisa\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "voltar": {
+      "display": "voltar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "dar determinadas propriedades para alguma coisa\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "metamorfose": {
+      "display": "metamorfose",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "uma mudança qualitativa\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "transmudacao": {
+      "display": "transmudação",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "uma mudança qualitativa\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "transmutacao": {
+      "display": "transmutação",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "uma mudança qualitativa\n",
+      "reason": "relação não-nomeada / #NN"
+    }
+  }
+}

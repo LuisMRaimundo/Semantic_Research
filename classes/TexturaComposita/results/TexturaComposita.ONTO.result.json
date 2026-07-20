@@ -1,0 +1,1257 @@
+{
+  "class_id": "TexturaComposita",
+  "pref_label": "TexturaCompósita",
+  "axis": "heterogeneidade / composição de materiais ou partes distintas",
+  "generated": "2026-07-18T19:59:09",
+  "db": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\engines\\ONTO\\ontopt.sqlite",
+  "gating": {
+    "weight_min": 0.5,
+    "min_cooccurrence": 2,
+    "fuzzy_resources": [
+      "contopt"
+    ]
+  },
+  "stage1": {
+    "admitted_offsets": [
+      "clip21:1320",
+      "clip21:17923",
+      "contopt:16611",
+      "fuzzythes:25832",
+      "fuzzythes:26969",
+      "fuzzythes:27002",
+      "fuzzythes:27069",
+      "ontopt06:3928",
+      "ontopt06:6214",
+      "ontopt06:7120",
+      "ontopt06:81042",
+      "polaridades:1620",
+      "thes5rec:19632",
+      "thes5rec:22375"
+    ],
+    "excluded_offsets": [
+      "clip21:15438",
+      "contopt:26524",
+      "clip21:2083",
+      "contopt:24966",
+      "fuzzythes:7161",
+      "ontopt06:23962",
+      "ontopt06:25561",
+      "ontopt06:30747",
+      "ontopt06:49495",
+      "ontopt06:43961",
+      "thes5rec:13577",
+      "top01:2962"
+    ],
+    "invalid": [
+      {
+        "entry": {
+          "ili_offset": "clip21:1320",
+          "glosa": "",
+          "decision": "UF",
+          "members": [
+            "compósito",
+            "materiais compostos"
+          ]
+        },
+        "why": "sem ili_offset ou glosa"
+      },
+      {
+        "entry": {
+          "ili_offset": "clip21:17923",
+          "glosa": "",
+          "decision": "RT",
+          "members": [
+            "vário",
+            "variado",
+            "variegado",
+            "mesclado",
+            "matizado",
+            "diferente",
+            "diverso",
+            "versicolor",
+            "misturado",
+            "diversicolor",
+            "misto",
+            "desvairado",
+            "desvariado",
+            "diversificado",
+            "sortido",
+            "copioso",
+            "pintado",
+            "confuso",
+            "desigual",
+            "promíscuo",
+            "raiado",
+            "sorteado",
+            "colorido",
+            "cromatizado",
+            "discordante",
+            "distinto",
+            "entremeado",
+            "inconstante",
+            "multifário",
+            "multíplice",
+            "sarapintado",
+            "tingido",
+            "amalgamado",
+            "nuançado",
+            "confundido",
+            "envolto",
+            "indiscriminado",
+            "mudado",
+            "mudável",
+            "multímodo",
+            "versátil",
+            "abigarrado",
+            "alagartado",
+            "altamado",
+            "diversos",
+            "ecléctico",
+            "numerosos",
+            "pecilocromático",
+            "permixto",
+            "que oferece várias aspectos",
+            "variados",
+            "varioso",
+            "combinado",
+            "complexo",
+            "delirante",
+            "desirmanado",
+            "desirmão",
+            "discrepante",
+            "divergente",
+            "entressachado",
+            "impermanente",
+            "indistinto",
+            "instável",
+            "intermeado",
+            "mudadiço",
+            "mutável",
+            "místico",
+            "variável",
+            "voltário",
+            "voltívolo",
+            "volátil",
+            "volúvel",
+            "vários",
+            "abastecido",
+            "alterado",
+            "alucinado",
+            "bom",
+            "buliçoso",
+            "caprichoso",
+            "composto",
+            "compósito",
+            "contraditório",
+            "desconforme",
+            "dessemelhante",
+            "doido",
+            "embaralhado",
+            "esmaltado",
+            "furta-cor",
+            "hesitante",
+            "híbrido",
+            "incerto",
+            "indistinguível",
+            "irregular",
+            "junto",
+            "leviano",
+            "marchetado",
+            "múltiplo",
+            "numeroso",
+            "permisto",
+            "perplexo",
+            "pingado",
+            "precário",
+            "que oferece vários aspectos",
+            "recamado",
+            "salpicado",
+            "vasto",
+            "veiro"
+          ]
+        },
+        "why": "sem ili_offset ou glosa"
+      },
+      {
+        "entry": {
+          "ili_offset": "contopt:16611",
+          "glosa": "",
+          "decision": "UF",
+          "members": [
+            "compósito",
+            "materiais compostos"
+          ]
+        },
+        "why": "sem ili_offset ou glosa"
+      },
+      {
+        "entry": {
+          "ili_offset": "fuzzythes:25832",
+          "glosa": "",
+          "decision": "RT",
+          "members": [
+            "amalgamado",
+            "entressachado",
+            "diversicolor",
+            "mesclado",
+            "versicolor",
+            "intermeado",
+            "envolto",
+            "misto",
+            "entremeado",
+            "variegado",
+            "raiado",
+            "matizado",
+            "misturado",
+            "variado",
+            "vário",
+            "intervalado",
+            "compósito",
+            "promíscuo",
+            "intercalado",
+            "salteado",
+            "heterogêneo",
+            "diversificado",
+            "cromatizado",
+            "alternado",
+            "composto",
+            "indiscriminado"
+          ]
+        },
+        "why": "sem ili_offset ou glosa"
+      },
+      {
+        "entry": {
+          "ili_offset": "fuzzythes:26969",
+          "glosa": "",
+          "decision": "RT",
+          "members": [
+            "dissimilar",
+            "heterogéneo",
+            "dessemelhante",
+            "absimilhante",
+            "dissímil",
+            "díspar",
+            "dissemelhante",
+            "diferente",
+            "compósito"
+          ]
+        },
+        "why": "sem ili_offset ou glosa"
+      },
+      {
+        "entry": {
+          "ili_offset": "fuzzythes:27002",
+          "glosa": "",
+          "decision": "RT",
+          "members": [
+            "heterogêneo",
+            "compósito",
+            "constituído",
+            "composto",
+            "formado",
+            "elaborado",
+            "feito",
+            "heterogéneo",
+            "aprimorado",
+            "bem-avindo",
+            "misto",
+            "conciliado",
+            "mesclado",
+            "concordado"
+          ]
+        },
+        "why": "sem ili_offset ou glosa"
+      },
+      {
+        "entry": {
+          "ili_offset": "fuzzythes:27069",
+          "glosa": "",
+          "decision": "RT",
+          "members": [
+            "heterogéneo",
+            "compósito",
+            "heterogêneo",
+            "dissimilar",
+            "composto",
+            "dessemelhante",
+            "mesclado",
+            "constituído"
+          ]
+        },
+        "why": "sem ili_offset ou glosa"
+      },
+      {
+        "entry": {
+          "ili_offset": "ontopt06:6214",
+          "glosa": "",
+          "decision": "RT",
+          "members": [
+            "compósito",
+            "entremeado",
+            "mesclado",
+            "misto",
+            "misturado",
+            "raiado"
+          ]
+        },
+        "why": "sem ili_offset ou glosa"
+      },
+      {
+        "entry": {
+          "ili_offset": "ontopt06:81042",
+          "glosa": "",
+          "decision": "UF",
+          "members": [
+            "compósito"
+          ]
+        },
+        "why": "sem ili_offset ou glosa"
+      },
+      {
+        "entry": {
+          "ili_offset": "thes5rec:19632",
+          "glosa": "",
+          "decision": "UF",
+          "members": [
+            "composto",
+            "compósito",
+            "dessemelhante",
+            "dissimilar",
+            "heterogéneo",
+            "heterogêneo"
+          ]
+        },
+        "why": "sem ili_offset ou glosa"
+      },
+      {
+        "entry": {
+          "ili_offset": "thes5rec:22375",
+          "glosa": "",
+          "decision": "UF",
+          "members": [
+            "composto",
+            "compósito",
+            "constituído",
+            "elaborado",
+            "feito",
+            "formado",
+            "heterogêneo"
+          ]
+        },
+        "why": "sem ili_offset ou glosa"
+      }
+    ]
+  },
+  "stage2_seeds": {
+    "composito": {
+      "display": "compósito",
+      "offsets": [
+        "clip21:1320",
+        "clip21:17923",
+        "contopt:16611",
+        "fuzzythes:25832",
+        "fuzzythes:26969",
+        "fuzzythes:27002",
+        "fuzzythes:27069",
+        "ontopt06:3928",
+        "ontopt06:6214",
+        "ontopt06:7120",
+        "ontopt06:81042",
+        "polaridades:1620",
+        "thes5rec:19632",
+        "thes5rec:22375"
+      ]
+    },
+    "materiais_compostos": {
+      "display": "materiais compostos",
+      "offsets": [
+        "clip21:1320",
+        "contopt:16611"
+      ]
+    },
+    "vario": {
+      "display": "vário",
+      "offsets": [
+        "clip21:17923",
+        "fuzzythes:25832"
+      ]
+    },
+    "variado": {
+      "display": "variado",
+      "offsets": [
+        "clip21:17923",
+        "fuzzythes:25832"
+      ]
+    },
+    "variegado": {
+      "display": "variegado",
+      "offsets": [
+        "clip21:17923",
+        "fuzzythes:25832"
+      ]
+    },
+    "mesclado": {
+      "display": "mesclado",
+      "offsets": [
+        "clip21:17923",
+        "fuzzythes:25832",
+        "fuzzythes:27002",
+        "fuzzythes:27069",
+        "ontopt06:6214"
+      ]
+    },
+    "matizado": {
+      "display": "matizado",
+      "offsets": [
+        "clip21:17923",
+        "fuzzythes:25832"
+      ]
+    },
+    "diferente": {
+      "display": "diferente",
+      "offsets": [
+        "clip21:17923",
+        "fuzzythes:26969"
+      ]
+    },
+    "diverso": {
+      "display": "diverso",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "versicolor": {
+      "display": "versicolor",
+      "offsets": [
+        "clip21:17923",
+        "fuzzythes:25832"
+      ]
+    },
+    "misturado": {
+      "display": "misturado",
+      "offsets": [
+        "clip21:17923",
+        "fuzzythes:25832",
+        "ontopt06:6214"
+      ]
+    },
+    "diversicolor": {
+      "display": "diversicolor",
+      "offsets": [
+        "clip21:17923",
+        "fuzzythes:25832"
+      ]
+    },
+    "misto": {
+      "display": "misto",
+      "offsets": [
+        "clip21:17923",
+        "fuzzythes:25832",
+        "fuzzythes:27002",
+        "ontopt06:6214"
+      ]
+    },
+    "desvairado": {
+      "display": "desvairado",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "desvariado": {
+      "display": "desvariado",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "diversificado": {
+      "display": "diversificado",
+      "offsets": [
+        "clip21:17923",
+        "fuzzythes:25832"
+      ]
+    },
+    "sortido": {
+      "display": "sortido",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "copioso": {
+      "display": "copioso",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "pintado": {
+      "display": "pintado",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "confuso": {
+      "display": "confuso",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "desigual": {
+      "display": "desigual",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "promiscuo": {
+      "display": "promíscuo",
+      "offsets": [
+        "clip21:17923",
+        "fuzzythes:25832"
+      ]
+    },
+    "raiado": {
+      "display": "raiado",
+      "offsets": [
+        "clip21:17923",
+        "fuzzythes:25832",
+        "ontopt06:6214"
+      ]
+    },
+    "sorteado": {
+      "display": "sorteado",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "colorido": {
+      "display": "colorido",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "cromatizado": {
+      "display": "cromatizado",
+      "offsets": [
+        "clip21:17923",
+        "fuzzythes:25832"
+      ]
+    },
+    "discordante": {
+      "display": "discordante",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "distinto": {
+      "display": "distinto",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "entremeado": {
+      "display": "entremeado",
+      "offsets": [
+        "clip21:17923",
+        "fuzzythes:25832",
+        "ontopt06:6214"
+      ]
+    },
+    "inconstante": {
+      "display": "inconstante",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "multifario": {
+      "display": "multifário",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "multiplice": {
+      "display": "multíplice",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "sarapintado": {
+      "display": "sarapintado",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "tingido": {
+      "display": "tingido",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "amalgamado": {
+      "display": "amalgamado",
+      "offsets": [
+        "clip21:17923",
+        "fuzzythes:25832"
+      ]
+    },
+    "nuancado": {
+      "display": "nuançado",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "confundido": {
+      "display": "confundido",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "envolto": {
+      "display": "envolto",
+      "offsets": [
+        "clip21:17923",
+        "fuzzythes:25832"
+      ]
+    },
+    "indiscriminado": {
+      "display": "indiscriminado",
+      "offsets": [
+        "clip21:17923",
+        "fuzzythes:25832"
+      ]
+    },
+    "mudado": {
+      "display": "mudado",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "mudavel": {
+      "display": "mudável",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "multimodo": {
+      "display": "multímodo",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "versatil": {
+      "display": "versátil",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "abigarrado": {
+      "display": "abigarrado",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "alagartado": {
+      "display": "alagartado",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "altamado": {
+      "display": "altamado",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "diversos": {
+      "display": "diversos",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "eclectico": {
+      "display": "ecléctico",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "numerosos": {
+      "display": "numerosos",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "pecilocromatico": {
+      "display": "pecilocromático",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "permixto": {
+      "display": "permixto",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "que_oferece_varias_aspectos": {
+      "display": "que oferece várias aspectos",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "variados": {
+      "display": "variados",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "varioso": {
+      "display": "varioso",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "combinado": {
+      "display": "combinado",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "complexo": {
+      "display": "complexo",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "delirante": {
+      "display": "delirante",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "desirmanado": {
+      "display": "desirmanado",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "desirmao": {
+      "display": "desirmão",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "discrepante": {
+      "display": "discrepante",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "divergente": {
+      "display": "divergente",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "entressachado": {
+      "display": "entressachado",
+      "offsets": [
+        "clip21:17923",
+        "fuzzythes:25832"
+      ]
+    },
+    "impermanente": {
+      "display": "impermanente",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "indistinto": {
+      "display": "indistinto",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "instavel": {
+      "display": "instável",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "intermeado": {
+      "display": "intermeado",
+      "offsets": [
+        "clip21:17923",
+        "fuzzythes:25832"
+      ]
+    },
+    "mudadico": {
+      "display": "mudadiço",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "mutavel": {
+      "display": "mutável",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "mistico": {
+      "display": "místico",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "variavel": {
+      "display": "variável",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "voltario": {
+      "display": "voltário",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "voltivolo": {
+      "display": "voltívolo",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "volatil": {
+      "display": "volátil",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "voluvel": {
+      "display": "volúvel",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "varios": {
+      "display": "vários",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "abastecido": {
+      "display": "abastecido",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "alterado": {
+      "display": "alterado",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "alucinado": {
+      "display": "alucinado",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "bom": {
+      "display": "bom",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "bulicoso": {
+      "display": "buliçoso",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "caprichoso": {
+      "display": "caprichoso",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "composto": {
+      "display": "composto",
+      "offsets": [
+        "clip21:17923",
+        "fuzzythes:25832",
+        "fuzzythes:27002",
+        "fuzzythes:27069",
+        "ontopt06:3928",
+        "thes5rec:19632",
+        "thes5rec:22375"
+      ]
+    },
+    "contraditorio": {
+      "display": "contraditório",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "desconforme": {
+      "display": "desconforme",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "dessemelhante": {
+      "display": "dessemelhante",
+      "offsets": [
+        "clip21:17923",
+        "fuzzythes:26969",
+        "fuzzythes:27069",
+        "ontopt06:7120",
+        "polaridades:1620",
+        "thes5rec:19632"
+      ]
+    },
+    "doido": {
+      "display": "doido",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "embaralhado": {
+      "display": "embaralhado",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "esmaltado": {
+      "display": "esmaltado",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "furta-cor": {
+      "display": "furta-cor",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "hesitante": {
+      "display": "hesitante",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "hibrido": {
+      "display": "híbrido",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "incerto": {
+      "display": "incerto",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "indistinguivel": {
+      "display": "indistinguível",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "irregular": {
+      "display": "irregular",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "junto": {
+      "display": "junto",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "leviano": {
+      "display": "leviano",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "marchetado": {
+      "display": "marchetado",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "multiplo": {
+      "display": "múltiplo",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "numeroso": {
+      "display": "numeroso",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "permisto": {
+      "display": "permisto",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "perplexo": {
+      "display": "perplexo",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "pingado": {
+      "display": "pingado",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "precario": {
+      "display": "precário",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "que_oferece_varios_aspectos": {
+      "display": "que oferece vários aspectos",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "recamado": {
+      "display": "recamado",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "salpicado": {
+      "display": "salpicado",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "vasto": {
+      "display": "vasto",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "veiro": {
+      "display": "veiro",
+      "offsets": [
+        "clip21:17923"
+      ]
+    },
+    "intervalado": {
+      "display": "intervalado",
+      "offsets": [
+        "fuzzythes:25832"
+      ]
+    },
+    "intercalado": {
+      "display": "intercalado",
+      "offsets": [
+        "fuzzythes:25832"
+      ]
+    },
+    "salteado": {
+      "display": "salteado",
+      "offsets": [
+        "fuzzythes:25832"
+      ]
+    },
+    "heterogeneo": {
+      "display": "heterogêneo",
+      "offsets": [
+        "fuzzythes:25832",
+        "fuzzythes:26969",
+        "fuzzythes:27002",
+        "fuzzythes:27069",
+        "ontopt06:3928",
+        "ontopt06:7120",
+        "polaridades:1620",
+        "thes5rec:19632",
+        "thes5rec:22375"
+      ]
+    },
+    "alternado": {
+      "display": "alternado",
+      "offsets": [
+        "fuzzythes:25832"
+      ]
+    },
+    "dissimilar": {
+      "display": "dissimilar",
+      "offsets": [
+        "fuzzythes:26969",
+        "fuzzythes:27069",
+        "ontopt06:7120",
+        "polaridades:1620",
+        "thes5rec:19632"
+      ]
+    },
+    "absimilhante": {
+      "display": "absimilhante",
+      "offsets": [
+        "fuzzythes:26969"
+      ]
+    },
+    "dissimil": {
+      "display": "dissímil",
+      "offsets": [
+        "fuzzythes:26969"
+      ]
+    },
+    "dispar": {
+      "display": "díspar",
+      "offsets": [
+        "fuzzythes:26969"
+      ]
+    },
+    "dissemelhante": {
+      "display": "dissemelhante",
+      "offsets": [
+        "fuzzythes:26969"
+      ]
+    },
+    "constituido": {
+      "display": "constituído",
+      "offsets": [
+        "fuzzythes:27002",
+        "fuzzythes:27069",
+        "thes5rec:22375"
+      ]
+    },
+    "formado": {
+      "display": "formado",
+      "offsets": [
+        "fuzzythes:27002",
+        "thes5rec:22375"
+      ]
+    },
+    "elaborado": {
+      "display": "elaborado",
+      "offsets": [
+        "fuzzythes:27002",
+        "thes5rec:22375"
+      ]
+    },
+    "feito": {
+      "display": "feito",
+      "offsets": [
+        "fuzzythes:27002",
+        "thes5rec:22375"
+      ]
+    },
+    "aprimorado": {
+      "display": "aprimorado",
+      "offsets": [
+        "fuzzythes:27002"
+      ]
+    },
+    "bem-avindo": {
+      "display": "bem-avindo",
+      "offsets": [
+        "fuzzythes:27002"
+      ]
+    },
+    "conciliado": {
+      "display": "conciliado",
+      "offsets": [
+        "fuzzythes:27002"
+      ]
+    },
+    "concordado": {
+      "display": "concordado",
+      "offsets": [
+        "fuzzythes:27002"
+      ]
+    }
+  },
+  "stage3": {
+    "n_focus_synsets": 16,
+    "n_nuclear_synsets": 12,
+    "admitted": {},
+    "sinalizacao": {}
+  },
+  "stage4_excluded": {},
+  "stage5": {
+    "admitted": {},
+    "pending": {},
+    "_pending_count": 126,
+    "_pending_sidecar": "TexturaComposita.ONTO.pending.json"
+  },
+  "skos": {
+    "uf": [],
+    "rt": [],
+    "contrast": []
+  },
+  "provenance": [],
+  "assertions": [
+    {
+      "stage": "Etapa 1",
+      "text": "Todo o synset admitido possui ili_offset e glosa mapeada ao eixo.",
+      "passed": false,
+      "evidence": "synsets sem ili/glosa: ['clip21:1320', 'clip21:17923', 'contopt:16611', 'fuzzythes:25832', 'fuzzythes:26969', 'fuzzythes:27002', 'fuzzythes:27069', 'ontopt06:6214', 'ontopt06:81042', 'thes5rec:19632', 'thes5rec:22375']"
+    },
+    {
+      "stage": "Etapa 1",
+      "text": "Nenhum synset off-axis (exclude) figura na lista branca admitida.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Etapa 1",
+      "text": "A lista branca é persistida por offset ILI e os offsets são únicos.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Etapa 2",
+      "text": "Os membros colhidos provêm exclusivamente de synsets da lista branca.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Etapa 3",
+      "text": "Candidatos difusos admitidos cumprem peso≥0.5, coocorrência≥2 e ≥1 corroboração externa.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Etapa 3",
+      "text": "Candidatos que falham a corroboração vão para sinalizacao[], não para admitidos[].",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Etapa 4",
+      "text": "Colocações multipalavra e padrões de ruído sem corroboração são descartados (não permanecem na pool de candidatos).",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Etapa 5",
+      "text": "Cada termo em admitidos[] tem estatuto∈{UF,RT,contraste}, teste decisivo registado e ≥1 garantia.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Consistência final",
+      "text": "Nenhum termo é UF de duas classes com owl:disjointWith entre si.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Consistência final",
+      "text": "Contrastantes não são serializados como skos:related.",
+      "passed": true,
+      "evidence": "OK"
+    }
+  ],
+  "all_passed": false,
+  "_disjoint_classes": []
+}

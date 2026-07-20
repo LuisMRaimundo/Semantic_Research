@@ -16,6 +16,7 @@ from pathlib import Path
 from typing import Any, Optional
 
 from . import settings
+from .normalize import strip_accents
 
 
 _SAFE = re.compile(r"[^A-Za-z0-9_\-]+")
@@ -25,7 +26,10 @@ LEGACY_FINAL_DIR_NAMES = ("FINAL_RESULTS", "FINAL_RESULTS__Onto_plus_PULO")
 
 
 def slug_class(name: str) -> str:
-    s = _SAFE.sub("", name.strip().replace(" ", ""))
+    """Folder-safe class id: accents fold to ASCII (Compósita → Composita)."""
+    # Fold diacritics first — otherwise ó is dropped and Compósita → Compsita.
+    s = strip_accents(name.strip()).replace(" ", "")
+    s = _SAFE.sub("", s)
     if not s:
         raise ValueError("class name is empty")
     return s
@@ -433,8 +437,15 @@ class ClassWorkspace:
             dec = json.loads(self.decisions_json.read_text(encoding="utf-8"))
             senses = dec.get("senses") or []
             terms = dec.get("terms") or []
-        decided = sum(1 for s in senses if (s.get("decision") or "").strip())
-        exports = list(self.exports.glob("*.json"))
+        adjud = [s for s in senses
+                 if (s.get("source") or "").lower() in ("pulo", "onto")]
+        decided = sum(1 for s in adjud if (s.get("decision") or "").strip())
+        senses = adjud  # status totals ignore WordNet corroboration cards
+        exports = list(self.exports.glob("*.json")) + list(
+            self.exports.glob("*.facets.json")
+        )
+        # de-dupe if a file matched both globs
+        exports = list({p.resolve(): p for p in exports}.values())
         results = {
             "PULO": next(self.results.glob("*.PULO.result.json"), None)
                     or next(self.results.glob("PULO/*.result.json"), None),

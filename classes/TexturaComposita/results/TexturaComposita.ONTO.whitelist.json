@@ -1,0 +1,33 @@
+{
+  "class_id": "TexturaComposita",
+  "admitted_offsets": [
+    "clip21:1320",
+    "clip21:17923",
+    "contopt:16611",
+    "fuzzythes:25832",
+    "fuzzythes:26969",
+    "fuzzythes:27002",
+    "fuzzythes:27069",
+    "ontopt06:3928",
+    "ontopt06:6214",
+    "ontopt06:7120",
+    "ontopt06:81042",
+    "polaridades:1620",
+    "thes5rec:19632",
+    "thes5rec:22375"
+  ],
+  "excluded_offsets": [
+    "clip21:15438",
+    "contopt:26524",
+    "clip21:2083",
+    "contopt:24966",
+    "fuzzythes:7161",
+    "ontopt06:23962",
+    "ontopt06:25561",
+    "ontopt06:30747",
+    "ontopt06:49495",
+    "ontopt06:43961",
+    "thes5rec:13577",
+    "top01:2962"
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "type": "oewn_facets",
+  "term": "composite",
+  "pos": "Todas",
+  "language": "English",
+  "class_id": "TexturaComposita",
+  "generated": "2026-07-18T17:06:15",
+  "count": 4,
+  "facets": [
+    "synsets_relations"
+  ],
+  "source": {
+    "lexicon": "oewn",
+    "backend": "wn",
+    "alignment": "ILI via translate()",
+    "via": "semantic.adapters.wordnet (workbench)",
+    "pt_coverage": "0/4 synsets com pt_lemmas"
+  },
+  "synsets": [
+    {
+      "name": "oewn-02711835-a",
+      "ili": "i15148",
+      "pos": "a",
+      "definition": "of or relating to or belonging to the plant family Compositae",
+      "examples": [],
+      "lemmas": [
+        "composite"
+      ],
+      "pt_lemmas": [],
+      "hypernyms": [],
+      "hyponyms": [],
+      "relations": {
+        "antonym": [],
+        "derivationally_related_form": [
+          {
+            "id": "oewn-11935683-n",
+            "ili": "i99843",
+            "words": [
+              "composite"
+            ],
+            "gloss": "considered the most highly evolved dicotyledonous plants, characterized by florets arranged in dense heads that resemble single flowers"
+          }
+        ],
+        "similar_to": [],
+        "attribute": [],
+        "also_see": []
+      }
+    },
+    {
+      "name": "oewn-05878987-n",
+      "ili": "i67722",
+      "pos": "n",
+      "definition": "a conceptual whole made up of complicated and related parts",
+      "examples": [
+        "the complex of shopping malls, houses, and roads created a new town"
+      ],
+      "lemmas": [
+        "complex",
+        "composite"
+      ],
+      "pt_lemmas": [],
+      "hypernyms": [
+        "oewn-05878206-n"
+      ],
+      "hyponyms": [
+        "oewn-05879237-n",
+        "oewn-05879412-n"
+      ],
+      "relations": {
+        "antonym": [],
+        "derivationally_related_form": [
+          {
+            "id": "oewn-02185375-s",
+            "ili": "i11972",
+            "words": [
+              "composite"
+            ],
+            "gloss": "consisting of separate interconnected parts"
+          }
+        ],
+        "similar_to": [],
+        "attribute": [],
+        "also_see": []
+      }
+    },
+    {
+      "name": "oewn-11935683-n",
+      "ili": "i99843",
+      "pos": "n",
+      "definition": "considered the most highly evolved dicotyledonous plants, characterized by florets arranged in dense heads that resemble single flowers",
+      "examples": [],
+      "lemmas": [
+        "composite",
+        "composite plant"
+      ],
+      "pt_lemmas": [],
+      "hypernyms": [
+        "oewn-11690372-n"
+      ],
+      "hyponyms": [
+        "oewn-11936127-n",
+        "oewn-11936368-n",
+        "oewn-11943643-n",
+        "oewn-11943866-n",
+        "oewn-11944106-n",
+        "oewn-12010636-n",
+        "oewn-12010782-n",
+        "oewn-12011096-n",
+        "oewn-12043876-n",
+        "oewn-12044195-n",
+        "oewn-12051123-n"
+      ],
+      "relations": {
+        "antonym": [],
+        "derivationally_related_form": [
+          {
+            "id": "oewn-02711835-a",
+            "ili": "i15148",
+            "words": [
+              "composite"
+            ],
+            "gloss": "of or relating to or belonging to the plant family Compositae"
+          }
+        ],
+        "similar_to": [],
+        "attribute": [],
+        "also_see": []
+      }
+    },
+    {
+      "name": "oewn-02185375-s",
+      "ili": "i11972",
+      "pos": "s",
+      "definition": "consisting of separate interconnected parts",
+      "examples": [],
+      "lemmas": [
+        "composite"
+      ],
+      "pt_lemmas": [],
+      "hypernyms": [],
+      "hyponyms": [],
+      "relations": {
+        "antonym": [],
+        "derivationally_related_form": [
+          {
+            "id": "oewn-05878987-n",
+            "ili": "i67722",
+            "words": [
+              "composite"
+            ],
+            "gloss": "a conceptual whole made up of complicated and related parts"
+          }
+        ],
+        "similar_to": [
+          {
+            "id": "oewn-02183738-a",
+            "ili": "i11967",
+            "words": [
+              "complex"
+            ],
+            "gloss": "complicated in structure; consisting of interconnected parts"
+          }
+        ],
+        "attribute": [],
+        "also_see": []
+      }
+    }
+  ],
+  "similarity": {
+    "pairs": [],
+    "note": "omitted in workbench search"
+  },
+  "hierarchy": {},
+  "visualization": {}
+}

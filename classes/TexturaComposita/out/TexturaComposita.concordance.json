@@ -1,0 +1,195 @@
+{
+  "class": "TexturaComposita",
+  "policy": "conservative",
+  "generated": "2026-07-18T19:59:10",
+  "columns": [
+    "ONTO",
+    "PULO",
+    "WordNet"
+  ],
+  "sources": [
+    "PULO",
+    "ONTO",
+    "WordNet"
+  ],
+  "ili_equivalence_map": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\classes\\TexturaComposita\\out\\ili_equivalence.json",
+  "ili_equivalence_counts": {
+    "mapped": 2,
+    "review": 0,
+    "unmatched": 9
+  },
+  "ili_equivalence_loaded": true,
+  "concepts": [
+    {
+      "term": "Composição",
+      "ili": [
+        "oewn-ili:i67721"
+      ],
+      "sources": {
+        "ONTO": "—",
+        "PULO": "—",
+        "WordNet": "sinalizacao"
+      },
+      "join": "single",
+      "veredicto": "sinalização",
+      "proposta_final": null,
+      "unmapped_flag": false,
+      "status_projection": {},
+      "divergences": [],
+      "union_of_provenance": [
+        "WordNet:sinalização(atestado na WordNet [pt_lemma (ILI)] · oewn-05878802-n · ILI i67721)"
+      ],
+      "notes": [
+        "WordNet: atestado na WordNet [pt_lemma (ILI)] · oewn-05878802-n · ILI i67721"
+      ]
+    },
+    {
+      "term": "composto",
+      "ili": [
+        "oewn-ili:i67721"
+      ],
+      "sources": {
+        "ONTO": "—",
+        "PULO": "—",
+        "WordNet": "sinalizacao"
+      },
+      "join": "single",
+      "veredicto": "sinalização",
+      "proposta_final": null,
+      "unmapped_flag": false,
+      "status_projection": {},
+      "divergences": [],
+      "union_of_provenance": [
+        "WordNet:sinalização(atestado na WordNet [pt_lemma (ILI)] · oewn-05878802-n · ILI i67721)"
+      ],
+      "notes": [
+        "WordNet: atestado na WordNet [pt_lemma (ILI)] · oewn-05878802-n · ILI i67721"
+      ]
+    },
+    {
+      "term": "composto químico",
+      "ili": [
+        "oewn-ili:i114921"
+      ],
+      "sources": {
+        "ONTO": "—",
+        "PULO": "—",
+        "WordNet": "sinalizacao"
+      },
+      "join": "single",
+      "veredicto": "sinalização",
+      "proposta_final": null,
+      "unmapped_flag": false,
+      "status_projection": {},
+      "divergences": [],
+      "union_of_provenance": [
+        "WordNet:sinalização(atestado na WordNet [pt_lemma (ILI)] · oewn-14842408-n · ILI i114921)"
+      ],
+      "notes": [
+        "WordNet: atestado na WordNet [pt_lemma (ILI)] · oewn-14842408-n · ILI i114921"
+      ]
+    },
+    {
+      "term": "substância química",
+      "ili": [
+        "oewn-ili:i114921"
+      ],
+      "sources": {
+        "ONTO": "—",
+        "PULO": "—",
+        "WordNet": "sinalizacao"
+      },
+      "join": "single",
+      "veredicto": "sinalização",
+      "proposta_final": null,
+      "unmapped_flag": false,
+      "status_projection": {},
+      "divergences": [],
+      "union_of_provenance": [
+        "WordNet:sinalização(atestado na WordNet [pt_lemma (ILI)] · oewn-14842408-n · ILI i114921)"
+      ],
+      "notes": [
+        "WordNet: atestado na WordNet [pt_lemma (ILI)] · oewn-14842408-n · ILI i114921"
+      ]
+    }
+  ],
+  "summary": {
+    "veredicto_totals": {
+      "sinalização": 4
+    },
+    "descartados_pendentes": 17,
+    "convergencia_plena": [],
+    "convergencia_termo": [],
+    "divergences": [],
+    "fonte_unica": []
+  },
+  "assertions": [
+    {
+      "id": "T1",
+      "text": "Nenhuma junção por termo quando ambos têm ILI (ILI tem precedência).",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "id": "T2",
+      "text": "Junção weak(term) só ocorre sem ILI partilhado entre fontes (caso contrário aplicar-se-ia a junção por ILI).",
+      "passed": true,
+      "evidence": "0 conceito(s) weak(term)"
+    },
+    {
+      "id": "T3",
+      "text": "Nenhum ILI é fabricado; mapeamento só pela tabela declarada; pares não-mapeados são flagueados.",
+      "passed": true,
+      "evidence": "bogus→(None, False); unmapped_flag=False"
+    },
+    {
+      "id": "T4",
+      "text": "Cada divergência de estatuto é registada por-fonte (sem colapso em contagem).",
+      "passed": true,
+      "evidence": "0 divergência(s)"
+    },
+    {
+      "id": "T5",
+      "text": "Termo de fonte única aparece como «fonte única» e nenhum termo admitido é descartado.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "id": "T6",
+      "text": "Fonte WordNet ausente ⇒ coluna toda «—».",
+      "passed": true,
+      "evidence": "WordNet presente — N/A"
+    },
+    {
+      "id": "T7",
+      "text": "proposta_final nunca é um estatuto não suportado; conservador ⇒ null em divergência.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "id": "T8",
+      "text": "Entradas de classes diferentes são recusadas com erro claro.",
+      "passed": true,
+      "evidence": "ClassMismatch levantada para classes mistas"
+    },
+    {
+      "id": "T10",
+      "text": "«Convergência plena» exige junção por ILI (o conjunto mais defensável nunca assenta só em weak(term)).",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "id": "T11",
+      "text": "Nenhum conceito só-pendente figura como linha da matriz (são contados em «descartados_pendentes»).",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "id": "T9",
+      "text": "concordance.json faz round-trip (contagens de term/ili estáveis).",
+      "passed": true,
+      "evidence": "4 conceitos"
+    }
+  ],
+  "all_passed": true
+}

@@ -1,0 +1,34 @@
+{
+  "class_id": "TexturaMetamorfica",
+  "pref_label": "TexturaMetamórfica",
+  "axis": "muda de forma, relativamente a um ou vários parâmetros",
+  "focus_stems": [
+    "TexturaMetamórfica"
+  ],
+  "axis_terms": [
+    "hemoetico",
+    "metamorfico",
+    "metamorfose",
+    "modificacao",
+    "mudanca",
+    "transmudacao",
+    "transmutacao",
+    "transformacao",
+    "alteracao",
+    "cambiar",
+    "converter",
+    "demudar",
+    "evolucionar",
+    "evoluir",
+    "falsificar",
+    "metamorfosear",
+    "perturbar",
+    "tornar",
+    "tranformar",
+    "transformar",
+    "alterar",
+    "mudar",
+    "modificar"
+  ],
+  "disjoint_classes": {}
+}

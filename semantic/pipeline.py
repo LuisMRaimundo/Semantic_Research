@@ -118,6 +118,36 @@ def _sideline_pulo_signals(result_path: Path, out_dir: Path) -> Path:
     return clean_path
 
 
+def _preflight(ws: ClassWorkspace, engines: list[str]) -> list[str]:
+    """Human-readable blockers before engines run (empty axis, empty export…)."""
+    problems: list[str] = []
+    meta = ws.load_meta()
+    if not (meta.get("axis") or "").strip():
+        problems.append(
+            "axis is empty — fill Meta «axis: …» and Guardar decisões "
+            "(both PULO and ONTO engines require it)."
+        )
+    if "pulo" in engines:
+        export = _best_pulo_export(ws)
+        if export is None:
+            problems.append(
+                "No PULO export — search with source PULO (try «composto», "
+                "not «compósita»)."
+            )
+        else:
+            try:
+                data = json.loads(export.read_text(encoding="utf-8"))
+            except (OSError, json.JSONDecodeError):
+                data = {}
+            if int(data.get("count") or 0) == 0 or not (data.get("synsets") or []):
+                problems.append(
+                    f"PULO export is empty ({export.name}, 0 synsets) — "
+                    "re-search a lemma that hits the lexicon "
+                    "(e.g. «composto» / «compósito»)."
+                )
+    return problems
+
+
 def run_class(class_id: str, policy: Optional[str] = None,
               engines: Optional[list[str]] = None,
               hide_pulo_signals: bool = True) -> dict[str, Any]:
@@ -132,13 +162,22 @@ def run_class(class_id: str, policy: Optional[str] = None,
     paths = _ensure_legacy_paths()
     phase0_pulo, phase0_skos, lexwarrant = _import_legacy(paths)
 
-    spec_paths = write_specs(ws)
     summary: dict[str, Any] = {
         "class_id": ws.class_id,
-        "specs": {k: str(v) for k, v in spec_paths.items()},
+        "specs": {},
         "results": {},
         "errors": [],
     }
+
+    blockers = _preflight(ws, engines)
+    if blockers:
+        summary["errors"].extend(blockers)
+        summary["merge_ok"] = False
+        summary["status"] = ws.status()
+        return summary
+
+    spec_paths = write_specs(ws)
+    summary["specs"] = {k: str(v) for k, v in spec_paths.items()}
 
     # --- PULO ---
     if "pulo" in engines and "pulo" in spec_paths:
@@ -243,9 +282,18 @@ def run_class(class_id: str, policy: Optional[str] = None,
         try:
             import contextlib
             import io
+            from .ili_bridge import find_table_file
+            map_path = find_table_file(ws)
+            summary["ili_table"] = str(map_path) if map_path else None
             buf = io.StringIO()
             with contextlib.redirect_stdout(buf), contextlib.redirect_stderr(buf):
-                doc = lexwarrant.run_report(inputs, ws.out, policy=policy)
+                doc = lexwarrant.run_report(
+                    inputs, ws.out, policy=policy, map_path=map_path
+                )
+            # surface LexWarrant's ILI load line (otherwise swallowed by redirect)
+            for line in buf.getvalue().splitlines():
+                if "ili_equivalence" in line.lower() or "EQUIVALÊNCIA" in line:
+                    summary.setdefault("ili_log", []).append(line)
             published = ws.publish_final_results(
                 Path(doc["_md_path"]), Path(doc["_json_path"])
             )
@@ -253,10 +301,28 @@ def run_class(class_id: str, policy: Optional[str] = None,
             summary["concordance_json"] = published["json"]
             summary["final_results"] = published["folder"]
             summary["merge_ok"] = True
+            summary["ili_equivalence_loaded"] = bool(
+                doc.get("ili_equivalence_loaded")
+            )
+            summary["ili_equivalence_counts"] = doc.get("ili_equivalence_counts")
             note_bits = [
                 f"FINAL RESULTS → {published['folder']}",
                 "(Onto.PT + PULO concordance deliverable)",
             ]
+            if map_path and doc.get("ili_equivalence_loaded"):
+                counts = doc.get("ili_equivalence_counts") or {}
+                n_map = counts.get("map", counts.get("mapped", "?"))
+                note_bits.append(f"ILI table OK ({n_map} map pairs)")
+            elif map_path:
+                note_bits.append(
+                    "ILI file found but 0 high-confidence map pairs — "
+                    "promote review→map in Ponte ILI"
+                )
+            else:
+                note_bits.append(
+                    "No ili_equivalence.json — put it in out/ or use "
+                    "«5 · Ponte ILI…»"
+                )
             if hide_pulo_signals and summary.get("pulo_signals"):
                 note_bits.append(
                     f"{summary['pulo_signals']} PULO signals sidelined in out/"
@@ -283,7 +349,7 @@ def search_and_seed(class_id: str, query: str, source: str = "pulo",
                     mode: str = "Starts with", pos: Optional[str] = None,
                     limit: int = 80) -> dict:
     """Search lexicon, save export, seed undecided sense cards."""
-    from .adapters import OntoStore, PuloStore
+    from .adapters import OntoStore, PuloStore, WordNetStore
     from . import decisions as decmod
 
     ws = ClassWorkspace.open(class_id)
@@ -303,8 +369,16 @@ def search_and_seed(class_id: str, query: str, source: str = "pulo",
         )
         store.close()
         fname = f"onto_{query.strip().replace(' ', '_')}.json"
+    elif source in ("wordnet", "oewn", "wn"):
+        source = "wordnet"
+        export = WordNetStore().export_search(
+            query, class_id=ws.class_id, pos=pos, limit=min(limit, 40)
+        )
+        # *.facets.json so Ponte ILI / wordnet_track find this class first
+        safe = query.strip().replace(" ", "_")
+        fname = f"wordnet_{safe}.facets.json"
     else:
-        raise ValueError("source must be 'pulo' or 'onto'")
+        raise ValueError("source must be 'pulo', 'onto', or 'wordnet'")
 
     out_path = ws.exports / fname
     out_path.write_text(
@@ -314,8 +388,10 @@ def search_and_seed(class_id: str, query: str, source: str = "pulo",
     existing["class_id"] = ws.class_id
     if source == "pulo":
         updated = decmod.from_pulo_export(export, existing)
-    else:
+    elif source == "onto":
         updated = decmod.from_onto_export(export, existing)
+    else:
+        updated = decmod.from_wordnet_export(export, existing)
     decmod.save_decisions(ws.decisions_json, updated)
     return {
         "export": str(out_path),

@@ -1,0 +1,146 @@
+{
+  "type": "oewn_facets",
+  "term": "metamorphic",
+  "pos": "Todas",
+  "language": "English",
+  "class_id": "TexturaMetamorfica",
+  "generated": "2026-07-18T22:35:29",
+  "count": 2,
+  "facets": [
+    "synsets_relations"
+  ],
+  "source": {
+    "lexicon": "oewn",
+    "backend": "wn",
+    "alignment": "ILI via translate()",
+    "via": "semantic.adapters.wordnet (workbench)",
+    "pt_coverage": "1/2 synsets com pt_lemmas"
+  },
+  "synsets": [
+    {
+      "name": "oewn-02963206-a",
+      "ili": "i16835",
+      "pos": "a",
+      "definition": "of or relating to metamorphosis (especially of rocks)",
+      "examples": [
+        "metamorphic stage",
+        "marble is a metamorphic rock that takes a high polish"
+      ],
+      "lemmas": [
+        "metamorphic",
+        "metamorphous"
+      ],
+      "pt_lemmas": [
+        "metamórfico"
+      ],
+      "hypernyms": [],
+      "hyponyms": [],
+      "relations": {
+        "antonym": [],
+        "derivationally_related_form": [
+          {
+            "id": "oewn-00402936-n",
+            "ili": "i37517",
+            "words": [
+              "metamorphosis"
+            ],
+            "gloss": "a complete change of physical form or substance especially as by magic or witchcraft"
+          }
+        ],
+        "similar_to": [],
+        "attribute": [],
+        "also_see": []
+      }
+    },
+    {
+      "name": "oewn-01533762-a",
+      "ili": "i8401",
+      "pos": "a",
+      "definition": "characterized by metamorphosis or change in physical form or substance",
+      "examples": [],
+      "lemmas": [
+        "metamorphic"
+      ],
+      "pt_lemmas": [],
+      "hypernyms": [],
+      "hyponyms": [],
+      "relations": {
+        "antonym": [
+          {
+            "id": "oewn-01535299-a",
+            "ili": "i8408",
+            "words": [
+              "nonmetamorphic"
+            ],
+            "gloss": "not metamorphic"
+          }
+        ],
+        "derivationally_related_form": [
+          {
+            "id": "oewn-13536083-n",
+            "ili": "i107745",
+            "words": [
+              "metamorphosis"
+            ],
+            "gloss": "the marked and rapid transformation of a larva into an adult that occurs in some animals"
+          }
+        ],
+        "similar_to": [
+          {
+            "id": "oewn-01534016-s",
+            "ili": "i8402",
+            "words": [
+              "epimorphic"
+            ],
+            "gloss": "characterized by incomplete metamorphosis; having the same number of body segments in successive stages"
+          },
+          {
+            "id": "oewn-01534195-s",
+            "ili": "i8403",
+            "words": [
+              "hemimetabolous",
+              "hemimetabolic",
+              "hemimetamorphous",
+              "hemimetamorphic"
+            ],
+            "gloss": "(of an insect with aquatic young) undergoing incomplete metamorphosis in which the young does not resemble the adult"
+          },
+          {
+            "id": "oewn-01534497-s",
+            "ili": "i8404",
+            "words": [
+              "heterometabolous",
+              "heterometabolic"
+            ],
+            "gloss": "(of an insect) undergoing incomplete metamorphosis in which the nymph is essentially like the adult and there is no pupal stage"
+          },
+          {
+            "id": "oewn-01534741-s",
+            "ili": "i8405",
+            "words": [
+              "holometabolic",
+              "holometabolous"
+            ],
+            "gloss": "(of an insect) undergoing complete metamorphosis"
+          },
+          {
+            "id": "oewn-01534920-s",
+            "ili": "i8406",
+            "words": [
+              "metamorphous"
+            ],
+            "gloss": "produced by metamorphosis"
+          }
+        ],
+        "attribute": [],
+        "also_see": []
+      }
+    }
+  ],
+  "similarity": {
+    "pairs": [],
+    "note": "omitted in workbench search"
+  },
+  "hierarchy": {},
+  "visualization": {}
+}

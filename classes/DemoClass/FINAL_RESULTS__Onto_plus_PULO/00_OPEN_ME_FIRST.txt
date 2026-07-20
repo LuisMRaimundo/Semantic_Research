@@ -1,9 +1,10 @@
-FINAL RESULTS — Onto.PT + PULO
+FINAL RESULTS — NOT READY YET
 ==============================
 
-This folder is the class DELIVERABLE.
+This folder is only a placeholder.
+There is no concordance until you:
+  1) Search in PULO + Onto.PT
+  2) Mark senses and Save
+  3) Click Run (needs ≥2 engine results)
 
-1) Open:  OPEN_ME__FINAL_RESULTS.html  (green page)
-2) Or open:  FINAL__Onto_plus_PULO__DemoClass.concordance.md
-
-WordNet is not included unless you add it later.
+Then look for:  FINAL__Onto_plus_PULO__DemoClass.concordance.md

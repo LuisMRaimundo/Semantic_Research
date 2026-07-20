@@ -1,0 +1,108 @@
+{
+  "class": "TexturaComposita",
+  "generated": "2026-07-18T17:07:47",
+  "map": [
+    {
+      "oewn_ili": "i114921",
+      "pulo_ili": "ili-30-14818238-n",
+      "evidence": {
+        "cili_identity": "i114921",
+        "shared_lemmas": [],
+        "pos": "n"
+      },
+      "confidence": "high",
+      "source": "cili:cili@eeab8003 (master, 2016-01-26)"
+    },
+    {
+      "oewn_ili": "i67721",
+      "pulo_ili": "ili-30-14818238-n",
+      "evidence": {
+        "shared_lemmas": [
+          "composto"
+        ],
+        "pos": "n"
+      },
+      "confidence": "high",
+      "source": "human-adjudicated (GUI Ponte ILI)"
+    }
+  ],
+  "review": [],
+  "unmatched": [
+    {
+      "oewn_ili": "i11935",
+      "pos": "a",
+      "lemmas": [
+        "composto"
+      ],
+      "why": "nenhum synset PULO partilha lema+POS"
+    },
+    {
+      "oewn_ili": "i52230",
+      "pos": "n",
+      "lemmas": [
+        "recinto"
+      ],
+      "why": "nenhum synset PULO partilha lema+POS"
+    },
+    {
+      "oewn_ili": "i11973",
+      "pos": "a",
+      "lemmas": [],
+      "why": "sem lemas PT para evidência"
+    },
+    {
+      "oewn_ili": "i11970",
+      "pos": "a",
+      "lemmas": [
+        "colonial"
+      ],
+      "why": "nenhum synset PULO partilha lema+POS"
+    },
+    {
+      "oewn_ili": "i22857",
+      "pos": "v",
+      "lemmas": [
+        "acirrar",
+        "aumentar",
+        "intensificar"
+      ],
+      "why": "nenhum synset PULO partilha lema+POS"
+    },
+    {
+      "oewn_ili": "i22685",
+      "pos": "v",
+      "lemmas": [
+        "combinar",
+        "reunir",
+        "unir"
+      ],
+      "why": "nenhum synset PULO partilha lema+POS"
+    },
+    {
+      "oewn_ili": "i33063",
+      "pos": "v",
+      "lemmas": [],
+      "why": "sem lemas PT para evidência"
+    },
+    {
+      "oewn_ili": "i30022",
+      "pos": "v",
+      "lemmas": [],
+      "why": "sem lemas PT para evidência"
+    },
+    {
+      "oewn_ili": "i29030",
+      "pos": "v",
+      "lemmas": [
+        "combinar",
+        "misturar"
+      ],
+      "why": "nenhum synset PULO partilha lema+POS"
+    }
+  ],
+  "coverage": {
+    "map": 2,
+    "review": 0,
+    "unmatched": 9
+  }
+}

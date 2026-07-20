@@ -1,0 +1,896 @@
+{
+  "type": "oewn_facets",
+  "term": "compound",
+  "pos": "Todas",
+  "language": "English",
+  "class_id": "TexturaComposita",
+  "generated": "2026-07-18T17:07:46",
+  "count": 12,
+  "facets": [
+    "synsets_relations"
+  ],
+  "source": {
+    "lexicon": "oewn",
+    "backend": "wn",
+    "alignment": "ILI via translate()",
+    "via": "semantic.adapters.wordnet (workbench)",
+    "pt_coverage": "8/12 synsets com pt_lemmas"
+  },
+  "synsets": [
+    {
+      "name": "oewn-02178581-a",
+      "ili": "i11935",
+      "pos": "a",
+      "definition": "composed of more than one part",
+      "examples": [
+        "compound leaves are composed of several lobes",
+        "compound flower heads"
+      ],
+      "lemmas": [
+        "compound"
+      ],
+      "pt_lemmas": [
+        "composto"
+      ],
+      "hypernyms": [],
+      "hyponyms": [],
+      "relations": {
+        "antonym": [
+          {
+            "id": "oewn-02173903-a",
+            "ili": "i11902",
+            "words": [
+              "simple"
+            ],
+            "gloss": "(botany) of leaf shapes; of leaves having no divisions or subdivisions"
+          }
+        ],
+        "derivationally_related_form": [],
+        "similar_to": [
+          {
+            "id": "oewn-02179281-s",
+            "ili": "i11936",
+            "words": [
+              "bilobate",
+              "bilobated",
+              "bilobed"
+            ],
+            "gloss": "divided into two lobes"
+          },
+          {
+            "id": "oewn-02179393-s",
+            "ili": "i11937",
+            "words": [
+              "binate"
+            ],
+            "gloss": "growing in two parts or in pairs"
+          },
+          {
+            "id": "oewn-02179495-s",
+            "ili": "i11938",
+            "words": [
+              "bipartite"
+            ],
+            "gloss": "divided into two portions almost to the base"
+          },
+          {
+            "id": "oewn-02179595-s",
+            "ili": "i11939",
+            "words": [
+              "bipinnate"
+            ],
+            "gloss": "of a leaf shape; having doubly pinnate leaflets (as ferns)"
+          },
+          {
+            "id": "oewn-02179709-s",
+            "ili": "i11940",
+            "words": [
+              "bipinnatifid"
+            ],
+            "gloss": "pinnatifid with the segments also pinnatifid"
+          },
+          {
+            "id": "oewn-02179812-s",
+            "ili": "i11941",
+            "words": [
+              "cleft",
+              "dissected"
+            ],
+            "gloss": "having one or more indentations reaching nearly to the midrib"
+          },
+          {
+            "id": "oewn-02179937-s",
+            "ili": "i11942",
+            "words": [
+              "conjugate"
+            ],
+            "gloss": "(of a pinnate leaflet) having only one pair of leaflets"
+          },
+          {
+            "id": "oewn-02180048-s",
+            "ili": "i11943",
+            "words": [
+              "decompound"
+            ],
+            "gloss": "of a compound leaf; consisting of divisions that are themselves compound"
+          },
+          {
+            "id": "oewn-02180177-s",
+            "ili": "i11944",
+            "words": [
+              "even-pinnate",
+              "abruptly-pinnate",
+              "paripinnate"
+            ],
+            "gloss": "(of a leaf shape) pinnate with a pair of leaflets at the apex"
+          },
+          {
+            "id": "oewn-02180330-s",
+            "ili": "i11945",
+            "words": [
+              "incised"
+            ],
+            "gloss": "sharply and deeply indented"
+          },
+          {
+            "id": "oewn-02180411-s",
+            "ili": "i11946",
+            "words": [
+              "lobed",
+              "lobate"
+            ],
+            "gloss": "having deeply indented margins but with lobes not entirely separate from each other"
+          },
+          {
+            "id": "oewn-02180555-s",
+            "ili": "i11947",
+            "words": [
+              "odd-pinnate",
+              "imparipinnate"
+            ],
+            "gloss": "(a leaf shape) pinnate with a single leaflet at the apex"
+          },
+          {
+            "id": "oewn-02180685-s",
+            "ili": "i11948",
+            "words": [
+              "palmate",
+              "palm-shaped"
+            ],
+            "gloss": "of a leaf shape; having leaflets or lobes radiating from a common point"
+          },
+          {
+            "id": "oewn-02180824-s",
+            "ili": "i11949",
+            "words": [
+              "palmatifid"
+            ],
+            "gloss": "of a leaf shape; palmately cleft rather than lobed"
+          },
+          {
+            "id": "oewn-02180931-s",
+            "ili": "i11950",
+            "words": [
+              "parted"
+            ],
+            "gloss": "having a margin incised almost to the base so as to create distinct divisions or lobes"
+          },
+          {
+            "id": "oewn-02181070-s",
+            "ili": "i11951",
+            "words": [
+              "pedate"
+            ],
+            "gloss": "of a leaf shape; having radiating lobes, each deeply cleft or divided"
+          },
+          {
+            "id": "oewn-02181192-s",
+            "ili": "i11952",
+            "words": [
+              "pinnate",
+              "pinnated"
+            ],
+            "gloss": "(of a leaf shape) featherlike; having leaflets on each side of a common axis"
+          },
+          {
+            "id": "oewn-02181333-s",
+            "ili": "i11953",
+            "words": [
+              "pinnatifid"
+            ],
+            "gloss": "(of a leaf shape) cleft nearly to the midrib in broad divisions not separated into distinct leaflets"
+          },
+          {
+            "id": "oewn-02181490-s",
+            "ili": "i11954",
+            "words": [
+              "pinnatisect"
+            ],
+            "gloss": "(of a leaf shape) cleft nearly to the midrib in narrow divisions not separated into distinct leaflets"
+          },
+          {
+            "id": "oewn-02181649-s",
+            "ili": "i11955",
+            "words": [
+              "quinquefoliate"
+            ],
+            "gloss": "(of a leaf shape) having five leaflets"
+          },
+          {
+            "id": "oewn-02181748-s",
+            "ili": "i11956",
+            "words": [
+              "radiate"
+            ],
+            "gloss": "having rays or ray-like parts as in the flower heads of daisies"
+          },
+          {
+            "id": "oewn-02181865-s",
+            "ili": "i11957",
+            "words": [
+              "ternate"
+            ],
+            "gloss": "(of a leaf shape) consisting of three leaflets or sections"
+          },
+          {
+            "id": "oewn-02181977-s",
+            "ili": "i11958",
+            "words": [
+              "trifoliate",
+              "trifoliolate",
+              "trifoliated"
+            ],
+            "gloss": "(of a leaf shape) having three leaflets"
+          },
+          {
+            "id": "oewn-02182102-s",
+            "ili": "i11959",
+            "words": [
+              "trilobate",
+              "trilobated",
+              "trilobed",
+              "three-lobed"
+            ],
+            "gloss": "(of a leaf shape) divided into three lobes"
+          },
+          {
+            "id": "oewn-02182238-s",
+            "ili": "i11960",
+            "words": [
+              "tripinnate",
+              "tripinnated"
+            ],
+            "gloss": "(of a leaf shape) thrice pinnate"
+          },
+          {
+            "id": "oewn-02182341-s",
+            "ili": "i11961",
+            "words": [
+              "tripinnatifid"
+            ],
+            "gloss": "(of a leaf shape) bipinnatifid with segments pinnatifid"
+          }
+        ],
+        "attribute": [],
+        "also_see": [
+          {
+            "id": "oewn-02183738-a",
+            "ili": "i11967",
+            "words": [
+              "complex"
+            ],
+            "gloss": "complicated in structure; consisting of interconnected parts"
+          },
+          {
+            "id": "oewn-02253147-a",
+            "ili": "i12416",
+            "words": [
+              "rough"
+            ],
+            "gloss": "of the margin of a leaf shape; having the edge cut or fringed or scalloped"
+          },
+          {
+            "id": "oewn-02252363-a",
+            "ili": "i12410",
+            "words": [
+              "smooth"
+            ],
+            "gloss": "of the margin of a leaf shape; not broken up into teeth"
+          }
+        ]
+      }
+    },
+    {
+      "name": "oewn-05878802-n",
+      "ili": "i67721",
+      "pos": "n",
+      "definition": "a whole formed by a union of two or more elements or parts",
+      "examples": [],
+      "lemmas": [
+        "compound"
+      ],
+      "pt_lemmas": [
+        "Composição",
+        "composição",
+        "composto"
+      ],
+      "hypernyms": [
+        "oewn-05878206-n"
+      ],
+      "hyponyms": [],
+      "relations": {
+        "antonym": [],
+        "derivationally_related_form": [
+          {
+            "id": "oewn-02185492-s",
+            "ili": "i11973",
+            "words": [
+              "compound"
+            ],
+            "gloss": "consisting of two or more substances or ingredients or elements or parts"
+          },
+          {
+            "id": "oewn-01661511-v",
+            "ili": "i30022",
+            "words": [
+              "compound"
+            ],
+            "gloss": "create by mixing or combining"
+          },
+          {
+            "id": "oewn-01463957-v",
+            "ili": "i29030",
+            "words": [
+              "compound"
+            ],
+            "gloss": "combine so as to form a whole; mix"
+          },
+          {
+            "id": "oewn-00193830-v",
+            "ili": "i22685",
+            "words": [
+              "compound"
+            ],
+            "gloss": "put or add together"
+          }
+        ],
+        "similar_to": [],
+        "attribute": [],
+        "also_see": []
+      }
+    },
+    {
+      "name": "oewn-14842408-n",
+      "ili": "i114921",
+      "pos": "n",
+      "definition": "(chemistry) a substance formed by chemical union of two or more elements or ingredients in definite proportion by weight",
+      "examples": [],
+      "lemmas": [
+        "compound",
+        "chemical compound"
+      ],
+      "pt_lemmas": [
+        "composto químico",
+        "substância química"
+      ],
+      "hypernyms": [
+        "oewn-14831008-n"
+      ],
+      "hyponyms": [
+        "oewn-12107549-n",
+        "oewn-14608023-n",
+        "oewn-14608196-n",
+        "oewn-14609403-n",
+        "oewn-14631699-n",
+        "oewn-14634621-n",
+        "oewn-14637546-n",
+        "oewn-14642122-n",
+        "oewn-14642431-n",
+        "oewn-14643012-n",
+        "oewn-14681105-n",
+        "oewn-14695414-n",
+        "oewn-14705124-n",
+        "oewn-14707124-n",
+        "oewn-14708588-n",
+        "oewn-14751849-n",
+        "oewn-14767906-n",
+        "oewn-14791470-n",
+        "oewn-14794409-n",
+        "oewn-14800682-n",
+        "oewn-14810100-n",
+        "oewn-14813390-n",
+        "oewn-14814696-n",
+        "oewn-14821606-n",
+        "oewn-14824876-n",
+        "oewn-14829315-n",
+        "oewn-14834338-n",
+        "oewn-14841762-n",
+        "oewn-14844026-n",
+        "oewn-14847958-n",
+        "oewn-14848310-n",
+        "oewn-14853097-n",
+        "oewn-14857899-n",
+        "oewn-14858055-n",
+        "oewn-14859739-n",
+        "oewn-14893478-n",
+        "oewn-14893664-n",
+        "oewn-14897792-n",
+        "oewn-14907917-n",
+        "oewn-14908105-n",
+        "oewn-14913879-n",
+        "oewn-14922252-n",
+        "oewn-14926110-n",
+        "oewn-14934591-n",
+        "oewn-14938821-n",
+        "oewn-14943145-n",
+        "oewn-14943662-n",
+        "oewn-14944539-n",
+        "oewn-14944737-n",
+        "oewn-14946667-n",
+        "oewn-14948326-n",
+        "oewn-14959693-n",
+        "oewn-14974533-n",
+        "oewn-14981788-n",
+        "oewn-14987456-n",
+        "oewn-14996078-n",
+        "oewn-15018895-n",
+        "oewn-15022096-n",
+        "oewn-15025540-n",
+        "oewn-15035270-n",
+        "oewn-15039096-n",
+        "oewn-15040068-n",
+        "oewn-15042171-n",
+        "oewn-15049964-n",
+        "oewn-15064696-n",
+        "oewn-15065466-n",
+        "oewn-15072555-n",
+        "oewn-15082125-n",
+        "oewn-15086117-n",
+        "oewn-15088266-n",
+        "oewn-15092701-n",
+        "oewn-15093003-n",
+        "oewn-15093321-n",
+        "oewn-15103597-n",
+        "oewn-15131096-n",
+        "oewn-15135021-n",
+        "oewn-15136004-n",
+        "oewn-92430963-n",
+        "oewn-92464616-n"
+      ],
+      "relations": {
+        "antonym": [],
+        "derivationally_related_form": [
+          {
+            "id": "oewn-01661511-v",
+            "ili": "i30022",
+            "words": [
+              "compound"
+            ],
+            "gloss": "create by mixing or combining"
+          }
+        ],
+        "similar_to": [],
+        "attribute": [],
+        "also_see": []
+      }
+    },
+    {
+      "name": "oewn-03085863-n",
+      "ili": "i52230",
+      "pos": "n",
+      "definition": "an enclosure of residences and other building (especially in the Orient)",
+      "examples": [],
+      "lemmas": [
+        "compound"
+      ],
+      "pt_lemmas": [
+        "recinto"
+      ],
+      "hypernyms": [
+        "oewn-03290823-n"
+      ],
+      "hyponyms": [],
+      "relations": {
+        "antonym": [],
+        "derivationally_related_form": [],
+        "similar_to": [],
+        "attribute": [],
+        "also_see": []
+      }
+    },
+    {
+      "name": "oewn-92460746-n",
+      "ili": null,
+      "pos": "n",
+      "definition": "a word (as anthropology, kilocycle, builder) consisting of any of various combinations of words, combining forms, or affixes.",
+      "examples": [
+        "Also common in English is another type of verb-noun (or noun-verb) compound, in which an argument of the verb is incorporated into the verb, which is then usually turned into a gerund, such as breastfeeding, finger-pointing, etc."
+      ],
+      "lemmas": [
+        "compound word",
+        "compound"
+      ],
+      "pt_lemmas": [],
+      "hypernyms": [
+        "oewn-06300831-n"
+      ],
+      "hyponyms": [
+        "oewn-92462683-n",
+        "oewn-92462684-n"
+      ],
+      "relations": {
+        "antonym": [],
+        "derivationally_related_form": [],
+        "similar_to": [],
+        "attribute": [],
+        "also_see": []
+      }
+    },
+    {
+      "name": "oewn-02185492-s",
+      "ili": "i11973",
+      "pos": "s",
+      "definition": "consisting of two or more substances or ingredients or elements or parts",
+      "examples": [
+        "soap is a compound substance",
+        "housetop is a compound word",
+        "a blackberry is a compound fruit"
+      ],
+      "lemmas": [
+        "compound"
+      ],
+      "pt_lemmas": [],
+      "hypernyms": [],
+      "hyponyms": [],
+      "relations": {
+        "antonym": [],
+        "derivationally_related_form": [
+          {
+            "id": "oewn-05878802-n",
+            "ili": "i67721",
+            "words": [
+              "compound"
+            ],
+            "gloss": "a whole formed by a union of two or more elements or parts"
+          }
+        ],
+        "similar_to": [
+          {
+            "id": "oewn-02183738-a",
+            "ili": "i11967",
+            "words": [
+              "complex"
+            ],
+            "gloss": "complicated in structure; consisting of interconnected parts"
+          }
+        ],
+        "attribute": [],
+        "also_see": []
+      }
+    },
+    {
+      "name": "oewn-02184957-s",
+      "ili": "i11970",
+      "pos": "s",
+      "definition": "composed of many distinct individuals united to form a whole or colony",
+      "examples": [
+        "coral is a colonial organism"
+      ],
+      "lemmas": [
+        "colonial",
+        "compound"
+      ],
+      "pt_lemmas": [
+        "colonial"
+      ],
+      "hypernyms": [],
+      "hyponyms": [],
+      "relations": {
+        "antonym": [],
+        "derivationally_related_form": [],
+        "similar_to": [
+          {
+            "id": "oewn-02183738-a",
+            "ili": "i11967",
+            "words": [
+              "complex"
+            ],
+            "gloss": "complicated in structure; consisting of interconnected parts"
+          }
+        ],
+        "attribute": [],
+        "also_see": []
+      }
+    },
+    {
+      "name": "oewn-00227591-v",
+      "ili": "i22857",
+      "pos": "v",
+      "definition": "make more intense, stronger, or more marked",
+      "examples": [
+        "The efforts were intensified",
+        "Her rudeness intensified his dislike for her",
+        "Pot smokers claim it heightens their awareness",
+        "This event only deepened my convictions"
+      ],
+      "lemmas": [
+        "intensify",
+        "compound",
+        "heighten",
+        "deepen"
+      ],
+      "pt_lemmas": [
+        "acirrar",
+        "aumentar",
+        "intensificar"
+      ],
+      "hypernyms": [
+        "oewn-00156409-v"
+      ],
+      "hyponyms": [
+        "oewn-00228093-v",
+        "oewn-00228231-v",
+        "oewn-00230031-v",
+        "oewn-00264790-v",
+        "oewn-00393128-v",
+        "oewn-00393290-v"
+      ],
+      "relations": {
+        "antonym": [],
+        "derivationally_related_form": [
+          {
+            "id": "oewn-05043549-n",
+            "ili": "i63468",
+            "words": [
+              "intensity"
+            ],
+            "gloss": "high level or degree; the property of being intense"
+          },
+          {
+            "id": "oewn-00375032-n",
+            "ili": "i37377",
+            "words": [
+              "intensification"
+            ],
+            "gloss": "action that makes something stronger or more extreme"
+          },
+          {
+            "id": "oewn-06332047-n",
+            "ili": "i69701",
+            "words": [
+              "intensifier"
+            ],
+            "gloss": "a modifier that has little meaning except to intensify the meaning it modifies"
+          }
+        ],
+        "similar_to": [],
+        "attribute": [],
+        "also_see": []
+      }
+    },
+    {
+      "name": "oewn-00193830-v",
+      "ili": "i22685",
+      "pos": "v",
+      "definition": "put or add together",
+      "examples": [
+        "combine resources"
+      ],
+      "lemmas": [
+        "compound",
+        "combine"
+      ],
+      "pt_lemmas": [
+        "combinar",
+        "reunir",
+        "unir"
+      ],
+      "hypernyms": [
+        "oewn-00182551-v"
+      ],
+      "hyponyms": [
+        "oewn-00645728-v",
+        "oewn-00194134-v",
+        "oewn-00194298-v",
+        "oewn-00557270-v"
+      ],
+      "relations": {
+        "antonym": [],
+        "derivationally_related_form": [
+          {
+            "id": "oewn-05878802-n",
+            "ili": "i67721",
+            "words": [
+              "compound"
+            ],
+            "gloss": "a whole formed by a union of two or more elements or parts"
+          },
+          {
+            "id": "oewn-00379793-n",
+            "ili": "i37400",
+            "words": [
+              "compounding"
+            ],
+            "gloss": "the act of combining things to form a new whole"
+          },
+          {
+            "id": "oewn-07980325-n",
+            "ili": "i79172",
+            "words": [
+              "combination"
+            ],
+            "gloss": "a collection of things that have been combined; an assemblage of separate parts or qualities"
+          },
+          {
+            "id": "oewn-00872131-n",
+            "ili": "i39969",
+            "words": [
+              "combination"
+            ],
+            "gloss": "the act of arranging elements into specified groups without regard to order"
+          },
+          {
+            "id": "oewn-07388403-n",
+            "ili": "i75438",
+            "words": [
+              "combine"
+            ],
+            "gloss": "an occurrence that results in things being united"
+          }
+        ],
+        "similar_to": [],
+        "attribute": [],
+        "also_see": []
+      }
+    },
+    {
+      "name": "oewn-02270726-v",
+      "ili": "i33063",
+      "pos": "v",
+      "definition": "calculate principal and interest",
+      "examples": [],
+      "lemmas": [
+        "compound"
+      ],
+      "pt_lemmas": [],
+      "hypernyms": [
+        "oewn-02270039-v"
+      ],
+      "hyponyms": [],
+      "relations": {
+        "antonym": [],
+        "derivationally_related_form": [],
+        "similar_to": [],
+        "attribute": [],
+        "also_see": []
+      }
+    },
+    {
+      "name": "oewn-01661511-v",
+      "ili": "i30022",
+      "pos": "v",
+      "definition": "create by mixing or combining",
+      "examples": [],
+      "lemmas": [
+        "compound"
+      ],
+      "pt_lemmas": [],
+      "hypernyms": [
+        "oewn-01660471-v"
+      ],
+      "hyponyms": [],
+      "relations": {
+        "antonym": [],
+        "derivationally_related_form": [
+          {
+            "id": "oewn-14842408-n",
+            "ili": "i114921",
+            "words": [
+              "compound"
+            ],
+            "gloss": "(chemistry) a substance formed by chemical union of two or more elements or ingredients in definite proportion by weight"
+          },
+          {
+            "id": "oewn-05878802-n",
+            "ili": "i67721",
+            "words": [
+              "compound"
+            ],
+            "gloss": "a whole formed by a union of two or more elements or parts"
+          },
+          {
+            "id": "oewn-00379793-n",
+            "ili": "i37400",
+            "words": [
+              "compounding"
+            ],
+            "gloss": "the act of combining things to form a new whole"
+          }
+        ],
+        "similar_to": [],
+        "attribute": [],
+        "also_see": []
+      }
+    },
+    {
+      "name": "oewn-01463957-v",
+      "ili": "i29030",
+      "pos": "v",
+      "definition": "combine so as to form a whole; mix",
+      "examples": [
+        "compound the ingredients"
+      ],
+      "lemmas": [
+        "compound",
+        "combine"
+      ],
+      "pt_lemmas": [
+        "combinar",
+        "misturar"
+      ],
+      "hypernyms": [
+        "oewn-01464634-v"
+      ],
+      "hyponyms": [
+        "oewn-00467564-v",
+        "oewn-01464275-v",
+        "oewn-01464514-v",
+        "oewn-01602356-v"
+      ],
+      "relations": {
+        "antonym": [],
+        "derivationally_related_form": [
+          {
+            "id": "oewn-05878802-n",
+            "ili": "i67721",
+            "words": [
+              "compound"
+            ],
+            "gloss": "a whole formed by a union of two or more elements or parts"
+          },
+          {
+            "id": "oewn-00379793-n",
+            "ili": "i37400",
+            "words": [
+              "compounding"
+            ],
+            "gloss": "the act of combining things to form a new whole"
+          },
+          {
+            "id": "oewn-01334196-s",
+            "ili": "i7261",
+            "words": [
+              "combinative"
+            ],
+            "gloss": "relating to or involving combinations"
+          },
+          {
+            "id": "oewn-00474326-a",
+            "ili": "i2665",
+            "words": [
+              "combinative"
+            ],
+            "gloss": "marked by or relating to or resulting from combination"
+          },
+          {
+            "id": "oewn-07388403-n",
+            "ili": "i75438",
+            "words": [
+              "combine"
+            ],
+            "gloss": "an occurrence that results in things being united"
+          }
+        ],
+        "similar_to": [],
+        "attribute": [],
+        "also_see": []
+      }
+    }
+  ],
+  "similarity": {
+    "pairs": [],
+    "note": "omitted in workbench search"
+  },
+  "hierarchy": {},
+  "visualization": {}
+}

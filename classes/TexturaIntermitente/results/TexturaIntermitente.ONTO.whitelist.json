@@ -1,0 +1,34 @@
+{
+  "class_id": "TexturaIntermitente",
+  "admitted_offsets": [
+    "clip21:17265",
+    "clip21:19737",
+    "contopt:5236",
+    "contopt:33686",
+    "fuzzythes:23329",
+    "fuzzythes:23659",
+    "fuzzythes:23873",
+    "fuzzythes:24056",
+    "fuzzythes:25214",
+    "fuzzythes:26922",
+    "fuzzythes:26927",
+    "fuzzythes:26998",
+    "fuzzythes:27907",
+    "ontopt06:1386",
+    "ontopt06:3833",
+    "ontopt06:4134",
+    "ontopt06:4160",
+    "ontopt06:54924",
+    "polaridades:13335",
+    "thes5rec:18150",
+    "thes5rec:21772",
+    "thes5rec:23361",
+    "thes5rec:23954"
+  ],
+  "excluded_offsets": [
+    "clip21:19004",
+    "fuzzythes:25210",
+    "fuzzythes:10163",
+    "thes5rec:8218"
+  ]
+}

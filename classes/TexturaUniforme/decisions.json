@@ -41,7 +41,7 @@
         "igual",
         "regular"
       ],
-      "decision": "atributo",
+      "decision": "exclude",
       "note": ""
     },
     {
@@ -56,7 +56,7 @@
         "invariância",
         "periódico"
       ],
-      "decision": "atributo",
+      "decision": "exclude",
       "note": ""
     },
     {
@@ -1077,7 +1077,7 @@
         "unânime",
         "vital"
       ],
-      "decision": "RT",
+      "decision": "exclude",
       "note": ""
     },
     {
@@ -2107,7 +2107,7 @@
         "monótono",
         "uniforme"
       ],
-      "decision": "RT",
+      "decision": "UF",
       "note": ""
     },
     {
@@ -2158,7 +2158,7 @@
         "sistêmico",
         "uniforme"
       ],
-      "decision": "UF",
+      "decision": "exclude",
       "note": ""
     },
     {
@@ -2174,7 +2174,7 @@
         "monótono",
         "uniforme"
       ],
-      "decision": "UF",
+      "decision": "RT",
       "note": ""
     },
     {
@@ -2276,7 +2276,7 @@
         "vizinho",
         "équo"
       ],
-      "decision": "RT",
+      "decision": "exclude",
       "note": ""
     },
     {
@@ -2329,7 +2329,7 @@
         "unidade",
         "uniformidade"
       ],
-      "decision": "RT",
+      "decision": "exclude",
       "note": ""
     },
     {
@@ -2362,7 +2362,7 @@
         "unidade",
         "uniformidade"
       ],
-      "decision": "",
+      "decision": "exclude",
       "note": ""
     },
     {
@@ -2440,7 +2440,7 @@
         "uniform resource locator",
         "url"
       ],
-      "decision": "RT",
+      "decision": "exclude",
       "note": ""
     },
     {
@@ -2940,7 +2940,7 @@
         "normalizar",
         "regrar"
       ],
-      "decision": "RT",
+      "decision": "exclude",
       "note": ""
     },
     {
@@ -2980,7 +2980,7 @@
         "unanimimente",
         "uniformemente"
       ],
-      "decision": "RT",
+      "decision": "exclude",
       "note": ""
     },
     {
@@ -3473,7 +3473,7 @@
         "vizinhança",
         "xâmego"
       ],
-      "decision": "",
+      "decision": "exclude",
       "note": ""
     },
     {
@@ -3522,7 +3522,7 @@
         "salabórdia",
         "truísmo"
       ],
-      "decision": "",
+      "decision": "exclude",
       "note": ""
     },
     {
@@ -3583,7 +3583,7 @@
         "viso",
         "vizinhança"
       ],
-      "decision": "",
+      "decision": "exclude",
       "note": ""
     },
     {
@@ -3702,7 +3702,7 @@
         "viscosidade",
         "ânimo"
       ],
-      "decision": "",
+      "decision": "exclude",
       "note": ""
     },
     {
@@ -3779,7 +3779,7 @@
         "uso",
         "índice"
       ],
-      "decision": "",
+      "decision": "exclude",
       "note": ""
     },
     {
@@ -3830,7 +3830,7 @@
         "pasmaceira",
         "vulgaridade"
       ],
-      "decision": "",
+      "decision": "exclude",
       "note": ""
     },
     {
@@ -7355,7 +7355,7 @@
         "confirmação",
         "homogeneização"
       ],
-      "decision": "RT",
+      "decision": "exclude",
       "note": ""
     },
     {
@@ -7377,6 +7377,92 @@
       ],
       "decision": "contraste",
       "note": ""
+    },
+    {
+      "source": "wordnet",
+      "key": "i10771",
+      "ili": "i10771",
+      "local_id": "oewn-01973553-a",
+      "pos": "a",
+      "gloss": "always the same; showing a single form or character in all occurrences",
+      "members": [
+        "uniform",
+        "unvarying",
+        "PT: invariável",
+        "PT: uniforme"
+      ],
+      "decision": "",
+      "note": "OEWN corroboration (Ponte ILI / WordNet track)"
+    },
+    {
+      "source": "wordnet",
+      "key": "i4126",
+      "ili": "i4126",
+      "local_id": "oewn-00748118-a",
+      "pos": "a",
+      "gloss": "not differentiated",
+      "members": [
+        "undifferentiated",
+        "uniform"
+      ],
+      "decision": "",
+      "note": "OEWN corroboration (Ponte ILI / WordNet track)"
+    },
+    {
+      "source": "wordnet",
+      "key": "i60712",
+      "ili": "i60712",
+      "local_id": "oewn-04516887-n",
+      "pos": "n",
+      "gloss": "clothing of distinctive design worn by members of a particular group as a means of identification",
+      "members": [
+        "uniform",
+        "PT: farda",
+        "PT: fardamento",
+        "PT: uniforme"
+      ],
+      "decision": "",
+      "note": "OEWN corroboration (Ponte ILI / WordNet track)"
+    },
+    {
+      "source": "wordnet",
+      "key": "i6560",
+      "ili": "i6560",
+      "local_id": "oewn-01203638-s",
+      "pos": "s",
+      "gloss": "the same throughout in structure or composition",
+      "members": [
+        "consistent",
+        "uniform"
+      ],
+      "decision": "",
+      "note": "OEWN corroboration (Ponte ILI / WordNet track)"
+    },
+    {
+      "source": "wordnet",
+      "key": "i10734",
+      "ili": "i10734",
+      "local_id": "oewn-01967120-s",
+      "pos": "s",
+      "gloss": "evenly spaced",
+      "members": [
+        "uniform"
+      ],
+      "decision": "",
+      "note": "OEWN corroboration (Ponte ILI / WordNet track)"
+    },
+    {
+      "source": "wordnet",
+      "key": "i33388",
+      "ili": "i33388",
+      "local_id": "oewn-02336782-v",
+      "pos": "v",
+      "gloss": "provide with uniforms",
+      "members": [
+        "uniform"
+      ],
+      "decision": "",
+      "note": "OEWN corroboration (Ponte ILI / WordNet track)"
     }
   ],
   "terms": [

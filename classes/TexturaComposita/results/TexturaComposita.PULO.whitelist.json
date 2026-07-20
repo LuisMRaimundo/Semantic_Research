@@ -1,0 +1,47 @@
+{
+  "class_id": "TexturaComposita",
+  "pref_label": "TexturaCompósita",
+  "axis": "heterogeneidade / composição de materiais ou partes distintas",
+  "stage1_whitelist": [
+    {
+      "ili_offset": "ili-30-14818238-n",
+      "glosa": "(Química) uma substância formada por união química de duas ou mais elementos ou ingredientes na proporção definida por peso\n",
+      "decision": "UF",
+      "members": [
+        "composto"
+      ]
+    },
+    {
+      "ili_offset": "ili-30-02424254-a",
+      "glosa": "Não limpo e arrumado\n",
+      "decision": "exclude",
+      "members": [
+        "desalinhado",
+        "desarranjado",
+        "desarrumado",
+        "descomposto",
+        "desleixado",
+        "desordenado",
+        "sujo"
+      ]
+    },
+    {
+      "ili_offset": "ili-30-09947232-n",
+      "glosa": "alguém que compõe a música como uma profissão\n",
+      "decision": "exclude",
+      "members": [
+        "compositor"
+      ]
+    }
+  ],
+  "dictionary_attestations": [
+    "composto"
+  ],
+  "admitted_offsets": [
+    "ili-30-14818238-n"
+  ],
+  "excluded_offsets": [
+    "ili-30-02424254-a",
+    "ili-30-09947232-n"
+  ]
+}

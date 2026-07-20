@@ -4,7 +4,7 @@
 
   sr new <Class> [--pref LABEL] [--axis TEXT]
   sr rename <OldClass> <NewClass>
-  sr search <Class> <query> [--source pulo|onto]
+  sr search <Class> <query> [--source pulo|onto|wordnet]
   sr status <Class>
   sr run <Class>
   sr list
@@ -117,7 +117,7 @@ def main(argv=None) -> int:
     p = sub.add_parser("search", help="search lexicon and seed sense cards")
     p.add_argument("cls")
     p.add_argument("query")
-    p.add_argument("--source", choices=("pulo", "onto"), default="pulo")
+    p.add_argument("--source", choices=("pulo", "onto", "wordnet"), default="pulo")
     p.add_argument("--mode", default="Starts with")
     p.set_defaults(func=cmd_search)
 

@@ -1,0 +1,82 @@
+# PULO signals sidelined — TexturaMetamrfica
+
+75 auto-harvested terms (not your UF/RT choices).
+Ignore by default. Full JSON: `TexturaMetamrfica.PULO.signals.json`.
+
+| term | reason |
+|---|---|
+| acomodar | relação não-nomeada / #NN |
+| adaptar | relação não-nomeada / #NN |
+| agitar | relação não-nomeada / #NN |
+| ajustar | relação não-nomeada / #NN |
+| aleijar | relação não-nomeada / #NN |
+| alterar | relação não-nomeada / #NN |
+| alteração | relação não-nomeada / #NN |
+| amputar | relação não-nomeada / #NN |
+| assassinar | relação não-nomeada / #NN |
+| ave | relação não-nomeada / #NN |
+| cambiar | relação não-nomeada / #NN |
+| colocar | relação não-nomeada / #NN |
+| conversão | relação não-nomeada / #NN |
+| converter | relação não-nomeada / #NN |
+| corrigir | relação não-nomeada / #NN |
+| câmbio | relação não-nomeada / #NN |
+| decotar | relação não-nomeada / #NN |
+| deformar | relação não-nomeada / #NN |
+| degradação | relação não-nomeada / #NN |
+| demudar | relação não-nomeada / #NN |
+| desenvolver | relação não-nomeada / #NN |
+| deslocar | relação não-nomeada / #NN |
+| desmembrar | relação não-nomeada / #NN |
+| elaborar | relação não-nomeada / #NN |
+| escaravelho | relação não-nomeada / #NN |
+| estropiar | relação não-nomeada / #NN |
+| evolucionar | relação não-nomeada / #NN |
+| evoluir | relação não-nomeada / #NN |
+| falsificar | relação não-nomeada / #NN |
+| fanar | relação não-nomeada / #NN |
+| fixo | relação não-nomeada / #NN |
+| fusão | relação não-nomeada / #NN |
+| girar | relação não-nomeada / #NN |
+| giro | relação não-nomeada / #NN |
+| inativo | relação não-nomeada / #NN |
+| metamorfose | relação não-nomeada / #NN |
+| metamorfosear | relação não-nomeada / #NN |
+| modificar | relação não-nomeada / #NN |
+| modificação | relação não-nomeada / #NN |
+| modulação | relação não-nomeada / #NN |
+| mudança | relação não-nomeada / #NN |
+| mudar | relação não-nomeada / #NN |
+| mutação | relação não-nomeada / #NN |
+| mutilar | relação não-nomeada / #NN |
+| máquina | relação não-nomeada / #NN |
+| obter | relação não-nomeada / #NN |
+| passagem | relação não-nomeada / #NN |
+| perturbar | relação não-nomeada / #NN |
+| pirólise | relação não-nomeada / #NN |
+| privatização | relação não-nomeada / #NN |
+| pássaro | relação não-nomeada / #NN |
+| qualitativo | relação não-nomeada / #NN |
+| recrescer | relação não-nomeada / #NN |
+| recriar | relação não-nomeada / #NN |
+| remover | relação não-nomeada / #NN |
+| reorganização | relação não-nomeada / #NN |
+| secularização | relação não-nomeada / #NN |
+| sintetizador | relação não-nomeada / #NN |
+| sorrir | relação não-nomeada / #NN |
+| subjectivo | relação não-nomeada / #NN |
+| tornar | relação não-nomeada / #NN |
+| tranformar | relação não-nomeada / #NN |
+| transfigurar | relação não-nomeada / #NN |
+| transformar | relação não-nomeada / #NN |
+| transformação | relação não-nomeada / #NN |
+| transição | relação não-nomeada / #NN |
+| transmudação | relação não-nomeada / #NN |
+| transmutação | relação não-nomeada / #NN |
+| troca | relação não-nomeada / #NN |
+| troncar | relação não-nomeada / #NN |
+| tronchar | relação não-nomeada / #NN |
+| truncar | relação não-nomeada / #NN |
+| variação | relação não-nomeada / #NN |
+| voltar | relação não-nomeada / #NN |
+| voz | relação não-nomeada / #NN |

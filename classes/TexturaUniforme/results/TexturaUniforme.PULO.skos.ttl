@@ -4,16 +4,9 @@
 
 tex:TexturaUniforme a owl:Class,
         skos:Concept ;
-    tex:contrastaCom tex:desigual,
-        tex:irregular,
-        tex:politipica ;
-    tex:temAtributo tex:igual,
-        tex:igualdade,
-        tex:regular ;
+    tex:contrastaCom tex:politipica ;
     owl:disjointWith tex:TexturaHeterogenea ;
     skos:prefLabel "uniforme"@pt ;
-    skos:scopeNote "Contraste lexical (eixo): desigual"@pt,
-        "Contraste lexical (eixo): irregular"@pt,
-        "Contraste lexical (eixo): politípica"@pt,
+    skos:scopeNote "Contraste lexical (eixo): politípica"@pt,
         "Eixo definidor: invariância face a um parâmetro"@pt .
 

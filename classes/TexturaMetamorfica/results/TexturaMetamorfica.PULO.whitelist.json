@@ -1,0 +1,70 @@
+{
+  "class_id": "TexturaMetamorfica",
+  "pref_label": "TexturaMetamórfica",
+  "axis": "muda de forma, relativamente a um ou vários parâmetros",
+  "stage1_whitelist": [
+    {
+      "ili_offset": "ili-30-07359599-n",
+      "glosa": "uma mudança qualitativa\n",
+      "decision": "UF",
+      "members": [
+        "metamorfose",
+        "modificação",
+        "mudança",
+        "transmudação",
+        "transmutação",
+        "transformação",
+        "alteração"
+      ]
+    },
+    {
+      "ili_offset": "ili-30-00126264-v",
+      "glosa": "causar à mudança; fazer diferente; causar uma transformação\n",
+      "decision": "RT",
+      "members": [
+        "cambiar",
+        "converter",
+        "demudar",
+        "evolucionar",
+        "evoluir",
+        "falsificar",
+        "metamorfosear",
+        "perturbar",
+        "tornar",
+        "tranformar",
+        "transformar",
+        "alterar",
+        "mudar",
+        "modificar"
+      ]
+    }
+  ],
+  "dictionary_attestations": [
+    "alterar",
+    "alteração",
+    "cambiar",
+    "converter",
+    "demudar",
+    "evolucionar",
+    "evoluir",
+    "falsificar",
+    "metamorfose",
+    "metamorfosear",
+    "modificar",
+    "modificação",
+    "mudança",
+    "mudar",
+    "perturbar",
+    "tornar",
+    "tranformar",
+    "transformar",
+    "transformação",
+    "transmudação",
+    "transmutação"
+  ],
+  "admitted_offsets": [
+    "ili-30-07359599-n",
+    "ili-30-00126264-v"
+  ],
+  "excluded_offsets": []
+}

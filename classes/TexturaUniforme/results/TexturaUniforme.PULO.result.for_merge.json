@@ -2,7 +2,7 @@
   "class_id": "TexturaUniforme",
   "pref_label": "uniforme",
   "axis": "invariância face a um parâmetro",
-  "generated": "2026-07-13T16:24:13",
+  "generated": "2026-07-20T16:51:20",
   "source": "PULO / WordNet.PT export",
   "stage1": {
     "admitted": [
@@ -17,27 +17,15 @@
         "glosa": "sempre o mesmo parâmetro; imutável e uniforme",
         "decision": "UF",
         "export_gloss": "sempre o mesmo; mostrando um único formulário ou personagem em todas as ocorrências\n"
-      },
-      {
-        "ili_offset": "ili-30-00909545-a",
-        "glosa": "sem variações; regular e uniforme face ao parâmetro",
-        "decision": "UF",
-        "export_gloss": "sendo nível ou reto ou regular e sem variações como por exemplo, na forma ou textura; ou estar no mesmo plano ou na mesma altura que outra coisa (isto é, mesmo com)\n"
-      },
-      {
-        "ili_offset": "ili-30-04745370-n",
-        "glosa": "ausência de variação; invariância e uniformidade de um parâmetro",
-        "decision": "UF",
-        "export_gloss": "a qualidade de falta de diversidade ou variação (até mesmo ao ponto de tédio)\n"
       }
     ],
     "admitted_offsets": [
       "ili-30-01200095-a",
-      "ili-30-01966488-a",
-      "ili-30-00909545-a",
-      "ili-30-04745370-n"
+      "ili-30-01966488-a"
     ],
     "excluded_offsets": [
+      "ili-30-00909545-a",
+      "ili-30-04745370-n",
       "ili-30-02302187-a",
       "ili-30-00910101-a",
       "ili-30-04509592-n",
@@ -51,7 +39,6 @@
     "uniforme": {
       "display": "uniforme",
       "offsets": [
-        "ili-30-00909545-a",
         "ili-30-01200095-a",
         "ili-30-01966488-a"
       ]
@@ -61,41 +48,10 @@
       "offsets": [
         "ili-30-01200095-a"
       ]
-    },
-    "regular": {
-      "display": "regular",
-      "offsets": [
-        "ili-30-00909545-a"
-      ]
-    },
-    "igual": {
-      "display": "igual",
-      "offsets": [
-        "ili-30-00909545-a"
-      ]
-    },
-    "uniformidade": {
-      "display": "uniformidade",
-      "offsets": [
-        "ili-30-04745370-n"
-      ]
     }
   },
   "stage3": {
-    "contrast": {
-      "desigual": {
-        "display": "desigual",
-        "via": "antonym",
-        "source_ili": "ili-30-00909545-a",
-        "target_gloss": "nem mesmo ou uniforme como por exemplo, na forma ou textura\n"
-      },
-      "irregular": {
-        "display": "irregular",
-        "via": "antonym",
-        "source_ili": "ili-30-00909545-a",
-        "target_gloss": "nem mesmo ou uniforme como por exemplo, na forma ou textura\n"
-      }
-    },
+    "contrast": {},
     "rt_uf": {
       "homogeneo": {
         "display": "homogéneo",
@@ -110,152 +66,17 @@
         "via": "derivationally related form",
         "source_ili": "ili-30-01200095-a",
         "target_gloss": "a qualidade de falta de diversidade ou variação (até mesmo ao ponto de tédio)\n"
-      },
-      "uniforme": {
-        "display": "uniforme",
-        "via": "derivationally related form",
-        "source_ili": "ili-30-04745370-n",
-        "target_gloss": "não diferenciado\n"
-      },
-      "coerente": {
-        "display": "coerente",
-        "via": "derivationally related form",
-        "source_ili": "ili-30-04745370-n",
-        "target_gloss": "o mesmo em toda a estrutura ou composição\n"
       }
     },
-    "BT": {
-      "afinidade": {
-        "display": "afinidade",
-        "via": "hypernym",
-        "source_ili": "ili-30-04745370-n",
-        "target_gloss": "a qualidade de ser semelhante\n"
-      },
-      "analogia": {
-        "display": "analogia",
-        "via": "hypernym",
-        "source_ili": "ili-30-04745370-n",
-        "target_gloss": "a qualidade de ser semelhante\n"
-      },
-      "conformidade": {
-        "display": "conformidade",
-        "via": "hypernym",
-        "source_ili": "ili-30-04745370-n",
-        "target_gloss": "a qualidade de ser semelhante\n"
-      },
-      "imagem": {
-        "display": "imagem",
-        "via": "hypernym",
-        "source_ili": "ili-30-04745370-n",
-        "target_gloss": "a qualidade de ser semelhante\n"
-      },
-      "parecenca": {
-        "display": "parecença",
-        "via": "hypernym",
-        "source_ili": "ili-30-04745370-n",
-        "target_gloss": "a qualidade de ser semelhante\n"
-      },
-      "parentesco": {
-        "display": "parentesco",
-        "via": "hypernym",
-        "source_ili": "ili-30-04745370-n",
-        "target_gloss": "a qualidade de ser semelhante\n"
-      },
-      "semelhanca": {
-        "display": "semelhança",
-        "via": "hypernym",
-        "source_ili": "ili-30-04745370-n",
-        "target_gloss": "a qualidade de ser semelhante\n"
-      },
-      "similitude": {
-        "display": "similitude",
-        "via": "hypernym",
-        "source_ili": "ili-30-04745370-n",
-        "target_gloss": "a qualidade de ser semelhante\n"
-      }
-    },
+    "BT": {},
     "NT": {},
-    "attribute": {
-      "igualdade": {
-        "display": "igualdade",
-        "via": "attribute",
-        "source_ili": "ili-30-00909545-a",
-        "target_gloss": "a qualidade da uniformidade e da falta de variação\n"
-      }
-    }
+    "attribute": {}
   },
-  "dropped_no_lemma": 72,
+  "dropped_no_lemma": 23,
   "sinalizacao": {},
   "stage4_excluded": {},
   "stage5": {
     "admitted": {
-      "regular": {
-        "display": "regular",
-        "offsets": [
-          "ili-30-00909545-a"
-        ],
-        "attested": true,
-        "origin": "seed (Etapa 1/2)",
-        "status": "atributo",
-        "test": "Teste 1 falha",
-        "guarantee": [
-          "lexical"
-        ],
-        "definition": "",
-        "structural": ""
-      },
-      "igual": {
-        "display": "igual",
-        "offsets": [
-          "ili-30-00909545-a"
-        ],
-        "attested": true,
-        "origin": "seed (Etapa 1/2)",
-        "status": "atributo",
-        "test": "Teste 1 falha",
-        "guarantee": [
-          "lexical"
-        ],
-        "definition": "",
-        "structural": ""
-      },
-      "desigual": {
-        "display": "desigual",
-        "via": "antonym",
-        "attested": false,
-        "origin": "relação antonym (contraste)",
-        "status": "contraste",
-        "test": "Teste 3",
-        "guarantee": [
-          "lexical"
-        ],
-        "definition": "",
-        "structural": ""
-      },
-      "irregular": {
-        "display": "irregular",
-        "via": "antonym",
-        "attested": false,
-        "origin": "relação antonym (contraste)",
-        "status": "contraste",
-        "test": "Teste 3",
-        "guarantee": [
-          "lexical"
-        ],
-        "definition": "",
-        "structural": ""
-      },
-      "igualdade": {
-        "display": "igualdade",
-        "via": "attribute",
-        "attested": false,
-        "origin": "relação attribute",
-        "status": "atributo",
-        "test": "Roteado para attribute_bucket (nome de qualidade)",
-        "guarantee": [
-          "estrutural"
-        ]
-      },
       "politipica": {
         "display": "politípica",
         "attested": false,
@@ -271,67 +92,20 @@
       }
     },
     "pending": {
+      "coerente": {
+        "display": "coerente",
+        "offsets": [
+          "ili-30-01200095-a"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2)",
+        "adjudication": null
+      },
       "homogeneo": {
         "display": "homogéneo",
         "via": "similar to",
         "attested": false,
         "origin": "relação similar-to (RT/UF)",
-        "adjudication": null
-      },
-      "afinidade": {
-        "display": "afinidade",
-        "via": "hypernym",
-        "attested": false,
-        "origin": "relação hypernym (BT)",
-        "adjudication": null
-      },
-      "analogia": {
-        "display": "analogia",
-        "via": "hypernym",
-        "attested": false,
-        "origin": "relação hypernym (BT)",
-        "adjudication": null
-      },
-      "conformidade": {
-        "display": "conformidade",
-        "via": "hypernym",
-        "attested": false,
-        "origin": "relação hypernym (BT)",
-        "adjudication": null
-      },
-      "imagem": {
-        "display": "imagem",
-        "via": "hypernym",
-        "attested": false,
-        "origin": "relação hypernym (BT)",
-        "adjudication": null
-      },
-      "parecenca": {
-        "display": "parecença",
-        "via": "hypernym",
-        "attested": false,
-        "origin": "relação hypernym (BT)",
-        "adjudication": null
-      },
-      "parentesco": {
-        "display": "parentesco",
-        "via": "hypernym",
-        "attested": false,
-        "origin": "relação hypernym (BT)",
-        "adjudication": null
-      },
-      "semelhanca": {
-        "display": "semelhança",
-        "via": "hypernym",
-        "attested": false,
-        "origin": "relação hypernym (BT)",
-        "adjudication": null
-      },
-      "similitude": {
-        "display": "similitude",
-        "via": "hypernym",
-        "attested": false,
-        "origin": "relação hypernym (BT)",
         "adjudication": null
       }
     }
@@ -342,104 +116,16 @@
       "via": "derivationally related form",
       "source_ili": "ili-30-01200095-a",
       "target_gloss": "a qualidade de falta de diversidade ou variação (até mesmo ao ponto de tédio)\n"
-    },
-    "uniforme": {
-      "display": "uniforme",
-      "via": "derivationally related form",
-      "source_ili": "ili-30-04745370-n",
-      "target_gloss": "não diferenciado\n"
-    },
-    "coerente": {
-      "display": "coerente",
-      "via": "derivationally related form",
-      "source_ili": "ili-30-04745370-n",
-      "target_gloss": "o mesmo em toda a estrutura ou composição\n"
     }
   },
   "skos": {
-    "atributo": [
-      "igual",
-      "igualdade",
-      "regular"
-    ],
     "contraste": [
-      "desigual",
-      "irregular",
       "politípica"
     ],
     "UF": [],
     "RT": []
   },
   "provenance": [
-    {
-      "termo": "regular",
-      "estatuto": "atributo",
-      "eixo": "invariância face a um parâmetro",
-      "via": "seed (Etapa 1/2)",
-      "offsets_ili": [
-        "ili-30-00909545-a"
-      ],
-      "teste_decisivo": "Teste 1 falha",
-      "garantia": [
-        "lexical"
-      ],
-      "definicao": "",
-      "estrutural": ""
-    },
-    {
-      "termo": "igual",
-      "estatuto": "atributo",
-      "eixo": "invariância face a um parâmetro",
-      "via": "seed (Etapa 1/2)",
-      "offsets_ili": [
-        "ili-30-00909545-a"
-      ],
-      "teste_decisivo": "Teste 1 falha",
-      "garantia": [
-        "lexical"
-      ],
-      "definicao": "",
-      "estrutural": ""
-    },
-    {
-      "termo": "desigual",
-      "estatuto": "contraste",
-      "eixo": "invariância face a um parâmetro",
-      "via": "antonym",
-      "offsets_ili": [],
-      "teste_decisivo": "Teste 3",
-      "garantia": [
-        "lexical"
-      ],
-      "definicao": "",
-      "estrutural": ""
-    },
-    {
-      "termo": "irregular",
-      "estatuto": "contraste",
-      "eixo": "invariância face a um parâmetro",
-      "via": "antonym",
-      "offsets_ili": [],
-      "teste_decisivo": "Teste 3",
-      "garantia": [
-        "lexical"
-      ],
-      "definicao": "",
-      "estrutural": ""
-    },
-    {
-      "termo": "igualdade",
-      "estatuto": "atributo",
-      "eixo": "invariância face a um parâmetro",
-      "via": "attribute",
-      "offsets_ili": [],
-      "teste_decisivo": "Roteado para attribute_bucket (nome de qualidade)",
-      "garantia": [
-        "estrutural"
-      ],
-      "definicao": "",
-      "estrutural": ""
-    },
     {
       "termo": "politípica",
       "estatuto": "contraste",
@@ -455,11 +141,7 @@
     }
   ],
   "attribute_terms": [
-    "igual",
-    "igualdade",
     "invariancia",
-    "periodico",
-    "regular",
     "uniformidade"
   ],
   "assertions": [
@@ -503,7 +185,7 @@
       "stage": "Etapa 3",
       "text": "Alvos de relação são tipados pelo mapeamento; «(no lemma)» nunca admitido.",
       "passed": true,
-      "evidence": "OK (72 alvos «(no lemma)» descartados)"
+      "evidence": "OK (23 alvos «(no lemma)» descartados)"
     },
     {
       "stage": "Etapa 4",
@@ -539,11 +221,11 @@
       "stage": "Serialização",
       "passed": true,
       "text": "X.skos.ttl analisa com rdflib e tem a contagem de triplos esperada.",
-      "evidence": "triplos esperados=14, analisados=14"
+      "evidence": "triplos esperados=7, analisados=7"
     }
   ],
   "all_passed": true,
-  "skos_triples": 14,
+  "skos_triples": 7,
   "_ttl_ok": true,
-  "_signals_sidelined": 90
+  "_signals_sidelined": 54
 }

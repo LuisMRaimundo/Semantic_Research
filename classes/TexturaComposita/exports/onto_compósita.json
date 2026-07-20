@@ -1,0 +1,11 @@
+{
+  "type": "thesaurus_search",
+  "query": {
+    "query": "compósita",
+    "resource": null,
+    "pos": null,
+    "mode": "Contains"
+  },
+  "count": 0,
+  "synsets": []
+}

@@ -1,0 +1,3679 @@
+{
+  "class_id": "TexturaMetamorfica",
+  "pref_label": "TexturaMetamórfica",
+  "axis": "muda de forma, relativamente a um ou vários parâmetros",
+  "generated": "2026-07-13T17:43:33",
+  "source": "PULO / WordNet.PT export",
+  "stage1": {
+    "admitted": [
+      {
+        "ili_offset": "ili-30-07359599-n",
+        "glosa": "uma mudança qualitativa\n",
+        "decision": "UF",
+        "export_gloss": "uma mudança qualitativa\n"
+      },
+      {
+        "ili_offset": "ili-30-00126264-v",
+        "glosa": "causar à mudança; fazer diferente; causar uma transformação\n",
+        "decision": "RT",
+        "export_gloss": "causar à mudança; fazer diferente; causar uma transformação\n"
+      }
+    ],
+    "admitted_offsets": [
+      "ili-30-07359599-n",
+      "ili-30-00126264-v"
+    ],
+    "excluded_offsets": [],
+    "invalid": [],
+    "flagged_no_ili": []
+  },
+  "stage2_seeds": {
+    "metamorfose": {
+      "display": "metamorfose",
+      "offsets": [
+        "ili-30-07359599-n"
+      ]
+    },
+    "modificacao": {
+      "display": "modificação",
+      "offsets": [
+        "ili-30-07359599-n"
+      ]
+    },
+    "mudanca": {
+      "display": "mudança",
+      "offsets": [
+        "ili-30-07359599-n"
+      ]
+    },
+    "transmudacao": {
+      "display": "transmudação",
+      "offsets": [
+        "ili-30-07359599-n"
+      ]
+    },
+    "transmutacao": {
+      "display": "transmutação",
+      "offsets": [
+        "ili-30-07359599-n"
+      ]
+    },
+    "transformacao": {
+      "display": "transformação",
+      "offsets": [
+        "ili-30-07359599-n"
+      ]
+    },
+    "alteracao": {
+      "display": "alteração",
+      "offsets": [
+        "ili-30-07359599-n"
+      ]
+    },
+    "cambiar": {
+      "display": "cambiar",
+      "offsets": [
+        "ili-30-00126264-v"
+      ]
+    },
+    "converter": {
+      "display": "converter",
+      "offsets": [
+        "ili-30-00126264-v"
+      ]
+    },
+    "demudar": {
+      "display": "demudar",
+      "offsets": [
+        "ili-30-00126264-v"
+      ]
+    },
+    "evolucionar": {
+      "display": "evolucionar",
+      "offsets": [
+        "ili-30-00126264-v"
+      ]
+    },
+    "evoluir": {
+      "display": "evoluir",
+      "offsets": [
+        "ili-30-00126264-v"
+      ]
+    },
+    "falsificar": {
+      "display": "falsificar",
+      "offsets": [
+        "ili-30-00126264-v"
+      ]
+    },
+    "metamorfosear": {
+      "display": "metamorfosear",
+      "offsets": [
+        "ili-30-00126264-v"
+      ]
+    },
+    "perturbar": {
+      "display": "perturbar",
+      "offsets": [
+        "ili-30-00126264-v"
+      ]
+    },
+    "tornar": {
+      "display": "tornar",
+      "offsets": [
+        "ili-30-00126264-v"
+      ]
+    },
+    "tranformar": {
+      "display": "tranformar",
+      "offsets": [
+        "ili-30-00126264-v"
+      ]
+    },
+    "transformar": {
+      "display": "transformar",
+      "offsets": [
+        "ili-30-00126264-v"
+      ]
+    },
+    "alterar": {
+      "display": "alterar",
+      "offsets": [
+        "ili-30-00126264-v"
+      ]
+    },
+    "mudar": {
+      "display": "mudar",
+      "offsets": [
+        "ili-30-00126264-v"
+      ]
+    },
+    "modificar": {
+      "display": "modificar",
+      "offsets": [
+        "ili-30-00126264-v"
+      ]
+    }
+  },
+  "stage3": {
+    "contrast": {},
+    "rt_uf": {},
+    "family": {
+      "modificar": {
+        "display": "modificar",
+        "via": "derivationally related form",
+        "source_ili": "ili-30-07359599-n",
+        "target_gloss": "passar de uma definição ou contexto para outro\n"
+      },
+      "cambio": {
+        "display": "câmbio",
+        "via": "derivationally related form",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "a ação de mudar alguma coisa\n"
+      },
+      "mudanca": {
+        "display": "mudança",
+        "via": "derivationally related form",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "a ação de mudar alguma coisa\n"
+      },
+      "troca": {
+        "display": "troca",
+        "via": "derivationally related form",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "a ação de mudar alguma coisa\n"
+      },
+      "alteracao": {
+        "display": "alteração",
+        "via": "derivationally related form",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "o ato de fazer algo diferente (como, por exemplo, o tamanho de uma peça de vestuário)\n"
+      },
+      "modificacao": {
+        "display": "modificação",
+        "via": "derivationally related form",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "o ato de fazer algo diferente (como, por exemplo, o tamanho de uma peça de vestuário)\n"
+      },
+      "variacao": {
+        "display": "variação",
+        "via": "derivationally related form",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "um evento que ocorre quando algo passa de um estado ou fase para outra\n"
+      }
+    },
+    "BT": {
+      "alteracao": {
+        "display": "alteração",
+        "via": "hypernym",
+        "source_ili": "ili-30-07359599-n",
+        "target_gloss": "um evento que ocorre quando algo passa de um estado ou fase para outra\n"
+      },
+      "modificacao": {
+        "display": "modificação",
+        "via": "hypernym",
+        "source_ili": "ili-30-07359599-n",
+        "target_gloss": "um evento que ocorre quando algo passa de um estado ou fase para outra\n"
+      },
+      "variacao": {
+        "display": "variação",
+        "via": "hypernym",
+        "source_ili": "ili-30-07359599-n",
+        "target_gloss": "um evento que ocorre quando algo passa de um estado ou fase para outra\n"
+      },
+      "cambio": {
+        "display": "câmbio",
+        "via": "hypernym",
+        "source_ili": "ili-30-07359599-n",
+        "target_gloss": "um evento que ocorre quando algo passa de um estado ou fase para outra\n"
+      },
+      "mudanca": {
+        "display": "mudança",
+        "via": "hypernym",
+        "source_ili": "ili-30-07359599-n",
+        "target_gloss": "um evento que ocorre quando algo passa de um estado ou fase para outra\n"
+      },
+      "troca": {
+        "display": "troca",
+        "via": "hypernym",
+        "source_ili": "ili-30-07359599-n",
+        "target_gloss": "um evento que ocorre quando algo passa de um estado ou fase para outra\n"
+      }
+    },
+    "NT": {
+      "melhoria": {
+        "display": "melhoria",
+        "via": "hyponym",
+        "source_ili": "ili-30-07359599-n",
+        "target_gloss": "uma mudança para melhor; o progresso no desenvolvimento\n"
+      },
+      "pirolise": {
+        "display": "pirólise",
+        "via": "hyponym",
+        "source_ili": "ili-30-07359599-n",
+        "target_gloss": "transformação de uma substância produzida pela acção do calor\n"
+      },
+      "passagem": {
+        "display": "passagem",
+        "via": "hyponym",
+        "source_ili": "ili-30-07359599-n",
+        "target_gloss": "um evento que resulta numa transformação\n"
+      },
+      "transicao": {
+        "display": "transição",
+        "via": "hyponym",
+        "source_ili": "ili-30-07359599-n",
+        "target_gloss": "um evento que resulta numa transformação\n"
+      },
+      "conversao": {
+        "display": "conversão",
+        "via": "hyponym",
+        "source_ili": "ili-30-07359599-n",
+        "target_gloss": "um evento que resulta numa transformação\n"
+      },
+      "despertar": {
+        "display": "despertar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "causa tornar-se consciente ou acordado\n"
+      },
+      "suscitar": {
+        "display": "suscitar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "causa tornar-se consciente ou acordado\n"
+      },
+      "acordar": {
+        "display": "acordar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "causa tornar-se consciente ou acordado\n"
+      },
+      "fazer_dormir": {
+        "display": "fazer dormir",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer cair no sono\n"
+      },
+      "afetar": {
+        "display": "afetar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "agir fisicamente; têm um efeito sobre\n"
+      },
+      "refrescar": {
+        "display": "refrescar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar fresco novo\n"
+      },
+      "fecundar": {
+        "display": "fecundar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "introduzir sêmen (fêmea)\n"
+      },
+      "fertilizar": {
+        "display": "fertilizar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "introduzir sêmen (fêmea)\n"
+      },
+      "debilitar": {
+        "display": "debilitar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer pálido ou doentio\n"
+      },
+      "animalizar": {
+        "display": "animalizar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar brutal, insensível, desumano ou\n"
+      },
+      "converter": {
+        "display": "converter",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "mudar a natureza, propósito ou função de algo\n"
+      },
+      "arterializar": {
+        "display": "arterializar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "mudar sangue venoso para sangue arterial\n"
+      },
+      "tornar": {
+        "display": "tornar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "dar determinadas propriedades para alguma coisa\n"
+      },
+      "recrescer": {
+        "display": "recrescer",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "dar determinadas propriedades para alguma coisa\n"
+      },
+      "obter": {
+        "display": "obter",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "dar determinadas propriedades para alguma coisa\n"
+      },
+      "recriar": {
+        "display": "recriar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "dar determinadas propriedades para alguma coisa\n"
+      },
+      "voltar": {
+        "display": "voltar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "dar determinadas propriedades para alguma coisa\n"
+      },
+      "mudar": {
+        "display": "mudar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "causar a mudar de lugar\n"
+      },
+      "trocar": {
+        "display": "trocar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "causar a mudar de lugar\n"
+      },
+      "revolucionar": {
+        "display": "revolucionar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "mudar radicalmente\n"
+      },
+      "levar": {
+        "display": "levar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "pôr em um estado diferente\n"
+      },
+      "comover": {
+        "display": "comover",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "ter um efeito sobre\n"
+      },
+      "tocar": {
+        "display": "tocar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "ter um efeito sobre\n"
+      },
+      "formar": {
+        "display": "formar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "dar forma à\n"
+      },
+      "fazer": {
+        "display": "fazer",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "dar forma à\n"
+      },
+      "suspender": {
+        "display": "suspender",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "causa a ser realizada em suspensão num líquido\n"
+      },
+      "acalmar": {
+        "display": "acalmar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "causa tornar-se sóbrio\n"
+      },
+      "acrecentar": {
+        "display": "acrecentar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer maior ou mais\n"
+      },
+      "incrementar": {
+        "display": "incrementar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer maior ou mais\n"
+      },
+      "acrescentar": {
+        "display": "acrescentar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer maior ou mais\n"
+      },
+      "aumentar": {
+        "display": "aumentar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer maior ou mais\n"
+      },
+      "assimilar": {
+        "display": "assimilar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer semelhante\n"
+      },
+      "descongestionar": {
+        "display": "descongestionar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "livrar-se de obstruções\n"
+      },
+      "desobstruir": {
+        "display": "desobstruir",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "livrar-se de obstruções\n"
+      },
+      "limpar": {
+        "display": "limpar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "livrar-se de obstruções\n"
+      },
+      "retirar": {
+        "display": "retirar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "livrar-se de obstruções\n"
+      },
+      "recolher": {
+        "display": "recolher",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "livrar-se de obstruções\n"
+      },
+      "reconstruir": {
+        "display": "reconstruir",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer, a partir de (parte de) uma casa\n"
+      },
+      "refazer": {
+        "display": "refazer",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer, a partir de (parte de) uma casa\n"
+      },
+      "moderar": {
+        "display": "moderar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "restringir\n"
+      },
+      "temperar": {
+        "display": "temperar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "restringir\n"
+      },
+      "acurar": {
+        "display": "acurar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar-se melhor\n"
+      },
+      "adelgacar": {
+        "display": "adelgaçar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar-se melhor\n"
+      },
+      "afinar": {
+        "display": "afinar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar-se melhor\n"
+      },
+      "alindar": {
+        "display": "alindar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar-se melhor\n"
+      },
+      "altear": {
+        "display": "altear",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar-se melhor\n"
+      },
+      "aperfeicoar": {
+        "display": "aperfeiçoar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar-se melhor\n"
+      },
+      "aperfeicoar-se": {
+        "display": "aperfeiçoar-se",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar-se melhor\n"
+      },
+      "aprimorar": {
+        "display": "aprimorar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar-se melhor\n"
+      },
+      "apurar": {
+        "display": "apurar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar-se melhor\n"
+      },
+      "beneficiar": {
+        "display": "beneficiar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar-se melhor\n"
+      },
+      "bolear": {
+        "display": "bolear",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar-se melhor\n"
+      },
+      "bonificar": {
+        "display": "bonificar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar-se melhor\n"
+      },
+      "brunir": {
+        "display": "brunir",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar-se melhor\n"
+      },
+      "burilar": {
+        "display": "burilar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar-se melhor\n"
+      },
+      "convalescer": {
+        "display": "convalescer",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar-se melhor\n"
+      },
+      "corrigir": {
+        "display": "corrigir",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar-se melhor\n"
+      },
+      "desagravar": {
+        "display": "desagravar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar-se melhor\n"
+      },
+      "esmerar": {
+        "display": "esmerar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar-se melhor\n"
+      },
+      "esmerar-se": {
+        "display": "esmerar-se",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar-se melhor\n"
+      },
+      "esmerilar": {
+        "display": "esmerilar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar-se melhor\n"
+      },
+      "estilar": {
+        "display": "estilar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar-se melhor\n"
+      },
+      "estilizar": {
+        "display": "estilizar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar-se melhor\n"
+      },
+      "facetar": {
+        "display": "facetar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar-se melhor\n"
+      },
+      "polir": {
+        "display": "polir",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar-se melhor\n"
+      },
+      "purificar": {
+        "display": "purificar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar-se melhor\n"
+      },
+      "refinar": {
+        "display": "refinar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar-se melhor\n"
+      },
+      "requintar": {
+        "display": "requintar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar-se melhor\n"
+      },
+      "restabelecer": {
+        "display": "restabelecer",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar-se melhor\n"
+      },
+      "retocar": {
+        "display": "retocar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar-se melhor\n"
+      },
+      "ungir": {
+        "display": "ungir",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar-se melhor\n"
+      },
+      "melhorar": {
+        "display": "melhorar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar-se melhor\n"
+      },
+      "assanhar": {
+        "display": "assanhar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "piorar\n"
+      },
+      "complicar": {
+        "display": "complicar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "piorar\n"
+      },
+      "exacerbar": {
+        "display": "exacerbar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "piorar\n"
+      },
+      "agravar": {
+        "display": "agravar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "piorar\n"
+      },
+      "piorar": {
+        "display": "piorar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "piorar\n"
+      },
+      "secar": {
+        "display": "secar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "remover a umidade de e fazer seco\n"
+      },
+      "unificar": {
+        "display": "unificar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "juntar ou combinar\n"
+      },
+      "unir": {
+        "display": "unir",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "juntar ou combinar\n"
+      },
+      "envelhecer": {
+        "display": "envelhecer",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer mais velhos\n"
+      },
+      "madurar": {
+        "display": "madurar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "causar amadurecer ou desenvolver plenamente\n"
+      },
+      "amadurecer": {
+        "display": "amadurecer",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "causar amadurecer ou desenvolver plenamente\n"
+      },
+      "desenvolver": {
+        "display": "desenvolver",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "causar que crescem e se diferenciam em formas de acordo com o seu desenvolvimento natural\n"
+      },
+      "romper": {
+        "display": "romper",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "infligir dano em cima\n"
+      },
+      "amargurar": {
+        "display": "amargurar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer azedo ou amargo\n"
+      },
+      "desestabilizar": {
+        "display": "desestabilizar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar instável\n"
+      },
+      "sensibilizar": {
+        "display": "sensibilizar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar sensível ou consciente\n"
+      },
+      "acostumar": {
+        "display": "acostumar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornam psicologicamente ou fisicamente usado (para algo)\n"
+      },
+      "afazer": {
+        "display": "afazer",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornam psicologicamente ou fisicamente usado (para algo)\n"
+      },
+      "costumar": {
+        "display": "costumar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornam psicologicamente ou fisicamente usado (para algo)\n"
+      },
+      "habituar": {
+        "display": "habituar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornam psicologicamente ou fisicamente usado (para algo)\n"
+      },
+      "manchar": {
+        "display": "manchar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "produzir ou deixar manchas\n"
+      },
+      "ajustar": {
+        "display": "ajustar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "alteram ou regulam de modo a alcançar a precisão ou conforme com a norma\n"
+      },
+      "colocar": {
+        "display": "colocar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "alteram ou regulam de modo a alcançar a precisão ou conforme com a norma\n"
+      },
+      "submeter": {
+        "display": "submeter",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "superar a selvageria de; tornar dócil e tratável\n"
+      },
+      "conter": {
+        "display": "conter",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "superar a selvageria de; tornar dócil e tratável\n"
+      },
+      "dominar": {
+        "display": "dominar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "superar a selvageria de; tornar dócil e tratável\n"
+      },
+      "ampliar": {
+        "display": "ampliar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar mais amplo\n"
+      },
+      "alargar": {
+        "display": "alargar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar mais amplo\n"
+      },
+      "ofuscar": {
+        "display": "ofuscar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar obscuro ou incerto\n"
+      },
+      "eclipsar": {
+        "display": "eclipsar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer indecifrável ou imperceptível, obscurecendo ou dissimular\n"
+      },
+      "encobrir": {
+        "display": "encobrir",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer indecifrável ou imperceptível, obscurecendo ou dissimular\n"
+      },
+      "esconder": {
+        "display": "esconder",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer indecifrável ou imperceptível, obscurecendo ou dissimular\n"
+      },
+      "ocultar": {
+        "display": "ocultar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer indecifrável ou imperceptível, obscurecendo ou dissimular\n"
+      },
+      "obscurecer": {
+        "display": "obscurecer",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer indecifrável ou imperceptível, obscurecendo ou dissimular\n"
+      },
+      "escurecer": {
+        "display": "escurecer",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer indecifrável ou imperceptível, obscurecendo ou dissimular\n"
+      },
+      "dissolver": {
+        "display": "dissolver",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "declarar nula\n"
+      },
+      "concluir": {
+        "display": "concluir",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "trazer para um final ou parada\n"
+      },
+      "acabar": {
+        "display": "acabar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "trazer para um final ou parada\n"
+      },
+      "terminar": {
+        "display": "terminar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "trazer para um final ou parada\n"
+      },
+      "refrigerar": {
+        "display": "refrigerar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer legal ou refrigerador\n"
+      },
+      "congelar": {
+        "display": "congelar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer legal ou refrigerador\n"
+      },
+      "aquecer": {
+        "display": "aquecer",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "Faça a quente ou quente\n"
+      },
+      "esquentar": {
+        "display": "esquentar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "Faça a quente ou quente\n"
+      },
+      "cozer": {
+        "display": "cozer",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "trazer para, ou manter-se no ponto de ebulição,\n"
+      },
+      "gelar": {
+        "display": "gelar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "causa para congelar\n"
+      },
+      "transpor": {
+        "display": "transpor",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "alterar a chave\n"
+      },
+      "transportar": {
+        "display": "transportar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "alterar a chave\n"
+      },
+      "transformar": {
+        "display": "transformar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "modificar ou alterar de forma, aparência ou de natureza\n"
+      },
+      "investir": {
+        "display": "investir",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "Vire do avesso ou de cabeça para baixo\n"
+      },
+      "descer": {
+        "display": "descer",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "Abaixe o tom de (notas musicais)\n"
+      },
+      "simplificar": {
+        "display": "simplificar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar mais simples ou mais fácil ou reduzir a complexidade ou extensão\n"
+      },
+      "elaborar": {
+        "display": "elaborar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar mais complexa, intrincada, ou mais rico\n"
+      },
+      "centralizar": {
+        "display": "centralizar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "faz do centro de\n"
+      },
+      "concentrar": {
+        "display": "concentrar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "faz do centro de\n"
+      },
+      "abusador": {
+        "display": "abusador",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer pronto ou adequado ou equipar com antecedência para um propósito particular ou para algum uso, evento, etc\n"
+      },
+      "dispor": {
+        "display": "dispor",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer pronto ou adequado ou equipar com antecedência para um propósito particular ou para algum uso, evento, etc\n"
+      },
+      "disposto": {
+        "display": "disposto",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer pronto ou adequado ou equipar com antecedência para um propósito particular ou para algum uso, evento, etc\n"
+      },
+      "habilitar": {
+        "display": "habilitar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer pronto ou adequado ou equipar com antecedência para um propósito particular ou para algum uso, evento, etc\n"
+      },
+      "preparar": {
+        "display": "preparar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer pronto ou adequado ou equipar com antecedência para um propósito particular ou para algum uso, evento, etc\n"
+      },
+      "prevenido": {
+        "display": "prevenido",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer pronto ou adequado ou equipar com antecedência para um propósito particular ou para algum uso, evento, etc\n"
+      },
+      "pronto": {
+        "display": "pronto",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer pronto ou adequado ou equipar com antecedência para um propósito particular ou para algum uso, evento, etc\n"
+      },
+      "civilizar": {
+        "display": "civilizar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "levantar de um bárbaro a um estado civilizado\n"
+      },
+      "privatizar": {
+        "display": "privatizar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "colocar sob o controle ou a propriedade privada\n"
+      },
+      "naturalizar": {
+        "display": "naturalizar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "transformar em um cidadão\n"
+      },
+      "comparar": {
+        "display": "comparar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer igual, uniforme, correspondente, ou correspondência\n"
+      },
+      "compensar": {
+        "display": "compensar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer igual, uniforme, correspondente, ou correspondência\n"
+      },
+      "empatar": {
+        "display": "empatar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer igual, uniforme, correspondente, ou correspondência\n"
+      },
+      "equiparar": {
+        "display": "equiparar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer igual, uniforme, correspondente, ou correspondência\n"
+      },
+      "igualar": {
+        "display": "igualar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer igual, uniforme, correspondente, ou correspondência\n"
+      },
+      "nivelar": {
+        "display": "nivelar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer igual, uniforme, correspondente, ou correspondência\n"
+      },
+      "puxar": {
+        "display": "puxar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer apertado ou mais apertado\n"
+      },
+      "esticar": {
+        "display": "esticar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer apertado ou mais apertado\n"
+      },
+      "acelerar": {
+        "display": "acelerar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "causar a se mover mais rápido\n"
+      },
+      "diminuir": {
+        "display": "diminuir",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer menor\n"
+      },
+      "reduzir": {
+        "display": "reduzir",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer menor\n"
+      },
+      "liquidar": {
+        "display": "liquidar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer (uma substância sólida) de líquido, como por aquecimento\n"
+      },
+      "validar": {
+        "display": "validar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar válido ou confirmar a validade de\n"
+      },
+      "anular": {
+        "display": "anular",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tirar a força legal ou tornar ineficazes\n"
+      },
+      "esvaziar": {
+        "display": "esvaziar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar nulo ou vazio de conteúdo\n"
+      },
+      "vazar": {
+        "display": "vazar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar nulo ou vazio de conteúdo\n"
+      },
+      "preencher": {
+        "display": "preencher",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer pleno, também em um sentido metafórico\n"
+      },
+      "encher": {
+        "display": "encher",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer pleno, também em um sentido metafórico\n"
+      },
+      "neutralizar": {
+        "display": "neutralizar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer quimicamente neutro\n"
+      },
+      "glorificar": {
+        "display": "glorificar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "conceder glória em cima\n"
+      },
+      "contaminar": {
+        "display": "contaminar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "torna radioativo pela adição de material radioativo\n"
+      },
+      "isolar": {
+        "display": "isolar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "proteger do calor, frio ou ruído, envolvendo com material isolante\n"
+      },
+      "urbanizar": {
+        "display": "urbanizar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "transmitir hábitos urbanos, formas de vida, ou as responsabilidades em cima\n"
+      },
+      "marcar": {
+        "display": "marcar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer ou deixar uma marca no\n"
+      },
+      "permitir": {
+        "display": "permitir",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "processar capaz ou capaz de alguma tarefa\n"
+      },
+      "envenenar": {
+        "display": "envenenar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "adicionar veneno para\n"
+      },
+      "endurecer": {
+        "display": "endurecer",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer duras ou mais duras\n"
+      },
+      "animar": {
+        "display": "animar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "dar qualidades realistas para\n"
+      },
+      "esclarecer": {
+        "display": "esclarecer",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "deixar claro, brilhante, luz, ou translúcido\n"
+      },
+      "modificar": {
+        "display": "modificar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "passar de uma definição ou contexto para outro\n"
+      },
+      "patentear": {
+        "display": "patentear",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar aberta a vista ou aviso\n"
+      },
+      "industrializar": {
+        "display": "industrializar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "organizar (a produção de algo) numa indústria\n"
+      },
+      "recomendar": {
+        "display": "recomendar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar atraente ou aceitável\n"
+      },
+      "espiritualizar": {
+        "display": "espiritualizar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "elevar ou idealizar, em alusão à transfiguração de Cristo\n"
+      },
+      "transfigurar": {
+        "display": "transfigurar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "elevar ou idealizar, em alusão à transfiguração de Cristo\n"
+      },
+      "confundir": {
+        "display": "confundir",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar obscuro, indistinto, ou borrada\n"
+      },
+      "misturar": {
+        "display": "misturar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar obscuro, indistinto, ou borrada\n"
+      },
+      "derrubar": {
+        "display": "derrubar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar ineficaz\n"
+      },
+      "destruir": {
+        "display": "destruir",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar ineficaz\n"
+      },
+      "esmagar": {
+        "display": "esmagar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar ineficaz\n"
+      },
+      "afiar": {
+        "display": "afiar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer afiada ou mais nítida\n"
+      },
+      "levantar": {
+        "display": "levantar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "endireitai\n"
+      },
+      "causar": {
+        "display": "causar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "causar a entrar em um estado ou condição especial\n"
+      },
+      "produzir": {
+        "display": "produzir",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "causar a entrar em um estado ou condição especial\n"
+      },
+      "provocar": {
+        "display": "provocar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "causar a entrar em um estado ou condição especial\n"
+      },
+      "por": {
+        "display": "pôr",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "causar estar em um determinado estado; causar estar numa certa relação\n"
+      },
+      "situar": {
+        "display": "situar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "causar estar em um determinado estado; causar estar numa certa relação\n"
+      },
+      "deformar": {
+        "display": "deformar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer sem forma\n"
+      },
+      "alterar": {
+        "display": "alterar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "fazer uma alteração para\n"
+      },
+      "adornar": {
+        "display": "adornar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar mais atraente ao adicionar ornamento, cor, etc.\n"
+      },
+      "embelezar": {
+        "display": "embelezar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar mais atraente ao adicionar ornamento, cor, etc.\n"
+      },
+      "paramentar": {
+        "display": "paramentar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar mais atraente ao adicionar ornamento, cor, etc.\n"
+      },
+      "decorar": {
+        "display": "decorar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar mais atraente ao adicionar ornamento, cor, etc.\n"
+      },
+      "enfeitar": {
+        "display": "enfeitar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar mais atraente ao adicionar ornamento, cor, etc.\n"
+      },
+      "humilhar": {
+        "display": "humilhar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "causar para ser despretensioso\n"
+      },
+      "desodorizar": {
+        "display": "desodorizar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "eliminar o odor de\n"
+      },
+      "revelar": {
+        "display": "revelar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "tornar-se visível por meio de soluções químicas\n"
+      },
+      "revezar": {
+        "display": "revezar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "Coloque no lugar de outro; alternar itens aparentemente equivalentes\n"
+      },
+      "substituir": {
+        "display": "substituir",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "Coloque no lugar de outro; alternar itens aparentemente equivalentes\n"
+      },
+      "capturar": {
+        "display": "capturar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "trazer sobre a captura de uma partícula elementar ou corpo celeste e fazendo com que entrarem em uma nova órbita\n"
+      },
+      "contribuir": {
+        "display": "contribuir",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "conceder uma qualidade\n"
+      },
+      "instaurar": {
+        "display": "instaurar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "trazer de volta ao original existência, uso, função ou posição\n"
+      },
+      "abastardar": {
+        "display": "abastardar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "corromper moralmente ou por intemperança ou sensualidade\n"
+      },
+      "adulterar": {
+        "display": "adulterar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "corromper moralmente ou por intemperança ou sensualidade\n"
+      },
+      "agalegar": {
+        "display": "agalegar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "corromper moralmente ou por intemperança ou sensualidade\n"
+      },
+      "apostemar": {
+        "display": "apostemar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "corromper moralmente ou por intemperança ou sensualidade\n"
+      },
+      "aviltar": {
+        "display": "aviltar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "corromper moralmente ou por intemperança ou sensualidade\n"
+      },
+      "corroer": {
+        "display": "corroer",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "corromper moralmente ou por intemperança ou sensualidade\n"
+      },
+      "corromper": {
+        "display": "corromper",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "corromper moralmente ou por intemperança ou sensualidade\n"
+      },
+      "corrompido": {
+        "display": "corrompido",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "corromper moralmente ou por intemperança ou sensualidade\n"
+      },
+      "corrupto": {
+        "display": "corrupto",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "corromper moralmente ou por intemperança ou sensualidade\n"
+      },
+      "debochar": {
+        "display": "debochar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "corromper moralmente ou por intemperança ou sensualidade\n"
+      },
+      "degenerar": {
+        "display": "degenerar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "corromper moralmente ou por intemperança ou sensualidade\n"
+      },
+      "degradar": {
+        "display": "degradar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "corromper moralmente ou por intemperança ou sensualidade\n"
+      },
+      "depravado": {
+        "display": "depravado",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "corromper moralmente ou por intemperança ou sensualidade\n"
+      },
+      "depravar": {
+        "display": "depravar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "corromper moralmente ou por intemperança ou sensualidade\n"
+      },
+      "derrancar": {
+        "display": "derrancar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "corromper moralmente ou por intemperança ou sensualidade\n"
+      },
+      "descarreirar": {
+        "display": "descarreirar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "corromper moralmente ou por intemperança ou sensualidade\n"
+      },
+      "desencaminhar": {
+        "display": "desencaminhar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "corromper moralmente ou por intemperança ou sensualidade\n"
+      },
+      "desencarreirar": {
+        "display": "desencarreirar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "corromper moralmente ou por intemperança ou sensualidade\n"
+      },
+      "desmanchar": {
+        "display": "desmanchar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "corromper moralmente ou por intemperança ou sensualidade\n"
+      },
+      "desmoralizar": {
+        "display": "desmoralizar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "corromper moralmente ou por intemperança ou sensualidade\n"
+      },
+      "desregrar": {
+        "display": "desregrar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "corromper moralmente ou por intemperança ou sensualidade\n"
+      },
+      "desvirtuar": {
+        "display": "desvirtuar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "corromper moralmente ou por intemperança ou sensualidade\n"
+      },
+      "devassar": {
+        "display": "devassar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "corromper moralmente ou por intemperança ou sensualidade\n"
+      },
+      "devasso": {
+        "display": "devasso",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "corromper moralmente ou por intemperança ou sensualidade\n"
+      },
+      "dissoluto": {
+        "display": "dissoluto",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "corromper moralmente ou por intemperança ou sensualidade\n"
+      },
+      "eivar": {
+        "display": "eivar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "corromper moralmente ou por intemperança ou sensualidade\n"
+      },
+      "empestar": {
+        "display": "empestar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "corromper moralmente ou por intemperança ou sensualidade\n"
+      },
+      "estragado": {
+        "display": "estragado",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "corromper moralmente ou por intemperança ou sensualidade\n"
+      },
+      "estragar": {
+        "display": "estragar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "corromper moralmente ou por intemperança ou sensualidade\n"
+      },
+      "gangrenar": {
+        "display": "gangrenar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "corromper moralmente ou por intemperança ou sensualidade\n"
+      },
+      "insidiar": {
+        "display": "insidiar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "corromper moralmente ou por intemperança ou sensualidade\n"
+      },
+      "minar": {
+        "display": "minar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "corromper moralmente ou por intemperança ou sensualidade\n"
+      },
+      "perverter": {
+        "display": "perverter",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "corromper moralmente ou por intemperança ou sensualidade\n"
+      },
+      "pervertido": {
+        "display": "pervertido",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "corromper moralmente ou por intemperança ou sensualidade\n"
+      },
+      "prevaricar": {
+        "display": "prevaricar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "corromper moralmente ou por intemperança ou sensualidade\n"
+      },
+      "profanar": {
+        "display": "profanar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "corromper moralmente ou por intemperança ou sensualidade\n"
+      },
+      "relaxar": {
+        "display": "relaxar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "corromper moralmente ou por intemperança ou sensualidade\n"
+      },
+      "subverter": {
+        "display": "subverter",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "corromper moralmente ou por intemperança ou sensualidade\n"
+      },
+      "transviar": {
+        "display": "transviar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "corromper moralmente ou por intemperança ou sensualidade\n"
+      },
+      "ulcerar": {
+        "display": "ulcerar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "corromper moralmente ou por intemperança ou sensualidade\n"
+      },
+      "viciar": {
+        "display": "viciar",
+        "via": "hyponym",
+        "source_ili": "ili-30-00126264-v",
+        "target_gloss": "corromper moralmente ou por intemperança ou sensualidade\n"
+      }
+    },
+    "attribute": {}
+  },
+  "dropped_no_lemma": 471,
+  "sinalizacao": {},
+  "stage4_excluded": {
+    "fazer_dormir": {
+      "display": "fazer dormir",
+      "via": "hyponym",
+      "attested": false,
+      "origin": "relação hyponym (NT)",
+      "reason": "colocação multipalavra sem corroboração"
+    }
+  },
+  "stage5": {
+    "admitted": {},
+    "pending": {
+      "metamorfose": {
+        "display": "metamorfose",
+        "offsets": [
+          "ili-30-07359599-n"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2)",
+        "adjudication": null
+      },
+      "transmudacao": {
+        "display": "transmudação",
+        "offsets": [
+          "ili-30-07359599-n"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2)",
+        "adjudication": null
+      },
+      "transmutacao": {
+        "display": "transmutação",
+        "offsets": [
+          "ili-30-07359599-n"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2)",
+        "adjudication": null
+      },
+      "transformacao": {
+        "display": "transformação",
+        "offsets": [
+          "ili-30-07359599-n"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2)",
+        "adjudication": null
+      },
+      "cambiar": {
+        "display": "cambiar",
+        "offsets": [
+          "ili-30-00126264-v"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2)",
+        "adjudication": null
+      },
+      "converter": {
+        "display": "converter",
+        "offsets": [
+          "ili-30-00126264-v"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2) + relação hyponym (NT)",
+        "via": "hyponym",
+        "adjudication": null
+      },
+      "demudar": {
+        "display": "demudar",
+        "offsets": [
+          "ili-30-00126264-v"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2)",
+        "adjudication": null
+      },
+      "evolucionar": {
+        "display": "evolucionar",
+        "offsets": [
+          "ili-30-00126264-v"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2)",
+        "adjudication": null
+      },
+      "evoluir": {
+        "display": "evoluir",
+        "offsets": [
+          "ili-30-00126264-v"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2)",
+        "adjudication": null
+      },
+      "falsificar": {
+        "display": "falsificar",
+        "offsets": [
+          "ili-30-00126264-v"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2)",
+        "adjudication": null
+      },
+      "metamorfosear": {
+        "display": "metamorfosear",
+        "offsets": [
+          "ili-30-00126264-v"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2)",
+        "adjudication": null
+      },
+      "perturbar": {
+        "display": "perturbar",
+        "offsets": [
+          "ili-30-00126264-v"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2)",
+        "adjudication": null
+      },
+      "tornar": {
+        "display": "tornar",
+        "offsets": [
+          "ili-30-00126264-v"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2) + relação hyponym (NT)",
+        "via": "hyponym",
+        "adjudication": null
+      },
+      "tranformar": {
+        "display": "tranformar",
+        "offsets": [
+          "ili-30-00126264-v"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2)",
+        "adjudication": null
+      },
+      "transformar": {
+        "display": "transformar",
+        "offsets": [
+          "ili-30-00126264-v"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2) + relação hyponym (NT)",
+        "via": "hyponym",
+        "adjudication": null
+      },
+      "alterar": {
+        "display": "alterar",
+        "offsets": [
+          "ili-30-00126264-v"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2) + relação hyponym (NT)",
+        "via": "hyponym",
+        "adjudication": null
+      },
+      "mudar": {
+        "display": "mudar",
+        "offsets": [
+          "ili-30-00126264-v"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2) + relação hyponym (NT)",
+        "via": "hyponym",
+        "adjudication": null
+      },
+      "melhoria": {
+        "display": "melhoria",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "pirolise": {
+        "display": "pirólise",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "passagem": {
+        "display": "passagem",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "transicao": {
+        "display": "transição",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "conversao": {
+        "display": "conversão",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "despertar": {
+        "display": "despertar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "suscitar": {
+        "display": "suscitar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "acordar": {
+        "display": "acordar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "afetar": {
+        "display": "afetar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "refrescar": {
+        "display": "refrescar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "fecundar": {
+        "display": "fecundar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "fertilizar": {
+        "display": "fertilizar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "debilitar": {
+        "display": "debilitar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "animalizar": {
+        "display": "animalizar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "arterializar": {
+        "display": "arterializar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "recrescer": {
+        "display": "recrescer",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "obter": {
+        "display": "obter",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "recriar": {
+        "display": "recriar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "voltar": {
+        "display": "voltar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "trocar": {
+        "display": "trocar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "revolucionar": {
+        "display": "revolucionar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "levar": {
+        "display": "levar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "comover": {
+        "display": "comover",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "tocar": {
+        "display": "tocar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "formar": {
+        "display": "formar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "fazer": {
+        "display": "fazer",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "suspender": {
+        "display": "suspender",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "acalmar": {
+        "display": "acalmar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "acrecentar": {
+        "display": "acrecentar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "incrementar": {
+        "display": "incrementar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "acrescentar": {
+        "display": "acrescentar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "aumentar": {
+        "display": "aumentar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "assimilar": {
+        "display": "assimilar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "descongestionar": {
+        "display": "descongestionar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "desobstruir": {
+        "display": "desobstruir",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "limpar": {
+        "display": "limpar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "retirar": {
+        "display": "retirar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "recolher": {
+        "display": "recolher",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "reconstruir": {
+        "display": "reconstruir",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "refazer": {
+        "display": "refazer",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "moderar": {
+        "display": "moderar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "temperar": {
+        "display": "temperar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "acurar": {
+        "display": "acurar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "adelgacar": {
+        "display": "adelgaçar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "afinar": {
+        "display": "afinar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "alindar": {
+        "display": "alindar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "altear": {
+        "display": "altear",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "aperfeicoar": {
+        "display": "aperfeiçoar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "aperfeicoar-se": {
+        "display": "aperfeiçoar-se",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "aprimorar": {
+        "display": "aprimorar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "apurar": {
+        "display": "apurar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "beneficiar": {
+        "display": "beneficiar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "bolear": {
+        "display": "bolear",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "bonificar": {
+        "display": "bonificar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "brunir": {
+        "display": "brunir",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "burilar": {
+        "display": "burilar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "convalescer": {
+        "display": "convalescer",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "corrigir": {
+        "display": "corrigir",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "desagravar": {
+        "display": "desagravar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "esmerar": {
+        "display": "esmerar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "esmerar-se": {
+        "display": "esmerar-se",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "esmerilar": {
+        "display": "esmerilar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "estilar": {
+        "display": "estilar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "estilizar": {
+        "display": "estilizar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "facetar": {
+        "display": "facetar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "polir": {
+        "display": "polir",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "purificar": {
+        "display": "purificar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "refinar": {
+        "display": "refinar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "requintar": {
+        "display": "requintar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "restabelecer": {
+        "display": "restabelecer",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "retocar": {
+        "display": "retocar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "ungir": {
+        "display": "ungir",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "melhorar": {
+        "display": "melhorar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "assanhar": {
+        "display": "assanhar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "complicar": {
+        "display": "complicar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "exacerbar": {
+        "display": "exacerbar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "agravar": {
+        "display": "agravar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "piorar": {
+        "display": "piorar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "secar": {
+        "display": "secar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "unificar": {
+        "display": "unificar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "unir": {
+        "display": "unir",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "envelhecer": {
+        "display": "envelhecer",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "madurar": {
+        "display": "madurar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "amadurecer": {
+        "display": "amadurecer",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "desenvolver": {
+        "display": "desenvolver",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "romper": {
+        "display": "romper",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "amargurar": {
+        "display": "amargurar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "desestabilizar": {
+        "display": "desestabilizar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "sensibilizar": {
+        "display": "sensibilizar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "acostumar": {
+        "display": "acostumar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "afazer": {
+        "display": "afazer",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "costumar": {
+        "display": "costumar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "habituar": {
+        "display": "habituar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "manchar": {
+        "display": "manchar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "ajustar": {
+        "display": "ajustar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "colocar": {
+        "display": "colocar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "submeter": {
+        "display": "submeter",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "conter": {
+        "display": "conter",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "dominar": {
+        "display": "dominar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "ampliar": {
+        "display": "ampliar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "alargar": {
+        "display": "alargar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "ofuscar": {
+        "display": "ofuscar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "eclipsar": {
+        "display": "eclipsar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "encobrir": {
+        "display": "encobrir",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "esconder": {
+        "display": "esconder",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "ocultar": {
+        "display": "ocultar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "obscurecer": {
+        "display": "obscurecer",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "escurecer": {
+        "display": "escurecer",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "dissolver": {
+        "display": "dissolver",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "concluir": {
+        "display": "concluir",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "acabar": {
+        "display": "acabar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "terminar": {
+        "display": "terminar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "refrigerar": {
+        "display": "refrigerar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "congelar": {
+        "display": "congelar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "aquecer": {
+        "display": "aquecer",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "esquentar": {
+        "display": "esquentar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "cozer": {
+        "display": "cozer",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "gelar": {
+        "display": "gelar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "transpor": {
+        "display": "transpor",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "transportar": {
+        "display": "transportar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "investir": {
+        "display": "investir",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "descer": {
+        "display": "descer",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "simplificar": {
+        "display": "simplificar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "elaborar": {
+        "display": "elaborar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "centralizar": {
+        "display": "centralizar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "concentrar": {
+        "display": "concentrar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "abusador": {
+        "display": "abusador",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "dispor": {
+        "display": "dispor",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "disposto": {
+        "display": "disposto",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "habilitar": {
+        "display": "habilitar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "preparar": {
+        "display": "preparar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "prevenido": {
+        "display": "prevenido",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "pronto": {
+        "display": "pronto",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "civilizar": {
+        "display": "civilizar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "privatizar": {
+        "display": "privatizar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "naturalizar": {
+        "display": "naturalizar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "comparar": {
+        "display": "comparar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "compensar": {
+        "display": "compensar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "empatar": {
+        "display": "empatar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "equiparar": {
+        "display": "equiparar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "igualar": {
+        "display": "igualar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "nivelar": {
+        "display": "nivelar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "puxar": {
+        "display": "puxar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "esticar": {
+        "display": "esticar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "acelerar": {
+        "display": "acelerar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "diminuir": {
+        "display": "diminuir",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "reduzir": {
+        "display": "reduzir",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "liquidar": {
+        "display": "liquidar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "validar": {
+        "display": "validar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "anular": {
+        "display": "anular",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "esvaziar": {
+        "display": "esvaziar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "vazar": {
+        "display": "vazar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "preencher": {
+        "display": "preencher",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "encher": {
+        "display": "encher",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "neutralizar": {
+        "display": "neutralizar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "glorificar": {
+        "display": "glorificar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "contaminar": {
+        "display": "contaminar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "isolar": {
+        "display": "isolar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "urbanizar": {
+        "display": "urbanizar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "marcar": {
+        "display": "marcar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "permitir": {
+        "display": "permitir",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "envenenar": {
+        "display": "envenenar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "endurecer": {
+        "display": "endurecer",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "animar": {
+        "display": "animar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "esclarecer": {
+        "display": "esclarecer",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "patentear": {
+        "display": "patentear",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "industrializar": {
+        "display": "industrializar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "recomendar": {
+        "display": "recomendar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "espiritualizar": {
+        "display": "espiritualizar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "transfigurar": {
+        "display": "transfigurar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "confundir": {
+        "display": "confundir",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "misturar": {
+        "display": "misturar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "derrubar": {
+        "display": "derrubar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "destruir": {
+        "display": "destruir",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "esmagar": {
+        "display": "esmagar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "afiar": {
+        "display": "afiar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "levantar": {
+        "display": "levantar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "causar": {
+        "display": "causar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "produzir": {
+        "display": "produzir",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "provocar": {
+        "display": "provocar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "por": {
+        "display": "pôr",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "situar": {
+        "display": "situar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "deformar": {
+        "display": "deformar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "adornar": {
+        "display": "adornar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "embelezar": {
+        "display": "embelezar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "paramentar": {
+        "display": "paramentar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "decorar": {
+        "display": "decorar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "enfeitar": {
+        "display": "enfeitar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "humilhar": {
+        "display": "humilhar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "desodorizar": {
+        "display": "desodorizar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "revelar": {
+        "display": "revelar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "revezar": {
+        "display": "revezar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "substituir": {
+        "display": "substituir",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "capturar": {
+        "display": "capturar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "contribuir": {
+        "display": "contribuir",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "instaurar": {
+        "display": "instaurar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "abastardar": {
+        "display": "abastardar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "adulterar": {
+        "display": "adulterar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "agalegar": {
+        "display": "agalegar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "apostemar": {
+        "display": "apostemar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "aviltar": {
+        "display": "aviltar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "corroer": {
+        "display": "corroer",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "corromper": {
+        "display": "corromper",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "corrompido": {
+        "display": "corrompido",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "corrupto": {
+        "display": "corrupto",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "debochar": {
+        "display": "debochar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "degenerar": {
+        "display": "degenerar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "degradar": {
+        "display": "degradar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "depravado": {
+        "display": "depravado",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "depravar": {
+        "display": "depravar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "derrancar": {
+        "display": "derrancar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "descarreirar": {
+        "display": "descarreirar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "desencaminhar": {
+        "display": "desencaminhar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "desencarreirar": {
+        "display": "desencarreirar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "desmanchar": {
+        "display": "desmanchar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "desmoralizar": {
+        "display": "desmoralizar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "desregrar": {
+        "display": "desregrar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "desvirtuar": {
+        "display": "desvirtuar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "devassar": {
+        "display": "devassar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "devasso": {
+        "display": "devasso",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "dissoluto": {
+        "display": "dissoluto",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "eivar": {
+        "display": "eivar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "empestar": {
+        "display": "empestar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "estragado": {
+        "display": "estragado",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "estragar": {
+        "display": "estragar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "gangrenar": {
+        "display": "gangrenar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "insidiar": {
+        "display": "insidiar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "minar": {
+        "display": "minar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "perverter": {
+        "display": "perverter",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "pervertido": {
+        "display": "pervertido",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "prevaricar": {
+        "display": "prevaricar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "profanar": {
+        "display": "profanar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "relaxar": {
+        "display": "relaxar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "subverter": {
+        "display": "subverter",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "transviar": {
+        "display": "transviar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "ulcerar": {
+        "display": "ulcerar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "viciar": {
+        "display": "viciar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      }
+    }
+  },
+  "family": {
+    "modificar": {
+      "display": "modificar",
+      "via": "derivationally related form",
+      "source_ili": "ili-30-07359599-n",
+      "target_gloss": "passar de uma definição ou contexto para outro\n"
+    },
+    "cambio": {
+      "display": "câmbio",
+      "via": "derivationally related form",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "a ação de mudar alguma coisa\n"
+    },
+    "mudanca": {
+      "display": "mudança",
+      "via": "derivationally related form",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "a ação de mudar alguma coisa\n"
+    },
+    "troca": {
+      "display": "troca",
+      "via": "derivationally related form",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "a ação de mudar alguma coisa\n"
+    },
+    "alteracao": {
+      "display": "alteração",
+      "via": "derivationally related form",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "o ato de fazer algo diferente (como, por exemplo, o tamanho de uma peça de vestuário)\n"
+    },
+    "modificacao": {
+      "display": "modificação",
+      "via": "derivationally related form",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "o ato de fazer algo diferente (como, por exemplo, o tamanho de uma peça de vestuário)\n"
+    },
+    "variacao": {
+      "display": "variação",
+      "via": "derivationally related form",
+      "source_ili": "ili-30-00126264-v",
+      "target_gloss": "um evento que ocorre quando algo passa de um estado ou fase para outra\n"
+    }
+  },
+  "skos": {
+    "UF": [],
+    "contraste": [],
+    "RT": []
+  },
+  "provenance": [],
+  "attribute_terms": [],
+  "assertions": [
+    {
+      "stage": "Etapa 1",
+      "text": "Todo o synset admitido tem ili_offset e glosa mapeada ao eixo.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Etapa 1",
+      "text": "Nenhum synset off-axis (exclude) figura na lista branca admitida.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Etapa 1",
+      "text": "A lista branca é persistida por offset ILI e os offsets são únicos.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "ILI",
+      "text": "Nenhum id oewn-/por- é usado como chave de junção; a chave é o ILI.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "ILI",
+      "text": "Synsets sem ili_offset são sinalizados (não descartados em silêncio).",
+      "passed": true,
+      "evidence": "nenhum synset sem ILI no export"
+    },
+    {
+      "stage": "Etapa 2",
+      "text": "Os sinónimos colhidos provêm exclusivamente de synsets admitidos.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Etapa 3",
+      "text": "Alvos de relação são tipados pelo mapeamento; «(no lemma)» nunca admitido.",
+      "passed": true,
+      "evidence": "OK (471 alvos «(no lemma)» descartados)"
+    },
+    {
+      "stage": "Etapa 4",
+      "text": "«(no lemma)», colocações e termos só de relação não-nomeada (sem corroboração) são excluídos.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Etapa 5",
+      "text": "Cada admitido tem estatuto∈{UF,RT,contraste,BT,NT,atributo}, teste decisivo e ≥1 garantia; nomes de qualidade em attribute_bucket.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Garantia",
+      "text": "Termos com garantia «estipulativa» têm definição E relação estrutural.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Consistência",
+      "text": "Nenhum termo é UF de duas classes com owl:disjointWith entre si.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Consistência",
+      "text": "Contrastantes não são serializados como skos:related.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Serialização",
+      "passed": true,
+      "text": "X.skos.ttl analisa com rdflib e tem a contagem de triplos esperada.",
+      "evidence": "triplos esperados=4, analisados=4"
+    }
+  ],
+  "all_passed": true,
+  "skos_triples": 4,
+  "_ttl_ok": true,
+  "_signals_sidelined": 75
+}

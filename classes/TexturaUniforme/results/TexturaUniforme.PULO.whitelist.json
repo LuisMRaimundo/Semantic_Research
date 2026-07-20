@@ -25,7 +25,7 @@
     {
       "ili_offset": "ili-30-00909545-a",
       "glosa": "sem variações; regular e uniforme face ao parâmetro",
-      "decision": "UF",
+      "decision": "exclude",
       "members": [
         "igual",
         "regular"
@@ -34,7 +34,7 @@
     {
       "ili_offset": "ili-30-04745370-n",
       "glosa": "ausência de variação; invariância e uniformidade de um parâmetro",
-      "decision": "UF",
+      "decision": "exclude",
       "members": [
         "uniformidade",
         "invariância",
@@ -85,22 +85,17 @@
   ],
   "dictionary_attestations": [
     "constante",
-    "igual",
     "imutável",
     "invariável",
-    "invariância",
-    "periódico",
-    "regular",
-    "uniforme",
-    "uniformidade"
+    "uniforme"
   ],
   "admitted_offsets": [
     "ili-30-01200095-a",
-    "ili-30-01966488-a",
-    "ili-30-00909545-a",
-    "ili-30-04745370-n"
+    "ili-30-01966488-a"
   ],
   "excluded_offsets": [
+    "ili-30-00909545-a",
+    "ili-30-04745370-n",
     "ili-30-02302187-a",
     "ili-30-00910101-a",
     "ili-30-04509592-n",

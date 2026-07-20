@@ -1,0 +1,10 @@
+{
+  "type": "pulo_thesaurus_search",
+  "query": {
+    "query": "compósita",
+    "pos": null,
+    "mode": "Starts with"
+  },
+  "count": 0,
+  "synsets": []
+}

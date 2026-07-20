@@ -1,0 +1,1896 @@
+{
+  "type": "thesaurus_search",
+  "query": {
+    "query": "compósito",
+    "resource": null,
+    "pos": null,
+    "mode": "Contains"
+  },
+  "count": 26,
+  "synsets": [
+    {
+      "resource": "clip21",
+      "resource_label": "clip21",
+      "synset_id": "1320",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "compósito",
+          "weight": 1.0
+        },
+        {
+          "word": "materiais compostos",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "clip21",
+      "resource_label": "clip21",
+      "synset_id": "15438",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "amestrado",
+          "weight": 1.0714285
+        },
+        {
+          "word": "feito",
+          "weight": 1.0357143
+        },
+        {
+          "word": "adestrado",
+          "weight": 1.0
+        },
+        {
+          "word": "formado",
+          "weight": 1.0
+        },
+        {
+          "word": "ensinado",
+          "weight": 0.8214286
+        },
+        {
+          "word": "composto",
+          "weight": 0.71428573
+        },
+        {
+          "word": "treinado",
+          "weight": 0.71428573
+        },
+        {
+          "word": "instruído",
+          "weight": 0.6551724
+        },
+        {
+          "word": "exercitado",
+          "weight": 0.60714287
+        },
+        {
+          "word": "doutrinado",
+          "weight": 0.55172414
+        },
+        {
+          "word": "educado",
+          "weight": 0.55172414
+        },
+        {
+          "word": "trenado",
+          "weight": 0.53571427
+        },
+        {
+          "word": "explicado",
+          "weight": 0.5
+        },
+        {
+          "word": "constituído",
+          "weight": 0.4642857
+        },
+        {
+          "word": "industriado",
+          "weight": 0.4642857
+        },
+        {
+          "word": "leccionado",
+          "weight": 0.4642857
+        },
+        {
+          "word": "pontificado",
+          "weight": 0.4642857
+        },
+        {
+          "word": "compósito",
+          "weight": 0.25
+        },
+        {
+          "word": "heterogêneo",
+          "weight": 0.21428572
+        },
+        {
+          "word": "produzido",
+          "weight": 0.21428572
+        },
+        {
+          "word": "diplomado",
+          "weight": 0.17857143
+        },
+        {
+          "word": "graduado",
+          "weight": 0.17857143
+        },
+        {
+          "word": "acabado",
+          "weight": 0.1724138
+        },
+        {
+          "word": "concluído",
+          "weight": 0.1724138
+        },
+        {
+          "word": "fabricado",
+          "weight": 0.14285715
+        },
+        {
+          "word": "adulto",
+          "weight": 0.13793103
+        },
+        {
+          "word": "completo",
+          "weight": 0.13793103
+        },
+        {
+          "word": "inventado",
+          "weight": 0.13793103
+        },
+        {
+          "word": "terminado",
+          "weight": 0.13793103
+        },
+        {
+          "word": "heterogéneo",
+          "weight": 0.10714286
+        },
+        {
+          "word": "assente",
+          "weight": 0.10344828
+        },
+        {
+          "word": "esclarecido",
+          "weight": 0.10344828
+        },
+        {
+          "word": "resolvido",
+          "weight": 0.10344828
+        },
+        {
+          "word": "constituido",
+          "weight": 0.071428575
+        },
+        {
+          "word": "dissimilar",
+          "weight": 0.071428575
+        },
+        {
+          "word": "documentado",
+          "weight": 0.071428575
+        },
+        {
+          "word": "engendrado",
+          "weight": 0.071428575
+        },
+        {
+          "word": "heterogênea",
+          "weight": 0.071428575
+        },
+        {
+          "word": "maquiado",
+          "weight": 0.071428575
+        },
+        {
+          "word": "professo",
+          "weight": 0.071428575
+        },
+        {
+          "word": "aclarado",
+          "weight": 0.06896552
+        },
+        {
+          "word": "acostumado",
+          "weight": 0.06896552
+        },
+        {
+          "word": "alinhado",
+          "weight": 0.06896552
+        },
+        {
+          "word": "amansado",
+          "weight": 0.06896552
+        },
+        {
+          "word": "amassado",
+          "weight": 0.06896552
+        },
+        {
+          "word": "assentado",
+          "weight": 0.06896552
+        },
+        {
+          "word": "aviado",
+          "weight": 0.06896552
+        },
+        {
+          "word": "comentado",
+          "weight": 0.06896552
+        },
+        {
+          "word": "completado",
+          "weight": 0.06896552
+        },
+        {
+          "word": "conceituado",
+          "weight": 0.06896552
+        },
+        {
+          "word": "consumado",
+          "weight": 0.06896552
+        },
+        {
+          "word": "crescido",
+          "weight": 0.06896552
+        },
+        {
+          "word": "decidido",
+          "weight": 0.06896552
+        },
+        {
+          "word": "deliberado",
+          "weight": 0.06896552
+        },
+        {
+          "word": "determinado",
+          "weight": 0.06896552
+        },
+        {
+          "word": "distinto",
+          "weight": 0.06896552
+        },
+        {
+          "word": "domado",
+          "weight": 0.06896552
+        },
+        {
+          "word": "domesticado",
+          "weight": 0.06896552
+        },
+        {
+          "word": "elevado",
+          "weight": 0.06896552
+        },
+        {
+          "word": "elucidado",
+          "weight": 0.06896552
+        },
+        {
+          "word": "eminente",
+          "weight": 0.06896552
+        },
+        {
+          "word": "encapelado",
+          "weight": 0.06896552
+        },
+        {
+          "word": "encerrado",
+          "weight": 0.06896552
+        },
+        {
+          "word": "enucleado",
+          "weight": 0.06896552
+        },
+        {
+          "word": "hábil",
+          "weight": 0.06896552
+        },
+        {
+          "word": "ilustrado",
+          "weight": 0.06896552
+        },
+        {
+          "word": "manso",
+          "weight": 0.06896552
+        },
+        {
+          "word": "modesto",
+          "weight": 0.06896552
+        },
+        {
+          "word": "pintado",
+          "weight": 0.06896552
+        },
+        {
+          "word": "plasmado",
+          "weight": 0.06896552
+        },
+        {
+          "word": "pronto",
+          "weight": 0.06896552
+        },
+        {
+          "word": "recatado",
+          "weight": 0.06896552
+        },
+        {
+          "word": "rematado",
+          "weight": 0.06896552
+        },
+        {
+          "word": "resoluto",
+          "weight": 0.06896552
+        },
+        {
+          "word": "ultimado",
+          "weight": 0.06896552
+        },
+        {
+          "word": "afeito",
+          "weight": 0.03448276
+        },
+        {
+          "word": "ajeitado",
+          "weight": 0.03448276
+        },
+        {
+          "word": "amadurecido",
+          "weight": 0.03448276
+        },
+        {
+          "word": "arranjado",
+          "weight": 0.03448276
+        },
+        {
+          "word": "arrumado",
+          "weight": 0.03448276
+        },
+        {
+          "word": "bem-arranjado",
+          "weight": 0.03448276
+        },
+        {
+          "word": "circunspecto",
+          "weight": 0.03448276
+        },
+        {
+          "word": "combinado",
+          "weight": 0.03448276
+        },
+        {
+          "word": "concertado",
+          "weight": 0.03448276
+        },
+        {
+          "word": "conciliado",
+          "weight": 0.03448276
+        },
+        {
+          "word": "confeccionado",
+          "weight": 0.03448276
+        },
+        {
+          "word": "conformado",
+          "weight": 0.03448276
+        },
+        {
+          "word": "consertado",
+          "weight": 0.03448276
+        },
+        {
+          "word": "declarado",
+          "weight": 0.03448276
+        },
+        {
+          "word": "definido",
+          "weight": 0.03448276
+        },
+        {
+          "word": "desenvolvido",
+          "weight": 0.03448276
+        },
+        {
+          "word": "dessemelhante",
+          "weight": 0.03448276
+        },
+        {
+          "word": "divulgado",
+          "weight": 0.03448276
+        },
+        {
+          "word": "elaborado",
+          "weight": 0.03448276
+        },
+        {
+          "word": "elegante",
+          "weight": 0.03448276
+        },
+        {
+          "word": "estabelecido",
+          "weight": 0.03448276
+        },
+        {
+          "word": "executado",
+          "weight": 0.03448276
+        },
+        {
+          "word": "explícito",
+          "weight": 0.03448276
+        },
+        {
+          "word": "gerado",
+          "weight": 0.03448276
+        },
+        {
+          "word": "imaginado",
+          "weight": 0.03448276
+        },
+        {
+          "word": "indicado",
+          "weight": 0.03448276
+        },
+        {
+          "word": "justificado",
+          "weight": 0.03448276
+        },
+        {
+          "word": "licenciado",
+          "weight": 0.03448276
+        },
+        {
+          "word": "mesclado",
+          "weight": 0.03448276
+        },
+        {
+          "word": "misto",
+          "weight": 0.03448276
+        },
+        {
+          "word": "obediente",
+          "weight": 0.03448276
+        },
+        {
+          "word": "ordenado",
+          "weight": 0.03448276
+        },
+        {
+          "word": "perito",
+          "weight": 0.03448276
+        },
+        {
+          "word": "realizado",
+          "weight": 0.03448276
+        },
+        {
+          "word": "sério",
+          "weight": 0.03448276
+        },
+        {
+          "word": "sóbrio",
+          "weight": 0.03448276
+        },
+        {
+          "word": "tecido",
+          "weight": 0.03448276
+        },
+        {
+          "word": "usado",
+          "weight": 0.03448276
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "clip21",
+      "resource_label": "clip21",
+      "synset_id": "17923",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "vário",
+          "weight": 1.3076923
+        },
+        {
+          "word": "variado",
+          "weight": 1.2692307
+        },
+        {
+          "word": "variegado",
+          "weight": 1.2692307
+        },
+        {
+          "word": "mesclado",
+          "weight": 1.0769231
+        },
+        {
+          "word": "matizado",
+          "weight": 0.9230769
+        },
+        {
+          "word": "diferente",
+          "weight": 0.7407407
+        },
+        {
+          "word": "diverso",
+          "weight": 0.7307692
+        },
+        {
+          "word": "versicolor",
+          "weight": 0.65384614
+        },
+        {
+          "word": "misturado",
+          "weight": 0.61538464
+        },
+        {
+          "word": "diversicolor",
+          "weight": 0.53846157
+        },
+        {
+          "word": "misto",
+          "weight": 0.42307693
+        },
+        {
+          "word": "desvairado",
+          "weight": 0.4074074
+        },
+        {
+          "word": "desvariado",
+          "weight": 0.37037036
+        },
+        {
+          "word": "diversificado",
+          "weight": 0.34615386
+        },
+        {
+          "word": "sortido",
+          "weight": 0.23076923
+        },
+        {
+          "word": "copioso",
+          "weight": 0.22222222
+        },
+        {
+          "word": "pintado",
+          "weight": 0.22222222
+        },
+        {
+          "word": "confuso",
+          "weight": 0.18518518
+        },
+        {
+          "word": "desigual",
+          "weight": 0.18518518
+        },
+        {
+          "word": "promíscuo",
+          "weight": 0.18518518
+        },
+        {
+          "word": "raiado",
+          "weight": 0.18518518
+        },
+        {
+          "word": "sorteado",
+          "weight": 0.15384616
+        },
+        {
+          "word": "colorido",
+          "weight": 0.14814815
+        },
+        {
+          "word": "cromatizado",
+          "weight": 0.14814815
+        },
+        {
+          "word": "discordante",
+          "weight": 0.14814815
+        },
+        {
+          "word": "distinto",
+          "weight": 0.14814815
+        },
+        {
+          "word": "entremeado",
+          "weight": 0.14814815
+        },
+        {
+          "word": "inconstante",
+          "weight": 0.14814815
+        },
+        {
+          "word": "multifário",
+          "weight": 0.14814815
+        },
+        {
+          "word": "multíplice",
+          "weight": 0.14814815
+        },
+        {
+          "word": "sarapintado",
+          "weight": 0.14814815
+        },
+        {
+          "word": "tingido",
+          "weight": 0.14814815
+        },
+        {
+          "word": "amalgamado",
+          "weight": 0.115384616
+        },
+        {
+          "word": "nuançado",
+          "weight": 0.115384616
+        },
+        {
+          "word": "confundido",
+          "weight": 0.11111111
+        },
+        {
+          "word": "envolto",
+          "weight": 0.11111111
+        },
+        {
+          "word": "indiscriminado",
+          "weight": 0.11111111
+        },
+        {
+          "word": "mudado",
+          "weight": 0.11111111
+        },
+        {
+          "word": "mudável",
+          "weight": 0.11111111
+        },
+        {
+          "word": "multímodo",
+          "weight": 0.11111111
+        },
+        {
+          "word": "versátil",
+          "weight": 0.11111111
+        },
+        {
+          "word": "abigarrado",
+          "weight": 0.07692308
+        },
+        {
+          "word": "alagartado",
+          "weight": 0.07692308
+        },
+        {
+          "word": "altamado",
+          "weight": 0.07692308
+        },
+        {
+          "word": "diversos",
+          "weight": 0.07692308
+        },
+        {
+          "word": "ecléctico",
+          "weight": 0.07692308
+        },
+        {
+          "word": "numerosos",
+          "weight": 0.07692308
+        },
+        {
+          "word": "pecilocromático",
+          "weight": 0.07692308
+        },
+        {
+          "word": "permixto",
+          "weight": 0.07692308
+        },
+        {
+          "word": "que oferece várias aspectos",
+          "weight": 0.07692308
+        },
+        {
+          "word": "variados",
+          "weight": 0.07692308
+        },
+        {
+          "word": "varioso",
+          "weight": 0.07692308
+        },
+        {
+          "word": "combinado",
+          "weight": 0.074074075
+        },
+        {
+          "word": "complexo",
+          "weight": 0.074074075
+        },
+        {
+          "word": "delirante",
+          "weight": 0.074074075
+        },
+        {
+          "word": "desirmanado",
+          "weight": 0.074074075
+        },
+        {
+          "word": "desirmão",
+          "weight": 0.074074075
+        },
+        {
+          "word": "discrepante",
+          "weight": 0.074074075
+        },
+        {
+          "word": "divergente",
+          "weight": 0.074074075
+        },
+        {
+          "word": "entressachado",
+          "weight": 0.074074075
+        },
+        {
+          "word": "impermanente",
+          "weight": 0.074074075
+        },
+        {
+          "word": "indistinto",
+          "weight": 0.074074075
+        },
+        {
+          "word": "instável",
+          "weight": 0.074074075
+        },
+        {
+          "word": "intermeado",
+          "weight": 0.074074075
+        },
+        {
+          "word": "mudadiço",
+          "weight": 0.074074075
+        },
+        {
+          "word": "mutável",
+          "weight": 0.074074075
+        },
+        {
+          "word": "místico",
+          "weight": 0.074074075
+        },
+        {
+          "word": "variável",
+          "weight": 0.074074075
+        },
+        {
+          "word": "voltário",
+          "weight": 0.074074075
+        },
+        {
+          "word": "voltívolo",
+          "weight": 0.074074075
+        },
+        {
+          "word": "volátil",
+          "weight": 0.074074075
+        },
+        {
+          "word": "volúvel",
+          "weight": 0.074074075
+        },
+        {
+          "word": "vários",
+          "weight": 0.074074075
+        },
+        {
+          "word": "abastecido",
+          "weight": 0.037037037
+        },
+        {
+          "word": "alterado",
+          "weight": 0.037037037
+        },
+        {
+          "word": "alucinado",
+          "weight": 0.037037037
+        },
+        {
+          "word": "bom",
+          "weight": 0.037037037
+        },
+        {
+          "word": "buliçoso",
+          "weight": 0.037037037
+        },
+        {
+          "word": "caprichoso",
+          "weight": 0.037037037
+        },
+        {
+          "word": "composto",
+          "weight": 0.037037037
+        },
+        {
+          "word": "compósito",
+          "weight": 0.037037037
+        },
+        {
+          "word": "contraditório",
+          "weight": 0.037037037
+        },
+        {
+          "word": "desconforme",
+          "weight": 0.037037037
+        },
+        {
+          "word": "dessemelhante",
+          "weight": 0.037037037
+        },
+        {
+          "word": "doido",
+          "weight": 0.037037037
+        },
+        {
+          "word": "embaralhado",
+          "weight": 0.037037037
+        },
+        {
+          "word": "esmaltado",
+          "weight": 0.037037037
+        },
+        {
+          "word": "furta-cor",
+          "weight": 0.037037037
+        },
+        {
+          "word": "hesitante",
+          "weight": 0.037037037
+        },
+        {
+          "word": "híbrido",
+          "weight": 0.037037037
+        },
+        {
+          "word": "incerto",
+          "weight": 0.037037037
+        },
+        {
+          "word": "indistinguível",
+          "weight": 0.037037037
+        },
+        {
+          "word": "irregular",
+          "weight": 0.037037037
+        },
+        {
+          "word": "junto",
+          "weight": 0.037037037
+        },
+        {
+          "word": "leviano",
+          "weight": 0.037037037
+        },
+        {
+          "word": "marchetado",
+          "weight": 0.037037037
+        },
+        {
+          "word": "múltiplo",
+          "weight": 0.037037037
+        },
+        {
+          "word": "numeroso",
+          "weight": 0.037037037
+        },
+        {
+          "word": "permisto",
+          "weight": 0.037037037
+        },
+        {
+          "word": "perplexo",
+          "weight": 0.037037037
+        },
+        {
+          "word": "pingado",
+          "weight": 0.037037037
+        },
+        {
+          "word": "precário",
+          "weight": 0.037037037
+        },
+        {
+          "word": "que oferece vários aspectos",
+          "weight": 0.037037037
+        },
+        {
+          "word": "recamado",
+          "weight": 0.037037037
+        },
+        {
+          "word": "salpicado",
+          "weight": 0.037037037
+        },
+        {
+          "word": "vasto",
+          "weight": 0.037037037
+        },
+        {
+          "word": "veiro",
+          "weight": 0.037037037
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "contopt",
+      "resource_label": "contopt",
+      "synset_id": "16611",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "compósito",
+          "weight": 1.0
+        },
+        {
+          "word": "materiais compostos",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "contopt",
+      "resource_label": "contopt",
+      "synset_id": "26524",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "amestrado",
+          "weight": 1.0714285
+        },
+        {
+          "word": "feito",
+          "weight": 1.0357143
+        },
+        {
+          "word": "adestrado",
+          "weight": 1.0
+        },
+        {
+          "word": "formado",
+          "weight": 1.0
+        },
+        {
+          "word": "ensinado",
+          "weight": 0.8214286
+        },
+        {
+          "word": "composto",
+          "weight": 0.71428573
+        },
+        {
+          "word": "treinado",
+          "weight": 0.71428573
+        },
+        {
+          "word": "instruído",
+          "weight": 0.6551724
+        },
+        {
+          "word": "exercitado",
+          "weight": 0.60714287
+        },
+        {
+          "word": "doutrinado",
+          "weight": 0.55172414
+        },
+        {
+          "word": "educado",
+          "weight": 0.55172414
+        },
+        {
+          "word": "trenado",
+          "weight": 0.53571427
+        },
+        {
+          "word": "explicado",
+          "weight": 0.5
+        },
+        {
+          "word": "constituído",
+          "weight": 0.4642857
+        },
+        {
+          "word": "industriado",
+          "weight": 0.4642857
+        },
+        {
+          "word": "leccionado",
+          "weight": 0.4642857
+        },
+        {
+          "word": "pontificado",
+          "weight": 0.4642857
+        },
+        {
+          "word": "compósito",
+          "weight": 0.25
+        },
+        {
+          "word": "heterogêneo",
+          "weight": 0.21428572
+        },
+        {
+          "word": "produzido",
+          "weight": 0.21428572
+        },
+        {
+          "word": "diplomado",
+          "weight": 0.17857143
+        },
+        {
+          "word": "graduado",
+          "weight": 0.17857143
+        },
+        {
+          "word": "acabado",
+          "weight": 0.1724138
+        },
+        {
+          "word": "concluído",
+          "weight": 0.1724138
+        },
+        {
+          "word": "fabricado",
+          "weight": 0.14285715
+        },
+        {
+          "word": "adulto",
+          "weight": 0.13793103
+        },
+        {
+          "word": "completo",
+          "weight": 0.13793103
+        },
+        {
+          "word": "inventado",
+          "weight": 0.13793103
+        },
+        {
+          "word": "terminado",
+          "weight": 0.13793103
+        },
+        {
+          "word": "heterogéneo",
+          "weight": 0.10714286
+        },
+        {
+          "word": "assente",
+          "weight": 0.10344828
+        },
+        {
+          "word": "esclarecido",
+          "weight": 0.10344828
+        },
+        {
+          "word": "resolvido",
+          "weight": 0.10344828
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "fuzzythes",
+      "resource_label": "fuzzythes",
+      "synset_id": "25832",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "amalgamado",
+          "weight": 0.69849616
+        },
+        {
+          "word": "entressachado",
+          "weight": 0.37268364
+        },
+        {
+          "word": "diversicolor",
+          "weight": 0.32295886
+        },
+        {
+          "word": "mesclado",
+          "weight": 0.30780882
+        },
+        {
+          "word": "versicolor",
+          "weight": 0.23575261
+        },
+        {
+          "word": "intermeado",
+          "weight": 0.17030868
+        },
+        {
+          "word": "envolto",
+          "weight": 0.15417767
+        },
+        {
+          "word": "misto",
+          "weight": 0.15069549
+        },
+        {
+          "word": "entremeado",
+          "weight": 0.13190682
+        },
+        {
+          "word": "variegado",
+          "weight": 0.11170425
+        },
+        {
+          "word": "raiado",
+          "weight": 0.08473713
+        },
+        {
+          "word": "matizado",
+          "weight": 0.081581414
+        },
+        {
+          "word": "misturado",
+          "weight": 0.056530986
+        },
+        {
+          "word": "variado",
+          "weight": 0.054285817
+        },
+        {
+          "word": "vário",
+          "weight": 0.05084476
+        },
+        {
+          "word": "intervalado",
+          "weight": 0.047539916
+        },
+        {
+          "word": "compósito",
+          "weight": 0.041738026
+        },
+        {
+          "word": "promíscuo",
+          "weight": 0.031283323
+        },
+        {
+          "word": "intercalado",
+          "weight": 0.02663435
+        },
+        {
+          "word": "salteado",
+          "weight": 0.02508453
+        },
+        {
+          "word": "heterogêneo",
+          "weight": 0.024399845
+        },
+        {
+          "word": "diversificado",
+          "weight": 0.0235761
+        },
+        {
+          "word": "cromatizado",
+          "weight": 0.022611106
+        },
+        {
+          "word": "alternado",
+          "weight": 0.021653615
+        },
+        {
+          "word": "composto",
+          "weight": 0.017865658
+        },
+        {
+          "word": "indiscriminado",
+          "weight": 0.013315999
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "fuzzythes",
+      "resource_label": "fuzzythes",
+      "synset_id": "26969",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "dissimilar",
+          "weight": 0.67756146
+        },
+        {
+          "word": "heterogéneo",
+          "weight": 0.36805227
+        },
+        {
+          "word": "dessemelhante",
+          "weight": 0.17027058
+        },
+        {
+          "word": "absimilhante",
+          "weight": 0.15695219
+        },
+        {
+          "word": "dissímil",
+          "weight": 0.15303898
+        },
+        {
+          "word": "díspar",
+          "weight": 0.15045798
+        },
+        {
+          "word": "dissemelhante",
+          "weight": 0.13991922
+        },
+        {
+          "word": "diferente",
+          "weight": 0.06870323
+        },
+        {
+          "word": "compósito",
+          "weight": 0.037205875
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "fuzzythes",
+      "resource_label": "fuzzythes",
+      "synset_id": "27002",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "heterogêneo",
+          "weight": 0.62512326
+        },
+        {
+          "word": "compósito",
+          "weight": 0.4640836
+        },
+        {
+          "word": "constituído",
+          "weight": 0.42007446
+        },
+        {
+          "word": "composto",
+          "weight": 0.40929127
+        },
+        {
+          "word": "formado",
+          "weight": 0.14409856
+        },
+        {
+          "word": "elaborado",
+          "weight": 0.07916005
+        },
+        {
+          "word": "feito",
+          "weight": 0.06360699
+        },
+        {
+          "word": "heterogéneo",
+          "weight": 0.032139223
+        },
+        {
+          "word": "aprimorado",
+          "weight": 0.030204775
+        },
+        {
+          "word": "bem-avindo",
+          "weight": 0.02458548
+        },
+        {
+          "word": "misto",
+          "weight": 0.017358707
+        },
+        {
+          "word": "conciliado",
+          "weight": 0.013463426
+        },
+        {
+          "word": "mesclado",
+          "weight": 0.013299282
+        },
+        {
+          "word": "concordado",
+          "weight": 0.010835518
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "fuzzythes",
+      "resource_label": "fuzzythes",
+      "synset_id": "27069",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "heterogéneo",
+          "weight": 0.56063837
+        },
+        {
+          "word": "compósito",
+          "weight": 0.40825105
+        },
+        {
+          "word": "heterogêneo",
+          "weight": 0.32312733
+        },
+        {
+          "word": "dissimilar",
+          "weight": 0.3224385
+        },
+        {
+          "word": "composto",
+          "weight": 0.11241719
+        },
+        {
+          "word": "dessemelhante",
+          "weight": 0.08979063
+        },
+        {
+          "word": "mesclado",
+          "weight": 0.018050382
+        },
+        {
+          "word": "constituído",
+          "weight": 0.011149483
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "ontopt06",
+      "resource_label": "ontopt06",
+      "synset_id": "3928",
+      "pos": "a",
+      "gloss": "que é formado de mais de um item.",
+      "members": [
+        {
+          "word": "composto",
+          "weight": 1.0
+        },
+        {
+          "word": "compósito",
+          "weight": 1.0
+        },
+        {
+          "word": "heterogêneo",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "ontopt06",
+      "resource_label": "ontopt06",
+      "synset_id": "6214",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "compósito",
+          "weight": 1.0
+        },
+        {
+          "word": "entremeado",
+          "weight": 1.0
+        },
+        {
+          "word": "mesclado",
+          "weight": 1.0
+        },
+        {
+          "word": "misto",
+          "weight": 1.0
+        },
+        {
+          "word": "misturado",
+          "weight": 1.0
+        },
+        {
+          "word": "raiado",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "ontopt06",
+      "resource_label": "ontopt06",
+      "synset_id": "7120",
+      "pos": "a",
+      "gloss": "que é de diverso género ou espécie.",
+      "members": [
+        {
+          "word": "compósito",
+          "weight": 1.0
+        },
+        {
+          "word": "dessemelhante",
+          "weight": 1.0
+        },
+        {
+          "word": "dissimilar",
+          "weight": 1.0
+        },
+        {
+          "word": "heterogéneo",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "ontopt06",
+      "resource_label": "ontopt06",
+      "synset_id": "81042",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "compósito",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "polaridades",
+      "resource_label": "polaridades",
+      "synset_id": "1620",
+      "pos": "a",
+      "gloss": "Polaridade: -1 (método BASE)",
+      "members": [
+        {
+          "word": "compósito",
+          "weight": 1.0
+        },
+        {
+          "word": "dessemelhante",
+          "weight": 1.0
+        },
+        {
+          "word": "dissimilar",
+          "weight": 1.0
+        },
+        {
+          "word": "heterogéneo",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "thes5rec",
+      "resource_label": "thes5rec",
+      "synset_id": "19632",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "composto",
+          "weight": 1.0
+        },
+        {
+          "word": "compósito",
+          "weight": 1.0
+        },
+        {
+          "word": "dessemelhante",
+          "weight": 1.0
+        },
+        {
+          "word": "dissimilar",
+          "weight": 1.0
+        },
+        {
+          "word": "heterogéneo",
+          "weight": 1.0
+        },
+        {
+          "word": "heterogêneo",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "thes5rec",
+      "resource_label": "thes5rec",
+      "synset_id": "22375",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "composto",
+          "weight": 1.0
+        },
+        {
+          "word": "compósito",
+          "weight": 1.0
+        },
+        {
+          "word": "constituído",
+          "weight": 1.0
+        },
+        {
+          "word": "elaborado",
+          "weight": 1.0
+        },
+        {
+          "word": "feito",
+          "weight": 1.0
+        },
+        {
+          "word": "formado",
+          "weight": 1.0
+        },
+        {
+          "word": "heterogêneo",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "clip21",
+      "resource_label": "clip21",
+      "synset_id": "2083",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "músico",
+          "weight": 0.78571427
+        },
+        {
+          "word": "compositor",
+          "weight": 0.5
+        },
+        {
+          "word": "instrumentista",
+          "weight": 0.35714287
+        },
+        {
+          "word": "musicógrafo",
+          "weight": 0.35714287
+        },
+        {
+          "word": "impressor",
+          "weight": 0.2857143
+        },
+        {
+          "word": "impressora",
+          "weight": 0.2857143
+        },
+        {
+          "word": "tipógrafo",
+          "weight": 0.2857143
+        },
+        {
+          "word": "instrumentalista",
+          "weight": 0.21428572
+        },
+        {
+          "word": "solfista",
+          "weight": 0.21428572
+        },
+        {
+          "word": "compositeiro",
+          "weight": 0.14285715
+        },
+        {
+          "word": "impressoras",
+          "weight": 0.14285715
+        },
+        {
+          "word": "imprimidor",
+          "weight": 0.14285715
+        },
+        {
+          "word": "musico",
+          "weight": 0.14285715
+        },
+        {
+          "word": "solfejista",
+          "weight": 0.14285715
+        },
+        {
+          "word": "menestrel",
+          "weight": 0.06666667
+        },
+        {
+          "word": "musicista",
+          "weight": 0.06666667
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "contopt",
+      "resource_label": "contopt",
+      "synset_id": "24966",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "músico",
+          "weight": 0.78571427
+        },
+        {
+          "word": "compositor",
+          "weight": 0.5
+        },
+        {
+          "word": "instrumentista",
+          "weight": 0.35714287
+        },
+        {
+          "word": "musicógrafo",
+          "weight": 0.35714287
+        },
+        {
+          "word": "impressor",
+          "weight": 0.2857143
+        },
+        {
+          "word": "impressora",
+          "weight": 0.2857143
+        },
+        {
+          "word": "tipógrafo",
+          "weight": 0.2857143
+        },
+        {
+          "word": "instrumentalista",
+          "weight": 0.21428572
+        },
+        {
+          "word": "solfista",
+          "weight": 0.21428572
+        },
+        {
+          "word": "compositeiro",
+          "weight": 0.14285715
+        },
+        {
+          "word": "impressoras",
+          "weight": 0.14285715
+        },
+        {
+          "word": "imprimidor",
+          "weight": 0.14285715
+        },
+        {
+          "word": "musico",
+          "weight": 0.14285715
+        },
+        {
+          "word": "solfejista",
+          "weight": 0.14285715
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "fuzzythes",
+      "resource_label": "fuzzythes",
+      "synset_id": "7161",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "solfejista",
+          "weight": 0.99999994
+        },
+        {
+          "word": "instrumentista",
+          "weight": 0.98866737
+        },
+        {
+          "word": "musicista",
+          "weight": 0.9875114
+        },
+        {
+          "word": "compositor",
+          "weight": 0.9867123
+        },
+        {
+          "word": "musicógrafo",
+          "weight": 0.9867123
+        },
+        {
+          "word": "solfista",
+          "weight": 0.9812522
+        },
+        {
+          "word": "músico",
+          "weight": 0.95381904
+        },
+        {
+          "word": "menestrel",
+          "weight": 0.03780054
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "ontopt06",
+      "resource_label": "ontopt06",
+      "synset_id": "23962",
+      "pos": "n",
+      "gloss": "instrumento, para escrever música.",
+      "members": [
+        {
+          "word": "compositeiro",
+          "weight": 1.0
+        },
+        {
+          "word": "compositor",
+          "weight": 1.0
+        },
+        {
+          "word": "musicógrafo",
+          "weight": 1.0
+        },
+        {
+          "word": "músico",
+          "weight": 1.0
+        },
+        {
+          "word": "tipógrafo",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "ontopt06",
+      "resource_label": "ontopt06",
+      "synset_id": "25561",
+      "pos": "n",
+      "gloss": "equipamento usado para imprimir. utensílio de artilharia, para dar forma às espoletas de papel vazadas.",
+      "members": [
+        {
+          "word": "compositor",
+          "weight": 1.0
+        },
+        {
+          "word": "impressor",
+          "weight": 1.0
+        },
+        {
+          "word": "impressora",
+          "weight": 1.0
+        },
+        {
+          "word": "imprimidor",
+          "weight": 1.0
+        },
+        {
+          "word": "tipógrafo",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "ontopt06",
+      "resource_label": "ontopt06",
+      "synset_id": "30747",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "compositora",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "ontopt06",
+      "resource_label": "ontopt06",
+      "synset_id": "49495",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "fotocompositor",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "ontopt06",
+      "resource_label": "ontopt06",
+      "synset_id": "43961",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "fotocompositora",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "thes5rec",
+      "resource_label": "thes5rec",
+      "synset_id": "13577",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "compositor",
+          "weight": 1.0
+        },
+        {
+          "word": "instrumentista",
+          "weight": 1.0
+        },
+        {
+          "word": "musicista",
+          "weight": 1.0
+        },
+        {
+          "word": "musicógrafo",
+          "weight": 1.0
+        },
+        {
+          "word": "músico",
+          "weight": 1.0
+        },
+        {
+          "word": "solfejista",
+          "weight": 1.0
+        },
+        {
+          "word": "solfista",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "top01",
+      "resource_label": "top01",
+      "synset_id": "2962",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "compositor",
+          "weight": 1.0
+        },
+        {
+          "word": "musicógrafo",
+          "weight": 1.0
+        },
+        {
+          "word": "músico",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    }
+  ]
+}

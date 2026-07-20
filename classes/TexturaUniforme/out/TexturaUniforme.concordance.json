@@ -1,7 +1,7 @@
 {
   "class": "TexturaUniforme",
   "policy": "conservative",
-  "generated": "2026-07-13T16:24:14",
+  "generated": "2026-07-20T16:51:21",
   "columns": [
     "ONTO",
     "PULO",
@@ -20,41 +20,6 @@
   },
   "ili_equivalence_loaded": true,
   "concepts": [
-    {
-      "term": "igual",
-      "ili": [
-        "ili-30-00909545-a"
-      ],
-      "sources": {
-        "ONTO": "RT",
-        "PULO": "atributo",
-        "WordNet": "—"
-      },
-      "join": "weak(term)",
-      "veredicto": "convergência (termo)",
-      "proposta_final": "RT",
-      "unmapped_flag": true,
-      "status_projection": {
-        "PULO": "atributo→RT/UF"
-      },
-      "divergences": [],
-      "union_of_provenance": [
-        "ONTO:clip21",
-        "ONTO:contopt",
-        "ONTO:fuzzythes",
-        "ONTO:ontopt06",
-        "ONTO:polaridades",
-        "ONTO:seed (Etapa 1/2) + CONTO.PT (corroborado)",
-        "ONTO:thes5rec",
-        "PULO:seed (Etapa 1/2)"
-      ],
-      "notes": [
-        "junção por termo — as fontes não partilham um ILI comum (fiabilidade menor)",
-        "projecção p/ comparação: PULO: atributo→RT/UF",
-        "proposta «RT» com dupla natureza: PULO via «atributo» (destino :temAtributo preservado)",
-        "namespace não-mapeada (não-juntável): polaridades:5938"
-      ]
-    },
     {
       "term": "politípica",
       "ili": [],
@@ -75,41 +40,6 @@
       ],
       "notes": [
         "junção fraca por termo (sem ILI) — fiabilidade menor"
-      ]
-    },
-    {
-      "term": "regular",
-      "ili": [
-        "ili-30-00909545-a"
-      ],
-      "sources": {
-        "ONTO": "RT",
-        "PULO": "atributo",
-        "WordNet": "—"
-      },
-      "join": "weak(term)",
-      "veredicto": "convergência (termo)",
-      "proposta_final": "RT",
-      "unmapped_flag": true,
-      "status_projection": {
-        "PULO": "atributo→RT/UF"
-      },
-      "divergences": [],
-      "union_of_provenance": [
-        "ONTO:clip21",
-        "ONTO:contopt",
-        "ONTO:fuzzythes",
-        "ONTO:ontopt06",
-        "ONTO:polaridades",
-        "ONTO:seed (Etapa 1/2) + CONTO.PT (corroborado)",
-        "ONTO:thes5rec",
-        "PULO:seed (Etapa 1/2)"
-      ],
-      "notes": [
-        "junção por termo — as fontes não partilham um ILI comum (fiabilidade menor)",
-        "projecção p/ comparação: PULO: atributo→RT/UF",
-        "proposta «RT» com dupla natureza: PULO via «atributo» (destino :temAtributo preservado)",
-        "namespace não-mapeada (não-juntável): clip21:19004, contopt:28395, polaridades:4425"
       ]
     },
     {
@@ -136,49 +66,7 @@
         "ONTO:thes5rec"
       ],
       "notes": [
-        "namespace não-mapeada (não-juntável): clip21:19004, contopt:28395, fuzzythes:23298, fuzzythes:27091, polaridades:4425"
-      ]
-    },
-    {
-      "term": "desigual",
-      "ili": [],
-      "sources": {
-        "ONTO": "—",
-        "PULO": "contraste",
-        "WordNet": "—"
-      },
-      "join": "single",
-      "veredicto": "fonte única",
-      "proposta_final": "contraste",
-      "unmapped_flag": false,
-      "status_projection": {},
-      "divergences": [],
-      "union_of_provenance": [
-        "PULO:antonym"
-      ],
-      "notes": []
-    },
-    {
-      "term": "igualdade",
-      "ili": [],
-      "sources": {
-        "ONTO": "—",
-        "PULO": "atributo",
-        "WordNet": "—"
-      },
-      "join": "single",
-      "veredicto": "fonte única",
-      "proposta_final": "atributo",
-      "unmapped_flag": false,
-      "status_projection": {
-        "PULO": "atributo→RT/UF"
-      },
-      "divergences": [],
-      "union_of_provenance": [
-        "PULO:attribute"
-      ],
-      "notes": [
-        "projecção p/ comparação: PULO: atributo→RT/UF"
+        "namespace não-mapeada (não-juntável): contopt:28395, fuzzythes:23298, fuzzythes:27091"
       ]
     },
     {
@@ -205,7 +93,7 @@
         "ONTO:thes5rec"
       ],
       "notes": [
-        "namespace não-mapeada (não-juntável): clip21:19004, contopt:28395, fuzzythes:23298, fuzzythes:27091"
+        "namespace não-mapeada (não-juntável): contopt:28395, fuzzythes:23298, fuzzythes:27091"
       ]
     },
     {
@@ -237,28 +125,9 @@
       "notes": [
         "junção por termo — as fontes não partilham um ILI comum (fiabilidade menor)",
         "sinalizado por WordNet enquanto admitido por ONTO",
-        "namespace não-mapeada (não-juntável): clip21:19004, contopt:28395, fuzzythes:23298, fuzzythes:27091, ontopt06:2945, polaridades:4484",
+        "namespace não-mapeada (não-juntável): contopt:28395, fuzzythes:23298, fuzzythes:27091, ontopt06:2945, polaridades:4484",
         "WordNet: atestado na WordNet [pt_lemma (ILI)] · oewn-01973553-a · ILI i10771"
       ]
-    },
-    {
-      "term": "irregular",
-      "ili": [],
-      "sources": {
-        "ONTO": "—",
-        "PULO": "contraste",
-        "WordNet": "—"
-      },
-      "join": "single",
-      "veredicto": "fonte única",
-      "proposta_final": "contraste",
-      "unmapped_flag": false,
-      "status_projection": {},
-      "divergences": [],
-      "union_of_provenance": [
-        "PULO:antonym"
-      ],
-      "notes": []
     },
     {
       "term": "periódico",
@@ -285,36 +154,34 @@
         "ONTO:top01"
       ],
       "notes": [
-        "namespace não-mapeada (não-juntável): clip21:19004, contopt:28395"
+        "namespace não-mapeada (não-juntável): contopt:28395"
       ]
     },
     {
-      "term": "uniformidade",
+      "term": "regular",
       "ili": [],
       "sources": {
-        "ONTO": "UF",
+        "ONTO": "RT",
         "PULO": "—",
         "WordNet": "—"
       },
       "join": "single",
       "veredicto": "fonte única",
-      "proposta_final": "UF",
+      "proposta_final": "RT",
       "unmapped_flag": true,
       "status_projection": {},
       "divergences": [],
       "union_of_provenance": [
-        "ONTO:clip01",
         "ONTO:clip21",
         "ONTO:contopt",
         "ONTO:fuzzythes",
         "ONTO:ontopt06",
         "ONTO:polaridades",
-        "ONTO:seed (Etapa 1/2)",
-        "ONTO:thes5rec",
-        "ONTO:top01"
+        "ONTO:seed (Etapa 1/2) + CONTO.PT (corroborado)",
+        "ONTO:thes5rec"
       ],
       "notes": [
-        "namespace não-mapeada (não-juntável): clip01:4659"
+        "namespace não-mapeada (não-juntável): contopt:28395"
       ]
     },
     {
@@ -361,6 +228,52 @@
       ],
       "notes": [
         "WordNet: material de contraste (antonym) de i4126 (oewn-00748118-a) — sem estatuto; adjudicação humana"
+      ]
+    },
+    {
+      "term": "farda",
+      "ili": [
+        "oewn-ili:i60712"
+      ],
+      "sources": {
+        "ONTO": "—",
+        "PULO": "—",
+        "WordNet": "sinalizacao"
+      },
+      "join": "single",
+      "veredicto": "sinalização",
+      "proposta_final": null,
+      "unmapped_flag": false,
+      "status_projection": {},
+      "divergences": [],
+      "union_of_provenance": [
+        "WordNet:sinalização(atestado na WordNet [pt_lemma (ILI)] · oewn-04516887-n · ILI i60712)"
+      ],
+      "notes": [
+        "WordNet: atestado na WordNet [pt_lemma (ILI)] · oewn-04516887-n · ILI i60712"
+      ]
+    },
+    {
+      "term": "fardamento",
+      "ili": [
+        "oewn-ili:i60712"
+      ],
+      "sources": {
+        "ONTO": "—",
+        "PULO": "—",
+        "WordNet": "sinalizacao"
+      },
+      "join": "single",
+      "veredicto": "sinalização",
+      "proposta_final": null,
+      "unmapped_flag": false,
+      "status_projection": {},
+      "divergences": [],
+      "union_of_provenance": [
+        "WordNet:sinalização(atestado na WordNet [pt_lemma (ILI)] · oewn-04516887-n · ILI i60712)"
+      ],
+      "notes": [
+        "WordNet: atestado na WordNet [pt_lemma (ILI)] · oewn-04516887-n · ILI i60712"
       ]
     },
     {
@@ -481,27 +394,22 @@
   ],
   "summary": {
     "veredicto_totals": {
-      "convergência (termo)": 3,
-      "fonte única": 8,
-      "sinalização": 7
+      "convergência (termo)": 1,
+      "fonte única": 5,
+      "sinalização": 9
     },
-    "descartados_pendentes": 9,
+    "descartados_pendentes": 2,
     "convergencia_plena": [],
     "convergencia_termo": [
-      "igual",
-      "politípica",
-      "regular"
+      "politípica"
     ],
     "divergences": [],
     "fonte_unica": [
       "constante",
-      "desigual",
-      "igualdade",
       "imutável",
       "invariável",
-      "irregular",
       "periódico",
-      "uniformidade"
+      "regular"
     ]
   },
   "assertions": [
@@ -515,7 +423,7 @@
       "id": "T2",
       "text": "Junção weak(term) só ocorre sem ILI partilhado entre fontes (caso contrário aplicar-se-ia a junção por ILI).",
       "passed": true,
-      "evidence": "4 conceito(s) weak(term)"
+      "evidence": "2 conceito(s) weak(term)"
     },
     {
       "id": "T3",
@@ -569,7 +477,7 @@
       "id": "T9",
       "text": "concordance.json faz round-trip (contagens de term/ili estáveis).",
       "passed": true,
-      "evidence": "18 conceitos"
+      "evidence": "15 conceitos"
     }
   ],
   "all_passed": true

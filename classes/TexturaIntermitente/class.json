@@ -1,0 +1,10 @@
+{
+  "class_id": "TexturaIntermitente",
+  "pref_label": "TexturaIntermitente",
+  "axis": "que ocorre espaçadamente, a intervalos, regulares ou irregulares",
+  "focus_stems": [
+    "TexturaIntermitente"
+  ],
+  "axis_terms": [],
+  "disjoint_classes": {}
+}

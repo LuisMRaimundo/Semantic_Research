@@ -87,9 +87,11 @@ def upsert_term(decisions: dict[str, Any], term: str, status: str,
 
 
 def undecided_count(decisions: dict[str, Any]) -> int:
+    """Count undecided PULO/ONTO cards only (WordNet is corroboration, not UF/RT)."""
     return sum(
         1 for s in decisions.get("senses", [])
-        if not (s.get("decision") or "").strip()
+        if (s.get("source") or "").lower() in ("pulo", "onto")
+        and not (s.get("decision") or "").strip()
     )
 
 
@@ -164,6 +166,43 @@ def from_onto_export(export: dict[str, Any], existing: Optional[dict] = None
             "members": [m for m in members if m],
             "decision": "",
             "note": "",
+        })
+    out["senses"] = senses
+    return out
+
+
+def from_wordnet_export(export: dict[str, Any], existing: Optional[dict] = None
+                        ) -> dict[str, Any]:
+    """Seed read-only OEWN sense cards (corroboration / Ponte ILI — no UF/RT)."""
+    class_id = (existing or {}).get("class_id") or "Unknown"
+    out = existing or blank_decisions(class_id)
+    prior = {
+        sense_key(s["source"], s["key"]): s
+        for s in out.get("senses", []) if s.get("source") and s.get("key")
+    }
+    senses = list(out.get("senses", []))
+    for syn in export.get("synsets", []):
+        ili = (syn.get("ili") or "").strip()
+        key = ili or syn.get("name") or ""
+        if not key:
+            continue
+        sk = sense_key("wordnet", key)
+        if sk in prior:
+            continue
+        members = list(syn.get("lemmas") or [])
+        pt = list(syn.get("pt_lemmas") or [])
+        if pt:
+            members = members + [f"PT: {w}" for w in pt]
+        senses.append({
+            "source": "wordnet",
+            "key": key,
+            "ili": ili,
+            "local_id": syn.get("name") or "",
+            "pos": syn.get("pos") or "",
+            "gloss": syn.get("definition") or "",
+            "members": members,
+            "decision": "",  # not adjudicated here — corroboration only
+            "note": "OEWN corroboration (Ponte ILI / WordNet track)",
         })
     out["senses"] = senses
     return out

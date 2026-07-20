@@ -62,7 +62,8 @@ ORDEM DE TRABALHO (numerada — igual ao checklist do painel direito)
    Botão «5 · Ponte ILI…»: gera candidatos OEWN↔PULO (CILI confirma
    identidades canónicas automaticamente; ambíguos ficam em review
    para a SUA adjudicação com a glosa à vista). Requer um export
-   WordNet (WordNet GUI → «💾→ exports/»).
+   WordNet na classe — pesquise com «WordNet — OEWN» no PASSO 2
+   (ou use WordNet\start_wordnet.bat se preferir a GUI antiga).
 
 6 · RUN
    Botão «6 · ▶ Run»: compila as decisões, corre PULO + Onto,
@@ -81,6 +82,8 @@ What each source is for
              (Interlingual Index). Prefer this as the sense anchor.
 • Onto.PT  — Larger Portuguese lexical net (incl. CONTO.PT weights).
              Corroborates / extends; synsets have no ILI.
+• WordNet  — OEWN (English), same folder WordNet\; search here in PASSO 2.
+             Corroboration only (no UF/RT). Feeds Ponte ILI + Run track.
 • LexWarrant — Relator only: joins results by ILI (or weakly by term).
              Reports agreement / divergence; does not decide.
 
@@ -220,7 +223,7 @@ class Workbench(tk.Tk):
 
         search = ttk.LabelFrame(
             self,
-            text="PASSO 2 · Pesquisar  (primeiro PULO — âncora ILI; depois Onto.PT — cobertura)",
+            text="PASSO 2 · Pesquisar  (PULO → Onto.PT → WordNet/OEWN — tudo nesta janela)",
             padding=8)
         search.pack(fill="x", padx=10, pady=(0, 6))
         ttk.Radiobutton(
@@ -232,8 +235,13 @@ class Workbench(tk.Tk):
             search, text="Onto.PT  — fuzzy / coverage",
             variable=self.source_var, value="onto",
             command=self._sync_filter_to_search,
+        ).pack(side="left", padx=(8, 0))
+        ttk.Radiobutton(
+            search, text="WordNet  — OEWN (EN)",
+            variable=self.source_var, value="wordnet",
+            command=self._sync_filter_to_search,
         ).pack(side="left", padx=(8, 12))
-        ttk.Entry(search, textvariable=self.query_var, width=32).pack(side="left")
+        ttk.Entry(search, textvariable=self.query_var, width=28).pack(side="left")
         ttk.Combobox(search, textvariable=self.mode_var, width=12,
                      values=("Starts with", "Contains", "Exact"),
                      state="readonly").pack(side="left", padx=6)
@@ -263,7 +271,11 @@ class Workbench(tk.Tk):
             command=self._render_senses,
         ).pack(side="left", padx=8)
         ttk.Radiobutton(
-            filt, text="Both", variable=self.filter_var, value="all",
+            filt, text="WordNet only", variable=self.filter_var, value="wordnet",
+            command=self._render_senses,
+        ).pack(side="left", padx=8)
+        ttk.Radiobutton(
+            filt, text="All", variable=self.filter_var, value="all",
             command=self._render_senses,
         ).pack(side="left")
         self.decide_hint = ttk.Label(filt, text="", foreground="#333")
@@ -589,21 +601,40 @@ class Workbench(tk.Tk):
             ttk.Entry(win, textvariable=var, width=40).grid(
                 row=i, column=1, padx=8, pady=4
             )
+        slug_preview = ttk.Label(win, text="", foreground="#555")
+        slug_preview.grid(row=3, column=0, columnspan=2, sticky="w", padx=8)
+
+        def _preview(*_a):
+            raw = cid.get().strip()
+            if not raw:
+                slug_preview.configure(text="")
+                return
+            try:
+                from semantic.workspace import slug_class
+                slug_preview.configure(
+                    text=f"Folder id: {slug_class(raw)}  (accents → ASCII)"
+                )
+            except ValueError:
+                slug_preview.configure(text="")
+
+        cid.trace_add("write", _preview)
 
         def ok():
             if not cid.get().strip():
                 messagebox.showerror(APP, "class_id required")
                 return
+            from semantic.workspace import slug_class
+            new_id = slug_class(cid.get().strip())
             ClassWorkspace.create(
                 cid.get().strip(),
                 pref_label=pref.get().strip(),
                 axis=axis.get().strip(),
             )
             win.destroy()
-            self._refresh_classes(select=cid.get().strip().replace(" ", ""))
+            self._refresh_classes(select=new_id)
 
         ttk.Button(win, text="Create", command=ok).grid(
-            row=3, column=1, sticky="e", padx=8, pady=10
+            row=4, column=1, sticky="e", padx=8, pady=10
         )
 
     def _rename_class(self):
@@ -623,13 +654,30 @@ class Workbench(tk.Tk):
         ttk.Entry(win, textvariable=new_var, width=40).grid(
             row=1, column=1, padx=8, pady=4
         )
+        slug_preview = ttk.Label(win, text="", foreground="#555")
+        slug_preview.grid(row=2, column=0, columnspan=2, sticky="w", padx=8)
         ttk.Label(
             win,
             text="Renames the folder and id only — decisions, senses, "
-                 "pref_label and results stay the same.",
+                 "pref_label and results stay the same. "
+                 "Accents fold to ASCII (Compósita → Composita).",
             wraplength=360,
             foreground="#333",
-        ).grid(row=2, column=0, columnspan=2, sticky="w", padx=8, pady=(0, 4))
+        ).grid(row=3, column=0, columnspan=2, sticky="w", padx=8, pady=(0, 4))
+
+        def _preview(*_a):
+            raw = new_var.get().strip()
+            if not raw:
+                slug_preview.configure(text="")
+                return
+            try:
+                from semantic.workspace import slug_class
+                slug_preview.configure(text=f"Folder id: {slug_class(raw)}")
+            except ValueError:
+                slug_preview.configure(text="")
+
+        new_var.trace_add("write", _preview)
+        _preview()
 
         def ok():
             raw = new_var.get().strip()
@@ -661,7 +709,7 @@ class Workbench(tk.Tk):
             self._log(f"Renamed {ws.class_id} → {renamed.class_id}\n")
 
         ttk.Button(win, text="Rename", command=ok).grid(
-            row=3, column=1, sticky="e", padx=8, pady=10
+            row=4, column=1, sticky="e", padx=8, pady=10
         )
 
     def _ws(self) -> ClassWorkspace | None:
@@ -785,9 +833,13 @@ class Workbench(tk.Tk):
             self.decide_hint.configure(
                 text="PULO options:  —  UF  RT  exclude  atributo  contraste"
             )
+        elif f == "wordnet":
+            self.decide_hint.configure(
+                text="WordNet: corroboration only (no UF/RT) — feeds Ponte ILI"
+            )
         else:
             self.decide_hint.configure(
-                text="Both · blue=PULO (has atributo) · amber=Onto (no atributo)"
+                text="All · blue=PULO · amber=Onto · green=WordNet (info only)"
             )
 
     def _render_senses(self):
@@ -801,15 +853,18 @@ class Workbench(tk.Tk):
         dec = decmod.load_decisions(ws.decisions_json)
         senses = dec.get("senses") or []
         filt = self.filter_var.get()
-        if filt in ("pulo", "onto"):
+        if filt in ("pulo", "onto", "wordnet"):
             senses = [s for s in senses if (s.get("source") or "").lower() == filt]
 
         if not senses:
-            msg = "No senses yet. Search a Portuguese lemma above."
+            msg = "No senses yet. Search a lemma above (PULO / Onto / WordNet)."
             if filt == "pulo":
                 msg = "No PULO cards. Search with «PULO — ILI» selected."
             elif filt == "onto":
                 msg = "No Onto.PT cards. Search with «Onto.PT» selected."
+            elif filt == "wordnet":
+                msg = ("No WordNet cards. Search an English lemma with "
+                       "«WordNet — OEWN» (e.g. composite, compound).")
             tk.Label(
                 self.sense_frame, text=msg, fg="#555", anchor="w", justify="left"
             ).pack(anchor="w", padx=8, pady=12)
@@ -823,6 +878,14 @@ class Workbench(tk.Tk):
                     "Onto.PT  ·  fuzzy coverage  ·  options: UF · RT · exclude · contraste"
                 )
                 key_line = f"id: {s.get('key')}"
+            elif src == "wordnet":
+                bg, accent, banner = "#E8F5E9", "#1B5E20", (
+                    "WordNet (OEWN)  ·  corroboration  ·  no UF/RT — use Ponte ILI"
+                )
+                key_line = (
+                    f"OEWN ILI: {s.get('ili') or '—'}   ·   "
+                    f"{s.get('local_id') or s.get('key')}"
+                )
             else:
                 bg, accent, banner = "#E8F1FB", "#0B3D6E", (
                     "PULO  ·  ILI anchor  ·  options: UF · RT · exclude · atributo · contraste"
@@ -852,6 +915,14 @@ class Workbench(tk.Tk):
                 wraplength=520, justify="left", anchor="w",
             ).pack(fill="x", pady=(2, 4))
 
+            if src == "wordnet":
+                tk.Label(
+                    card,
+                    text="Info only — export saved under exports/*.facets.json "
+                         "for Ponte ILI / Run.",
+                    bg=bg, fg="#336633", anchor="w",
+                ).pack(fill="x")
+                continue
             choice_set = self._choices_for(src)
             raw = s.get("decision") or ""
             if src == "onto" and raw == "atributo":
@@ -928,6 +999,19 @@ class Workbench(tk.Tk):
             f"({info['undecided']} undecided)\n"
             f"export: {info['export']}\n"
         )
+        if int(info.get("count") or 0) == 0:
+            src = self.source_var.get()
+            tip = (
+                "For WordNet use an English lemma (e.g. composite, compound)."
+                if src == "wordnet"
+                else "For Compósita try «composto» / «compósito» (not «compósita»)."
+            )
+            messagebox.showwarning(
+                APP,
+                "Search returned 0 synsets — the export is empty.\n\n"
+                f"{tip}",
+            )
+            self.status_var.set("Search: 0 hits.")
         self._load_class()
 
     def _run(self):
@@ -935,6 +1019,17 @@ class Workbench(tk.Tk):
         if not ws:
             return
         self._save_decisions()
+        meta = ws.load_meta()
+        if not (meta.get("axis") or "").strip():
+            messagebox.showerror(
+                APP,
+                "axis is empty.\n\n"
+                "In Meta (right panel) set e.g.\n"
+                "  axis: heterogeneidade / composição de materiais distintos\n"
+                "then «4 · Guardar decisões», then Run again.",
+            )
+            self.status_var.set("Run blocked — fill axis.")
+            return
         self.status_var.set("Running pipeline…")
         self._log("\n▶ Running…\n")
 

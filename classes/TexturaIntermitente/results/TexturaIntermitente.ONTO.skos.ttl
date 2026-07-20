@@ -1,0 +1,8 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix : <http://example.org/textura#> .
+
+:TexturaIntermitente a skos:Concept, owl:Class ;
+    skos:prefLabel "TexturaIntermitente"@pt ;
+    skos:scopeNote "Eixo definidor: que ocorre espaçadamente, a intervalos, regulares ou irregulares"@pt .

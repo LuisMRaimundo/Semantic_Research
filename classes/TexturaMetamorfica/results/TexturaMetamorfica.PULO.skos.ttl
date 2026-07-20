@@ -1,0 +1,9 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tex: <http://example.org/textura#> .
+
+tex:TexturaMetamrfica a owl:Class,
+        skos:Concept ;
+    skos:prefLabel "TexturaMetamórfica"@pt ;
+    skos:scopeNote "Eixo definidor: muda de forma, relativamente a um ou vários parâmetros"@pt .
+

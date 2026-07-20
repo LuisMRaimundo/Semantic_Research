@@ -9,10 +9,8 @@
     skosxl:altLabel [ skosxl:literalForm "constante"@pt ] ;
     skosxl:altLabel [ skosxl:literalForm "imutável"@pt ] ;
     skosxl:altLabel [ skosxl:literalForm "invariável"@pt ] ;
-    skosxl:altLabel [ skosxl:literalForm "uniformidade"@pt ] ;
     skos:related :regular ;
     skos:related :periodico ;
-    skos:related :igual ;
     :contrastaCom :politipica ;
     skos:scopeNote "Contraste lexical (eixo): politípica"@pt .
 :TexturaUniforme owl:disjointWith :TexturaHeterogenea .

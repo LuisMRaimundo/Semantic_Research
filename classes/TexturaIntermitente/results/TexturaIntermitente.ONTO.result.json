@@ -1,0 +1,1440 @@
+{
+  "class_id": "TexturaIntermitente",
+  "pref_label": "TexturaIntermitente",
+  "axis": "que ocorre espaçadamente, a intervalos, regulares ou irregulares",
+  "generated": "2026-07-13T18:00:17",
+  "db": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\engines\\ONTO\\ontopt.sqlite",
+  "gating": {
+    "weight_min": 0.5,
+    "min_cooccurrence": 2,
+    "fuzzy_resources": [
+      "contopt"
+    ]
+  },
+  "stage1": {
+    "admitted_offsets": [
+      "clip21:17265",
+      "clip21:19737",
+      "contopt:5236",
+      "contopt:33686",
+      "fuzzythes:23329",
+      "fuzzythes:23659",
+      "fuzzythes:23873",
+      "fuzzythes:24056",
+      "fuzzythes:25214",
+      "fuzzythes:26922",
+      "fuzzythes:26927",
+      "fuzzythes:26998",
+      "fuzzythes:27907",
+      "ontopt06:1386",
+      "ontopt06:3833",
+      "ontopt06:4134",
+      "ontopt06:4160",
+      "ontopt06:54924",
+      "polaridades:13335",
+      "thes5rec:18150",
+      "thes5rec:21772",
+      "thes5rec:23361",
+      "thes5rec:23954"
+    ],
+    "excluded_offsets": [
+      "clip21:19004",
+      "fuzzythes:25210",
+      "fuzzythes:10163",
+      "thes5rec:8218"
+    ],
+    "invalid": [
+      {
+        "entry": {
+          "ili_offset": "clip21:17265",
+          "glosa": "",
+          "decision": "UF",
+          "members": [
+            "alternado",
+            "entremeado",
+            "salteado",
+            "revezado",
+            "alterno",
+            "intermeado",
+            "intervalado",
+            "alternativo",
+            "intercalado",
+            "intermitente",
+            "mesclado",
+            "alternante",
+            "interposto",
+            "raiado",
+            "entressachado",
+            "espaçado",
+            "alternativa",
+            "interpolado",
+            "assaltado",
+            "alternador",
+            "intercalar",
+            "recíproco",
+            "surpreendido",
+            "acessional",
+            "embolismal",
+            "intexto",
+            "parentético",
+            "repetir",
+            "intercadente",
+            "mútuo",
+            "sobressalteado",
+            "adicional",
+            "atacado",
+            "descontínuo",
+            "entrelaçado",
+            "interjacente",
+            "listrado",
+            "misturado",
+            "periódico",
+            "repetido",
+            "sobressaltado",
+            "sucessivo"
+          ]
+        },
+        "why": "sem ili_offset ou glosa"
+      },
+      {
+        "entry": {
+          "ili_offset": "clip21:19737",
+          "glosa": "",
+          "decision": "RT",
+          "members": [
+            "interrompido",
+            "descontínuo",
+            "suspenso",
+            "descontinuado",
+            "incontínuo",
+            "intercadente",
+            "interrupto",
+            "intercepto",
+            "interceptado",
+            "sustado",
+            "cortado",
+            "impedido",
+            "interruto",
+            "atalhado",
+            "bloqueado",
+            "inaccessível",
+            "inacessível",
+            "intermitente",
+            "irregular",
+            "obstruído",
+            "alternado",
+            "arretado",
+            "detido",
+            "empatado",
+            "interciso",
+            "paralisado",
+            "quebrado",
+            "quebrantado",
+            "solto"
+          ]
+        },
+        "why": "sem ili_offset ou glosa"
+      },
+      {
+        "entry": {
+          "ili_offset": "contopt:5236",
+          "glosa": "",
+          "decision": "UF",
+          "members": [
+            "alternado",
+            "entremeado",
+            "salteado",
+            "revezado",
+            "alterno",
+            "intermeado",
+            "intervalado",
+            "alternativo",
+            "intercalado",
+            "intermitente",
+            "mesclado",
+            "alternante",
+            "interposto",
+            "raiado",
+            "entressachado",
+            "espaçado",
+            "alternativa",
+            "interpolado",
+            "assaltado",
+            "alternador",
+            "intercalar",
+            "recíproco",
+            "surpreendido"
+          ]
+        },
+        "why": "sem ili_offset ou glosa"
+      },
+      {
+        "entry": {
+          "ili_offset": "contopt:33686",
+          "glosa": "",
+          "decision": "UF",
+          "members": [
+            "interrompido",
+            "descontínuo",
+            "suspenso",
+            "descontinuado",
+            "incontínuo",
+            "intercadente",
+            "interrupto",
+            "intercepto",
+            "interceptado",
+            "sustado",
+            "cortado",
+            "impedido",
+            "interruto",
+            "atalhado",
+            "bloqueado",
+            "inaccessível",
+            "inacessível",
+            "intermitente",
+            "irregular",
+            "obstruído"
+          ]
+        },
+        "why": "sem ili_offset ou glosa"
+      },
+      {
+        "entry": {
+          "ili_offset": "fuzzythes:23329",
+          "glosa": "",
+          "decision": "UF",
+          "members": [
+            "incontínuo",
+            "descontinuado",
+            "descontínuo",
+            "intercadente",
+            "interrupto",
+            "interrompido",
+            "intermitente",
+            "sustado",
+            "alternado",
+            "revezado",
+            "irregular",
+            "suspenso",
+            "salteado"
+          ]
+        },
+        "why": "sem ili_offset ou glosa"
+      },
+      {
+        "entry": {
+          "ili_offset": "fuzzythes:23659",
+          "glosa": "",
+          "decision": "RT",
+          "members": [
+            "alterno",
+            "revezado",
+            "alternado",
+            "alternativo",
+            "intermitente",
+            "salteado",
+            "intervalado",
+            "entremeado",
+            "recíproco",
+            "intermeado",
+            "mútuo",
+            "intercadente",
+            "descontínuo",
+            "espaçado",
+            "entressachado",
+            "assaltado",
+            "intercalado",
+            "sobressalteado"
+          ]
+        },
+        "why": "sem ili_offset ou glosa"
+      },
+      {
+        "entry": {
+          "ili_offset": "fuzzythes:23873",
+          "glosa": "",
+          "decision": "RT",
+          "members": [
+            "interpolado",
+            "intervalado",
+            "entremeado",
+            "salteado",
+            "intermeado",
+            "alternado",
+            "intercalado",
+            "espaçado",
+            "entressachado",
+            "alterno",
+            "revezado",
+            "espacioso",
+            "pausado",
+            "mesclado",
+            "intermitente",
+            "prorrogado",
+            "alternativo",
+            "distanciado",
+            "interposto",
+            "adiado",
+            "espaçoso",
+            "espacejado",
+            "arrastado",
+            "raiado"
+          ]
+        },
+        "why": "sem ili_offset ou glosa"
+      },
+      {
+        "entry": {
+          "ili_offset": "fuzzythes:24056",
+          "glosa": "",
+          "decision": "RT",
+          "members": [
+            "entremeado",
+            "intermeado",
+            "entressachado",
+            "intervalado",
+            "intercalado",
+            "alternado",
+            "salteado",
+            "interjacente",
+            "espaçado",
+            "mesclado",
+            "interposto",
+            "raiado",
+            "revezado",
+            "interpolado",
+            "alterno",
+            "intermitente",
+            "intermédio",
+            "misto",
+            "alternativo",
+            "assaltado",
+            "rajado",
+            "sobressalteado",
+            "misturado"
+          ]
+        },
+        "why": "sem ili_offset ou glosa"
+      },
+      {
+        "entry": {
+          "ili_offset": "fuzzythes:25214",
+          "glosa": "",
+          "decision": "RT",
+          "members": [
+            "interjacente",
+            "interposto",
+            "intermeado",
+            "entressachado",
+            "entremeado",
+            "intercalado",
+            "intervalado",
+            "intermédio",
+            "mesclado",
+            "salteado",
+            "raiado",
+            "alternado",
+            "intermediário",
+            "espaçado",
+            "interpolado",
+            "revezado",
+            "alterno",
+            "intermitente",
+            "intercalar",
+            "alternativo",
+            "assaltado"
+          ]
+        },
+        "why": "sem ili_offset ou glosa"
+      },
+      {
+        "entry": {
+          "ili_offset": "fuzzythes:26922",
+          "glosa": "",
+          "decision": "RT",
+          "members": [
+            "interpolado",
+            "salteado",
+            "intervalado",
+            "intercalado",
+            "intermitente",
+            "assaltado",
+            "alternado",
+            "revezado",
+            "alterno",
+            "entremeado",
+            "intermeado",
+            "acometido",
+            "agredido",
+            "atacado",
+            "alternativo",
+            "sobressalteado",
+            "entressachado",
+            "espaçado",
+            "espaventado",
+            "intercadente",
+            "trépido",
+            "estremecido",
+            "mesclado",
+            "descontínuo"
+          ]
+        },
+        "why": "sem ili_offset ou glosa"
+      },
+      {
+        "entry": {
+          "ili_offset": "fuzzythes:26927",
+          "glosa": "",
+          "decision": "RT",
+          "members": [
+            "recíproco",
+            "alternativo",
+            "mútuo",
+            "alterno",
+            "revezado",
+            "alternado",
+            "intermitente",
+            "salteado",
+            "intervalado",
+            "respectivo",
+            "entremeado"
+          ]
+        },
+        "why": "sem ili_offset ou glosa"
+      },
+      {
+        "entry": {
+          "ili_offset": "fuzzythes:26998",
+          "glosa": "",
+          "decision": "RT",
+          "members": [
+            "sustado",
+            "interrupto",
+            "intercadente",
+            "suspenso",
+            "interrompido",
+            "descontinuado",
+            "descontínuo",
+            "incontínuo",
+            "impedido",
+            "intermitente"
+          ]
+        },
+        "why": "sem ili_offset ou glosa"
+      },
+      {
+        "entry": {
+          "ili_offset": "fuzzythes:27907",
+          "glosa": "",
+          "decision": "RT",
+          "members": [
+            "acessional",
+            "intermitente",
+            "adicional",
+            "revezado",
+            "alternado",
+            "salteado",
+            "alterno",
+            "intercadente",
+            "descontínuo",
+            "alternativo",
+            "incontínuo",
+            "descontinuado",
+            "intervalado",
+            "entremeado",
+            "interrupto"
+          ]
+        },
+        "why": "sem ili_offset ou glosa"
+      },
+      {
+        "entry": {
+          "ili_offset": "ontopt06:1386",
+          "glosa": "",
+          "decision": "RT",
+          "members": [
+            "alternado",
+            "alternativo",
+            "alterno",
+            "intercadente",
+            "intermitente",
+            "repetir",
+            "revezado",
+            "salteado"
+          ]
+        },
+        "why": "sem ili_offset ou glosa"
+      },
+      {
+        "entry": {
+          "ili_offset": "ontopt06:4134",
+          "glosa": "",
+          "decision": "UF",
+          "members": [
+            "descontinuado",
+            "descontínuo",
+            "incontínuo",
+            "intercadente",
+            "interciso",
+            "intermitente",
+            "interrompido",
+            "interrupto"
+          ]
+        },
+        "why": "sem ili_offset ou glosa"
+      },
+      {
+        "entry": {
+          "ili_offset": "ontopt06:54924",
+          "glosa": "",
+          "decision": "UF",
+          "members": [
+            "intermitente"
+          ]
+        },
+        "why": "sem ili_offset ou glosa"
+      },
+      {
+        "entry": {
+          "ili_offset": "thes5rec:18150",
+          "glosa": "",
+          "decision": "RT",
+          "members": [
+            "alternado",
+            "alterno",
+            "assaltado",
+            "entremeado",
+            "intercalado",
+            "intermitente",
+            "interpolado",
+            "intervalado",
+            "revezado",
+            "salteado"
+          ]
+        },
+        "why": "sem ili_offset ou glosa"
+      },
+      {
+        "entry": {
+          "ili_offset": "thes5rec:21772",
+          "glosa": "",
+          "decision": "RT",
+          "members": [
+            "atalhado",
+            "descontinuado",
+            "descontínuo",
+            "incontínuo",
+            "intercadente",
+            "interceptado",
+            "intercepto",
+            "interciso",
+            "intermitente",
+            "interrompido",
+            "interrupto",
+            "interruto",
+            "suspenso",
+            "sustado"
+          ]
+        },
+        "why": "sem ili_offset ou glosa"
+      },
+      {
+        "entry": {
+          "ili_offset": "thes5rec:23361",
+          "glosa": "",
+          "decision": "RT",
+          "members": [
+            "acessional",
+            "adicional",
+            "alternado",
+            "intermitente",
+            "revezado",
+            "salteado"
+          ]
+        },
+        "why": "sem ili_offset ou glosa"
+      },
+      {
+        "entry": {
+          "ili_offset": "thes5rec:23954",
+          "glosa": "",
+          "decision": "RT",
+          "members": [
+            "alternado",
+            "alternativo",
+            "alterno",
+            "entremeado",
+            "intermeado",
+            "intermitente",
+            "intervalado",
+            "mútuo",
+            "recíproco",
+            "revezado",
+            "salteado"
+          ]
+        },
+        "why": "sem ili_offset ou glosa"
+      }
+    ]
+  },
+  "stage2_seeds": {
+    "alternado": {
+      "display": "alternado",
+      "offsets": [
+        "clip21:17265",
+        "clip21:19737",
+        "contopt:5236",
+        "fuzzythes:23329",
+        "fuzzythes:23659",
+        "fuzzythes:23873",
+        "fuzzythes:24056",
+        "fuzzythes:25214",
+        "fuzzythes:26922",
+        "fuzzythes:26927",
+        "fuzzythes:27907",
+        "ontopt06:1386",
+        "ontopt06:4160",
+        "thes5rec:18150",
+        "thes5rec:23361",
+        "thes5rec:23954"
+      ]
+    },
+    "entremeado": {
+      "display": "entremeado",
+      "offsets": [
+        "clip21:17265",
+        "contopt:5236",
+        "fuzzythes:23659",
+        "fuzzythes:23873",
+        "fuzzythes:24056",
+        "fuzzythes:25214",
+        "fuzzythes:26922",
+        "fuzzythes:26927",
+        "fuzzythes:27907",
+        "ontopt06:4160",
+        "thes5rec:18150",
+        "thes5rec:23954"
+      ]
+    },
+    "salteado": {
+      "display": "salteado",
+      "offsets": [
+        "clip21:17265",
+        "contopt:5236",
+        "fuzzythes:23329",
+        "fuzzythes:23659",
+        "fuzzythes:23873",
+        "fuzzythes:24056",
+        "fuzzythes:25214",
+        "fuzzythes:26922",
+        "fuzzythes:26927",
+        "fuzzythes:27907",
+        "ontopt06:1386",
+        "ontopt06:4160",
+        "thes5rec:18150",
+        "thes5rec:23361",
+        "thes5rec:23954"
+      ]
+    },
+    "revezado": {
+      "display": "revezado",
+      "offsets": [
+        "clip21:17265",
+        "contopt:5236",
+        "fuzzythes:23329",
+        "fuzzythes:23659",
+        "fuzzythes:23873",
+        "fuzzythes:24056",
+        "fuzzythes:25214",
+        "fuzzythes:26922",
+        "fuzzythes:26927",
+        "fuzzythes:27907",
+        "ontopt06:1386",
+        "thes5rec:18150",
+        "thes5rec:23361",
+        "thes5rec:23954"
+      ]
+    },
+    "alterno": {
+      "display": "alterno",
+      "offsets": [
+        "clip21:17265",
+        "contopt:5236",
+        "fuzzythes:23659",
+        "fuzzythes:23873",
+        "fuzzythes:24056",
+        "fuzzythes:25214",
+        "fuzzythes:26922",
+        "fuzzythes:26927",
+        "fuzzythes:27907",
+        "ontopt06:1386",
+        "thes5rec:18150",
+        "thes5rec:23954"
+      ]
+    },
+    "intermeado": {
+      "display": "intermeado",
+      "offsets": [
+        "clip21:17265",
+        "contopt:5236",
+        "fuzzythes:23659",
+        "fuzzythes:23873",
+        "fuzzythes:24056",
+        "fuzzythes:25214",
+        "fuzzythes:26922",
+        "ontopt06:4160",
+        "thes5rec:23954"
+      ]
+    },
+    "intervalado": {
+      "display": "intervalado",
+      "offsets": [
+        "clip21:17265",
+        "contopt:5236",
+        "fuzzythes:23659",
+        "fuzzythes:23873",
+        "fuzzythes:24056",
+        "fuzzythes:25214",
+        "fuzzythes:26922",
+        "fuzzythes:26927",
+        "fuzzythes:27907",
+        "ontopt06:4160",
+        "thes5rec:18150",
+        "thes5rec:23954"
+      ]
+    },
+    "alternativo": {
+      "display": "alternativo",
+      "offsets": [
+        "clip21:17265",
+        "contopt:5236",
+        "fuzzythes:23659",
+        "fuzzythes:23873",
+        "fuzzythes:24056",
+        "fuzzythes:25214",
+        "fuzzythes:26922",
+        "fuzzythes:26927",
+        "fuzzythes:27907",
+        "ontopt06:1386",
+        "thes5rec:23954"
+      ]
+    },
+    "intercalado": {
+      "display": "intercalado",
+      "offsets": [
+        "clip21:17265",
+        "contopt:5236",
+        "fuzzythes:23659",
+        "fuzzythes:23873",
+        "fuzzythes:24056",
+        "fuzzythes:25214",
+        "fuzzythes:26922",
+        "thes5rec:18150"
+      ]
+    },
+    "intermitente": {
+      "display": "intermitente",
+      "offsets": [
+        "clip21:17265",
+        "clip21:19737",
+        "contopt:33686",
+        "contopt:5236",
+        "fuzzythes:23329",
+        "fuzzythes:23659",
+        "fuzzythes:23873",
+        "fuzzythes:24056",
+        "fuzzythes:25214",
+        "fuzzythes:26922",
+        "fuzzythes:26927",
+        "fuzzythes:26998",
+        "fuzzythes:27907",
+        "ontopt06:1386",
+        "ontopt06:3833",
+        "ontopt06:4134",
+        "ontopt06:4160",
+        "ontopt06:54924",
+        "polaridades:13335",
+        "thes5rec:18150",
+        "thes5rec:21772",
+        "thes5rec:23361",
+        "thes5rec:23954"
+      ]
+    },
+    "mesclado": {
+      "display": "mesclado",
+      "offsets": [
+        "clip21:17265",
+        "contopt:5236",
+        "fuzzythes:23873",
+        "fuzzythes:24056",
+        "fuzzythes:25214",
+        "fuzzythes:26922"
+      ]
+    },
+    "alternante": {
+      "display": "alternante",
+      "offsets": [
+        "clip21:17265",
+        "contopt:5236"
+      ]
+    },
+    "interposto": {
+      "display": "interposto",
+      "offsets": [
+        "clip21:17265",
+        "contopt:5236",
+        "fuzzythes:23873",
+        "fuzzythes:24056",
+        "fuzzythes:25214"
+      ]
+    },
+    "raiado": {
+      "display": "raiado",
+      "offsets": [
+        "clip21:17265",
+        "contopt:5236",
+        "fuzzythes:23873",
+        "fuzzythes:24056",
+        "fuzzythes:25214"
+      ]
+    },
+    "entressachado": {
+      "display": "entressachado",
+      "offsets": [
+        "clip21:17265",
+        "contopt:5236",
+        "fuzzythes:23659",
+        "fuzzythes:23873",
+        "fuzzythes:24056",
+        "fuzzythes:25214",
+        "fuzzythes:26922"
+      ]
+    },
+    "espacado": {
+      "display": "espaçado",
+      "offsets": [
+        "clip21:17265",
+        "contopt:5236",
+        "fuzzythes:23659",
+        "fuzzythes:23873",
+        "fuzzythes:24056",
+        "fuzzythes:25214",
+        "fuzzythes:26922"
+      ]
+    },
+    "alternativa": {
+      "display": "alternativa",
+      "offsets": [
+        "clip21:17265",
+        "contopt:5236"
+      ]
+    },
+    "interpolado": {
+      "display": "interpolado",
+      "offsets": [
+        "clip21:17265",
+        "contopt:5236",
+        "fuzzythes:23873",
+        "fuzzythes:24056",
+        "fuzzythes:25214",
+        "fuzzythes:26922",
+        "ontopt06:4160",
+        "thes5rec:18150"
+      ]
+    },
+    "assaltado": {
+      "display": "assaltado",
+      "offsets": [
+        "clip21:17265",
+        "contopt:5236",
+        "fuzzythes:23659",
+        "fuzzythes:24056",
+        "fuzzythes:25214",
+        "fuzzythes:26922",
+        "thes5rec:18150"
+      ]
+    },
+    "alternador": {
+      "display": "alternador",
+      "offsets": [
+        "clip21:17265",
+        "contopt:5236"
+      ]
+    },
+    "intercalar": {
+      "display": "intercalar",
+      "offsets": [
+        "clip21:17265",
+        "contopt:5236",
+        "fuzzythes:25214"
+      ]
+    },
+    "reciproco": {
+      "display": "recíproco",
+      "offsets": [
+        "clip21:17265",
+        "contopt:5236",
+        "fuzzythes:23659",
+        "fuzzythes:26927",
+        "thes5rec:23954"
+      ]
+    },
+    "surpreendido": {
+      "display": "surpreendido",
+      "offsets": [
+        "clip21:17265",
+        "contopt:5236"
+      ]
+    },
+    "acessional": {
+      "display": "acessional",
+      "offsets": [
+        "clip21:17265",
+        "fuzzythes:27907",
+        "ontopt06:3833",
+        "thes5rec:23361"
+      ]
+    },
+    "embolismal": {
+      "display": "embolismal",
+      "offsets": [
+        "clip21:17265"
+      ]
+    },
+    "intexto": {
+      "display": "intexto",
+      "offsets": [
+        "clip21:17265",
+        "ontopt06:4160"
+      ]
+    },
+    "parentetico": {
+      "display": "parentético",
+      "offsets": [
+        "clip21:17265"
+      ]
+    },
+    "repetir": {
+      "display": "repetir",
+      "offsets": [
+        "clip21:17265",
+        "ontopt06:1386"
+      ]
+    },
+    "intercadente": {
+      "display": "intercadente",
+      "offsets": [
+        "clip21:17265",
+        "clip21:19737",
+        "contopt:33686",
+        "fuzzythes:23329",
+        "fuzzythes:23659",
+        "fuzzythes:26922",
+        "fuzzythes:26998",
+        "fuzzythes:27907",
+        "ontopt06:1386",
+        "ontopt06:4134",
+        "polaridades:13335",
+        "thes5rec:21772"
+      ]
+    },
+    "mutuo": {
+      "display": "mútuo",
+      "offsets": [
+        "clip21:17265",
+        "fuzzythes:23659",
+        "fuzzythes:26927",
+        "thes5rec:23954"
+      ]
+    },
+    "sobressalteado": {
+      "display": "sobressalteado",
+      "offsets": [
+        "clip21:17265",
+        "fuzzythes:23659",
+        "fuzzythes:24056",
+        "fuzzythes:26922"
+      ]
+    },
+    "adicional": {
+      "display": "adicional",
+      "offsets": [
+        "clip21:17265",
+        "fuzzythes:27907",
+        "thes5rec:23361"
+      ]
+    },
+    "atacado": {
+      "display": "atacado",
+      "offsets": [
+        "clip21:17265",
+        "fuzzythes:26922"
+      ]
+    },
+    "descontinuo": {
+      "display": "descontínuo",
+      "offsets": [
+        "clip21:17265",
+        "clip21:19737",
+        "contopt:33686",
+        "fuzzythes:23329",
+        "fuzzythes:23659",
+        "fuzzythes:26922",
+        "fuzzythes:26998",
+        "fuzzythes:27907",
+        "ontopt06:4134",
+        "polaridades:13335",
+        "thes5rec:21772"
+      ]
+    },
+    "entrelacado": {
+      "display": "entrelaçado",
+      "offsets": [
+        "clip21:17265"
+      ]
+    },
+    "interjacente": {
+      "display": "interjacente",
+      "offsets": [
+        "clip21:17265",
+        "fuzzythes:24056",
+        "fuzzythes:25214"
+      ]
+    },
+    "listrado": {
+      "display": "listrado",
+      "offsets": [
+        "clip21:17265"
+      ]
+    },
+    "misturado": {
+      "display": "misturado",
+      "offsets": [
+        "clip21:17265",
+        "fuzzythes:24056"
+      ]
+    },
+    "periodico": {
+      "display": "periódico",
+      "offsets": [
+        "clip21:17265",
+        "ontopt06:3833"
+      ]
+    },
+    "repetido": {
+      "display": "repetido",
+      "offsets": [
+        "clip21:17265"
+      ]
+    },
+    "sobressaltado": {
+      "display": "sobressaltado",
+      "offsets": [
+        "clip21:17265"
+      ]
+    },
+    "sucessivo": {
+      "display": "sucessivo",
+      "offsets": [
+        "clip21:17265"
+      ]
+    },
+    "interrompido": {
+      "display": "interrompido",
+      "offsets": [
+        "clip21:19737",
+        "contopt:33686",
+        "fuzzythes:23329",
+        "fuzzythes:26998",
+        "ontopt06:4134",
+        "polaridades:13335",
+        "thes5rec:21772"
+      ]
+    },
+    "suspenso": {
+      "display": "suspenso",
+      "offsets": [
+        "clip21:19737",
+        "contopt:33686",
+        "fuzzythes:23329",
+        "fuzzythes:26998",
+        "thes5rec:21772"
+      ]
+    },
+    "descontinuado": {
+      "display": "descontinuado",
+      "offsets": [
+        "clip21:19737",
+        "contopt:33686",
+        "fuzzythes:23329",
+        "fuzzythes:26998",
+        "fuzzythes:27907",
+        "ontopt06:4134",
+        "polaridades:13335",
+        "thes5rec:21772"
+      ]
+    },
+    "incontinuo": {
+      "display": "incontínuo",
+      "offsets": [
+        "clip21:19737",
+        "contopt:33686",
+        "fuzzythes:23329",
+        "fuzzythes:26998",
+        "fuzzythes:27907",
+        "ontopt06:4134",
+        "polaridades:13335",
+        "thes5rec:21772"
+      ]
+    },
+    "interrupto": {
+      "display": "interrupto",
+      "offsets": [
+        "clip21:19737",
+        "contopt:33686",
+        "fuzzythes:23329",
+        "fuzzythes:26998",
+        "fuzzythes:27907",
+        "ontopt06:4134",
+        "polaridades:13335",
+        "thes5rec:21772"
+      ]
+    },
+    "intercepto": {
+      "display": "intercepto",
+      "offsets": [
+        "clip21:19737",
+        "contopt:33686",
+        "thes5rec:21772"
+      ]
+    },
+    "interceptado": {
+      "display": "interceptado",
+      "offsets": [
+        "clip21:19737",
+        "contopt:33686",
+        "thes5rec:21772"
+      ]
+    },
+    "sustado": {
+      "display": "sustado",
+      "offsets": [
+        "clip21:19737",
+        "contopt:33686",
+        "fuzzythes:23329",
+        "fuzzythes:26998",
+        "thes5rec:21772"
+      ]
+    },
+    "cortado": {
+      "display": "cortado",
+      "offsets": [
+        "clip21:19737",
+        "contopt:33686"
+      ]
+    },
+    "impedido": {
+      "display": "impedido",
+      "offsets": [
+        "clip21:19737",
+        "contopt:33686",
+        "fuzzythes:26998"
+      ]
+    },
+    "interruto": {
+      "display": "interruto",
+      "offsets": [
+        "clip21:19737",
+        "contopt:33686",
+        "thes5rec:21772"
+      ]
+    },
+    "atalhado": {
+      "display": "atalhado",
+      "offsets": [
+        "clip21:19737",
+        "contopt:33686",
+        "thes5rec:21772"
+      ]
+    },
+    "bloqueado": {
+      "display": "bloqueado",
+      "offsets": [
+        "clip21:19737",
+        "contopt:33686"
+      ]
+    },
+    "inaccessivel": {
+      "display": "inaccessível",
+      "offsets": [
+        "clip21:19737",
+        "contopt:33686"
+      ]
+    },
+    "inacessivel": {
+      "display": "inacessível",
+      "offsets": [
+        "clip21:19737",
+        "contopt:33686"
+      ]
+    },
+    "irregular": {
+      "display": "irregular",
+      "offsets": [
+        "clip21:19737",
+        "contopt:33686",
+        "fuzzythes:23329"
+      ]
+    },
+    "obstruido": {
+      "display": "obstruído",
+      "offsets": [
+        "clip21:19737",
+        "contopt:33686"
+      ]
+    },
+    "arretado": {
+      "display": "arretado",
+      "offsets": [
+        "clip21:19737"
+      ]
+    },
+    "detido": {
+      "display": "detido",
+      "offsets": [
+        "clip21:19737"
+      ]
+    },
+    "empatado": {
+      "display": "empatado",
+      "offsets": [
+        "clip21:19737"
+      ]
+    },
+    "interciso": {
+      "display": "interciso",
+      "offsets": [
+        "clip21:19737",
+        "ontopt06:4134",
+        "polaridades:13335",
+        "thes5rec:21772"
+      ]
+    },
+    "paralisado": {
+      "display": "paralisado",
+      "offsets": [
+        "clip21:19737"
+      ]
+    },
+    "quebrado": {
+      "display": "quebrado",
+      "offsets": [
+        "clip21:19737"
+      ]
+    },
+    "quebrantado": {
+      "display": "quebrantado",
+      "offsets": [
+        "clip21:19737"
+      ]
+    },
+    "solto": {
+      "display": "solto",
+      "offsets": [
+        "clip21:19737"
+      ]
+    },
+    "espacioso": {
+      "display": "espacioso",
+      "offsets": [
+        "fuzzythes:23873"
+      ]
+    },
+    "pausado": {
+      "display": "pausado",
+      "offsets": [
+        "fuzzythes:23873"
+      ]
+    },
+    "prorrogado": {
+      "display": "prorrogado",
+      "offsets": [
+        "fuzzythes:23873"
+      ]
+    },
+    "distanciado": {
+      "display": "distanciado",
+      "offsets": [
+        "fuzzythes:23873"
+      ]
+    },
+    "adiado": {
+      "display": "adiado",
+      "offsets": [
+        "fuzzythes:23873"
+      ]
+    },
+    "espacoso": {
+      "display": "espaçoso",
+      "offsets": [
+        "fuzzythes:23873"
+      ]
+    },
+    "espacejado": {
+      "display": "espacejado",
+      "offsets": [
+        "fuzzythes:23873"
+      ]
+    },
+    "arrastado": {
+      "display": "arrastado",
+      "offsets": [
+        "fuzzythes:23873"
+      ]
+    },
+    "intermedio": {
+      "display": "intermédio",
+      "offsets": [
+        "fuzzythes:24056",
+        "fuzzythes:25214"
+      ]
+    },
+    "misto": {
+      "display": "misto",
+      "offsets": [
+        "fuzzythes:24056"
+      ]
+    },
+    "rajado": {
+      "display": "rajado",
+      "offsets": [
+        "fuzzythes:24056"
+      ]
+    },
+    "intermediario": {
+      "display": "intermediário",
+      "offsets": [
+        "fuzzythes:25214"
+      ]
+    },
+    "acometido": {
+      "display": "acometido",
+      "offsets": [
+        "fuzzythes:26922"
+      ]
+    },
+    "agredido": {
+      "display": "agredido",
+      "offsets": [
+        "fuzzythes:26922"
+      ]
+    },
+    "espaventado": {
+      "display": "espaventado",
+      "offsets": [
+        "fuzzythes:26922"
+      ]
+    },
+    "trepido": {
+      "display": "trépido",
+      "offsets": [
+        "fuzzythes:26922"
+      ]
+    },
+    "estremecido": {
+      "display": "estremecido",
+      "offsets": [
+        "fuzzythes:26922"
+      ]
+    },
+    "respectivo": {
+      "display": "respectivo",
+      "offsets": [
+        "fuzzythes:26927"
+      ]
+    }
+  },
+  "stage3": {
+    "n_focus_synsets": 0,
+    "n_nuclear_synsets": 0,
+    "admitted": {},
+    "sinalizacao": {}
+  },
+  "stage4_excluded": {},
+  "stage5": {
+    "admitted": {},
+    "pending": {},
+    "_pending_count": 85,
+    "_pending_sidecar": "TexturaIntermitente.ONTO.pending.json"
+  },
+  "skos": {
+    "uf": [],
+    "rt": [],
+    "contrast": []
+  },
+  "provenance": [],
+  "assertions": [
+    {
+      "stage": "Etapa 1",
+      "text": "Todo o synset admitido possui ili_offset e glosa mapeada ao eixo.",
+      "passed": false,
+      "evidence": "synsets sem ili/glosa: ['clip21:17265', 'clip21:19737', 'contopt:5236', 'contopt:33686', 'fuzzythes:23329', 'fuzzythes:23659', 'fuzzythes:23873', 'fuzzythes:24056', 'fuzzythes:25214', 'fuzzythes:26922', 'fuzzythes:26927', 'fuzzythes:26998', 'fuzzythes:27907', 'ontopt06:1386', 'ontopt06:4134', 'ontopt06:54924', 'thes5rec:18150', 'thes5rec:21772', 'thes5rec:23361', 'thes5rec:23954']"
+    },
+    {
+      "stage": "Etapa 1",
+      "text": "Nenhum synset off-axis (exclude) figura na lista branca admitida.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Etapa 1",
+      "text": "A lista branca é persistida por offset ILI e os offsets são únicos.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Etapa 2",
+      "text": "Os membros colhidos provêm exclusivamente de synsets da lista branca.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Etapa 3",
+      "text": "Candidatos difusos admitidos cumprem peso≥0.5, coocorrência≥2 e ≥1 corroboração externa.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Etapa 3",
+      "text": "Candidatos que falham a corroboração vão para sinalizacao[], não para admitidos[].",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Etapa 4",
+      "text": "Colocações multipalavra e padrões de ruído sem corroboração são descartados (não permanecem na pool de candidatos).",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Etapa 5",
+      "text": "Cada termo em admitidos[] tem estatuto∈{UF,RT,contraste}, teste decisivo registado e ≥1 garantia.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Consistência final",
+      "text": "Nenhum termo é UF de duas classes com owl:disjointWith entre si.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Consistência final",
+      "text": "Contrastantes não são serializados como skos:related.",
+      "passed": true,
+      "evidence": "OK"
+    }
+  ],
+  "all_passed": false,
+  "_disjoint_classes": []
+}

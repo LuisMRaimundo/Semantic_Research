@@ -1,0 +1,151 @@
+{
+  "class_id": "TexturaMetamorfica",
+  "senses": [
+    {
+      "source": "pulo",
+      "key": "ili-30-07359599-n",
+      "ili": "ili-30-07359599-n",
+      "local_id": "",
+      "pos": "",
+      "gloss": "uma mudança qualitativa\n",
+      "members": [
+        "metamorfose",
+        "modificação",
+        "mudança",
+        "transmudação",
+        "transmutação",
+        "transformação",
+        "alteração"
+      ],
+      "decision": "UF",
+      "note": ""
+    },
+    {
+      "source": "pulo",
+      "key": "ili-30-00126264-v",
+      "ili": "ili-30-00126264-v",
+      "local_id": "",
+      "pos": "",
+      "gloss": "causar à mudança; fazer diferente; causar uma transformação\n",
+      "members": [
+        "cambiar",
+        "converter",
+        "demudar",
+        "evolucionar",
+        "evoluir",
+        "falsificar",
+        "metamorfosear",
+        "perturbar",
+        "tornar",
+        "tranformar",
+        "transformar",
+        "alterar",
+        "mudar",
+        "modificar"
+      ],
+      "decision": "exclude",
+      "note": ""
+    },
+    {
+      "source": "onto",
+      "key": "clip21:15380",
+      "ili": "",
+      "local_id": "",
+      "pos": "",
+      "gloss": "",
+      "members": [
+        "hemoético",
+        "metamórfico"
+      ],
+      "decision": "UF",
+      "note": ""
+    },
+    {
+      "source": "onto",
+      "key": "contopt:146",
+      "ili": "",
+      "local_id": "",
+      "pos": "",
+      "gloss": "",
+      "members": [
+        "hemoético",
+        "metamórfico"
+      ],
+      "decision": "UF",
+      "note": ""
+    },
+    {
+      "source": "onto",
+      "key": "fuzzythes:30854",
+      "ili": "",
+      "local_id": "",
+      "pos": "",
+      "gloss": "",
+      "members": [
+        "hemoético",
+        "metamórfico"
+      ],
+      "decision": "UF",
+      "note": ""
+    },
+    {
+      "source": "onto",
+      "key": "ontopt06:10369",
+      "ili": "",
+      "local_id": "",
+      "pos": "",
+      "gloss": "que possui a capacidade de realizar a metamorfose.",
+      "members": [
+        "hemoético",
+        "metamórfico"
+      ],
+      "decision": "UF",
+      "note": ""
+    },
+    {
+      "source": "onto",
+      "key": "thes5rec:23634",
+      "ili": "",
+      "local_id": "",
+      "pos": "",
+      "gloss": "",
+      "members": [
+        "hemoético",
+        "metamórfico"
+      ],
+      "decision": "UF",
+      "note": ""
+    },
+    {
+      "source": "wordnet",
+      "key": "i16835",
+      "ili": "i16835",
+      "local_id": "oewn-02963206-a",
+      "pos": "a",
+      "gloss": "of or relating to metamorphosis (especially of rocks)",
+      "members": [
+        "metamorphic",
+        "metamorphous",
+        "PT: metamórfico"
+      ],
+      "decision": "",
+      "note": "OEWN corroboration (Ponte ILI / WordNet track)"
+    },
+    {
+      "source": "wordnet",
+      "key": "i8401",
+      "ili": "i8401",
+      "local_id": "oewn-01533762-a",
+      "pos": "a",
+      "gloss": "characterized by metamorphosis or change in physical form or substance",
+      "members": [
+        "metamorphic"
+      ],
+      "decision": "",
+      "note": "OEWN corroboration (Ponte ILI / WordNet track)"
+    }
+  ],
+  "terms": [],
+  "manual_terms": [],
+  "exclude_terms": []
+}

@@ -13,7 +13,7 @@ sys.path.insert(0, str(ROOT))
 
 from semantic import decisions as decmod
 from semantic.compile_specs import compile_pulo_spec
-from semantic.workspace import ClassWorkspace
+from semantic.workspace import ClassWorkspace, slug_class
 import semantic.settings as settings
 
 
@@ -23,6 +23,12 @@ class WorkspaceTests(unittest.TestCase):
         self.addCleanup(self.tmp.cleanup)
         settings.CLASSES_DIR = Path(self.tmp.name) / "classes"
         settings.CLASSES_DIR.mkdir()
+
+    def test_slug_folds_accents(self):
+        self.assertEqual(slug_class("TexturaCompósita"), "TexturaComposita")
+        self.assertEqual(slug_class("Textura Metamórfica"), "TexturaMetamorfica")
+        self.assertEqual(slug_class("TexturaPolitípica"), "TexturaPolitipica")
+        self.assertEqual(slug_class("TexturaComposita"), "TexturaComposita")
 
     def test_create_and_status(self):
         ws = ClassWorkspace.create("DemoClass", pref_label="demo", axis="axis")

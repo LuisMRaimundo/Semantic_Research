@@ -972,18 +972,25 @@ def render_markdown(doc: dict, concepts) -> str:
 # API + CLI
 # ---------------------------------------------------------------------------
 def _discover_map(input_specs, outdir: Path) -> Optional[Path]:
-    """Find an ili_equivalence.json next to the sources or in the output dir."""
+    """Find an ili_equivalence.json next to the sources, outdir, or class root."""
     seen = []
     for _label, path in input_specs:
         seen.append(Path(path).parent)
-    seen.append(outdir)
+    seen.append(Path(outdir))
+    # class root (parent of out/ or results/) — common place people drop the file
+    try:
+        seen.append(Path(outdir).parent)
+    except Exception:  # noqa: BLE001
+        pass
     for folder in seen:
-        cand = Path(folder) / "ili_equivalence.json"
+        folder = Path(folder)
+        cand = folder / "ili_equivalence.json"
         if cand.exists():
             return cand
-        hits = sorted(Path(folder).glob("*ili_equivalence.json")) if Path(folder).exists() else []
-        if hits:
-            return hits[0]
+        if folder.exists():
+            hits = sorted(folder.glob("*ili_equivalence*.json"))
+            if hits:
+                return hits[0]
     return None
 
 

@@ -30,31 +30,57 @@ def _norm(w: str) -> str:
 
 
 def find_facets_export(ws: ClassWorkspace) -> Optional[Path]:
-    """Export de facetas OEWN mais recente (WordNet/exports, depois exports/)."""
+    """Prefer class ``exports/*.facets.json``; only then WordNet/exports fallback."""
     pools: list[Path] = []
+    # Class-local FIRST — avoids picking a leftover «uniform» bundle for Compósita
+    pools += sorted(
+        ws.exports.glob("*.facets.json"),
+        key=lambda p: p.stat().st_mtime,
+        reverse=True,
+    )
     wn_exp = ROOT / "WordNet" / "exports"
     if wn_exp.exists():
-        pools += sorted(wn_exp.rglob("*.facets.json"),
-                        key=lambda p: p.stat().st_mtime, reverse=True)
-    pools += sorted(ws.exports.glob("*.facets.json"))
+        pools += sorted(
+            wn_exp.rglob("*.facets.json"),
+            key=lambda p: p.stat().st_mtime,
+            reverse=True,
+        )
     for p in pools:
         try:
             data = json.loads(p.read_text(encoding="utf-8"))
         except Exception:  # noqa: BLE001
             continue
         syns = data.get("synsets") or []
-        if syns and str((syns[0] or {}).get("ili") or "").startswith("i"):
-            return p
+        if not syns:
+            continue
+        if not str((syns[0] or {}).get("ili") or "").startswith("i"):
+            continue
+        # If the export names a class_id, require a match when falling back
+        tagged = (data.get("class_id") or "").strip()
+        if tagged and tagged != ws.class_id and p.parent != ws.exports:
+            continue
+        return p
     return None
 
 
 def adjudicated_ilis(ws: ClassWorkspace) -> dict[str, str]:
-    """OEWN ILIs convocáveis: linhas map human-adjudicated. ili -> source."""
+    """OEWN ILIs convocáveis from ``map``: human-adjudicated or CILI identity.
+
+    CILI rows are canonical GWA identity (already allowed in ``map`` by the
+    bridge); human rows are GUI promotions. Auto/review pairs never qualify.
+    """
     doc = load_table(ws)
     if not doc:
         return {}
-    return {r["oewn_ili"]: r.get("source", "")
-            for r in doc.get("map", []) if is_human_row(r)}
+    out: dict[str, str] = {}
+    for r in doc.get("map", []) or []:
+        ili = r.get("oewn_ili")
+        if not ili:
+            continue
+        src = str(r.get("source", ""))
+        if is_human_row(r) or src.startswith("cili:"):
+            out[ili] = src
+    return out
 
 
 def build_wordnet_result(class_id: str,
@@ -68,8 +94,9 @@ def build_wordnet_result(class_id: str,
     allowed = adjudicated_ilis(ws)
     if not allowed:
         return {"ok": False, "error":
-                "tabela ILI sem linhas map human-adjudicated — adjudique na "
-                "«Ponte ILI…» antes de convocar a faixa WordNet"}
+                "tabela ILI sem pares em map (human ou cili:) — use "
+                "«5 · Ponte ILI…» (promova review→map) ou coloque "
+                "ili_equivalence.json em out/"}
 
     data = json.loads(Path(facets_path).read_text(encoding="utf-8"))
     sina: dict[str, dict] = {}

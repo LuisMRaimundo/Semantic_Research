@@ -1,0 +1,314 @@
+{
+  "type": "oewn_facets",
+  "term": "uniform",
+  "pos": "Todas",
+  "language": "English",
+  "class_id": "TexturaUniforme",
+  "generated": "2026-07-20T10:49:09",
+  "count": 6,
+  "facets": [
+    "synsets_relations"
+  ],
+  "source": {
+    "lexicon": "oewn",
+    "backend": "wn",
+    "alignment": "ILI via translate()",
+    "via": "semantic.adapters.wordnet (workbench)",
+    "pt_coverage": "2/6 synsets com pt_lemmas"
+  },
+  "synsets": [
+    {
+      "name": "oewn-01973553-a",
+      "ili": "i10771",
+      "pos": "a",
+      "definition": "always the same; showing a single form or character in all occurrences",
+      "examples": [
+        "a street of uniform tall white buildings"
+      ],
+      "lemmas": [
+        "uniform",
+        "unvarying"
+      ],
+      "pt_lemmas": [
+        "invariável",
+        "uniforme"
+      ],
+      "hypernyms": [],
+      "hyponyms": [],
+      "relations": {
+        "antonym": [
+          {
+            "id": "oewn-01973918-a",
+            "ili": "i10773",
+            "words": [
+              "multiform"
+            ],
+            "gloss": "occurring in or having many forms or shapes or appearances"
+          }
+        ],
+        "derivationally_related_form": [
+          {
+            "id": "oewn-04752610-n",
+            "ili": "i61962",
+            "words": [
+              "uniformness"
+            ],
+            "gloss": "the quality of lacking diversity or variation (even to the point of boredom)"
+          },
+          {
+            "id": "oewn-04776288-n",
+            "ili": "i62073",
+            "words": [
+              "uniformity"
+            ],
+            "gloss": "a condition in which everything is regular and unvarying"
+          }
+        ],
+        "similar_to": [
+          {
+            "id": "oewn-01973805-s",
+            "ili": "i10772",
+            "words": [
+              "single"
+            ],
+            "gloss": "having uniform application"
+          }
+        ],
+        "attribute": [],
+        "also_see": []
+      }
+    },
+    {
+      "name": "oewn-00748118-a",
+      "ili": "i4126",
+      "pos": "a",
+      "definition": "not differentiated",
+      "examples": [],
+      "lemmas": [
+        "undifferentiated",
+        "uniform"
+      ],
+      "pt_lemmas": [],
+      "hypernyms": [],
+      "hyponyms": [],
+      "relations": {
+        "antonym": [
+          {
+            "id": "oewn-00747889-a",
+            "ili": "i4125",
+            "words": [
+              "differentiated"
+            ],
+            "gloss": "made different (especially in the course of development) or shown to be different"
+          }
+        ],
+        "derivationally_related_form": [
+          {
+            "id": "oewn-00553535-v",
+            "ili": "i24505",
+            "words": [
+              "uniformize"
+            ],
+            "gloss": "make uniform"
+          },
+          {
+            "id": "oewn-04776288-n",
+            "ili": "i62073",
+            "words": [
+              "uniformity"
+            ],
+            "gloss": "a condition in which everything is regular and unvarying"
+          },
+          {
+            "id": "oewn-04752610-n",
+            "ili": "i61962",
+            "words": [
+              "uniformity"
+            ],
+            "gloss": "the quality of lacking diversity or variation (even to the point of boredom)"
+          }
+        ],
+        "similar_to": [
+          {
+            "id": "oewn-00748281-s",
+            "ili": "i4127",
+            "words": [
+              "dedifferentiated"
+            ],
+            "gloss": "having experienced or undergone dedifferentiation or the loss of specialization in form or function"
+          }
+        ],
+        "attribute": [],
+        "also_see": []
+      }
+    },
+    {
+      "name": "oewn-04516887-n",
+      "ili": "i60712",
+      "pos": "n",
+      "definition": "clothing of distinctive design worn by members of a particular group as a means of identification",
+      "examples": [],
+      "lemmas": [
+        "uniform"
+      ],
+      "pt_lemmas": [
+        "farda",
+        "fardamento",
+        "uniforme"
+      ],
+      "hypernyms": [
+        "oewn-03055525-n"
+      ],
+      "hyponyms": [
+        "oewn-03610717-n",
+        "oewn-03684500-n",
+        "oewn-03769503-n"
+      ],
+      "relations": {
+        "antonym": [],
+        "derivationally_related_form": [
+          {
+            "id": "oewn-02336782-v",
+            "ili": "i33388",
+            "words": [
+              "uniform"
+            ],
+            "gloss": "provide with uniforms"
+          }
+        ],
+        "similar_to": [],
+        "attribute": [],
+        "also_see": []
+      }
+    },
+    {
+      "name": "oewn-01203638-s",
+      "ili": "i6560",
+      "pos": "s",
+      "definition": "the same throughout in structure or composition",
+      "examples": [
+        "bituminous coal is often treated as a consistent and homogeneous product"
+      ],
+      "lemmas": [
+        "consistent",
+        "uniform"
+      ],
+      "pt_lemmas": [],
+      "hypernyms": [],
+      "hyponyms": [],
+      "relations": {
+        "antonym": [],
+        "derivationally_related_form": [
+          {
+            "id": "oewn-04752610-n",
+            "ili": "i61962",
+            "words": [
+              "uniformness"
+            ],
+            "gloss": "the quality of lacking diversity or variation (even to the point of boredom)"
+          },
+          {
+            "id": "oewn-04776288-n",
+            "ili": "i62073",
+            "words": [
+              "uniformity"
+            ],
+            "gloss": "a condition in which everything is regular and unvarying"
+          }
+        ],
+        "similar_to": [
+          {
+            "id": "oewn-01203294-a",
+            "ili": "i6559",
+            "words": [
+              "homogeneous",
+              "homogenous"
+            ],
+            "gloss": "all of the same or similar kind or nature"
+          }
+        ],
+        "attribute": [],
+        "also_see": []
+      }
+    },
+    {
+      "name": "oewn-01967120-s",
+      "ili": "i10734",
+      "pos": "s",
+      "definition": "evenly spaced",
+      "examples": [
+        "at regular (or uniform) intervals"
+      ],
+      "lemmas": [
+        "uniform"
+      ],
+      "pt_lemmas": [],
+      "hypernyms": [],
+      "hyponyms": [],
+      "relations": {
+        "antonym": [],
+        "derivationally_related_form": [
+          {
+            "id": "oewn-04752610-n",
+            "ili": "i61962",
+            "words": [
+              "uniformity"
+            ],
+            "gloss": "the quality of lacking diversity or variation (even to the point of boredom)"
+          }
+        ],
+        "similar_to": [
+          {
+            "id": "oewn-01966104-a",
+            "ili": "i10728",
+            "words": [
+              "regular"
+            ],
+            "gloss": "in accordance with fixed order or procedure or principle"
+          }
+        ],
+        "attribute": [],
+        "also_see": []
+      }
+    },
+    {
+      "name": "oewn-02336782-v",
+      "ili": "i33388",
+      "pos": "v",
+      "definition": "provide with uniforms",
+      "examples": [
+        "The guards were uniformed"
+      ],
+      "lemmas": [
+        "uniform"
+      ],
+      "pt_lemmas": [],
+      "hypernyms": [
+        "oewn-02332196-v"
+      ],
+      "hyponyms": [],
+      "relations": {
+        "antonym": [],
+        "derivationally_related_form": [
+          {
+            "id": "oewn-04516887-n",
+            "ili": "i60712",
+            "words": [
+              "uniform"
+            ],
+            "gloss": "clothing of distinctive design worn by members of a particular group as a means of identification"
+          }
+        ],
+        "similar_to": [],
+        "attribute": [],
+        "also_see": []
+      }
+    }
+  ],
+  "similarity": {
+    "pairs": [],
+    "note": "omitted in workbench search"
+  },
+  "hierarchy": {},
+  "visualization": {}
+}

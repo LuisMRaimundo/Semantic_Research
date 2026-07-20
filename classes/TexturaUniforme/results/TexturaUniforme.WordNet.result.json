@@ -2,15 +2,17 @@
   "class_id": "TexturaUniforme",
   "pref_label": "uniforme",
   "axis": "(faixa WordNet — corroboração ancorada em ILI; sem adjudicação)",
-  "generated": "2026-07-13T16:24:14",
+  "generated": "2026-07-20T16:51:21",
   "source": "WordNet (OEWN facets export)",
-  "facets_export": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\WordNet\\exports\\uniform_20260713_123000\\uniform.facets.json",
+  "facets_export": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\classes\\TexturaUniforme\\exports\\wordnet_uniform.facets.json",
   "convoked_ilis": [
     "i10771",
-    "i4126"
+    "i4126",
+    "i60712"
   ],
   "skipped_ilis": [
-    "i60712",
+    "i6560",
+    "i10734",
     "i33388"
   ],
   "provenance": [],
@@ -35,6 +37,19 @@
       "pt_lemmas": [],
       "lemmas": [
         "undifferentiated",
+        "uniform"
+      ]
+    },
+    {
+      "name": "oewn-04516887-n",
+      "ili": "i60712",
+      "pos": "n",
+      "pt_lemmas": [
+        "farda",
+        "fardamento",
+        "uniforme"
+      ],
+      "lemmas": [
         "uniform"
       ]
     }
@@ -94,6 +109,20 @@
       "reason": "vizinho similar_to de i4126 (oewn-00748118-a) — sem estatuto; adjudicação humana",
       "offsets_ili": [
         "i4127"
+      ]
+    },
+    "farda": {
+      "display": "farda",
+      "reason": "atestado na WordNet [pt_lemma (ILI)] · oewn-04516887-n · ILI i60712",
+      "offsets_ili": [
+        "i60712"
+      ]
+    },
+    "fardamento": {
+      "display": "fardamento",
+      "reason": "atestado na WordNet [pt_lemma (ILI)] · oewn-04516887-n · ILI i60712",
+      "offsets_ili": [
+        "i60712"
       ]
     }
   },

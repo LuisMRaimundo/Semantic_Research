@@ -40,12 +40,71 @@ def _import_builder():
 
 
 def table_path(ws: ClassWorkspace) -> Path:
+    """Canonical location written by Ponte ILI / save_table."""
     return ws.out / "ili_equivalence.json"
 
 
+def find_table_file(ws: ClassWorkspace) -> Optional[Path]:
+    """Locate ili_equivalence.json even if dropped in the class folder.
+
+    Search order (first hit wins):
+      1. ``out/ili_equivalence.json`` (canonical)
+      2. class root
+      3. ``results/``
+      4. ``FINAL_RESULTS__…/``
+      5. any ``*ili_equivalence*.json`` under the class (shallow)
+    If found outside ``out/``, copy into the canonical path so later Runs
+    and Ponte ILI see it.
+    """
+    canonical = table_path(ws)
+    if canonical.exists():
+        return canonical
+
+    candidates: list[Path] = [
+        ws.root / "ili_equivalence.json",
+        ws.results / "ili_equivalence.json",
+        ws.final_results / "ili_equivalence.json",
+    ]
+    # shallow globs (avoid scanning huge trees)
+    for folder in (ws.root, ws.out, ws.results, ws.final_results, ws.exports):
+        if folder.exists():
+            candidates.extend(sorted(folder.glob("*ili_equivalence*.json")))
+
+    seen: set[Path] = set()
+    for cand in candidates:
+        try:
+            resolved = cand.resolve()
+        except OSError:
+            continue
+        if resolved in seen or not cand.is_file():
+            continue
+        seen.add(resolved)
+        # ensure it looks like an equivalence table
+        try:
+            data = json.loads(cand.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        if not isinstance(data, dict):
+            continue
+        if not any(k in data for k in ("map", "review", "unmatched")):
+            continue
+        if cand.resolve() != canonical.resolve():
+            canonical.parent.mkdir(parents=True, exist_ok=True)
+            try:
+                if not canonical.exists():
+                    canonical.write_text(
+                        cand.read_text(encoding="utf-8"), encoding="utf-8"
+                    )
+            except OSError:
+                return cand  # use where it is if copy fails
+            return canonical
+        return cand
+    return None
+
+
 def load_table(ws: ClassWorkspace) -> Optional[dict]:
-    p = table_path(ws)
-    if not p.exists():
+    p = find_table_file(ws)
+    if p is None:
         return None
     return json.loads(p.read_text(encoding="utf-8"))
 
@@ -77,22 +136,39 @@ def _looks_wordnet(data: dict) -> bool:
 
 
 def find_wordnet_export(ws: ClassWorkspace) -> Optional[Path]:
-    """Procura um export WordNet utilizável: exports/ da classe, depois
-    WordNet/exports/ (bundles mais recentes primeiro)."""
-    pools: list[Path] = []
-    pools += sorted(ws.exports.glob("*.json"))
-    wn_exp = ROOT / "WordNet" / "exports"
-    if wn_exp.exists():
-        pools += sorted(wn_exp.rglob("*.json"),
-                        key=lambda p: p.stat().st_mtime, reverse=True)
-    for p in pools:
-        try:
-            data = json.loads(p.read_text(encoding="utf-8"))
-        except Exception:  # noqa: BLE001
-            continue
-        if _looks_wordnet(data):
+    """Procura export WordNet: prefer class exports/, then WordNet/exports/."""
+
+    def _scan(paths: list[Path]) -> Optional[Path]:
+        for p in paths:
+            try:
+                data = json.loads(p.read_text(encoding="utf-8"))
+            except Exception:  # noqa: BLE001
+                continue
+            if not _looks_wordnet(data):
+                continue
+            tagged = (data.get("class_id") or "").strip()
+            if tagged and tagged != ws.class_id:
+                continue
             return p
-    return None
+        return None
+
+    local = sorted(
+        set(ws.exports.glob("*.facets.json")) | set(ws.exports.glob("*.json")),
+        key=lambda p: p.stat().st_mtime,
+        reverse=True,
+    )
+    hit = _scan(local)
+    if hit is not None:
+        return hit
+    wn_exp = ROOT / "WordNet" / "exports"
+    if not wn_exp.exists():
+        return None
+    global_pool = sorted(
+        wn_exp.rglob("*.json"),
+        key=lambda p: p.stat().st_mtime,
+        reverse=True,
+    )
+    return _scan(global_pool)
 
 
 def find_pulo_export(ws: ClassWorkspace) -> Optional[Path]:

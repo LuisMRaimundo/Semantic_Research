@@ -1,0 +1,179 @@
+{
+  "class_id": "TexturaMetamorfica",
+  "pref_label": "TexturaMetamórfica",
+  "axis": "muda de forma, relativamente a um ou vários parâmetros",
+  "generated": "2026-07-13T17:43:34",
+  "db": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\engines\\ONTO\\ontopt.sqlite",
+  "gating": {
+    "weight_min": 0.5,
+    "min_cooccurrence": 2,
+    "fuzzy_resources": [
+      "contopt"
+    ]
+  },
+  "stage1": {
+    "admitted_offsets": [
+      "clip21:15380",
+      "contopt:146",
+      "fuzzythes:30854",
+      "ontopt06:10369",
+      "thes5rec:23634"
+    ],
+    "excluded_offsets": [],
+    "invalid": [
+      {
+        "entry": {
+          "ili_offset": "clip21:15380",
+          "glosa": "",
+          "decision": "UF",
+          "members": [
+            "hemoético",
+            "metamórfico"
+          ]
+        },
+        "why": "sem ili_offset ou glosa"
+      },
+      {
+        "entry": {
+          "ili_offset": "contopt:146",
+          "glosa": "",
+          "decision": "UF",
+          "members": [
+            "hemoético",
+            "metamórfico"
+          ]
+        },
+        "why": "sem ili_offset ou glosa"
+      },
+      {
+        "entry": {
+          "ili_offset": "fuzzythes:30854",
+          "glosa": "",
+          "decision": "UF",
+          "members": [
+            "hemoético",
+            "metamórfico"
+          ]
+        },
+        "why": "sem ili_offset ou glosa"
+      },
+      {
+        "entry": {
+          "ili_offset": "thes5rec:23634",
+          "glosa": "",
+          "decision": "UF",
+          "members": [
+            "hemoético",
+            "metamórfico"
+          ]
+        },
+        "why": "sem ili_offset ou glosa"
+      }
+    ]
+  },
+  "stage2_seeds": {
+    "hemoetico": {
+      "display": "hemoético",
+      "offsets": [
+        "clip21:15380",
+        "contopt:146",
+        "fuzzythes:30854",
+        "ontopt06:10369",
+        "thes5rec:23634"
+      ]
+    },
+    "metamorfico": {
+      "display": "metamórfico",
+      "offsets": [
+        "clip21:15380",
+        "contopt:146",
+        "fuzzythes:30854",
+        "ontopt06:10369",
+        "thes5rec:23634"
+      ]
+    }
+  },
+  "stage3": {
+    "n_focus_synsets": 0,
+    "n_nuclear_synsets": 0,
+    "admitted": {},
+    "sinalizacao": {}
+  },
+  "stage4_excluded": {},
+  "stage5": {
+    "admitted": {},
+    "pending": {},
+    "_pending_count": 2,
+    "_pending_sidecar": "TexturaMetamrfica.ONTO.pending.json"
+  },
+  "skos": {
+    "uf": [],
+    "rt": [],
+    "contrast": []
+  },
+  "provenance": [],
+  "assertions": [
+    {
+      "stage": "Etapa 1",
+      "text": "Todo o synset admitido possui ili_offset e glosa mapeada ao eixo.",
+      "passed": false,
+      "evidence": "synsets sem ili/glosa: ['clip21:15380', 'contopt:146', 'fuzzythes:30854', 'thes5rec:23634']"
+    },
+    {
+      "stage": "Etapa 1",
+      "text": "Nenhum synset off-axis (exclude) figura na lista branca admitida.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Etapa 1",
+      "text": "A lista branca é persistida por offset ILI e os offsets são únicos.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Etapa 2",
+      "text": "Os membros colhidos provêm exclusivamente de synsets da lista branca.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Etapa 3",
+      "text": "Candidatos difusos admitidos cumprem peso≥0.5, coocorrência≥2 e ≥1 corroboração externa.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Etapa 3",
+      "text": "Candidatos que falham a corroboração vão para sinalizacao[], não para admitidos[].",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Etapa 4",
+      "text": "Colocações multipalavra e padrões de ruído sem corroboração são descartados (não permanecem na pool de candidatos).",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Etapa 5",
+      "text": "Cada termo em admitidos[] tem estatuto∈{UF,RT,contraste}, teste decisivo registado e ≥1 garantia.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Consistência final",
+      "text": "Nenhum termo é UF de duas classes com owl:disjointWith entre si.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Consistência final",
+      "text": "Contrastantes não são serializados como skos:related.",
+      "passed": true,
+      "evidence": "OK"
+    }
+  ],
+  "all_passed": false,
+  "_disjoint_classes": []
+}

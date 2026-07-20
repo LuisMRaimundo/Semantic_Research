@@ -1,0 +1,653 @@
+{
+  "class_id": "TexturaComposita",
+  "pref_label": "TexturaCompósita",
+  "axis": "heterogeneidade / composição de materiais ou partes distintas",
+  "generated": "2026-07-18T19:59:09",
+  "source": "PULO / WordNet.PT export",
+  "stage1": {
+    "admitted": [
+      {
+        "ili_offset": "ili-30-14818238-n",
+        "glosa": "(Química) uma substância formada por união química de duas ou mais elementos ou ingredientes na proporção definida por peso\n",
+        "decision": "UF",
+        "export_gloss": "(Química) uma substância formada por união química de duas ou mais elementos ou ingredientes na proporção definida por peso\n"
+      }
+    ],
+    "admitted_offsets": [
+      "ili-30-14818238-n"
+    ],
+    "excluded_offsets": [
+      "ili-30-02424254-a",
+      "ili-30-09947232-n"
+    ],
+    "invalid": [],
+    "flagged_no_ili": []
+  },
+  "stage2_seeds": {
+    "composto": {
+      "display": "composto",
+      "offsets": [
+        "ili-30-14818238-n"
+      ]
+    }
+  },
+  "stage3": {
+    "contrast": {},
+    "rt_uf": {},
+    "family": {
+      "compor": {
+        "display": "compor",
+        "via": "derivationally related form",
+        "source_ili": "ili-30-14818238-n",
+        "target_gloss": "criar por mistura ou combinação de\n"
+      }
+    },
+    "BT": {},
+    "NT": {
+      "acido": {
+        "display": "ácido",
+        "via": "hyponym",
+        "source_ili": "ili-30-14818238-n",
+        "target_gloss": "qualquer um de vários compostos solúveis em água que têm um gosto amargo e capaz de transformar tornassol vermelho e reagir com uma base para formar um sal\n"
+      },
+      "base": {
+        "display": "base",
+        "via": "hyponym",
+        "source_ili": "ili-30-14818238-n",
+        "target_gloss": "qualquer um de vários compostos solúveis em água, capazes de transformar tornassol azul e reagir com um ácido para formar um sal e de água\n"
+      },
+      "azida": {
+        "display": "azida",
+        "via": "hyponym",
+        "source_ili": "ili-30-14818238-n",
+        "target_gloss": "um composto químico que contém o grupo azido combinado com um elemento ou radical\n"
+      },
+      "cianamida": {
+        "display": "cianamida",
+        "via": "hyponym",
+        "source_ili": "ili-30-14818238-n",
+        "target_gloss": "um composto utilizado como um fertilizante e como uma fonte de compostos de azoto\n"
+      },
+      "complexo": {
+        "display": "complexo",
+        "via": "hyponym",
+        "source_ili": "ili-30-14818238-n",
+        "target_gloss": "um composto descrito em termos de átomo central para que outros átomos estão ligados ou coordenados\n"
+      },
+      "formulacao": {
+        "display": "formulação",
+        "via": "hyponym",
+        "source_ili": "ili-30-14818238-n",
+        "target_gloss": "uma substância preparada de acordo com uma fórmula\n"
+      },
+      "preparacao": {
+        "display": "preparação",
+        "via": "hyponym",
+        "source_ili": "ili-30-14818238-n",
+        "target_gloss": "uma substância preparada de acordo com uma fórmula\n"
+      },
+      "formula": {
+        "display": "fórmula",
+        "via": "hyponym",
+        "source_ili": "ili-30-14818238-n",
+        "target_gloss": "uma substância preparada de acordo com uma fórmula\n"
+      },
+      "hidrato": {
+        "display": "hidrato",
+        "via": "hyponym",
+        "source_ili": "ili-30-14818238-n",
+        "target_gloss": "qualquer composto que contém água de cristalização\n"
+      },
+      "hidroxido": {
+        "display": "hidróxido",
+        "via": "hyponym",
+        "source_ili": "ili-30-14818238-n",
+        "target_gloss": "um composto químico que contém o grupo hidroxilo\n"
+      },
+      "nitreto": {
+        "display": "nitreto",
+        "via": "hyponym",
+        "source_ili": "ili-30-14818238-n",
+        "target_gloss": "um composto contendo azoto e um elemento mais electropositivo (tal como um metal ou fósforo)\n"
+      },
+      "oxido": {
+        "display": "óxido",
+        "via": "hyponym",
+        "source_ili": "ili-30-14818238-n",
+        "target_gloss": "qualquer composto de oxigénio com outro elemento ou um radical\n"
+      },
+      "conservante": {
+        "display": "conservante",
+        "via": "hyponym",
+        "source_ili": "ili-30-14818238-n",
+        "target_gloss": "um composto químico que é adicionado para proteger contra a deterioração ou decomposição\n"
+      },
+      "quinona": {
+        "display": "quinona",
+        "via": "hyponym",
+        "source_ili": "ili-30-14818238-n",
+        "target_gloss": "qualquer um de uma classe de compostos aromáticos, incluindo vários amarelos que são biologicamente importante como coenzimas ou aceitadores ou vitaminas; utilizado na fabricação de corantes\n"
+      },
+      "sal": {
+        "display": "sal",
+        "via": "hyponym",
+        "source_ili": "ili-30-14818238-n",
+        "target_gloss": "um composto formado pela substituição de hidrogénio num ácido por um metal (ou de um radical que actue como um metal)\n"
+      },
+      "nitrato": {
+        "display": "nitrato",
+        "via": "hyponym",
+        "source_ili": "ili-30-14818238-n",
+        "target_gloss": "qualquer composto contendo o grupo nitrato (tal como um sal ou éster do ácido nítrico)\n"
+      },
+      "cloreto": {
+        "display": "cloreto",
+        "via": "hyponym",
+        "source_ili": "ili-30-14818238-n",
+        "target_gloss": "qualquer composto contendo um átomo de cloro\n"
+      }
+    },
+    "attribute": {}
+  },
+  "dropped_no_lemma": 267,
+  "sinalizacao": {
+    "organicamente": {
+      "display": "organicamente",
+      "via": "relation #61",
+      "source_ili": "ili-30-14818238-n",
+      "target_gloss": "envolvendo os compostos de carbono\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "inorganicamente": {
+      "display": "inorganicamente",
+      "via": "relation #61",
+      "source_ili": "ili-30-14818238-n",
+      "target_gloss": "não envolvendo os compostos de carbono\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "ciclico": {
+      "display": "cíclico",
+      "via": "relation #61",
+      "source_ili": "ili-30-14818238-n",
+      "target_gloss": "de um composto tendo átomos dispostos em uma estrutura em anel\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "organico": {
+      "display": "orgânico",
+      "via": "relation #61",
+      "source_ili": "ili-30-14818238-n",
+      "target_gloss": "relativas ou pertencentes à classe de compostos químicos, tendo uma base de carbono\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "ingrediente": {
+      "display": "ingrediente",
+      "via": "relation #61",
+      "source_ili": "ili-30-14818238-n",
+      "target_gloss": "um componente de uma mistura ou combinação\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "isomerizacao": {
+      "display": "isomerização",
+      "via": "relation #61",
+      "source_ili": "ili-30-14818238-n",
+      "target_gloss": "a conversão de um composto em um isómero do próprio\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "acetilacao": {
+      "display": "acetilação",
+      "via": "relation #61",
+      "source_ili": "ili-30-14818238-n",
+      "target_gloss": "o processo de introdução de um grupo acetilo num composto\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "descarboxilacao": {
+      "display": "descarboxilação",
+      "via": "relation #61",
+      "source_ili": "ili-30-14818238-n",
+      "target_gloss": "o processo de remoção de um grupo carboxilo de um composto químico (geralmente substituindo-o com hidrogénio)\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "sintese": {
+      "display": "síntese",
+      "via": "relation #61",
+      "source_ili": "ili-30-14818238-n",
+      "target_gloss": "o processo de produção de um composto químico (geralmente pela união de compostos químicos mais simples)\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "acido": {
+      "display": "ácido",
+      "via": "relation #61",
+      "source_ili": "ili-30-14818238-n",
+      "target_gloss": "qualquer um de vários compostos solúveis em água que têm um gosto amargo e capaz de transformar tornassol vermelho e reagir com uma base para formar um sal\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "base": {
+      "display": "base",
+      "via": "relation #61",
+      "source_ili": "ili-30-14818238-n",
+      "target_gloss": "qualquer um de vários compostos solúveis em água, capazes de transformar tornassol azul e reagir com um ácido para formar um sal e de água\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "molecula": {
+      "display": "molécula",
+      "via": "relation #61",
+      "source_ili": "ili-30-14818238-n",
+      "target_gloss": "(Física e química) a unidade estrutural mais simples de um elemento ou composto\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "alcool": {
+      "display": "álcool",
+      "via": "relation #61",
+      "source_ili": "ili-30-14818238-n",
+      "target_gloss": "qualquer um de uma série de compostos de hidroxilo voláteis que são feitos a partir de hidrocarbonetos por destilação\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "azida": {
+      "display": "azida",
+      "via": "relation #61",
+      "source_ili": "ili-30-14818238-n",
+      "target_gloss": "um composto químico que contém o grupo azido combinado com um elemento ou radical\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "cianamida": {
+      "display": "cianamida",
+      "via": "relation #61",
+      "source_ili": "ili-30-14818238-n",
+      "target_gloss": "um composto utilizado como um fertilizante e como uma fonte de compostos de azoto\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "complexo": {
+      "display": "complexo",
+      "via": "relation #61",
+      "source_ili": "ili-30-14818238-n",
+      "target_gloss": "um composto descrito em termos de átomo central para que outros átomos estão ligados ou coordenados\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "glicosideos": {
+      "display": "glicosídeos",
+      "via": "relation #61",
+      "source_ili": "ili-30-14818238-n",
+      "target_gloss": "um grupo de compostos derivados de monossacáridos\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "hidrato": {
+      "display": "hidrato",
+      "via": "relation #61",
+      "source_ili": "ili-30-14818238-n",
+      "target_gloss": "qualquer composto que contém água de cristalização\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "hidroxido": {
+      "display": "hidróxido",
+      "via": "relation #61",
+      "source_ili": "ili-30-14818238-n",
+      "target_gloss": "um composto químico que contém o grupo hidroxilo\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "nitreto": {
+      "display": "nitreto",
+      "via": "relation #61",
+      "source_ili": "ili-30-14818238-n",
+      "target_gloss": "um composto contendo azoto e um elemento mais electropositivo (tal como um metal ou fósforo)\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "oxido": {
+      "display": "óxido",
+      "via": "relation #61",
+      "source_ili": "ili-30-14818238-n",
+      "target_gloss": "qualquer composto de oxigénio com outro elemento ou um radical\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "alizarina": {
+      "display": "alizarina",
+      "via": "relation #61",
+      "source_ili": "ili-30-14818238-n",
+      "target_gloss": "um composto cristalino cor de laranja-vermelho utilizado na fabricação de pigmentos vermelhos e no tingimento\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "conservante": {
+      "display": "conservante",
+      "via": "relation #61",
+      "source_ili": "ili-30-14818238-n",
+      "target_gloss": "um composto químico que é adicionado para proteger contra a deterioração ou decomposição\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "quinona": {
+      "display": "quinona",
+      "via": "relation #61",
+      "source_ili": "ili-30-14818238-n",
+      "target_gloss": "qualquer um de uma classe de compostos aromáticos, incluindo vários amarelos que são biologicamente importante como coenzimas ou aceitadores ou vitaminas; utilizado na fabricação de corantes\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "sal": {
+      "display": "sal",
+      "via": "relation #61",
+      "source_ili": "ili-30-14818238-n",
+      "target_gloss": "um composto formado pela substituição de hidrogénio num ácido por um metal (ou de um radical que actue como um metal)\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "nitrato": {
+      "display": "nitrato",
+      "via": "relation #61",
+      "source_ili": "ili-30-14818238-n",
+      "target_gloss": "qualquer composto contendo o grupo nitrato (tal como um sal ou éster do ácido nítrico)\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "cloreto": {
+      "display": "cloreto",
+      "via": "relation #61",
+      "source_ili": "ili-30-14818238-n",
+      "target_gloss": "qualquer composto contendo um átomo de cloro\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "capsaicina": {
+      "display": "capsaicina",
+      "via": "relation #61",
+      "source_ili": "ili-30-14818238-n",
+      "target_gloss": "composto cristalino incolor pungente derivada de capsicum; fonte da gostosura de pimentas do gênero Capsicum, como pimentão e pimenta de caiena e jalapeno\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "aminotransferase": {
+      "display": "aminotransferase",
+      "via": "relation #61",
+      "source_ili": "ili-30-14818238-n",
+      "target_gloss": "uma classe de transferases que catalisam transaminação (que transfere um grupo amino de um aminoácido para outro composto)\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "compor": {
+      "display": "compor",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-14818238-n",
+      "target_gloss": "para compor ou representar: \"esta parede faz o fundo da configuração do palco\"\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "fazer": {
+      "display": "fazer",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-14818238-n",
+      "target_gloss": "para compor ou representar: \"esta parede faz o fundo da configuração do palco\"\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "constituir": {
+      "display": "constituir",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-14818238-n",
+      "target_gloss": "para compor ou representar: \"esta parede faz o fundo da configuração do palco\"\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "formar": {
+      "display": "formar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-14818238-n",
+      "target_gloss": "para compor ou representar: \"esta parede faz o fundo da configuração do palco\"\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "peso": {
+      "display": "peso",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-14818238-n",
+      "target_gloss": "a força vertical exercida por uma massa como um resultado da gravidade\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "dimensao": {
+      "display": "dimensão",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-14818238-n",
+      "target_gloss": "magnitude ou extensão\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "proporcao": {
+      "display": "proporção",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-14818238-n",
+      "target_gloss": "magnitude ou extensão\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "elemento": {
+      "display": "elemento",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-14818238-n",
+      "target_gloss": "qualquer um dos mais de 100 substâncias conhecidas (dos quais 92 ocorrer naturalmente) que não podem ser separados em substâncias mais simples e que constituem isoladamente ou em combinação toda a matéria\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "quimica": {
+      "display": "química",
+      "via": "domain topic",
+      "source_ili": "ili-30-14818238-n",
+      "target_gloss": "a ciência da matéria; o ramo das ciências naturais que lidam com a composição de substâncias e suas propriedades e reações\n",
+      "reason": "relação não-nomeada / #NN"
+    }
+  },
+  "stage4_excluded": {},
+  "stage5": {
+    "admitted": {},
+    "pending": {
+      "composto": {
+        "display": "composto",
+        "offsets": [
+          "ili-30-14818238-n"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2)",
+        "adjudication": null
+      },
+      "acido": {
+        "display": "ácido",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "base": {
+        "display": "base",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "azida": {
+        "display": "azida",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "cianamida": {
+        "display": "cianamida",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "complexo": {
+        "display": "complexo",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "formulacao": {
+        "display": "formulação",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "preparacao": {
+        "display": "preparação",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "formula": {
+        "display": "fórmula",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "hidrato": {
+        "display": "hidrato",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "hidroxido": {
+        "display": "hidróxido",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "nitreto": {
+        "display": "nitreto",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "oxido": {
+        "display": "óxido",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "conservante": {
+        "display": "conservante",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "quinona": {
+        "display": "quinona",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "sal": {
+        "display": "sal",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "nitrato": {
+        "display": "nitrato",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "cloreto": {
+        "display": "cloreto",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      }
+    }
+  },
+  "family": {
+    "compor": {
+      "display": "compor",
+      "via": "derivationally related form",
+      "source_ili": "ili-30-14818238-n",
+      "target_gloss": "criar por mistura ou combinação de\n"
+    }
+  },
+  "skos": {
+    "UF": [],
+    "contraste": [],
+    "RT": []
+  },
+  "provenance": [],
+  "attribute_terms": [],
+  "assertions": [
+    {
+      "stage": "Etapa 1",
+      "text": "Todo o synset admitido tem ili_offset e glosa mapeada ao eixo.",
+      "passed": false,
+      "evidence": "glosa não-ancorada/incompleta: ['ili-30-14818238-n']"
+    },
+    {
+      "stage": "Etapa 1",
+      "text": "Nenhum synset off-axis (exclude) figura na lista branca admitida.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Etapa 1",
+      "text": "A lista branca é persistida por offset ILI e os offsets são únicos.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "ILI",
+      "text": "Nenhum id oewn-/por- é usado como chave de junção; a chave é o ILI.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "ILI",
+      "text": "Synsets sem ili_offset são sinalizados (não descartados em silêncio).",
+      "passed": true,
+      "evidence": "nenhum synset sem ILI no export"
+    },
+    {
+      "stage": "Etapa 2",
+      "text": "Os sinónimos colhidos provêm exclusivamente de synsets admitidos.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Etapa 3",
+      "text": "Alvos de relação são tipados pelo mapeamento; «(no lemma)» nunca admitido.",
+      "passed": true,
+      "evidence": "OK (267 alvos «(no lemma)» descartados)"
+    },
+    {
+      "stage": "Etapa 4",
+      "text": "«(no lemma)», colocações e termos só de relação não-nomeada (sem corroboração) são excluídos.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Etapa 5",
+      "text": "Cada admitido tem estatuto∈{UF,RT,contraste,BT,NT,atributo}, teste decisivo e ≥1 garantia; nomes de qualidade em attribute_bucket.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Garantia",
+      "text": "Termos com garantia «estipulativa» têm definição E relação estrutural.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Consistência",
+      "text": "Nenhum termo é UF de duas classes com owl:disjointWith entre si.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Consistência",
+      "text": "Contrastantes não são serializados como skos:related.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Serialização",
+      "passed": true,
+      "text": "X.skos.ttl analisa com rdflib e tem a contagem de triplos esperada.",
+      "evidence": "triplos esperados=4, analisados=4"
+    }
+  ],
+  "all_passed": false,
+  "skos_triples": 4,
+  "_ttl_ok": true
+}

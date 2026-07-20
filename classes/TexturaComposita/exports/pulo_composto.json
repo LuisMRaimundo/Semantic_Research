@@ -1,0 +1,1341 @@
+{
+  "type": "pulo_thesaurus_search",
+  "query": {
+    "query": "composto",
+    "pos": null,
+    "mode": "Starts with"
+  },
+  "count": 1,
+  "synsets": [
+    {
+      "synset_offset": "por-30-14818238-n",
+      "pos": "n",
+      "gloss": "(Química) uma substância formada por união química de duas ou mais elementos ou ingredientes na proporção definida por peso\n",
+      "synonyms": [
+        "composto"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-14818238-n",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "hyponym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto cristalino encontrada em grãos de baunilha e algumas resinas bálsamo; usado em perfumes e aromas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Química), na formação de uma ligação coordenada é o composto a qual os electrões são doados\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto formado por uma reacção de adição\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer um de vários compostos que são adicionados à gasolina para reduzir motor batendo\n"
+            },
+            {
+              "words": "ácido",
+              "gloss": "qualquer um de vários compostos solúveis em água que têm um gosto amargo e capaz de transformar tornassol vermelho e reagir com uma base para formar um sal\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto de arsénio, com um elemento mais positiva\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um gás altamente venenoso ou de líquidos voláteis que cheira a amêndoas amargas; torna-se um gás em torno de 90 graus Fahrenheit e é mais perigoso quando inalado; o anidrido de ácido cianídrico; utilizado na fabricação\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto caracterizado por um anião activa\n"
+            },
+            {
+              "words": "base",
+              "gloss": "qualquer um de vários compostos solúveis em água, capazes de transformar tornassol azul e reagir com um ácido para formar um sal e de água\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "composto químico composto por apenas dois elementos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma substância cristalina incolor obtida a partir da bílis de mamíferos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto que pode ser convertido a um pigmento\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um óxido de manganês encontrados naturalmente como hausmannite\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto simples cujas moléculas podem se unir para formar polímeros\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer um de uma classe de compostos químicos instáveis ​​resultantes da adição do ozono para uma ligação dupla num composto insaturado\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer composto de carbono e um outro elemento ou um radical\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto inorgânico complexo que contém moléculas de amoníaco\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto formado a partir de um ou mais outros compostos, numa reacção resultando em remoção de água\n"
+            },
+            {
+              "words": "azida",
+              "gloss": "um composto químico que contém o grupo azido combinado com um elemento ou radical\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer uma das várias centenas de compostos que possuem um sabor amargo; não admitir de classificação química\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Química) um composto iônico que resiste a mudanças no seu pH\n"
+            },
+            {
+              "words": "cianamida",
+              "gloss": "um composto utilizado como um fertilizante e como uma fonte de compostos de azoto\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto contendo metal combinado com monóxido de carbono\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um líquido tóxico incolor inflamável (CS2); utilizado no fabrico de raiom e celofane e tetracloreto de carbono e como um solvente para borracha\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma substância (tal como uma co-enzima) que deve unir-se com o outro para produzir um determinado resultado\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto químico que é um componente do aço e ferro fundido; muito duro e frágil\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto insolúvel incolor pesado líquido que provoca lágrimas e vômitos; utilizado como um pesticida e gás como lágrima\n"
+            },
+            {
+              "words": "complexo",
+              "gloss": "um composto descrito em termos de átomo central para que outros átomos estão ligados ou coordenados\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer uma das várias formas cristalinas diferentes de um mesmo composto químico\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma substância que tem a tendência para provocar a corrosão (um forte tais ácidos ou alcalinos)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto de alumina e um óxido metálico\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma substância química que é pulverizada sobre as plantas e faz com que as suas folhas caiam\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um produto químico (geralmente um sulfureto) usado para remover os pêlos ou de lã ou cerdas de couros\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto obtido a partir de, ou considerado como derivado de, outro composto\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto cujas moléculas são compostas de dois monómeros idênticos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto químico que ou corrige alguma coisa (como um corante ou uma imagem fotográfica)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto cristalino incolor que é parte de um conjunto de pigmentos de plantas brancas ou amarelas\n"
+            },
+            {
+              "words": "formulação, preparação, fórmula",
+              "gloss": "uma substância preparada de acordo com uma fórmula\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "ou um de um par de compostos (cristais ou moléculas) que são imagens no espelho uns sobre os outros, mas não são idênticos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto que emite calor durante a sua formação e absorve o calor durante a sua decomposição\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer substância (tais como tiouracilo), que induz a formação de bócio\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto oleoso incolor extraído do alcatrão de carvão e utilizado na fabricação de resinas sintéticas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto produzido artificialmente por meio de reacções químicas\n"
+            },
+            {
+              "words": "hidrato",
+              "gloss": "qualquer composto que contém água de cristalização\n"
+            },
+            {
+              "words": "hidróxido",
+              "gloss": "um composto químico que contém o grupo hidroxilo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma substância que produz um odor perfumado quando queimado\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer composto que não contém carbono\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma substância química que repele animais\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto com o qual os tecidos são tratados para repelir a água\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto que contém iodo covalente radical\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto que existe em formas com diferentes arranjos de átomos, mas o mesmo peso molecular\n"
+            },
+            {
+              "words": "hidróxido",
+              "gloss": "um composto de um óxido com água\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto cristalino que tem o gosto e odor fresco e mentolado que ocorre naturalmente no óleo de hortelã-pimenta; utilizado como um condimento e na medicina para aliviar a coceira, dor e congestão nasal\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto tóxico semelhante a gás mostarda na estrutura; importante no tratamento do câncer\n"
+            },
+            {
+              "words": "nitreto",
+              "gloss": "um composto contendo azoto e um elemento mais electropositivo (tal como um metal ou fósforo)\n"
+            },
+            {
+              "words": "óxido",
+              "gloss": "qualquer composto de oxigénio com outro elemento ou um radical\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto de ocorrência natural ou sintética que consiste de moléculas grandes, constituídos por uma série de monómeros ligados simples repetidas\n"
+            },
+            {
+              "words": "conservante",
+              "gloss": "um composto químico que é adicionado para proteger contra a deterioração ou decomposição\n"
+            },
+            {
+              "words": "quinona",
+              "gloss": "qualquer um de uma classe de compostos aromáticos, incluindo vários amarelos que são biologicamente importante como coenzimas ou aceitadores ou vitaminas; utilizado na fabricação de corantes\n"
+            },
+            {
+              "words": "sal",
+              "gloss": "um composto formado pela substituição de hidrogénio num ácido por um metal (ou de um radical que actue como um metal)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer substância química que queima ou destrói o tecido vivo\n"
+            },
+            {
+              "words": "nitrato",
+              "gloss": "qualquer composto contendo o grupo nitrato (tal como um sal ou éster do ácido nítrico)\n"
+            },
+            {
+              "words": "cloreto",
+              "gloss": "qualquer composto contendo um átomo de cloro\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto contendo um anel heterocíclico\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer um de vários compostos de silício com um elemento mais electropositivo ou radical\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer um de uma grande classe de compostos que têm átomos de silício e oxigénio alternados\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto formado por solvatação (a combinação de moléculas de solvente, com moléculas ou iões de soluto)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma substância química que provoca espirros e tosse e choro\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto químico usado para remover tintas ou vernizes\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto de enxofre e um outro elemento que é mais electropositivo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer composto binário de telúrio com outros elementos mais electropositivos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma substância (tal como a enzima papaína planta) aplicado à carne para tornar mais suave\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer composto que contém quatro átomos de cloro por molécula\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer um dos três compostos isoméricos possuindo três carbonos e três átomos de azoto, em um anel de seis membros\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura impura de óxidos de urânio obtido durante o processamento de minério de urânio\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto vítreo incolor (opacos ou parcialmente opacos) que é fundida com a superfície de metal ou de vidro ou de cerâmica para decoração ou protecção\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto encontrado na urina de mulheres durante certas fases do ciclo menstrual e na urina de mulheres grávidas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": ""
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": ""
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": ""
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": ""
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "assemelhando-se a um composto formado pela substituição de hidrogênio de um ácido por um metal\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "liberando ou ativados pela acetilcolina ou um composto relacionado\n"
+            },
+            {
+              "words": "organicamente",
+              "gloss": "envolvendo os compostos de carbono\n"
+            },
+            {
+              "words": "inorganicamente",
+              "gloss": "não envolvendo os compostos de carbono\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "introduzir o grupo butil em um composto químico\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "para remover o oxigénio a partir de um composto, ou causar a reagir com hidrogénio ou formar um hidreto, ou se submeter a um aumento no número de electrões\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "reduzir (petróleo) para um mais simples composto pelos rachaduras\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "causa (um composto) para polimerizar\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "alterar (um composto) do aumento da proporção da parte electronegativo; ou alteração (ou um elemento de iões) a partir de uma baixa para uma valência superior positivo: remover um ou mais electrões a partir de (um átomo, ião ou molécula)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "sublime (um composto), mais uma vez\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "unir quimicamente para que o produto é facilmente dividido nos compostos originais\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "causa (um composto químico, vapor, solução, material magnético) para unir-se com a maior quantidade possível de outra substância\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "perder cálcio ou compostos de cálcio\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "remover um grupo carboxila (um composto químico)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "tratar com nitrogênio ou um composto de nitrogênio\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "vestir um éster (um composto)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "trata-se com um composto de crómio\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "introdução de um grupo acetilo em (um composto químico)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "tratar (um composto químico) com carboxilo ou ácido carboxílico\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "fazer reagir um composto com água e submetido a hidrólise\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "remover o radical amino (geralmente por hidrólise) a partir de um composto amino; para realizar desaminação\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "submeter a sequestração pela formação de um composto estável com um ião\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "submeter a transferência a partir de um composto para outro\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "alterar (um grupo amino), transferindo-o a partir de um composto para outro\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "converter (uma amina) num composto diazo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "distinguir (como um composto ou molécula) através da introdução de um átomo marcado\n"
+            },
+            {
+              "words": "cíclico",
+              "gloss": "de um composto tendo átomos dispostos em uma estrutura em anel\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "desinfecção da água pela adição de pequenas quantidades de cloro ou um composto de cloro\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "utilizada de um composto (especialmente de carbono) contendo átomos que partilham mais do que uma ligação de valência\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(De compostos de carbono de cadeia longa, especialmente gorduras saturadas), exceto por uma ligação múltipla\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(De compostos de carbono de cadeia longa, especialmente gorduras) que tem muitas ligações insaturadas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(De uma reacção química ou composto) ocorrendo ou formado com a absorção de calor\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(De uma reação química ou composto) que ocorrem ou formado com a libertação de calor\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o estudo de compostos químicos dentro de uma célula por meio de um cytophotometer\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "formada pela união de dois compostos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "ou combinados em constituindo um composto químico\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "de vida livre cocóide a bactéria em forma de bastonete que derivam de energia a partir de oxidação de compostos de enxofre ou de enxofre\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer uma das bactérias no solo que participam do ciclo do nitrogênio; eles oxidam os compostos de amónio em nitritos ou nitratos em nitritos oxidar\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma divisão de plantas baixas que compreende as algas unicelulares e biflageladas que formam compostos ricos em amido\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "de um composto químico com um anel de três membros\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "de um composto químico com um anel com quatro membros\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "de um composto químico com um anel de cinco membros\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "de um composto químico com um anel com seis membros\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "de um composto químico com um anel com sete membros\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "de um composto químico com um anel com oito membros\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "de um composto químico com um anel com nove membros\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "de um composto químico com um anel com dez membros\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "designação ou relativos a um composto em que um componente é fisicamente fechado dentro da estrutura de cristal de outro\n"
+            },
+            {
+              "words": "orgânico",
+              "gloss": "relativas ou pertencentes à classe de compostos químicos, tendo uma base de carbono\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "relativas ou pertencentes à classe de compostos, não tendo uma base de carbono\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto cristalino branco utilizado como um analgésico e também como um antipirético\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto cristalino branco utilizado como um analgésico e também como um antipirético\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "relacionadas com a cristalização de um composto de duas ou mais formas diferentes\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer um dos vários compostos contendo cloro e azoto; utilizado como um anti-séptico em feridas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um fotómetro que pode ser usado para localizar e identificar compostos químicos em uma célula através da medição da intensidade da luz que passa através de secções coradas do citoplasma\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto que é explosivo\n"
+            },
+            {
+              "words": "ingrediente",
+              "gloss": "um componente de uma mistura ou combinação\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto mercurial aplicado topicamente como anti-séptico; Mercurocromo é a marca registrada\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "nome comercial para e contraceptivo oral contendo noretindrona composto progestina\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "anti-séptico que consiste de um composto de proteína e de prata (nome comercial Argyrol)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "nome comercial para um contraceptivo oral contendo mestranol e um composto de progesterona\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto usado na forma de cloridrato de sua como um anestésico local ou da coluna vertebral\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto alucinógeno obtido a partir de um cogumelo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "farmacêutico, consistindo de um composto radioativo usado na terapia de radiação\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma branca cristalina inodora sulfa drogas; o composto da maioria das drogas sulfa\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto cristalino usado na forma de um cloridrato como anestésico local\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "explosivo consistindo de um composto cristalino amarelo que é um derivado de tóxico inflamável de tolueno\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a propriedade de conter sal (tal como um composto ou em solução)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "valência caracterizada pelo compartilhamento de elétrons em um composto químico; o número de pares de electrões de um átomo de partes pode\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer um dos vários intimamente relacionado compostos que são produzidos pela glândula tireóide e são ativos metabolicamente\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Química) lei afirmando que, quando dois elementos podem se combinar para formar mais de um composto as quantidades de um deles, que combina com uma quantidade fixa de outro vai expor uma relação múltipla simples\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "da química orgânica de compostos e processos que ocorrem em organismos; o esforço para compreender a biologia dentro do contexto da química\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a química de compostos que contêm carbono (inicialmente definida como a química de substâncias produzidas por organismos vivos, mas agora estendido às substâncias sintetizadas artificialmente)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a química de compostos que não contêm radicais de hidrocarbonetos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma fórmula química que mostra a relação de elementos em vez de um composto de o número total de átomos\n"
+            },
+            {
+              "words": "isomerização",
+              "gloss": "a conversão de um composto em um isómero do próprio\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "composto cristalino branco usado como aditivo alimentar para realçar o sabor; muitas vezes usado na cozinha chinesa\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Físico e químico britânico que estabeleceu que a água é um composto de hidrogênio e oxigênio e quem calculado a densidade da terra (1731-1810)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Química) a existência de diferentes tipos de cristal do mesmo composto químico\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto cristalino encontrada em grãos de baunilha e algumas resinas bálsamo; usado em perfumes e aromas\n"
+            },
+            {
+              "words": "acetilação",
+              "gloss": "o processo de introdução de um grupo acetilo num composto\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o processo de introdução de um grupo acilo num composto\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "impregnação com amoníaco ou um composto de amoníaco\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "produção de um composto químico por um organismo vivo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "remoção do radical amino de um aminoácido ou outro composto amino\n"
+            },
+            {
+              "words": "descarboxilação",
+              "gloss": "o processo de remoção de um grupo carboxilo de um composto químico (geralmente substituindo-o com hidrogénio)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Química) uma reação em que um elementares desloca substâncias e liberta um elemento constitutivo de um composto\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma reacção química entre os dois compostos em que as partes de cada um são trocadas entre si para formar dois novos compostos (AB CD AD = CB)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma reacção química entre os dois compostos em que o ião positivo de um composto é permutado com o ião positivo de um outro composto\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o processo de obtenção de algo de uma mistura ou composto por meios químicos ou físicos ou mecânicos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um processo metabólico que quebra as gorduras ingeridas em ácidos gordos e glicerol e, em seguida, em compostos mais simples que podem ser utilizados pelas células do organismo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma reacção química em que a água reage com um composto para a produção de outros compostos; envolve a separação de uma ligação e a adição do catião hidrogénio e o anião hidróxido de água\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "em todas as plantas e animais: uma série de reacções enzimáticas em mitocôndrias envolvendo metabolismo oxidativo de compostos de acetilo para produzir compostos de fosfato de alta energia que são a fonte de energia celular\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a oxidação de compostos de amónio em matéria orgânica morta em nitratos e nitritos por bactérias do solo (fazendo azoto disponível para as plantas)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o processo de oxidação; a adição de oxigénio a um composto com uma perda de electrões; ocorre sempre acompanhada pela redução\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "síntese de compostos com a ajuda de energia radiante (especialmente em plantas)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um processo químico que combina diversos monómeros para formar um polímero ou composto polimérico\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um processo químico em que as moléculas de solvente e de moléculas ou iões de o soluto se combinam para formar um composto\n"
+            },
+            {
+              "words": "síntese",
+              "gloss": "o processo de produção de um composto químico (geralmente pela união de compostos químicos mais simples)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o processo de transferência de um grupo amino de um composto para outra\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o processo de transposição de um grupo amino dentro de um composto químico\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Química) a relação entre as quantidades de substâncias que tomam parte numa reacção ou formam um composto (normalmente um rácio de números inteiros)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "intoxicação resultante da ingestão de um composto alcalino (como soda cáustica ou amônia)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Química), na formação de uma ligação coordenada é o composto a qual os electrões são doados\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto formado por uma reacção de adição\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer um de uma classe de compostos químicos altamente reactivos; utilizados no fabrico de resinas e corantes e ácidos orgânicos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer um de vários compostos que são adicionados à gasolina para reduzir motor batendo\n"
+            },
+            {
+              "words": "ácido",
+              "gloss": "qualquer um de vários compostos solúveis em água que têm um gosto amargo e capaz de transformar tornassol vermelho e reagir com uma base para formar um sal\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um hidrocarboneto contendo um ou mais anéis de benzeno que são característicos da série benzeno de compostos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto de arsénio, com um elemento mais positiva\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto caracterizado por um anião activa\n"
+            },
+            {
+              "words": "base",
+              "gloss": "qualquer um de vários compostos solúveis em água, capazes de transformar tornassol azul e reagir com um ácido para formar um sal e de água\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "composto químico composto por apenas dois elementos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um isótopo radioactivo, que é usado em um composto a fim de localizar o mecanismo de uma reacção química\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto em que os átomos de hidrogénio de um hidrocarboneto foram substituídos por bromo e outros átomos de halogéneo; muito estável; usado nos extintores embora se pense que a libertar bromo destrói a camada de ozono\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "compostos com a fórmula CHX3, onde X é um átomo de halogénio\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um elemento metálico muito venenosa que tem três formas alotrópicas; compostos de arsénio e arsênico são usados ​​como herbicidas e inseticidas e várias ligas; encontrado em arsenopyrite e orpiment e realgar\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto sintético derivado de triazina que é largamente utilizado como um herbicida agrícola\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer um dos vários compostos de bário\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um elemento metálico trivalente do grupo das terras raras; constitui compostos que são altamente magnético\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um elemento metálico trivalente do grupo das terras raras; ocorre em conjunto com ítrio; Forma compostos altamente magnéticos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um elemento metálico prateado ceroso macia do grupo de metal alcalino; ocorre abundantemente em compostos naturais (especialmente em água salgada); queimaduras com uma chama amarela e reage violentamente na água; ocorre na água do mar e no halita mineral (sal-gema)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto que pode ser convertido a um pigmento\n"
+            },
+            {
+              "words": "molécula",
+              "gloss": "(Física e química) a unidade estrutural mais simples de um elemento ou composto\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um grafite mineral semelhante a que é valorizado como a principal fonte de molibdênio e seus compostos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto simples cujas moléculas podem se unir para formar polímeros\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer um de uma classe de compostos químicos instáveis ​​resultantes da adição do ozono para uma ligação dupla num composto insaturado\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "gasolina tratada com um composto de chumbo para reduzir choques automóveis\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer um de vários compostos solúveis em água que formam por hidrólise na digestão das proteínas em amino ácidos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto derivado de amónio com átomos de hidrogénio substituídos por grupos orgânicos; utilizados como agentes tensio-activos, desinfectantes, e em drogas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer de um grupo de compostos que são precursores inactivos das enzimas e requerem alguma alteração (tal como a hidrólise de um fragmento que mascara uma enzima activa) de se tornar activa\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto cristalino utilizado como uma droga antitireoidiana no tratamento de bócio\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma base orgânica contendo azoto cristalino incolor; o composto de origem de várias substâncias biologicamente importantes\n"
+            },
+            {
+              "words": "álcool",
+              "gloss": "qualquer um de uma série de compostos de hidroxilo voláteis que são feitos a partir de hidrocarbonetos por destilação\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer composto de carbono e um outro elemento ou um radical\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto derivado de amoníaco, substituindo átomos de hidrogénio por radicais de hidrocarbonetos monovalentes\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um plástico (resina sintética) feita a partir de compostos de grupo amino; utilizado como adesivo e como revestimento para papel e têxteis\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um carbonato de amónio; utilizado no fabrico de sais de cheiro e o fermento em pó e compostos de amónio\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto progestacional sintético usado para tratar o carcinoma do endométrio\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto de progestina (nome comercial Provera) utilizados para tratar perturbações menstruais\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto androgênica contida em medicamentos que são usados ​​para tratar a deficiência de testosterona e câncer de mama feminina e para estimular o crescimento e ganho de peso\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "composto de estrogênio usado para tratar irregularidades menstruais e sintomas da menopausa e para prevenir a gravidez\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto formado a partir de um ou mais outros compostos, numa reacção resultando em remoção de água\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto que é necessário, a fim de refinar o ópio em heroína\n"
+            },
+            {
+              "words": "azida",
+              "gloss": "um composto químico que contém o grupo azido combinado com um elemento ou radical\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto constituído por um anel de quatro átomos de carbono e um átomo de enxofre e um átomo de azoto\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto usado principalmente em medicina veterinária para livrar os animais de criação de parasitas internos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto solúvel em branco (NaHCO3) utilizado em bebidas efervescentes e em pós para levedar, e como um anti-ácido\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer uma das várias centenas de compostos que possuem um sabor amargo; não admitir de classificação química\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Química) um composto iônico que resiste a mudanças no seu pH\n"
+            },
+            {
+              "words": "cianamida",
+              "gloss": "um composto utilizado como um fertilizante e como uma fonte de compostos de azoto\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto contendo metal combinado com monóxido de carbono\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compostos de carbono 1 e 4 moléculas de halogéneo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto químico que é um componente do aço e ferro fundido; muito duro e frágil\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto insolúvel incolor pesado líquido que provoca lágrimas e vômitos; utilizado como um pesticida e gás como lágrima\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer um dos vários pigmentos amarelos que consistem de cromato de chumbo normal e outros compostos de chumbo\n"
+            },
+            {
+              "words": "complexo",
+              "gloss": "um composto descrito em termos de átomo central para que outros átomos estão ligados ou coordenados\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer uma das várias formas cristalinas diferentes de um mesmo composto químico\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto de alumina e um óxido metálico\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "composto cristalino branco que ocorre naturalmente como o gibbsite mineral\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o grupo monovalente -CN num composto químico\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto cujas moléculas são compostas de dois monómeros idênticos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto utilizado na análise de um precipitante para o paládio ou níquel\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto (como o etanol ou formaldeído) que corrige tecidos e células para estudo microscópico\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto químico que ou corrige alguma coisa (como um corante ou uma imagem fotográfica)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "ou um de um par de compostos (cristais ou moléculas) que são imagens no espelho uns sobre os outros, mas não são idênticos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto que emite calor durante a sua formação e absorve o calor durante a sua decomposição\n"
+            },
+            {
+              "words": "glicosídeos",
+              "gloss": "um grupo de compostos derivados de monossacáridos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto cristalino translúcido encontrado em cana-de-açúcar e beterraba de açúcar e uvas verdes\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma proteína conjugada ligada a um composto de ferro e de porfirina\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto oleoso incolor extraído do alcatrão de carvão e utilizado na fabricação de resinas sintéticas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto produzido artificialmente por meio de reacções químicas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um de vários compostos de carbono e qualquer um dos átomos de halogénio\n"
+            },
+            {
+              "words": "hidrato",
+              "gloss": "qualquer composto que contém água de cristalização\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto utilizado como um agente de fixação no desenvolvimento fotográfico\n"
+            },
+            {
+              "words": "hidróxido",
+              "gloss": "um composto químico que contém o grupo hidroxilo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o grupo monovalente -OH em compostos tais como bases e alguns ácidos e álcoois\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer composto que não contém carbono\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto com o qual os tecidos são tratados para repelir a água\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto que contém iodo covalente radical\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto que contém dois átomos de enxofre combinado com ferro\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto que existe em formas com diferentes arranjos de átomos, mas o mesmo peso molecular\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma cetona que é um produto intermediário da quebra de gorduras no corpo; qualquer um dos três compostos (ácido acetoacetic, acetona, e / ou ácido beta-hidroxibutírico) encontrados em excesso no sangue e na urina de pessoas com transtornos metabólicos\n"
+            },
+            {
+              "words": "hidróxido",
+              "gloss": "um composto de um óxido com água\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto cristalino incolor encontrado em frutas verdes (como maçãs ou tomates ou cerejas) e usado principalmente para fazer resinas de poliéster\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma enzima que catalisa a oxidação de vários compostos orgânicos (por exemplo, epinefrina e norepinefrina e serotonina)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um hidrato que contém uma molécula de água por molécula do composto\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um gás tóxico guerra com compostos à base de sulfeto de que levanta bolhas e ataca os olhos e pulmões; não há antídoto conhecido\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto tóxico semelhante a gás mostarda na estrutura; importante no tratamento do câncer\n"
+            },
+            {
+              "words": "nitreto",
+              "gloss": "um composto contendo azoto e um elemento mais electropositivo (tal como um metal ou fósforo)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer um de uma série de agentes nervosos contendo compostos organofosforados primeiro sintetizados por químicos alemães em 1936; na Segunda Guerra Mundial, os alemães testou-os em campos de concentração, mas não no campo de batalha; Iraque é acusado de tê-los usado contra o Irã e contra os curdos\n"
+            },
+            {
+              "words": "óxido",
+              "gloss": "qualquer composto de oxigénio com outro elemento ou um radical\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer composto contendo o grupo -C = NOH\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer de um grupo de enzimas (que ocorrem especialmente em células vegetais) que catalisam a oxidação de um composto por um peróxido\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer composto obtido a partir do petróleo ou do gás natural\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer um de vários compostos constituídos por ácidos gordos e ácido fosfórico e uma base azotada; um componente importante das membranas\n"
+            },
+            {
+              "words": "alizarina",
+              "gloss": "um composto cristalino cor de laranja-vermelho utilizado na fabricação de pigmentos vermelhos e no tingimento\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto de ocorrência natural ou sintética que consiste de moléculas grandes, constituídos por uma série de monómeros ligados simples repetidas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto de cianeto, que é preparado pela reacção de cianeto de potássio com sais ferrosos; comumente usados ​​por jardineiros\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto de potássio frequentemente utilizado na agricultura e indústria\n"
+            },
+            {
+              "words": "conservante",
+              "gloss": "um composto químico que é adicionado para proteger contra a deterioração ou decomposição\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer um dos vários compostos básicos derivados da pirimidina\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto amargo usado como inseticida e tônico e vermífugo; extraído da madeira e casca de árvores do gênero Quassia ePicrasma\n"
+            },
+            {
+              "words": "quinona",
+              "gloss": "qualquer um de uma classe de compostos aromáticos, incluindo vários amarelos que são biologicamente importante como coenzimas ou aceitadores ou vitaminas; utilizado na fabricação de corantes\n"
+            },
+            {
+              "words": "sal",
+              "gloss": "um composto formado pela substituição de hidrogénio num ácido por um metal (ou de um radical que actue como um metal)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um cáustica fortemente alcalina utilizada na fabricação de diversos compostos de sódio e sabão de papel e alumínio e\n"
+            },
+            {
+              "words": "nitrato",
+              "gloss": "qualquer composto contendo o grupo nitrato (tal como um sal ou éster do ácido nítrico)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o radical -NO2 ou qualquer composto que o contém (tal como um sal ou éster de ácido nitroso)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer composto que contém três átomos de cloro em cada molécula\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto que contém dois átomos de cloro por molécula\n"
+            },
+            {
+              "words": "cloreto",
+              "gloss": "qualquer composto contendo um átomo de cloro\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto contendo um anel heterocíclico\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma proteína incolor obtido por remoção do heme da hemoglobina; o transporte de oxigênio composto nas células vermelhas do sangue\n"
+            },
+            {
+              "words": "capsaicina",
+              "gloss": "composto cristalino incolor pungente derivada de capsicum; fonte da gostosura de pimentas do gênero Capsicum, como pimentão e pimenta de caiena e jalapeno\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma família de compostos derivados de rábano e rabanetes e cebolas e mostardas; fonte da sesta dessas plantas e preparações\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer um de vários compostos de silício com um elemento mais electropositivo ou radical\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um azul-preto composto cristalino extremamente duro (SiC), utilizado como um abrasivo e um material refratário de calor; cristais de carboneto de silício pode ser usado como semicondutores\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto de silicone polimérico\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer um de uma grande classe de compostos que têm átomos de silício e oxigénio alternados\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto formado por solvatação (a combinação de moléculas de solvente, com moléculas ou iões de soluto)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto químico usado para remover tintas ou vernizes\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto de enxofre e um outro elemento que é mais electropositivo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer composto que contém quatro átomos de cloro por molécula\n"
+            },
+            {
+              "words": "aminotransferase",
+              "gloss": "uma classe de transferases que catalisam transaminação (que transfere um grupo amino de um aminoácido para outro composto)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer uma das várias enzimas que se movem um grupo químico de um composto noutro composto\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer um dos três compostos isoméricos possuindo três carbonos e três átomos de azoto, em um anel de seis membros\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "gasolina que não tenha sido tratada com um composto de chumbo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um termoplástico obtido por polimerização a partir de compostos contendo o grupo vinil\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a água presente nos compostos hidratados\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um composto encontrado na urina de mulheres durante certas fases do ciclo menstrual e na urina de mulheres grávidas\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "compor",
+              "gloss": "criar por mistura ou combinação de\n"
+            },
+            {
+              "words": "compor",
+              "gloss": "criar por mistura ou combinação de\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "material produzido por ou usados ​​em uma reação que envolve mudanças em átomos ou moléculas\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "compor, fazer, constituir, formar",
+              "gloss": "para compor ou representar: \"esta parede faz o fundo da configuração do palco\"\n"
+            },
+            {
+              "words": "ingrediente",
+              "gloss": "um componente de uma mistura ou combinação\n"
+            },
+            {
+              "words": "peso",
+              "gloss": "a força vertical exercida por uma massa como um resultado da gravidade\n"
+            },
+            {
+              "words": "dimensão, proporção",
+              "gloss": "magnitude ou extensão\n"
+            },
+            {
+              "words": "elemento",
+              "gloss": "qualquer um dos mais de 100 substâncias conhecidas (dos quais 92 ocorrer naturalmente) que não podem ser separados em substâncias mais simples e que constituem isoladamente ou em combinação toda a matéria\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "material produzido por ou usados ​​em uma reação que envolve mudanças em átomos ou moléculas\n"
+            }
+          ]
+        },
+        {
+          "relation": "domain topic",
+          "targets": [
+            {
+              "words": "química",
+              "gloss": "a ciência da matéria; o ramo das ciências naturais que lidam com a composição de substâncias e suas propriedades e reações\n"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
