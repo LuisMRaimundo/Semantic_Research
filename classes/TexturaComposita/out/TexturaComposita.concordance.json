@@ -1,127 +1,91 @@
 {
   "class": "TexturaComposita",
   "policy": "conservative",
-  "generated": "2026-07-18T19:59:10",
+  "generated": "2026-07-27T12:39:53",
   "columns": [
     "ONTO",
     "PULO",
+    "OWN-PT",
     "WordNet"
   ],
   "sources": [
     "PULO",
-    "ONTO",
+    "OWN-PT",
     "WordNet"
   ],
-  "ili_equivalence_map": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\classes\\TexturaComposita\\out\\ili_equivalence.json",
+  "ili_equivalence_map": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\classes\\TexturaComposita\\out\\ili_equivalence.cili.json",
   "ili_equivalence_counts": {
-    "mapped": 2,
+    "mapped": 30,
     "review": 0,
-    "unmatched": 9
+    "unmatched": 27
   },
   "ili_equivalence_loaded": true,
   "concepts": [
     {
-      "term": "Composição",
-      "ili": [
-        "oewn-ili:i67721"
-      ],
-      "sources": {
-        "ONTO": "—",
-        "PULO": "—",
-        "WordNet": "sinalizacao"
-      },
-      "join": "single",
-      "veredicto": "sinalização",
-      "proposta_final": null,
-      "unmapped_flag": false,
-      "status_projection": {},
-      "divergences": [],
-      "union_of_provenance": [
-        "WordNet:sinalização(atestado na WordNet [pt_lemma (ILI)] · oewn-05878802-n · ILI i67721)"
-      ],
-      "notes": [
-        "WordNet: atestado na WordNet [pt_lemma (ILI)] · oewn-05878802-n · ILI i67721"
-      ]
-    },
-    {
       "term": "composto",
       "ili": [
-        "oewn-ili:i67721"
+        "ili-30-14818238-n"
       ],
       "sources": {
         "ONTO": "—",
-        "PULO": "—",
-        "WordNet": "sinalizacao"
+        "PULO": "UF",
+        "OWN-PT": "—",
+        "WordNet": "—"
       },
       "join": "single",
-      "veredicto": "sinalização",
-      "proposta_final": null,
+      "veredicto": "fonte única",
+      "proposta_final": "UF",
       "unmapped_flag": false,
       "status_projection": {},
       "divergences": [],
       "union_of_provenance": [
-        "WordNet:sinalização(atestado na WordNet [pt_lemma (ILI)] · oewn-05878802-n · ILI i67721)"
+        "PULO:seed (Etapa 1/2)"
       ],
-      "notes": [
-        "WordNet: atestado na WordNet [pt_lemma (ILI)] · oewn-05878802-n · ILI i67721"
-      ]
-    },
-    {
-      "term": "composto químico",
-      "ili": [
-        "oewn-ili:i114921"
-      ],
-      "sources": {
-        "ONTO": "—",
-        "PULO": "—",
-        "WordNet": "sinalizacao"
-      },
-      "join": "single",
-      "veredicto": "sinalização",
-      "proposta_final": null,
-      "unmapped_flag": false,
-      "status_projection": {},
-      "divergences": [],
-      "union_of_provenance": [
-        "WordNet:sinalização(atestado na WordNet [pt_lemma (ILI)] · oewn-14842408-n · ILI i114921)"
-      ],
-      "notes": [
-        "WordNet: atestado na WordNet [pt_lemma (ILI)] · oewn-14842408-n · ILI i114921"
-      ]
-    },
-    {
-      "term": "substância química",
-      "ili": [
-        "oewn-ili:i114921"
-      ],
-      "sources": {
-        "ONTO": "—",
-        "PULO": "—",
-        "WordNet": "sinalizacao"
-      },
-      "join": "single",
-      "veredicto": "sinalização",
-      "proposta_final": null,
-      "unmapped_flag": false,
-      "status_projection": {},
-      "divergences": [],
-      "union_of_provenance": [
-        "WordNet:sinalização(atestado na WordNet [pt_lemma (ILI)] · oewn-14842408-n · ILI i114921)"
-      ],
-      "notes": [
-        "WordNet: atestado na WordNet [pt_lemma (ILI)] · oewn-14842408-n · ILI i114921"
-      ]
+      "notes": []
     }
   ],
   "summary": {
     "veredicto_totals": {
-      "sinalização": 4
+      "fonte única": 1
     },
-    "descartados_pendentes": 17,
+    "descartados_pendentes": 0,
     "convergencia_plena": [],
+    "convergencia_sentido": [],
     "convergencia_termo": [],
     "divergences": [],
-    "fonte_unica": []
+    "fonte_unica": [
+      "composto"
+    ],
+    "auto_contrast_coverage": {
+      "per_source": {
+        "PULO": {
+          "antonyms_auto": 0,
+          "exposes_antonymy": false,
+          "note": "fonte sem antonímia consultável (esperado)",
+          "terms": []
+        },
+        "OWN-PT": {
+          "antonyms_auto": 0,
+          "exposes_antonymy": true,
+          "note": "antonímia consultável (OEWN)",
+          "terms": []
+        },
+        "WordNet": {
+          "antonyms_auto": 0,
+          "exposes_antonymy": true,
+          "note": "antonímia consultável (OEWN)",
+          "terms": []
+        }
+      },
+      "anchored_ilis_total": 1,
+      "anchored_ilis_with_auto_contrast": [],
+      "anchored_ilis_without_auto_contrast": [
+        "ili-30-14818238-n"
+      ],
+      "sources_without_antonymy": [
+        "PULO"
+      ]
+    }
   },
   "assertions": [
     {
@@ -138,7 +102,7 @@
     },
     {
       "id": "T3",
-      "text": "Nenhum ILI é fabricado; mapeamento só pela tabela declarada; pares não-mapeados são flagueados.",
+      "text": "Nenhum ILI é fabricado; junção OEWN↔PULO só via CILI; pares sem âncora CILI ficam sem junção ILI (não fabricados).",
       "passed": true,
       "evidence": "bogus→(None, False); unmapped_flag=False"
     },
@@ -150,9 +114,9 @@
     },
     {
       "id": "T5",
-      "text": "Termo de fonte única aparece como «fonte única» e nenhum termo admitido é descartado.",
+      "text": "Nenhum termo admitido pelos motores é descartado da matriz (PULO; OWN-PT/WordNet corroboram; Onto = descoberta)",
       "passed": true,
-      "evidence": "OK"
+      "evidence": "1 admitidos / 1 em matriz"
     },
     {
       "id": "T6",
@@ -174,7 +138,13 @@
     },
     {
       "id": "T10",
-      "text": "«Convergência plena» exige junção por ILI (o conjunto mais defensável nunca assenta só em weak(term)).",
+      "text": "«Convergência plena» / «convergência (sentido)» exigem junção por ILI (nunca só weak(term)).",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "id": "T10b",
+      "text": "Convergência ILI PULO↔OWN-PT marca sempre recursos_derivados:«PWN».",
       "passed": true,
       "evidence": "OK"
     },
@@ -188,7 +158,19 @@
       "id": "T9",
       "text": "concordance.json faz round-trip (contagens de term/ili estáveis).",
       "passed": true,
-      "evidence": "4 conceitos"
+      "evidence": "1 conceitos"
+    },
+    {
+      "id": "T13",
+      "text": "Nenhuma célula nem proposta_final com valor «contraste» na matriz (migração completa: ver teste unitário de decisions).",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "id": "T12",
+      "text": "Nenhum item do bloco de evidência figura no bloco de vocabulário, e vice-versa.",
+      "passed": true,
+      "evidence": "blocos A/B disjuntos"
     }
   ],
   "all_passed": true

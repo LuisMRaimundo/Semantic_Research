@@ -1,0 +1,27 @@
+{
+  "class_id": "TexturaComposita",
+  "generated": "2026-07-27T11:39:53.627026+00:00",
+  "cili_version": "cili@upstream-master+pwn30+pwn31+wn.ili",
+  "legacy_table": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\classes\\TexturaComposita\\out\\ili_equivalence.json",
+  "confirmed": [
+    {
+      "oewn_ili": "i114921",
+      "pulo_ili": "ili-30-14818238-n",
+      "source": "cili:cili@eeab8003 (master, 2016-01-26)",
+      "human": false,
+      "cili_id": "i114921"
+    }
+  ],
+  "diverged": [
+    {
+      "oewn_ili": "i67721",
+      "pulo_ili": "ili-30-14818238-n",
+      "source": "human-adjudicated (GUI Ponte ILI)",
+      "human": true,
+      "cili_oewn": "i67721",
+      "cili_pulo": "i114921"
+    }
+  ],
+  "legacy_without_cili": [],
+  "note": "Pares humanos confirmados pelo CILI são cobertos pelo map automático. Pares que divergem NÃO são aplicados — só listados aqui."
+}

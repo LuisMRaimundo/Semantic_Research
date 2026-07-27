@@ -28,13 +28,21 @@ class OntoStore:
             self._conn = None
 
     def resource_names(self) -> dict[str, str]:
+        """Map resource code → display name (schema: resource.code / .name)."""
         try:
             rows = self.connect().execute(
-                "SELECT res, label FROM resource ORDER BY res"
+                "SELECT code AS res, name AS label FROM resource ORDER BY code"
             ).fetchall()
             return {r["res"]: r["label"] for r in rows}
         except sqlite3.Error:
-            return {}
+            try:
+                # older schema fallback
+                rows = self.connect().execute(
+                    "SELECT res, label FROM resource ORDER BY res"
+                ).fetchall()
+                return {r["res"]: r["label"] for r in rows}
+            except sqlite3.Error:
+                return {}
 
     def search(self, query: str, res: Optional[str] = None, pos: Optional[str] = None,
                mode: str = "Starts with", limit: int = 200) -> list[sqlite3.Row]:

@@ -1,0 +1,133 @@
+{
+  "type": "oewn_facets",
+  "term": "composed",
+  "pos": "Todas",
+  "language": "English",
+  "class_id": "TexturaComposita",
+  "generated": "2026-07-26T22:27:55",
+  "count": 1,
+  "facets": [
+    "synsets_relations"
+  ],
+  "source": {
+    "lexicon": "oewn",
+    "backend": "wn",
+    "alignment": "ILI via translate()",
+    "via": "semantic.adapters.wordnet (workbench)",
+    "pt_coverage": "1/1 synsets com pt_lemmas"
+  },
+  "synsets": [
+    {
+      "name": "oewn-00531471-a",
+      "ili": "i2968",
+      "pos": "a",
+      "definition": "serenely self-possessed and free from agitation especially in times of stress",
+      "examples": [
+        "the performer seemed completely composed as she stepped onto the stage",
+        "I felt calm and more composed than I had in a long time"
+      ],
+      "lemmas": [
+        "composed"
+      ],
+      "pt_lemmas": [
+        "constituído"
+      ],
+      "hypernyms": [],
+      "hyponyms": [],
+      "relations": {
+        "antonym": [
+          {
+            "id": "oewn-00533547-a",
+            "ili": "i2974",
+            "words": [
+              "discomposed"
+            ],
+            "gloss": "having your composure disturbed"
+          }
+        ],
+        "derivationally_related_form": [],
+        "similar_to": [
+          {
+            "id": "oewn-00531862-s",
+            "ili": "i2969",
+            "words": [
+              "calm",
+              "unagitated",
+              "serene",
+              "tranquil"
+            ],
+            "gloss": "not agitated; without losing self-possession"
+          },
+          {
+            "id": "oewn-00532252-s",
+            "ili": "i2970",
+            "words": [
+              "imperturbable",
+              "unflappable"
+            ],
+            "gloss": "not easily perturbed or excited or upset; marked by extreme calm and composure"
+          },
+          {
+            "id": "oewn-00532559-s",
+            "ili": "i2971",
+            "words": [
+              "collected",
+              "equanimous",
+              "poised",
+              "self-collected",
+              "self-contained",
+              "self-possessed"
+            ],
+            "gloss": "in full control of your faculties"
+          },
+          {
+            "id": "oewn-00532977-s",
+            "ili": "i2972",
+            "words": [
+              "cool",
+              "coolheaded",
+              "nerveless"
+            ],
+            "gloss": "marked by calm self-control (especially in trying circumstances); unemotional"
+          },
+          {
+            "id": "oewn-00533292-s",
+            "ili": "i2973",
+            "words": [
+              "unflurried",
+              "unflustered",
+              "unperturbed",
+              "unruffled"
+            ],
+            "gloss": "free from emotional agitation or nervous tension"
+          }
+        ],
+        "attribute": [],
+        "also_see": [
+          {
+            "id": "oewn-00755046-a",
+            "ili": "i4159",
+            "words": [
+              "dignified"
+            ],
+            "gloss": "having or expressing dignity; especially formality or stateliness in bearing or appearance"
+          },
+          {
+            "id": "oewn-00087837-a",
+            "ili": "i459",
+            "words": [
+              "unagitated"
+            ],
+            "gloss": "not agitated or disturbed emotionally"
+          }
+        ]
+      }
+    }
+  ],
+  "similarity": {
+    "pairs": [],
+    "note": "omitted in workbench search"
+  },
+  "hierarchy": {},
+  "visualization": {}
+}

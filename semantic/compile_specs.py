@@ -1,13 +1,23 @@
-"""Compile decisions.json + class.json → engine specs (PULO / ONTO)."""
+"""Compile decisions.json + class.json → engine specs (PULO / ONTO).
+
+Corte 2: adjudication is DERIVED from sense-level decisions (UF > RT).
+terms[].status is read for legacy only — never required for admission.
+test/guarantee are not admission gates (filled as placeholders for engines).
+"""
 
 from __future__ import annotations
 
 import json
 from pathlib import Path
-from typing import Any
+from typing import Any, Optional
 
+from .decisions import EVIDENCIA, VOCABULARIO, load_decisions
 from .normalize import fold, normalize_word
 from .workspace import ClassWorkspace
+
+_ENGINE_SENSE = frozenset({"UF", "RT", "exclude"})
+_ENGINE_TERM = frozenset({"UF", "RT", "BT", "NT"})
+_RANK = {"UF": 2, "RT": 1}
 
 
 def _axis_terms(meta: dict, decisions: dict) -> list[str]:
@@ -19,7 +29,6 @@ def _axis_terms(meta: dict, decisions: dict) -> list[str]:
         if (s.get("decision") or "").upper() in ("UF", "RT"):
             for m in s.get("members") or []:
                 stems.append(fold(m))
-    # unique preserve order
     seen = set()
     out = []
     for t in stems:
@@ -29,59 +38,97 @@ def _axis_terms(meta: dict, decisions: dict) -> list[str]:
     return out
 
 
-def compile_pulo_spec(ws: ClassWorkspace) -> dict[str, Any]:
-    meta = ws.load_meta()
-    dec = json.loads(ws.decisions_json.read_text(encoding="utf-8"))
-    whitelist = []
-    for s in dec.get("senses", []):
-        if s.get("source") != "pulo":
+def _derive_adjudication_from_senses(
+    senses: list[dict],
+    source_filter: str,
+) -> dict[str, dict]:
+    """Build engine adjudication from sense members. UF beats RT on conflict."""
+    adjudication: dict[str, dict] = {}
+    for s in senses:
+        if (s.get("source") or "").lower() != source_filter:
             continue
         decision = (s.get("decision") or "").strip()
-        if not decision:
+        if decision not in VOCABULARIO:
             continue
-        # map atributo on sense → UF on sense + attribute terms handled below
-        eng_decision = decision
-        if decision == "atributo":
-            eng_decision = "UF"
-        elif decision == "contraste":
-            eng_decision = "exclude"  # contrast via term adjudication / relations
-        whitelist.append({
-            "ili_offset": s.get("ili") or (s["key"] if str(s["key"]).startswith("ili-") else None),
-            "glosa": s.get("gloss") or "",
-            "decision": eng_decision if eng_decision in ("UF", "RT", "exclude") else "exclude",
-            "members": list(s.get("members") or []),
-        })
+        for m in s.get("members") or []:
+            term = (m or "").strip()
+            if not term:
+                continue
+            key = normalize_word(term)
+            prev = adjudication.get(key)
+            if prev and _RANK.get(prev["status"], 0) > _RANK.get(decision, 0):
+                continue
+            adjudication[key] = {
+                "status": decision,
+                "test": "derivado do sentido (PASSO 3)",
+                "guarantee": ["sense_decision"],
+                "definition": "",
+                "structural": "",
+                "from_sense": s.get("key"),
+            }
+    return adjudication
 
-    attribute_bucket = []
-    adjudication = {}
-    for t in dec.get("terms", []):
+
+def _merge_legacy_terms(adjudication: dict, dec: dict) -> None:
+    """Read-only legacy terms[]: fill gaps only, never override sense-derived UF."""
+    for t in dec.get("terms") or []:
         term = t.get("term") or ""
         status = (t.get("status") or "").strip()
-        if not term or not status:
+        if not term or not status or status not in _ENGINE_TERM:
             continue
-        if status == "atributo":
-            attribute_bucket.append(normalize_word(term))
-        adjudication[normalize_word(term)] = {
-            "status": status if status != "exclude" else "exclude",
-            "test": t.get("note") or "",
-            "guarantee": t.get("guarantee") or ["lexical"],
+        if status in EVIDENCIA:
+            continue
+        key = normalize_word(term)
+        if key in adjudication:
+            continue  # sense-derived wins
+        adjudication[key] = {
+            "status": status,
+            "test": t.get("note") or "legado terms[] (somente leitura)",
+            "guarantee": t.get("guarantee") or ["legacy"],
             "definition": t.get("definition") or "",
             "structural": t.get("structural") or "",
         }
 
-    # promote sense-level atributo members into attribute_bucket
-    for s in dec.get("senses", []):
-        if s.get("source") == "pulo" and (s.get("decision") or "") == "atributo":
-            for m in s.get("members") or []:
-                attribute_bucket.append(normalize_word(m))
 
-    # dedupe attribute bucket
-    seen = set()
-    attr = []
-    for a in attribute_bucket:
-        if a and a not in seen:
-            seen.add(a)
-            attr.append(a)
+def _known_class_ids(meta: dict) -> set[str]:
+    """Class registry ids referenced from this class sheet (no hardcodes)."""
+    out = {fold(meta.get("class_id") or "")}
+    for k in (meta.get("disjoint_classes") or {}):
+        out.add(fold(str(k)))
+    sc = meta.get("superclass")
+    if sc:
+        out.add(fold(str(sc)))
+    for t in meta.get("control_axes") or []:
+        if isinstance(t, dict) and t.get("eixo"):
+            out.add(fold(str(t["eixo"])))
+        elif isinstance(t, str):
+            out.add(fold(t))
+    # Also scan sibling class folders when available
+    try:
+        from . import settings as _settings
+        root = _settings.CLASSES_DIR
+        if root.exists():
+            for p in root.glob("*/class.json"):
+                out.add(fold(p.parent.name))
+    except OSError:
+        pass
+    out.discard("")
+    return out
+
+
+def _enrich_manual(adjudication: dict, dec: dict, meta: Optional[dict] = None) -> list:
+    """Manual terms are NOT auto-UF. Only explicit admit status enters adjudication.
+
+    Evidence statuses, or structural links to another ontology class, stay out
+    of the admit pool (they surface later as R3 cross-checks if needed).
+    """
+    meta = meta or {}
+    class_ids = _known_class_ids(meta)
+    evidence_keys = set()
+    for t in dec.get("terms") or []:
+        st = (t.get("status") or "").strip()
+        if st in EVIDENCIA or (t.get("destino") or "") == "evidencia":
+            evidence_keys.add(normalize_word(t.get("term") or ""))
 
     manual = []
     for m in dec.get("manual_terms") or []:
@@ -90,17 +137,64 @@ def compile_pulo_spec(ws: ClassWorkspace) -> dict[str, Any]:
         if not term:
             continue
         key = normalize_word(term)
+        status = (m.get("status") or "").strip()
+        structural = fold(m.get("structural") or "")
+        if key in evidence_keys or status in EVIDENCIA:
+            continue
+        if structural and structural in class_ids and structural != fold(
+            meta.get("class_id") or ""
+        ):
+            # Stipulated against another class — evidence, not UF.
+            continue
+        if status not in _ENGINE_TERM:
+            # No silent default to UF.
+            continue
         if key not in adjudication:
             adjudication[key] = {
-                "status": "contraste",
-                "test": "",
-                "guarantee": list(m.get("provenance") or ["estipulativa"]),
+                "status": status,
+                "test": "manual_terms",
+                "guarantee": (
+                    ["estipulativa"]
+                    if (m.get("definition") and m.get("structural"))
+                    else ["manual"]
+                ),
                 "definition": m.get("definition") or "",
                 "structural": m.get("structural") or "",
             }
         else:
             adjudication[key].setdefault("definition", m.get("definition") or "")
             adjudication[key].setdefault("structural", m.get("structural") or "")
+            if m.get("definition") and m.get("structural"):
+                adjudication[key]["guarantee"] = ["estipulativa"]
+    return manual
+
+
+def compile_pulo_spec(ws: ClassWorkspace) -> dict[str, Any]:
+    meta = ws.load_meta()
+    dec = load_decisions(ws.decisions_json)
+    whitelist = []
+    for s in dec.get("senses", []):
+        if s.get("source") != "pulo":
+            continue
+        decision = (s.get("decision") or "").strip()
+        if not decision:
+            continue
+        if decision in EVIDENCIA and decision != "exclude":
+            continue
+        if decision not in _ENGINE_SENSE:
+            continue
+        whitelist.append({
+            "ili_offset": s.get("ili") or (
+                s["key"] if str(s["key"]).startswith("ili-") else None
+            ),
+            "glosa": s.get("gloss") or "",
+            "decision": decision,
+            "members": list(s.get("members") or []),
+        })
+
+    adjudication = _derive_adjudication_from_senses(dec.get("senses") or [], "pulo")
+    _merge_legacy_terms(adjudication, dec)
+    manual = _enrich_manual(adjudication, dec, meta)
 
     return {
         "class_id": ws.class_id,
@@ -111,20 +205,25 @@ def compile_pulo_spec(ws: ClassWorkspace) -> dict[str, Any]:
         "stage1_whitelist": whitelist,
         "dictionary_attestations": [],
         "manual_terms": manual,
-        "attribute_bucket": attr,
+        "attribute_bucket": [],
         "exclude_terms": [normalize_word(x) for x in (dec.get("exclude_terms") or [])],
         "adjudication": adjudication,
         "disjoint_classes": dict(meta.get("disjoint_classes") or {}),
         "_provenance": {
             "finalizer": "semantic_research.compile_pulo_spec",
-            "source": "decisions.json",
+            "source": "decisions.json senses (Corte 2)",
         },
     }
 
 
 def compile_onto_spec(ws: ClassWorkspace) -> dict[str, Any]:
+    """Onto.PT discovery-only (Corte 3): whitelist for triage artefacts.
+
+    Adjudication is still compiled so local reports work, but the pipeline
+    does not feed ONTO admits into LexWarrant / TERMOS convergencia.
+    """
     meta = ws.load_meta()
-    dec = json.loads(ws.decisions_json.read_text(encoding="utf-8"))
+    dec = load_decisions(ws.decisions_json)
     whitelist = []
     for s in dec.get("senses", []):
         if s.get("source") != "onto":
@@ -132,33 +231,19 @@ def compile_onto_spec(ws: ClassWorkspace) -> dict[str, Any]:
         decision = (s.get("decision") or "").strip()
         if not decision:
             continue
-        # Onto engine uses UF / RT / contraste / exclude (no atributo)
-        eng = decision
-        if decision == "atributo":
-            eng = "UF"
+        if decision in EVIDENCIA and decision != "exclude":
+            continue
+        if decision not in _ENGINE_SENSE:
+            continue
         whitelist.append({
-            "ili_offset": s.get("key"),  # resource:sid convention in Onto specs
+            "ili_offset": s.get("key"),
             "glosa": s.get("gloss") or "",
-            "decision": eng if eng in ("UF", "RT", "contraste", "exclude") else "exclude",
+            "decision": decision,
             "members": list(s.get("members") or []),
         })
 
-    adjudication = {}
-    for t in dec.get("terms", []):
-        term = t.get("term") or ""
-        status = (t.get("status") or "").strip()
-        if not term or not status:
-            continue
-        st = "contraste" if status == "contraste" else status
-        if st == "atributo":
-            st = "UF"
-        adjudication[normalize_word(term)] = {
-            "status": st,
-            "test": t.get("note") or "",
-            "guarantee": t.get("guarantee") or ["lexical"],
-            "definition": t.get("definition") or "",
-            "structural": t.get("structural") or "",
-        }
+    adjudication = _derive_adjudication_from_senses(dec.get("senses") or [], "onto")
+    _merge_legacy_terms(adjudication, dec)
 
     stems = list(meta.get("focus_stems") or [])
     if not stems:
@@ -179,7 +264,8 @@ def compile_onto_spec(ws: ClassWorkspace) -> dict[str, Any]:
         "disjoint_classes": dict(meta.get("disjoint_classes") or {}),
         "_provenance": {
             "finalizer": "semantic_research.compile_onto_spec",
-            "source": "decisions.json",
+            "source": "decisions.json senses (Onto discovery)",
+            "admission": False,
         },
     }
 
@@ -190,11 +276,15 @@ def write_specs(ws: ClassWorkspace) -> dict[str, Path]:
     pulo = compile_pulo_spec(ws)
     if pulo.get("stage1_whitelist"):
         p = ws.specs / f"{ws.class_id}.pulo.json"
-        p.write_text(json.dumps(pulo, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        p.write_text(
+            json.dumps(pulo, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+        )
         paths["pulo"] = p
     onto = compile_onto_spec(ws)
     if onto.get("stage1_whitelist"):
         p = ws.specs / f"{ws.class_id}.onto.json"
-        p.write_text(json.dumps(onto, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        p.write_text(
+            json.dumps(onto, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+        )
         paths["onto"] = p
     return paths

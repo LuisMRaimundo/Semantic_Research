@@ -1,0 +1,337 @@
+{
+  "type": "pulo_thesaurus_search",
+  "query": {
+    "query": "denso",
+    "pos": null,
+    "mode": "Contains"
+  },
+  "count": 6,
+  "synsets": [
+    {
+      "synset_offset": "por-30-00539009-a",
+      "pos": "a",
+      "gloss": "tendo componentes de perto amontoados\n",
+      "synonyms": [
+        "denso"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-00539009-a",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "similar to",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "reunidos ou fez menos difusa\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "reunidos ou fez menos difusa\n"
+            }
+          ]
+        },
+        {
+          "relation": "has derived form",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "de uma maneira concentrada\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "meter",
+              "gloss": "para reunir-se em grandes números\n"
+            },
+            {
+              "words": "componente, parte",
+              "gloss": "algo determinado em relação a algo que o inclui\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-01185264-a",
+      "pos": "a",
+      "gloss": "com alta densidade relativa ou gravidade específica\n",
+      "synonyms": [
+        "denso"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-01185264-a",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "similar to",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "de relativamente grande peso físico ou densidade\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "de relativamente grande peso físico ou densidade\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "densidade",
+              "gloss": "o valor por unidade de tamanho\n"
+            },
+            {
+              "words": "densidade",
+              "gloss": "o valor por unidade de tamanho\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "a densidade de uma substância em relação à densidade da água\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a relação entre a densidade de algo para a densidade de um padrão\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-01513776-a",
+      "pos": "a",
+      "gloss": "(das Trevas) muito intensa\n",
+      "synonyms": [
+        "denso"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-01513776-a",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "similar to",
+          "targets": [
+            {
+              "words": "intenso",
+              "gloss": "possuindo ou exibir uma característica distintiva de um elevado grau\n"
+            },
+            {
+              "words": "intenso",
+              "gloss": "possuindo ou exibir uma característica distintiva de um elevado grau\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "a parte central e mais intenso ou profunda\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a parte central e mais intenso ou profunda\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "escuridade, escuridão, treva",
+              "gloss": "ausência de luz ou iluminação\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-01771839-a",
+      "pos": "a",
+      "gloss": "difícil porque passam através do crescimento denso\n",
+      "synonyms": [
+        "denso"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-01771839-a",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "similar to",
+          "targets": [
+            {
+              "words": "impenetrável",
+              "gloss": "não admitir de penetração ou passagem para dentro ou através\n"
+            },
+            {
+              "words": "impenetrável",
+              "gloss": "não admitir de penetração ou passagem para dentro ou através\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "densidade, concentração",
+              "gloss": "a propriedade espacial de sendo amontoados\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a dimensão através de um objeto em vez de seu comprimento ou largura\n"
+            },
+            {
+              "words": "densidade, concentração",
+              "gloss": "a propriedade espacial de sendo amontoados\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a dimensão através de um objeto em vez de seu comprimento ou largura\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "algo adulto ou crescente\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-02416390-a",
+      "pos": "a",
+      "gloss": "permitindo pouco se toda a luz passar por causa da espessura da matéria\n",
+      "synonyms": [
+        "denso"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-02416390-a",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "similar to",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "relativamente densa de consistência\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "relativamente densa de consistência\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "densidade",
+              "gloss": "o valor por unidade de tamanho\n"
+            },
+            {
+              "words": "densidade",
+              "gloss": "o valor por unidade de tamanho\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "permitir, deixar",
+              "gloss": "tornar possível através de uma ação específica ou falta de ação para algo acontecer\n"
+            },
+            {
+              "words": "densidade",
+              "gloss": "o valor por unidade de tamanho\n"
+            },
+            {
+              "words": "luz",
+              "gloss": "(Física) a radiação eletromagnética que pode produzir uma sensação visual\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-00016135-a",
+      "pos": "a",
+      "gloss": "crescendo profusamente\n",
+      "synonyms": [
+        "denso"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-00016135-a",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "similar to",
+          "targets": [
+            {
+              "words": "abundante",
+              "gloss": "presente em grande quantidade\n"
+            },
+            {
+              "words": "abundante",
+              "gloss": "presente em grande quantidade\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "riqueza",
+              "gloss": "a propriedade de produzir abundantemente e sustentar o crescimento vigoroso e luxuriante\n"
+            },
+            {
+              "words": "riqueza",
+              "gloss": "a propriedade de produzir abundantemente e sustentar o crescimento vigoroso e luxuriante\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "de forma abundante\n"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

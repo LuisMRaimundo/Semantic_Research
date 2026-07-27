@@ -1,62 +1,100 @@
-"""Run legacy engines + LexWarrant against a class workspace."""
+"""Run engines + LexWarrant against a class workspace (R8 / ~95)."""
 
 from __future__ import annotations
 
 import json
 import shutil
-import sys
 from pathlib import Path
 from typing import Any, Optional
 
 from .compile_specs import write_specs
-from .settings import load_config, path_from_config
+from .engines import (
+    ensure_engine_paths,
+    load_lexwarrant,
+    load_phase0_pulo,
+    load_phase0_skos,
+)
+from .settings import load_config
 from .workspace import ClassWorkspace
 
 
-def _ensure_legacy_paths() -> dict[str, Path]:
-    cfg = load_config()
-    paths = {
-        "pulo_engine": Path(cfg["pulo_engine_dir"]),
-        "onto_engine": Path(cfg["onto_engine_dir"]),
-        "lexwarrant": Path(cfg["lexwarrant_dir"]),
-        "pulo_sqlite": Path(cfg["pulo_sqlite"]),
-        "onto_sqlite": Path(cfg["onto_sqlite"]),
-    }
-    for key in ("pulo_engine", "onto_engine", "lexwarrant"):
-        if not paths[key].exists():
-            raise FileNotFoundError(f"Legacy path missing ({key}): {paths[key]}")
-    return paths
-
-
-def _import_legacy(paths: dict[str, Path]):
-    for d in (paths["pulo_engine"], paths["onto_engine"], paths["lexwarrant"]):
-        s = str(d)
-        if s not in sys.path:
-            sys.path.insert(0, s)
-    import phase0_pulo  # type: ignore
-    import phase0_skos  # type: ignore
-    import lexwarrant  # type: ignore
-    return phase0_pulo, phase0_skos, lexwarrant
-
-
 def _best_pulo_export(ws: ClassWorkspace) -> Optional[Path]:
+    """Prefer the non-empty PULO export with the most synsets.
+
+    Alphabetical first-hit wrongly picks empty probes (e.g. ``pulo_composed.json``
+    before ``pulo_composição.json``).
+    """
     candidates = sorted(ws.exports.glob("*pulo*.json")) + sorted(
         ws.exports.glob("*.json")
     )
+    best: Optional[Path] = None
+    best_n = -1
+    fallback: Optional[Path] = None
+    seen: set[Path] = set()
     for p in candidates:
+        if p in seen:
+            continue
+        seen.add(p)
         try:
             obj = json.loads(p.read_text(encoding="utf-8"))
         except Exception:
             continue
-        if obj.get("type") == "pulo_thesaurus_search":
-            return p
-    return None
+        if obj.get("type") != "pulo_thesaurus_search":
+            continue
+        if fallback is None:
+            fallback = p
+        n = len(obj.get("synsets") or [])
+        if int(obj.get("count") or 0) > n:
+            n = int(obj.get("count") or 0)
+        if n > best_n:
+            best_n = n
+            best = p
+    if best is not None and best_n > 0:
+        return best
+    return fallback
 
 
 def _relabel_result(src: Path, dest: Path) -> Path:
     dest.parent.mkdir(parents=True, exist_ok=True)
     shutil.copy2(src, dest)
     return dest
+
+
+def _enrich_result_glosses(result_path: Path, class_id: str) -> None:
+    """Attach SenseIndex glosses to provenance rows (enables gloss-gated weak joins)."""
+    try:
+        from .normalize import normalize_word
+        from .sense_index import SenseIndex
+    except Exception:  # noqa: BLE001
+        return
+    if not result_path.exists():
+        return
+    try:
+        data = json.loads(result_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return
+    changed = False
+    with SenseIndex() as si:
+        c = si.connect()
+        for prov in data.get("provenance") or []:
+            if prov.get("gloss"):
+                continue
+            term = prov.get("termo") or prov.get("term") or ""
+            if not term:
+                continue
+            nw = normalize_word(term)
+            row = c.execute(
+                "SELECT gloss FROM sense WHERE class_id = ? AND lemmas_norm LIKE ? "
+                "AND gloss IS NOT NULL AND gloss != '' LIMIT 1",
+                (class_id, f'%"{nw}"%'),
+            ).fetchone()
+            if row and row["gloss"]:
+                prov["gloss"] = row["gloss"]
+                changed = True
+    if changed:
+        result_path.write_text(
+            json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+        )
 
 
 def _sideline_pulo_signals(result_path: Path, out_dir: Path) -> Path:
@@ -131,8 +169,8 @@ def _preflight(ws: ClassWorkspace, engines: list[str]) -> list[str]:
         export = _best_pulo_export(ws)
         if export is None:
             problems.append(
-                "No PULO export — search with source PULO (try «composto», "
-                "not «compósita»)."
+                "No PULO export — search any lemma with source PULO "
+                "(use a form attested in the lexicon)."
             )
         else:
             try:
@@ -143,7 +181,7 @@ def _preflight(ws: ClassWorkspace, engines: list[str]) -> list[str]:
                 problems.append(
                     f"PULO export is empty ({export.name}, 0 synsets) — "
                     "re-search a lemma that hits the lexicon "
-                    "(e.g. «composto» / «compósito»)."
+                    "(try a citation form / alternate spelling)."
                 )
     return problems
 
@@ -158,9 +196,13 @@ def run_class(class_id: str, policy: Optional[str] = None,
     policy = policy or cfg.get("default_policy") or "conservative"
     if "hide_pulo_signals" in cfg:
         hide_pulo_signals = bool(cfg["hide_pulo_signals"])
-    engines = engines or ["pulo", "onto"]
-    paths = _ensure_legacy_paths()
-    phase0_pulo, phase0_skos, lexwarrant = _import_legacy(paths)
+    # Distinguish omitted arg (default both) from explicit engines=[] (merge-only).
+    if engines is None:
+        engines = ["pulo", "onto"]
+    paths = ensure_engine_paths()
+    phase0_pulo = load_phase0_pulo()
+    phase0_skos = load_phase0_skos()
+    lexwarrant = load_lexwarrant()
 
     summary: dict[str, Any] = {
         "class_id": ws.class_id,
@@ -242,25 +284,55 @@ def run_class(class_id: str, policy: Optional[str] = None,
             except Exception as exc:  # noqa: BLE001
                 summary["errors"].append(f"ONTO engine: {exc}")
 
-    # --- WordNet (faixa de corroboração; regenerada se houver facets + tabela) ---
+    # --- WordNet (OEWN) + OWN-PT (duas colunas; regeneradas se houver facets) ---
     try:
-        from .wordnet_track import build_wordnet_result
-        wn_res = build_wordnet_result(ws.class_id)
+        from .wordnet_track import build_wordnet_and_ownpt_results
+        wn_res = build_wordnet_and_ownpt_results(ws.class_id)
         if wn_res.get("ok"):
             summary["wordnet_track"] = {
-                "path": wn_res["path"], "convoked": wn_res["convoked"],
+                "path": wn_res["path"],
+                "ownpt_path": wn_res.get("ownpt_path"),
+                "lexicon": wn_res.get("lexicon"),
+                "convoked": wn_res["convoked"],
                 "skipped": wn_res["skipped"],
-                "n_sinalizacao": wn_res["n_sinalizacao"]}
+                "n_sinalizacao": wn_res["n_sinalizacao"],
+                "n_atestacao": wn_res.get("n_atestacao"),
+            }
         else:
             summary["wordnet_track"] = {"skipped_because": wn_res.get("error")}
     except Exception as exc:  # noqa: BLE001
-        summary["errors"].append(f"WordNet track: {exc}")
+        summary["errors"].append(f"WordNet/OWN-PT track: {exc}")
+
+    # --- SenseIndex (durable registry) + Onto→ILI proposals (review-only) ---
+    if bool(cfg.get("sense_index_on_run", True)):
+        try:
+            from .onto_ili import propose_for_class
+            from .sense_index import SenseIndex, ingest_class_exports
+
+            with SenseIndex() as si:
+                idx_info = ingest_class_exports(ws.class_id, index=si)
+                prop = propose_for_class(ws.class_id, index=si, write_report=True)
+            summary["sense_index"] = {
+                "path": idx_info.get("index"),
+                "ingested": {
+                    k: idx_info.get(k) for k in ("pulo", "onto", "oewn", "own-pt", "files")
+                },
+                "stats": idx_info.get("stats"),
+                "onto_ili_proposals": prop.get("n_proposals"),
+                "onto_ili_report": prop.get("path"),
+            }
+        except Exception as exc:  # noqa: BLE001
+            summary["errors"].append(f"SenseIndex: {exc}")
 
     # --- Merge ---
     inputs = []
     pulo_r = ws.results / f"{ws.class_id}.PULO.result.json"
     onto_r = ws.results / f"{ws.class_id}.ONTO.result.json"
+    own_r = ws.results / f"{ws.class_id}.OWN-PT.result.json"
     wn_r = ws.results / f"{ws.class_id}.WordNet.result.json"
+    for rp in (pulo_r, own_r, wn_r):
+        if rp.exists():
+            _enrich_result_glosses(rp, ws.class_id)
     if pulo_r.exists():
         if hide_pulo_signals:
             data = json.loads(pulo_r.read_text(encoding="utf-8"))
@@ -273,33 +345,147 @@ def run_class(class_id: str, policy: Optional[str] = None,
             inputs.append(("PULO", merge_pulo))
         else:
             inputs.append(("PULO", pulo_r))
+    # Corte 3: Onto.PT is discovery-only — do NOT feed admits into LexWarrant.
     if onto_r.exists():
-        inputs.append(("ONTO", onto_r))
+        summary["onto_discovery_only"] = str(onto_r)
+    if own_r.exists():
+        inputs.append(("OWN-PT", own_r))
     if wn_r.exists():
         inputs.append(("WordNet", wn_r))
+    # Accepted Onto→ILI projections (atestado inventory — review routine)
+    try:
+        from .onto_ili import apply_accepted_to_decisions, emit_onto_ili_result
+        apply_accepted_to_decisions(ws.class_id)
+        onto_ili_path = emit_onto_ili_result(ws.class_id)
+        if onto_ili_path:
+            summary["onto_ili_result"] = onto_ili_path
+    except Exception as exc:  # noqa: BLE001
+        summary.setdefault("errors", []).append(f"Onto-ILI emit: {exc}")
+        onto_ili_path = None
+    onto_ili_r = ws.results / f"{ws.class_id}.ONTO-ILI.result.json"
+    if onto_ili_r.exists():
+        inputs.append(("ONTO-ILI", onto_ili_r))
 
     if len(inputs) >= 2:
         try:
             import contextlib
             import io
-            from .ili_bridge import find_table_file
-            map_path = find_table_file(ws)
-            summary["ili_table"] = str(map_path) if map_path else None
+            from .cili_auto import prepare_cili_for_run
+            from .ili_coverage import write_coverage_report
+            cili_info = prepare_cili_for_run(ws)
+            equiv = cili_info["equiv"]
+            map_path = cili_info["map_path"]
+            summary["ili_table"] = str(map_path)
+            summary["cili_version"] = cili_info.get("cili_version")
+            summary["ili_migration"] = str(cili_info.get("migration_md"))
+            try:
+                cov = write_coverage_report(ws, dest=ws.out)
+                if ws.final_results.exists():
+                    write_coverage_report(ws, dest=ws.final_results)
+                summary["ili_coverage"] = {
+                    "n_resolved": cov.get("n_resolved"),
+                    "n_unresolved_oewn_ili": cov.get("n_unresolved_oewn_ili"),
+                    "n_unresolved_pulo_offset": cov.get("n_unresolved_pulo_offset"),
+                    "n_cili_joinable": cov.get("n_cili_joinable"),
+                    "path": cov.get("path_md"),
+                }
+            except Exception as exc:  # noqa: BLE001
+                summary.setdefault("errors", []).append(f"ILI coverage: {exc}")
+            weak_mode = str(cfg.get("weak_term_mode") or "gloss_gated")
+            gloss_min = float(cfg.get("gloss_min") or 0.12)
             buf = io.StringIO()
             with contextlib.redirect_stdout(buf), contextlib.redirect_stderr(buf):
                 doc = lexwarrant.run_report(
-                    inputs, ws.out, policy=policy, map_path=map_path
+                    inputs, ws.out, policy=policy,
+                    map_path=map_path, equiv=equiv,
+                    weak_term_mode=weak_mode, gloss_min=gloss_min,
                 )
-            # surface LexWarrant's ILI load line (otherwise swallowed by redirect)
+            summary["weak_term_mode"] = weak_mode
+            summary["gloss_min"] = gloss_min
             for line in buf.getvalue().splitlines():
-                if "ili_equivalence" in line.lower() or "EQUIVALÊNCIA" in line:
+                if "ili_equivalence" in line.lower() or "CILI" in line.upper():
                     summary.setdefault("ili_log", []).append(line)
             published = ws.publish_final_results(
                 Path(doc["_md_path"]), Path(doc["_json_path"])
             )
+            from .export_blocks import append_t12_to_concordance, write_export_blocks
+            from .reconcile import reconcile_class
+            from .termos_pesquisa import write_termos_pesquisa
+            blocks = write_export_blocks(ws, dest_dir=ws.final_results)
+            # Attach T12 on every concordance JSON copy (FINAL__, short name, out/).
+            t12_targets = {
+                Path(published["json"]),
+                ws.out / f"{ws.class_id}.concordance.json",
+                ws.final_results / f"{ws.class_id}.concordance.json",
+            }
+            for target in t12_targets:
+                if target.exists():
+                    append_t12_to_concordance(target, blocks)
+            termos = write_termos_pesquisa(ws, dest_dir=ws.final_results)
+            if bool(cfg.get("publish_concept_model", True)):
+                try:
+                    from .concept_model import publish_class_concept
+                    summary["concept_model"] = publish_class_concept(
+                        ws.class_id, dest_dir=ws.final_results,
+                    )
+                    # also keep coverage next to CONCEPT
+                    from .ili_coverage import write_coverage_report as _cov
+                    _cov(ws, dest=ws.final_results)
+                except Exception as exc:  # noqa: BLE001
+                    summary.setdefault("errors", []).append(
+                        f"Concept model: {exc}"
+                    )
+            engines_ran = {e for e in engines if e in ("pulo", "onto")}
+            exec_meta = {
+                "engines": list(engines),
+                "engines_reexecutados": bool(engines_ran),
+                "hide_pulo_signals": hide_pulo_signals,
+                "onto_admission": bool(
+                    (ws.results / f"{ws.class_id}.ONTO-ILI.result.json").exists()
+                ),
+                "ili_join": "cili-only",
+                "weak_term_mode": weak_mode,
+                "gloss_min": gloss_min,
+            }
+            recon = reconcile_class(
+                ws,
+                concordance_json=Path(published["json"]),
+                execution=exec_meta,
+            )
+            # Keep short alias in sync with T12/R1 after reconcile.
+            alias_json = ws.final_results / f"{ws.class_id}.concordance.json"
+            if (
+                alias_json.exists()
+                and alias_json.resolve() != Path(published["json"]).resolve()
+            ):
+                try:
+                    shutil.copy2(published["json"], alias_json)
+                    alias_md = ws.final_results / f"{ws.class_id}.concordance.md"
+                    pub_md = Path(published["md"])
+                    if pub_md.exists():
+                        shutil.copy2(pub_md, alias_md)
+                except OSError:
+                    pass
+            from .manifest import build_version_manifest
+            from . import settings as _settings
+            manifest = build_version_manifest(root=_settings.ROOT)
+            build_version_manifest(
+                root=_settings.ROOT,
+                dest=ws.final_results / "VERSION_MANIFEST.json",
+            )
             summary["concordance_md"] = published["md"]
             summary["concordance_json"] = published["json"]
             summary["final_results"] = published["folder"]
+            summary["blocos"] = blocks
+            summary["termos_pesquisa"] = termos
+            summary["version_manifest"] = manifest.get("_path")
+            summary["reconciliacao"] = {
+                "unidade": recon.get("unidade_contagem"),
+                "acepcoes_sem_motor": recon.get("n_acepcoes_sem_motor"),
+                "t14_removed": True,
+                "json": recon.get("reconcile_json"),
+                "md": recon.get("reconcile_md"),
+            }
             summary["merge_ok"] = True
             summary["ili_equivalence_loaded"] = bool(
                 doc.get("ili_equivalence_loaded")
@@ -307,22 +493,9 @@ def run_class(class_id: str, policy: Optional[str] = None,
             summary["ili_equivalence_counts"] = doc.get("ili_equivalence_counts")
             note_bits = [
                 f"FINAL RESULTS → {published['folder']}",
-                "(Onto.PT + PULO concordance deliverable)",
+                "Deliverable: TERMOS.html + TERMOS_PESQUISA.md/.csv",
+                f"CILI {cili_info.get('cili_version')} · {cili_info.get('n_map', 0)} pares",
             ]
-            if map_path and doc.get("ili_equivalence_loaded"):
-                counts = doc.get("ili_equivalence_counts") or {}
-                n_map = counts.get("map", counts.get("mapped", "?"))
-                note_bits.append(f"ILI table OK ({n_map} map pairs)")
-            elif map_path:
-                note_bits.append(
-                    "ILI file found but 0 high-confidence map pairs — "
-                    "promote review→map in Ponte ILI"
-                )
-            else:
-                note_bits.append(
-                    "No ili_equivalence.json — put it in out/ or use "
-                    "«5 · Ponte ILI…»"
-                )
             if hide_pulo_signals and summary.get("pulo_signals"):
                 note_bits.append(
                     f"{summary['pulo_signals']} PULO signals sidelined in out/"
@@ -333,8 +506,8 @@ def run_class(class_id: str, policy: Optional[str] = None,
             summary["merge_ok"] = False
     elif len(inputs) == 1:
         summary["errors"].append(
-            "Only one result.json — LexWarrant needs ≥2 sources. "
-            "Mark senses in both PULO and ONTO, or import a second result."
+            "Only one result.json — LexWarrant needs ≥2 sources "
+            "(PULO + OWN-PT/WordNet). Onto.PT is discovery-only."
         )
         summary["merge_ok"] = False
     else:
@@ -374,7 +547,7 @@ def search_and_seed(class_id: str, query: str, source: str = "pulo",
         export = WordNetStore().export_search(
             query, class_id=ws.class_id, pos=pos, limit=min(limit, 40)
         )
-        # *.facets.json so Ponte ILI / wordnet_track find this class first
+        # *.facets.json so wordnet_track / CILI harvest find this class first
         safe = query.strip().replace(" ", "_")
         fname = f"wordnet_{safe}.facets.json"
     else:

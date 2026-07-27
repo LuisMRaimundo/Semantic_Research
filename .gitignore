@@ -4,4 +4,13 @@ __pycache__/
 classes/*/_specs/
 classes/*/results/_*/
 *.sqlite
+data/sense_index.sqlite
 .DS_Store
+# Vendored CILI lives in engines/LexWarrant/data/cili/ — not dumps
+cili-master/
+_quarantine/
+# Regenerable reports at repo root
+DEAD_CODE_CANDIDATES.json
+ONTO_RESOURCES_DIAGNOSIS.json
+ONTO_RESOURCES_DIAGNOSIS.md
+VERSION_MANIFEST.json

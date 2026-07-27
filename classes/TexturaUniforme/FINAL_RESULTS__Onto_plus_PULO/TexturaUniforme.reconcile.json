@@ -1,0 +1,24 @@
+{
+  "class_id": "TexturaUniforme",
+  "unidade_contagem": "acepção (sentido) com decisão UF/RT",
+  "execution": {
+    "engines": [],
+    "engines_reexecutados": false,
+    "hide_pulo_signals": true,
+    "onto_admission": false,
+    "ili_join": "cili-only",
+    "weak_term_mode": "gloss_gated",
+    "gloss_min": 0.12
+  },
+  "acepcoes_sem_motor": [],
+  "n_acepcoes_sem_motor": 0,
+  "taxonomy_removed": [
+    "conflitos_planos",
+    "divergencia_sentidos",
+    "estipulacoes_termo",
+    "adjudicados_c1_recuperavel",
+    "adjudicados_c2_estrutural"
+  ],
+  "t14_ok": null,
+  "t14_removed": true
+}

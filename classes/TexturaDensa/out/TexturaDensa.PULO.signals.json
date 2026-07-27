@@ -1,0 +1,84 @@
+{
+  "class_id": "TexturaDensa",
+  "count": 11,
+  "note": "PULO relation harvest (unnamed #NN / similar-to off-axis). Not decisions — review only if something looks useful; otherwise ignore.",
+  "sinalizacao": {
+    "ligeiro": {
+      "display": "ligeiro",
+      "via": "relation #61",
+      "source_ili": "ili-30-04941453-n",
+      "target_gloss": "de relativamente pouco peso físico ou densidade\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "denso": {
+      "display": "denso",
+      "via": "relation #61",
+      "source_ili": "ili-30-04941453-n",
+      "target_gloss": "permitindo pouco se toda a luz passar por causa da espessura da matéria\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "concentracao": {
+      "display": "concentração",
+      "via": "relation #61",
+      "source_ili": "ili-30-04941453-n",
+      "target_gloss": "aumento da densidade\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "gas": {
+      "display": "gás",
+      "via": "relation #61",
+      "source_ili": "ili-30-04941453-n",
+      "target_gloss": "o estado da matéria distinguidos dos estados sólido e líquido por: relativamente baixa densidade e viscosidade; relativamente grande expansão e contracção, com alterações na pressão e temperatura; a capacidade de difundir prontamente; e a tendência espontânea para se tornar distribuídos uniformemente ao longo de qualquer recipiente\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "formato": {
+      "display": "formato",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04941453-n",
+      "target_gloss": "a magnitude física de algo (como é grande)\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "tamanho": {
+      "display": "tamanho",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04941453-n",
+      "target_gloss": "a magnitude física de algo (como é grande)\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "calibre": {
+      "display": "calibre",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04941453-n",
+      "target_gloss": "a magnitude física de algo (como é grande)\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "dimensao": {
+      "display": "dimensão",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04941453-n",
+      "target_gloss": "a magnitude física de algo (como é grande)\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "medida": {
+      "display": "medida",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04941453-n",
+      "target_gloss": "a magnitude física de algo (como é grande)\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "hipogamaglobulinemia": {
+      "display": "hipogamaglobulinemia",
+      "via": "relation #61",
+      "source_ili": "ili-30-05088804-n",
+      "target_gloss": "uma concentração anormalmente baixa de gamaglobulina no sangue e aumento do risco de infecção\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "meter": {
+      "display": "meter",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-05088804-n",
+      "target_gloss": "para reunir-se em grandes números\n",
+      "reason": "relação não-nomeada / #NN"
+    }
+  }
+}

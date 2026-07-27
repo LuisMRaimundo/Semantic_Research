@@ -1,0 +1,36 @@
+# Semantic Research — path / runtime configuration (R8 / ~95)
+# Paths are relative to the repo root unless absolute.
+
+[paths]
+pulo_sqlite = "engines/PULO Thesaurus GUI/pulo.sqlite"
+onto_sqlite = "engines/ONTO/ontopt.sqlite"
+pulo_engine_dir = "engines/PULO Thesaurus GUI"
+onto_engine_dir = "engines/ONTO"
+lexwarrant_dir = "engines/LexWarrant"
+wordnet_dir = "WordNet"
+sense_index = "data/sense_index.sqlite"
+
+[runtime]
+default_policy = "conservative"
+hide_pulo_signals = true
+sense_index_on_run = true
+weak_term_mode = "gloss_gated"
+gloss_min = 0.12
+publish_concept_model = true
+# Auto-accept unique high-confidence Onto→ILI proposals into inventory
+onto_ili_auto_accept = true
+onto_ili_auto_accept_min = 0.85
+onto_ili_auto_accept_margin = 0.12
+# Set true to enable sentence-transformers gloss cosine (downloads model once)
+gloss_use_embeddings = false
+
+[pins]
+oewn = "oewn:2024"
+own_pt = "own-pt:1.0.0"
+cili_map = "engines/LexWarrant/data/cili/ili-map-pwn30.tab"
+cili_commit = "upstream-master+pwn30+pwn31+wn.ili"
+cili_min_pairs = 117000
+
+[languages]
+search_lang = "en"
+label_lang = "pt-PT"

@@ -213,16 +213,64 @@ def build_equivalence(wn_synsets: list[dict], pulo_synsets: list[dict],
                     "source": "auto: shared-lemma (ambíguo)",
                 })
 
+    annotate_unmatched_pertinence(unmatched)
+
     from datetime import datetime
+    n_pert = sum(1 for u in unmatched if u.get("pertinence") == "pertinente")
+    n_excl = sum(
+        1 for u in unmatched if u.get("pertinence") == "excluida_pela_classe"
+    )
     return {
         "class": class_id,
         "generated": datetime.now().isoformat(timespec="seconds"),
         "map": map_rows,
         "review": review_rows,
         "unmatched": unmatched,
-        "coverage": {"map": len(map_rows), "review": len(review_rows),
-                     "unmatched": len(unmatched)},
+        "coverage": {
+            "map": len(map_rows),
+            "review": len(review_rows),
+            "unmatched": len(unmatched),
+            "unmatched_pertinente": n_pert,
+            "unmatched_excluida_pela_classe": n_excl,
+        },
     }
+
+
+# ILIs known off-axis for textural/adjectival classes (clothing, supply verbs…).
+_CLASS_EXCLUDED_ILIS = frozenset({
+    "i33388",   # verb «to uniform» / fornecimento — fora do eixo adjectival
+    "i60712",   # clothing «uniform» — acepção vestuário (quando unmatched)
+})
+
+
+def annotate_unmatched_pertinence(unmatched: list[dict]) -> None:
+    """Split unmatched into (a) pertinente vs (b) excluída pela classe.
+
+    Coverage failure counts should use only (a). Verb senses and known
+    off-axis ILIs (e.g. i33388 fornecimento) are (b).
+    """
+    for u in unmatched:
+        ili = str(u.get("oewn_ili") or "")
+        pos = norm_pos(u.get("pos"))
+        if ili in _CLASS_EXCLUDED_ILIS or pos == "v":
+            u["pertinence"] = "excluida_pela_classe"
+            if not u.get("pertinence_note"):
+                if pos == "v":
+                    u["pertinence_note"] = (
+                        "POS verbal — fora do eixo da classe (não conta "
+                        "como falha de cobertura OWN-PT)"
+                    )
+                else:
+                    u["pertinence_note"] = (
+                        "acepção excluída pela classe (não conta como "
+                        "falha de cobertura OWN-PT)"
+                    )
+        else:
+            u["pertinence"] = "pertinente"
+            u.setdefault(
+                "pertinence_note",
+                "acepção pertinente sem lemas PT / sem par PULO",
+            )
 
 
 def build_from_files(wordnet_path: Path, pulo_path: Path,
@@ -255,12 +303,20 @@ def main() -> int:
     Path(args.out).write_text(json.dumps(doc, ensure_ascii=False, indent=2), encoding="utf-8")
     cov = doc["coverage"]
     print(f"Tabela ILI OEWN↔PULO: {cov['map']} mapeados (high), "
-          f"{cov['review']} para revisão, {cov['unmatched']} sem correspondência.")
+          f"{cov['review']} para revisão, {cov['unmatched']} sem correspondência "
+          f"({cov.get('unmatched_pertinente', '?')} pertinentes / "
+          f"{cov.get('unmatched_excluida_pela_classe', '?')} excluídas pela classe).")
     print(f"Saída: {args.out}")
     if doc["review"]:
         print("  Revisão (ambíguos, não resolvidos automaticamente):")
         for r in doc["review"]:
             print(f"    {r['oewn_ili']} ↔ {r['pulo_ili']}  ({', '.join(r['evidence']['shared_lemmas'])})")
+    excl = [u for u in doc["unmatched"]
+            if u.get("pertinence") == "excluida_pela_classe"]
+    if excl:
+        print("  Unmatched excluídas pela classe (não falha de cobertura):")
+        for u in excl:
+            print(f"    {u['oewn_ili']} ({u.get('pos')}) — {u.get('pertinence_note')}")
     return 0
 
 

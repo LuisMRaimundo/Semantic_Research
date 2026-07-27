@@ -1,0 +1,4996 @@
+{
+  "type": "thesaurus_search",
+  "query": {
+    "query": "densidade",
+    "resource": null,
+    "pos": null,
+    "mode": "Contains"
+  },
+  "count": 40,
+  "synsets": [
+    {
+      "resource": "clip01",
+      "resource_label": "CLIP 0.1 (nouns)",
+      "synset_id": "493",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "adipose",
+          "weight": 1.0
+        },
+        {
+          "word": "bastidão",
+          "weight": 1.0
+        },
+        {
+          "word": "bastura",
+          "weight": 1.0
+        },
+        {
+          "word": "compacidade",
+          "weight": 1.0
+        },
+        {
+          "word": "corpulência",
+          "weight": 1.0
+        },
+        {
+          "word": "densidade",
+          "weight": 1.0
+        },
+        {
+          "word": "encorpamento",
+          "weight": 1.0
+        },
+        {
+          "word": "espessura",
+          "weight": 1.0
+        },
+        {
+          "word": "gradeza",
+          "weight": 1.0
+        },
+        {
+          "word": "grossura",
+          "weight": 1.0
+        },
+        {
+          "word": "obesidade",
+          "weight": 1.0
+        },
+        {
+          "word": "ventrosidade",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "clip01",
+      "resource_label": "CLIP 0.1 (nouns)",
+      "synset_id": "1171",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "bastidão",
+          "weight": 1.0
+        },
+        {
+          "word": "bastura",
+          "weight": 1.0
+        },
+        {
+          "word": "compacidade",
+          "weight": 1.0
+        },
+        {
+          "word": "consistência",
+          "weight": 1.0
+        },
+        {
+          "word": "corpo",
+          "weight": 1.0
+        },
+        {
+          "word": "densidade",
+          "weight": 1.0
+        },
+        {
+          "word": "encasque",
+          "weight": 1.0
+        },
+        {
+          "word": "encorpamento",
+          "weight": 1.0
+        },
+        {
+          "word": "espessura",
+          "weight": 1.0
+        },
+        {
+          "word": "firmeza",
+          "weight": 1.0
+        },
+        {
+          "word": "firmidão",
+          "weight": 1.0
+        },
+        {
+          "word": "fortidão",
+          "weight": 1.0
+        },
+        {
+          "word": "gradeza",
+          "weight": 1.0
+        },
+        {
+          "word": "grossura",
+          "weight": 1.0
+        },
+        {
+          "word": "inductilidade",
+          "weight": 1.0
+        },
+        {
+          "word": "rijeza",
+          "weight": 1.0
+        },
+        {
+          "word": "solidez",
+          "weight": 1.0
+        },
+        {
+          "word": "tesão",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "clip01",
+      "resource_label": "CLIP 0.1 (nouns)",
+      "synset_id": "4227",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "bastidão",
+          "weight": 1.0
+        },
+        {
+          "word": "bastura",
+          "weight": 1.0
+        },
+        {
+          "word": "compacidade",
+          "weight": 1.0
+        },
+        {
+          "word": "consistência",
+          "weight": 1.0
+        },
+        {
+          "word": "corpulência",
+          "weight": 1.0
+        },
+        {
+          "word": "densidade",
+          "weight": 1.0
+        },
+        {
+          "word": "encorpamento",
+          "weight": 1.0
+        },
+        {
+          "word": "espessura",
+          "weight": 1.0
+        },
+        {
+          "word": "gradeza",
+          "weight": 1.0
+        },
+        {
+          "word": "grossura",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "clip21",
+      "resource_label": "CLIP 2.1 (fuzzy sets)",
+      "synset_id": "742",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "grosseria",
+          "weight": 1.3387097
+        },
+        {
+          "word": "grossaria",
+          "weight": 1.1290323
+        },
+        {
+          "word": "rudeza",
+          "weight": 1.048387
+        },
+        {
+          "word": "impolidez",
+          "weight": 1.016129
+        },
+        {
+          "word": "brutalidade",
+          "weight": 0.91935486
+        },
+        {
+          "word": "incivilidade",
+          "weight": 0.88709676
+        },
+        {
+          "word": "rudez",
+          "weight": 0.88709676
+        },
+        {
+          "word": "grossura",
+          "weight": 0.8064516
+        },
+        {
+          "word": "estupidez",
+          "weight": 0.7580645
+        },
+        {
+          "word": "indelicadeza",
+          "weight": 0.7258065
+        },
+        {
+          "word": "rusticidade",
+          "weight": 0.7258065
+        },
+        {
+          "word": "boçalidade",
+          "weight": 0.6451613
+        },
+        {
+          "word": "descortesia",
+          "weight": 0.6451613
+        },
+        {
+          "word": "agrestia",
+          "weight": 0.62903225
+        },
+        {
+          "word": "chavasquice",
+          "weight": 0.61290324
+        },
+        {
+          "word": "rustiqueza",
+          "weight": 0.61290324
+        },
+        {
+          "word": "agrestice",
+          "weight": 0.5967742
+        },
+        {
+          "word": "agrestidade",
+          "weight": 0.5967742
+        },
+        {
+          "word": "bagualada",
+          "weight": 0.5967742
+        },
+        {
+          "word": "bronquice",
+          "weight": 0.5967742
+        },
+        {
+          "word": "rusticaria",
+          "weight": 0.5967742
+        },
+        {
+          "word": "espessura",
+          "weight": 0.41935483
+        },
+        {
+          "word": "abrutamento",
+          "weight": 0.38709676
+        },
+        {
+          "word": "alarvaria",
+          "weight": 0.33870968
+        },
+        {
+          "word": "chamboíce",
+          "weight": 0.33870968
+        },
+        {
+          "word": "má-criação",
+          "weight": 0.33870968
+        },
+        {
+          "word": "desafabilidade",
+          "weight": 0.31746033
+        },
+        {
+          "word": "desamabilidade",
+          "weight": 0.31746033
+        },
+        {
+          "word": "xucrice",
+          "weight": 0.30645162
+        },
+        {
+          "word": "xucrismo",
+          "weight": 0.30645162
+        },
+        {
+          "word": "malcriadez",
+          "weight": 0.27419356
+        },
+        {
+          "word": "aspereza",
+          "weight": 0.23809524
+        },
+        {
+          "word": "inurbanidade",
+          "weight": 0.22580644
+        },
+        {
+          "word": "corpulência",
+          "weight": 0.22222222
+        },
+        {
+          "word": "embrutecimento",
+          "weight": 0.19354838
+        },
+        {
+          "word": "densidade",
+          "weight": 0.16129032
+        },
+        {
+          "word": "consistência",
+          "weight": 0.14285715
+        },
+        {
+          "word": "desumanidade",
+          "weight": 0.14285715
+        },
+        {
+          "word": "severidade",
+          "weight": 0.14285715
+        },
+        {
+          "word": "bastidão",
+          "weight": 0.12903225
+        },
+        {
+          "word": "chulice",
+          "weight": 0.12698413
+        },
+        {
+          "word": "bastura",
+          "weight": 0.11290322
+        },
+        {
+          "word": "burrice",
+          "weight": 0.11111111
+        },
+        {
+          "word": "rispidez",
+          "weight": 0.11111111
+        },
+        {
+          "word": "desmesura",
+          "weight": 0.09677419
+        },
+        {
+          "word": "austeridade",
+          "weight": 0.0952381
+        },
+        {
+          "word": "bestialidade",
+          "weight": 0.0952381
+        },
+        {
+          "word": "chularia",
+          "weight": 0.0952381
+        },
+        {
+          "word": "desabrimento",
+          "weight": 0.0952381
+        },
+        {
+          "word": "desatenção",
+          "weight": 0.0952381
+        },
+        {
+          "word": "dureza",
+          "weight": 0.0952381
+        },
+        {
+          "word": "selvajaria",
+          "weight": 0.0952381
+        },
+        {
+          "word": "asselvajamento",
+          "weight": 0.08064516
+        },
+        {
+          "word": "densidão",
+          "weight": 0.08064516
+        },
+        {
+          "word": "desprimor",
+          "weight": 0.08064516
+        },
+        {
+          "word": "encorpadura",
+          "weight": 0.08064516
+        },
+        {
+          "word": "ignorância",
+          "weight": 0.07936508
+        },
+        {
+          "word": "encorpamento",
+          "weight": 0.06451613
+        },
+        {
+          "word": "acerbidade",
+          "weight": 0.06349207
+        },
+        {
+          "word": "barbaridade",
+          "weight": 0.06349207
+        },
+        {
+          "word": "corpo",
+          "weight": 0.06349207
+        },
+        {
+          "word": "crueldade",
+          "weight": 0.06349207
+        },
+        {
+          "word": "crueza",
+          "weight": 0.06349207
+        },
+        {
+          "word": "desacolhimento",
+          "weight": 0.06349207
+        },
+        {
+          "word": "desconsideração",
+          "weight": 0.06349207
+        },
+        {
+          "word": "despiedade",
+          "weight": 0.06349207
+        },
+        {
+          "word": "estoicismo",
+          "weight": 0.06349207
+        },
+        {
+          "word": "indocilidade",
+          "weight": 0.06349207
+        },
+        {
+          "word": "inflexibilidade",
+          "weight": 0.06349207
+        },
+        {
+          "word": "inumanidade",
+          "weight": 0.06349207
+        },
+        {
+          "word": "maldade",
+          "weight": 0.06349207
+        },
+        {
+          "word": "malevolência",
+          "weight": 0.06349207
+        },
+        {
+          "word": "recacho",
+          "weight": 0.06349207
+        },
+        {
+          "word": "rigidez",
+          "weight": 0.06349207
+        },
+        {
+          "word": "rigor",
+          "weight": 0.06349207
+        },
+        {
+          "word": "rispideza",
+          "weight": 0.06349207
+        },
+        {
+          "word": "sanguinolência",
+          "weight": 0.06349207
+        },
+        {
+          "word": "sevícia",
+          "weight": 0.06349207
+        },
+        {
+          "word": "sevícias",
+          "weight": 0.06349207
+        },
+        {
+          "word": "subumanidade",
+          "weight": 0.06349207
+        },
+        {
+          "word": "violência",
+          "weight": 0.06349207
+        },
+        {
+          "word": "bestearia",
+          "weight": 0.048387095
+        },
+        {
+          "word": "cavalidade",
+          "weight": 0.048387095
+        },
+        {
+          "word": "cretinização",
+          "weight": 0.048387095
+        },
+        {
+          "word": "despolidez",
+          "weight": 0.048387095
+        },
+        {
+          "word": "hebetismo",
+          "weight": 0.048387095
+        },
+        {
+          "word": "inospitalidade",
+          "weight": 0.048387095
+        },
+        {
+          "word": "barbaria",
+          "weight": 0.04761905
+        },
+        {
+          "word": "bestice",
+          "weight": 0.04761905
+        },
+        {
+          "word": "burrada",
+          "weight": 0.04761905
+        },
+        {
+          "word": "concentração",
+          "weight": 0.04761905
+        },
+        {
+          "word": "desagrado",
+          "weight": 0.04761905
+        },
+        {
+          "word": "estolidez",
+          "weight": 0.04761905
+        },
+        {
+          "word": "estultícia",
+          "weight": 0.04761905
+        },
+        {
+          "word": "imbecilidade",
+          "weight": 0.04761905
+        },
+        {
+          "word": "insolência",
+          "weight": 0.04761905
+        },
+        {
+          "word": "necedade",
+          "weight": 0.04761905
+        },
+        {
+          "word": "alarvada",
+          "weight": 0.032258064
+        },
+        {
+          "word": "aniagem",
+          "weight": 0.032258064
+        },
+        {
+          "word": "brutidade",
+          "weight": 0.032258064
+        },
+        {
+          "word": "espessor",
+          "weight": 0.032258064
+        },
+        {
+          "word": "estupidificação",
+          "weight": 0.032258064
+        },
+        {
+          "word": "fragueirice",
+          "weight": 0.032258064
+        },
+        {
+          "word": "gradeza",
+          "weight": 0.032258064
+        },
+        {
+          "word": "grossidão",
+          "weight": 0.032258064
+        },
+        {
+          "word": "grossor",
+          "weight": 0.032258064
+        },
+        {
+          "word": "impolítica",
+          "weight": 0.032258064
+        },
+        {
+          "word": "massa volúmica",
+          "weight": 0.032258064
+        },
+        {
+          "word": "obscenidades",
+          "weight": 0.032258064
+        },
+        {
+          "word": "portuguesada",
+          "weight": 0.032258064
+        },
+        {
+          "word": "regateirice",
+          "weight": 0.032258064
+        },
+        {
+          "word": "ruralidade",
+          "weight": 0.032258064
+        },
+        {
+          "word": "rustiquez",
+          "weight": 0.032258064
+        },
+        {
+          "word": "algozaria",
+          "weight": 0.031746034
+        },
+        {
+          "word": "animalidade",
+          "weight": 0.031746034
+        },
+        {
+          "word": "asneira",
+          "weight": 0.031746034
+        },
+        {
+          "word": "asnice",
+          "weight": 0.031746034
+        },
+        {
+          "word": "asnidade",
+          "weight": 0.031746034
+        },
+        {
+          "word": "atrocidade",
+          "weight": 0.031746034
+        },
+        {
+          "word": "barbárie",
+          "weight": 0.031746034
+        },
+        {
+          "word": "bebedeira",
+          "weight": 0.031746034
+        },
+        {
+          "word": "bestidade",
+          "weight": 0.031746034
+        },
+        {
+          "word": "bruteza",
+          "weight": 0.031746034
+        },
+        {
+          "word": "burricada",
+          "weight": 0.031746034
+        },
+        {
+          "word": "camelice",
+          "weight": 0.031746034
+        },
+        {
+          "word": "crassidade",
+          "weight": 0.031746034
+        },
+        {
+          "word": "crassidão",
+          "weight": 0.031746034
+        },
+        {
+          "word": "crassície",
+          "weight": 0.031746034
+        },
+        {
+          "word": "estultice",
+          "weight": 0.031746034
+        },
+        {
+          "word": "ferocidade",
+          "weight": 0.031746034
+        },
+        {
+          "word": "glutonaria",
+          "weight": 0.031746034
+        },
+        {
+          "word": "glutoneria",
+          "weight": 0.031746034
+        },
+        {
+          "word": "glutonia",
+          "weight": 0.031746034
+        },
+        {
+          "word": "inconveniência",
+          "weight": 0.031746034
+        },
+        {
+          "word": "incorrecção",
+          "weight": 0.031746034
+        },
+        {
+          "word": "ineptidão",
+          "weight": 0.031746034
+        },
+        {
+          "word": "inépcia",
+          "weight": 0.031746034
+        },
+        {
+          "word": "jericada",
+          "weight": 0.031746034
+        },
+        {
+          "word": "monstruosidade",
+          "weight": 0.031746034
+        },
+        {
+          "word": "má-formação",
+          "weight": 0.031746034
+        },
+        {
+          "word": "parvoíce",
+          "weight": 0.031746034
+        },
+        {
+          "word": "parvulez",
+          "weight": 0.031746034
+        },
+        {
+          "word": "profundidade",
+          "weight": 0.031746034
+        },
+        {
+          "word": "selvageria",
+          "weight": 0.031746034
+        },
+        {
+          "word": "selvagismo",
+          "weight": 0.031746034
+        },
+        {
+          "word": "tarouquice",
+          "weight": 0.031746034
+        },
+        {
+          "word": "zotismo",
+          "weight": 0.031746034
+        },
+        {
+          "word": "agressividade",
+          "weight": 0.015873017
+        },
+        {
+          "word": "baboseira",
+          "weight": 0.015873017
+        },
+        {
+          "word": "bastida",
+          "weight": 0.015873017
+        },
+        {
+          "word": "borracheira",
+          "weight": 0.015873017
+        },
+        {
+          "word": "borreguice",
+          "weight": 0.015873017
+        },
+        {
+          "word": "bosque",
+          "weight": 0.015873017
+        },
+        {
+          "word": "caipirada",
+          "weight": 0.015873017
+        },
+        {
+          "word": "chalaça",
+          "weight": 0.015873017
+        },
+        {
+          "word": "coice",
+          "weight": 0.015873017
+        },
+        {
+          "word": "compacidade",
+          "weight": 0.015873017
+        },
+        {
+          "word": "curteza",
+          "weight": 0.015873017
+        },
+        {
+          "word": "desapuro",
+          "weight": 0.015873017
+        },
+        {
+          "word": "descaso",
+          "weight": 0.015873017
+        },
+        {
+          "word": "descomedimento",
+          "weight": 0.015873017
+        },
+        {
+          "word": "desentendimento",
+          "weight": 0.015873017
+        },
+        {
+          "word": "disparate",
+          "weight": 0.015873017
+        },
+        {
+          "word": "falácia",
+          "weight": 0.015873017
+        },
+        {
+          "word": "gordura",
+          "weight": 0.015873017
+        },
+        {
+          "word": "idiotismo",
+          "weight": 0.015873017
+        },
+        {
+          "word": "imundície",
+          "weight": 0.015873017
+        },
+        {
+          "word": "inaptidão",
+          "weight": 0.015873017
+        },
+        {
+          "word": "linhagem",
+          "weight": 0.015873017
+        },
+        {
+          "word": "lorpice",
+          "weight": 0.015873017
+        },
+        {
+          "word": "materialidade",
+          "weight": 0.015873017
+        },
+        {
+          "word": "multidão",
+          "weight": 0.015873017
+        },
+        {
+          "word": "obscenidade",
+          "weight": 0.015873017
+        },
+        {
+          "word": "obscuridade",
+          "weight": 0.015873017
+        },
+        {
+          "word": "pequice",
+          "weight": 0.015873017
+        },
+        {
+          "word": "primarismo",
+          "weight": 0.015873017
+        },
+        {
+          "word": "profundez",
+          "weight": 0.015873017
+        },
+        {
+          "word": "profundeza",
+          "weight": 0.015873017
+        },
+        {
+          "word": "protérvia",
+          "weight": 0.015873017
+        },
+        {
+          "word": "rijeza",
+          "weight": 0.015873017
+        },
+        {
+          "word": "tolice",
+          "weight": 0.015873017
+        },
+        {
+          "word": "vacuidade",
+          "weight": 0.015873017
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "clip21",
+      "resource_label": "CLIP 2.1 (fuzzy sets)",
+      "synset_id": "1930",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "acumulação",
+          "weight": 0.9777778
+        },
+        {
+          "word": "aglomeração",
+          "weight": 0.82222223
+        },
+        {
+          "word": "amontoamento",
+          "weight": 0.7777778
+        },
+        {
+          "word": "amontoação",
+          "weight": 0.7111111
+        },
+        {
+          "word": "acúmulo",
+          "weight": 0.64444447
+        },
+        {
+          "word": "concentração",
+          "weight": 0.64444447
+        },
+        {
+          "word": "ajuntamento",
+          "weight": 0.62222224
+        },
+        {
+          "word": "reunião",
+          "weight": 0.46666667
+        },
+        {
+          "word": "sobreposição",
+          "weight": 0.44444445
+        },
+        {
+          "word": "aglomerado",
+          "weight": 0.42222223
+        },
+        {
+          "word": "superposição",
+          "weight": 0.42222223
+        },
+        {
+          "word": "agrupamento",
+          "weight": 0.41304347
+        },
+        {
+          "word": "empilhamento",
+          "weight": 0.4
+        },
+        {
+          "word": "acavalamento",
+          "weight": 0.37777779
+        },
+        {
+          "word": "cumulação",
+          "weight": 0.37777779
+        },
+        {
+          "word": "montão",
+          "weight": 0.3478261
+        },
+        {
+          "word": "acervo",
+          "weight": 0.32608697
+        },
+        {
+          "word": "amontoado",
+          "weight": 0.31111112
+        },
+        {
+          "word": "cúmulo",
+          "weight": 0.3043478
+        },
+        {
+          "word": "bolo",
+          "weight": 0.2888889
+        },
+        {
+          "word": "conglobação",
+          "weight": 0.2888889
+        },
+        {
+          "word": "convergência",
+          "weight": 0.2888889
+        },
+        {
+          "word": "centralização",
+          "weight": 0.26666668
+        },
+        {
+          "word": "ajunta",
+          "weight": 0.24444444
+        },
+        {
+          "word": "grupamento",
+          "weight": 0.24444444
+        },
+        {
+          "word": "junção",
+          "weight": 0.23913044
+        },
+        {
+          "word": "conglomeração",
+          "weight": 0.17777778
+        },
+        {
+          "word": "congérie",
+          "weight": 0.17777778
+        },
+        {
+          "word": "acrescentamento",
+          "weight": 0.17391305
+        },
+        {
+          "word": "encontro",
+          "weight": 0.17391305
+        },
+        {
+          "word": "pilha",
+          "weight": 0.17391305
+        },
+        {
+          "word": "condensação",
+          "weight": 0.15555556
+        },
+        {
+          "word": "acréscimo",
+          "weight": 0.1521739
+        },
+        {
+          "word": "assembleia",
+          "weight": 0.13043478
+        },
+        {
+          "word": "coleção",
+          "weight": 0.13043478
+        },
+        {
+          "word": "multidão",
+          "weight": 0.13043478
+        },
+        {
+          "word": "confluência",
+          "weight": 0.11111111
+        },
+        {
+          "word": "sintetização",
+          "weight": 0.11111111
+        },
+        {
+          "word": "concorrência",
+          "weight": 0.10869565
+        },
+        {
+          "word": "conjunto",
+          "weight": 0.10869565
+        },
+        {
+          "word": "sarau",
+          "weight": 0.10869565
+        },
+        {
+          "word": "união",
+          "weight": 0.10869565
+        },
+        {
+          "word": "centralismo",
+          "weight": 0.08888889
+        },
+        {
+          "word": "conglomerado",
+          "weight": 0.08888889
+        },
+        {
+          "word": "existências",
+          "weight": 0.08888889
+        },
+        {
+          "word": "palmatoada",
+          "weight": 0.08888889
+        },
+        {
+          "word": "acessão",
+          "weight": 0.08695652
+        },
+        {
+          "word": "acrescente",
+          "weight": 0.08695652
+        },
+        {
+          "word": "acrescimento",
+          "weight": 0.08695652
+        },
+        {
+          "word": "acrescência",
+          "weight": 0.08695652
+        },
+        {
+          "word": "adicionamento",
+          "weight": 0.08695652
+        },
+        {
+          "word": "adicionação",
+          "weight": 0.08695652
+        },
+        {
+          "word": "aditamento",
+          "weight": 0.08695652
+        },
+        {
+          "word": "adição",
+          "weight": 0.08695652
+        },
+        {
+          "word": "afluência",
+          "weight": 0.08695652
+        },
+        {
+          "word": "agregado",
+          "weight": 0.08695652
+        },
+        {
+          "word": "atenção",
+          "weight": 0.08695652
+        },
+        {
+          "word": "aumento",
+          "weight": 0.08695652
+        },
+        {
+          "word": "chusma",
+          "weight": 0.08695652
+        },
+        {
+          "word": "colecção",
+          "weight": 0.08695652
+        },
+        {
+          "word": "grupo",
+          "weight": 0.08695652
+        },
+        {
+          "word": "reconcentração",
+          "weight": 0.08695652
+        },
+        {
+          "word": "agregação",
+          "weight": 0.06521739
+        },
+        {
+          "word": "aposição",
+          "weight": 0.06521739
+        },
+        {
+          "word": "concreção",
+          "weight": 0.06521739
+        },
+        {
+          "word": "congregação",
+          "weight": 0.06521739
+        },
+        {
+          "word": "fusão",
+          "weight": 0.06521739
+        },
+        {
+          "word": "justaposição",
+          "weight": 0.06521739
+        },
+        {
+          "word": "meditação",
+          "weight": 0.06521739
+        },
+        {
+          "word": "monte",
+          "weight": 0.06521739
+        },
+        {
+          "word": "ruma",
+          "weight": 0.06521739
+        },
+        {
+          "word": "serão",
+          "weight": 0.06521739
+        },
+        {
+          "word": "agregaçao",
+          "weight": 0.044444446
+        },
+        {
+          "word": "bolos",
+          "weight": 0.044444446
+        },
+        {
+          "word": "briquete",
+          "weight": 0.044444446
+        },
+        {
+          "word": "concentrações",
+          "weight": 0.044444446
+        },
+        {
+          "word": "conflução",
+          "weight": 0.044444446
+        },
+        {
+          "word": "cremoso",
+          "weight": 0.044444446
+        },
+        {
+          "word": "grande reunião popular",
+          "weight": 0.044444446
+        },
+        {
+          "word": "jumbai",
+          "weight": 0.044444446
+        },
+        {
+          "word": "juntamento",
+          "weight": 0.044444446
+        },
+        {
+          "word": "montoeira",
+          "weight": 0.044444446
+        },
+        {
+          "word": "mítingue",
+          "weight": 0.044444446
+        },
+        {
+          "word": "pata-toada",
+          "weight": 0.044444446
+        },
+        {
+          "word": "reunificação",
+          "weight": 0.044444446
+        },
+        {
+          "word": "sobreimpressão",
+          "weight": 0.044444446
+        },
+        {
+          "word": "stock",
+          "weight": 0.044444446
+        },
+        {
+          "word": "abocamento",
+          "weight": 0.04347826
+        },
+        {
+          "word": "abstração",
+          "weight": 0.04347826
+        },
+        {
+          "word": "adjunção",
+          "weight": 0.04347826
+        },
+        {
+          "word": "agremiação",
+          "weight": 0.04347826
+        },
+        {
+          "word": "alheamento",
+          "weight": 0.04347826
+        },
+        {
+          "word": "aplicação",
+          "weight": 0.04347826
+        },
+        {
+          "word": "aproximação",
+          "weight": 0.04347826
+        },
+        {
+          "word": "apuramento",
+          "weight": 0.04347826
+        },
+        {
+          "word": "arredondamento",
+          "weight": 0.04347826
+        },
+        {
+          "word": "assembléia",
+          "weight": 0.04347826
+        },
+        {
+          "word": "associação",
+          "weight": 0.04347826
+        },
+        {
+          "word": "atulhamento",
+          "weight": 0.04347826
+        },
+        {
+          "word": "atulho",
+          "weight": 0.04347826
+        },
+        {
+          "word": "bolada",
+          "weight": 0.04347826
+        },
+        {
+          "word": "cardume",
+          "weight": 0.04347826
+        },
+        {
+          "word": "castelo",
+          "weight": 0.04347826
+        },
+        {
+          "word": "coincidência",
+          "weight": 0.04347826
+        },
+        {
+          "word": "concomitância",
+          "weight": 0.04347826
+        },
+        {
+          "word": "conjugação",
+          "weight": 0.04347826
+        },
+        {
+          "word": "consílio",
+          "weight": 0.04347826
+        },
+        {
+          "word": "densidade",
+          "weight": 0.04347826
+        },
+        {
+          "word": "ensimesmamento",
+          "weight": 0.04347826
+        },
+        {
+          "word": "entulhamento",
+          "weight": 0.04347826
+        },
+        {
+          "word": "influxo",
+          "weight": 0.04347826
+        },
+        {
+          "word": "massa",
+          "weight": 0.04347826
+        },
+        {
+          "word": "montanha",
+          "weight": 0.04347826
+        },
+        {
+          "word": "partida",
+          "weight": 0.04347826
+        },
+        {
+          "word": "pensamento",
+          "weight": 0.04347826
+        },
+        {
+          "word": "plenário",
+          "weight": 0.04347826
+        },
+        {
+          "word": "reflexão",
+          "weight": 0.04347826
+        },
+        {
+          "word": "solidificação",
+          "weight": 0.04347826
+        },
+        {
+          "word": "tertúlia",
+          "weight": 0.04347826
+        },
+        {
+          "word": "afluxo",
+          "weight": 0.02173913
+        },
+        {
+          "word": "arraial",
+          "weight": 0.02173913
+        },
+        {
+          "word": "assiduidade",
+          "weight": 0.02173913
+        },
+        {
+          "word": "atendimento",
+          "weight": 0.02173913
+        },
+        {
+          "word": "baderna",
+          "weight": 0.02173913
+        },
+        {
+          "word": "banda",
+          "weight": 0.02173913
+        },
+        {
+          "word": "bando",
+          "weight": 0.02173913
+        },
+        {
+          "word": "banja",
+          "weight": 0.02173913
+        },
+        {
+          "word": "barafunda",
+          "weight": 0.02173913
+        },
+        {
+          "word": "batalhão",
+          "weight": 0.02173913
+        },
+        {
+          "word": "bola",
+          "weight": 0.02173913
+        },
+        {
+          "word": "bolão",
+          "weight": 0.02173913
+        },
+        {
+          "word": "conciliação",
+          "weight": 0.02173913
+        },
+        {
+          "word": "concisão",
+          "weight": 0.02173913
+        },
+        {
+          "word": "concordância",
+          "weight": 0.02173913
+        },
+        {
+          "word": "confusão",
+          "weight": 0.02173913
+        },
+        {
+          "word": "congestionamento",
+          "weight": 0.02173913
+        },
+        {
+          "word": "congestão",
+          "weight": 0.02173913
+        },
+        {
+          "word": "congresso",
+          "weight": 0.02173913
+        },
+        {
+          "word": "correição",
+          "weight": 0.02173913
+        },
+        {
+          "word": "cáfila",
+          "weight": 0.02173913
+        },
+        {
+          "word": "cápsula",
+          "weight": 0.02173913
+        },
+        {
+          "word": "debandada",
+          "weight": 0.02173913
+        },
+        {
+          "word": "desembocadura",
+          "weight": 0.02173913
+        },
+        {
+          "word": "desordem",
+          "weight": 0.02173913
+        },
+        {
+          "word": "encastelamento",
+          "weight": 0.02173913
+        },
+        {
+          "word": "enxame",
+          "weight": 0.02173913
+        },
+        {
+          "word": "estoque",
+          "weight": 0.02173913
+        },
+        {
+          "word": "estouro da boiada",
+          "weight": 0.02173913
+        },
+        {
+          "word": "festa",
+          "weight": 0.02173913
+        },
+        {
+          "word": "foz",
+          "weight": 0.02173913
+        },
+        {
+          "word": "horda",
+          "weight": 0.02173913
+        },
+        {
+          "word": "império",
+          "weight": 0.02173913
+        },
+        {
+          "word": "lance",
+          "weight": 0.02173913
+        },
+        {
+          "word": "legião",
+          "weight": 0.02173913
+        },
+        {
+          "word": "leva",
+          "weight": 0.02173913
+        },
+        {
+          "word": "liquefacção",
+          "weight": 0.02173913
+        },
+        {
+          "word": "malta",
+          "weight": 0.02173913
+        },
+        {
+          "word": "manada",
+          "weight": 0.02173913
+        },
+        {
+          "word": "massa volúmica",
+          "weight": 0.02173913
+        },
+        {
+          "word": "massangano",
+          "weight": 0.02173913
+        },
+        {
+          "word": "meeting",
+          "weight": 0.02173913
+        },
+        {
+          "word": "morganho",
+          "weight": 0.02173913
+        },
+        {
+          "word": "mundaréu de gente",
+          "weight": 0.02173913
+        },
+        {
+          "word": "nuvem",
+          "weight": 0.02173913
+        },
+        {
+          "word": "núcleo",
+          "weight": 0.02173913
+        },
+        {
+          "word": "ordem",
+          "weight": 0.02173913
+        },
+        {
+          "word": "palma",
+          "weight": 0.02173913
+        },
+        {
+          "word": "panqueca",
+          "weight": 0.02173913
+        },
+        {
+          "word": "pinha",
+          "weight": 0.02173913
+        },
+        {
+          "word": "provisão",
+          "weight": 0.02173913
+        },
+        {
+          "word": "quadrilha",
+          "weight": 0.02173913
+        },
+        {
+          "word": "recolha",
+          "weight": 0.02173913
+        },
+        {
+          "word": "reprêsa",
+          "weight": 0.02173913
+        },
+        {
+          "word": "reserva",
+          "weight": 0.02173913
+        },
+        {
+          "word": "resumo",
+          "weight": 0.02173913
+        },
+        {
+          "word": "roda-viva",
+          "weight": 0.02173913
+        },
+        {
+          "word": "sessão",
+          "weight": 0.02173913
+        },
+        {
+          "word": "sociedade",
+          "weight": 0.02173913
+        },
+        {
+          "word": "súcia",
+          "weight": 0.02173913
+        },
+        {
+          "word": "tropel",
+          "weight": 0.02173913
+        },
+        {
+          "word": "turba",
+          "weight": 0.02173913
+        },
+        {
+          "word": "turbamulta",
+          "weight": 0.02173913
+        },
+        {
+          "word": "turbilhão",
+          "weight": 0.02173913
+        },
+        {
+          "word": "turma",
+          "weight": 0.02173913
+        },
+        {
+          "word": "unificação",
+          "weight": 0.02173913
+        },
+        {
+          "word": "viveiro",
+          "weight": 0.02173913
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "clip21",
+      "resource_label": "CLIP 2.1 (fuzzy sets)",
+      "synset_id": "7750",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "constância",
+          "weight": 3.0
+        },
+        {
+          "word": "firmeza",
+          "weight": 2.9166667
+        },
+        {
+          "word": "persistência",
+          "weight": 2.5
+        },
+        {
+          "word": "perseverança",
+          "weight": 2.3333333
+        },
+        {
+          "word": "estabilidade",
+          "weight": 1.5
+        },
+        {
+          "word": "permanência",
+          "weight": 1.5
+        },
+        {
+          "word": "solidez",
+          "weight": 1.25
+        },
+        {
+          "word": "consistência",
+          "weight": 1.0833334
+        },
+        {
+          "word": "segurança",
+          "weight": 1.0769231
+        },
+        {
+          "word": "tenacidade",
+          "weight": 1.0769231
+        },
+        {
+          "word": "afinco",
+          "weight": 0.9230769
+        },
+        {
+          "word": "insistência",
+          "weight": 0.7692308
+        },
+        {
+          "word": "subsistência",
+          "weight": 0.7692308
+        },
+        {
+          "word": "resistência",
+          "weight": 0.61538464
+        },
+        {
+          "word": "continuidade",
+          "weight": 0.53846157
+        },
+        {
+          "word": "determinação",
+          "weight": 0.53846157
+        },
+        {
+          "word": "certeza",
+          "weight": 0.46153846
+        },
+        {
+          "word": "equilíbrio",
+          "weight": 0.46153846
+        },
+        {
+          "word": "fortaleza",
+          "weight": 0.46153846
+        },
+        {
+          "word": "imanência",
+          "weight": 0.41666666
+        },
+        {
+          "word": "dureza",
+          "weight": 0.3846154
+        },
+        {
+          "word": "paciência",
+          "weight": 0.3846154
+        },
+        {
+          "word": "rijeza",
+          "weight": 0.3846154
+        },
+        {
+          "word": "corpo",
+          "weight": 0.30769232
+        },
+        {
+          "word": "energia",
+          "weight": 0.30769232
+        },
+        {
+          "word": "estada",
+          "weight": 0.30769232
+        },
+        {
+          "word": "estadia",
+          "weight": 0.30769232
+        },
+        {
+          "word": "fixidez",
+          "weight": 0.30769232
+        },
+        {
+          "word": "fortidão",
+          "weight": 0.30769232
+        },
+        {
+          "word": "força",
+          "weight": 0.30769232
+        },
+        {
+          "word": "robustez",
+          "weight": 0.30769232
+        },
+        {
+          "word": "vigor",
+          "weight": 0.30769232
+        },
+        {
+          "word": "firmidão",
+          "weight": 0.25
+        },
+        {
+          "word": "invariação",
+          "weight": 0.25
+        },
+        {
+          "word": "coragem",
+          "weight": 0.23076923
+        },
+        {
+          "word": "densidade",
+          "weight": 0.23076923
+        },
+        {
+          "word": "durabilidade",
+          "weight": 0.23076923
+        },
+        {
+          "word": "duração",
+          "weight": 0.23076923
+        },
+        {
+          "word": "espessura",
+          "weight": 0.23076923
+        },
+        {
+          "word": "fidelidade",
+          "weight": 0.23076923
+        },
+        {
+          "word": "fundamento",
+          "weight": 0.23076923
+        },
+        {
+          "word": "imobilidade",
+          "weight": 0.23076923
+        },
+        {
+          "word": "obstinação",
+          "weight": 0.23076923
+        },
+        {
+          "word": "porfia",
+          "weight": 0.23076923
+        },
+        {
+          "word": "rigor",
+          "weight": 0.23076923
+        },
+        {
+          "word": "perseverância",
+          "weight": 0.16666667
+        },
+        {
+          "word": "assento",
+          "weight": 0.15384616
+        },
+        {
+          "word": "assiduidade",
+          "weight": 0.15384616
+        },
+        {
+          "word": "coerência",
+          "weight": 0.15384616
+        },
+        {
+          "word": "compacidade",
+          "weight": 0.15384616
+        },
+        {
+          "word": "concretude",
+          "weight": 0.15384616
+        },
+        {
+          "word": "confiança",
+          "weight": 0.15384616
+        },
+        {
+          "word": "conservação",
+          "weight": 0.15384616
+        },
+        {
+          "word": "densidão",
+          "weight": 0.15384616
+        },
+        {
+          "word": "estreiteza",
+          "weight": 0.15384616
+        },
+        {
+          "word": "familiaridade",
+          "weight": 0.15384616
+        },
+        {
+          "word": "fibra",
+          "weight": 0.15384616
+        },
+        {
+          "word": "finca-pé",
+          "weight": 0.15384616
+        },
+        {
+          "word": "fixidade",
+          "weight": 0.15384616
+        },
+        {
+          "word": "garra",
+          "weight": 0.15384616
+        },
+        {
+          "word": "intimidade",
+          "weight": 0.15384616
+        },
+        {
+          "word": "macicez",
+          "weight": 0.15384616
+        },
+        {
+          "word": "materialidade",
+          "weight": 0.15384616
+        },
+        {
+          "word": "nervo",
+          "weight": 0.15384616
+        },
+        {
+          "word": "pertinácia",
+          "weight": 0.15384616
+        },
+        {
+          "word": "pulso",
+          "weight": 0.15384616
+        },
+        {
+          "word": "rigidez",
+          "weight": 0.15384616
+        },
+        {
+          "word": "segureza",
+          "weight": 0.15384616
+        },
+        {
+          "word": "seguridade",
+          "weight": 0.15384616
+        },
+        {
+          "word": "talento",
+          "weight": 0.15384616
+        },
+        {
+          "word": "tenência",
+          "weight": 0.15384616
+        },
+        {
+          "word": "tesão",
+          "weight": 0.15384616
+        },
+        {
+          "word": "valentia",
+          "weight": 0.15384616
+        },
+        {
+          "word": "veemência",
+          "weight": 0.15384616
+        },
+        {
+          "word": "autoridade",
+          "weight": 0.07692308
+        },
+        {
+          "word": "base",
+          "weight": 0.07692308
+        },
+        {
+          "word": "carácter",
+          "weight": 0.07692308
+        },
+        {
+          "word": "credibilidade",
+          "weight": 0.07692308
+        },
+        {
+          "word": "crédito",
+          "weight": 0.07692308
+        },
+        {
+          "word": "empenho",
+          "weight": 0.07692308
+        },
+        {
+          "word": "encasque",
+          "weight": 0.07692308
+        },
+        {
+          "word": "encorpamento",
+          "weight": 0.07692308
+        },
+        {
+          "word": "estância",
+          "weight": 0.07692308
+        },
+        {
+          "word": "fermença",
+          "weight": 0.07692308
+        },
+        {
+          "word": "firmideu",
+          "weight": 0.07692308
+        },
+        {
+          "word": "garantia",
+          "weight": 0.07692308
+        },
+        {
+          "word": "inalterabilidade",
+          "weight": 0.07692308
+        },
+        {
+          "word": "inerência",
+          "weight": 0.07692308
+        },
+        {
+          "word": "inflexibilidade",
+          "weight": 0.07692308
+        },
+        {
+          "word": "instância",
+          "weight": 0.07692308
+        },
+        {
+          "word": "perenidade",
+          "weight": 0.07692308
+        },
+        {
+          "word": "perseguição",
+          "weight": 0.07692308
+        },
+        {
+          "word": "pervicácia",
+          "weight": 0.07692308
+        },
+        {
+          "word": "pouso",
+          "weight": 0.07692308
+        },
+        {
+          "word": "precisão",
+          "weight": 0.07692308
+        },
+        {
+          "word": "realidade",
+          "weight": 0.07692308
+        },
+        {
+          "word": "regularidade",
+          "weight": 0.07692308
+        },
+        {
+          "word": "renitência",
+          "weight": 0.07692308
+        },
+        {
+          "word": "resolução",
+          "weight": 0.07692308
+        },
+        {
+          "word": "retesia",
+          "weight": 0.07692308
+        },
+        {
+          "word": "síria",
+          "weight": 0.07692308
+        },
+        {
+          "word": "tesura",
+          "weight": 0.07692308
+        },
+        {
+          "word": "textura",
+          "weight": 0.07692308
+        },
+        {
+          "word": "uniformidade",
+          "weight": 0.07692308
+        },
+        {
+          "word": "vigência",
+          "weight": 0.07692308
+        },
+        {
+          "word": "viscosidade",
+          "weight": 0.07692308
+        },
+        {
+          "word": "ânimo",
+          "weight": 0.07692308
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "clip21",
+      "resource_label": "CLIP 2.1 (fuzzy sets)",
+      "synset_id": "7788",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "cadáver",
+          "weight": 2.0
+        },
+        {
+          "word": "defunto",
+          "weight": 1.75
+        },
+        {
+          "word": "morto",
+          "weight": 1.5833334
+        },
+        {
+          "word": "corpo",
+          "weight": 1.0
+        },
+        {
+          "word": "sucumbido",
+          "weight": 0.5833333
+        },
+        {
+          "word": "restos mortais",
+          "weight": 0.5
+        },
+        {
+          "word": "enchido",
+          "weight": 0.41666666
+        },
+        {
+          "word": "carne",
+          "weight": 0.3846154
+        },
+        {
+          "word": "corporação",
+          "weight": 0.3846154
+        },
+        {
+          "word": "consistência",
+          "weight": 0.30769232
+        },
+        {
+          "word": "vulto",
+          "weight": 0.30769232
+        },
+        {
+          "word": "corpo humano",
+          "weight": 0.25
+        },
+        {
+          "word": "falecido",
+          "weight": 0.25
+        },
+        {
+          "word": "figura",
+          "weight": 0.23076923
+        },
+        {
+          "word": "consistencia",
+          "weight": 0.16666667
+        },
+        {
+          "word": "finado",
+          "weight": 0.16666667
+        },
+        {
+          "word": "mortezinho",
+          "weight": 0.16666667
+        },
+        {
+          "word": "anatomia",
+          "weight": 0.15384616
+        },
+        {
+          "word": "aspecto",
+          "weight": 0.15384616
+        },
+        {
+          "word": "chumaço",
+          "weight": 0.15384616
+        },
+        {
+          "word": "compleição",
+          "weight": 0.15384616
+        },
+        {
+          "word": "conselho",
+          "weight": 0.15384616
+        },
+        {
+          "word": "constituição",
+          "weight": 0.15384616
+        },
+        {
+          "word": "corporatura",
+          "weight": 0.15384616
+        },
+        {
+          "word": "delfino",
+          "weight": 0.15384616
+        },
+        {
+          "word": "densidade",
+          "weight": 0.15384616
+        },
+        {
+          "word": "físico",
+          "weight": 0.15384616
+        },
+        {
+          "word": "presença",
+          "weight": 0.15384616
+        },
+        {
+          "word": "agremiação",
+          "weight": 0.07692308
+        },
+        {
+          "word": "associação",
+          "weight": 0.07692308
+        },
+        {
+          "word": "base",
+          "weight": 0.07692308
+        },
+        {
+          "word": "cabedal",
+          "weight": 0.07692308
+        },
+        {
+          "word": "coerência",
+          "weight": 0.07692308
+        },
+        {
+          "word": "colecção",
+          "weight": 0.07692308
+        },
+        {
+          "word": "comunidade",
+          "weight": 0.07692308
+        },
+        {
+          "word": "contexto",
+          "weight": 0.07692308
+        },
+        {
+          "word": "cooperação",
+          "weight": 0.07692308
+        },
+        {
+          "word": "cortiço",
+          "weight": 0.07692308
+        },
+        {
+          "word": "desaparecido",
+          "weight": 0.07692308
+        },
+        {
+          "word": "espessura",
+          "weight": 0.07692308
+        },
+        {
+          "word": "forma",
+          "weight": 0.07692308
+        },
+        {
+          "word": "grossura",
+          "weight": 0.07692308
+        },
+        {
+          "word": "grupo",
+          "weight": 0.07692308
+        },
+        {
+          "word": "importância",
+          "weight": 0.07692308
+        },
+        {
+          "word": "mate",
+          "weight": 0.07692308
+        },
+        {
+          "word": "morte",
+          "weight": 0.07692308
+        },
+        {
+          "word": "multidão",
+          "weight": 0.07692308
+        },
+        {
+          "word": "organismo",
+          "weight": 0.07692308
+        },
+        {
+          "word": "pele",
+          "weight": 0.07692308
+        },
+        {
+          "word": "regimento",
+          "weight": 0.07692308
+        },
+        {
+          "word": "torso",
+          "weight": 0.07692308
+        },
+        {
+          "word": "tronco",
+          "weight": 0.07692308
+        },
+        {
+          "word": "órgão",
+          "weight": 0.07692308
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "clip21",
+      "resource_label": "CLIP 2.1 (fuzzy sets)",
+      "synset_id": "10118",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "profundidade",
+          "weight": 2.6666667
+        },
+        {
+          "word": "fundura",
+          "weight": 2.1111112
+        },
+        {
+          "word": "profundeza",
+          "weight": 2.0
+        },
+        {
+          "word": "profundez",
+          "weight": 1.2222222
+        },
+        {
+          "word": "profundura",
+          "weight": 1.2222222
+        },
+        {
+          "word": "intensidade",
+          "weight": 1.1
+        },
+        {
+          "word": "abismo",
+          "weight": 1.0
+        },
+        {
+          "word": "gravidade",
+          "weight": 1.0
+        },
+        {
+          "word": "importância",
+          "weight": 1.0
+        },
+        {
+          "word": "proporção",
+          "weight": 1.0
+        },
+        {
+          "word": "proporções",
+          "weight": 1.0
+        },
+        {
+          "word": "pélago",
+          "weight": 0.9
+        },
+        {
+          "word": "altura",
+          "weight": 0.8
+        },
+        {
+          "word": "impenetrabilidade",
+          "weight": 0.8
+        },
+        {
+          "word": "profundas",
+          "weight": 0.33333334
+        },
+        {
+          "word": "espessura",
+          "weight": 0.3
+        },
+        {
+          "word": "fundo",
+          "weight": 0.3
+        },
+        {
+          "word": "confundas",
+          "weight": 0.22222222
+        },
+        {
+          "word": "profundo",
+          "weight": 0.22222222
+        },
+        {
+          "word": "abisso",
+          "weight": 0.2
+        },
+        {
+          "word": "barranco",
+          "weight": 0.2
+        },
+        {
+          "word": "despenhadeiro",
+          "weight": 0.2
+        },
+        {
+          "word": "inferno",
+          "weight": 0.2
+        },
+        {
+          "word": "precipício",
+          "weight": 0.2
+        },
+        {
+          "word": "centro",
+          "weight": 0.1
+        },
+        {
+          "word": "complicação",
+          "weight": 0.1
+        },
+        {
+          "word": "densidade",
+          "weight": 0.1
+        },
+        {
+          "word": "entranha",
+          "weight": 0.1
+        },
+        {
+          "word": "fundamento",
+          "weight": 0.1
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "clip21",
+      "resource_label": "CLIP 2.1 (fuzzy sets)",
+      "synset_id": "11787",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "escuridão",
+          "weight": 2.3125
+        },
+        {
+          "word": "trevas",
+          "weight": 1.09375
+        },
+        {
+          "word": "negrume",
+          "weight": 0.96875
+        },
+        {
+          "word": "negrura",
+          "weight": 0.96875
+        },
+        {
+          "word": "escuridade",
+          "weight": 0.9375
+        },
+        {
+          "word": "negror",
+          "weight": 0.84375
+        },
+        {
+          "word": "cerração",
+          "weight": 0.78125
+        },
+        {
+          "word": "negridão",
+          "weight": 0.75
+        },
+        {
+          "word": "noite",
+          "weight": 0.65625
+        },
+        {
+          "word": "sombra",
+          "weight": 0.54545456
+        },
+        {
+          "word": "véu",
+          "weight": 0.53125
+        },
+        {
+          "word": "noute",
+          "weight": 0.5
+        },
+        {
+          "word": "nevoeiro",
+          "weight": 0.4848485
+        },
+        {
+          "word": "tenebrosidade",
+          "weight": 0.46875
+        },
+        {
+          "word": "bruma",
+          "weight": 0.4375
+        },
+        {
+          "word": "névoa",
+          "weight": 0.4375
+        },
+        {
+          "word": "escureza",
+          "weight": 0.40625
+        },
+        {
+          "word": "obscuridade",
+          "weight": 0.375
+        },
+        {
+          "word": "pretidão",
+          "weight": 0.375
+        },
+        {
+          "word": "treva",
+          "weight": 0.25
+        },
+        {
+          "word": "ignorância",
+          "weight": 0.24242425
+        },
+        {
+          "word": "nuvem",
+          "weight": 0.24242425
+        },
+        {
+          "word": "manto",
+          "weight": 0.21875
+        },
+        {
+          "word": "escuro",
+          "weight": 0.1875
+        },
+        {
+          "word": "neblina",
+          "weight": 0.18181819
+        },
+        {
+          "word": "caligem",
+          "weight": 0.15151516
+        },
+        {
+          "word": "opacidade",
+          "weight": 0.125
+        },
+        {
+          "word": "mistério",
+          "weight": 0.121212125
+        },
+        {
+          "word": "nebulosidade",
+          "weight": 0.121212125
+        },
+        {
+          "word": "tristeza",
+          "weight": 0.121212125
+        },
+        {
+          "word": "melânio",
+          "weight": 0.09375
+        },
+        {
+          "word": "nébula",
+          "weight": 0.09375
+        },
+        {
+          "word": "amículo",
+          "weight": 0.09090909
+        },
+        {
+          "word": "mantilha",
+          "weight": 0.09090909
+        },
+        {
+          "word": "noitada",
+          "weight": 0.09090909
+        },
+        {
+          "word": "obscurecimento",
+          "weight": 0.09090909
+        },
+        {
+          "word": "brenseda",
+          "weight": 0.0625
+        },
+        {
+          "word": "cataratas",
+          "weight": 0.0625
+        },
+        {
+          "word": "escurana",
+          "weight": 0.0625
+        },
+        {
+          "word": "escuridez",
+          "weight": 0.0625
+        },
+        {
+          "word": "fusquidão",
+          "weight": 0.0625
+        },
+        {
+          "word": "obscureza",
+          "weight": 0.0625
+        },
+        {
+          "word": "sorrolho",
+          "weight": 0.0625
+        },
+        {
+          "word": "tênebra",
+          "weight": 0.0625
+        },
+        {
+          "word": "xona",
+          "weight": 0.0625
+        },
+        {
+          "word": "abismo",
+          "weight": 0.060606062
+        },
+        {
+          "word": "agro",
+          "weight": 0.060606062
+        },
+        {
+          "word": "agrura",
+          "weight": 0.060606062
+        },
+        {
+          "word": "amargura",
+          "weight": 0.060606062
+        },
+        {
+          "word": "ambiguidade",
+          "weight": 0.060606062
+        },
+        {
+          "word": "aparência",
+          "weight": 0.060606062
+        },
+        {
+          "word": "bioco",
+          "weight": 0.060606062
+        },
+        {
+          "word": "capa",
+          "weight": 0.060606062
+        },
+        {
+          "word": "cendal",
+          "weight": 0.060606062
+        },
+        {
+          "word": "chona",
+          "weight": 0.060606062
+        },
+        {
+          "word": "cinceiro",
+          "weight": 0.060606062
+        },
+        {
+          "word": "complexidade",
+          "weight": 0.060606062
+        },
+        {
+          "word": "cortina",
+          "weight": 0.060606062
+        },
+        {
+          "word": "decepção",
+          "weight": 0.060606062
+        },
+        {
+          "word": "desgosto",
+          "weight": 0.060606062
+        },
+        {
+          "word": "disfarce",
+          "weight": 0.060606062
+        },
+        {
+          "word": "dissabor",
+          "weight": 0.060606062
+        },
+        {
+          "word": "embaciamento",
+          "weight": 0.060606062
+        },
+        {
+          "word": "impopularidade",
+          "weight": 0.060606062
+        },
+        {
+          "word": "imprecisão",
+          "weight": 0.060606062
+        },
+        {
+          "word": "incerteza",
+          "weight": 0.060606062
+        },
+        {
+          "word": "incompreensibilidade",
+          "weight": 0.060606062
+        },
+        {
+          "word": "ininteligibilidade",
+          "weight": 0.060606062
+        },
+        {
+          "word": "lobreguidão",
+          "weight": 0.060606062
+        },
+        {
+          "word": "melancolia",
+          "weight": 0.060606062
+        },
+        {
+          "word": "mourença",
+          "weight": 0.060606062
+        },
+        {
+          "word": "nebrina",
+          "weight": 0.060606062
+        },
+        {
+          "word": "nevoaça",
+          "weight": 0.060606062
+        },
+        {
+          "word": "não-popularidade",
+          "weight": 0.060606062
+        },
+        {
+          "word": "película",
+          "weight": 0.060606062
+        },
+        {
+          "word": "pretexto",
+          "weight": 0.060606062
+        },
+        {
+          "word": "alegação",
+          "weight": 0.030303031
+        },
+        {
+          "word": "anoitecer",
+          "weight": 0.030303031
+        },
+        {
+          "word": "anonimato",
+          "weight": 0.030303031
+        },
+        {
+          "word": "beca",
+          "weight": 0.030303031
+        },
+        {
+          "word": "breu",
+          "weight": 0.030303031
+        },
+        {
+          "word": "bulcão",
+          "weight": 0.030303031
+        },
+        {
+          "word": "camada",
+          "weight": 0.030303031
+        },
+        {
+          "word": "cegueira",
+          "weight": 0.030303031
+        },
+        {
+          "word": "cobertura",
+          "weight": 0.030303031
+        },
+        {
+          "word": "crime",
+          "weight": 0.030303031
+        },
+        {
+          "word": "crueldade",
+          "weight": 0.030303031
+        },
+        {
+          "word": "densidade",
+          "weight": 0.030303031
+        },
+        {
+          "word": "desconhecimento",
+          "weight": 0.030303031
+        },
+        {
+          "word": "dificuldade",
+          "weight": 0.030303031
+        },
+        {
+          "word": "embaçamento",
+          "weight": 0.030303031
+        },
+        {
+          "word": "enegrecimento",
+          "weight": 0.030303031
+        },
+        {
+          "word": "esquecimento",
+          "weight": 0.030303031
+        },
+        {
+          "word": "fim de tarde",
+          "weight": 0.030303031
+        },
+        {
+          "word": "ilusão",
+          "weight": 0.030303031
+        },
+        {
+          "word": "labéu",
+          "weight": 0.030303031
+        },
+        {
+          "word": "mancha",
+          "weight": 0.030303031
+        },
+        {
+          "word": "morte",
+          "weight": 0.030303031
+        },
+        {
+          "word": "mácula",
+          "weight": 0.030303031
+        },
+        {
+          "word": "negro",
+          "weight": 0.030303031
+        },
+        {
+          "word": "névoa seca",
+          "weight": 0.030303031
+        },
+        {
+          "word": "perversidade",
+          "weight": 0.030303031
+        },
+        {
+          "word": "pálio",
+          "weight": 0.030303031
+        },
+        {
+          "word": "pênula",
+          "weight": 0.030303031
+        },
+        {
+          "word": "reima",
+          "weight": 0.030303031
+        },
+        {
+          "word": "revestimento",
+          "weight": 0.030303031
+        },
+        {
+          "word": "rouquidão",
+          "weight": 0.030303031
+        },
+        {
+          "word": "sorna",
+          "weight": 0.030303031
+        },
+        {
+          "word": "tarde",
+          "weight": 0.030303031
+        },
+        {
+          "word": "velamento",
+          "weight": 0.030303031
+        },
+        {
+          "word": "vestido",
+          "weight": 0.030303031
+        },
+        {
+          "word": "véspera",
+          "weight": 0.030303031
+        },
+        {
+          "word": "zona",
+          "weight": 0.030303031
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "clip21",
+      "resource_label": "CLIP 2.1 (fuzzy sets)",
+      "synset_id": "13013",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "compacidade",
+          "weight": 1.6666666
+        },
+        {
+          "word": "condensabilidade",
+          "weight": 1.0
+        },
+        {
+          "word": "macicez",
+          "weight": 1.0
+        },
+        {
+          "word": "solidez",
+          "weight": 1.0
+        },
+        {
+          "word": "densidade",
+          "weight": 0.25
+        },
+        {
+          "word": "dureza",
+          "weight": 0.25
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "contopt",
+      "resource_label": "CONTO.PT 0.1 (fuzzy)",
+      "synset_id": "7556",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "compacidade",
+          "weight": 1.6666666
+        },
+        {
+          "word": "condensabilidade",
+          "weight": 1.0
+        },
+        {
+          "word": "macicez",
+          "weight": 1.0
+        },
+        {
+          "word": "solidez",
+          "weight": 1.0
+        },
+        {
+          "word": "densidade",
+          "weight": 0.25
+        },
+        {
+          "word": "dureza",
+          "weight": 0.25
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "contopt",
+      "resource_label": "CONTO.PT 0.1 (fuzzy)",
+      "synset_id": "15567",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "grosseria",
+          "weight": 1.3387097
+        },
+        {
+          "word": "grossaria",
+          "weight": 1.1290323
+        },
+        {
+          "word": "rudeza",
+          "weight": 1.048387
+        },
+        {
+          "word": "impolidez",
+          "weight": 1.016129
+        },
+        {
+          "word": "brutalidade",
+          "weight": 0.91935486
+        },
+        {
+          "word": "incivilidade",
+          "weight": 0.88709676
+        },
+        {
+          "word": "rudez",
+          "weight": 0.88709676
+        },
+        {
+          "word": "grossura",
+          "weight": 0.8064516
+        },
+        {
+          "word": "estupidez",
+          "weight": 0.7580645
+        },
+        {
+          "word": "indelicadeza",
+          "weight": 0.7258065
+        },
+        {
+          "word": "rusticidade",
+          "weight": 0.7258065
+        },
+        {
+          "word": "boçalidade",
+          "weight": 0.6451613
+        },
+        {
+          "word": "descortesia",
+          "weight": 0.6451613
+        },
+        {
+          "word": "agrestia",
+          "weight": 0.62903225
+        },
+        {
+          "word": "chavasquice",
+          "weight": 0.61290324
+        },
+        {
+          "word": "rustiqueza",
+          "weight": 0.61290324
+        },
+        {
+          "word": "agrestice",
+          "weight": 0.5967742
+        },
+        {
+          "word": "agrestidade",
+          "weight": 0.5967742
+        },
+        {
+          "word": "bagualada",
+          "weight": 0.5967742
+        },
+        {
+          "word": "bronquice",
+          "weight": 0.5967742
+        },
+        {
+          "word": "rusticaria",
+          "weight": 0.5967742
+        },
+        {
+          "word": "espessura",
+          "weight": 0.41935483
+        },
+        {
+          "word": "abrutamento",
+          "weight": 0.38709676
+        },
+        {
+          "word": "alarvaria",
+          "weight": 0.33870968
+        },
+        {
+          "word": "chamboíce",
+          "weight": 0.33870968
+        },
+        {
+          "word": "má-criação",
+          "weight": 0.33870968
+        },
+        {
+          "word": "desafabilidade",
+          "weight": 0.31746033
+        },
+        {
+          "word": "desamabilidade",
+          "weight": 0.31746033
+        },
+        {
+          "word": "xucrice",
+          "weight": 0.30645162
+        },
+        {
+          "word": "xucrismo",
+          "weight": 0.30645162
+        },
+        {
+          "word": "malcriadez",
+          "weight": 0.27419356
+        },
+        {
+          "word": "aspereza",
+          "weight": 0.23809524
+        },
+        {
+          "word": "inurbanidade",
+          "weight": 0.22580644
+        },
+        {
+          "word": "corpulência",
+          "weight": 0.22222222
+        },
+        {
+          "word": "embrutecimento",
+          "weight": 0.19354838
+        },
+        {
+          "word": "densidade",
+          "weight": 0.16129032
+        },
+        {
+          "word": "consistência",
+          "weight": 0.14285715
+        },
+        {
+          "word": "desumanidade",
+          "weight": 0.14285715
+        },
+        {
+          "word": "severidade",
+          "weight": 0.14285715
+        },
+        {
+          "word": "bastidão",
+          "weight": 0.12903225
+        },
+        {
+          "word": "chulice",
+          "weight": 0.12698413
+        },
+        {
+          "word": "bastura",
+          "weight": 0.11290322
+        },
+        {
+          "word": "burrice",
+          "weight": 0.11111111
+        },
+        {
+          "word": "rispidez",
+          "weight": 0.11111111
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "contopt",
+      "resource_label": "CONTO.PT 0.1 (fuzzy)",
+      "synset_id": "15658",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "profundidade",
+          "weight": 2.6666667
+        },
+        {
+          "word": "fundura",
+          "weight": 2.1111112
+        },
+        {
+          "word": "profundeza",
+          "weight": 2.0
+        },
+        {
+          "word": "profundez",
+          "weight": 1.2222222
+        },
+        {
+          "word": "profundura",
+          "weight": 1.2222222
+        },
+        {
+          "word": "intensidade",
+          "weight": 1.1
+        },
+        {
+          "word": "abismo",
+          "weight": 1.0
+        },
+        {
+          "word": "gravidade",
+          "weight": 1.0
+        },
+        {
+          "word": "importância",
+          "weight": 1.0
+        },
+        {
+          "word": "proporção",
+          "weight": 1.0
+        },
+        {
+          "word": "proporções",
+          "weight": 1.0
+        },
+        {
+          "word": "pélago",
+          "weight": 0.9
+        },
+        {
+          "word": "altura",
+          "weight": 0.8
+        },
+        {
+          "word": "impenetrabilidade",
+          "weight": 0.8
+        },
+        {
+          "word": "profundas",
+          "weight": 0.33333334
+        },
+        {
+          "word": "espessura",
+          "weight": 0.3
+        },
+        {
+          "word": "fundo",
+          "weight": 0.3
+        },
+        {
+          "word": "confundas",
+          "weight": 0.22222222
+        },
+        {
+          "word": "profundo",
+          "weight": 0.22222222
+        },
+        {
+          "word": "abisso",
+          "weight": 0.2
+        },
+        {
+          "word": "barranco",
+          "weight": 0.2
+        },
+        {
+          "word": "despenhadeiro",
+          "weight": 0.2
+        },
+        {
+          "word": "inferno",
+          "weight": 0.2
+        },
+        {
+          "word": "precipício",
+          "weight": 0.2
+        },
+        {
+          "word": "centro",
+          "weight": 0.1
+        },
+        {
+          "word": "complicação",
+          "weight": 0.1
+        },
+        {
+          "word": "densidade",
+          "weight": 0.1
+        },
+        {
+          "word": "entranha",
+          "weight": 0.1
+        },
+        {
+          "word": "fundamento",
+          "weight": 0.1
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "contopt",
+      "resource_label": "CONTO.PT 0.1 (fuzzy)",
+      "synset_id": "16555",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "cadáver",
+          "weight": 2.0
+        },
+        {
+          "word": "defunto",
+          "weight": 1.75
+        },
+        {
+          "word": "morto",
+          "weight": 1.5833334
+        },
+        {
+          "word": "corpo",
+          "weight": 1.0
+        },
+        {
+          "word": "sucumbido",
+          "weight": 0.5833333
+        },
+        {
+          "word": "restos mortais",
+          "weight": 0.5
+        },
+        {
+          "word": "enchido",
+          "weight": 0.41666666
+        },
+        {
+          "word": "carne",
+          "weight": 0.3846154
+        },
+        {
+          "word": "corporação",
+          "weight": 0.3846154
+        },
+        {
+          "word": "consistência",
+          "weight": 0.30769232
+        },
+        {
+          "word": "vulto",
+          "weight": 0.30769232
+        },
+        {
+          "word": "corpo humano",
+          "weight": 0.25
+        },
+        {
+          "word": "falecido",
+          "weight": 0.25
+        },
+        {
+          "word": "figura",
+          "weight": 0.23076923
+        },
+        {
+          "word": "consistencia",
+          "weight": 0.16666667
+        },
+        {
+          "word": "finado",
+          "weight": 0.16666667
+        },
+        {
+          "word": "mortezinho",
+          "weight": 0.16666667
+        },
+        {
+          "word": "anatomia",
+          "weight": 0.15384616
+        },
+        {
+          "word": "aspecto",
+          "weight": 0.15384616
+        },
+        {
+          "word": "chumaço",
+          "weight": 0.15384616
+        },
+        {
+          "word": "compleição",
+          "weight": 0.15384616
+        },
+        {
+          "word": "conselho",
+          "weight": 0.15384616
+        },
+        {
+          "word": "constituição",
+          "weight": 0.15384616
+        },
+        {
+          "word": "corporatura",
+          "weight": 0.15384616
+        },
+        {
+          "word": "delfino",
+          "weight": 0.15384616
+        },
+        {
+          "word": "densidade",
+          "weight": 0.15384616
+        },
+        {
+          "word": "físico",
+          "weight": 0.15384616
+        },
+        {
+          "word": "presença",
+          "weight": 0.15384616
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "contopt",
+      "resource_label": "CONTO.PT 0.1 (fuzzy)",
+      "synset_id": "19305",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "constância",
+          "weight": 3.0
+        },
+        {
+          "word": "firmeza",
+          "weight": 2.9166667
+        },
+        {
+          "word": "persistência",
+          "weight": 2.5
+        },
+        {
+          "word": "perseverança",
+          "weight": 2.3333333
+        },
+        {
+          "word": "estabilidade",
+          "weight": 1.5
+        },
+        {
+          "word": "permanência",
+          "weight": 1.5
+        },
+        {
+          "word": "solidez",
+          "weight": 1.25
+        },
+        {
+          "word": "consistência",
+          "weight": 1.0833334
+        },
+        {
+          "word": "segurança",
+          "weight": 1.0769231
+        },
+        {
+          "word": "tenacidade",
+          "weight": 1.0769231
+        },
+        {
+          "word": "afinco",
+          "weight": 0.9230769
+        },
+        {
+          "word": "insistência",
+          "weight": 0.7692308
+        },
+        {
+          "word": "subsistência",
+          "weight": 0.7692308
+        },
+        {
+          "word": "resistência",
+          "weight": 0.61538464
+        },
+        {
+          "word": "continuidade",
+          "weight": 0.53846157
+        },
+        {
+          "word": "determinação",
+          "weight": 0.53846157
+        },
+        {
+          "word": "certeza",
+          "weight": 0.46153846
+        },
+        {
+          "word": "equilíbrio",
+          "weight": 0.46153846
+        },
+        {
+          "word": "fortaleza",
+          "weight": 0.46153846
+        },
+        {
+          "word": "imanência",
+          "weight": 0.41666666
+        },
+        {
+          "word": "dureza",
+          "weight": 0.3846154
+        },
+        {
+          "word": "paciência",
+          "weight": 0.3846154
+        },
+        {
+          "word": "rijeza",
+          "weight": 0.3846154
+        },
+        {
+          "word": "corpo",
+          "weight": 0.30769232
+        },
+        {
+          "word": "energia",
+          "weight": 0.30769232
+        },
+        {
+          "word": "estada",
+          "weight": 0.30769232
+        },
+        {
+          "word": "estadia",
+          "weight": 0.30769232
+        },
+        {
+          "word": "fixidez",
+          "weight": 0.30769232
+        },
+        {
+          "word": "fortidão",
+          "weight": 0.30769232
+        },
+        {
+          "word": "força",
+          "weight": 0.30769232
+        },
+        {
+          "word": "robustez",
+          "weight": 0.30769232
+        },
+        {
+          "word": "vigor",
+          "weight": 0.30769232
+        },
+        {
+          "word": "firmidão",
+          "weight": 0.25
+        },
+        {
+          "word": "invariação",
+          "weight": 0.25
+        },
+        {
+          "word": "coragem",
+          "weight": 0.23076923
+        },
+        {
+          "word": "densidade",
+          "weight": 0.23076923
+        },
+        {
+          "word": "durabilidade",
+          "weight": 0.23076923
+        },
+        {
+          "word": "duração",
+          "weight": 0.23076923
+        },
+        {
+          "word": "espessura",
+          "weight": 0.23076923
+        },
+        {
+          "word": "fidelidade",
+          "weight": 0.23076923
+        },
+        {
+          "word": "fundamento",
+          "weight": 0.23076923
+        },
+        {
+          "word": "imobilidade",
+          "weight": 0.23076923
+        },
+        {
+          "word": "obstinação",
+          "weight": 0.23076923
+        },
+        {
+          "word": "porfia",
+          "weight": 0.23076923
+        },
+        {
+          "word": "rigor",
+          "weight": 0.23076923
+        },
+        {
+          "word": "perseverância",
+          "weight": 0.16666667
+        },
+        {
+          "word": "assento",
+          "weight": 0.15384616
+        },
+        {
+          "word": "assiduidade",
+          "weight": 0.15384616
+        },
+        {
+          "word": "coerência",
+          "weight": 0.15384616
+        },
+        {
+          "word": "compacidade",
+          "weight": 0.15384616
+        },
+        {
+          "word": "concretude",
+          "weight": 0.15384616
+        },
+        {
+          "word": "confiança",
+          "weight": 0.15384616
+        },
+        {
+          "word": "conservação",
+          "weight": 0.15384616
+        },
+        {
+          "word": "densidão",
+          "weight": 0.15384616
+        },
+        {
+          "word": "estreiteza",
+          "weight": 0.15384616
+        },
+        {
+          "word": "familiaridade",
+          "weight": 0.15384616
+        },
+        {
+          "word": "fibra",
+          "weight": 0.15384616
+        },
+        {
+          "word": "finca-pé",
+          "weight": 0.15384616
+        },
+        {
+          "word": "fixidade",
+          "weight": 0.15384616
+        },
+        {
+          "word": "garra",
+          "weight": 0.15384616
+        },
+        {
+          "word": "intimidade",
+          "weight": 0.15384616
+        },
+        {
+          "word": "macicez",
+          "weight": 0.15384616
+        },
+        {
+          "word": "materialidade",
+          "weight": 0.15384616
+        },
+        {
+          "word": "nervo",
+          "weight": 0.15384616
+        },
+        {
+          "word": "pertinácia",
+          "weight": 0.15384616
+        },
+        {
+          "word": "pulso",
+          "weight": 0.15384616
+        },
+        {
+          "word": "rigidez",
+          "weight": 0.15384616
+        },
+        {
+          "word": "segureza",
+          "weight": 0.15384616
+        },
+        {
+          "word": "seguridade",
+          "weight": 0.15384616
+        },
+        {
+          "word": "talento",
+          "weight": 0.15384616
+        },
+        {
+          "word": "tenência",
+          "weight": 0.15384616
+        },
+        {
+          "word": "tesão",
+          "weight": 0.15384616
+        },
+        {
+          "word": "valentia",
+          "weight": 0.15384616
+        },
+        {
+          "word": "veemência",
+          "weight": 0.15384616
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "fuzzythes",
+      "resource_label": "Fuzzy thesaurus 5rec",
+      "synset_id": "1350",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "espessor",
+          "weight": 0.99137163
+        },
+        {
+          "word": "espessura",
+          "weight": 0.22767475
+        },
+        {
+          "word": "bastura",
+          "weight": 0.21989167
+        },
+        {
+          "word": "bastidão",
+          "weight": 0.20456703
+        },
+        {
+          "word": "encorpadura",
+          "weight": 0.12373228
+        },
+        {
+          "word": "densidão",
+          "weight": 0.1201729
+        },
+        {
+          "word": "densidade",
+          "weight": 0.09644245
+        },
+        {
+          "word": "encorpamento",
+          "weight": 0.07090978
+        },
+        {
+          "word": "consistência",
+          "weight": 0.0699387
+        },
+        {
+          "word": "corpulência",
+          "weight": 0.03731403
+        },
+        {
+          "word": "grossura",
+          "weight": 0.026365584
+        },
+        {
+          "word": "bastida",
+          "weight": 0.016777009
+        },
+        {
+          "word": "corpo",
+          "weight": 0.01580882
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "fuzzythes",
+      "resource_label": "Fuzzy thesaurus 5rec",
+      "synset_id": "3845",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "consistencia",
+          "weight": 0.99521416
+        },
+        {
+          "word": "sucumbido",
+          "weight": 0.34768304
+        },
+        {
+          "word": "densidão",
+          "weight": 0.31966227
+        },
+        {
+          "word": "corpo",
+          "weight": 0.24670064
+        },
+        {
+          "word": "densidade",
+          "weight": 0.19908911
+        },
+        {
+          "word": "morto",
+          "weight": 0.19647086
+        },
+        {
+          "word": "cadáver",
+          "weight": 0.18738192
+        },
+        {
+          "word": "defunto",
+          "weight": 0.17453697
+        },
+        {
+          "word": "consistência",
+          "weight": 0.14557828
+        },
+        {
+          "word": "espessura",
+          "weight": 0.084703386
+        },
+        {
+          "word": "órgão",
+          "weight": 0.077358745
+        },
+        {
+          "word": "corporatura",
+          "weight": 0.05433756
+        },
+        {
+          "word": "organismo",
+          "weight": 0.028492285
+        },
+        {
+          "word": "estatura",
+          "weight": 0.027880482
+        },
+        {
+          "word": "colecção",
+          "weight": 0.02454131
+        },
+        {
+          "word": "grémio",
+          "weight": 0.02318406
+        },
+        {
+          "word": "encorpamento",
+          "weight": 0.021871142
+        },
+        {
+          "word": "físico",
+          "weight": 0.021855509
+        },
+        {
+          "word": "corporação",
+          "weight": 0.017896237
+        },
+        {
+          "word": "carnadura",
+          "weight": 0.017207438
+        },
+        {
+          "word": "polpa",
+          "weight": 0.016596047
+        },
+        {
+          "word": "consanguinidade",
+          "weight": 0.014271711
+        },
+        {
+          "word": "compleição",
+          "weight": 0.012739404
+        },
+        {
+          "word": "constituição",
+          "weight": 0.012347542
+        },
+        {
+          "word": "mesocarpo",
+          "weight": 0.011963648
+        },
+        {
+          "word": "vulto",
+          "weight": 0.011945596
+        },
+        {
+          "word": "organização",
+          "weight": 0.010914559
+        },
+        {
+          "word": "clube",
+          "weight": 0.010740544
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "fuzzythes",
+      "resource_label": "Fuzzy thesaurus 5rec",
+      "synset_id": "3900",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "condensabilidade",
+          "weight": 0.9820725
+        },
+        {
+          "word": "compacidade",
+          "weight": 0.88355917
+        },
+        {
+          "word": "macicez",
+          "weight": 0.8536513
+        },
+        {
+          "word": "solidez",
+          "weight": 0.3441
+        },
+        {
+          "word": "concretude",
+          "weight": 0.2764668
+        },
+        {
+          "word": "firmidão",
+          "weight": 0.12144414
+        },
+        {
+          "word": "densidade",
+          "weight": 0.066565976
+        },
+        {
+          "word": "durabilidade",
+          "weight": 0.053978346
+        },
+        {
+          "word": "materialidade",
+          "weight": 0.036216374
+        },
+        {
+          "word": "dureza",
+          "weight": 0.027934147
+        },
+        {
+          "word": "fortidão",
+          "weight": 0.026422879
+        },
+        {
+          "word": "duração",
+          "weight": 0.025695274
+        },
+        {
+          "word": "firmeza",
+          "weight": 0.020610396
+        },
+        {
+          "word": "firmideu",
+          "weight": 0.01989999
+        },
+        {
+          "word": "indelebilidade",
+          "weight": 0.018131757
+        },
+        {
+          "word": "estabilidade",
+          "weight": 0.013991474
+        },
+        {
+          "word": "rijeza",
+          "weight": 0.013511863
+        },
+        {
+          "word": "consistência",
+          "weight": 0.013036042
+        },
+        {
+          "word": "dura",
+          "weight": 0.012384935
+        },
+        {
+          "word": "resistência",
+          "weight": 0.0121787805
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "fuzzythes",
+      "resource_label": "Fuzzy thesaurus 5rec",
+      "synset_id": "4824",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "gradeza",
+          "weight": 0.99362826
+        },
+        {
+          "word": "grossidão",
+          "weight": 0.99362826
+        },
+        {
+          "word": "grossor",
+          "weight": 0.99362814
+        },
+        {
+          "word": "encorpadura",
+          "weight": 0.514006
+        },
+        {
+          "word": "grossura",
+          "weight": 0.36851713
+        },
+        {
+          "word": "corpulência",
+          "weight": 0.1267629
+        },
+        {
+          "word": "espessura",
+          "weight": 0.087192245
+        },
+        {
+          "word": "encorpamento",
+          "weight": 0.06880048
+        },
+        {
+          "word": "densidade",
+          "weight": 0.023271577
+        },
+        {
+          "word": "agrestice",
+          "weight": 0.01731477
+        },
+        {
+          "word": "agrestidade",
+          "weight": 0.01731477
+        },
+        {
+          "word": "bagualada",
+          "weight": 0.01731477
+        },
+        {
+          "word": "rusticaria",
+          "weight": 0.01731477
+        },
+        {
+          "word": "rustiqueza",
+          "weight": 0.017263371
+        },
+        {
+          "word": "chavasquice",
+          "weight": 0.016927857
+        },
+        {
+          "word": "agrestia",
+          "weight": 0.016504746
+        },
+        {
+          "word": "consistência",
+          "weight": 0.014363495
+        },
+        {
+          "word": "boçalidade",
+          "weight": 0.012994779
+        },
+        {
+          "word": "incivilidade",
+          "weight": 0.012418979
+        },
+        {
+          "word": "rusticidade",
+          "weight": 0.012229592
+        },
+        {
+          "word": "bastura",
+          "weight": 0.010787996
+        },
+        {
+          "word": "bastidão",
+          "weight": 0.010262296
+        },
+        {
+          "word": "bronquice",
+          "weight": 0.01005287
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "fuzzythes",
+      "resource_label": "Fuzzy thesaurus 5rec",
+      "synset_id": "5092",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "elevado",
+          "weight": 0.6470402
+        },
+        {
+          "word": "proceridade",
+          "weight": 0.36151367
+        },
+        {
+          "word": "encorpadura",
+          "weight": 0.22521254
+        },
+        {
+          "word": "corpulência",
+          "weight": 0.12875529
+        },
+        {
+          "word": "encorpamento",
+          "weight": 0.105483904
+        },
+        {
+          "word": "ádipe",
+          "weight": 0.096962824
+        },
+        {
+          "word": "ádipo",
+          "weight": 0.09454611
+        },
+        {
+          "word": "fornimento",
+          "weight": 0.09412527
+        },
+        {
+          "word": "adiposidade",
+          "weight": 0.087325886
+        },
+        {
+          "word": "rotundidade",
+          "weight": 0.052130956
+        },
+        {
+          "word": "grossura",
+          "weight": 0.048365906
+        },
+        {
+          "word": "espessura",
+          "weight": 0.046852697
+        },
+        {
+          "word": "obesidade",
+          "weight": 0.046020627
+        },
+        {
+          "word": "gordura",
+          "weight": 0.038665965
+        },
+        {
+          "word": "densidade",
+          "weight": 0.030969106
+        },
+        {
+          "word": "consistência",
+          "weight": 0.01944282
+        },
+        {
+          "word": "robustez",
+          "weight": 0.01885415
+        },
+        {
+          "word": "banha",
+          "weight": 0.016808735
+        },
+        {
+          "word": "bastura",
+          "weight": 0.013057156
+        },
+        {
+          "word": "bastidão",
+          "weight": 0.01242088
+        },
+        {
+          "word": "tabuado",
+          "weight": 0.01194651
+        },
+        {
+          "word": "volume",
+          "weight": 0.010017018
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "fuzzythes",
+      "resource_label": "Fuzzy thesaurus 5rec",
+      "synset_id": "5952",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "densidão",
+          "weight": 0.24106799
+        },
+        {
+          "word": "densidade",
+          "weight": 0.19684312
+        },
+        {
+          "word": "encorpamento",
+          "weight": 0.13888255
+        },
+        {
+          "word": "consistência",
+          "weight": 0.13486955
+        },
+        {
+          "word": "espessura",
+          "weight": 0.07920917
+        },
+        {
+          "word": "compacidade",
+          "weight": 0.042783897
+        },
+        {
+          "word": "macicez",
+          "weight": 0.032362733
+        },
+        {
+          "word": "corpo",
+          "weight": 0.026345007
+        },
+        {
+          "word": "solidez",
+          "weight": 0.020304311
+        },
+        {
+          "word": "corpulência",
+          "weight": 0.020256924
+        },
+        {
+          "word": "condensabilidade",
+          "weight": 0.017927505
+        },
+        {
+          "word": "grossura",
+          "weight": 0.015510697
+        },
+        {
+          "word": "bastura",
+          "weight": 0.01470979
+        },
+        {
+          "word": "bastidão",
+          "weight": 0.013992981
+        },
+        {
+          "word": "encorpadura",
+          "weight": 0.012161061
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "fuzzythes",
+      "resource_label": "Fuzzy thesaurus 5rec",
+      "synset_id": "10372",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "confundas",
+          "weight": 0.99389446
+        },
+        {
+          "word": "profundas",
+          "weight": 0.9075039
+        },
+        {
+          "word": "profundo",
+          "weight": 0.869476
+        },
+        {
+          "word": "profundidade",
+          "weight": 0.23413834
+        },
+        {
+          "word": "fundura",
+          "weight": 0.109797634
+        },
+        {
+          "word": "profundeza",
+          "weight": 0.08061905
+        },
+        {
+          "word": "profundura",
+          "weight": 0.07877759
+        },
+        {
+          "word": "profundez",
+          "weight": 0.07764214
+        },
+        {
+          "word": "inferno",
+          "weight": 0.077556126
+        },
+        {
+          "word": "proporções",
+          "weight": 0.054940734
+        },
+        {
+          "word": "entranha",
+          "weight": 0.035586532
+        },
+        {
+          "word": "intensidade",
+          "weight": 0.021829313
+        },
+        {
+          "word": "altura",
+          "weight": 0.019787647
+        },
+        {
+          "word": "proporção",
+          "weight": 0.017460588
+        },
+        {
+          "word": "pélago",
+          "weight": 0.012448333
+        },
+        {
+          "word": "densidade",
+          "weight": 0.012035816
+        },
+        {
+          "word": "gravidade",
+          "weight": 0.011144479
+        },
+        {
+          "word": "impenetrabilidade",
+          "weight": 0.010805625
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "fuzzythes",
+      "resource_label": "Fuzzy thesaurus 5rec",
+      "synset_id": "10870",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "confiabilidade",
+          "weight": 1.0000001
+        },
+        {
+          "word": "fidedignidade",
+          "weight": 1.0000001
+        },
+        {
+          "word": "fiabilidade",
+          "weight": 1.0
+        },
+        {
+          "word": "credibilidade",
+          "weight": 0.98646927
+        },
+        {
+          "word": "encorpamento",
+          "weight": 0.5345362
+        },
+        {
+          "word": "densidade",
+          "weight": 0.24648051
+        },
+        {
+          "word": "densidão",
+          "weight": 0.23288873
+        },
+        {
+          "word": "consistência",
+          "weight": 0.2303043
+        },
+        {
+          "word": "espessura",
+          "weight": 0.10452831
+        },
+        {
+          "word": "corpulência",
+          "weight": 0.05074691
+        },
+        {
+          "word": "fortidão",
+          "weight": 0.0381439
+        },
+        {
+          "word": "grossura",
+          "weight": 0.03520778
+        },
+        {
+          "word": "corpo",
+          "weight": 0.025421644
+        },
+        {
+          "word": "rijeza",
+          "weight": 0.017975677
+        },
+        {
+          "word": "estabilidade",
+          "weight": 0.01587973
+        },
+        {
+          "word": "solidez",
+          "weight": 0.014803902
+        },
+        {
+          "word": "firmeza",
+          "weight": 0.014101256
+        },
+        {
+          "word": "encasque",
+          "weight": 0.013620663
+        },
+        {
+          "word": "compacidade",
+          "weight": 0.011613291
+        },
+        {
+          "word": "veras",
+          "weight": 0.011022525
+        },
+        {
+          "word": "textura",
+          "weight": 0.0109354025
+        },
+        {
+          "word": "bastura",
+          "weight": 0.010447347
+        },
+        {
+          "word": "envasadura",
+          "weight": 0.01032582
+        },
+        {
+          "word": "envasamento",
+          "weight": 0.01032582
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "ontopt06",
+      "resource_label": "Onto.PT v0.6",
+      "synset_id": "23317",
+      "pos": "n",
+      "gloss": "razão da massa específica de um corpo pela massa específica de um material de referência, em geral, a água.",
+      "members": [
+        {
+          "word": "concentração",
+          "weight": 1.0
+        },
+        {
+          "word": "densidade",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "ontopt06",
+      "resource_label": "Onto.PT v0.6",
+      "synset_id": "27175",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "consistência",
+          "weight": 1.0
+        },
+        {
+          "word": "densidade",
+          "weight": 1.0
+        },
+        {
+          "word": "densidão",
+          "weight": 1.0
+        },
+        {
+          "word": "encorpamento",
+          "weight": 1.0
+        },
+        {
+          "word": "espessura",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "ontopt06",
+      "resource_label": "Onto.PT v0.6",
+      "synset_id": "27204",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "compacidade",
+          "weight": 1.0
+        },
+        {
+          "word": "densidade",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "polaridades",
+      "resource_label": "Polarities of Onto.PT",
+      "synset_id": "12292",
+      "pos": "n",
+      "gloss": "Polaridade: -1 (método TEM_QUALIDADE)",
+      "members": [
+        {
+          "word": "compacidade",
+          "weight": 1.0
+        },
+        {
+          "word": "densidade",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "thes5rec",
+      "resource_label": "Thesaurus 5rec (crisp)",
+      "synset_id": "3294",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "confiabilidade",
+          "weight": 1.0
+        },
+        {
+          "word": "consistência",
+          "weight": 1.0
+        },
+        {
+          "word": "corpulência",
+          "weight": 1.0
+        },
+        {
+          "word": "credibilidade",
+          "weight": 1.0
+        },
+        {
+          "word": "densidade",
+          "weight": 1.0
+        },
+        {
+          "word": "densidão",
+          "weight": 1.0
+        },
+        {
+          "word": "encorpamento",
+          "weight": 1.0
+        },
+        {
+          "word": "espessura",
+          "weight": 1.0
+        },
+        {
+          "word": "fiabilidade",
+          "weight": 1.0
+        },
+        {
+          "word": "fidedignidade",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "thes5rec",
+      "resource_label": "Thesaurus 5rec (crisp)",
+      "synset_id": "9621",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "compacidade",
+          "weight": 1.0
+        },
+        {
+          "word": "concretude",
+          "weight": 1.0
+        },
+        {
+          "word": "condensabilidade",
+          "weight": 1.0
+        },
+        {
+          "word": "densidade",
+          "weight": 1.0
+        },
+        {
+          "word": "durabilidade",
+          "weight": 1.0
+        },
+        {
+          "word": "firmidão",
+          "weight": 1.0
+        },
+        {
+          "word": "macicez",
+          "weight": 1.0
+        },
+        {
+          "word": "solidez",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "thes5rec",
+      "resource_label": "Thesaurus 5rec (crisp)",
+      "synset_id": "10939",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "cadáver",
+          "weight": 1.0
+        },
+        {
+          "word": "consistencia",
+          "weight": 1.0
+        },
+        {
+          "word": "consistência",
+          "weight": 1.0
+        },
+        {
+          "word": "corpo",
+          "weight": 1.0
+        },
+        {
+          "word": "corporatura",
+          "weight": 1.0
+        },
+        {
+          "word": "defunto",
+          "weight": 1.0
+        },
+        {
+          "word": "densidade",
+          "weight": 1.0
+        },
+        {
+          "word": "densidão",
+          "weight": 1.0
+        },
+        {
+          "word": "espessura",
+          "weight": 1.0
+        },
+        {
+          "word": "mortezinho",
+          "weight": 1.0
+        },
+        {
+          "word": "morto",
+          "weight": 1.0
+        },
+        {
+          "word": "sucumbido",
+          "weight": 1.0
+        },
+        {
+          "word": "órgão",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "thes5rec",
+      "resource_label": "Thesaurus 5rec (crisp)",
+      "synset_id": "11417",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "bastidão",
+          "weight": 1.0
+        },
+        {
+          "word": "bastura",
+          "weight": 1.0
+        },
+        {
+          "word": "consistência",
+          "weight": 1.0
+        },
+        {
+          "word": "densidade",
+          "weight": 1.0
+        },
+        {
+          "word": "densidão",
+          "weight": 1.0
+        },
+        {
+          "word": "encorpadura",
+          "weight": 1.0
+        },
+        {
+          "word": "encorpamento",
+          "weight": 1.0
+        },
+        {
+          "word": "espessor",
+          "weight": 1.0
+        },
+        {
+          "word": "espessura",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "top01",
+      "resource_label": "TOP 0.1 (nouns)",
+      "synset_id": "2237",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "adipose",
+          "weight": 1.0
+        },
+        {
+          "word": "bastidão",
+          "weight": 1.0
+        },
+        {
+          "word": "bastura",
+          "weight": 1.0
+        },
+        {
+          "word": "compacidade",
+          "weight": 1.0
+        },
+        {
+          "word": "consistência",
+          "weight": 1.0
+        },
+        {
+          "word": "corpo",
+          "weight": 1.0
+        },
+        {
+          "word": "corpulência",
+          "weight": 1.0
+        },
+        {
+          "word": "densidade",
+          "weight": 1.0
+        },
+        {
+          "word": "encasque",
+          "weight": 1.0
+        },
+        {
+          "word": "encorpamento",
+          "weight": 1.0
+        },
+        {
+          "word": "espessura",
+          "weight": 1.0
+        },
+        {
+          "word": "firmeza",
+          "weight": 1.0
+        },
+        {
+          "word": "firmidão",
+          "weight": 1.0
+        },
+        {
+          "word": "fortidão",
+          "weight": 1.0
+        },
+        {
+          "word": "gradeza",
+          "weight": 1.0
+        },
+        {
+          "word": "grossura",
+          "weight": 1.0
+        },
+        {
+          "word": "inductilidade",
+          "weight": 1.0
+        },
+        {
+          "word": "obesidade",
+          "weight": 1.0
+        },
+        {
+          "word": "rijeza",
+          "weight": 1.0
+        },
+        {
+          "word": "solidez",
+          "weight": 1.0
+        },
+        {
+          "word": "tesão",
+          "weight": 1.0
+        },
+        {
+          "word": "ventrosidade",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "top01",
+      "resource_label": "TOP 0.1 (nouns)",
+      "synset_id": "3971",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "consistência",
+          "weight": 1.0
+        },
+        {
+          "word": "densidade",
+          "weight": 1.0
+        },
+        {
+          "word": "densidão",
+          "weight": 1.0
+        },
+        {
+          "word": "espessura",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "clip21",
+      "resource_label": "CLIP 2.1 (fuzzy sets)",
+      "synset_id": "17173",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "de pouca densidade",
+          "weight": 1.5
+        },
+        {
+          "word": "pouco frequente",
+          "weight": 1.5
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "contopt",
+      "resource_label": "CONTO.PT 0.1 (fuzzy)",
+      "synset_id": "11979",
+      "pos": "v",
+      "gloss": "",
+      "members": [
+        {
+          "word": "avaliar densidade de líquido",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "contopt",
+      "resource_label": "CONTO.PT 0.1 (fuzzy)",
+      "synset_id": "17291",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "de pouca densidade",
+          "weight": 1.5
+        },
+        {
+          "word": "pouco frequente",
+          "weight": 1.5
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "contopt",
+      "resource_label": "CONTO.PT 0.1 (fuzzy)",
+      "synset_id": "23782",
+      "pos": "v",
+      "gloss": "",
+      "members": [
+        {
+          "word": "indicar variação de densidade",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "ontopt06",
+      "resource_label": "Onto.PT v0.6",
+      "synset_id": "100928",
+      "pos": "v",
+      "gloss": "",
+      "members": [
+        {
+          "word": "apresentar grande densidade",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "ontopt06",
+      "resource_label": "Onto.PT v0.6",
+      "synset_id": "103907",
+      "pos": "v",
+      "gloss": "",
+      "members": [
+        {
+          "word": "avaliar a densidade",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "ontopt06",
+      "resource_label": "Onto.PT v0.6",
+      "synset_id": "101277",
+      "pos": "v",
+      "gloss": "",
+      "members": [
+        {
+          "word": "avaliar densidade de líquido",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    }
+  ]
+}

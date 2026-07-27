@@ -10,7 +10,7 @@
   "synsets": [
     {
       "resource": "clip21",
-      "resource_label": "clip21",
+      "resource_label": "CLIP 2.1 (fuzzy sets)",
       "synset_id": "1320",
       "pos": "n",
       "gloss": "",
@@ -28,7 +28,7 @@
     },
     {
       "resource": "clip21",
-      "resource_label": "clip21",
+      "resource_label": "CLIP 2.1 (fuzzy sets)",
       "synset_id": "15438",
       "pos": "a",
       "gloss": "",
@@ -490,7 +490,7 @@
     },
     {
       "resource": "clip21",
-      "resource_label": "clip21",
+      "resource_label": "CLIP 2.1 (fuzzy sets)",
       "synset_id": "17923",
       "pos": "a",
       "gloss": "",
@@ -928,7 +928,7 @@
     },
     {
       "resource": "contopt",
-      "resource_label": "contopt",
+      "resource_label": "CONTO.PT 0.1 (fuzzy)",
       "synset_id": "16611",
       "pos": "n",
       "gloss": "",
@@ -946,7 +946,7 @@
     },
     {
       "resource": "contopt",
-      "resource_label": "contopt",
+      "resource_label": "CONTO.PT 0.1 (fuzzy)",
       "synset_id": "26524",
       "pos": "a",
       "gloss": "",
@@ -1088,7 +1088,7 @@
     },
     {
       "resource": "fuzzythes",
-      "resource_label": "fuzzythes",
+      "resource_label": "Fuzzy thesaurus 5rec",
       "synset_id": "25832",
       "pos": "a",
       "gloss": "",
@@ -1202,7 +1202,7 @@
     },
     {
       "resource": "fuzzythes",
-      "resource_label": "fuzzythes",
+      "resource_label": "Fuzzy thesaurus 5rec",
       "synset_id": "26969",
       "pos": "a",
       "gloss": "",
@@ -1248,7 +1248,7 @@
     },
     {
       "resource": "fuzzythes",
-      "resource_label": "fuzzythes",
+      "resource_label": "Fuzzy thesaurus 5rec",
       "synset_id": "27002",
       "pos": "a",
       "gloss": "",
@@ -1314,7 +1314,7 @@
     },
     {
       "resource": "fuzzythes",
-      "resource_label": "fuzzythes",
+      "resource_label": "Fuzzy thesaurus 5rec",
       "synset_id": "27069",
       "pos": "a",
       "gloss": "",
@@ -1356,7 +1356,7 @@
     },
     {
       "resource": "ontopt06",
-      "resource_label": "ontopt06",
+      "resource_label": "Onto.PT v0.6",
       "synset_id": "3928",
       "pos": "a",
       "gloss": "que é formado de mais de um item.",
@@ -1378,7 +1378,7 @@
     },
     {
       "resource": "ontopt06",
-      "resource_label": "ontopt06",
+      "resource_label": "Onto.PT v0.6",
       "synset_id": "6214",
       "pos": "a",
       "gloss": "",
@@ -1412,7 +1412,7 @@
     },
     {
       "resource": "ontopt06",
-      "resource_label": "ontopt06",
+      "resource_label": "Onto.PT v0.6",
       "synset_id": "7120",
       "pos": "a",
       "gloss": "que é de diverso género ou espécie.",
@@ -1438,7 +1438,7 @@
     },
     {
       "resource": "ontopt06",
-      "resource_label": "ontopt06",
+      "resource_label": "Onto.PT v0.6",
       "synset_id": "81042",
       "pos": "n",
       "gloss": "",
@@ -1452,7 +1452,7 @@
     },
     {
       "resource": "polaridades",
-      "resource_label": "polaridades",
+      "resource_label": "Polarities of Onto.PT",
       "synset_id": "1620",
       "pos": "a",
       "gloss": "Polaridade: -1 (método BASE)",
@@ -1478,7 +1478,7 @@
     },
     {
       "resource": "thes5rec",
-      "resource_label": "thes5rec",
+      "resource_label": "Thesaurus 5rec (crisp)",
       "synset_id": "19632",
       "pos": "a",
       "gloss": "",
@@ -1512,7 +1512,7 @@
     },
     {
       "resource": "thes5rec",
-      "resource_label": "thes5rec",
+      "resource_label": "Thesaurus 5rec (crisp)",
       "synset_id": "22375",
       "pos": "a",
       "gloss": "",
@@ -1550,7 +1550,7 @@
     },
     {
       "resource": "clip21",
-      "resource_label": "clip21",
+      "resource_label": "CLIP 2.1 (fuzzy sets)",
       "synset_id": "2083",
       "pos": "n",
       "gloss": "",
@@ -1624,7 +1624,7 @@
     },
     {
       "resource": "contopt",
-      "resource_label": "contopt",
+      "resource_label": "CONTO.PT 0.1 (fuzzy)",
       "synset_id": "24966",
       "pos": "n",
       "gloss": "",
@@ -1690,7 +1690,7 @@
     },
     {
       "resource": "fuzzythes",
-      "resource_label": "fuzzythes",
+      "resource_label": "Fuzzy thesaurus 5rec",
       "synset_id": "7161",
       "pos": "n",
       "gloss": "",
@@ -1732,7 +1732,7 @@
     },
     {
       "resource": "ontopt06",
-      "resource_label": "ontopt06",
+      "resource_label": "Onto.PT v0.6",
       "synset_id": "23962",
       "pos": "n",
       "gloss": "instrumento, para escrever música.",
@@ -1762,7 +1762,7 @@
     },
     {
       "resource": "ontopt06",
-      "resource_label": "ontopt06",
+      "resource_label": "Onto.PT v0.6",
       "synset_id": "25561",
       "pos": "n",
       "gloss": "equipamento usado para imprimir. utensílio de artilharia, para dar forma às espoletas de papel vazadas.",
@@ -1792,7 +1792,7 @@
     },
     {
       "resource": "ontopt06",
-      "resource_label": "ontopt06",
+      "resource_label": "Onto.PT v0.6",
       "synset_id": "30747",
       "pos": "n",
       "gloss": "",
@@ -1806,7 +1806,7 @@
     },
     {
       "resource": "ontopt06",
-      "resource_label": "ontopt06",
+      "resource_label": "Onto.PT v0.6",
       "synset_id": "49495",
       "pos": "n",
       "gloss": "",
@@ -1820,7 +1820,7 @@
     },
     {
       "resource": "ontopt06",
-      "resource_label": "ontopt06",
+      "resource_label": "Onto.PT v0.6",
       "synset_id": "43961",
       "pos": "n",
       "gloss": "",
@@ -1834,7 +1834,7 @@
     },
     {
       "resource": "thes5rec",
-      "resource_label": "thes5rec",
+      "resource_label": "Thesaurus 5rec (crisp)",
       "synset_id": "13577",
       "pos": "n",
       "gloss": "",
@@ -1872,7 +1872,7 @@
     },
     {
       "resource": "top01",
-      "resource_label": "top01",
+      "resource_label": "TOP 0.1 (nouns)",
       "synset_id": "2962",
       "pos": "n",
       "gloss": "",

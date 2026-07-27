@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix sr: <http://semantic-research.local/concept/> .
+
+# Concept model — TexturaMetamorfica
+# generated 2026-07-27T09:25:12+00:00
+
+sr:TexturaMetamorfica a owl:Class, skos:Concept ;
+    skos:prefLabel "TexturaMetamórfica"@pt ;
+    skos:scopeNote "muda de forma, relativamente a um ou vários parâmetros"@pt ;
+    dct:identifier "TexturaMetamorfica" ;
+    skos:exactMatch <https://globalwordnet.org/ili/i16835> ;
+    skos:exactMatch <https://globalwordnet.org/ili/i22389> ;
+    skos:exactMatch <https://globalwordnet.org/ili/i75366> ;
+    skos:exactMatch <https://globalwordnet.org/ili/i8401> ;
+    skos:altLabel "metamorfose"@pt ;
+    skos:altLabel "modificação"@pt ;
+    skos:altLabel "mudança"@pt ;
+    skos:altLabel "transmudação"@pt ;
+    skos:altLabel "transmutação"@pt ;
+    skos:altLabel "transformação"@pt ;
+    skos:altLabel "alteração"@pt ;
+    skos:altLabel "hemoético"@pt ;
+    skos:altLabel "metamórfico"@pt ;
+    skos:hiddenLabel "cambiar"@pt ;
+    skos:hiddenLabel "converter"@pt ;
+    skos:hiddenLabel "demudar"@pt ;
+    skos:hiddenLabel "evolucionar"@pt ;
+    skos:hiddenLabel "evoluir"@pt ;
+    skos:hiddenLabel "falsificar"@pt ;
+    skos:hiddenLabel "metamorfosear"@pt ;
+    skos:hiddenLabel "perturbar"@pt ;
+    skos:hiddenLabel "tornar"@pt ;
+    skos:hiddenLabel "tranformar"@pt ;
+    skos:hiddenLabel "transformar"@pt ;
+    skos:hiddenLabel "alterar"@pt ;
+    skos:hiddenLabel "mudar"@pt ;
+    skos:hiddenLabel "modificar"@pt ;
+    rdfs:comment "UF senses=6; RT=0; ILI anchors=4"@en .

@@ -29,8 +29,10 @@ logger = logging.getLogger(__name__)
 # 2025), lookup AND translate() must run on the SAME pinned version so the oewn-…
 # ids in an export resolve consistently and the ILI→own-pt bridge is deterministic.
 OEWN_PINNED_VERSION = "oewn:2024"
-OEWN_LEXICON_CANDIDATES = ("oewn:2024", "oewn:2025", "oewn:2023")
+# Hard pin: never silently activate another local OEWN release.
+OEWN_LEXICON_CANDIDATES = (OEWN_PINNED_VERSION,)
 OEWN_LEXICON: str | None = None
+OEWN_HARD_PIN = True
 
 # own-pt (OpenWordNet-PT) is the ILI-mediated Portuguese bridge.
 OWN_PT_SPECIFIER = "own-pt:1.0.0"
@@ -92,17 +94,47 @@ def _lexicon_base(specifier: str) -> str:
     return specifier.split(":")[0]
 
 
-def _lexicon_installed(specifier: str) -> bool:
+def _iter_lexicons() -> list:
+    """List installed lexicons without requiring a network round-trip."""
     with warnings.catch_warnings():
         warnings.simplefilter("ignore", category=WnWarning)
         try:
-            return bool(wn.lexicons(lexicon=specifier))
+            return list(wn.lexicons())
         except Exception:
-            base = _lexicon_base(specifier)
+            return []
+
+
+def _lexicon_installed(specifier: str) -> bool:
+    """True if specifier (id:version) is already in the local wn data store."""
+    wanted = (specifier or "").strip()
+    if not wanted:
+        return False
+    base, _, version = wanted.partition(":")
+    # 1) Preferred API filter
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore", category=WnWarning)
+        try:
+            if bool(wn.lexicons(lexicon=wanted)):
+                return True
+        except Exception:
+            pass
+        if version in ("", "*"):
             try:
-                return any(lex.id == base for lex in wn.lexicons(lexicon=f"{base}:*"))
+                if any(lex.id == base for lex in wn.lexicons(lexicon=f"{base}:*")):
+                    return True
             except Exception:
-                return False
+                pass
+    # 2) Robust scan — survives filter/thread quirks that falsely report missing
+    for lex in _iter_lexicons():
+        lid = getattr(lex, "id", None) or ""
+        lver = str(getattr(lex, "version", "") or "")
+        if lid != base:
+            continue
+        if version in ("", "*", None):
+            return True
+        if lver == version:
+            return True
+    return False
 
 
 class LemmaAdapter:
@@ -416,39 +448,76 @@ def _ensure_lexicon(specifier: str) -> None:
                 logger.debug("Optional OMW dependency %s unavailable: %s", OMW_EN_DEPENDENCY, exc)
 
 
-def ensure_oewn() -> str:
-    """Return the pinned Open English Wordnet lexicon id (download if needed).
+def set_oewn_pin(specifier: str, *, hard: bool = True) -> None:
+    """Set the only OEWN release the backend may activate (clears caches)."""
+    global OEWN_PINNED_VERSION, OEWN_LEXICON_CANDIDATES, OEWN_LEXICON, OEWN_HARD_PIN
+    OEWN_PINNED_VERSION = str(specifier or "oewn:2024").strip()
+    OEWN_LEXICON_CANDIDATES = (OEWN_PINNED_VERSION,)
+    OEWN_HARD_PIN = bool(hard)
+    OEWN_LEXICON = None
+    try:
+        get_wordnet.cache_clear()
+    except Exception:  # noqa: BLE001
+        pass
 
-    Prefers an ALREADY-INSTALLED candidate (pinned 2024 first) and never silently
-    jumps to a newer release when the pinned one is present — otherwise the export
-    ids and the translate() bridge could resolve under different versions.
+
+def ensure_oewn() -> str:
+    """Return the hard-pinned Open English Wordnet lexicon id.
+
+    With ``OEWN_HARD_PIN`` (default True) this **never** falls through to
+    another local release (e.g. oewn:2025). Only the pinned specifier is used.
     """
     global OEWN_LEXICON
-    if OEWN_LEXICON:
+    pinned = OEWN_PINNED_VERSION
+    if OEWN_LEXICON == pinned:
         return OEWN_LEXICON
+    if OEWN_LEXICON and OEWN_LEXICON != pinned:
+        logger.warning(
+            "Clearing OEWN_LEXICON=%s — hard pin requires %s", OEWN_LEXICON, pinned
+        )
+        OEWN_LEXICON = None
+        try:
+            get_wordnet.cache_clear()
+        except Exception:  # noqa: BLE001
+            pass
 
+    if _lexicon_installed(pinned):
+        OEWN_LEXICON = pinned
+        logger.info("OEWN hard-pinned to installed lexicon %s", pinned)
+        return pinned
+
+    if OEWN_HARD_PIN:
+        # Do not use 2025/2025+/2023 as silent substitutes.
+        extras = [
+            f"{lex.id}:{lex.version}"
+            for lex in _iter_lexicons()
+            if getattr(lex, "id", None) == "oewn"
+            and f"{lex.id}:{lex.version}" != pinned
+        ]
+        try:
+            wn.download(pinned)
+            if _lexicon_installed(pinned):
+                OEWN_LEXICON = pinned
+                logger.info("OEWN downloaded and hard-pinned to %s", pinned)
+                return pinned
+        except Exception as exc:
+            data_dir = (
+                getattr(getattr(wn, "config", None), "data_directory", None)
+                or "~/.wn_data"
+            )
+            raise RuntimeError(
+                f"OEWN hard pin {pinned!r} is not installed and download failed.\n"
+                f"Other local releases present (ignored): {extras or '—'}\n"
+                f"Pasta wn: {data_dir}\n"
+                f"  python -c \"import wn; wn.download('{pinned}')\""
+            ) from exc
+
+    # Soft path (only if hard pin disabled): legacy candidate scan
     for candidate in OEWN_LEXICON_CANDIDATES:
         if _lexicon_installed(candidate):
             OEWN_LEXICON = candidate
-            logger.info("OEWN pinned to installed lexicon %s", candidate)
             return candidate
-
-    last_error: Exception | None = None
-    for candidate in OEWN_LEXICON_CANDIDATES:
-        try:
-            wn.download(candidate)
-            OEWN_LEXICON = candidate
-            logger.info("OEWN downloaded and pinned to %s", candidate)
-            return candidate
-        except Exception as exc:
-            last_error = exc
-
-    raise RuntimeError(
-        "Não foi possível descarregar Open English Wordnet.\n"
-        "Verifique a ligação à Internet e execute:\n"
-        "  pip install wn\n"
-        "  python -c \"import wn; wn.download('oewn:2024')\""
-    ) from last_error
+    raise RuntimeError(f"OEWN pin {pinned!r} unavailable")
 
 
 @lru_cache(maxsize=1)

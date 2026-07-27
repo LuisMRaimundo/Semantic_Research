@@ -1,25 +1,30 @@
 """OEWN (Open English WordNet) search → facets export for the workbench.
 
 Keeps WordNet in the same PASSO 2 flow as PULO / Onto.PT. Exports land in
-``classes/<Class>/exports/*.facets.json`` so Ponte ILI and the WordNet track
+``classes/<Class>/exports/*.facets.json`` so the WordNet track / CILI harvest
 do not pick up stale bundles from ``WordNet/exports/``.
 """
 
 from __future__ import annotations
 
-import sys
 from datetime import datetime
-from pathlib import Path
 from typing import Any, Optional
 
-from ..settings import ROOT
+from ..engines import load_oewn_backend
+from ..settings import load_config
 
 
 def _ensure_backend():
-    wn_dir = str(ROOT / "WordNet")
-    if wn_dir not in sys.path:
-        sys.path.insert(0, wn_dir)
-    import oewn_backend as backend  # type: ignore
+    backend = load_oewn_backend()
+    cfg = load_config()
+    pin = str(cfg.get("oewn") or "oewn:2024")
+    if hasattr(backend, "set_oewn_pin"):
+        backend.set_oewn_pin(pin, hard=True)
+    else:
+        if hasattr(backend, "OEWN_PINNED_VERSION"):
+            backend.OEWN_PINNED_VERSION = pin  # type: ignore[attr-defined]
+        if hasattr(backend, "OEWN_LEXICON"):
+            backend.OEWN_LEXICON = None  # type: ignore[attr-defined]
     return backend
 
 

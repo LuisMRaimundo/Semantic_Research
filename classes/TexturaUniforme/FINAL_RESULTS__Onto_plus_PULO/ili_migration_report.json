@@ -1,0 +1,41 @@
+{
+  "class_id": "TexturaUniforme",
+  "generated": "2026-07-27T11:39:44.097289+00:00",
+  "cili_version": "cili@upstream-master+pwn30+pwn31+wn.ili",
+  "legacy_table": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\classes\\TexturaUniforme\\out\\ili_equivalence.json",
+  "confirmed": [
+    {
+      "oewn_ili": "i10771",
+      "pulo_ili": "ili-30-01966488-a",
+      "source": "human-adjudicated (GUI Ponte ILI) — glosa literal de i10771 («sempre o mesmo…»)",
+      "human": true,
+      "cili_id": "i10771"
+    },
+    {
+      "oewn_ili": "i4126",
+      "pulo_ili": "ili-30-00744506-a",
+      "source": "human-adjudicated (GUI Ponte ILI) — «not differentiated» ↔ «não diferenciado»",
+      "human": true,
+      "cili_id": "i4126"
+    }
+  ],
+  "diverged": [
+    {
+      "oewn_ili": "i6560",
+      "pulo_ili": "uniform",
+      "source": "human-adjudicated (GUI Ponte ILI) — a partir de unmatched",
+      "human": true,
+      "cili_oewn": "i6560",
+      "cili_pulo": null
+    }
+  ],
+  "legacy_without_cili": [
+    {
+      "oewn_ili": "uniforme",
+      "pulo_ili": "uniforme",
+      "source": "human-adjudicated (GUI Ponte ILI)",
+      "human": true
+    }
+  ],
+  "note": "Pares humanos confirmados pelo CILI são cobertos pelo map automático. Pares que divergem NÃO são aplicados — só listados aqui."
+}

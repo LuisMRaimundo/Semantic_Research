@@ -1,0 +1,482 @@
+{
+  "type": "pulo_thesaurus_search",
+  "query": {
+    "query": "densidade",
+    "pos": null,
+    "mode": "Contains"
+  },
+  "count": 2,
+  "synsets": [
+    {
+      "synset_offset": "por-30-04941453-n",
+      "pos": "n",
+      "gloss": "o valor por unidade de tamanho\n",
+      "synonyms": [
+        "densidade"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-04941453-n",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "hyponym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "uma medida de como densamente informação é embalado em uma mídia de armazenamento\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "fluxo (física) o número de alterações na energia em uma dada superfície por unidade de área\n"
+            },
+            {
+              "words": "absorvância",
+              "gloss": "uma medida da extensão a que uma substância transmite luz ou outra radiação eletromagnética (física)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma qualidade rarefeita\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a relação entre a densidade de algo para a densidade de um padrão\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "o ato de aumentar a densidade de algo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "ou diminuir a densidade de solidez\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "de relativamente grande peso físico ou densidade\n"
+            },
+            {
+              "words": "ligeiro",
+              "gloss": "de relativamente pouco peso físico ou densidade\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Tendo uma densidade de população inferior ao normal ou desejável\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "de densidade e extensão relativamente grande\n"
+            },
+            {
+              "words": "denso",
+              "gloss": "permitindo pouco se toda a luz passar por causa da espessura da matéria\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "relativamente fina na consistência ou baixa densidade; Não viscoso\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "densímetro constituído por um globo de vidro fino que é pesada num gás para determinar a sua densidade\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um instrumento de medição para determinar a densidade ou gravidade específica\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "tipo especial de densitômetro que mede variações de densidade sobre uma área muito pequena\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um densímetro que determina a concentração de soluções de sal por medição da sua densidade\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o brilho das estrelas causado quando mudanças na densidade da atmosfera da terra produzir refração desigual da luz das estrelas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a densidade de uma substância em relação à densidade da água\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a densidade de gás em relação à densidade de hidrogénio\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a propriedade de algo que tem sido enfraquecido ou reduzido em espessura ou densidade\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a relação entre a densidade de algo para a densidade de um padrão\n"
+            },
+            {
+              "words": "concentração",
+              "gloss": "aumento da densidade\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um aumento na densidade de algo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma diminuição na densidade de algo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o centro de massa de um objecto de densidade uniforme\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrela muito brilhante de grande diâmetro e baixa densidade (em relação ao sol)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrela extremamente brilhante de grande diâmetro e baixa densidade\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrela fraca de densidade enorme\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma cientista que estuda o crescimento e a densidade das populações e suas estatísticas vitais\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um filósofo grego presocratic e sócio de Anaximandro, que acreditavam que todas as coisas são feitas de ar em diferentes graus de densidade (século VI A.C.)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Físico e químico britânico que estabeleceu que a água é um composto de hidrogênio e oxigênio e quem calculado a densidade da terra (1731-1810)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Inglês físico que estudou a densidade dos gases e descobriu argônio; fizeram contribuições importantes para a teoria acústica (1842-1919)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a curva teoricamente a cabo por um perfeitamente flexível e não extensível de densidade uniforme e secção transversal pendurado livremente a partir de dois pontos fixos\n"
+            },
+            {
+              "words": "gás",
+              "gloss": "o estado da matéria distinguidos dos estados sólido e líquido por: relativamente baixa densidade e viscosidade; relativamente grande expansão e contracção, com alterações na pressão e temperatura; a capacidade de difundir prontamente; e a tendência espontânea para se tornar distribuídos uniformemente ao longo de qualquer recipiente\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um metal de densidade relativamente elevada (gravidade específica maior do que cerca de 5) ou de peso atómico relativamente elevado (especialmente um que é tóxico como o mercúrio ou o chumbo)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma substância capaz de provocar a redução de uma outra substância, uma vez que em si é oxidado; utilizado em fotografia para diminuir a densidade de um negativo ou impressão por oxidação alguns da prata solta\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "denso",
+              "gloss": "com alta densidade relativa ou gravidade específica\n"
+            },
+            {
+              "words": "denso",
+              "gloss": "permitindo pouco se toda a luz passar por causa da espessura da matéria\n"
+            },
+            {
+              "words": "denso",
+              "gloss": "com alta densidade relativa ou gravidade específica\n"
+            },
+            {
+              "words": "denso",
+              "gloss": "permitindo pouco se toda a luz passar por causa da espessura da matéria\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "a consistência de um sólido compacto\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "formato, tamanho, calibre, dimensão, medida",
+              "gloss": "a magnitude física de algo (como é grande)\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-05088804-n",
+      "pos": "n",
+      "gloss": "a propriedade espacial de sendo amontoados\n",
+      "synonyms": [
+        "densidade",
+        "concentração"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-05088804-n",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "antonym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "a propriedade espacial ou geográfica de ser espalhadas sobre uma gama, área ou volume\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a propriedade espacial ou geográfica de ser espalhadas sobre uma gama, área ou volume\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "ter baixa concentração\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma peça em que há uma concentração de jogadores em um local no campo de jogo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "ou diminuir a densidade de solidez\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um teste quantitativa ou qualitativa de uma substância (especialmente um minério ou um fármaco) para determinar os seus componentes; frequentemente utilizado para testar a presença ou concentração de anticorpos ou agentes infecciosos etc.\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a utilização de ressonância magnética nuclear de protões para produzir imagens de densidade de protões\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "retirado de um centro ou local de concentração; especialmente tendo poder ou função dispersos de uma central para as autarquias locais\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "de relativamente grande peso físico ou densidade\n"
+            },
+            {
+              "words": "ligeiro",
+              "gloss": "de relativamente pouco peso físico ou densidade\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Tendo uma densidade de população inferior ao normal ou desejável\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "de densidade e extensão relativamente grande\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "relativamente fina na consistência ou baixa densidade; Não viscoso\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a propriedade de ser escasso ou dispersas; falta de espessura\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o intervalo de densidade óptica e Tom em um negativo fotográfico ou impressão (ou a extensão a que as áreas adjacentes em uma tela de televisão diferem em brilho)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Física) a densidade de um gás ideal, a pressão constante varia inversamente com a temperatura\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Cosmologia) a teoria de que o universo se originou em algum momento entre 10 bilhões a 20 bilhões de anos atrás a partir da explosão cataclísmica de uma pequena quantidade de matéria em altíssima densidade e temperatura\n"
+            },
+            {
+              "words": "concentração",
+              "gloss": "aumento da densidade\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um aumento na densidade de algo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma diminuição na densidade de algo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o centro de massa de um objecto de densidade uniforme\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "áreas urbanas na Nova Inglaterra e Centro-Oeste caracterizados por concentrações de indústrias em declínio (aço ou têxteis)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a região mais alta da ionosfera (90-600 milhas acima) que contém a maior concentração de electrões livres e é mais útil para a transmissão de rádio de longa distância\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a região mais externa da atmosfera da Terra; contém uma concentração elevada de electrões livres\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma região na Califórnia, ao sul de San Francisco que é conhecido por sua concentração de indústrias de alta tecnologia\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrela muito brilhante de grande diâmetro e baixa densidade (em relação ao sol)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma camada na estratosfera (a aproximadamente 20 milhas) que contém uma concentração de ozono suficiente para bloquear a maioria das radiações ultravioleta do sol\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(cosmologia) uma hipotética partícula subatômica unidimensional, tendo uma concentração de energia e as propriedades dinâmicas de um loop flexível\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrela extremamente brilhante de grande diâmetro e baixa densidade\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrela fraca de densidade enorme\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma cientista que estuda o crescimento e a densidade das populações e suas estatísticas vitais\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um filósofo grego presocratic e sócio de Anaximandro, que acreditavam que todas as coisas são feitas de ar em diferentes graus de densidade (século VI A.C.)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Físico e químico britânico que estabeleceu que a água é um composto de hidrogênio e oxigênio e quem calculado a densidade da terra (1731-1810)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Inglês físico que estudou a densidade dos gases e descobriu argônio; fizeram contribuições importantes para a teoria acústica (1842-1919)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Biologia, a química) a difusão de moléculas através de uma membrana semi-permeável, a partir de um local de maior concentração para um local de baixa concentração até a concentração de ambos os lados é igual\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a curva teoricamente a cabo por um perfeitamente flexível e não extensível de densidade uniforme e secção transversal pendurado livremente a partir de dois pontos fixos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "hipoxia resultante de uma diminuição da concentração de hemoglobina\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "anoxia resultante de uma diminuição da concentração de hemoglobina\n"
+            },
+            {
+              "words": "hipogamaglobulinemia",
+              "gloss": "uma concentração anormalmente baixa de gamaglobulina no sangue e aumento do risco de infecção\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "anemia, caracterizada por um aumento na concentração de hemoglobina corpuscular\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "anemia caracterizada por um decréscimo na concentração de hemoglobina corpuscular\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma doença hereditária caracterizada por um aumento da densidade óssea; nas formas graves da cavidade da medula óssea pode ser obliterado\n"
+            },
+            {
+              "words": "gás",
+              "gloss": "o estado da matéria distinguidos dos estados sólido e líquido por: relativamente baixa densidade e viscosidade; relativamente grande expansão e contracção, com alterações na pressão e temperatura; a capacidade de difundir prontamente; e a tendência espontânea para se tornar distribuídos uniformemente ao longo de qualquer recipiente\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um metal de densidade relativamente elevada (gravidade específica maior do que cerca de 5) ou de peso atómico relativamente elevado (especialmente um que é tóxico como o mercúrio ou o chumbo)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma substância capaz de provocar a redução de uma outra substância, uma vez que em si é oxidado; utilizado em fotografia para diminuir a densidade de um negativo ou impressão por oxidação alguns da prata solta\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "denso",
+              "gloss": "difícil porque passam através do crescimento denso\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "desenhar juntos ou encontrar-se em um centro comum\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "conjunto tão próximos quanto a ser invulnerável à penetração\n"
+            },
+            {
+              "words": "denso",
+              "gloss": "difícil porque passam através do crescimento denso\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "desenhar juntos ou encontrar-se em um centro comum\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "conjunto tão próximos quanto a ser invulnerável à penetração\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "a propriedade possuída por uma matriz de coisas que têm o espaço entre eles\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "meter",
+              "gloss": "para reunir-se em grandes números\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer propriedade relacionada ou ocupando espaço\n"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

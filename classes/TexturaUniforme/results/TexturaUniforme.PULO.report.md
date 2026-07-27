@@ -2,7 +2,7 @@
 
 - **Eixo definidor:** invariância face a um parâmetro
 - **Fonte:** PULO / WordNet.PT export (âncora ILI; sem porta estatística)
-- **Gerado:** 2026-07-20T16:51:20
+- **Gerado:** 2026-07-27T12:38:23
 - **Estado global:** ✅ TODAS AS ASSERÇÕES PASSARAM
 
 ## Quadro de asserções (protocolo)
@@ -15,37 +15,40 @@
 | ILI | Nenhum id oewn-/por- é usado como chave de junção; a chave é o ILI. | PASS ✅ | OK |
 | ILI | Synsets sem ili_offset são sinalizados (não descartados em silêncio). | PASS ✅ | nenhum synset sem ILI no export |
 | Etapa 2 | Os sinónimos colhidos provêm exclusivamente de synsets admitidos. | PASS ✅ | OK |
-| Etapa 3 | Alvos de relação são tipados pelo mapeamento; «(no lemma)» nunca admitido. | PASS ✅ | OK (23 alvos «(no lemma)» descartados) |
+| Etapa 3 | Alvos de relação são tipados pelo mapeamento; «(no lemma)» nunca admitido. | PASS ✅ | OK (35 alvos «(no lemma)» descartados) |
 | Etapa 4 | «(no lemma)», colocações e termos só de relação não-nomeada (sem corroboração) são excluídos. | PASS ✅ | OK |
-| Etapa 5 | Cada admitido tem estatuto∈{UF,RT,contraste,BT,NT,atributo}, teste decisivo e ≥1 garantia; nomes de qualidade em attribute_bucket. | PASS ✅ | OK |
+| Etapa 5 | Cada admitido tem estatuto∈{UF,RT,BT,NT} (garantia calculada a jusante; atributo = evidência). | PASS ✅ | OK |
 | Garantia | Termos com garantia «estipulativa» têm definição E relação estrutural. | PASS ✅ | OK |
 | Consistência | Nenhum termo é UF de duas classes com owl:disjointWith entre si. | PASS ✅ | OK |
-| Consistência | Contrastantes não são serializados como skos:related. | PASS ✅ | OK |
-| Serialização | X.skos.ttl analisa com rdflib e tem a contagem de triplos esperada. | PASS ✅ | triplos esperados=7, analisados=7 |
+| Consistência | Nenhum estatuto de evidência (contraste/atributo) em admitidos. | PASS ✅ | OK |
+| Serialização | X.skos.ttl analisa com rdflib e tem a contagem de triplos esperada. | PASS ✅ | triplos esperados=16, analisados=16 |
 
 ## Etapa 1 — Selecção de acepções (lista branca ILI)
 - **UF** `ili-30-01200095-a` — que se mantém o mesmo; constante e invariável ao longo do parâmetro
 - **UF** `ili-30-01966488-a` — sempre o mesmo parâmetro; imutável e uniforme
-- Excluídos (off-axis): `['ili-30-00909545-a', 'ili-30-04745370-n', 'ili-30-02302187-a', 'ili-30-00910101-a', 'ili-30-04509592-n', 'ili-30-00744506-a', None]`
+- **RT** `ili-30-04745370-n` — ausência de variação; invariância e uniformidade de um parâmetro
+- Excluídos (off-axis): `['ili-30-00909545-a', 'ili-30-02302187-a', 'ili-30-00910101-a', 'ili-30-04509592-n', 'ili-30-00744506-a', None]`
 
 ## Etapa 2 — Sementes (sinónimos de synsets admitidos)
-Total: **2** — coerente, uniforme
+Total: **8** — coerente, constante, imutável, invariável, invariância, periódico, uniforme, uniformidade
 
 ## Etapa 3 — Colheita de relações tipadas
 - **Contraste (antonym):** —
 - **RT/UF (similar-to):** homogéneo
-- **BT (hypernym):** —
+- **BT (hypernym):** afinidade, analogia, conformidade, imagem, parecença, parentesco, semelhança, similitude
 - **NT (hyponym):** —
 - **Atributo:** —
-- **Família derivada:** uniformidade
-- Alvos «(no lemma)» descartados: 23
+- **Família derivada:** coerente, uniforme, uniformidade
+- Alvos «(no lemma)» descartados: 35
 
 ### Sinalização (revisão humana — NÃO admitidos)
 - afetar — relação não-nomeada / #NN (via «relation #61 (inverse)»)
 - afigurar — relação não-nomeada / #NN (via «relation #61 (inverse)»)
+- ainda — relação não-nomeada / #NN (via «relation #61 (inverse)»)
 - apresentar — relação não-nomeada / #NN (via «relation #61 (inverse)»)
 - assumir — relação não-nomeada / #NN (via «relation #61 (inverse)»)
 - badalar — relação não-nomeada / #NN (via «relation #61 (inverse)»)
+- carecer — relação não-nomeada / #NN (via «relation #61 (inverse)»)
 - casta — relação não-nomeada / #NN (via «relation #61 (inverse)»)
 - classe — relação não-nomeada / #NN (via «relation #61 (inverse)»)
 - comparar — relação não-nomeada / #NN (via «relation #61»)
@@ -57,6 +60,7 @@ Total: **2** — coerente, uniforme
 - desenfardar — relação não-nomeada / #NN (via «relation #61 (inverse)»)
 - desfraldar — relação não-nomeada / #NN (via «relation #61 (inverse)»)
 - desinternar — relação não-nomeada / #NN (via «relation #61 (inverse)»)
+- diversidade — relação não-nomeada / #NN (via «relation #61 (inverse)»)
 - divulgar — relação não-nomeada / #NN (via «relation #61 (inverse)»)
 - empatar — relação não-nomeada / #NN (via «relation #61»)
 - ensinar — relação não-nomeada / #NN (via «relation #61 (inverse)»)
@@ -65,24 +69,32 @@ Total: **2** — coerente, uniforme
 - estampar — relação não-nomeada / #NN (via «relation #61 (inverse)»)
 - estrutura — relação não-nomeada / #NN (via «relation #61 (inverse)»)
 - estruturação — relação não-nomeada / #NN (via «relation #61 (inverse)»)
+- etapa — relação não-nomeada / #NN (via «relation #61 (inverse)»)
 - exibir — relação não-nomeada / #NN (via «relation #61 (inverse)»)
 - existência — relação não-nomeada / #NN (via «relation #61 (inverse)»)
 - expandir — relação não-nomeada / #NN (via «relation #61 (inverse)»)
 - exteriorizar — relação não-nomeada / #NN (via «relation #61 (inverse)»)
+- faltar — relação não-nomeada / #NN (via «relation #61 (inverse)»)
+- fase — relação não-nomeada / #NN (via «relation #61 (inverse)»)
 - fazer ver — relação não-nomeada / #NN (via «relation #61 (inverse)»)
 - forma — relação não-nomeada / #NN (via «relation #61 (inverse)»)
 - franquear — relação não-nomeada / #NN (via «relation #61 (inverse)»)
 - género — relação não-nomeada / #NN (via «relation #61 (inverse)»)
+- grau — relação não-nomeada / #NN (via «relation #61 (inverse)»)
 - homogéneo — relação não-nomeada / #NN (via «see also»)
 - igualar — relação não-nomeada / #NN (via «relation #61»)
 - inércia — relação não-nomeada / #NN (via «relation #61»)
 - manifestar — relação não-nomeada / #NN (via «relation #61 (inverse)»)
+- manquejar — relação não-nomeada / #NN (via «relation #61 (inverse)»)
 - mostrar — relação não-nomeada / #NN (via «relation #61 (inverse)»)
 - nação — relação não-nomeada / #NN (via «relation #61 (inverse)»)
+- nível — relação não-nomeada / #NN (via «relation #61 (inverse)»)
 - nivelação — relação não-nomeada / #NN (via «relation #61»)
 - nivelamento — relação não-nomeada / #NN (via «relation #61»)
 - nivelar — relação não-nomeada / #NN (via «relation #61»)
 - patentear — relação não-nomeada / #NN (via «relation #61 (inverse)»)
+- ponto — relação não-nomeada / #NN (via «relation #61 (inverse)»)
+- qualidade — relação não-nomeada / #NN (via «relation #61 (inverse)»)
 - raça — relação não-nomeada / #NN (via «relation #61 (inverse)»)
 - representar — relação não-nomeada / #NN (via «relation #61 (inverse)»)
 - reproduzir — relação não-nomeada / #NN (via «relation #61 (inverse)»)
@@ -94,28 +106,34 @@ Total: **2** — coerente, uniforme
 - sorte — relação não-nomeada / #NN (via «relation #61 (inverse)»)
 - suar — relação não-nomeada / #NN (via «relation #61 (inverse)»)
 - tipo — relação não-nomeada / #NN (via «relation #61 (inverse)»)
+- variação — relação não-nomeada / #NN (via «relation #61 (inverse)»)
+- variedade — relação não-nomeada / #NN (via «relation #61 (inverse)»)
 - vestir — relação não-nomeada / #NN (via «relation #61 (inverse)»)
 
 ## Etapa 4 — Exclusão automática
 Nenhum termo descartado.
 
 ## Etapa 5 — Adjudicação + §7 proveniência
-Admitidos: **1**  ·  Pendentes: **2**  ·  Atributos: **0**
+Admitidos: **7**  ·  Pendentes: **11**  ·  (atributo/oposicao/vizinha = evidência, fora de provenance)
 
 | termo | estatuto | via | offset/ILI | teste decisivo | garantia | definição |
 |-------|----------|-----|------------|----------------|----------|-----------|
-| politípica | contraste | manual (estipulativa) | — | Teste 3 | estipulativa | textura composta por múltiplos tipos simultâneos |
+| uniforme | UF | derivationally related form | ili-30-01200095-a, ili-30-01966488-a | derivado do sentido (PASSO 3) | sense_decision | — |
+| constante | UF | seed (Etapa 1/2) | ili-30-01200095-a | derivado do sentido (PASSO 3) | sense_decision | — |
+| invariável | UF | seed (Etapa 1/2) | ili-30-01200095-a | derivado do sentido (PASSO 3) | sense_decision | — |
+| imutável | UF | seed (Etapa 1/2) | ili-30-01966488-a | derivado do sentido (PASSO 3) | sense_decision | — |
+| uniformidade | RT | derivationally related form | ili-30-04745370-n | derivado do sentido (PASSO 3) | sense_decision | — |
+| invariância | RT | seed (Etapa 1/2) | ili-30-04745370-n | derivado do sentido (PASSO 3) | sense_decision | — |
+| periódico | RT | seed (Etapa 1/2) | ili-30-04745370-n | derivado do sentido (PASSO 3) | sense_decision | — |
 
 ### Pendentes (necessitam de decisão na spec `adjudication`)
-coerente, homogéneo
+afinidade, analogia, coerente, conformidade, homogéneo, imagem, parecença, parentesco, politípica, semelhança, similitude
 
-## §6 — Mapeamento SKOS-XL / OWL
+## §6 — Mapeamento SKOS-XL / OWL (só Bloco A)
 - `skos:prefLabel` → **uniforme**
-- `skosxl:altLabel` (UF) → —
-- `skos:related` (RT) → —
+- `skosxl:altLabel` (UF) → constante, imutável, invariável, uniforme
+- `:termoRelacionado` (RT) → invariância, periódico, uniformidade
 - `skos:broader` (BT) → —
 - `skos:narrower` (NT) → —
-- `:temAtributo` (nomes de qualidade) → —
-- `:contrastaCom` + `scopeNote` (contraste) → politípica
 
-_Nomes de qualidade NÃO são `skosxl:altLabel`; contrastantes NÃO são `skos:related` (o SKOS não modela antonímia)._
+_Evidência (`atributo`, oposição, vizinha, sinalização) NÃO é serializada como relação SKOS/SKOS-XL._

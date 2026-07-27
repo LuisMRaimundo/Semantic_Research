@@ -1,0 +1,6 @@
+secao,forma,wildcard,lingua,estatuto,garantia,ancora_ili,ili,fontes,relacao,nota
+A,compound,compound*,en,UF,,,i114921,OEWN,,
+A,chemical compound,chemical compound*,en,UF,,,i114921,OEWN,,
+E,desalinhado,,,exclude,,,ili-30-02424254-a,pulo,,Não limpo e arrumado
+E,compositor,,,exclude,,,ili-30-09947232-n,pulo,,alguém que compõe a música como uma profissão
+F,composto,composto*,pt-PT,UF,fonte_unica,presente,ili-30-14818238-n,pulo,,

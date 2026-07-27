@@ -1,20 +1,7 @@
 {
   "class": "TexturaUniforme",
-  "generated": "2026-07-20T10:50:06",
+  "generated": "2026-07-26T15:28:18",
   "map": [
-    {
-      "oewn_ili": "i60712",
-      "pulo_ili": "ili-30-04509592-n",
-      "evidence": {
-        "cili_identity": "i60712",
-        "shared_lemmas": [
-          "uniforme"
-        ],
-        "pos": "n"
-      },
-      "confidence": "high",
-      "source": "cili:cili@eeab8003 (master, 2016-01-26)"
-    },
     {
       "oewn_ili": "i10771",
       "pulo_ili": "ili-30-01966488-a",
@@ -38,32 +25,50 @@
       },
       "confidence": "high",
       "source": "human-adjudicated (GUI Ponte ILI) — «not differentiated» ↔ «não diferenciado»"
+    },
+    {
+      "oewn_ili": "uniforme",
+      "pulo_ili": "uniforme",
+      "evidence": {
+        "shared_lemmas": [],
+        "pos": "uniforme"
+      },
+      "confidence": "high",
+      "source": "human-adjudicated (GUI Ponte ILI)"
+    },
+    {
+      "oewn_ili": "i6560",
+      "pulo_ili": "uniform",
+      "evidence": {
+        "shared_lemmas": [],
+        "pos": "uniform"
+      },
+      "confidence": "high",
+      "source": "human-adjudicated (GUI Ponte ILI) — a partir de unmatched"
     }
   ],
   "review": [],
   "unmatched": [
     {
-      "oewn_ili": "i6560",
-      "pos": "a",
-      "lemmas": [],
-      "why": "sem lemas PT para evidência"
-    },
-    {
       "oewn_ili": "i10734",
       "pos": "a",
       "lemmas": [],
-      "why": "sem lemas PT para evidência"
+      "why": "sem lemas PT para evidência",
+      "pertinence": "pertinente",
+      "pertinence_note": "acepção pertinente sem lemas PT / sem par PULO"
     },
     {
       "oewn_ili": "i33388",
       "pos": "v",
       "lemmas": [],
-      "why": "sem lemas PT para evidência"
+      "why": "sem lemas PT para evidência",
+      "pertinence": "excluida_pela_classe",
+      "pertinence_note": "POS verbal — fora do eixo da classe (não conta como falha de cobertura OWN-PT)"
     }
   ],
   "coverage": {
-    "map": 3,
+    "map": 4,
     "review": 0,
-    "unmatched": 3
+    "unmatched": 2
   }
 }

@@ -1,0 +1,24 @@
+secao,forma,wildcard,lingua,estatuto,garantia,ancora_ili,ili,fontes,relacao,nota
+A,consistent,consistent*,en,UF,,,i6560,OEWN,,
+A,uniform,uniform*,en,UF,,,i6560,OEWN,,
+A,unvarying,unvarying*,en,UF,,,i10771,OEWN,,
+B,multiform,multiform*,en,,,,i10773,WordNet,antonym,
+B,differentiated,differentiated*,en,,,,i4125,WordNet,antonym,
+B,single,single*,en,,,,i10772,WordNet,similar_to,
+B,dedifferentiated,dedifferentiated*,en,,,,i4127,WordNet,similar_to,
+C,homogeneous,homogeneous*,en,,,,,,,conjunto de controlo — não pólo contrastante
+C,homogenous,homogenous*,en,,,,,,,conjunto de controlo — não pólo contrastante
+D,uniformity,uniformity*,en,RT,,,i61962,OEWN,,
+D,uniformness,uniformness*,en,RT,,,i61962,OEWN,,
+E,igual,,,exclude,,,ili-30-00909545-a,pulo,,sem variações; regular e uniforme face ao parâmetro
+E,periódico,,,exclude,,,ili-30-02302187-a,pulo,,que ocorre em intervalos fixos e regulares
+E,bonito,,,exclude,,,ili-30-00910101-a,pulo,,de aparência agradável aos olhos
+E,medidor,,,exclude,,,ili-30-04509592-n,pulo,,instrumento de medição de comprimento
+E,fardado,,,exclude,,,ili-30-00744506-a,pulo,,relativo ao fardamento militar
+F,constante,constante*,pt-PT,UF,fonte_unica,presente,ili-30-01200095-a,pulo,,
+F,imutável,imutável*,pt-PT,UF,fonte_unica,presente,ili-30-01966488-a,pulo,,
+F,invariância,invariância*,pt-PT,RT,fonte_unica,presente,ili-30-04745370-n,pulo,,
+F,invariável,invariável*,pt-PT,UF,fonte_unica,presente,ili-30-01200095-a,pulo,,
+F,periódico,periódico*,pt-PT,RT,fonte_unica,presente,ili-30-04745370-n,pulo,,
+F,uniforme,uniforme*,pt-PT,UF,convergencia,presente,ili-30-01200095-a;ili-30-01966488-a;oewn-ili:i10771,"own-pt, pulo",,
+F,uniformidade,uniformidade*,pt-PT,RT,fonte_unica,presente,ili-30-04745370-n,pulo,,

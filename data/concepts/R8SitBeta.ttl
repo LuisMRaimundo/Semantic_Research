@@ -1,0 +1,58 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix sr: <http://semantic-research.local/concept/> .
+
+# Concept model — _R8SitBeta
+# generated 2026-07-27T11:39:42+00:00
+
+sr:R8SitBeta a owl:Class, skos:Concept ;
+    skos:prefLabel "sit-r8"@pt ;
+    skos:scopeNote "invariância de teste R8"@pt ;
+    dct:identifier "_R8SitBeta" ;
+    skos:exactMatch <https://globalwordnet.org/ili/i10734> ;
+    skos:exactMatch <https://globalwordnet.org/ili/i10771> ;
+    skos:exactMatch <https://globalwordnet.org/ili/i12748> ;
+    skos:exactMatch <https://globalwordnet.org/ili/i33388> ;
+    skos:exactMatch <https://globalwordnet.org/ili/i4126> ;
+    skos:exactMatch <https://globalwordnet.org/ili/i4979> ;
+    skos:exactMatch <https://globalwordnet.org/ili/i4980> ;
+    skos:exactMatch <https://globalwordnet.org/ili/i60712> ;
+    skos:exactMatch <https://globalwordnet.org/ili/i6560> ;
+    skos:altLabel "uniforme"@pt ;
+    skos:altLabel "amachucado"@pt ;
+    skos:altLabel "amarfanhado"@pt ;
+    skos:altLabel "chato"@pt ;
+    skos:altLabel "chã"@pt ;
+    skos:altLabel "chão"@pt ;
+    skos:altLabel "direito"@pt ;
+    skos:altLabel "igual"@pt ;
+    skos:altLabel "liso"@pt ;
+    skos:altLabel "raso"@pt ;
+    skos:altLabel "regular"@pt ;
+    skos:altLabel "reto"@pt ;
+    skos:altLabel "plano"@pt ;
+    skos:related [ a skos:Concept ; skos:prefLabel "encadernação"@pt ] ;
+    skos:related [ a skos:Concept ; skos:prefLabel "entraje"@pt ] ;
+    skos:related [ a skos:Concept ; skos:prefLabel "farda"@pt ] ;
+    skos:related [ a skos:Concept ; skos:prefLabel "fardamenta"@pt ] ;
+    skos:related [ a skos:Concept ; skos:prefLabel "fardamento"@pt ] ;
+    skos:related [ a skos:Concept ; skos:prefLabel "fatiota"@pt ] ;
+    skos:related [ a skos:Concept ; skos:prefLabel "fato"@pt ] ;
+    skos:related [ a skos:Concept ; skos:prefLabel "libré"@pt ] ;
+    skos:related [ a skos:Concept ; skos:prefLabel "roupa"@pt ] ;
+    skos:related [ a skos:Concept ; skos:prefLabel "toilette"@pt ] ;
+    skos:related [ a skos:Concept ; skos:prefLabel "trajadura"@pt ] ;
+    skos:related [ a skos:Concept ; skos:prefLabel "trajar"@pt ] ;
+    skos:related [ a skos:Concept ; skos:prefLabel "traje"@pt ] ;
+    skos:related [ a skos:Concept ; skos:prefLabel "trajo"@pt ] ;
+    skos:related [ a skos:Concept ; skos:prefLabel "uniforme"@pt ] ;
+    skos:related [ a skos:Concept ; skos:prefLabel "vestido"@pt ] ;
+    skos:related [ a skos:Concept ; skos:prefLabel "vestidura"@pt ] ;
+    skos:related [ a skos:Concept ; skos:prefLabel "vestuário"@pt ] ;
+    skos:hiddenLabel "uniforme"@pt ;
+    skos:hiddenLabel "regular"@pt ;
+    skos:hiddenLabel "igual"@pt ;
+    rdfs:comment "UF senses=2; RT=1; ILI anchors=9"@en .

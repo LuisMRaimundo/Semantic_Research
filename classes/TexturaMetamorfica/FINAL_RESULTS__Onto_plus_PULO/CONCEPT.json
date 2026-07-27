@@ -1,0 +1,104 @@
+{
+  "class_id": "TexturaMetamorfica",
+  "pref_label": "TexturaMetamórfica",
+  "axis": "muda de forma, relativamente a um ou vários parâmetros",
+  "uf": [
+    {
+      "members": [
+        "metamorfose",
+        "modificação",
+        "mudança",
+        "transmudação",
+        "transmutação",
+        "transformação",
+        "alteração"
+      ],
+      "source": "pulo",
+      "ili": "i75366",
+      "gloss": "uma mudança qualitativa\n",
+      "key": "ili-30-07359599-n"
+    },
+    {
+      "members": [
+        "hemoético",
+        "metamórfico"
+      ],
+      "source": "onto",
+      "ili": null,
+      "gloss": "",
+      "key": "clip21:15380"
+    },
+    {
+      "members": [
+        "hemoético",
+        "metamórfico"
+      ],
+      "source": "onto",
+      "ili": null,
+      "gloss": "",
+      "key": "contopt:146"
+    },
+    {
+      "members": [
+        "hemoético",
+        "metamórfico"
+      ],
+      "source": "onto",
+      "ili": null,
+      "gloss": "",
+      "key": "fuzzythes:30854"
+    },
+    {
+      "members": [
+        "hemoético",
+        "metamórfico"
+      ],
+      "source": "onto",
+      "ili": null,
+      "gloss": "que possui a capacidade de realizar a metamorfose.",
+      "key": "ontopt06:10369"
+    },
+    {
+      "members": [
+        "hemoético",
+        "metamórfico"
+      ],
+      "source": "onto",
+      "ili": null,
+      "gloss": "",
+      "key": "thes5rec:23634"
+    }
+  ],
+  "rt": [],
+  "exclude": [
+    {
+      "members": [
+        "cambiar",
+        "converter",
+        "demudar",
+        "evolucionar",
+        "evoluir",
+        "falsificar",
+        "metamorfosear",
+        "perturbar",
+        "tornar",
+        "tranformar",
+        "transformar",
+        "alterar",
+        "mudar",
+        "modificar"
+      ],
+      "source": "pulo",
+      "ili": "i22389",
+      "gloss": "causar à mudança; fazer diferente; causar uma transformação\n",
+      "key": "ili-30-00126264-v"
+    }
+  ],
+  "ilis": [
+    "i16835",
+    "i22389",
+    "i75366",
+    "i8401"
+  ],
+  "generated": "2026-07-27T09:25:12+00:00"
+}

@@ -1,14 +1,12 @@
-"""Faixa WordNet na fusão — adapta o export OEWN (facets) a um result.json.
+"""Faixas OEWN (WordNet) e OWN-PT na fusão — duas fontes, um export de facetas.
 
-Disciplina (contrato Tarefa B):
-  * a faixa CORROBORA/ancora — não admite nem reclassifica: todas as entradas
-    saem como `sinalizacao` (nunca `provenance` com estatuto);
-  * só são convocados os sentidos DO EIXO: os OEWN ILIs presentes em linhas
-    `map` com `source: human-adjudicated…` da tabela ili_equivalence.json
-    (i60712/vestuário e i33388/verbo ficam de fora por não terem adjudicação);
-  * relações tipadas (antonym / similar_to) entram como material ancorado em
-    ILI, sem forçar estatuto;
-  * nenhum ILI é fabricado — usa-se apenas o campo `ili` nativo do export.
+Disciplina:
+  * **WordNet (OEWN)** — corroboração EN + relações tipadas (antonym / similar_to)
+    em ``sinalizacao``; nunca ``provenance`` com estatuto admissivo.
+  * **OWN-PT** — coluna própria: lemas PT obtidos via ILI (``own-pt:1.0.0``)
+    como ``atestado`` (fundamento de entrada, NÃO estatuto UF/RT).
+  * Só sentidos do eixo (ILIs em ``map`` human/cili da tabela de equivalência).
+  * Nenhum ILI fabricado — usa-se o campo ``ili`` nativo do export.
 """
 
 from __future__ import annotations
@@ -23,16 +21,32 @@ from .ili_bridge import is_human_row, load_table
 from .settings import ROOT
 from .workspace import ClassWorkspace
 
+OWN_PT_FALLBACK_SPEC = "own-pt:1.0.0"
+
 
 def _norm(w: str) -> str:
     nfkd = unicodedata.normalize("NFKD", w or "")
     return "".join(c for c in nfkd if not unicodedata.combining(c)).casefold().strip()
 
 
+def _own_pt_specifier() -> str:
+    try:
+        from .engines import load_oewn_backend
+        from .settings import load_config
+
+        cfg = load_config()
+        pinned = cfg.get("own_pt")
+        if pinned:
+            return str(pinned)
+        backend = load_oewn_backend()
+        return getattr(backend, "OWN_PT_SPECIFIER", None) or OWN_PT_FALLBACK_SPEC
+    except Exception:  # noqa: BLE001
+        return OWN_PT_FALLBACK_SPEC
+
+
 def find_facets_export(ws: ClassWorkspace) -> Optional[Path]:
     """Prefer class ``exports/*.facets.json``; only then WordNet/exports fallback."""
     pools: list[Path] = []
-    # Class-local FIRST — avoids picking a leftover «uniform» bundle for Compósita
     pools += sorted(
         ws.exports.glob("*.facets.json"),
         key=lambda p: p.stat().st_mtime,
@@ -55,7 +69,6 @@ def find_facets_export(ws: ClassWorkspace) -> Optional[Path]:
             continue
         if not str((syns[0] or {}).get("ili") or "").startswith("i"):
             continue
-        # If the export names a class_id, require a match when falling back
         tagged = (data.get("class_id") or "").strip()
         if tagged and tagged != ws.class_id and p.parent != ws.exports:
             continue
@@ -64,11 +77,7 @@ def find_facets_export(ws: ClassWorkspace) -> Optional[Path]:
 
 
 def adjudicated_ilis(ws: ClassWorkspace) -> dict[str, str]:
-    """OEWN ILIs convocáveis from ``map``: human-adjudicated or CILI identity.
-
-    CILI rows are canonical GWA identity (already allowed in ``map`` by the
-    bridge); human rows are GUI promotions. Auto/review pairs never qualify.
-    """
+    """OEWN ILIs convocáveis from ``map``: human-adjudicated or CILI identity."""
     doc = load_table(ws)
     if not doc:
         return {}
@@ -83,23 +92,43 @@ def adjudicated_ilis(ws: ClassWorkspace) -> dict[str, str]:
     return out
 
 
-def build_wordnet_result(class_id: str,
-                         facets_path: Optional[Path] = None) -> dict[str, Any]:
+def build_wordnet_result(
+    class_id: str, facets_path: Optional[Path] = None
+) -> dict[str, Any]:
+    """Backward-compatible wrapper — builds both WordNet and OWN-PT tracks."""
+    return build_wordnet_and_ownpt_results(class_id, facets_path=facets_path)
+
+
+def build_wordnet_and_ownpt_results(
+    class_id: str, facets_path: Optional[Path] = None
+) -> dict[str, Any]:
+    """Emit ``*.WordNet.result.json`` and ``*.OWN-PT.result.json`` from one facets export."""
     ws = ClassWorkspace.open(class_id)
     ws.ensure()
     facets_path = facets_path or find_facets_export(ws)
     if facets_path is None:
-        return {"ok": False, "error": "sem export de facetas OEWN "
-                                      "(WordNet/exports/*.facets.json)"}
+        return {
+            "ok": False,
+            "error": "sem export de facetas OEWN (exports/*.facets.json)",
+        }
     allowed = adjudicated_ilis(ws)
     if not allowed:
-        return {"ok": False, "error":
+        return {
+            "ok": False,
+            "error": (
                 "tabela ILI sem pares em map (human ou cili:) — use "
-                "«5 · Ponte ILI…» (promova review→map) ou coloque "
-                "ili_equivalence.json em out/"}
+                "tabela ili_equivalence.json legada em out/ (junção runtime = CILI)"
+            ),
+        }
 
     data = json.loads(Path(facets_path).read_text(encoding="utf-8"))
-    sina: dict[str, dict] = {}
+    own_pt_lex = _own_pt_specifier()
+    meta = ws.load_meta()
+    pref = meta.get("pref_label") or ws.class_id
+    generated = datetime.now().isoformat(timespec="seconds")
+
+    wn_sina: dict[str, dict] = {}
+    own_atest: dict[str, dict] = {}
     syn_block: list[dict] = []
     convoked, skipped = [], []
 
@@ -111,59 +140,121 @@ def build_wordnet_result(class_id: str,
             skipped.append(ili)
             continue
         convoked.append(ili)
-        syn_block.append({"name": s.get("name"), "ili": ili,
-                          "pos": s.get("pos"),
-                          "pt_lemmas": list(s.get("pt_lemmas") or []),
-                          "lemmas": list(s.get("lemmas") or [])})
-        words = list(s.get("pt_lemmas") or [])
-        via = "pt_lemma (ILI)"
-        if not words:
-            words = list(s.get("lemmas") or [])
-            via = "en_lemma (sem correspondência own-pt)"
-        for w in words:
+        pt_lemmas = list(s.get("pt_lemmas") or [])
+        en_lemmas = list(s.get("lemmas") or [])
+        syn_block.append({
+            "name": s.get("name"),
+            "ili": ili,
+            "pos": s.get("pos"),
+            "pt_lemmas": pt_lemmas,
+            "lemmas": en_lemmas,
+        })
+
+        # --- OWN-PT column: Portuguese lemmas via ILI (attestation only) ---
+        for w in pt_lemmas:
             nw = _norm(w)
-            if not nw or nw in sina:
+            if not nw or nw in own_atest:
                 continue
-            sina[nw] = {
+            own_atest[nw] = {
                 "display": (w or "").replace("_", " "),
-                "reason": f"atestado na WordNet [{via}] · {s.get('name')} · ILI {ili}",
+                "reason": (
+                    f"atestado OWN-PT [{own_pt_lex}] via ILI {ili} · "
+                    f"{s.get('name')}"
+                ),
                 "offsets_ili": [ili],
+                "lexicon": own_pt_lex,
             }
-        # relações tipadas: material ancorado em ILI, SEM estatuto forçado
+
+        # --- WordNet/OEWN: English lemmas when no PT bridge; typed relations ---
+        if not pt_lemmas:
+            for w in en_lemmas:
+                nw = _norm(w)
+                if not nw or nw in wn_sina:
+                    continue
+                wn_sina[nw] = {
+                    "display": (w or "").replace("_", " "),
+                    "reason": (
+                        f"atestado na WordNet [en_lemma (sem correspondência "
+                        f"own-pt)] · {s.get('name')} · ILI {ili}"
+                    ),
+                    "offsets_ili": [ili],
+                }
+
         rel = s.get("relations") or {}
-        for kind, note in (("antonym", "material de contraste (antonym)"),
-                           ("similar_to", "vizinho similar_to")):
+        for kind, note in (
+            ("antonym", "material de contraste (antonym)"),
+            ("similar_to", "vizinho similar_to"),
+        ):
             for tgt in rel.get(kind) or []:
                 t_ili = tgt.get("ili")
                 for w in tgt.get("words") or []:
                     nw = _norm(w)
-                    if not nw or nw in sina:
+                    if not nw or nw in wn_sina:
                         continue
-                    sina[nw] = {
+                    wn_sina[nw] = {
                         "display": (w or "").replace("_", " "),
-                        "reason": (f"{note} de {ili} ({s.get('name')}) — "
-                                   "sem estatuto; adjudicação humana"),
+                        "reason": (
+                            f"{note} de {ili} ({s.get('name')}) — "
+                            "sem estatuto; adjudicação humana"
+                        ),
                         "offsets_ili": [t_ili] if t_ili else [],
                     }
 
-    result = {
+    wn_result = {
         "class_id": ws.class_id,
-        "pref_label": ws.load_meta().get("pref_label") or ws.class_id,
-        "axis": "(faixa WordNet — corroboração ancorada em ILI; sem adjudicação)",
-        "generated": datetime.now().isoformat(timespec="seconds"),
+        "pref_label": pref,
+        "axis": "(faixa OEWN — corroboração EN / relações tipadas; sem adjudicação)",
+        "generated": generated,
         "source": "WordNet (OEWN facets export)",
         "facets_export": str(facets_path),
         "convoked_ilis": convoked,
-        "skipped_ilis": skipped,       # ex.: i60712 (vestuário), i33388 (verbo)
-        "provenance": [],              # WordNet não admite (sem protocolo UF/RT)
+        "skipped_ilis": skipped,
+        "provenance": [],
         "synsets": syn_block,
-        "sinalizacao": sina,
-        "_note": ("Faixa de CORROBORAÇÃO: só sentidos do eixo adjudicados na "
-                  "tabela ILI; entradas em sinalizacao, nunca estatutos."),
+        "sinalizacao": wn_sina,
+        "_note": (
+            "Faixa OEWN: lemas EN e relações tipadas em sinalizacao. "
+            "Lemas PT via ILI → ficheiro OWN-PT.result.json (coluna própria)."
+        ),
     }
-    out = ws.results / f"{ws.class_id}.WordNet.result.json"
-    out.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n",
-                   encoding="utf-8")
-    return {"ok": True, "path": str(out), "convoked": convoked,
-            "skipped": skipped, "n_sinalizacao": len(sina),
-            "facets": str(facets_path)}
+    wn_out = ws.results / f"{ws.class_id}.WordNet.result.json"
+    wn_out.write_text(
+        json.dumps(wn_result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
+
+    own_result = {
+        "class_id": ws.class_id,
+        "pref_label": pref,
+        "axis": "(faixa OWN-PT — atestação PT via ILI; sem estatuto admissivo)",
+        "generated": generated,
+        "source": "OWN-PT (OpenWordNet-PT)",
+        "lexicon": own_pt_lex,
+        "facets_export": str(facets_path),
+        "convoked_ilis": convoked,
+        "skipped_ilis": skipped,
+        "provenance": [],  # nunca UF/RT — só atestação
+        "atestacao": own_atest,
+        "sinalizacao": {},
+        "_note": (
+            "OpenWordNet-PT: fundamento de entrada (atestado) ancorado em ILI. "
+            "NÃO atribui relação de vocabulário (UF/RT). "
+            f"Léxico: {own_pt_lex}."
+        ),
+        "_pwn_derived": True,
+    }
+    own_out = ws.results / f"{ws.class_id}.OWN-PT.result.json"
+    own_out.write_text(
+        json.dumps(own_result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
+
+    return {
+        "ok": True,
+        "path": str(wn_out),
+        "ownpt_path": str(own_out),
+        "lexicon": own_pt_lex,
+        "convoked": convoked,
+        "skipped": skipped,
+        "n_sinalizacao": len(wn_sina),
+        "n_atestacao": len(own_atest),
+        "facets": str(facets_path),
+    }

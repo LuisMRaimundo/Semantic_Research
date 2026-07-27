@@ -20,5 +20,20 @@
   "disjoint_classes": {
     "TexturaHeterogenea": []
   },
+  "control_axes": [
+    {
+      "eixo": "homogeneidade",
+      "termos": [
+        "homogeneidade",
+        "homogéneo"
+      ],
+      "nota": "eixo excluído — conjunto de controlo"
+    },
+    {
+      "eixo": "TexturaHeterogenea",
+      "termos": [],
+      "nota": "classe disjunta"
+    }
+  ],
   "superclass": "Textura"
 }

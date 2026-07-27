@@ -1,0 +1,18 @@
+# Termos de consulta manual (R2) — mantido pelo utilizador.
+# polo: alvo | contrastante | controlo | adjacente
+# lingua: deve alinhar com search_lang da classe (por omissão: en)
+
+termos:
+  - forma: homogeneous
+    wildcard: homogeneous*
+    polo: controlo
+    lingua: en
+    fonte: OEWN / eixo homogeneidade
+    nota: conjunto de controlo — não pólo contrastante
+
+  - forma: homogenous
+    wildcard: homogenous*
+    polo: controlo
+    lingua: en
+    fonte: OEWN / variante ortográfica
+    nota: conjunto de controlo — não pólo contrastante

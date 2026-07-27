@@ -218,11 +218,11 @@ class TestEquivLoadVisible(unittest.TestCase):
                                      "review": [1], "unmatched": []}), encoding="utf-8")
             equiv = lw.EquivMap.load(p)
             out = self._capture(equiv, p)
-            self.assertIn("TABELA DE EQUIVALÊNCIA NÃO CARREGADA", out)
+            self.assertIn("TABELA DE EQUIVALENCIA NAO CARREGADA", out)
 
     def test_b2_loud_warning_when_absent(self):
         out = self._capture(None, None)
-        self.assertIn("TABELA DE EQUIVALÊNCIA NÃO CARREGADA", out)
+        self.assertIn("TABELA DE EQUIVALENCIA NAO CARREGADA", out)
 
 
 # ---------------------------------------------------------------------------

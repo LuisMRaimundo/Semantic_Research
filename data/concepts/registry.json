@@ -1,0 +1,15 @@
+{
+  "schema": "semantic_research.concept_registry/1",
+  "generated": "2026-07-27T11:39:54+00:00",
+  "root": "C:\\Users\\lmr20\\Desktop\\Semantic_Research",
+  "classes": [
+    "DemoClass",
+    "TexturaComposita",
+    "TexturaDensa",
+    "TexturaIntermitente",
+    "TexturaMetamorfica",
+    "TexturaPolitpica",
+    "TexturaUniforme"
+  ],
+  "registry_ttl": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\data\\concepts\\registry.ttl"
+}

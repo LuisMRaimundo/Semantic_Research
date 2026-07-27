@@ -14,7 +14,8 @@
         "invariável"
       ],
       "decision": "UF",
-      "note": ""
+      "note": "",
+      "destino": "vocabulario"
     },
     {
       "source": "pulo",
@@ -28,7 +29,8 @@
         "uniforme"
       ],
       "decision": "UF",
-      "note": ""
+      "note": "",
+      "destino": "vocabulario"
     },
     {
       "source": "pulo",
@@ -42,7 +44,8 @@
         "regular"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "pulo",
@@ -56,8 +59,9 @@
         "invariância",
         "periódico"
       ],
-      "decision": "exclude",
-      "note": ""
+      "decision": "RT",
+      "note": "",
+      "destino": "vocabulario"
     },
     {
       "source": "pulo",
@@ -71,7 +75,8 @@
         "regular"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "pulo",
@@ -84,7 +89,8 @@
         "bonito"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "pulo",
@@ -97,7 +103,8 @@
         "medidor"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "pulo",
@@ -110,7 +117,8 @@
         "fardado"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "pulo",
@@ -123,7 +131,8 @@
         "idiossincrático"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -153,7 +162,8 @@
         "vestuário"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -174,7 +184,8 @@
         "vestuário"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -311,7 +322,8 @@
         "équo"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -825,7 +837,8 @@
         "áspero"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -895,7 +908,8 @@
         "óbvio"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -1078,7 +1092,8 @@
         "vital"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -1133,7 +1148,8 @@
         "sério"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -1215,7 +1231,8 @@
         "usual"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -1293,7 +1310,8 @@
         "válido"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -1314,7 +1332,8 @@
         "vestuário"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -1360,7 +1379,8 @@
         "sensato"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -1416,7 +1436,8 @@
         "trivial"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -1455,7 +1476,8 @@
         "vizinho"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -1520,7 +1542,8 @@
         "usual"
       ],
       "decision": "RT",
-      "note": ""
+      "note": "",
+      "destino": "vocabulario"
     },
     {
       "source": "onto",
@@ -1538,7 +1561,8 @@
         "aparência"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -1569,7 +1593,8 @@
         "uniforme"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -1587,7 +1612,8 @@
         "fardamenta"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -1606,7 +1632,8 @@
         "vestuário"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -1631,7 +1658,8 @@
         "íntegro"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -1681,7 +1709,8 @@
         "ordenado"
       ],
       "decision": "RT",
-      "note": ""
+      "note": "",
+      "destino": "vocabulario"
     },
     {
       "source": "onto",
@@ -1710,7 +1739,8 @@
         "comedido"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -1751,7 +1781,8 @@
         "tal"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -1806,7 +1837,8 @@
         "usual"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -1825,7 +1857,8 @@
         "recto"
       ],
       "decision": "RT",
-      "note": ""
+      "note": "",
+      "destino": "vocabulario"
     },
     {
       "source": "onto",
@@ -1845,7 +1878,8 @@
         "contínuo"
       ],
       "decision": "RT",
-      "note": ""
+      "note": "",
+      "destino": "vocabulario"
     },
     {
       "source": "onto",
@@ -1881,7 +1915,8 @@
         "perpendicular"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -1907,8 +1942,9 @@
         "inalterável",
         "estável"
       ],
-      "decision": "UF",
-      "note": ""
+      "decision": "RT",
+      "note": "",
+      "destino": "vocabulario"
     },
     {
       "source": "onto",
@@ -1942,7 +1978,8 @@
         "acromático"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -1962,7 +1999,8 @@
         "uniforme"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -2017,7 +2055,8 @@
         "équo"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -2064,7 +2103,8 @@
         "áfio"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -2078,7 +2118,8 @@
         "uniforme"
       ],
       "decision": "UF",
-      "note": ""
+      "note": "",
+      "destino": "vocabulario"
     },
     {
       "source": "onto",
@@ -2092,7 +2133,8 @@
         "unímodo"
       ],
       "decision": "UF",
-      "note": ""
+      "note": "",
+      "destino": "vocabulario"
     },
     {
       "source": "onto",
@@ -2108,7 +2150,8 @@
         "uniforme"
       ],
       "decision": "UF",
-      "note": ""
+      "note": "",
+      "destino": "vocabulario"
     },
     {
       "source": "onto",
@@ -2125,7 +2168,8 @@
         "uniforme"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -2139,7 +2183,8 @@
         "uniforme"
       ],
       "decision": "UF",
-      "note": ""
+      "note": "",
+      "destino": "vocabulario"
     },
     {
       "source": "onto",
@@ -2159,7 +2204,8 @@
         "uniforme"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -2174,8 +2220,9 @@
         "monótono",
         "uniforme"
       ],
-      "decision": "RT",
-      "note": ""
+      "decision": "UF",
+      "note": "",
+      "destino": "vocabulario"
     },
     {
       "source": "onto",
@@ -2222,7 +2269,8 @@
         "áfio"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -2277,7 +2325,8 @@
         "équo"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -2310,7 +2359,8 @@
         "vislumbre"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -2330,7 +2380,8 @@
         "uniformidade"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -2363,7 +2414,8 @@
         "uniformidade"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -2376,8 +2428,9 @@
         "homogeneização",
         "uniformização"
       ],
-      "decision": "RT",
-      "note": ""
+      "decision": "exclude",
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -2396,8 +2449,11 @@
         "inclinado",
         "irregular"
       ],
-      "decision": "contraste",
-      "note": ""
+      "decision": "exclude",
+      "note": "",
+      "migrado_de": "contraste",
+      "revisao_pendente": true,
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -2411,7 +2467,8 @@
         "funiforme"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -2427,7 +2484,8 @@
         "semilunar"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -2441,7 +2499,8 @@
         "url"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -2455,7 +2514,8 @@
         "uniformizador"
       ],
       "decision": "UF",
-      "note": ""
+      "note": "",
+      "destino": "vocabulario"
     },
     {
       "source": "onto",
@@ -2916,7 +2976,8 @@
         "vanguejar"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -2941,7 +3002,8 @@
         "regrar"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -2962,7 +3024,8 @@
         "uniformemente"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -2981,7 +3044,8 @@
         "uniformemente"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -2999,7 +3063,8 @@
         "unanimemente"
       ],
       "decision": "RT",
-      "note": ""
+      "note": "",
+      "destino": "vocabulario"
     },
     {
       "source": "onto",
@@ -3105,7 +3170,8 @@
         "unidade de medida"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -3474,7 +3540,8 @@
         "xâmego"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -3523,7 +3590,8 @@
         "truísmo"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -3584,7 +3652,8 @@
         "vizinhança"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -3703,7 +3772,8 @@
         "ânimo"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -3780,7 +3850,8 @@
         "índice"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -3831,7 +3902,8 @@
         "vulgaridade"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -4008,7 +4080,8 @@
         "tonicidade"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -5709,7 +5782,8 @@
         "vulnerar"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -6272,7 +6346,8 @@
         "verrumar"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -7296,7 +7371,8 @@
         "vulgarizar"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -7336,7 +7412,8 @@
         "uniformização"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -7356,7 +7433,8 @@
         "homogeneização"
       ],
       "decision": "exclude",
-      "note": ""
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -7375,8 +7453,11 @@
         "inclinado",
         "irregular"
       ],
-      "decision": "contraste",
-      "note": ""
+      "decision": "exclude",
+      "note": "",
+      "migrado_de": "contraste",
+      "revisao_pendente": true,
+      "destino": "evidencia"
     },
     {
       "source": "wordnet",
@@ -7472,7 +7553,8 @@
       "note": "Teste 1",
       "guarantee": [
         "lexical"
-      ]
+      ],
+      "destino": "vocabulario"
     },
     {
       "term": "invariável",
@@ -7480,7 +7562,8 @@
       "note": "Teste 1",
       "guarantee": [
         "lexical"
-      ]
+      ],
+      "destino": "vocabulario"
     },
     {
       "term": "imutável",
@@ -7488,7 +7571,8 @@
       "note": "Teste 1",
       "guarantee": [
         "lexical"
-      ]
+      ],
+      "destino": "vocabulario"
     },
     {
       "term": "igual",
@@ -7496,7 +7580,8 @@
       "note": "Teste 1 falha",
       "guarantee": [
         "lexical"
-      ]
+      ],
+      "destino": "vocabulario"
     },
     {
       "term": "regular",
@@ -7504,7 +7589,8 @@
       "note": "Teste 1 falha",
       "guarantee": [
         "lexical"
-      ]
+      ],
+      "destino": "vocabulario"
     },
     {
       "term": "periódico",
@@ -7512,7 +7598,8 @@
       "note": "Teste 3",
       "guarantee": [
         "lexical"
-      ]
+      ],
+      "destino": "vocabulario"
     },
     {
       "term": "uniformidade",
@@ -7520,7 +7607,8 @@
       "note": "qualidade",
       "guarantee": [
         "lexical"
-      ]
+      ],
+      "destino": "evidencia"
     },
     {
       "term": "invariância",
@@ -7528,41 +7616,54 @@
       "note": "qualidade",
       "guarantee": [
         "lexical"
-      ]
+      ],
+      "destino": "evidencia"
     },
     {
       "term": "desigual",
-      "status": "contraste",
+      "status": "oposicao",
       "note": "Teste 3",
       "guarantee": [
         "lexical"
-      ]
+      ],
+      "migrado_de": "contraste",
+      "revisao_pendente": true,
+      "destino": "evidencia"
     },
     {
       "term": "irregular",
-      "status": "contraste",
+      "status": "oposicao",
       "note": "Teste 3",
       "guarantee": [
         "lexical"
-      ]
+      ],
+      "migrado_de": "contraste",
+      "revisao_pendente": true,
+      "destino": "evidencia"
     },
     {
       "term": "variável",
-      "status": "contraste",
+      "status": "oposicao",
       "note": "Teste 3",
       "guarantee": [
         "lexical"
-      ]
+      ],
+      "migrado_de": "contraste",
+      "revisao_pendente": true,
+      "destino": "evidencia"
     },
     {
       "term": "politípica",
-      "status": "contraste",
+      "status": "oposicao",
       "note": "Teste 3",
       "guarantee": [
         "estipulativa"
       ],
       "structural": "TexturaHeterogenea",
-      "definition": "textura composta por múltiplos tipos simultâneos"
+      "definition": "textura composta por múltiplos tipos simultâneos",
+      "migrado_de": "contraste",
+      "revisao_pendente": true,
+      "destino": "evidencia"
     }
   ],
   "manual_terms": [

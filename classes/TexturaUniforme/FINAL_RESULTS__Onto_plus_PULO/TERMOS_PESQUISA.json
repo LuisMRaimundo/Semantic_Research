@@ -1,0 +1,522 @@
+{
+  "class_id": "TexturaUniforme",
+  "pref_label": "uniforme",
+  "axis": "invariância face a um parâmetro",
+  "acepcao_a_separar": "invariância face a um parâmetro",
+  "ancora_ili": [
+    "ili-30-01200095-a",
+    "ili-30-01966488-a"
+  ],
+  "anchor_pos": "a",
+  "near_stem": "uniform*",
+  "generated": "2026-07-27T12:39:44+01:00",
+  "search_lang": "en",
+  "label_lang": "pt-PT",
+  "termos_manuais_presentes": true,
+  "n_admitidos_matriz": 7,
+  "A_polo_alvo": [
+    {
+      "forma": "consistent",
+      "wildcard": "consistent*",
+      "lingua": "en",
+      "ili": "i6560",
+      "fonte": "OEWN",
+      "estatuto": "UF",
+      "manual": false
+    },
+    {
+      "forma": "uniform",
+      "wildcard": "uniform*",
+      "lingua": "en",
+      "ili": "i6560",
+      "fonte": "OEWN",
+      "estatuto": "UF",
+      "manual": false
+    },
+    {
+      "forma": "unvarying",
+      "wildcard": "unvarying*",
+      "lingua": "en",
+      "ili": "i10771",
+      "fonte": "OEWN",
+      "estatuto": "UF",
+      "manual": false
+    }
+  ],
+  "B_polo_contrastante": [
+    {
+      "forma": "multiform",
+      "wildcard": "multiform*",
+      "lingua": "en",
+      "ili": "i10773",
+      "fonte": "WordNet",
+      "relacao": "antonym",
+      "manual": false
+    },
+    {
+      "forma": "differentiated",
+      "wildcard": "differentiated*",
+      "lingua": "en",
+      "ili": "i4125",
+      "fonte": "WordNet",
+      "relacao": "antonym",
+      "manual": false
+    },
+    {
+      "forma": "single",
+      "wildcard": "single*",
+      "lingua": "en",
+      "ili": "i10772",
+      "fonte": "WordNet",
+      "relacao": "similar_to",
+      "manual": false
+    },
+    {
+      "forma": "dedifferentiated",
+      "wildcard": "dedifferentiated*",
+      "lingua": "en",
+      "ili": "i4127",
+      "fonte": "WordNet",
+      "relacao": "similar_to",
+      "manual": false
+    }
+  ],
+  "C_conjunto_controlo": [
+    {
+      "eixo": "(classe disjunta)",
+      "termos": [],
+      "nota": "eixo excluído no registo da ontologia"
+    },
+    {
+      "eixo": "homogeneidade",
+      "termos": [
+        "homogeneidade",
+        "homogéneo"
+      ],
+      "nota": "eixo excluído — conjunto de controlo"
+    },
+    {
+      "eixo": "(eixo excluído)",
+      "termos": [],
+      "nota": "classe disjunta"
+    }
+  ],
+  "C_termos": [
+    {
+      "forma": "homogeneous",
+      "wildcard": "homogeneous*",
+      "lingua": "en",
+      "ili": null,
+      "fonte": "OEWN / eixo homogeneidade",
+      "nota": "conjunto de controlo — não pólo contrastante",
+      "manual": true,
+      "relacao": "manual"
+    },
+    {
+      "forma": "homogenous",
+      "wildcard": "homogenous*",
+      "lingua": "en",
+      "ili": null,
+      "fonte": "OEWN / variante ortográfica",
+      "nota": "conjunto de controlo — não pólo contrastante",
+      "manual": true,
+      "relacao": "manual"
+    }
+  ],
+  "D_descritores_adjacentes": [
+    {
+      "forma": "uniformity",
+      "wildcard": "uniformity*",
+      "lingua": "en",
+      "ili": "i61962",
+      "fonte": "OEWN",
+      "estatuto": "RT",
+      "manual": false
+    },
+    {
+      "forma": "uniformness",
+      "wildcard": "uniformness*",
+      "lingua": "en",
+      "ili": "i61962",
+      "fonte": "OEWN",
+      "estatuto": "RT",
+      "manual": false
+    }
+  ],
+  "E_fronteiras_dominio": [
+    {
+      "chave": "ili-30-00909545-a",
+      "ili": "ili-30-00909545-a",
+      "lema": "igual",
+      "motivo": "sem variações; regular e uniforme face ao parâmetro",
+      "fonte": "pulo"
+    },
+    {
+      "chave": "ili-30-02302187-a",
+      "ili": "ili-30-02302187-a",
+      "lema": "periódico",
+      "motivo": "que ocorre em intervalos fixos e regulares",
+      "fonte": "pulo"
+    },
+    {
+      "chave": "ili-30-00910101-a",
+      "ili": "ili-30-00910101-a",
+      "lema": "bonito",
+      "motivo": "de aparência agradável aos olhos",
+      "fonte": "pulo"
+    },
+    {
+      "chave": "ili-30-04509592-n",
+      "ili": "ili-30-04509592-n",
+      "lema": "medidor",
+      "motivo": "instrumento de medição de comprimento",
+      "fonte": "pulo"
+    },
+    {
+      "chave": "ili-30-00744506-a",
+      "ili": "ili-30-00744506-a",
+      "lema": "fardado",
+      "motivo": "relativo ao fardamento militar",
+      "fonte": "pulo"
+    }
+  ],
+  "F_vocabulario_pt": [
+    {
+      "forma": "constante",
+      "wildcard": "constante*",
+      "lingua": "pt-PT",
+      "estatuto": "UF",
+      "ili": [
+        "ili-30-01200095-a"
+      ],
+      "fontes": [
+        "pulo"
+      ],
+      "garantia": "fonte_unica",
+      "ancora_ili": "presente",
+      "em_espera": true,
+      "sense_key": "ili-30-01200095-a",
+      "sense_pos": "a",
+      "cross_class": null,
+      "nota": ""
+    },
+    {
+      "forma": "imutável",
+      "wildcard": "imutável*",
+      "lingua": "pt-PT",
+      "estatuto": "UF",
+      "ili": [
+        "ili-30-01966488-a"
+      ],
+      "fontes": [
+        "pulo"
+      ],
+      "garantia": "fonte_unica",
+      "ancora_ili": "presente",
+      "em_espera": true,
+      "sense_key": "ili-30-01966488-a",
+      "sense_pos": "a",
+      "cross_class": null,
+      "nota": ""
+    },
+    {
+      "forma": "invariância",
+      "wildcard": "invariância*",
+      "lingua": "pt-PT",
+      "estatuto": "RT",
+      "ili": [
+        "ili-30-04745370-n"
+      ],
+      "fontes": [
+        "pulo"
+      ],
+      "garantia": "fonte_unica",
+      "ancora_ili": "presente",
+      "em_espera": true,
+      "sense_key": "ili-30-04745370-n",
+      "sense_pos": "n",
+      "cross_class": null,
+      "nota": ""
+    },
+    {
+      "forma": "invariável",
+      "wildcard": "invariável*",
+      "lingua": "pt-PT",
+      "estatuto": "UF",
+      "ili": [
+        "ili-30-01200095-a"
+      ],
+      "fontes": [
+        "pulo"
+      ],
+      "garantia": "fonte_unica",
+      "ancora_ili": "presente",
+      "em_espera": true,
+      "sense_key": "ili-30-01200095-a",
+      "sense_pos": "a",
+      "cross_class": null,
+      "nota": ""
+    },
+    {
+      "forma": "periódico",
+      "wildcard": "periódico*",
+      "lingua": "pt-PT",
+      "estatuto": "RT",
+      "ili": [
+        "ili-30-04745370-n"
+      ],
+      "fontes": [
+        "pulo"
+      ],
+      "garantia": "fonte_unica",
+      "ancora_ili": "presente",
+      "em_espera": true,
+      "sense_key": "ili-30-04745370-n",
+      "sense_pos": "n",
+      "cross_class": null,
+      "nota": ""
+    },
+    {
+      "forma": "uniforme",
+      "wildcard": "uniforme*",
+      "lingua": "pt-PT",
+      "estatuto": "UF",
+      "ili": [
+        "ili-30-01200095-a",
+        "ili-30-01966488-a",
+        "oewn-ili:i10771"
+      ],
+      "fontes": [
+        "own-pt",
+        "pulo"
+      ],
+      "garantia": "convergencia",
+      "ancora_ili": "presente",
+      "em_espera": false,
+      "sense_key": "ili-30-01200095-a",
+      "sense_pos": "a",
+      "cross_class": null,
+      "nota": ""
+    },
+    {
+      "forma": "uniformidade",
+      "wildcard": "uniformidade*",
+      "lingua": "pt-PT",
+      "estatuto": "RT",
+      "ili": [
+        "ili-30-04745370-n"
+      ],
+      "fontes": [
+        "pulo"
+      ],
+      "garantia": "fonte_unica",
+      "ancora_ili": "presente",
+      "em_espera": true,
+      "sense_key": "ili-30-04745370-n",
+      "sense_pos": "n",
+      "cross_class": null,
+      "nota": ""
+    }
+  ],
+  "a_resolver": [
+    {
+      "forma": "invariância",
+      "estatuto": "RT",
+      "garantia": "fonte_unica",
+      "razoes": [
+        "categoria da acepção (n) diverge da âncora da classe (a)",
+        "três ou mais termos partilham a acepção ili-30-04745370-n (categoria n ≠ âncora a)"
+      ]
+    },
+    {
+      "forma": "periódico",
+      "estatuto": "RT",
+      "garantia": "fonte_unica",
+      "razoes": [
+        "categoria da acepção (n) diverge da âncora da classe (a)",
+        "três ou mais termos partilham a acepção ili-30-04745370-n (categoria n ≠ âncora a)"
+      ]
+    },
+    {
+      "forma": "uniformidade",
+      "estatuto": "RT",
+      "garantia": "fonte_unica",
+      "razoes": [
+        "categoria da acepção (n) diverge da âncora da classe (a)",
+        "três ou mais termos partilham a acepção ili-30-04745370-n (categoria n ≠ âncora a)"
+      ]
+    }
+  ],
+  "D_vocabulario_pt": [
+    {
+      "forma": "constante",
+      "wildcard": "constante*",
+      "lingua": "pt-PT",
+      "estatuto": "UF",
+      "ili": [
+        "ili-30-01200095-a"
+      ],
+      "fontes": [
+        "pulo"
+      ],
+      "garantia": "fonte_unica",
+      "ancora_ili": "presente",
+      "em_espera": true,
+      "sense_key": "ili-30-01200095-a",
+      "sense_pos": "a",
+      "cross_class": null,
+      "nota": ""
+    },
+    {
+      "forma": "imutável",
+      "wildcard": "imutável*",
+      "lingua": "pt-PT",
+      "estatuto": "UF",
+      "ili": [
+        "ili-30-01966488-a"
+      ],
+      "fontes": [
+        "pulo"
+      ],
+      "garantia": "fonte_unica",
+      "ancora_ili": "presente",
+      "em_espera": true,
+      "sense_key": "ili-30-01966488-a",
+      "sense_pos": "a",
+      "cross_class": null,
+      "nota": ""
+    },
+    {
+      "forma": "invariância",
+      "wildcard": "invariância*",
+      "lingua": "pt-PT",
+      "estatuto": "RT",
+      "ili": [
+        "ili-30-04745370-n"
+      ],
+      "fontes": [
+        "pulo"
+      ],
+      "garantia": "fonte_unica",
+      "ancora_ili": "presente",
+      "em_espera": true,
+      "sense_key": "ili-30-04745370-n",
+      "sense_pos": "n",
+      "cross_class": null,
+      "nota": ""
+    },
+    {
+      "forma": "invariável",
+      "wildcard": "invariável*",
+      "lingua": "pt-PT",
+      "estatuto": "UF",
+      "ili": [
+        "ili-30-01200095-a"
+      ],
+      "fontes": [
+        "pulo"
+      ],
+      "garantia": "fonte_unica",
+      "ancora_ili": "presente",
+      "em_espera": true,
+      "sense_key": "ili-30-01200095-a",
+      "sense_pos": "a",
+      "cross_class": null,
+      "nota": ""
+    },
+    {
+      "forma": "periódico",
+      "wildcard": "periódico*",
+      "lingua": "pt-PT",
+      "estatuto": "RT",
+      "ili": [
+        "ili-30-04745370-n"
+      ],
+      "fontes": [
+        "pulo"
+      ],
+      "garantia": "fonte_unica",
+      "ancora_ili": "presente",
+      "em_espera": true,
+      "sense_key": "ili-30-04745370-n",
+      "sense_pos": "n",
+      "cross_class": null,
+      "nota": ""
+    },
+    {
+      "forma": "uniforme",
+      "wildcard": "uniforme*",
+      "lingua": "pt-PT",
+      "estatuto": "UF",
+      "ili": [
+        "ili-30-01200095-a",
+        "ili-30-01966488-a",
+        "oewn-ili:i10771"
+      ],
+      "fontes": [
+        "own-pt",
+        "pulo"
+      ],
+      "garantia": "convergencia",
+      "ancora_ili": "presente",
+      "em_espera": false,
+      "sense_key": "ili-30-01200095-a",
+      "sense_pos": "a",
+      "cross_class": null,
+      "nota": ""
+    },
+    {
+      "forma": "uniformidade",
+      "wildcard": "uniformidade*",
+      "lingua": "pt-PT",
+      "estatuto": "RT",
+      "ili": [
+        "ili-30-04745370-n"
+      ],
+      "fontes": [
+        "pulo"
+      ],
+      "garantia": "fonte_unica",
+      "ancora_ili": "presente",
+      "em_espera": true,
+      "sense_key": "ili-30-04745370-n",
+      "sense_pos": "n",
+      "cross_class": null,
+      "nota": ""
+    }
+  ],
+  "_sheet_meta_norms": [
+    "constant",
+    "fixos",
+    "intervalos",
+    "invari",
+    "invariancia_face_a_um_parametro",
+    "mesmo",
+    "texturauniforme",
+    "uniform",
+    "uniforme",
+    "variacao",
+    "variacoes"
+  ],
+  "_focus_seed_norms": [
+    "constant",
+    "fixos",
+    "intervalos",
+    "invari",
+    "mesmo",
+    "uniform",
+    "variacao",
+    "variacoes"
+  ],
+  "_registry_designations": [
+    "democlass",
+    "textura",
+    "texturacomposita",
+    "texturadensa",
+    "texturaheterogenea",
+    "texturaintermitente",
+    "texturametamorfica",
+    "texturapolitpica",
+    "texturauniforme"
+  ]
+}

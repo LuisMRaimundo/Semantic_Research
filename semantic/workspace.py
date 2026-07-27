@@ -68,9 +68,12 @@ def _write_final_folder_marker(folder: Path, class_id: str = "") -> None:
     stem = final_concordance_stem(class_id or folder.parent.name)
     md_name = f"{stem}.concordance.md"
     json_name = f"{stem}.concordance.json"
-    ready = (folder / md_name).exists() or (
-        folder / f"{(class_id or folder.parent.name)}.concordance.md"
-    ).exists()
+    ready = (
+        (folder / "TERMOS.html").exists()
+        or (folder / "TERMOS_PESQUISA.md").exists()
+        or (folder / md_name).exists()
+        or (folder / f"{(class_id or folder.parent.name)}.concordance.md").exists()
+    )
 
     # Bright HTML — green when ready, amber when the folder is only a placeholder
     html = folder / "OPEN_ME__FINAL_RESULTS.html"
@@ -80,18 +83,25 @@ def _write_final_folder_marker(folder: Path, class_id: str = "") -> None:
                 "#1B5E20", "#A5D6A7", "#C8E6C9", "#1B5E20"
             )
             tag, sub = "DELIVERABLE", (
-                "Onto.PT + PULO concordance (this is the result that matters)"
+                "TERMOS.html + TERMOS_PESQUISA.md/.csv — lista para o corpus "
+                "(concordância = diagnóstico)"
             )
             body = (
-                "<p><b>Open the concordance:</b></p><ul>"
-                f"<li><a href='{md_name}'>{md_name}</a> — human-readable</li>"
-                f"<li><a href='{json_name}'>{json_name}</a> — machine JSON</li>"
+                "<p><b>Produto final:</b></p><ul>"
+                "<li><a href='TERMOS.html'>TERMOS.html</a> — "
+                "consulta (secções A–F)</li>"
+                "<li><a href='TERMOS_PESQUISA.md'>TERMOS_PESQUISA.md</a> — "
+                "processamento</li>"
+                "<li><a href='TERMOS_PESQUISA.csv'>TERMOS_PESQUISA.csv</a></li>"
                 "</ul>"
-                "<p>Scratch files (signals, engine dumps) are <b>not</b> here — "
-                "they live in <code>out/</code> and <code>results/</code>.</p>"
+                "<p><b>Diagnóstico:</b></p><ul>"
+                f"<li><a href='{md_name}'>{md_name}</a></li>"
+                f"<li><a href='{json_name}'>{json_name}</a></li>"
+                "</ul>"
+                "<p>Scratch: <code>out/</code> e <code>results/</code>.</p>"
             )
-            tip = "FINAL RESULTS — Onto.PT + PULO concordance (DELIVERABLE)"
-            local_name = "!!! FINAL RESULTS — Onto + PULO"
+            tip = "FINAL RESULTS — TERMOS (DELIVERABLE)"
+            local_name = "!!! FINAL RESULTS — TERMOS"
         else:
             banner_bg, border, tag_bg, tag_fg = (
                 "#6D4C00", "#FFE082", "#FFE082", "#6D4C00"

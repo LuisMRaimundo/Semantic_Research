@@ -9,6 +9,7 @@ import sys
 import threading
 import webbrowser
 from pathlib import Path
+from typing import Optional
 from tkinter import filedialog, messagebox, scrolledtext, ttk
 import tkinter as tk
 
@@ -23,16 +24,17 @@ from semantic.workspace import ClassWorkspace
 
 APP = "Semantic Research — Fase 0"
 # Shared labels; atributo is PULO-only (Onto has no attribute bucket).
-DECISION_CHOICES_PULO = ("", "UF", "RT", "exclude", "atributo", "contraste")
-DECISION_CHOICES_ONTO = ("", "UF", "RT", "exclude", "contraste")
+DECISION_CHOICES_PULO = ("", "UF", "RT", "exclude", "atributo")
+DECISION_CHOICES_ONTO = ("", "UF", "RT", "exclude")
 DECISION_LABELS = {
     "": "—",
     "UF": "UF",
     "RT": "RT",
     "exclude": "exclude",
     "atributo": "atributo",
-    "contraste": "contraste",
 }
+# File-only / migrated evidence statuses (no PASSO 3 radio).
+DECISIONS_FILE_ONLY = frozenset({"oposicao", "vizinha"})
 
 GUIDE_TEXT = """\
 SEMANTIC RESEARCH — QUICK GUIDE
@@ -52,38 +54,35 @@ ORDEM DE TRABALHO (numerada — igual ao checklist do painel direito)
 3 · DECIDIR
    Para cada cartão, escolher um rótulo (ver Glossário).
    Opções por fonte:
-     PULO  → — UF RT exclude atributo contraste
-     Onto  → — UF RT exclude contraste   (sem atributo)
+     PULO  → — UF RT exclude atributo
+     Onto  → — UF RT exclude   (sem atributo)
+   (oposicao / vizinha: só por migração ou edição do ficheiro)
 
 4 · GUARDAR DECISÕES
    Botão «4 · Guardar decisões». Escreve decisions.json.
 
-5 · PONTE ILI   (opcional, recomendado)
-   Botão «5 · Ponte ILI…»: gera candidatos OEWN↔PULO (CILI confirma
-   identidades canónicas automaticamente; ambíguos ficam em review
-   para a SUA adjudicação com a glosa à vista). Requer um export
-   WordNet na classe — pesquise com «WordNet — OEWN» no PASSO 2
-   (ou use WordNet\start_wordnet.bat se preferir a GUI antiga).
+5 · JUNÇÃO ILI  (automática — CILI)
+   Sem ecrã de decisão. No Run, OEWN↔PULO resolve-se só pela tabela
+   CILI (ili-map). Pares sem CILI ficam sem âncora partilhada.
+   Mapeamentos humanos antigos: confirmados ∩ CILI; divergentes só
+   no relatório ili_migration_report (não aplicados).
 
 6 · RUN
-   Botão «6 · ▶ Run»: compila as decisões, corre PULO + Onto,
-   convoca a faixa WordNet (se houver tabela adjudicada) e funde
-   com o LexWarrant.
+   Botão «6 · ▶ Run»: compila decisões, corre PULO (+ Onto descoberta),
+   WordNet/OWN-PT, junção CILI e LexWarrant (diagnóstico).
 
-7 · FINAL_RESULTS
-   Botão «7 · FINAL RESULTS»: o deliverable da classe.
-   Resolver a «worklist» (divergências) à mão; a ferramenta nunca
-   auto-promove um termo.
+7 · TERMOS / FINAL_RESULTS
+   Deliverable: TERMOS.html (consulta A–F) + TERMOS_PESQUISA.md/.csv.
+   A concordância LexWarrant é diagnóstico interno.
 
 
 What each source is for
 ───────────────────────
 • PULO     — Portuguese WordNet; 1 synset = 1 sense; linked to ILI
              (Interlingual Index). Prefer this as the sense anchor.
-• Onto.PT  — Larger Portuguese lexical net (incl. CONTO.PT weights).
-             Corroborates / extends; synsets have no ILI.
+• Onto.PT  — Discovery / triage only (PASSO 3). Does not admit vocabulary.
 • WordNet  — OEWN (English), same folder WordNet\; search here in PASSO 2.
-             Corroboration only (no UF/RT). Feeds Ponte ILI + Run track.
+             Corroboration only (no UF/RT). Feeds WordNet/OWN-PT track + CILI join.
 • LexWarrant — Relator only: joins results by ILI (or weakly by term).
              Reports agreement / divergence; does not decide.
 
@@ -93,28 +92,28 @@ Glossary — decision labels
 UF          Used For / “é mesmo isto”
             The sense IS the class meaning (or a true synonym).
             Maps to SKOS altLabel (alternative lexical form of the
-            preferred concept). Example: invariável for TexturaUniforme.
+            preferred concept).
 
 RT          Related Term / “parecido”
             Related but not identical — useful neighbour, not a
             synonym. Maps to skos:related.
-            Example: periódico when the axis is invariance, not period.
 
 exclude     “não interessa”
-            Wrong sense / wrong domain. Dropped from the class.
-            Example: uniforme = military uniform.
+            Wrong sense / wrong domain. Dropped from the class
+            (homograph / off-axis reading).
 
-atributo    Quality noun (attribute bucket) — PULO only
-            A noun naming the quality, not an adjective for the
-            texture itself (e.g. uniformidade, invariância).
-            Maps to a distinct :temAtributo link — never altLabel.
+atributo    Quality noun — PULO only (evidence, not vocabulary)
+            A noun naming the quality (not an adjective for the
+            concept itself). Documented in Bloco B; never SKOS.
             Onto.PT has no atributo: use UF (or exclude) there.
 
-contraste   Contrast / opposite pole
-            Opposes the class on the same axis (e.g. variável,
-            desigual). Maps to :contrastaCom + scopeNote —
-            never skos:related.
-            Available on both PULO and Onto.PT.
+oposicao    Declared opposition (evidence) — not a PASSO 3 button
+            Legacy «contraste» migrates here automatically.
+            Documented only; never a vocabulary relation.
+
+vizinha     Remission to a neighbouring class’s organising principle
+            File-only / manual reclassification from oposicao.
+            Documented only; never a vocabulary relation.
 
 —           (blank)
             Not decided yet. Pipeline will refuse incomplete senses
@@ -124,8 +123,8 @@ contraste   Contrast / opposite pole
 Glossary — other terms
 ──────────────────────
 class / class_id
-            One textural (or conceptual) category you are grounding
-            lexically, e.g. TexturaUniforme.
+            One conceptual category you are grounding lexically
+            (any research target — not tied to a fixed vocabulary).
 
 pref_label  Preferred lemma for the class (display / SKOS prefLabel).
 
@@ -136,10 +135,10 @@ sense / synset
             One meaning: a set of synonyms + gloss. Decisions are
             per sense, not per spelling.
 
-ILI         Interlingual Index (ili-30-…): shared concept id across
-            wordnets. Primary join key in LexWarrant.
+ILI         Interlingual Index (ili-30-… / CILI i…): shared concept
+            id across wordnets. Primary join key in LexWarrant.
 
-lemma       Dictionary form of a word (uniforme, not uniformes).
+lemma       Dictionary citation form (not inflected).
 
 concordance Matrix of terms × sources with verdicts:
             convergência plena · divergência de relação ·
@@ -181,6 +180,7 @@ Those are NOT your decisions. By default the workbench parks them in
 out/<Class>.PULO.signals.md and keeps the main concordance short.
 Set "hide_pulo_signals": false in config.json to include them again.
 """
+
 
 
 class Workbench(tk.Tk):
@@ -253,7 +253,7 @@ class Workbench(tk.Tk):
         left = ttk.Frame(mid)
         right = ttk.LabelFrame(
             mid,
-            text="PASSOS 4–7 · Ponte ILI (opcional) → Run → FINAL_RESULTS",
+            text="PASSOS 4–7 · Guardar → Run (CILI auto) → TERMOS",
             padding=6,
         )
         mid.add(left, weight=3)
@@ -321,14 +321,13 @@ class Workbench(tk.Tk):
 
         runrow = ttk.Frame(right)
         runrow.pack(fill="x")
-        ttk.Button(
-            runrow, text="5 · Ponte ILI…",
-            command=self._open_ili_bridge,
+        ttk.Label(
+            runrow, text="5 · ILI=CILI (auto)", foreground="#555",
         ).pack(side="left")
         ttk.Button(runrow, text="6 · ▶ Run", command=self._run).pack(
             side="left", padx=6)
         ttk.Button(
-            runrow, text="7 · FINAL RESULTS",
+            runrow, text="7 · TERMOS / FINAL",
             command=self._open_final_results,
         ).pack(side="left", padx=(0, 6))
         ttk.Button(
@@ -338,174 +337,48 @@ class Workbench(tk.Tk):
 
         self.final_banner = tk.Label(
             right,
-            text="Deliverable folder:  FINAL_RESULTS/  (Onto.PT + PULO concordance)",
+            text="Deliverable: TERMOS.html + TERMOS_PESQUISA.md/.csv  (+ CONCEPT.ttl)",
             bg="#1B5E20", fg="white", font=("", 9, "bold"),
             anchor="w", padx=8, pady=4,
         )
         self.final_banner.pack(fill="x", pady=(8, 0))
 
-        self.log = scrolledtext.ScrolledText(right, height=20, wrap="word")
+        # Onto→ILI review (GUI — not CLI-only)
+        ili_box = ttk.LabelFrame(
+            right,
+            text="Onto→ILI · propor / aceitar / rejeitar (inventário)",
+            padding=4,
+        )
+        ili_box.pack(fill="both", expand=False, pady=(8, 0))
+        ili_btns = ttk.Frame(ili_box)
+        ili_btns.pack(fill="x")
+        ttk.Button(ili_btns, text="Propor", command=self._onto_ili_propose).pack(
+            side="left"
+        )
+        ttk.Button(ili_btns, text="↻", width=3, command=self._onto_ili_refresh).pack(
+            side="left", padx=4
+        )
+        ttk.Button(ili_btns, text="Aceitar", command=self._onto_ili_accept).pack(
+            side="left", padx=4
+        )
+        ttk.Button(ili_btns, text="Rejeitar", command=self._onto_ili_reject).pack(
+            side="left"
+        )
+        ttk.Button(
+            ili_btns, text="Aceitar top-5", command=self._onto_ili_accept_top
+        ).pack(side="left", padx=4)
+        self.onto_ili_status = ttk.Label(ili_box, text="—", foreground="#444")
+        self.onto_ili_status.pack(anchor="w", pady=(2, 2))
+        self.onto_ili_list = tk.Listbox(ili_box, height=6, font=("Consolas", 8))
+        self.onto_ili_list.pack(fill="both", expand=True)
+        self._onto_ili_rows: list[dict] = []
+
+        self.log = scrolledtext.ScrolledText(right, height=12, wrap="word")
         self.log.pack(fill="both", expand=True, pady=(8, 0))
 
         ttk.Label(self, textvariable=self.status_var, relief="sunken",
                   anchor="w", padding=(6, 2)).pack(fill="x", side="bottom")
 
-    # -- Ponte ILI ---------------------------------------------------------
-    def _open_ili_bridge(self):
-        """Gerar a tabela ili_equivalence.json e adjudicar review→map."""
-        ws = self._ws()
-        if not ws:
-            messagebox.showinfo(APP, "Escolha uma classe primeiro.")
-            return
-        from semantic import ili_bridge
-
-        win = tk.Toplevel(self)
-        win.title(f"Ponte ILI — {ws.class_id}")
-        win.geometry("880x640")
-        win.minsize(720, 480)
-        win.transient(self)
-
-        head = ttk.Frame(win, padding=(10, 8))
-        head.pack(fill="x")
-        status_var = tk.StringVar(value="")
-        ttk.Label(head, textvariable=status_var, font=("", 9, "bold")).pack(
-            side="left")
-        note = ttk.Label(
-            win, padding=(10, 0), foreground="#555", wraplength=840,
-            justify="left",
-            text="O gerador PROPÕE, nunca decide: TODOS os candidatos "
-                 "automáticos (mesmo pares únicos) entram em «review» com "
-                 "proveniência «auto: shared-lemma». Só a sua promoção escreve "
-                 "em «map» (proveniência «human-adjudicated»). Regenerar é um "
-                 "merge que preserva sempre as decisões humanas — nunca um "
-                 "overwrite. Leia a glosa PULO e promova apenas o(s) "
-                 "correspondente(s) conceptual(is).")
-        note.pack(anchor="w")
-
-        btns = ttk.Frame(win, padding=(10, 6))
-        btns.pack(fill="x")
-
-        body = ttk.Frame(win)
-        body.pack(fill="both", expand=True, padx=10, pady=(0, 8))
-        canvas = tk.Canvas(body, highlightthickness=0)
-        scroll = ttk.Scrollbar(body, orient="vertical", command=canvas.yview)
-        inner = tk.Frame(canvas)
-        inner.bind("<Configure>",
-                   lambda e: canvas.configure(scrollregion=canvas.bbox("all")))
-        canvas.create_window((0, 0), window=inner, anchor="nw")
-        canvas.configure(yscrollcommand=scroll.set)
-        canvas.pack(side="left", fill="both", expand=True)
-        scroll.pack(side="right", fill="y")
-
-        check_vars: dict[tuple, tk.BooleanVar] = {}
-
-        def refresh():
-            for child in inner.winfo_children():
-                child.destroy()
-            check_vars.clear()
-            cand = ili_bridge.candidates(ws.class_id)
-            if not cand["exists"]:
-                status_var.set("Tabela inexistente — clique «Gerar/atualizar».")
-                tk.Label(inner, text="(sem tabela — gere-a primeiro)",
-                         fg="#777").pack(anchor="w", padx=8, pady=10)
-                return
-            n_map, n_rev = len(cand["map"]), len(cand["review"])
-            status_var.set(
-                f"{cand['path']}  ·  map: {n_map} · review: {n_rev} · "
-                f"unmatched: {len(cand['unmatched'])}")
-
-            if cand["map"]:
-                tk.Label(inner, text="MAP (alta confiança — usados na fusão)",
-                         font=("", 10, "bold"), fg="#1B5E20").pack(
-                    anchor="w", padx=4, pady=(6, 2))
-                for r in cand["map"]:
-                    src = r.get("source", "(tabela antiga, sem proveniência)")
-                    txt = (f"{r['oewn_ili']} ↔ {r['pulo_ili']}   "
-                           f"[{', '.join(r['evidence']['shared_lemmas'])}]\n"
-                           f"    PULO: {', '.join(r['pulo_members'][:8])} — "
-                           f"{r['pulo_gloss'][:140]}\n    origem: {src}")
-                    tk.Label(inner, text=txt, justify="left", anchor="w",
-                             bg="#EAF5EA", wraplength=800).pack(
-                        fill="x", padx=4, pady=2)
-
-            if cand["review"]:
-                tk.Label(inner,
-                         text="REVIEW (ambíguos — decida pela glosa e promova)",
-                         font=("", 10, "bold"), fg="#8A5A00").pack(
-                    anchor="w", padx=4, pady=(10, 2))
-                for r in cand["review"]:
-                    key = (r["oewn_ili"], r["pulo_ili"])
-                    var = tk.BooleanVar(value=False)
-                    check_vars[key] = var
-                    row = tk.Frame(inner, bg="#FFF6E5")
-                    row.pack(fill="x", padx=4, pady=2)
-                    tk.Checkbutton(
-                        row, variable=var, bg="#FFF6E5",
-                        activebackground="#FFF6E5").pack(side="left", anchor="n")
-                    txt = (f"{r['oewn_ili']} ↔ {r['pulo_ili']}   "
-                           f"[{', '.join(r['evidence']['shared_lemmas'])}]\n"
-                           f"PULO: {', '.join(r['pulo_members'][:10])}\n"
-                           f"glosa: {r['pulo_gloss'][:200]}")
-                    tk.Label(row, text=txt, justify="left", anchor="w",
-                             bg="#FFF6E5", wraplength=770).pack(
-                        side="left", fill="x", expand=True)
-
-            if cand["unmatched"]:
-                tk.Label(inner, text="UNMATCHED (sem ponte possível — informativo)",
-                         font=("", 10, "bold"), fg="#666").pack(
-                    anchor="w", padx=4, pady=(10, 2))
-                for r in cand["unmatched"]:
-                    tk.Label(inner,
-                             text=f"{r.get('oewn_ili')}  ({r.get('why', '')})",
-                             fg="#666", anchor="w").pack(fill="x", padx=8)
-
-        def do_generate():
-            status_var.set("A gerar…")
-            win.update_idletasks()
-            res = ili_bridge.build_table(ws.class_id)
-            if not res.get("ok"):
-                messagebox.showwarning("Ponte ILI", res.get("error", "falhou"),
-                                       parent=win)
-                refresh()
-                return
-            cov = res["coverage"]
-            msg = (f"Tabela gerada: {cov['map']} map · {cov['review']} review · "
-                   f"{cov['unmatched']} unmatched")
-            if res.get("carried_human"):
-                msg += f" · {res['carried_human']} promoção(ões) humana(s) preservada(s)"
-            self._log(msg + f"\nWordNet: {res['wordnet']}\nPULO: {res['pulo']}\n")
-            refresh()
-
-        def do_promote():
-            chosen = [k for k, v in check_vars.items() if v.get()]
-            if not chosen:
-                messagebox.showinfo("Ponte ILI",
-                                    "Marque pelo menos um par em REVIEW.",
-                                    parent=win)
-                return
-            res = ili_bridge.promote(ws.class_id, chosen)
-            if not res.get("ok"):
-                messagebox.showwarning("Ponte ILI", res.get("error", "falhou"),
-                                       parent=win)
-                return
-            self._log(f"Promovidos para map: {res['moved']} · "
-                      f"coverage agora {res['coverage']}\n")
-            refresh()
-            if messagebox.askyesno(
-                    "Ponte ILI",
-                    "Promovido. Voltar a correr a fusão agora para usar as "
-                    "novas junções por ILI?", parent=win):
-                win.destroy()
-                self._run()
-
-        ttk.Button(btns, text="⚙ Gerar/atualizar tabela",
-                   command=do_generate).pack(side="left")
-        ttk.Button(btns, text="✓ Promover selecionados → map",
-                   command=do_promote).pack(side="left", padx=8)
-        ttk.Button(btns, text="↻", width=3, command=refresh).pack(side="left")
-        ttk.Button(btns, text="Fechar", command=win.destroy).pack(side="right")
-
-        refresh()
 
     def _open_guide(self):
         """Show the quick-reference guide (steps + glossary)."""
@@ -553,7 +426,7 @@ class Workbench(tk.Tk):
                 body.tag_add("header", idx, end)
                 start = end
         for term in (
-            "UF", "RT", "exclude", "atributo", "contraste",
+            "UF", "RT", "exclude", "atributo", "oposicao", "vizinha",
             "ILI", "pref_label", "axis", "concordance",
             "proposta_final", "convergência", "divergência", "weak(term)",
         ):
@@ -724,7 +597,6 @@ class Workbench(tk.Tk):
     def _render_steps(self, ws):
         """Checklist numerado e vivo: ✓ feito · ▶ próximo · ○ pendente."""
         from semantic import decisions as _dec
-        from semantic import ili_bridge as _ib
 
         meta = ws.load_meta()
         dec = _dec.load_decisions(ws.decisions_json)
@@ -732,24 +604,25 @@ class Workbench(tk.Tk):
         n_pulo = sum(1 for s in senses if (s.get("source") or "") == "pulo")
         n_onto = sum(1 for s in senses if (s.get("source") or "") == "onto")
         decided = sum(1 for s in senses if (s.get("decision") or "").strip())
-        table = _ib.load_table(ws)
-        n_map = len((table or {}).get("map", []))
-        has_run = ((ws.results / f"{ws.class_id}.PULO.result.json").exists()
-                   or (ws.results / f"{ws.class_id}.ONTO.result.json").exists())
-        has_final = ws.concordance_md().exists()
+        has_run = (ws.results / f"{ws.class_id}.PULO.result.json").exists()
+        has_termos = (
+            (ws.final_results / "TERMOS.html").exists()
+            or (ws.final_results / "TERMOS_PESQUISA.md").exists()
+        )
+        has_final = ws.concordance_md().exists() or has_termos
 
         steps = [
             ("1", "Classe criada + meta (pref_label, axis)",
              bool(meta.get("pref_label")) and bool(meta.get("axis")), False),
             ("2a", f"Pesquisar PULO  ({n_pulo} cartões)", n_pulo > 0, False),
-            ("2b", f"Pesquisar Onto.PT  ({n_onto} cartões)", n_onto > 0, False),
+            ("2b", f"Onto.PT descoberta  ({n_onto} cartões)", n_onto > 0, True),
             ("3", f"Decidir sentidos  ({decided}/{len(senses)})",
              len(senses) > 0 and decided == len(senses), False),
             ("4", "Guardar decisões", len(senses) > 0 and decided == len(senses),
              False),
-            ("5", f"Ponte ILI  ({n_map} pares em map)", n_map > 0, True),
-            ("6", "▶ Run (motores + fusão)", has_run and has_final, False),
-            ("7", "Ler FINAL_RESULTS (resolver worklist)", has_final, False),
+            ("5", "Junção ILI = CILI (automático no Run)", True, True),
+            ("6", "▶ Run (PULO + fusão CILI)", has_run and has_final, False),
+            ("7", "TERMOS / FINAL_RESULTS", has_final, False),
         ]
         lines = ["ORDEM DE TRABALHO"]
         next_marked = False
@@ -800,6 +673,7 @@ class Workbench(tk.Tk):
                 text="Deliverable folder:  FINAL_RESULTS/  (empty until you Run)",
                 bg="#555555",
             )
+        self._onto_ili_refresh()
 
     def _open_folder(self):
         ws = self._ws()
@@ -827,15 +701,15 @@ class Workbench(tk.Tk):
         f = self.filter_var.get()
         if f == "onto":
             self.decide_hint.configure(
-                text="Onto options:  —  UF  RT  exclude  contraste   (NO atributo)"
+                text="Onto options:  —  UF  RT  exclude   (NO atributo)"
             )
         elif f == "pulo":
             self.decide_hint.configure(
-                text="PULO options:  —  UF  RT  exclude  atributo  contraste"
+                text="PULO options:  —  UF  RT  exclude  atributo"
             )
         elif f == "wordnet":
             self.decide_hint.configure(
-                text="WordNet: corroboration only (no UF/RT) — feeds Ponte ILI"
+                text="WordNet: corroboration only (no UF/RT) — CILI join no Run"
             )
         else:
             self.decide_hint.configure(
@@ -875,12 +749,12 @@ class Workbench(tk.Tk):
             src = (s.get("source") or "").lower()
             if src == "onto":
                 bg, accent, banner = "#FFF6E5", "#8A5A00", (
-                    "Onto.PT  ·  fuzzy coverage  ·  options: UF · RT · exclude · contraste"
+                    "Onto.PT  ·  fuzzy coverage  ·  options: UF · RT · exclude"
                 )
                 key_line = f"id: {s.get('key')}"
             elif src == "wordnet":
                 bg, accent, banner = "#E8F5E9", "#1B5E20", (
-                    "WordNet (OEWN)  ·  corroboration  ·  no UF/RT — use Ponte ILI"
+                    "WordNet (OEWN)  ·  corroboration  ·  no UF/RT — junção CILI no Run"
                 )
                 key_line = (
                     f"OEWN ILI: {s.get('ili') or '—'}   ·   "
@@ -888,7 +762,7 @@ class Workbench(tk.Tk):
                 )
             else:
                 bg, accent, banner = "#E8F1FB", "#0B3D6E", (
-                    "PULO  ·  ILI anchor  ·  options: UF · RT · exclude · atributo · contraste"
+                    "PULO  ·  ILI anchor  ·  options: UF · RT · exclude · atributo"
                 )
                 key_line = f"ILI: {s.get('ili') or '—'}   ·   {s.get('key')}"
 
@@ -919,7 +793,7 @@ class Workbench(tk.Tk):
                 tk.Label(
                     card,
                     text="Info only — export saved under exports/*.facets.json "
-                         "for Ponte ILI / Run.",
+                         "for WordNet track / Run.",
                     bg=bg, fg="#336633", anchor="w",
                 ).pack(fill="x")
                 continue
@@ -927,7 +801,14 @@ class Workbench(tk.Tk):
             raw = s.get("decision") or ""
             if src == "onto" and raw == "atributo":
                 raw = "UF"
-            var = tk.StringVar(value=raw if raw in choice_set else "")
+            # Preserve file-only evidence statuses (oposicao/vizinha); do not wipe.
+            if raw in choice_set:
+                initial = raw
+            elif raw in DECISIONS_FILE_ONLY:
+                initial = raw
+            else:
+                initial = ""
+            var = tk.StringVar(value=initial)
             self._sense_vars[sk] = var
             row = tk.Frame(card, bg=bg)
             row.pack(anchor="w")
@@ -940,6 +821,14 @@ class Workbench(tk.Tk):
                     bg=bg, activebackground=bg, selectcolor=bg,
                     highlightthickness=0,
                 ).pack(side="left", padx=2)
+            if raw in DECISIONS_FILE_ONLY:
+                mig = " · migrado de contraste" if s.get("migrado_de") == "contraste" else ""
+                rev = " · revisão pendente" if s.get("revisao_pendente") else ""
+                tk.Label(
+                    card,
+                    text=f"Evidência (ficheiro): {raw}{mig}{rev}",
+                    bg=bg, fg="#6B3A00", anchor="w",
+                ).pack(fill="x", pady=(2, 0))
 
     def _save_decisions(self):
         ws = self._ws()
@@ -959,12 +848,16 @@ class Workbench(tk.Tk):
         ws.save_meta(meta)
 
         dec = decmod.load_decisions(ws.decisions_json)
+        migrated = bool(dec.get(decmod._MIGRATION_FLAG))
         for s in dec.get("senses", []):
             sk = decmod.sense_key(s["source"], s["key"])
             if sk in self._sense_vars:
                 s["decision"] = self._sense_vars[sk].get()
         decmod.save_decisions(ws.decisions_json, dec)
-        self.status_var.set("Decisions saved.")
+        msg = "Decisions saved."
+        if migrated:
+            msg += " (migração contraste→oposicao gravada; .bak-AAAAMMDD criado)"
+        self.status_var.set(msg)
         self._load_class()
 
     # -- search / run ----------------------------------------------------
@@ -974,17 +867,31 @@ class Workbench(tk.Tk):
         if not ws or not q:
             messagebox.showinfo(APP, "Pick a class and type a query.")
             return
+        source = (self.source_var.get() or "").strip().lower()
         self.status_var.set("Searching…")
+        self.update_idletasks()
+
+        # OEWN/`wn` uses SQLite with thread affinity (same constraint as
+        # WordNet/wordnet_gui_v2.py). Must run on the Tk main thread.
+        if source in ("wordnet", "oewn", "wn"):
+            try:
+                info = search_and_seed(
+                    ws.class_id, q, source=source, mode=self.mode_var.get(),
+                )
+                self._search_done(info, None)
+            except Exception as exc:  # noqa: BLE001
+                self._search_done(None, exc)
+            return
 
         def work():
             try:
                 info = search_and_seed(
-                    ws.class_id, q, source=self.source_var.get(),
-                    mode=self.mode_var.get(),
+                    ws.class_id, q, source=source, mode=self.mode_var.get(),
                 )
-                self.after(0, lambda: self._search_done(info, None))
+                # Bind defaults now — after() runs later; except-bound names are cleared.
+                self.after(0, lambda i=info: self._search_done(i, None))
             except Exception as exc:  # noqa: BLE001
-                self.after(0, lambda: self._search_done(None, exc))
+                self.after(0, lambda e=exc: self._search_done(None, e))
 
         threading.Thread(target=work, daemon=True).start()
 
@@ -1002,9 +909,9 @@ class Workbench(tk.Tk):
         if int(info.get("count") or 0) == 0:
             src = self.source_var.get()
             tip = (
-                "For WordNet use an English lemma (e.g. composite, compound)."
+                "WordNet expects an English citation form."
                 if src == "wordnet"
-                else "For Compósita try «composto» / «compósito» (not «compósita»)."
+                else "Try another spelling / citation form attested in the lexicon."
             )
             messagebox.showwarning(
                 APP,
@@ -1024,8 +931,8 @@ class Workbench(tk.Tk):
             messagebox.showerror(
                 APP,
                 "axis is empty.\n\n"
-                "In Meta (right panel) set e.g.\n"
-                "  axis: heterogeneidade / composição de materiais distintos\n"
+                "In Meta (right panel) set the defining property, e.g.\n"
+                "  axis: <what must hold for a UF decision>\n"
                 "then «4 · Guardar decisões», then Run again.",
             )
             self.status_var.set("Run blocked — fill axis.")
@@ -1036,9 +943,9 @@ class Workbench(tk.Tk):
         def work():
             try:
                 summary = run_class(ws.class_id)
-                self.after(0, lambda: self._run_done(summary, None))
+                self.after(0, lambda s=summary: self._run_done(s, None))
             except Exception as exc:  # noqa: BLE001
-                self.after(0, lambda: self._run_done(None, exc))
+                self.after(0, lambda e=exc: self._run_done(None, e))
 
         threading.Thread(target=work, daemon=True).start()
 
@@ -1047,6 +954,20 @@ class Workbench(tk.Tk):
             messagebox.showerror(APP, str(err))
             self.status_var.set("Run failed.")
             return
+        # Refresh TERMOS on the Tk thread: OEWN/`wn` SQLite is thread-sticky,
+        # so EN poles (A–D) written inside the worker can come out empty.
+        ws = self._ws()
+        if ws and summary.get("merge_ok"):
+            try:
+                from semantic.termos_pesquisa import write_termos_pesquisa
+                paths = write_termos_pesquisa(ws, dest_dir=ws.final_results)
+                summary["termos_pesquisa"] = paths
+                self._log(
+                    f"TERMOS refreshed (main thread) → {paths.get('html')}\n"
+                )
+            except Exception as exc:  # noqa: BLE001
+                self._log(f"TERMOS refresh failed: {exc}\n")
+                summary.setdefault("errors", []).append(f"TERMOS refresh: {exc}")
         self._log(json.dumps(
             {k: v for k, v in summary.items() if k != "status"},
             ensure_ascii=False, indent=2,
@@ -1083,6 +1004,7 @@ class Workbench(tk.Tk):
             webbrowser.open(path.as_uri())
 
     def _open_concordance(self):
+        """Show concordance in-app (never os.startfile on .md — Cursor may own it)."""
         ws = self._ws()
         if not ws:
             return
@@ -1090,14 +1012,173 @@ class Workbench(tk.Tk):
         if not path.exists():
             messagebox.showinfo(
                 APP,
-                "No FINAL_RESULTS concordance yet — Run the pipeline first.",
+                "Ainda não há concordância em FINAL_RESULTS — "
+                "execute «6 · ▶ Run» primeiro.",
             )
             return
+        win = tk.Toplevel(self)
+        win.title(f"Concordância — {ws.class_id}")
+        win.geometry("900x700")
+        win.minsize(640, 480)
+        win.transient(self)
+        bar = ttk.Frame(win, padding=(8, 6))
+        bar.pack(fill="x")
+        ttk.Label(bar, text=str(path), foreground="#555").pack(
+            side="left", fill="x", expand=True
+        )
+
+        def open_folder():
+            folder = path.parent
+            try:
+                import os
+                os.startfile(folder)  # type: ignore[attr-defined]
+            except Exception:
+                webbrowser.open(folder.as_uri())
+
+        def open_external():
+            # Prefer notepad on Windows so Cursor/.md association is bypassed.
+            try:
+                import subprocess
+                subprocess.Popen(["notepad.exe", str(path)])
+            except Exception:
+                try:
+                    import os
+                    os.startfile(path)  # type: ignore[attr-defined]
+                except Exception:
+                    webbrowser.open(path.as_uri())
+
+        ttk.Button(bar, text="Abrir pasta", command=open_folder).pack(
+            side="right", padx=(4, 0)
+        )
+        ttk.Button(bar, text="Abrir no Bloco de notas", command=open_external).pack(
+            side="right"
+        )
+        ttk.Button(bar, text="Fechar", command=win.destroy).pack(
+            side="right", padx=(0, 8)
+        )
+        body = scrolledtext.ScrolledText(win, wrap="word", font=("Consolas", 10))
+        body.pack(fill="both", expand=True, padx=8, pady=(0, 8))
         try:
-            import os
-            os.startfile(path)  # type: ignore[attr-defined]
-        except Exception:
-            webbrowser.open(path.as_uri())
+            body.insert("1.0", path.read_text(encoding="utf-8"))
+        except OSError as exc:
+            body.insert("1.0", f"(erro a ler ficheiro: {exc})")
+        body.configure(state="disabled")
+
+    def _onto_ili_refresh(self):
+        """Reload Onto→ILI proposals into the listbox."""
+        self.onto_ili_list.delete(0, "end")
+        self._onto_ili_rows = []
+        ws = self._ws()
+        if not ws:
+            self.onto_ili_status.configure(text="(sem classe)")
+            return
+        try:
+            from semantic.onto_ili import list_proposals
+            # Prefer existing rows; do not auto-repropose on every refresh.
+            rows = list_proposals(ws.class_id)
+            if not rows:
+                self.onto_ili_status.configure(
+                    text="0 propostas — clique «Propor» após pesquisas Onto/PULO"
+                )
+                return
+            # Show proposed first, then accepted, then rejected
+            order = {"proposed": 0, "accepted": 1, "rejected": 2}
+            rows.sort(
+                key=lambda r: (
+                    order.get(r.get("status") or "", 9),
+                    -float(r.get("score") or 0),
+                )
+            )
+            n_prop = sum(1 for r in rows if r.get("status") == "proposed")
+            n_acc = sum(1 for r in rows if r.get("status") == "accepted")
+            self.onto_ili_status.configure(
+                text=f"{len(rows)} links · {n_prop} proposed · {n_acc} accepted"
+            )
+            for r in rows[:200]:
+                st = (r.get("status") or "?")[:8]
+                sc = float(r.get("score") or 0)
+                line = (
+                    f"[{st:8}] {sc:0.2f}  {r.get('onto_key')}  →  {r.get('ili')}"
+                )
+                self.onto_ili_list.insert("end", line)
+                self._onto_ili_rows.append(r)
+        except Exception as exc:  # noqa: BLE001
+            self.onto_ili_status.configure(text=f"erro: {exc}")
+
+    def _onto_ili_selected(self) -> Optional[dict]:
+        sel = self.onto_ili_list.curselection()
+        if not sel:
+            messagebox.showinfo(APP, "Seleccione uma proposta na lista.")
+            return None
+        idx = int(sel[0])
+        if idx < 0 or idx >= len(self._onto_ili_rows):
+            return None
+        return self._onto_ili_rows[idx]
+
+    def _onto_ili_propose(self):
+        ws = self._ws()
+        if not ws:
+            return
+        self.status_var.set("Onto→ILI: a propor…")
+        try:
+            from semantic.onto_ili import propose_for_class
+            from semantic.sense_index import SenseIndex, ingest_class_exports
+            with SenseIndex() as si:
+                ingest_class_exports(ws.class_id, index=si)
+                rep = propose_for_class(ws.class_id, index=si)
+            auto_n = (rep.get("auto_accept") or {}).get("n") or 0
+            self._log(
+                f"Onto→ILI propose: {rep.get('n_proposals')} proposals · "
+                f"{rep.get('n_accepted')} accepted "
+                f"(auto={auto_n})\n"
+            )
+            self._onto_ili_refresh()
+            self.status_var.set("Onto→ILI: propostas actualizadas.")
+        except Exception as exc:  # noqa: BLE001
+            messagebox.showerror(APP, str(exc))
+            self.status_var.set("Onto→ILI propose failed.")
+
+    def _onto_ili_accept(self):
+        row = self._onto_ili_selected()
+        ws = self._ws()
+        if not row or not ws:
+            return
+        try:
+            from semantic.onto_ili import set_proposal_status
+            out = set_proposal_status(
+                ws.class_id, row["onto_key"], row["ili"], "accepted",
+            )
+            self._log(f"Onto→ILI accepted: {out}\n")
+            self._onto_ili_refresh()
+        except Exception as exc:  # noqa: BLE001
+            messagebox.showerror(APP, str(exc))
+
+    def _onto_ili_reject(self):
+        row = self._onto_ili_selected()
+        ws = self._ws()
+        if not row or not ws:
+            return
+        try:
+            from semantic.onto_ili import set_proposal_status
+            out = set_proposal_status(
+                ws.class_id, row["onto_key"], row["ili"], "rejected",
+            )
+            self._log(f"Onto→ILI rejected: {out}\n")
+            self._onto_ili_refresh()
+        except Exception as exc:  # noqa: BLE001
+            messagebox.showerror(APP, str(exc))
+
+    def _onto_ili_accept_top(self):
+        ws = self._ws()
+        if not ws:
+            return
+        try:
+            from semantic.onto_ili import accept_top
+            out = accept_top(ws.class_id, n=5, min_score=0.6)
+            self._log(f"Onto→ILI accept-top: {out}\n")
+            self._onto_ili_refresh()
+        except Exception as exc:  # noqa: BLE001
+            messagebox.showerror(APP, str(exc))
 
     def _log(self, text: str):
         self.log.insert("end", text)

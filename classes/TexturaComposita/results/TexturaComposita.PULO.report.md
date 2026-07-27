@@ -2,7 +2,7 @@
 
 - **Eixo definidor:** heterogeneidade / composição de materiais ou partes distintas
 - **Fonte:** PULO / WordNet.PT export (âncora ILI; sem porta estatística)
-- **Gerado:** 2026-07-18T19:59:09
+- **Gerado:** 2026-07-27T12:39:24
 - **Estado global:** ❌ EXISTEM ASSERÇÕES FALHADAS
 
 ## Quadro de asserções (protocolo)
@@ -15,13 +15,13 @@
 | ILI | Nenhum id oewn-/por- é usado como chave de junção; a chave é o ILI. | PASS ✅ | OK |
 | ILI | Synsets sem ili_offset são sinalizados (não descartados em silêncio). | PASS ✅ | nenhum synset sem ILI no export |
 | Etapa 2 | Os sinónimos colhidos provêm exclusivamente de synsets admitidos. | PASS ✅ | OK |
-| Etapa 3 | Alvos de relação são tipados pelo mapeamento; «(no lemma)» nunca admitido. | PASS ✅ | OK (267 alvos «(no lemma)» descartados) |
+| Etapa 3 | Alvos de relação são tipados pelo mapeamento; «(no lemma)» nunca admitido. | PASS ✅ | OK (0 alvos «(no lemma)» descartados) |
 | Etapa 4 | «(no lemma)», colocações e termos só de relação não-nomeada (sem corroboração) são excluídos. | PASS ✅ | OK |
-| Etapa 5 | Cada admitido tem estatuto∈{UF,RT,contraste,BT,NT,atributo}, teste decisivo e ≥1 garantia; nomes de qualidade em attribute_bucket. | PASS ✅ | OK |
+| Etapa 5 | Cada admitido tem estatuto∈{UF,RT,BT,NT} (garantia calculada a jusante; atributo = evidência). | PASS ✅ | OK |
 | Garantia | Termos com garantia «estipulativa» têm definição E relação estrutural. | PASS ✅ | OK |
 | Consistência | Nenhum termo é UF de duas classes com owl:disjointWith entre si. | PASS ✅ | OK |
-| Consistência | Contrastantes não são serializados como skos:related. | PASS ✅ | OK |
-| Serialização | X.skos.ttl analisa com rdflib e tem a contagem de triplos esperada. | PASS ✅ | triplos esperados=4, analisados=4 |
+| Consistência | Nenhum estatuto de evidência (contraste/atributo) em admitidos. | PASS ✅ | OK |
+| Serialização | X.skos.ttl analisa com rdflib e tem a contagem de triplos esperada. | PASS ✅ | triplos esperados=6, analisados=6 |
 
 ## Etapa 1 — Selecção de acepções (lista branca ILI)
 - **UF** `ili-30-14818238-n` — (Química) uma substância formada por união química de duas ou mais elementos ou ingredientes na proporção definida por peso
@@ -35,70 +35,26 @@ Total: **1** — composto
 - **Contraste (antonym):** —
 - **RT/UF (similar-to):** —
 - **BT (hypernym):** —
-- **NT (hyponym):** azida, base, cianamida, cloreto, complexo, conservante, formulação, fórmula, hidrato, hidróxido, nitrato, nitreto, preparação, quinona, sal, ácido, óxido
+- **NT (hyponym):** —
 - **Atributo:** —
-- **Família derivada:** compor
-- Alvos «(no lemma)» descartados: 267
-
-### Sinalização (revisão humana — NÃO admitidos)
-- acetilação — relação não-nomeada / #NN (via «relation #61»)
-- ácido — relação não-nomeada / #NN (via «relation #61»)
-- álcool — relação não-nomeada / #NN (via «relation #61»)
-- alizarina — relação não-nomeada / #NN (via «relation #61»)
-- aminotransferase — relação não-nomeada / #NN (via «relation #61»)
-- azida — relação não-nomeada / #NN (via «relation #61»)
-- base — relação não-nomeada / #NN (via «relation #61»)
-- capsaicina — relação não-nomeada / #NN (via «relation #61»)
-- cianamida — relação não-nomeada / #NN (via «relation #61»)
-- cíclico — relação não-nomeada / #NN (via «relation #61»)
-- cloreto — relação não-nomeada / #NN (via «relation #61»)
-- complexo — relação não-nomeada / #NN (via «relation #61»)
-- compor — relação não-nomeada / #NN (via «relation #61 (inverse)»)
-- conservante — relação não-nomeada / #NN (via «relation #61»)
-- constituir — relação não-nomeada / #NN (via «relation #61 (inverse)»)
-- descarboxilação — relação não-nomeada / #NN (via «relation #61»)
-- dimensão — relação não-nomeada / #NN (via «relation #61 (inverse)»)
-- elemento — relação não-nomeada / #NN (via «relation #61 (inverse)»)
-- fazer — relação não-nomeada / #NN (via «relation #61 (inverse)»)
-- formar — relação não-nomeada / #NN (via «relation #61 (inverse)»)
-- glicosídeos — relação não-nomeada / #NN (via «relation #61»)
-- hidrato — relação não-nomeada / #NN (via «relation #61»)
-- hidróxido — relação não-nomeada / #NN (via «relation #61»)
-- ingrediente — relação não-nomeada / #NN (via «relation #61»)
-- inorganicamente — relação não-nomeada / #NN (via «relation #61»)
-- isomerização — relação não-nomeada / #NN (via «relation #61»)
-- molécula — relação não-nomeada / #NN (via «relation #61»)
-- nitrato — relação não-nomeada / #NN (via «relation #61»)
-- nitreto — relação não-nomeada / #NN (via «relation #61»)
-- organicamente — relação não-nomeada / #NN (via «relation #61»)
-- orgânico — relação não-nomeada / #NN (via «relation #61»)
-- óxido — relação não-nomeada / #NN (via «relation #61»)
-- peso — relação não-nomeada / #NN (via «relation #61 (inverse)»)
-- proporção — relação não-nomeada / #NN (via «relation #61 (inverse)»)
-- química — relação não-nomeada / #NN (via «domain topic»)
-- quinona — relação não-nomeada / #NN (via «relation #61»)
-- sal — relação não-nomeada / #NN (via «relation #61»)
-- síntese — relação não-nomeada / #NN (via «relation #61»)
+- **Família derivada:** —
+- Alvos «(no lemma)» descartados: 0
 
 ## Etapa 4 — Exclusão automática
 Nenhum termo descartado.
 
 ## Etapa 5 — Adjudicação + §7 proveniência
-Admitidos: **0**  ·  Pendentes: **18**  ·  Atributos: **0**
+Admitidos: **1**  ·  Pendentes: **0**  ·  (atributo/oposicao/vizinha = evidência, fora de provenance)
 
 | termo | estatuto | via | offset/ILI | teste decisivo | garantia | definição |
 |-------|----------|-----|------------|----------------|----------|-----------|
+| composto | UF | seed (Etapa 1/2) | ili-30-14818238-n | derivado do sentido (PASSO 3) | sense_decision | — |
 
-### Pendentes (necessitam de decisão na spec `adjudication`)
-azida, base, cianamida, cloreto, complexo, composto, conservante, formulação, fórmula, hidrato, hidróxido, nitrato, nitreto, preparação, quinona, sal, ácido, óxido
-
-## §6 — Mapeamento SKOS-XL / OWL
+## §6 — Mapeamento SKOS-XL / OWL (só Bloco A)
 - `skos:prefLabel` → **TexturaCompósita**
-- `skosxl:altLabel` (UF) → —
-- `skos:related` (RT) → —
+- `skosxl:altLabel` (UF) → composto
+- `:termoRelacionado` (RT) → —
 - `skos:broader` (BT) → —
 - `skos:narrower` (NT) → —
-- `:temAtributo` (nomes de qualidade) → —
-- `:contrastaCom` + `scopeNote` (contraste) → —
 
-_Nomes de qualidade NÃO são `skosxl:altLabel`; contrastantes NÃO são `skos:related` (o SKOS não modela antonímia)._
+_Evidência (`atributo`, oposição, vizinha, sinalização) NÃO é serializada como relação SKOS/SKOS-XL._

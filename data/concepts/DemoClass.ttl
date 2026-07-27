@@ -1,0 +1,17 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix sr: <http://semantic-research.local/concept/> .
+
+# Concept model — DemoClass
+# generated 2026-07-27T11:39:54+00:00
+
+sr:DemoClass a owl:Class, skos:Concept ;
+    skos:prefLabel "demo"@pt ;
+    skos:scopeNote "axis"@pt ;
+    dct:identifier "DemoClass" ;
+    skos:altLabel "alpha"@pt ;
+    skos:altLabel "beta"@pt ;
+    rdfs:comment "UF senses=1; RT=0; ILI anchors=0"@en .

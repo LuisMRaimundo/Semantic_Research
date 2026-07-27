@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix sr: <http://semantic-research.local/concept/> .
+
+# Concept model — TexturaDensa
+# generated 2026-07-27T11:39:54+00:00
+
+sr:TexturaDensa a owl:Class, skos:Concept ;
+    skos:prefLabel "TexturaDensa"@pt ;
+    skos:scopeNote "densidade"@pt ;
+    dct:identifier "TexturaDensa" ;
+    skos:exactMatch <https://globalwordnet.org/ili/i13376> ;
+    skos:exactMatch <https://globalwordnet.org/ili/i3019> ;
+    skos:exactMatch <https://globalwordnet.org/ili/i62946> ;
+    skos:exactMatch <https://globalwordnet.org/ili/i63738> ;
+    skos:exactMatch <https://globalwordnet.org/ili/i6484> ;
+    skos:exactMatch <https://globalwordnet.org/ili/i73> ;
+    skos:exactMatch <https://globalwordnet.org/ili/i8310> ;
+    skos:exactMatch <https://globalwordnet.org/ili/i9720> ;
+    skos:altLabel "denso"@pt ;
+    skos:altLabel "densidade"@pt ;
+    skos:related [ a skos:Concept ; skos:prefLabel "denso"@pt ] ;
+    skos:related [ a skos:Concept ; skos:prefLabel "densidade"@pt ] ;
+    skos:related [ a skos:Concept ; skos:prefLabel "concentração"@pt ] ;
+    skos:hiddenLabel "denso"@pt ;
+    rdfs:comment "UF senses=5; RT=2; ILI anchors=8"@en .

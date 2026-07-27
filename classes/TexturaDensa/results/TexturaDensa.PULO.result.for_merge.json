@@ -1,0 +1,341 @@
+{
+  "class_id": "TexturaDensa",
+  "pref_label": "TexturaDensa",
+  "axis": "densidade",
+  "generated": "2026-07-27T10:52:45",
+  "source": "PULO / WordNet.PT export",
+  "stage1": {
+    "admitted": [
+      {
+        "ili_offset": "ili-30-00539009-a",
+        "glosa": "tendo componentes de perto amontoados\n",
+        "decision": "UF",
+        "export_gloss": ""
+      },
+      {
+        "ili_offset": "ili-30-01185264-a",
+        "glosa": "com alta densidade relativa ou gravidade específica\n",
+        "decision": "UF",
+        "export_gloss": ""
+      },
+      {
+        "ili_offset": "ili-30-01513776-a",
+        "glosa": "(das Trevas) muito intensa\n",
+        "decision": "UF",
+        "export_gloss": ""
+      },
+      {
+        "ili_offset": "ili-30-01771839-a",
+        "glosa": "difícil porque passam através do crescimento denso\n",
+        "decision": "RT",
+        "export_gloss": ""
+      },
+      {
+        "ili_offset": "ili-30-02416390-a",
+        "glosa": "permitindo pouco se toda a luz passar por causa da espessura da matéria\n",
+        "decision": "UF",
+        "export_gloss": ""
+      },
+      {
+        "ili_offset": "ili-30-04941453-n",
+        "glosa": "o valor por unidade de tamanho\n",
+        "decision": "UF",
+        "export_gloss": "o valor por unidade de tamanho\n"
+      },
+      {
+        "ili_offset": "ili-30-05088804-n",
+        "glosa": "a propriedade espacial de sendo amontoados\n",
+        "decision": "RT",
+        "export_gloss": "a propriedade espacial de sendo amontoados\n"
+      }
+    ],
+    "admitted_offsets": [
+      "ili-30-00539009-a",
+      "ili-30-01185264-a",
+      "ili-30-01513776-a",
+      "ili-30-01771839-a",
+      "ili-30-02416390-a",
+      "ili-30-04941453-n",
+      "ili-30-05088804-n"
+    ],
+    "excluded_offsets": [
+      "ili-30-00016135-a"
+    ],
+    "invalid": [],
+    "flagged_no_ili": []
+  },
+  "stage2_seeds": {
+    "denso": {
+      "display": "denso",
+      "offsets": [
+        "ili-30-00539009-a",
+        "ili-30-01185264-a",
+        "ili-30-01513776-a",
+        "ili-30-01771839-a",
+        "ili-30-02416390-a"
+      ]
+    },
+    "densidade": {
+      "display": "densidade",
+      "offsets": [
+        "ili-30-04941453-n",
+        "ili-30-05088804-n"
+      ]
+    },
+    "concentracao": {
+      "display": "concentração",
+      "offsets": [
+        "ili-30-05088804-n"
+      ]
+    }
+  },
+  "stage3": {
+    "contrast": {},
+    "rt_uf": {},
+    "family": {
+      "denso": {
+        "display": "denso",
+        "via": "derivationally related form",
+        "source_ili": "ili-30-04941453-n",
+        "target_gloss": "com alta densidade relativa ou gravidade específica\n"
+      }
+    },
+    "BT": {},
+    "NT": {
+      "absorvancia": {
+        "display": "absorvância",
+        "via": "hyponym",
+        "source_ili": "ili-30-04941453-n",
+        "target_gloss": "uma medida da extensão a que uma substância transmite luz ou outra radiação eletromagnética (física)\n"
+      }
+    },
+    "attribute": {}
+  },
+  "dropped_no_lemma": 80,
+  "sinalizacao": {},
+  "stage4_excluded": {},
+  "stage5": {
+    "admitted": {
+      "denso": {
+        "display": "denso",
+        "offsets": [
+          "ili-30-00539009-a",
+          "ili-30-01185264-a",
+          "ili-30-01513776-a",
+          "ili-30-01771839-a",
+          "ili-30-02416390-a"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2) + forma derivada (família)",
+        "via": "derivationally related form",
+        "status": "UF",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "ili-30-02416390-a"
+      },
+      "densidade": {
+        "display": "densidade",
+        "offsets": [
+          "ili-30-04941453-n",
+          "ili-30-05088804-n"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2)",
+        "status": "UF",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "ili-30-04941453-n"
+      },
+      "concentracao": {
+        "display": "concentração",
+        "offsets": [
+          "ili-30-05088804-n"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2)",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "ili-30-05088804-n"
+      }
+    },
+    "pending": {
+      "absorvancia": {
+        "display": "absorvância",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      }
+    }
+  },
+  "family": {
+    "denso": {
+      "display": "denso",
+      "via": "derivationally related form",
+      "source_ili": "ili-30-04941453-n",
+      "target_gloss": "com alta densidade relativa ou gravidade específica\n"
+    }
+  },
+  "skos": {
+    "UF": [
+      "densidade",
+      "denso"
+    ],
+    "RT": [
+      "concentração"
+    ]
+  },
+  "provenance": [
+    {
+      "termo": "denso",
+      "estatuto": "UF",
+      "eixo": "densidade",
+      "via": "derivationally related form",
+      "offsets_ili": [
+        "ili-30-00539009-a",
+        "ili-30-01185264-a",
+        "ili-30-01513776-a",
+        "ili-30-01771839-a",
+        "ili-30-02416390-a"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "definicao": "",
+      "estrutural": "",
+      "gloss": "tendo componentes de perto amontoados\n"
+    },
+    {
+      "termo": "densidade",
+      "estatuto": "UF",
+      "eixo": "densidade",
+      "via": "seed (Etapa 1/2)",
+      "offsets_ili": [
+        "ili-30-04941453-n",
+        "ili-30-05088804-n"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "definicao": "",
+      "estrutural": "",
+      "gloss": "o valor por unidade de tamanho\n"
+    },
+    {
+      "termo": "concentração",
+      "estatuto": "RT",
+      "eixo": "densidade",
+      "via": "seed (Etapa 1/2)",
+      "offsets_ili": [
+        "ili-30-05088804-n"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "definicao": "",
+      "estrutural": "",
+      "gloss": "a propriedade espacial de sendo amontoados\n"
+    }
+  ],
+  "attribute_terms": [],
+  "assertions": [
+    {
+      "stage": "Etapa 1",
+      "text": "Todo o synset admitido tem ili_offset e glosa mapeada ao eixo.",
+      "passed": false,
+      "evidence": "glosa não-ancorada/incompleta: ['ili-30-00539009-a', 'ili-30-01513776-a', 'ili-30-02416390-a', 'ili-30-04941453-n']"
+    },
+    {
+      "stage": "Etapa 1",
+      "text": "Nenhum synset off-axis (exclude) figura na lista branca admitida.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Etapa 1",
+      "text": "A lista branca é persistida por offset ILI e os offsets são únicos.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "ILI",
+      "text": "Nenhum id oewn-/por- é usado como chave de junção; a chave é o ILI.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "ILI",
+      "text": "Synsets sem ili_offset são sinalizados (não descartados em silêncio).",
+      "passed": true,
+      "evidence": "nenhum synset sem ILI no export"
+    },
+    {
+      "stage": "Etapa 2",
+      "text": "Os sinónimos colhidos provêm exclusivamente de synsets admitidos.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Etapa 3",
+      "text": "Alvos de relação são tipados pelo mapeamento; «(no lemma)» nunca admitido.",
+      "passed": true,
+      "evidence": "OK (80 alvos «(no lemma)» descartados)"
+    },
+    {
+      "stage": "Etapa 4",
+      "text": "«(no lemma)», colocações e termos só de relação não-nomeada (sem corroboração) são excluídos.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Etapa 5",
+      "text": "Cada admitido tem estatuto∈{UF,RT,BT,NT} (garantia calculada a jusante; atributo = evidência).",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Garantia",
+      "text": "Termos com garantia «estipulativa» têm definição E relação estrutural.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Consistência",
+      "text": "Nenhum termo é UF de duas classes com owl:disjointWith entre si.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Consistência",
+      "text": "Nenhum estatuto de evidência (contraste/atributo) em admitidos.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Serialização",
+      "passed": true,
+      "text": "X.skos.ttl analisa com rdflib e tem a contagem de triplos esperada.",
+      "evidence": "triplos esperados=9, analisados=9"
+    }
+  ],
+  "all_passed": false,
+  "skos_triples": 9,
+  "_ttl_ok": true,
+  "_signals_sidelined": 11
+}

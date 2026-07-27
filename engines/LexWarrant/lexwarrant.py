@@ -40,31 +40,32 @@ from datetime import datetime
 from pathlib import Path
 from typing import Optional
 
-# Fixed columns — WordNet present from the start (bi-now, tri-by-design).
-SOURCE_COLUMNS = ["ONTO", "PULO", "WordNet"]
+# Fixed columns — OWN-PT is distinct from WordNet/OEWN (different authorship).
+SOURCE_COLUMNS = ["ONTO", "PULO", "OWN-PT", "WordNet"]
 ABSENT = "—"
 
-ADMIT_STATUSES = {"UF", "RT", "contraste", "atributo", "BT", "NT"}
+ADMIT_STATUSES = {"UF", "RT", "BT", "NT"}
 SIGNAL = "sinalizacao"
 PENDING = "pendente"           # ONTO/PULO stage5 seeds awaiting human adjudication
-NONADMIT = {SIGNAL, PENDING}   # visible in the matrix, but never counted as admitted
+ATESTATO = "atestado"          # OWN-PT entry warrant — NOT an admit status
+# Evidence-only / legacy (never counted as admitted; never proposta_final).
+EVIDENCE_STATUSES = frozenset({
+    "atributo", "oposicao", "vizinha", "contraste",
+})
+NONADMIT = frozenset({SIGNAL, PENDING, ATESTATO}) | EVIDENCE_STATUSES
+# Resources that project Princeton WordNet's conceptual structure (PWN-derived).
+PWN_DERIVED_SOURCES = frozenset({"PULO", "OWN-PT"})
+PWN_DERIVED_NOTE = (
+    "concordância entre recursos derivados da mesma estrutura conceptual; "
+    "não constitui atestação independente do português"
+)
 
 # --- Reticulado de estatutos para COMPARAÇÃO de veredicto --------------------
-# PULO usa estatutos ricos {UF,RT,contraste,BT,NT,atributo}; ONTO só
-# {UF,RT,contraste}. A igualdade estrita fabricava «divergência de relação»
-# espúria sempre que o PULO marcava atributo/BT/NT. A projecção DECLARADA
-# abaixo alimenta APENAS a comparação do veredicto; o estatuto rico original
-# permanece intacto em toda a saída (matriz, JSON, colunas por-fonte).
-#   atributo   → compatível com {UF, RT}  (lado da equivalência/associação)
-#   BT / NT    → neutro (omitido da comparação)
-#   UF/RT/contraste → eles próprios (contraste fica isolado: oposição genuína)
-# Convergência = intersecção não-vazia dos conjuntos projectados;
-# divergência = intersecção vazia (ex.: atributo/UF/RT vs contraste).
+# Vocabulário admitido: {UF,RT,BT,NT}. atributo/oposicao/vizinha = evidência
+# (não entram em ADMIT_STATUSES). BT/NT neutros na comparação.
 STATUS_COMPAT: dict = {
     "UF": frozenset({"UF"}),
     "RT": frozenset({"RT"}),
-    "contraste": frozenset({"contraste"}),
-    "atributo": frozenset({"UF", "RT"}),
     "BT": None,     # neutro — omitido da comparação
     "NT": None,     # neutro — omitido da comparação
 }
@@ -203,6 +204,7 @@ class Entry:
     unmapped_offsets: list = field(default_factory=list)
     resources: list = field(default_factory=list)
     reason: str = ""
+    gloss: str = ""  # optional; gates weak(term) joins under gloss_gated mode
 
 
 @dataclass
@@ -213,7 +215,11 @@ class Source:
 
 
 def infer_label(path: Path) -> str:
+    name = path.name.lower()
     low = str(path).lower()
+    # OWN-PT before WordNet — filename contains both patterns otherwise.
+    if "own-pt" in name or "ownpt" in name or ".own-pt." in name:
+        return "OWN-PT"
     if "pulo" in low:
         return "PULO"
     if "onto" in low:
@@ -368,7 +374,33 @@ def load_source(path: Path, label: Optional[str] = None) -> Source:
             guarantee=list(prov.get("garantia", []) or prov.get("guarantee", [])),
             decisive_test=prov.get("teste_decisivo", "") or prov.get("decisive_test", ""),
             canon_ilis=canon, raw_offsets=list(offsets), unmapped_offsets=unmapped,
-            resources=resources))
+            resources=resources,
+            gloss=str(prov.get("gloss") or prov.get("definition") or ""),
+        ))
+
+    # OWN-PT attestation (entry warrant, never UF/RT)
+    atest = data.get("atestacao", {})
+    if isinstance(atest, dict):
+        lex = data.get("lexicon") or ""
+        for nw, s in atest.items():
+            term = s.get("display", nw)
+            tn = norm_term(term)
+            if tn in seen:
+                continue
+            seen.add(tn)
+            offsets = s.get("offsets_ili") or s.get("offsets") or []
+            canon, unmapped = _offsets_to_canon(offsets)
+            lex_s = s.get("lexicon") or lex
+            resources = [f"{label}:atestado"]
+            if lex_s:
+                resources.append(f"{label}:lexicon={lex_s}")
+            if s.get("reason"):
+                resources.append(f"{label}:{s['reason']}")
+            entries.append(Entry(
+                source=label, term=term, term_norm=tn,
+                estatuto=ATESTATO, reason=s.get("reason", ""),
+                canon_ilis=canon, raw_offsets=list(offsets),
+                unmapped_offsets=unmapped, resources=resources))
 
     # flagged senses (present in PULO as top-level `sinalizacao`)
     sina = data.get("sinalizacao", {})
@@ -387,7 +419,9 @@ def load_source(path: Path, label: Optional[str] = None) -> Source:
                 source=label, term=term, term_norm=tn,
                 estatuto=SIGNAL, reason=s.get("reason", ""),
                 canon_ilis=canon, raw_offsets=list(offsets), unmapped_offsets=unmapped,
-                resources=[f"{label}:sinalização({s.get('reason','')})"]))
+                resources=[f"{label}:sinalização({s.get('reason','')})"],
+                gloss=str(s.get("gloss") or s.get("definition") or ""),
+            ))
 
     # un-adjudicated seeds (ONTO/PULO stage5.pending) — reported, never admitted.
     # Without this, a class where nothing was admitted yet (e.g. ONTO here) would
@@ -466,6 +500,8 @@ class Concept:
     ili_by_source: dict = field(default_factory=dict)  # label -> [canonical ILIs]
     unmapped_flag: bool = False   # True iff unmapped offsets blocked an ILI join
     status_projection: dict = field(default_factory=dict)  # label -> "rico→projectado"
+    # Qualifier (not a verdict label): set when PULO↔OWN-PT ILI pair is PWN-derived.
+    recursos_derivados: Optional[str] = None
 
 
 def _pick_display(entries: list[Entry]) -> str:
@@ -487,6 +523,7 @@ def build_concept(entries: list[Entry], join_kind: str, policy: str,
 
     admit = {s: st for s, st in statuses.items() if st in ADMIT_STATUSES}
     signal = {s: st for s, st in statuses.items() if st == SIGNAL}
+    atestado = {s: st for s, st in statuses.items() if st == ATESTATO}
     distinct = set(admit.values())
 
     # Projecção declarada no reticulado — alimenta SÓ a comparação do veredicto.
@@ -510,64 +547,64 @@ def build_concept(entries: list[Entry], join_kind: str, policy: str,
     n_sources = len(statuses)
     if join_kind == "ili":
         join = "ili" if n_sources >= 2 else "single"
+    elif join_kind == "single":
+        join = "single"
     else:
         join = "weak(term)" if n_sources >= 2 else "single"
 
-    if not admit and signal:
+    if not admit and (signal or atestado):
         veredicto = "sinalização"
     elif len(admit) >= 2 and (proj_inter is None or proj_inter):
         # «convergência plena» is the most defensible tier and REQUIRES a genuine
         # ILI join (equal or declared-equivalent). Multi-source agreement that
         # rests only on a term match is the weaker «convergência (termo)».
-        # Convergência = intersecção NÃO-vazia dos estatutos projectados
-        # (igualdade estrita dos brutos deixa de ser exigida).
         veredicto = "convergência plena" if join == "ili" else "convergência (termo)"
     elif len(admit) >= 2:
-        # intersecção vazia dos projectados = desacordo genuíno
-        # (ex.: atributo/UF/RT vs contraste)
         veredicto = "divergência de relação"
     elif len(admit) == 1:
         veredicto = "fonte única"
     else:
         veredicto = "sinalização"
 
+    # Opção C: PULO admitido + OWN-PT atestado, junção ILI → convergência (sentido).
+    # OWN-PT NÃO recebe estatuto admissivo; o qualificador PWN regista a distinção.
+    pulo_ownpt_ili = (
+        join == "ili"
+        and "PULO" in admit
+        and statuses.get("OWN-PT") == ATESTATO
+    )
+    if pulo_ownpt_ili and veredicto in ("fonte única", "sinalização"):
+        veredicto = "convergência (sentido)"
+
     # proposta_final — a suggestion only; never auto-admission
     proposta: Optional[str] = None
     proposta_dual_note: Optional[str] = None
     if policy == "conservative":
-        if veredicto in ("convergência plena", "convergência (termo)"):
+        if veredicto in ("convergência plena", "convergência (termo)",
+                         "convergência (sentido)"):
             if len(distinct) == 1:
                 proposta = next(iter(distinct))
-            else:
-                # estatutos brutos diferem mas os projectados intersectam:
-                # propor um estatuto REALMENTE presente numa fonte, o mais
-                # específico dentro da intersecção (nunca um valor inventado).
+            elif distinct:
                 cands = [st for st in admit.values()
                          if project_status_for_comparison(st) is not None
                          and (proj_inter is None
                               or project_status_for_comparison(st) & proj_inter)]
                 cands.sort(key=lambda st: (len(project_status_for_comparison(st)), st))
                 proposta = cands[0] if cands else next(iter(distinct))
-                # dupla natureza: se uma fonte via o termo como «atributo»
-                # (nome de qualidade → :temAtributo), a proposta projectada
-                # não pode apagar esse destino — fica registado em nota.
-                attr_srcs = sorted(s for s, st in admit.items()
-                                   if st == "atributo")
-                if attr_srcs and proposta != "atributo":
-                    proposta_dual_note = (
-                        f"proposta «{proposta}» com dupla natureza: "
-                        + ", ".join(attr_srcs)
-                        + " via «atributo» (destino :temAtributo preservado)")
         elif veredicto == "fonte única":
             proposta = next(iter(admit.values()))
         else:
-            proposta = None                      # any divergence / signal → null
+            proposta = None
     else:  # informed
         if admit:
             cnt = Counter(admit.values())
             top, n = cnt.most_common(1)[0]
             ties = [k for k, v in cnt.items() if v == n]
             proposta = top if len(ties) == 1 else None
+    # Guard: never propose evidence-only / atestado / legacy contraste.
+    if (proposta in EVIDENCE_STATUSES or proposta == "contraste"
+            or proposta == ATESTATO or proposta == SIGNAL):
+        proposta = None
 
     divergences = []
     if veredicto == "divergência de relação":
@@ -592,6 +629,13 @@ def build_concept(entries: list[Entry], join_kind: str, policy: str,
                     via_table_pairs.append(f"{a} ↔ {b}")
 
     notes: list[str] = []
+    # Emenda 2 — marca obrigatória em toda convergência ILI PULO↔OWN-PT.
+    recursos_derivados: Optional[str] = None
+    present = set(statuses)
+    if join == "ili" and PWN_DERIVED_SOURCES <= present:
+        recursos_derivados = "PWN"
+        notes.append(f"recursos_derivados: PWN — {PWN_DERIVED_NOTE}")
+
     if join == "ili" and via_table_pairs:
         notes.append("junção por ILI via tabela de equivalência: "
                      + "; ".join(sorted(set(via_table_pairs))))
@@ -604,15 +648,15 @@ def build_concept(entries: list[Entry], join_kind: str, policy: str,
     if signal and admit:
         notes.append("sinalizado por " + ", ".join(sorted(signal)) +
                      " enquanto admitido por " + ", ".join(sorted(admit)))
+    if atestado and admit and veredicto != "convergência (sentido)":
+        notes.append("atestado por " + ", ".join(sorted(atestado)) +
+                     " enquanto admitido por " + ", ".join(sorted(admit)))
     if status_projection:
-        # auditoria: a comparação usou o reticulado declarado, nunca em silêncio
         notes.append("projecção p/ comparação: "
                      + "; ".join(f"{s}: {p}" for s, p
                                  in sorted(status_projection.items())))
     if proposta_dual_note:
         notes.append(proposta_dual_note)
-    # Unmapped internal offsets only matter when they actually blocked a join;
-    # once a concept is ILI-joined (incl. via the table) they're not a problem.
     unmapped = sorted({o for e in entries for o in e.unmapped_offsets})
     unmapped_flag = bool(unmapped) and join != "ili"
     if unmapped_flag:
@@ -627,13 +671,95 @@ def build_concept(entries: list[Entry], join_kind: str, policy: str,
                    notes=notes,
                    term_norm=(entries[0].term_norm if entries else ""),
                    ili_by_source=ili_by_source, unmapped_flag=unmapped_flag,
-                   status_projection=status_projection)
+                   status_projection=status_projection,
+                   recursos_derivados=recursos_derivados)
+
+
+def _gloss_jaccard(a: str, b: str) -> float:
+    """Minimal content-token Jaccard (no external deps) for weak-join gating."""
+    import re
+    import unicodedata
+
+    def toks(text: str) -> set[str]:
+        if not text:
+            return set()
+        nfkd = unicodedata.normalize("NFKD", text)
+        folded = "".join(c for c in nfkd if not unicodedata.combining(c)).casefold()
+        stop = {
+            "a", "o", "os", "as", "um", "uma", "de", "do", "da", "dos", "das",
+            "e", "ou", "em", "no", "na", "the", "an", "of", "and", "or", "in",
+            "on", "to", "for", "with", "that", "this", "is", "are", "be", "as",
+        }
+        return {
+            t for t in re.findall(r"[a-z0-9]+", folded)
+            if len(t) > 2 and t not in stop
+        }
+
+    ta, tb = toks(a), toks(b)
+    if not ta or not tb:
+        return 0.0
+    return len(ta & tb) / len(ta | tb)
+
+
+def _weak_term_allowed(
+    entries: list[Entry],
+    *,
+    weak_term_mode: str,
+    gloss_min: float,
+) -> bool:
+    """Gate weak(term) merges to reduce polysemy false joins.
+
+    Modes:
+      * ``off`` — never weak-join across sources
+      * ``gloss_gated`` (default) — require gloss Jaccard ≥ gloss_min between
+        at least one pair of entries from different sources (both glosses non-empty)
+      * ``legacy`` — always allow (old behaviour)
+    """
+    mode = (weak_term_mode or "gloss_gated").strip().lower()
+    if mode in ("off", "none", "false", "0"):
+        return False
+    if mode in ("legacy", "always", "on"):
+        return True
+    # gloss_gated
+    by_src: dict[str, list[Entry]] = defaultdict(list)
+    for e in entries:
+        by_src[e.source].append(e)
+    sources = list(by_src)
+    if len(sources) < 2:
+        return False
+    for i, sa in enumerate(sources):
+        for sb in sources[i + 1 :]:
+            for ea in by_src[sa]:
+                for eb in by_src[sb]:
+                    ga, gb = (ea.gloss or "").strip(), (eb.gloss or "").strip()
+                    if not ga or not gb:
+                        continue
+                    if _gloss_jaccard(ga, gb) >= gloss_min:
+                        return True
+    return False
+
+
+def _emit_singles(entries: list[Entry], policy: str, equiv: Optional[EquivMap],
+                  concepts: list) -> None:
+    """Emit one concept per source (no cross-source weak merge)."""
+    by_src: dict[str, list[Entry]] = defaultdict(list)
+    for e in entries:
+        by_src[e.source].append(e)
+    for group in by_src.values():
+        kind = "ili" if any(e.canon_ilis for e in group) else "single"
+        concepts.append(build_concept(group, kind, policy, equiv))
 
 
 def build_concordance(sources: list[Source], policy: str,
-                      equiv: Optional[EquivMap] = None) -> tuple[list[Concept], int]:
+                      equiv: Optional[EquivMap] = None,
+                      *,
+                      weak_term_mode: str = "gloss_gated",
+                      gloss_min: float = 0.12) -> tuple[list[Concept], int]:
     """Returns (concepts, descartados_pendentes). Concepts supported ONLY by
-    'pendente' statuses across every source are dropped and counted, never listed."""
+    'pendente' statuses across every source are dropped and counted, never listed.
+
+    ``weak_term_mode``: ``gloss_gated`` (default) | ``off`` | ``legacy``.
+    """
     by_term: dict[str, list[Entry]] = defaultdict(list)
     for src in sources:
         for e in src.entries:
@@ -668,12 +794,33 @@ def build_concordance(sources: list[Source], policy: str,
         leftover = [e for comp in single_src for e in comp] + noili_entries
         if leftover:
             if len({e.source for e in leftover}) >= 2:
-                concepts.append(build_concept(leftover, "weak(term)", policy, equiv))
+                if _weak_term_allowed(
+                    leftover, weak_term_mode=weak_term_mode, gloss_min=gloss_min
+                ):
+                    concepts.append(
+                        build_concept(leftover, "weak(term)", policy, equiv)
+                    )
+                else:
+                    _emit_singles(leftover, policy, equiv, concepts)
             else:
                 for comp in single_src:
                     concepts.append(build_concept(comp, "ili", policy, equiv))
                 if noili_entries:
-                    concepts.append(build_concept(noili_entries, "weak(term)", policy, equiv))
+                    if len({e.source for e in noili_entries}) >= 2:
+                        if _weak_term_allowed(
+                            noili_entries,
+                            weak_term_mode=weak_term_mode,
+                            gloss_min=gloss_min,
+                        ):
+                            concepts.append(
+                                build_concept(noili_entries, "weak(term)", policy, equiv)
+                            )
+                        else:
+                            _emit_singles(noili_entries, policy, equiv, concepts)
+                    else:
+                        concepts.append(
+                            build_concept(noili_entries, "weak(term)", policy, equiv)
+                        )
 
     concepts.sort(key=lambda c: (c.veredicto, c.term.casefold()))
     return concepts, descartados_pendentes
@@ -730,8 +877,8 @@ def run_asserts(concepts, sources, source_labels, policy, raw_entries,
     all_offsets = {o for e in raw_entries for o in e.raw_offsets}
     mapped_universe = {canonical_ili(o)[0] for o in all_offsets if canonical_ili(o)[1]}
     no_invention = all(i in mapped_universe for c in concepts for i in c.ilis)
-    add("T3", "Nenhum ILI é fabricado; mapeamento só pela tabela declarada; "
-        "pares não-mapeados são flagueados.",
+    add("T3", "Nenhum ILI é fabricado; junção OEWN↔PULO só via CILI; "
+        "pares sem âncora CILI ficam sem junção ILI (não fabricados).",
         fake == (None, False) and no_invention,
         f"bogus→{fake}; unmapped_flag={unmapped_flagged}")
 
@@ -746,20 +893,27 @@ def run_asserts(concepts, sources, source_labels, policy, raw_entries,
     add("T4", "Cada divergência de estatuto é registada por-fonte (sem colapso em contagem).",
         t4, f"{len(div)} divergência(s)")
 
-    # T5 — single-source term kept as 'fonte única'; nothing admitted is dropped.
-    t5_bad = [c.term for c in concepts
-              if len({s for s, st in c.sources.items() if st in ADMIT_STATUSES}) == 1
-              and c.veredicto != "fonte única"]
+    # T5 — every motor admit appears in the matrix (Onto fora da admissão).
+    # OWN-PT atestado / junção ILI podem mudar o veredicto sem ser «fonte única».
     admit_pairs_in = {(e.source, e.term_norm) for e in raw_entries
                       if e.estatuto in ADMIT_STATUSES}
     admit_pairs_out = {(s, c.term_norm) for c in concepts
                        for s, st in c.sources.items() if st in ADMIT_STATUSES}
     missing = admit_pairs_in - admit_pairs_out
-    add("T5", "Termo de fonte única aparece como «fonte única» e nenhum termo "
-        "admitido é descartado.",
-        not t5_bad and not missing,
-        "OK" if (not t5_bad and not missing)
-        else f"violações={t5_bad}; em falta={sorted(missing)}")
+    n_admit = len(admit_pairs_in)
+    n_matrix_admit = len(admit_pairs_out)
+    t5_ok = not missing
+    add(
+        "T5",
+        "Nenhum termo admitido pelos motores é descartado da matriz "
+        "(PULO; OWN-PT/WordNet corroboram; Onto = descoberta)",
+        t5_ok,
+        (
+            f"{n_admit} admitidos / {n_matrix_admit} em matriz"
+            if t5_ok
+            else f"em falta={sorted(missing)}"
+        ),
+    )
 
     # T6 — absent WordNet ⇒ column all '—'
     if "WordNet" not in source_labels:
@@ -791,12 +945,24 @@ def run_asserts(concepts, sources, source_labels, policy, raw_entries,
     add("T8", "Entradas de classes diferentes são recusadas com erro claro.", t8,
         "ClassMismatch levantada para classes mistas")
 
-    # T10 — «convergência plena» requires an ILI join (equal or table-declared).
+    # T10 — ILI-tier verdicts require an ILI join (equal or table-declared).
     t10_bad = [c.term for c in concepts
-               if c.veredicto == "convergência plena" and c.join != "ili"]
-    add("T10", "«Convergência plena» exige junção por ILI (o conjunto mais "
-        "defensável nunca assenta só em weak(term)).",
+               if c.veredicto in ("convergência plena", "convergência (sentido)")
+               and c.join != "ili"]
+    add("T10", "«Convergência plena» / «convergência (sentido)» exigem junção "
+        "por ILI (nunca só weak(term)).",
         not t10_bad, "OK" if not t10_bad else f"violações: {t10_bad}")
+
+    # T10b — PULO↔OWN-PT ILI pairs always carry recursos_derivados:PWN.
+    t10b_bad = [
+        c.term for c in concepts
+        if c.join == "ili"
+        and PWN_DERIVED_SOURCES <= set(c.sources)
+        and c.recursos_derivados != "PWN"
+    ]
+    add("T10b", "Convergência ILI PULO↔OWN-PT marca sempre "
+        "recursos_derivados:«PWN».",
+        not t10b_bad, "OK" if not t10b_bad else f"sem marca: {t10b_bad}")
 
     # T11 — no pendente-only concept survives as a matrix row (they're counted).
     t11_bad = [c.term for c in concepts if not c.sources]
@@ -818,6 +984,21 @@ def run_asserts(concepts, sources, source_labels, policy, raw_entries,
         return A
     add("T9", "concordance.json faz round-trip (contagens de term/ili estáveis).",
         t9, f"{len(concepts)} conceitos")
+
+    # T13 (light) — matrix must not retain legacy «contraste» cells / proposals.
+    # Full migration check (decisions.json) lives in unit tests, not here.
+    t13_hits = []
+    for c in concepts:
+        for src, st in c.sources.items():
+            if st == "contraste":
+                t13_hits.append(f"{c.term}/{src}")
+        if c.proposta_final == "contraste":
+            t13_hits.append(f"{c.term}/proposta_final")
+    add("T13",
+        "Nenhuma célula nem proposta_final com valor «contraste» na matriz "
+        "(migração completa: ver teste unitário de decisions).",
+        not t13_hits,
+        "OK" if not t13_hits else f"resíduos: {t13_hits}")
     return A
 
 
@@ -826,7 +1007,7 @@ def run_asserts(concepts, sources, source_labels, policy, raw_entries,
 # ---------------------------------------------------------------------------
 def concept_to_json(c: Concept) -> dict:
     extra_cols = sorted(set(c.sources) - set(SOURCE_COLUMNS))
-    return {
+    out = {
         "term": c.term,
         "ili": c.ilis,
         "sources": {col: c.sources.get(col, ABSENT)
@@ -840,11 +1021,65 @@ def concept_to_json(c: Concept) -> dict:
         "union_of_provenance": c.union_of_provenance,
         "notes": c.notes,
     }
+    if c.recursos_derivados:
+        out["recursos_derivados"] = c.recursos_derivados
+    return out
+
+
+_ANTONYM_REASON_RE = re.compile(r"material de contraste\s*\(antonym\)", re.I)
+# Sources known not to expose a consultable antonymy relation for harvest.
+_NO_ANTONYMY_SOURCES = frozenset({"ONTO", "PULO"})
+
+
+def summarize_auto_contrast(sources: list[Source]) -> dict:
+    """R6 — coverage of automatic antonym harvest (read-only; no collection change)."""
+    per_source: dict[str, dict] = {}
+    anchored_with_contrast: set[str] = set()
+    anchored_ilis: set[str] = set()
+
+    for src in sources:
+        ants = [
+            e for e in src.entries
+            if e.estatuto == SIGNAL and _ANTONYM_REASON_RE.search(e.reason or "")
+        ]
+        exposes = src.label not in _NO_ANTONYMY_SOURCES
+        per_source[src.label] = {
+            "antonyms_auto": len(ants),
+            "exposes_antonymy": exposes,
+            "note": (
+                "antonímia consultável (OEWN)" if exposes
+                else "fonte sem antonímia consultável (esperado)"
+            ),
+            "terms": sorted({e.term for e in ants}),
+        }
+        for e in ants:
+            for ili in e.canon_ilis:
+                anchored_with_contrast.add(ili)
+            # also parse «de iNNNN» from reason when offsets empty
+            m = re.search(r"\b(i\d+)\b", e.reason or "")
+            if m:
+                anchored_with_contrast.add(f"oewn-ili:{m.group(1)}")
+
+        for e in src.entries:
+            if e.estatuto in ADMIT_STATUSES:
+                anchored_ilis.update(e.canon_ilis)
+
+    missing = sorted(anchored_ilis - anchored_with_contrast)
+    return {
+        "per_source": per_source,
+        "anchored_ilis_total": len(anchored_ilis),
+        "anchored_ilis_with_auto_contrast": sorted(anchored_with_contrast),
+        "anchored_ilis_without_auto_contrast": missing,
+        "sources_without_antonymy": sorted(
+            s for s in per_source if not per_source[s]["exposes_antonymy"]
+        ),
+    }
 
 
 def render_json(class_id, policy, source_labels, concepts, assertions,
                 descartados_pendentes: int = 0, map_path: Optional[str] = None,
-                equiv: Optional["EquivMap"] = None) -> dict:
+                equiv: Optional["EquivMap"] = None,
+                auto_contrast: Optional[dict] = None) -> dict:
     totals = Counter(c.veredicto for c in concepts)
     equiv_counts = ({"mapped": equiv.n_map, "review": equiv.n_review,
                      "unmatched": equiv.n_unmatched} if equiv is not None
@@ -864,12 +1099,15 @@ def render_json(class_id, policy, source_labels, concepts, assertions,
             "descartados_pendentes": descartados_pendentes,
             "convergencia_plena": sorted(c.term for c in concepts
                                          if c.veredicto == "convergência plena"),
+            "convergencia_sentido": sorted(c.term for c in concepts
+                                           if c.veredicto == "convergência (sentido)"),
             "convergencia_termo": sorted(c.term for c in concepts
                                          if c.veredicto == "convergência (termo)"),
             "divergences": [{"term": c.term, "sources": c.sources}
                             for c in concepts if c.veredicto == "divergência de relação"],
             "fonte_unica": sorted(c.term for c in concepts
                                   if c.veredicto == "fonte única"),
+            "auto_contrast_coverage": auto_contrast or {},
         },
         "assertions": [a.__dict__ for a in assertions],
         "all_passed": all(a.passed for a in assertions),
@@ -888,12 +1126,13 @@ def render_markdown(doc: dict, concepts) -> str:
     mp = doc.get("ili_equivalence_map")
     ec = doc.get("ili_equivalence_counts") or {}
     if doc.get("ili_equivalence_loaded"):
-        ap(f"- **Tabela de equivalência ILI:** {mp}  "
-           f"({ec.get('mapped', 0)} mapeados, {ec.get('review', 0)} revisão, "
-           f"{ec.get('unmatched', 0)} sem correspondência)")
+        src = mp or "CILI"
+        ap(f"- **Junção ILI (CILI automático):** {src}  "
+           f"({ec.get('mapped', 0)} pares CILI; "
+           f"{ec.get('unmatched', 0)} sem âncora partilhada)")
     else:
-        ap("- **Tabela de equivalência ILI:** ⚠ NÃO CARREGADA (0 pares de alta "
-           "confiança) — junções por ILI OEWN↔PULO indisponíveis; só por termo.")
+        ap("- **Junção ILI (CILI):** ⚠ sem pares — junções OEWN↔PULO por ILI "
+           "indisponíveis; só weak(term).")
     ap(f"- **Gerado:** {doc['generated']}")
     ap(f"- **Descartados (só pendentes):** "
        f"{doc['summary'].get('descartados_pendentes', 0)} "
@@ -914,12 +1153,22 @@ def render_markdown(doc: dict, concepts) -> str:
     ap(sep)
     for c in concepts:
         cells = [c.sources.get(col, ABSENT) for col in cols]
-        cell_disp = [("sinalização" if v == SIGNAL else v) for v in cells]
+        cell_disp = []
+        for v in cells:
+            if v == SIGNAL:
+                cell_disp.append("sinalização")
+            elif v == ATESTATO:
+                cell_disp.append("atestado")
+            else:
+                cell_disp.append(v)
         ili = ", ".join(c.ilis) or ABSENT
         notes = "; ".join(c.notes).replace("|", "\\|") or ""
         prop = c.proposta_final or "—"
+        verd = c.veredicto
+        if c.recursos_derivados:
+            verd = f"{verd} 〔recursos_derivados:{c.recursos_derivados}〕"
         ap(f"| {c.term} | {ili} | " + " | ".join(cell_disp)
-           + f" | {c.join} | {c.veredicto} | {prop} | {notes} |")
+           + f" | {c.join} | {verd} | {prop} | {notes} |")
     ap("")
 
     ap("## Resumo por veredicto")
@@ -928,9 +1177,38 @@ def render_markdown(doc: dict, concepts) -> str:
         ap(f"- **{k}:** {v}")
     ap("")
 
+    cov = doc["summary"].get("auto_contrast_coverage") or {}
+    ap("## Cobertura da recolha automática de contraste (R6)")
+    ap("")
+    ap("_Verificação apenas — a lógica de recolha não é alterada nesta etapa._")
+    ap("")
+    if cov:
+        for src, info in sorted((cov.get("per_source") or {}).items()):
+            ap(f"- **{src}:** {info.get('antonyms_auto', 0)} antónimo(s) auto "
+               f"— {info.get('note', '')}")
+            terms = info.get("terms") or []
+            if terms:
+                ap(f"  - termos: {', '.join(terms)}")
+        missing = cov.get("anchored_ilis_without_auto_contrast") or []
+        ap(f"- **ILIs ancorados (admitidos) sem material de contraste auto:** "
+           f"{', '.join(missing) if missing else '—(nenhum ou sem âncoras)'}")
+        no_ant = cov.get("sources_without_antonymy") or []
+        ap(f"- **Fontes sem antonímia consultável (esperado):** "
+           f"{', '.join(no_ant) if no_ant else '—'}")
+    else:
+        ap("_(sumário indisponível)_")
+    ap("")
+
     ap("## Conjunto mais defensável — «convergência plena» (requer junção por ILI)")
     conv = doc["summary"]["convergencia_plena"]
     ap(", ".join(conv) if conv else "_(nenhum — nenhuma convergência ancorada em ILI)_")
+    ap("")
+
+    cs = doc["summary"].get("convergencia_sentido", [])
+    ap("## Convergência (sentido) — PULO admitido + OWN-PT atestado (ILI partilhado)")
+    ap("_Sem estatuto simulado no OWN-PT. Pares PULO↔OWN-PT: "
+       "`recursos_derivados: PWN`._")
+    ap(", ".join(cs) if cs else "_(nenhum)_")
     ap("")
 
     ct = doc["summary"].get("convergencia_termo", [])
@@ -1005,23 +1283,26 @@ def _report_equiv_load(equiv: Optional["EquivMap"], map_path: Optional[Path]) ->
               f"{equiv.n_unmatched} unmatched  (tabela: {equiv.source_path})")
         return
     print("=" * 72)
-    print("⚠  TABELA DE EQUIVALÊNCIA NÃO CARREGADA (0 pares ILI utilizáveis).")
+    print("AVISO: TABELA DE EQUIVALENCIA NAO CARREGADA (0 pares ILI utilizaveis).")
     if map_path is None:
-        print("   Nenhum ili_equivalence.json encontrado junto às fontes/saída.")
+        print("   Nenhum ili_equivalence.json encontrado junto as fontes/saida.")
     elif equiv is None:
-        print(f"   Ficheiro não encontrado: {map_path}")
+        print(f"   Ficheiro nao encontrado: {map_path}")
     else:
         print(f"   {map_path}: {equiv.n_map} mapped, {equiv.n_review} review, "
               f"{equiv.n_unmatched} unmatched.")
-        print("   Há 0 pares de ALTA confiança — as junções OEWN↔PULO por ILI NÃO "
-              "estão disponíveis.")
-    print("   As fontes só poderão juntar-se por TERMO (weak) — fiabilidade menor.")
+        print("   Ha 0 pares de ALTA confianca — as juncoes OEWN<->PULO por ILI NAO "
+              "estao disponiveis.")
+    print("   As fontes so poderao juntar-se por TERMO (weak) — fiabilidade menor.")
     print("=" * 72)
 
 
 def run_report(input_specs: list[tuple[Optional[str], Path]], outdir: Path,
                policy: str = "conservative",
-               map_path: Optional[Path] = None) -> dict:
+               map_path: Optional[Path] = None,
+               equiv: Optional["EquivMap"] = None,
+               weak_term_mode: str = "gloss_gated",
+               gloss_min: float = 0.12) -> dict:
     sources = [load_source(path, label) for label, path in input_specs]
     if len(sources) < 2:
         raise ValueError("São necessárias pelo menos 2 fontes (result.json).")
@@ -1029,12 +1310,19 @@ def run_report(input_specs: list[tuple[Optional[str], Path]], outdir: Path,
     source_labels = [s.label for s in sources]
     raw_entries = [e for s in sources for e in s.entries]
 
-    if map_path is None:
-        map_path = _discover_map(input_specs, outdir)
-    equiv = EquivMap.load(map_path) if map_path and Path(map_path).exists() else None
-    _report_equiv_load(equiv, map_path)
+    if equiv is None:
+        if map_path is None:
+            map_path = _discover_map(input_specs, outdir)
+        equiv = EquivMap.load(map_path) if map_path and Path(map_path).exists() else None
+    elif map_path is None and getattr(equiv, "source_path", None):
+        map_path = Path(equiv.source_path)
+    _report_equiv_load(equiv, Path(map_path) if map_path else None)
 
-    concepts, descartados_pendentes = build_concordance(sources, policy, equiv)
+    concepts, descartados_pendentes = build_concordance(
+        sources, policy, equiv,
+        weak_term_mode=weak_term_mode, gloss_min=gloss_min,
+    )
+    auto_contrast = summarize_auto_contrast(sources)
 
     outdir.mkdir(parents=True, exist_ok=True)
     json_path = outdir / f"{class_id}.concordance.json"
@@ -1043,14 +1331,16 @@ def run_report(input_specs: list[tuple[Optional[str], Path]], outdir: Path,
     # write JSON first (T9 re-parses it), then run asserts, then rewrite with asserts.
     doc = render_json(class_id, policy, source_labels, concepts, assertions=[],
                       descartados_pendentes=descartados_pendentes,
-                      map_path=str(map_path) if map_path else None, equiv=equiv)
+                      map_path=str(map_path) if map_path else None, equiv=equiv,
+                      auto_contrast=auto_contrast)
     json_path.write_text(json.dumps(doc, ensure_ascii=False, indent=2), encoding="utf-8")
 
     assertions = run_asserts(concepts, sources, source_labels, policy,
                              raw_entries, json_path)
     doc = render_json(class_id, policy, source_labels, concepts, assertions,
                       descartados_pendentes=descartados_pendentes,
-                      map_path=str(map_path) if map_path else None, equiv=equiv)
+                      map_path=str(map_path) if map_path else None, equiv=equiv,
+                      auto_contrast=auto_contrast)
     json_path.write_text(json.dumps(doc, ensure_ascii=False, indent=2), encoding="utf-8")
     md_path.write_text(render_markdown(doc, concepts), encoding="utf-8")
 

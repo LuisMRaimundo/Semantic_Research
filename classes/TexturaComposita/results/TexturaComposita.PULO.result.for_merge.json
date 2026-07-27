@@ -2,7 +2,7 @@
   "class_id": "TexturaComposita",
   "pref_label": "TexturaCompósita",
   "axis": "heterogeneidade / composição de materiais ou partes distintas",
-  "generated": "2026-07-18T19:59:09",
+  "generated": "2026-07-27T12:39:24",
   "source": "PULO / WordNet.PT export",
   "stage1": {
     "admitted": [
@@ -10,7 +10,7 @@
         "ili_offset": "ili-30-14818238-n",
         "glosa": "(Química) uma substância formada por união química de duas ou mais elementos ou ingredientes na proporção definida por peso\n",
         "decision": "UF",
-        "export_gloss": "(Química) uma substância formada por união química de duas ou mais elementos ou ingredientes na proporção definida por peso\n"
+        "export_gloss": ""
       }
     ],
     "admitted_offsets": [
@@ -34,127 +34,16 @@
   "stage3": {
     "contrast": {},
     "rt_uf": {},
-    "family": {
-      "compor": {
-        "display": "compor",
-        "via": "derivationally related form",
-        "source_ili": "ili-30-14818238-n",
-        "target_gloss": "criar por mistura ou combinação de\n"
-      }
-    },
+    "family": {},
     "BT": {},
-    "NT": {
-      "acido": {
-        "display": "ácido",
-        "via": "hyponym",
-        "source_ili": "ili-30-14818238-n",
-        "target_gloss": "qualquer um de vários compostos solúveis em água que têm um gosto amargo e capaz de transformar tornassol vermelho e reagir com uma base para formar um sal\n"
-      },
-      "base": {
-        "display": "base",
-        "via": "hyponym",
-        "source_ili": "ili-30-14818238-n",
-        "target_gloss": "qualquer um de vários compostos solúveis em água, capazes de transformar tornassol azul e reagir com um ácido para formar um sal e de água\n"
-      },
-      "azida": {
-        "display": "azida",
-        "via": "hyponym",
-        "source_ili": "ili-30-14818238-n",
-        "target_gloss": "um composto químico que contém o grupo azido combinado com um elemento ou radical\n"
-      },
-      "cianamida": {
-        "display": "cianamida",
-        "via": "hyponym",
-        "source_ili": "ili-30-14818238-n",
-        "target_gloss": "um composto utilizado como um fertilizante e como uma fonte de compostos de azoto\n"
-      },
-      "complexo": {
-        "display": "complexo",
-        "via": "hyponym",
-        "source_ili": "ili-30-14818238-n",
-        "target_gloss": "um composto descrito em termos de átomo central para que outros átomos estão ligados ou coordenados\n"
-      },
-      "formulacao": {
-        "display": "formulação",
-        "via": "hyponym",
-        "source_ili": "ili-30-14818238-n",
-        "target_gloss": "uma substância preparada de acordo com uma fórmula\n"
-      },
-      "preparacao": {
-        "display": "preparação",
-        "via": "hyponym",
-        "source_ili": "ili-30-14818238-n",
-        "target_gloss": "uma substância preparada de acordo com uma fórmula\n"
-      },
-      "formula": {
-        "display": "fórmula",
-        "via": "hyponym",
-        "source_ili": "ili-30-14818238-n",
-        "target_gloss": "uma substância preparada de acordo com uma fórmula\n"
-      },
-      "hidrato": {
-        "display": "hidrato",
-        "via": "hyponym",
-        "source_ili": "ili-30-14818238-n",
-        "target_gloss": "qualquer composto que contém água de cristalização\n"
-      },
-      "hidroxido": {
-        "display": "hidróxido",
-        "via": "hyponym",
-        "source_ili": "ili-30-14818238-n",
-        "target_gloss": "um composto químico que contém o grupo hidroxilo\n"
-      },
-      "nitreto": {
-        "display": "nitreto",
-        "via": "hyponym",
-        "source_ili": "ili-30-14818238-n",
-        "target_gloss": "um composto contendo azoto e um elemento mais electropositivo (tal como um metal ou fósforo)\n"
-      },
-      "oxido": {
-        "display": "óxido",
-        "via": "hyponym",
-        "source_ili": "ili-30-14818238-n",
-        "target_gloss": "qualquer composto de oxigénio com outro elemento ou um radical\n"
-      },
-      "conservante": {
-        "display": "conservante",
-        "via": "hyponym",
-        "source_ili": "ili-30-14818238-n",
-        "target_gloss": "um composto químico que é adicionado para proteger contra a deterioração ou decomposição\n"
-      },
-      "quinona": {
-        "display": "quinona",
-        "via": "hyponym",
-        "source_ili": "ili-30-14818238-n",
-        "target_gloss": "qualquer um de uma classe de compostos aromáticos, incluindo vários amarelos que são biologicamente importante como coenzimas ou aceitadores ou vitaminas; utilizado na fabricação de corantes\n"
-      },
-      "sal": {
-        "display": "sal",
-        "via": "hyponym",
-        "source_ili": "ili-30-14818238-n",
-        "target_gloss": "um composto formado pela substituição de hidrogénio num ácido por um metal (ou de um radical que actue como um metal)\n"
-      },
-      "nitrato": {
-        "display": "nitrato",
-        "via": "hyponym",
-        "source_ili": "ili-30-14818238-n",
-        "target_gloss": "qualquer composto contendo o grupo nitrato (tal como um sal ou éster do ácido nítrico)\n"
-      },
-      "cloreto": {
-        "display": "cloreto",
-        "via": "hyponym",
-        "source_ili": "ili-30-14818238-n",
-        "target_gloss": "qualquer composto contendo um átomo de cloro\n"
-      }
-    },
+    "NT": {},
     "attribute": {}
   },
-  "dropped_no_lemma": 267,
+  "dropped_no_lemma": 0,
   "sinalizacao": {},
   "stage4_excluded": {},
   "stage5": {
-    "admitted": {},
-    "pending": {
+    "admitted": {
       "composto": {
         "display": "composto",
         "offsets": [
@@ -162,143 +51,42 @@
         ],
         "attested": true,
         "origin": "seed (Etapa 1/2)",
-        "adjudication": null
-      },
-      "acido": {
-        "display": "ácido",
-        "via": "hyponym",
-        "attested": false,
-        "origin": "relação hyponym (NT)",
-        "adjudication": null
-      },
-      "base": {
-        "display": "base",
-        "via": "hyponym",
-        "attested": false,
-        "origin": "relação hyponym (NT)",
-        "adjudication": null
-      },
-      "azida": {
-        "display": "azida",
-        "via": "hyponym",
-        "attested": false,
-        "origin": "relação hyponym (NT)",
-        "adjudication": null
-      },
-      "cianamida": {
-        "display": "cianamida",
-        "via": "hyponym",
-        "attested": false,
-        "origin": "relação hyponym (NT)",
-        "adjudication": null
-      },
-      "complexo": {
-        "display": "complexo",
-        "via": "hyponym",
-        "attested": false,
-        "origin": "relação hyponym (NT)",
-        "adjudication": null
-      },
-      "formulacao": {
-        "display": "formulação",
-        "via": "hyponym",
-        "attested": false,
-        "origin": "relação hyponym (NT)",
-        "adjudication": null
-      },
-      "preparacao": {
-        "display": "preparação",
-        "via": "hyponym",
-        "attested": false,
-        "origin": "relação hyponym (NT)",
-        "adjudication": null
-      },
-      "formula": {
-        "display": "fórmula",
-        "via": "hyponym",
-        "attested": false,
-        "origin": "relação hyponym (NT)",
-        "adjudication": null
-      },
-      "hidrato": {
-        "display": "hidrato",
-        "via": "hyponym",
-        "attested": false,
-        "origin": "relação hyponym (NT)",
-        "adjudication": null
-      },
-      "hidroxido": {
-        "display": "hidróxido",
-        "via": "hyponym",
-        "attested": false,
-        "origin": "relação hyponym (NT)",
-        "adjudication": null
-      },
-      "nitreto": {
-        "display": "nitreto",
-        "via": "hyponym",
-        "attested": false,
-        "origin": "relação hyponym (NT)",
-        "adjudication": null
-      },
-      "oxido": {
-        "display": "óxido",
-        "via": "hyponym",
-        "attested": false,
-        "origin": "relação hyponym (NT)",
-        "adjudication": null
-      },
-      "conservante": {
-        "display": "conservante",
-        "via": "hyponym",
-        "attested": false,
-        "origin": "relação hyponym (NT)",
-        "adjudication": null
-      },
-      "quinona": {
-        "display": "quinona",
-        "via": "hyponym",
-        "attested": false,
-        "origin": "relação hyponym (NT)",
-        "adjudication": null
-      },
-      "sal": {
-        "display": "sal",
-        "via": "hyponym",
-        "attested": false,
-        "origin": "relação hyponym (NT)",
-        "adjudication": null
-      },
-      "nitrato": {
-        "display": "nitrato",
-        "via": "hyponym",
-        "attested": false,
-        "origin": "relação hyponym (NT)",
-        "adjudication": null
-      },
-      "cloreto": {
-        "display": "cloreto",
-        "via": "hyponym",
-        "attested": false,
-        "origin": "relação hyponym (NT)",
-        "adjudication": null
+        "status": "UF",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "ili-30-14818238-n"
       }
-    }
+    },
+    "pending": {}
   },
-  "family": {
-    "compor": {
-      "display": "compor",
-      "via": "derivationally related form",
-      "source_ili": "ili-30-14818238-n",
-      "target_gloss": "criar por mistura ou combinação de\n"
-    }
-  },
+  "family": {},
   "skos": {
-    "UF": [],
-    "contraste": [],
-    "RT": []
+    "UF": [
+      "composto"
+    ]
   },
-  "provenance": [],
+  "provenance": [
+    {
+      "termo": "composto",
+      "estatuto": "UF",
+      "eixo": "heterogeneidade / composição de materiais ou partes distintas",
+      "via": "seed (Etapa 1/2)",
+      "offsets_ili": [
+        "ili-30-14818238-n"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "definicao": "",
+      "estrutural": "",
+      "gloss": "que é formado de mais de um item."
+    }
+  ],
   "attribute_terms": [],
   "assertions": [
     {
@@ -341,7 +129,7 @@
       "stage": "Etapa 3",
       "text": "Alvos de relação são tipados pelo mapeamento; «(no lemma)» nunca admitido.",
       "passed": true,
-      "evidence": "OK (267 alvos «(no lemma)» descartados)"
+      "evidence": "OK (0 alvos «(no lemma)» descartados)"
     },
     {
       "stage": "Etapa 4",
@@ -351,7 +139,7 @@
     },
     {
       "stage": "Etapa 5",
-      "text": "Cada admitido tem estatuto∈{UF,RT,contraste,BT,NT,atributo}, teste decisivo e ≥1 garantia; nomes de qualidade em attribute_bucket.",
+      "text": "Cada admitido tem estatuto∈{UF,RT,BT,NT} (garantia calculada a jusante; atributo = evidência).",
       "passed": true,
       "evidence": "OK"
     },
@@ -369,7 +157,7 @@
     },
     {
       "stage": "Consistência",
-      "text": "Contrastantes não são serializados como skos:related.",
+      "text": "Nenhum estatuto de evidência (contraste/atributo) em admitidos.",
       "passed": true,
       "evidence": "OK"
     },
@@ -377,11 +165,11 @@
       "stage": "Serialização",
       "passed": true,
       "text": "X.skos.ttl analisa com rdflib e tem a contagem de triplos esperada.",
-      "evidence": "triplos esperados=4, analisados=4"
+      "evidence": "triplos esperados=6, analisados=6"
     }
   ],
   "all_passed": false,
-  "skos_triples": 4,
+  "skos_triples": 6,
   "_ttl_ok": true,
-  "_signals_sidelined": 38
+  "_signals_sidelined": 0
 }

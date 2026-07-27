@@ -47,7 +47,8 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any, Optional
 
-STATUSES = ("UF", "RT", "contraste", "BT", "NT", "atributo")
+# contraste / oposicao / vizinha / atributo are evidence-only (never admitted).
+STATUSES = ("UF", "RT", "BT", "NT")
 DECISION_ADMIT = ("UF", "RT")
 
 NO_LEMMA = "(no lemma)"
@@ -283,7 +284,13 @@ class PuloPhase0Engine:
         for entry in s1["admitted"]:
             ili = entry.get("ili_offset", "")
             exp = self.by_ili.get(ili)
-            words = list(exp.get("synonyms", [])) if exp else list(entry.get("members", []))
+            # Corte 2: sense-card members (PASSO 3) are authoritative seeds;
+            # export synonyms enlarge coverage but never replace adjudication.
+            words = list(entry.get("members") or [])
+            if exp:
+                for syn in exp.get("synonyms") or []:
+                    if syn and syn not in words:
+                        words.append(syn)
             for w in words:
                 if not w or w == NO_LEMMA:
                     continue
@@ -396,36 +403,39 @@ class PuloPhase0Engine:
 
         for nw, rec in pool.items():
             adj = dict(self.spec.adjudication.get(nw, {}) or {})
-            # quality nouns are routed to attribute_bucket (status 'atributo'), never altLabel
-            if nw in attribute_terms:
-                adj.setdefault("status", "atributo")
-                adj["status"] = "atributo"
-                adj.setdefault("test", "Roteado para attribute_bucket (nome de qualidade)")
-                if not adj.get("guarantee"):
-                    adj["guarantee"] = ["lexical"] if rec.get("attested") else ["estrutural"]
-
             status = adj.get("status")
-            complete = bool(status in STATUSES and adj.get("test") and adj.get("guarantee"))
+            # Quality nouns via attribute relation are evidence-only UNLESS the
+            # analyst already assigned UF/RT on a sense (Corte 2 — sense wins).
+            if nw in attribute_terms and status not in STATUSES:
+                pending[nw] = {
+                    **rec,
+                    "adjudication": {
+                        **adj,
+                        "status": adj.get("status") or "atributo",
+                        "test": adj.get("test")
+                        or "Evidência (atributo) — não serializado",
+                    },
+                }
+                continue
 
-            # guarantee 'estipulativa' requires a definition AND a structural relation
+            # Corte 2: admission = sense-derived status only (no test/guarantee gate).
+            complete = bool(status in STATUSES)
             if complete and "estipulativa" in (adj.get("guarantee") or []):
                 if not adj.get("definition") or not adj.get("structural"):
                     complete = False
                     estipulativa_bad.append(nw)
 
             if complete:
-                if status == "atributo" and nw not in attribute_terms:
-                    # A quality noun marked atributo must be in the attribute bucket
-                    attr_not_bucket.append(nw)
+                adj.setdefault("test", "derivado do sentido (PASSO 3)")
+                adj.setdefault("guarantee", ["sense_decision"])
                 admitted[nw] = {**rec, **adj}
             else:
                 pending[nw] = {**rec, "adjudication": adj or None}
 
-        bad = [nw for nw, r in admitted.items()
-               if r.get("status") not in STATUSES or not r.get("test") or not r.get("guarantee")]
+        bad = [nw for nw, r in admitted.items() if r.get("status") not in STATUSES]
         self._assert("Etapa 5",
-                     "Cada admitido tem estatuto∈{UF,RT,contraste,BT,NT,atributo}, "
-                     "teste decisivo e ≥1 garantia; nomes de qualidade em attribute_bucket.",
+                     "Cada admitido tem estatuto∈{UF,RT,BT,NT} "
+                     "(garantia calculada a jusante; atributo = evidência).",
                      not bad and not attr_not_bucket,
                      "OK" if (not bad and not attr_not_bucket)
                      else f"incompletos: {bad}; atributo fora do bucket: {attr_not_bucket}")
@@ -456,11 +466,12 @@ class PuloPhase0Engine:
                      not conflicts,
                      "OK" if not conflicts else f"conflitos: {conflicts}")
 
-        related_overlap = by_status["contraste"] & by_status["RT"]
+        # Evidence statuses must never reach admitted provenance.
+        evidence_leak = by_status.get("contraste") or by_status.get("atributo") or set()
         self._assert("Consistência",
-                     "Contrastantes não são serializados como skos:related.",
-                     not related_overlap,
-                     "OK" if not related_overlap else f"contraste em related: {sorted(related_overlap)}")
+                     "Nenhum estatuto de evidência (contraste/atributo) em admitidos.",
+                     not evidence_leak,
+                     "OK" if not evidence_leak else f"fuga: {sorted(evidence_leak)}")
 
         return {k: disp(v) for k, v in by_status.items()}
 
@@ -516,13 +527,18 @@ class PuloPhase0Engine:
                      "offset": item.get("offset", "")},
                 "manual (" + ", ".join(item.get("provenance", [])) + ")")
 
-        # families are not equivalence: keep them out of the adjudication pool
+        # Families are not equivalence — but never drop sense-derived seeds
+        # (Corte 2: PASSO 3 members / adjudication win over family filter).
         family = {nw: r for nw, r in buckets["family"].items()}
         for nw in family:
+            if nw in seeds or nw in spec.adjudication:
+                continue
             pool.pop(nw, None)
 
-        # pref label is the concept's own label, not a candidate
-        pool.pop(normalize_word(spec.pref_label), None)
+        # Pref label stays when it carries a sense-derived status (Corte 2).
+        pref_nw = normalize_word(spec.pref_label)
+        if pref_nw and pref_nw not in spec.adjudication and pref_nw not in seeds:
+            pool.pop(pref_nw, None)
 
         s4 = self.stage4(pool, corroboration)      # mutates pool
         s5 = self.stage5(pool, attribute_terms)
@@ -603,20 +619,23 @@ def build_graph(result: dict, disjoint_classes: list[str]):
         g.add((cls, SKOSXL.altLabel, node))
         g.add((node, SKOSXL.literalForm, Literal(p["termo"], lang="pt")))
     for p in by("RT"):
-        g.add((cls, SKOS.related, TEX[normalize_word(p["termo"])]))
+        # tex:termoRelacionado ⊑ skosxl:labelRelation (not skos:related)
+        g.add((cls, TEX["termoRelacionado"], TEX[normalize_word(p["termo"])]))
     for p in by("BT"):
         g.add((cls, SKOS.broader, TEX[normalize_word(p["termo"])]))
     for p in by("NT"):
         g.add((cls, SKOS.narrower, TEX[normalize_word(p["termo"])]))
-    for p in by("atributo"):
-        # quality noun: distinct predicate, NOT altLabel
-        g.add((cls, TEX["temAtributo"], TEX[normalize_word(p["termo"])]))
-    for p in by("contraste"):
-        g.add((cls, TEX["contrastaCom"], TEX[normalize_word(p["termo"])]))
-        g.add((cls, SKOS.scopeNote,
-               Literal(f"Contraste lexical (eixo): {p['termo']}", lang="pt")))
+    # atributo / contraste / oposicao / vizinha → never serialised (Bloco B only).
+    # :contrastaCom and :temAtributo are intentionally absent — no emission path.
     for other in disjoint_classes:
         g.add((cls, OWL.disjointWith, TEX[other]))
+    # Hard stop if a future edit reintroduces the banned predicates.
+    banned = (TEX["contrastaCom"], TEX["temAtributo"])
+    for _s, p, _o in g:
+        if p in banned:
+            raise RuntimeError(
+                f"SKOS emitiu predicado proibido {p} — evidência não serializa."
+            )
     return g
 
 
@@ -685,7 +704,7 @@ def render_markdown(result: dict) -> str:
     ap("## Etapa 5 — Adjudicação + §7 proveniência")
     ap(f"Admitidos: **{len(r['provenance'])}**  ·  "
        f"Pendentes: **{len(r['stage5']['pending'])}**  ·  "
-       f"Atributos: **{len([p for p in r['provenance'] if p['estatuto']=='atributo'])}**")
+       f"(atributo/oposicao/vizinha = evidência, fora de provenance)")
     ap("")
     ap("| termo | estatuto | via | offset/ILI | teste decisivo | garantia | definição |")
     ap("|-------|----------|-----|------------|----------------|----------|-----------|")
@@ -699,18 +718,16 @@ def render_markdown(result: dict) -> str:
         ap(", ".join(sorted(v.get("display", k) for k, v in r["stage5"]["pending"].items())))
         ap("")
 
-    ap("## §6 — Mapeamento SKOS-XL / OWL")
+    ap("## §6 — Mapeamento SKOS-XL / OWL (só Bloco A)")
     sk = r["skos"]
     ap(f"- `skos:prefLabel` → **{r['pref_label']}**")
     ap(f"- `skosxl:altLabel` (UF) → {', '.join(sk.get('UF', [])) or '—'}")
-    ap(f"- `skos:related` (RT) → {', '.join(sk.get('RT', [])) or '—'}")
+    ap(f"- `:termoRelacionado` (RT) → {', '.join(sk.get('RT', [])) or '—'}")
     ap(f"- `skos:broader` (BT) → {', '.join(sk.get('BT', [])) or '—'}")
     ap(f"- `skos:narrower` (NT) → {', '.join(sk.get('NT', [])) or '—'}")
-    ap(f"- `:temAtributo` (nomes de qualidade) → {', '.join(sk.get('atributo', [])) or '—'}")
-    ap(f"- `:contrastaCom` + `scopeNote` (contraste) → {', '.join(sk.get('contraste', [])) or '—'}")
     ap("")
-    ap("_Nomes de qualidade NÃO são `skosxl:altLabel`; contrastantes NÃO são "
-       "`skos:related` (o SKOS não modela antonímia)._")
+    ap("_Evidência (`atributo`, oposição, vizinha, sinalização) NÃO é serializada "
+       "como relação SKOS/SKOS-XL._")
     ap("")
     return "\n".join(L)
 

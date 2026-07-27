@@ -1,0 +1,2298 @@
+{
+  "type": "pulo_thesaurus_search",
+  "query": {
+    "query": "constante",
+    "pos": null,
+    "mode": "Exact"
+  },
+  "count": 14,
+  "synsets": [
+    {
+      "synset_offset": "por-30-00576680-a",
+      "pos": "a",
+      "gloss": "(Às vezes seguido por &#39;com&#39;) em acordo ou consistente ou confiável\n",
+      "synonyms": [
+        "constante",
+        "consistente",
+        "coerente"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-00576680-a",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "antonym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "exibindo uma falta de consistência\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "exibindo uma falta de consistência\n"
+            }
+          ]
+        },
+        {
+          "relation": "similar to",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "em manutenção\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Seguido por &#39;a&#39;), em conformidade com ou acordo com\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "compatibilizadas ou consistente\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "não auto-contraditório\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "em conformidade com os mesmos princípios ou curso de ação ao longo do tempo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "em manutenção\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Seguido por &#39;a&#39;), em conformidade com ou acordo com\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "compatibilizadas ou consistente\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "não auto-contraditório\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "em conformidade com os mesmos princípios ou curso de ação ao longo do tempo\n"
+            }
+          ]
+        },
+        {
+          "relation": "see also",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "não susceptíveis de ou capaz de mudar\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "não susceptíveis de ou capaz de mudar\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "consistentemente",
+              "gloss": "de uma forma sistemática e consistente\n"
+            },
+            {
+              "words": "constitucional",
+              "gloss": "sancionada pelo ou consistente com ou operando sob a lei, determinando os princípios políticos fundamentais de um governo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Não consistente com ou de acordo com a constituição; ao contrário da Constituição dos Estados Unidos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "compatibilizadas ou consistente\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "não fez consistente ou compatível\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Não consistente ou confiável\n"
+            },
+            {
+              "words": "fisiológico",
+              "gloss": "ou de acordo com o funcionamento normal de um organismo\n"
+            },
+            {
+              "words": "racional",
+              "gloss": "consistente com ou com base em ou com razão\n"
+            },
+            {
+              "words": "coerente",
+              "gloss": "capaz de pensar e se expressar de forma clara e consistente\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "motivo não consistente com ou usando\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "capaz de ser feito harmonioso ou consistente\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "não poder ser feita consistente ou harmonioso\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Não consistente com os métodos ou princípios da ciência\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "aplicar de forma coerente com seu propósito e design\n"
+            },
+            {
+              "words": "verdadeiro",
+              "gloss": "consistente com o fato ou realidade; Não falso\n"
+            },
+            {
+              "words": "nazista",
+              "gloss": "relacionada ou consistente com ou típico da ideologia e da prática do nazismo ou os nazistas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a qualidade de ser consistente com ou baseada na lógica\n"
+            },
+            {
+              "words": "racionalização",
+              "gloss": "o processo cognitivo de fazer algo parece consistente com ou com base na razão\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "coerência lógica e de acordo com os fatos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "coerência lógica e de acordo com os fatos\n"
+            }
+          ]
+        },
+        {
+          "relation": "has derived form",
+          "targets": [
+            {
+              "words": "consistentemente",
+              "gloss": "de uma forma sistemática e consistente\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "consequente, consistente, lógico, coerente",
+              "gloss": "marcado por uma relação ordenada, lógica e esteticamente consistente de peças\n"
+            },
+            {
+              "words": "fiável",
+              "gloss": "digno de confiança ou de confiança\n"
+            },
+            {
+              "words": "correspondência, acordo",
+              "gloss": "compatibilidade de observações\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "32 presidente dos Estados Unidos; eleitos quatro vezes; instituiu New Deal para combater a Grande Depressão e liderou país durante a Segunda Guerra Mundial (1882-1945)\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-01754421-a",
+      "pos": "a",
+      "gloss": "continuada ou permanente, sem alteração marcada do estado ou condição ou lugar\n",
+      "synonyms": [
+        "constante",
+        "duradouro",
+        "fixo",
+        "frisagem",
+        "inalterado",
+        "indelével",
+        "ondulação",
+        "estável",
+        "permanente"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-01754421-a",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "attribute",
+          "targets": [
+            {
+              "words": "permanência",
+              "gloss": "a propriedade de ser capaz de existir por tempo indeterminado\n"
+            },
+            {
+              "words": "permanência",
+              "gloss": "a propriedade de ser capaz de existir por tempo indeterminado\n"
+            }
+          ]
+        },
+        {
+          "relation": "antonym",
+          "targets": [
+            {
+              "words": "temporário, temporal",
+              "gloss": "não permanente; não duradouro\n"
+            },
+            {
+              "words": "temporário, temporal",
+              "gloss": "não permanente; não duradouro\n"
+            }
+          ]
+        },
+        {
+          "relation": "similar to",
+          "targets": [
+            {
+              "words": "eterno, perpétuo",
+              "gloss": "incessante\n"
+            },
+            {
+              "words": "acrónico, eternal, eviterno, imortalizado, imutável, infindo, infindável, infinito, intemporal, sempiterno, eterno, interminável, perpétuo, perene",
+              "gloss": "continuar para sempre ou por tempo indeterminado\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "utilizado de decisões e contratos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "não foi criado para uma ocasião especial\n"
+            },
+            {
+              "words": "eterno, perpétuo",
+              "gloss": "incessante\n"
+            },
+            {
+              "words": "acrónico, eternal, eviterno, imortalizado, imutável, infindo, infindável, infinito, intemporal, sempiterno, eterno, interminável, perpétuo, perene",
+              "gloss": "continuar para sempre ou por tempo indeterminado\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "utilizado de decisões e contratos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "não foi criado para uma ocasião especial\n"
+            }
+          ]
+        },
+        {
+          "relation": "see also",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "Não mutável ou sujeitas a alteração\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "não é capaz de ser destruídos ou arrancados\n"
+            },
+            {
+              "words": "estável",
+              "gloss": "resistentes à mudança de posição ou condição\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Não mutável ou sujeitas a alteração\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "não é capaz de ser destruídos ou arrancados\n"
+            },
+            {
+              "words": "estável",
+              "gloss": "resistentes à mudança de posição ou condição\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "de forma duradoura ou permanente\n"
+            },
+            {
+              "words": "consignar, registrar, registar",
+              "gloss": "fazer um registro de; estabelecido de forma permanente\n"
+            },
+            {
+              "words": "suspensão",
+              "gloss": "o ato de interrupção ou rompimento; uma interrupção (temporária ou permanente)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o ato de dotar com uma fonte permanente de renda\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "estabelecido ou registrado de forma permanente, especialmente em filme ou fita para a reprodução\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Europeu salamandra aquática com brânquias externas permanentes que vive em cavernas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "eellike salamandra aquática de norte-americanos com pequenas patas dianteiras e sem patas; possuem brânquias externas permanentes\n"
+            },
+            {
+              "words": "temporário, temporal",
+              "gloss": "não permanente; não duradouro\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "permanente\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Não vivendo em um determinado lugar ou pertencentes a residentes permanentes\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "dura muito tempo sem alteração\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "vagão sem paredes laterais ou teto permanentes\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um navio equipado como um farol e ancorado em um farol permanente seria impraticável\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "dossel permanente sobre uma entrada de um hotel etc.\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um reboque grande casa que pode ser conectado a serviços públicos e podem ser estacionados em um lugar e utilizado como moradia permanente\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Idade Média) um grande escudo oblongo pesado proteger todo o corpo; originalmente realizado, mas, por vezes, criada em posição permanente\n"
+            },
+            {
+              "words": "inclinação",
+              "gloss": "uma inclinação relativamente permanente para reagir de uma forma particular\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Ciência da computação) um arquivo de computador que é usado como a autoridade em um determinado trabalho e que é relativamente permanente\n"
+            },
+            {
+              "words": "registo",
+              "gloss": "qualquer coisa (como um documento ou um registro fonográfico ou uma fotografia) fornecendo evidências permanente ou informações sobre eventos passados\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a consolidação e codificação por assunto das leis gerais e permanentes dos Estados Unidos; é preparado e publicado por uma unidade dos Estados Unidos Câmara dos Deputados\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um cartão que identifica o portador como um estrangeiro com residência permanente nos Estados Unidos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um alojamento temporário de um desacordo entre as partes na pendência de um assentamento permanente\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "marca de um agrimensor em um objeto permanente de posição pré-determinada e elevação usado como um ponto de referência\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um serviço permanente criado para realizar o trabalho de um governo local\n"
+            },
+            {
+              "words": "exército",
+              "gloss": "uma organização permanente das forças militares terrestres de uma nação ou estado\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um conselho permanente da Organização das Nações Unidas; responsáveis ​​por preservar a paz mundial\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um conselho permanente da Organização das Nações Unidas, que as comissões de um país (ou países) Exercer a administração de um território\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um conselho permanente da Organização das Nações Unidas; responsável por condições económicas e sociais\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um conselho composto por representantes permanentes de todos os países membros da NATO; tem autoridade política e poder de decisão\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma comissão permanente\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma comissão permanente dos Estados Unidos Câmara dos Deputados que faz recomendações à Câmara dos EUA em todos os projetos de lei que aumentar a receita\n"
+            },
+            {
+              "words": "praesidium, presidium",
+              "gloss": "um comitê executivo permanente nos países socialistas, que tem todos os poderes de um corpo legislativo maior e que atua para ele quando ele não está em sessão\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um exército permanente de soldados pagos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma missão diplomática permanente dirigido por um ministro\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Lei) na residência onde você tem sua casa ou estabelecimento permanente principal e para onde, sempre que você estiver ausente, você pretende voltar; cada pessoa é obrigada a ter um e apenas um domicílio de cada vez\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "muito em que se encontram sem edifícios permanentes\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma antiga aldeia no rio James, na Virgínia, ao norte de Norfolk; local do primeiro assentamento permanente Inglês na América em 1607\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma molécula é um dipolo permanente\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma extensão larga permanente de neve\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um membro de um povo que não têm um lar permanente, mas mover-se de acordo com as estações do ano\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Modelador Francês (residente na Inglaterra, depois de 1802), que fez máscaras mortuárias de cera de proeminentes vítimas da Revolução Francesa e visitou a Grã-Bretanha com seus modelos de cera; em 1835, ela abriu uma exposição de bonecos de cera permanente em Londres (1761-1850)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "grama com folhas planas de largura cultivadas na Europa e América para pastagens permanentes e feno e para gramados\n"
+            },
+            {
+              "words": "erva",
+              "gloss": "uma planta que falta um caule lenhoso permanente; muitos são plantas com flores do jardim ou hortaliças; alguns têm propriedades medicinais; alguns são pragas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma conta usada temporariamente para realizar recibos duvidosos e desembolsos ou discrepâncias, até à sua análise e classificação permanente\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um orçamento para despesas correntes como distinto de operações financeiras ou melhorias permanentes\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "processo para produzir impressões permanentes em um pigmento de carbono\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o estado de vagando de um lugar para outro; não ter residência permanente ou meio de subsistência\n"
+            },
+            {
+              "words": "ansiedade",
+              "gloss": "(Psiquiatria) um estado relativamente permanente de preocupação e nervosismo que ocorre em uma variedade de transtornos mentais, geralmente acompanhada de comportamento ou ataques de pânico compulsivo\n"
+            },
+            {
+              "words": "loucura",
+              "gloss": "distúrbio relativamente permanente da mente\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "poluição que está inofensivas por processos naturais e por isso não causa nenhum dano permanente\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma deficiência de umidade (especialmente quando resulte de uma ausência permanente de chuvas)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer tinta permanente ou laváveis ​​usado com canetas\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "permanência",
+              "gloss": "a propriedade de ser capaz de existir por tempo indeterminado\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "permanência em virtude do poder de resistir ao estresse ou força\n"
+            },
+            {
+              "words": "permanente",
+              "gloss": "uma série de ondas no cabelo feito por aplicação de calor e produtos químicos\n"
+            },
+            {
+              "words": "permanência",
+              "gloss": "a propriedade de ser capaz de existir por tempo indeterminado\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "permanência em virtude do poder de resistir ao estresse ou força\n"
+            },
+            {
+              "words": "permanente",
+              "gloss": "uma série de ondas no cabelo feito por aplicação de calor e produtos químicos\n"
+            }
+          ]
+        },
+        {
+          "relation": "has derived form",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "de forma duradoura ou permanente\n"
+            },
+            {
+              "words": "permanentemente, para sempre",
+              "gloss": "durante um longo período de tempo sem alteração essencial\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "persistir, prevalecer",
+              "gloss": "continuam a existir\n"
+            },
+            {
+              "words": "alteração, modificação, variação, câmbio, mudança, troca",
+              "gloss": "um evento que ocorre quando algo passa de um estado ou fase para outra\n"
+            },
+            {
+              "words": "local, lugar",
+              "gloss": "um ponto localizado no que diz respeito a características da superfície de uma região\n"
+            },
+            {
+              "words": "estatuto, situação, condição",
+              "gloss": "um estado em um determinado momento\n"
+            },
+            {
+              "words": "estatuto, lugar, posição",
+              "gloss": "a posição relativa ou pé de coisas ou pessoas especialmente em uma sociedade\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-00583239-a",
+      "pos": "a",
+      "gloss": "firme no propósito ou devoção ou afeição\n",
+      "synonyms": [
+        "constante"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-00583239-a",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "attribute",
+          "targets": [
+            {
+              "words": "constância",
+              "gloss": "a qualidade de ser duradoura e livre de mudança ou variação\n"
+            },
+            {
+              "words": "constância",
+              "gloss": "a qualidade de ser duradoura e livre de mudança ou variação\n"
+            }
+          ]
+        },
+        {
+          "relation": "antonym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "propensos a mudar com freqüência, muitas vezes sem razão aparente ou convincente; variável\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "propensos a mudar com freqüência, muitas vezes sem razão aparente ou convincente; variável\n"
+            }
+          ]
+        },
+        {
+          "relation": "similar to",
+          "targets": [
+            {
+              "words": "firme, fiel",
+              "gloss": "firme e confiável especialmente na lealdade\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "incessante\n"
+            },
+            {
+              "words": "firme, fiel",
+              "gloss": "firme e confiável especialmente na lealdade\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "incessante\n"
+            }
+          ]
+        },
+        {
+          "relation": "see also",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "Não mutável ou sujeitas a alteração\n"
+            },
+            {
+              "words": "fiel",
+              "gloss": "firmes na afeição ou lealdade\n"
+            },
+            {
+              "words": "estável",
+              "gloss": "resistentes à mudança de posição ou condição\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "não susceptíveis de ou capaz de mudar\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Não mutável ou sujeitas a alteração\n"
+            },
+            {
+              "words": "fiel",
+              "gloss": "firmes na afeição ou lealdade\n"
+            },
+            {
+              "words": "estável",
+              "gloss": "resistentes à mudança de posição ou condição\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "não susceptíveis de ou capaz de mudar\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "constância",
+              "gloss": "fidelidade e confiabilidade em ligações pessoais (especialmente a fidelidade sexual)\n"
+            },
+            {
+              "words": "constância",
+              "gloss": "fidelidade e confiabilidade em ligações pessoais (especialmente a fidelidade sexual)\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "devoção",
+              "gloss": "sentimentos de amor ardente\n"
+            },
+            {
+              "words": "afeição, afeto, amizade, carinho, doçura, estima, estimação, meiguice, afecto, simpatia, ternura, coração",
+              "gloss": "um sentimento positivo de gosto\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-00592222-a",
+      "pos": "a",
+      "gloss": "ocorrendo sem interrupção; principalmente restrita ao que se repete regularmente ou freqüentemente de uma série prolongada e espaçados\n",
+      "synonyms": [
+        "contínuo",
+        "constante"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-00592222-a",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "antonym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "recorrente em casos dispersos e irregulares ou imprevisíveis\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "recorrente em casos dispersos e irregulares ou imprevisíveis\n"
+            }
+          ]
+        },
+        {
+          "relation": "similar to",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "repetitivo e persistente\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "continuamente repetido ao longo de um período de tempo\n"
+            },
+            {
+              "words": "perene",
+              "gloss": "recorrente de novo e de novo\n"
+            },
+            {
+              "words": "persistente",
+              "gloss": "incessante\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "voltar\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "repetitivo e persistente\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "continuamente repetido ao longo de um período de tempo\n"
+            },
+            {
+              "words": "perene",
+              "gloss": "recorrente de novo e de novo\n"
+            },
+            {
+              "words": "persistente",
+              "gloss": "incessante\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "voltar\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "contínuo, constante",
+              "gloss": "`Contínua &#39;(significando aparentemente ininterrupta) é muitas vezes usado como sinônimo de&#39; contínua &#39;(ou seja, sem interrupção)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o ato de se alimentar por mordiscar contínua\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "com paciência, erros contínuos ou problemas\n"
+            },
+            {
+              "words": "insistência",
+              "gloss": "demandas contínuas e persistentes\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma sensação de agitação expressa em movimento contínuo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma área de pele que é espessa ou disco de pressão contínua ou atrito (como a sola do pé)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um estado mental em que a pessoa tem alucinações contínuas\n"
+            }
+          ]
+        },
+        {
+          "relation": "has derived form",
+          "targets": [
+            {
+              "words": "continuamente",
+              "gloss": "aparentemente sem interrupção\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "muitas vezes em intervalos curtos\n"
+            },
+            {
+              "words": "limitar",
+              "gloss": "Coloque limites (extensão ou acesso)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "de forma regular, sem variação\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "acontecer ou ocorrer novamente\n"
+            },
+            {
+              "words": "interrupção, suspensão, pausa",
+              "gloss": "um intervalo de tempo durante o qual há uma cessação temporária de algo\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-00594413-a",
+      "pos": "a",
+      "gloss": "continuidade no tempo ou no espaço, sem interrupção\n",
+      "synonyms": [
+        "contínuo",
+        "constante"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-00594413-a",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "attribute",
+          "targets": [
+            {
+              "words": "continuidade, persistência",
+              "gloss": "a propriedade de um período contínuo e conectado de tempo\n"
+            },
+            {
+              "words": "continuidade, persistência",
+              "gloss": "a propriedade de um período contínuo e conectado de tempo\n"
+            }
+          ]
+        },
+        {
+          "relation": "antonym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "não continuar sem interrupção no tempo ou no espaço\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "não continuar sem interrupção no tempo ou no espaço\n"
+            }
+          ]
+        },
+        {
+          "relation": "similar to",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "sempre\n"
+            },
+            {
+              "words": "assíduo, continuado, imudável, imutável, incessante, ininterrupto, permanecente, permanente, perpétuo, seguido, contínuo, constante",
+              "gloss": "ininterrupta no tempo indefinidamente longo e contínuo\n"
+            },
+            {
+              "words": "contínuo, constante",
+              "gloss": "`Contínua &#39;(significando aparentemente ininterrupta) é muitas vezes usado como sinônimo de&#39; contínua &#39;(ou seja, sem interrupção)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "implacável e incansável na busca ou como se em busca\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "ter as extremidades unidas de modo a formar um todo contínuo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(De um arco elétrico) contínua\n"
+            },
+            {
+              "words": "seguido, consecutivo",
+              "gloss": "sucessiva (sem intervalo)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "mantida em comprimento sem interrupção ou enfraquecimento\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "sempre\n"
+            },
+            {
+              "words": "assíduo, continuado, imudável, imutável, incessante, ininterrupto, permanecente, permanente, perpétuo, seguido, contínuo, constante",
+              "gloss": "ininterrupta no tempo indefinidamente longo e contínuo\n"
+            },
+            {
+              "words": "contínuo, constante",
+              "gloss": "`Contínua &#39;(significando aparentemente ininterrupta) é muitas vezes usado como sinônimo de&#39; contínua &#39;(ou seja, sem interrupção)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "implacável e incansável na busca ou como se em busca\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "ter as extremidades unidas de modo a formar um todo contínuo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(De um arco elétrico) contínua\n"
+            },
+            {
+              "words": "seguido, consecutivo",
+              "gloss": "sucessiva (sem intervalo)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "mantida em comprimento sem interrupção ou enfraquecimento\n"
+            }
+          ]
+        },
+        {
+          "relation": "see also",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "marcados por extensão contínua ou ininterrupto no espaço ou no tempo ou uma sequência\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "marcados por extensão contínua ou ininterrupto no espaço ou no tempo ou uma sequência\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "ativo",
+              "gloss": "cheio de atividade ou engajados em atividade contínua\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "não contínuo no espaço, tempo ou seqüência ou variando abruptamente\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "marcados por extensão contínua ou ininterrupto no espaço ou no tempo ou uma sequência\n"
+            },
+            {
+              "words": "inteiro, sólido",
+              "gloss": "ininterrupta no espaço; não ter falhas ou quebras\n"
+            },
+            {
+              "words": "corrente, fluxo",
+              "gloss": "o ato de fluir ou streaming; progressão contínua\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a formação de uma série contínua de poros\n"
+            },
+            {
+              "words": "assíduo, continuado, imudável, imutável, incessante, ininterrupto, permanecente, permanente, perpétuo, seguido, contínuo, constante",
+              "gloss": "ininterrupta no tempo indefinidamente longo e contínuo\n"
+            },
+            {
+              "words": "contínuo, constante",
+              "gloss": "`Contínua &#39;(significando aparentemente ininterrupta) é muitas vezes usado como sinônimo de&#39; contínua &#39;(ou seja, sem interrupção)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "ter as extremidades unidas de modo a formar um todo contínuo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(De um arco elétrico) contínua\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "marcado pela mudança contínua ou ação efetiva\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma patrulha nonstop contínua\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o retorno da respiração relativamente fácil após o esgotamento inicial durante o esforço contínuo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um método de treinamento atlético (especialmente para os corredores) na qual o esforço extenuante e alternativo esforço normal em um exercício contínuo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer uma das expedições mais ou menos contínuo militares em 11 a 13 séculos, quando potências cristãs da Europa tentaram recapturar a Terra Santa dos muçulmanos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "intenso e contínuo fogo de artilharia\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "fazer um som contínuo baixo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "descarregar ou direto ou ser descarregada ou dirigida, como se em um fluxo contínuo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "fazendo um som indistinto contínuo baixo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "som pulsante completo e de baixa frequência contínua\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "grandes raios comestíveis, com um focinho longo e cauda grossa com nadadeiras peitorais contínuas com a cabeça; nadar por ondulando as bordas das nadadeiras peitorais\n"
+            },
+            {
+              "words": "trepar, subir, montar",
+              "gloss": "ir para cima com o progresso gradual ou contínuo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "sendo um movimento suave e contínuo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Zebra com listras menos contínuas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "marine snakelike voraz ou peixes de água doce com a suave pele geralmente Kosswigichthys viscosa e tendo uma barbatana vertical contínua mas sem barbatanas ventrais\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a forma mais simples de cofre; um único arco contínuo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Acelera um feixe contínuo de elétrons de alta velocidade por meio de campo elétrico produzido por alterar o fluxo magnético\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura que consiste em algo feridas de uma série contínua de lacetes\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um tubo de gaita de foles que está sintonizado para produzir um único tom contínuo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um sistema de comunicação para envio de mensagens de rádio contínua para um piloto de avião que está a fazer uma abordagem de controlada do solo – desembarque\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "instrumentos científicos consistindo num papel, segurando tambor rotativo em que um estilete traça um registo contínuo (como respiração ou de pressão sanguínea)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um gravador com dois ou mais canais; faz registos contínuos de dois ou mais sinais simultaneamente\n"
+            },
+            {
+              "words": "panorama",
+              "gloss": "uma foto (ou série de fotos), representando uma cena contínua\n"
+            },
+            {
+              "words": "disco",
+              "gloss": "gravação de som que consiste de um disco com uma ranhura contínua; utilizado para reproduzir música girando enquanto uma agulha de vitrola faixas no sulco\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "construção de complexo em uma linha contínua ao longo de uma estrada\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um arco formado numa curva contínua; característico da arquitetura romana\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Membros estruturais, consistindo de uma madeira horizontal contínua formando o membro mais baixo de um quadro ou estrutura de apoio\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "conexão consistindo de um anel de metal na parte rotativa de uma máquina; fornece uma ligação eléctrica contínua através de escovas em contatos estacionários\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma sucessão cronológica contínua, sem interrupção\n"
+            },
+            {
+              "words": "continuidade, persistência",
+              "gloss": "a propriedade de um período contínuo e conectado de tempo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma junção natural ou cirúrgica de partes ou ramificações de estruturas tubulares, a fim de tornar ou tornar-se contínua\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer um dos seios do face emparelhados nos ossos da face adjacente à cavidade nasal que são revestidos com mucosa que é contínua com o revestimento das cavidades nasais\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a parte da conjuntiva forro da superfície posterior das pálpebras; contínuo com a conjuntiva bulbar\n"
+            },
+            {
+              "words": "córnea",
+              "gloss": "a porção anterior transparente em forma de cúpula parte do revestimento externo do olho; cobre a íris e a pupila e é contínua com a esclera\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a parte da artéria principal do braço que se encontra na axila e é contínuo com a acima da artéria subclávia e a artéria braquial abaixo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma veia minuto contínua com um capilar\n"
+            },
+            {
+              "words": "retina",
+              "gloss": "a membrana sensível à luz mais íntima, cobrindo a parede traseira do globo ocular; é contínua com o nervo óptico\n"
+            },
+            {
+              "words": "cérebro, encéfalo",
+              "gloss": "Essa parte do sistema nervoso central que inclui todos os centros nervosos superiores; fechado dentro do crânio; contínua com a medula espinhal\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "parte inferior ou derradeira do cérebro; contínua com a medula espinhal; ('lâmpada' é um termo antigo para medula oblongata)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a parte do cérebro contínua com a medula espinhal e que compreende o bulbo raquidiano e pons e mesencéfalo e partes do hipotálamo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma das quatro cavidades conectadas no cérebro; é contínuo com o canal central da medula espinhal e contém líquido cefalorraquidiano\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o fluxo contínuo de ideias e sentimentos que constituem a experiência consciente do indivíduo\n"
+            },
+            {
+              "words": "vigilância",
+              "gloss": "o processo de prestar atenção estreita e contínua\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "contínua e profunda contemplação ou meditando sobre um assunto ou uma série de assuntos de natureza profunda ou abstruso\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um projecto que gera um fluxo contínuo de dinheiro\n"
+            },
+            {
+              "words": "cena, fita, história, película, filme, produção",
+              "gloss": "uma forma de entretenimento que encena uma história de som e uma seqüência de imagens dando a ilusão de movimento contínuo\n"
+            },
+            {
+              "words": "música",
+              "gloss": "uma forma artística de comunicação auditiva incorporando tons instrumentais ou vocais de uma forma estruturada e contínua\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a entrega rápida e contínua de comunicação linguística (falada ou escrita)\n"
+            },
+            {
+              "words": "boato, rumor, zunzum",
+              "gloss": "um som indistinto contínua baixa; muitas vezes acompanhada pelo movimento dos bordos, sem a produção de discurso articulado\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um alto baixo ruído contínuo maçante\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "retardar contínuo gotejamento introdução de soluções por via intravenosa (uma gota de cada vez)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma competição atlética em que um competidor deverá efetuar sucessivamente um hop e um passo e um salto no movimento contínuo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma agregação ou rede contínua das comunidades urbanas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a área em torno do Mediterrâneo Oriental; da Turquia, a África do Norte e a leste para o Irã; o site de tais civilizações antigas como a Fenícia, Babilônia e Egito e o berço do judaísmo e o cristianismo e o Islã; tinha contínua turbulência económica e política no século XX\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "grande medida contínua de terras\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma faixa de tempo contínua (geralmente correndo horizontalmente)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "alguém que impõe um trabalho árduo ou contínua\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "gênero de fungos formam esporos hialinos contínuos\n"
+            },
+            {
+              "words": "conduta",
+              "gloss": "um tubo contínuo, formado por uma fileira de células alongadas sem paredes intermediárias\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer fluxo ininterrupto ou descarga\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a produção alcançada durante um período contínuo de operação (de uma máquina ou fábrica etc.)\n"
+            },
+            {
+              "words": "arco",
+              "gloss": "uma porção contínua de um círculo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "doença ou incapacidade resultantes de condições de trabalho (geralmente de longa exposição a uma substância nociva ou de repetição contínua de certos actos)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma sucessão contínua de lento, contorção, movimentos involuntários das mãos e dos pés e outras partes do corpo\n"
+            },
+            {
+              "words": "continuidade",
+              "gloss": "conexão ininterrupta ou união\n"
+            },
+            {
+              "words": "sol",
+              "gloss": "um colóide que tem uma fase líquida contínua na qual um sólido em suspensão num líquido\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "rocha que formam a camada mais baixa contínua da crosta terrestre; rico em silício e magnésio\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "papel dobrados para permitir impressão contínua controlada por um computador\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "matéria amorfa contínua que tende a fluir e para se conformar ao contorno do recipiente: um líquido ou um gás\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma fita fina contínua de papel em que as cotações de ações são escritos\n"
+            },
+            {
+              "words": "actualidade, atualidade, presente",
+              "gloss": "o período de tempo que está acontecendo agora; qualquer extensão contínua de tempo, incluindo o momento de expressão\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um todo não espacial contínua ou extensão ou a sucessão em que nenhuma parte ou porção é distinto ou distinguível de partes adjacentes\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o período contínuo de tempo durante o qual algo (uma máquina ou de uma fábrica) opera ou continua em operação\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "continuidade",
+              "gloss": "a qualidade de algo que continua sem fim ou interrupção\n"
+            },
+            {
+              "words": "continuidade, persistência",
+              "gloss": "a propriedade de um período contínuo e conectado de tempo\n"
+            },
+            {
+              "words": "continuidade",
+              "gloss": "conexão ininterrupta ou união\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um todo não espacial contínua ou extensão ou a sucessão em que nenhuma parte ou porção é distinto ou distinguível de partes adjacentes\n"
+            },
+            {
+              "words": "continuidade",
+              "gloss": "a qualidade de algo que continua sem fim ou interrupção\n"
+            },
+            {
+              "words": "continuidade, persistência",
+              "gloss": "a propriedade de um período contínuo e conectado de tempo\n"
+            },
+            {
+              "words": "continuidade",
+              "gloss": "conexão ininterrupta ou união\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um todo não espacial contínua ou extensão ou a sucessão em que nenhuma parte ou porção é distinto ou distinguível de partes adjacentes\n"
+            }
+          ]
+        },
+        {
+          "relation": "has derived form",
+          "targets": [
+            {
+              "words": "incessantemente, continuamente",
+              "gloss": "com determinação inabalável\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "interrupção, pausa, ruptura",
+              "gloss": "um ato de retardar ou interromper a continuidade\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-00595299-a",
+      "pos": "a",
+      "gloss": "ininterrupta no tempo indefinidamente longo e contínuo\n",
+      "synonyms": [
+        "assíduo",
+        "continuado",
+        "imudável",
+        "imutável",
+        "incessante",
+        "ininterrupto",
+        "permanecente",
+        "permanente",
+        "perpétuo",
+        "seguido",
+        "contínuo",
+        "constante"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-00595299-a",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "similar to",
+          "targets": [
+            {
+              "words": "contínuo, constante",
+              "gloss": "continuidade no tempo ou no espaço, sem interrupção\n"
+            },
+            {
+              "words": "contínuo, constante",
+              "gloss": "continuidade no tempo ou no espaço, sem interrupção\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "continuidade",
+              "gloss": "a qualidade de algo que continua sem fim ou interrupção\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a propriedade de ser perpétuo (aparentemente incessante)\n"
+            },
+            {
+              "words": "continuidade",
+              "gloss": "a qualidade de algo que continua sem fim ou interrupção\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a propriedade de ser perpétuo (aparentemente incessante)\n"
+            }
+          ]
+        },
+        {
+          "relation": "has derived form",
+          "targets": [
+            {
+              "words": "continuadamente, continuamente, incessantemente, ininterruptamente, perpetuamente, sempre, constantemente",
+              "gloss": "sem interrupção\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "eternamente; para todo o sempre\n"
+            },
+            {
+              "words": "incessantemente, continuamente",
+              "gloss": "com determinação inabalável\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "a uma extensão indefinida; por um tempo indefinido\n"
+            },
+            {
+              "words": "contínuo, constante",
+              "gloss": "continuidade no tempo ou no espaço, sem interrupção\n"
+            },
+            {
+              "words": "longo, extenso",
+              "gloss": "sentido principalmente temporais; ser ou indicando uma relativamente grande ou maior do que a duração média ou passagem do tempo ou a duração, conforme especificado\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-00595863-a",
+      "pos": "a",
+      "gloss": "`Contínua &#39;(significando aparentemente ininterrupta) é muitas vezes usado como sinônimo de&#39; contínua &#39;(ou seja, sem interrupção)\n",
+      "synonyms": [
+        "contínuo",
+        "constante"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-00595863-a",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "similar to",
+          "targets": [
+            {
+              "words": "contínuo, constante",
+              "gloss": "continuidade no tempo ou no espaço, sem interrupção\n"
+            },
+            {
+              "words": "contínuo, constante",
+              "gloss": "continuidade no tempo ou no espaço, sem interrupção\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "exteriormente, superficialmente, aparentemente",
+              "gloss": "de aparições sozinhos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "de forma intercambiável\n"
+            },
+            {
+              "words": "contínuo, constante",
+              "gloss": "ocorrendo sem interrupção; principalmente restrita ao que se repete regularmente ou freqüentemente de uma série prolongada e espaçados\n"
+            },
+            {
+              "words": "contínuo, constante",
+              "gloss": "continuidade no tempo ou no espaço, sem interrupção\n"
+            },
+            {
+              "words": "significado, sentido",
+              "gloss": "a ideia de que se destina\n"
+            },
+            {
+              "words": "aceção, significação, valor, significado, sentido",
+              "gloss": "a mensagem que se pretende ou expressa ou significado\n"
+            },
+            {
+              "words": "interrupção, suspensão, pausa",
+              "gloss": "um intervalo de tempo durante o qual há uma cessação temporária de algo\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-00754393-a",
+      "pos": "a",
+      "gloss": "marcado pelo cuidado e esforço persistente\n",
+      "synonyms": [
+        "assíduo",
+        "persistente",
+        "constante"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-00754393-a",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "similar to",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "caracteriza-se por cuidado e perseverança na realização das tarefas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "caracteriza-se por cuidado e perseverança na realização das tarefas\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "administração, atenção, contenção, concentração, aplicação",
+              "gloss": "grande e constante diligência e atenção\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a qualidade de ser constantemente diligente e atento\n"
+            },
+            {
+              "words": "administração, atenção, contenção, concentração, aplicação",
+              "gloss": "grande e constante diligência e atenção\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a qualidade de ser constantemente diligente e atento\n"
+            }
+          ]
+        },
+        {
+          "relation": "has derived form",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "de forma sedulous\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "com cuidado e persistência\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "esforço",
+              "gloss": "utilização de energia física ou mental; trabalho duro\n"
+            },
+            {
+              "words": "distinguir, diferenciar",
+              "gloss": "ser uma característica distintiva, atributo ou traço; às vezes em um sentido muito positivo\n"
+            },
+            {
+              "words": "acautelamento, acautelar, acurado, alinho, aprimorado, apurado, asseado, atenção, cautela, correção, cuidadoso, delicadeza, desvelo, diligência, distinto, encargo, esforço, esmerado, esmero, fina, freima, perfeição, polícia, premunir, premunição, preparação, prevenir, previdência, primoroso, provimento, prudência, puro, requintado, resguardo, responsabilidade, seguro, tato, tento, tratado, vernáculo, zelo, cuidado, precaução, prevenção",
+              "gloss": "judiciousness em evitar dano ou perigo\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-01990653-a",
+      "pos": "a",
+      "gloss": "marcado pela firme determinação ou resolução; Não shakable\n",
+      "synonyms": [
+        "inabalável",
+        "constante",
+        "firme"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-01990653-a",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "similar to",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "firmes na finalidade ou crença; caracteriza-se pela firmeza e determinação\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "firmes na finalidade ou crença; caracteriza-se pela firmeza e determinação\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "determinação, firmeza, resolução",
+              "gloss": "a característica de ser decidida\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "liberdade de vacilar ou indecisão; constância da vontade ou conduta\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "resoluteness firme na finalidade ou opinião ou ação\n"
+            },
+            {
+              "words": "constância, firmeza",
+              "gloss": "resolução firme\n"
+            },
+            {
+              "words": "determinação, firmeza, resolução",
+              "gloss": "a característica de ser decidida\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "liberdade de vacilar ou indecisão; constância da vontade ou conduta\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "resoluteness firme na finalidade ou opinião ou ação\n"
+            },
+            {
+              "words": "constância, firmeza",
+              "gloss": "resolução firme\n"
+            }
+          ]
+        },
+        {
+          "relation": "has derived form",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "com determinação resoluta\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "com determinação; em uma determinada maneira\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "não",
+              "gloss": "negação de uma palavra ou grupo de palavras\n"
+            },
+            {
+              "words": "distinguir, diferenciar",
+              "gloss": "ser uma característica distintiva, atributo ou traço; às vezes em um sentido muito positivo\n"
+            },
+            {
+              "words": "determinação, firmeza, resolução",
+              "gloss": "a característica de ser decidida\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-02301560-a",
+      "pos": "a",
+      "gloss": "não sujeitos a mudança ou variação, especialmente no comportamento\n",
+      "synonyms": [
+        "regular",
+        "constante",
+        "estável"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-02301560-a",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "antonym",
+          "targets": [
+            {
+              "words": "instável, irregular",
+              "gloss": "sujeito a alteração ou variação\n"
+            },
+            {
+              "words": "instável, irregular",
+              "gloss": "sujeito a alteração ou variação\n"
+            }
+          ]
+        },
+        {
+          "relation": "similar to",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "consistente no desempenho ou comportamento\n"
+            },
+            {
+              "words": "uniforme, regular",
+              "gloss": "ocorrendo em intervalos fixos\n"
+            },
+            {
+              "words": "firme",
+              "gloss": "(de especialmente características físicas de uma pessoa) não agitação ou tremor\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "não apresentando variações abruptas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "fez firme ou constante\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "determinados a não falhar\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "não passíveis de tropeçar ou cair\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "consistente no desempenho ou comportamento\n"
+            },
+            {
+              "words": "uniforme, regular",
+              "gloss": "ocorrendo em intervalos fixos\n"
+            },
+            {
+              "words": "firme",
+              "gloss": "(de especialmente características físicas de uma pessoa) não agitação ou tremor\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "não apresentando variações abruptas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "fez firme ou constante\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "determinados a não falhar\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "não passíveis de tropeçar ou cair\n"
+            }
+          ]
+        },
+        {
+          "relation": "see also",
+          "targets": [
+            {
+              "words": "sem agitação, tranquilo",
+              "gloss": "não agitado ou perturbado emocionalmente\n"
+            },
+            {
+              "words": "uniforme, regular, igual",
+              "gloss": "sendo nível ou reto ou regular e sem variações como por exemplo, na forma ou textura; ou estar no mesmo plano ou na mesma altura que outra coisa (isto é, mesmo com)\n"
+            },
+            {
+              "words": "estável",
+              "gloss": "resistentes à mudança de posição ou condição\n"
+            },
+            {
+              "words": "sem agitação, tranquilo",
+              "gloss": "não agitado ou perturbado emocionalmente\n"
+            },
+            {
+              "words": "uniforme, regular, igual",
+              "gloss": "sendo nível ou reto ou regular e sem variações como por exemplo, na forma ou textura; ou estar no mesmo plano ou na mesma altura que outra coisa (isto é, mesmo com)\n"
+            },
+            {
+              "words": "estável",
+              "gloss": "resistentes à mudança de posição ou condição\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "constantemente",
+              "gloss": "a uma taxa constante ou ritmo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "de forma constante\n"
+            },
+            {
+              "words": "faiscante, reluzente",
+              "gloss": "brilhante com um brilho constante, mas moderada\n"
+            },
+            {
+              "words": "marcha, andamento, passeata",
+              "gloss": "um avanço constante\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um trote firme como a de um cão\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "derramar ou fluxo em um fluxo constante\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "utilizando-se de valores e princípios; não sujeito a alterações; constante\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "causando uma dor incômoda e constante\n"
+            },
+            {
+              "words": "brilhar",
+              "gloss": "emitem uma luz constante mesmo sem chamas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "fez firme ou constante\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "falta um ritmo constante\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "suportado em balancins e restante quando as dicas de base estável ou de nível\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um dispositivo de navegação que mantém automaticamente navios ou aviões e naves espaciais em uma rota fixa\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "queimador tal que o gás combustível emite de um bocal para formar uma chama constante\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um controle que mantém uma velocidade constante em uma máquina (como controlando o abastecimento de combustível)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um dispositivo eletrônico em um computador que emite um sinal de alta freqüência constante que sincroniza todos os componentes internos\n"
+            },
+            {
+              "words": "tom",
+              "gloss": "um som constante sem conotações\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Física) duas leis que regem as redes elétricas em que corrente constante de fluxo: a soma de todas as correntes em um ponto é zero ea soma dos ganhos de tensão e cai em torno de qualquer circuito fechado é zero\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma teoria da evolução afirmando que a mudança evolutiva no registro fóssil veio aos trancos e barrancos, em vez de em um processo constante de mudança lenta\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma batida constante alto\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma luz azul brilhante constante; anteriormente utilizado como um sinal, mas agora um fogo de artifício\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Electrónica) uma oscilação de pequena amplitude aplicada em cima de um valor constante\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "tique-taque recorrente firme como feito por um relógio\n"
+            },
+            {
+              "words": "corrente",
+              "gloss": "um fluxo contínuo de um fluido (geralmente devido a causas naturais)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "alguém que dirige um ritmo lento estável (geralmente para o exercício)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma luz constante, mesmo sem chamas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o fluxo contínuo de água de superfície do oceano em uma direção predominante\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "ventos constantes que sopram de leste para oeste acima e abaixo do equador\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "fluxo de um gás ou líquido no qual a velocidade em qualquer ponto é relativamente constante\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um estado de constante ação vigorosa que é característica de uma atividade\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "a qualidade de ser estável - regular e invariável\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a qualidade de ser estável - regular e invariável\n"
+            }
+          ]
+        },
+        {
+          "relation": "has derived form",
+          "targets": [
+            {
+              "words": "constantemente",
+              "gloss": "a uma taxa constante ou ritmo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "de forma constante\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "não",
+              "gloss": "negação de uma palavra ou grupo de palavras\n"
+            },
+            {
+              "words": "especialmente",
+              "gloss": "a um distintamente maior extensão ou grau do que é comum\n"
+            },
+            {
+              "words": "atuação, comportamento, conduta, obra",
+              "gloss": "maneira de agir ou controlar a si mesmo\n"
+            },
+            {
+              "words": "alteração, modificação, variação, câmbio, mudança, troca",
+              "gloss": "um evento que ocorre quando algo passa de um estado ou fase para outra\n"
+            },
+            {
+              "words": "variação",
+              "gloss": "uma instância de mudança; a taxa ou a magnitude da mudança\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-02506029-a",
+      "pos": "a",
+      "gloss": "unvarying em natureza\n",
+      "synonyms": [
+        "constante"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-02506029-a",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "similar to",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "não susceptíveis de ou capaz de mudar\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "não susceptíveis de ou capaz de mudar\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "constância",
+              "gloss": "a qualidade de ser duradoura e livre de mudança ou variação\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a qualidade de ser resistente a variação\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a propriedade de permanecer inalterada\n"
+            },
+            {
+              "words": "constância",
+              "gloss": "a qualidade de ser duradoura e livre de mudança ou variação\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a qualidade de ser resistente a variação\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a propriedade de permanecer inalterada\n"
+            }
+          ]
+        },
+        {
+          "relation": "has derived form",
+          "targets": [
+            {
+              "words": "continuadamente, ininterruptamente, permanentemente, constantemente, sempre",
+              "gloss": "sem variação ou mudança, em todos os casos\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-00959244-a",
+      "pos": "a",
+      "gloss": "inabalável em devoção ao amigo ou voto ou causa\n",
+      "synonyms": [
+        "fiel",
+        "firme",
+        "constante"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-00959244-a",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "similar to",
+          "targets": [
+            {
+              "words": "fiel",
+              "gloss": "firmes na afeição ou lealdade\n"
+            },
+            {
+              "words": "fiel",
+              "gloss": "firmes na afeição ou lealdade\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "determinação, firmeza, resolução",
+              "gloss": "a característica de ser decidida\n"
+            },
+            {
+              "words": "determinação, firmeza, resolução",
+              "gloss": "a característica de ser decidida\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "dedicação",
+              "gloss": "compromisso com algum propósito\n"
+            },
+            {
+              "words": "voto",
+              "gloss": "uma promessa solene (para si mesmo ou para outro ou a uma divindade) para fazer algo ou de se comportar de uma certa maneira\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-13585429-n",
+      "pos": "n",
+      "gloss": "um número que representa uma quantidade assumido como tendo um valor fixo num contexto matemático especificado\n",
+      "synonyms": [
+        "constante"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-13585429-n",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "hyponym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "o número de moléculas de uma mole de uma substância (aproximadamente 602,250,000,000,000,000,000,000)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "usados ​​no cálculo da constante da constante de gás ideal\n"
+            },
+            {
+              "words": "coeficiente",
+              "gloss": "um número constante que serve como uma medida de alguma propriedade ou característica\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma constante arbitrária nas equações da teoria da relatividade geral\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Química), a razão de concentrações quando o equilíbrio é alcançado numa reacção reversível (quando a velocidade de reacção para a frente é igual à velocidade da reacção inversa)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Física) a constante universal na equação dos gases: pressão vezes volume = R temperatura vezes; igual a 8,3143 Joules por mole por kelvin\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Física) a constante universal relativa força a massa e distância em lei da gravitação de Newton\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Cosmologia) a razão entre a velocidade de retirada de um Galaxy (devido à expansão do universo) a sua distância do observador; a constante de Hubble não é realmente uma constante, mas é considerado como uma medida da taxa de expansão hoje\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a carga de um ião é igual a uma taxa constante e multiplicada por um número inteiro de 1 a 15\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o valor constante da razão de duas quantidades proporcionais x e y; geralmente escrita y = kx, em que k é o factor de proporcionalidade\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a velocidade na qual a luz se propaga no vácuo; a constância e universalidade da velocidade da luz é reconhecido através da sua definição a ser exactamente 299.792.458 metros por segundo\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "número",
+              "gloss": "um conceito de quantidade envolvendo zero e unidades\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "assumir",
+              "gloss": "considero ser o caso, ou para ser verdade; aceitar sem verificação ou prova\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "tomar o lugar de ser ou paralelo ou equivalentes aos\n"
+            },
+            {
+              "words": "matemático",
+              "gloss": "de ou relativo a, ou da natureza da matemática\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-05858936-n",
+      "pos": "n",
+      "gloss": "uma quantidade que não varia\n",
+      "synonyms": [
+        "constante"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-05858936-n",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "hyponym",
+          "targets": [
+            {
+              "words": "parâmetro",
+              "gloss": "uma constante na equação de uma curva que pode ser variado para produzir uma família de curvas similares\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "quantidade",
+              "gloss": "o conceito algo que tem uma magnitude e pode ser representado em expressões matemáticas por uma constante ou uma variável\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "não",
+              "gloss": "negação de uma palavra ou grupo de palavras\n"
+            },
+            {
+              "words": "variar, mudar",
+              "gloss": "estar sujeita a alterações de acordo com uma variável\n"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

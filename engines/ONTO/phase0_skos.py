@@ -51,7 +51,8 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any, Optional
 
-STATUSES = ("UF", "RT", "contraste")
+# contraste / oposicao / vizinha / atributo = evidência (nunca admitidos / Turtle).
+STATUSES = ("UF", "RT")
 DECISION_ADMIT = ("UF", "RT")  # decisões de synset que entram na lista branca
 
 # Padrões de ruído por omissão (Etapa 4). Podem ser estendidos pela spec.
@@ -362,22 +363,21 @@ class Phase0Engine:
     def stage5(self, pool: dict[str, dict]) -> dict:
         admitted, pending = {}, {}
         for nw, rec in pool.items():
-            adj = self.spec.adjudication.get(nw)
-            complete = bool(
-                adj and adj.get("status") in STATUSES
-                and adj.get("test") and adj.get("guarantee")
-            )
+            adj = dict(self.spec.adjudication.get(nw) or {})
+            status = adj.get("status")
+            # Corte 2: status alone admits (Onto remains discovery in the pipeline).
+            complete = bool(status in STATUSES)
             if complete:
+                adj.setdefault("test", "derivado do sentido (PASSO 3)")
+                adj.setdefault("guarantee", ["sense_decision"])
                 admitted[nw] = {**rec, **adj}
             else:
                 pending[nw] = {**rec, "adjudication": adj or None}
 
-        bad = [nw for nw, r in admitted.items()
-               if r.get("status") not in STATUSES or not r.get("test")
-               or not r.get("guarantee")]
+        bad = [nw for nw, r in admitted.items() if r.get("status") not in STATUSES]
         self._assert("Etapa 5",
-                     "Cada termo em admitidos[] tem estatuto∈{UF,RT,contraste}, "
-                     "teste decisivo registado e ≥1 garantia.",
+                     "Cada termo em admitidos[] tem estatuto∈{UF,RT} "
+                     "(Onto = descoberta; garantia calculada a jusante).",
                      not bad,
                      "OK" if not bad else f"incompletos: {bad}")
         return {"admitted": admitted, "pending": pending}
@@ -386,7 +386,10 @@ class Phase0Engine:
     def finalize(self, admitted: dict[str, dict]) -> dict:
         uf = {nw for nw, r in admitted.items() if r["status"] == "UF"}
         rt = {nw for nw, r in admitted.items() if r["status"] == "RT"}
-        contrast = {nw for nw, r in admitted.items() if r["status"] == "contraste"}
+        evidence_leak = {
+            nw for nw, r in admitted.items()
+            if r["status"] in ("contraste", "atributo", "oposicao", "vizinha")
+        }
 
         def disp(keys):
             return sorted(admitted[nw].get("display", pretty_word(nw)) for nw in keys)
@@ -403,14 +406,15 @@ class Phase0Engine:
                      not conflicts,
                      "OK" if not conflicts else f"conflitos: {conflicts}")
 
-        # C2 — contrastantes não são serializados como skos:related.
-        related_overlap = contrast & rt
+        # C2 — estatutos de evidência nunca figuram em admitidos (nem Turtle).
         self._assert("Consistência final",
-                     "Contrastantes não são serializados como skos:related.",
-                     not related_overlap,
-                     "OK" if not related_overlap else f"contraste em related: {sorted(related_overlap)}")
+                     "Nenhum estatuto de evidência em admitidos[] "
+                     "(contraste/atributo/oposicao/vizinha).",
+                     not evidence_leak,
+                     "OK" if not evidence_leak else f"fuga: {sorted(evidence_leak)}")
 
-        return {"uf": disp(uf), "rt": disp(rt), "contrast": disp(contrast)}
+        # No :contrastaCom / :temAtributo keys — evidence is never serialised.
+        return {"uf": disp(uf), "rt": disp(rt)}
 
     # -- orquestração --------------------------------------------------
     def run(self) -> dict:
@@ -506,7 +510,6 @@ def render_turtle(result: dict) -> str:
     axis = result["axis"]
     uf = [r for r in result["provenance"] if r["estatuto"] == "UF"]
     rt = [r for r in result["provenance"] if r["estatuto"] == "RT"]
-    contrast = [r for r in result["provenance"] if r["estatuto"] == "contraste"]
 
     def esc(s: str) -> str:
         return s.replace("\\", "\\\\").replace('"', '\\"')
@@ -524,11 +527,8 @@ def render_turtle(result: dict) -> str:
     for r in uf:
         lines.append(f'    skosxl:altLabel [ skosxl:literalForm "{esc(r["termo"])}"@pt ] ;')
     for r in rt:
-        lines.append(f'    skos:related :{normalize_word(r["termo"])} ;')
-    for r in contrast:
-        lines.append(f'    :contrastaCom :{normalize_word(r["termo"])} ;')
-    for r in contrast:
-        lines.append(f'    skos:scopeNote "Contraste lexical (eixo): {esc(r["termo"])}"@pt ;')
+        # tex:termoRelacionado ⊑ skosxl:labelRelation (not skos:related)
+        lines.append(f'    :termoRelacionado :{normalize_word(r["termo"])} ;')
     if lines[-1].endswith(";"):
         lines[-1] = lines[-1][:-1].rstrip() + " ."
     else:
@@ -537,7 +537,15 @@ def render_turtle(result: dict) -> str:
     # disjunção entre irmãs (TBox)
     for other in result.get("_disjoint_classes", []):
         lines.append(f":{cid} owl:disjointWith :{other} .")
-    return "\n".join(lines) + "\n"
+    ttl = "\n".join(lines) + "\n"
+    # :contrastaCom / :temAtributo — no emission path (evidence = Bloco B only).
+    for banned in (":contrastaCom", ":temAtributo"):
+        if banned in ttl:
+            raise RuntimeError(
+                f"Turtle contém predicado proibido {banned} — "
+                "evidência não serializa."
+            )
+    return ttl
 
 
 def render_markdown(result: dict) -> str:
@@ -618,7 +626,7 @@ def render_markdown(result: dict) -> str:
         ap("Nenhum candidato descartado por assinatura de ruído.")
     ap("")
 
-    ap("## Etapa 5 — Adjudicação UF / RT / contraste")
+    ap("## Etapa 5 — Adjudicação UF / RT")
     adm5 = r["stage5"]["admitted"]
     pend = r["stage5"]["pending"]
     ap(f"- Termos **admitidos** (decisão humana completa): **{len(adm5)}**")
@@ -638,15 +646,13 @@ def render_markdown(result: dict) -> str:
         ap(", ".join(sorted(v["display"] for v in pend.values())))
         ap("")
 
-    ap("## §6 — Mapeamento SKOS-XL / OWL")
+    ap("## §6 — Mapeamento SKOS-XL / OWL (só Bloco A)")
     ap(f"- `skos:prefLabel` → **{r['pref_label']}**")
     ap(f"- `skosxl:altLabel` (UF) → {', '.join(r['skos']['uf']) or '—'}")
-    ap(f"- `skos:related` (RT) → {', '.join(r['skos']['rt']) or '—'}")
-    ap(f"- `:contrastaCom` + `skos:scopeNote` (contraste) → "
-       f"{', '.join(r['skos']['contrast']) or '—'}")
+    ap(f"- `:termoRelacionado` (RT) → {', '.join(r['skos']['rt']) or '—'}")
     ap("")
-    ap("_Contrastantes NÃO são serializados como `skos:related` "
-       "(o SKOS não modela antonímia)._")
+    ap("_Evidência (oposição, atributo, vizinha, sinalização) NÃO é serializada "
+       "como relação SKOS/SKOS-XL._")
     ap("")
     return "\n".join(L)
 

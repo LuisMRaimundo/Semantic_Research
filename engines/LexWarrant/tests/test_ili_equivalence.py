@@ -86,7 +86,8 @@ class TestBuilder(unittest.TestCase):
 
 
 class TestWiring(unittest.TestCase):
-    def _run(self, folder, onto, pulo, wn=None, with_map=True):
+    def _run(self, folder, onto, pulo, wn=None, with_map=True,
+             weak_term_mode="gloss_gated"):
         specs = [("ONTO", _write(folder, "ONTO.result.json", onto)),
                  ("PULO", _write(folder, "PULO.result.json", pulo))]
         if wn is not None:
@@ -102,7 +103,10 @@ class TestWiring(unittest.TestCase):
                  "confidence": "high"},
             ], "review": [], "unmatched": []}
             map_path = _write(folder, "ili_equivalence.json", map_doc)
-        return lw.run_report(specs, folder, policy="conservative", map_path=map_path)
+        return lw.run_report(
+            specs, folder, policy="conservative", map_path=map_path,
+            weak_term_mode=weak_term_mode,
+        )
 
     def _concept(self, doc, term):
         for c in doc["concepts"]:
@@ -177,13 +181,23 @@ class TestWiring(unittest.TestCase):
                 self.assertTrue(present, "nenhuma linha pode ter todas as fontes «—»")
 
     def test_a8_plena_requires_ili_defensavel_excludes_weak(self):
-        # Same status in both sources but NO shared/linked ILI → weak(term).
+        # Same status in both sources but NO shared/linked ILI.
+        # Default gloss_gated with empty glosses → refuse weak join (safer).
         onto = _source("K", provenance=[
             {"termo": "homogeneo", "estatuto": "RT", "offsets_ili": ["clip21:1"]}])
         pulo = _source("K", provenance=[
             {"termo": "homogeneo", "estatuto": "RT", "offsets_ili": ["ili-30-01199751-a"]}])
         with tempfile.TemporaryDirectory() as d:
             doc = self._run(Path(d), onto, pulo, with_map=True)
+            c = self._concept(doc, "homogeneo")
+            self.assertIn(c["join"], ("single", "weak(term)"))
+            self.assertNotEqual(c["veredicto"], "convergência plena")
+            self.assertNotIn("homogeneo", doc["summary"]["convergencia_plena"])
+        # legacy mode still forms weak(term) / convergência (termo)
+        with tempfile.TemporaryDirectory() as d:
+            doc = self._run(
+                Path(d), onto, pulo, with_map=True, weak_term_mode="legacy",
+            )
             c = self._concept(doc, "homogeneo")
             self.assertEqual(c["join"], "weak(term)")
             self.assertEqual(c["veredicto"], "convergência (termo)")

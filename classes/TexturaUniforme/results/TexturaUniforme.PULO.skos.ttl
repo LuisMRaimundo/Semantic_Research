@@ -1,12 +1,18 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
 @prefix tex: <http://example.org/textura#> .
 
 tex:TexturaUniforme a owl:Class,
         skos:Concept ;
-    tex:contrastaCom tex:politipica ;
+    tex:termoRelacionado tex:invariancia,
+        tex:periodico,
+        tex:uniformidade ;
     owl:disjointWith tex:TexturaHeterogenea ;
     skos:prefLabel "uniforme"@pt ;
-    skos:scopeNote "Contraste lexical (eixo): politípica"@pt,
-        "Eixo definidor: invariância face a um parâmetro"@pt .
+    skos:scopeNote "Eixo definidor: invariância face a um parâmetro"@pt ;
+    skosxl:altLabel [ skosxl:literalForm "uniforme"@pt ],
+        [ skosxl:literalForm "imutável"@pt ],
+        [ skosxl:literalForm "invariável"@pt ],
+        [ skosxl:literalForm "constante"@pt ] .
 

@@ -1,9 +1,11 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
 @prefix tex: <http://example.org/textura#> .
 
 tex:TexturaComposita a owl:Class,
         skos:Concept ;
     skos:prefLabel "TexturaCompósita"@pt ;
-    skos:scopeNote "Eixo definidor: heterogeneidade / composição de materiais ou partes distintas"@pt .
+    skos:scopeNote "Eixo definidor: heterogeneidade / composição de materiais ou partes distintas"@pt ;
+    skosxl:altLabel [ skosxl:literalForm "composto"@pt ] .
 

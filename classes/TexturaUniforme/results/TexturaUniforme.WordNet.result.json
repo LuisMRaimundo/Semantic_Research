@@ -1,17 +1,17 @@
 {
   "class_id": "TexturaUniforme",
   "pref_label": "uniforme",
-  "axis": "(faixa WordNet — corroboração ancorada em ILI; sem adjudicação)",
-  "generated": "2026-07-20T16:51:21",
+  "axis": "(faixa OEWN — corroboração EN / relações tipadas; sem adjudicação)",
+  "generated": "2026-07-27T12:39:51",
   "source": "WordNet (OEWN facets export)",
   "facets_export": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\classes\\TexturaUniforme\\exports\\wordnet_uniform.facets.json",
   "convoked_ilis": [
     "i10771",
     "i4126",
-    "i60712"
+    "i6560"
   ],
   "skipped_ilis": [
-    "i6560",
+    "i60712",
     "i10734",
     "i33388"
   ],
@@ -41,34 +41,17 @@
       ]
     },
     {
-      "name": "oewn-04516887-n",
-      "ili": "i60712",
-      "pos": "n",
-      "pt_lemmas": [
-        "farda",
-        "fardamento",
-        "uniforme"
-      ],
+      "name": "oewn-01203638-s",
+      "ili": "i6560",
+      "pos": "s",
+      "pt_lemmas": [],
       "lemmas": [
+        "consistent",
         "uniform"
       ]
     }
   ],
   "sinalizacao": {
-    "invariavel": {
-      "display": "invariável",
-      "reason": "atestado na WordNet [pt_lemma (ILI)] · oewn-01973553-a · ILI i10771",
-      "offsets_ili": [
-        "i10771"
-      ]
-    },
-    "uniforme": {
-      "display": "uniforme",
-      "reason": "atestado na WordNet [pt_lemma (ILI)] · oewn-01973553-a · ILI i10771",
-      "offsets_ili": [
-        "i10771"
-      ]
-    },
     "multiform": {
       "display": "multiform",
       "reason": "material de contraste (antonym) de i10771 (oewn-01973553-a) — sem estatuto; adjudicação humana",
@@ -111,20 +94,27 @@
         "i4127"
       ]
     },
-    "farda": {
-      "display": "farda",
-      "reason": "atestado na WordNet [pt_lemma (ILI)] · oewn-04516887-n · ILI i60712",
+    "consistent": {
+      "display": "consistent",
+      "reason": "atestado na WordNet [en_lemma (sem correspondência own-pt)] · oewn-01203638-s · ILI i6560",
       "offsets_ili": [
-        "i60712"
+        "i6560"
       ]
     },
-    "fardamento": {
-      "display": "fardamento",
-      "reason": "atestado na WordNet [pt_lemma (ILI)] · oewn-04516887-n · ILI i60712",
+    "homogeneous": {
+      "display": "homogeneous",
+      "reason": "vizinho similar_to de i6560 (oewn-01203638-s) — sem estatuto; adjudicação humana",
       "offsets_ili": [
-        "i60712"
+        "i6559"
+      ]
+    },
+    "homogenous": {
+      "display": "homogenous",
+      "reason": "vizinho similar_to de i6560 (oewn-01203638-s) — sem estatuto; adjudicação humana",
+      "offsets_ili": [
+        "i6559"
       ]
     }
   },
-  "_note": "Faixa de CORROBORAÇÃO: só sentidos do eixo adjudicados na tabela ILI; entradas em sinalizacao, nunca estatutos."
+  "_note": "Faixa OEWN: lemas EN e relações tipadas em sinalizacao. Lemas PT via ILI → ficheiro OWN-PT.result.json (coluna própria)."
 }

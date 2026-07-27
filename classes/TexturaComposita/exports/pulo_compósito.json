@@ -1,0 +1,1200 @@
+{
+  "type": "pulo_thesaurus_search",
+  "query": {
+    "query": "compósito",
+    "pos": null,
+    "mode": "Contains"
+  },
+  "count": 1,
+  "synsets": [
+    {
+      "synset_offset": "por-30-09947232-n",
+      "pos": "n",
+      "gloss": "alguém que compõe a música como uma profissão\n",
+      "synonyms": [
+        "compositor"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-09947232-n",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "hyponym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "um compositor que se especializa em contraponto\n"
+            },
+            {
+              "words": "salmista",
+              "gloss": "um compositor de canções sagradas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um compositor de palavras ou música para canções populares\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um compositor de sinfonias\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Igreja Católica) Sacerdote romano que se tornou bispo de Milão; o primeiro pai da Igreja nasceu e cresceu na fé cristã; compositor de hinos; impostas a ortodoxia na igreja cristã primitiva e construiu seu poder secular; um Santo e doutor da igreja (340?-397)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Alemão organista e contrapontística barroco; composta principalmente de música teclado; um dos maiores criadores da música ocidental (1685-1750)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor (1910-1981)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor húngaro e pianista que recolheu música folclórica húngara; em 1940 mudou-se para os Estados Unidos (1881-1945)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor alemão de música instrumental (especialmente Sinfônica e música de câmara); continuou a compor depois que ele perdeu sua audição (1770-1827)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor italiano de óperas (1801-1835)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor austríaco no sistema de música dodecafônica de Schoenberg (1885-1935)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor francês de obras românticas (1803-1869)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Condutor Estados Unidos e compositor (1918-1990)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor francês mais conhecido por suas óperas (1838-1875)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos pianista e compositor de óperas e musicais joga (1905-1964)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor (nascido na Suíça), que compôs sinfonias e música de câmara e música coral e uma sonata para piano e uma ópera (1880-1959)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor russo (1833-1887)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor francês de música serial (nascida em 1925)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor alemão que desenvolveu o estilo romântico de ambos música lírica e clássica (1833-1897)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "grande compositor inglês do século XX; conhecido por suas óperas (1913-1976)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor alemão (1838-1920)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Austríaca organista e compositor de música romântica (1824-1896)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Organista Inglês e compositor de música de igreja; mestre da polifonia do século 16; foi concedido um monopólio na impressão de música com Thomas Tallis (1543-1623)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor de música de vanguarda (1912-1992)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor mexicano de obras nacionalistas usando temas da música popular indiana (1899-1978)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor italiano de óperas e música de igreja (1760-1842)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor francês (nascido na Polônia) e pianista da escola romântica (1810-1849)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor que desenvolveu uma música distintamente americano (1900-1990)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Violinista italiana e compositor dos concertos para violino (1653-1713)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor francês de música para órgão e um membro de uma família de organistas distintos (1668-1733)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Dramaturgo inglês e ator e compositor conhecido por suas comédias espirituosas e sofisticadas (1899-1973)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Virtuosa pianista e compositor austríaco de muitas obras para piano; estudou com Beethoven e foi professor de Franz Liszt (1791-1857)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Francês compositor que se diz ter criado o Impressionismo na música (1862-1918)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor francês de óperas (1836-1891)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Inglês compositor de obras orquestrais (1862-1934)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor italiano de óperas (1797-1848)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Inglês alaudista e compositor de músicas para alaúde (1563-1626)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor francês (1865-1935)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor checo que combinou elementos folclóricos com as formas tradicionais (1841-1904)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor britânico de coral e obras orquestrais, incluindo duas sinfonias, bem como canções e música de câmara e música para banda de música (1857-1934)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Violinista e compositor romeno (1881-1955)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor e pianista espanhol (1876-1946)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor francês e professor, que influenciou uma geração de compositores (1822-1890)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor que incorporou jazz em formas clássicas e pontuações composta por comédias musicais (1898-1937)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor russo (1804-1857)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor alemão de mais de 100 óperas (1714-1787)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor francês mais lembrado por suas óperas (1818-1893)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor (nascido na Austrália) que viveu em Londres e recolhido canções populares inglesas (1882-1961)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor norueguês cujo trabalho foi muitas vezes inspirados por música folclórica norueguesa (1843-1907)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor de ópera francesa (1799-1862)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um compositor barroco britânico prolífico (nascido na Alemanha) lembrou melhor para o seu oratório Messias (1685-1759)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos músico de blues que transcreveu e publicou blues tradicional (1873-1958)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "prolífico compositor austríaco que influenciou a forma clássica da sinfonia (1732-1809)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor alemão neoclássico e maestro que acreditava que a música deve ter uma finalidade social (1895-1963)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor suíço (nascido na França), que foi o membro fundador de um grupo em Paris, que incluiu Erik Satie e Darius Milhaud e Francis Poulenc e Jean Cocteau (1892-1955)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor alemão de seis óperas e outra música incidental (1854-1921)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor francês (1890-1962)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor conhecido por seu uso inovador de politonalidade (1874-1954)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Violinista e compositor húngaro (1831-1907)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor que foi o primeiro criador de ragtime para escrever suas composições (1868-1917)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor armênio que incorporou a música popular oriental (1903-1978)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor de comédias musicais (1885-1945)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor russo (nascido na Armênia) cujas obras são românticos e refletem seu interesse na música popular (1903-1978)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Inglês compositor e maestro (1905-1951)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor belga (1532-1594)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos cantor folk e compositor (1885-1949)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor húngaro de operetas (1870-1948)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor húngaro e piano virtuoso (1811-1886)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Inglês compositor de muitos musicais de sucesso (alguns em colaboração com Sir Tim Rice) (nascido em 1948)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor (nascido na Áustria), que colaborou com Lerner em vários musicais (1901-1987)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor francês (nascido na Itália), que foi o compositor da corte de Luís XIV e fundou a ópera francesa nacional (1632-1687)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor mais lembrado como um compositor de obras para piano (1860-1908)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor austríaco e maestro (1860-1911)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor francês mais lembrado por suas óperas pop (1842-1912)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Músico e compositor alemão romântico de obras orquestrais e corais (1809-1847)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor (nascido na Itália) de óperas (nascido em 1911)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor alemão de óperas em um estilo que influenciou Richard Wagner (1791-1864)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor francês de obras que combinam jazz e politonalidade e da música brasileira (1892-1974)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor italiano (1567-1643)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor de obras notáveis ​​para seu uso do vernáculo americana (1893-1969)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "compositor austríaco prolífico e criança prodígio; mestre do estilo clássico em todas as suas formas de seu tempo (1756-1791)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor russo de óperas e obras orquestrais (1839-1881)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor dinamarquês (1865-1931)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor francês de muitos operetas e uma ópera (1819-1880)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor e rockabilly tenor popular na década de 1950 (1936-1988)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor italiano (1526-1594)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor neoclássico (1894-1976)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor e letrista de comédias musicais (1891-1946)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "O pianista e compositor francês (1899-1963)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor russo de bailados e sinfonias e óperas (1891-1953)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor operístico italiano anotado para o realismo dramático de suas óperas (1858-1924)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Organista Inglês na Abadia de Westminster e compositor de muitas peças de teatro (1659-1695)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "compositor e virtuoso do piano nascidos na Rússia (1873-1943)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor francês de óperas cujos escritos lançou as bases para a moderna teoria da harmonia (1683-1764)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor francês e expoente do impressionismo (1875-1937)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor (nascido em 1936)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor italiano lembrado por seus poemas sinfônicos (1879-1936)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor russo de óperas e obras orquestrais; temas usados ​​frequentemente de música popular (1844-1908)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor de comédias musicais (especialmente em colaboração com Oscar Hammerstein II e com Lorenz Hart) (1902-1979)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor (nascido na Hungria) que compôs operetas (1887-1951)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor italiano lembrado por suas óperas (1792-1868)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor e pianista russo (1829-1894)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "O pianista e compositor francês (1835-1921)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor francês conhecido por seu experimentalismo e rejeição do Romantismo (1866-1925)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor (nascido na Áustria) e pianista conhecido por suas interpretações das obras de Mozart e Beethoven e Schubert (1882-1951)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor e teórico musical (nascido na Áustria), que desenvolveu composição atonal (1874-1951)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor austríaco conhecido por suas composições para voz e piano (1797-1828)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor romântico alemão conhecido por música de piano e canções (1810-1856)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "O pianista e compositor alemão de música de piano; conhecido pela sua interpretação da música, especialmente a música de seu marido Robert Schumann (1819-1896)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor russo de música orquestral e piano (1872-1915)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Violonista espanhol que fez guitarra clássica um instrumento de concerto (1893-1987)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor que promoveu a música do século 20 (1896-1985)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor russo mais conhecido por seus quinze sinfonias (1906-1975)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor finlandês (1865-1957)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor checo (1824-1884)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor de musicais (nascido em 1930)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um bandmaster Estados Unidos e compositor de marchas militares (1854-1932)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor austríaco de valsas (1804-1849)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor austríaco e filho de Strauss a pessoa idosa; compôs muitas valsas famosas e ficou conhecido como o &#39;rei da valsa &quot;(1825-1899)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor alemão de muitas óperas; colaborou com o libretista Hugo von Hoffmannsthal para produzir várias óperas (1864-1949)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "compositor que nasceu na Rússia, mas viveu nos Estados Unidos depois de 1939 (1882-1971)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Inglês compositor de operetas que colaboraram com o libretista William Gilbert (1842-1900)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Organista e compositor Inglês da igreja e música secular; foi concedido um monopólio na impressão de música com William Byrd (1505-1585)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor e crítico de música (1885-1966)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "importante compositor russo cujos trabalhos são conhecidos por suas melodias expressivas (1840-1893)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor alemão barroco (1681-1767)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor que colaborou com Gertrude Stein (1896-1989)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor (nascido na França), cuja música combina dissonância com ritmos complexos e o uso de técnicas eletrônicas (1883-1965)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor Inglês influenciado por músicas folclóricas e música do período Tudor (1872-1958)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor operístico italiano (1813-1901)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor brasileiro (1887-1959)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Italiano compositor barroco e violinista (1675-1741)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor alemão de óperas e inventor do drama musical em que drama e espetáculo e música se fundem (1813-1883)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor Inglês (1902-1983)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Maestro e compositor alemão de óperas românticas (1786-1826)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor alemão; colaborou com Bertolt Brecht (1900-1950)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor austríaco (1860-1903)\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "a conclusão ou o enriquecimento de uma parte de música deixou pouco notado por um compositor\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição musical que foi concluída ou enriquecida por alguém que não seja o compositor\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um distrito da cidade (originalmente, em Nova York), onde compositores e editores de música popular fazer negócios\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um compositor que se especializa em contraponto\n"
+            },
+            {
+              "words": "salmista",
+              "gloss": "um compositor de canções sagradas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um artista (e por vezes compositor) de ritmo e blues\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um artista ou compositor ou fã da música rock\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um compositor de palavras ou música para canções populares\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um compositor de sinfonias\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Igreja Católica) Sacerdote romano que se tornou bispo de Milão; o primeiro pai da Igreja nasceu e cresceu na fé cristã; compositor de hinos; impostas a ortodoxia na igreja cristã primitiva e construiu seu poder secular; um Santo e doutor da igreja (340?-397)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor (1910-1981)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor húngaro e pianista que recolheu música folclórica húngara; em 1940 mudou-se para os Estados Unidos (1881-1945)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor alemão de música instrumental (especialmente Sinfônica e música de câmara); continuou a compor depois que ele perdeu sua audição (1770-1827)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor italiano de óperas (1801-1835)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor austríaco no sistema de música dodecafônica de Schoenberg (1885-1935)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor francês de obras românticas (1803-1869)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Condutor Estados Unidos e compositor (1918-1990)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor francês mais conhecido por suas óperas (1838-1875)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos pianista e compositor de óperas e musicais joga (1905-1964)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor (nascido na Suíça), que compôs sinfonias e música de câmara e música coral e uma sonata para piano e uma ópera (1880-1959)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor russo (1833-1887)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor francês de música serial (nascida em 1925)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor alemão que desenvolveu o estilo romântico de ambos música lírica e clássica (1833-1897)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "grande compositor inglês do século XX; conhecido por suas óperas (1913-1976)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor alemão (1838-1920)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Austríaca organista e compositor de música romântica (1824-1896)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Organista Inglês e compositor de música de igreja; mestre da polifonia do século 16; foi concedido um monopólio na impressão de música com Thomas Tallis (1543-1623)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor de música de vanguarda (1912-1992)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor mexicano de obras nacionalistas usando temas da música popular indiana (1899-1978)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor italiano de óperas e música de igreja (1760-1842)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor francês (nascido na Polônia) e pianista da escola romântica (1810-1849)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor que desenvolveu uma música distintamente americano (1900-1990)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Violinista italiana e compositor dos concertos para violino (1653-1713)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor francês de música para órgão e um membro de uma família de organistas distintos (1668-1733)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Dramaturgo inglês e ator e compositor conhecido por suas comédias espirituosas e sofisticadas (1899-1973)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Virtuosa pianista e compositor austríaco de muitas obras para piano; estudou com Beethoven e foi professor de Franz Liszt (1791-1857)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Francês compositor que se diz ter criado o Impressionismo na música (1862-1918)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor francês de óperas (1836-1891)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Inglês compositor de obras orquestrais (1862-1934)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos rhythm & blues pianista e cantor e compositor (nascido em 1928)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor italiano de óperas (1797-1848)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Inglês alaudista e compositor de músicas para alaúde (1563-1626)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor francês (1865-1935)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor checo que combinou elementos folclóricos com as formas tradicionais (1841-1904)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor britânico de coral e obras orquestrais, incluindo duas sinfonias, bem como canções e música de câmara e música para banda de música (1857-1934)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor de jazz e pianista e bandleader (1899-1974)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Violinista e compositor romeno (1881-1955)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor e pianista espanhol (1876-1946)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor francês e professor, que influenciou uma geração de compositores (1822-1890)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor que incorporou jazz em formas clássicas e pontuações composta por comédias musicais (1898-1937)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor russo (1804-1857)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor alemão de mais de 100 óperas (1714-1787)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor francês mais lembrado por suas óperas (1818-1893)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor (nascido na Austrália) que viveu em Londres e recolhido canções populares inglesas (1882-1961)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor norueguês cujo trabalho foi muitas vezes inspirados por música folclórica norueguesa (1843-1907)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor de ópera francesa (1799-1862)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um compositor barroco britânico prolífico (nascido na Alemanha) lembrou melhor para o seu oratório Messias (1685-1759)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "prolífico compositor austríaco que influenciou a forma clássica da sinfonia (1732-1809)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos músico e compositor e maestro conhecido por suas óperas cômicas (1859-1924)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor alemão neoclássico e maestro que acreditava que a música deve ter uma finalidade social (1895-1963)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor suíço (nascido na França), que foi o membro fundador de um grupo em Paris, que incluiu Erik Satie e Darius Milhaud e Francis Poulenc e Jean Cocteau (1892-1955)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor alemão de seis óperas e outra música incidental (1854-1921)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor francês (1890-1962)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor conhecido por seu uso inovador de politonalidade (1874-1954)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Violinista e compositor húngaro (1831-1907)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor que foi o primeiro criador de ragtime para escrever suas composições (1868-1917)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor armênio que incorporou a música popular oriental (1903-1978)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor de comédias musicais (1885-1945)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor russo (nascido na Armênia) cujas obras são românticos e refletem seu interesse na música popular (1903-1978)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Condutor Estados Unidos (nascido na Rússia), que foi observado para a realização das obras de compositores contemporâneos (1874-1951)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Inglês compositor e maestro (1905-1951)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor belga (1532-1594)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos cantor folk e compositor (1885-1949)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor húngaro de operetas (1870-1948)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor húngaro e piano virtuoso (1811-1886)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Inglês compositor de muitos musicais de sucesso (alguns em colaboração com Sir Tim Rice) (nascido em 1948)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor (nascido na Áustria), que colaborou com Lerner em vários musicais (1901-1987)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor francês (nascido na Itália), que foi o compositor da corte de Luís XIV e fundou a ópera francesa nacional (1632-1687)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor mais lembrado como um compositor de obras para piano (1860-1908)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor austríaco e maestro (1860-1911)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor francês mais lembrado por suas óperas pop (1842-1912)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Músico e compositor alemão romântico de obras orquestrais e corais (1809-1847)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor (nascido na Itália) de óperas (nascido em 1911)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor alemão de óperas em um estilo que influenciou Richard Wagner (1791-1864)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor francês de obras que combinam jazz e politonalidade e da música brasileira (1892-1974)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor italiano (1567-1643)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor de obras notáveis ​​para seu uso do vernáculo americana (1893-1969)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "compositor austríaco prolífico e criança prodígio; mestre do estilo clássico em todas as suas formas de seu tempo (1756-1791)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor russo de óperas e obras orquestrais (1839-1881)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor dinamarquês (1865-1931)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor francês de muitos operetas e uma ópera (1819-1880)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor e rockabilly tenor popular na década de 1950 (1936-1988)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Violinista e compositor italiano de música para violino (1782-1840)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor italiano (1526-1594)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor neoclássico (1894-1976)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor e letrista de comédias musicais (1891-1946)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "O pianista e compositor francês (1899-1963)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor russo de bailados e sinfonias e óperas (1891-1953)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor operístico italiano anotado para o realismo dramático de suas óperas (1858-1924)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Organista Inglês na Abadia de Westminster e compositor de muitas peças de teatro (1659-1695)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "compositor e virtuoso do piano nascidos na Rússia (1873-1943)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor francês de óperas cujos escritos lançou as bases para a moderna teoria da harmonia (1683-1764)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor francês e expoente do impressionismo (1875-1937)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor (nascido em 1936)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor italiano lembrado por seus poemas sinfônicos (1879-1936)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor russo de óperas e obras orquestrais; temas usados ​​frequentemente de música popular (1844-1908)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor de comédias musicais (especialmente em colaboração com Oscar Hammerstein II e com Lorenz Hart) (1902-1979)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor (nascido na Hungria) que compôs operetas (1887-1951)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor italiano lembrado por suas óperas (1792-1868)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor e pianista russo (1829-1894)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "O pianista e compositor francês (1835-1921)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor francês conhecido por seu experimentalismo e rejeição do Romantismo (1866-1925)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor (nascido na Áustria) e pianista conhecido por suas interpretações das obras de Mozart e Beethoven e Schubert (1882-1951)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor e teórico musical (nascido na Áustria), que desenvolveu composição atonal (1874-1951)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor austríaco conhecido por suas composições para voz e piano (1797-1828)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor romântico alemão conhecido por música de piano e canções (1810-1856)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "O pianista e compositor alemão de música de piano; conhecido pela sua interpretação da música, especialmente a música de seu marido Robert Schumann (1819-1896)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor russo de música orquestral e piano (1872-1915)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor que promoveu a música do século 20 (1896-1985)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor russo mais conhecido por seus quinze sinfonias (1906-1975)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor finlandês (1865-1957)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor checo (1824-1884)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor de musicais (nascido em 1930)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um bandmaster Estados Unidos e compositor de marchas militares (1854-1932)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor austríaco de valsas (1804-1849)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor austríaco e filho de Strauss a pessoa idosa; compôs muitas valsas famosas e ficou conhecido como o &#39;rei da valsa &quot;(1825-1899)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor alemão de muitas óperas; colaborou com o libretista Hugo von Hoffmannsthal para produzir várias óperas (1864-1949)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "compositor que nasceu na Rússia, mas viveu nos Estados Unidos depois de 1939 (1882-1971)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Inglês compositor de operetas que colaboraram com o libretista William Gilbert (1842-1900)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Organista e compositor Inglês da igreja e música secular; foi concedido um monopólio na impressão de música com William Byrd (1505-1585)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor e crítico de música (1885-1966)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "importante compositor russo cujos trabalhos são conhecidos por suas melodias expressivas (1840-1893)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor alemão barroco (1681-1767)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor que colaborou com Gertrude Stein (1896-1989)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor (nascido na França), cuja música combina dissonância com ritmos complexos e o uso de técnicas eletrônicas (1883-1965)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor Inglês influenciado por músicas folclóricas e música do período Tudor (1872-1958)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor operístico italiano (1813-1901)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor brasileiro (1887-1959)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Italiano compositor barroco e violinista (1675-1741)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor alemão de óperas e inventor do drama musical em que drama e espetáculo e música se fundem (1813-1883)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor Inglês (1902-1983)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Maestro e compositor alemão de óperas românticas (1786-1826)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor alemão; colaborou com Bertolt Brecht (1900-1950)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor austríaco (1860-1903)\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "compor",
+              "gloss": "escrever música\n"
+            },
+            {
+              "words": "compor",
+              "gloss": "escrever música\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "músico",
+              "gloss": "artista que compõe ou conduz a música como profissão\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "alma, cidadão, corpo, individualidade, indivíduo, indíviduo, pessoa, sujeito, humano, mortal",
+              "gloss": "Homo sapiens\n"
+            },
+            {
+              "words": "profissão",
+              "gloss": "uma ocupação que exige educação especial (especialmente nas letras ou das ciências)\n"
+            },
+            {
+              "words": "música",
+              "gloss": "uma forma artística de comunicação auditiva incorporando tons instrumentais ou vocais de uma forma estruturada e contínua\n"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "class_id": "TexturaUniforme",
   "pref_label": "uniforme",
   "axis": "invariância face a um parâmetro",
-  "generated": "2026-07-20T16:51:21",
+  "generated": "2026-07-27T12:38:24",
   "db": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\engines\\ONTO\\ontopt.sqlite",
   "gating": {
     "weight_min": 0.5,
@@ -23,7 +23,6 @@
       "ontopt06:2945",
       "polaridades:1656",
       "polaridades:4484",
-      "clip01:1043",
       "clip21:15521",
       "clip21:20421"
     ],
@@ -61,6 +60,8 @@
       "clip01:3425",
       "clip01:4659",
       "clip01:7405",
+      "clip01:1043",
+      "clip21:18187",
       "clip21:19074",
       "clip21:16541",
       "clip21:8149",
@@ -80,7 +81,8 @@
       "clip21:14525",
       "clip21:14687",
       "clip21:1731",
-      "clip21:12874"
+      "clip21:12874",
+      "contopt:5719"
     ],
     "invalid": [
       {
@@ -233,7 +235,7 @@
         "entry": {
           "ili_offset": "fuzzythes:27091",
           "glosa": "",
-          "decision": "UF",
+          "decision": "RT",
           "members": [
             "inflexivo",
             "invariável",
@@ -270,36 +272,6 @@
       },
       {
         "entry": {
-          "ili_offset": "clip01:1043",
-          "glosa": "",
-          "decision": "RT",
-          "members": [
-            "homogeneização",
-            "uniformização"
-          ]
-        },
-        "why": "sem ili_offset ou glosa"
-      },
-      {
-        "entry": {
-          "ili_offset": "clip21:18187",
-          "glosa": "",
-          "decision": "contraste",
-          "members": [
-            "desnivelado",
-            "despadronizado",
-            "desuniforme",
-            "escadeado",
-            "desigual",
-            "desalinhado",
-            "inclinado",
-            "irregular"
-          ]
-        },
-        "why": "decisão desconhecida"
-      },
-      {
-        "entry": {
           "ili_offset": "clip21:15521",
           "glosa": "",
           "decision": "UF",
@@ -325,24 +297,6 @@
           ]
         },
         "why": "sem ili_offset ou glosa"
-      },
-      {
-        "entry": {
-          "ili_offset": "contopt:5719",
-          "glosa": "",
-          "decision": "contraste",
-          "members": [
-            "desnivelado",
-            "despadronizado",
-            "desuniforme",
-            "escadeado",
-            "desigual",
-            "desalinhado",
-            "inclinado",
-            "irregular"
-          ]
-        },
-        "why": "decisão desconhecida"
       }
     ]
   },
@@ -887,18 +841,6 @@
         "fuzzythes:27091"
       ]
     },
-    "homogeneizacao": {
-      "display": "homogeneização",
-      "offsets": [
-        "clip01:1043"
-      ]
-    },
-    "uniformizacao": {
-      "display": "uniformização",
-      "offsets": [
-        "clip01:1043"
-      ]
-    },
     "uniformador": {
       "display": "uniformador",
       "offsets": [
@@ -952,38 +894,15 @@
     "n_focus_synsets": 38,
     "n_nuclear_synsets": 17,
     "admitted": {
-      "regular": {
-        "display": "regular",
-        "cooccurrence": 3,
+      "ordenado": {
+        "display": "ordenado",
+        "cooccurrence": 2,
         "in_nuclear": true,
         "corroborated": true,
-        "max_weight": 1.727,
+        "max_weight": 1.286,
         "synsets": [
           "contopt:15361",
-          "contopt:28395",
           "contopt:9502"
-        ]
-      },
-      "ordinario": {
-        "display": "ordinário",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": true,
-        "max_weight": 1.0,
-        "synsets": [
-          "contopt:15361",
-          "contopt:28395"
-        ]
-      },
-      "monotono": {
-        "display": "monótono",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": true,
-        "max_weight": 0.417,
-        "synsets": [
-          "contopt:15361",
-          "contopt:30149"
         ]
       },
       "metodico": {
@@ -997,96 +916,27 @@
           "contopt:9502"
         ]
       },
-      "ordenado": {
-        "display": "ordenado",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": true,
-        "max_weight": 1.286,
-        "synsets": [
-          "contopt:15361",
-          "contopt:9502"
-        ]
-      },
-      "identico": {
-        "display": "idêntico",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": true,
-        "max_weight": 1.082,
-        "synsets": [
-          "contopt:15361",
-          "contopt:16491"
-        ]
-      },
-      "periodico": {
-        "display": "periódico",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": true,
-        "max_weight": 0.167,
-        "synsets": [
-          "contopt:15361",
-          "contopt:28395"
-        ]
-      },
-      "habitual": {
-        "display": "habitual",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": true,
-        "max_weight": 0.167,
-        "synsets": [
-          "contopt:15361",
-          "contopt:28395"
-        ]
-      },
-      "frequente": {
-        "display": "frequente",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": true,
-        "max_weight": 1.227,
-        "synsets": [
-          "contopt:15361",
-          "contopt:28395"
-        ]
-      },
-      "firme": {
-        "display": "firme",
-        "cooccurrence": 5,
-        "in_nuclear": true,
-        "corroborated": true,
-        "max_weight": 3.056,
-        "synsets": [
-          "contopt:10331",
-          "contopt:27200",
-          "contopt:28395",
-          "contopt:5675",
-          "contopt:8553"
-        ]
-      },
-      "fiel": {
-        "display": "fiel",
+      "regular": {
+        "display": "regular",
         "cooccurrence": 3,
         "in_nuclear": true,
         "corroborated": true,
-        "max_weight": 1.125,
+        "max_weight": 1.727,
         "synsets": [
-          "contopt:10331",
+          "contopt:15361",
           "contopt:28395",
-          "contopt:5675"
+          "contopt:9502"
         ]
       },
-      "assiduo": {
-        "display": "assíduo",
+      "continuo": {
+        "display": "contínuo",
         "cooccurrence": 2,
         "in_nuclear": true,
         "corroborated": true,
-        "max_weight": 1.0,
+        "max_weight": 1.795,
         "synsets": [
-          "contopt:28395",
-          "contopt:5675"
+          "contopt:27944",
+          "contopt:28395"
         ]
       },
       "unanimemente": {
@@ -1100,84 +950,15 @@
           "contopt:5990"
         ]
       },
-      "estavel": {
-        "display": "estável",
-        "cooccurrence": 3,
-        "in_nuclear": true,
-        "corroborated": true,
-        "max_weight": 2.167,
-        "synsets": [
-          "contopt:10331",
-          "contopt:28395",
-          "contopt:6511"
-        ]
-      },
-      "duradouro": {
-        "display": "duradouro",
+      "monotonamente": {
+        "display": "monotonamente",
         "cooccurrence": 2,
         "in_nuclear": true,
         "corroborated": true,
-        "max_weight": 0.316,
+        "max_weight": 1.0,
         "synsets": [
-          "contopt:10331",
-          "contopt:28395"
-        ]
-      },
-      "manente": {
-        "display": "manente",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": true,
-        "max_weight": 0.295,
-        "synsets": [
-          "contopt:10331",
-          "contopt:28395"
-        ]
-      },
-      "permanente": {
-        "display": "permanente",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": true,
-        "max_weight": 1.273,
-        "synsets": [
-          "contopt:10331",
-          "contopt:28395"
-        ]
-      },
-      "perseverante": {
-        "display": "perseverante",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": true,
-        "max_weight": 0.211,
-        "synsets": [
-          "contopt:10331",
-          "contopt:8553"
-        ]
-      },
-      "permanecente": {
-        "display": "permanecente",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": true,
-        "max_weight": 0.211,
-        "synsets": [
-          "contopt:10331",
-          "contopt:28395"
-        ]
-      },
-      "imovel": {
-        "display": "imóvel",
-        "cooccurrence": 4,
-        "in_nuclear": true,
-        "corroborated": true,
-        "max_weight": 0.286,
-        "synsets": [
-          "contopt:10331",
-          "contopt:18050",
-          "contopt:28395",
-          "contopt:6511"
+          "contopt:21106",
+          "contopt:29177"
         ]
       },
       "inalteravel": {
@@ -1193,25 +974,13 @@
           "contopt:6511"
         ]
       },
-      "estoico": {
-        "display": "estóico",
+      "eterno": {
+        "display": "eterno",
         "cooccurrence": 2,
         "in_nuclear": true,
         "corroborated": true,
-        "max_weight": 0.286,
+        "max_weight": 0.429,
         "synsets": [
-          "contopt:10331",
-          "contopt:6511"
-        ]
-      },
-      "jacente": {
-        "display": "jacente",
-        "cooccurrence": 3,
-        "in_nuclear": true,
-        "corroborated": true,
-        "max_weight": 0.25,
-        "synsets": [
-          "contopt:10331",
           "contopt:28395",
           "contopt:6511"
         ]
@@ -1228,49 +997,28 @@
           "contopt:6511"
         ]
       },
-      "persistente": {
-        "display": "persistente",
-        "cooccurrence": 3,
+      "estoico": {
+        "display": "estóico",
+        "cooccurrence": 2,
         "in_nuclear": true,
         "corroborated": true,
-        "max_weight": 0.963,
+        "max_weight": 0.286,
         "synsets": [
           "contopt:10331",
+          "contopt:6511"
+        ]
+      },
+      "imovel": {
+        "display": "imóvel",
+        "cooccurrence": 4,
+        "in_nuclear": true,
+        "corroborated": true,
+        "max_weight": 0.286,
+        "synsets": [
+          "contopt:10331",
+          "contopt:18050",
           "contopt:28395",
-          "contopt:8553"
-        ]
-      },
-      "monotonamente": {
-        "display": "monotonamente",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": true,
-        "max_weight": 1.0,
-        "synsets": [
-          "contopt:21106",
-          "contopt:29177"
-        ]
-      },
-      "porfioso": {
-        "display": "porfioso",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": true,
-        "max_weight": 0.762,
-        "synsets": [
-          "contopt:28395",
-          "contopt:8553"
-        ]
-      },
-      "continuo": {
-        "display": "contínuo",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": true,
-        "max_weight": 1.795,
-        "synsets": [
-          "contopt:27944",
-          "contopt:28395"
+          "contopt:6511"
         ]
       },
       "perpetuo": {
@@ -1284,19 +1032,428 @@
           "contopt:6511"
         ]
       },
-      "eterno": {
-        "display": "eterno",
+      "jacente": {
+        "display": "jacente",
+        "cooccurrence": 3,
+        "in_nuclear": true,
+        "corroborated": true,
+        "max_weight": 0.25,
+        "synsets": [
+          "contopt:10331",
+          "contopt:28395",
+          "contopt:6511"
+        ]
+      },
+      "estavel": {
+        "display": "estável",
+        "cooccurrence": 3,
+        "in_nuclear": true,
+        "corroborated": true,
+        "max_weight": 2.167,
+        "synsets": [
+          "contopt:10331",
+          "contopt:28395",
+          "contopt:6511"
+        ]
+      },
+      "permanente": {
+        "display": "permanente",
         "cooccurrence": 2,
         "in_nuclear": true,
         "corroborated": true,
-        "max_weight": 0.429,
+        "max_weight": 1.273,
+        "synsets": [
+          "contopt:10331",
+          "contopt:28395"
+        ]
+      },
+      "frequente": {
+        "display": "frequente",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": true,
+        "max_weight": 1.227,
+        "synsets": [
+          "contopt:15361",
+          "contopt:28395"
+        ]
+      },
+      "assiduo": {
+        "display": "assíduo",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": true,
+        "max_weight": 1.0,
         "synsets": [
           "contopt:28395",
-          "contopt:6511"
+          "contopt:5675"
+        ]
+      },
+      "porfioso": {
+        "display": "porfioso",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": true,
+        "max_weight": 0.762,
+        "synsets": [
+          "contopt:28395",
+          "contopt:8553"
+        ]
+      },
+      "manente": {
+        "display": "manente",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": true,
+        "max_weight": 0.295,
+        "synsets": [
+          "contopt:10331",
+          "contopt:28395"
+        ]
+      },
+      "duradouro": {
+        "display": "duradouro",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": true,
+        "max_weight": 0.316,
+        "synsets": [
+          "contopt:10331",
+          "contopt:28395"
+        ]
+      },
+      "persistente": {
+        "display": "persistente",
+        "cooccurrence": 3,
+        "in_nuclear": true,
+        "corroborated": true,
+        "max_weight": 0.963,
+        "synsets": [
+          "contopt:10331",
+          "contopt:28395",
+          "contopt:8553"
+        ]
+      },
+      "firme": {
+        "display": "firme",
+        "cooccurrence": 5,
+        "in_nuclear": true,
+        "corroborated": true,
+        "max_weight": 3.056,
+        "synsets": [
+          "contopt:10331",
+          "contopt:27200",
+          "contopt:28395",
+          "contopt:5675",
+          "contopt:8553"
+        ]
+      },
+      "periodico": {
+        "display": "periódico",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": true,
+        "max_weight": 0.167,
+        "synsets": [
+          "contopt:15361",
+          "contopt:28395"
+        ]
+      },
+      "permanecente": {
+        "display": "permanecente",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": true,
+        "max_weight": 0.211,
+        "synsets": [
+          "contopt:10331",
+          "contopt:28395"
+        ]
+      },
+      "fiel": {
+        "display": "fiel",
+        "cooccurrence": 3,
+        "in_nuclear": true,
+        "corroborated": true,
+        "max_weight": 1.125,
+        "synsets": [
+          "contopt:10331",
+          "contopt:28395",
+          "contopt:5675"
+        ]
+      },
+      "habitual": {
+        "display": "habitual",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": true,
+        "max_weight": 0.167,
+        "synsets": [
+          "contopt:15361",
+          "contopt:28395"
+        ]
+      },
+      "ordinario": {
+        "display": "ordinário",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": true,
+        "max_weight": 1.0,
+        "synsets": [
+          "contopt:15361",
+          "contopt:28395"
+        ]
+      },
+      "perseverante": {
+        "display": "perseverante",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": true,
+        "max_weight": 0.211,
+        "synsets": [
+          "contopt:10331",
+          "contopt:8553"
+        ]
+      },
+      "monotono": {
+        "display": "monótono",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": true,
+        "max_weight": 0.417,
+        "synsets": [
+          "contopt:15361",
+          "contopt:30149"
+        ]
+      },
+      "identico": {
+        "display": "idêntico",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": true,
+        "max_weight": 1.082,
+        "synsets": [
+          "contopt:15361",
+          "contopt:16491"
         ]
       }
     },
     "sinalizacao": {
+      "monotonia": {
+        "display": "monotonia",
+        "cooccurrence": 4,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 1.25,
+        "synsets": [
+          "contopt:10089",
+          "contopt:20283",
+          "contopt:31067",
+          "contopt:33005"
+        ]
+      },
+      "unissonancia": {
+        "display": "unissonância",
+        "cooccurrence": 3,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 0.286,
+        "synsets": [
+          "contopt:20283",
+          "contopt:31067",
+          "contopt:33005"
+        ]
+      },
+      "cotidianidade": {
+        "display": "cotidianidade",
+        "cooccurrence": 3,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 0.538,
+        "synsets": [
+          "contopt:20283",
+          "contopt:31067",
+          "contopt:33005"
+        ]
+      },
+      "quotidianidade": {
+        "display": "quotidianidade",
+        "cooccurrence": 3,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 0.538,
+        "synsets": [
+          "contopt:20283",
+          "contopt:31067",
+          "contopt:33005"
+        ]
+      },
+      "continuamente": {
+        "display": "continuamente",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 1.882,
+        "synsets": [
+          "contopt:22926",
+          "contopt:27944"
+        ]
+      },
+      "incessantemente": {
+        "display": "incessantemente",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 1.529,
+        "synsets": [
+          "contopt:22926",
+          "contopt:27944"
+        ]
+      },
+      "sempre": {
+        "display": "sempre",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 1.529,
+        "synsets": [
+          "contopt:22926",
+          "contopt:27944"
+        ]
+      },
+      "eternamente": {
+        "display": "eternamente",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 1.333,
+        "synsets": [
+          "contopt:22926",
+          "contopt:27944"
+        ]
+      },
+      "permanentemente": {
+        "display": "permanentemente",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 0.3,
+        "synsets": [
+          "contopt:22926",
+          "contopt:27944"
+        ]
+      },
+      "perpetuamente": {
+        "display": "perpetuamente",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 1.556,
+        "synsets": [
+          "contopt:22926",
+          "contopt:27944"
+        ]
+      },
+      "para_sempre": {
+        "display": "para sempre",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 1.222,
+        "synsets": [
+          "contopt:22926",
+          "contopt:27944"
+        ]
+      },
+      "perenemente": {
+        "display": "perenemente",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 0.444,
+        "synsets": [
+          "contopt:22926",
+          "contopt:27944"
+        ]
+      },
+      "regularidade": {
+        "display": "regularidade",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 1.267,
+        "synsets": [
+          "contopt:20283",
+          "contopt:21466"
+        ]
+      },
+      "conformidade": {
+        "display": "conformidade",
+        "cooccurrence": 3,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 1.0,
+        "synsets": [
+          "contopt:13592",
+          "contopt:20283",
+          "contopt:21466"
+        ]
+      },
+      "impassivel": {
+        "display": "impassível",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 3.333,
+        "synsets": [
+          "contopt:10331",
+          "contopt:6511"
+        ]
+      },
+      "imperturbavel": {
+        "display": "imperturbável",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 2.667,
+        "synsets": [
+          "contopt:10331",
+          "contopt:6511"
+        ]
+      },
+      "inabalavel": {
+        "display": "inabalável",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 1.0,
+        "synsets": [
+          "contopt:10331",
+          "contopt:6511"
+        ]
+      },
+      "indestrutivel": {
+        "display": "indestrutível",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 0.571,
+        "synsets": [
+          "contopt:10331",
+          "contopt:6511"
+        ]
+      },
+      "insensivel": {
+        "display": "insensível",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 0.571,
+        "synsets": [
+          "contopt:10331",
+          "contopt:6511"
+        ]
+      },
       "igual": {
         "display": "igual",
         "cooccurrence": 3,
@@ -1309,37 +1466,214 @@
           "contopt:6511"
         ]
       },
-      "moderado": {
-        "display": "moderado",
+      "fixo": {
+        "display": "fixo",
         "cooccurrence": 2,
         "in_nuclear": true,
         "corroborated": false,
-        "max_weight": 0.333,
+        "max_weight": 2.278,
         "synsets": [
-          "contopt:14955",
-          "contopt:15361"
+          "contopt:10331",
+          "contopt:18050"
         ]
       },
-      "harmonico": {
-        "display": "harmónico",
-        "cooccurrence": 2,
+      "seguro": {
+        "display": "seguro",
+        "cooccurrence": 3,
         "in_nuclear": true,
         "corroborated": false,
-        "max_weight": 0.333,
+        "max_weight": 2.278,
         "synsets": [
-          "contopt:15361",
-          "contopt:30149"
+          "contopt:10331",
+          "contopt:5675",
+          "contopt:8553"
         ]
       },
-      "harmonioso": {
-        "display": "harmonioso",
+      "certo": {
+        "display": "certo",
         "cooccurrence": 2,
         "in_nuclear": true,
         "corroborated": false,
-        "max_weight": 1.222,
+        "max_weight": 0.485,
         "synsets": [
-          "contopt:15361",
-          "contopt:30149"
+          "contopt:10331",
+          "contopt:5675"
+        ]
+      },
+      "efetivo": {
+        "display": "efetivo",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 0.242,
+        "synsets": [
+          "contopt:10331",
+          "contopt:5675"
+        ]
+      },
+      "agarrado": {
+        "display": "agarrado",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 0.211,
+        "synsets": [
+          "contopt:10331",
+          "contopt:8553"
+        ]
+      },
+      "resistente": {
+        "display": "resistente",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 0.9,
+        "synsets": [
+          "contopt:10331",
+          "contopt:8553"
+        ]
+      },
+      "aferrado": {
+        "display": "aferrado",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 0.925,
+        "synsets": [
+          "contopt:10331",
+          "contopt:8553"
+        ]
+      },
+      "afincado": {
+        "display": "afincado",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 0.787,
+        "synsets": [
+          "contopt:10331",
+          "contopt:8553"
+        ]
+      },
+      "apegado": {
+        "display": "apegado",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 0.111,
+        "synsets": [
+          "contopt:10331",
+          "contopt:8553"
+        ]
+      },
+      "confiavel": {
+        "display": "confiável",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 0.438,
+        "synsets": [
+          "contopt:10331",
+          "contopt:5675"
+        ]
+      },
+      "tenaz": {
+        "display": "tenaz",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 0.975,
+        "synsets": [
+          "contopt:10331",
+          "contopt:8553"
+        ]
+      },
+      "leal": {
+        "display": "leal",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 0.438,
+        "synsets": [
+          "contopt:10331",
+          "contopt:5675"
+        ]
+      },
+      "obstinado": {
+        "display": "obstinado",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 1.438,
+        "synsets": [
+          "contopt:10331",
+          "contopt:8553"
+        ]
+      },
+      "verdadeiro": {
+        "display": "verdadeiro",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 2.125,
+        "synsets": [
+          "contopt:10331",
+          "contopt:5675"
+        ]
+      },
+      "pertinaz": {
+        "display": "pertinaz",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 1.325,
+        "synsets": [
+          "contopt:10331",
+          "contopt:8553"
+        ]
+      },
+      "constancia": {
+        "display": "constância",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 3.0,
+        "synsets": [
+          "contopt:10089",
+          "contopt:19305"
+        ]
+      },
+      "fixidez": {
+        "display": "fixidez",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 0.4,
+        "synsets": [
+          "contopt:10089",
+          "contopt:19305"
+        ]
+      },
+      "imobilidade": {
+        "display": "imobilidade",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 0.4,
+        "synsets": [
+          "contopt:10089",
+          "contopt:19305"
+        ]
+      },
+      "coerencia": {
+        "display": "coerência",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 0.154,
+        "synsets": [
+          "contopt:19305",
+          "contopt:20283"
         ]
       },
       "semelhanca": {
@@ -1362,18 +1696,6 @@
         "synsets": [
           "contopt:13592",
           "contopt:20283"
-        ]
-      },
-      "conformidade": {
-        "display": "conformidade",
-        "cooccurrence": 3,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 1.0,
-        "synsets": [
-          "contopt:13592",
-          "contopt:20283",
-          "contopt:21466"
         ]
       },
       "paridade": {
@@ -1442,37 +1764,37 @@
           "contopt:20283"
         ]
       },
-      "imobilidade": {
-        "display": "imobilidade",
+      "moderado": {
+        "display": "moderado",
         "cooccurrence": 2,
         "in_nuclear": true,
         "corroborated": false,
-        "max_weight": 0.4,
+        "max_weight": 0.333,
         "synsets": [
-          "contopt:10089",
-          "contopt:19305"
+          "contopt:14955",
+          "contopt:15361"
         ]
       },
-      "fixidez": {
-        "display": "fixidez",
+      "harmonico": {
+        "display": "harmónico",
         "cooccurrence": 2,
         "in_nuclear": true,
         "corroborated": false,
-        "max_weight": 0.4,
+        "max_weight": 0.333,
         "synsets": [
-          "contopt:10089",
-          "contopt:19305"
+          "contopt:15361",
+          "contopt:30149"
         ]
       },
-      "platitude": {
-        "display": "platitude",
+      "harmonioso": {
+        "display": "harmonioso",
         "cooccurrence": 2,
         "in_nuclear": true,
         "corroborated": false,
-        "max_weight": 0.846,
+        "max_weight": 1.222,
         "synsets": [
-          "contopt:10089",
-          "contopt:33005"
+          "contopt:15361",
+          "contopt:30149"
         ]
       },
       "identidade": {
@@ -1486,395 +1808,15 @@
           "contopt:20283"
         ]
       },
-      "monotonia": {
-        "display": "monotonia",
-        "cooccurrence": 4,
+      "platitude": {
+        "display": "platitude",
+        "cooccurrence": 2,
         "in_nuclear": true,
         "corroborated": false,
-        "max_weight": 1.25,
+        "max_weight": 0.846,
         "synsets": [
           "contopt:10089",
-          "contopt:20283",
-          "contopt:31067",
           "contopt:33005"
-        ]
-      },
-      "constancia": {
-        "display": "constância",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 3.0,
-        "synsets": [
-          "contopt:10089",
-          "contopt:19305"
-        ]
-      },
-      "verdadeiro": {
-        "display": "verdadeiro",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 2.125,
-        "synsets": [
-          "contopt:10331",
-          "contopt:5675"
-        ]
-      },
-      "certo": {
-        "display": "certo",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 0.485,
-        "synsets": [
-          "contopt:10331",
-          "contopt:5675"
-        ]
-      },
-      "confiavel": {
-        "display": "confiável",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 0.438,
-        "synsets": [
-          "contopt:10331",
-          "contopt:5675"
-        ]
-      },
-      "leal": {
-        "display": "leal",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 0.438,
-        "synsets": [
-          "contopt:10331",
-          "contopt:5675"
-        ]
-      },
-      "seguro": {
-        "display": "seguro",
-        "cooccurrence": 3,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 2.278,
-        "synsets": [
-          "contopt:10331",
-          "contopt:5675",
-          "contopt:8553"
-        ]
-      },
-      "efetivo": {
-        "display": "efetivo",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 0.242,
-        "synsets": [
-          "contopt:10331",
-          "contopt:5675"
-        ]
-      },
-      "regularidade": {
-        "display": "regularidade",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 1.267,
-        "synsets": [
-          "contopt:20283",
-          "contopt:21466"
-        ]
-      },
-      "coerencia": {
-        "display": "coerência",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 0.154,
-        "synsets": [
-          "contopt:19305",
-          "contopt:20283"
-        ]
-      },
-      "cotidianidade": {
-        "display": "cotidianidade",
-        "cooccurrence": 3,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 0.538,
-        "synsets": [
-          "contopt:20283",
-          "contopt:31067",
-          "contopt:33005"
-        ]
-      },
-      "quotidianidade": {
-        "display": "quotidianidade",
-        "cooccurrence": 3,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 0.538,
-        "synsets": [
-          "contopt:20283",
-          "contopt:31067",
-          "contopt:33005"
-        ]
-      },
-      "unissonancia": {
-        "display": "unissonância",
-        "cooccurrence": 3,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 0.286,
-        "synsets": [
-          "contopt:20283",
-          "contopt:31067",
-          "contopt:33005"
-        ]
-      },
-      "fixo": {
-        "display": "fixo",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 2.278,
-        "synsets": [
-          "contopt:10331",
-          "contopt:18050"
-        ]
-      },
-      "inabalavel": {
-        "display": "inabalável",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 1.0,
-        "synsets": [
-          "contopt:10331",
-          "contopt:6511"
-        ]
-      },
-      "agarrado": {
-        "display": "agarrado",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 0.211,
-        "synsets": [
-          "contopt:10331",
-          "contopt:8553"
-        ]
-      },
-      "indestrutivel": {
-        "display": "indestrutível",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 0.571,
-        "synsets": [
-          "contopt:10331",
-          "contopt:6511"
-        ]
-      },
-      "resistente": {
-        "display": "resistente",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 0.9,
-        "synsets": [
-          "contopt:10331",
-          "contopt:8553"
-        ]
-      },
-      "aferrado": {
-        "display": "aferrado",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 0.925,
-        "synsets": [
-          "contopt:10331",
-          "contopt:8553"
-        ]
-      },
-      "afincado": {
-        "display": "afincado",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 0.787,
-        "synsets": [
-          "contopt:10331",
-          "contopt:8553"
-        ]
-      },
-      "apegado": {
-        "display": "apegado",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 0.111,
-        "synsets": [
-          "contopt:10331",
-          "contopt:8553"
-        ]
-      },
-      "tenaz": {
-        "display": "tenaz",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 0.975,
-        "synsets": [
-          "contopt:10331",
-          "contopt:8553"
-        ]
-      },
-      "impassivel": {
-        "display": "impassível",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 3.333,
-        "synsets": [
-          "contopt:10331",
-          "contopt:6511"
-        ]
-      },
-      "imperturbavel": {
-        "display": "imperturbável",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 2.667,
-        "synsets": [
-          "contopt:10331",
-          "contopt:6511"
-        ]
-      },
-      "insensivel": {
-        "display": "insensível",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 0.571,
-        "synsets": [
-          "contopt:10331",
-          "contopt:6511"
-        ]
-      },
-      "obstinado": {
-        "display": "obstinado",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 1.438,
-        "synsets": [
-          "contopt:10331",
-          "contopt:8553"
-        ]
-      },
-      "pertinaz": {
-        "display": "pertinaz",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 1.325,
-        "synsets": [
-          "contopt:10331",
-          "contopt:8553"
-        ]
-      },
-      "perpetuamente": {
-        "display": "perpetuamente",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 1.556,
-        "synsets": [
-          "contopt:22926",
-          "contopt:27944"
-        ]
-      },
-      "eternamente": {
-        "display": "eternamente",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 1.333,
-        "synsets": [
-          "contopt:22926",
-          "contopt:27944"
-        ]
-      },
-      "para_sempre": {
-        "display": "para sempre",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 1.222,
-        "synsets": [
-          "contopt:22926",
-          "contopt:27944"
-        ]
-      },
-      "sempre": {
-        "display": "sempre",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 1.529,
-        "synsets": [
-          "contopt:22926",
-          "contopt:27944"
-        ]
-      },
-      "perenemente": {
-        "display": "perenemente",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 0.444,
-        "synsets": [
-          "contopt:22926",
-          "contopt:27944"
-        ]
-      },
-      "continuamente": {
-        "display": "continuamente",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 1.882,
-        "synsets": [
-          "contopt:22926",
-          "contopt:27944"
-        ]
-      },
-      "permanentemente": {
-        "display": "permanentemente",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 0.3,
-        "synsets": [
-          "contopt:22926",
-          "contopt:27944"
-        ]
-      },
-      "incessantemente": {
-        "display": "incessantemente",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 1.529,
-        "synsets": [
-          "contopt:22926",
-          "contopt:27944"
         ]
       }
     }
@@ -1882,6 +1824,24 @@
   "stage4_excluded": {},
   "stage5": {
     "admitted": {
+      "continuo": {
+        "display": "contínuo",
+        "origin": "seed (Etapa 1/2) + CONTO.PT (corroborado)",
+        "offsets": [
+          "contopt:28395",
+          "fuzzythes:23298",
+          "fuzzythes:26445"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:26445"
+      },
       "constante": {
         "display": "constante",
         "origin": "seed (Etapa 1/2)",
@@ -1891,13 +1851,302 @@
           "fuzzythes:27091"
         ],
         "decision_synset": "RT",
-        "status": "UF",
-        "test": "Teste 1",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
         "guarantee": [
-          "lexical"
+          "sense_decision"
         ],
         "definition": "",
-        "structural": ""
+        "structural": "",
+        "from_sense": "fuzzythes:27091"
+      },
+      "ininterrupto": {
+        "display": "ininterrupto",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "contopt:28395",
+          "fuzzythes:23298"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:23298"
+      },
+      "sucessivo": {
+        "display": "sucessivo",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "contopt:28395",
+          "fuzzythes:23298"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:23298"
+      },
+      "permanente": {
+        "display": "permanente",
+        "origin": "seed (Etapa 1/2) + CONTO.PT (corroborado)",
+        "offsets": [
+          "contopt:28395",
+          "fuzzythes:23298"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:23298"
+      },
+      "frequente": {
+        "display": "frequente",
+        "origin": "seed (Etapa 1/2) + CONTO.PT (corroborado)",
+        "offsets": [
+          "contopt:28395"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "contopt:28395"
+      },
+      "incessante": {
+        "display": "incessante",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "contopt:28395",
+          "fuzzythes:23298"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:23298"
+      },
+      "perpetuo": {
+        "display": "perpétuo",
+        "origin": "seed (Etapa 1/2) + CONTO.PT (corroborado)",
+        "offsets": [
+          "contopt:28395",
+          "fuzzythes:23298"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:23298"
+      },
+      "continuado": {
+        "display": "continuado",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "contopt:28395",
+          "fuzzythes:23298"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:23298"
+      },
+      "assiduo": {
+        "display": "assíduo",
+        "origin": "seed (Etapa 1/2) + CONTO.PT (corroborado)",
+        "offsets": [
+          "contopt:28395",
+          "fuzzythes:23298"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:23298"
+      },
+      "seguido": {
+        "display": "seguido",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "contopt:28395",
+          "fuzzythes:23298"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:23298"
+      },
+      "perene": {
+        "display": "perene",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "contopt:28395",
+          "fuzzythes:23298"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:23298"
+      },
+      "aturado": {
+        "display": "aturado",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "contopt:28395",
+          "fuzzythes:23298"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:23298"
+      },
+      "porfioso": {
+        "display": "porfioso",
+        "origin": "seed (Etapa 1/2) + CONTO.PT (corroborado)",
+        "offsets": [
+          "contopt:28395",
+          "fuzzythes:23298"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:23298"
+      },
+      "incessavel": {
+        "display": "incessável",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "contopt:28395",
+          "fuzzythes:23298"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:23298"
+      },
+      "ininterrompido": {
+        "display": "ininterrompido",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "contopt:28395",
+          "fuzzythes:23298"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:23298"
+      },
+      "afio": {
+        "display": "afio",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "contopt:28395",
+          "fuzzythes:23298"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:23298"
+      },
+      "consecutivo": {
+        "display": "consecutivo",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "contopt:28395"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "contopt:28395"
+      },
+      "estavel": {
+        "display": "estável",
+        "origin": "seed (Etapa 1/2) + CONTO.PT (corroborado)",
+        "offsets": [
+          "contopt:28395",
+          "fuzzythes:23298",
+          "fuzzythes:27091"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:27091"
       },
       "imutavel": {
         "display": "imutável",
@@ -1908,13 +2157,32 @@
           "fuzzythes:27091"
         ],
         "decision_synset": "RT",
-        "status": "UF",
-        "test": "Teste 1",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
         "guarantee": [
-          "lexical"
+          "sense_decision"
         ],
         "definition": "",
-        "structural": ""
+        "structural": "",
+        "from_sense": "fuzzythes:27091"
+      },
+      "imudavel": {
+        "display": "imudável",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "contopt:28395",
+          "fuzzythes:23298",
+          "fuzzythes:27091"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:27091"
       },
       "invariavel": {
         "display": "invariável",
@@ -1928,12 +2196,259 @@
         ],
         "decision_synset": "RT",
         "status": "UF",
-        "test": "Teste 1",
+        "test": "derivado do sentido (PASSO 3)",
         "guarantee": [
-          "lexical"
+          "sense_decision"
         ],
         "definition": "",
-        "structural": ""
+        "structural": "",
+        "from_sense": "polaridades:4484"
+      },
+      "amiudado": {
+        "display": "amiudado",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "contopt:28395"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "contopt:28395"
+      },
+      "repetido": {
+        "display": "repetido",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "contopt:28395"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "contopt:28395"
+      },
+      "manente": {
+        "display": "manente",
+        "origin": "seed (Etapa 1/2) + CONTO.PT (corroborado)",
+        "offsets": [
+          "contopt:28395",
+          "fuzzythes:23298"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:23298"
+      },
+      "duradouro": {
+        "display": "duradouro",
+        "origin": "seed (Etapa 1/2) + CONTO.PT (corroborado)",
+        "offsets": [
+          "contopt:28395"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "contopt:28395"
+      },
+      "imediato": {
+        "display": "imediato",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "contopt:28395"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "contopt:28395"
+      },
+      "jacente": {
+        "display": "jacente",
+        "origin": "seed (Etapa 1/2) + CONTO.PT (corroborado)",
+        "offsets": [
+          "contopt:28395",
+          "fuzzythes:23298"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:23298"
+      },
+      "conseguinte": {
+        "display": "conseguinte",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "contopt:28395"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "contopt:28395"
+      },
+      "subsecutivo": {
+        "display": "subsecutivo",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "contopt:28395"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "contopt:28395"
+      },
+      "persistente": {
+        "display": "persistente",
+        "origin": "seed (Etapa 1/2) + CONTO.PT (corroborado)",
+        "offsets": [
+          "contopt:28395",
+          "fuzzythes:23298"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:23298"
+      },
+      "eterno": {
+        "display": "eterno",
+        "origin": "seed (Etapa 1/2) + CONTO.PT (corroborado)",
+        "offsets": [
+          "contopt:28395",
+          "fuzzythes:27091"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:27091"
+      },
+      "miudo": {
+        "display": "miúdo",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "contopt:28395"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "contopt:28395"
+      },
+      "vitalicio": {
+        "display": "vitalício",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "contopt:28395"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "contopt:28395"
+      },
+      "firme": {
+        "display": "firme",
+        "origin": "seed (Etapa 1/2) + CONTO.PT (corroborado)",
+        "offsets": [
+          "contopt:28395",
+          "fuzzythes:23298"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:23298"
+      },
+      "inalteravel": {
+        "display": "inalterável",
+        "origin": "seed (Etapa 1/2) + CONTO.PT (corroborado)",
+        "offsets": [
+          "contopt:28395",
+          "fuzzythes:27091"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:27091"
+      },
+      "infindavel": {
+        "display": "infindável",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "contopt:28395"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "contopt:28395"
       },
       "regular": {
         "display": "regular",
@@ -1943,12 +2458,29 @@
         ],
         "decision_synset": "RT",
         "status": "RT",
-        "test": "Teste 1 falha",
+        "test": "derivado do sentido (PASSO 3)",
         "guarantee": [
-          "lexical"
+          "sense_decision"
         ],
         "definition": "",
-        "structural": ""
+        "structural": "",
+        "from_sense": "contopt:28395"
+      },
+      "crebro": {
+        "display": "crebro",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "contopt:28395"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "contopt:28395"
       },
       "periodico": {
         "display": "periódico",
@@ -1958,48 +2490,920 @@
         ],
         "decision_synset": "RT",
         "status": "RT",
-        "test": "Teste 3",
+        "test": "derivado do sentido (PASSO 3)",
         "guarantee": [
-          "lexical"
+          "sense_decision"
         ],
         "definition": "",
-        "structural": ""
+        "structural": "",
+        "from_sense": "contopt:28395"
       },
-      "politipica": {
-        "display": "politípica",
-        "origin": "manual (estipulativa)",
-        "offsets": [],
-        "status": "contraste",
-        "test": "Teste 3",
-        "guarantee": [
-          "estipulativa"
+      "permanecente": {
+        "display": "permanecente",
+        "origin": "seed (Etapa 1/2) + CONTO.PT (corroborado)",
+        "offsets": [
+          "contopt:28395",
+          "fuzzythes:23298"
         ],
-        "definition": "textura composta por múltiplos tipos simultâneos",
-        "structural": "TexturaHeterogenea"
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:23298"
+      },
+      "diligente": {
+        "display": "diligente",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "contopt:28395"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "contopt:28395"
+      },
+      "fiel": {
+        "display": "fiel",
+        "origin": "seed (Etapa 1/2) + CONTO.PT (corroborado)",
+        "offsets": [
+          "contopt:28395"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "contopt:28395"
+      },
+      "sempiterno": {
+        "display": "sempiterno",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "contopt:28395"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "contopt:28395"
+      },
+      "jazente": {
+        "display": "jazente",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "contopt:28395",
+          "fuzzythes:23298"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:23298"
+      },
+      "reiterado": {
+        "display": "reiterado",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "contopt:28395"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "contopt:28395"
+      },
+      "sem_paradas": {
+        "display": "sem paradas",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "contopt:28395"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "contopt:28395"
+      },
+      "aplicado": {
+        "display": "aplicado",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "contopt:28395"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "contopt:28395"
+      },
+      "habitual": {
+        "display": "habitual",
+        "origin": "seed (Etapa 1/2) + CONTO.PT (corroborado)",
+        "offsets": [
+          "contopt:28395"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "contopt:28395"
+      },
+      "imovel": {
+        "display": "imóvel",
+        "origin": "seed (Etapa 1/2) + CONTO.PT (corroborado)",
+        "offsets": [
+          "contopt:28395",
+          "fuzzythes:27091"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:27091"
+      },
+      "ordinario": {
+        "display": "ordinário",
+        "origin": "seed (Etapa 1/2) + CONTO.PT (corroborado)",
+        "offsets": [
+          "contopt:28395"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "contopt:28395"
+      },
+      "usual": {
+        "display": "usual",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "contopt:28395"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "contopt:28395"
+      },
+      "consignado": {
+        "display": "consignado",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "fuzzythes:23298"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:23298"
+      },
+      "perseverante": {
+        "display": "perseverante",
+        "origin": "seed (Etapa 1/2) + CONTO.PT (corroborado)",
+        "offsets": [
+          "fuzzythes:23298"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:23298"
+      },
+      "imanente": {
+        "display": "imanente",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "fuzzythes:23298"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:23298"
+      },
+      "escrito": {
+        "display": "escrito",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "fuzzythes:23298"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:23298"
+      },
+      "diamantino": {
+        "display": "diamantino",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "fuzzythes:23298"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:23298"
+      },
+      "estoico": {
+        "display": "estóico",
+        "origin": "seed (Etapa 1/2) + CONTO.PT (corroborado)",
+        "offsets": [
+          "fuzzythes:23298"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:23298"
+      },
+      "sistematico": {
+        "display": "sistemático",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "fuzzythes:23298"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:23298"
+      },
+      "adamantino": {
+        "display": "adamantino",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "fuzzythes:23298"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:23298"
+      },
+      "mencionado": {
+        "display": "mencionado",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "fuzzythes:23298"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:23298"
+      },
+      "metodico": {
+        "display": "metódico",
+        "origin": "seed (Etapa 1/2) + CONTO.PT (corroborado)",
+        "offsets": [
+          "fuzzythes:23298"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:23298"
+      },
+      "ordenado": {
+        "display": "ordenado",
+        "origin": "seed (Etapa 1/2) + CONTO.PT (corroborado)",
+        "offsets": [
+          "fuzzythes:23298"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:23298"
+      },
+      "unimodo": {
+        "display": "unímodo",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "fuzzythes:25600",
+          "ontopt06:2133"
+        ],
+        "decision_synset": "RT",
+        "status": "UF",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "ontopt06:2133"
+      },
+      "homotono": {
+        "display": "homótono",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "fuzzythes:25600",
+          "ontopt06:2945",
+          "polaridades:4484"
+        ],
+        "decision_synset": "RT",
+        "status": "UF",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "polaridades:4484"
+      },
+      "equavel": {
+        "display": "equável",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "fuzzythes:25600",
+          "ontopt06:2131",
+          "polaridades:1656"
+        ],
+        "decision_synset": "RT",
+        "status": "UF",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "polaridades:1656"
+      },
+      "homogeneo": {
+        "display": "homogéneo",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "fuzzythes:25600",
+          "fuzzythes:26445"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:26445"
+      },
+      "monotono": {
+        "display": "monótono",
+        "origin": "seed (Etapa 1/2) + CONTO.PT (corroborado)",
+        "offsets": [
+          "fuzzythes:25600",
+          "ontopt06:2945",
+          "polaridades:4484"
+        ],
+        "decision_synset": "RT",
+        "status": "UF",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "polaridades:4484"
+      },
+      "recto": {
+        "display": "recto",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "fuzzythes:25600"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:25600"
+      },
+      "univoco": {
+        "display": "unívoco",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "fuzzythes:26445"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:26445"
+      },
+      "similar": {
+        "display": "similar",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "fuzzythes:26445"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:26445"
+      },
+      "inequivoco": {
+        "display": "inequívoco",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "fuzzythes:26445"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:26445"
+      },
+      "analogo": {
+        "display": "análogo",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "fuzzythes:26445"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:26445"
+      },
+      "identico": {
+        "display": "idêntico",
+        "origin": "seed (Etapa 1/2) + CONTO.PT (corroborado)",
+        "offsets": [
+          "fuzzythes:26445"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:26445"
+      },
+      "inflexivo": {
+        "display": "inflexivo",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "fuzzythes:27091"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:27091"
+      },
+      "intemporal": {
+        "display": "intemporal",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "fuzzythes:27091"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:27091"
+      },
+      "estereotipado": {
+        "display": "estereotipado",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "fuzzythes:27091"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:27091"
+      },
+      "imaterial": {
+        "display": "imaterial",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "fuzzythes:27091"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:27091"
+      },
+      "irretratavel": {
+        "display": "irretratável",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "fuzzythes:27091"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:27091"
+      },
+      "estereotipo": {
+        "display": "estereótipo",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "fuzzythes:27091"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "fuzzythes:27091"
+      },
+      "uniformador": {
+        "display": "uniformador",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "clip21:15521"
+        ],
+        "decision_synset": "UF",
+        "status": "UF",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "clip21:15521"
+      },
+      "uniformizador": {
+        "display": "uniformizador",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "clip21:15521"
+        ],
+        "decision_synset": "UF",
+        "status": "UF",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "clip21:15521"
+      },
+      "inalteravelmente": {
+        "display": "inalteravelmente",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "clip21:20421"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "clip21:20421"
+      },
+      "uniformemente": {
+        "display": "uniformemente",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "clip21:20421"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "clip21:20421"
+      },
+      "de_maneira_justa": {
+        "display": "de maneira justa",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "clip21:20421"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "clip21:20421"
+      },
+      "imutavelmente": {
+        "display": "imutavelmente",
+        "origin": "seed (Etapa 1/2)",
+        "offsets": [
+          "clip21:20421"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "clip21:20421"
+      },
+      "monotonamente": {
+        "display": "monotonamente",
+        "origin": "seed (Etapa 1/2) + CONTO.PT (corroborado)",
+        "offsets": [
+          "clip21:20421"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "clip21:20421"
+      },
+      "unanimemente": {
+        "display": "unanimemente",
+        "origin": "seed (Etapa 1/2) + CONTO.PT (corroborado)",
+        "offsets": [
+          "clip21:20421"
+        ],
+        "decision_synset": "RT",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "clip21:20421"
       }
     },
     "pending": {},
-    "_pending_count": 85,
+    "_pending_count": 1,
     "_pending_sidecar": "TexturaUniforme.ONTO.pending.json"
   },
   "skos": {
     "uf": [
-      "constante",
-      "imutável",
-      "invariável"
+      "equável",
+      "homótono",
+      "invariável",
+      "monótono",
+      "uniformador",
+      "uniformizador",
+      "unímodo"
     ],
     "rt": [
+      "adamantino",
+      "afio",
+      "amiudado",
+      "análogo",
+      "aplicado",
+      "assíduo",
+      "aturado",
+      "consecutivo",
+      "conseguinte",
+      "consignado",
+      "constante",
+      "continuado",
+      "contínuo",
+      "crebro",
+      "de maneira justa",
+      "diamantino",
+      "diligente",
+      "duradouro",
+      "escrito",
+      "estereotipado",
+      "estereótipo",
+      "estável",
+      "estóico",
+      "eterno",
+      "fiel",
+      "firme",
+      "frequente",
+      "habitual",
+      "homogéneo",
+      "idêntico",
+      "imanente",
+      "imaterial",
+      "imediato",
+      "imudável",
+      "imutavelmente",
+      "imutável",
+      "imóvel",
+      "inalteravelmente",
+      "inalterável",
+      "incessante",
+      "incessável",
+      "inequívoco",
+      "infindável",
+      "inflexivo",
+      "ininterrompido",
+      "ininterrupto",
+      "intemporal",
+      "irretratável",
+      "jacente",
+      "jazente",
+      "manente",
+      "mencionado",
+      "metódico",
+      "miúdo",
+      "monotonamente",
+      "ordenado",
+      "ordinário",
+      "perene",
       "periódico",
-      "regular"
-    ],
-    "contrast": [
-      "politípica"
+      "permanecente",
+      "permanente",
+      "perpétuo",
+      "perseverante",
+      "persistente",
+      "porfioso",
+      "recto",
+      "regular",
+      "reiterado",
+      "repetido",
+      "seguido",
+      "sem paradas",
+      "sempiterno",
+      "similar",
+      "sistemático",
+      "subsecutivo",
+      "sucessivo",
+      "unanimemente",
+      "uniformemente",
+      "unívoco",
+      "usual",
+      "vitalício"
     ]
   },
   "provenance": [
     {
+      "termo": "contínuo",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec",
+        "top01"
+      ],
+      "offsets_ili": [
+        "contopt:28395",
+        "fuzzythes:23298",
+        "fuzzythes:26445"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2) + CONTO.PT (corroborado)"
+    },
+    {
       "termo": "constante",
-      "estatuto": "UF",
+      "estatuto": "RT",
       "eixo": "invariância face a um parâmetro",
       "recursos_atestacao": [
         "clip21",
@@ -2014,15 +3418,367 @@
         "fuzzythes:23298",
         "fuzzythes:27091"
       ],
-      "teste_decisivo": "Teste 1",
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
       "garantia": [
-        "lexical"
+        "sense_decision"
       ],
       "origem": "seed (Etapa 1/2)"
     },
     {
-      "termo": "imutável",
-      "estatuto": "UF",
+      "termo": "ininterrupto",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "contopt:28395",
+        "fuzzythes:23298"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "sucessivo",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "contopt:28395",
+        "fuzzythes:23298"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "permanente",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip01",
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec",
+        "top01"
+      ],
+      "offsets_ili": [
+        "contopt:28395",
+        "fuzzythes:23298"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2) + CONTO.PT (corroborado)"
+    },
+    {
+      "termo": "frequente",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "contopt:28395"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2) + CONTO.PT (corroborado)"
+    },
+    {
+      "termo": "incessante",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "contopt:28395",
+        "fuzzythes:23298"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "perpétuo",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "contopt:28395",
+        "fuzzythes:23298"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2) + CONTO.PT (corroborado)"
+    },
+    {
+      "termo": "continuado",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "contopt:28395",
+        "fuzzythes:23298"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "assíduo",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "contopt:28395",
+        "fuzzythes:23298"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2) + CONTO.PT (corroborado)"
+    },
+    {
+      "termo": "seguido",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "contopt:28395",
+        "fuzzythes:23298"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "perene",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "contopt:28395",
+        "fuzzythes:23298"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "aturado",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "contopt:28395",
+        "fuzzythes:23298"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "porfioso",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "contopt:28395",
+        "fuzzythes:23298"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2) + CONTO.PT (corroborado)"
+    },
+    {
+      "termo": "incessável",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "contopt:28395",
+        "fuzzythes:23298"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "ininterrompido",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "contopt:28395",
+        "fuzzythes:23298"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "afio",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "contopt:28395",
+        "fuzzythes:23298"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "consecutivo",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "contopt:28395"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "estável",
+      "estatuto": "RT",
       "eixo": "invariância face a um parâmetro",
       "recursos_atestacao": [
         "clip21",
@@ -2037,11 +3793,57 @@
         "fuzzythes:23298",
         "fuzzythes:27091"
       ],
-      "teste_decisivo": "Teste 1",
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
       "garantia": [
-        "lexical"
+        "sense_decision"
       ],
       "origem": "seed (Etapa 1/2) + CONTO.PT (corroborado)"
+    },
+    {
+      "termo": "imutável",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "contopt:28395",
+        "fuzzythes:23298",
+        "fuzzythes:27091"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2) + CONTO.PT (corroborado)"
+    },
+    {
+      "termo": "imudável",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "contopt:28395",
+        "fuzzythes:23298",
+        "fuzzythes:27091"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
     },
     {
       "termo": "invariável",
@@ -2062,9 +3864,335 @@
         "ontopt06:2945",
         "polaridades:4484"
       ],
-      "teste_decisivo": "Teste 1",
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
       "garantia": [
-        "lexical"
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "amiudado",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "contopt:28395"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "repetido",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "contopt:28395"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "manente",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "contopt:28395",
+        "fuzzythes:23298"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2) + CONTO.PT (corroborado)"
+    },
+    {
+      "termo": "duradouro",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "contopt:28395"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2) + CONTO.PT (corroborado)"
+    },
+    {
+      "termo": "imediato",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip01",
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec",
+        "top01"
+      ],
+      "offsets_ili": [
+        "contopt:28395"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "jacente",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip01",
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec",
+        "top01"
+      ],
+      "offsets_ili": [
+        "contopt:28395",
+        "fuzzythes:23298"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2) + CONTO.PT (corroborado)"
+    },
+    {
+      "termo": "conseguinte",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "contopt:28395"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "subsecutivo",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "contopt:28395"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "persistente",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "contopt:28395",
+        "fuzzythes:23298"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2) + CONTO.PT (corroborado)"
+    },
+    {
+      "termo": "eterno",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "contopt:28395",
+        "fuzzythes:27091"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2) + CONTO.PT (corroborado)"
+    },
+    {
+      "termo": "miúdo",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip01",
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec",
+        "top01"
+      ],
+      "offsets_ili": [
+        "contopt:28395"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "vitalício",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "contopt:28395"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "firme",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "contopt:28395",
+        "fuzzythes:23298"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2) + CONTO.PT (corroborado)"
+    },
+    {
+      "termo": "inalterável",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "contopt:28395",
+        "fuzzythes:27091"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2) + CONTO.PT (corroborado)"
+    },
+    {
+      "termo": "infindável",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "contopt:28395"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
       ],
       "origem": "seed (Etapa 1/2)"
     },
@@ -2083,11 +4211,32 @@
       "offsets_ili": [
         "contopt:28395"
       ],
-      "teste_decisivo": "Teste 1 falha",
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
       "garantia": [
-        "lexical"
+        "sense_decision"
       ],
       "origem": "seed (Etapa 1/2) + CONTO.PT (corroborado)"
+    },
+    {
+      "termo": "crebro",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "contopt:28395"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
     },
     {
       "termo": "periódico",
@@ -2105,23 +4254,1032 @@
       "offsets_ili": [
         "contopt:28395"
       ],
-      "teste_decisivo": "Teste 3",
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
       "garantia": [
-        "lexical"
+        "sense_decision"
       ],
       "origem": "seed (Etapa 1/2) + CONTO.PT (corroborado)"
     },
     {
-      "termo": "politípica",
-      "estatuto": "contraste",
+      "termo": "permanecente",
+      "estatuto": "RT",
       "eixo": "invariância face a um parâmetro",
-      "recursos_atestacao": [],
-      "offsets_ili": [],
-      "teste_decisivo": "Teste 3",
-      "garantia": [
-        "estipulativa"
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
       ],
-      "origem": "manual (estipulativa)"
+      "offsets_ili": [
+        "contopt:28395",
+        "fuzzythes:23298"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2) + CONTO.PT (corroborado)"
+    },
+    {
+      "termo": "diligente",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip01",
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec",
+        "top01"
+      ],
+      "offsets_ili": [
+        "contopt:28395"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "fiel",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip01",
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec",
+        "top01"
+      ],
+      "offsets_ili": [
+        "contopt:28395"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2) + CONTO.PT (corroborado)"
+    },
+    {
+      "termo": "sempiterno",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "contopt:28395"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "jazente",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "contopt:28395",
+        "fuzzythes:23298"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "reiterado",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "contopt:28395"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "sem paradas",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt"
+      ],
+      "offsets_ili": [
+        "contopt:28395"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "aplicado",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "contopt:28395"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "habitual",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "contopt:28395"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2) + CONTO.PT (corroborado)"
+    },
+    {
+      "termo": "imóvel",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip01",
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec",
+        "top01"
+      ],
+      "offsets_ili": [
+        "contopt:28395",
+        "fuzzythes:27091"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2) + CONTO.PT (corroborado)"
+    },
+    {
+      "termo": "ordinário",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip01",
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec",
+        "top01"
+      ],
+      "offsets_ili": [
+        "contopt:28395"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2) + CONTO.PT (corroborado)"
+    },
+    {
+      "termo": "usual",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "contopt:28395"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "consignado",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "fuzzythes:23298"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "perseverante",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "fuzzythes:23298"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2) + CONTO.PT (corroborado)"
+    },
+    {
+      "termo": "imanente",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "fuzzythes:23298"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "escrito",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip01",
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec",
+        "top01"
+      ],
+      "offsets_ili": [
+        "fuzzythes:23298"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "diamantino",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "fuzzythes:23298"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "estóico",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "fuzzythes:23298"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2) + CONTO.PT (corroborado)"
+    },
+    {
+      "termo": "sistemático",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "fuzzythes:23298"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "adamantino",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "fuzzythes:23298"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "mencionado",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "fuzzythes:23298"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "metódico",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "fuzzythes:23298"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2) + CONTO.PT (corroborado)"
+    },
+    {
+      "termo": "ordenado",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip01",
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec",
+        "top01"
+      ],
+      "offsets_ili": [
+        "fuzzythes:23298"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2) + CONTO.PT (corroborado)"
+    },
+    {
+      "termo": "unímodo",
+      "estatuto": "UF",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "fuzzythes:25600",
+        "ontopt06:2133"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "homótono",
+      "estatuto": "UF",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "fuzzythes:25600",
+        "ontopt06:2945",
+        "polaridades:4484"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "equável",
+      "estatuto": "UF",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "fuzzythes:25600",
+        "ontopt06:2131",
+        "polaridades:1656"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "homogéneo",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "fuzzythes:25600",
+        "fuzzythes:26445"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "monótono",
+      "estatuto": "UF",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "fuzzythes:25600",
+        "ontopt06:2945",
+        "polaridades:4484"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2) + CONTO.PT (corroborado)"
+    },
+    {
+      "termo": "recto",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "fuzzythes:25600"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "unívoco",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "fuzzythes:26445"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "similar",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "fuzzythes:26445"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "inequívoco",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "fuzzythes:26445"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "análogo",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "fuzzythes:26445"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "idêntico",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "fuzzythes:26445"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2) + CONTO.PT (corroborado)"
+    },
+    {
+      "termo": "inflexivo",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "fuzzythes:27091"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "intemporal",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "fuzzythes:27091"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "estereotipado",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "fuzzythes:27091"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "imaterial",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "fuzzythes:27091"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "irretratável",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "fuzzythes:27091"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "estereótipo",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec",
+        "top01"
+      ],
+      "offsets_ili": [
+        "fuzzythes:27091"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "uniformador",
+      "estatuto": "UF",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "clip21:15521"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "uniformizador",
+      "estatuto": "UF",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "clip21:15521"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "inalteravelmente",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "clip21:20421"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "uniformemente",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "clip21:20421"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "de maneira justa",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt"
+      ],
+      "offsets_ili": [
+        "clip21:20421"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "imutavelmente",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "clip21:20421"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2)"
+    },
+    {
+      "termo": "monotonamente",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "clip21:20421"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2) + CONTO.PT (corroborado)"
+    },
+    {
+      "termo": "unanimemente",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "recursos_atestacao": [
+        "clip21",
+        "contopt",
+        "fuzzythes",
+        "ontopt06",
+        "polaridades",
+        "thes5rec"
+      ],
+      "offsets_ili": [
+        "clip21:20421"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "origem": "seed (Etapa 1/2) + CONTO.PT (corroborado)"
     }
   ],
   "assertions": [
@@ -2129,7 +5287,7 @@
       "stage": "Etapa 1",
       "text": "Todo o synset admitido possui ili_offset e glosa mapeada ao eixo.",
       "passed": false,
-      "evidence": "synsets sem ili/glosa: ['contopt:28395', 'fuzzythes:23298', 'fuzzythes:25600', 'fuzzythes:26445', 'fuzzythes:27091', 'ontopt06:2945', 'clip01:1043', 'clip21:15521', 'clip21:20421']"
+      "evidence": "synsets sem ili/glosa: ['contopt:28395', 'fuzzythes:23298', 'fuzzythes:25600', 'fuzzythes:26445', 'fuzzythes:27091', 'ontopt06:2945', 'clip21:15521', 'clip21:20421']"
     },
     {
       "stage": "Etapa 1",
@@ -2169,7 +5327,7 @@
     },
     {
       "stage": "Etapa 5",
-      "text": "Cada termo em admitidos[] tem estatuto∈{UF,RT,contraste}, teste decisivo registado e ≥1 garantia.",
+      "text": "Cada termo em admitidos[] tem estatuto∈{UF,RT} (Onto = descoberta; garantia calculada a jusante).",
       "passed": true,
       "evidence": "OK"
     },
@@ -2181,7 +5339,7 @@
     },
     {
       "stage": "Consistência final",
-      "text": "Contrastantes não são serializados como skos:related.",
+      "text": "Nenhum estatuto de evidência em admitidos[] (contraste/atributo/oposicao/vizinha).",
       "passed": true,
       "evidence": "OK"
     }

@@ -1,83 +1,16 @@
 {
   "class_id": "TexturaComposita",
   "pref_label": "TexturaCompósita",
-  "axis": "(faixa WordNet — corroboração ancorada em ILI; sem adjudicação)",
-  "generated": "2026-07-18T19:59:10",
+  "axis": "(faixa OEWN — corroboração EN / relações tipadas; sem adjudicação)",
+  "generated": "2026-07-27T12:39:52",
   "source": "WordNet (OEWN facets export)",
-  "facets_export": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\classes\\TexturaComposita\\exports\\wordnet_compound.facets.json",
-  "convoked_ilis": [
-    "i67721",
-    "i114921"
-  ],
+  "facets_export": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\classes\\TexturaComposita\\exports\\wordnet_composed.facets.json",
+  "convoked_ilis": [],
   "skipped_ilis": [
-    "i11935",
-    "i52230",
-    "i11973",
-    "i11970",
-    "i22857",
-    "i22685",
-    "i33063",
-    "i30022",
-    "i29030"
+    "i2968"
   ],
   "provenance": [],
-  "synsets": [
-    {
-      "name": "oewn-05878802-n",
-      "ili": "i67721",
-      "pos": "n",
-      "pt_lemmas": [
-        "Composição",
-        "composição",
-        "composto"
-      ],
-      "lemmas": [
-        "compound"
-      ]
-    },
-    {
-      "name": "oewn-14842408-n",
-      "ili": "i114921",
-      "pos": "n",
-      "pt_lemmas": [
-        "composto químico",
-        "substância química"
-      ],
-      "lemmas": [
-        "compound",
-        "chemical compound"
-      ]
-    }
-  ],
-  "sinalizacao": {
-    "composicao": {
-      "display": "Composição",
-      "reason": "atestado na WordNet [pt_lemma (ILI)] · oewn-05878802-n · ILI i67721",
-      "offsets_ili": [
-        "i67721"
-      ]
-    },
-    "composto": {
-      "display": "composto",
-      "reason": "atestado na WordNet [pt_lemma (ILI)] · oewn-05878802-n · ILI i67721",
-      "offsets_ili": [
-        "i67721"
-      ]
-    },
-    "composto quimico": {
-      "display": "composto químico",
-      "reason": "atestado na WordNet [pt_lemma (ILI)] · oewn-14842408-n · ILI i114921",
-      "offsets_ili": [
-        "i114921"
-      ]
-    },
-    "substancia quimica": {
-      "display": "substância química",
-      "reason": "atestado na WordNet [pt_lemma (ILI)] · oewn-14842408-n · ILI i114921",
-      "offsets_ili": [
-        "i114921"
-      ]
-    }
-  },
-  "_note": "Faixa de CORROBORAÇÃO: só sentidos do eixo adjudicados na tabela ILI; entradas em sinalizacao, nunca estatutos."
+  "synsets": [],
+  "sinalizacao": {},
+  "_note": "Faixa OEWN: lemas EN e relações tipadas em sinalizacao. Lemas PT via ILI → ficheiro OWN-PT.result.json (coluna própria)."
 }

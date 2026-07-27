@@ -1,0 +1,89 @@
+{
+  "class_id": "TexturaDensa",
+  "pref_label": "TexturaDensa",
+  "axis": "densidade",
+  "stage1_whitelist": [
+    {
+      "ili_offset": "ili-30-00539009-a",
+      "glosa": "tendo componentes de perto amontoados\n",
+      "decision": "UF",
+      "members": [
+        "denso"
+      ]
+    },
+    {
+      "ili_offset": "ili-30-01185264-a",
+      "glosa": "com alta densidade relativa ou gravidade específica\n",
+      "decision": "UF",
+      "members": [
+        "denso"
+      ]
+    },
+    {
+      "ili_offset": "ili-30-01513776-a",
+      "glosa": "(das Trevas) muito intensa\n",
+      "decision": "UF",
+      "members": [
+        "denso"
+      ]
+    },
+    {
+      "ili_offset": "ili-30-01771839-a",
+      "glosa": "difícil porque passam através do crescimento denso\n",
+      "decision": "RT",
+      "members": [
+        "denso"
+      ]
+    },
+    {
+      "ili_offset": "ili-30-02416390-a",
+      "glosa": "permitindo pouco se toda a luz passar por causa da espessura da matéria\n",
+      "decision": "UF",
+      "members": [
+        "denso"
+      ]
+    },
+    {
+      "ili_offset": "ili-30-00016135-a",
+      "glosa": "crescendo profusamente\n",
+      "decision": "exclude",
+      "members": [
+        "denso"
+      ]
+    },
+    {
+      "ili_offset": "ili-30-04941453-n",
+      "glosa": "o valor por unidade de tamanho\n",
+      "decision": "UF",
+      "members": [
+        "densidade"
+      ]
+    },
+    {
+      "ili_offset": "ili-30-05088804-n",
+      "glosa": "a propriedade espacial de sendo amontoados\n",
+      "decision": "RT",
+      "members": [
+        "densidade",
+        "concentração"
+      ]
+    }
+  ],
+  "dictionary_attestations": [
+    "concentração",
+    "densidade",
+    "denso"
+  ],
+  "admitted_offsets": [
+    "ili-30-00539009-a",
+    "ili-30-01185264-a",
+    "ili-30-01513776-a",
+    "ili-30-01771839-a",
+    "ili-30-02416390-a",
+    "ili-30-04941453-n",
+    "ili-30-05088804-n"
+  ],
+  "excluded_offsets": [
+    "ili-30-00016135-a"
+  ]
+}

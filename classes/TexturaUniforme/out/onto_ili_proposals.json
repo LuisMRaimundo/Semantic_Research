@@ -1,0 +1,847 @@
+{
+  "class_id": "TexturaUniforme",
+  "policy": "Propose → review (GUI / CLI) → accepted links stamp Onto sense cards and feed ONTO-ILI atestado into LexWarrant. High-confidence unique proposals may auto-accept (config onto_ili_auto_accept_min).",
+  "min_score": 0.35,
+  "n_onto": 68,
+  "n_anchors": 16,
+  "n_proposals": 27,
+  "n_accepted": 0,
+  "n_rejected": 0,
+  "auto_accept": {
+    "n": 0,
+    "accepted": [],
+    "min_score": 0.85,
+    "margin": 0.12
+  },
+  "proposals": [
+    {
+      "onto_key": "onto:ontopt06:28292",
+      "ili": "i60712",
+      "score": 0.5191,
+      "evidence": {
+        "shared_lemmas": [
+          "farda",
+          "fardamento",
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "farda",
+          "fardamenta",
+          "fardamento",
+          "libre",
+          "uniforme"
+        ],
+        "anchor_sources": [
+          "own-pt",
+          "pulo"
+        ],
+        "n_anchors": 2,
+        "gloss": {
+          "score": 0.0971,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.1494,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.7
+      },
+      "status": "proposed"
+    },
+    {
+      "onto_key": "onto:ontopt06:2133",
+      "ili": "i10771",
+      "score": 0.4517,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "uniforme",
+          "unimodo"
+        ],
+        "anchor_sources": [
+          "own-pt",
+          "pulo"
+        ],
+        "n_anchors": 2,
+        "gloss": {
+          "score": 0.1058,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.1627,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.6
+      },
+      "status": "proposed"
+    },
+    {
+      "onto_key": "onto:polaridades:1656",
+      "ili": "i60712",
+      "score": 0.4461,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "equavel",
+          "uniforme"
+        ],
+        "anchor_sources": [
+          "own-pt",
+          "pulo"
+        ],
+        "n_anchors": 2,
+        "gloss": {
+          "score": 0.0871,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.134,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.6
+      },
+      "status": "proposed"
+    },
+    {
+      "onto_key": "onto:ontopt06:2131",
+      "ili": "i60712",
+      "score": 0.441,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "equavel",
+          "uniforme"
+        ],
+        "anchor_sources": [
+          "own-pt",
+          "pulo"
+        ],
+        "n_anchors": 2,
+        "gloss": {
+          "score": 0.07,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.1077,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.6
+      },
+      "status": "proposed"
+    },
+    {
+      "onto_key": "onto:polaridades:1656",
+      "ili": "i10771",
+      "score": 0.4387,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "equavel",
+          "uniforme"
+        ],
+        "anchor_sources": [
+          "own-pt",
+          "pulo"
+        ],
+        "n_anchors": 2,
+        "gloss": {
+          "score": 0.0625,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.0962,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.6
+      },
+      "status": "proposed"
+    },
+    {
+      "onto_key": "onto:polaridades:4484",
+      "ili": "i10771",
+      "score": 0.4387,
+      "evidence": {
+        "shared_lemmas": [
+          "invariavel",
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "homotono",
+          "invariavel",
+          "monotono",
+          "uniforme"
+        ],
+        "anchor_sources": [
+          "own-pt",
+          "pulo"
+        ],
+        "n_anchors": 2,
+        "gloss": {
+          "score": 0.0625,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.0962,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.6
+      },
+      "status": "proposed"
+    },
+    {
+      "onto_key": "onto:ontopt06:2133",
+      "ili": "i60712",
+      "score": 0.4292,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "uniforme",
+          "unimodo"
+        ],
+        "anchor_sources": [
+          "own-pt",
+          "pulo"
+        ],
+        "n_anchors": 2,
+        "gloss": {
+          "score": 0.0307,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.0472,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.6
+      },
+      "status": "proposed"
+    },
+    {
+      "onto_key": "onto:ontopt06:2131",
+      "ili": "i10771",
+      "score": 0.4269,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "equavel",
+          "uniforme"
+        ],
+        "anchor_sources": [
+          "own-pt",
+          "pulo"
+        ],
+        "n_anchors": 2,
+        "gloss": {
+          "score": 0.023,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.0354,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.6
+      },
+      "status": "proposed"
+    },
+    {
+      "onto_key": "onto:ontopt06:2133",
+      "ili": "i4980",
+      "score": 0.4257,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "uniforme",
+          "unimodo"
+        ],
+        "anchor_sources": [
+          "pulo"
+        ],
+        "n_anchors": 1,
+        "gloss": {
+          "score": 0.2525,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0909,
+          "tfidf_cosine": 0.3395,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": [
+            "tem"
+          ]
+        },
+        "lemma_score": 0.5
+      },
+      "status": "proposed"
+    },
+    {
+      "onto_key": "onto:fuzzythes:1661",
+      "ili": "i60712",
+      "score": 0.42,
+      "evidence": {
+        "shared_lemmas": [
+          "farda",
+          "fardamento",
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "aparencia",
+          "farda",
+          "fardamento",
+          "libre",
+          "libreia",
+          "uniforme"
+        ],
+        "anchor_sources": [
+          "own-pt",
+          "pulo"
+        ],
+        "n_anchors": 2,
+        "gloss": {
+          "score": 0.0,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.0,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.6
+      },
+      "status": "proposed"
+    },
+    {
+      "onto_key": "onto:fuzzythes:2140",
+      "ili": "i60712",
+      "score": 0.42,
+      "evidence": {
+        "shared_lemmas": [
+          "farda",
+          "fardamento",
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "farda",
+          "fardamenta",
+          "fardamento",
+          "libre",
+          "libreia",
+          "uniforme"
+        ],
+        "anchor_sources": [
+          "own-pt",
+          "pulo"
+        ],
+        "n_anchors": 2,
+        "gloss": {
+          "score": 0.0,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.0,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.6
+      },
+      "status": "proposed"
+    },
+    {
+      "onto_key": "onto:ontopt06:2945",
+      "ili": "i10771",
+      "score": 0.42,
+      "evidence": {
+        "shared_lemmas": [
+          "invariavel",
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "homotono",
+          "invariavel",
+          "monotono",
+          "uniforme"
+        ],
+        "anchor_sources": [
+          "own-pt",
+          "pulo"
+        ],
+        "n_anchors": 2,
+        "gloss": {
+          "score": 0.0,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.0,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.6
+      },
+      "status": "proposed"
+    },
+    {
+      "onto_key": "onto:ontopt06:2131",
+      "ili": "i4979",
+      "score": 0.4177,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "equavel",
+          "uniforme"
+        ],
+        "anchor_sources": [
+          "pulo"
+        ],
+        "n_anchors": 1,
+        "gloss": {
+          "score": 0.2257,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.2242,
+          "embedding_cosine": null,
+          "lemma_boost": 0.08,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.5
+      },
+      "status": "proposed"
+    },
+    {
+      "onto_key": "onto:ontopt06:2131",
+      "ili": "i4980",
+      "score": 0.4125,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "equavel",
+          "uniforme"
+        ],
+        "anchor_sources": [
+          "pulo"
+        ],
+        "n_anchors": 1,
+        "gloss": {
+          "score": 0.2085,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.1976,
+          "embedding_cosine": null,
+          "lemma_boost": 0.08,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.5
+      },
+      "status": "proposed"
+    },
+    {
+      "onto_key": "onto:ontopt06:2133",
+      "ili": "i4979",
+      "score": 0.3909,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "uniforme",
+          "unimodo"
+        ],
+        "anchor_sources": [
+          "pulo"
+        ],
+        "n_anchors": 1,
+        "gloss": {
+          "score": 0.1363,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0526,
+          "tfidf_cosine": 0.1813,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": [
+            "forma"
+          ]
+        },
+        "lemma_score": 0.5
+      },
+      "status": "proposed"
+    },
+    {
+      "onto_key": "onto:ontopt06:2131",
+      "ili": "i6560",
+      "score": 0.386,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "equavel",
+          "uniforme"
+        ],
+        "anchor_sources": [
+          "pulo"
+        ],
+        "n_anchors": 1,
+        "gloss": {
+          "score": 0.1199,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.1845,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.5
+      },
+      "status": "proposed"
+    },
+    {
+      "onto_key": "onto:fuzzythes:3480",
+      "ili": "i60712",
+      "score": 0.37,
+      "evidence": {
+        "shared_lemmas": [
+          "farda",
+          "fardamento",
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "farda",
+          "fardamenta",
+          "fardamento",
+          "libre",
+          "roupa",
+          "uniforme",
+          "vestuario"
+        ],
+        "anchor_sources": [
+          "own-pt",
+          "pulo"
+        ],
+        "n_anchors": 2,
+        "gloss": {
+          "score": 0.0,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.0,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.5286
+      },
+      "status": "proposed"
+    },
+    {
+      "onto_key": "onto:polaridades:1656",
+      "ili": "i4979",
+      "score": 0.3673,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "equavel",
+          "uniforme"
+        ],
+        "anchor_sources": [
+          "pulo"
+        ],
+        "n_anchors": 1,
+        "gloss": {
+          "score": 0.0577,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.0887,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.5
+      },
+      "status": "proposed"
+    },
+    {
+      "onto_key": "onto:ontopt06:2131",
+      "ili": "i4126",
+      "score": 0.3663,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "equavel",
+          "uniforme"
+        ],
+        "anchor_sources": [
+          "pulo"
+        ],
+        "n_anchors": 1,
+        "gloss": {
+          "score": 0.0542,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.0833,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.5
+      },
+      "status": "proposed"
+    },
+    {
+      "onto_key": "onto:ontopt06:2131",
+      "ili": "i12748",
+      "score": 0.3618,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "equavel",
+          "uniforme"
+        ],
+        "anchor_sources": [
+          "pulo"
+        ],
+        "n_anchors": 1,
+        "gloss": {
+          "score": 0.0394,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.0606,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.5
+      },
+      "status": "proposed"
+    },
+    {
+      "onto_key": "onto:polaridades:1656",
+      "ili": "i6560",
+      "score": 0.3612,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "equavel",
+          "uniforme"
+        ],
+        "anchor_sources": [
+          "pulo"
+        ],
+        "n_anchors": 1,
+        "gloss": {
+          "score": 0.0373,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.0574,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.5
+      },
+      "status": "proposed"
+    },
+    {
+      "onto_key": "onto:polaridades:1656",
+      "ili": "i4126",
+      "score": 0.3589,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "equavel",
+          "uniforme"
+        ],
+        "anchor_sources": [
+          "pulo"
+        ],
+        "n_anchors": 1,
+        "gloss": {
+          "score": 0.0295,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.0454,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.5
+      },
+      "status": "proposed"
+    },
+    {
+      "onto_key": "onto:ontopt06:2133",
+      "ili": "i12748",
+      "score": 0.3573,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "uniforme",
+          "unimodo"
+        ],
+        "anchor_sources": [
+          "pulo"
+        ],
+        "n_anchors": 1,
+        "gloss": {
+          "score": 0.0242,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.0372,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.5
+      },
+      "status": "proposed"
+    },
+    {
+      "onto_key": "onto:polaridades:1656",
+      "ili": "i12748",
+      "score": 0.3564,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "equavel",
+          "uniforme"
+        ],
+        "anchor_sources": [
+          "pulo"
+        ],
+        "n_anchors": 1,
+        "gloss": {
+          "score": 0.0215,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.033,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.5
+      },
+      "status": "proposed"
+    },
+    {
+      "onto_key": "onto:ontopt06:2133",
+      "ili": "i6560",
+      "score": 0.3563,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "uniforme",
+          "unimodo"
+        ],
+        "anchor_sources": [
+          "pulo"
+        ],
+        "n_anchors": 1,
+        "gloss": {
+          "score": 0.021,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.0323,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.5
+      },
+      "status": "proposed"
+    },
+    {
+      "onto_key": "onto:polaridades:1656",
+      "ili": "i4980",
+      "score": 0.3528,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "equavel",
+          "uniforme"
+        ],
+        "anchor_sources": [
+          "pulo"
+        ],
+        "n_anchors": 1,
+        "gloss": {
+          "score": 0.0093,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.0143,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.5
+      },
+      "status": "proposed"
+    },
+    {
+      "onto_key": "onto:ontopt06:2133",
+      "ili": "i4126",
+      "score": 0.35,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "uniforme",
+          "unimodo"
+        ],
+        "anchor_sources": [
+          "pulo"
+        ],
+        "n_anchors": 1,
+        "gloss": {
+          "score": 0.0,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.0,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.5
+      },
+      "status": "proposed"
+    }
+  ]
+}

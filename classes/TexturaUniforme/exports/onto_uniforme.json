@@ -4,7 +4,7 @@
     "query": "uniforme",
     "resource": null,
     "pos": null,
-    "mode": "Contains"
+    "mode": "Exact"
   },
   "count": 40,
   "synsets": [

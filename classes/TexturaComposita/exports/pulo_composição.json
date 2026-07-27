@@ -1,0 +1,3157 @@
+{
+  "type": "pulo_thesaurus_search",
+  "query": {
+    "query": "composição",
+    "pos": null,
+    "mode": "Contains"
+  },
+  "count": 14,
+  "synsets": [
+    {
+      "synset_offset": "por-30-00237078-n",
+      "pos": "n",
+      "gloss": "o ato de formar ou estabelecer algo\n",
+      "synonyms": [
+        "composição",
+        "constituição",
+        "estabelecimento",
+        "formação",
+        "organização",
+        "fundação"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-00237078-n",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "hyponym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "ato de formar sindicatos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a organização de uma nação ou economia com base no coletivismo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a organização de uma nação de base do comunismo\n"
+            },
+            {
+              "words": "federação",
+              "gloss": "o ato de constituição de uma unidade política de um certo número de estados ou províncias ou colônias separadas para que cada membro mantém a gestão de seus assuntos internos\n"
+            },
+            {
+              "words": "colonização",
+              "gloss": "o ato de colonizar; o estabelecimento de colônias\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "colonização",
+              "gloss": "o ato de colonizar; o estabelecimento de colônias\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Física) da resistência de um material para o estabelecimento de um campo magnético nele\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a mitologia da Escandinávia (compartilhado, em parte, pela Grã-Bretanha e Alemanha) até o estabelecimento do cristianismo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um grupo terrorista turco de muçulmanos fundamentalistas com laços com a Al-Qaeda, que opera na Alemanha; pede a derrubada violenta do governo turco e do estabelecimento de uma nação islâmica modelado sobre o Irã\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Patriota italiano cuja conquista da Sicília e Nápoles levou à formação do Estado italiano (1807-1882)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Papa italiano 1471-1484 que consentiu com o estabelecimento da Inquisição espanhola e construiu a Capela Sistina (1414-1484)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "28 O presidente dos Estados Unidos; levou os Estados Unidos na Primeira Guerra Mundial e garantiu a formação da Liga das Nações (1856-1924)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "evolução em grande escala que se estende ao longo era geológica e resultando na formação de novos grupos taxonómicos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um processo envolvido na formação de grupos de pessoas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um estado de incerteza sobre o que deve ser feito (geralmente após algum acontecimento importante) precede a criação de um novo rumo da ação\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Cosmologia) a matéria original que (de acordo com a teoria do big bang) já existia antes da formação dos elementos químicos\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "organizar",
+              "gloss": "trazer ordem e organização para\n"
+            },
+            {
+              "words": "acertar, afundar, aprazar, assentar, cavar, celebrar, combinar, começar, consignar, constituir, criar, edificar, erguer, fazer, firmar, fixar, instaurar, marcar, fundar, instituir, plantar, estabelecer",
+              "gloss": "criar ou estabelecer as bases\n"
+            },
+            {
+              "words": "preparar, organizar",
+              "gloss": "Organize planejamento sistemático e esforço Unido\n"
+            },
+            {
+              "words": "calcar, caldear, configurar, conformar, inventar, modelar, moldar, plasmar, vazar, forjar, formar, fazer",
+              "gloss": "fazer alguma coisa, geralmente por uma função específica\n"
+            },
+            {
+              "words": "fundar, instaurar, estabelecer, lançar",
+              "gloss": "configurar ou encontrados\n"
+            },
+            {
+              "words": "organizar",
+              "gloss": "causa ser estruturado ou ordenado ou operacional de acordo com algum princípio ou idéia\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "formulário ou participar de uma União\n"
+            },
+            {
+              "words": "formar, organizar",
+              "gloss": "criar (como uma entidade)\n"
+            },
+            {
+              "words": "organizar",
+              "gloss": "trazer ordem e organização para\n"
+            },
+            {
+              "words": "acertar, afundar, aprazar, assentar, cavar, celebrar, combinar, começar, consignar, constituir, criar, edificar, erguer, fazer, firmar, fixar, instaurar, marcar, fundar, instituir, plantar, estabelecer",
+              "gloss": "criar ou estabelecer as bases\n"
+            },
+            {
+              "words": "preparar, organizar",
+              "gloss": "Organize planejamento sistemático e esforço Unido\n"
+            },
+            {
+              "words": "calcar, caldear, configurar, conformar, inventar, modelar, moldar, plasmar, vazar, forjar, formar, fazer",
+              "gloss": "fazer alguma coisa, geralmente por uma função específica\n"
+            },
+            {
+              "words": "fundar, instaurar, estabelecer, lançar",
+              "gloss": "configurar ou encontrados\n"
+            },
+            {
+              "words": "organizar",
+              "gloss": "causa ser estruturado ou ordenado ou operacional de acordo com algum princípio ou idéia\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "formulário ou participar de uma União\n"
+            },
+            {
+              "words": "formar, organizar",
+              "gloss": "criar (como uma entidade)\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "alvor, alvorada, aparecimento, arranque, aurora, axioma, cláusula, componente, criação, código, desencadeamento, embrião, ensaio, entrada, estabelecimento, fundação, fórmula, génese, hipótese, inauguração, infância, instauração, introito, início, nascente, nascença, nascimento, origem, premissa, princípio, rudimento, iniciação, começo, abertura",
+              "gloss": "o ato de começar algo\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "formar, organizar",
+              "gloss": "criar (como uma entidade)\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-00378985-n",
+      "pos": "n",
+      "gloss": "o ato de combinar as coisas para formar um todo novo\n",
+      "synonyms": [
+        "combinação",
+        "composição"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-00378985-n",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "hyponym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "o ato de anexar ou aposição algo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um ato, causando uma desordem combinação de elementos com distinções e identidades perdidas misturado\n"
+            },
+            {
+              "words": "mistura",
+              "gloss": "o ato de misturar juntos\n"
+            },
+            {
+              "words": "fusão",
+              "gloss": "o ato de fusão (ou fusão) juntos\n"
+            },
+            {
+              "words": "mistura",
+              "gloss": "o ato de misturar componentes cuidadosamente\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o ato de combinar uma coisa com intervalos entre outras coisas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o ato de têmpera\n"
+            },
+            {
+              "words": "unificação, união",
+              "gloss": "o ato de fazer ou tornar-se uma única unidade\n"
+            },
+            {
+              "words": "consolidação, integração",
+              "gloss": "o ato de combinar em um todo integrante\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "sintético",
+              "gloss": "sistemática de combinação de raiz e elementos em palavras simples modificar\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "não envolvendo combinação\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "determinação do volume de gases (ou mudanças de volume) durante a combinação\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o ato de criar algo (um medicamento ou bebida ou sopa etc.) ou pela composição da mistura de uma variedade de componentes\n"
+            },
+            {
+              "words": "fusão",
+              "gloss": "a combinação de duas ou mais empresas comerciais\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a combinação de imagens a partir dos dois olhos para formar uma única percepção visual\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Genética) uma combinação de genes ou personagens diferentes do que eram nos pais\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Física), uma combinação de taxas ou de transferência de elétrons em um gás que resulta na neutralização de íons; importante para os iões resultantes da passagem de partículas de alta energia\n"
+            },
+            {
+              "words": "associação",
+              "gloss": "(Química) qualquer processo de combinação (especialmente em solução), que depende relativamente fraca ligação química\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma reacção química em que um ácido e uma base de interagir com a formação de um sal; com ácidos fortes e bases a reacção essencial é a combinação de iões de hidrogénio com os iões hidroxilo para formar água\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um líquido com sabor doce (usualmente contendo uma pequena quantidade de álcool) utilizado na composição de medicamentos a ser tomado por via oral, a fim de mascarar um sabor desagradável\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "combinar, compor, unir",
+              "gloss": "colocar ou adicionar juntos\n"
+            },
+            {
+              "words": "combinar, misturar",
+              "gloss": "Misture diferentes elementos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "relacionada com ou envolvendo combinações\n"
+            },
+            {
+              "words": "combinar",
+              "gloss": "combinar de modo a formar um todo; misturar\n"
+            },
+            {
+              "words": "compor",
+              "gloss": "criar por mistura ou combinação de\n"
+            },
+            {
+              "words": "agrupar, combinar, unir",
+              "gloss": "Adicionar juntos a partir de diferentes fontes\n"
+            },
+            {
+              "words": "combinar, compor, unir",
+              "gloss": "colocar ou adicionar juntos\n"
+            },
+            {
+              "words": "combinar, misturar",
+              "gloss": "Misture diferentes elementos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "relacionada com ou envolvendo combinações\n"
+            },
+            {
+              "words": "combinar",
+              "gloss": "combinar de modo a formar um todo; misturar\n"
+            },
+            {
+              "words": "compor",
+              "gloss": "criar por mistura ou combinação de\n"
+            },
+            {
+              "words": "agrupar, combinar, unir",
+              "gloss": "Adicionar juntos a partir de diferentes fontes\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "o ato de alteração da unidade ou da totalidade de uma coisa\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "conjunto, unidade",
+              "gloss": "um conjunto de peças que é considerado como uma única entidade"
+            },
+            {
+              "words": "combinar",
+              "gloss": "combinar de modo a formar um todo; misturar\n"
+            },
+            {
+              "words": "calcar, caldear, configurar, conformar, inventar, modelar, moldar, plasmar, vazar, forjar, formar, fazer",
+              "gloss": "fazer alguma coisa, geralmente por uma função específica\n"
+            },
+            {
+              "words": "coisa",
+              "gloss": "uma entidade que não é nomeada especificamente\n"
+            },
+            {
+              "words": "todo, tudo, totalidade",
+              "gloss": "todos de alguma coisa, incluindo todos os seus elementos ou partes componentes\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-04341686-n",
+      "pos": "n",
+      "gloss": "uma coisa construída; uma entidade complexa construída de muitas partes\n",
+      "synonyms": [
+        "composição",
+        "contextura",
+        "edifício",
+        "estrutura",
+        "construção"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-04341686-n",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "hyponym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "uma grande estrutura em um aeroporto onde o avião pode ser armazenado e mantido\n"
+            },
+            {
+              "words": "altar",
+              "gloss": "uma estrutura levantada em que presentes ou sacrifícios a um deus são feitas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura composta de uma série de arcos apoiados em colunas\n"
+            },
+            {
+              "words": "arco",
+              "gloss": "(arquitetura) uma construção de alvenaria (geralmente curvada) para uma abertura de abrangência e suportar o peso acima\n"
+            },
+            {
+              "words": "zona, área",
+              "gloss": "uma parte de uma estrutura tendo alguma característica específica ou função\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma plataforma de projeção da parede de um edifício e cercada por uma balaustrada ou grade ou parapeito\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um piso superior projetando-se da parte traseira sobre o assoalho principal em um auditório\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura ou o dispositivo no qual uma extremidade é contrabalançada por outro (sobre o princípio da gangorra)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura de placas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a estrutura externa de um veículo\n"
+            },
+            {
+              "words": "ponte",
+              "gloss": "uma estrutura que permite que pessoas ou veículos para atravessar um obstáculo como um rio ou canal ou ferroviária etc.\n"
+            },
+            {
+              "words": "edifício, imóvel, prédio",
+              "gloss": "uma estrutura que tem um telhado e paredes e fica mais ou menos permanentemente em um só lugar\n"
+            },
+            {
+              "words": "complexo",
+              "gloss": "uma estrutura inteira (como um prédio) composta por estruturas interconectadas ou relacionadas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura em que a água é recolhida (especialmente uma área de drenagem natural)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura que consiste em algo feridas de uma série contínua de lacetes\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "estrutura que consiste de uma fileira de colunas espaçadas uniformemente\n"
+            },
+            {
+              "words": "coluna",
+              "gloss": "uma estrutura vertical cilíndrica que está sozinho e não apoiar nada (tal como um monumento)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Arquitetura) ângulo sólido exterior de um edifício; especialmente aquele formado por uma pedra angular\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura de madeira que consiste em um poste vertical com uma peça transversal\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer estrutura que é muito inseguro; onde as pessoas são susceptíveis de ser morto\n"
+            },
+            {
+              "words": "defesa",
+              "gloss": "uma estrutura usada para defender contra o ataque\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura onde as pessoas vivem ou trabalham (geralmente encomendados ao longo de uma rua ou estrada)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Arquitetura) a estrutura que consiste em parte de um templo clássico acima das colunas entre a capital eo telhado\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura que foi erguida\n"
+            },
+            {
+              "words": "estabelecimento",
+              "gloss": "uma estrutura pública ou privada (empresarial ou governamental ou educacional), incluindo edifícios e equipamentos para empresa ou residência\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura horizontal que particiona um navio ou caixa (especialmente um construído perto do fundo real)\n"
+            },
+            {
+              "words": "piso, planta, andar",
+              "gloss": "uma estrutura que consiste de uma sala ou um conjunto de salas em uma posição única ao longo de uma escala vertical\n"
+            },
+            {
+              "words": "fonte",
+              "gloss": "uma estrutura da qual surge um artificialmente produzido jacto de água\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "ou uma estrutura de marcação que serve para dirigir o movimento de posicionamento ou de algo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma construção instável com cartas de baralho\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "estruturas coletivamente em que as pessoas estão alojados\n"
+            },
+            {
+              "words": "casco",
+              "gloss": "o quadro ou corpo de navio\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura de hastes verticais e horizontais, onde as crianças podem escalar e jogar\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura em camadas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "estrutura proporcionando um local onde os barcos podem desembarcar pessoas ou de mercadorias\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura de comandar uma visão ampla de seus arredores\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "estrutura construída de pedra ou de tijolo por um pedreiro\n"
+            },
+            {
+              "words": "monumento",
+              "gloss": "uma estrutura erigida para comemorar pessoas ou eventos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "estrutura composta por um monte artificial ou banco geralmente de terra ou de pedras\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer estrutura que dificulta o progresso\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura vertical que divide ou separa (como uma parede divide um quarto de outra)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer estrutura militar ou veículo carregando armas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura anexada para o exterior de um edifício, muitas vezes formando uma entrada coberta\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura consistindo de vigas verticais (posts) apoiando um feixe horizontal (viga)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura pré-fabricada\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer estrutura que separa-se de um suporte central\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "estruturas (tais como estradas ou escolas ou pontes ou docas) construídas às custas do governo para uso público\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer estrutura que se assemelha a uma vela\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "estrutura em que uma parede ou de construção reduz abruptamente\n"
+            },
+            {
+              "words": "abrigo, refúgio, asilo",
+              "gloss": "uma estrutura que proporciona privacidade e proteção de perigo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura que se assemelha a uma caixa de sapatos (como um edifício retangular ou um quarto apertado ou compartimento)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "estrutura exibindo uma placa em que propagandas podem ser postadas\n"
+            },
+            {
+              "words": "estádio",
+              "gloss": "uma grande estrutura para esportes ao ar livre ou entretenimentos\n"
+            },
+            {
+              "words": "superstrutura",
+              "gloss": "estrutura da parte do navio acima do convés principal\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura que serve para apoiar algo\n"
+            },
+            {
+              "words": "torre",
+              "gloss": "uma estrutura mais alta que seu diâmetro; podem ficar sozinha ou ser anexado a um edifício maior\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "estrutura formando a parte transversal de uma igreja cruciforme; atravessa a nave em ângulos retos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura composta por um sistema de cavaletes de apoio ligados entre si; para uma ponte ou pier ou andaime por exemplo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Arquitetura) de uma estrutura abobadada\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "estrutura composta por um declive caminho até a água do lugar onde os navios são construídos ou reparados\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura construída ao longo de um poço\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura semelhante a um túnel, onde o ar é soprado a velocidades conhecidas para testar peças de aeronaves\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura de pequenas células hexagonais, construída a partir de cera de abelha por abelhas e usado para armazenar mel e larvas\n"
+            },
+            {
+              "words": "equilíbrio",
+              "gloss": "igualdade de distribuição\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": ""
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": ""
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": ""
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": ""
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "anterior a uma estrutura frontal\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "marcado por ter colunas grátis em pórticos ou em ambas as extremidades, ou em ambos os lados de uma estrutura de columniation\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "marcado por columniation tendo livre colunas em um pórtico somente através da abertura para a estrutura\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "tendo columniation circular completamente uma área da estrutura\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma extensa alteração da estrutura de uma corporação ou governo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "mudança na estrutura externa ou aparência\n"
+            },
+            {
+              "words": "estruturar",
+              "gloss": "uma estrutura para dar\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "construir ou formar de novo ou fornecer com uma nova estrutura\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Não compacta ou densa na estrutura ou arranjo\n"
+            },
+            {
+              "words": "rígido",
+              "gloss": "designando um dirigível ou um dirigível tendo uma forma mantida por uma moldura inflexível rígida ou estrutura\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "tendo uma forma mantido por uma estrutura interna rígida, bem como pela pressão de gás interna\n"
+            },
+            {
+              "words": "estrutural",
+              "gloss": "afetar ou envolver na estrutura ou construção\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "equipado com uma estrutura que se projecta a partir de ou para o lado de um barco para diversos fins; para evitar naufrágio ou para suportar um tolete ou para ajudar a proteger um mastro etc\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "correspondente ou semelhante na posição ou a estrutura ou a função ou as características; especialmente derivada de um organismo da mesma espécie\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "de uma estrutura geológica na qual todos os estratos são inclinados na mesma direcção\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "alterado na constituição ou estrutura ou composição por metamorfismo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "caber em ou em uma estrutura existente, como uma velha casa\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "pássaro gregário, tendo plumagem com brilho metálico escuro; constrói ninhos em torno de habitações e outras estruturas; naturalizado em todo o mundo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer uma das diversas aves da região australiana, cujos machos constroem estruturas ornamentadas, assemelhando-se a fim de atrair fêmeas bowers\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "colocar (algo) em uma estrutura ou meio de transporte\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "malhada coruja amarela e branca, que muitas vezes habitam celeiros e outras estruturas; importante no controle de roedores\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "tendo uma estrutura latticelike perfurada com buracos ou windows\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "inclui espécies altamente destrutivos para estruturas e árvores vivas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "densa ou compacto na estrutura ou textura, como a madeira é composta por células de pequeno diâmetro\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "tendo uma estrutura Lisa, refinada\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(das estruturas ou instituições) tendo perdido a estabilidade; falhando ou no ponto do colapso\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma grande estrutura em um aeroporto onde o avião pode ser armazenado e mantido\n"
+            },
+            {
+              "words": "altar",
+              "gloss": "uma estrutura levantada em que presentes ou sacrifícios a um deus são feitas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "pertencente ao ramo da astronomia que trata da origem e da história e da estrutura e dinâmica do universo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura composta de uma série de arcos apoiados em colunas\n"
+            },
+            {
+              "words": "arco",
+              "gloss": "(arquitetura) uma construção de alvenaria (geralmente curvada) para uma abertura de abrangência e suportar o peso acima\n"
+            },
+            {
+              "words": "zona, área",
+              "gloss": "uma parte de uma estrutura tendo alguma característica específica ou função\n"
+            },
+            {
+              "words": "arsenal",
+              "gloss": "uma estrutura militar onde são armazenadas armas e munições e outros equipamentos militares e treinamento é dado no uso de armas\n"
+            },
+            {
+              "words": "barreira, obstáculo",
+              "gloss": "uma estrutura ou objeto que impede a livre circulação\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura ou o dispositivo no qual uma extremidade é contrabalançada por outro (sobre o princípio da gangorra)\n"
+            },
+            {
+              "words": "cave",
+              "gloss": "a parte inferior de uma estrutura parcialmente ou totalmente abaixo do nível do solo; usado frequentemente para o armazenamento\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura de placas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a estrutura externa de um veículo\n"
+            },
+            {
+              "words": "dique",
+              "gloss": "uma estrutura protetora de pedra ou concreto; estende-se na água para impedir a lavagem para retirar de uma praia da costa\n"
+            },
+            {
+              "words": "estrutural",
+              "gloss": "relativas ou tendo ou caracterizado pela estrutura\n"
+            },
+            {
+              "words": "ponte",
+              "gloss": "uma estrutura que permite que pessoas ou veículos para atravessar um obstáculo como um rio ou canal ou ferroviária etc.\n"
+            },
+            {
+              "words": "edifício, imóvel, prédio",
+              "gloss": "uma estrutura que tem um telhado e paredes e fica mais ou menos permanentemente em um só lugar\n"
+            },
+            {
+              "words": "complexo",
+              "gloss": "uma estrutura inteira (como um prédio) composta por estruturas interconectadas ou relacionadas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma loja onde os construtores podem comprar materiais para a construção de casas e estruturas relacionadas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura fencelike em torno de um baralho (geralmente no plural)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "referentes a estrutura e movimento da crosta terrestre\n"
+            },
+            {
+              "words": "funcional",
+              "gloss": "relacionada ou baseado em função especialmente em oposição a estruturar\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura em que a água é recolhida (especialmente uma área de drenagem natural)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura que consiste em algo feridas de uma série contínua de lacetes\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "estrutura que consiste de uma fileira de colunas espaçadas uniformemente\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma abóbada sepulcral ou outra estrutura que tem recessos nas paredes para receber urnas de cinza\n"
+            },
+            {
+              "words": "coluna",
+              "gloss": "(Arquitectura) uma estrutura cilíndrica vertical alta colocado na posição vertical e usado para suportar uma estrutura de\n"
+            },
+            {
+              "words": "coluna",
+              "gloss": "uma estrutura vertical cilíndrica que está sozinho e não apoiar nada (tal como um monumento)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura de madeira que consiste em um poste vertical com uma peça transversal\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma carga constante sobre uma estrutura (por exemplo, uma ponte), devido ao peso da própria estrutura suportada\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer estrutura que é muito inseguro; onde as pessoas são susceptíveis de ser morto\n"
+            },
+            {
+              "words": "defesa",
+              "gloss": "uma estrutura usada para defender contra o ataque\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura onde as pessoas vivem ou trabalham (geralmente encomendados ao longo de uma rua ou estrada)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma torre de ferro forjado 300 metros de altura que foi construído em Paris em 1889; por muitos anos foi a estrutura feita pelo homem mais alto\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Arquitetura) a estrutura que consiste em parte de um templo clássico acima das colunas entre a capital eo telhado\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura que foi erguida\n"
+            },
+            {
+              "words": "estabelecimento",
+              "gloss": "uma estrutura pública ou privada (empresarial ou governamental ou educacional), incluindo edifícios e equipamentos para empresa ou residência\n"
+            },
+            {
+              "words": "piso, planta, andar",
+              "gloss": "uma estrutura que consiste de uma sala ou um conjunto de salas em uma posição única ao longo de uma escala vertical\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um contraforte que se distingue a estrutura principal e conectados a ele por um arco\n"
+            },
+            {
+              "words": "alicerce, falda, peanha, pedestal, sopé, fundamento, pé, base",
+              "gloss": "menor apoio de uma estrutura\n"
+            },
+            {
+              "words": "fonte",
+              "gloss": "uma estrutura da qual surge um artificialmente produzido jacto de água\n"
+            },
+            {
+              "words": "armação, estrutura, armadura",
+              "gloss": "uma estrutura de apoio ou algo contendo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um feixe feitas geralmente do aço; um suporte principal em uma estrutura\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma construção instável com cartas de baralho\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "estruturas coletivamente em que as pessoas estão alojados\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura de hastes verticais e horizontais, onde as crianças podem escalar e jogar\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura em camadas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "estrutura proporcionando um local onde os barcos podem desembarcar pessoas ou de mercadorias\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma carga variável de uma estrutura (por exemplo, uma ponte), tais como o tráfego em movimento\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma saliência arredondada, que faz parte de uma estrutura maior\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura de comandar uma visão ampla de seus arredores\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um buraco (geralmente com um flush capa), através do qual uma pessoa pode ter acesso a uma estrutura subterrânea\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "estrutura construída de pedra ou de tijolo por um pedreiro\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "memorial constituído por uma parte muito grande de formação de pedra de uma estrutura pré-histórico (especialmente na Europa ocidental)\n"
+            },
+            {
+              "words": "monumento",
+              "gloss": "uma estrutura erigida para comemorar pessoas ou eventos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "estrutura composta por um monte artificial ou banco geralmente de terra ou de pedras\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "memorial consiste de uma estrutura ou marco natural de interesse histórico; anulado pelo governo nacional para a preservação e fruição pública\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um bloco de madeira construído em uma parede de alvenaria, de modo que a estrutura de marcenaria pode ser pregado a ele\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer estrutura que dificulta o progresso\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um gênero de arte e construções ao ar livre feitas por artistas sem formação que não se reconhecem como artistas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura vertical que divide ou separa (como uma parede divide um quarto de outra)\n"
+            },
+            {
+              "words": "plano",
+              "gloss": "escala de desenho de uma estrutura\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer estrutura militar ou veículo carregando armas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(náutica) uma estrutura flutuante (como um barco de fundo chato) que serve como um dock ou para apoiar uma ponte\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura anexada para o exterior de um edifício, muitas vezes formando uma entrada coberta\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura consistindo de vigas verticais (posts) apoiando um feixe horizontal (viga)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura pré-fabricada\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer estrutura que separa-se de um suporte central\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "estruturas (tais como estradas ou escolas ou pontes ou docas) construídas às custas do governo para uso público\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um arco sem decoração que está incluído no fim de reforçar ou apoiar uma construção\n"
+            },
+            {
+              "words": "cenário, palco, cena",
+              "gloss": "as estruturas pintadas de um palco que se destinam a sugerir uma localidade específica\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "estrutura em que uma parede ou de construção reduz abruptamente\n"
+            },
+            {
+              "words": "abrigo, refúgio, asilo",
+              "gloss": "uma estrutura que proporciona privacidade e proteção de perigo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura de protecção ou de cobertura\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura que se assemelha a uma caixa de sapatos (como um edifício retangular ou um quarto apertado ou compartimento)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um feixe ou madeira que é apoiada contra uma estrutura de apoio\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma parede que forma o lado de uma estrutura\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "estrutura exibindo uma placa em que propagandas podem ser postadas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "instalação militar, que consiste de uma estrutura subterrânea onde os mísseis balísticos podem ser armazenados e demitidos\n"
+            },
+            {
+              "words": "estádio",
+              "gloss": "uma grande estrutura para esportes ao ar livre ou entretenimentos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "hierárquico assentos que consiste de uma estrutura (muitas vezes feita de madeira) onde as pessoas podem sentar-se para assistir a um evento (jogo ou parada)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a área em qualquer estrutura que fornece espaço para armazenamento\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "suporte, que é uma parte constituinte de qualquer edifício ou estrutura\n"
+            },
+            {
+              "words": "superstrutura",
+              "gloss": "estrutura da parte do navio acima do convés principal\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura que serve para apoiar algo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o molde ou borda acima da base de uma estrutura (um pedestal ou pódio ou parede)\n"
+            },
+            {
+              "words": "torre",
+              "gloss": "uma estrutura mais alta que seu diâmetro; podem ficar sozinha ou ser anexado a um edifício maior\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "estrutura formando a parte transversal de uma igreja cruciforme; atravessa a nave em ângulos retos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura de vigas (vigas, postes, suportes), formando uma estrutura rígida que suporta um telhado ou uma ponte ou outra estrutura\n"
+            },
+            {
+              "words": "instalação",
+              "gloss": "uma instalação composta por uma ou mais peças de equipamentos conectados a ou parte de uma estrutura e projetados para fornecer um serviço como o calor ou electricidade ou de água ou de esgoto\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Arquitetura) de uma estrutura abobadada\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um estabilizador que é parte da estrutura vertical da cauda de um avião\n"
+            },
+            {
+              "words": "parede, muro",
+              "gloss": "uma partição de arquitetura com uma altura e comprimento maior que sua espessura; usado para dividir ou delimitar uma área ou para apoiar uma outra estrutura\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "estrutura composta por um declive caminho até a água do lugar onde os navios são construídos ou reparados\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "dispositivo mecânico ligado a uma estrutura elevada; gira livremente para indicar a direcção do vento\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura construída ao longo de um poço\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura semelhante a um túnel, onde o ar é soprado a velocidades conhecidas para testar peças de aeronaves\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a qualidade de ser semelhante ou correspondente na posição, o valor ou estrutura ou função\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Biologia) semelhança ou identidade de forma ou formato ou estrutura\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a qualidade de estar de uniforme em toda a composição ou estrutura\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Ciência da computação) a estrutura e organização do sistema de hardware ou software de um computador\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(arquitetura) a disposição das colunas (colunas especialmente autônomas) em uma estrutura\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura de dados com vários níveis, organizados em uma estrutura arvoresco\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "linguística, definida como a análise de estruturas formais em um texto ou discurso\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um livro (geralmente por crianças) que contém uma ou mais páginas de tal forma que uma estrutura tridimensional, quando se eleva-se a página é aberta\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o caso de uma estrutura a ser completamente destruída e nivelado\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma estrutura que fornece uma habitação natural para as abelhas. como em uma árvore oca\n"
+            },
+            {
+              "words": "mecanismo",
+              "gloss": "um objeto natural, assemelhando-se a uma máquina na estrutura ou função\n"
+            },
+            {
+              "words": "parede, muro",
+              "gloss": "nada que sugira uma parede na estrutura ou função ou efeito\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "alguém que constrói ou mantém estruturas muito altas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um engenheiro que determina os limites e as elevações de terrenos ou de estruturas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "lien para garantir o pagamento para o trabalho e os materiais em erigir ou reparação de um edifício ou outra estrutura\n"
+            },
+            {
+              "words": "elemento, unidade",
+              "gloss": "um indivíduo ou grupo ou estrutura ou outra entidade considerada como um constituinte estrutural ou funcional de um todo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a relação entre o estresse de ruptura de uma estrutura para a tensão máxima estimada em uso normal\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "material de construção que consiste em gesso e cabelo; usado para cobrir superfícies externas de estrutura temporária (como em uma exposição) ou para decoração\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Microscopia) um corante ou outro material corante que é usado em microscopia para fazer estruturas visível\n"
+            }
+          ]
+        },
+        {
+          "relation": "part meronym",
+          "targets": [
+            {
+              "words": "alicerce, falda, peanha, pedestal, sopé, fundamento, pé, base",
+              "gloss": "menor apoio de uma estrutura\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "membro estrutural, que consiste de uma viga horizontal que fornece rolamentos e fixação\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "suporte, que é uma parte constituinte de qualquer edifício ou estrutura\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "artefacto, artefato",
+              "gloss": "um objeto feito pelo homem como um todo\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "entidade",
+              "gloss": "aquilo que é percebido ou conhecido por ter a sua própria existência (vivo ou não vivo)"
+            },
+            {
+              "words": "coisa",
+              "gloss": "uma entidade que não é nomeada especificamente\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-06788785-n",
+      "pos": "n",
+      "gloss": "instruções para fazer algo\n",
+      "synonyms": [
+        "composição",
+        "receita",
+        "fórmula"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-06788785-n",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "preparar de acordo com uma fórmula\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Farmacologia) um livro contendo uma compilação de produtos farmacêuticos, com suas fórmulas e métodos de preparação\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um livro de receitas e instruções de culinária\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o pó permanece de licor de chocolate, depois a manteiga de cacau é removida; usado na panificação e no baixo teor de gordura e baixa caloria receitas e como um condimento para tomar sorvete\n"
+            },
+            {
+              "words": "formulação, preparação, fórmula",
+              "gloss": "uma substância preparada de acordo com uma fórmula\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "preparar de acordo com uma fórmula\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "preparar de acordo com uma fórmula\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "conselho, instrução, orientação",
+              "gloss": "uma mensagem que descreve como algo que deve ser feito\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "causar, realizar, criar, fazer, tornar, abrir",
+              "gloss": "fazer ou causar a ser ou tornar-se\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-00929718-n",
+      "pos": "n",
+      "gloss": "o ato de criar obras escritas\n",
+      "synonyms": [
+        "composição",
+        "escritura",
+        "escrita"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-00929718-n",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "hyponym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "escrita fina em louvor de assuntos triviais ou de base\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "escrever uma primeira versão a ser preenchido e polido mais tarde\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "conversão em forma dramática\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "escrevendo em uma forma de ficção\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a escrita da história\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "escrevendo uma composição métrica (ou a estrutura métrica de uma composição)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "conversão de algo em forma de um romance\n"
+            },
+            {
+              "words": "redação",
+              "gloss": "o ato de colocar algo por escrito\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "O ato de escrever dicionários\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a arte ou prática de escrever versos\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "educação em assuntos elementares (leitura e escrita e aritmética), desde a jovens estudantes de uma escola primária\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a escrita da história\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "escrevendo uma composição métrica (ou a estrutura métrica de uma composição)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "ter habilidades de leitura e escrita insuficiente para as necessidades práticas comuns\n"
+            },
+            {
+              "words": "oral",
+              "gloss": "usando o discurso, ao invés de escrever\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma obra de arte (composição ou teatro), que faz parte do repertório padrão, mas tornou-se banal de muita repetição\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a qualidade de ser fácil na fala e na escrita\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "obscenidade na fala ou escrita\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "habilidade em falar ou escrever\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Arquitetura) uma forma de expressão artística (como escrever ou pintar ou arquitetura)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o estudo científico de documentos e escrita etc. especialmente para determinar a autoria ou autenticidade\n"
+            },
+            {
+              "words": "história",
+              "gloss": "tudo o que é lembrado do passado, como preservado por escrito; um corpo de conhecimento\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "corte de papel para um tamanho adequado para escrever cartas; geralmente com envelopes de correspondência\n"
+            },
+            {
+              "words": "discurso",
+              "gloss": "expressão verbal estendida no discurso ou escrita\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um escritor que dá o crédito de autoria de outra pessoa\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um comerciante que vende materiais de escrita e material de escritório\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o grego antigo conhecido como o pai da história; suas contas das guerras entre os gregos e os persas são os primeiros exemplos conhecidos de escrita histórica (485-425 aC)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "escritor irlandês influente conhecido por suas muitas inovações (como o fluxo da escrita consciência) (1882-1941)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Cherokee que criou uma notação para escrever a língua Cherokee (1770-1843)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Teólogo cartaginês cuja escrita influenciou a teologia cristã primitiva (160-230)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "processamento rápido e eficiente (armazenamento e impressão) de dados linguísticos para composição e edição\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um estilo de fala ou escrita que prende a atenção e tem uma qualidade ou efeito convincente penetrante\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "afasia em que a expressão pela fala ou escrita é severamente prejudicada\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "papel com linhas apropriadas para escrever música\n"
+            }
+          ]
+        },
+        {
+          "relation": "member of domain category",
+          "targets": [
+            {
+              "words": "grafar, redigir, ziguezaguear, compor, escrever",
+              "gloss": "produzir uma obra literária\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "escrever sobre um tema específico\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "escrever sobre\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "escrever parágrafos; trabalhar como um paragrapher\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "escrever rapidamente\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "reescrever a fim de fazer caber para atender um propósito novo ou diferente\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "escreve para publicações comerciais\n"
+            },
+            {
+              "words": "adaptar",
+              "gloss": "Coloque na forma dramática\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "elaborar um esboço ou croqui para algo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o autor do\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "ser um co-autor na (um livro, um papel)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "escrever para alguém\n"
+            },
+            {
+              "words": "anotar",
+              "gloss": "adicionar notas explicativas ou fornecer comentários críticos\n"
+            },
+            {
+              "words": "citar, nomear",
+              "gloss": "consultar\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "colocados por escrito; escrever de forma completa\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "escrever um roteiro para\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "grafar, redigir, ziguezaguear, compor, escrever",
+              "gloss": "produzir uma obra literária\n"
+            },
+            {
+              "words": "escritor, autor",
+              "gloss": "escreve (livros ou histórias ou artigos semelhantes) profissionalmente (para pagar)\n"
+            },
+            {
+              "words": "grafar, redigir, ziguezaguear, compor, escrever",
+              "gloss": "produzir uma obra literária\n"
+            },
+            {
+              "words": "escritor, autor",
+              "gloss": "escreve (livros ou histórias ou artigos semelhantes) profissionalmente (para pagar)\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "criar algo pelo uso da fala e linguagem\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "criar, produzir, tornar, abrir, fazer",
+              "gloss": "trazer à existência\n"
+            },
+            {
+              "words": "escrito",
+              "gloss": "estabelecidos por escrito em qualquer uma das várias maneiras\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-00939452-n",
+      "pos": "n",
+      "gloss": "criação musical\n",
+      "synonyms": [
+        "composição"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-00939452-n",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "hyponym",
+          "targets": [
+            {
+              "words": "arranjo",
+              "gloss": "o ato de organizar e adaptar uma peça de música\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a conclusão ou o enriquecimento de uma parte de música deixou pouco notado por um compositor\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Música) a repetição dos temas introduzidos anteriormente (especialmente quando se está a compor a parte final de um movimento)\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "secção, seção",
+              "gloss": "uma parte auto-suficiente de uma composição maior (escrita ou musical)\n"
+            },
+            {
+              "words": "harmonia",
+              "gloss": "a estrutura de música com respeito à composição e à progressão de acordes\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um estudioso vagando na Europa medieval; famoso por intemperança e um comportamento turbulento e a composição de canções latino-satíricas e irreverentes\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor e teórico musical (nascido na Áustria), que desenvolveu composição atonal (1874-1951)\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "compor",
+              "gloss": "escrever música\n"
+            },
+            {
+              "words": "compor",
+              "gloss": "escrever música\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "o ato de criar algo por pensar\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "criação",
+              "gloss": "o ato humano de criar\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "característico de ou semelhantes ou acompanhado por música\n"
+            },
+            {
+              "words": "criação",
+              "gloss": "um artefato que foi trazido à existência por alguém\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-03081660-n",
+      "pos": "n",
+      "gloss": "algo que é criado por providenciar várias coisas de modo a formar um todo unificado\n",
+      "synonyms": [
+        "composição"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-03081660-n",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "hyponym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição de objetos planos colados em uma placa ou outro apoio\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "de ou relacionados com o ramo da acústica que estuda a composição dos sons musicais\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a forma ou composição métrica de um poema\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma pequena unidade de tropas de composição especial\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "criação",
+              "gloss": "um artefato que foi trazido à existência por alguém\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "conjunto, unidade",
+              "gloss": "um conjunto de peças que é considerado como uma única entidade"
+            },
+            {
+              "words": "colocar, arranjar",
+              "gloss": "colocar em uma ordem adequada ou sistemática\n"
+            },
+            {
+              "words": "criar, produzir, tornar, abrir, fazer",
+              "gloss": "trazer à existência\n"
+            },
+            {
+              "words": "compor, fazer, constituir, formar",
+              "gloss": "para compor ou representar: \"esta parede faz o fundo da configuração do palco\"\n"
+            },
+            {
+              "words": "coisa",
+              "gloss": "uma entidade que não é nomeada especificamente\n"
+            },
+            {
+              "words": "todo, tudo, totalidade",
+              "gloss": "todos de alguma coisa, incluindo todos os seus elementos ou partes componentes\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-04933544-n",
+      "pos": "n",
+      "gloss": "a maneira em que alguém ou alguma coisa é composto\n",
+      "synonyms": [
+        "constituição",
+        "composição"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-04933544-n",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "hyponym",
+          "targets": [
+            {
+              "words": "estruturação, estrutura",
+              "gloss": "o modo de construção de alguma coisa e o arranjo das suas partes\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o que um organismo se parece como uma conseqüência da interação do seu genótipo e ambiente\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "os alelos específicos em loci especificados presentes num organismo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a composição física de alguma coisa (especialmente no que diz respeito ao tamanho e à forma das pequenas constituintes de uma substância)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a aparência da composição cromossômica de uma célula somática de um indivíduo ou espécie (incluindo o número e arranjo e tamanho e estrutura dos cromossomos)\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "mudança na composição física\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o ato de fazer algo homogênea ou uniforme em composição\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "firme e forte na constituição ou construção; duradoura\n"
+            },
+            {
+              "words": "constituinte, constitutivo, orgânico",
+              "gloss": "constitucional na estrutura de alguma coisa (especialmente sua constituição física)\n"
+            },
+            {
+              "words": "uniforme, coerente",
+              "gloss": "o mesmo em toda a estrutura ou composição\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "alterado na constituição ou estrutura ou composição por metamorfismo\n"
+            },
+            {
+              "words": "constitucional",
+              "gloss": "de benefício ou destinadas a beneficiar a sua constituição física\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a qualidade de estar de uniforme em toda a composição ou estrutura\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a composição celular de uma estrutura física\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a composição física de alguma coisa (especialmente no que diz respeito ao tamanho e à forma das pequenas constituintes de uma substância)\n"
+            },
+            {
+              "words": "constituição, físico",
+              "gloss": "constituição do corpo humano\n"
+            },
+            {
+              "words": "resistência",
+              "gloss": "a propriedade de ser forte e saudável na constituição\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a aparência da composição cromossômica de uma célula somática de um indivíduo ou espécie (incluindo o número e arranjo e tamanho e estrutura dos cromossomos)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "tecido ou órgão transplantado de um doador da mesma espécie, mas uma composição genética diferente; sistema de imune do destinatário deve ser suprimido, para evitar a rejeição do enxerto\n"
+            },
+            {
+              "words": "eclesiologia",
+              "gloss": "o ramo da teologia em causa com a natureza e a constituição e as funções de uma igreja\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um relatório escrito dos resultados de uma análise da composição de uma substância\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma camada de rocha, com uma composição específica (especialmente de fósseis); para datar o estrato\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer um dos inúmeros corpos cristalinos rudimentares minutos de composição desconhecida, encontrada em rochas ígneas vítrea\n"
+            },
+            {
+              "words": "unidade",
+              "gloss": "uma única coisa natural indivisa ocorrendo na composição da outra coisa\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "alguém treinado na ciência de drogas (a sua composição e os usos e efeitos)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um fenómeno natural que envolve a estrutura ou composição da terra\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Química) qualquer processo determinado pela composição atômica e molecular e estrutura das substâncias envolvidas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Física) um processo de energia que altera a estrutura ou composição de núcleos atómicos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "imunidade à doença que ocorre como parte da composição biológica singular de um indivíduo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a condição na qual um organismo tem duas ou mais populações de células que diferem em composição genética\n"
+            },
+            {
+              "words": "equipamento, matéria, material",
+              "gloss": "a substância tangível que vai para a composição de um objeto físico\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "metamórfica rocha com aproximadamente a mesma composição que marga\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "magma de qualquer composição que arrefeceu muito rapidamente\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "corresponder a, denotar, significar, constituir, ser, representar",
+              "gloss": "formar ou compor\n"
+            },
+            {
+              "words": "compor, fazer, constituir, formar",
+              "gloss": "para compor ou representar: \"esta parede faz o fundo da configuração do palco\"\n"
+            },
+            {
+              "words": "corresponder a, denotar, significar, constituir, ser, representar",
+              "gloss": "formar ou compor\n"
+            },
+            {
+              "words": "compor, fazer, constituir, formar",
+              "gloss": "para compor ou representar: \"esta parede faz o fundo da configuração do palco\"\n"
+            }
+          ]
+        },
+        {
+          "relation": "has derived form",
+          "targets": [
+            {
+              "words": "constitucional",
+              "gloss": "de benefício ou destinadas a beneficiar a sua constituição física\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "propriedade",
+              "gloss": "um atributo básico ou essencial compartilhada por todos os membros de uma classe\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "alma, cidadão, corpo, individualidade, indivíduo, indíviduo, pessoa, sujeito, humano, mortal",
+              "gloss": "Homo sapiens\n"
+            },
+            {
+              "words": "modo, estilo, forma",
+              "gloss": "como algo é feito ou como isso acontece\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-05076472-n",
+      "pos": "n",
+      "gloss": "a propriedade espacial resultante do acordo das partes em relação às outras e a toda\n",
+      "synonyms": [
+        "composição"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-05076472-n",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "quadro, pintura",
+              "gloss": "arte gráfica que consiste em uma composição artística feita através da aplicação de tintas a uma superfície\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição de objetos planos colados em uma placa ou outro apoio\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o estilo artístico de pintura do início do século 16, em Florença e Roma; caracterizado pela maestria técnica ea composição heróica e conteúdo humanístico\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a composição complexa de conhecimento como elementos e suas combinações\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "a propriedade espacial da maneira em que algo é colocado\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "conjunto, unidade",
+              "gloss": "um conjunto de peças que é considerado como uma única entidade"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer propriedade relacionada ou ocupando espaço\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a propriedade espacial da maneira em que algo é colocado\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-06409752-n",
+      "pos": "n",
+      "gloss": "um ensaio (especialmente um escrito como uma atribuição)\n",
+      "synonyms": [
+        "relatório",
+        "redação",
+        "tema",
+        "composição"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-06409752-n",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "hyponym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição destinada a indicar o progresso do aluno durante um ano letivo\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "redigir",
+              "gloss": "escrever um documento legal ou jornal\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "ser um co-autor na (um livro, um papel)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "detém papéis soltos ou revistas\n"
+            },
+            {
+              "words": "poema, poesia, versificação, verso",
+              "gloss": "uma composição escrita em pés métricos formando linhas rítmicas\n"
+            },
+            {
+              "words": "secção, seção",
+              "gloss": "uma parte auto-suficiente de uma composição maior (escrita ou musical)\n"
+            },
+            {
+              "words": "livro",
+              "gloss": "uma divisão principal de uma composição de longa escrita\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição destinada a indicar o progresso do aluno durante um ano letivo\n"
+            },
+            {
+              "words": "livro",
+              "gloss": "um trabalho escrito ou composição que tenha sido publicada (impressa em páginas ligadas entre si)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição que imita ou deturpa estilo de alguém, geralmente de uma forma humorística\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma disposição dos elementos em uma composição ou discurso\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "ensaio",
+              "gloss": "uma composição literária analítico ou interpretativo\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "uma empresa que tenha sido designado para fazer (como por um instrutor)\n"
+            },
+            {
+              "words": "ensaio",
+              "gloss": "uma composição literária analítico ou interpretativo\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-07037465-n",
+      "pos": "n",
+      "gloss": "uma obra musical que tenha sido criado\n",
+      "synonyms": [
+        "peça",
+        "obra",
+        "composição"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-07037465-n",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "hyponym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição literária ou musical curta\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição musical em forma impressa ou escrita\n"
+            },
+            {
+              "words": "adaptação",
+              "gloss": "uma peça de música que foi adaptado para o desempenho de um determinado conjunto de vozes ou instrumentos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição musical que foi concluída ou enriquecida por alguém que não seja o compositor\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um pequeno pedaço de música instrumental composta por desempenho entre atos de um drama ou ópera\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição musical ou passagem musical a ser realizada rapidamente de uma forma animada vivo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição musical ou passagem musical a ser realizado em um ritmo um pouco mais rápido do que andante, mas não tão rápido quanto allegro\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição musical ou passagem musical a ser realizado moderadamente lento\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição de música vocal que é apropriado para os cultos da igreja de abertura\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição musical para uma só voz ou instrumento (com ou sem acompanhamento)\n"
+            },
+            {
+              "words": "dueto, duo",
+              "gloss": "uma composição musical para dois performers\n"
+            },
+            {
+              "words": "trio",
+              "gloss": "uma composição musical para três performers\n"
+            },
+            {
+              "words": "quarteto",
+              "gloss": "uma composição musical por quatro performers\n"
+            },
+            {
+              "words": "quinteto",
+              "gloss": "uma composição musical por cinco performers\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição musical escrita por seis artistas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição musical escrita para sete performers\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição musical escrita por oito artistas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um pedaço de luz de música para piano\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição musical em vários movimentos; não tem forma fixa\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma peça contrapontística de música em que uma melodia em uma parte é imitado exatamente em outras partes\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um curto composição para um instrumento de solo; pretende ser um exercício ou para demonstrar virtuosismo técnico\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição musical que evoca a vida rural\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição musical barroca (geralmente para um instrumento de teclado) com acordes rápida e integralmente executado elaborados em um estilo ritmicamente livre\n"
+            },
+            {
+              "words": "fantasia",
+              "gloss": "uma composição musical de uma forma livre geralmente incorporando vários temas familiares\n"
+            },
+            {
+              "words": "trecho, bilhete, passagem",
+              "gloss": "uma seção curta de uma composição musical\n"
+            },
+            {
+              "words": "movimento",
+              "gloss": "uma grande parte auto-suficiente de uma sinfonia ou sonata\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Música) ou uma composição de passagem que está a ser executada de uma maneira lenta e digna\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Música) uma composição ou passagem jogado em um ritmo lento ligeiramente mais rápido do que largo, mas mais lento do que adagio\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição musical de vários movimentos apenas vagamente conectada\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição orquestral com base na literatura ou contos populares\n"
+            },
+            {
+              "words": "mistura",
+              "gloss": "uma composição musical que consiste de uma série de músicas ou de outras peças musicais a partir de várias fontes\n"
+            },
+            {
+              "words": "noturno",
+              "gloss": "uma peça lírica pensativa da música (especialmente para o piano)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Música) uma composição jogado em adagio tempo (de forma lenta e graciosamente)\n"
+            },
+            {
+              "words": "canção",
+              "gloss": "uma composição musical curto com palavras\n"
+            },
+            {
+              "words": "estúdio, estudo",
+              "gloss": "uma composição destina-se a desenvolver um aspecto da técnica do executante\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição instrumental que não aderir às regras para qualquer forma musical específico e é jogado com improvisação\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição coral desacompanhado com letras sagradas; destina-se a ser cantado como parte de um culto na igreja; originado no século 13\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "composições musicais destinados a evocar imagens ou lembrar ao ouvinte de eventos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "música composta para acompanhar a ação de um drama ou para preencher os intervalos entre as cenas\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "transposição",
+              "gloss": "(Música), jogando em uma chave diferente da chave que se destina; movendo o tom de uma peça de música para cima ou para baixo\n"
+            },
+            {
+              "words": "investir",
+              "gloss": "Faça uma inversão (em uma composição musical)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a interpretação de movimentos corporais harmoniosas do ritmo de composições musicais; usado para ensinar a compreensão musical\n"
+            },
+            {
+              "words": "atuação, desempenho, interpretação",
+              "gloss": "o ato de apresentar uma peça de teatro ou uma peça de música ou outro entretenimento\n"
+            },
+            {
+              "words": "arranjo",
+              "gloss": "o ato de organizar e adaptar uma peça de música\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o ato de organizar uma peça de música para orquestra e atribuindo peças para os diferentes instrumentos musicais\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a conclusão ou o enriquecimento de uma parte de música deixou pouco notado por um compositor\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "colocar por escrito; de textos, composições musicais, etc.\n"
+            },
+            {
+              "words": "transcrever",
+              "gloss": "reescrever ou arranjar uma peça de música de um instrumento ou meio que não o previsto inicialmente\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "repetir um tema anterior de uma composição\n"
+            },
+            {
+              "words": "dirigir",
+              "gloss": "conduzir, como no desempenho de uma composição\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "clicando pêndulo indica o tempo exacto de uma peça de música\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Música) a propriedade do som resultante de uma combinação de paradas de órgãos utilizados para realizar uma determinada peça de música; a técnica de seleção e ajuste de paradas de órgãos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a propriedade rítmica transmitida pelos acentos e durações relativas de notas em uma peça de música\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição literária ou musical curta\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma forma escrita de uma composição musical; peças para instrumentos diferentes aparecem em pautas separadas em páginas grandes\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição musical em forma impressa ou escrita\n"
+            },
+            {
+              "words": "tonalidade, chave",
+              "gloss": "qualquer uma das 24 escalas maiores e menores diatônica que fornecem a estrutura tonal para uma peça de música\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a tecla de base em que uma peça de música é gravada\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "marcação da extremidade de partes principais de uma composição musical notação; duas linhas de barras adjacentes\n"
+            },
+            {
+              "words": "entrega, interpretação",
+              "gloss": "uma performance de uma composição musical ou um papel dramático etc.\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma peça de música cujo original harmonia foi revisto\n"
+            },
+            {
+              "words": "tema",
+              "gloss": "(Música) sujeito melódica de uma composição musical\n"
+            },
+            {
+              "words": "motivo",
+              "gloss": "um tema que se repete ou elaborados em uma peça de música\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma melodia usado como a base para uma composição polifonica\n"
+            },
+            {
+              "words": "adaptação",
+              "gloss": "uma peça de música que foi adaptado para o desempenho de um determinado conjunto de vozes ou instrumentos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um arranjo de uma música para o desempenho de uma orquestra ou banda\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição musical que foi concluída ou enriquecida por alguém que não seja o compositor\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a seção de fechamento de uma composição musical\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição musical ou passagem musical a ser realizada rapidamente de uma forma animada vivo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição musical ou passagem musical a ser realizado em um ritmo um pouco mais rápido do que andante, mas não tão rápido quanto allegro\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição musical ou passagem musical a ser realizado moderadamente lento\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição de música vocal que é apropriado para os cultos da igreja de abertura\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição para órgão usando um coral como uma base para as variações\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição musical para uma só voz ou instrumento (com ou sem acompanhamento)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "composição (muitas vezes improvisado) para um instrumento solista (órgão especial de solo) e não uma parte regular de um serviço religioso ou performance musical\n"
+            },
+            {
+              "words": "dueto, duo",
+              "gloss": "uma composição musical para dois performers\n"
+            },
+            {
+              "words": "trio",
+              "gloss": "uma composição musical para três performers\n"
+            },
+            {
+              "words": "quarteto",
+              "gloss": "uma composição musical por quatro performers\n"
+            },
+            {
+              "words": "quinteto",
+              "gloss": "uma composição musical por cinco performers\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição musical escrita por seis artistas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição musical escrita para sete performers\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição musical escrita por oito artistas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição musical para vozes e orquestra baseada em um texto religioso\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um pedaço de luz de música para piano\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição musical em vários movimentos; não tem forma fixa\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma peça contrapontística de música em que uma melodia em uma parte é imitado exatamente em outras partes\n"
+            },
+            {
+              "words": "concerto",
+              "gloss": "uma composição para orquestra e solista\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição para orquestra barroca e um grupo de instrumentos de solo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um curto composição para um instrumento de solo; pretende ser um exercício ou para demonstrar virtuosismo técnico\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição musical que evoca a vida rural\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição musical de 3 ou 4 movimentos de formas contrastantes\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição musical barroca (geralmente para um instrumento de teclado) com acordes rápida e integralmente executado elaborados em um estilo ritmicamente livre\n"
+            },
+            {
+              "words": "fantasia",
+              "gloss": "uma composição musical de uma forma livre geralmente incorporando vários temas familiares\n"
+            },
+            {
+              "words": "trecho, bilhete, passagem",
+              "gloss": "uma seção curta de uma composição musical\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma frase musical repetida várias vezes durante uma composição\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma passagem brilhante solo que ocorrem perto do final de uma peça de música\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Música) ou uma composição de passagem que está a ser executada de uma maneira lenta e digna\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Música) uma composição ou passagem jogado em um ritmo lento ligeiramente mais rápido do que largo, mas mais lento do que adagio\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição musical de vários movimentos apenas vagamente conectada\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição orquestral com base na literatura ou contos populares\n"
+            },
+            {
+              "words": "mistura",
+              "gloss": "uma composição musical que consiste de uma série de músicas ou de outras peças musicais a partir de várias fontes\n"
+            },
+            {
+              "words": "noturno",
+              "gloss": "uma peça lírica pensativa da música (especialmente para o piano)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Música) uma composição jogado em adagio tempo (de forma lenta e graciosamente)\n"
+            },
+            {
+              "words": "canção",
+              "gloss": "uma composição musical curto com palavras\n"
+            },
+            {
+              "words": "estúdio, estudo",
+              "gloss": "uma composição destina-se a desenvolver um aspecto da técnica do executante\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma peça imponente da música composta para dançar o minueto; muitas vezes incorporadas a uma sonata ou suíte\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Música do século 20 que usa uma ordem definitiva de notas como base temática para uma composição musical\n"
+            },
+            {
+              "words": "ritmo",
+              "gloss": "a unidade de base rítmico em uma peça de música\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição instrumental que não aderir às regras para qualquer forma musical específico e é jogado com improvisação\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma composição coral desacompanhado com letras sagradas; destina-se a ser cantado como parte de um culto na igreja; originado no século 13\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "composições musicais destinados a evocar imagens ou lembrar ao ouvinte de eventos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um músico que se adapta a uma composição para instrumentos ou vozes particulares ou para um outro estilo de desempenho\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos compositor que foi o primeiro criador de ragtime para escrever suas composições (1868-1917)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor austríaco conhecido por suas composições para voz e piano (1797-1828)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Música) a velocidade com que uma composição é para ser jogado\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "compor",
+              "gloss": "escrever música\n"
+            },
+            {
+              "words": "compor",
+              "gloss": "escrever música\n"
+            }
+          ]
+        },
+        {
+          "relation": "part meronym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "a seção de fechamento de uma composição musical\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "música",
+              "gloss": "uma forma artística de comunicação auditiva incorporando tons instrumentais ou vocais de uma forma estruturada e contínua\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "característico de ou semelhantes ou acompanhado por música\n"
+            },
+            {
+              "words": "causar, realizar, criar, fazer, tornar, abrir",
+              "gloss": "fazer ou causar a ser ou tornar-se\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-14588492-n",
+      "pos": "n",
+      "gloss": "uma mistura de ingredientes\n",
+      "synonyms": [
+        "composição"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-14588492-n",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "hyponym",
+          "targets": [
+            {
+              "words": "pasta, massa",
+              "gloss": "qualquer mistura com uma consistência macia e maleável\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de néctar e pólen preparado por abelhas operárias e alimentado para larvas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de vegetação em decomposição e estrume; utilizado como fertilizante\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer composição tendo uma consistência sugestivo de sopa\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer um dos vários jogos disputados na retangular coberto de pano de mesa (com bordas almofadadas) em que tempo afinando cue varas são usadas para impulsionar as bolas de Marfim (ou composição)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "instrumento de escrita consiste em uma vara de cor da composição de cera utilizados para escrita e desenho\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "fixador consiste em uma composição de resina que é de plástico quando quente; usado para documentos e encomendas e cartas de vedação\n"
+            },
+            {
+              "words": "adesão",
+              "gloss": "propriedade da degola juntos (como de cola e madeira) ou a união de superfícies de composição diferente\n"
+            },
+            {
+              "words": "sabor, gosto",
+              "gloss": "a sensação que resulta quando papilas gustativas na língua e garganta transmitir informações sobre a composição química de um estímulo solúvel\n"
+            },
+            {
+              "words": "química",
+              "gloss": "a ciência da matéria; o ramo das ciências naturais que lidam com a composição de substâncias e suas propriedades e reações\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o ramo da geologia que estuda rochas: sua origem e formação e composição mineral e classificação\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um relatório escrito dos resultados de uma análise da composição de uma substância\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Química) variabilidade na composição química, sem variação na forma cristalina\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer um dos inúmeros corpos cristalinos rudimentares minutos de composição desconhecida, encontrada em rochas ígneas vítrea\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "alguém treinado na ciência de drogas (a sua composição e os usos e efeitos)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a mudança de um estado (sólido ou líquido ou gás) para outro, sem uma mudança na composição química\n"
+            },
+            {
+              "words": "fase",
+              "gloss": "(Físico-química) um estado distinto da matéria em um sistema; matéria que é idêntico em composição química e estado físico e separado do outro material da fronteira da fase\n"
+            },
+            {
+              "words": "mineral",
+              "gloss": "substâncias inorgânicas sólidas homogéneas que ocorrem na natureza tendo uma composição química definida\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma simples proteína encontrada no esperma de peixe; rico em arginina; mais simples do que na composição de globulina ou albumina; neutraliza o efeito anticoagulante da heparina\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer composição tendo uma consistência sugestivo de sopa\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "mistura",
+              "gloss": "(Química) uma substância composta por duas ou mais substâncias misturadas (não em proporções fixas e não com ligação química)\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "ingrediente",
+              "gloss": "um componente de uma mistura ou combinação\n"
+            },
+            {
+              "words": "mistura",
+              "gloss": "(Química) uma substância composta por duas ou mais substâncias misturadas (não em proporções fixas e não com ligação química)\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-07331400-n",
+      "pos": "n",
+      "gloss": "desmoronando\n",
+      "synonyms": [
+        "apartamento",
+        "apartação",
+        "decomposição",
+        "desagregação",
+        "desmonte",
+        "destrinça",
+        "desunião",
+        "discernimento",
+        "discriminação",
+        "disjunção",
+        "dissolução",
+        "distinção",
+        "divisão",
+        "oposição",
+        "afastamento",
+        "separação"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-07331400-n",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "hyponym",
+          "targets": [
+            {
+              "words": "ruptura, violação",
+              "gloss": "uma separação pessoal ou social (como entre facções opostas)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a ocorrência de quebra\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "sem possibilidade de separação\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o ato de perfurar um buraco (especialmente uma fileira de buracos como a facilidade de separação)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "vir ou estar em estreito contacto com; ficar ou manter juntos e resistir a separação\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "reprodução de alguns organismos unicelulares (por exemplo, leveduras), por crescimento e especialização seguido pela separação por constrição de uma parte do progenitor\n"
+            },
+            {
+              "words": "dissolução",
+              "gloss": "separação em partes componentes\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "processo biológico que consiste na divisão do citoplasma de uma célula seguinte cariocinese provocar a separação em duas células filhas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(genética) a separação dos alelos emparelhados durante a meiose, de modo que os membros de cada par de alelos aparecer em diferentes gâmetas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "separação de um prego de sua fixação normal para o leito ungueal\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma fractura sem a separação dos fragmentos e a linha de ruptura a ser muito fina\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "separação de uma epífise do osso longo, o qual se encontra normalmente ligado sem fractura do osso\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "apartar, desatar",
+              "gloss": "vir a ser destacado\n"
+            },
+            {
+              "words": "dividir, partilhar, separar, partir",
+              "gloss": "desmoronar\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "desmoronar\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "descontinuar uma associação ou relação; seguir caminhos diferentes\n"
+            },
+            {
+              "words": "apartar, desatar",
+              "gloss": "vir a ser destacado\n"
+            },
+            {
+              "words": "dividir, partilhar, separar, partir",
+              "gloss": "desmoronar\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "desmoronar\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "descontinuar uma associação ou relação; seguir caminhos diferentes\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "alteração, modificação, variação, câmbio, mudança, troca",
+              "gloss": "um evento que ocorre quando algo passa de um estado ou fase para outra\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "separaram-se em pedaços ou fragmentos\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-11444643-n",
+      "pos": "n",
+      "gloss": "o fenômeno biológico de podridão\n",
+      "synonyms": [
+        "decomposição",
+        "descomposição"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-11444643-n",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "a adição de um fluoreto para o abastecimento de água (para prevenir a cárie dentária)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "submeter-se a decadência ou a decomposição\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "derreter em processo de decadência\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "causando deterioração orgânica\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "digite gênero do Bacillaceae; inclui muitos saprófitas importantes na decomposição da matéria orgânica e um número de parasitas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "sugerindo o horror da morte e decadência\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "trazer em uma condição de deterioração ou ruína parcial por negligência ou uso indevido\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "susceptível de perecer; sujeito à destruição, morte ou decadência\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(de esgoto) tratados com aeração e bactérias para ajudar a decomposição\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "danificado por deterioração; Portanto, doente e inútil\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "insatisfação em virtude de estar sujeito à decadência ou deterioração ou destruição\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a propriedade de ser resistente à deterioração\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "estrutura de esporos fechado de alguns fungos (especialmente Aspergillaceae e Erysiphaceae) a partir do qual os esporos são liberados apenas por decomposição ou desintegração\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "forte madeira dura de uma árvore black-gafanhotos; muito resistente à deterioração\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "classe de fungos no qual o corpo frutífero é um cleistothecium (que libera esporos somente em decomposição ou desintegração)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a circulação de azoto; nitratos a partir do solo são absorvidos pelas plantas, que são comidos por animais que morrem e se decompõem retornando o nitrogênio de volta para o solo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um processo que salva substâncias orgânicas a partir do decaimento\n"
+            },
+            {
+              "words": "radioactividade, radiação",
+              "gloss": "a emissão espontânea de um fluxo de partículas ou raios eletromagnéticos em decadência nuclear\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma doença fúngica que causa o escurecimento e deterioração das folhas de frutas e legumes\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer de certas doenças fungoso de plantas caracterizados por escurecimento e deterioração de tecidos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "doença caracterizada por cárie radicular; causada por vários fungos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "decaimento mole ou viscoso de plantas causada por bactérias ou fungos\n"
+            },
+            {
+              "words": "conservante",
+              "gloss": "um composto químico que é adicionado para proteger contra a deterioração ou decomposição\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "cair em deterioração ou ruína\n"
+            },
+            {
+              "words": "apodrecer, deteriorar, putrefazer, decompor",
+              "gloss": "Demolir\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "submeter-se a decadência ou a decomposição\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "causando deterioração orgânica\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "cair em deterioração ou ruína\n"
+            },
+            {
+              "words": "apodrecer, deteriorar, putrefazer, decompor",
+              "gloss": "Demolir\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "submeter-se a decadência ou a decomposição\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "causando deterioração orgânica\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "(Biologia) um fenômeno natural que envolve plantas e animais vivos\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "(Biologia) um fenômeno natural que envolve plantas e animais vivos\n"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

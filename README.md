@@ -1,69 +1,104 @@
-# Semantic Research — Fase 0 workbench
+# Semantic Research — R8 workbench (~95 reliability)
 
-Thin daily interface over your existing Portuguese lexicon stack
-(**PULO**, **Onto.PT / CONTO.PT**, **LexWarrant**). Same science; one screen.
+**Any-term / any-concept** research tool over the Portuguese lexicon stack
+(**PULO**, **Onto.PT** discovery, **OWN-PT / OEWN**, **LexWarrant**), with a
+durable **SenseIndex**, **CILI-only** ILI join, and `sr doctor` pins.
 
-## Daily path (only this)
+Nothing in the runtime is bound to a particular lemma or class. Existing
+folders under `classes/` are just workspaces you created for specific studies.
 
-1. Open a **class** (or create one).
-2. **Search** a lemma in PULO and/or Onto.PT → sense cards appear.
-3. Mark each sense: **UF · RT · exclude · atributo · contraste**.
-4. Click **Run** → engines + LexWarrant.
-5. Read `classes/<Class>/out/<Class>.concordance.md`.
+Decisão só por sentido; junção ILI automática via **CILI** (nunca fabricada).
+Onto.PT continua discovery-only; propostas Onto→ILI são *review-only*.
 
-You should not need to open export / skeleton / spec / whitelist files.
+## Daily path (any concept)
 
-## Layout per class
-
-```
-classes/<Class>/
-  class.json
-  decisions.json          # curated choices
-  FINAL_RESULTS__Onto_plus_PULO/   # DELIVERABLE (open OPEN_ME__FINAL_RESULTS.html)
-  exports/ results/ out/  # scratch (signals, engine dumps)
-  _specs/                 # compiled engine specs
-```
+1. **Create** a class for the concept you are grounding.
+2. **Search** any lemma (PULO first; Onto.PT = discovery; WordNet = EN facets).
+3. Mark each sense: **UF · RT · exclude** (+ `atributo` on PULO).
+4. **Save** → **Run** (SenseIndex + CILI + LexWarrant).
+5. Open:
+   `classes/<Class>/FINAL_RESULTS__Onto_plus_PULO/TERMOS.html`
 
 ## Run
 
 ```powershell
 cd "C:\Users\lmr20\Desktop\Semantic_Research"
 pip install -r requirements.txt
+python sr.py doctor --deep
 python sr.py gui
-# or double-click start_workbench.bat
 ```
 
-CLI:
+CLI (placeholders — substitute your concept):
 
 ```powershell
-python sr.py new TexturaUniforme --pref uniforme --axis "invariância face a um parâmetro" --stems uniform,invari,constant
-python sr.py search TexturaUniforme uniforme --source pulo
-python sr.py search TexturaUniforme uniforme --source onto
-python sr.py status TexturaUniforme
-python sr.py run TexturaUniforme
+python sr.py new <ClassId> --pref <lemma> --axis "<defining property>" --stems <stem1>,<stem2>
+python sr.py search <ClassId> <lemma> --source pulo
+python sr.py search <ClassId> <lemma> --source onto
+python sr.py search <ClassId> <english_lemma> --source wordnet
+python sr.py status <ClassId>
+python sr.py run <ClassId>
+python sr.py index --class <ClassId>
+python sr.py smoke --class <ClassId> --query <lemma>
+python sr.py doctor --deep
 ```
 
-## Config
+## Architecture (R8)
 
-Everything essential now lives **inside this folder** — `config.json` points at
-`engines\` (self-contained; the old `Tesaurus e Dicionários` folder is archive):
+| Layer | Role |
+|-------|------|
+| **PULO** | Sense / UF·RT authority (native `to_ili`) |
+| **Onto.PT** | Discovery only — never LexWarrant admission |
+| **OEWN** (pin `oewn:2024`) | EN corroboration via facets |
+| **OWN-PT** (pin `own-pt:1.0.0`) | PT lemmas via ILI (`atestado`) |
+| **CILI** | Pure identity `i…` ↔ PWN-3.0 offset (+ a↔s satellite norm) |
+| **SenseIndex** | `data/sense_index.sqlite` — durable sense registry |
+| **Onto→ILI proposals** | Scored lemma overlap; status=`proposed` only |
+| **LexWarrant** | Concordance / diagnostic merge by ILI |
 
-| Key | Points to |
-|-----|-----------|
-| `pulo_sqlite` | `engines\PULO Thesaurus GUI\pulo.sqlite` (~104 MB) |
-| `onto_sqlite` | `engines\ONTO\ontopt.sqlite` (~340 MB) |
-| `pulo_engine_dir` | `engines\PULO Thesaurus GUI` (`phase0_pulo.py`) |
-| `onto_engine_dir` | `engines\ONTO` (`phase0_skos.py`) |
-| `lexwarrant_dir` | `engines\LexWarrant` (`lexwarrant.py` + tests) |
-
-This project does **not** reimplement the engines; it compiles `decisions.json`
-into their specs and calls them. Sanity check any time:
+Config: prefer **`config.toml`** (repo-relative paths + `[pins]`).
 
 ```powershell
-python verify_pipeline.py
+python verify_pipeline.py                  # auto-picks any existing class
+python verify_pipeline.py --class X --query Y
+python tools/build_manifest.py
 ```
 
-## Why this exists
+## Layout por classe
 
-The previous ecosystem was correct but had three UIs, many artefact types, and
-scattered outputs. Here: **one decisions file, one Run, one concordance**.
+```
+classes/<Class>/
+  class.json
+  decisions.json
+  FINAL_RESULTS__Onto_plus_PULO/     # DELIVERABLE
+    TERMOS.html
+    TERMOS_PESQUISA.md|.csv
+  exports/ results/ out/
+  _specs/
+```
+
+## Research hardening (post-R8)
+
+| Issue | Fix |
+|-------|-----|
+| CILI/OEWN drift | PWN-3.0 **+** PWN-3.1 maps + `wn.ili` validation; `ili_coverage` report |
+| Onto inventory | Auto-accept high-confidence unique links + GUI review panel |
+| weak(term) polysemy | default `weak_term_mode=gloss_gated` |
+| Gloss layer | TF-IDF char/word cosine (+ opt-in embeddings: `gloss_use_embeddings`) |
+| OEWN pin risk | Hard pin to `oewn:2024` — extras ignored |
+| Publishable model | `CONCEPT.ttl` + `data/concepts/registry.ttl` |
+
+```powershell
+python sr.py onto-ili propose <ClassId>
+python sr.py onto-ili list <ClassId> --status proposed
+python sr.py onto-ili accept <ClassId> --onto-key onto:RES:SID --ili i12345
+python sr.py onto-ili accept-top <ClassId> --n 5 --min-score 0.6
+python sr.py publish <ClassId>
+python sr.py publish --all
+```
+
+## Notas
+
+- Paths are **repo-relative**; no Desktop `legacy_root` at runtime.
+- Duplicate `cili-master/` dumps belong in `_quarantine/` — live map is
+  `engines/LexWarrant/data/cili/ili-map-pwn30.tab`.
+- **Garantias** calculadas: `convergencia` · `fonte_unica` · `dominio` · `estipulativa`.

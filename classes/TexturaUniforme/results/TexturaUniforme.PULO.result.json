@@ -2,7 +2,7 @@
   "class_id": "TexturaUniforme",
   "pref_label": "uniforme",
   "axis": "invariância face a um parâmetro",
-  "generated": "2026-07-20T16:51:20",
+  "generated": "2026-07-27T12:38:23",
   "source": "PULO / WordNet.PT export",
   "stage1": {
     "admitted": [
@@ -17,15 +17,21 @@
         "glosa": "sempre o mesmo parâmetro; imutável e uniforme",
         "decision": "UF",
         "export_gloss": "sempre o mesmo; mostrando um único formulário ou personagem em todas as ocorrências\n"
+      },
+      {
+        "ili_offset": "ili-30-04745370-n",
+        "glosa": "ausência de variação; invariância e uniformidade de um parâmetro",
+        "decision": "RT",
+        "export_gloss": "a qualidade de falta de diversidade ou variação (até mesmo ao ponto de tédio)\n"
       }
     ],
     "admitted_offsets": [
       "ili-30-01200095-a",
-      "ili-30-01966488-a"
+      "ili-30-01966488-a",
+      "ili-30-04745370-n"
     ],
     "excluded_offsets": [
       "ili-30-00909545-a",
-      "ili-30-04745370-n",
       "ili-30-02302187-a",
       "ili-30-00910101-a",
       "ili-30-04509592-n",
@@ -43,10 +49,46 @@
         "ili-30-01966488-a"
       ]
     },
+    "constante": {
+      "display": "constante",
+      "offsets": [
+        "ili-30-01200095-a"
+      ]
+    },
+    "invariavel": {
+      "display": "invariável",
+      "offsets": [
+        "ili-30-01200095-a"
+      ]
+    },
     "coerente": {
       "display": "coerente",
       "offsets": [
         "ili-30-01200095-a"
+      ]
+    },
+    "imutavel": {
+      "display": "imutável",
+      "offsets": [
+        "ili-30-01966488-a"
+      ]
+    },
+    "uniformidade": {
+      "display": "uniformidade",
+      "offsets": [
+        "ili-30-04745370-n"
+      ]
+    },
+    "invariancia": {
+      "display": "invariância",
+      "offsets": [
+        "ili-30-04745370-n"
+      ]
+    },
+    "periodico": {
+      "display": "periódico",
+      "offsets": [
+        "ili-30-04745370-n"
       ]
     }
   },
@@ -66,13 +108,74 @@
         "via": "derivationally related form",
         "source_ili": "ili-30-01200095-a",
         "target_gloss": "a qualidade de falta de diversidade ou variação (até mesmo ao ponto de tédio)\n"
+      },
+      "uniforme": {
+        "display": "uniforme",
+        "via": "derivationally related form",
+        "source_ili": "ili-30-04745370-n",
+        "target_gloss": "não diferenciado\n"
+      },
+      "coerente": {
+        "display": "coerente",
+        "via": "derivationally related form",
+        "source_ili": "ili-30-04745370-n",
+        "target_gloss": "o mesmo em toda a estrutura ou composição\n"
       }
     },
-    "BT": {},
+    "BT": {
+      "afinidade": {
+        "display": "afinidade",
+        "via": "hypernym",
+        "source_ili": "ili-30-04745370-n",
+        "target_gloss": "a qualidade de ser semelhante\n"
+      },
+      "analogia": {
+        "display": "analogia",
+        "via": "hypernym",
+        "source_ili": "ili-30-04745370-n",
+        "target_gloss": "a qualidade de ser semelhante\n"
+      },
+      "conformidade": {
+        "display": "conformidade",
+        "via": "hypernym",
+        "source_ili": "ili-30-04745370-n",
+        "target_gloss": "a qualidade de ser semelhante\n"
+      },
+      "imagem": {
+        "display": "imagem",
+        "via": "hypernym",
+        "source_ili": "ili-30-04745370-n",
+        "target_gloss": "a qualidade de ser semelhante\n"
+      },
+      "parecenca": {
+        "display": "parecença",
+        "via": "hypernym",
+        "source_ili": "ili-30-04745370-n",
+        "target_gloss": "a qualidade de ser semelhante\n"
+      },
+      "parentesco": {
+        "display": "parentesco",
+        "via": "hypernym",
+        "source_ili": "ili-30-04745370-n",
+        "target_gloss": "a qualidade de ser semelhante\n"
+      },
+      "semelhanca": {
+        "display": "semelhança",
+        "via": "hypernym",
+        "source_ili": "ili-30-04745370-n",
+        "target_gloss": "a qualidade de ser semelhante\n"
+      },
+      "similitude": {
+        "display": "similitude",
+        "via": "hypernym",
+        "source_ili": "ili-30-04745370-n",
+        "target_gloss": "a qualidade de ser semelhante\n"
+      }
+    },
     "NT": {},
     "attribute": {}
   },
-  "dropped_no_lemma": 23,
+  "dropped_no_lemma": 35,
   "sinalizacao": {
     "estruturacao": {
       "display": "estruturação",
@@ -451,23 +554,216 @@
       "source_ili": "ili-30-01966488-a",
       "target_gloss": "um exemplo de algo que ocorre\n",
       "reason": "relação não-nomeada / #NN"
+    },
+    "ainda": {
+      "display": "ainda",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04745370-n",
+      "target_gloss": "em toda a extensão\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "carecer": {
+      "display": "carecer",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04745370-n",
+      "target_gloss": "ser sem\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "manquejar": {
+      "display": "manquejar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04745370-n",
+      "target_gloss": "ser sem\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "faltar": {
+      "display": "faltar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04745370-n",
+      "target_gloss": "ser sem\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "qualidade": {
+      "display": "qualidade",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04745370-n",
+      "target_gloss": "um atributo essencial e distintiva de algo ou alguém\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "variedade": {
+      "display": "variedade",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04745370-n",
+      "target_gloss": "heterogeneidade notável\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "diversidade": {
+      "display": "diversidade",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04745370-n",
+      "target_gloss": "heterogeneidade notável\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "variacao": {
+      "display": "variação",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04745370-n",
+      "target_gloss": "uma instância de mudança; a taxa ou a magnitude da mudança\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "etapa": {
+      "display": "etapa",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04745370-n",
+      "target_gloss": "uma posição específica identificável num contínuo ou em série ou em um processo especialmente\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "fase": {
+      "display": "fase",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04745370-n",
+      "target_gloss": "uma posição específica identificável num contínuo ou em série ou em um processo especialmente\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "grau": {
+      "display": "grau",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04745370-n",
+      "target_gloss": "uma posição específica identificável num contínuo ou em série ou em um processo especialmente\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "nivel": {
+      "display": "nível",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04745370-n",
+      "target_gloss": "uma posição específica identificável num contínuo ou em série ou em um processo especialmente\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "ponto": {
+      "display": "ponto",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04745370-n",
+      "target_gloss": "uma posição específica identificável num contínuo ou em série ou em um processo especialmente\n",
+      "reason": "relação não-nomeada / #NN"
     }
   },
   "stage4_excluded": {},
   "stage5": {
     "admitted": {
-      "politipica": {
-        "display": "politípica",
-        "attested": false,
-        "offset": "",
-        "origin": "manual (estipulativa)",
-        "status": "contraste",
-        "test": "Teste 3",
-        "guarantee": [
-          "estipulativa"
+      "uniforme": {
+        "display": "uniforme",
+        "offsets": [
+          "ili-30-01200095-a",
+          "ili-30-01966488-a"
         ],
-        "definition": "textura composta por múltiplos tipos simultâneos",
-        "structural": "TexturaHeterogenea"
+        "attested": true,
+        "origin": "seed (Etapa 1/2) + forma derivada (família)",
+        "via": "derivationally related form",
+        "status": "UF",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "ili-30-01966488-a"
+      },
+      "constante": {
+        "display": "constante",
+        "offsets": [
+          "ili-30-01200095-a"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2)",
+        "status": "UF",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "ili-30-01200095-a"
+      },
+      "invariavel": {
+        "display": "invariável",
+        "offsets": [
+          "ili-30-01200095-a"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2)",
+        "status": "UF",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "ili-30-01200095-a"
+      },
+      "imutavel": {
+        "display": "imutável",
+        "offsets": [
+          "ili-30-01966488-a"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2)",
+        "status": "UF",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "ili-30-01966488-a"
+      },
+      "uniformidade": {
+        "display": "uniformidade",
+        "offsets": [
+          "ili-30-04745370-n"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2) + forma derivada (família)",
+        "via": "derivationally related form",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "ili-30-04745370-n"
+      },
+      "invariancia": {
+        "display": "invariância",
+        "offsets": [
+          "ili-30-04745370-n"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2)",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "ili-30-04745370-n"
+      },
+      "periodico": {
+        "display": "periódico",
+        "offsets": [
+          "ili-30-04745370-n"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2)",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "ili-30-04745370-n"
       }
     },
     "pending": {
@@ -477,7 +773,8 @@
           "ili-30-01200095-a"
         ],
         "attested": true,
-        "origin": "seed (Etapa 1/2)",
+        "origin": "seed (Etapa 1/2) + forma derivada (família)",
+        "via": "derivationally related form",
         "adjudication": null
       },
       "homogeneo": {
@@ -485,6 +782,69 @@
         "via": "similar to",
         "attested": false,
         "origin": "relação similar-to (RT/UF)",
+        "adjudication": null
+      },
+      "afinidade": {
+        "display": "afinidade",
+        "via": "hypernym",
+        "attested": false,
+        "origin": "relação hypernym (BT)",
+        "adjudication": null
+      },
+      "analogia": {
+        "display": "analogia",
+        "via": "hypernym",
+        "attested": false,
+        "origin": "relação hypernym (BT)",
+        "adjudication": null
+      },
+      "conformidade": {
+        "display": "conformidade",
+        "via": "hypernym",
+        "attested": false,
+        "origin": "relação hypernym (BT)",
+        "adjudication": null
+      },
+      "imagem": {
+        "display": "imagem",
+        "via": "hypernym",
+        "attested": false,
+        "origin": "relação hypernym (BT)",
+        "adjudication": null
+      },
+      "parecenca": {
+        "display": "parecença",
+        "via": "hypernym",
+        "attested": false,
+        "origin": "relação hypernym (BT)",
+        "adjudication": null
+      },
+      "parentesco": {
+        "display": "parentesco",
+        "via": "hypernym",
+        "attested": false,
+        "origin": "relação hypernym (BT)",
+        "adjudication": null
+      },
+      "semelhanca": {
+        "display": "semelhança",
+        "via": "hypernym",
+        "attested": false,
+        "origin": "relação hypernym (BT)",
+        "adjudication": null
+      },
+      "similitude": {
+        "display": "similitude",
+        "via": "hypernym",
+        "attested": false,
+        "origin": "relação hypernym (BT)",
+        "adjudication": null
+      },
+      "politipica": {
+        "display": "politípica",
+        "attested": false,
+        "offset": "",
+        "origin": "manual (estipulativa)",
         "adjudication": null
       }
     }
@@ -495,34 +855,146 @@
       "via": "derivationally related form",
       "source_ili": "ili-30-01200095-a",
       "target_gloss": "a qualidade de falta de diversidade ou variação (até mesmo ao ponto de tédio)\n"
+    },
+    "uniforme": {
+      "display": "uniforme",
+      "via": "derivationally related form",
+      "source_ili": "ili-30-04745370-n",
+      "target_gloss": "não diferenciado\n"
+    },
+    "coerente": {
+      "display": "coerente",
+      "via": "derivationally related form",
+      "source_ili": "ili-30-04745370-n",
+      "target_gloss": "o mesmo em toda a estrutura ou composição\n"
     }
   },
   "skos": {
-    "contraste": [
-      "politípica"
+    "UF": [
+      "constante",
+      "imutável",
+      "invariável",
+      "uniforme"
     ],
-    "UF": [],
-    "RT": []
+    "RT": [
+      "invariância",
+      "periódico",
+      "uniformidade"
+    ]
   },
   "provenance": [
     {
-      "termo": "politípica",
-      "estatuto": "contraste",
+      "termo": "uniforme",
+      "estatuto": "UF",
       "eixo": "invariância face a um parâmetro",
-      "via": "manual (estipulativa)",
-      "offsets_ili": [],
-      "teste_decisivo": "Teste 3",
-      "garantia": [
-        "estipulativa"
+      "via": "derivationally related form",
+      "offsets_ili": [
+        "ili-30-01200095-a",
+        "ili-30-01966488-a"
       ],
-      "definicao": "textura composta por múltiplos tipos simultâneos",
-      "estrutural": "TexturaHeterogenea"
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "definicao": "",
+      "estrutural": "",
+      "gloss": "que envolve a maior parte do organismo."
+    },
+    {
+      "termo": "constante",
+      "estatuto": "UF",
+      "eixo": "invariância face a um parâmetro",
+      "via": "seed (Etapa 1/2)",
+      "offsets_ili": [
+        "ili-30-01200095-a"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "definicao": "",
+      "estrutural": "",
+      "gloss": "que envolve a maior parte do organismo."
+    },
+    {
+      "termo": "invariável",
+      "estatuto": "UF",
+      "eixo": "invariância face a um parâmetro",
+      "via": "seed (Etapa 1/2)",
+      "offsets_ili": [
+        "ili-30-01200095-a"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "definicao": "",
+      "estrutural": "",
+      "gloss": "Polaridade: 0 (método BASE)"
+    },
+    {
+      "termo": "imutável",
+      "estatuto": "UF",
+      "eixo": "invariância face a um parâmetro",
+      "via": "seed (Etapa 1/2)",
+      "offsets_ili": [
+        "ili-30-01966488-a"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "definicao": "",
+      "estrutural": ""
+    },
+    {
+      "termo": "uniformidade",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "via": "derivationally related form",
+      "offsets_ili": [
+        "ili-30-04745370-n"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "definicao": "",
+      "estrutural": "",
+      "gloss": "a qualidade de falta de diversidade ou variação (até mesmo ao ponto de tédio)\n"
+    },
+    {
+      "termo": "invariância",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "via": "seed (Etapa 1/2)",
+      "offsets_ili": [
+        "ili-30-04745370-n"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "definicao": "",
+      "estrutural": ""
+    },
+    {
+      "termo": "periódico",
+      "estatuto": "RT",
+      "eixo": "invariância face a um parâmetro",
+      "via": "seed (Etapa 1/2)",
+      "offsets_ili": [
+        "ili-30-04745370-n"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "definicao": "",
+      "estrutural": ""
     }
   ],
-  "attribute_terms": [
-    "invariancia",
-    "uniformidade"
-  ],
+  "attribute_terms": [],
   "assertions": [
     {
       "stage": "Etapa 1",
@@ -564,7 +1036,7 @@
       "stage": "Etapa 3",
       "text": "Alvos de relação são tipados pelo mapeamento; «(no lemma)» nunca admitido.",
       "passed": true,
-      "evidence": "OK (23 alvos «(no lemma)» descartados)"
+      "evidence": "OK (35 alvos «(no lemma)» descartados)"
     },
     {
       "stage": "Etapa 4",
@@ -574,7 +1046,7 @@
     },
     {
       "stage": "Etapa 5",
-      "text": "Cada admitido tem estatuto∈{UF,RT,contraste,BT,NT,atributo}, teste decisivo e ≥1 garantia; nomes de qualidade em attribute_bucket.",
+      "text": "Cada admitido tem estatuto∈{UF,RT,BT,NT} (garantia calculada a jusante; atributo = evidência).",
       "passed": true,
       "evidence": "OK"
     },
@@ -592,7 +1064,7 @@
     },
     {
       "stage": "Consistência",
-      "text": "Contrastantes não são serializados como skos:related.",
+      "text": "Nenhum estatuto de evidência (contraste/atributo) em admitidos.",
       "passed": true,
       "evidence": "OK"
     },
@@ -600,10 +1072,10 @@
       "stage": "Serialização",
       "passed": true,
       "text": "X.skos.ttl analisa com rdflib e tem a contagem de triplos esperada.",
-      "evidence": "triplos esperados=7, analisados=7"
+      "evidence": "triplos esperados=16, analisados=16"
     }
   ],
   "all_passed": true,
-  "skos_triples": 7,
+  "skos_triples": 16,
   "_ttl_ok": true
 }
