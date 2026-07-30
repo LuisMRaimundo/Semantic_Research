@@ -277,11 +277,6 @@ def build_class_concept_graph(ws: ClassWorkspace) -> dict[str, Any]:
         "pref_label": pref,
         "axis": axis,
         "discovery_evidence": discovery,
-        # Deprecated aliases (same lists) — do not read as admitted vocabulary
-        "uf": uf,
-        "rt": rt,
-        "exclude": excl,
-        "ilis": list(exact),
         "cili_exact": exact,
         "cili_close": close_cili,
         "cili_related": related_cili,
@@ -300,6 +295,23 @@ def build_class_concept_graph(ws: ClassWorkspace) -> dict[str, Any]:
     }
 
 
+def discovery_lists(graph: dict[str, Any]) -> tuple[list, list, list]:
+    """(uf_candidates, rt_candidates, exclude_records) from CONCEPT graph."""
+    disc = graph.get("discovery_evidence")
+    if isinstance(disc, dict):
+        return (
+            list(disc.get("uf_candidates") or []),
+            list(disc.get("rt_candidates") or []),
+            list(disc.get("exclude_records") or []),
+        )
+    # Older CONCEPT.json only (pre-alias cleanup)
+    return (
+        list(graph.get("uf") or []),
+        list(graph.get("rt") or []),
+        list(graph.get("exclude") or []),
+    )
+
+
 def _vocab_alt_labels(graph: dict[str, Any]) -> list[str]:
     """Conservative altLabels: validated list, else PULO UF members only."""
     pref_n = normalize_word(graph.get("pref_label") or "")
@@ -314,7 +326,8 @@ def _vocab_alt_labels(graph: dict[str, Any]) -> list[str]:
         e.get("cili") for e in (graph.get("excluded_cili") or [])
         if isinstance(e, dict) and e.get("cili")
     }
-    for row in graph.get("uf") or []:
+    uf_rows, _, _ = discovery_lists(graph)
+    for row in uf_rows:
         ili = row.get("ili")
         if ili and ili in excluded:
             continue
@@ -323,8 +336,6 @@ def _vocab_alt_labels(graph: dict[str, Any]) -> list[str]:
         if src == "onto":
             # Attestation only: keep members that are focus stems, not co-hyponyms
             pick = [m for m in members if normalize_word(m) in focus]
-        elif src == "pulo":
-            pick = members
         else:
             pick = members
         for m in pick:
@@ -386,8 +397,9 @@ def render_skos_owl(
 
     # Do not expand RT members into blank skos:related concepts (Onto noise).
 
+    uf_rows, rt_rows, excl_rows = discovery_lists(graph)
     # Only PULO exclude lemmas enter RDF evidence (Onto group dumps stay in JSON)
-    for row in graph.get("exclude") or []:
+    for row in excl_rows:
         src_raw = str(row.get("source") or "").lower()
         if src_raw == "onto":
             continue
@@ -423,10 +435,8 @@ def render_skos_owl(
                 " ]"
             )
 
-    n_uf = len(graph.get("uf") or [])
-    n_rt = len(graph.get("rt") or [])
     preds.append(
-        f'    rdfs:comment "UF senses={n_uf}; RT={n_rt}; '
+        f'    rdfs:comment "UF senses={len(uf_rows)}; RT={len(rt_rows)}; '
         f'exactCILI={len(graph.get("cili_exact") or [])}; '
         f'closeCILI={len(graph.get("cili_close") or [])}; '
         f'relatedCILI={len(graph.get("cili_related") or [])}; '
@@ -476,8 +486,8 @@ def publish_class_concept(
         "n_exact": len(graph.get("cili_exact") or []),
         "n_close": len(graph.get("cili_close") or []),
         "n_related": len(graph.get("cili_related") or []),
-        "n_uf": len(graph.get("uf") or []),
-        "n_rt": len(graph.get("rt") or []),
+        "n_uf": len((graph.get("discovery_evidence") or {}).get("uf_candidates") or []),
+        "n_rt": len((graph.get("discovery_evidence") or {}).get("rt_candidates") or []),
         "mapping_status": graph.get("mapping_status"),
     }
     if update_registry:

@@ -15,7 +15,7 @@ sr:Scheme a skos:ConceptScheme ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — DemoClass
-# generated 2026-07-30T18:36:48+00:00
+# generated 2026-07-30T18:43:47+00:00
 # policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:DemoClass a owl:Class, skos:Concept ;
@@ -36,7 +36,7 @@ sr:DemoClass a owl:Class, skos:Concept ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaComposita
-# generated 2026-07-30T18:36:48+00:00
+# generated 2026-07-30T18:43:47+00:00
 # policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaComposita a owl:Class, skos:Concept ;
@@ -153,7 +153,7 @@ sr:TexturaComposita a owl:Class, skos:Concept ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaDensa
-# generated 2026-07-30T18:36:48+00:00
+# generated 2026-07-30T18:43:47+00:00
 # policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaDensa a owl:Class, skos:Concept ;
@@ -174,7 +174,7 @@ sr:TexturaDensa a owl:Class, skos:Concept ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaIntermitente
-# generated 2026-07-30T18:36:48+00:00
+# generated 2026-07-30T18:43:47+00:00
 # policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaIntermitente a owl:Class, skos:Concept ;
@@ -193,7 +193,7 @@ sr:TexturaIntermitente a owl:Class, skos:Concept ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaMetamorfica
-# generated 2026-07-30T18:36:48+00:00
+# generated 2026-07-30T18:43:47+00:00
 # policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaMetamorfica a owl:Class, skos:Concept ;
@@ -233,7 +233,7 @@ sr:TexturaMetamorfica a owl:Class, skos:Concept ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaPolitpica
-# generated 2026-07-30T18:36:48+00:00
+# generated 2026-07-30T18:43:47+00:00
 # policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaPolitpica a owl:Class, skos:Concept ;
@@ -251,7 +251,7 @@ sr:TexturaPolitpica a owl:Class, skos:Concept ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaUniforme
-# generated 2026-07-30T18:36:48+00:00
+# generated 2026-07-30T18:43:47+00:00
 # policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaUniforme a owl:Class, skos:Concept ;

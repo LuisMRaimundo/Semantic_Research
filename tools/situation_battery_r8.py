@@ -314,8 +314,9 @@ def main() -> int:
             npass = sum(1 for a in doc.get("assertions", []) if a.get("passed"))
             ntot = len(doc.get("assertions", []))
             detail = (
-                f"assertions {npass}/{ntot} ili={doc.get('ili_equivalence_loaded')} "
-                f"counts={doc.get('ili_equivalence_counts')}"
+                f"assertions {npass}/{ntot} "
+                f"legacy={doc.get('legacy_equivalence_loaded', doc.get('ili_equivalence_loaded'))} "
+                f"counts={doc.get('legacy_equivalence_counts') or doc.get('ili_equivalence_counts')}"
             )
             if doc.get("all_passed"):
                 ok(f"S7_merge_{cls}", detail)

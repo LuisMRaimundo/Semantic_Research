@@ -1182,10 +1182,6 @@ def render_json(class_id, policy, source_labels, concepts, assertions,
         "legacy_equivalence_map": map_path,
         "legacy_equivalence_counts": equiv_counts,
         "legacy_equivalence_loaded": legacy_loaded,
-        # Back-compat aliases (same legacy table — not "CILI joins unavailable")
-        "ili_equivalence_map": map_path,
-        "ili_equivalence_counts": equiv_counts,
-        "ili_equivalence_loaded": legacy_loaded,
         "concepts": [concept_to_json(c) for c in concepts],
         "summary": {
             "veredicto_totals": dict(totals),
@@ -1216,14 +1212,17 @@ def render_markdown(doc: dict, concepts) -> str:
     ap(f"- **Política de divergência:** {doc['policy']}")
     ap(f"- **Fontes:** {', '.join(doc['sources']) or '—'}  (colunas: "
        f"{', '.join(doc['columns'])})")
+    # Read legacy_* ; fall back to old ili_equivalence_* keys on older JSON only
     mp = doc.get("legacy_equivalence_map") or doc.get("ili_equivalence_map")
-    ec = (doc.get("legacy_equivalence_counts")
-          or doc.get("ili_equivalence_counts") or {})
-    legacy_on = bool(
-        doc.get("legacy_equivalence_loaded")
-        if "legacy_equivalence_loaded" in doc
-        else doc.get("ili_equivalence_loaded")
+    ec = (
+        doc.get("legacy_equivalence_counts")
+        or doc.get("ili_equivalence_counts")
+        or {}
     )
+    if "legacy_equivalence_loaded" in doc:
+        legacy_on = bool(doc.get("legacy_equivalence_loaded"))
+    else:
+        legacy_on = bool(doc.get("ili_equivalence_loaded"))
     jc = doc.get("join_counts") or {}
     n_ili = int(jc.get("ili") or 0)
     n_weak = int(jc.get("weak(term)") or 0)
@@ -1574,7 +1573,10 @@ def main() -> int:
     print("Veredictos: " + ", ".join(f"{k}={v}"
           for k, v in sorted(doc["summary"]["veredicto_totals"].items())))
     print(f"Descartados (só pendentes): {doc['summary'].get('descartados_pendentes', 0)}")
-    print(f"Tabela ILI: {doc.get('ili_equivalence_map') or '— (nenhuma)'}")
+    print(
+        f"Tabela legada OEWN↔PULO: "
+        f"{doc.get('legacy_equivalence_map') or doc.get('ili_equivalence_map') or '— (nenhuma)'}"
+    )
     print(f"Asserções: {passed}/{total} PASS "
           + ("— TODAS PASSARAM" if doc["all_passed"] else "— EXISTEM FALHAS"))
     for a in doc["assertions"]:

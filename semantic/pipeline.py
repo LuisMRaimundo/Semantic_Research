@@ -507,15 +507,15 @@ def run_class(class_id: str, policy: Optional[str] = None,
             }
             summary["merge_ok"] = True
             summary["legacy_equivalence_loaded"] = bool(
-                doc.get("legacy_equivalence_loaded", doc.get("ili_equivalence_loaded"))
+                doc.get(
+                    "legacy_equivalence_loaded",
+                    doc.get("ili_equivalence_loaded"),
+                )
             )
             summary["legacy_equivalence_counts"] = (
                 doc.get("legacy_equivalence_counts")
                 or doc.get("ili_equivalence_counts")
             )
-            # Back-compat aliases
-            summary["ili_equivalence_loaded"] = summary["legacy_equivalence_loaded"]
-            summary["ili_equivalence_counts"] = summary["legacy_equivalence_counts"]
             summary["source_status"] = doc.get("source_status") or {}
             # ONTO is discovery-only: report separately from concordance admits
             onto_result = ws.results / f"{ws.class_id}.ONTO.result.json"
