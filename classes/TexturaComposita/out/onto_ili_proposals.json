@@ -2,16 +2,95 @@
   "class_id": "TexturaComposita",
   "policy": "Propose → review (GUI / CLI) → accepted links stamp Onto sense cards and feed ONTO-ILI atestado into LexWarrant. High-confidence unique proposals may auto-accept (config onto_ili_auto_accept_min).",
   "min_score": 0.35,
-  "n_onto": 26,
-  "n_anchors": 55,
-  "n_proposals": 0,
+  "n_onto": 62,
+  "n_anchors": 56,
+  "n_proposals": 2,
   "n_accepted": 0,
-  "n_rejected": 0,
+  "n_rejected": 2,
   "auto_accept": {
     "n": 0,
     "accepted": [],
     "min_score": 0.85,
     "margin": 0.12
   },
-  "proposals": []
+  "proposals": [
+    {
+      "onto_key": "onto:clip21:13381",
+      "ili": "i114921",
+      "score": 0.3633,
+      "evidence": {
+        "shared_lemmas": [
+          "composto",
+          "composto_quimico",
+          "substancia_quimica"
+        ],
+        "onto_lemmas": [
+          "alquimia",
+          "composto",
+          "composto_quimico",
+          "compostos_quimicos",
+          "empatia",
+          "quimica",
+          "substancia",
+          "substancia_quimica",
+          "substancias_quimicas"
+        ],
+        "anchor_sources": [
+          "own-pt",
+          "pulo"
+        ],
+        "n_anchors": 2,
+        "gloss": {
+          "score": 0.2,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.0,
+          "embedding_cosine": null,
+          "lemma_boost": 0.2,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.4333
+      },
+      "status": "rejected"
+    },
+    {
+      "onto_key": "onto:contopt:29206",
+      "ili": "i114921",
+      "score": 0.3633,
+      "evidence": {
+        "shared_lemmas": [
+          "composto",
+          "composto_quimico",
+          "substancia_quimica"
+        ],
+        "onto_lemmas": [
+          "alquimia",
+          "composto",
+          "composto_quimico",
+          "compostos_quimicos",
+          "empatia",
+          "quimica",
+          "substancia",
+          "substancia_quimica",
+          "substancias_quimicas"
+        ],
+        "anchor_sources": [
+          "own-pt",
+          "pulo"
+        ],
+        "n_anchors": 2,
+        "gloss": {
+          "score": 0.2,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.0,
+          "embedding_cosine": null,
+          "lemma_boost": 0.2,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.4333
+      },
+      "status": "rejected"
+    }
+  ]
 }

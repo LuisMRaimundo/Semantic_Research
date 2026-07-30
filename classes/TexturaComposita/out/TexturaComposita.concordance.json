@@ -1,7 +1,7 @@
 {
   "class": "TexturaComposita",
   "policy": "conservative",
-  "generated": "2026-07-27T12:39:53",
+  "generated": "2026-07-30T12:14:59",
   "columns": [
     "ONTO",
     "PULO",
@@ -15,16 +15,16 @@
   ],
   "ili_equivalence_map": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\classes\\TexturaComposita\\out\\ili_equivalence.cili.json",
   "ili_equivalence_counts": {
-    "mapped": 30,
+    "mapped": 0,
     "review": 0,
     "unmatched": 27
   },
-  "ili_equivalence_loaded": true,
+  "ili_equivalence_loaded": false,
   "concepts": [
     {
       "term": "composto",
       "ili": [
-        "ili-30-14818238-n"
+        "oewn-ili:i114921"
       ],
       "sources": {
         "ONTO": "—",
@@ -42,11 +42,55 @@
         "PULO:seed (Etapa 1/2)"
       ],
       "notes": []
+    },
+    {
+      "term": "decomposição",
+      "ili": [
+        "oewn-ili:i97733"
+      ],
+      "sources": {
+        "ONTO": "—",
+        "PULO": "RT",
+        "OWN-PT": "—",
+        "WordNet": "—"
+      },
+      "join": "single",
+      "veredicto": "fonte única",
+      "proposta_final": "RT",
+      "unmapped_flag": false,
+      "status_projection": {},
+      "divergences": [],
+      "union_of_provenance": [
+        "PULO:seed (Etapa 1/2)"
+      ],
+      "notes": []
+    },
+    {
+      "term": "descomposição",
+      "ili": [
+        "oewn-ili:i97733"
+      ],
+      "sources": {
+        "ONTO": "—",
+        "PULO": "RT",
+        "OWN-PT": "—",
+        "WordNet": "—"
+      },
+      "join": "single",
+      "veredicto": "fonte única",
+      "proposta_final": "RT",
+      "unmapped_flag": false,
+      "status_projection": {},
+      "divergences": [],
+      "union_of_provenance": [
+        "PULO:seed (Etapa 1/2)"
+      ],
+      "notes": []
     }
   ],
   "summary": {
     "veredicto_totals": {
-      "fonte única": 1
+      "fonte única": 3
     },
     "descartados_pendentes": 0,
     "convergencia_plena": [],
@@ -54,7 +98,9 @@
     "convergencia_termo": [],
     "divergences": [],
     "fonte_unica": [
-      "composto"
+      "composto",
+      "decomposição",
+      "descomposição"
     ],
     "auto_contrast_coverage": {
       "per_source": {
@@ -77,10 +123,11 @@
           "terms": []
         }
       },
-      "anchored_ilis_total": 1,
+      "anchored_ilis_total": 2,
       "anchored_ilis_with_auto_contrast": [],
       "anchored_ilis_without_auto_contrast": [
-        "ili-30-14818238-n"
+        "oewn-ili:i114921",
+        "oewn-ili:i97733"
       ],
       "sources_without_antonymy": [
         "PULO"
@@ -116,7 +163,7 @@
       "id": "T5",
       "text": "Nenhum termo admitido pelos motores é descartado da matriz (PULO; OWN-PT/WordNet corroboram; Onto = descoberta)",
       "passed": true,
-      "evidence": "1 admitidos / 1 em matriz"
+      "evidence": "3 admitidos / 3 em matriz"
     },
     {
       "id": "T6",
@@ -158,7 +205,7 @@
       "id": "T9",
       "text": "concordance.json faz round-trip (contagens de term/ili estáveis).",
       "passed": true,
-      "evidence": "1 conceitos"
+      "evidence": "3 conceitos"
     },
     {
       "id": "T13",

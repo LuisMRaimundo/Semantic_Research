@@ -4,15 +4,15 @@
 
 Rules
 -----
-* ``cili`` is only an official Collaborative Interlingual Index id (``iNNNNN``),
-  obtained from OEWN ``ili=…``, the CILI catalogue, or an official offset map.
-* Never fabricate CILI by concatenation.
+* Canonical CILI id is bare ``iNNNNN`` (never a CURIE / never fabricated).
+* ``oewn-ili:i…`` / ``ili:i…`` are *contextual* CURIEs only — strip to bare id.
+* Official concept URI: ``http://globalwordnet.org/ili/<id>``
+* Official browser page: ``https://globalwordnet.github.io/cili/<id>.html``
 * Princeton WordNet 3.0 offsets are local ids: ``pwn30-XXXXXXXX-p``.
-* Legacy OMW/MCR strings ``ili-30-XXXXXXXX-p`` are **not** CILI — they are
-  PWN 3.0 pivots mislabelled as "ILI". Parse them into ``pwn_id`` and resolve
-  ``cili`` via the official map (or leave ``cili`` null).
+* Legacy OMW/MCR ``ili-30-XXXXXXXX-p`` are PWN 3.0 pivots, **not** CILI.
 
 See: https://globalwordnet.github.io/cili/
+     https://github.com/globalwordnet/cili
      https://globalwordnet.github.io/schemas/
 """
 from __future__ import annotations
@@ -21,12 +21,18 @@ import re
 from dataclasses import asdict, dataclass
 from typing import Any, Optional
 
+# Strict canonical form (no leading zero after ``i``): i1, i114921, …
+_CILI_STRICT_RE = re.compile(r"^i[1-9][0-9]*$")
+# Lenient match for legacy tooling that may emit i0…
 _CILI_RE = re.compile(r"^i\d+$")
 _BARE_OFFSET_RE = re.compile(r"^(\d{8})-([a-z])$")
 _PWN30_RE = re.compile(r"^pwn30-(\d{8})-([a-z])$", re.I)
 # Legacy OMW / MCR pivot (NOT CILI): ili-30-…, por-30-…, eng-30-…
 _OMW30_RE = re.compile(r"^([a-z]{2,4})-30-(\d{8})-([a-z])$", re.I)
 _OEWN_ID_RE = re.compile(r"^oewn-(\d{8})-([a-z])$", re.I)
+
+CILI_URI_BASE = "http://globalwordnet.org/ili/"
+CILI_PAGE_BASE = "https://globalwordnet.github.io/cili/"
 
 
 @dataclass
@@ -38,13 +44,90 @@ class SenseIdentity:
     pwn_offset: Optional[str] = None  # 8 digits
     part_of_speech: Optional[str] = None
     pwn_id: Optional[str] = None  # pwn30-XXXXXXXX-p
-    cili: Optional[str] = None  # iNNNNN only
+    cili: Optional[str] = None  # alias of cili_id (bare iNNNNN)
+    cili_id: Optional[str] = None  # canonical bare CILI
+    cili_uri: Optional[str] = None  # http://globalwordnet.org/ili/i…
+    source_curie: Optional[str] = None  # contextual e.g. oewn-ili:i… (not canonical)
     oewn_id: Optional[str] = None  # oewn-XXXXXXXX-p
     mapping_status: str = "unverified"
     legacy_omw_ili: Optional[str] = None  # deprecated ili-30-… if seen
 
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)
+
+
+def normalize_cili_id(value: str) -> str:
+    """Return the canonical bare CILI identifier, such as ``i114921``.
+
+    Accepts CURIEs (``oewn-ili:i…``, ``ili:i…``, ``cili:i…``) and absolute
+    ``http://globalwordnet.org/ili/i…`` URIs. Raises ``ValueError`` if the
+    local part is not a well-formed CILI id.
+    """
+    s = str(value or "").strip()
+    if not s:
+        raise ValueError(f"Invalid CILI identifier: {value!r}")
+    if "globalwordnet.org/ili/" in s:
+        s = s.rstrip("/").rsplit("/", maxsplit=1)[-1]
+    elif "globalwordnet.github.io/cili/" in s:
+        s = s.rstrip("/").rsplit("/", maxsplit=1)[-1]
+        if s.endswith(".html"):
+            s = s[: -len(".html")]
+    else:
+        s = s.rsplit(":", maxsplit=1)[-1].strip()
+    if not _CILI_STRICT_RE.fullmatch(s):
+        raise ValueError(f"Invalid CILI identifier: {value!r}")
+    return s
+
+
+def try_normalize_cili_id(value: Any) -> Optional[str]:
+    try:
+        return normalize_cili_id(str(value or ""))
+    except (TypeError, ValueError):
+        return None
+
+
+def cili_uri(cili_id: str) -> str:
+    """Official CILI concept URI."""
+    cid = normalize_cili_id(cili_id)
+    return f"{CILI_URI_BASE}{cid}"
+
+
+def cili_page_url(cili_id: str) -> str:
+    """Official CILI browser page (``.html`` required by the site generator)."""
+    cid = normalize_cili_id(cili_id)
+    return f"{CILI_PAGE_BASE}{cid}.html"
+
+
+def cili_ref(
+    cili_id: str,
+    *,
+    source: str = "OEWN",
+    source_curie: Optional[str] = None,
+) -> dict[str, Any]:
+    """Separated CILI fields for storage / academic export (never CURIE-as-primary)."""
+    cid = normalize_cili_id(cili_id)
+    return {
+        "cili_id": cid,
+        "cili_uri": cili_uri(cid),
+        "cili_page": cili_page_url(cid),
+        "source_curie": source_curie or f"oewn-ili:{cid}",
+        "source": source,
+    }
+
+
+def public_id(raw: Any) -> str:
+    """Form for reports: bare CILI when possible; never emit ``oewn-ili:`` CURIE."""
+    s = str(raw or "").strip()
+    if not s:
+        return ""
+    cid = try_normalize_cili_id(s)
+    if cid:
+        return cid
+    # Strip leftover CURIE noise even if not strict-valid
+    soft = strip_cili_prefix(s)
+    if _CILI_RE.match(soft):
+        return soft
+    return s
 
 
 def make_pwn30_id(offset8: str, pos: str) -> str:
@@ -63,21 +146,48 @@ def bare_offset(offset8: str, pos: str) -> str:
 
 
 def is_cili(value: Any) -> bool:
-    s = str(value or "").strip()
-    if s.startswith("oewn-ili:"):
-        s = s.split(":", 1)[1].strip()
-    if s.startswith("cili:"):
-        s = s.split(":", 1)[1].strip()
-    return bool(_CILI_RE.match(s))
+    return try_normalize_cili_id(value) is not None or bool(
+        _CILI_RE.match(strip_cili_prefix(str(value or "")))
+    )
 
 
 def strip_cili_prefix(value: str) -> str:
+    """Strip contextual CURIE / URI wrappers; return local id token."""
     s = str(value or "").strip()
-    if s.startswith("oewn-ili:"):
-        return s.split(":", 1)[1].strip()
-    if s.startswith("cili:"):
-        return s.split(":", 1)[1].strip()
+    if not s:
+        return ""
+    if "globalwordnet.org/ili/" in s or "globalwordnet.github.io/cili/" in s:
+        s = s.rstrip("/").rsplit("/", maxsplit=1)[-1]
+        if s.endswith(".html"):
+            s = s[: -len(".html")]
+        return s
+    for pfx in ("oewn-ili:", "ili:", "cili:"):
+        if s.startswith(pfx):
+            return s[len(pfx):].strip()
+    if ":" in s and s.rsplit(":", 1)[-1].startswith("i"):
+        # Generic CURIE foo:i123 — keep only local part when it looks like CILI
+        local = s.rsplit(":", 1)[-1].strip()
+        if _CILI_RE.match(local):
+            return local
     return s
+
+
+def _attach_cili_fields(ident: SenseIdentity, cid: Optional[str]) -> None:
+    """Fill cili / cili_id / cili_uri / source_curie from a bare id."""
+    if not cid:
+        return
+    try:
+        cid = normalize_cili_id(cid)
+    except ValueError:
+        if not _CILI_RE.match(str(cid)):
+            return
+        cid = str(cid)
+    ident.cili = cid
+    ident.cili_id = cid
+    ident.cili_uri = f"{CILI_URI_BASE}{cid}"
+    if not ident.source_curie:
+        # Contextual only — not the canonical stored primary key
+        ident.source_curie = f"oewn-ili:{cid}"
 
 
 def _resolve_cili(raw: str) -> Optional[str]:
@@ -145,7 +255,7 @@ def parse_identifier(
             if not cid:
                 cid = _resolve_cili(f"{m.group(1)}-{m.group(2)}")
             if cid and _CILI_RE.match(cid):
-                ident.cili = cid
+                _attach_cili_fields(ident, cid)
                 ident.mapping_status = "official"
                 # Also attach PWN30 if the official map has it
                 try:
@@ -162,14 +272,18 @@ def parse_identifier(
                     pass
         return ident
 
-    # Bare / prefixed CILI
+    # Bare / prefixed CILI (including contextual CURIEs oewn-ili: / ili:)
     cili_cand = strip_cili_prefix(s)
     if _CILI_RE.match(cili_cand):
+        if s.startswith("oewn-ili:") or s.startswith("ili:"):
+            ident.source_curie = s if s.startswith(("oewn-ili:", "ili:")) else (
+                f"oewn-ili:{cili_cand}"
+            )
         if resolve_cili:
             # Accept only if catalogue/map knows it (cili_resolve enforces this)
             cid = _resolve_cili(cili_cand)
             if cid:
-                ident.cili = cid
+                _attach_cili_fields(ident, cid)
                 ident.mapping_status = "official"
                 try:
                     from cili_resolver import cili_offset
@@ -188,7 +302,7 @@ def parse_identifier(
             else:
                 ident.mapping_status = "unverified"
         else:
-            ident.cili = cili_cand
+            _attach_cili_fields(ident, cili_cand)
             ident.mapping_status = "official"
         return ident
 
@@ -202,7 +316,7 @@ def parse_identifier(
         if resolve_cili:
             cid = _resolve_cili(bare_offset(m.group(1), m.group(2)))
             if cid:
-                ident.cili = cid
+                _attach_cili_fields(ident, cid)
                 ident.mapping_status = "official"
                 if enrich_oewn:
                     ident.oewn_id = _oewn_id_for_cili(cid)
@@ -230,7 +344,7 @@ def parse_identifier(
         if resolve_cili:
             cid = _resolve_cili(bare_offset(off8, pos))
             if cid:
-                ident.cili = cid
+                _attach_cili_fields(ident, cid)
                 ident.mapping_status = "official"
                 if enrich_oewn:
                     ident.oewn_id = _oewn_id_for_cili(cid)
@@ -248,7 +362,7 @@ def parse_identifier(
         if resolve_cili:
             cid = _resolve_cili(s)
             if cid:
-                ident.cili = cid
+                _attach_cili_fields(ident, cid)
                 ident.mapping_status = "official"
             else:
                 ident.mapping_status = "unverified"
@@ -323,18 +437,18 @@ def stable_key(raw: Any) -> str:
 
 
 def join_key(raw: Any, *, resolve_cili: bool = True) -> tuple[Optional[str], bool]:
-    """LexWarrant join key: prefer official CILI, else local pwn30.
+    """LexWarrant join key: prefer bare official CILI ``i…``, else local pwn30.
 
-    Returns ``(key, mapped)``. CILI keys use the existing ``oewn-ili:i…``
-    namespace so OEWN rows and PULO rows that share a CILI id unify without
-    fabricating ``ili-30-…``.
+    Returns ``(key, mapped)``. Never uses ``oewn-ili:`` as the join key —
+    that CURIE is contextual only. OEWN and PULO rows that share a CILI id
+    unify on the bare ``i…`` string.
     """
     s = str(raw or "").strip()
     if not s:
         return None, False
     ident = parse_identifier(s, resolve_cili=resolve_cili)
-    if ident.cili:
-        return f"oewn-ili:{ident.cili}", True
+    if ident.cili_id or ident.cili:
+        return (ident.cili_id or ident.cili), True
     if ident.pwn_id:
         return ident.pwn_id, True
     if ident.oewn_id:
@@ -347,16 +461,25 @@ def join_key(raw: Any, *, resolve_cili: bool = True) -> tuple[Optional[str], boo
 
 def export_ili_item(ident: SenseIdentity) -> dict[str, Any]:
     """Shape written into PULO/search export ``synsets[].ili[]``."""
-    return {
+    cid = ident.cili_id or ident.cili
+    out: dict[str, Any] = {
         # Local PWN 3.0 id (replaces fabricated / legacy ili-30- as primary)
         "ili_offset": ident.pwn_id or ident.source_synset_id or "",
         "pwn_id": ident.pwn_id,
         "pwn_version": ident.pwn_version,
         "pwn_offset": ident.pwn_offset,
         "part_of_speech": ident.part_of_speech,
-        "cili": ident.cili,
+        # Canonical CILI (bare). CURIE kept only under source_curie.
+        "cili": cid,
+        "cili_id": cid,
+        "cili_uri": ident.cili_uri or (f"{CILI_URI_BASE}{cid}" if cid else None),
+        "source_curie": ident.source_curie,
         "oewn_id": ident.oewn_id,
         "mapping_status": ident.mapping_status,
         "legacy_omw_ili": ident.legacy_omw_ili,
         "ili_wn_id": "eng-30" if ident.pwn_version == "3.0" else None,
+        "source": ident.source or "PULO",
     }
+    if cid:
+        out["cili_page"] = f"{CILI_PAGE_BASE}{cid}.html"
+    return out

@@ -7,6 +7,12 @@ from typing import Any
 __all__ = [
     "SenseIdentity",
     "make_pwn30_id",
+    "normalize_cili_id",
+    "try_normalize_cili_id",
+    "cili_uri",
+    "cili_page_url",
+    "cili_ref",
+    "public_id",
     "parse_identifier",
     "from_pulo_to_ili",
     "to_pwn30",

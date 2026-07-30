@@ -2,8 +2,11 @@
   "class_id": "TexturaComposita",
   "unidade_contagem": "acepção (sentido) com decisão UF/RT",
   "execution": {
-    "engines": [],
-    "engines_reexecutados": false,
+    "engines": [
+      "pulo",
+      "onto"
+    ],
+    "engines_reexecutados": true,
     "hide_pulo_signals": true,
     "onto_admission": false,
     "ili_join": "cili-only",

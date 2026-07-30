@@ -5,6 +5,8 @@
 
 tex:TexturaComposita a owl:Class,
         skos:Concept ;
+    tex:termoRelacionado tex:decomposicao,
+        tex:descomposicao ;
     skos:prefLabel "TexturaCompósita"@pt ;
     skos:scopeNote "Eixo definidor: heterogeneidade / composição de materiais ou partes distintas"@pt ;
     skosxl:altLabel [ skosxl:literalForm "composto"@pt ] .

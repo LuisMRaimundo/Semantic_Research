@@ -87,7 +87,7 @@ class SourceError(ValueError):
     """A source file could not be used; the message is user-facing/actionable."""
 
 # --- Declared identity join keys (NEVER fabricate CILI) --------------------
-# Prefer official CILI ``i…`` (surfaced as ``oewn-ili:i…`` for back-compat).
+# Prefer bare official CILI ``i…``. Contextual CURIEs ``oewn-ili:i…`` are stripped.
 # PWN 3.0 offsets use local ``pwn30-…`` — never ``ili-30-…`` as if it were CILI.
 # Legacy OMW/MCR ``ili-30-…`` / ``por-30-…`` are parsed as PWN 3.0 pivots only.
 OMW30_NAMESPACES = {
@@ -98,12 +98,26 @@ _OMW30_RE = re.compile(r"^([a-z]{2,4})-30-(\d{8}-[a-z])$")
 _OEWN_ILI_RE = re.compile(r"^i\d+$")
 
 
+def _public_ili(key: str) -> str:
+    """Bare CILI for reports; strip contextual ``oewn-ili:`` CURIEs."""
+    try:
+        from identifiers import public_id
+        return public_id(key)
+    except Exception:  # noqa: BLE001
+        s = str(key or "").strip()
+        for pfx in ("oewn-ili:", "ili:", "cili:"):
+            if s.startswith(pfx):
+                return s[len(pfx):]
+        return s
+
+
 def canonical_ili(offset: str) -> tuple[Optional[str], bool]:
     """Map a source identifier to a join key without fabricating CILI.
 
-    Returns (canonical_key, mapped). Prefer official CILI via the vendored
-    map / OEWN ``ili`` attribute. Fall back to local ``pwn30-…`` for PWN 3.0
-    pivots that lack a CILI row. Never emits ``ili-30-…`` as a join key.
+    Returns (canonical_key, mapped). Prefer bare official CILI ``i…`` via the
+    vendored map / OEWN ``ili`` attribute. Fall back to local ``pwn30-…`` for
+    PWN 3.0 pivots that lack a CILI row. Never emits ``ili-30-…`` or
+    ``oewn-ili:`` as a join key.
     """
     if not offset:
         return (None, False)
@@ -112,15 +126,17 @@ def canonical_ili(offset: str) -> tuple[Optional[str], bool]:
         return join_key(offset, resolve_cili=True)
     except Exception:  # noqa: BLE001 — keep LexWarrant import-hardy
         s = str(offset).strip()
-        if s.startswith("oewn-ili:"):
-            s = s.split(":", 1)[1].strip()
+        for pfx in ("oewn-ili:", "ili:", "cili:"):
+            if s.startswith(pfx):
+                s = s[len(pfx):].strip()
+                break
         if _OEWN_ILI_RE.match(s):
-            return (f"oewn-ili:{s}", True)
-        m = _OMW30_RE.match(s)
+            return (s, True)
+        m = _OMW30_RE.match(str(offset).strip())
         if m and f"{m.group(1)}-30" in OMW30_NAMESPACES:
             return (f"pwn30-{m.group(2)}", True)
-        if s.lower().startswith("pwn30-"):
-            return (s.lower(), True)
+        if str(offset).strip().lower().startswith("pwn30-"):
+            return (str(offset).strip().lower(), True)
         return (None, False)
 
 
@@ -129,7 +145,7 @@ class EquivMap:
 
     LexWarrant never fabricates or extends this map — it only reads the `map`
     (high-confidence) rows of an ili_equivalence.json and unifies the canonical
-    Identity keys they declare equal (e.g. oewn-ili:i10771 ↔ pwn30-00744506-a).
+    Identity keys they declare equal (e.g. i10771 ↔ pwn30-00744506-a).
     Two entries join iff their canonical keys are equal OR unified here.
     """
 
@@ -620,12 +636,15 @@ def build_concept(entries: list[Entry], join_kind: str, policy: str,
     if veredicto == "divergência de relação":
         divergences = [{"source": s, "estatuto": st} for s, st in sorted(admit.items())]
 
-    ilis = sorted({i for e in entries for i in e.canon_ilis})
+    # Reports always use bare CILI / pwn30 — never contextual oewn-ili: CURIEs
+    ilis = sorted({_public_ili(i) for e in entries for i in e.canon_ilis})
     provenance = sorted({r for e in entries for r in e.resources})
     ili_by_source: dict[str, list] = {}
     for e in entries:
         if e.canon_ilis:
-            ili_by_source.setdefault(e.source, set()).update(e.canon_ilis)
+            ili_by_source.setdefault(e.source, set()).update(
+                _public_ili(i) for i in e.canon_ilis
+            )
     ili_by_source = {s: sorted(v) for s, v in ili_by_source.items()}
 
     # Did the declared equivalence table enable this join? (raw ILI keys differ by
@@ -636,7 +655,7 @@ def build_concept(entries: list[Entry], join_kind: str, policy: str,
         for a in raw_keys:
             for b in raw_keys:
                 if a < b and equiv.linked(a, b):
-                    via_table_pairs.append(f"{a} ↔ {b}")
+                    via_table_pairs.append(f"{_public_ili(a)} ↔ {_public_ili(b)}")
 
     notes: list[str] = []
     # Emenda 2 — marca obrigatória em toda convergência ILI PULO↔OWN-PT.
@@ -793,8 +812,8 @@ def build_concordance(sources: list[Source], policy: str,
         ili_entries = [e for e in entries if e.canon_ilis]
         noili_entries = [e for e in entries if not e.canon_ilis]
 
-        # Components use equivalence-FOLDED keys, so oewn-ili:i… and ili-30-…
-        # declared equal in the table merge into one interlingual concept.
+        # Components use equivalence-FOLDED keys, so bare CILI i… and pwn30-…
+        # (or legacy ili-30- resolved via CILI) merge into one interlingual concept.
         comps = _components(ili_entries, key=folded)
         multi_src = [c for c in comps if len({e.source for e in c}) >= 2]
         single_src = [c for c in comps if len({e.source for e in c}) < 2]
@@ -1068,7 +1087,7 @@ def summarize_auto_contrast(sources: list[Source]) -> dict:
             # also parse «de iNNNN» from reason when offsets empty
             m = re.search(r"\b(i\d+)\b", e.reason or "")
             if m:
-                anchored_with_contrast.add(f"oewn-ili:{m.group(1)}")
+                anchored_with_contrast.add(m.group(1))  # bare CILI
 
         for e in src.entries:
             if e.estatuto in ADMIT_STATUSES:

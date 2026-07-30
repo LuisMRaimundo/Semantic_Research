@@ -7,10 +7,12 @@ durable **SenseIndex**, **CILI-only** ILI join, and `sr doctor` pins.
 Nothing in the runtime is bound to a particular lemma or class. Existing
 folders under `classes/` are just workspaces you created for specific studies.
 
-Decisão só por sentido; junção interlingual via **CILI oficial** (`i…`, nunca
-fabricado). Offsets PWN 3.0 usam id local `pwn30-…` (legado OMW `ili-30-…` é
-lido como pivô PWN 3.0, **não** como CILI). Onto.PT continua discovery-only;
-propostas Onto→ILI são *review-only*.
+Decisão só por sentido; junção interlingual via **CILI oficial** canónico
+(`i114921`, nunca fabricado; URI `http://globalwordnet.org/ili/i…`; página
+`https://globalwordnet.github.io/cili/i….html`). Prefixos CURIE como
+`oewn-ili:` são só contextuais — não são o identificador primário. Offsets
+PWN 3.0 usam id local `pwn30-…` (legado OMW `ili-30-…` = pivô PWN 3.0, **não**
+CILI). Onto.PT continua discovery-only; propostas Onto→ILI são *review-only*.
 
 ## Daily path (any concept)
 

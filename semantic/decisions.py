@@ -279,11 +279,15 @@ def _pulo_identity(syn: dict[str, Any]) -> dict[str, Any]:
             ident.mapping_status = item.get("mapping_status") or "official"
         if item.get("pwn_id") and not ident.pwn_id:
             ident.pwn_id = str(item["pwn_id"]).strip()
+        cid = ident.cili_id or ident.cili
         return {
             "key": ident.pwn_id or ident.source_synset_id or "",
             "pwn_id": ident.pwn_id,
-            "ili": ident.cili,  # field name kept; value is official CILI or null
-            "cili": ident.cili,
+            "ili": cid,  # bare CILI only (never oewn-ili: CURIE)
+            "cili": cid,
+            "cili_id": cid,
+            "cili_uri": ident.cili_uri or item.get("cili_uri"),
+            "source_curie": ident.source_curie or item.get("source_curie"),
             "legacy_omw_ili": ident.legacy_omw_ili or item.get("legacy_omw_ili"),
             "mapping_status": ident.mapping_status,
             "stable": ids.stable_key(
@@ -340,8 +344,16 @@ def from_pulo_export(
                 hit["pwn_id"] = ident["pwn_id"]
             if ident.get("cili") and not hit.get("cili"):
                 hit["cili"] = ident["cili"]
+                hit["cili_id"] = ident.get("cili_id") or ident["cili"]
                 hit["ili"] = ident["cili"]
+                hit["cili_uri"] = ident.get("cili_uri")
+                hit["source_curie"] = ident.get("source_curie")
                 hit["mapping_status"] = ident.get("mapping_status") or "official"
+            # Strip legacy CURIE-as-primary if still stored
+            for fld in ("ili", "cili", "cili_id"):
+                val = str(hit.get(fld) or "")
+                if val.startswith(("oewn-ili:", "ili:")):
+                    hit[fld] = val.rsplit(":", 1)[-1]
             if ident.get("pwn_id") and not hit.get("pwn_id"):
                 hit["pwn_id"] = ident["pwn_id"]
             if ident.get("legacy_omw_ili") and not hit.get("legacy_omw_ili"):
@@ -351,8 +363,11 @@ def from_pulo_export(
             "source": "pulo",
             "key": key,
             "pwn_id": ident.get("pwn_id"),
-            "ili": ident.get("cili"),  # official CILI only (may be null)
+            "ili": ident.get("cili"),  # bare official CILI only (may be null)
             "cili": ident.get("cili"),
+            "cili_id": ident.get("cili_id") or ident.get("cili"),
+            "cili_uri": ident.get("cili_uri"),
+            "source_curie": ident.get("source_curie"),
             "legacy_omw_ili": ident.get("legacy_omw_ili"),
             "mapping_status": ident.get("mapping_status") or "unverified",
             "local_id": syn.get("synset_offset"),

@@ -135,7 +135,7 @@ sense / synset
             One meaning: a set of synonyms + gloss. Decisions are
             per sense, not per spelling.
 
-CILI        Collaborative ILI (iNNNNN only). PWN 3.0 local id: pwn30-…
+CILI        Bare iNNNNN (URI …/ili/i… ; page …/cili/i….html). Not oewn-ili: CURIE.
             id across wordnets. Primary join key in LexWarrant.
 
 lemma       Dictionary citation form (not inflected).

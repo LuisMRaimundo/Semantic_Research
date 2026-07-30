@@ -6,7 +6,7 @@
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model — TexturaDensa
-# generated 2026-07-27T11:39:54+00:00
+# generated 2026-07-30T11:14:59+00:00
 
 sr:TexturaDensa a owl:Class, skos:Concept ;
     skos:prefLabel "TexturaDensa"@pt ;

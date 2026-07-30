@@ -15046,13 +15046,41 @@
         "destino": "vocabulario",
         "termo": "heterogêneo",
         "skos": "tex:termoRelacionado"
+      },
+      {
+        "fonte": "pulo",
+        "key": "ili-30-11444643-n",
+        "ili": "ili-30-11444643-n",
+        "membros": [
+          "decomposição",
+          "descomposição"
+        ],
+        "gloss": "o fenômeno biológico de podridão\n",
+        "note": "",
+        "destino": "vocabulario",
+        "termo": "decomposição",
+        "skos": "tex:termoRelacionado"
+      },
+      {
+        "fonte": "pulo",
+        "key": "ili-30-11444643-n",
+        "ili": "ili-30-11444643-n",
+        "membros": [
+          "decomposição",
+          "descomposição"
+        ],
+        "gloss": "o fenômeno biológico de podridão\n",
+        "note": "",
+        "destino": "vocabulario",
+        "termo": "descomposição",
+        "skos": "tex:termoRelacionado"
       }
     ]
   },
   "evidencia_delimitacao": {
     "nota": "Registos documentais. Não constituem relações do vocabulário.",
     "ancora_ili": [
-      "ili-30-14818238-n"
+      "i114921"
     ],
     "exclude": [
       {
@@ -15407,6 +15435,331 @@
           "músico"
         ],
         "gloss": "",
+        "note": "",
+        "destino": "evidencia"
+      },
+      {
+        "fonte": "pulo",
+        "key": "ili-30-00237078-n",
+        "ili": "ili-30-00237078-n",
+        "membros": [
+          "composição",
+          "constituição",
+          "estabelecimento",
+          "formação",
+          "organização",
+          "fundação"
+        ],
+        "gloss": "o ato de formar ou estabelecer algo\n",
+        "note": "",
+        "destino": "evidencia"
+      },
+      {
+        "fonte": "pulo",
+        "key": "ili-30-00378985-n",
+        "ili": "ili-30-00378985-n",
+        "membros": [
+          "combinação",
+          "composição"
+        ],
+        "gloss": "o ato de combinar as coisas para formar um todo novo\n",
+        "note": "",
+        "destino": "evidencia"
+      },
+      {
+        "fonte": "pulo",
+        "key": "ili-30-04341686-n",
+        "ili": "ili-30-04341686-n",
+        "membros": [
+          "composição",
+          "contextura",
+          "edifício",
+          "estrutura",
+          "construção"
+        ],
+        "gloss": "uma coisa construída; uma entidade complexa construída de muitas partes\n",
+        "note": "",
+        "destino": "evidencia"
+      },
+      {
+        "fonte": "pulo",
+        "key": "ili-30-06788785-n",
+        "ili": "ili-30-06788785-n",
+        "membros": [
+          "composição",
+          "receita",
+          "fórmula"
+        ],
+        "gloss": "instruções para fazer algo\n",
+        "note": "",
+        "destino": "evidencia"
+      },
+      {
+        "fonte": "pulo",
+        "key": "ili-30-00929718-n",
+        "ili": "ili-30-00929718-n",
+        "membros": [
+          "composição",
+          "escritura",
+          "escrita"
+        ],
+        "gloss": "o ato de criar obras escritas\n",
+        "note": "",
+        "destino": "evidencia"
+      },
+      {
+        "fonte": "pulo",
+        "key": "ili-30-00939452-n",
+        "ili": "ili-30-00939452-n",
+        "membros": [
+          "composição"
+        ],
+        "gloss": "criação musical\n",
+        "note": "",
+        "destino": "evidencia"
+      },
+      {
+        "fonte": "pulo",
+        "key": "ili-30-03081660-n",
+        "ili": "ili-30-03081660-n",
+        "membros": [
+          "composição"
+        ],
+        "gloss": "algo que é criado por providenciar várias coisas de modo a formar um todo unificado\n",
+        "note": "",
+        "destino": "evidencia"
+      },
+      {
+        "fonte": "pulo",
+        "key": "ili-30-04933544-n",
+        "ili": "ili-30-04933544-n",
+        "membros": [
+          "constituição",
+          "composição"
+        ],
+        "gloss": "a maneira em que alguém ou alguma coisa é composto\n",
+        "note": "",
+        "destino": "evidencia"
+      },
+      {
+        "fonte": "pulo",
+        "key": "ili-30-05076472-n",
+        "ili": "ili-30-05076472-n",
+        "membros": [
+          "composição"
+        ],
+        "gloss": "a propriedade espacial resultante do acordo das partes em relação às outras e a toda\n",
+        "note": "",
+        "destino": "evidencia"
+      },
+      {
+        "fonte": "pulo",
+        "key": "ili-30-07037465-n",
+        "ili": "ili-30-07037465-n",
+        "membros": [
+          "peça",
+          "obra",
+          "composição"
+        ],
+        "gloss": "uma obra musical que tenha sido criado\n",
+        "note": "",
+        "destino": "evidencia"
+      },
+      {
+        "fonte": "pulo",
+        "key": "ili-30-14588492-n",
+        "ili": "ili-30-14588492-n",
+        "membros": [
+          "composição"
+        ],
+        "gloss": "uma mistura de ingredientes\n",
+        "note": "",
+        "destino": "evidencia"
+      },
+      {
+        "fonte": "pulo",
+        "key": "ili-30-07331400-n",
+        "ili": "ili-30-07331400-n",
+        "membros": [
+          "apartamento",
+          "apartação",
+          "decomposição",
+          "desagregação",
+          "desmonte",
+          "destrinça",
+          "desunião",
+          "discernimento",
+          "discriminação",
+          "disjunção",
+          "dissolução",
+          "distinção",
+          "divisão",
+          "oposição",
+          "afastamento",
+          "separação"
+        ],
+        "gloss": "desmoronando\n",
+        "note": "",
+        "destino": "evidencia"
+      },
+      {
+        "fonte": "pulo",
+        "key": "ili-30-00576680-a",
+        "ili": "ili-30-00576680-a",
+        "membros": [
+          "constante",
+          "consistente",
+          "coerente"
+        ],
+        "gloss": "(Às vezes seguido por &#39;com&#39;) em acordo ou consistente ou confiável\n",
+        "note": "",
+        "destino": "evidencia"
+      },
+      {
+        "fonte": "pulo",
+        "key": "ili-30-01754421-a",
+        "ili": "ili-30-01754421-a",
+        "membros": [
+          "constante",
+          "duradouro",
+          "fixo",
+          "frisagem",
+          "inalterado",
+          "indelével",
+          "ondulação",
+          "estável",
+          "permanente"
+        ],
+        "gloss": "continuada ou permanente, sem alteração marcada do estado ou condição ou lugar\n",
+        "note": "",
+        "destino": "evidencia"
+      },
+      {
+        "fonte": "pulo",
+        "key": "ili-30-00583239-a",
+        "ili": "ili-30-00583239-a",
+        "membros": [
+          "constante"
+        ],
+        "gloss": "firme no propósito ou devoção ou afeição\n",
+        "note": "",
+        "destino": "evidencia"
+      },
+      {
+        "fonte": "pulo",
+        "key": "ili-30-00592222-a",
+        "ili": "ili-30-00592222-a",
+        "membros": [
+          "contínuo",
+          "constante"
+        ],
+        "gloss": "ocorrendo sem interrupção; principalmente restrita ao que se repete regularmente ou freqüentemente de uma série prolongada e espaçados\n",
+        "note": "",
+        "destino": "evidencia"
+      },
+      {
+        "fonte": "pulo",
+        "key": "ili-30-00595299-a",
+        "ili": "ili-30-00595299-a",
+        "membros": [
+          "assíduo",
+          "continuado",
+          "imudável",
+          "imutável",
+          "incessante",
+          "ininterrupto",
+          "permanecente",
+          "permanente",
+          "perpétuo",
+          "seguido",
+          "contínuo",
+          "constante"
+        ],
+        "gloss": "ininterrupta no tempo indefinidamente longo e contínuo\n",
+        "note": "",
+        "destino": "evidencia"
+      },
+      {
+        "fonte": "pulo",
+        "key": "ili-30-00595863-a",
+        "ili": "ili-30-00595863-a",
+        "membros": [
+          "contínuo",
+          "constante"
+        ],
+        "gloss": "`Contínua &#39;(significando aparentemente ininterrupta) é muitas vezes usado como sinônimo de&#39; contínua &#39;(ou seja, sem interrupção)\n",
+        "note": "",
+        "destino": "evidencia"
+      },
+      {
+        "fonte": "pulo",
+        "key": "ili-30-00754393-a",
+        "ili": "ili-30-00754393-a",
+        "membros": [
+          "assíduo",
+          "persistente",
+          "constante"
+        ],
+        "gloss": "marcado pelo cuidado e esforço persistente\n",
+        "note": "",
+        "destino": "evidencia"
+      },
+      {
+        "fonte": "pulo",
+        "key": "ili-30-01990653-a",
+        "ili": "ili-30-01990653-a",
+        "membros": [
+          "inabalável",
+          "constante",
+          "firme"
+        ],
+        "gloss": "marcado pela firme determinação ou resolução; Não shakable\n",
+        "note": "",
+        "destino": "evidencia"
+      },
+      {
+        "fonte": "pulo",
+        "key": "ili-30-02506029-a",
+        "ili": "ili-30-02506029-a",
+        "membros": [
+          "constante"
+        ],
+        "gloss": "unvarying em natureza\n",
+        "note": "",
+        "destino": "evidencia"
+      },
+      {
+        "fonte": "pulo",
+        "key": "ili-30-00959244-a",
+        "ili": "ili-30-00959244-a",
+        "membros": [
+          "fiel",
+          "firme",
+          "constante"
+        ],
+        "gloss": "inabalável em devoção ao amigo ou voto ou causa\n",
+        "note": "",
+        "destino": "evidencia"
+      },
+      {
+        "fonte": "pulo",
+        "key": "ili-30-13585429-n",
+        "ili": "ili-30-13585429-n",
+        "membros": [
+          "constante"
+        ],
+        "gloss": "um número que representa uma quantidade assumido como tendo um valor fixo num contexto matemático especificado\n",
+        "note": "",
+        "destino": "evidencia"
+      },
+      {
+        "fonte": "pulo",
+        "key": "ili-30-05858936-n",
+        "ili": "ili-30-05858936-n",
+        "membros": [
+          "constante"
+        ],
+        "gloss": "uma quantidade que não varia\n",
         "note": "",
         "destino": "evidencia"
       }

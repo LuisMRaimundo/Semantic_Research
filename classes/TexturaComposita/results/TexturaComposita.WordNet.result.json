@@ -2,12 +2,15 @@
   "class_id": "TexturaComposita",
   "pref_label": "TexturaCompósita",
   "axis": "(faixa OEWN — corroboração EN / relações tipadas; sem adjudicação)",
-  "generated": "2026-07-27T12:39:52",
+  "generated": "2026-07-30T12:14:58",
   "source": "WordNet (OEWN facets export)",
-  "facets_export": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\classes\\TexturaComposita\\exports\\wordnet_composed.facets.json",
+  "facets_export": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\classes\\TexturaComposita\\exports\\wordnet_composite.facets.json",
   "convoked_ilis": [],
   "skipped_ilis": [
-    "i2968"
+    "i15148",
+    "i67722",
+    "i99843",
+    "i11972"
   ],
   "provenance": [],
   "synsets": [],

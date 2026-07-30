@@ -31,19 +31,27 @@ def _ili_anchor(decisions: dict[str, Any], meta: dict[str, Any]) -> list[str]:
         ids = None
 
     def _display(sense: dict[str, Any]) -> Optional[str]:
-        cili = (sense.get("cili") or "").strip()
-        if cili and cili.startswith("i") and cili[1:].isdigit():
-            return cili
-        ili = (sense.get("ili") or "").strip()
-        if ili.startswith("i") and ili[1:].isdigit():
-            return ili
+        # Prefer bare CILI; never surface oewn-ili: CURIE as primary
+        for fld in ("cili_id", "cili", "ili"):
+            raw = (sense.get(fld) or "").strip()
+            if not raw:
+                continue
+            if ids is not None:
+                cid = ids.try_normalize_cili_id(raw)
+                if cid:
+                    return cid
+            if raw.startswith(("oewn-ili:", "ili:", "cili:")):
+                raw = raw.rsplit(":", 1)[-1]
+            if raw.startswith("i") and raw[1:].isdigit():
+                return raw
         pwn = (sense.get("pwn_id") or "").strip()
         if pwn.startswith("pwn30-"):
             return pwn
+        ili = (sense.get("ili") or "").strip()
         if ids is not None and ili:
             ident = ids.parse_identifier(ili, resolve_cili=True)
-            if ident.cili:
-                return ident.cili
+            if ident.cili_id or ident.cili:
+                return ident.cili_id or ident.cili
             if ident.pwn_id:
                 return ident.pwn_id
         if ili.startswith("ili-30-") and ids is not None:

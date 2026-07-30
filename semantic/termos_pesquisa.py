@@ -278,19 +278,26 @@ def _cili_resolve(ident: str) -> Optional[str]:
 
 
 def _extract_cili_ids(ili_list: Any) -> list[str]:
+    """Bare CILI ids only — strip contextual CURIEs like ``oewn-ili:``."""
     out: list[str] = []
     seen: set[str] = set()
+    try:
+        from .engines import load_identifiers
+        try_norm = load_identifiers().try_normalize_cili_id
+    except Exception:  # noqa: BLE001
+        try_norm = None
     for raw in ili_list or []:
         s = str(raw or "").strip()
         if not s:
             continue
-        cand = None
-        if s.startswith("oewn-ili:"):
-            cand = s.split(":", 1)[1]
-        elif re.match(r"^i\d+$", s):
-            cand = s
-        else:
-            cand = _cili_resolve(s)
+        cand = try_norm(s) if try_norm else None
+        if not cand:
+            if s.startswith(("oewn-ili:", "ili:", "cili:")):
+                cand = s.rsplit(":", 1)[-1]
+            elif re.match(r"^i\d+$", s):
+                cand = s
+            else:
+                cand = _cili_resolve(s)
         if cand and cand not in seen:
             seen.add(cand)
             out.append(cand)
