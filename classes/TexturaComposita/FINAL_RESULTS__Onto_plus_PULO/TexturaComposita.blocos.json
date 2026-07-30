@@ -21,6 +21,17 @@
     "exclude": [
       {
         "fonte": "pulo",
+        "key": "ili-30-14818238-n",
+        "ili": "ili-30-14818238-n",
+        "membros": [
+          "composto"
+        ],
+        "gloss": "(Química) uma substância formada por união química de duas ou mais elementos ou ingredientes na proporção definida por peso\n",
+        "note": "aceção química: chemical compound",
+        "destino": "evidencia"
+      },
+      {
+        "fonte": "pulo",
         "key": "ili-30-02424254-a",
         "ili": "ili-30-02424254-a",
         "membros": [
@@ -540,6 +551,18 @@
       },
       {
         "fonte": "pulo",
+        "key": "ili-30-11444643-n",
+        "ili": "ili-30-11444643-n",
+        "membros": [
+          "decomposição",
+          "descomposição"
+        ],
+        "gloss": "o fenômeno biológico de podridão\n",
+        "note": "aceção biológica: decay/decomposition",
+        "destino": "evidencia"
+      },
+      {
+        "fonte": "pulo",
         "key": "ili-30-00576680-a",
         "ili": "ili-30-00576680-a",
         "membros": [
@@ -705,5 +728,13 @@
     "atributo": [],
     "oposicao": [],
     "vizinha": []
-  }
+  },
+  "assertions": [
+    {
+      "id": "T12",
+      "text": "Nenhum item do bloco de evidência figura no bloco de vocabulário, e vice-versa.",
+      "passed": true,
+      "evidence": "registos disjuntos (lemas podem repetir-se por polissemia)"
+    }
+  ]
 }

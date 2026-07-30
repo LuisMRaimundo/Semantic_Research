@@ -1,8 +1,8 @@
 {
   "class_id": "TexturaComposita",
-  "pref_label": "TexturaCompósita",
+  "pref_label": "textura compósita",
   "axis": "(faixa OWN-PT — atestação PT via ILI; sem estatuto admissivo)",
-  "generated": "2026-07-30T13:01:06",
+  "generated": "2026-07-30T19:22:40",
   "source": "OWN-PT (OpenWordNet-PT)",
   "lexicon": "own-pt:1.0.0",
   "facets_export": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\classes\\TexturaComposita\\exports\\wordnet_composite.facets.json",

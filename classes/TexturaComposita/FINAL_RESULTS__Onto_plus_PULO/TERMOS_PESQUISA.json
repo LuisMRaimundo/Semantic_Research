@@ -4,19 +4,30 @@
   "axis": "heterogeneidade / composição de materiais ou partes distintas",
   "acepcao_a_separar": "heterogeneidade / composição de materiais ou partes distintas",
   "ancora_ili": [],
-  "anchor_pos": "n",
+  "anchor_pos": null,
   "near_stem": "composto*",
-  "generated": "2026-07-30T13:17:06+01:00",
+  "generated": "2026-07-30T19:24:12+01:00",
   "search_lang": "en",
   "label_lang": "pt-PT",
   "termos_manuais_presentes": false,
-  "n_admitidos_matriz": 3,
+  "n_admitidos_matriz": 0,
+  "n_validated_alt_labels": 1,
   "A_polo_alvo": [],
   "B_polo_contrastante": [],
   "C_conjunto_controlo": [],
   "C_termos": [],
   "D_descritores_adjacentes": [],
   "E_fronteiras_dominio": [
+    {
+      "chave": "ili-30-14818238-n",
+      "chave_legada": "ili-30-14818238-n",
+      "pwn30": "pwn30-14818238-n",
+      "cili": "i114921",
+      "ili": "i114921",
+      "lema": "composto",
+      "motivo": "aceção química: chemical compound",
+      "fonte": "pulo"
+    },
     {
       "chave": "ili-30-02424254-a",
       "chave_legada": "ili-30-02424254-a",
@@ -158,6 +169,16 @@
       "fonte": "pulo"
     },
     {
+      "chave": "ili-30-11444643-n",
+      "chave_legada": "ili-30-11444643-n",
+      "pwn30": "pwn30-11444643-n",
+      "cili": "i97733",
+      "ili": "i97733",
+      "lema": "decomposição",
+      "motivo": "aceção biológica: decay/decomposition",
+      "fonte": "pulo"
+    },
+    {
       "chave": "ili-30-00576680-a",
       "chave_legada": "ili-30-00576680-a",
       "pwn30": "pwn30-00576680-a",
@@ -280,121 +301,41 @@
   ],
   "F_vocabulario_pt": [
     {
-      "forma": "composto",
-      "wildcard": "composto*",
+      "forma": "compósito",
+      "wildcard": "compósito*",
       "lingua": "pt-PT",
       "estatuto": "UF",
-      "ili": [
-        "i114921"
-      ],
+      "ili": null,
       "fontes": [
-        "pulo"
+        "concept_mapping"
       ],
-      "garantia": "fonte_unica",
-      "ancora_ili": "presente",
-      "em_espera": true,
-      "sense_key": "ili-30-14818238-n",
-      "sense_pos": "n",
+      "garantia": "adjudicada",
+      "ancora_ili": "ausente",
+      "em_espera": false,
+      "sense_key": null,
+      "sense_pos": null,
       "cross_class": null,
-      "nota": ""
-    },
-    {
-      "forma": "decomposição",
-      "wildcard": "decomposição*",
-      "lingua": "pt-PT",
-      "estatuto": "RT",
-      "ili": [
-        "i97733"
-      ],
-      "fontes": [
-        "pulo"
-      ],
-      "garantia": "fonte_unica",
-      "ancora_ili": "presente",
-      "em_espera": true,
-      "sense_key": "ili-30-11444643-n",
-      "sense_pos": "n",
-      "cross_class": null,
-      "nota": ""
-    },
-    {
-      "forma": "descomposição",
-      "wildcard": "descomposição*",
-      "lingua": "pt-PT",
-      "estatuto": "RT",
-      "ili": [
-        "i97733"
-      ],
-      "fontes": [
-        "pulo"
-      ],
-      "garantia": "fonte_unica",
-      "ancora_ili": "presente",
-      "em_espera": true,
-      "sense_key": "ili-30-11444643-n",
-      "sense_pos": "n",
-      "cross_class": null,
-      "nota": ""
+      "nota": "validated_alt_labels"
     }
   ],
   "a_resolver": [],
   "D_vocabulario_pt": [
     {
-      "forma": "composto",
-      "wildcard": "composto*",
+      "forma": "compósito",
+      "wildcard": "compósito*",
       "lingua": "pt-PT",
       "estatuto": "UF",
-      "ili": [
-        "i114921"
-      ],
+      "ili": null,
       "fontes": [
-        "pulo"
+        "concept_mapping"
       ],
-      "garantia": "fonte_unica",
-      "ancora_ili": "presente",
-      "em_espera": true,
-      "sense_key": "ili-30-14818238-n",
-      "sense_pos": "n",
+      "garantia": "adjudicada",
+      "ancora_ili": "ausente",
+      "em_espera": false,
+      "sense_key": null,
+      "sense_pos": null,
       "cross_class": null,
-      "nota": ""
-    },
-    {
-      "forma": "decomposição",
-      "wildcard": "decomposição*",
-      "lingua": "pt-PT",
-      "estatuto": "RT",
-      "ili": [
-        "i97733"
-      ],
-      "fontes": [
-        "pulo"
-      ],
-      "garantia": "fonte_unica",
-      "ancora_ili": "presente",
-      "em_espera": true,
-      "sense_key": "ili-30-11444643-n",
-      "sense_pos": "n",
-      "cross_class": null,
-      "nota": ""
-    },
-    {
-      "forma": "descomposição",
-      "wildcard": "descomposição*",
-      "lingua": "pt-PT",
-      "estatuto": "RT",
-      "ili": [
-        "i97733"
-      ],
-      "fontes": [
-        "pulo"
-      ],
-      "garantia": "fonte_unica",
-      "ancora_ili": "presente",
-      "em_espera": true,
-      "sense_key": "ili-30-11444643-n",
-      "sense_pos": "n",
-      "cross_class": null,
-      "nota": ""
+      "nota": "validated_alt_labels"
     }
   ],
   "_sheet_meta_norms": [

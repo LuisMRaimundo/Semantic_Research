@@ -69,8 +69,12 @@ def main(argv=None):
 
     doc = json.loads(Path(conc).read_text(encoding="utf-8"))
     print(
-        "equiv loaded:", doc.get("ili_equivalence_loaded"),
-        "| counts:", doc.get("ili_equivalence_counts"),
+        "legacy_equivalence loaded:",
+        doc.get("legacy_equivalence_loaded", doc.get("ili_equivalence_loaded")),
+        "| counts:",
+        doc.get("legacy_equivalence_counts") or doc.get("ili_equivalence_counts"),
+        "| join_counts:",
+        doc.get("join_counts"),
     )
     npass = sum(1 for a in doc["assertions"] if a["passed"])
     print(

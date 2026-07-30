@@ -5,15 +5,6 @@
   "uf": [
     {
       "members": [
-        "composto"
-      ],
-      "source": "pulo",
-      "ili": "i114921",
-      "gloss": "(Química) uma substância formada por união química de duas ou mais elementos ou ingredientes na proporção definida por peso\n",
-      "key": "ili-30-14818238-n"
-    },
-    {
-      "members": [
         "compósito",
         "materiais compostos"
       ],
@@ -324,19 +315,18 @@
       "ili": null,
       "gloss": "que é formado de mais de um item.",
       "key": "ontopt06:3928"
-    },
-    {
-      "members": [
-        "decomposição",
-        "descomposição"
-      ],
-      "source": "pulo",
-      "ili": "i97733",
-      "gloss": "o fenômeno biológico de podridão\n",
-      "key": "ili-30-11444643-n"
     }
   ],
   "exclude": [
+    {
+      "members": [
+        "composto"
+      ],
+      "source": "pulo",
+      "ili": "i114921",
+      "gloss": "(Química) uma substância formada por união química de duas ou mais elementos ou ingredientes na proporção definida por peso\n",
+      "key": "ili-30-14818238-n"
+    },
     {
       "members": [
         "desalinhado",
@@ -806,6 +796,16 @@
     },
     {
       "members": [
+        "decomposição",
+        "descomposição"
+      ],
+      "source": "pulo",
+      "ili": "i97733",
+      "gloss": "o fenômeno biológico de podridão\n",
+      "key": "ili-30-11444643-n"
+    },
+    {
+      "members": [
         "constante",
         "consistente",
         "coerente"
@@ -954,110 +954,6 @@
     {
       "cili": "i97733",
       "reason": "aceção biológica: decay/decomposition"
-    },
-    {
-      "cili": "i13418",
-      "reason": "Não limpo e arrumado"
-    },
-    {
-      "cili": "i89134",
-      "reason": "alguém que compõe a música como uma profissão"
-    },
-    {
-      "cili": "i36652",
-      "reason": "o ato de formar ou estabelecer algo"
-    },
-    {
-      "cili": "i37400",
-      "reason": "o ato de combinar as coisas para formar um todo novo"
-    },
-    {
-      "cili": "i59707",
-      "reason": "uma coisa construída; uma entidade complexa construída de muitas partes"
-    },
-    {
-      "cili": "i72162",
-      "reason": "instruções para fazer algo"
-    },
-    {
-      "cili": "i40296",
-      "reason": "o ato de criar obras escritas"
-    },
-    {
-      "cili": "i40342",
-      "reason": "criação musical"
-    },
-    {
-      "cili": "i52229",
-      "reason": "algo que é criado por providenciar várias coisas de modo a formar um todo unificado"
-    },
-    {
-      "cili": "i62908",
-      "reason": "a maneira em que alguém ou alguma coisa é composto"
-    },
-    {
-      "cili": "i63671",
-      "reason": "a propriedade espacial resultante do acordo das partes em relação às outras e a toda"
-    },
-    {
-      "cili": "i73641",
-      "reason": "uma obra musical que tenha sido criado"
-    },
-    {
-      "cili": "i113682",
-      "reason": "uma mistura de ingredientes"
-    },
-    {
-      "cili": "i75220",
-      "reason": "desmoronando"
-    },
-    {
-      "cili": "i3216",
-      "reason": "(Às vezes seguido por &#39;com&#39;) em acordo ou consistente ou confiável"
-    },
-    {
-      "cili": "i9631",
-      "reason": "continuada ou permanente, sem alteração marcada do estado ou condição ou lugar"
-    },
-    {
-      "cili": "i3245",
-      "reason": "firme no propósito ou devoção ou afeição"
-    },
-    {
-      "cili": "i3291",
-      "reason": "ocorrendo sem interrupção; principalmente restrita ao que se repete regularmente ou freqüentemente de uma série prolongada e espaçados"
-    },
-    {
-      "cili": "i3305",
-      "reason": "ininterrupta no tempo indefinidamente longo e contínuo"
-    },
-    {
-      "cili": "i3306",
-      "reason": "`Contínua &#39;(significando aparentemente ininterrupta) é muitas vezes usado como sinônimo de&#39; contínua &#39;(ou seja, sem interrupção)"
-    },
-    {
-      "cili": "i4173",
-      "reason": "marcado pelo cuidado e esforço persistente"
-    },
-    {
-      "cili": "i10902",
-      "reason": "marcado pela firme determinação ou resolução; Não shakable"
-    },
-    {
-      "cili": "i13897",
-      "reason": "unvarying em natureza"
-    },
-    {
-      "cili": "i5259",
-      "reason": "inabalável em devoção ao amigo ou voto ou causa"
-    },
-    {
-      "cili": "i108091",
-      "reason": "um número que representa uma quantidade assumido como tendo um valor fixo num contexto matemático especificado"
-    },
-    {
-      "cili": "i67660",
-      "reason": "uma quantidade que não varia"
     }
   ],
   "validated_alt_labels": [
@@ -1072,18 +968,174 @@
   "ili_inventory": [
     {
       "cili": "i114921",
-      "role": "uf_pulo_candidate",
+      "role": "exclude_sense",
       "key": "ili-30-14818238-n",
-      "note": "excluded by concept_mapping"
+      "note": "evidence only — not vocabulary CILI"
+    },
+    {
+      "cili": "i13418",
+      "role": "exclude_sense",
+      "key": "ili-30-02424254-a",
+      "note": "evidence only — not vocabulary CILI"
+    },
+    {
+      "cili": "i89134",
+      "role": "exclude_sense",
+      "key": "ili-30-09947232-n",
+      "note": "evidence only — not vocabulary CILI"
+    },
+    {
+      "cili": "i36652",
+      "role": "exclude_sense",
+      "key": "ili-30-00237078-n",
+      "note": "evidence only — not vocabulary CILI"
+    },
+    {
+      "cili": "i37400",
+      "role": "exclude_sense",
+      "key": "ili-30-00378985-n",
+      "note": "evidence only — not vocabulary CILI"
+    },
+    {
+      "cili": "i59707",
+      "role": "exclude_sense",
+      "key": "ili-30-04341686-n",
+      "note": "evidence only — not vocabulary CILI"
+    },
+    {
+      "cili": "i72162",
+      "role": "exclude_sense",
+      "key": "ili-30-06788785-n",
+      "note": "evidence only — not vocabulary CILI"
+    },
+    {
+      "cili": "i40296",
+      "role": "exclude_sense",
+      "key": "ili-30-00929718-n",
+      "note": "evidence only — not vocabulary CILI"
+    },
+    {
+      "cili": "i40342",
+      "role": "exclude_sense",
+      "key": "ili-30-00939452-n",
+      "note": "evidence only — not vocabulary CILI"
+    },
+    {
+      "cili": "i52229",
+      "role": "exclude_sense",
+      "key": "ili-30-03081660-n",
+      "note": "evidence only — not vocabulary CILI"
+    },
+    {
+      "cili": "i62908",
+      "role": "exclude_sense",
+      "key": "ili-30-04933544-n",
+      "note": "evidence only — not vocabulary CILI"
+    },
+    {
+      "cili": "i63671",
+      "role": "exclude_sense",
+      "key": "ili-30-05076472-n",
+      "note": "evidence only — not vocabulary CILI"
+    },
+    {
+      "cili": "i73641",
+      "role": "exclude_sense",
+      "key": "ili-30-07037465-n",
+      "note": "evidence only — not vocabulary CILI"
+    },
+    {
+      "cili": "i113682",
+      "role": "exclude_sense",
+      "key": "ili-30-14588492-n",
+      "note": "evidence only — not vocabulary CILI"
+    },
+    {
+      "cili": "i75220",
+      "role": "exclude_sense",
+      "key": "ili-30-07331400-n",
+      "note": "evidence only — not vocabulary CILI"
     },
     {
       "cili": "i97733",
-      "role": "rt_candidate",
+      "role": "exclude_sense",
       "key": "ili-30-11444643-n",
-      "note": "excluded by concept_mapping"
+      "note": "evidence only — not vocabulary CILI"
+    },
+    {
+      "cili": "i3216",
+      "role": "exclude_sense",
+      "key": "ili-30-00576680-a",
+      "note": "evidence only — not vocabulary CILI"
+    },
+    {
+      "cili": "i9631",
+      "role": "exclude_sense",
+      "key": "ili-30-01754421-a",
+      "note": "evidence only — not vocabulary CILI"
+    },
+    {
+      "cili": "i3245",
+      "role": "exclude_sense",
+      "key": "ili-30-00583239-a",
+      "note": "evidence only — not vocabulary CILI"
+    },
+    {
+      "cili": "i3291",
+      "role": "exclude_sense",
+      "key": "ili-30-00592222-a",
+      "note": "evidence only — not vocabulary CILI"
+    },
+    {
+      "cili": "i3305",
+      "role": "exclude_sense",
+      "key": "ili-30-00595299-a",
+      "note": "evidence only — not vocabulary CILI"
+    },
+    {
+      "cili": "i3306",
+      "role": "exclude_sense",
+      "key": "ili-30-00595863-a",
+      "note": "evidence only — not vocabulary CILI"
+    },
+    {
+      "cili": "i4173",
+      "role": "exclude_sense",
+      "key": "ili-30-00754393-a",
+      "note": "evidence only — not vocabulary CILI"
+    },
+    {
+      "cili": "i10902",
+      "role": "exclude_sense",
+      "key": "ili-30-01990653-a",
+      "note": "evidence only — not vocabulary CILI"
+    },
+    {
+      "cili": "i13897",
+      "role": "exclude_sense",
+      "key": "ili-30-02506029-a",
+      "note": "evidence only — not vocabulary CILI"
+    },
+    {
+      "cili": "i5259",
+      "role": "exclude_sense",
+      "key": "ili-30-00959244-a",
+      "note": "evidence only — not vocabulary CILI"
+    },
+    {
+      "cili": "i108091",
+      "role": "exclude_sense",
+      "key": "ili-30-13585429-n",
+      "note": "evidence only — not vocabulary CILI"
+    },
+    {
+      "cili": "i67660",
+      "role": "exclude_sense",
+      "key": "ili-30-05858936-n",
+      "note": "evidence only — not vocabulary CILI"
     }
   ],
   "mapping_status": "no_validated_cili",
   "skos_policy": "SKOS matches only from concept_mapping adjudication; harvested CILI → inventory/excluded_cili; Onto co-members not auto altLabel; excludes → sr:excludedCandidate (not hiddenLabel); pref/alt/hidden mutually disjoint.",
-  "generated": "2026-07-30T12:17:06+00:00"
+  "generated": "2026-07-30T18:24:11+00:00"
 }

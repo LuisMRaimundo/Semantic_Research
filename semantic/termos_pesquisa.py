@@ -17,6 +17,7 @@ from pathlib import Path
 from typing import Any, Optional
 
 from .export_blocks import _collect_auto_signals, _ili_anchor
+from .mapping_policy import resolve_to_cili
 from .normalize import fold, normalize_word
 from . import settings as _settings
 from .settings import load_config, resolve_languages
@@ -236,13 +237,27 @@ def _load_concordance(ws: ClassWorkspace) -> Optional[dict[str, Any]]:
         return None
 
 
-def admitted_matrix_rows(concordance: Optional[dict[str, Any]]) -> list[dict[str, Any]]:
+def admitted_matrix_rows(
+    concordance: Optional[dict[str, Any]],
+    *,
+    excluded_cilis: Optional[set[str]] = None,
+) -> list[dict[str, Any]]:
     if not concordance:
         return []
-    return [
-        c for c in (concordance.get("concepts") or [])
-        if (c.get("proposta_final") or "").strip() in ADMIT_STATUSES
-    ]
+    from .mapping_policy import cili_ids_from_matrix_row
+
+    excl = excluded_cilis or set()
+    out: list[dict[str, Any]] = []
+    for c in concordance.get("concepts") or []:
+        if (c.get("proposta_final") or "").strip() not in ADMIT_STATUSES:
+            continue
+        if excl and (cili_ids_from_matrix_row(c) & excl):
+            continue
+        notes = " ".join(c.get("notes") or [])
+        if "excluded_cili:" in notes:
+            continue
+        out.append(c)
+    return out
 
 
 def _garantia_label(veredicto: str) -> str:
@@ -577,7 +592,7 @@ def build_termos_pesquisa(ws: ClassWorkspace) -> dict[str, Any]:
     anchor_pos = _anchor_pos(dec, ancora)
 
     concordance = _load_concordance(ws)
-    admits = admitted_matrix_rows(concordance)
+    admits = admitted_matrix_rows(concordance, excluded_cilis=excluded_cili_ids)
     n_admitidos_matriz = len(admits)
 
     # ---- F — label_lang vocabulary from matrix -----------------------------
@@ -598,6 +613,8 @@ def build_termos_pesquisa(ws: ClassWorkspace) -> dict[str, Any]:
         ili = c.get("ili") or []
         if isinstance(ili, str):
             ili = [ili] if ili else []
+        # Drop CILI ids that are domain-excluded even if still present on the row
+        ili = [x for x in ili if resolve_to_cili(x) not in excluded_cili_ids]
         sense_pos, sense_key = _sense_pos_for_term(term, dec)
         other = _soft_belongs_to_other_class(term, ws.class_id, registry)
         structural_other = _structural_other_class(term, dec, ws.class_id, registry)
@@ -617,6 +634,32 @@ def build_termos_pesquisa(ws: ClassWorkspace) -> dict[str, Any]:
             "cross_class": cross_class,
             "nota": "",
         })
+
+    # Adjudicated alt labels (concept_mapping) enter F even with empty matrix
+    have_f = {fold(r["forma"]) for r in vocab_f}
+    for alt in cm.get("validated_alt_labels") or []:
+        forma = str(alt or "").strip()
+        if not forma or fold(forma) in have_f:
+            continue
+        if fold(forma) in registry_designations or _is_registry_designation(forma):
+            continue
+        have_f.add(fold(forma))
+        vocab_f.append({
+            "forma": forma,
+            "wildcard": _wildcard(forma),
+            "lingua": label_lang,
+            "estatuto": "UF",
+            "ili": None,
+            "fontes": ["concept_mapping"],
+            "garantia": "adjudicada",
+            "ancora_ili": "ausente",
+            "em_espera": False,
+            "sense_key": None,
+            "sense_pos": None,
+            "cross_class": None,
+            "nota": "validated_alt_labels",
+        })
+    vocab_f.sort(key=lambda x: fold(x.get("forma") or ""))
 
     # ---- Search-lang forms from OEWN equivalents of adjudicated senses -----
     wn_by_ili = _en_lemmas_from_wordnet_result(ws)
@@ -986,6 +1029,9 @@ def build_termos_pesquisa(ws: ClassWorkspace) -> dict[str, Any]:
         "label_lang": label_lang,
         "termos_manuais_presentes": manuals_present,
         "n_admitidos_matriz": n_admitidos_matriz,
+        "n_validated_alt_labels": sum(
+            1 for r in vocab_f if r.get("nota") == "validated_alt_labels"
+        ),
         "A_polo_alvo": polo_alvo,
         "B_polo_contrastante": polo_contraste,
         "C_conjunto_controlo": controlo_meta,
@@ -1006,9 +1052,11 @@ def assert_termos_coherence(doc: dict[str, Any], html_text: str) -> None:
     """R7 — valid for any class."""
     n_f = len(doc.get("F_vocabulario_pt") or [])
     n_m = int(doc.get("n_admitidos_matriz") or 0)
-    if n_f != n_m:
+    n_val = int(doc.get("n_validated_alt_labels") or 0)
+    # F = matrix admits + adjudicated validated_alt_labels (may exceed matrix)
+    if n_f != n_m + n_val:
         raise AssertionError(
-            f"TERMOS F ({n_f}) ≠ linhas admitidas na matriz ({n_m})"
+            f"TERMOS F ({n_f}) ≠ matriz ({n_m}) + validated_alt_labels ({n_val})"
         )
     designations = set(doc.get("_registry_designations") or [])
     seeds = set(doc.get("_focus_seed_norms") or [])
@@ -1432,7 +1480,7 @@ def render_termos_html(doc: dict[str, Any]) -> str:
     syntax = f"{_esc(near)} NEAR/4 &lt;termo&gt;"
 
     return f"""<!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-PT">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">

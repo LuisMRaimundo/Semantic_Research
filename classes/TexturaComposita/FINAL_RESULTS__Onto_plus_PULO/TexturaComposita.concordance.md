@@ -2,12 +2,12 @@
 
 - **Política de divergência:** conservative
 - **Fontes:** PULO, OWN-PT, WordNet  (colunas: ONTO, PULO, OWN-PT, WordNet)
-- **Tabela legada OEWN↔PULO** (`legacy_equivalence`): não carregada (junção runtime usa CILI oficial quando ambas as fontes partilham ``i…``; isto não significa que os identificadores CILI estejam indisponíveis).
+- **Tabela legada OEWN↔PULO** (`legacy_equivalence`): C:\Users\lmr20\Desktop\Semantic_Research\classes\TexturaComposita\out\ili_equivalence.json  (2 pares; 9 sem âncora partilhada)
 - **Junções interfontes:** nenhuma — 3 item(ns) da matriz provenientes exclusivamente de PULO (identificadores CILI normalizados na coluna ILI não implicam junção OEWN↔PULO).
 - **WordNet/OEWN:** disponível/consultada, sem formas portuguesas admitidas na matriz (`source_contributed_results=false`)
-- **Gerado:** 2026-07-30T13:01:07
+- **Gerado:** 2026-07-30T19:24:11
 - **Descartados (só pendentes):** 0 (termos ainda por adjudicar; contados, não listados)
-- **Asserções:** 15/15 PASS ✅
+- **Asserções:** 13/13 PASS ✅
 
 > Esta etapa **relata**; não admite nem reclassifica. `proposta_final` é uma sugestão para adjudicação humana, nunca uma auto-admissão.
 
@@ -15,9 +15,9 @@
 
 | termo | ili | ONTO | PULO | OWN-PT | WordNet | join | veredicto | proposta | notas |
 |---|---|---|---|---|---|---|---|---|---|
-| composto | i114921 | — | UF | — | — | single | fonte única | UF |  |
-| decomposição | i97733 | — | RT | — | — | single | fonte única | RT |  |
-| descomposição | i97733 | — | RT | — | — | single | fonte única | RT |  |
+| composto | i114921 | — | UF | — | — | single | fonte única | — | excluded_cili:i114921 |
+| decomposição | i97733 | — | RT | — | — | single | fonte única | — | excluded_cili:i97733 |
+| descomposição | i97733 | — | RT | — | — | single | fonte única | — | excluded_cili:i97733 |
 
 ## Resumo por veredicto
 
@@ -58,7 +58,7 @@ composto, decomposição, descomposição
 | T3 | Nenhum ILI é fabricado; junção OEWN↔PULO só via CILI; pares sem âncora CILI ficam sem junção ILI (não fabricados). | PASS ✅ | bogus→(None, False); unmapped_flag=False |
 | T4 | Cada divergência de estatuto é registada por-fonte (sem colapso em contagem). | PASS ✅ | 0 divergência(s) |
 | T5 | Nenhum termo admitido pelos motores é descartado da matriz (PULO; OWN-PT/WordNet corroboram; Onto = descoberta) | PASS ✅ | 3 admitidos / 3 em matriz |
-| T6 | Fonte WordNet ausente ⇒ coluna toda «—». | PASS ✅ | source_available=true; source_queried=true; source_contributed_results=false (sem formas PT admitidas na matriz) |
+| T6 | WordNet/OEWN: source_available / source_queried / source_contributed_results distintos. | PASS ✅ | source_available=true; source_queried=true; source_contributed_results=false (sem formas PT admitidas na matriz) |
 | T7 | proposta_final nunca é um estatuto não suportado; conservador ⇒ null em divergência. | PASS ✅ | OK |
 | T8 | Entradas de classes diferentes são recusadas com erro claro. | PASS ✅ | ClassMismatch levantada para classes mistas |
 | T10 | «Convergência plena» / «convergência (sentido)» exigem junção por ILI (nunca só weak(term)). | PASS ✅ | OK |
@@ -66,5 +66,3 @@ composto, decomposição, descomposição
 | T11 | Nenhum conceito só-pendente figura como linha da matriz (são contados em «descartados_pendentes»). | PASS ✅ | OK |
 | T9 | concordance.json faz round-trip (contagens de term/ili estáveis). | PASS ✅ | 3 conceitos |
 | T13 | Nenhuma célula nem proposta_final com valor «contraste» na matriz (migração completa: ver teste unitário de decisions). | PASS ✅ | OK |
-| T12 | Nenhum item do bloco de evidência figura no bloco de vocabulário, e vice-versa. | PASS ✅ | blocos A/B disjuntos |
-| R1 | Relatório residual: acepções UF/RT sem correspondência em motor (taxonomia T14 removida). | PASS ✅ | n=0 |

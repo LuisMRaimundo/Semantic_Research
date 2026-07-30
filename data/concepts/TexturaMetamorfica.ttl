@@ -6,7 +6,7 @@
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaMetamorfica
-# generated 2026-07-30T12:17:06+00:00
+# generated 2026-07-30T18:24:11+00:00
 # policy: SKOS matches only from concept_mapping adjudication; harvested CILI → inventory/excluded_cili; Onto co-members not auto altLabel; excludes → sr:excludedCandidate (not hiddenLabel); pref/alt/hidden mutually disjoint.
 
 sr:TexturaMetamorfica a owl:Class, skos:Concept ;
@@ -36,5 +36,4 @@ sr:TexturaMetamorfica a owl:Class, skos:Concept ;
     sr:excludedCandidate [ rdf:value "alterar"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
     sr:excludedCandidate [ rdf:value "mudar"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
     sr:excludedCandidate [ rdf:value "modificar"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
-    sr:excludedCili [ sr:cili <http://ili.globalwordnet.org/ili/i22389> ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação" ] ;
     rdfs:comment "UF senses=6; RT=0; exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .

@@ -64,9 +64,12 @@ def test_no_auto_exact_match_from_pulo_uf(tmp_path: Path, monkeypatch):
     assert graph["cili_exact"] == []
     assert graph["cili_related"] == []
     assert graph["mapping_status"] == "no_validated_cili"
-    assert any(e["cili"] == "i11970" for e in graph["excluded_cili"])
-    inv = {row["cili"] for row in graph["ili_inventory"]}
-    assert "i114921" in inv and "i97733" in inv
+    # Exclude-sense CILIs stay in inventory, not auto-inflated excluded_cili RDF
+    assert not any(e.get("cili") == "i11970" for e in graph["excluded_cili"])
+    inv = {(row["cili"], row.get("role")) for row in graph["ili_inventory"]}
+    assert ("i114921", "uf_pulo_candidate") in inv
+    assert ("i97733", "rt_candidate") in inv
+    assert ("i11970", "exclude_sense") in inv
 
     ttl = render_skos_owl(graph)
     assert "skos:exactMatch <" not in ttl

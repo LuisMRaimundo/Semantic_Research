@@ -28,7 +28,7 @@ Uso:
 Saídas (mesmos nomes do motor ONTO), para a classe X:
     X.report.md       relatório humano + quadro de ASSERTs (PASS/FAIL)
     X.result.json     admitidos[]/sinalizacao[]/attribute[]/family[]/descartados[]
-    X.skos.ttl        SKOS-XL/OWL (construído e validado com rdflib)
+    X.skos.ttl        SKOS/OWL (construído e validado com rdflib)
     X.whitelist.json  lista branca por ILI, no esquema que o phase0_skos.py lê
 
 Requer: biblioteca padrão + rdflib (para construir/validar o Turtle).
@@ -627,25 +627,23 @@ class PuloPhase0Engine:
 
 
 # ---------------------------------------------------------------------------
-# SKOS-XL / OWL serialization (built + validated with rdflib)
+# SKOS / OWL serialization (built + validated with rdflib) — plain SKOS, not SKOS-XL
 # ---------------------------------------------------------------------------
 def build_graph(result: dict, disjoint_classes: list[str]):
-    from rdflib import Graph, Literal, BNode, Namespace, URIRef
+    from rdflib import Graph, Literal, Namespace
     from rdflib.namespace import RDF, SKOS, OWL
 
-    SKOSXL = Namespace("http://www.w3.org/2008/05/skos-xl#")
     TEX = Namespace("http://example.org/textura#")
     g = Graph()
     g.bind("skos", SKOS)
-    g.bind("skosxl", SKOSXL)
     g.bind("owl", OWL)
     g.bind("tex", TEX)
 
     cls = TEX[result["class_id"]]
     g.add((cls, RDF.type, SKOS.Concept))
     g.add((cls, RDF.type, OWL.Class))
-    g.add((cls, SKOS.prefLabel, Literal(result["pref_label"], lang="pt")))
-    g.add((cls, SKOS.scopeNote, Literal(f"Eixo definidor: {result['axis']}", lang="pt")))
+    g.add((cls, SKOS.prefLabel, Literal(result["pref_label"], lang="pt-PT")))
+    g.add((cls, SKOS.scopeNote, Literal(f"Eixo definidor: {result['axis']}", lang="pt-PT")))
 
     prov = result["provenance"]
 
@@ -653,11 +651,8 @@ def build_graph(result: dict, disjoint_classes: list[str]):
         return [p for p in prov if p["estatuto"] == status]
 
     for p in by("UF"):
-        node = BNode()
-        g.add((cls, SKOSXL.altLabel, node))
-        g.add((node, SKOSXL.literalForm, Literal(p["termo"], lang="pt")))
+        g.add((cls, SKOS.altLabel, Literal(p["termo"], lang="pt-PT")))
     for p in by("RT"):
-        # tex:termoRelacionado ⊑ skosxl:labelRelation (not skos:related)
         g.add((cls, TEX["termoRelacionado"], TEX[normalize_word(p["termo"])]))
     for p in by("BT"):
         g.add((cls, SKOS.broader, TEX[normalize_word(p["termo"])]))
@@ -756,16 +751,16 @@ def render_markdown(result: dict) -> str:
         ap(", ".join(sorted(v.get("display", k) for k, v in r["stage5"]["pending"].items())))
         ap("")
 
-    ap("## §6 — Mapeamento SKOS-XL / OWL (só Bloco A)")
+    ap("## §6 — Mapeamento SKOS / OWL (só Bloco A)")
     sk = r["skos"]
     ap(f"- `skos:prefLabel` → **{r['pref_label']}**")
-    ap(f"- `skosxl:altLabel` (UF) → {', '.join(sk.get('UF', [])) or '—'}")
+    ap(f"- `skos:altLabel` (UF) → {', '.join(sk.get('UF', [])) or '—'}")
     ap(f"- `:termoRelacionado` (RT) → {', '.join(sk.get('RT', [])) or '—'}")
     ap(f"- `skos:broader` (BT) → {', '.join(sk.get('BT', [])) or '—'}")
     ap(f"- `skos:narrower` (NT) → {', '.join(sk.get('NT', [])) or '—'}")
     ap("")
     ap("_Evidência (`atributo`, oposição, vizinha, sinalização) NÃO é serializada "
-       "como relação SKOS/SKOS-XL._")
+       "como relação SKOS._")
     ap("")
     return "\n".join(L)
 

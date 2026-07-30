@@ -21,7 +21,7 @@ Pipeline (§3 do protocolo)
     Etapa 3  Corroboração/expansão via CONTO.PT, com porta de 3 condições
     Etapa 4  Exclusão automática (assinaturas de ruído)
     Etapa 5  Adjudicação humana UF/RT/contraste (decisões vindas da spec)
-    §6       Mapeamento SKOS-XL / OWL
+    §6       Mapeamento SKOS / OWL
     §7       Registo de proveniência por termo
     Consistência final + relatório com ASSERTs
 
@@ -31,7 +31,7 @@ Uso (linha de comando):
 Produz, para a classe X:
     <outdir>/X.report.md      relatório humano com a tabela de ASSERTs
     <outdir>/X.result.json    resultado estruturado completo
-    <outdir>/X.skos.ttl       serialização SKOS-XL / OWL
+    <outdir>/X.skos.ttl       serialização SKOS / OWL
     <outdir>/X.whitelist.json lista branca de offsets ILI (reutilizável)
 
 Apenas biblioteca padrão (sqlite3, json, re).
@@ -516,18 +516,16 @@ def render_turtle(result: dict) -> str:
 
     lines = [
         "@prefix skos: <http://www.w3.org/2004/02/skos/core#> .",
-        "@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .",
         "@prefix owl: <http://www.w3.org/2002/07/owl#> .",
         "@prefix : <http://example.org/textura#> .",
         "",
         f":{cid} a skos:Concept, owl:Class ;",
-        f'    skos:prefLabel "{esc(pref)}"@pt ;',
-        f'    skos:scopeNote "Eixo definidor: {esc(axis)}"@pt ;',
+        f'    skos:prefLabel "{esc(pref)}"@pt-PT ;',
+        f'    skos:scopeNote "Eixo definidor: {esc(axis)}"@pt-PT ;',
     ]
     for r in uf:
-        lines.append(f'    skosxl:altLabel [ skosxl:literalForm "{esc(r["termo"])}"@pt ] ;')
+        lines.append(f'    skos:altLabel "{esc(r["termo"])}"@pt-PT ;')
     for r in rt:
-        # tex:termoRelacionado ⊑ skosxl:labelRelation (not skos:related)
         lines.append(f'    :termoRelacionado :{normalize_word(r["termo"])} ;')
     if lines[-1].endswith(";"):
         lines[-1] = lines[-1][:-1].rstrip() + " ."
@@ -646,13 +644,13 @@ def render_markdown(result: dict) -> str:
         ap(", ".join(sorted(v["display"] for v in pend.values())))
         ap("")
 
-    ap("## §6 — Mapeamento SKOS-XL / OWL (só Bloco A)")
+    ap("## §6 — Mapeamento SKOS / OWL (só Bloco A)")
     ap(f"- `skos:prefLabel` → **{r['pref_label']}**")
-    ap(f"- `skosxl:altLabel` (UF) → {', '.join(r['skos']['uf']) or '—'}")
+    ap(f"- `skos:altLabel` (UF) → {', '.join(r['skos']['uf']) or '—'}")
     ap(f"- `:termoRelacionado` (RT) → {', '.join(r['skos']['rt']) or '—'}")
     ap("")
     ap("_Evidência (oposição, atributo, vizinha, sinalização) NÃO é serializada "
-       "como relação SKOS/SKOS-XL._")
+       "como relação SKOS._")
     ap("")
     return "\n".join(L)
 

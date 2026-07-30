@@ -11,9 +11,9 @@
       "members": [
         "composto"
       ],
-      "decision": "UF",
-      "note": "",
-      "destino": "vocabulario"
+      "decision": "exclude",
+      "note": "aceção química: chemical compound",
+      "destino": "evidencia"
     },
     {
       "source": "pulo",
@@ -1268,9 +1268,9 @@
         "decomposição",
         "descomposição"
       ],
-      "decision": "RT",
-      "note": "",
-      "destino": "vocabulario"
+      "decision": "exclude",
+      "note": "aceção biológica: decay/decomposition",
+      "destino": "evidencia"
     },
     {
       "source": "pulo",

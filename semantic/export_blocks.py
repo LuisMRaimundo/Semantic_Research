@@ -154,6 +154,9 @@ def build_export_blocks(ws: ClassWorkspace) -> dict[str, Any]:
             ),
         }
         if decision == "UF":
+            from .mapping_policy import sense_excluded, excluded_cili_ids as _excl_ids
+            if sense_excluded(s, _excl_ids(meta)):
+                continue
             src = (s.get("source") or "").lower()
             members = list(s.get("members") or [])
             # Onto groups: only focus-stem members become altLabel candidates

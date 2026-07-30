@@ -28,8 +28,14 @@ from .settings import DATA_DIR, ROOT
 from .workspace import ClassWorkspace
 
 _SAFE = re.compile(r"[^A-Za-z0-9_\-]+")
-# GWA / WN-LMF RDF namespace (not the older globalwordnet.org/ili/ form)
-CILI_URI_BASE = "http://ili.globalwordnet.org/ili/"
+
+
+def _cili_uri_base() -> str:
+    try:
+        from .engines import load_identifiers
+        return load_identifiers().CILI_URI_BASE
+    except Exception:  # noqa: BLE001
+        return "http://ili.globalwordnet.org/ili/"
 
 _KNOWN_EN = frozenset({
     "dissimilar", "decay", "decomposition", "compound", "composite",
@@ -73,7 +79,7 @@ def _ili_uri(ili: str) -> Optional[str]:
     if "ili.globalwordnet.org/ili/" in s or "globalwordnet.org/ili/" in s:
         s = s.rstrip("/").rsplit("/", 1)[-1]
     if s.startswith("i") and s[1:].isdigit():
-        return f"{CILI_URI_BASE}{s}"
+        return f"{_cili_uri_base()}{s}"
     return None
 
 
@@ -198,10 +204,15 @@ def build_class_concept_graph(ws: ClassWorkspace) -> dict[str, Any]:
                     ili_inventory[-1]["note"] = "excluded by concept_mapping"
         elif decision == "exclude":
             excl.append(row)
-            if cid and cid not in excluded_ids:
-                reason = (sense.get("note") or sense.get("gloss") or "").strip()[:200]
-                excluded_cili.append({"cili": cid, "reason": reason or "exclude sense"})
-                excluded_ids.add(cid)
+            if cid:
+                ili_inventory.append({
+                    "cili": cid,
+                    "role": "exclude_sense",
+                    "key": sense.get("key"),
+                    "note": "evidence only — not vocabulary CILI",
+                })
+                # Adjudicated domain exclusions stay in concept_mapping;
+                # do not auto-inflate RDF excludedCili from every PULO exclude.
 
     for m in dec.get("manual_terms") or []:
         term = pretty_word(m.get("term") or m.get("lemma") or "")
@@ -273,7 +284,14 @@ def _vocab_alt_labels(graph: dict[str, Any]) -> list[str]:
     focus = {normalize_word(x) for x in (graph.get("focus_stems") or []) if x}
     out: list[str] = []
     seen: set[str] = set()
+    excluded = {
+        e.get("cili") for e in (graph.get("excluded_cili") or [])
+        if isinstance(e, dict) and e.get("cili")
+    }
     for row in graph.get("uf") or []:
+        ili = row.get("ili")
+        if ili and ili in excluded:
+            continue
         src = (row.get("source") or "").lower()
         members = list(row.get("members") or [])
         if src == "onto":
@@ -342,7 +360,11 @@ def render_skos_owl(
 
     # Do not expand RT members into blank skos:related concepts (Onto noise).
 
+    # Only PULO exclude lemmas enter RDF evidence (Onto group dumps stay in JSON)
     for row in graph.get("exclude") or []:
+        src_raw = str(row.get("source") or "").lower()
+        if src_raw == "onto":
+            continue
         src = _ttl_escape(str(row.get("source") or ""))
         reason = _ttl_escape((row.get("gloss") or "")[:180])
         for m in row.get("members") or []:

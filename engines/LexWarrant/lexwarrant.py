@@ -1387,28 +1387,55 @@ def _discover_map(input_specs, outdir: Path) -> Optional[Path]:
 
 
 def _report_equiv_load(equiv: Optional["EquivMap"], map_path: Optional[Path]) -> None:
-    """Make the equivalence-table load VISIBLE at run time (never silent).
+    """Report optional *legacy* OEWN↔PULO table load (not CILI availability).
 
-    Prints the ili_equivalence counts so it is provable the table was ingested,
-    and a LOUD warning when there is nothing to join by (absent or 0 mapped) — so
-    weak(term) fallback is never mistaken for the normal, healthy path."""
+    Runtime joins use official CILI ``i…`` when both sources share an id.
+    A missing legacy ``ili_equivalence.json`` is informational, not an error.
+    """
     if equiv is not None and equiv.n_map > 0:
-        print(f"ili_equivalence: {equiv.n_map} mapped, {equiv.n_review} review, "
-              f"{equiv.n_unmatched} unmatched  (tabela: {equiv.source_path})")
+        print(
+            f"legacy_equivalence: {equiv.n_map} mapped, {equiv.n_review} review, "
+            f"{equiv.n_unmatched} unmatched  (tabela: {equiv.source_path})"
+        )
         return
-    print("=" * 72)
-    print("AVISO: TABELA DE EQUIVALENCIA NAO CARREGADA (0 pares ILI utilizaveis).")
     if map_path is None:
-        print("   Nenhum ili_equivalence.json encontrado junto as fontes/saida.")
+        print(
+            "legacy_equivalence: não carregada (opcional). "
+            "Junção runtime = CILI oficial quando ambas as fontes partilham i…"
+        )
     elif equiv is None:
-        print(f"   Ficheiro nao encontrado: {map_path}")
+        print(
+            f"legacy_equivalence: ficheiro ausente ({map_path}). "
+            "Junção runtime = CILI oficial."
+        )
     else:
-        print(f"   {map_path}: {equiv.n_map} mapped, {equiv.n_review} review, "
-              f"{equiv.n_unmatched} unmatched.")
-        print("   Ha 0 pares de ALTA confianca — as juncoes OEWN<->PULO por ILI NAO "
-              "estao disponiveis.")
-    print("   As fontes so poderao juntar-se por TERMO (weak) — fiabilidade menor.")
-    print("=" * 72)
+        print(
+            f"legacy_equivalence: 0 pares de alta confiança em {map_path} "
+            f"(review={equiv.n_review}, unmatched={equiv.n_unmatched}). "
+            "Junção runtime = CILI oficial."
+        )
+
+
+def _apply_excluded_cili(
+    concepts: list,
+    excluded_cilis: Optional[set[str]],
+) -> None:
+    """Nullify admits whose resolved CILI is domain-excluded (concept_mapping)."""
+    if not excluded_cilis:
+        return
+    for c in concepts:
+        hit = sorted(
+            i for i in (getattr(c, "ilis", None) or [])
+            if str(i) in excluded_cilis
+        )
+        if not hit:
+            continue
+        c.proposta_final = None
+        note = f"excluded_cili:{','.join(hit)}"
+        notes = list(getattr(c, "notes", None) or [])
+        if note not in notes:
+            notes.append(note)
+        c.notes = notes
 
 
 def run_report(input_specs: list[tuple[Optional[str], Path]], outdir: Path,
@@ -1416,7 +1443,8 @@ def run_report(input_specs: list[tuple[Optional[str], Path]], outdir: Path,
                map_path: Optional[Path] = None,
                equiv: Optional["EquivMap"] = None,
                weak_term_mode: str = "gloss_gated",
-               gloss_min: float = 0.12) -> dict:
+               gloss_min: float = 0.12,
+               excluded_cilis: Optional[set[str]] = None) -> dict:
     sources = [load_source(path, label) for label, path in input_specs]
     if len(sources) < 2:
         raise ValueError("São necessárias pelo menos 2 fontes (result.json).")
@@ -1436,6 +1464,7 @@ def run_report(input_specs: list[tuple[Optional[str], Path]], outdir: Path,
         sources, policy, equiv,
         weak_term_mode=weak_term_mode, gloss_min=gloss_min,
     )
+    _apply_excluded_cili(concepts, excluded_cilis)
     auto_contrast = summarize_auto_contrast(sources)
 
     outdir.mkdir(parents=True, exist_ok=True)

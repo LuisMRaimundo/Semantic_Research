@@ -394,12 +394,30 @@ def run_class(class_id: str, policy: Optional[str] = None,
                 summary.setdefault("errors", []).append(f"ILI coverage: {exc}")
             weak_mode = str(cfg.get("weak_term_mode") or "gloss_gated")
             gloss_min = float(cfg.get("gloss_min") or 0.12)
+            # Keep decisions.json aligned with concept_mapping.excluded_cili
+            try:
+                from .mapping_policy import (
+                    excluded_cili_ids,
+                    sync_decisions_with_excluded_cili,
+                )
+                from . import decisions as decmod
+                meta = ws.load_meta()
+                dec = decmod.load_decisions(ws.decisions_json)
+                dec2, flips = sync_decisions_with_excluded_cili(dec, meta)
+                if flips:
+                    decmod.save_decisions(ws.decisions_json, dec2)
+                    summary["excluded_cili_sync"] = flips
+                excl_ids = excluded_cili_ids(meta, dec2)
+            except Exception as exc:  # noqa: BLE001
+                summary.setdefault("errors", []).append(f"mapping sync: {exc}")
+                excl_ids = set()
             buf = io.StringIO()
             with contextlib.redirect_stdout(buf), contextlib.redirect_stderr(buf):
                 doc = lexwarrant.run_report(
                     inputs, ws.out, policy=policy,
                     map_path=map_path, equiv=equiv,
                     weak_term_mode=weak_mode, gloss_min=gloss_min,
+                    excluded_cilis=excl_ids or None,
                 )
             summary["weak_term_mode"] = weak_mode
             summary["gloss_min"] = gloss_min

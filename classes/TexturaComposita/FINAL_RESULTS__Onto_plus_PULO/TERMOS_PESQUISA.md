@@ -4,7 +4,7 @@
 **Eixo / acepção a separar:** heterogeneidade / composição de materiais ou partes distintas
 **Língua de pesquisa:** `en` · **Língua de rótulos:** `pt-PT`
 **Sintaxe:** `composto* NEAR/4 <termo>`
-**Gerado:** 2026-07-30T13:17:06+01:00
+**Gerado:** 2026-07-30T19:24:12+01:00
 **Termos manuais:** ficheiro `termos_manuais.yaml` ausente nesta classe.
 
 ## A — Pólo alvo (`en`)
@@ -27,6 +27,7 @@ _(nenhuma forma em en para descritores adjacentes)_
 
 | chave legada (PWN 3.0) | pwn30 | CILI | lema | motivo |
 |---|---|---|---|---|
+| `ili-30-14818238-n` | `pwn30-14818238-n` | `i114921` | composto | aceção química: chemical compound |
 | `ili-30-02424254-a` | `pwn30-02424254-a` | `i13418` | desalinhado | Não limpo e arrumado |
 | `ili-30-09947232-n` | `pwn30-09947232-n` | `i89134` | compositor | alguém que compõe a música como uma profissão |
 | `ili-30-00237078-n` | `pwn30-00237078-n` | `i36652` | composição | o ato de formar ou estabelecer algo |
@@ -41,6 +42,7 @@ _(nenhuma forma em en para descritores adjacentes)_
 | `ili-30-07037465-n` | `pwn30-07037465-n` | `i73641` | peça | uma obra musical que tenha sido criado |
 | `ili-30-14588492-n` | `pwn30-14588492-n` | `i113682` | composição | uma mistura de ingredientes |
 | `ili-30-07331400-n` | `pwn30-07331400-n` | `i75220` | apartamento | desmoronando |
+| `ili-30-11444643-n` | `pwn30-11444643-n` | `i97733` | decomposição | aceção biológica: decay/decomposition |
 | `ili-30-00576680-a` | `pwn30-00576680-a` | `i3216` | constante | (Às vezes seguido por &#39;com&#39;) em acordo ou consistente ou confiável |
 | `ili-30-01754421-a` | `pwn30-01754421-a` | `i9631` | constante | continuada ou permanente, sem alteração marcada do estado ou condição ou lugar |
 | `ili-30-00583239-a` | `pwn30-00583239-a` | `i3245` | constante | firme no propósito ou devoção ou afeição |
@@ -58,6 +60,4 @@ _(nenhuma forma em en para descritores adjacentes)_
 
 | forma | wildcard | estatuto | garantia | âncora ILI | fontes |
 |---|---|---|---|---|---|
-| composto | composto* | UF | fonte_unica | presente | pulo |
-| decomposição | decomposição* | RT | fonte_unica | presente | pulo |
-| descomposição | descomposição* | RT | fonte_unica | presente | pulo |
+| compósito | compósito* | UF | adjudicada | ausente | concept_mapping |

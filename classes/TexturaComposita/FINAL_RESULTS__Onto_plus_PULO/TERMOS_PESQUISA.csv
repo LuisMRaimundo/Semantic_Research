@@ -1,4 +1,5 @@
 secao,forma,wildcard,lingua,estatuto,garantia,ancora_ili,ili,fontes,relacao,nota
+E,composto,,,exclude,,,i114921,pulo,,aceção química: chemical compound
 E,desalinhado,,,exclude,,,i13418,pulo,,Não limpo e arrumado
 E,compositor,,,exclude,,,i89134,pulo,,alguém que compõe a música como uma profissão
 E,composição,,,exclude,,,i36652,pulo,,o ato de formar ou estabelecer algo
@@ -13,6 +14,7 @@ E,composição,,,exclude,,,i63671,pulo,,a propriedade espacial resultante do aco
 E,peça,,,exclude,,,i73641,pulo,,uma obra musical que tenha sido criado
 E,composição,,,exclude,,,i113682,pulo,,uma mistura de ingredientes
 E,apartamento,,,exclude,,,i75220,pulo,,desmoronando
+E,decomposição,,,exclude,,,i97733,pulo,,aceção biológica: decay/decomposition
 E,constante,,,exclude,,,i3216,pulo,,(Às vezes seguido por &#39;com&#39;) em acordo ou consistente ou confiável
 E,constante,,,exclude,,,i9631,pulo,,"continuada ou permanente, sem alteração marcada do estado ou condição ou lugar"
 E,constante,,,exclude,,,i3245,pulo,,firme no propósito ou devoção ou afeição
@@ -25,6 +27,4 @@ E,constante,,,exclude,,,i13897,pulo,,unvarying em natureza
 E,fiel,,,exclude,,,i5259,pulo,,inabalável em devoção ao amigo ou voto ou causa
 E,constante,,,exclude,,,i108091,pulo,,um número que representa uma quantidade assumido como tendo um valor fixo num contexto matemático especificado
 E,constante,,,exclude,,,i67660,pulo,,uma quantidade que não varia
-F,composto,composto*,pt-PT,UF,fonte_unica,presente,i114921,pulo,,
-F,decomposição,decomposição*,pt-PT,RT,fonte_unica,presente,i97733,pulo,,
-F,descomposição,descomposição*,pt-PT,RT,fonte_unica,presente,i97733,pulo,,
+F,compósito,compósito*,pt-PT,UF,adjudicada,ausente,,concept_mapping,,
