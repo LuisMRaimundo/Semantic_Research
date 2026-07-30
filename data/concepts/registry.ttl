@@ -15,14 +15,14 @@ sr:Scheme a skos:ConceptScheme ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — DemoClass
-# generated 2026-07-30T18:24:11+00:00
-# policy: SKOS matches only from concept_mapping adjudication; harvested CILI → inventory/excluded_cili; Onto co-members not auto altLabel; excludes → sr:excludedCandidate (not hiddenLabel); pref/alt/hidden mutually disjoint.
+# generated 2026-07-30T18:36:48+00:00
+# policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:DemoClass a owl:Class, skos:Concept ;
     skos:prefLabel "demo"@pt-PT ;
     skos:scopeNote "axis"@pt-PT ;
     dct:identifier "DemoClass" ;
-    skos:editorialNote "SKOS matches only from concept_mapping adjudication; harvested CILI → inventory/excluded_cili; Onto co-members not auto altLabel; excludes → sr:excludedCandidate (not hiddenLabel); pref/alt/hidden mutually disjoint."@en ;
+    skos:editorialNote "SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint."@en ;
     sr:mappingStatus "no_validated_cili" ;
     skos:altLabel "alpha"@pt-PT ;
     skos:altLabel "beta"@pt-PT ;
@@ -36,17 +36,16 @@ sr:DemoClass a owl:Class, skos:Concept ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaComposita
-# generated 2026-07-30T18:24:11+00:00
-# policy: SKOS matches only from concept_mapping adjudication; harvested CILI → inventory/excluded_cili; Onto co-members not auto altLabel; excludes → sr:excludedCandidate (not hiddenLabel); pref/alt/hidden mutually disjoint.
+# generated 2026-07-30T18:36:48+00:00
+# policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaComposita a owl:Class, skos:Concept ;
     skos:prefLabel "textura compósita"@pt-PT ;
     skos:scopeNote "heterogeneidade / composição de materiais ou partes distintas"@pt-PT ;
     dct:identifier "TexturaComposita" ;
-    skos:editorialNote "SKOS matches only from concept_mapping adjudication; harvested CILI → inventory/excluded_cili; Onto co-members not auto altLabel; excludes → sr:excludedCandidate (not hiddenLabel); pref/alt/hidden mutually disjoint."@en ;
+    skos:editorialNote "SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint."@en ;
     sr:mappingStatus "no_validated_cili" ;
     skos:altLabel "compósito"@pt-PT ;
-    sr:excludedCandidate [ rdf:value "composto"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "(Química) uma substância formada por união química de duas ou mais elementos ou ingredientes na proporção definida por peso " ] ;
     sr:excludedCandidate [ rdf:value "desalinhado"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "Não limpo e arrumado " ] ;
     sr:excludedCandidate [ rdf:value "desarranjado"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "Não limpo e arrumado " ] ;
     sr:excludedCandidate [ rdf:value "desarrumado"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "Não limpo e arrumado " ] ;
@@ -154,14 +153,14 @@ sr:TexturaComposita a owl:Class, skos:Concept ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaDensa
-# generated 2026-07-30T18:24:11+00:00
-# policy: SKOS matches only from concept_mapping adjudication; harvested CILI → inventory/excluded_cili; Onto co-members not auto altLabel; excludes → sr:excludedCandidate (not hiddenLabel); pref/alt/hidden mutually disjoint.
+# generated 2026-07-30T18:36:48+00:00
+# policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaDensa a owl:Class, skos:Concept ;
     skos:prefLabel "TexturaDensa"@pt-PT ;
     skos:scopeNote "densidade"@pt-PT ;
     dct:identifier "TexturaDensa" ;
-    skos:editorialNote "SKOS matches only from concept_mapping adjudication; harvested CILI → inventory/excluded_cili; Onto co-members not auto altLabel; excludes → sr:excludedCandidate (not hiddenLabel); pref/alt/hidden mutually disjoint."@en ;
+    skos:editorialNote "SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint."@en ;
     sr:mappingStatus "no_validated_cili" ;
     skos:altLabel "denso"@pt-PT ;
     skos:altLabel "densidade"@pt-PT ;
@@ -175,14 +174,14 @@ sr:TexturaDensa a owl:Class, skos:Concept ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaIntermitente
-# generated 2026-07-30T18:24:11+00:00
-# policy: SKOS matches only from concept_mapping adjudication; harvested CILI → inventory/excluded_cili; Onto co-members not auto altLabel; excludes → sr:excludedCandidate (not hiddenLabel); pref/alt/hidden mutually disjoint.
+# generated 2026-07-30T18:36:48+00:00
+# policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaIntermitente a owl:Class, skos:Concept ;
     skos:prefLabel "TexturaIntermitente"@pt-PT ;
     skos:scopeNote "que ocorre espaçadamente, a intervalos, regulares ou irregulares"@pt-PT ;
     dct:identifier "TexturaIntermitente" ;
-    skos:editorialNote "SKOS matches only from concept_mapping adjudication; harvested CILI → inventory/excluded_cili; Onto co-members not auto altLabel; excludes → sr:excludedCandidate (not hiddenLabel); pref/alt/hidden mutually disjoint."@en ;
+    skos:editorialNote "SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint."@en ;
     sr:mappingStatus "no_validated_cili" ;
     rdfs:comment "UF senses=8; RT=15; exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .
 
@@ -194,14 +193,14 @@ sr:TexturaIntermitente a owl:Class, skos:Concept ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaMetamorfica
-# generated 2026-07-30T18:24:11+00:00
-# policy: SKOS matches only from concept_mapping adjudication; harvested CILI → inventory/excluded_cili; Onto co-members not auto altLabel; excludes → sr:excludedCandidate (not hiddenLabel); pref/alt/hidden mutually disjoint.
+# generated 2026-07-30T18:36:48+00:00
+# policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaMetamorfica a owl:Class, skos:Concept ;
     skos:prefLabel "TexturaMetamórfica"@pt-PT ;
     skos:scopeNote "muda de forma, relativamente a um ou vários parâmetros"@pt-PT ;
     dct:identifier "TexturaMetamorfica" ;
-    skos:editorialNote "SKOS matches only from concept_mapping adjudication; harvested CILI → inventory/excluded_cili; Onto co-members not auto altLabel; excludes → sr:excludedCandidate (not hiddenLabel); pref/alt/hidden mutually disjoint."@en ;
+    skos:editorialNote "SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint."@en ;
     sr:mappingStatus "no_validated_cili" ;
     skos:altLabel "metamorfose"@pt-PT ;
     skos:altLabel "modificação"@pt-PT ;
@@ -234,13 +233,13 @@ sr:TexturaMetamorfica a owl:Class, skos:Concept ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaPolitpica
-# generated 2026-07-30T18:24:11+00:00
-# policy: SKOS matches only from concept_mapping adjudication; harvested CILI → inventory/excluded_cili; Onto co-members not auto altLabel; excludes → sr:excludedCandidate (not hiddenLabel); pref/alt/hidden mutually disjoint.
+# generated 2026-07-30T18:36:48+00:00
+# policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaPolitpica a owl:Class, skos:Concept ;
     skos:prefLabel "TexturaPolitpica"@pt-PT ;
     dct:identifier "TexturaPolitpica" ;
-    skos:editorialNote "SKOS matches only from concept_mapping adjudication; harvested CILI → inventory/excluded_cili; Onto co-members not auto altLabel; excludes → sr:excludedCandidate (not hiddenLabel); pref/alt/hidden mutually disjoint."@en ;
+    skos:editorialNote "SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint."@en ;
     sr:mappingStatus "no_validated_cili" ;
     rdfs:comment "UF senses=0; RT=0; exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .
 
@@ -252,14 +251,14 @@ sr:TexturaPolitpica a owl:Class, skos:Concept ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaUniforme
-# generated 2026-07-30T18:24:12+00:00
-# policy: SKOS matches only from concept_mapping adjudication; harvested CILI → inventory/excluded_cili; Onto co-members not auto altLabel; excludes → sr:excludedCandidate (not hiddenLabel); pref/alt/hidden mutually disjoint.
+# generated 2026-07-30T18:36:48+00:00
+# policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaUniforme a owl:Class, skos:Concept ;
     skos:prefLabel "uniforme"@pt-PT ;
     skos:scopeNote "invariância face a um parâmetro"@pt-PT ;
     dct:identifier "TexturaUniforme" ;
-    skos:editorialNote "SKOS matches only from concept_mapping adjudication; harvested CILI → inventory/excluded_cili; Onto co-members not auto altLabel; excludes → sr:excludedCandidate (not hiddenLabel); pref/alt/hidden mutually disjoint."@en ;
+    skos:editorialNote "SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint."@en ;
     sr:mappingStatus "no_validated_cili" ;
     skos:altLabel "constante"@pt-PT ;
     skos:altLabel "invariável"@pt-PT ;

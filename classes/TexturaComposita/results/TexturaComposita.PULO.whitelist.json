@@ -1,12 +1,12 @@
 {
   "class_id": "TexturaComposita",
-  "pref_label": "TexturaCompósita",
+  "pref_label": "textura compósita",
   "axis": "heterogeneidade / composição de materiais ou partes distintas",
   "stage1_whitelist": [
     {
       "ili_offset": "ili-30-14818238-n",
       "glosa": "(Química) uma substância formada por união química de duas ou mais elementos ou ingredientes na proporção definida por peso\n",
-      "decision": "UF",
+      "decision": "exclude",
       "members": [
         "composto"
       ]
@@ -164,7 +164,7 @@
     {
       "ili_offset": "ili-30-11444643-n",
       "glosa": "o fenômeno biológico de podridão\n",
-      "decision": "RT",
+      "decision": "exclude",
       "members": [
         "decomposição",
         "descomposição"
@@ -296,16 +296,10 @@
       ]
     }
   ],
-  "dictionary_attestations": [
-    "composto",
-    "decomposição",
-    "descomposição"
-  ],
-  "admitted_offsets": [
-    "ili-30-14818238-n",
-    "ili-30-11444643-n"
-  ],
+  "dictionary_attestations": [],
+  "admitted_offsets": [],
   "excluded_offsets": [
+    "ili-30-14818238-n",
     "ili-30-02424254-a",
     "ili-30-09947232-n",
     "ili-30-00237078-n",
@@ -320,6 +314,7 @@
     "ili-30-07037465-n",
     "ili-30-14588492-n",
     "ili-30-07331400-n",
+    "ili-30-11444643-n",
     "ili-30-00576680-a",
     "ili-30-01754421-a",
     "ili-30-00583239-a",

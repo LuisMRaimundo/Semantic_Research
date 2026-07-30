@@ -114,6 +114,49 @@ def _corpus_near_stem(meta: dict[str, Any], pref: str) -> str:
     return _wildcard(pref)
 
 
+def _focus_morph_roots(meta: dict[str, Any], pref: str) -> set[str]:
+    """Short normalised roots used to keep domain frontiers on-topic."""
+    roots: set[str] = set()
+    for t in list(meta.get("focus_stems") or []) + [pref]:
+        n = normalize_word(str(t or ""))
+        if len(n) < 4:
+            continue
+        roots.add(n)
+        for k in (5, 6, 7, 8):
+            if len(n) >= k:
+                roots.add(n[:k])
+    return {r for r in roots if len(r) >= 5}
+
+
+def _text_related_to_focus(text: str, roots: set[str]) -> bool:
+    n = normalize_word(text or "")
+    if not n or not roots:
+        return False
+    return any(r in n for r in roots)
+
+
+def _search_syntax_line(doc: dict[str, Any]) -> str:
+    """NEAR syntax only when a search-lang target form is adjudicated."""
+    search_lang = doc.get("search_lang") or "en"
+    polo = doc.get("A_polo_alvo") or []
+    near = (doc.get("near_stem") or "").strip()
+    if not polo:
+        return (
+            f"não disponível — pólo-alvo `{search_lang}` por adjudicar"
+        )
+    # Prefer wildcard of first adjudicated search-lang form
+    wc = (polo[0].get("wildcard") or "").strip()
+    if not wc and polo[0].get("forma"):
+        wc = _wildcard(str(polo[0]["forma"]))
+    if not wc:
+        wc = near
+    if not wc:
+        return (
+            f"não disponível — pólo-alvo `{search_lang}` por adjudicar"
+        )
+    return f"`{wc} NEAR/4 <termo>`"
+
+
 # ---------------------------------------------------------------------------
 # Class registry (R3)
 # ---------------------------------------------------------------------------
@@ -886,6 +929,9 @@ def build_termos_pesquisa(ws: ClassWorkspace) -> dict[str, Any]:
     polo_alvo = _merge_manual(polo_alvo, manual_by_sec["A"])
     control_forms = _merge_manual(control_forms, manual_by_sec["C"])
     descritores = _merge_manual(descritores, manual_by_sec["D"])
+    # Do not advertise a PT stem as EN NEAR syntax when A is empty
+    if not polo_alvo:
+        near_stem = ""
     # B after C: control lemmas must not also appear as contrast
     control_norms = {fold(r["forma"]) for r in control_forms}
     polo_contraste = [
@@ -895,8 +941,9 @@ def build_termos_pesquisa(ws: ClassWorkspace) -> dict[str, Any]:
         r for r in manual_by_sec["B"] if fold(r["forma"]) not in control_norms
     ])
 
-    # ---- E — excluded acepções (not members) -------------------------------
+    # ---- E — excluded acepções (focus-related only; drop other-class residue)
     fronteiras = []
+    focus_roots = _focus_morph_roots(meta, pref)
     try:
         from .engines import load_identifiers
         _ids = load_identifiers()
@@ -913,7 +960,6 @@ def build_termos_pesquisa(ws: ClassWorkspace) -> dict[str, Any]:
         if not ili and not key:
             continue
         members = [m for m in (s.get("members") or []) if (m or "").strip()]
-        lema = members[0] if members else key
         raw = ili or key
         cili_id = None
         pwn30 = None
@@ -925,6 +971,15 @@ def build_termos_pesquisa(ws: ClassWorkspace) -> dict[str, Any]:
             legacy_key = ident.legacy_omw_ili
         if str(raw).startswith("ili-30-"):
             legacy_key = legacy_key or raw
+        # Keep adjudicated excluded_cili always; else require morphological proximity
+        on_topic = bool(cili_id and cili_id in excluded_cili_ids)
+        if not on_topic:
+            blob = " ".join([key] + members)
+            on_topic = _text_related_to_focus(blob, focus_roots)
+        if not on_topic:
+            continue
+        related = [m for m in members if _text_related_to_focus(m, focus_roots)]
+        lema = related[0] if related else (members[0] if members else key)
         fronteiras.append({
             "chave": key,
             "chave_legada": legacy_key or (raw if str(raw).startswith("ili-30-") else None),
@@ -1140,7 +1195,7 @@ def render_termos_md(doc: dict[str, Any]) -> str:
         if leg_a:
             ap(f"**Chave legada (offset PWN 3.0):** {', '.join(leg_a)}")
     ap(f"**Língua de pesquisa:** `{search_lang}` · **Língua de rótulos:** `{label_lang}`")
-    ap(f"**Sintaxe:** `{doc.get('near_stem') or '…*'} NEAR/4 <termo>`")
+    ap(f"**Sintaxe de pesquisa:** {_search_syntax_line(doc)}")
     ap(f"**Gerado:** {doc.get('generated') or '—'}")
     if not doc.get("termos_manuais_presentes"):
         ap("**Termos manuais:** ficheiro `termos_manuais.yaml` ausente nesta classe.")
@@ -1477,7 +1532,9 @@ def render_termos_html(doc: dict[str, Any]) -> str:
         )
 
     ancora_txt = ", ".join(ancora) if ancora else "—"
-    syntax = f"{_esc(near)} NEAR/4 &lt;termo&gt;"
+    syntax_plain = _search_syntax_line(doc)
+    # Strip markdown backticks for HTML display
+    syntax = _esc(syntax_plain.replace("`", ""))
 
     return f"""<!DOCTYPE html>
 <html lang="pt-PT">

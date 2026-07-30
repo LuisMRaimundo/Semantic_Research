@@ -162,8 +162,8 @@ Files you care about
 ────────────────────
 classes/<Class>/FINAL_RESULTS__Onto_plus_PULO/
     OPEN_ME__FINAL_RESULTS.html     ← green splash (open this)
-    FINAL__Onto_plus_PULO__….md     ← concordance (human)
-    FINAL__Onto_plus_PULO__….json   ← concordance (machine)
+    FINAL__Onto_plus_PULO__….concordance.md   ← concordance (human)
+    FINAL__Onto_plus_PULO__….concordance.json ← concordance (machine)
 classes/<Class>/decisions.json      ← curated choices
 classes/<Class>/out/                ← scratch + PULO signals
 
@@ -333,6 +333,10 @@ class Workbench(tk.Tk):
         ttk.Button(
             runrow, text="Exportar FINAL…",
             command=self._export_final_folder,
+        ).pack(side="left", padx=(0, 6))
+        ttk.Button(
+            runrow, text="Exportar classe…",
+            command=self._export_class_folder,
         ).pack(side="left", padx=(0, 6))
         ttk.Button(
             runrow, text="concordância",
@@ -1013,7 +1017,7 @@ class Workbench(tk.Tk):
             webbrowser.open(path.as_uri())
 
     def _export_final_folder(self):
-        """Copy all FINAL_RESULTS deliverables into a user-chosen directory."""
+        """Copy FINAL_RESULTS only (deliverable) — separate from full-class export."""
         ws = self._ws()
         if not ws:
             return
@@ -1043,10 +1047,55 @@ class Workbench(tk.Tk):
             messagebox.showerror(APP, f"Exportação falhou:\n{exc}")
             return
         self._log(f"FINAL_RESULTS exportado → {out}\n")
-        messagebox.showinfo(APP, f"Exportados todos os outputs para:\n{out}")
+        messagebox.showinfo(
+            APP,
+            f"Export FINAL (só deliverable) →\n{out}\n\n"
+            "Para meta + PULO/Onto/WordNet + Onto→ILI use «Exportar classe…».",
+        )
         try:
             import os
             os.startfile(out)  # type: ignore[attr-defined]
+        except Exception:
+            pass
+
+    def _export_class_folder(self):
+        """Copy the whole class workspace (meta, searches, results, out, FINAL)."""
+        ws = self._ws()
+        if not ws:
+            return
+        ws.ensure()
+        if not ws.class_json.exists():
+            messagebox.showinfo(APP, "Abra ou crie uma classe primeiro.")
+            return
+        dest = filedialog.askdirectory(
+            title=f"Exportar CLASSE COMPLETA de {ws.class_id} para…",
+            mustexist=True,
+        )
+        if not dest:
+            return
+        try:
+            from semantic.export_all import export_class_bundle
+
+            info = export_class_bundle(ws, Path(dest), also_zip=True)
+        except Exception as exc:  # noqa: BLE001
+            messagebox.showerror(APP, f"Exportação da classe falhou:\n{exc}")
+            return
+        folder = info["folder"]
+        zip_path = info.get("zip") or ""
+        self._log(
+            f"Classe completa exportada → {folder}\n"
+            + (f"ZIP → {zip_path}\n" if zip_path else "")
+        )
+        messagebox.showinfo(
+            APP,
+            f"Export CLASSE (tudo) →\n{folder}\n\n"
+            f"Inclui: class.json, decisions, exports/ (PULO·Onto·WN), "
+            f"results/, out/ (Onto→ILI, CILI), _specs/, FINAL_RESULTS.\n"
+            + (f"\nZIP: {zip_path}" if zip_path else ""),
+        )
+        try:
+            import os
+            os.startfile(folder)  # type: ignore[attr-defined]
         except Exception:
             pass
 

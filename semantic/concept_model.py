@@ -183,6 +183,21 @@ def build_class_concept_graph(ws: ClassWorkspace) -> dict[str, Any]:
             "gloss": sense.get("gloss") or "",
             "key": sense.get("key"),
         }
+        if decision == "exclude":
+            # Exclusion targets the sense/record, not every lemma token in the group
+            row["exclusion_scope"] = "record_or_sense_not_lemma"
+            validated_skip = {
+                normalize_word(x)
+                for x in (cm.get("validated_alt_labels") or [])
+                if x
+            }
+            validated_skip |= focus
+            row["members"] = [
+                m for m in members if normalize_word(m) not in validated_skip
+            ]
+            row["members_omitted_focal"] = [
+                m for m in members if normalize_word(m) in validated_skip
+            ]
         if decision == "UF":
             uf.append(row)
             if cid:
@@ -247,10 +262,22 @@ def build_class_concept_graph(ws: ClassWorkspace) -> dict[str, Any]:
         pretty_word(x) for x in (cm.get("validated_alt_labels") or []) if x
     ]
 
+    discovery = {
+        "uf_candidates": uf,
+        "rt_candidates": rt,
+        "exclude_records": excl,
+        "note": (
+            "Discovery / raw adjudication evidence — NOT validated vocabulary. "
+            "Validated labels live only in validated_alt_labels; "
+            "SKOS matches only in cili_exact/close/related."
+        ),
+    }
     return {
         "class_id": ws.class_id,
         "pref_label": pref,
         "axis": axis,
+        "discovery_evidence": discovery,
+        # Deprecated aliases (same lists) — do not read as admitted vocabulary
         "uf": uf,
         "rt": rt,
         "exclude": excl,
@@ -265,9 +292,8 @@ def build_class_concept_graph(ws: ClassWorkspace) -> dict[str, Any]:
         "mapping_status": mapping_status,
         "skos_policy": (
             "SKOS matches only from concept_mapping adjudication; "
-            "harvested CILI → inventory/excluded_cili; "
-            "Onto co-members not auto altLabel; "
-            "excludes → sr:excludedCandidate (not hiddenLabel); "
+            "discovery_evidence.uf/rt_candidates are not validated altLabels; "
+            "excludes → sr:excludedCandidate (sense scope, not every lemma); "
             "pref/alt/hidden mutually disjoint."
         ),
         "generated": datetime.now(timezone.utc).isoformat(timespec="seconds"),

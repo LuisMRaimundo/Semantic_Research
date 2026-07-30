@@ -516,7 +516,45 @@ def run_class(class_id: str, policy: Optional[str] = None,
             # Back-compat aliases
             summary["ili_equivalence_loaded"] = summary["legacy_equivalence_loaded"]
             summary["ili_equivalence_counts"] = summary["legacy_equivalence_counts"]
-            summary["source_status"] = doc.get("source_status")
+            summary["source_status"] = doc.get("source_status") or {}
+            # ONTO is discovery-only: report separately from concordance admits
+            onto_result = ws.results / f"{ws.class_id}.ONTO.result.json"
+            onto_queried = onto_result.exists()
+            onto_has_evidence = False
+            if onto_queried:
+                try:
+                    od = json.loads(onto_result.read_text(encoding="utf-8"))
+                    onto_has_evidence = bool(
+                        od.get("sinalizacao") or od.get("provenance")
+                        or od.get("stage5")
+                    )
+                except (OSError, json.JSONDecodeError):
+                    onto_has_evidence = True
+            summary["source_status"]["ONTO"] = {
+                "role": "discovery",
+                "source_available": onto_queried,
+                "source_queried": onto_queried,
+                "contributed_discovery_evidence": onto_has_evidence,
+                "contributed_concordance_results": False,
+                "source_contributed_results": False,
+            }
+            # Persist enriched status onto concordance JSON copies
+            try:
+                doc["source_status"] = summary["source_status"]
+                for jp in (
+                    Path(published["json"]),
+                    ws.out / f"{ws.class_id}.concordance.json",
+                    ws.final_results / f"{ws.class_id}.concordance.json",
+                ):
+                    if jp.exists():
+                        cur = json.loads(jp.read_text(encoding="utf-8"))
+                        cur["source_status"] = summary["source_status"]
+                        jp.write_text(
+                            json.dumps(cur, ensure_ascii=False, indent=2) + "\n",
+                            encoding="utf-8",
+                        )
+            except Exception:  # noqa: BLE001
+                pass
             note_bits = [
                 f"FINAL RESULTS → {published['folder']}",
                 "Deliverable: TERMOS.html + TERMOS_PESQUISA.md/.csv",

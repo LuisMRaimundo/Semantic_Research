@@ -414,7 +414,7 @@ class ClassWorkspace:
             shutil.copy2(md_path, dest_md)
         if Path(json_path).exists():
             shutil.copy2(json_path, dest_json)
-        # also keep short aliases for convenience
+        # Short aliases (always *.concordance.*) — never bare FINAL__….md
         alias_md = self.final_results / f"{self.class_id}.concordance.md"
         alias_json = self.final_results / f"{self.class_id}.concordance.json"
         try:
@@ -422,6 +422,18 @@ class ClassWorkspace:
             shutil.copy2(dest_json, alias_json)
         except OSError:
             pass
+        # Drop stale pre-adjudication copies without ".concordance" in the name
+        for stale in (
+            self.final_results / f"{stem}.md",
+            self.final_results / f"{stem}.json",
+            self.final_results / f"{self.class_id}.md",
+            self.final_results / f"{self.class_id}.json",
+        ):
+            try:
+                if stale.is_file():
+                    stale.unlink()
+            except OSError:
+                pass
         _write_final_folder_marker(self.final_results, self.class_id)
         return {
             "md": str(dest_md),

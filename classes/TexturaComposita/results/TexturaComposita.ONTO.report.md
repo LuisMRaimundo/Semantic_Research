@@ -1,9 +1,9 @@
-# Fase 0 — Relatório de selecção lexical: **TexturaCompósita** (`TexturaComposita`)
+# Fase 0 — Relatório de selecção lexical: **textura compósita** (`TexturaComposita`)
 
 - **Eixo definidor:** heterogeneidade / composição de materiais ou partes distintas
 - **Base de corroboração:** `C:\Users\lmr20\Desktop\Semantic_Research\engines\ONTO\ontopt.sqlite`  ·  recursos difusos: contopt
 - **Porta (Etapa 3):** peso ≥ 0.5, coocorrência ≥ 2
-- **Gerado:** 2026-07-30T13:01:05
+- **Gerado:** 2026-07-30T19:35:35
 - **Estado global:** ❌ EXISTEM ASSERÇÕES FALHADAS
 
 ## Quadro de asserções (protocolo)
@@ -300,9 +300,9 @@ Nenhum candidato descartado por assinatura de ruído.
 | conciliado | RT | heterogeneidade / composição de materiais ou partes distintas | clip21, contopt, fuzzythes, ontopt06, polaridades, thes5rec | fuzzythes:27002 | derivado do sentido (PASSO 3) | sense_decision |
 | concordado | RT | heterogeneidade / composição de materiais ou partes distintas | clip21, contopt, fuzzythes, ontopt06, polaridades, thes5rec | fuzzythes:27002 | derivado do sentido (PASSO 3) | sense_decision |
 
-## §6 — Mapeamento SKOS-XL / OWL (só Bloco A)
-- `skos:prefLabel` → **TexturaCompósita**
-- `skosxl:altLabel` (UF) → composto, compósito, constituído, dessemelhante, dissimilar, elaborado, entremeado, feito, formado, heterogêneo, materiais compostos, mesclado, misto, misturado, raiado
+## §6 — Mapeamento SKOS / OWL (só Bloco A)
+- `skos:prefLabel` → **textura compósita**
+- `skos:altLabel` (UF) → composto, compósito, constituído, dessemelhante, dissimilar, elaborado, entremeado, feito, formado, heterogêneo, materiais compostos, mesclado, misto, misturado, raiado
 - `:termoRelacionado` (RT) → abastecido, abigarrado, absimilhante, alagartado, altamado, alterado, alternado, alucinado, amalgamado, aprimorado, bem-avindo, bom, buliçoso, caprichoso, colorido, combinado, complexo, conciliado, concordado, confundido, confuso, contraditório, copioso, cromatizado, delirante, desconforme, desigual, desirmanado, desirmão, desvairado, desvariado, diferente, discordante, discrepante, dissemelhante, dissímil, distinto, divergente, diversicolor, diversificado, diverso, diversos, doido, díspar, ecléctico, embaralhado, entressachado, envolto, esmaltado, furta-cor, hesitante, híbrido, impermanente, incerto, inconstante, indiscriminado, indistinguível, indistinto, instável, intercalado, intermeado, intervalado, irregular, junto, leviano, marchetado, matizado, mudadiço, mudado, mudável, multifário, multímodo, multíplice, mutável, místico, múltiplo, nuançado, numeroso, numerosos, pecilocromático, permisto, permixto, perplexo, pingado, pintado, precário, promíscuo, que oferece várias aspectos, que oferece vários aspectos, recamado, salpicado, salteado, sarapintado, sorteado, sortido, tingido, variado, variados, variegado, varioso, variável, vasto, veiro, versicolor, versátil, voltário, voltívolo, volátil, volúvel, vário, vários
 
-_Evidência (oposição, atributo, vizinha, sinalização) NÃO é serializada como relação SKOS/SKOS-XL._
+_Evidência (oposição, atributo, vizinha, sinalização) NÃO é serializada como relação SKOS._

@@ -1,29 +1,14 @@
 {
   "class_id": "TexturaComposita",
-  "pref_label": "TexturaCompósita",
+  "pref_label": "textura compósita",
   "axis": "heterogeneidade / composição de materiais ou partes distintas",
-  "generated": "2026-07-30T13:01:04",
+  "generated": "2026-07-30T19:35:34",
   "source": "PULO / WordNet.PT export",
   "stage1": {
-    "admitted": [
-      {
-        "ili_offset": "ili-30-14818238-n",
-        "glosa": "(Química) uma substância formada por união química de duas ou mais elementos ou ingredientes na proporção definida por peso\n",
-        "decision": "UF",
-        "export_gloss": ""
-      },
-      {
-        "ili_offset": "ili-30-11444643-n",
-        "glosa": "o fenômeno biológico de podridão\n",
-        "decision": "RT",
-        "export_gloss": "o fenômeno biológico de podridão\n"
-      }
-    ],
-    "admitted_offsets": [
-      "ili-30-14818238-n",
-      "ili-30-11444643-n"
-    ],
+    "admitted": [],
+    "admitted_offsets": [],
     "excluded_offsets": [
+      "ili-30-14818238-n",
       "ili-30-02424254-a",
       "ili-30-09947232-n",
       "ili-30-00237078-n",
@@ -38,6 +23,7 @@
       "ili-30-07037465-n",
       "ili-30-14588492-n",
       "ili-30-07331400-n",
+      "ili-30-11444643-n",
       "ili-30-00576680-a",
       "ili-30-01754421-a",
       "ili-30-00583239-a",
@@ -54,207 +40,34 @@
     "invalid": [],
     "flagged_no_ili": []
   },
-  "stage2_seeds": {
-    "composto": {
-      "display": "composto",
-      "offsets": [
-        "ili-30-14818238-n"
-      ]
-    },
-    "decomposicao": {
-      "display": "decomposição",
-      "offsets": [
-        "ili-30-11444643-n"
-      ]
-    },
-    "descomposicao": {
-      "display": "descomposição",
-      "offsets": [
-        "ili-30-11444643-n"
-      ]
-    }
-  },
+  "stage2_seeds": {},
   "stage3": {
     "contrast": {},
     "rt_uf": {},
-    "family": {
-      "apodrecer": {
-        "display": "apodrecer",
-        "via": "derivationally related form",
-        "source_ili": "ili-30-11444643-n",
-        "target_gloss": "Demolir\n"
-      },
-      "deteriorar": {
-        "display": "deteriorar",
-        "via": "derivationally related form",
-        "source_ili": "ili-30-11444643-n",
-        "target_gloss": "Demolir\n"
-      },
-      "putrefazer": {
-        "display": "putrefazer",
-        "via": "derivationally related form",
-        "source_ili": "ili-30-11444643-n",
-        "target_gloss": "Demolir\n"
-      },
-      "decompor": {
-        "display": "decompor",
-        "via": "derivationally related form",
-        "source_ili": "ili-30-11444643-n",
-        "target_gloss": "Demolir\n"
-      }
-    },
+    "family": {},
     "BT": {},
     "NT": {},
     "attribute": {}
   },
-  "dropped_no_lemma": 29,
+  "dropped_no_lemma": 0,
   "sinalizacao": {},
   "stage4_excluded": {},
   "stage5": {
-    "admitted": {
-      "composto": {
-        "display": "composto",
-        "offsets": [
-          "ili-30-14818238-n"
-        ],
-        "attested": true,
-        "origin": "seed (Etapa 1/2)",
-        "status": "UF",
-        "test": "derivado do sentido (PASSO 3)",
-        "guarantee": [
-          "sense_decision"
-        ],
-        "definition": "",
-        "structural": "",
-        "from_sense": "ili-30-14818238-n"
-      },
-      "decomposicao": {
-        "display": "decomposição",
-        "offsets": [
-          "ili-30-11444643-n"
-        ],
-        "attested": true,
-        "origin": "seed (Etapa 1/2)",
-        "status": "RT",
-        "test": "derivado do sentido (PASSO 3)",
-        "guarantee": [
-          "sense_decision"
-        ],
-        "definition": "",
-        "structural": "",
-        "from_sense": "ili-30-11444643-n"
-      },
-      "descomposicao": {
-        "display": "descomposição",
-        "offsets": [
-          "ili-30-11444643-n"
-        ],
-        "attested": true,
-        "origin": "seed (Etapa 1/2)",
-        "status": "RT",
-        "test": "derivado do sentido (PASSO 3)",
-        "guarantee": [
-          "sense_decision"
-        ],
-        "definition": "",
-        "structural": "",
-        "from_sense": "ili-30-11444643-n"
-      }
-    },
+    "admitted": {},
     "pending": {}
   },
-  "family": {
-    "apodrecer": {
-      "display": "apodrecer",
-      "via": "derivationally related form",
-      "source_ili": "ili-30-11444643-n",
-      "target_gloss": "Demolir\n"
-    },
-    "deteriorar": {
-      "display": "deteriorar",
-      "via": "derivationally related form",
-      "source_ili": "ili-30-11444643-n",
-      "target_gloss": "Demolir\n"
-    },
-    "putrefazer": {
-      "display": "putrefazer",
-      "via": "derivationally related form",
-      "source_ili": "ili-30-11444643-n",
-      "target_gloss": "Demolir\n"
-    },
-    "decompor": {
-      "display": "decompor",
-      "via": "derivationally related form",
-      "source_ili": "ili-30-11444643-n",
-      "target_gloss": "Demolir\n"
-    }
-  },
+  "family": {},
   "skos": {
-    "UF": [
-      "composto"
-    ],
-    "RT": [
-      "decomposição",
-      "descomposição"
-    ]
+    "UF": []
   },
-  "provenance": [
-    {
-      "termo": "composto",
-      "estatuto": "UF",
-      "eixo": "heterogeneidade / composição de materiais ou partes distintas",
-      "via": "seed (Etapa 1/2)",
-      "offsets_ili": [
-        "ili-30-14818238-n"
-      ],
-      "teste_decisivo": "derivado do sentido (PASSO 3)",
-      "garantia": [
-        "sense_decision"
-      ],
-      "definicao": "",
-      "estrutural": "",
-      "gloss": "que é formado de mais de um item."
-    },
-    {
-      "termo": "decomposição",
-      "estatuto": "RT",
-      "eixo": "heterogeneidade / composição de materiais ou partes distintas",
-      "via": "seed (Etapa 1/2)",
-      "offsets_ili": [
-        "ili-30-11444643-n"
-      ],
-      "teste_decisivo": "derivado do sentido (PASSO 3)",
-      "garantia": [
-        "sense_decision"
-      ],
-      "definicao": "",
-      "estrutural": "",
-      "gloss": "desmoronando\n"
-    },
-    {
-      "termo": "descomposição",
-      "estatuto": "RT",
-      "eixo": "heterogeneidade / composição de materiais ou partes distintas",
-      "via": "seed (Etapa 1/2)",
-      "offsets_ili": [
-        "ili-30-11444643-n"
-      ],
-      "teste_decisivo": "derivado do sentido (PASSO 3)",
-      "garantia": [
-        "sense_decision"
-      ],
-      "definicao": "",
-      "estrutural": "",
-      "gloss": "o fenômeno biológico de podridão\n"
-    }
-  ],
+  "provenance": [],
   "attribute_terms": [],
   "assertions": [
     {
       "stage": "Etapa 1",
       "text": "Todo o synset admitido tem ili_offset e glosa mapeada ao eixo.",
-      "passed": false,
-      "evidence": "glosa não-ancorada/incompleta: ['ili-30-14818238-n']"
+      "passed": true,
+      "evidence": "OK"
     },
     {
       "stage": "Etapa 1",
@@ -290,7 +103,7 @@
       "stage": "Etapa 3",
       "text": "Alvos de relação são tipados pelo mapeamento; «(no lemma)» nunca admitido.",
       "passed": true,
-      "evidence": "OK (29 alvos «(no lemma)» descartados)"
+      "evidence": "OK (0 alvos «(no lemma)» descartados)"
     },
     {
       "stage": "Etapa 4",
@@ -326,11 +139,11 @@
       "stage": "Serialização",
       "passed": true,
       "text": "X.skos.ttl analisa com rdflib e tem a contagem de triplos esperada.",
-      "evidence": "triplos esperados=8, analisados=8"
+      "evidence": "triplos esperados=4, analisados=4"
     }
   ],
-  "all_passed": false,
-  "skos_triples": 8,
+  "all_passed": true,
+  "skos_triples": 4,
   "_ttl_ok": true,
-  "_signals_sidelined": 3
+  "_signals_sidelined": 0
 }

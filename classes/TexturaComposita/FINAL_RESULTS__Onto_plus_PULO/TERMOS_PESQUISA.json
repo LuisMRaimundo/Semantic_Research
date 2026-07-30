@@ -5,8 +5,8 @@
   "acepcao_a_separar": "heterogeneidade / composição de materiais ou partes distintas",
   "ancora_ili": [],
   "anchor_pos": null,
-  "near_stem": "composto*",
-  "generated": "2026-07-30T19:24:12+01:00",
+  "near_stem": "",
+  "generated": "2026-07-30T19:37:15+01:00",
   "search_lang": "en",
   "label_lang": "pt-PT",
   "termos_manuais_presentes": false,
@@ -34,7 +34,7 @@
       "pwn30": "pwn30-02424254-a",
       "cili": "i13418",
       "ili": "i13418",
-      "lema": "desalinhado",
+      "lema": "descomposto",
       "motivo": "Não limpo e arrumado",
       "fonte": "pulo"
     },
@@ -64,7 +64,7 @@
       "pwn30": "pwn30-00378985-n",
       "cili": "i37400",
       "ili": "i37400",
-      "lema": "combinação",
+      "lema": "composição",
       "motivo": "o ato de combinar as coisas para formar um todo novo",
       "fonte": "pulo"
     },
@@ -124,7 +124,7 @@
       "pwn30": "pwn30-04933544-n",
       "cili": "i62908",
       "ili": "i62908",
-      "lema": "constituição",
+      "lema": "composição",
       "motivo": "a maneira em que alguém ou alguma coisa é composto",
       "fonte": "pulo"
     },
@@ -144,7 +144,7 @@
       "pwn30": "pwn30-07037465-n",
       "cili": "i73641",
       "ili": "i73641",
-      "lema": "peça",
+      "lema": "composição",
       "motivo": "uma obra musical que tenha sido criado",
       "fonte": "pulo"
     },
@@ -164,7 +164,7 @@
       "pwn30": "pwn30-07331400-n",
       "cili": "i75220",
       "ili": "i75220",
-      "lema": "apartamento",
+      "lema": "decomposição",
       "motivo": "desmoronando",
       "fonte": "pulo"
     },
@@ -176,126 +176,6 @@
       "ili": "i97733",
       "lema": "decomposição",
       "motivo": "aceção biológica: decay/decomposition",
-      "fonte": "pulo"
-    },
-    {
-      "chave": "ili-30-00576680-a",
-      "chave_legada": "ili-30-00576680-a",
-      "pwn30": "pwn30-00576680-a",
-      "cili": "i3216",
-      "ili": "i3216",
-      "lema": "constante",
-      "motivo": "(Às vezes seguido por &#39;com&#39;) em acordo ou consistente ou confiável",
-      "fonte": "pulo"
-    },
-    {
-      "chave": "ili-30-01754421-a",
-      "chave_legada": "ili-30-01754421-a",
-      "pwn30": "pwn30-01754421-a",
-      "cili": "i9631",
-      "ili": "i9631",
-      "lema": "constante",
-      "motivo": "continuada ou permanente, sem alteração marcada do estado ou condição ou lugar",
-      "fonte": "pulo"
-    },
-    {
-      "chave": "ili-30-00583239-a",
-      "chave_legada": "ili-30-00583239-a",
-      "pwn30": "pwn30-00583239-a",
-      "cili": "i3245",
-      "ili": "i3245",
-      "lema": "constante",
-      "motivo": "firme no propósito ou devoção ou afeição",
-      "fonte": "pulo"
-    },
-    {
-      "chave": "ili-30-00592222-a",
-      "chave_legada": "ili-30-00592222-a",
-      "pwn30": "pwn30-00592222-a",
-      "cili": "i3291",
-      "ili": "i3291",
-      "lema": "contínuo",
-      "motivo": "ocorrendo sem interrupção; principalmente restrita ao que se repete regularmente ou freqüentemente de uma série prolongada e espaçados",
-      "fonte": "pulo"
-    },
-    {
-      "chave": "ili-30-00595299-a",
-      "chave_legada": "ili-30-00595299-a",
-      "pwn30": "pwn30-00595299-a",
-      "cili": "i3305",
-      "ili": "i3305",
-      "lema": "assíduo",
-      "motivo": "ininterrupta no tempo indefinidamente longo e contínuo",
-      "fonte": "pulo"
-    },
-    {
-      "chave": "ili-30-00595863-a",
-      "chave_legada": "ili-30-00595863-a",
-      "pwn30": "pwn30-00595863-a",
-      "cili": "i3306",
-      "ili": "i3306",
-      "lema": "contínuo",
-      "motivo": "`Contínua &#39;(significando aparentemente ininterrupta) é muitas vezes usado como sinônimo de&#39; contínua &#39;(ou seja, sem interrupção)",
-      "fonte": "pulo"
-    },
-    {
-      "chave": "ili-30-00754393-a",
-      "chave_legada": "ili-30-00754393-a",
-      "pwn30": "pwn30-00754393-a",
-      "cili": "i4173",
-      "ili": "i4173",
-      "lema": "assíduo",
-      "motivo": "marcado pelo cuidado e esforço persistente",
-      "fonte": "pulo"
-    },
-    {
-      "chave": "ili-30-01990653-a",
-      "chave_legada": "ili-30-01990653-a",
-      "pwn30": "pwn30-01990653-a",
-      "cili": "i10902",
-      "ili": "i10902",
-      "lema": "inabalável",
-      "motivo": "marcado pela firme determinação ou resolução; Não shakable",
-      "fonte": "pulo"
-    },
-    {
-      "chave": "ili-30-02506029-a",
-      "chave_legada": "ili-30-02506029-a",
-      "pwn30": "pwn30-02506029-a",
-      "cili": "i13897",
-      "ili": "i13897",
-      "lema": "constante",
-      "motivo": "unvarying em natureza",
-      "fonte": "pulo"
-    },
-    {
-      "chave": "ili-30-00959244-a",
-      "chave_legada": "ili-30-00959244-a",
-      "pwn30": "pwn30-00959244-a",
-      "cili": "i5259",
-      "ili": "i5259",
-      "lema": "fiel",
-      "motivo": "inabalável em devoção ao amigo ou voto ou causa",
-      "fonte": "pulo"
-    },
-    {
-      "chave": "ili-30-13585429-n",
-      "chave_legada": "ili-30-13585429-n",
-      "pwn30": "pwn30-13585429-n",
-      "cili": "i108091",
-      "ili": "i108091",
-      "lema": "constante",
-      "motivo": "um número que representa uma quantidade assumido como tendo um valor fixo num contexto matemático especificado",
-      "fonte": "pulo"
-    },
-    {
-      "chave": "ili-30-05858936-n",
-      "chave_legada": "ili-30-05858936-n",
-      "pwn30": "pwn30-05858936-n",
-      "cili": "i67660",
-      "ili": "i67660",
-      "lema": "constante",
-      "motivo": "uma quantidade que não varia",
       "fonte": "pulo"
     }
   ],

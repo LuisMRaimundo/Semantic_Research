@@ -1145,11 +1145,30 @@ def render_json(class_id, policy, source_labels, concepts, assertions,
         }
     for col in SOURCE_COLUMNS:
         if col not in source_status:
-            source_status[col] = {
-                "source_available": False,
-                "source_queried": False,
-                "source_contributed_results": False,
-            }
+            # ONTO is discovery-only: never LexWarrant admission column content
+            if col == "ONTO":
+                source_status[col] = {
+                    "role": "discovery",
+                    "source_available": False,
+                    "source_queried": False,
+                    "contributed_discovery_evidence": False,
+                    "contributed_concordance_results": False,
+                    "source_contributed_results": False,
+                }
+            else:
+                source_status[col] = {
+                    "source_available": False,
+                    "source_queried": False,
+                    "source_contributed_results": False,
+                }
+        elif col == "ONTO":
+            st = source_status[col]
+            st.setdefault("role", "discovery")
+            st.setdefault(
+                "contributed_concordance_results",
+                st.get("source_contributed_results", False),
+            )
+            st.setdefault("contributed_discovery_evidence", False)
     join_counts = Counter(c.join for c in concepts)
     return {
         "class": class_id,
@@ -1247,6 +1266,16 @@ def render_markdown(doc: dict, concepts) -> str:
             ap("- **WordNet/OEWN:** disponível/consultada, sem formas "
                "portuguesas admitidas na matriz "
                "(`source_contributed_results=false`)")
+    onto_st = (doc.get("source_status") or {}).get("ONTO") or {}
+    if onto_st.get("role") == "discovery" or "ONTO" in (doc.get("columns") or []):
+        ap(
+            "- **Onto.PT:** discovery-only — "
+            f"queried={onto_st.get('source_queried', False)}; "
+            f"discovery_evidence="
+            f"{onto_st.get('contributed_discovery_evidence', False)}; "
+            "concordance_results=false "
+            "(não admite na matriz LexWarrant)"
+        )
     ap(f"- **Gerado:** {doc['generated']}")
     ap(f"- **Descartados (só pendentes):** "
        f"{doc['summary'].get('descartados_pendentes', 0)} "

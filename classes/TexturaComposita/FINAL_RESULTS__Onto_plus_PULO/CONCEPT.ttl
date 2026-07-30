@@ -6,17 +6,16 @@
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaComposita
-# generated 2026-07-30T18:24:11+00:00
-# policy: SKOS matches only from concept_mapping adjudication; harvested CILI → inventory/excluded_cili; Onto co-members not auto altLabel; excludes → sr:excludedCandidate (not hiddenLabel); pref/alt/hidden mutually disjoint.
+# generated 2026-07-30T18:37:15+00:00
+# policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaComposita a owl:Class, skos:Concept ;
     skos:prefLabel "textura compósita"@pt-PT ;
     skos:scopeNote "heterogeneidade / composição de materiais ou partes distintas"@pt-PT ;
     dct:identifier "TexturaComposita" ;
-    skos:editorialNote "SKOS matches only from concept_mapping adjudication; harvested CILI → inventory/excluded_cili; Onto co-members not auto altLabel; excludes → sr:excludedCandidate (not hiddenLabel); pref/alt/hidden mutually disjoint."@en ;
+    skos:editorialNote "SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint."@en ;
     sr:mappingStatus "no_validated_cili" ;
     skos:altLabel "compósito"@pt-PT ;
-    sr:excludedCandidate [ rdf:value "composto"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "(Química) uma substância formada por união química de duas ou mais elementos ou ingredientes na proporção definida por peso " ] ;
     sr:excludedCandidate [ rdf:value "desalinhado"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "Não limpo e arrumado " ] ;
     sr:excludedCandidate [ rdf:value "desarranjado"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "Não limpo e arrumado " ] ;
     sr:excludedCandidate [ rdf:value "desarrumado"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "Não limpo e arrumado " ] ;

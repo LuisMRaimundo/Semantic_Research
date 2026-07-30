@@ -3,9 +3,10 @@
 - **Política de divergência:** conservative
 - **Fontes:** PULO, OWN-PT, WordNet  (colunas: ONTO, PULO, OWN-PT, WordNet)
 - **Tabela legada OEWN↔PULO** (`legacy_equivalence`): C:\Users\lmr20\Desktop\Semantic_Research\classes\TexturaComposita\out\ili_equivalence.json  (2 pares; 9 sem âncora partilhada)
-- **Junções interfontes:** nenhuma — 3 item(ns) da matriz provenientes exclusivamente de PULO (identificadores CILI normalizados na coluna ILI não implicam junção OEWN↔PULO).
+- **Junções interfontes:** nenhuma — 0 item(ns) da matriz provenientes exclusivamente de uma única fonte (identificadores CILI normalizados na coluna ILI não implicam junção OEWN↔PULO).
 - **WordNet/OEWN:** disponível/consultada, sem formas portuguesas admitidas na matriz (`source_contributed_results=false`)
-- **Gerado:** 2026-07-30T19:24:11
+- **Onto.PT:** discovery-only — queried=True; discovery_evidence=True; concordance_results=false (não admite na matriz LexWarrant)
+- **Gerado:** 2026-07-30T19:36:48
 - **Descartados (só pendentes):** 0 (termos ainda por adjudicar; contados, não listados)
 - **Asserções:** 13/13 PASS ✅
 
@@ -15,13 +16,9 @@
 
 | termo | ili | ONTO | PULO | OWN-PT | WordNet | join | veredicto | proposta | notas |
 |---|---|---|---|---|---|---|---|---|---|
-| composto | i114921 | — | UF | — | — | single | fonte única | — | excluded_cili:i114921 |
-| decomposição | i97733 | — | RT | — | — | single | fonte única | — | excluded_cili:i97733 |
-| descomposição | i97733 | — | RT | — | — | single | fonte única | — | excluded_cili:i97733 |
 
 ## Resumo por veredicto
 
-- **fonte única:** 3
 
 ## Cobertura da recolha automática de contraste (R6)
 
@@ -30,7 +27,7 @@ _Verificação apenas — a lógica de recolha não é alterada nesta etapa._
 - **OWN-PT:** 0 antónimo(s) auto — antonímia consultável (OEWN)
 - **PULO:** 0 antónimo(s) auto — fonte sem antonímia consultável (esperado)
 - **WordNet:** 0 antónimo(s) auto — antonímia consultável (OEWN)
-- **ILIs ancorados (admitidos) sem material de contraste auto:** i114921, i97733
+- **ILIs ancorados (admitidos) sem material de contraste auto:** —(nenhum ou sem âncoras)
 - **Fontes sem antonímia consultável (esperado):** PULO
 
 ## Conjunto mais defensável — «convergência plena» (requer junção por ILI)
@@ -47,7 +44,7 @@ _(nenhum)_
 _(nenhuma divergência)_
 
 ## Fonte única (aguarda segunda fonte)
-composto, decomposição, descomposição
+_(nenhum)_
 
 ## Asserções
 
@@ -57,12 +54,12 @@ composto, decomposição, descomposição
 | T2 | Junção weak(term) só ocorre sem ILI partilhado entre fontes (caso contrário aplicar-se-ia a junção por ILI). | PASS ✅ | 0 conceito(s) weak(term) |
 | T3 | Nenhum ILI é fabricado; junção OEWN↔PULO só via CILI; pares sem âncora CILI ficam sem junção ILI (não fabricados). | PASS ✅ | bogus→(None, False); unmapped_flag=False |
 | T4 | Cada divergência de estatuto é registada por-fonte (sem colapso em contagem). | PASS ✅ | 0 divergência(s) |
-| T5 | Nenhum termo admitido pelos motores é descartado da matriz (PULO; OWN-PT/WordNet corroboram; Onto = descoberta) | PASS ✅ | 3 admitidos / 3 em matriz |
+| T5 | Nenhum termo admitido pelos motores é descartado da matriz (PULO; OWN-PT/WordNet corroboram; Onto = descoberta) | PASS ✅ | 0 admitidos / 0 em matriz |
 | T6 | WordNet/OEWN: source_available / source_queried / source_contributed_results distintos. | PASS ✅ | source_available=true; source_queried=true; source_contributed_results=false (sem formas PT admitidas na matriz) |
 | T7 | proposta_final nunca é um estatuto não suportado; conservador ⇒ null em divergência. | PASS ✅ | OK |
 | T8 | Entradas de classes diferentes são recusadas com erro claro. | PASS ✅ | ClassMismatch levantada para classes mistas |
 | T10 | «Convergência plena» / «convergência (sentido)» exigem junção por ILI (nunca só weak(term)). | PASS ✅ | OK |
 | T10b | Convergência ILI PULO↔OWN-PT marca sempre recursos_derivados:«PWN». | PASS ✅ | OK |
 | T11 | Nenhum conceito só-pendente figura como linha da matriz (são contados em «descartados_pendentes»). | PASS ✅ | OK |
-| T9 | concordance.json faz round-trip (contagens de term/ili estáveis). | PASS ✅ | 3 conceitos |
+| T9 | concordance.json faz round-trip (contagens de term/ili estáveis). | PASS ✅ | 0 conceitos |
 | T13 | Nenhuma célula nem proposta_final com valor «contraste» na matriz (migração completa: ver teste unitário de decisions). | PASS ✅ | OK |

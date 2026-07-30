@@ -215,7 +215,31 @@ def build_export_blocks(ws: ClassWorkspace) -> dict[str, Any]:
                     "skos": "tex:termoRelacionado",
                 })
         elif decision == "exclude":
-            excludes.append(base)
+            # Sense/record exclusion — omit validated/focal lemmas from member lists
+            cm_ex = meta.get("concept_mapping") if isinstance(
+                meta.get("concept_mapping"), dict
+            ) else {}
+            skip = {
+                (x or "").casefold()
+                for x in (cm_ex.get("validated_alt_labels") or [])
+            }
+            for stem in meta.get("focus_stems") or []:
+                skip.add((stem or "").casefold())
+            skip.add((pref or "").casefold())
+            members = [
+                m for m in (base.get("membros") or [])
+                if (m or "").casefold() not in skip
+            ]
+            omitted = [
+                m for m in (base.get("membros") or [])
+                if (m or "").casefold() in skip
+            ]
+            excludes.append({
+                **base,
+                "membros": members,
+                "members_omitted_focal": omitted,
+                "exclusion_scope": "record_or_sense_not_lemma",
+            })
         elif decision == "atributo":
             atributos.append({**base, "eixo_vertente": axis})
         elif decision == "oposicao":
@@ -393,7 +417,10 @@ def render_blocks_markdown(blocks: dict[str, Any]) -> str:
     if leg_a:
         bits.append(f"chave legada PWN 3.0: {', '.join(leg_a)}")
     ap(f"- **Âncoras:** {'; '.join(bits) if bits else ('—')}")
-    ap(f"- **exclude:** {_brief_exclude(e.get('exclude') or [])}")
+    ap(
+        "- **exclude** (âmbito = aceção/registo, não necessariamente o lema focal): "
+        f"{_brief_exclude(e.get('exclude') or [])}"
+    )
     ap(
         f"- **material de contraste (auto):** "
         f"{_brief_auto(e.get('material_contraste_auto') or [])}"

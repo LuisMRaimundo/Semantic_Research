@@ -1,26 +1,25 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix : <http://example.org/textura#> .
 
 :TexturaComposita a skos:Concept, owl:Class ;
-    skos:prefLabel "TexturaCompósita"@pt ;
-    skos:scopeNote "Eixo definidor: heterogeneidade / composição de materiais ou partes distintas"@pt ;
-    skosxl:altLabel [ skosxl:literalForm "compósito"@pt ] ;
-    skosxl:altLabel [ skosxl:literalForm "materiais compostos"@pt ] ;
-    skosxl:altLabel [ skosxl:literalForm "mesclado"@pt ] ;
-    skosxl:altLabel [ skosxl:literalForm "misturado"@pt ] ;
-    skosxl:altLabel [ skosxl:literalForm "misto"@pt ] ;
-    skosxl:altLabel [ skosxl:literalForm "raiado"@pt ] ;
-    skosxl:altLabel [ skosxl:literalForm "entremeado"@pt ] ;
-    skosxl:altLabel [ skosxl:literalForm "composto"@pt ] ;
-    skosxl:altLabel [ skosxl:literalForm "dessemelhante"@pt ] ;
-    skosxl:altLabel [ skosxl:literalForm "heterogêneo"@pt ] ;
-    skosxl:altLabel [ skosxl:literalForm "dissimilar"@pt ] ;
-    skosxl:altLabel [ skosxl:literalForm "constituído"@pt ] ;
-    skosxl:altLabel [ skosxl:literalForm "formado"@pt ] ;
-    skosxl:altLabel [ skosxl:literalForm "elaborado"@pt ] ;
-    skosxl:altLabel [ skosxl:literalForm "feito"@pt ] ;
+    skos:prefLabel "textura compósita"@pt-PT ;
+    skos:scopeNote "Eixo definidor: heterogeneidade / composição de materiais ou partes distintas"@pt-PT ;
+    skos:altLabel "compósito"@pt-PT ;
+    skos:altLabel "materiais compostos"@pt-PT ;
+    skos:altLabel "mesclado"@pt-PT ;
+    skos:altLabel "misturado"@pt-PT ;
+    skos:altLabel "misto"@pt-PT ;
+    skos:altLabel "raiado"@pt-PT ;
+    skos:altLabel "entremeado"@pt-PT ;
+    skos:altLabel "composto"@pt-PT ;
+    skos:altLabel "dessemelhante"@pt-PT ;
+    skos:altLabel "heterogêneo"@pt-PT ;
+    skos:altLabel "dissimilar"@pt-PT ;
+    skos:altLabel "constituído"@pt-PT ;
+    skos:altLabel "formado"@pt-PT ;
+    skos:altLabel "elaborado"@pt-PT ;
+    skos:altLabel "feito"@pt-PT ;
     :termoRelacionado :vario ;
     :termoRelacionado :variado ;
     :termoRelacionado :variegado ;

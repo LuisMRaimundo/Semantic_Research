@@ -1,7 +1,7 @@
 {
   "class": "TexturaComposita",
   "policy": "conservative",
-  "generated": "2026-07-30T19:24:11",
+  "generated": "2026-07-30T19:36:48",
   "columns": [
     "ONTO",
     "PULO",
@@ -17,7 +17,7 @@
     "PULO": {
       "source_available": true,
       "source_queried": true,
-      "source_contributed_results": true
+      "source_contributed_results": false
     },
     "OWN-PT": {
       "source_available": true,
@@ -30,14 +30,15 @@
       "source_contributed_results": false
     },
     "ONTO": {
-      "source_available": false,
-      "source_queried": false,
+      "role": "discovery",
+      "source_available": true,
+      "source_queried": true,
+      "contributed_discovery_evidence": true,
+      "contributed_concordance_results": false,
       "source_contributed_results": false
     }
   },
-  "join_counts": {
-    "single": 3
-  },
+  "join_counts": {},
   "legacy_equivalence_map": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\classes\\TexturaComposita\\out\\ili_equivalence.json",
   "legacy_equivalence_counts": {
     "mapped": 2,
@@ -52,94 +53,15 @@
     "unmatched": 9
   },
   "ili_equivalence_loaded": true,
-  "concepts": [
-    {
-      "term": "composto",
-      "ili": [
-        "i114921"
-      ],
-      "sources": {
-        "ONTO": "—",
-        "PULO": "UF",
-        "OWN-PT": "—",
-        "WordNet": "—"
-      },
-      "join": "single",
-      "veredicto": "fonte única",
-      "proposta_final": null,
-      "unmapped_flag": false,
-      "status_projection": {},
-      "divergences": [],
-      "union_of_provenance": [
-        "PULO:seed (Etapa 1/2)"
-      ],
-      "notes": [
-        "excluded_cili:i114921"
-      ]
-    },
-    {
-      "term": "decomposição",
-      "ili": [
-        "i97733"
-      ],
-      "sources": {
-        "ONTO": "—",
-        "PULO": "RT",
-        "OWN-PT": "—",
-        "WordNet": "—"
-      },
-      "join": "single",
-      "veredicto": "fonte única",
-      "proposta_final": null,
-      "unmapped_flag": false,
-      "status_projection": {},
-      "divergences": [],
-      "union_of_provenance": [
-        "PULO:seed (Etapa 1/2)"
-      ],
-      "notes": [
-        "excluded_cili:i97733"
-      ]
-    },
-    {
-      "term": "descomposição",
-      "ili": [
-        "i97733"
-      ],
-      "sources": {
-        "ONTO": "—",
-        "PULO": "RT",
-        "OWN-PT": "—",
-        "WordNet": "—"
-      },
-      "join": "single",
-      "veredicto": "fonte única",
-      "proposta_final": null,
-      "unmapped_flag": false,
-      "status_projection": {},
-      "divergences": [],
-      "union_of_provenance": [
-        "PULO:seed (Etapa 1/2)"
-      ],
-      "notes": [
-        "excluded_cili:i97733"
-      ]
-    }
-  ],
+  "concepts": [],
   "summary": {
-    "veredicto_totals": {
-      "fonte única": 3
-    },
+    "veredicto_totals": {},
     "descartados_pendentes": 0,
     "convergencia_plena": [],
     "convergencia_sentido": [],
     "convergencia_termo": [],
     "divergences": [],
-    "fonte_unica": [
-      "composto",
-      "decomposição",
-      "descomposição"
-    ],
+    "fonte_unica": [],
     "auto_contrast_coverage": {
       "per_source": {
         "PULO": {
@@ -161,12 +83,9 @@
           "terms": []
         }
       },
-      "anchored_ilis_total": 2,
+      "anchored_ilis_total": 0,
       "anchored_ilis_with_auto_contrast": [],
-      "anchored_ilis_without_auto_contrast": [
-        "i114921",
-        "i97733"
-      ],
+      "anchored_ilis_without_auto_contrast": [],
       "sources_without_antonymy": [
         "PULO"
       ]
@@ -201,7 +120,7 @@
       "id": "T5",
       "text": "Nenhum termo admitido pelos motores é descartado da matriz (PULO; OWN-PT/WordNet corroboram; Onto = descoberta)",
       "passed": true,
-      "evidence": "3 admitidos / 3 em matriz"
+      "evidence": "0 admitidos / 0 em matriz"
     },
     {
       "id": "T6",
@@ -243,7 +162,7 @@
       "id": "T9",
       "text": "concordance.json faz round-trip (contagens de term/ili estáveis).",
       "passed": true,
-      "evidence": "3 conceitos"
+      "evidence": "0 conceitos"
     },
     {
       "id": "T13",
