@@ -66,11 +66,14 @@ class ConceptModelSmoke(unittest.TestCase):
             "uf": [{"members": ["alpha", "beta"]}],
             "rt": [{"members": ["gamma"]}],
             "exclude": [{"members": ["noise"]}],
-            "ilis": ["i1"],
+            "cili_exact": ["i1"],
+            "cili_close": [],
+            "cili_related": [],
+            "skos_policy": "test policy",
             "generated": "now",
         })
         self.assertIn("skos:Concept", ttl)
-        self.assertIn("skos:exactMatch", ttl)
+        self.assertIn("skos:exactMatch <", ttl)
         self.assertIn("globalwordnet.org/ili/i1", ttl)
         self.assertIn('skos:altLabel "alpha"@pt', ttl)
 

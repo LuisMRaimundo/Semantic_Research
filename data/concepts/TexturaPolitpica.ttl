@@ -6,9 +6,11 @@
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model — TexturaPolitpica
-# generated 2026-07-30T11:14:59+00:00
+# generated 2026-07-30T11:57:11+00:00
+# policy: skos:exactMatch ≤1 primary PULO UF CILI; extra UF PULO → closeMatch; RT → relatedMatch; excludes never linked as matches; Onto lemmas = altLabel only.
 
 sr:TexturaPolitpica a owl:Class, skos:Concept ;
     skos:prefLabel "TexturaPolitpica"@pt ;
     dct:identifier "TexturaPolitpica" ;
-    rdfs:comment "UF senses=0; RT=0; ILI anchors=0"@en .
+    skos:editorialNote "skos:exactMatch ≤1 primary PULO UF CILI; extra UF PULO → closeMatch; RT → relatedMatch; excludes never linked as matches; Onto lemmas = altLabel only."@en ;
+    rdfs:comment "UF senses=0; RT=0; exactCILI=0; closeCILI=0; relatedCILI=0"@en .

@@ -331,6 +331,10 @@ class Workbench(tk.Tk):
             command=self._open_final_results,
         ).pack(side="left", padx=(0, 6))
         ttk.Button(
+            runrow, text="Exportar FINAL…",
+            command=self._export_final_folder,
+        ).pack(side="left", padx=(0, 6))
+        ttk.Button(
             runrow, text="concordância",
             command=self._open_concordance,
         ).pack(side="left")
@@ -994,14 +998,57 @@ class Workbench(tk.Tk):
         if not ws:
             return
         ws.ensure()
-        # Prefer the bright HTML splash; else the folder
+        # Prefer TERMOS.html (has export-all button); else splash; else folder
+        termos = ws.final_results / "TERMOS.html"
         html = ws.final_results / "OPEN_ME__FINAL_RESULTS.html"
-        path = html if html.exists() else ws.final_results
+        path = (
+            termos if termos.exists()
+            else html if html.exists()
+            else ws.final_results
+        )
         try:
             import os
             os.startfile(path)  # type: ignore[attr-defined]
         except Exception:
             webbrowser.open(path.as_uri())
+
+    def _export_final_folder(self):
+        """Copy all FINAL_RESULTS deliverables into a user-chosen directory."""
+        ws = self._ws()
+        if not ws:
+            return
+        ws.ensure()
+        if not any(ws.final_results.glob("TERMOS*")) and not any(
+            ws.final_results.glob("*.concordance.*")
+        ):
+            messagebox.showinfo(
+                APP,
+                "Ainda não há outputs em FINAL_RESULTS — "
+                "execute «6 · ▶ Run» primeiro.",
+            )
+            return
+        dest = filedialog.askdirectory(
+            title=f"Exportar FINAL_RESULTS de {ws.class_id} para…",
+            mustexist=True,
+        )
+        if not dest:
+            return
+        try:
+            from semantic.export_all import copy_final_to_directory, write_export_all
+
+            # Refresh ZIP/payload so the copy includes a current bundle
+            write_export_all(ws)
+            out = copy_final_to_directory(ws, Path(dest))
+        except Exception as exc:  # noqa: BLE001
+            messagebox.showerror(APP, f"Exportação falhou:\n{exc}")
+            return
+        self._log(f"FINAL_RESULTS exportado → {out}\n")
+        messagebox.showinfo(APP, f"Exportados todos os outputs para:\n{out}")
+        try:
+            import os
+            os.startfile(out)  # type: ignore[attr-defined]
+        except Exception:
+            pass
 
     def _open_concordance(self):
         """Show concordance in-app (never os.startfile on .md — Cursor may own it)."""

@@ -6,24 +6,25 @@
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model — TexturaDensa
-# generated 2026-07-30T11:14:59+00:00
+# generated 2026-07-30T11:57:11+00:00
+# policy: skos:exactMatch ≤1 primary PULO UF CILI; extra UF PULO → closeMatch; RT → relatedMatch; excludes never linked as matches; Onto lemmas = altLabel only.
 
 sr:TexturaDensa a owl:Class, skos:Concept ;
     skos:prefLabel "TexturaDensa"@pt ;
     skos:scopeNote "densidade"@pt ;
     dct:identifier "TexturaDensa" ;
-    skos:exactMatch <https://globalwordnet.org/ili/i13376> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i3019> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i62946> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i63738> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i6484> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i73> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i8310> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i9720> ;
+    skos:editorialNote "skos:exactMatch ≤1 primary PULO UF CILI; extra UF PULO → closeMatch; RT → relatedMatch; excludes never linked as matches; Onto lemmas = altLabel only."@en ;
+    skos:closeMatch <http://globalwordnet.org/ili/i3019> ;
+    skos:closeMatch <http://globalwordnet.org/ili/i6484> ;
+    skos:closeMatch <http://globalwordnet.org/ili/i8310> ;
+    skos:closeMatch <http://globalwordnet.org/ili/i13376> ;
+    skos:closeMatch <http://globalwordnet.org/ili/i62946> ;
+    skos:relatedMatch <http://globalwordnet.org/ili/i9720> ;
+    skos:relatedMatch <http://globalwordnet.org/ili/i63738> ;
     skos:altLabel "denso"@pt ;
     skos:altLabel "densidade"@pt ;
     skos:related [ a skos:Concept ; skos:prefLabel "denso"@pt ] ;
     skos:related [ a skos:Concept ; skos:prefLabel "densidade"@pt ] ;
     skos:related [ a skos:Concept ; skos:prefLabel "concentração"@pt ] ;
     skos:hiddenLabel "denso"@pt ;
-    rdfs:comment "UF senses=5; RT=2; ILI anchors=8"@en .
+    rdfs:comment "UF senses=5; RT=2; exactCILI=0; closeCILI=5; relatedCILI=2"@en .

@@ -15,15 +15,17 @@ sr:Scheme a skos:ConceptScheme ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model — DemoClass
-# generated 2026-07-30T11:14:59+00:00
+# generated 2026-07-30T11:57:11+00:00
+# policy: skos:exactMatch ≤1 primary PULO UF CILI; extra UF PULO → closeMatch; RT → relatedMatch; excludes never linked as matches; Onto lemmas = altLabel only.
 
 sr:DemoClass a owl:Class, skos:Concept ;
     skos:prefLabel "demo"@pt ;
     skos:scopeNote "axis"@pt ;
     dct:identifier "DemoClass" ;
+    skos:editorialNote "skos:exactMatch ≤1 primary PULO UF CILI; extra UF PULO → closeMatch; RT → relatedMatch; excludes never linked as matches; Onto lemmas = altLabel only."@en ;
     skos:altLabel "alpha"@pt ;
     skos:altLabel "beta"@pt ;
-    rdfs:comment "UF senses=1; RT=0; ILI anchors=0"@en .
+    rdfs:comment "UF senses=1; RT=0; exactCILI=0; closeCILI=0; relatedCILI=0"@en .
 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -33,58 +35,16 @@ sr:DemoClass a owl:Class, skos:Concept ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model — TexturaComposita
-# generated 2026-07-30T11:14:59+00:00
+# generated 2026-07-30T11:57:11+00:00
+# policy: skos:exactMatch ≤1 primary PULO UF CILI; extra UF PULO → closeMatch; RT → relatedMatch; excludes never linked as matches; Onto lemmas = altLabel only.
 
 sr:TexturaComposita a owl:Class, skos:Concept ;
     skos:prefLabel "TexturaCompósita"@pt ;
     skos:scopeNote "heterogeneidade / composição de materiais ou partes distintas"@pt ;
     dct:identifier "TexturaComposita" ;
-    skos:exactMatch <https://globalwordnet.org/ili/i108091> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i10902> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i113682> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i114921> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i11935> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i11970> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i11972> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i11973> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i12746> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i13418> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i13897> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i15148> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i22685> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i22857> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i29030> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i2968> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i30022> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i3216> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i3245> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i3291> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i3303> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i3305> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i3306> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i33063> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i36652> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i37400> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i40296> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i40342> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i4173> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i52229> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i52230> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i5259> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i59707> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i62908> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i63671> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i67660> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i67721> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i67722> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i70172> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i72162> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i73641> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i75220> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i89134> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i9631> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i97733> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i99843> ;
+    skos:editorialNote "skos:exactMatch ≤1 primary PULO UF CILI; extra UF PULO → closeMatch; RT → relatedMatch; excludes never linked as matches; Onto lemmas = altLabel only."@en ;
+    skos:exactMatch <http://globalwordnet.org/ili/i114921> ;
+    skos:relatedMatch <http://globalwordnet.org/ili/i97733> ;
     skos:altLabel "composto"@pt ;
     skos:altLabel "compósito"@pt ;
     skos:altLabel "materiais compostos"@pt ;
@@ -569,7 +529,7 @@ sr:TexturaComposita a owl:Class, skos:Concept ;
     skos:hiddenLabel "constante"@pt ;
     skos:hiddenLabel "constante"@pt ;
     skos:hiddenLabel "constante"@pt ;
-    rdfs:comment "UF senses=9; RT=7; ILI anchors=46"@en .
+    rdfs:comment "UF senses=9; RT=7; exactCILI=1; closeCILI=0; relatedCILI=1"@en .
 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -579,27 +539,28 @@ sr:TexturaComposita a owl:Class, skos:Concept ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model — TexturaDensa
-# generated 2026-07-30T11:14:59+00:00
+# generated 2026-07-30T11:57:11+00:00
+# policy: skos:exactMatch ≤1 primary PULO UF CILI; extra UF PULO → closeMatch; RT → relatedMatch; excludes never linked as matches; Onto lemmas = altLabel only.
 
 sr:TexturaDensa a owl:Class, skos:Concept ;
     skos:prefLabel "TexturaDensa"@pt ;
     skos:scopeNote "densidade"@pt ;
     dct:identifier "TexturaDensa" ;
-    skos:exactMatch <https://globalwordnet.org/ili/i13376> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i3019> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i62946> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i63738> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i6484> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i73> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i8310> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i9720> ;
+    skos:editorialNote "skos:exactMatch ≤1 primary PULO UF CILI; extra UF PULO → closeMatch; RT → relatedMatch; excludes never linked as matches; Onto lemmas = altLabel only."@en ;
+    skos:closeMatch <http://globalwordnet.org/ili/i3019> ;
+    skos:closeMatch <http://globalwordnet.org/ili/i6484> ;
+    skos:closeMatch <http://globalwordnet.org/ili/i8310> ;
+    skos:closeMatch <http://globalwordnet.org/ili/i13376> ;
+    skos:closeMatch <http://globalwordnet.org/ili/i62946> ;
+    skos:relatedMatch <http://globalwordnet.org/ili/i9720> ;
+    skos:relatedMatch <http://globalwordnet.org/ili/i63738> ;
     skos:altLabel "denso"@pt ;
     skos:altLabel "densidade"@pt ;
     skos:related [ a skos:Concept ; skos:prefLabel "denso"@pt ] ;
     skos:related [ a skos:Concept ; skos:prefLabel "densidade"@pt ] ;
     skos:related [ a skos:Concept ; skos:prefLabel "concentração"@pt ] ;
     skos:hiddenLabel "denso"@pt ;
-    rdfs:comment "UF senses=5; RT=2; ILI anchors=8"@en .
+    rdfs:comment "UF senses=5; RT=2; exactCILI=0; closeCILI=5; relatedCILI=2"@en .
 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -609,12 +570,14 @@ sr:TexturaDensa a owl:Class, skos:Concept ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model — TexturaIntermitente
-# generated 2026-07-30T11:14:59+00:00
+# generated 2026-07-30T11:57:11+00:00
+# policy: skos:exactMatch ≤1 primary PULO UF CILI; extra UF PULO → closeMatch; RT → relatedMatch; excludes never linked as matches; Onto lemmas = altLabel only.
 
 sr:TexturaIntermitente a owl:Class, skos:Concept ;
     skos:prefLabel "TexturaIntermitente"@pt ;
     skos:scopeNote "que ocorre espaçadamente, a intervalos, regulares ou irregulares"@pt ;
     dct:identifier "TexturaIntermitente" ;
+    skos:editorialNote "skos:exactMatch ≤1 primary PULO UF CILI; extra UF PULO → closeMatch; RT → relatedMatch; excludes never linked as matches; Onto lemmas = altLabel only."@en ;
     skos:altLabel "alternado"@pt ;
     skos:altLabel "entremeado"@pt ;
     skos:altLabel "salteado"@pt ;
@@ -1105,7 +1068,7 @@ sr:TexturaIntermitente a owl:Class, skos:Concept ;
     skos:hiddenLabel "sezonismo"@pt ;
     skos:hiddenLabel "sezão"@pt ;
     skos:hiddenLabel "sezões"@pt ;
-    rdfs:comment "UF senses=8; RT=15; ILI anchors=0"@en .
+    rdfs:comment "UF senses=8; RT=15; exactCILI=0; closeCILI=0; relatedCILI=0"@en .
 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -1115,16 +1078,15 @@ sr:TexturaIntermitente a owl:Class, skos:Concept ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model — TexturaMetamorfica
-# generated 2026-07-30T11:14:59+00:00
+# generated 2026-07-30T11:57:11+00:00
+# policy: skos:exactMatch ≤1 primary PULO UF CILI; extra UF PULO → closeMatch; RT → relatedMatch; excludes never linked as matches; Onto lemmas = altLabel only.
 
 sr:TexturaMetamorfica a owl:Class, skos:Concept ;
     skos:prefLabel "TexturaMetamórfica"@pt ;
     skos:scopeNote "muda de forma, relativamente a um ou vários parâmetros"@pt ;
     dct:identifier "TexturaMetamorfica" ;
-    skos:exactMatch <https://globalwordnet.org/ili/i16835> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i22389> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i75366> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i8401> ;
+    skos:editorialNote "skos:exactMatch ≤1 primary PULO UF CILI; extra UF PULO → closeMatch; RT → relatedMatch; excludes never linked as matches; Onto lemmas = altLabel only."@en ;
+    skos:exactMatch <http://globalwordnet.org/ili/i75366> ;
     skos:altLabel "metamorfose"@pt ;
     skos:altLabel "modificação"@pt ;
     skos:altLabel "mudança"@pt ;
@@ -1148,7 +1110,7 @@ sr:TexturaMetamorfica a owl:Class, skos:Concept ;
     skos:hiddenLabel "alterar"@pt ;
     skos:hiddenLabel "mudar"@pt ;
     skos:hiddenLabel "modificar"@pt ;
-    rdfs:comment "UF senses=6; RT=0; ILI anchors=4"@en .
+    rdfs:comment "UF senses=6; RT=0; exactCILI=1; closeCILI=0; relatedCILI=0"@en .
 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -1158,12 +1120,14 @@ sr:TexturaMetamorfica a owl:Class, skos:Concept ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model — TexturaPolitpica
-# generated 2026-07-30T11:14:59+00:00
+# generated 2026-07-30T11:57:11+00:00
+# policy: skos:exactMatch ≤1 primary PULO UF CILI; extra UF PULO → closeMatch; RT → relatedMatch; excludes never linked as matches; Onto lemmas = altLabel only.
 
 sr:TexturaPolitpica a owl:Class, skos:Concept ;
     skos:prefLabel "TexturaPolitpica"@pt ;
     dct:identifier "TexturaPolitpica" ;
-    rdfs:comment "UF senses=0; RT=0; ILI anchors=0"@en .
+    skos:editorialNote "skos:exactMatch ≤1 primary PULO UF CILI; extra UF PULO → closeMatch; RT → relatedMatch; excludes never linked as matches; Onto lemmas = altLabel only."@en ;
+    rdfs:comment "UF senses=0; RT=0; exactCILI=0; closeCILI=0; relatedCILI=0"@en .
 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -1173,22 +1137,17 @@ sr:TexturaPolitpica a owl:Class, skos:Concept ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model — TexturaUniforme
-# generated 2026-07-30T11:14:59+00:00
+# generated 2026-07-30T11:57:11+00:00
+# policy: skos:exactMatch ≤1 primary PULO UF CILI; extra UF PULO → closeMatch; RT → relatedMatch; excludes never linked as matches; Onto lemmas = altLabel only.
 
 sr:TexturaUniforme a owl:Class, skos:Concept ;
     skos:prefLabel "uniforme"@pt ;
     skos:scopeNote "invariância face a um parâmetro"@pt ;
     dct:identifier "TexturaUniforme" ;
-    skos:exactMatch <https://globalwordnet.org/ili/i10734> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i10771> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i12748> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i33388> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i4126> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i4979> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i4980> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i60712> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i61962> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i6560> ;
+    skos:editorialNote "skos:exactMatch ≤1 primary PULO UF CILI; extra UF PULO → closeMatch; RT → relatedMatch; excludes never linked as matches; Onto lemmas = altLabel only."@en ;
+    skos:closeMatch <http://globalwordnet.org/ili/i6560> ;
+    skos:closeMatch <http://globalwordnet.org/ili/i10771> ;
+    skos:relatedMatch <http://globalwordnet.org/ili/i61962> ;
     skos:altLabel "constante"@pt ;
     skos:altLabel "invariável"@pt ;
     skos:altLabel "imutável"@pt ;
@@ -7631,4 +7590,4 @@ sr:TexturaUniforme a owl:Class, skos:Concept ;
     skos:hiddenLabel "desalinhado"@pt ;
     skos:hiddenLabel "inclinado"@pt ;
     skos:hiddenLabel "irregular"@pt ;
-    rdfs:comment "UF senses=9; RT=7; ILI anchors=10"@en .
+    rdfs:comment "UF senses=9; RT=7; exactCILI=0; closeCILI=2; relatedCILI=1"@en .

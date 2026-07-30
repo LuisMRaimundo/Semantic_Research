@@ -1435,14 +1435,27 @@ header.page h1 {{ margin: 0 0 .35rem; font-size: clamp(1.5rem, 3vw, 2rem); lette
 }}
 .sec h2 {{ margin: 0; font-size: 1.15rem; }}
 .blurb {{ margin: 0 0 .85rem; color: var(--muted); font-size: .92rem; }}
-.btn-copy {{
+.btn-copy, .btn-export {{
   font: inherit; font-size: .85rem; font-weight: 600;
   padding: .4rem .75rem; border-radius: 999px; cursor: pointer;
   border: 1px solid var(--accent); color: var(--accent-ink); background: #e8f5f0;
 }}
-.btn-copy:hover {{ background: #d5eee5; }}
-.btn-copy:focus-visible {{ outline: 3px solid var(--focus); outline-offset: 2px; }}
-.btn-copy.ok {{ background: var(--accent); color: #fff; border-color: var(--accent); }}
+.btn-copy:hover, .btn-export:hover {{ background: #d5eee5; }}
+.btn-copy:focus-visible, .btn-export:focus-visible {{
+  outline: 3px solid var(--focus); outline-offset: 2px;
+}}
+.btn-copy.ok, .btn-export.ok {{ background: var(--accent); color: #fff; border-color: var(--accent); }}
+.btn-export {{ border-radius: 6px; text-decoration: none; display: inline-block; }}
+.btn-export.secondary {{
+  background: #fff; border-color: var(--line); color: var(--ink); font-weight: 600;
+}}
+.export-bar {{
+  display: flex; flex-wrap: wrap; gap: .55rem; align-items: center;
+  margin: 1rem 0 0; padding: .75rem 1rem; background: var(--card);
+  border: 1px solid var(--line); border-radius: 6px;
+}}
+.export-bar .hint {{ color: var(--muted); font-size: .85rem; flex: 1 1 12rem; }}
+#export-status {{ color: var(--accent-ink); font-size: .85rem; font-weight: 600; }}
 .tok-row {{ display: flex; flex-wrap: wrap; gap: .55rem; }}
 .tok {{
   display: inline-flex; flex-direction: column; gap: .1rem;
@@ -1494,6 +1507,16 @@ footer.page {{
   </p>
   {manuals_note}
   <p class="syntax">Sintaxe de pesquisa: <code>{syntax}</code></p>
+  <div class="export-bar" role="group" aria-label="Exportar outputs">
+    <button type="button" class="btn-export" id="btn-export-folder">
+      Exportar tudo para pasta…
+    </button>
+    <a class="btn-export secondary" id="btn-export-zip" href="EXPORT_ALL.zip" download>
+      Descarregar ZIP
+    </a>
+    <span class="hint">Copia TERMOS, concordância, CONCEPT, coverage, etc. para a pasta que escolher (Chrome / Edge).</span>
+    <span id="export-status" aria-live="polite"></span>
+  </div>
 </header>
 
 {resolve_box}
@@ -1505,11 +1528,12 @@ footer.page {{
 {sec_f}
 
 <footer class="page">
-  Página gerada localmente — sem rede. Irmãos: TERMOS_PESQUISA.md / .csv.
+  Página gerada localmente — sem rede. Irmãos: TERMOS_PESQUISA.md / .csv · EXPORT_ALL.zip.
 </footer>
 </div>
 <textarea id="clip-fallback" aria-hidden="true" tabindex="-1"
   style="position:fixed;left:-9999px;top:0"></textarea>
+<script src="export_payload.js"></script>
 <script>
 (function () {{
   function fallbackCopy(text) {{
@@ -1545,6 +1569,54 @@ footer.page {{
     var wc = t.getAttribute("data-wc") || "";
     if (wc) copyText(wc, null);
   }});
+
+  function setExportStatus(msg, ok) {{
+    var el = document.getElementById("export-status");
+    if (!el) return;
+    el.textContent = msg || "";
+    el.style.color = ok === false ? "#8b2e1f" : "";
+  }}
+
+  async function exportAllToFolder() {{
+    var bundle = window.SR_EXPORT_BUNDLE;
+    var btn = document.getElementById("btn-export-folder");
+    if (!bundle || !bundle.files || !bundle.files.length) {{
+      setExportStatus("Pacote em falta — volte a correr o pipeline (Run).", false);
+      return;
+    }}
+    if (!window.showDirectoryPicker) {{
+      setExportStatus("Seletor de pasta indisponível neste browser — use «Descarregar ZIP».", false);
+      var zip = document.getElementById("btn-export-zip");
+      if (zip) zip.focus();
+      return;
+    }}
+    try {{
+      var root = await window.showDirectoryPicker({{ mode: "readwrite" }});
+      var folderName = bundle.folder_name || (bundle.class_id + "_FINAL_RESULTS");
+      var target = await root.getDirectoryHandle(folderName, {{ create: true }});
+      for (var i = 0; i < bundle.files.length; i++) {{
+        var f = bundle.files[i];
+        var fh = await target.getFileHandle(f.name, {{ create: true }});
+        var w = await fh.createWritable();
+        await w.write(f.text);
+        await w.close();
+      }}
+      setExportStatus("Exportados " + bundle.files.length + " ficheiros → " + folderName, true);
+      if (btn) {{
+        btn.classList.add("ok");
+        setTimeout(function () {{ btn.classList.remove("ok"); }}, 1600);
+      }}
+    }} catch (err) {{
+      if (err && err.name === "AbortError") {{
+        setExportStatus("Exportação cancelada.");
+        return;
+      }}
+      setExportStatus("Falha: " + (err && err.message ? err.message : err), false);
+    }}
+  }}
+
+  var exportBtn = document.getElementById("btn-export-folder");
+  if (exportBtn) exportBtn.addEventListener("click", exportAllToFolder);
 }})();
 </script>
 </body>
@@ -1574,9 +1646,15 @@ def write_termos_pesquisa(
         json.dumps(serial, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
     html_path.write_text(html_text, encoding="utf-8")
+    # ZIP + JS payload for «Exportar tudo para pasta…» on TERMOS.html
+    from .export_all import write_export_all
+
+    bundle = write_export_all(ws, dest_dir=folder)
     return {
         "md": str(md_path),
         "csv": str(csv_path),
         "json": str(json_path),
         "html": str(html_path),
+        "zip": bundle.get("zip", ""),
+        "payload_js": bundle.get("payload_js", ""),
     }

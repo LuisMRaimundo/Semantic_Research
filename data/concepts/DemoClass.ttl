@@ -6,12 +6,14 @@
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model — DemoClass
-# generated 2026-07-30T11:14:59+00:00
+# generated 2026-07-30T11:57:11+00:00
+# policy: skos:exactMatch ≤1 primary PULO UF CILI; extra UF PULO → closeMatch; RT → relatedMatch; excludes never linked as matches; Onto lemmas = altLabel only.
 
 sr:DemoClass a owl:Class, skos:Concept ;
     skos:prefLabel "demo"@pt ;
     skos:scopeNote "axis"@pt ;
     dct:identifier "DemoClass" ;
+    skos:editorialNote "skos:exactMatch ≤1 primary PULO UF CILI; extra UF PULO → closeMatch; RT → relatedMatch; excludes never linked as matches; Onto lemmas = altLabel only."@en ;
     skos:altLabel "alpha"@pt ;
     skos:altLabel "beta"@pt ;
-    rdfs:comment "UF senses=1; RT=0; ILI anchors=0"@en .
+    rdfs:comment "UF senses=1; RT=0; exactCILI=0; closeCILI=0; relatedCILI=0"@en .

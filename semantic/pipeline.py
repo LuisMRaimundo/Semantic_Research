@@ -352,13 +352,14 @@ def run_class(class_id: str, policy: Optional[str] = None,
         inputs.append(("OWN-PT", own_r))
     if wn_r.exists():
         inputs.append(("WordNet", wn_r))
-    # Accepted Onto→ILI projections (atestado inventory — review routine)
+    # Onto→ILI: inventory signals only (never weak 'atestado' corroboration)
     try:
         from .onto_ili import apply_accepted_to_decisions, emit_onto_ili_result
         apply_accepted_to_decisions(ws.class_id)
         onto_ili_path = emit_onto_ili_result(ws.class_id)
         if onto_ili_path:
             summary["onto_ili_result"] = onto_ili_path
+            summary["onto_ili_role"] = "sinalizacao_inventory"
     except Exception as exc:  # noqa: BLE001
         summary.setdefault("errors", []).append(f"Onto-ILI emit: {exc}")
         onto_ili_path = None

@@ -39,6 +39,7 @@ _RUNTIME_KEYS = (
     "onto_ili_auto_accept",
     "onto_ili_auto_accept_min",
     "onto_ili_auto_accept_margin",
+    "onto_ili_emit_min",
     "gloss_use_embeddings",
 )
 _PIN_KEYS = (
@@ -67,9 +68,12 @@ _DEFAULTS: dict[str, Any] = {
     "weak_term_mode": "gloss_gated",
     "gloss_min": 0.12,
     "publish_concept_model": True,
-    "onto_ili_auto_accept": True,
+    # Default off: weak Onto→ILI must not look like independent corroboration
+    "onto_ili_auto_accept": False,
     "onto_ili_auto_accept_min": 0.85,
     "onto_ili_auto_accept_margin": 0.12,
+    # Only emit Onto→ILI rows into LexWarrant at/above this score
+    "onto_ili_emit_min": 0.85,
     # Opt-in: sentence-transformers multilingual MiniLM (may download weights)
     "gloss_use_embeddings": False,
     "oewn": "oewn:2024",
@@ -169,7 +173,7 @@ def _normalize_loaded(data: dict[str, Any], source: Path) -> dict[str, Any]:
         out["gloss_min"] = 0.12
     out["weak_term_mode"] = str(out.get("weak_term_mode") or "gloss_gated")
     out["publish_concept_model"] = bool(out.get("publish_concept_model", True))
-    out["onto_ili_auto_accept"] = bool(out.get("onto_ili_auto_accept", True))
+    out["onto_ili_auto_accept"] = bool(out.get("onto_ili_auto_accept", False))
     try:
         out["onto_ili_auto_accept_min"] = float(
             out.get("onto_ili_auto_accept_min", 0.85)
@@ -177,9 +181,11 @@ def _normalize_loaded(data: dict[str, Any], source: Path) -> dict[str, Any]:
         out["onto_ili_auto_accept_margin"] = float(
             out.get("onto_ili_auto_accept_margin", 0.12)
         )
+        out["onto_ili_emit_min"] = float(out.get("onto_ili_emit_min", 0.85))
     except (TypeError, ValueError):
         out["onto_ili_auto_accept_min"] = 0.85
         out["onto_ili_auto_accept_margin"] = 0.12
+        out["onto_ili_emit_min"] = 0.85
     return out
 
 

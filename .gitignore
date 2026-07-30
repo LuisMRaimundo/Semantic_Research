@@ -14,3 +14,6 @@ DEAD_CODE_CANDIDATES.json
 ONTO_RESOURCES_DIAGNOSIS.json
 ONTO_RESOURCES_DIAGNOSIS.md
 VERSION_MANIFEST.json
+# Regenerable export bundles (rebuilt on TERMOS write / Run)
+**/EXPORT_ALL.zip
+**/export_payload.js

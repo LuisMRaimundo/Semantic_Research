@@ -8,7 +8,7 @@
   ],
   "anchor_pos": "n",
   "near_stem": "composto*",
-  "generated": "2026-07-30T12:15:01+01:00",
+  "generated": "2026-07-30T12:45:13+01:00",
   "search_lang": "en",
   "label_lang": "pt-PT",
   "termos_manuais_presentes": false,
@@ -247,9 +247,10 @@
       "lingua": "pt-PT",
       "estatuto": "UF",
       "ili": [
-        "oewn-ili:i114921"
+        "i114921"
       ],
       "fontes": [
+        "onto-ili",
         "pulo"
       ],
       "garantia": "fonte_unica",
@@ -266,7 +267,7 @@
       "lingua": "pt-PT",
       "estatuto": "RT",
       "ili": [
-        "oewn-ili:i97733"
+        "i97733"
       ],
       "fontes": [
         "pulo"
@@ -285,7 +286,7 @@
       "lingua": "pt-PT",
       "estatuto": "RT",
       "ili": [
-        "oewn-ili:i97733"
+        "i97733"
       ],
       "fontes": [
         "pulo"
@@ -307,9 +308,10 @@
       "lingua": "pt-PT",
       "estatuto": "UF",
       "ili": [
-        "oewn-ili:i114921"
+        "i114921"
       ],
       "fontes": [
+        "onto-ili",
         "pulo"
       ],
       "garantia": "fonte_unica",
@@ -326,7 +328,7 @@
       "lingua": "pt-PT",
       "estatuto": "RT",
       "ili": [
-        "oewn-ili:i97733"
+        "i97733"
       ],
       "fontes": [
         "pulo"
@@ -345,7 +347,7 @@
       "lingua": "pt-PT",
       "estatuto": "RT",
       "ili": [
-        "oewn-ili:i97733"
+        "i97733"
       ],
       "fontes": [
         "pulo"

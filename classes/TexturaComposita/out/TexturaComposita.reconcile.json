@@ -8,7 +8,7 @@
     ],
     "engines_reexecutados": true,
     "hide_pulo_signals": true,
-    "onto_admission": false,
+    "onto_admission": true,
     "ili_join": "cili-only",
     "weak_term_mode": "gloss_gated",
     "gloss_min": 0.12

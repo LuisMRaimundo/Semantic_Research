@@ -29,6 +29,6 @@ E,constante,,,exclude,,,ili-30-02506029-a,pulo,,unvarying em natureza
 E,fiel,,,exclude,,,ili-30-00959244-a,pulo,,inabalável em devoção ao amigo ou voto ou causa
 E,constante,,,exclude,,,ili-30-13585429-n,pulo,,um número que representa uma quantidade assumido como tendo um valor fixo num contexto matemático especificado
 E,constante,,,exclude,,,ili-30-05858936-n,pulo,,uma quantidade que não varia
-F,composto,composto*,pt-PT,UF,fonte_unica,presente,oewn-ili:i114921,pulo,,
-F,decomposição,decomposição*,pt-PT,RT,fonte_unica,presente,oewn-ili:i97733,pulo,,
-F,descomposição,descomposição*,pt-PT,RT,fonte_unica,presente,oewn-ili:i97733,pulo,,
+F,composto,composto*,pt-PT,UF,fonte_unica,presente,i114921,"onto-ili, pulo",,
+F,decomposição,decomposição*,pt-PT,RT,fonte_unica,presente,i97733,pulo,,
+F,descomposição,descomposição*,pt-PT,RT,fonte_unica,presente,i97733,pulo,,

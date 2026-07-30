@@ -6,16 +6,15 @@
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model — TexturaMetamorfica
-# generated 2026-07-30T11:14:59+00:00
+# generated 2026-07-30T11:57:11+00:00
+# policy: skos:exactMatch ≤1 primary PULO UF CILI; extra UF PULO → closeMatch; RT → relatedMatch; excludes never linked as matches; Onto lemmas = altLabel only.
 
 sr:TexturaMetamorfica a owl:Class, skos:Concept ;
     skos:prefLabel "TexturaMetamórfica"@pt ;
     skos:scopeNote "muda de forma, relativamente a um ou vários parâmetros"@pt ;
     dct:identifier "TexturaMetamorfica" ;
-    skos:exactMatch <https://globalwordnet.org/ili/i16835> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i22389> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i75366> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i8401> ;
+    skos:editorialNote "skos:exactMatch ≤1 primary PULO UF CILI; extra UF PULO → closeMatch; RT → relatedMatch; excludes never linked as matches; Onto lemmas = altLabel only."@en ;
+    skos:exactMatch <http://globalwordnet.org/ili/i75366> ;
     skos:altLabel "metamorfose"@pt ;
     skos:altLabel "modificação"@pt ;
     skos:altLabel "mudança"@pt ;
@@ -39,4 +38,4 @@ sr:TexturaMetamorfica a owl:Class, skos:Concept ;
     skos:hiddenLabel "alterar"@pt ;
     skos:hiddenLabel "mudar"@pt ;
     skos:hiddenLabel "modificar"@pt ;
-    rdfs:comment "UF senses=6; RT=0; ILI anchors=4"@en .
+    rdfs:comment "UF senses=6; RT=0; exactCILI=1; closeCILI=0; relatedCILI=0"@en .

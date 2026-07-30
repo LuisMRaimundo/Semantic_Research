@@ -6,22 +6,17 @@
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model — TexturaUniforme
-# generated 2026-07-30T11:14:59+00:00
+# generated 2026-07-30T11:57:11+00:00
+# policy: skos:exactMatch ≤1 primary PULO UF CILI; extra UF PULO → closeMatch; RT → relatedMatch; excludes never linked as matches; Onto lemmas = altLabel only.
 
 sr:TexturaUniforme a owl:Class, skos:Concept ;
     skos:prefLabel "uniforme"@pt ;
     skos:scopeNote "invariância face a um parâmetro"@pt ;
     dct:identifier "TexturaUniforme" ;
-    skos:exactMatch <https://globalwordnet.org/ili/i10734> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i10771> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i12748> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i33388> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i4126> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i4979> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i4980> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i60712> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i61962> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i6560> ;
+    skos:editorialNote "skos:exactMatch ≤1 primary PULO UF CILI; extra UF PULO → closeMatch; RT → relatedMatch; excludes never linked as matches; Onto lemmas = altLabel only."@en ;
+    skos:closeMatch <http://globalwordnet.org/ili/i6560> ;
+    skos:closeMatch <http://globalwordnet.org/ili/i10771> ;
+    skos:relatedMatch <http://globalwordnet.org/ili/i61962> ;
     skos:altLabel "constante"@pt ;
     skos:altLabel "invariável"@pt ;
     skos:altLabel "imutável"@pt ;
@@ -6464,4 +6459,4 @@ sr:TexturaUniforme a owl:Class, skos:Concept ;
     skos:hiddenLabel "desalinhado"@pt ;
     skos:hiddenLabel "inclinado"@pt ;
     skos:hiddenLabel "irregular"@pt ;
-    rdfs:comment "UF senses=9; RT=7; ILI anchors=10"@en .
+    rdfs:comment "UF senses=9; RT=7; exactCILI=0; closeCILI=2; relatedCILI=1"@en .

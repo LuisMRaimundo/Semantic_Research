@@ -22,6 +22,7 @@ CILI). Onto.PT continua discovery-only; propostas Onto→ILI são *review-only*.
 4. **Save** → **Run** (SenseIndex + CILI + LexWarrant).
 5. Open:
    `classes/<Class>/FINAL_RESULTS__Onto_plus_PULO/TERMOS.html`
+   (botão **Exportar tudo para pasta…** / ZIP; no workbench: **Exportar FINAL…**)
 
 ## Run
 
@@ -89,7 +90,8 @@ classes/<Class>/
 | weak(term) polysemy | default `weak_term_mode=gloss_gated` |
 | Gloss layer | TF-IDF char/word cosine (+ opt-in embeddings: `gloss_use_embeddings`) |
 | OEWN pin risk | Hard pin to `oewn:2024` — extras ignored |
-| Publishable model | `CONCEPT.ttl` + `data/concepts/registry.ttl` |
+| Publishable model | `CONCEPT.ttl`: `exactMatch` ≤1 PULO UF CILI; RT→`relatedMatch`; excludes never matched |
+| Onto→ILI | Inventory only (`sinalizacao`); emit score≥0.85; auto-accept off by default |
 
 ```powershell
 python sr.py onto-ili propose <ClassId>

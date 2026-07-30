@@ -6,58 +6,16 @@
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model — TexturaComposita
-# generated 2026-07-30T11:14:59+00:00
+# generated 2026-07-30T11:57:11+00:00
+# policy: skos:exactMatch ≤1 primary PULO UF CILI; extra UF PULO → closeMatch; RT → relatedMatch; excludes never linked as matches; Onto lemmas = altLabel only.
 
 sr:TexturaComposita a owl:Class, skos:Concept ;
     skos:prefLabel "TexturaCompósita"@pt ;
     skos:scopeNote "heterogeneidade / composição de materiais ou partes distintas"@pt ;
     dct:identifier "TexturaComposita" ;
-    skos:exactMatch <https://globalwordnet.org/ili/i108091> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i10902> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i113682> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i114921> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i11935> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i11970> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i11972> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i11973> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i12746> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i13418> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i13897> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i15148> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i22685> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i22857> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i29030> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i2968> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i30022> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i3216> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i3245> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i3291> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i3303> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i3305> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i3306> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i33063> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i36652> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i37400> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i40296> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i40342> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i4173> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i52229> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i52230> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i5259> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i59707> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i62908> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i63671> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i67660> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i67721> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i67722> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i70172> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i72162> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i73641> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i75220> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i89134> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i9631> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i97733> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i99843> ;
+    skos:editorialNote "skos:exactMatch ≤1 primary PULO UF CILI; extra UF PULO → closeMatch; RT → relatedMatch; excludes never linked as matches; Onto lemmas = altLabel only."@en ;
+    skos:exactMatch <http://globalwordnet.org/ili/i114921> ;
+    skos:relatedMatch <http://globalwordnet.org/ili/i97733> ;
     skos:altLabel "composto"@pt ;
     skos:altLabel "compósito"@pt ;
     skos:altLabel "materiais compostos"@pt ;
@@ -542,4 +500,4 @@ sr:TexturaComposita a owl:Class, skos:Concept ;
     skos:hiddenLabel "constante"@pt ;
     skos:hiddenLabel "constante"@pt ;
     skos:hiddenLabel "constante"@pt ;
-    rdfs:comment "UF senses=9; RT=7; ILI anchors=46"@en .
+    rdfs:comment "UF senses=9; RT=7; exactCILI=1; closeCILI=0; relatedCILI=1"@en .

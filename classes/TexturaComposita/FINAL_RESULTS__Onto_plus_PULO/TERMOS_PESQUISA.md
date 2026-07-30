@@ -5,7 +5,7 @@
 **Âncora CILI / PWN3.0:** i114921
 **Língua de pesquisa:** `en` · **Língua de rótulos:** `pt-PT`
 **Sintaxe:** `composto* NEAR/4 <termo>`
-**Gerado:** 2026-07-30T12:15:01+01:00
+**Gerado:** 2026-07-30T12:45:13+01:00
 **Termos manuais:** ficheiro `termos_manuais.yaml` ausente nesta classe.
 
 ## A — Pólo alvo (`en`)
@@ -65,6 +65,6 @@ _(nenhuma forma em en para controlo)_
 
 | forma | wildcard | estatuto | garantia | âncora ILI | fontes |
 |---|---|---|---|---|---|
-| composto | composto* | UF | fonte_unica | presente | pulo |
+| composto | composto* | UF | fonte_unica | presente | onto-ili, pulo |
 | decomposição | decomposição* | RT | fonte_unica | presente | pulo |
 | descomposição | descomposição* | RT | fonte_unica | presente | pulo |

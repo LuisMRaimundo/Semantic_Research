@@ -3,7 +3,7 @@
 - **Eixo definidor:** heterogeneidade / composição de materiais ou partes distintas
 - **Base de corroboração:** `C:\Users\lmr20\Desktop\Semantic_Research\engines\ONTO\ontopt.sqlite`  ·  recursos difusos: contopt
 - **Porta (Etapa 3):** peso ≥ 0.5, coocorrência ≥ 2
-- **Gerado:** 2026-07-30T12:14:57
+- **Gerado:** 2026-07-30T12:45:09
 - **Estado global:** ❌ EXISTEM ASSERÇÕES FALHADAS
 
 ## Quadro de asserções (protocolo)
