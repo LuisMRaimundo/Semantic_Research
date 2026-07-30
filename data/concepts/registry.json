@@ -1,6 +1,6 @@
 {
-  "schema": "semantic_research.concept_registry/2",
-  "generated": "2026-07-30T12:01:07+00:00",
+  "schema": "semantic_research.concept_registry/3",
+  "generated": "2026-07-30T12:17:06+00:00",
   "root": "C:\\Users\\lmr20\\Desktop\\Semantic_Research",
   "classes": [
     "DemoClass",
@@ -12,5 +12,5 @@
     "TexturaUniforme"
   ],
   "registry_ttl": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\data\\concepts\\registry.ttl",
-  "skos_policy": "exactMatch≤1 PULO UF CILI; closeMatch/relatedMatch for other admitted CILIs; excludes never matched"
+  "skos_policy": "SKOS matches only from concept_mapping; no auto exactMatch from PULO CILI resolution"
 }

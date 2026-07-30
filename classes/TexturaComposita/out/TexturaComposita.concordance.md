@@ -2,10 +2,12 @@
 
 - **Política de divergência:** conservative
 - **Fontes:** PULO, OWN-PT, WordNet  (colunas: ONTO, PULO, OWN-PT, WordNet)
-- **Junção ILI (CILI):** ⚠ sem pares — junções OEWN↔PULO por ILI indisponíveis; só weak(term).
+- **Tabela legada OEWN↔PULO** (`legacy_equivalence`): não carregada (junção runtime usa CILI oficial quando ambas as fontes partilham ``i…``; isto não significa que os identificadores CILI estejam indisponíveis).
+- **Junções interfontes:** nenhuma — 3 item(ns) da matriz provenientes exclusivamente de PULO (identificadores CILI normalizados na coluna ILI não implicam junção OEWN↔PULO).
+- **WordNet/OEWN:** disponível/consultada, sem formas portuguesas admitidas na matriz (`source_contributed_results=false`)
 - **Gerado:** 2026-07-30T13:01:07
 - **Descartados (só pendentes):** 0 (termos ainda por adjudicar; contados, não listados)
-- **Asserções:** 13/13 PASS ✅
+- **Asserções:** 15/15 PASS ✅
 
 > Esta etapa **relata**; não admite nem reclassifica. `proposta_final` é uma sugestão para adjudicação humana, nunca uma auto-admissão.
 
@@ -56,7 +58,7 @@ composto, decomposição, descomposição
 | T3 | Nenhum ILI é fabricado; junção OEWN↔PULO só via CILI; pares sem âncora CILI ficam sem junção ILI (não fabricados). | PASS ✅ | bogus→(None, False); unmapped_flag=False |
 | T4 | Cada divergência de estatuto é registada por-fonte (sem colapso em contagem). | PASS ✅ | 0 divergência(s) |
 | T5 | Nenhum termo admitido pelos motores é descartado da matriz (PULO; OWN-PT/WordNet corroboram; Onto = descoberta) | PASS ✅ | 3 admitidos / 3 em matriz |
-| T6 | Fonte WordNet ausente ⇒ coluna toda «—». | PASS ✅ | WordNet presente — N/A |
+| T6 | Fonte WordNet ausente ⇒ coluna toda «—». | PASS ✅ | source_available=true; source_queried=true; source_contributed_results=false (sem formas PT admitidas na matriz) |
 | T7 | proposta_final nunca é um estatuto não suportado; conservador ⇒ null em divergência. | PASS ✅ | OK |
 | T8 | Entradas de classes diferentes são recusadas com erro claro. | PASS ✅ | ClassMismatch levantada para classes mistas |
 | T10 | «Convergência plena» / «convergência (sentido)» exigem junção por ILI (nunca só weak(term)). | PASS ✅ | OK |
@@ -65,3 +67,4 @@ composto, decomposição, descomposição
 | T9 | concordance.json faz round-trip (contagens de term/ili estáveis). | PASS ✅ | 3 conceitos |
 | T13 | Nenhuma célula nem proposta_final com valor «contraste» na matriz (migração completa: ver teste unitário de decisions). | PASS ✅ | OK |
 | T12 | Nenhum item do bloco de evidência figura no bloco de vocabulário, e vice-versa. | PASS ✅ | blocos A/B disjuntos |
+| R1 | Relatório residual: acepções UF/RT sem correspondência em motor (taxonomia T14 removida). | PASS ✅ | n=0 |

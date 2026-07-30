@@ -163,7 +163,9 @@ def _write_final_folder_marker(folder: Path, class_id: str = "") -> None:
                 "This folder is the class DELIVERABLE.\n\n"
                 f"1) Open:  OPEN_ME__FINAL_RESULTS.html  (green page)\n"
                 f"2) Or open:  {md_name}\n\n"
-                "WordNet is not included unless you add it later.\n",
+                "WordNet/OEWN may be queried as a corroboration track;\n"
+                "it only appears in the matrix when it contributes admitted forms.\n"
+                "(source_available ≠ source_contributed_results)\n",
                 encoding="utf-8",
             )
         else:

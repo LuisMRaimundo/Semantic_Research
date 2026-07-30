@@ -1,6 +1,6 @@
 {
   "class_id": "TexturaComposita",
-  "pref_label": "TexturaCompósita",
+  "pref_label": "textura compósita",
   "axis": "heterogeneidade / composição de materiais ou partes distintas",
   "uf": [
     {
@@ -942,28 +942,148 @@
       "key": "ili-30-05858936-n"
     }
   ],
-  "ilis": [
-    "i114921"
-  ],
-  "cili_exact": [
-    "i114921"
-  ],
+  "ilis": [],
+  "cili_exact": [],
   "cili_close": [],
-  "cili_related": [
-    "i97733"
+  "cili_related": [],
+  "excluded_cili": [
+    {
+      "cili": "i114921",
+      "reason": "aceção química: chemical compound"
+    },
+    {
+      "cili": "i97733",
+      "reason": "aceção biológica: decay/decomposition"
+    },
+    {
+      "cili": "i13418",
+      "reason": "Não limpo e arrumado"
+    },
+    {
+      "cili": "i89134",
+      "reason": "alguém que compõe a música como uma profissão"
+    },
+    {
+      "cili": "i36652",
+      "reason": "o ato de formar ou estabelecer algo"
+    },
+    {
+      "cili": "i37400",
+      "reason": "o ato de combinar as coisas para formar um todo novo"
+    },
+    {
+      "cili": "i59707",
+      "reason": "uma coisa construída; uma entidade complexa construída de muitas partes"
+    },
+    {
+      "cili": "i72162",
+      "reason": "instruções para fazer algo"
+    },
+    {
+      "cili": "i40296",
+      "reason": "o ato de criar obras escritas"
+    },
+    {
+      "cili": "i40342",
+      "reason": "criação musical"
+    },
+    {
+      "cili": "i52229",
+      "reason": "algo que é criado por providenciar várias coisas de modo a formar um todo unificado"
+    },
+    {
+      "cili": "i62908",
+      "reason": "a maneira em que alguém ou alguma coisa é composto"
+    },
+    {
+      "cili": "i63671",
+      "reason": "a propriedade espacial resultante do acordo das partes em relação às outras e a toda"
+    },
+    {
+      "cili": "i73641",
+      "reason": "uma obra musical que tenha sido criado"
+    },
+    {
+      "cili": "i113682",
+      "reason": "uma mistura de ingredientes"
+    },
+    {
+      "cili": "i75220",
+      "reason": "desmoronando"
+    },
+    {
+      "cili": "i3216",
+      "reason": "(Às vezes seguido por &#39;com&#39;) em acordo ou consistente ou confiável"
+    },
+    {
+      "cili": "i9631",
+      "reason": "continuada ou permanente, sem alteração marcada do estado ou condição ou lugar"
+    },
+    {
+      "cili": "i3245",
+      "reason": "firme no propósito ou devoção ou afeição"
+    },
+    {
+      "cili": "i3291",
+      "reason": "ocorrendo sem interrupção; principalmente restrita ao que se repete regularmente ou freqüentemente de uma série prolongada e espaçados"
+    },
+    {
+      "cili": "i3305",
+      "reason": "ininterrupta no tempo indefinidamente longo e contínuo"
+    },
+    {
+      "cili": "i3306",
+      "reason": "`Contínua &#39;(significando aparentemente ininterrupta) é muitas vezes usado como sinônimo de&#39; contínua &#39;(ou seja, sem interrupção)"
+    },
+    {
+      "cili": "i4173",
+      "reason": "marcado pelo cuidado e esforço persistente"
+    },
+    {
+      "cili": "i10902",
+      "reason": "marcado pela firme determinação ou resolução; Não shakable"
+    },
+    {
+      "cili": "i13897",
+      "reason": "unvarying em natureza"
+    },
+    {
+      "cili": "i5259",
+      "reason": "inabalável em devoção ao amigo ou voto ou causa"
+    },
+    {
+      "cili": "i108091",
+      "reason": "um número que representa uma quantidade assumido como tendo um valor fixo num contexto matemático especificado"
+    },
+    {
+      "cili": "i67660",
+      "reason": "uma quantidade que não varia"
+    }
+  ],
+  "validated_alt_labels": [
+    "compósito"
+  ],
+  "focus_stems": [
+    "composito",
+    "composta",
+    "composto",
+    "textura_composita"
   ],
   "ili_inventory": [
     {
       "cili": "i114921",
-      "role": "uf_pulo",
-      "key": "ili-30-14818238-n"
+      "role": "uf_pulo_candidate",
+      "key": "ili-30-14818238-n",
+      "note": "excluded by concept_mapping"
     },
     {
       "cili": "i97733",
-      "role": "rt",
-      "key": "ili-30-11444643-n"
+      "role": "rt_candidate",
+      "key": "ili-30-11444643-n",
+      "note": "excluded by concept_mapping"
     }
   ],
-  "skos_policy": "skos:exactMatch ≤1 primary PULO UF CILI; extra UF PULO → closeMatch; RT → relatedMatch; excludes never linked as matches; Onto lemmas = altLabel only.",
-  "generated": "2026-07-30T12:01:07+00:00"
+  "mapping_status": "no_validated_cili",
+  "skos_policy": "SKOS matches only from concept_mapping adjudication; harvested CILI → inventory/excluded_cili; Onto co-members not auto altLabel; excludes → sr:excludedCandidate (not hiddenLabel); pref/alt/hidden mutually disjoint.",
+  "generated": "2026-07-30T12:17:06+00:00"
 }

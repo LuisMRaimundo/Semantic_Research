@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""CONCEPT.ttl must not dump every harvested ILI as skos:exactMatch."""
+"""CONCEPT.ttl: no auto SKOS matches from resolved PULO CILI; SKOS integrity."""
 from __future__ import annotations
 
 import json
@@ -10,7 +10,7 @@ from semantic.concept_model import build_class_concept_graph, render_skos_owl
 from semantic.workspace import ClassWorkspace
 
 
-def test_exact_match_only_primary_pulo_uf(tmp_path: Path, monkeypatch):
+def test_no_auto_exact_match_from_pulo_uf(tmp_path: Path, monkeypatch):
     classes = tmp_path / "classes"
     classes.mkdir()
     monkeypatch.setattr("semantic.settings.CLASSES_DIR", classes)
@@ -32,7 +32,7 @@ def test_exact_match_only_primary_pulo_uf(tmp_path: Path, monkeypatch):
                 "source": "onto",
                 "key": "ontopt06:7120",
                 "ili": None,
-                "members": ["compósito", "heterogéneo", "mesclado"],
+                "members": ["compósito", "heterogéneo", "mesclado", "dissimilar"],
                 "gloss": "diverso género",
                 "decision": "UF",
             },
@@ -61,38 +61,54 @@ def test_exact_match_only_primary_pulo_uf(tmp_path: Path, monkeypatch):
     )
 
     graph = build_class_concept_graph(ws)
-    assert graph["cili_exact"] == ["i114921"]
-    assert "i97733" in graph["cili_related"]
-    assert "i11970" not in graph["cili_exact"]
-    assert "i11970" not in graph["cili_close"]
-    assert "i11970" not in graph["cili_related"]
+    assert graph["cili_exact"] == []
+    assert graph["cili_related"] == []
+    assert graph["mapping_status"] == "no_validated_cili"
+    assert any(e["cili"] == "i11970" for e in graph["excluded_cili"])
+    inv = {row["cili"] for row in graph["ili_inventory"]}
+    assert "i114921" in inv and "i97733" in inv
 
     ttl = render_skos_owl(graph)
-    assert ttl.count("skos:exactMatch <") == 1
-    assert "i114921" in ttl
-    assert "skos:relatedMatch <" in ttl
-    assert "i11970" not in ttl  # exclude must not appear as a match
-    # Onto UF lemmas surface as altLabel
-    assert "compósito" in ttl or "heterogéneo" in ttl
+    assert "skos:exactMatch <" not in ttl
+    assert "skos:relatedMatch <" not in ttl
+    assert "skos:hiddenLabel" not in ttl
+    assert "sr:excludedCandidate" in ttl
+    assert "ili.globalwordnet.org/ili/" in ttl or "exactMatch" not in ttl
+    # Onto co-members must not all become altLabel
+    assert 'skos:altLabel "mesclado"' not in ttl
+    assert 'skos:altLabel "dissimilar"' not in ttl
 
 
-def test_no_exact_match_when_multiple_pulo_uf(tmp_path: Path, monkeypatch):
+def test_concept_mapping_drives_matches_and_alts(tmp_path: Path, monkeypatch):
     classes = tmp_path / "classes"
     classes.mkdir()
     monkeypatch.setattr("semantic.settings.CLASSES_DIR", classes)
     monkeypatch.setattr("semantic.workspace.settings.CLASSES_DIR", classes)
-    ws = ClassWorkspace.create("Multi", pref_label="x", axis="y")
+    ws = ClassWorkspace.create("Mapped", pref_label="textura compósita", axis="y")
+    meta = ws.load_meta()
+    meta["concept_mapping"] = {
+        "cili_exact": [],
+        "cili_close": [],
+        "cili_related": [],
+        "validated_alt_labels": ["compósito"],
+        "excluded_cili": [
+            {"cili": "i114921", "reason": "aceção química: chemical compound"},
+            {"cili": "i97733", "reason": "aceção biológica: decay/decomposition"},
+        ],
+        "mapping_status": "no_validated_cili",
+    }
+    ws.save_meta(meta)
     ws.decisions_json.write_text(
         json.dumps({
-            "class_id": "Multi",
+            "class_id": "Mapped",
             "senses": [
                 {
                     "source": "pulo", "key": "a", "ili": "i114921",
-                    "members": ["a"], "decision": "UF",
+                    "members": ["composto"], "decision": "UF", "gloss": "química",
                 },
                 {
-                    "source": "pulo", "key": "b", "ili": "i97733",
-                    "members": ["b"], "decision": "UF",
+                    "source": "onto", "key": "b",
+                    "members": ["compósito", "bom", "doido"], "decision": "UF",
                 },
             ],
             "terms": [], "manual_terms": [], "exclude_terms": [],
@@ -101,7 +117,43 @@ def test_no_exact_match_when_multiple_pulo_uf(tmp_path: Path, monkeypatch):
     )
     graph = build_class_concept_graph(ws)
     assert graph["cili_exact"] == []
-    assert set(graph["cili_close"]) == {"i114921", "i97733"}
+    assert graph["validated_alt_labels"] == ["compósito"]
+    assert {e["cili"] for e in graph["excluded_cili"]} >= {"i114921", "i97733"}
     ttl = render_skos_owl(graph)
-    assert "skos:exactMatch <" not in ttl
-    assert ttl.count("skos:closeMatch <") == 2
+    assert 'skos:altLabel "compósito"@pt-PT' in ttl
+    assert 'skos:altLabel "bom"' not in ttl
+    assert "sr:excludedCili" in ttl
+    assert "ili.globalwordnet.org/ili/i114921" in ttl
+    assert "skos:exactMatch" not in ttl
+
+
+def test_skos_label_disjointness(tmp_path: Path, monkeypatch):
+    classes = tmp_path / "classes"
+    classes.mkdir()
+    monkeypatch.setattr("semantic.settings.CLASSES_DIR", classes)
+    monkeypatch.setattr("semantic.workspace.settings.CLASSES_DIR", classes)
+    ws = ClassWorkspace.create("Disjoint", pref_label="x", axis="y")
+    meta = ws.load_meta()
+    meta["concept_mapping"] = {"validated_alt_labels": ["compósito"]}
+    ws.save_meta(meta)
+    ws.decisions_json.write_text(
+        json.dumps({
+            "class_id": "Disjoint",
+            "senses": [
+                {
+                    "source": "onto", "key": "u", "members": ["compósito"],
+                    "decision": "UF",
+                },
+                {
+                    "source": "pulo", "key": "e", "members": ["compósito", "ruído"],
+                    "decision": "exclude", "gloss": "excluído",
+                },
+            ],
+            "terms": [], "manual_terms": [], "exclude_terms": [],
+        }),
+        encoding="utf-8",
+    )
+    ttl = render_skos_owl(build_class_concept_graph(ws))
+    assert ttl.count('skos:altLabel "compósito"') == 1
+    assert 'rdf:value "compósito"' not in ttl  # not also excludedCandidate
+    assert 'rdf:value "ruído"' in ttl

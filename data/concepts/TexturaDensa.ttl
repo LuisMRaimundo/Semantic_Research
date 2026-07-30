@@ -5,26 +5,17 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix sr: <http://semantic-research.local/concept/> .
 
-# Concept model — TexturaDensa
-# generated 2026-07-30T12:01:07+00:00
-# policy: skos:exactMatch ≤1 primary PULO UF CILI; extra UF PULO → closeMatch; RT → relatedMatch; excludes never linked as matches; Onto lemmas = altLabel only.
+# Concept model (plain SKOS, not SKOS-XL) — TexturaDensa
+# generated 2026-07-30T12:17:06+00:00
+# policy: SKOS matches only from concept_mapping adjudication; harvested CILI → inventory/excluded_cili; Onto co-members not auto altLabel; excludes → sr:excludedCandidate (not hiddenLabel); pref/alt/hidden mutually disjoint.
 
 sr:TexturaDensa a owl:Class, skos:Concept ;
-    skos:prefLabel "TexturaDensa"@pt ;
-    skos:scopeNote "densidade"@pt ;
+    skos:prefLabel "TexturaDensa"@pt-PT ;
+    skos:scopeNote "densidade"@pt-PT ;
     dct:identifier "TexturaDensa" ;
-    skos:editorialNote "skos:exactMatch ≤1 primary PULO UF CILI; extra UF PULO → closeMatch; RT → relatedMatch; excludes never linked as matches; Onto lemmas = altLabel only."@en ;
-    skos:closeMatch <http://globalwordnet.org/ili/i3019> ;
-    skos:closeMatch <http://globalwordnet.org/ili/i6484> ;
-    skos:closeMatch <http://globalwordnet.org/ili/i8310> ;
-    skos:closeMatch <http://globalwordnet.org/ili/i13376> ;
-    skos:closeMatch <http://globalwordnet.org/ili/i62946> ;
-    skos:relatedMatch <http://globalwordnet.org/ili/i9720> ;
-    skos:relatedMatch <http://globalwordnet.org/ili/i63738> ;
-    skos:altLabel "denso"@pt ;
-    skos:altLabel "densidade"@pt ;
-    skos:related [ a skos:Concept ; skos:prefLabel "denso"@pt ] ;
-    skos:related [ a skos:Concept ; skos:prefLabel "densidade"@pt ] ;
-    skos:related [ a skos:Concept ; skos:prefLabel "concentração"@pt ] ;
-    skos:hiddenLabel "denso"@pt ;
-    rdfs:comment "UF senses=5; RT=2; exactCILI=0; closeCILI=5; relatedCILI=2"@en .
+    skos:editorialNote "SKOS matches only from concept_mapping adjudication; harvested CILI → inventory/excluded_cili; Onto co-members not auto altLabel; excludes → sr:excludedCandidate (not hiddenLabel); pref/alt/hidden mutually disjoint."@en ;
+    sr:mappingStatus "no_validated_cili" ;
+    skos:altLabel "denso"@pt-PT ;
+    skos:altLabel "densidade"@pt-PT ;
+    sr:excludedCili [ sr:cili <http://ili.globalwordnet.org/ili/i73> ; sr:exclusionReason "crescendo profusamente" ] ;
+    rdfs:comment "UF senses=5; RT=2; exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .

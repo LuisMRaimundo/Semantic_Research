@@ -544,6 +544,12 @@ def build_termos_pesquisa(ws: ClassWorkspace) -> dict[str, Any]:
     pref = meta.get("pref_label") or ws.class_id
     axis = meta.get("axis") or ""
     ancora = _ili_anchor(dec, meta)
+    cm = meta.get("concept_mapping") if isinstance(meta.get("concept_mapping"), dict) else {}
+    excluded_cili_ids = {
+        str(x.get("cili") if isinstance(x, dict) else x).strip().rsplit(":", 1)[-1]
+        for x in (cm.get("excluded_cili") or [])
+        if x
+    }
     near_stem = _corpus_near_stem(meta, pref)
     generated = datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds")
     registry = build_class_registry()
@@ -646,13 +652,15 @@ def build_termos_pesquisa(ws: ClassWorkspace) -> dict[str, Any]:
             if status not in ("UF", "RT"):
                 continue
             for cili in _extract_cili_ids(c.get("ili")):
+                if cili in excluded_cili_ids:
+                    continue
                 lemmas = wn_by_ili.get(cili) or _en_lemmas_from_wn(cili)
                 for lem in lemmas:
                     _add_search(lem, status, cili, "OEWN")
             # Also resolve PULO ilis via CILI when concept ili lacks oewn-ili:
             for raw in c.get("ili") or []:
                 cili = _cili_resolve(str(raw))
-                if not cili:
+                if not cili or cili in excluded_cili_ids:
                     continue
                 lemmas = wn_by_ili.get(cili) or _en_lemmas_from_wn(cili)
                 for lem in lemmas:
@@ -846,21 +854,41 @@ def build_termos_pesquisa(ws: ClassWorkspace) -> dict[str, Any]:
 
     # ---- E — excluded acepções (not members) -------------------------------
     fronteiras = []
+    try:
+        from .engines import load_identifiers
+        _ids = load_identifiers()
+    except Exception:  # noqa: BLE001
+        _ids = None
     for s in dec.get("senses") or []:
         if (s.get("decision") or "").strip() != "exclude":
             continue
         src = (s.get("source") or "").lower()
         if src == "onto":
             continue
-        ili = (s.get("ili") or "").strip() or None
+        ili = (s.get("ili") or s.get("cili") or "").strip() or None
         key = (s.get("key") or "").strip()
-        if not ili:
+        if not ili and not key:
             continue
         members = [m for m in (s.get("members") or []) if (m or "").strip()]
         lema = members[0] if members else key
+        raw = ili or key
+        cili_id = None
+        pwn30 = None
+        legacy_key = None
+        if _ids is not None:
+            ident = _ids.parse_identifier(raw, resolve_cili=True)
+            cili_id = ident.cili_id or ident.cili
+            pwn30 = ident.pwn_id
+            legacy_key = ident.legacy_omw_ili
+        if str(raw).startswith("ili-30-"):
+            legacy_key = legacy_key or raw
         fronteiras.append({
             "chave": key,
-            "ili": ili or key,
+            "chave_legada": legacy_key or (raw if str(raw).startswith("ili-30-") else None),
+            "pwn30": pwn30,
+            "cili": cili_id,
+            # Display field: never label ili-30- as CILI
+            "ili": cili_id or pwn30 or legacy_key or raw,
             "lema": lema,
             "motivo": ((s.get("note") or s.get("gloss") or "").strip())[:200],
             "fonte": src,
@@ -1046,8 +1074,23 @@ def render_termos_md(doc: dict[str, Any]) -> str:
     if doc.get("axis"):
         ap(f"**Eixo / acepção a separar:** {doc['axis']}")
     if doc.get("ancora_ili"):
-        # Official CILI i… preferred; pwn30-… is local PWN 3.0 (never ili-30- as CILI)
-        ap(f"**Âncora CILI / PWN3.0:** {', '.join(doc['ancora_ili'])}")
+        cili_a, pwn_a, leg_a = [], [], []
+        for a in doc["ancora_ili"]:
+            s = str(a)
+            if s.startswith("i") and s[1:].isdigit():
+                cili_a.append(s)
+            elif s.startswith("pwn30-"):
+                pwn_a.append(s)
+            elif s.startswith("ili-30-"):
+                leg_a.append(s)
+            else:
+                cili_a.append(s)
+        if cili_a:
+            ap(f"**Âncora CILI:** {', '.join(cili_a)}")
+        if pwn_a:
+            ap(f"**Synset PWN 3.0 de origem:** {', '.join(pwn_a)}")
+        if leg_a:
+            ap(f"**Chave legada (offset PWN 3.0):** {', '.join(leg_a)}")
     ap(f"**Língua de pesquisa:** `{search_lang}` · **Língua de rótulos:** `{label_lang}`")
     ap(f"**Sintaxe:** `{doc.get('near_stem') or '…*'} NEAR/4 <termo>`")
     ap(f"**Gerado:** {doc.get('generated') or '—'}")
@@ -1110,11 +1153,13 @@ def render_termos_md(doc: dict[str, Any]) -> str:
     if not doc["E_fronteiras_dominio"]:
         ap("_(nenhuma)_")
     else:
-        ap("| chave / ILI | lema | motivo |")
-        ap("|---|---|---|")
+        ap("| chave legada (PWN 3.0) | pwn30 | CILI | lema | motivo |")
+        ap("|---|---|---|---|---|")
         for r in doc["E_fronteiras_dominio"]:
             ap(
-                f"| `{r.get('ili') or r.get('chave') or '—'}` | "
+                f"| `{r.get('chave_legada') or r.get('chave') or '—'}` | "
+                f"`{r.get('pwn30') or '—'}` | "
+                f"`{r.get('cili') or '—'}` | "
                 f"{r.get('lema') or '—'} | {r.get('motivo') or '—'} |"
             )
     ap("")
@@ -1199,7 +1244,7 @@ def _token_html(
     elif ili:
         ili_s = str(ili)
     ili_bit = (
-        f'<span class="tok-ili" title="Âncora CILI / PWN 3.0">{_esc(ili_s)}</span>'
+        f'<span class="tok-ili" title="Identificador CILI ou chave PWN 3.0">{_esc(ili_s)}</span>'
         if ili_s else ""
     )
     cls = "tok"
@@ -1499,7 +1544,7 @@ footer.page {{
   <h1>TERMOS — {_esc(pref)}</h1>
   <p class="meta">
     <strong>Classe:</strong> {_esc(class_id)} ·
-    <strong>Âncora CILI / PWN 3.0:</strong> {_esc(ancora_txt)} ·
+    <strong>Âncora CILI:</strong> {_esc(ancora_txt)} ·
     <strong>Acepção a separar:</strong> {_esc(axis)} ·
     <strong>Pesquisa:</strong> {_esc(search_lang)} ·
     <strong>Rótulos:</strong> {_esc(label_lang)} ·

@@ -5,12 +5,13 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix sr: <http://semantic-research.local/concept/> .
 
-# Concept model — TexturaPolitpica
-# generated 2026-07-30T12:01:07+00:00
-# policy: skos:exactMatch ≤1 primary PULO UF CILI; extra UF PULO → closeMatch; RT → relatedMatch; excludes never linked as matches; Onto lemmas = altLabel only.
+# Concept model (plain SKOS, not SKOS-XL) — TexturaPolitpica
+# generated 2026-07-30T12:17:06+00:00
+# policy: SKOS matches only from concept_mapping adjudication; harvested CILI → inventory/excluded_cili; Onto co-members not auto altLabel; excludes → sr:excludedCandidate (not hiddenLabel); pref/alt/hidden mutually disjoint.
 
 sr:TexturaPolitpica a owl:Class, skos:Concept ;
-    skos:prefLabel "TexturaPolitpica"@pt ;
+    skos:prefLabel "TexturaPolitpica"@pt-PT ;
     dct:identifier "TexturaPolitpica" ;
-    skos:editorialNote "skos:exactMatch ≤1 primary PULO UF CILI; extra UF PULO → closeMatch; RT → relatedMatch; excludes never linked as matches; Onto lemmas = altLabel only."@en ;
-    rdfs:comment "UF senses=0; RT=0; exactCILI=0; closeCILI=0; relatedCILI=0"@en .
+    skos:editorialNote "SKOS matches only from concept_mapping adjudication; harvested CILI → inventory/excluded_cili; Onto co-members not auto altLabel; excludes → sr:excludedCandidate (not hiddenLabel); pref/alt/hidden mutually disjoint."@en ;
+    sr:mappingStatus "no_validated_cili" ;
+    rdfs:comment "UF senses=0; RT=0; exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .

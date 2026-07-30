@@ -166,7 +166,7 @@ class ExportBlocksTests(unittest.TestCase):
         self.assertTrue(any(r.get("termo") == "politípica" for r in evid["oposicao"]))
         self.assertTrue(any(r.get("termo") == "heterogénea" for r in evid["vizinha"]))
         md = render_blocks_markdown(blocks)
-        self.assertIn("## Vocabulário (SKOS-XL)", md)
+        self.assertIn("## Vocabulário (SKOS)", md)
         self.assertIn("## Evidência de delimitação (não serializada)", md)
         self.assertIn(
             "Registos documentais. Não constituem relações do vocabulário.", md

@@ -944,14 +944,31 @@ def run_asserts(concepts, sources, source_labels, policy, raw_entries,
         ),
     )
 
-    # T6 — absent WordNet ⇒ column all '—'
+    # T6 — WordNet column: distinguish available / queried / contributed
     if "WordNet" not in source_labels:
         t6 = all("WordNet" not in c.sources for c in concepts)
         add("T6", "Fonte WordNet ausente ⇒ coluna toda «—»; execução continua (exit 0).",
-            t6, "coluna WordNet ausente e uniformemente «—»")
+            t6, "source_available=false")
     else:
-        add("T6", "Fonte WordNet ausente ⇒ coluna toda «—».", True,
-            "WordNet presente — N/A")
+        contributed = any(
+            c.sources.get("WordNet") not in (None, "", ABSENT)
+            for c in concepts
+        )
+        add(
+            "T6",
+            "WordNet/OEWN: source_available / source_queried / "
+            "source_contributed_results distintos.",
+            True,
+            (
+                "source_available=true; source_queried=true; "
+                + (
+                    "source_contributed_results=true"
+                    if contributed
+                    else "source_contributed_results=false "
+                    "(sem formas PT admitidas na matriz)"
+                )
+            ),
+        )
 
     # T7 — proposta_final never a status the sources didn't support; conservative ⇒ null on divergence
     t7_bad = []
@@ -1113,15 +1130,43 @@ def render_json(class_id, policy, source_labels, concepts, assertions,
     equiv_counts = ({"mapped": equiv.n_map, "review": equiv.n_review,
                      "unmatched": equiv.n_unmatched} if equiv is not None
                     else {"mapped": 0, "review": 0, "unmatched": 0})
+    legacy_loaded = bool(equiv is not None and equiv.n_map > 0)
+    # Per-source contribution (available/queried vs actually in matrix)
+    source_status: dict[str, dict[str, bool]] = {}
+    for lab in source_labels:
+        contributed = any(
+            (c.sources.get(lab) not in (None, "", ABSENT))
+            for c in concepts
+        )
+        source_status[lab] = {
+            "source_available": True,
+            "source_queried": True,
+            "source_contributed_results": contributed,
+        }
+    for col in SOURCE_COLUMNS:
+        if col not in source_status:
+            source_status[col] = {
+                "source_available": False,
+                "source_queried": False,
+                "source_contributed_results": False,
+            }
+    join_counts = Counter(c.join for c in concepts)
     return {
         "class": class_id,
         "policy": policy,
         "generated": datetime.now().isoformat(timespec="seconds"),
         "columns": SOURCE_COLUMNS,
         "sources": source_labels,
+        "source_status": source_status,
+        "join_counts": dict(join_counts),
+        # Legacy human OEWN↔PULO table (distinct from official CILI resolution)
+        "legacy_equivalence_map": map_path,
+        "legacy_equivalence_counts": equiv_counts,
+        "legacy_equivalence_loaded": legacy_loaded,
+        # Back-compat aliases (same legacy table — not "CILI joins unavailable")
         "ili_equivalence_map": map_path,
         "ili_equivalence_counts": equiv_counts,
-        "ili_equivalence_loaded": bool(equiv is not None and equiv.n_map > 0),
+        "ili_equivalence_loaded": legacy_loaded,
         "concepts": [concept_to_json(c) for c in concepts],
         "summary": {
             "veredicto_totals": dict(totals),
@@ -1152,16 +1197,56 @@ def render_markdown(doc: dict, concepts) -> str:
     ap(f"- **Política de divergência:** {doc['policy']}")
     ap(f"- **Fontes:** {', '.join(doc['sources']) or '—'}  (colunas: "
        f"{', '.join(doc['columns'])})")
-    mp = doc.get("ili_equivalence_map")
-    ec = doc.get("ili_equivalence_counts") or {}
-    if doc.get("ili_equivalence_loaded"):
-        src = mp or "CILI"
-        ap(f"- **Junção ILI (CILI automático):** {src}  "
-           f"({ec.get('mapped', 0)} pares CILI; "
+    mp = doc.get("legacy_equivalence_map") or doc.get("ili_equivalence_map")
+    ec = (doc.get("legacy_equivalence_counts")
+          or doc.get("ili_equivalence_counts") or {})
+    legacy_on = bool(
+        doc.get("legacy_equivalence_loaded")
+        if "legacy_equivalence_loaded" in doc
+        else doc.get("ili_equivalence_loaded")
+    )
+    jc = doc.get("join_counts") or {}
+    n_ili = int(jc.get("ili") or 0)
+    n_weak = int(jc.get("weak(term)") or 0)
+    n_single = int(jc.get("single") or 0)
+    if legacy_on:
+        src = mp or "tabela legada"
+        ap(f"- **Tabela legada OEWN↔PULO** (`legacy_equivalence`): {src}  "
+           f"({ec.get('mapped', 0)} pares; "
            f"{ec.get('unmatched', 0)} sem âncora partilhada)")
     else:
-        ap("- **Junção ILI (CILI):** ⚠ sem pares — junções OEWN↔PULO por ILI "
-           "indisponíveis; só weak(term).")
+        ap("- **Tabela legada OEWN↔PULO** (`legacy_equivalence`): não carregada "
+           "(junção runtime usa CILI oficial quando ambas as fontes partilham "
+           "``i…``; isto não significa que os identificadores CILI estejam "
+           "indisponíveis).")
+    if n_ili:
+        ap(f"- **Junções interfontes por CILI:** {n_ili}")
+    elif n_weak:
+        ap(f"- **Junções interfontes:** {n_weak} weak(term) "
+           "(sem ILI CILI partilhado entre fontes)")
+    else:
+        # Typical PULO-only matrix: single rows with normalised CILI ids
+        sole = []
+        for lab in (doc.get("sources") or []):
+            st = (doc.get("source_status") or {}).get(lab) or {}
+            if st.get("source_contributed_results"):
+                sole.append(lab)
+        sole_txt = " + ".join(sole) if sole else "uma única fonte"
+        ap(
+            f"- **Junções interfontes:** nenhuma — {n_single or len(concepts)} "
+            f"item(ns) da matriz provenientes exclusivamente de {sole_txt} "
+            "(identificadores CILI normalizados na coluna ILI não implicam "
+            "junção OEWN↔PULO)."
+        )
+    # WordNet / OEWN contribution clarity
+    wn_st = (doc.get("source_status") or {}).get("WordNet") or {}
+    if wn_st.get("source_available") or "WordNet" in (doc.get("sources") or []):
+        if wn_st.get("source_contributed_results"):
+            ap("- **WordNet/OEWN:** consultada e com resultados na matriz")
+        else:
+            ap("- **WordNet/OEWN:** disponível/consultada, sem formas "
+               "portuguesas admitidas na matriz "
+               "(`source_contributed_results=false`)")
     ap(f"- **Gerado:** {doc['generated']}")
     ap(f"- **Descartados (só pendentes):** "
        f"{doc['summary'].get('descartados_pendentes', 0)} "

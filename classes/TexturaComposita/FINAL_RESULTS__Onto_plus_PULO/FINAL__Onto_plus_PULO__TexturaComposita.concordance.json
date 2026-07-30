@@ -169,7 +169,8 @@
       "id": "T6",
       "text": "Fonte WordNet ausente ⇒ coluna toda «—».",
       "passed": true,
-      "evidence": "WordNet presente — N/A"
+      "evidence": "source_available=true; source_queried=true; source_contributed_results=false (sem formas PT admitidas na matriz)",
+      "claim": "WordNet/OEWN: source_available / source_queried / source_contributed_results distintos."
     },
     {
       "id": "T7",
@@ -230,5 +231,32 @@
   "reconciliacao": {
     "t14_removed": true,
     "acepcoes_sem_motor": 0
-  }
+  },
+  "join_counts": {
+    "single": 3
+  },
+  "source_status": {
+    "PULO": {
+      "source_available": true,
+      "source_queried": true,
+      "source_contributed_results": true
+    },
+    "OWN-PT": {
+      "source_available": true,
+      "source_queried": true,
+      "source_contributed_results": false
+    },
+    "WordNet": {
+      "source_available": true,
+      "source_queried": true,
+      "source_contributed_results": false
+    }
+  },
+  "legacy_equivalence_loaded": false,
+  "legacy_equivalence_counts": {
+    "mapped": 0,
+    "review": 0,
+    "unmatched": 27
+  },
+  "legacy_equivalence_map": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\classes\\TexturaComposita\\out\\ili_equivalence.cili.json"
 }

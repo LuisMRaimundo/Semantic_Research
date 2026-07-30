@@ -74,8 +74,10 @@ class ConceptModelSmoke(unittest.TestCase):
         })
         self.assertIn("skos:Concept", ttl)
         self.assertIn("skos:exactMatch <", ttl)
-        self.assertIn("globalwordnet.org/ili/i1", ttl)
-        self.assertIn('skos:altLabel "alpha"@pt', ttl)
+        self.assertIn("ili.globalwordnet.org/ili/i1", ttl)
+        self.assertIn('skos:altLabel "alpha"@pt-PT', ttl)
+        self.assertIn("sr:excludedCandidate", ttl)
+        self.assertNotIn("skos:hiddenLabel", ttl)
 
 
 if __name__ == "__main__":

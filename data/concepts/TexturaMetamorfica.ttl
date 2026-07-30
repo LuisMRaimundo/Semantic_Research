@@ -5,37 +5,36 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix sr: <http://semantic-research.local/concept/> .
 
-# Concept model — TexturaMetamorfica
-# generated 2026-07-30T12:01:07+00:00
-# policy: skos:exactMatch ≤1 primary PULO UF CILI; extra UF PULO → closeMatch; RT → relatedMatch; excludes never linked as matches; Onto lemmas = altLabel only.
+# Concept model (plain SKOS, not SKOS-XL) — TexturaMetamorfica
+# generated 2026-07-30T12:17:06+00:00
+# policy: SKOS matches only from concept_mapping adjudication; harvested CILI → inventory/excluded_cili; Onto co-members not auto altLabel; excludes → sr:excludedCandidate (not hiddenLabel); pref/alt/hidden mutually disjoint.
 
 sr:TexturaMetamorfica a owl:Class, skos:Concept ;
-    skos:prefLabel "TexturaMetamórfica"@pt ;
-    skos:scopeNote "muda de forma, relativamente a um ou vários parâmetros"@pt ;
+    skos:prefLabel "TexturaMetamórfica"@pt-PT ;
+    skos:scopeNote "muda de forma, relativamente a um ou vários parâmetros"@pt-PT ;
     dct:identifier "TexturaMetamorfica" ;
-    skos:editorialNote "skos:exactMatch ≤1 primary PULO UF CILI; extra UF PULO → closeMatch; RT → relatedMatch; excludes never linked as matches; Onto lemmas = altLabel only."@en ;
-    skos:exactMatch <http://globalwordnet.org/ili/i75366> ;
-    skos:altLabel "metamorfose"@pt ;
-    skos:altLabel "modificação"@pt ;
-    skos:altLabel "mudança"@pt ;
-    skos:altLabel "transmudação"@pt ;
-    skos:altLabel "transmutação"@pt ;
-    skos:altLabel "transformação"@pt ;
-    skos:altLabel "alteração"@pt ;
-    skos:altLabel "hemoético"@pt ;
-    skos:altLabel "metamórfico"@pt ;
-    skos:hiddenLabel "cambiar"@pt ;
-    skos:hiddenLabel "converter"@pt ;
-    skos:hiddenLabel "demudar"@pt ;
-    skos:hiddenLabel "evolucionar"@pt ;
-    skos:hiddenLabel "evoluir"@pt ;
-    skos:hiddenLabel "falsificar"@pt ;
-    skos:hiddenLabel "metamorfosear"@pt ;
-    skos:hiddenLabel "perturbar"@pt ;
-    skos:hiddenLabel "tornar"@pt ;
-    skos:hiddenLabel "tranformar"@pt ;
-    skos:hiddenLabel "transformar"@pt ;
-    skos:hiddenLabel "alterar"@pt ;
-    skos:hiddenLabel "mudar"@pt ;
-    skos:hiddenLabel "modificar"@pt ;
-    rdfs:comment "UF senses=6; RT=0; exactCILI=1; closeCILI=0; relatedCILI=0"@en .
+    skos:editorialNote "SKOS matches only from concept_mapping adjudication; harvested CILI → inventory/excluded_cili; Onto co-members not auto altLabel; excludes → sr:excludedCandidate (not hiddenLabel); pref/alt/hidden mutually disjoint."@en ;
+    sr:mappingStatus "no_validated_cili" ;
+    skos:altLabel "metamorfose"@pt-PT ;
+    skos:altLabel "modificação"@pt-PT ;
+    skos:altLabel "mudança"@pt-PT ;
+    skos:altLabel "transmudação"@pt-PT ;
+    skos:altLabel "transmutação"@pt-PT ;
+    skos:altLabel "transformação"@pt-PT ;
+    skos:altLabel "alteração"@pt-PT ;
+    sr:excludedCandidate [ rdf:value "cambiar"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
+    sr:excludedCandidate [ rdf:value "converter"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
+    sr:excludedCandidate [ rdf:value "demudar"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
+    sr:excludedCandidate [ rdf:value "evolucionar"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
+    sr:excludedCandidate [ rdf:value "evoluir"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
+    sr:excludedCandidate [ rdf:value "falsificar"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
+    sr:excludedCandidate [ rdf:value "metamorfosear"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
+    sr:excludedCandidate [ rdf:value "perturbar"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
+    sr:excludedCandidate [ rdf:value "tornar"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
+    sr:excludedCandidate [ rdf:value "tranformar"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
+    sr:excludedCandidate [ rdf:value "transformar"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
+    sr:excludedCandidate [ rdf:value "alterar"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
+    sr:excludedCandidate [ rdf:value "mudar"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
+    sr:excludedCandidate [ rdf:value "modificar"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
+    sr:excludedCili [ sr:cili <http://ili.globalwordnet.org/ili/i22389> ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação" ] ;
+    rdfs:comment "UF senses=6; RT=0; exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .

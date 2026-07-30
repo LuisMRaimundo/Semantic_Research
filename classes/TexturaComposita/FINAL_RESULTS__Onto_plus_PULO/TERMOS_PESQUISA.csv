@@ -1,34 +1,30 @@
 secao,forma,wildcard,lingua,estatuto,garantia,ancora_ili,ili,fontes,relacao,nota
-A,compound,compound*,en,UF,,,i114921,OEWN,,
-A,chemical compound,chemical compound*,en,UF,,,i114921,OEWN,,
-D,decay,decay*,en,RT,,,i97733,OEWN,,
-D,decomposition,decomposition*,en,RT,,,i97733,OEWN,,
-E,desalinhado,,,exclude,,,ili-30-02424254-a,pulo,,Não limpo e arrumado
-E,compositor,,,exclude,,,ili-30-09947232-n,pulo,,alguém que compõe a música como uma profissão
-E,composição,,,exclude,,,ili-30-00237078-n,pulo,,o ato de formar ou estabelecer algo
-E,combinação,,,exclude,,,ili-30-00378985-n,pulo,,o ato de combinar as coisas para formar um todo novo
-E,composição,,,exclude,,,ili-30-04341686-n,pulo,,uma coisa construída; uma entidade complexa construída de muitas partes
-E,composição,,,exclude,,,ili-30-06788785-n,pulo,,instruções para fazer algo
-E,composição,,,exclude,,,ili-30-00929718-n,pulo,,o ato de criar obras escritas
-E,composição,,,exclude,,,ili-30-00939452-n,pulo,,criação musical
-E,composição,,,exclude,,,ili-30-03081660-n,pulo,,algo que é criado por providenciar várias coisas de modo a formar um todo unificado
-E,constituição,,,exclude,,,ili-30-04933544-n,pulo,,a maneira em que alguém ou alguma coisa é composto
-E,composição,,,exclude,,,ili-30-05076472-n,pulo,,a propriedade espacial resultante do acordo das partes em relação às outras e a toda
-E,peça,,,exclude,,,ili-30-07037465-n,pulo,,uma obra musical que tenha sido criado
-E,composição,,,exclude,,,ili-30-14588492-n,pulo,,uma mistura de ingredientes
-E,apartamento,,,exclude,,,ili-30-07331400-n,pulo,,desmoronando
-E,constante,,,exclude,,,ili-30-00576680-a,pulo,,(Às vezes seguido por &#39;com&#39;) em acordo ou consistente ou confiável
-E,constante,,,exclude,,,ili-30-01754421-a,pulo,,"continuada ou permanente, sem alteração marcada do estado ou condição ou lugar"
-E,constante,,,exclude,,,ili-30-00583239-a,pulo,,firme no propósito ou devoção ou afeição
-E,contínuo,,,exclude,,,ili-30-00592222-a,pulo,,ocorrendo sem interrupção; principalmente restrita ao que se repete regularmente ou freqüentemente de uma série prolongada e espaçados
-E,assíduo,,,exclude,,,ili-30-00595299-a,pulo,,ininterrupta no tempo indefinidamente longo e contínuo
-E,contínuo,,,exclude,,,ili-30-00595863-a,pulo,,"`Contínua &#39;(significando aparentemente ininterrupta) é muitas vezes usado como sinônimo de&#39; contínua &#39;(ou seja, sem interrupção)"
-E,assíduo,,,exclude,,,ili-30-00754393-a,pulo,,marcado pelo cuidado e esforço persistente
-E,inabalável,,,exclude,,,ili-30-01990653-a,pulo,,marcado pela firme determinação ou resolução; Não shakable
-E,constante,,,exclude,,,ili-30-02506029-a,pulo,,unvarying em natureza
-E,fiel,,,exclude,,,ili-30-00959244-a,pulo,,inabalável em devoção ao amigo ou voto ou causa
-E,constante,,,exclude,,,ili-30-13585429-n,pulo,,um número que representa uma quantidade assumido como tendo um valor fixo num contexto matemático especificado
-E,constante,,,exclude,,,ili-30-05858936-n,pulo,,uma quantidade que não varia
+E,desalinhado,,,exclude,,,i13418,pulo,,Não limpo e arrumado
+E,compositor,,,exclude,,,i89134,pulo,,alguém que compõe a música como uma profissão
+E,composição,,,exclude,,,i36652,pulo,,o ato de formar ou estabelecer algo
+E,combinação,,,exclude,,,i37400,pulo,,o ato de combinar as coisas para formar um todo novo
+E,composição,,,exclude,,,i59707,pulo,,uma coisa construída; uma entidade complexa construída de muitas partes
+E,composição,,,exclude,,,i72162,pulo,,instruções para fazer algo
+E,composição,,,exclude,,,i40296,pulo,,o ato de criar obras escritas
+E,composição,,,exclude,,,i40342,pulo,,criação musical
+E,composição,,,exclude,,,i52229,pulo,,algo que é criado por providenciar várias coisas de modo a formar um todo unificado
+E,constituição,,,exclude,,,i62908,pulo,,a maneira em que alguém ou alguma coisa é composto
+E,composição,,,exclude,,,i63671,pulo,,a propriedade espacial resultante do acordo das partes em relação às outras e a toda
+E,peça,,,exclude,,,i73641,pulo,,uma obra musical que tenha sido criado
+E,composição,,,exclude,,,i113682,pulo,,uma mistura de ingredientes
+E,apartamento,,,exclude,,,i75220,pulo,,desmoronando
+E,constante,,,exclude,,,i3216,pulo,,(Às vezes seguido por &#39;com&#39;) em acordo ou consistente ou confiável
+E,constante,,,exclude,,,i9631,pulo,,"continuada ou permanente, sem alteração marcada do estado ou condição ou lugar"
+E,constante,,,exclude,,,i3245,pulo,,firme no propósito ou devoção ou afeição
+E,contínuo,,,exclude,,,i3291,pulo,,ocorrendo sem interrupção; principalmente restrita ao que se repete regularmente ou freqüentemente de uma série prolongada e espaçados
+E,assíduo,,,exclude,,,i3305,pulo,,ininterrupta no tempo indefinidamente longo e contínuo
+E,contínuo,,,exclude,,,i3306,pulo,,"`Contínua &#39;(significando aparentemente ininterrupta) é muitas vezes usado como sinônimo de&#39; contínua &#39;(ou seja, sem interrupção)"
+E,assíduo,,,exclude,,,i4173,pulo,,marcado pelo cuidado e esforço persistente
+E,inabalável,,,exclude,,,i10902,pulo,,marcado pela firme determinação ou resolução; Não shakable
+E,constante,,,exclude,,,i13897,pulo,,unvarying em natureza
+E,fiel,,,exclude,,,i5259,pulo,,inabalável em devoção ao amigo ou voto ou causa
+E,constante,,,exclude,,,i108091,pulo,,um número que representa uma quantidade assumido como tendo um valor fixo num contexto matemático especificado
+E,constante,,,exclude,,,i67660,pulo,,uma quantidade que não varia
 F,composto,composto*,pt-PT,UF,fonte_unica,presente,i114921,pulo,,
 F,decomposição,decomposição*,pt-PT,RT,fonte_unica,presente,i97733,pulo,,
 F,descomposição,descomposição*,pt-PT,RT,fonte_unica,presente,i97733,pulo,,

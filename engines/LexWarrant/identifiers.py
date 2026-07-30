@@ -6,7 +6,8 @@ Rules
 -----
 * Canonical CILI id is bare ``iNNNNN`` (never a CURIE / never fabricated).
 * ``oewn-ili:i…`` / ``ili:i…`` are *contextual* CURIEs only — strip to bare id.
-* Official concept URI: ``http://globalwordnet.org/ili/<id>``
+* Official concept URI: ``http://ili.globalwordnet.org/ili/<id>``
+  (GWA / WN-LMF RDF namespace; older ``http://globalwordnet.org/ili/`` still accepted on input)
 * Official browser page: ``https://globalwordnet.github.io/cili/<id>.html``
 * Princeton WordNet 3.0 offsets are local ids: ``pwn30-XXXXXXXX-p``.
 * Legacy OMW/MCR ``ili-30-XXXXXXXX-p`` are PWN 3.0 pivots, **not** CILI.
@@ -31,7 +32,8 @@ _PWN30_RE = re.compile(r"^pwn30-(\d{8})-([a-z])$", re.I)
 _OMW30_RE = re.compile(r"^([a-z]{2,4})-30-(\d{8})-([a-z])$", re.I)
 _OEWN_ID_RE = re.compile(r"^oewn-(\d{8})-([a-z])$", re.I)
 
-CILI_URI_BASE = "http://globalwordnet.org/ili/"
+CILI_URI_BASE = "http://ili.globalwordnet.org/ili/"
+CILI_URI_BASE_LEGACY = "http://globalwordnet.org/ili/"
 CILI_PAGE_BASE = "https://globalwordnet.github.io/cili/"
 
 
@@ -46,7 +48,7 @@ class SenseIdentity:
     pwn_id: Optional[str] = None  # pwn30-XXXXXXXX-p
     cili: Optional[str] = None  # alias of cili_id (bare iNNNNN)
     cili_id: Optional[str] = None  # canonical bare CILI
-    cili_uri: Optional[str] = None  # http://globalwordnet.org/ili/i…
+    cili_uri: Optional[str] = None  # http://ili.globalwordnet.org/ili/i…
     source_curie: Optional[str] = None  # contextual e.g. oewn-ili:i… (not canonical)
     oewn_id: Optional[str] = None  # oewn-XXXXXXXX-p
     mapping_status: str = "unverified"
@@ -60,13 +62,13 @@ def normalize_cili_id(value: str) -> str:
     """Return the canonical bare CILI identifier, such as ``i114921``.
 
     Accepts CURIEs (``oewn-ili:i…``, ``ili:i…``, ``cili:i…``) and absolute
-    ``http://globalwordnet.org/ili/i…`` URIs. Raises ``ValueError`` if the
-    local part is not a well-formed CILI id.
+    ``http://ili.globalwordnet.org/ili/i…`` (or legacy globalwordnet.org) URIs.
+    Raises ``ValueError`` if the local part is not a well-formed CILI id.
     """
     s = str(value or "").strip()
     if not s:
         raise ValueError(f"Invalid CILI identifier: {value!r}")
-    if "globalwordnet.org/ili/" in s:
+    if "ili.globalwordnet.org/ili/" in s or "globalwordnet.org/ili/" in s:
         s = s.rstrip("/").rsplit("/", maxsplit=1)[-1]
     elif "globalwordnet.github.io/cili/" in s:
         s = s.rstrip("/").rsplit("/", maxsplit=1)[-1]
@@ -156,7 +158,11 @@ def strip_cili_prefix(value: str) -> str:
     s = str(value or "").strip()
     if not s:
         return ""
-    if "globalwordnet.org/ili/" in s or "globalwordnet.github.io/cili/" in s:
+    if (
+        "ili.globalwordnet.org/ili/" in s
+        or "globalwordnet.org/ili/" in s
+        or "globalwordnet.github.io/cili/" in s
+    ):
         s = s.rstrip("/").rsplit("/", maxsplit=1)[-1]
         if s.endswith(".html"):
             s = s[: -len(".html")]

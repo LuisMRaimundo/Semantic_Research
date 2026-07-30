@@ -5,15 +5,14 @@ Writes per-class ``CONCEPT.ttl`` into FINAL_RESULTS and a registry
 
 SKOS discipline (audit / Global WordNet practice)
 -------------------------------------------------
-* ``skos:exactMatch`` is reserved for at most **one** primary CILI pivot —
-  a PULO UF sense with an official ``i…`` id. It must NOT list every ILI
-  harvested during research (excludes, RT, Onto inventory, weak Onto→ILI).
-* Additional UF PULO CILIs → ``skos:closeMatch`` (review; not interchangeable).
-* RT CILIs → ``skos:relatedMatch``.
-* Exclude lemmas → ``skos:hiddenLabel`` only (never ILI match links).
-* Onto.PT UF lemmas → ``skos:altLabel`` without inventing CILI links.
-* Inventory of other resolved CILIs (if any) stays in JSON under
-  ``ili_inventory`` — not as SKOS matches.
+* ``skos:exactMatch`` / ``closeMatch`` / ``relatedMatch`` are emitted **only**
+  from explicit ``concept_mapping`` adjudication — never auto-filled from a
+  formally resolved PULO UF/RT CILI (formal ≈≠ semantic).
+* Harvested CILIs stay in ``ili_inventory`` / ``excluded_cili`` for audit.
+* Onto.PT group co-members are **not** automatic ``skos:altLabel``.
+* ``skos:prefLabel``, ``altLabel`` and ``hiddenLabel`` are mutually disjoint;
+  excludes use ``sr:excludedCandidate``, not ``skos:hiddenLabel``.
+* CILI URI namespace: ``http://ili.globalwordnet.org/ili/``.
 """
 
 from __future__ import annotations
@@ -29,7 +28,13 @@ from .settings import DATA_DIR, ROOT
 from .workspace import ClassWorkspace
 
 _SAFE = re.compile(r"[^A-Za-z0-9_\-]+")
-CILI_URI_BASE = "http://globalwordnet.org/ili/"
+# GWA / WN-LMF RDF namespace (not the older globalwordnet.org/ili/ form)
+CILI_URI_BASE = "http://ili.globalwordnet.org/ili/"
+
+_KNOWN_EN = frozenset({
+    "dissimilar", "decay", "decomposition", "compound", "composite",
+    "combination", "construction", "mixture", "heterogeneous",
+})
 
 
 def _slug(text: str) -> str:
@@ -47,12 +52,26 @@ def _ttl_escape(text: str) -> str:
     )
 
 
+def label_lang_tag(lemma: str) -> str:
+    """BCP 47 tag for a lexical form (pt-PT default; en / pt-BR when clear)."""
+    t = (lemma or "").strip()
+    if not t:
+        return "pt-PT"
+    low = t.casefold()
+    if low in _KNOWN_EN:
+        return "en"
+    # Brazilian orthography of common lemmas (circumflex vs European acute)
+    if low in {"heterogêneo", "heterogênea"}:
+        return "pt-BR"
+    return "pt-PT"
+
+
 def _ili_uri(ili: str) -> Optional[str]:
     s = (ili or "").strip()
     if s.startswith("oewn-ili:") or s.startswith("ili:") or s.startswith("cili:"):
         s = s.rsplit(":", 1)[-1]
-    if s.startswith("i") and s[1:].isdigit() and not s[1:].startswith("0"):
-        return f"{CILI_URI_BASE}{s}"
+    if "ili.globalwordnet.org/ili/" in s or "globalwordnet.org/ili/" in s:
+        s = s.rstrip("/").rsplit("/", 1)[-1]
     if s.startswith("i") and s[1:].isdigit():
         return f"{CILI_URI_BASE}{s}"
     return None
@@ -75,8 +94,49 @@ def _resolve_cili(raw: str, resolve) -> Optional[str]:
         return None
 
 
+def _mapping_block(meta: dict[str, Any], dec: dict[str, Any]) -> dict[str, Any]:
+    """Explicit concept_mapping from class.json or decisions (adjudication)."""
+    cm = meta.get("concept_mapping")
+    if not isinstance(cm, dict):
+        cm = dec.get("concept_mapping")
+    return dict(cm) if isinstance(cm, dict) else {}
+
+
+def _as_cili_list(raw: Any) -> list[str]:
+    out: list[str] = []
+    for item in raw or []:
+        if isinstance(item, dict):
+            cid = str(item.get("cili") or item.get("ili") or "").strip()
+        else:
+            cid = str(item or "").strip()
+        if cid.startswith(("oewn-ili:", "ili:", "cili:")):
+            cid = cid.rsplit(":", 1)[-1]
+        if cid.startswith("i") and cid[1:].isdigit() and cid not in out:
+            out.append(cid)
+    return out
+
+
+def _as_excluded_cili(raw: Any) -> list[dict[str, str]]:
+    out: list[dict[str, str]] = []
+    seen: set[str] = set()
+    for item in raw or []:
+        if isinstance(item, dict):
+            cid = str(item.get("cili") or item.get("ili") or "").strip()
+            reason = str(item.get("reason") or item.get("motivo") or "").strip()
+        else:
+            cid = str(item or "").strip()
+            reason = ""
+        if cid.startswith(("oewn-ili:", "ili:", "cili:")):
+            cid = cid.rsplit(":", 1)[-1]
+        if not (cid.startswith("i") and cid[1:].isdigit()) or cid in seen:
+            continue
+        seen.add(cid)
+        out.append({"cili": cid, "reason": reason})
+    return out
+
+
 def build_class_concept_graph(ws: ClassWorkspace) -> dict[str, Any]:
-    """Collect prefLabel, UF/RT lemmas, disciplined CILI matches, excludes."""
+    """Collect inventory + adjudicated SKOS matches (no auto CILI promotion)."""
     from . import decisions as decmod
     from .engines import cili_api
 
@@ -85,15 +145,20 @@ def build_class_concept_graph(ws: ClassWorkspace) -> dict[str, Any]:
     dec = decmod.load_decisions(ws.decisions_json)
     pref = (meta.get("pref_label") or ws.class_id).strip()
     axis = (meta.get("axis") or "").strip()
+    cm = _mapping_block(meta, dec)
+    focus = {
+        normalize_word(x)
+        for x in (meta.get("focus_stems") or [])
+        if x
+    }
+    focus.add(normalize_word(pref))
 
     uf: list[dict[str, Any]] = []
     rt: list[dict[str, Any]] = []
     excl: list[dict[str, Any]] = []
-
-    # Disciplined CILI buckets (never dump excludes into matches)
-    uf_pulo_cilis: list[str] = []      # all distinct PULO UF CILIs
-    related_cili: list[str] = []       # RT with CILI
-    ili_inventory: list[dict[str, Any]] = []  # audit only
+    ili_inventory: list[dict[str, Any]] = []
+    excluded_cili = _as_excluded_cili(cm.get("excluded_cili"))
+    excluded_ids = {e["cili"] for e in excluded_cili}
 
     for sense in dec.get("senses") or []:
         decision = (sense.get("decision") or "").strip()
@@ -101,9 +166,7 @@ def build_class_concept_graph(ws: ClassWorkspace) -> dict[str, Any]:
         members = [pretty_word(m) for m in (sense.get("members") or []) if m]
         raw_ili = sense.get("cili") or sense.get("ili") or ""
         cid = _resolve_cili(str(raw_ili), resolve) if raw_ili else None
-        # Only resolve bare CILI / pwn / legacy keys for *admitted* senses.
-        # Excludes must not contribute SKOS matches (even if key is ili-30-…).
-        if not cid and decision in ("UF", "RT"):
+        if not cid and decision in ("UF", "RT", "exclude"):
             key = str(sense.get("key") or sense.get("pwn_id") or "")
             cid = _resolve_cili(key, resolve) if key else None
 
@@ -116,29 +179,29 @@ def build_class_concept_graph(ws: ClassWorkspace) -> dict[str, Any]:
         }
         if decision == "UF":
             uf.append(row)
-            if cid and source == "pulo":
-                if cid not in uf_pulo_cilis:
-                    uf_pulo_cilis.append(cid)
+            if cid:
+                role = "uf_pulo_candidate" if source == "pulo" else f"uf_{source or 'other'}_candidate"
                 ili_inventory.append({
-                    "cili": cid, "role": "uf_pulo", "key": sense.get("key"),
+                    "cili": cid, "role": role, "key": sense.get("key"),
+                    "note": "inventory only — not auto skos:exactMatch",
                 })
-            elif cid:
-                ili_inventory.append({
-                    "cili": cid, "role": f"uf_{source or 'other'}",
-                    "key": sense.get("key"),
-                    "note": "not used as skos:exactMatch",
-                })
+                if cid in excluded_ids:
+                    ili_inventory[-1]["note"] = "excluded by concept_mapping"
         elif decision == "RT":
             rt.append(row)
             if cid:
-                if cid not in related_cili and cid not in uf_pulo_cilis:
-                    related_cili.append(cid)
                 ili_inventory.append({
-                    "cili": cid, "role": "rt", "key": sense.get("key"),
+                    "cili": cid, "role": "rt_candidate", "key": sense.get("key"),
+                    "note": "inventory only — not auto skos:relatedMatch",
                 })
+                if cid in excluded_ids:
+                    ili_inventory[-1]["note"] = "excluded by concept_mapping"
         elif decision == "exclude":
             excl.append(row)
-            # deliberately no CILI match / inventory promotion
+            if cid and cid not in excluded_ids:
+                reason = (sense.get("note") or sense.get("gloss") or "").strip()[:200]
+                excluded_cili.append({"cili": cid, "reason": reason or "exclude sense"})
+                excluded_ids.add(cid)
 
     for m in dec.get("manual_terms") or []:
         term = pretty_word(m.get("term") or m.get("lemma") or "")
@@ -154,13 +217,24 @@ def build_class_concept_graph(ws: ClassWorkspace) -> dict[str, Any]:
         elif st != "exclude":
             uf.append(row)
 
-    # Publish rule: exactMatch only when exactly one PULO UF CILI
-    if len(uf_pulo_cilis) == 1:
-        exact = list(uf_pulo_cilis)
-        close_cili: list[str] = []
+    # Adjudicated SKOS matches only (empty list is intentional null mapping)
+    if "cili_exact" in cm or "cili_close" in cm or "cili_related" in cm:
+        exact = [c for c in _as_cili_list(cm.get("cili_exact")) if c not in excluded_ids]
+        close_cili = [c for c in _as_cili_list(cm.get("cili_close")) if c not in excluded_ids]
+        related_cili = [
+            c for c in _as_cili_list(cm.get("cili_related")) if c not in excluded_ids
+        ]
     else:
-        exact = []
-        close_cili = list(uf_pulo_cilis)
+        exact, close_cili, related_cili = [], [], []
+
+    mapping_status = str(
+        cm.get("mapping_status")
+        or ("validated_cili" if (exact or close_cili or related_cili) else "no_validated_cili")
+    )
+
+    validated_alts = [
+        pretty_word(x) for x in (cm.get("validated_alt_labels") or []) if x
+    ]
 
     return {
         "class_id": ws.class_id,
@@ -169,19 +243,53 @@ def build_class_concept_graph(ws: ClassWorkspace) -> dict[str, Any]:
         "uf": uf,
         "rt": rt,
         "exclude": excl,
-        # Back-compat key: only SKOS-match ILIs (not the old dump of all)
-        "ilis": exact + [c for c in close_cili if c not in exact],
+        "ilis": list(exact),
         "cili_exact": exact,
         "cili_close": close_cili,
         "cili_related": related_cili,
+        "excluded_cili": excluded_cili,
+        "validated_alt_labels": validated_alts,
+        "focus_stems": sorted(focus - {""}),
         "ili_inventory": ili_inventory,
+        "mapping_status": mapping_status,
         "skos_policy": (
-            "skos:exactMatch ≤1 primary PULO UF CILI; "
-            "extra UF PULO → closeMatch; RT → relatedMatch; "
-            "excludes never linked as matches; Onto lemmas = altLabel only."
+            "SKOS matches only from concept_mapping adjudication; "
+            "harvested CILI → inventory/excluded_cili; "
+            "Onto co-members not auto altLabel; "
+            "excludes → sr:excludedCandidate (not hiddenLabel); "
+            "pref/alt/hidden mutually disjoint."
         ),
         "generated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
     }
+
+
+def _vocab_alt_labels(graph: dict[str, Any]) -> list[str]:
+    """Conservative altLabels: validated list, else PULO UF members only."""
+    pref_n = normalize_word(graph.get("pref_label") or "")
+    validated = [pretty_word(x) for x in (graph.get("validated_alt_labels") or []) if x]
+    if validated:
+        return [m for m in validated if normalize_word(m) != pref_n]
+
+    focus = {normalize_word(x) for x in (graph.get("focus_stems") or []) if x}
+    out: list[str] = []
+    seen: set[str] = set()
+    for row in graph.get("uf") or []:
+        src = (row.get("source") or "").lower()
+        members = list(row.get("members") or [])
+        if src == "onto":
+            # Attestation only: keep members that are focus stems, not co-hyponyms
+            pick = [m for m in members if normalize_word(m) in focus]
+        elif src == "pulo":
+            pick = members
+        else:
+            pick = members
+        for m in pick:
+            n = normalize_word(m)
+            if not n or n == pref_n or n in seen:
+                continue
+            seen.add(n)
+            out.append(m)
+    return out
 
 
 def render_skos_owl(
@@ -189,20 +297,24 @@ def render_skos_owl(
     *,
     base_ns: str = "http://semantic-research.local/concept/",
 ) -> str:
-    """Render a class as owl:Class + skos:Concept with disciplined CILI matches."""
+    """Render a class as owl:Class + skos:Concept (plain SKOS, not SKOS-XL)."""
     cid = graph["class_id"]
     local = _slug(cid)
     pref = _ttl_escape(graph.get("pref_label") or cid)
     axis = _ttl_escape(graph.get("axis") or "")
+    pref_lang = label_lang_tag(graph.get("pref_label") or cid)
 
     preds: list[str] = [
-        f'    skos:prefLabel "{pref}"@pt',
+        f'    skos:prefLabel "{pref}"@{pref_lang}',
     ]
     if axis:
-        preds.append(f'    skos:scopeNote "{axis}"@pt')
+        preds.append(f'    skos:scopeNote "{axis}"@pt-PT')
     preds.append(f'    dct:identifier "{_ttl_escape(cid)}"')
     preds.append(
         f'    skos:editorialNote "{_ttl_escape(graph.get("skos_policy") or "")}"@en'
+    )
+    preds.append(
+        f'    sr:mappingStatus "{_ttl_escape(graph.get("mapping_status") or "")}"'
     )
 
     for ili in graph.get("cili_exact") or []:
@@ -220,27 +332,48 @@ def render_skos_owl(
         if u:
             preds.append(f"    skos:relatedMatch <{u}>")
 
-    seen_alt: set[str] = set()
-    for row in graph.get("uf") or []:
-        for m in row.get("members") or []:
-            n = normalize_word(m)
-            if not n or n == normalize_word(pref) or n in seen_alt:
-                continue
-            seen_alt.add(n)
-            preds.append(f'    skos:altLabel "{_ttl_escape(m)}"@pt')
+    alt_forms = _vocab_alt_labels(graph)
+    seen_alt = {normalize_word(m) for m in alt_forms}
+    pref_n = normalize_word(graph.get("pref_label") or "")
+    seen_alt.add(pref_n)
+    for m in alt_forms:
+        lang = label_lang_tag(m)
+        preds.append(f'    skos:altLabel "{_ttl_escape(m)}"@{lang}')
 
-    for row in graph.get("rt") or []:
-        for m in row.get("members") or []:
-            if m:
-                preds.append(
-                    f'    skos:related [ a skos:Concept ; '
-                    f'skos:prefLabel "{_ttl_escape(m)}"@pt ]'
-                )
+    # Do not expand RT members into blank skos:related concepts (Onto noise).
 
     for row in graph.get("exclude") or []:
+        src = _ttl_escape(str(row.get("source") or ""))
+        reason = _ttl_escape((row.get("gloss") or "")[:180])
         for m in row.get("members") or []:
-            if m:
-                preds.append(f'    skos:hiddenLabel "{_ttl_escape(m)}"@pt')
+            if not m:
+                continue
+            n = normalize_word(m)
+            if n in seen_alt or n == pref_n:
+                # SKOS integrity: never also emit as a label of the concept
+                continue
+            lang = label_lang_tag(m)
+            preds.append(
+                "    sr:excludedCandidate ["
+                f' rdf:value "{_ttl_escape(m)}"@{lang} ;'
+                f' dct:source "{src}" ;'
+                f' sr:exclusionReason "{reason or "exclude"}"'
+                " ]"
+            )
+
+    for ex in graph.get("excluded_cili") or []:
+        cid_ex = ex.get("cili") if isinstance(ex, dict) else str(ex)
+        reason = _ttl_escape(
+            (ex.get("reason") if isinstance(ex, dict) else "") or "domain mismatch"
+        )
+        u = _ili_uri(str(cid_ex or ""))
+        if u:
+            preds.append(
+                "    sr:excludedCili ["
+                f" sr:cili <{u}> ;"
+                f' sr:exclusionReason "{reason}"'
+                " ]"
+            )
 
     n_uf = len(graph.get("uf") or [])
     n_rt = len(graph.get("rt") or [])
@@ -248,7 +381,8 @@ def render_skos_owl(
         f'    rdfs:comment "UF senses={n_uf}; RT={n_rt}; '
         f'exactCILI={len(graph.get("cili_exact") or [])}; '
         f'closeCILI={len(graph.get("cili_close") or [])}; '
-        f'relatedCILI={len(graph.get("cili_related") or [])}"@en'
+        f'relatedCILI={len(graph.get("cili_related") or [])}; '
+        f'mapping={graph.get("mapping_status") or ""}"@en'
     )
 
     joined = " ;\n".join(preds) + " ."
@@ -260,7 +394,7 @@ def render_skos_owl(
         "@prefix dct: <http://purl.org/dc/terms/> .",
         f"@prefix sr: <{base_ns}> .",
         "",
-        f"# Concept model — {cid}",
+        f"# Concept model (plain SKOS, not SKOS-XL) — {cid}",
         f"# generated {graph.get('generated')}",
         f"# policy: {graph.get('skos_policy')}",
         "",
@@ -296,6 +430,7 @@ def publish_class_concept(
         "n_related": len(graph.get("cili_related") or []),
         "n_uf": len(graph.get("uf") or []),
         "n_rt": len(graph.get("rt") or []),
+        "mapping_status": graph.get("mapping_status"),
     }
     if update_registry:
         out["registry"] = str(update_global_registry())
@@ -329,14 +464,14 @@ def update_global_registry() -> Path:
     path = reg_dir / "registry.ttl"
     path.write_text("\n".join(chunks), encoding="utf-8")
     index = {
-        "schema": "semantic_research.concept_registry/2",
+        "schema": "semantic_research.concept_registry/3",
         "generated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "root": str(ROOT),
         "classes": ClassWorkspace.list_classes(),
         "registry_ttl": str(path),
         "skos_policy": (
-            "exactMatch≤1 PULO UF CILI; closeMatch/relatedMatch for other "
-            "admitted CILIs; excludes never matched"
+            "SKOS matches only from concept_mapping; "
+            "no auto exactMatch from PULO CILI resolution"
         ),
     }
     (reg_dir / "registry.json").write_text(

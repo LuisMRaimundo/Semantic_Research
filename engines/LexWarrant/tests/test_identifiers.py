@@ -36,6 +36,9 @@ class TestIdentifiers(unittest.TestCase):
             normalize_cili_id("http://globalwordnet.org/ili/i114921"), "i114921"
         )
         self.assertEqual(
+            normalize_cili_id("http://ili.globalwordnet.org/ili/i114921"), "i114921"
+        )
+        self.assertEqual(
             normalize_cili_id("https://globalwordnet.github.io/cili/i97733.html"),
             "i97733",
         )
@@ -46,7 +49,7 @@ class TestIdentifiers(unittest.TestCase):
 
     def test_cili_uri_and_page(self):
         self.assertEqual(
-            cili_uri("oewn-ili:i114921"), "http://globalwordnet.org/ili/i114921"
+            cili_uri("oewn-ili:i114921"), "http://ili.globalwordnet.org/ili/i114921"
         )
         self.assertEqual(
             cili_page_url("i97733"),
@@ -65,7 +68,7 @@ class TestIdentifiers(unittest.TestCase):
         self.assertEqual(ident.legacy_omw_ili, "ili-30-14818238-n")
         self.assertEqual(ident.cili_id, "i114921")
         self.assertEqual(ident.cili, "i114921")
-        self.assertEqual(ident.cili_uri, "http://globalwordnet.org/ili/i114921")
+        self.assertEqual(ident.cili_uri, "http://ili.globalwordnet.org/ili/i114921")
         self.assertEqual(ident.mapping_status, "official")
         self.assertNotEqual(ident.cili, "ili-30-14818238-n")
 

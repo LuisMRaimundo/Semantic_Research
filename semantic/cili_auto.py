@@ -299,7 +299,7 @@ def prepare_cili_for_run(ws: ClassWorkspace) -> dict[str, Any]:
         if cili_side and pulo:
             map_rows.append({
                 "cili_id": cili_side,
-                "cili_uri": f"http://globalwordnet.org/ili/{cili_side}",
+                "cili_uri": f"http://ili.globalwordnet.org/ili/{cili_side}",
                 "oewn_ili": cili_side,  # legacy column name; value is bare CILI
                 "pulo_ili": pulo,
                 "source": f"cili:{CILI_VERSION}",
