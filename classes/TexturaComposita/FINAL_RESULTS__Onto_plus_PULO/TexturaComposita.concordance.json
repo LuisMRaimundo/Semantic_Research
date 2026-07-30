@@ -1,7 +1,7 @@
 {
   "class": "TexturaComposita",
   "policy": "conservative",
-  "generated": "2026-07-30T12:45:11",
+  "generated": "2026-07-30T13:01:07",
   "columns": [
     "ONTO",
     "PULO",
@@ -11,8 +11,7 @@
   "sources": [
     "PULO",
     "OWN-PT",
-    "WordNet",
-    "ONTO-ILI"
+    "WordNet"
   ],
   "ili_equivalence_map": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\classes\\TexturaComposita\\out\\ili_equivalence.cili.json",
   "ili_equivalence_counts": {
@@ -31,25 +30,18 @@
         "ONTO": "—",
         "PULO": "UF",
         "OWN-PT": "—",
-        "WordNet": "—",
-        "ONTO-ILI": "atestado"
+        "WordNet": "—"
       },
-      "join": "ili",
+      "join": "single",
       "veredicto": "fonte única",
       "proposta_final": "UF",
       "unmapped_flag": false,
       "status_projection": {},
       "divergences": [],
       "union_of_provenance": [
-        "ONTO-ILI:Onto→ILI accepted · onto:clip21:13381 → i114921 (score=0.3633)",
-        "ONTO-ILI:atestado",
-        "ONTO-ILI:lexicon=onto-pt+cili",
         "PULO:seed (Etapa 1/2)"
       ],
-      "notes": [
-        "atestado por ONTO-ILI enquanto admitido por PULO",
-        "ONTO-ILI: Onto→ILI accepted · onto:clip21:13381 → i114921 (score=0.3633)"
-      ]
+      "notes": []
     },
     {
       "term": "decomposição",
@@ -94,224 +86,11 @@
         "PULO:seed (Etapa 1/2)"
       ],
       "notes": []
-    },
-    {
-      "term": "alquimia",
-      "ili": [
-        "i114921"
-      ],
-      "sources": {
-        "ONTO": "—",
-        "PULO": "—",
-        "OWN-PT": "—",
-        "WordNet": "—",
-        "ONTO-ILI": "atestado"
-      },
-      "join": "single",
-      "veredicto": "sinalização",
-      "proposta_final": null,
-      "unmapped_flag": false,
-      "status_projection": {},
-      "divergences": [],
-      "union_of_provenance": [
-        "ONTO-ILI:Onto→ILI accepted · onto:clip21:13381 → i114921 (score=0.3633)",
-        "ONTO-ILI:atestado",
-        "ONTO-ILI:lexicon=onto-pt+cili"
-      ],
-      "notes": [
-        "ONTO-ILI: Onto→ILI accepted · onto:clip21:13381 → i114921 (score=0.3633)"
-      ]
-    },
-    {
-      "term": "composto químico",
-      "ili": [
-        "i114921"
-      ],
-      "sources": {
-        "ONTO": "—",
-        "PULO": "—",
-        "OWN-PT": "—",
-        "WordNet": "—",
-        "ONTO-ILI": "atestado"
-      },
-      "join": "single",
-      "veredicto": "sinalização",
-      "proposta_final": null,
-      "unmapped_flag": false,
-      "status_projection": {},
-      "divergences": [],
-      "union_of_provenance": [
-        "ONTO-ILI:Onto→ILI accepted · onto:clip21:13381 → i114921 (score=0.3633)",
-        "ONTO-ILI:atestado",
-        "ONTO-ILI:lexicon=onto-pt+cili"
-      ],
-      "notes": [
-        "ONTO-ILI: Onto→ILI accepted · onto:clip21:13381 → i114921 (score=0.3633)"
-      ]
-    },
-    {
-      "term": "compostos químicos",
-      "ili": [
-        "i114921"
-      ],
-      "sources": {
-        "ONTO": "—",
-        "PULO": "—",
-        "OWN-PT": "—",
-        "WordNet": "—",
-        "ONTO-ILI": "atestado"
-      },
-      "join": "single",
-      "veredicto": "sinalização",
-      "proposta_final": null,
-      "unmapped_flag": false,
-      "status_projection": {},
-      "divergences": [],
-      "union_of_provenance": [
-        "ONTO-ILI:Onto→ILI accepted · onto:clip21:13381 → i114921 (score=0.3633)",
-        "ONTO-ILI:atestado",
-        "ONTO-ILI:lexicon=onto-pt+cili"
-      ],
-      "notes": [
-        "ONTO-ILI: Onto→ILI accepted · onto:clip21:13381 → i114921 (score=0.3633)"
-      ]
-    },
-    {
-      "term": "empatia",
-      "ili": [
-        "i114921"
-      ],
-      "sources": {
-        "ONTO": "—",
-        "PULO": "—",
-        "OWN-PT": "—",
-        "WordNet": "—",
-        "ONTO-ILI": "atestado"
-      },
-      "join": "single",
-      "veredicto": "sinalização",
-      "proposta_final": null,
-      "unmapped_flag": false,
-      "status_projection": {},
-      "divergences": [],
-      "union_of_provenance": [
-        "ONTO-ILI:Onto→ILI accepted · onto:clip21:13381 → i114921 (score=0.3633)",
-        "ONTO-ILI:atestado",
-        "ONTO-ILI:lexicon=onto-pt+cili"
-      ],
-      "notes": [
-        "ONTO-ILI: Onto→ILI accepted · onto:clip21:13381 → i114921 (score=0.3633)"
-      ]
-    },
-    {
-      "term": "química",
-      "ili": [
-        "i114921"
-      ],
-      "sources": {
-        "ONTO": "—",
-        "PULO": "—",
-        "OWN-PT": "—",
-        "WordNet": "—",
-        "ONTO-ILI": "atestado"
-      },
-      "join": "single",
-      "veredicto": "sinalização",
-      "proposta_final": null,
-      "unmapped_flag": false,
-      "status_projection": {},
-      "divergences": [],
-      "union_of_provenance": [
-        "ONTO-ILI:onto_ili_accepted"
-      ],
-      "notes": []
-    },
-    {
-      "term": "substância",
-      "ili": [
-        "i114921"
-      ],
-      "sources": {
-        "ONTO": "—",
-        "PULO": "—",
-        "OWN-PT": "—",
-        "WordNet": "—",
-        "ONTO-ILI": "atestado"
-      },
-      "join": "single",
-      "veredicto": "sinalização",
-      "proposta_final": null,
-      "unmapped_flag": false,
-      "status_projection": {},
-      "divergences": [],
-      "union_of_provenance": [
-        "ONTO-ILI:Onto→ILI accepted · onto:clip21:13381 → i114921 (score=0.3633)",
-        "ONTO-ILI:atestado",
-        "ONTO-ILI:lexicon=onto-pt+cili"
-      ],
-      "notes": [
-        "ONTO-ILI: Onto→ILI accepted · onto:clip21:13381 → i114921 (score=0.3633)"
-      ]
-    },
-    {
-      "term": "substância química",
-      "ili": [
-        "i114921"
-      ],
-      "sources": {
-        "ONTO": "—",
-        "PULO": "—",
-        "OWN-PT": "—",
-        "WordNet": "—",
-        "ONTO-ILI": "atestado"
-      },
-      "join": "single",
-      "veredicto": "sinalização",
-      "proposta_final": null,
-      "unmapped_flag": false,
-      "status_projection": {},
-      "divergences": [],
-      "union_of_provenance": [
-        "ONTO-ILI:Onto→ILI accepted · onto:clip21:13381 → i114921 (score=0.3633)",
-        "ONTO-ILI:atestado",
-        "ONTO-ILI:lexicon=onto-pt+cili"
-      ],
-      "notes": [
-        "ONTO-ILI: Onto→ILI accepted · onto:clip21:13381 → i114921 (score=0.3633)"
-      ]
-    },
-    {
-      "term": "substâncias químicas",
-      "ili": [
-        "i114921"
-      ],
-      "sources": {
-        "ONTO": "—",
-        "PULO": "—",
-        "OWN-PT": "—",
-        "WordNet": "—",
-        "ONTO-ILI": "atestado"
-      },
-      "join": "single",
-      "veredicto": "sinalização",
-      "proposta_final": null,
-      "unmapped_flag": false,
-      "status_projection": {},
-      "divergences": [],
-      "union_of_provenance": [
-        "ONTO-ILI:Onto→ILI accepted · onto:clip21:13381 → i114921 (score=0.3633)",
-        "ONTO-ILI:atestado",
-        "ONTO-ILI:lexicon=onto-pt+cili"
-      ],
-      "notes": [
-        "ONTO-ILI: Onto→ILI accepted · onto:clip21:13381 → i114921 (score=0.3633)"
-      ]
     }
   ],
   "summary": {
     "veredicto_totals": {
-      "fonte única": 3,
-      "sinalização": 8
+      "fonte única": 3
     },
     "descartados_pendentes": 0,
     "convergencia_plena": [],
@@ -338,12 +117,6 @@
           "terms": []
         },
         "WordNet": {
-          "antonyms_auto": 0,
-          "exposes_antonymy": true,
-          "note": "antonímia consultável (OEWN)",
-          "terms": []
-        },
-        "ONTO-ILI": {
           "antonyms_auto": 0,
           "exposes_antonymy": true,
           "note": "antonímia consultável (OEWN)",
@@ -432,7 +205,7 @@
       "id": "T9",
       "text": "concordance.json faz round-trip (contagens de term/ili estáveis).",
       "passed": true,
-      "evidence": "11 conceitos"
+      "evidence": "3 conceitos"
     },
     {
       "id": "T13",

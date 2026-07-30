@@ -10,8 +10,7 @@
   "auto_accept": {
     "n": 0,
     "accepted": [],
-    "min_score": 0.85,
-    "margin": 0.12
+    "skipped": "disabled"
   },
   "proposals": [
     {

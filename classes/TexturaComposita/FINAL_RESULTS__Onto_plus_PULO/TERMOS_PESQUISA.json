@@ -8,7 +8,7 @@
   ],
   "anchor_pos": "n",
   "near_stem": "composto*",
-  "generated": "2026-07-30T12:45:13+01:00",
+  "generated": "2026-07-30T13:01:10+01:00",
   "search_lang": "en",
   "label_lang": "pt-PT",
   "termos_manuais_presentes": false,
@@ -250,7 +250,6 @@
         "i114921"
       ],
       "fontes": [
-        "onto-ili",
         "pulo"
       ],
       "garantia": "fonte_unica",
@@ -311,7 +310,6 @@
         "i114921"
       ],
       "fontes": [
-        "onto-ili",
         "pulo"
       ],
       "garantia": "fonte_unica",

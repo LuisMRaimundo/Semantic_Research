@@ -2,7 +2,7 @@
 
 - **Eixo definidor:** heterogeneidade / composição de materiais ou partes distintas
 - **Fonte:** PULO / WordNet.PT export (âncora ILI; sem porta estatística)
-- **Gerado:** 2026-07-30T12:45:08
+- **Gerado:** 2026-07-30T13:01:04
 - **Estado global:** ❌ EXISTEM ASSERÇÕES FALHADAS
 
 ## Quadro de asserções (protocolo)
