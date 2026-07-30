@@ -19,28 +19,52 @@ _SIMILAR_RE = re.compile(r"vizinho\s+similar_to", re.I)
 
 
 def _ili_anchor(decisions: dict[str, Any], meta: dict[str, Any]) -> list[str]:
-    """Prefer PULO UF senses with ILI; fall back to any PULO ILI on the class."""
-    ilis: list[str] = []
-    seen = set()
-    for s in decisions.get("senses") or []:
-        if (s.get("source") or "").lower() != "pulo":
-            continue
-        if (s.get("decision") or "").strip() != "UF":
-            continue
-        ili = (s.get("ili") or "").strip()
-        if ili and ili not in seen:
-            seen.add(ili)
-            ilis.append(ili)
-    if ilis:
-        return ilis
-    for s in decisions.get("senses") or []:
-        if (s.get("source") or "").lower() != "pulo":
-            continue
-        ili = (s.get("ili") or "").strip()
-        if ili and ili not in seen:
-            seen.add(ili)
-            ilis.append(ili)
-    return ilis
+    """Prefer official CILI ``i…`` on PULO UF senses; else local ``pwn30-…``.
+
+    Never surfaces legacy ``ili-30-…`` as if it were CILI. Those strings are
+    rewritten to ``pwn30-…`` when still present on old decisions.
+    """
+    try:
+        from .engines import load_identifiers
+        ids = load_identifiers()
+    except Exception:  # noqa: BLE001
+        ids = None
+
+    def _display(sense: dict[str, Any]) -> Optional[str]:
+        cili = (sense.get("cili") or "").strip()
+        if cili and cili.startswith("i") and cili[1:].isdigit():
+            return cili
+        ili = (sense.get("ili") or "").strip()
+        if ili.startswith("i") and ili[1:].isdigit():
+            return ili
+        pwn = (sense.get("pwn_id") or "").strip()
+        if pwn.startswith("pwn30-"):
+            return pwn
+        if ids is not None and ili:
+            ident = ids.parse_identifier(ili, resolve_cili=True)
+            if ident.cili:
+                return ident.cili
+            if ident.pwn_id:
+                return ident.pwn_id
+        if ili.startswith("ili-30-") and ids is not None:
+            return ids.to_pwn30(ili) or ili
+        return ili or None
+
+    anchors: list[str] = []
+    seen: set[str] = set()
+    for prefer_uf in (True, False):
+        for s in decisions.get("senses") or []:
+            if (s.get("source") or "").lower() != "pulo":
+                continue
+            if prefer_uf and (s.get("decision") or "").strip() != "UF":
+                continue
+            disp = _display(s)
+            if disp and disp not in seen:
+                seen.add(disp)
+                anchors.append(disp)
+        if anchors:
+            return anchors
+    return anchors
 
 
 def _collect_auto_signals(ws: ClassWorkspace) -> dict[str, list[dict[str, Any]]]:

@@ -1,18 +1,20 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""CILI resolver — resolução canónica de identificadores ILI (lookup puro).
+"""CILI resolver — resolução canónica de identificadores CILI (lookup puro).
 
 Fontes (offline, vendorizadas):
-  * data/cili/ili-map-pwn30.tab  — PWN / OMW ``…-30-…`` (PULO)
-  * data/cili/ili-map-pwn31.tab  — PWN 3.1 offsets (fresher crosswalk)
+  * data/cili/ili-map-pwn30.tab  — PWN 3.0 offset → CILI ``i…``
+  * data/cili/ili-map-pwn31.tab  — PWN 3.1 offset → CILI ``i…``
   * optional ``wn.ili.get``     — validate bare ``i…`` against the CILI
     catalogue bundled with the ``wn`` package (OEWN-native ids)
 
 Contrato:
   * lookup puro — sem efeitos laterais de escrita, sem rede em runtime;
-  * nunca levanta excepção; id desconhecido/lixo → None (nunca ILI fabricado);
-  * aceita: "i123", "ili-30-…", "por-30-…", "eng-30-…", "ili-31-…", bare offset.
+  * nunca levanta excepção; id desconhecido/lixo → None (nunca CILI fabricado);
+  * aceita: "i123", "pwn30-…", bare offset, legacy OMW ``ili-30-…``/``por-30-…``
+    (legacy strings are PWN 3.0 pivots, **not** CILI ids — used only as map keys);
   * normalização a↔s para adjectivos satélite.
+  * Nunca sintetiza ``ili-30-…`` nem ``i…`` por concatenação.
 """
 from __future__ import annotations
 
@@ -29,6 +31,7 @@ _MAPS = (
 
 _ILI_ID_RE = re.compile(r"^i\d+$")
 _OMW_RE = re.compile(r"^[a-z]{2,4}-(\d{2})-(\d{8}-[a-z])$")
+_PWN30_RE = re.compile(r"^pwn30-(\d{8}-[a-z])$", re.I)
 _BARE_OFFSET_RE = re.compile(r"^\d{8}-[a-z]$")
 
 _by_offset: Optional[dict] = None   # offset -> ili
@@ -105,7 +108,12 @@ def _lookup_offset(off: str) -> Optional[str]:
 
 
 def cili_resolve(identifier) -> Optional[str]:
-    """Resolve um identificador para o ILI canónico CILI ("i…"), ou None."""
+    """Resolve um identificador para o CILI canónico ("i…"), ou None.
+
+    ``ili-30-…`` / ``por-30-…`` are accepted only as *legacy PWN 3.0 map keys*
+    (OMW/MCR pivot spelling). The return value is always a real CILI ``i…``
+    from the official table — never the input string rewritten as CILI.
+    """
     try:
         _load()
         s = str(identifier or "").strip()
@@ -113,17 +121,22 @@ def cili_resolve(identifier) -> Optional[str]:
             return None
         if s.startswith("oewn-ili:"):
             s = s.split(":", 1)[1].strip()
+        if s.startswith("cili:"):
+            s = s.split(":", 1)[1].strip()
         if _ILI_ID_RE.match(s):
             if s in (_by_ili or {}):
                 return s
             # OEWN 2024 may carry CILI ids absent from the offset TSVs;
             # accept only if the wn.ili catalogue confirms the id.
             return s if _wn_ili_known(s) else None
+        m = _PWN30_RE.match(s)
+        if m:
+            return _lookup_offset(m.group(1).lower())
         m = _OMW_RE.match(s)
         if m:
-            return _lookup_offset(m.group(2))
+            return _lookup_offset(m.group(2).lower())
         if _BARE_OFFSET_RE.match(s):
-            return _lookup_offset(s)
+            return _lookup_offset(s.lower())
         return None
     except Exception:  # noqa: BLE001 — contrato: nunca levanta
         return None

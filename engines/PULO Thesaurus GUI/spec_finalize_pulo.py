@@ -48,7 +48,13 @@ _PT_STOP = {
     "ou", "e", "que", "com", "sem", "um", "uma", "ao", "aos", "à", "às",
     "por", "para", "se", "seu", "sua", "the", "of",
 }
-_ILI_FORMS = re.compile(r"^(?:(?:por|ili|eng|spa|ita|fra|deu|jpn|nld|pol)-30-\d{8}-[a-z]|i\d+)$")
+# pwn30-… = local PWN 3.0; i… = official CILI; legacy OMW ili-30-/por-30- still accepted
+_ILI_FORMS = re.compile(
+    r"^(?:pwn30-\d{8}-[a-z]"
+    r"|(?:por|ili|eng|spa|ita|fra|deu|jpn|nld|pol)-30-\d{8}-[a-z]"
+    r"|i\d+)$",
+    re.I,
+)
 
 
 # ---------------------------------------------------------------------------

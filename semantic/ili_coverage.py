@@ -1,6 +1,6 @@
 """CILI ↔ OEWN (2024) / PULO coverage — make graph drift visible, never silent.
 
-OEWN speaks native CILI ``i…``; PULO speaks PWN-3.0 ``ili-30-…`` offsets resolved
+OEWN speaks native CILI ``i…``; PULO speaks PWN-3.0 ``pwn30-…`` (legacy ``ili-30-…``) offsets resolved
 through the vendored 2016-era map. This module classifies every harvested id so
 unmapped / OEWN-only / PULO-gap cases appear in FINAL_RESULTS.
 """

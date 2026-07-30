@@ -1039,7 +1039,8 @@ def render_termos_md(doc: dict[str, Any]) -> str:
     if doc.get("axis"):
         ap(f"**Eixo / acepção a separar:** {doc['axis']}")
     if doc.get("ancora_ili"):
-        ap(f"**Âncora ILI:** {', '.join(doc['ancora_ili'])}")
+        # Official CILI i… preferred; pwn30-… is local PWN 3.0 (never ili-30- as CILI)
+        ap(f"**Âncora CILI / PWN3.0:** {', '.join(doc['ancora_ili'])}")
     ap(f"**Língua de pesquisa:** `{search_lang}` · **Língua de rótulos:** `{label_lang}`")
     ap(f"**Sintaxe:** `{doc.get('near_stem') or '…*'} NEAR/4 <termo>`")
     ap(f"**Gerado:** {doc.get('generated') or '—'}")
@@ -1191,7 +1192,7 @@ def _token_html(
     elif ili:
         ili_s = str(ili)
     ili_bit = (
-        f'<span class="tok-ili" title="Âncora ILI">{_esc(ili_s)}</span>'
+        f'<span class="tok-ili" title="Âncora CILI / PWN 3.0">{_esc(ili_s)}</span>'
         if ili_s else ""
     )
     cls = "tok"
@@ -1478,7 +1479,7 @@ footer.page {{
   <h1>TERMOS — {_esc(pref)}</h1>
   <p class="meta">
     <strong>Classe:</strong> {_esc(class_id)} ·
-    <strong>Âncora ILI:</strong> {_esc(ancora_txt)} ·
+    <strong>Âncora CILI / PWN 3.0:</strong> {_esc(ancora_txt)} ·
     <strong>Acepção a separar:</strong> {_esc(axis)} ·
     <strong>Pesquisa:</strong> {_esc(search_lang)} ·
     <strong>Rótulos:</strong> {_esc(label_lang)} ·

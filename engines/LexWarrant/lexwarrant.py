@@ -86,9 +86,10 @@ def project_status_for_comparison(status: str):
 class SourceError(ValueError):
     """A source file could not be used; the message is user-facing/actionable."""
 
-# --- Declared ILI namespace equivalence (NEVER blind string edits) -----------
-# Namespaces that share the OMW/MCR 3.0 offset numbering are cross-walkable:
-# their body (8 digits + POS letter) identifies the same interlingual concept.
+# --- Declared identity join keys (NEVER fabricate CILI) --------------------
+# Prefer official CILI ``i…`` (surfaced as ``oewn-ili:i…`` for back-compat).
+# PWN 3.0 offsets use local ``pwn30-…`` — never ``ili-30-…`` as if it were CILI.
+# Legacy OMW/MCR ``ili-30-…`` / ``por-30-…`` are parsed as PWN 3.0 pivots only.
 OMW30_NAMESPACES = {
     "ili-30", "por-30", "eng-30", "spa-30", "ita-30", "fra-30",
     "deu-30", "jpn-30", "nld-30", "pol-30",
@@ -98,20 +99,29 @@ _OEWN_ILI_RE = re.compile(r"^i\d+$")
 
 
 def canonical_ili(offset: str) -> tuple[Optional[str], bool]:
-    """Map an offset to a canonical ILI key via the DECLARED map only.
+    """Map a source identifier to a join key without fabricating CILI.
 
-    Returns (canonical_key, mapped). Unmapped namespaces return (None, False) and
-    MUST be flagged (never force-joined). The canonical key is derived only from
-    the library-provided value; it is never fabricated from unrelated ids.
+    Returns (canonical_key, mapped). Prefer official CILI via the vendored
+    map / OEWN ``ili`` attribute. Fall back to local ``pwn30-…`` for PWN 3.0
+    pivots that lack a CILI row. Never emits ``ili-30-…`` as a join key.
     """
     if not offset:
         return (None, False)
-    m = _OMW30_RE.match(offset)
-    if m and f"{m.group(1)}-30" in OMW30_NAMESPACES:
-        return (f"ili-30-{m.group(2)}", True)     # por-30-… ↔ ili-30-… (declared)
-    if _OEWN_ILI_RE.match(offset):
-        return (f"oewn-ili:{offset}", True)        # OEWN ILI is its own namespace
-    return (None, False)
+    try:
+        from identifiers import join_key
+        return join_key(offset, resolve_cili=True)
+    except Exception:  # noqa: BLE001 — keep LexWarrant import-hardy
+        s = str(offset).strip()
+        if s.startswith("oewn-ili:"):
+            s = s.split(":", 1)[1].strip()
+        if _OEWN_ILI_RE.match(s):
+            return (f"oewn-ili:{s}", True)
+        m = _OMW30_RE.match(s)
+        if m and f"{m.group(1)}-30" in OMW30_NAMESPACES:
+            return (f"pwn30-{m.group(2)}", True)
+        if s.lower().startswith("pwn30-"):
+            return (s.lower(), True)
+        return (None, False)
 
 
 class EquivMap:
@@ -119,8 +129,8 @@ class EquivMap:
 
     LexWarrant never fabricates or extends this map — it only reads the `map`
     (high-confidence) rows of an ili_equivalence.json and unifies the canonical
-    ILI keys they declare equal (e.g. oewn-ili:i10771 ↔ ili-30-00744506-a). Two
-    entries then join by ILI iff their canonical keys are equal OR unified here.
+    Identity keys they declare equal (e.g. oewn-ili:i10771 ↔ pwn30-00744506-a).
+    Two entries join iff their canonical keys are equal OR unified here.
     """
 
     def __init__(self) -> None:

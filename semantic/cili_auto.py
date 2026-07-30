@@ -139,7 +139,7 @@ def build_cili_equiv_map(identifiers: list[str]):
         cans_l = sorted(cans)
         if len(cans_l) < 2:
             continue
-        # Unify every pair sharing the same CILI id (typically oewn-ili:iX ↔ ili-30-Y)
+        # Unify every pair sharing the same CILI id (typically oewn-ili:iX ↔ pwn30-Y)
         root = cans_l[0]
         for other in cans_l[1:]:
             m.add_equiv(root, other)
@@ -298,9 +298,11 @@ def prepare_cili_for_run(ws: ClassWorkspace) -> dict[str, Any]:
         oewn = a.replace("oewn-ili:", "") if a.startswith("oewn-ili:") else (
             b.replace("oewn-ili:", "") if b.startswith("oewn-ili:") else None
         )
-        pulo = b if b.startswith("ili-30-") else (
-            a if a.startswith("ili-30-") else None
-        )
+        pulo = None
+        for cand in (a, b):
+            if cand.startswith("pwn30-") or cand.startswith("ili-30-"):
+                pulo = cand
+                break
         if oewn and pulo:
             map_rows.append({
                 "oewn_ili": oewn,

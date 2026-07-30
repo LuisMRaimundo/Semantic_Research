@@ -98,10 +98,32 @@ class PuloStore:
         return [r["word"] for r in rows]
 
     def ili(self, offset: str) -> list[dict]:
+        """PULO/MCR ``to_ili`` → separated identity (pwn30 + optional CILI).
+
+        The SQLite column ``iliOffset`` stores historical OMW ``ili-30-…``
+        strings (= PWN 3.0 pivots, **not** modern CILI). We never re-emit
+        those as CILI; we normalise to ``pwn30-…`` and resolve ``cili`` via
+        the official map when possible.
+        """
+        from ..engines import load_identifiers
+
+        ids = load_identifiers()
         rows = self.connect().execute(
             "SELECT iliOffset, iliWnId FROM to_ili WHERE offset = ?", (offset,)
         ).fetchall()
-        return [{"ili_offset": r["iliOffset"], "ili_wn_id": r["iliWnId"]} for r in rows]
+        out: list[dict] = []
+        for r in rows:
+            ident = ids.from_pulo_to_ili(
+                r["iliOffset"],
+                synset_offset=offset,
+                ili_wn_id=r["iliWnId"],
+                resolve_cili=True,
+            )
+            item = ids.export_ili_item(ident)
+            if r["iliWnId"]:
+                item["ili_wn_id"] = r["iliWnId"]
+            out.append(item)
+        return out
 
     def relations(self, offset: str) -> list[dict]:
         conn = self.connect()
