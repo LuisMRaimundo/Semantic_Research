@@ -1,6 +1,6 @@
 {
   "schema": "semantic_research.ili_coverage/1",
-  "generated": "2026-07-30T18:35:37+00:00",
+  "generated": "2026-07-31T02:57:07+00:00",
   "pins": {
     "oewn": "oewn:2024",
     "cili_commit": "upstream-master+pwn30+pwn31+wn.ili",
@@ -11,12 +11,12 @@
     "ili_ids": 117659,
     "note": "Resolver loads PWN-3.0 + PWN-3.1 offset maps, and validates bare i… ids via wn.ili when missing from the TSVs. Unresolved ids are listed here — never silently dropped."
   },
-  "n_identifiers": 104,
-  "n_resolved": 77,
+  "n_identifiers": 106,
+  "n_resolved": 79,
   "n_unresolved_oewn_ili": 0,
   "n_unresolved_pulo_offset": 1,
   "n_unresolved_other": 26,
-  "n_cili_joinable": 31,
+  "n_cili_joinable": 32,
   "n_cili_singleton": 15,
   "joinable_cili": [
     {
@@ -178,6 +178,13 @@
       "raw": [
         "i63671",
         "ili-30-05076472-n"
+      ]
+    },
+    {
+      "cili": "i6556",
+      "raw": [
+        "i6556",
+        "pwn30-01199083-a"
       ]
     },
     {
@@ -639,6 +646,14 @@
     {
       "raw": "ili-30-02424254-a",
       "cili": "i13418"
+    },
+    {
+      "raw": "i6556",
+      "cili": "i6556"
+    },
+    {
+      "raw": "pwn30-01199083-a",
+      "cili": "i6556"
     }
   ],
   "class_id": "TexturaComposita"

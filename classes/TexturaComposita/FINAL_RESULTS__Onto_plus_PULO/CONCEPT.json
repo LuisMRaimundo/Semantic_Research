@@ -1221,5 +1221,5 @@
   ],
   "mapping_status": "no_validated_cili",
   "skos_policy": "SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.",
-  "generated": "2026-07-30T18:43:47+00:00"
+  "generated": "2026-07-31T02:57:07+00:00"
 }

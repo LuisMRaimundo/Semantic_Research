@@ -2,9 +2,9 @@
 
 - **OEWN pin:** oewn:2024
 - **CILI:** cili@upstream-master+pwn30+pwn31+wn.ili · 117659 ids
-- **Identifiers harvested:** 104
-- **Resolved via CILI map:** 77
-- **Joinable CILI ids (≥2 raw forms):** 31
+- **Identifiers harvested:** 106
+- **Resolved via CILI map:** 79
+- **Joinable CILI ids (≥2 raw forms):** 32
 - **Unresolved OEWN `i…` (drift / missing from PWN30 map):** 0
 - **Unresolved PULO/OMW offsets:** 1
 

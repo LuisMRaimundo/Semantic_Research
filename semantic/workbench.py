@@ -223,7 +223,7 @@ class Workbench(tk.Tk):
 
         search = ttk.LabelFrame(
             self,
-            text="PASSO 2 · Pesquisar  (PULO → Onto.PT → WordNet/OEWN — tudo nesta janela)",
+            text="PASSO 2 · Pesquisar  (PULO → Onto.PT → PAPEL → WordNet/OEWN)",
             padding=8)
         search.pack(fill="x", padx=10, pady=(0, 6))
         ttk.Radiobutton(
@@ -234,6 +234,11 @@ class Workbench(tk.Tk):
         ttk.Radiobutton(
             search, text="Onto.PT  — fuzzy / coverage",
             variable=self.source_var, value="onto",
+            command=self._sync_filter_to_search,
+        ).pack(side="left", padx=(8, 0))
+        ttk.Radiobutton(
+            search, text="PAPEL  — relações (descoberta)",
+            variable=self.source_var, value="papel",
             command=self._sync_filter_to_search,
         ).pack(side="left", padx=(8, 0))
         ttk.Radiobutton(
@@ -268,6 +273,10 @@ class Workbench(tk.Tk):
         ).pack(side="left")
         ttk.Radiobutton(
             filt, text="Onto.PT only", variable=self.filter_var, value="onto",
+            command=self._render_senses,
+        ).pack(side="left", padx=8)
+        ttk.Radiobutton(
+            filt, text="PAPEL only", variable=self.filter_var, value="papel",
             command=self._render_senses,
         ).pack(side="left", padx=8)
         ttk.Radiobutton(
@@ -611,6 +620,7 @@ class Workbench(tk.Tk):
         senses = dec.get("senses") or []
         n_pulo = sum(1 for s in senses if (s.get("source") or "") == "pulo")
         n_onto = sum(1 for s in senses if (s.get("source") or "") == "onto")
+        n_papel = sum(1 for s in senses if (s.get("source") or "") == "papel")
         decided = sum(1 for s in senses if (s.get("decision") or "").strip())
         has_run = (ws.results / f"{ws.class_id}.PULO.result.json").exists()
         has_termos = (
@@ -624,6 +634,7 @@ class Workbench(tk.Tk):
              bool(meta.get("pref_label")) and bool(meta.get("axis")), False),
             ("2a", f"Pesquisar PULO  ({n_pulo} cartões)", n_pulo > 0, False),
             ("2b", f"Onto.PT descoberta  ({n_onto} cartões)", n_onto > 0, True),
+            ("2c", f"PAPEL descoberta  ({n_papel} cartões)", n_papel > 0, True),
             ("3", f"Decidir sentidos  ({decided}/{len(senses)})",
              len(senses) > 0 and decided == len(senses), False),
             ("4", "Guardar decisões", len(senses) > 0 and decided == len(senses),
@@ -701,7 +712,7 @@ class Workbench(tk.Tk):
 
     def _choices_for(self, source: str) -> tuple[str, ...]:
         src = (source or "").lower()
-        if src == "onto":
+        if src in ("onto", "papel"):
             return DECISION_CHOICES_ONTO
         return DECISION_CHOICES_PULO
 
@@ -710,6 +721,10 @@ class Workbench(tk.Tk):
         if f == "onto":
             self.decide_hint.configure(
                 text="Onto options:  —  UF  RT  exclude   (NO atributo)"
+            )
+        elif f == "papel":
+            self.decide_hint.configure(
+                text="PAPEL options:  —  UF  RT  exclude   (descoberta; NO atributo)"
             )
         elif f == "pulo":
             self.decide_hint.configure(
@@ -721,7 +736,7 @@ class Workbench(tk.Tk):
             )
         else:
             self.decide_hint.configure(
-                text="All · blue=PULO · amber=Onto · green=WordNet (info only)"
+                text="All · blue=PULO · amber=Onto · purple=PAPEL · green=WordNet"
             )
 
     def _render_senses(self):
@@ -735,15 +750,18 @@ class Workbench(tk.Tk):
         dec = decmod.load_decisions(ws.decisions_json)
         senses = dec.get("senses") or []
         filt = self.filter_var.get()
-        if filt in ("pulo", "onto", "wordnet"):
+        if filt in ("pulo", "onto", "papel", "wordnet"):
             senses = [s for s in senses if (s.get("source") or "").lower() == filt]
 
         if not senses:
-            msg = "No senses yet. Search a lemma above (PULO / Onto / WordNet)."
+            msg = "No senses yet. Search a lemma above (PULO / Onto / PAPEL / WordNet)."
             if filt == "pulo":
                 msg = "No PULO cards. Search with «PULO — ILI» selected."
             elif filt == "onto":
                 msg = "No Onto.PT cards. Search with «Onto.PT» selected."
+            elif filt == "papel":
+                msg = ("No PAPEL cards. Search with «PAPEL» selected "
+                       "(requires `python sr.py resources --build-papel`).")
             elif filt == "wordnet":
                 msg = ("No WordNet cards. Search an English lemma with "
                        "«WordNet — OEWN» (e.g. composite, compound).")
@@ -758,6 +776,11 @@ class Workbench(tk.Tk):
             if src == "onto":
                 bg, accent, banner = "#FFF6E5", "#8A5A00", (
                     "Onto.PT  ·  fuzzy coverage  ·  options: UF · RT · exclude"
+                )
+                key_line = f"id: {s.get('key')}"
+            elif src == "papel":
+                bg, accent, banner = "#F3E5F5", "#4A148C", (
+                    "PAPEL 3.5  ·  dictionary relations  ·  discovery only"
                 )
                 key_line = f"id: {s.get('key')}"
             elif src == "wordnet":
@@ -807,7 +830,7 @@ class Workbench(tk.Tk):
                 continue
             choice_set = self._choices_for(src)
             raw = s.get("decision") or ""
-            if src == "onto" and raw == "atributo":
+            if src in ("onto", "papel") and raw == "atributo":
                 raw = "UF"
             # Preserve file-only evidence statuses (oposicao/vizinha); do not wipe.
             if raw in choice_set:

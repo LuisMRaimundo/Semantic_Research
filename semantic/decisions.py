@@ -421,6 +421,48 @@ def from_onto_export(
     return out
 
 
+def from_papel_export(
+    export: dict[str, Any], existing: Optional[dict] = None
+) -> dict[str, Any]:
+    """Seed PAPEL discovery cards (dictionary relations — never LexWarrant admit)."""
+    class_id = (existing or {}).get("class_id") or "Unknown"
+    out = existing or blank_decisions(class_id)
+    prior = {
+        sense_key(s["source"], s["key"]): s
+        for s in out.get("senses", []) if s.get("source") and s.get("key")
+    }
+    senses = list(out.get("senses", []))
+    for syn in export.get("synsets", []):
+        res = syn.get("resource") or "papel35"
+        sid = str(syn.get("synset_id") or syn.get("sid") or "")
+        key = f"{res}:{sid}" if res and sid else sid
+        if not key:
+            continue
+        sk = sense_key("papel", key)
+        if sk in prior:
+            continue
+        members = []
+        for m in syn.get("members") or []:
+            if isinstance(m, dict):
+                members.append(m.get("word") or "")
+            else:
+                members.append(str(m))
+        rel = (syn.get("relations") or {}).get("papel_rel") or ""
+        senses.append({
+            "source": "papel",
+            "key": key,
+            "ili": None,
+            "local_id": key,
+            "pos": syn.get("pos"),
+            "gloss": syn.get("gloss") or (f"PAPEL {rel}" if rel else "PAPEL"),
+            "members": [m for m in members if m],
+            "decision": "",
+            "note": "discovery: PAPEL 3.5",
+        })
+    out["senses"] = senses
+    return out
+
+
 def from_wordnet_export(
     export: dict[str, Any], existing: Optional[dict] = None
 ) -> dict[str, Any]:

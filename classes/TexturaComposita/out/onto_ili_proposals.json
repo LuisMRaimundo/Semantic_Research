@@ -3,8 +3,8 @@
   "policy": "Propose → review (GUI / CLI) → accepted links stamp Onto sense cards and feed ONTO-ILI atestado into LexWarrant. High-confidence unique proposals may auto-accept (config onto_ili_auto_accept_min).",
   "min_score": 0.35,
   "n_onto": 62,
-  "n_anchors": 56,
-  "n_proposals": 2,
+  "n_anchors": 57,
+  "n_proposals": 3,
   "n_accepted": 0,
   "n_rejected": 2,
   "auto_accept": {
@@ -90,6 +90,41 @@
         "lemma_score": 0.4333
       },
       "status": "rejected"
+    },
+    {
+      "onto_key": "onto:ontopt06:6214",
+      "ili": "i6556",
+      "score": 0.35,
+      "evidence": {
+        "shared_lemmas": [
+          "mesclado",
+          "misto",
+          "misturado"
+        ],
+        "onto_lemmas": [
+          "composito",
+          "entremeado",
+          "mesclado",
+          "misto",
+          "misturado",
+          "raiado"
+        ],
+        "anchor_sources": [
+          "pulo"
+        ],
+        "n_anchors": 1,
+        "gloss": {
+          "score": 0.0,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.0,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.5
+      },
+      "status": "proposed"
     }
   ]
 }

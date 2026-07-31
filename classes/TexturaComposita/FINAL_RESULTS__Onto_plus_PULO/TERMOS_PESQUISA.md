@@ -4,7 +4,7 @@
 **Eixo / acepção a separar:** heterogeneidade / composição de materiais ou partes distintas
 **Língua de pesquisa:** `en` · **Língua de rótulos:** `pt-PT`
 **Sintaxe de pesquisa:** não disponível — pólo-alvo `en` por adjudicar
-**Gerado:** 2026-07-30T19:37:15+01:00
+**Gerado:** 2026-07-31T03:57:10+01:00
 **Termos manuais:** ficheiro `termos_manuais.yaml` ausente nesta classe.
 
 ## A — Pólo alvo (`en`)

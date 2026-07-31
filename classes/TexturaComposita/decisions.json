@@ -1497,6 +1497,105 @@
       "decision": "exclude",
       "note": "",
       "destino": "evidencia"
+    },
+    {
+      "source": "pulo",
+      "key": "pwn30-01199083-a",
+      "pwn_id": "pwn30-01199083-a",
+      "ili": "i6556",
+      "cili": "i6556",
+      "cili_id": "i6556",
+      "cili_uri": "http://ili.globalwordnet.org/ili/i6556",
+      "source_curie": "oewn-ili:i6556",
+      "legacy_omw_ili": "ili-30-01199083-a",
+      "mapping_status": "official",
+      "local_id": "por-30-01199083-a",
+      "pos": "a",
+      "gloss": "que consiste em uma variedade aleatória de diferentes tipos\n",
+      "members": [
+        "amalgamado",
+        "cabrito",
+        "diverso",
+        "híbrido",
+        "mesclado",
+        "mestiço",
+        "misto",
+        "misturado",
+        "mulato"
+      ],
+      "decision": "",
+      "note": ""
+    },
+    {
+      "source": "papel",
+      "key": "papel35:HIPERONIMIA:HIPERONIMO_DE:composito",
+      "ili": null,
+      "local_id": "papel35:HIPERONIMIA:HIPERONIMO_DE:composito",
+      "pos": "",
+      "gloss": "PAPEL HIPERONIMO_DE (HIPERONIMIA)",
+      "members": [
+        "compósito",
+        "material"
+      ],
+      "decision": "",
+      "note": "discovery: PAPEL 3.5"
+    },
+    {
+      "source": "papel",
+      "key": "papel35:PARTE:PARTE_DE_ALGO_COM_PROPRIEDADE:composito",
+      "ili": null,
+      "local_id": "papel35:PARTE:PARTE_DE_ALGO_COM_PROPRIEDADE:composito",
+      "pos": "",
+      "gloss": "PAPEL PARTE_DE_ALGO_COM_PROPRIEDADE (PARTE)",
+      "members": [
+        "compósito",
+        "utilidade"
+      ],
+      "decision": "",
+      "note": "discovery: PAPEL 3.5"
+    },
+    {
+      "source": "papel",
+      "key": "papel35:PARTE:PROPRIEDADE_DE_ALGO_PARTE_DE:composito",
+      "ili": null,
+      "local_id": "papel35:PARTE:PROPRIEDADE_DE_ALGO_PARTE_DE:composito",
+      "pos": "",
+      "gloss": "PAPEL PROPRIEDADE_DE_ALGO_PARTE_DE (PARTE)",
+      "members": [
+        "compósito",
+        "substância"
+      ],
+      "decision": "",
+      "note": "discovery: PAPEL 3.5"
+    },
+    {
+      "source": "papel",
+      "key": "papel35:REFERENTE:DIZ_SE_DO_QUE:composito",
+      "ili": null,
+      "local_id": "papel35:REFERENTE:DIZ_SE_DO_QUE:composito",
+      "pos": "",
+      "gloss": "PAPEL DIZ_SE_DO_QUE (REFERENTE)",
+      "members": [
+        "compósito",
+        "ter diverso utilidade"
+      ],
+      "decision": "",
+      "note": "discovery: PAPEL 3.5"
+    },
+    {
+      "source": "papel",
+      "key": "papel35:SINONIMIA:SINONIMO_ADJ_DE:composito",
+      "ili": null,
+      "local_id": "papel35:SINONIMIA:SINONIMO_ADJ_DE:composito",
+      "pos": "",
+      "gloss": "PAPEL SINONIMO_ADJ_DE (SINONIMIA)",
+      "members": [
+        "compósito",
+        "heterogéneo",
+        "mesclado"
+      ],
+      "decision": "",
+      "note": "discovery: PAPEL 3.5"
     }
   ],
   "terms": [],

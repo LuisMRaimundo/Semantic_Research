@@ -586,8 +586,9 @@ def search_and_seed(class_id: str, query: str, source: str = "pulo",
                     mode: str = "Starts with", pos: Optional[str] = None,
                     limit: int = 80) -> dict:
     """Search lexicon, save export, seed undecided sense cards."""
-    from .adapters import OntoStore, PuloStore, WordNetStore
+    from .adapters import OntoStore, PapelStore, PuloStore, WordNetStore
     from . import decisions as decmod
+    from .resources import ensure_papel_index
 
     ws = ClassWorkspace.open(class_id)
     ws.ensure()
@@ -606,6 +607,14 @@ def search_and_seed(class_id: str, query: str, source: str = "pulo",
         )
         store.close()
         fname = f"onto_{query.strip().replace(' ', '_')}.json"
+    elif source == "papel":
+        ensure_papel_index()
+        store = PapelStore(Path(cfg["papel_sqlite"]))
+        export = store.export_search(
+            query, mode=mode, limit=min(limit, 40)
+        )
+        store.close()
+        fname = f"papel_{query.strip().replace(' ', '_')}.json"
     elif source in ("wordnet", "oewn", "wn"):
         source = "wordnet"
         export = WordNetStore().export_search(
@@ -615,7 +624,7 @@ def search_and_seed(class_id: str, query: str, source: str = "pulo",
         safe = query.strip().replace(" ", "_")
         fname = f"wordnet_{safe}.facets.json"
     else:
-        raise ValueError("source must be 'pulo', 'onto', or 'wordnet'")
+        raise ValueError("source must be 'pulo', 'onto', 'papel', or 'wordnet'")
 
     out_path = ws.exports / fname
     out_path.write_text(
@@ -627,6 +636,8 @@ def search_and_seed(class_id: str, query: str, source: str = "pulo",
         updated = decmod.from_pulo_export(export, existing)
     elif source == "onto":
         updated = decmod.from_onto_export(export, existing)
+    elif source == "papel":
+        updated = decmod.from_papel_export(export, existing)
     else:
         updated = decmod.from_wordnet_export(export, existing)
     decmod.save_decisions(ws.decisions_json, updated)

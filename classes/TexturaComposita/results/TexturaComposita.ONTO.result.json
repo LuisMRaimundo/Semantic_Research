@@ -2,7 +2,7 @@
   "class_id": "TexturaComposita",
   "pref_label": "textura compósita",
   "axis": "heterogeneidade / composição de materiais ou partes distintas",
-  "generated": "2026-07-30T19:35:35",
+  "generated": "2026-07-31T03:57:05",
   "db": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\engines\\ONTO\\ontopt.sqlite",
   "gating": {
     "weight_min": 0.5,

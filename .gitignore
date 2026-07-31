@@ -5,10 +5,20 @@ classes/*/_specs/
 classes/*/results/_*/
 *.sqlite
 data/sense_index.sqlite
+data/papel.sqlite
 .DS_Store
 # Vendored CILI lives in engines/LexWarrant/data/cili/ — not dumps
 cili-master/
 _quarantine/
+# Large local lexical dumps / clones (paths registered in config.toml)
+OntoPTv0.6_rdf/
+OntoPTv0.6_rdf.zip
+PAPEL.v.3.5_utf8/
+PAPEL.v.3.5_utf8.zip
+pulo.20160508.sql/
+pulo.20150502.sql/
+pulo.*.sql.xz
+openWordnet-PT/
 # Regenerable reports at repo root
 DEAD_CODE_CANDIDATES.json
 ONTO_RESOURCES_DIAGNOSIS.json

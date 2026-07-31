@@ -32,8 +32,19 @@ propostas Onto→ILI são *review-only*.
 cd "C:\Users\lmr20\Desktop\Semantic_Research"
 pip install -r requirements.txt
 python sr.py doctor --deep
+python sr.py resources --ensure-ownpt --build-papel
 python sr.py gui
 ```
+
+Lexical dumps expected next to the code (local; gitignored if huge):
+
+| Path | Role |
+|------|------|
+| `pulo.20160508.sql/` | PULO MySQL dump (preferred; already loaded into `pulo.sqlite`) |
+| `pulo.20150502.sql/` | Older PULO dump (reference) |
+| `OntoPTv0.6_rdf/` | Onto.PT v0.6 RDF (runtime uses `engines/ONTO/ontopt.sqlite`) |
+| `PAPEL.v.3.5_utf8/` | PAPEL relations → index with `--build-papel` |
+| `openWordnet-PT/` | Git clone of [own-pt/openWordnet-PT](https://github.com/own-pt/openWordnet-PT); runtime still uses `wn` pin `own-pt:1.0.0` |
 
 CLI (placeholders — substitute your concept):
 
@@ -53,10 +64,11 @@ python sr.py doctor --deep
 
 | Layer | Role |
 |-------|------|
-| **PULO** | Sense / UF·RT authority (native `to_ili`) |
-| **Onto.PT** | Discovery only — never LexWarrant admission |
+| **PULO** | Sense / UF·RT authority (native `to_ili`; DB from `pulo.20160508.sql`) |
+| **Onto.PT** | Discovery only — runtime `ontopt.sqlite` (incl. Onto.PT v0.6); RDF dump `OntoPTv0.6_rdf/` |
+| **PAPEL 3.5** | Discovery only — dictionary word–word relations (`PAPEL.v.3.5_utf8` → `data/papel.sqlite`) |
 | **OEWN** (pin `oewn:2024`) | EN corroboration via facets |
-| **OWN-PT** (pin `own-pt:1.0.0`) | PT lemmas via ILI (`atestado`) |
+| **OWN-PT** (pin `own-pt:1.0.0`) | PT lemmas via ILI (`atestado`); optional source clone `openWordnet-PT/` |
 | **CILI** | Pure identity `i…` ↔ PWN-3.0 offset (+ a↔s satellite norm) |
 | **SenseIndex** | `data/sense_index.sqlite` — durable sense registry |
 | **Onto→ILI proposals** | Scored lemma overlap; status=`proposed` only |

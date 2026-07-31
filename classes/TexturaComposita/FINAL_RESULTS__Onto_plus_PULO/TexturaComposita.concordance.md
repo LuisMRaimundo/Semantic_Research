@@ -2,11 +2,11 @@
 
 - **Política de divergência:** conservative
 - **Fontes:** PULO, OWN-PT, WordNet  (colunas: ONTO, PULO, OWN-PT, WordNet)
-- **Tabela legada OEWN↔PULO** (`legacy_equivalence`): C:\Users\lmr20\Desktop\Semantic_Research\classes\TexturaComposita\out\ili_equivalence.json  (2 pares; 9 sem âncora partilhada)
+- **Tabela legada OEWN↔PULO** (`legacy_equivalence`): não carregada (junção runtime usa CILI oficial quando ambas as fontes partilham ``i…``; isto não significa que os identificadores CILI estejam indisponíveis).
 - **Junções interfontes:** nenhuma — 0 item(ns) da matriz provenientes exclusivamente de uma única fonte (identificadores CILI normalizados na coluna ILI não implicam junção OEWN↔PULO).
 - **WordNet/OEWN:** disponível/consultada, sem formas portuguesas admitidas na matriz (`source_contributed_results=false`)
-- **Onto.PT:** discovery-only — queried=True; discovery_evidence=True; concordance_results=false (não admite na matriz LexWarrant)
-- **Gerado:** 2026-07-30T19:36:48
+- **Onto.PT:** discovery-only — queried=False; discovery_evidence=False; concordance_results=false (não admite na matriz LexWarrant)
+- **Gerado:** 2026-07-31T03:57:06
 - **Descartados (só pendentes):** 0 (termos ainda por adjudicar; contados, não listados)
 - **Asserções:** 13/13 PASS ✅
 
@@ -63,3 +63,12 @@ _(nenhum)_
 | T11 | Nenhum conceito só-pendente figura como linha da matriz (são contados em «descartados_pendentes»). | PASS ✅ | OK |
 | T9 | concordance.json faz round-trip (contagens de term/ili estáveis). | PASS ✅ | 0 conceitos |
 | T13 | Nenhuma célula nem proposta_final com valor «contraste» na matriz (migração completa: ver teste unitário de decisions). | PASS ✅ | OK |
+| T12 | Nenhum item do bloco de evidência figura no bloco de vocabulário, e vice-versa. | PASS ✅ | blocos A/B disjuntos |
+
+# Relatório residual — `TexturaComposita`
+
+Taxonomia de reconciliação (b1/b2/c1/c2/estipulações) **removida** (Corte 2).
+
+## Acepções adjudicadas sem correspondência em motor
+
+_(nenhuma)_

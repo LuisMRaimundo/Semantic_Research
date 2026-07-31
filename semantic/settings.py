@@ -28,6 +28,13 @@ _PATH_KEYS = (
     "wordnet_dir",
     "sense_index",
     "cili_map",
+    # Source dumps / optional indexes (repo-local)
+    "pulo_sql_primary",
+    "pulo_sql_secondary",
+    "onto_rdf",
+    "ownpt_dir",
+    "papel_dir",
+    "papel_sqlite",
 )
 _RUNTIME_KEYS = (
     "default_policy",
@@ -61,6 +68,12 @@ _DEFAULTS: dict[str, Any] = {
     "wordnet_dir": "WordNet",
     "sense_index": "data/sense_index.sqlite",
     "cili_map": "engines/LexWarrant/data/cili/ili-map-pwn30.tab",
+    "pulo_sql_primary": "pulo.20160508.sql/pulo.20160508.sql",
+    "pulo_sql_secondary": "pulo.20150502.sql/pulo.20150502.sql",
+    "onto_rdf": "OntoPTv0.6_rdf/OntoPTv0.6.rdfs",
+    "ownpt_dir": "openWordnet-PT",
+    "papel_dir": "PAPEL.v.3.5_utf8",
+    "papel_sqlite": "data/papel.sqlite",
     "default_policy": "conservative",
     "hide_pulo_signals": True,
     "sense_index_on_run": True,
