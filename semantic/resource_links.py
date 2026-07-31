@@ -112,9 +112,10 @@ def verify_pulo_offset(offset: str) -> bool:
             "SELECT 1 FROM synset WHERE offset=? LIMIT 1", (offset,)
         ).fetchone()
         if not n:
+            # Schema: to_ili(iliOffset, pos, offset, iliWnId, csco)
             ili = _ili30_from_key(offset) or offset
             n = con.execute(
-                "SELECT 1 FROM to_ili WHERE ili=? OR synset=? LIMIT 1",
+                "SELECT 1 FROM to_ili WHERE iliOffset=? OR offset=? LIMIT 1",
                 (ili, offset),
             ).fetchone()
         con.close()
@@ -188,10 +189,10 @@ def _fetch_pulo_view(offset: str) -> Optional[dict[str, Any]]:
         ili = _ili30_from_key(offset)
         if ili:
             mapr = con.execute(
-                "SELECT synset FROM to_ili WHERE ili=? LIMIT 1", (ili,)
+                "SELECT offset FROM to_ili WHERE iliOffset=? LIMIT 1", (ili,)
             ).fetchone()
             if mapr:
-                offset = mapr["synset"]
+                offset = mapr["offset"]
                 row = con.execute(
                     "SELECT * FROM synset WHERE offset=? LIMIT 1", (offset,)
                 ).fetchone()
@@ -205,7 +206,9 @@ def _fetch_pulo_view(offset: str) -> Optional[dict[str, Any]]:
             (offset,),
         )
     ]
-    ili_rows = list(con.execute("SELECT * FROM to_ili WHERE synset=?", (offset,)))
+    ili_rows = list(con.execute(
+        "SELECT * FROM to_ili WHERE offset=?", (offset,)
+    ))
     con.close()
     return {
         "resource": "PULO",
