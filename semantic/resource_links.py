@@ -17,9 +17,13 @@ from urllib.parse import quote
 from . import settings
 from .normalize import normalize_word, pretty_word
 
-OEWN_PAGE_BASE = "https://en-word.net/id/"
+# Public OEWN browser: /id/oewn-… redirects here; use synset path directly.
+OEWN_PAGE_BASE = "https://en-word.net/synset/"
 ONTO_RDF_BASE = "http://ontopt.dei.uc.pt/OntoPT.owl#"
+# LEIAME §6: public site; RDF fragment URIs are dump identifiers, not live pages.
+ONTO_HOME = "http://ontopt.dei.uc.pt/"
 OWNPT_REPO = "https://github.com/own-pt/openWordnet-PT"
+OWNPT_WEB = "http://openwordnet-pt.org"
 PAPEL_HOME = "https://www.linguateca.pt/PAPEL/"
 
 
@@ -411,16 +415,19 @@ def links_for_sense(sense: dict[str, Any]) -> list[ResourceLink]:
     elif src == "onto":
         ok = verify_onto_key(key)
         res, _, sid = key.partition(":")
+        # Public site (LEIAME §6). RDF fragment URIs identify dump nodes but
+        # do not resolve over HTTP — shown in the local HTML view instead.
+        out.append(ResourceLink(
+            label="Onto.PT (site)",
+            url=ONTO_HOME,
+            kind="onto",
+            verified=True,
+            identifier=ONTO_HOME,
+            detail="ontopt.dei.uc.pt · LEIAME",
+        ))
+        rdf_note = ""
         if res == "ontopt06" and sid:
-            uri = f"{ONTO_RDF_BASE}{sid}"
-            out.append(ResourceLink(
-                label=f"Onto RDF #{sid}",
-                url=uri,
-                kind="onto",
-                verified=ok,
-                identifier=uri,
-                detail="URI Onto.PT v0.6 (RDF)",
-            ))
+            rdf_note = f" · RDF id {ONTO_RDF_BASE}{sid} (dump local)"
         out.append(ResourceLink(
             label=f"Onto {key}" + ("" if ok else " (?)"),
             url="local:",
@@ -428,7 +435,7 @@ def links_for_sense(sense: dict[str, Any]) -> list[ResourceLink]:
             verified=ok,
             identifier=key,
             detail=(
-                "vista local a partir de ontopt.sqlite"
+                ("vista local a partir de ontopt.sqlite" + rdf_note)
                 if ok else "synset ausente em ontopt.sqlite"
             ),
         ))
@@ -460,13 +467,14 @@ def links_for_sense(sense: dict[str, Any]) -> list[ResourceLink]:
         oid = _oewn_id(local) or _oewn_id(key)
         if oid:
             ok = verify_oewn_id(oid)
+            bare = oid.removeprefix("oewn-")
             out.append(ResourceLink(
                 label=f"OEWN {oid}",
-                url=f"{OEWN_PAGE_BASE}{oid}",
+                url=f"{OEWN_PAGE_BASE}{bare}",
                 kind="oewn",
                 verified=ok,
                 identifier=oid,
-                detail="en-word.net",
+                detail="en-word.net/synset",
             ))
             out.append(ResourceLink(
                 label=f"OEWN local {oid}",
@@ -479,12 +487,20 @@ def links_for_sense(sense: dict[str, Any]) -> list[ResourceLink]:
 
     elif src in ("own-pt", "ownpt"):
         out.append(ResourceLink(
+            label="OWN-PT (web)",
+            url=OWNPT_WEB,
+            kind="ownpt",
+            verified=True,
+            identifier="own-pt:1.0.0",
+            detail="openwordnet-pt.org (README)",
+        ))
+        out.append(ResourceLink(
             label="OWN-PT (GitHub)",
             url=OWNPT_REPO,
             kind="ownpt",
             verified=True,
             identifier="own-pt:1.0.0",
-            detail="repositório fonte",
+            detail="repositório / clone local openWordnet-PT/",
         ))
         # attestation is ILI-mediated — CILI link already added above
 

@@ -54,7 +54,11 @@ class ResourceLinkTests(unittest.TestCase):
         }
         links = links_for_sense(sense)
         self.assertTrue(any(ln.kind == "oewn" and ln.verified for ln in links))
-        self.assertTrue(any("en-word.net" in (ln.url or "") for ln in links))
+        self.assertTrue(any("en-word.net/synset/" in (ln.url or "") for ln in links))
+        self.assertTrue(
+            any((ln.url or "").endswith("02711835-a") or "00001740-a" in (ln.url or "")
+                for ln in links)
+        )
 
 
 if __name__ == "__main__":
