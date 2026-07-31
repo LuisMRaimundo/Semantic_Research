@@ -6,7 +6,7 @@
 - **Junções interfontes:** nenhuma — 0 item(ns) da matriz provenientes exclusivamente de uma única fonte (identificadores CILI normalizados na coluna ILI não implicam junção OEWN↔PULO).
 - **WordNet/OEWN:** disponível/consultada, sem formas portuguesas admitidas na matriz (`source_contributed_results=false`)
 - **Onto.PT:** discovery-only — queried=False; discovery_evidence=False; concordance_results=false (não admite na matriz LexWarrant)
-- **Gerado:** 2026-07-31T03:57:06
+- **Gerado:** 2026-07-31T04:21:27
 - **Descartados (só pendentes):** 0 (termos ainda por adjudicar; contados, não listados)
 - **Asserções:** 13/13 PASS ✅
 

@@ -6,6 +6,7 @@ classes/*/results/_*/
 *.sqlite
 data/sense_index.sqlite
 data/papel.sqlite
+data/link_views/
 .DS_Store
 # Vendored CILI lives in engines/LexWarrant/data/cili/ — not dumps
 cili-master/

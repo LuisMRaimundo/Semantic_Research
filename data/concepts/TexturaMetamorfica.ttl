@@ -6,7 +6,7 @@
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaMetamorfica
-# generated 2026-07-31T02:57:07+00:00
+# generated 2026-07-31T03:21:28+00:00
 # policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaMetamorfica a owl:Class, skos:Concept ;

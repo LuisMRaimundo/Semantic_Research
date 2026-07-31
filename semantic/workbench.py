@@ -388,6 +388,12 @@ class Workbench(tk.Tk):
         self.onto_ili_status.pack(anchor="w", pady=(2, 2))
         self.onto_ili_list = tk.Listbox(ili_box, height=6, font=("Consolas", 8))
         self.onto_ili_list.pack(fill="both", expand=True)
+        self.onto_ili_list.bind("<Double-Button-1>", self._onto_ili_open_links)
+        ttk.Label(
+            ili_box,
+            text="Duplo-clique: abrir hiperligações CILI / Onto do par seleccionado",
+            foreground="#555",
+        ).pack(anchor="w")
         self._onto_ili_rows: list[dict] = []
 
         self.log = scrolledtext.ScrolledText(right, height=12, wrap="word")
@@ -705,6 +711,75 @@ class Workbench(tk.Tk):
             webbrowser.open(path.as_uri())
 
     # -- senses ----------------------------------------------------------
+    def _add_resource_links(
+        self, parent: tk.Misc, sense: dict, *, bg: str, accent: str
+    ) -> None:
+        """Clickable identifiers → public pages / live local resource views."""
+        from semantic.resource_links import links_for_sense, open_resource_link
+
+        try:
+            links = links_for_sense(sense)
+        except Exception:  # noqa: BLE001
+            links = []
+        row = tk.Frame(parent, bg=bg)
+        row.pack(fill="x", pady=(2, 2))
+        tk.Label(row, text="Recurso:", bg=bg, fg=accent, font=("", 8, "bold")).pack(
+            side="left", padx=(0, 4)
+        )
+        if not links:
+            tk.Label(
+                row, text="(sem hiperligação — id ausente)", bg=bg, fg="#888",
+                font=("", 8),
+            ).pack(side="left")
+            return
+        for i, link in enumerate(links):
+            if i:
+                tk.Label(row, text="·", bg=bg, fg="#999").pack(side="left", padx=2)
+            color = "#0B5" if link.verified else "#A40"
+            lbl = tk.Label(
+                row,
+                text=link.label,
+                bg=bg,
+                fg=color,
+                font=("", 8, "underline"),
+                cursor="hand2",
+            )
+            lbl.pack(side="left")
+            tip = link.detail or link.identifier
+
+            def _open(_evt=None, ln=link, sn=sense, t=tip):
+                ok = open_resource_link(ln, sn)
+                if not ok:
+                    messagebox.showwarning(
+                        APP,
+                        f"Não foi possível abrir «{ln.label}».\n{t}",
+                    )
+                else:
+                    self.status_var.set(f"Aberto: {ln.label}")
+
+            lbl.bind("<Button-1>", _open)
+
+    def _onto_ili_open_links(self, _evt=None):
+        row = self._onto_ili_selected()
+        if not row:
+            return
+        from semantic.resource_links import links_for_onto_ili, open_resource_link
+
+        links = links_for_onto_ili(
+            str(row.get("onto_key") or ""), str(row.get("ili") or "")
+        )
+        opened = 0
+        sense_onto = {"source": "onto", "key": row.get("onto_key") or ""}
+        for ln in links:
+            sn = sense_onto if ln.kind in ("onto", "local") else {
+                "source": "pulo", "cili": row.get("ili"), "ili": row.get("ili"),
+            }
+            if open_resource_link(ln, sn):
+                opened += 1
+        self.status_var.set(
+            f"Onto→ILI: abertas {opened}/{len(links)} hiperligações"
+        )
+
     def _sync_filter_to_search(self):
         """When user switches search lexicon, show that source's cards."""
         self.filter_var.set(self.source_var.get())
@@ -809,6 +884,7 @@ class Workbench(tk.Tk):
             tk.Label(
                 card, text=key_line, bg=bg, fg="#444", anchor="w"
             ).pack(fill="x")
+            self._add_resource_links(card, s, bg=bg, accent=accent)
             members = ", ".join(s.get("members") or [])
             gloss = s.get("gloss") or "(no gloss)"
             tk.Label(

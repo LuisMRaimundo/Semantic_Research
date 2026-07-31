@@ -486,10 +486,27 @@ def from_wordnet_export(
         pt = list(syn.get("pt_lemmas") or [])
         if pt:
             members = members + [f"PT: {w}" for w in pt]
+        cili_uri = None
+        cili_page = None
+        if ili:
+            try:
+                from .engines import load_identifiers
+                ids = load_identifiers()
+                cid = ids.try_normalize_cili_id(ili)
+                if cid:
+                    ili = cid
+                    cili_uri = ids.cili_uri(cid)
+                    cili_page = ids.cili_page_url(cid)
+            except Exception:  # noqa: BLE001
+                pass
         senses.append({
             "source": "wordnet",
             "key": key,
             "ili": ili,
+            "cili": ili or None,
+            "cili_id": ili or None,
+            "cili_uri": cili_uri,
+            "cili_page": cili_page,
             "local_id": syn.get("name") or "",
             "pos": syn.get("pos") or "",
             "gloss": syn.get("definition") or "",
