@@ -212,7 +212,13 @@ def _oewn_id_for_cili(cili: str) -> Optional[str]:
     try:
         import wn  # type: ignore
 
-        for s in wn.synsets(ili=cili, lexicon="oewn:2024"):
+        pin = "oewn:2025"
+        try:
+            from semantic import settings as _sr_settings  # type: ignore
+            pin = str(_sr_settings.load_config().get("oewn") or pin)
+        except Exception:  # noqa: BLE001
+            pass
+        for s in wn.synsets(ili=cili, lexicon=pin):
             sid = str(getattr(s, "id", "") or "")
             if sid.startswith("oewn-"):
                 return sid

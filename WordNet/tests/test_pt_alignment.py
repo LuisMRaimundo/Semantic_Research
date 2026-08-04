@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 """T1/T2 — the ILI→own-pt bridge is live and pinned.
 
-Requires own-pt:1.0.0 + oewn:2024 installed (as in the target environment). If
-own-pt is absent the PT assertions are skipped (the note-only-when-empty rule is
-still checked structurally elsewhere).
+Requires own-pt:1.0.0 + runtime OEWN pin installed (as in the target
+environment). If own-pt is absent the PT assertions are skipped (the
+note-only-when-empty rule is still checked structurally elsewhere).
 """
 import sys
 import unittest
@@ -17,9 +17,10 @@ _HAS_PT = backend.own_pt_installed()
 
 
 class TestPtAlignment(unittest.TestCase):
-    def test_pinned_to_2024(self):
-        # With 2024 installed it must pin to 2024, never jump to 2025.
-        self.assertEqual(backend.ensure_oewn(), "oewn:2024")
+    def test_runtime_pin_stable(self):
+        # Runtime pin must stick; companions (e.g. 2024) stay installed but unused.
+        pin = backend.OEWN_PINNED_VERSION
+        self.assertEqual(backend.ensure_oewn(), pin)
 
     @unittest.skipUnless(_HAS_PT, "own-pt não instalado")
     def test_t1_pt_lemmas_match_repl(self):

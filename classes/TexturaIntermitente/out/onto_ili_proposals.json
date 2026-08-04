@@ -5,13 +5,12 @@
   "n_onto": 27,
   "n_anchors": 1,
   "n_proposals": 1,
-  "n_accepted": 1,
+  "n_accepted": 0,
   "n_rejected": 0,
   "auto_accept": {
     "n": 0,
     "accepted": [],
-    "min_score": 0.85,
-    "margin": 0.12
+    "skipped": "disabled"
   },
   "proposals": [
     {
@@ -40,7 +39,7 @@
         },
         "lemma_score": 1.0
       },
-      "status": "accepted"
+      "status": "proposed"
     }
   ]
 }

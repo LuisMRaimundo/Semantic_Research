@@ -33,7 +33,9 @@ onto_ili_emit_min = 0.85
 gloss_use_embeddings = false
 
 [pins]
-oewn = "oewn:2024"
+# Runtime pin (hard). Companions stay installed for archive / cross-check.
+oewn = "oewn:2025"
+oewn_companions = "oewn:2024,oewn:2025+"
 own_pt = "own-pt:1.0.0"
 cili_map = "engines/LexWarrant/data/cili/ili-map-pwn30.tab"
 cili_commit = "upstream-master+pwn30+pwn31+wn.ili"

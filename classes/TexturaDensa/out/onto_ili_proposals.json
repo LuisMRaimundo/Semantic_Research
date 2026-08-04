@@ -2,16 +2,191 @@
   "class_id": "TexturaDensa",
   "policy": "Propose → review (GUI / CLI) → accepted links stamp Onto sense cards and feed ONTO-ILI atestado into LexWarrant. High-confidence unique proposals may auto-accept (config onto_ili_auto_accept_min).",
   "min_score": 0.35,
-  "n_onto": 0,
+  "n_onto": 40,
   "n_anchors": 8,
-  "n_proposals": 0,
+  "n_proposals": 6,
   "n_accepted": 0,
   "n_rejected": 0,
   "auto_accept": {
     "n": 0,
     "accepted": [],
-    "min_score": 0.85,
-    "margin": 0.12
+    "skipped": "disabled"
   },
-  "proposals": []
+  "proposals": [
+    {
+      "onto_key": "onto:ontopt06:23317",
+      "ili": "i63738",
+      "score": 0.7402,
+      "evidence": {
+        "shared_lemmas": [
+          "concentracao",
+          "densidade"
+        ],
+        "onto_lemmas": [
+          "concentracao",
+          "densidade"
+        ],
+        "anchor_sources": [
+          "pulo"
+        ],
+        "n_anchors": 1,
+        "gloss": {
+          "score": 0.134,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.2061,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 1.0
+      },
+      "status": "proposed"
+    },
+    {
+      "onto_key": "onto:polaridades:12292",
+      "ili": "i62946",
+      "score": 0.4026,
+      "evidence": {
+        "shared_lemmas": [
+          "densidade"
+        ],
+        "onto_lemmas": [
+          "compacidade",
+          "densidade"
+        ],
+        "anchor_sources": [
+          "pulo"
+        ],
+        "n_anchors": 1,
+        "gloss": {
+          "score": 0.1752,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.2696,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.5
+      },
+      "status": "proposed"
+    },
+    {
+      "onto_key": "onto:polaridades:12292",
+      "ili": "i63738",
+      "score": 0.3878,
+      "evidence": {
+        "shared_lemmas": [
+          "densidade"
+        ],
+        "onto_lemmas": [
+          "compacidade",
+          "densidade"
+        ],
+        "anchor_sources": [
+          "pulo"
+        ],
+        "n_anchors": 1,
+        "gloss": {
+          "score": 0.1259,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.1936,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.5
+      },
+      "status": "proposed"
+    },
+    {
+      "onto_key": "onto:ontopt06:23317",
+      "ili": "i62946",
+      "score": 0.3717,
+      "evidence": {
+        "shared_lemmas": [
+          "densidade"
+        ],
+        "onto_lemmas": [
+          "concentracao",
+          "densidade"
+        ],
+        "anchor_sources": [
+          "pulo"
+        ],
+        "n_anchors": 1,
+        "gloss": {
+          "score": 0.0723,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.1112,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.5
+      },
+      "status": "proposed"
+    },
+    {
+      "onto_key": "onto:ontopt06:27204",
+      "ili": "i62946",
+      "score": 0.35,
+      "evidence": {
+        "shared_lemmas": [
+          "densidade"
+        ],
+        "onto_lemmas": [
+          "compacidade",
+          "densidade"
+        ],
+        "anchor_sources": [
+          "pulo"
+        ],
+        "n_anchors": 1,
+        "gloss": {
+          "score": 0.0,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.0,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.5
+      },
+      "status": "proposed"
+    },
+    {
+      "onto_key": "onto:ontopt06:27204",
+      "ili": "i63738",
+      "score": 0.35,
+      "evidence": {
+        "shared_lemmas": [
+          "densidade"
+        ],
+        "onto_lemmas": [
+          "compacidade",
+          "densidade"
+        ],
+        "anchor_sources": [
+          "pulo"
+        ],
+        "n_anchors": 1,
+        "gloss": {
+          "score": 0.0,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.0,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.5
+      },
+      "status": "proposed"
+    }
+  ]
 }

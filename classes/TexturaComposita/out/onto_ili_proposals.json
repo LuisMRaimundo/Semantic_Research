@@ -2,11 +2,11 @@
   "class_id": "TexturaComposita",
   "policy": "Propose → review (GUI / CLI) → accepted links stamp Onto sense cards and feed ONTO-ILI atestado into LexWarrant. High-confidence unique proposals may auto-accept (config onto_ili_auto_accept_min).",
   "min_score": 0.35,
-  "n_onto": 67,
-  "n_anchors": 57,
+  "n_onto": 68,
+  "n_anchors": 56,
   "n_proposals": 3,
   "n_accepted": 0,
-  "n_rejected": 2,
+  "n_rejected": 0,
   "auto_accept": {
     "n": 0,
     "accepted": [],
@@ -50,7 +50,7 @@
         },
         "lemma_score": 0.4333
       },
-      "status": "rejected"
+      "status": "proposed"
     },
     {
       "onto_key": "onto:contopt:29206",
@@ -89,7 +89,7 @@
         },
         "lemma_score": 0.4333
       },
-      "status": "rejected"
+      "status": "proposed"
     },
     {
       "onto_key": "onto:ontopt06:6214",

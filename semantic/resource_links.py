@@ -150,7 +150,7 @@ def verify_onto_key(key: str) -> bool:
 def verify_oewn_id(oewn: str) -> bool:
     try:
         import wn  # type: ignore
-        pin = str(settings.load_config().get("oewn") or "oewn:2024")
+        pin = str(settings.load_config().get("oewn") or "oewn:2025")
         w = wn.Wordnet(pin)
         return w.synset(oewn) is not None
     except Exception:  # noqa: BLE001
@@ -300,7 +300,7 @@ def _fetch_papel_view(key: str) -> Optional[dict[str, Any]]:
 def _fetch_oewn_view(oewn: str) -> Optional[dict[str, Any]]:
     try:
         import wn  # type: ignore
-        pin = str(settings.load_config().get("oewn") or "oewn:2024")
+        pin = str(settings.load_config().get("oewn") or "oewn:2025")
         w = wn.Wordnet(pin)
         raw = w.synset(oewn)
         if raw is None:

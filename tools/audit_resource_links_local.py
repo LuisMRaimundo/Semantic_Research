@@ -66,7 +66,9 @@ def main() -> int:
 
     # --- OEWN (local wn pin; URL form) ---
     oid = "oewn-00001740-a"
-    ss = wn.Wordnet("oewn:2024").synset(oid)
+    from semantic import settings as _cfg
+    _pin = str(_cfg.load_config().get("oewn") or "oewn:2025")
+    ss = wn.Wordnet(_pin).synset(oid)
     lemmas = list(ss.lemmas()) if ss else []
     definition = (ss.definition() or "") if ss else ""
     view = _fetch_oewn_view(oid)
@@ -94,7 +96,7 @@ def main() -> int:
         "OEWN verify helper",
         oid,
         verify_oewn_id(oid),
-        "wn pin oewn:2024",
+        f"wn pin {_pin}",
     ))
 
     # --- PULO (local sqlite) ---

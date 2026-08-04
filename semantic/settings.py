@@ -51,6 +51,7 @@ _RUNTIME_KEYS = (
 )
 _PIN_KEYS = (
     "oewn",
+    "oewn_companions",
     "own_pt",
     "cili_commit",
     "cili_min_pairs",
@@ -89,7 +90,9 @@ _DEFAULTS: dict[str, Any] = {
     "onto_ili_emit_min": 0.85,
     # Opt-in: sentence-transformers multilingual MiniLM (may download weights)
     "gloss_use_embeddings": False,
-    "oewn": "oewn:2024",
+    "oewn": "oewn:2025",
+    # Comma-separated OEWN releases kept installed alongside the runtime pin
+    "oewn_companions": "oewn:2024,oewn:2025+",
     "own_pt": "own-pt:1.0.0",
     "cili_commit": "eeab8003a3200e6293e8f7569de7d15a7a426d76",
     "cili_min_pairs": 117000,
@@ -199,6 +202,18 @@ def _normalize_loaded(data: dict[str, Any], source: Path) -> dict[str, Any]:
         out["onto_ili_auto_accept_min"] = 0.85
         out["onto_ili_auto_accept_margin"] = 0.12
         out["onto_ili_emit_min"] = 0.85
+    # Normalise companion OEWN pins to a list (TOML stores a CSV string).
+    raw_comp = out.get("oewn_companions") or ""
+    if isinstance(raw_comp, (list, tuple)):
+        companions = [str(x).strip() for x in raw_comp if str(x).strip()]
+    else:
+        companions = [
+            x.strip() for x in str(raw_comp).split(",") if x.strip()
+        ]
+    pin = str(out.get("oewn") or "oewn:2025").strip()
+    companions = [c for c in companions if c != pin]
+    out["oewn"] = pin
+    out["oewn_companions"] = companions
     return out
 
 
@@ -269,7 +284,13 @@ def save_config(data: dict[str, Any]) -> None:
     lines.append(f"hide_pulo_signals = {'true' if hide else 'false'}")
     lines.append(f"sense_index_on_run = {'true' if idx else 'false'}")
     lines += ["", "[pins]"]
-    lines.append(f'oewn = "{payload.get("oewn", "oewn:2024")}"')
+    lines.append(f'oewn = "{payload.get("oewn", "oewn:2025")}"')
+    comps = payload.get("oewn_companions") or ["oewn:2024", "oewn:2025+"]
+    if isinstance(comps, (list, tuple)):
+        comps_s = ",".join(str(x).strip() for x in comps if str(x).strip())
+    else:
+        comps_s = str(comps).strip()
+    lines.append(f'oewn_companions = "{comps_s}"')
     lines.append(f'own_pt = "{payload.get("own_pt", "own-pt:1.0.0")}"')
     cili_map = payload.get("cili_map", _DEFAULTS["cili_map"])
     lines.append(f'cili_map = "{_rel_or_abs(str(cili_map))}"')

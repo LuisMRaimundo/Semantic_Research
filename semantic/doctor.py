@@ -148,7 +148,8 @@ def run_doctor(*, deep: bool = False) -> DoctorReport:
     except Exception as exc:  # noqa: BLE001
         report.checks.append(Check("cili", False, str(exc), "error"))
 
-    pin_oewn = str(cfg.get("oewn") or "oewn:2024")
+    pin_oewn = str(cfg.get("oewn") or "oewn:2025")
+    companions = list(cfg.get("oewn_companions") or [])
     pin_own = str(cfg.get("own_pt") or "own-pt:1.0.0")
     try:
         import wn  # type: ignore
@@ -160,9 +161,27 @@ def run_doctor(*, deep: bool = False) -> DoctorReport:
             f"{sorted(x for x in installed if x.startswith('oewn:'))}",
             "error" if pin_oewn not in installed else "info",
         ))
-        extras = sorted(
-            x for x in installed if x.startswith("oewn:") and x != pin_oewn
+        missing_comp = [c for c in companions if c not in installed]
+        present_comp = [c for c in companions if c in installed]
+        report.checks.append(Check(
+            "oewn_companions",
+            not missing_comp,
+            (
+                f"runtime={pin_oewn}; companions ok={present_comp}"
+                + (f"; missing={missing_comp}" if missing_comp else "")
+            ),
+            "warn" if missing_comp else "info",
+        ))
+        unexpected = sorted(
+            x for x in installed
+            if x.startswith("oewn:") and x != pin_oewn and x not in companions
         )
+        if unexpected:
+            report.checks.append(Check(
+                "oewn_unexpected", True,
+                f"extra OEWN releases not listed as companions: {unexpected}",
+                "info",
+            ))
         report.checks.append(Check(
             "own_pt_pin", pin_own in installed,
             f"want {pin_own}; present={pin_own in installed}",
@@ -174,16 +193,9 @@ def run_doctor(*, deep: bool = False) -> DoctorReport:
         active = backend.ensure_oewn()
         report.checks.append(Check(
             "oewn_active", active == pin_oewn,
-            f"ensure_oewn() → {active} (hard pin)",
+            f"ensure_oewn() → {active} (runtime pin; companions kept installed)",
             "error" if active != pin_oewn else "info",
         ))
-        if extras and active == pin_oewn:
-            # Informational only — hard pin ignores extras at runtime.
-            report.checks.append(Check(
-                "oewn_extra_ignored", True,
-                f"extra releases present but ignored by hard pin: {extras}",
-                "info",
-            ))
         if deep and pin_own in installed:
             # Concept-agnostic: OWN-PT translate must yield lemmas for *some* OEWN synset.
             ok_bridge, detail = _own_pt_bridge_smoke(backend)

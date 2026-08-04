@@ -83,7 +83,7 @@ except Exception as e:
             "Open English Wordnet não está instalado corretamente.\n\n"
             "Execute no terminal:\n"
             "pip install wn nltk\n"
-            "python -c \"import wn; wn.download('oewn:2024')\"",
+            "python -c \"import wn; wn.download('oewn:2025')\"",
         )
         sys.exit(1)
 
@@ -653,7 +653,7 @@ A SEGUIR
             error_msg += "1. Reinicie o programa\n"
             error_msg += "2. Verifique se o Open English Wordnet está instalado:\n"
             error_msg += "   pip install wn\n"
-            error_msg += "   python -c \"import wn; wn.download('oewn:2024')\"\n"
+            error_msg += "   python -c \"import wn; wn.download('oewn:2025')\"\n"
             error_msg += "3. Tente com uma palavra simples como 'dog' ou 'run'\n"
             self.text_synsets.insert("1.0", error_msg)
             
@@ -1931,7 +1931,7 @@ if __name__ == "__main__":
         print(f"✗ Erro ao testar Open English Wordnet: {e}")
         print("\nTente executar:")
         print("  pip install wn")
-        print("  python -c \"import wn; wn.download('oewn:2024')\"")
+        print("  python -c \"import wn; wn.download('oewn:2025')\"")
         response = messagebox.askyesno(
             "Erro",
             "Open English Wordnet não está funcionando.\n\n"

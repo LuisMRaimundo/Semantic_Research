@@ -20,6 +20,10 @@ pulo.20160508.sql/
 pulo.20150502.sql/
 pulo.*.sql.xz
 openWordnet-PT/
+_resource_cache/
+# OEWN dump archives (runtime = wn pin; see WordNet/downloads/README.md)
+WordNet/downloads/*
+!WordNet/downloads/README.md
 # Regenerable reports at repo root
 DEAD_CODE_CANDIDATES.json
 ONTO_RESOURCES_DIAGNOSIS.json

@@ -67,7 +67,7 @@ python sr.py doctor --deep
 | **PULO** | Sense / UF·RT authority (native `to_ili`; DB from `pulo.20160508.sql`) |
 | **Onto.PT** | Discovery only — runtime `ontopt.sqlite` (incl. Onto.PT v0.6); RDF dump `OntoPTv0.6_rdf/` |
 | **PAPEL 3.5** | Discovery only — dictionary word–word relations (`PAPEL.v.3.5_utf8` → `data/papel.sqlite`) |
-| **OEWN** (pin `oewn:2024`) | EN corroboration via facets |
+| **OEWN** (runtime pin `oewn:2025`; companions `2024` + `2025+`) | EN corroboration via facets |
 | **OWN-PT** (pin `own-pt:1.0.0`) | PT lemmas via ILI (`atestado`); optional source clone `openWordnet-PT/` |
 | **CILI** | Pure identity `i…` ↔ PWN-3.0 offset (+ a↔s satellite norm) |
 | **SenseIndex** | `data/sense_index.sqlite` — durable sense registry |
@@ -103,7 +103,7 @@ classes/<Class>/
 | Onto inventory | Auto-accept high-confidence unique links + GUI review panel |
 | weak(term) polysemy | default `weak_term_mode=gloss_gated` |
 | Gloss layer | TF-IDF char/word cosine (+ opt-in embeddings: `gloss_use_embeddings`) |
-| OEWN pin risk | Hard pin to `oewn:2024` — extras ignored |
+| OEWN pin risk | Runtime hard pin `oewn:2025`; companions `2024`/`2025+` kept installed |
 | Publishable model | `CONCEPT.ttl`: `exactMatch` ≤1 PULO UF CILI; RT→`relatedMatch`; excludes never matched |
 | Onto→ILI | Inventory only (`sinalizacao`); emit score≥0.85; auto-accept off by default |
 

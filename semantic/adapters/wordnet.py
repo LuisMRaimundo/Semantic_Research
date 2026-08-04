@@ -17,7 +17,7 @@ from ..settings import load_config
 def _ensure_backend():
     backend = load_oewn_backend()
     cfg = load_config()
-    pin = str(cfg.get("oewn") or "oewn:2024")
+    pin = str(cfg.get("oewn") or "oewn:2025")
     if hasattr(backend, "set_oewn_pin"):
         backend.set_oewn_pin(pin, hard=True)
     else:

@@ -25,10 +25,10 @@ import wn.taxonomy
 
 logger = logging.getLogger(__name__)
 
-# PINNED version first. When several OEWN releases are installed (e.g. 2024 AND
-# 2025), lookup AND translate() must run on the SAME pinned version so the oewn-…
-# ids in an export resolve consistently and the ILI→own-pt bridge is deterministic.
-OEWN_PINNED_VERSION = "oewn:2024"
+# Runtime pin. Companion releases (e.g. oewn:2024, oewn:2025+) may stay
+# installed for archive / cross-check, but lookup AND translate() always use
+# THIS pin so oewn-… ids and the ILI→own-pt bridge stay deterministic.
+OEWN_PINNED_VERSION = "oewn:2025"
 # Hard pin: never silently activate another local OEWN release.
 OEWN_LEXICON_CANDIDATES = (OEWN_PINNED_VERSION,)
 OEWN_LEXICON: str | None = None
@@ -451,7 +451,7 @@ def _ensure_lexicon(specifier: str) -> None:
 def set_oewn_pin(specifier: str, *, hard: bool = True) -> None:
     """Set the only OEWN release the backend may activate (clears caches)."""
     global OEWN_PINNED_VERSION, OEWN_LEXICON_CANDIDATES, OEWN_LEXICON, OEWN_HARD_PIN
-    OEWN_PINNED_VERSION = str(specifier or "oewn:2024").strip()
+    OEWN_PINNED_VERSION = str(specifier or "oewn:2025").strip()
     OEWN_LEXICON_CANDIDATES = (OEWN_PINNED_VERSION,)
     OEWN_HARD_PIN = bool(hard)
     OEWN_LEXICON = None
@@ -462,10 +462,11 @@ def set_oewn_pin(specifier: str, *, hard: bool = True) -> None:
 
 
 def ensure_oewn() -> str:
-    """Return the hard-pinned Open English Wordnet lexicon id.
+    """Return the runtime-pinned Open English Wordnet lexicon id.
 
     With ``OEWN_HARD_PIN`` (default True) this **never** falls through to
-    another local release (e.g. oewn:2025). Only the pinned specifier is used.
+    another local release. Companions (e.g. oewn:2024) may remain installed
+    but are not used for lookup/translate.
     """
     global OEWN_LEXICON
     pinned = OEWN_PINNED_VERSION
@@ -473,7 +474,7 @@ def ensure_oewn() -> str:
         return OEWN_LEXICON
     if OEWN_LEXICON and OEWN_LEXICON != pinned:
         logger.warning(
-            "Clearing OEWN_LEXICON=%s — hard pin requires %s", OEWN_LEXICON, pinned
+            "Clearing OEWN_LEXICON=%s — runtime pin requires %s", OEWN_LEXICON, pinned
         )
         OEWN_LEXICON = None
         try:
@@ -483,12 +484,11 @@ def ensure_oewn() -> str:
 
     if _lexicon_installed(pinned):
         OEWN_LEXICON = pinned
-        logger.info("OEWN hard-pinned to installed lexicon %s", pinned)
+        logger.info("OEWN runtime-pinned to installed lexicon %s", pinned)
         return pinned
 
     if OEWN_HARD_PIN:
-        # Do not use 2025/2025+/2023 as silent substitutes.
-        extras = [
+        companions = [
             f"{lex.id}:{lex.version}"
             for lex in _iter_lexicons()
             if getattr(lex, "id", None) == "oewn"
@@ -498,7 +498,7 @@ def ensure_oewn() -> str:
             wn.download(pinned)
             if _lexicon_installed(pinned):
                 OEWN_LEXICON = pinned
-                logger.info("OEWN downloaded and hard-pinned to %s", pinned)
+                logger.info("OEWN downloaded and runtime-pinned to %s", pinned)
                 return pinned
         except Exception as exc:
             data_dir = (
@@ -506,8 +506,8 @@ def ensure_oewn() -> str:
                 or "~/.wn_data"
             )
             raise RuntimeError(
-                f"OEWN hard pin {pinned!r} is not installed and download failed.\n"
-                f"Other local releases present (ignored): {extras or '—'}\n"
+                f"OEWN runtime pin {pinned!r} is not installed and download failed.\n"
+                f"Companion releases present (not used at runtime): {companions or '—'}\n"
                 f"Pasta wn: {data_dir}\n"
                 f"  python -c \"import wn; wn.download('{pinned}')\""
             ) from exc

@@ -20,7 +20,7 @@ def _cfg_pins() -> dict[str, str]:
     from .settings import load_config
     cfg = load_config()
     return {
-        "oewn": str(cfg.get("oewn") or "oewn:2024"),
+        "oewn": str(cfg.get("oewn") or "oewn:2025"),
         "cili_commit": str(cfg.get("cili_commit") or ""),
         "cili_map": str(cfg.get("cili_map") or ""),
     }

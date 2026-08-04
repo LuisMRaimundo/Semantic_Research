@@ -31,7 +31,10 @@ class SettingsPathTests(unittest.TestCase):
 
     def test_pins_present(self):
         cfg = load_config()
-        self.assertEqual(cfg.get("oewn"), "oewn:2024")
+        self.assertEqual(cfg.get("oewn"), "oewn:2025")
+        comps = cfg.get("oewn_companions") or []
+        self.assertIn("oewn:2024", comps)
+        self.assertIn("oewn:2025+", comps)
         self.assertEqual(cfg.get("own_pt"), "own-pt:1.0.0")
         self.assertGreaterEqual(int(cfg.get("cili_min_pairs") or 0), 117000)
 
