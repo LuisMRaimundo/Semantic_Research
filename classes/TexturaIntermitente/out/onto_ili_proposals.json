@@ -1,0 +1,46 @@
+{
+  "class_id": "TexturaIntermitente",
+  "policy": "Propose → review (GUI / CLI) → accepted links stamp Onto sense cards and feed ONTO-ILI atestado into LexWarrant. High-confidence unique proposals may auto-accept (config onto_ili_auto_accept_min).",
+  "min_score": 0.35,
+  "n_onto": 27,
+  "n_anchors": 1,
+  "n_proposals": 1,
+  "n_accepted": 1,
+  "n_rejected": 0,
+  "auto_accept": {
+    "n": 0,
+    "accepted": [],
+    "min_score": 0.85,
+    "margin": 0.12
+  },
+  "proposals": [
+    {
+      "onto_key": "onto:ontopt06:54924",
+      "ili": "i3299",
+      "score": 0.7,
+      "evidence": {
+        "shared_lemmas": [
+          "intermitente"
+        ],
+        "onto_lemmas": [
+          "intermitente"
+        ],
+        "anchor_sources": [
+          "pulo"
+        ],
+        "n_anchors": 1,
+        "gloss": {
+          "score": 0.0,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.0,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 1.0
+      },
+      "status": "accepted"
+    }
+  ]
+}

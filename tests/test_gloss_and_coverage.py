@@ -63,16 +63,23 @@ class ConceptModelSmoke(unittest.TestCase):
             "class_id": "ProbeConcept",
             "pref_label": "probe",
             "axis": "test axis",
-            "uf": [{"members": ["alpha", "beta"]}],
-            "rt": [{"members": ["gamma"]}],
-            "exclude": [{"members": ["noise"]}],
-            "ilis": ["i1"],
+            "discovery_evidence": {
+                "uf_candidates": [{"members": ["alpha", "beta"]}],
+                "rt_candidates": [{"members": ["gamma"]}],
+                "exclude_records": [{"members": ["noise"], "source": "pulo"}],
+            },
+            "cili_exact": ["i1"],
+            "cili_close": [],
+            "cili_related": [],
+            "skos_policy": "test policy",
             "generated": "now",
         })
         self.assertIn("skos:Concept", ttl)
-        self.assertIn("skos:exactMatch", ttl)
-        self.assertIn("globalwordnet.org/ili/i1", ttl)
-        self.assertIn('skos:altLabel "alpha"@pt', ttl)
+        self.assertIn("skos:exactMatch <", ttl)
+        self.assertIn("ili.globalwordnet.org/ili/i1", ttl)
+        self.assertIn('skos:altLabel "alpha"@pt-PT', ttl)
+        self.assertIn("sr:excludedCandidate", ttl)
+        self.assertNotIn("skos:hiddenLabel", ttl)
 
 
 if __name__ == "__main__":

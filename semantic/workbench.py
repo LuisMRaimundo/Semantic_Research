@@ -135,7 +135,7 @@ sense / synset
             One meaning: a set of synonyms + gloss. Decisions are
             per sense, not per spelling.
 
-ILI         Interlingual Index (ili-30-… / CILI i…): shared concept
+CILI        Bare iNNNNN (URI …/ili/i… ; page …/cili/i….html). Not oewn-ili: CURIE.
             id across wordnets. Primary join key in LexWarrant.
 
 lemma       Dictionary citation form (not inflected).
@@ -162,8 +162,8 @@ Files you care about
 ────────────────────
 classes/<Class>/FINAL_RESULTS__Onto_plus_PULO/
     OPEN_ME__FINAL_RESULTS.html     ← green splash (open this)
-    FINAL__Onto_plus_PULO__….md     ← concordance (human)
-    FINAL__Onto_plus_PULO__….json   ← concordance (machine)
+    FINAL__Onto_plus_PULO__….concordance.md   ← concordance (human)
+    FINAL__Onto_plus_PULO__….concordance.json ← concordance (machine)
 classes/<Class>/decisions.json      ← curated choices
 classes/<Class>/out/                ← scratch + PULO signals
 
@@ -223,7 +223,7 @@ class Workbench(tk.Tk):
 
         search = ttk.LabelFrame(
             self,
-            text="PASSO 2 · Pesquisar  (PULO → Onto.PT → WordNet/OEWN — tudo nesta janela)",
+            text="PASSO 2 · Pesquisar  (PULO → Onto.PT → PAPEL → WordNet/OEWN)",
             padding=8)
         search.pack(fill="x", padx=10, pady=(0, 6))
         ttk.Radiobutton(
@@ -234,6 +234,11 @@ class Workbench(tk.Tk):
         ttk.Radiobutton(
             search, text="Onto.PT  — fuzzy / coverage",
             variable=self.source_var, value="onto",
+            command=self._sync_filter_to_search,
+        ).pack(side="left", padx=(8, 0))
+        ttk.Radiobutton(
+            search, text="PAPEL  — relações (descoberta)",
+            variable=self.source_var, value="papel",
             command=self._sync_filter_to_search,
         ).pack(side="left", padx=(8, 0))
         ttk.Radiobutton(
@@ -268,6 +273,10 @@ class Workbench(tk.Tk):
         ).pack(side="left")
         ttk.Radiobutton(
             filt, text="Onto.PT only", variable=self.filter_var, value="onto",
+            command=self._render_senses,
+        ).pack(side="left", padx=8)
+        ttk.Radiobutton(
+            filt, text="PAPEL only", variable=self.filter_var, value="papel",
             command=self._render_senses,
         ).pack(side="left", padx=8)
         ttk.Radiobutton(
@@ -331,6 +340,14 @@ class Workbench(tk.Tk):
             command=self._open_final_results,
         ).pack(side="left", padx=(0, 6))
         ttk.Button(
+            runrow, text="Exportar FINAL…",
+            command=self._export_final_folder,
+        ).pack(side="left", padx=(0, 6))
+        ttk.Button(
+            runrow, text="Exportar classe…",
+            command=self._export_class_folder,
+        ).pack(side="left", padx=(0, 6))
+        ttk.Button(
             runrow, text="concordância",
             command=self._open_concordance,
         ).pack(side="left")
@@ -371,6 +388,12 @@ class Workbench(tk.Tk):
         self.onto_ili_status.pack(anchor="w", pady=(2, 2))
         self.onto_ili_list = tk.Listbox(ili_box, height=6, font=("Consolas", 8))
         self.onto_ili_list.pack(fill="both", expand=True)
+        self.onto_ili_list.bind("<Double-Button-1>", self._onto_ili_open_links)
+        ttk.Label(
+            ili_box,
+            text="Duplo-clique: abrir hiperligações CILI / Onto do par seleccionado",
+            foreground="#555",
+        ).pack(anchor="w")
         self._onto_ili_rows: list[dict] = []
 
         self.log = scrolledtext.ScrolledText(right, height=12, wrap="word")
@@ -603,6 +626,7 @@ class Workbench(tk.Tk):
         senses = dec.get("senses") or []
         n_pulo = sum(1 for s in senses if (s.get("source") or "") == "pulo")
         n_onto = sum(1 for s in senses if (s.get("source") or "") == "onto")
+        n_papel = sum(1 for s in senses if (s.get("source") or "") == "papel")
         decided = sum(1 for s in senses if (s.get("decision") or "").strip())
         has_run = (ws.results / f"{ws.class_id}.PULO.result.json").exists()
         has_termos = (
@@ -616,6 +640,7 @@ class Workbench(tk.Tk):
              bool(meta.get("pref_label")) and bool(meta.get("axis")), False),
             ("2a", f"Pesquisar PULO  ({n_pulo} cartões)", n_pulo > 0, False),
             ("2b", f"Onto.PT descoberta  ({n_onto} cartões)", n_onto > 0, True),
+            ("2c", f"PAPEL descoberta  ({n_papel} cartões)", n_papel > 0, True),
             ("3", f"Decidir sentidos  ({decided}/{len(senses)})",
              len(senses) > 0 and decided == len(senses), False),
             ("4", "Guardar decisões", len(senses) > 0 and decided == len(senses),
@@ -686,6 +711,75 @@ class Workbench(tk.Tk):
             webbrowser.open(path.as_uri())
 
     # -- senses ----------------------------------------------------------
+    def _add_resource_links(
+        self, parent: tk.Misc, sense: dict, *, bg: str, accent: str
+    ) -> None:
+        """Clickable identifiers → public pages / live local resource views."""
+        from semantic.resource_links import links_for_sense, open_resource_link
+
+        try:
+            links = links_for_sense(sense)
+        except Exception:  # noqa: BLE001
+            links = []
+        row = tk.Frame(parent, bg=bg)
+        row.pack(fill="x", pady=(2, 2))
+        tk.Label(row, text="Recurso:", bg=bg, fg=accent, font=("", 8, "bold")).pack(
+            side="left", padx=(0, 4)
+        )
+        if not links:
+            tk.Label(
+                row, text="(sem hiperligação — id ausente)", bg=bg, fg="#888",
+                font=("", 8),
+            ).pack(side="left")
+            return
+        for i, link in enumerate(links):
+            if i:
+                tk.Label(row, text="·", bg=bg, fg="#999").pack(side="left", padx=2)
+            color = "#0B5" if link.verified else "#A40"
+            lbl = tk.Label(
+                row,
+                text=link.label,
+                bg=bg,
+                fg=color,
+                font=("", 8, "underline"),
+                cursor="hand2",
+            )
+            lbl.pack(side="left")
+            tip = link.detail or link.identifier
+
+            def _open(_evt=None, ln=link, sn=sense, t=tip):
+                ok = open_resource_link(ln, sn)
+                if not ok:
+                    messagebox.showwarning(
+                        APP,
+                        f"Não foi possível abrir «{ln.label}».\n{t}",
+                    )
+                else:
+                    self.status_var.set(f"Aberto: {ln.label}")
+
+            lbl.bind("<Button-1>", _open)
+
+    def _onto_ili_open_links(self, _evt=None):
+        row = self._onto_ili_selected()
+        if not row:
+            return
+        from semantic.resource_links import links_for_onto_ili, open_resource_link
+
+        links = links_for_onto_ili(
+            str(row.get("onto_key") or ""), str(row.get("ili") or "")
+        )
+        opened = 0
+        sense_onto = {"source": "onto", "key": row.get("onto_key") or ""}
+        for ln in links:
+            sn = sense_onto if ln.kind in ("onto", "local") else {
+                "source": "pulo", "cili": row.get("ili"), "ili": row.get("ili"),
+            }
+            if open_resource_link(ln, sn):
+                opened += 1
+        self.status_var.set(
+            f"Onto→ILI: abertas {opened}/{len(links)} hiperligações"
+        )
+
     def _sync_filter_to_search(self):
         """When user switches search lexicon, show that source's cards."""
         self.filter_var.set(self.source_var.get())
@@ -693,7 +787,7 @@ class Workbench(tk.Tk):
 
     def _choices_for(self, source: str) -> tuple[str, ...]:
         src = (source or "").lower()
-        if src == "onto":
+        if src in ("onto", "papel"):
             return DECISION_CHOICES_ONTO
         return DECISION_CHOICES_PULO
 
@@ -702,6 +796,10 @@ class Workbench(tk.Tk):
         if f == "onto":
             self.decide_hint.configure(
                 text="Onto options:  —  UF  RT  exclude   (NO atributo)"
+            )
+        elif f == "papel":
+            self.decide_hint.configure(
+                text="PAPEL options:  —  UF  RT  exclude   (descoberta; NO atributo)"
             )
         elif f == "pulo":
             self.decide_hint.configure(
@@ -713,7 +811,7 @@ class Workbench(tk.Tk):
             )
         else:
             self.decide_hint.configure(
-                text="All · blue=PULO · amber=Onto · green=WordNet (info only)"
+                text="All · blue=PULO · amber=Onto · purple=PAPEL · green=WordNet"
             )
 
     def _render_senses(self):
@@ -727,15 +825,18 @@ class Workbench(tk.Tk):
         dec = decmod.load_decisions(ws.decisions_json)
         senses = dec.get("senses") or []
         filt = self.filter_var.get()
-        if filt in ("pulo", "onto", "wordnet"):
+        if filt in ("pulo", "onto", "papel", "wordnet"):
             senses = [s for s in senses if (s.get("source") or "").lower() == filt]
 
         if not senses:
-            msg = "No senses yet. Search a lemma above (PULO / Onto / WordNet)."
+            msg = "No senses yet. Search a lemma above (PULO / Onto / PAPEL / WordNet)."
             if filt == "pulo":
                 msg = "No PULO cards. Search with «PULO — ILI» selected."
             elif filt == "onto":
                 msg = "No Onto.PT cards. Search with «Onto.PT» selected."
+            elif filt == "papel":
+                msg = ("No PAPEL cards. Search with «PAPEL» selected "
+                       "(requires `python sr.py resources --build-papel`).")
             elif filt == "wordnet":
                 msg = ("No WordNet cards. Search an English lemma with "
                        "«WordNet — OEWN» (e.g. composite, compound).")
@@ -750,6 +851,11 @@ class Workbench(tk.Tk):
             if src == "onto":
                 bg, accent, banner = "#FFF6E5", "#8A5A00", (
                     "Onto.PT  ·  fuzzy coverage  ·  options: UF · RT · exclude"
+                )
+                key_line = f"id: {s.get('key')}"
+            elif src == "papel":
+                bg, accent, banner = "#F3E5F5", "#4A148C", (
+                    "PAPEL 3.5  ·  dictionary relations  ·  discovery only"
                 )
                 key_line = f"id: {s.get('key')}"
             elif src == "wordnet":
@@ -778,6 +884,7 @@ class Workbench(tk.Tk):
             tk.Label(
                 card, text=key_line, bg=bg, fg="#444", anchor="w"
             ).pack(fill="x")
+            self._add_resource_links(card, s, bg=bg, accent=accent)
             members = ", ".join(s.get("members") or [])
             gloss = s.get("gloss") or "(no gloss)"
             tk.Label(
@@ -799,7 +906,7 @@ class Workbench(tk.Tk):
                 continue
             choice_set = self._choices_for(src)
             raw = s.get("decision") or ""
-            if src == "onto" and raw == "atributo":
+            if src in ("onto", "papel") and raw == "atributo":
                 raw = "UF"
             # Preserve file-only evidence statuses (oposicao/vizinha); do not wipe.
             if raw in choice_set:
@@ -994,14 +1101,102 @@ class Workbench(tk.Tk):
         if not ws:
             return
         ws.ensure()
-        # Prefer the bright HTML splash; else the folder
+        # Prefer TERMOS.html (has export-all button); else splash; else folder
+        termos = ws.final_results / "TERMOS.html"
         html = ws.final_results / "OPEN_ME__FINAL_RESULTS.html"
-        path = html if html.exists() else ws.final_results
+        path = (
+            termos if termos.exists()
+            else html if html.exists()
+            else ws.final_results
+        )
         try:
             import os
             os.startfile(path)  # type: ignore[attr-defined]
         except Exception:
             webbrowser.open(path.as_uri())
+
+    def _export_final_folder(self):
+        """Copy FINAL_RESULTS only (deliverable) — separate from full-class export."""
+        ws = self._ws()
+        if not ws:
+            return
+        ws.ensure()
+        if not any(ws.final_results.glob("TERMOS*")) and not any(
+            ws.final_results.glob("*.concordance.*")
+        ):
+            messagebox.showinfo(
+                APP,
+                "Ainda não há outputs em FINAL_RESULTS — "
+                "execute «6 · ▶ Run» primeiro.",
+            )
+            return
+        dest = filedialog.askdirectory(
+            title=f"Exportar FINAL_RESULTS de {ws.class_id} para…",
+            mustexist=True,
+        )
+        if not dest:
+            return
+        try:
+            from semantic.export_all import copy_final_to_directory, write_export_all
+
+            # Refresh ZIP/payload so the copy includes a current bundle
+            write_export_all(ws)
+            out = copy_final_to_directory(ws, Path(dest))
+        except Exception as exc:  # noqa: BLE001
+            messagebox.showerror(APP, f"Exportação falhou:\n{exc}")
+            return
+        self._log(f"FINAL_RESULTS exportado → {out}\n")
+        messagebox.showinfo(
+            APP,
+            f"Export FINAL (só deliverable) →\n{out}\n\n"
+            "Para meta + PULO/Onto/WordNet + Onto→ILI use «Exportar classe…».",
+        )
+        try:
+            import os
+            os.startfile(out)  # type: ignore[attr-defined]
+        except Exception:
+            pass
+
+    def _export_class_folder(self):
+        """Copy the whole class workspace (meta, searches, results, out, FINAL)."""
+        ws = self._ws()
+        if not ws:
+            return
+        ws.ensure()
+        if not ws.class_json.exists():
+            messagebox.showinfo(APP, "Abra ou crie uma classe primeiro.")
+            return
+        dest = filedialog.askdirectory(
+            title=f"Exportar CLASSE COMPLETA de {ws.class_id} para…",
+            mustexist=True,
+        )
+        if not dest:
+            return
+        try:
+            from semantic.export_all import export_class_bundle
+
+            info = export_class_bundle(ws, Path(dest), also_zip=True)
+        except Exception as exc:  # noqa: BLE001
+            messagebox.showerror(APP, f"Exportação da classe falhou:\n{exc}")
+            return
+        folder = info["folder"]
+        zip_path = info.get("zip") or ""
+        self._log(
+            f"Classe completa exportada → {folder}\n"
+            + (f"ZIP → {zip_path}\n" if zip_path else "")
+        )
+        messagebox.showinfo(
+            APP,
+            f"Export CLASSE (tudo) →\n{folder}\n\n"
+            f"Inclui: class.json, decisions, exports/ (PULO·Onto·WN), "
+            f"results/, out/ (Onto→ILI, CILI), _specs/, FINAL_RESULTS.\n"
+            + (f"\nZIP: {zip_path}" if zip_path else ""),
+        )
+        try:
+            import os
+            os.startfile(folder)  # type: ignore[attr-defined]
+        except Exception:
+            pass
 
     def _open_concordance(self):
         """Show concordance in-app (never os.startfile on .md — Cursor may own it)."""

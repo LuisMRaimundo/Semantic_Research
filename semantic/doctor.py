@@ -212,6 +212,26 @@ def run_doctor(*, deep: bool = False) -> DoctorReport:
             f"missing — run `python sr.py index` ({idx})", "warn",
         ))
 
+    # Bundled source dumps (Onto RDF, PULO SQL, PAPEL, OWN-PT clone)
+    try:
+        from .resources import inventory
+
+        inv = inventory()
+        for item in inv["items"]:
+            if item["id"] in ("pulo_sqlite", "onto_sqlite", "ownpt_wn"):
+                continue  # already covered above
+            level = "error" if item["required"] and not item["exists"] else (
+                "warn" if not item["exists"] else "info"
+            )
+            report.checks.append(Check(
+                f"resource:{item['id']}",
+                bool(item["exists"]) or not item["required"],
+                f"{item['path']} — {item.get('note') or item['role']}",
+                level,
+            ))
+    except Exception as exc:  # noqa: BLE001
+        report.checks.append(Check("resources", False, str(exc), "warn"))
+
     if deep:
         import sqlite3
 
@@ -227,6 +247,21 @@ def run_doctor(*, deep: bool = False) -> DoctorReport:
             except Exception as exc:  # noqa: BLE001
                 report.checks.append(Check(
                     f"db_rows:{label}", False, str(exc), "error",
+                ))
+        papel_db = Path(cfg.get("papel_sqlite") or (root / "data" / "papel.sqlite"))
+        if not papel_db.is_absolute():
+            papel_db = settings.resolve_path(papel_db)
+        if papel_db.exists():
+            try:
+                con = sqlite3.connect(f"file:{papel_db}?mode=ro", uri=True)
+                n = con.execute("SELECT COUNT(*) FROM triple").fetchone()[0]
+                con.close()
+                report.checks.append(Check(
+                    "db_rows:PAPEL", n > 0, f"{n} triples", "info",
+                ))
+            except Exception as exc:  # noqa: BLE001
+                report.checks.append(Check(
+                    "db_rows:PAPEL", False, str(exc), "warn",
                 ))
 
     return report

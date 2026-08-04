@@ -50,6 +50,8 @@ class TestCiliResolver(unittest.TestCase):
 
     def test_pwn30_offset_resolves_with_namespace(self):
         ili, off = _first_row()
+        # Local pwn30-… and legacy OMW ili-30-/por-30- are map *keys* only
+        self.assertEqual(cili_resolve(f"pwn30-{off}"), ili)
         self.assertEqual(cili_resolve(f"ili-30-{off}"), ili)
         self.assertEqual(cili_resolve(f"por-30-{off}"), ili)
         self.assertEqual(cili_resolve(f"eng-30-{off}"), ili)

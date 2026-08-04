@@ -74,6 +74,16 @@ def load_cili_resolver() -> ModuleType:
 
 
 @lru_cache(maxsize=1)
+def load_identifiers() -> ModuleType:
+    """WN-LMF-aligned identity helpers (pwn30 / cili / oewn — never fabricate)."""
+    paths = ensure_engine_paths()
+    _ensure_on_path(paths["lexwarrant"])
+    # cili_resolver must be importable alongside identifiers
+    importlib.import_module("cili_resolver")
+    return importlib.import_module("identifiers")
+
+
+@lru_cache(maxsize=1)
 def load_oewn_backend() -> ModuleType:
     paths = ensure_engine_paths()
     _ensure_on_path(paths["wordnet"])
@@ -98,4 +108,5 @@ def clear_engine_caches() -> None:
     load_phase0_skos.cache_clear()
     load_lexwarrant.cache_clear()
     load_cili_resolver.cache_clear()
+    load_identifiers.cache_clear()
     load_oewn_backend.cache_clear()

@@ -1,0 +1,21 @@
+{
+  "class_id": "TexturaIntermitente",
+  "pref_label": "TexturaIntermitente",
+  "axis": "(faixa OWN-PT — atestação PT via ILI; sem estatuto admissivo)",
+  "generated": "2026-07-27T21:34:23",
+  "source": "OWN-PT (OpenWordNet-PT)",
+  "lexicon": "own-pt:1.0.0",
+  "facets_export": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\WordNet\\exports\\uniform_20260713_123000\\uniform.facets.json",
+  "convoked_ilis": [],
+  "skipped_ilis": [
+    "i60712",
+    "i33388",
+    "i10771",
+    "i4126"
+  ],
+  "provenance": [],
+  "atestacao": {},
+  "sinalizacao": {},
+  "_note": "OpenWordNet-PT: fundamento de entrada (atestado) ancorado em ILI. NÃO atribui relação de vocabulário (UF/RT). Léxico: own-pt:1.0.0.",
+  "_pwn_derived": true
+}

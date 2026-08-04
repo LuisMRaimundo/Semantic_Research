@@ -1,0 +1,42 @@
+{
+  "class_id": "TexturaIntermitente",
+  "count": 5,
+  "note": "PULO relation harvest (unnamed #NN / similar-to off-axis). Not decisions — review only if something looks useful; otherwise ignore.",
+  "sinalizacao": {
+    "parar": {
+      "display": "parar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-00593836-a",
+      "target_gloss": "chegou a um impasse, parar de se mover\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "comecar": {
+      "display": "começar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-00593836-a",
+      "target_gloss": "tem um começo, em um sentido temporal, espacial ou avaliativo\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "iniciar": {
+      "display": "iniciar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-00593836-a",
+      "target_gloss": "tem um começo, em um sentido temporal, espacial ou avaliativo\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "partir": {
+      "display": "partir",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-00593836-a",
+      "target_gloss": "tem um começo, em um sentido temporal, espacial ou avaliativo\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "intervalo": {
+      "display": "intervalo",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-00593836-a",
+      "target_gloss": "um comprimento definido de tempo demarcada por dois instantes\n",
+      "reason": "relação não-nomeada / #NN"
+    }
+  }
+}

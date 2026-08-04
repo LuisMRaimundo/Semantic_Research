@@ -5,25 +5,16 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix sr: <http://semantic-research.local/concept/> .
 
-# Concept model — TexturaDensa
-# generated 2026-07-27T11:39:54+00:00
+# Concept model (plain SKOS, not SKOS-XL) — TexturaDensa
+# generated 2026-07-31T03:21:28+00:00
+# policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaDensa a owl:Class, skos:Concept ;
-    skos:prefLabel "TexturaDensa"@pt ;
-    skos:scopeNote "densidade"@pt ;
+    skos:prefLabel "TexturaDensa"@pt-PT ;
+    skos:scopeNote "densidade"@pt-PT ;
     dct:identifier "TexturaDensa" ;
-    skos:exactMatch <https://globalwordnet.org/ili/i13376> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i3019> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i62946> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i63738> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i6484> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i73> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i8310> ;
-    skos:exactMatch <https://globalwordnet.org/ili/i9720> ;
-    skos:altLabel "denso"@pt ;
-    skos:altLabel "densidade"@pt ;
-    skos:related [ a skos:Concept ; skos:prefLabel "denso"@pt ] ;
-    skos:related [ a skos:Concept ; skos:prefLabel "densidade"@pt ] ;
-    skos:related [ a skos:Concept ; skos:prefLabel "concentração"@pt ] ;
-    skos:hiddenLabel "denso"@pt ;
-    rdfs:comment "UF senses=5; RT=2; ILI anchors=8"@en .
+    skos:editorialNote "SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint."@en ;
+    sr:mappingStatus "no_validated_cili" ;
+    skos:altLabel "denso"@pt-PT ;
+    skos:altLabel "densidade"@pt-PT ;
+    rdfs:comment "UF senses=5; RT=2; exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .

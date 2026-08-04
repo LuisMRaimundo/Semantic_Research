@@ -142,5 +142,5 @@ def run_smoke(
         "errors": summary.get("errors"),
         "concordance_json": summary.get("concordance_json"),
         "sense_index": summary.get("sense_index"),
-        "ili_equivalence_counts": summary.get("ili_equivalence_counts"),
+        "legacy_equivalence_counts": summary.get("legacy_equivalence_counts"),
     }

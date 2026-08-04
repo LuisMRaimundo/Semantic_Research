@@ -1,6 +1,18 @@
 secao,forma,wildcard,lingua,estatuto,garantia,ancora_ili,ili,fontes,relacao,nota
-A,compound,compound*,en,UF,,,i114921,OEWN,,
-A,chemical compound,chemical compound*,en,UF,,,i114921,OEWN,,
-E,desalinhado,,,exclude,,,ili-30-02424254-a,pulo,,Não limpo e arrumado
-E,compositor,,,exclude,,,ili-30-09947232-n,pulo,,alguém que compõe a música como uma profissão
-F,composto,composto*,pt-PT,UF,fonte_unica,presente,ili-30-14818238-n,pulo,,
+E,composto,,,exclude,,,i114921,pulo,,aceção química: chemical compound
+E,descomposto,,,exclude,,,i13418,pulo,,Não limpo e arrumado
+E,compositor,,,exclude,,,i89134,pulo,,alguém que compõe a música como uma profissão
+E,composição,,,exclude,,,i36652,pulo,,o ato de formar ou estabelecer algo
+E,composição,,,exclude,,,i37400,pulo,,o ato de combinar as coisas para formar um todo novo
+E,composição,,,exclude,,,i59707,pulo,,uma coisa construída; uma entidade complexa construída de muitas partes
+E,composição,,,exclude,,,i72162,pulo,,instruções para fazer algo
+E,composição,,,exclude,,,i40296,pulo,,o ato de criar obras escritas
+E,composição,,,exclude,,,i40342,pulo,,criação musical
+E,composição,,,exclude,,,i52229,pulo,,algo que é criado por providenciar várias coisas de modo a formar um todo unificado
+E,composição,,,exclude,,,i62908,pulo,,a maneira em que alguém ou alguma coisa é composto
+E,composição,,,exclude,,,i63671,pulo,,a propriedade espacial resultante do acordo das partes em relação às outras e a toda
+E,composição,,,exclude,,,i73641,pulo,,uma obra musical que tenha sido criado
+E,composição,,,exclude,,,i113682,pulo,,uma mistura de ingredientes
+E,decomposição,,,exclude,,,i75220,pulo,,desmoronando
+E,decomposição,,,exclude,,,i97733,pulo,,aceção biológica: decay/decomposition
+F,compósito,compósito*,pt-PT,UF,adjudicada,ausente,,concept_mapping,,

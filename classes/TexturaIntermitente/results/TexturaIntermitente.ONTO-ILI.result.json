@@ -1,0 +1,34 @@
+{
+  "class_id": "TexturaIntermitente",
+  "source": "ONTO-ILI",
+  "generated": "2026-07-27T20:34:24+00:00",
+  "policy": "Accepted Onto→ILI projections as entry warrant (atestado). Not UF/RT. Human still adjudicates vocabulary on sense cards.",
+  "provenance": [
+    {
+      "termo": "intermitente",
+      "estatuto": "atestado",
+      "offsets_ili": [
+        "i3299"
+      ],
+      "eixo": "",
+      "garantia": [
+        "onto_ili_accepted"
+      ],
+      "gloss": "",
+      "origem": "onto_ili_accepted"
+    }
+  ],
+  "atestacao": {
+    "intermitente": {
+      "display": "intermitente",
+      "offsets_ili": [
+        "i3299"
+      ],
+      "reason": "Onto→ILI accepted · onto:ontopt06:54924 → i3299 (score=0.7)",
+      "lexicon": "onto-pt+cili"
+    }
+  },
+  "sinalizacao": {},
+  "assertions": [],
+  "all_passed": true
+}

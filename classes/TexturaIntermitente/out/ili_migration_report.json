@@ -1,0 +1,18 @@
+{
+  "class_id": "TexturaIntermitente",
+  "generated": "2026-07-27T20:34:24.196842+00:00",
+  "cili_version": "cili@upstream-master+pwn30+pwn31+wn.ili",
+  "legacy_table": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\classes\\TexturaIntermitente\\out\\ili_equivalence.cili.json",
+  "confirmed": [
+    {
+      "oewn_ili": "i3299",
+      "pulo_ili": "ili-30-00593836-a",
+      "source": "cili:cili@upstream-master+pwn30+pwn31+wn.ili",
+      "human": false,
+      "cili_id": "i3299"
+    }
+  ],
+  "diverged": [],
+  "legacy_without_cili": [],
+  "note": "Pares humanos confirmados pelo CILI são cobertos pelo map automático. Pares que divergem NÃO são aplicados — só listados aqui."
+}

@@ -1,7 +1,26 @@
 {
   "class_id": "TexturaComposita",
-  "pref_label": "TexturaCompósita",
+  "pref_label": "textura compósita",
   "axis": "heterogeneidade / composição de materiais ou partes distintas",
+  "concept_mapping": {
+    "cili_exact": [],
+    "cili_close": [],
+    "cili_related": [],
+    "validated_alt_labels": [
+      "compósito"
+    ],
+    "excluded_cili": [
+      {
+        "cili": "i114921",
+        "reason": "aceção química: chemical compound"
+      },
+      {
+        "cili": "i97733",
+        "reason": "aceção biológica: decay/decomposition"
+      }
+    ],
+    "mapping_status": "no_validated_cili"
+  },
   "focus_stems": [
     "composto",
     "composito",

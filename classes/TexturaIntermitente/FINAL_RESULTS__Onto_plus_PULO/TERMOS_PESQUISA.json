@@ -1,0 +1,97 @@
+{
+  "class_id": "TexturaIntermitente",
+  "pref_label": "TexturaIntermitente",
+  "axis": "que ocorre espaçadamente, a intervalos, regulares ou irregulares",
+  "acepcao_a_separar": "que ocorre espaçadamente, a intervalos, regulares ou irregulares",
+  "ancora_ili": [
+    "ili-30-00593836-a"
+  ],
+  "anchor_pos": "a",
+  "near_stem": "TexturaIntermitente*",
+  "generated": "2026-07-27T21:34:27+01:00",
+  "search_lang": "en",
+  "label_lang": "pt-PT",
+  "termos_manuais_presentes": false,
+  "n_admitidos_matriz": 1,
+  "A_polo_alvo": [
+    {
+      "forma": "intermittent",
+      "wildcard": "intermittent*",
+      "lingua": "en",
+      "ili": "i3299",
+      "fonte": "OEWN",
+      "estatuto": "UF",
+      "manual": false
+    }
+  ],
+  "B_polo_contrastante": [],
+  "C_conjunto_controlo": [],
+  "C_termos": [],
+  "D_descritores_adjacentes": [],
+  "E_fronteiras_dominio": [],
+  "F_vocabulario_pt": [
+    {
+      "forma": "intermitente",
+      "wildcard": "intermitente*",
+      "lingua": "pt-PT",
+      "estatuto": "UF",
+      "ili": [
+        "ili-30-00593836-a",
+        "oewn-ili:i3299"
+      ],
+      "fontes": [
+        "onto-ili",
+        "pulo"
+      ],
+      "garantia": "fonte_unica",
+      "ancora_ili": "presente",
+      "em_espera": true,
+      "sense_key": "clip21:17265",
+      "sense_pos": null,
+      "cross_class": null,
+      "nota": ""
+    }
+  ],
+  "a_resolver": [],
+  "D_vocabulario_pt": [
+    {
+      "forma": "intermitente",
+      "wildcard": "intermitente*",
+      "lingua": "pt-PT",
+      "estatuto": "UF",
+      "ili": [
+        "ili-30-00593836-a",
+        "oewn-ili:i3299"
+      ],
+      "fontes": [
+        "onto-ili",
+        "pulo"
+      ],
+      "garantia": "fonte_unica",
+      "ancora_ili": "presente",
+      "em_espera": true,
+      "sense_key": "clip21:17265",
+      "sense_pos": null,
+      "cross_class": null,
+      "nota": ""
+    }
+  ],
+  "_sheet_meta_norms": [
+    "que_ocorre_espacadamente,_a_intervalos,_regulares_ou_irregulares",
+    "texturaintermitente"
+  ],
+  "_focus_seed_norms": [
+    "texturaintermitente"
+  ],
+  "_registry_designations": [
+    "democlass",
+    "textura",
+    "texturacomposita",
+    "texturadensa",
+    "texturaheterogenea",
+    "texturaintermitente",
+    "texturametamorfica",
+    "texturapolitpica",
+    "texturauniforme"
+  ]
+}

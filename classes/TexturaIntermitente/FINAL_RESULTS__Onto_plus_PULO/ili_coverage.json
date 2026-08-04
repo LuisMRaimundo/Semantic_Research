@@ -1,0 +1,73 @@
+{
+  "schema": "semantic_research.ili_coverage/1",
+  "generated": "2026-07-27T20:34:24+00:00",
+  "pins": {
+    "oewn": "oewn:2024",
+    "cili_commit": "upstream-master+pwn30+pwn31+wn.ili",
+    "cili_map": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\engines\\LexWarrant\\data\\cili\\ili-map-pwn30.tab"
+  },
+  "cili": {
+    "version": "cili@upstream-master+pwn30+pwn31+wn.ili",
+    "ili_ids": 117659,
+    "note": "Resolver loads PWN-3.0 + PWN-3.1 offset maps, and validates bare i… ids via wn.ili when missing from the TSVs. Unresolved ids are listed here — never silently dropped."
+  },
+  "n_identifiers": 29,
+  "n_resolved": 2,
+  "n_unresolved_oewn_ili": 0,
+  "n_unresolved_pulo_offset": 0,
+  "n_unresolved_other": 27,
+  "n_cili_joinable": 1,
+  "n_cili_singleton": 0,
+  "joinable_cili": [
+    {
+      "cili": "i3299",
+      "raw": [
+        "i3299",
+        "ili-30-00593836-a"
+      ]
+    }
+  ],
+  "singleton_cili_sample": [],
+  "unresolved_oewn_ili": [],
+  "unresolved_pulo_offset": [],
+  "unresolved_other": [
+    "clip21:17265",
+    "clip21:19004",
+    "clip21:19737",
+    "contopt:33686",
+    "contopt:5236",
+    "fuzzythes:10163",
+    "fuzzythes:23329",
+    "fuzzythes:23659",
+    "fuzzythes:23873",
+    "fuzzythes:24056",
+    "fuzzythes:25210",
+    "fuzzythes:25214",
+    "fuzzythes:26922",
+    "fuzzythes:26927",
+    "fuzzythes:26998",
+    "fuzzythes:27907",
+    "ontopt06:1386",
+    "ontopt06:3833",
+    "ontopt06:4134",
+    "ontopt06:4160",
+    "ontopt06:54924",
+    "polaridades:13335",
+    "thes5rec:18150",
+    "thes5rec:21772",
+    "thes5rec:23361",
+    "thes5rec:23954",
+    "thes5rec:8218"
+  ],
+  "resolved_sample": [
+    {
+      "raw": "i3299",
+      "cili": "i3299"
+    },
+    {
+      "raw": "ili-30-00593836-a",
+      "cili": "i3299"
+    }
+  ],
+  "class_id": "TexturaIntermitente"
+}

@@ -387,60 +387,96 @@ def apply_accepted_to_decisions(class_id: str) -> dict[str, Any]:
 
 
 def emit_onto_ili_result(class_id: str) -> Optional[str]:
-    """Write results/<Class>.ONTO-ILI.result.json for LexWarrant (atestado only)."""
+    """Write results/<Class>.ONTO-ILI.result.json for LexWarrant (signals only).
+
+    Discipline (audit):
+      * Onto→ILI is **not** independent Portuguese attestation.
+      * Only links with score ≥ ``onto_ili_emit_min`` (default 0.85) or
+        ``method=manual`` are emitted.
+      * Emitted as ``sinalizacao`` — never as ``atestado`` / UF corroboration.
+      * Weaker accepted rows are listed in the JSON under ``suppressed_weak``
+        but do not enter the concordance matrix as warrants.
+    """
+    from .settings import load_config
+
     ws = ClassWorkspace.open(class_id)
+    cfg = load_config()
+    emit_min = float(cfg.get("onto_ili_emit_min") or 0.85)
     accepted = list_proposals(class_id, status="accepted")
-    if not accepted:
+    path = ws.results / f"{class_id}.ONTO-ILI.result.json"
+
+    def _qualifies(p: dict[str, Any]) -> bool:
+        method = str(p.get("method") or "")
+        if method == "manual":
+            return True
+        try:
+            return float(p.get("score") or 0) >= emit_min
+        except (TypeError, ValueError):
+            return False
+
+    qualifying = [p for p in accepted if _qualifies(p)]
+    weak = [p for p in accepted if not _qualifies(p)]
+
+    if not qualifying:
+        # Drop stale file so pipeline does not re-ingest noisy links
+        if path.exists():
+            try:
+                path.unlink()
+            except OSError:
+                pass
         return None
 
     with SenseIndex() as si:
         c = si.connect()
-        atestacao: dict[str, Any] = {}
-        provenance: list[dict[str, Any]] = []
-        for p in accepted:
+        sinalizacao: dict[str, Any] = {}
+        for p in qualifying:
             row = c.execute(
                 "SELECT * FROM sense WHERE sense_key = ?", (p["onto_key"],)
             ).fetchone()
             lemmas = _lemmas_list(row["lemmas"]) if row else []
-            gloss = (row["gloss"] if row else "") or ""
             ili = p["ili"]
+            score = p.get("score")
             for lem in lemmas or [p["onto_key"]]:
                 nw = normalize_word(lem)
-                atestacao[nw] = {
+                sinalizacao[nw] = {
                     "display": pretty_word(lem),
                     "offsets_ili": [ili],
                     "reason": (
-                        f"Onto→ILI accepted · {p['onto_key']} → {ili} "
-                        f"(score={p.get('score')})"
+                        f"Onto→ILI inventory (not independent attestation) · "
+                        f"{p['onto_key']} → {ili} (score={score}; "
+                        f"method={p.get('method') or '—'})"
                     ),
                     "lexicon": "onto-pt+cili",
                 }
-            if lemmas:
-                provenance.append({
-                    "termo": pretty_word(lemmas[0]),
-                    "estatuto": "atestado",
-                    "offsets_ili": [ili],
-                    "eixo": "",
-                    "garantia": ["onto_ili_accepted"],
-                    "gloss": gloss,
-                    "origem": "onto_ili_accepted",
-                })
 
     doc = {
         "class_id": class_id,
         "source": "ONTO-ILI",
         "generated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "policy": (
-            "Accepted Onto→ILI projections as entry warrant (atestado). "
-            "Not UF/RT. Human still adjudicates vocabulary on sense cards."
+            "Onto→ILI links are inventory / review signals only. "
+            f"Emitted when score≥{emit_min} or method=manual. "
+            "Never treated as UF/RT or as independent ontological corroboration. "
+            "Onto.PT remains discovery-only for LexWarrant admission."
         ),
-        "provenance": provenance,
-        "atestacao": atestacao,
-        "sinalizacao": {},
+        "emit_min": emit_min,
+        "n_qualifying": len(qualifying),
+        "n_suppressed_weak": len(weak),
+        "suppressed_weak": [
+            {
+                "onto_key": p.get("onto_key"),
+                "ili": p.get("ili"),
+                "score": p.get("score"),
+                "method": p.get("method"),
+            }
+            for p in weak
+        ],
+        "provenance": [],
+        "atestacao": {},
+        "sinalizacao": sinalizacao,
         "assertions": [],
         "all_passed": True,
     }
     ws.results.mkdir(parents=True, exist_ok=True)
-    path = ws.results / f"{class_id}.ONTO-ILI.result.json"
     path.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return str(path)

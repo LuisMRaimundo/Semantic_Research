@@ -183,10 +183,23 @@ def compile_pulo_spec(ws: ClassWorkspace) -> dict[str, Any]:
             continue
         if decision not in _ENGINE_SENSE:
             continue
+        # Pivot for the PULO engine = local PWN 3.0 id (pwn30-… / legacy ili-30-…).
+        # Official CILI (i…) is carried separately — never as ili_offset.
+        key = str(s.get("key") or "")
+        pwn = (
+            s.get("pwn_id")
+            or (key if key.startswith(("pwn30-", "ili-30-", "por-30-")) else None)
+            or s.get("legacy_omw_ili")
+        )
+        cili = s.get("cili") or (
+            s.get("ili") if str(s.get("ili") or "").startswith("i")
+            and str(s.get("ili") or "")[1:].isdigit()
+            else None
+        )
         whitelist.append({
-            "ili_offset": s.get("ili") or (
-                s["key"] if str(s["key"]).startswith("ili-") else None
-            ),
+            "ili_offset": pwn,
+            "pwn_id": pwn if pwn and str(pwn).startswith("pwn30-") else None,
+            "cili": cili,
             "glosa": s.get("gloss") or "",
             "decision": decision,
             "members": list(s.get("members") or []),

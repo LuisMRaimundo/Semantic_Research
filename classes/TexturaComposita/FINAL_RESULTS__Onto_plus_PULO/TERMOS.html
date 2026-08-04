@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-PT">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TERMOS — TexturaCompósita (TexturaComposita)</title>
+<title>TERMOS — textura compósita (TexturaComposita)</title>
 <style>
 :root {
   --bg: #f7f4ef; --ink: #1c1a17; --muted: #5c564c; --line: #d9d0c4;
@@ -47,14 +47,27 @@ header.page h1 { margin: 0 0 .35rem; font-size: clamp(1.5rem, 3vw, 2rem); letter
 }
 .sec h2 { margin: 0; font-size: 1.15rem; }
 .blurb { margin: 0 0 .85rem; color: var(--muted); font-size: .92rem; }
-.btn-copy {
+.btn-copy, .btn-export {
   font: inherit; font-size: .85rem; font-weight: 600;
   padding: .4rem .75rem; border-radius: 999px; cursor: pointer;
   border: 1px solid var(--accent); color: var(--accent-ink); background: #e8f5f0;
 }
-.btn-copy:hover { background: #d5eee5; }
-.btn-copy:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
-.btn-copy.ok { background: var(--accent); color: #fff; border-color: var(--accent); }
+.btn-copy:hover, .btn-export:hover { background: #d5eee5; }
+.btn-copy:focus-visible, .btn-export:focus-visible {
+  outline: 3px solid var(--focus); outline-offset: 2px;
+}
+.btn-copy.ok, .btn-export.ok { background: var(--accent); color: #fff; border-color: var(--accent); }
+.btn-export { border-radius: 6px; text-decoration: none; display: inline-block; }
+.btn-export.secondary {
+  background: #fff; border-color: var(--line); color: var(--ink); font-weight: 600;
+}
+.export-bar {
+  display: flex; flex-wrap: wrap; gap: .55rem; align-items: center;
+  margin: 1rem 0 0; padding: .75rem 1rem; background: var(--card);
+  border: 1px solid var(--line); border-radius: 6px;
+}
+.export-bar .hint { color: var(--muted); font-size: .85rem; flex: 1 1 12rem; }
+#export-status { color: var(--accent-ink); font-size: .85rem; font-weight: 600; }
 .tok-row { display: flex; flex-wrap: wrap; gap: .55rem; }
 .tok {
   display: inline-flex; flex-direction: column; gap: .1rem;
@@ -95,17 +108,27 @@ footer.page {
 <body>
 <div class="wrap">
 <header class="page">
-  <h1>TERMOS — TexturaCompósita</h1>
+  <h1>TERMOS — textura compósita</h1>
   <p class="meta">
     <strong>Classe:</strong> TexturaComposita ·
-    <strong>Âncora ILI:</strong> ili-30-14818238-n ·
+    <strong>Âncora CILI:</strong> — ·
     <strong>Acepção a separar:</strong> heterogeneidade / composição de materiais ou partes distintas ·
     <strong>Pesquisa:</strong> en ·
     <strong>Rótulos:</strong> pt-PT ·
-    <strong>Execução:</strong> 2026-07-27T12:39:53+01:00
+    <strong>Execução:</strong> 2026-07-31T04:21:30+01:00
   </p>
   <p class="meta"><strong>Termos manuais:</strong> <code>termos_manuais.yaml</code> ausente nesta classe.</p>
-  <p class="syntax">Sintaxe de pesquisa: <code>composto* NEAR/4 &lt;termo&gt;</code></p>
+  <p class="syntax">Sintaxe de pesquisa: <code>não disponível — pólo-alvo en por adjudicar</code></p>
+  <div class="export-bar" role="group" aria-label="Exportar outputs">
+    <button type="button" class="btn-export" id="btn-export-folder">
+      Exportar tudo para pasta…
+    </button>
+    <a class="btn-export secondary" id="btn-export-zip" href="EXPORT_ALL.zip" download>
+      Descarregar ZIP
+    </a>
+    <span class="hint">Copia TERMOS, concordância, CONCEPT, coverage, etc. para a pasta que escolher (Chrome / Edge).</span>
+    <span id="export-status" aria-live="polite"></span>
+  </div>
 </header>
 
 
@@ -113,10 +136,10 @@ footer.page {
 <section class="sec" id="A" aria-labelledby="h-A">
   <header class="sec-head">
     <h2 id="h-A">A — Pólo alvo (en)</h2>
-    <button type="button" class="btn-copy" data-copy="compound* &quot;chemical compound*&quot;" aria-label="Copiar termos da secção A — Pólo alvo (en)">Copiar linha</button>
+    
   </header>
   <p class="blurb">Equivalentes de pesquisa das acepções UF + consulta manual.</p>
-  <div class="tok-row" role="list"><span class="tok" data-wc="compound*" tabindex="0"><span class="tok-wc">compound*</span><span class="tok-lemma">compound</span><span class="tok-ili" title="Âncora ILI">i114921</span></span><span class="tok" data-wc="&quot;chemical compound*&quot;" tabindex="0"><span class="tok-wc">chemical compound*</span><span class="tok-lemma">chemical compound</span><span class="tok-ili" title="Âncora ILI">i114921</span></span></div>
+  <p class="empty">Nenhuma forma em <code>en</code> para esta secção.</p>
 </section>
 
 
@@ -153,14 +176,14 @@ footer.page {
 <section class="sec" id="E" aria-labelledby="h-E">
   <header class="sec-head"><h2 id="h-E">E — Fronteiras de domínio</h2></header>
   <p class="blurb">Acepções excluídas (chave/ILI + lema representativo + motivo).</p>
-  <ul class="acepcoes"><li><code>ili-30-02424254-a</code> · <strong>desalinhado</strong> — Não limpo e arrumado</li><li><code>ili-30-09947232-n</code> · <strong>compositor</strong> — alguém que compõe a música como uma profissão</li></ul>
+  <ul class="acepcoes"><li><code>i114921</code> · <strong>composto</strong> — aceção química: chemical compound</li><li><code>i13418</code> · <strong>descomposto</strong> — Não limpo e arrumado</li><li><code>i89134</code> · <strong>compositor</strong> — alguém que compõe a música como uma profissão</li><li><code>i36652</code> · <strong>composição</strong> — o ato de formar ou estabelecer algo</li><li><code>i37400</code> · <strong>composição</strong> — o ato de combinar as coisas para formar um todo novo</li><li><code>i59707</code> · <strong>composição</strong> — uma coisa construída; uma entidade complexa construída de muitas partes</li><li><code>i72162</code> · <strong>composição</strong> — instruções para fazer algo</li><li><code>i40296</code> · <strong>composição</strong> — o ato de criar obras escritas</li><li><code>i40342</code> · <strong>composição</strong> — criação musical</li><li><code>i52229</code> · <strong>composição</strong> — algo que é criado por providenciar várias coisas de modo a formar um todo unificado</li><li><code>i62908</code> · <strong>composição</strong> — a maneira em que alguém ou alguma coisa é composto</li><li><code>i63671</code> · <strong>composição</strong> — a propriedade espacial resultante do acordo das partes em relação às outras e a toda</li><li><code>i73641</code> · <strong>composição</strong> — uma obra musical que tenha sido criado</li><li><code>i113682</code> · <strong>composição</strong> — uma mistura de ingredientes</li><li><code>i75220</code> · <strong>decomposição</strong> — desmoronando</li><li><code>i97733</code> · <strong>decomposição</strong> — aceção biológica: decay/decomposition</li></ul>
 </section>
 
 
 <section class="sec" id="F" aria-labelledby="h-F">
   <header class="sec-head">
     <h2 id="h-F">F — Vocabulário (pt-PT)</h2>
-    <button type='button' class='btn-copy' data-copy='composto*' aria-label='Copiar vocabulário'>Copiar linha</button>
+    <button type='button' class='btn-copy' data-copy='compósito*' aria-label='Copiar vocabulário'>Copiar linha</button>
   </header>
   <p class="blurb">Termos admitidos na matriz (língua de rótulos).</p>
   <div class="table-wrap"><table>
@@ -169,16 +192,17 @@ footer.page {
       <th scope="col">Garantia</th><th scope="col">Fontes</th>
       <th scope="col">Âncora</th>
     </tr></thead>
-    <tbody><tr><td><code>composto*</code><br><span class="lemma">composto</span></td><td>UF</td><td>fonte_unica</td><td>pulo</td><td><code>ili-30-14818238-n</code></td></tr></tbody></table></div>
+    <tbody><tr><td><code>compósito*</code><br><span class="lemma">compósito</span></td><td>UF</td><td>adjudicada</td><td>concept_mapping</td><td><code>—</code></td></tr></tbody></table></div>
 </section>
 
 
 <footer class="page">
-  Página gerada localmente — sem rede. Irmãos: TERMOS_PESQUISA.md / .csv.
+  Página gerada localmente — sem rede. Irmãos: TERMOS_PESQUISA.md / .csv · EXPORT_ALL.zip.
 </footer>
 </div>
 <textarea id="clip-fallback" aria-hidden="true" tabindex="-1"
   style="position:fixed;left:-9999px;top:0"></textarea>
+<script src="export_payload.js"></script>
 <script>
 (function () {
   function fallbackCopy(text) {
@@ -214,6 +238,54 @@ footer.page {
     var wc = t.getAttribute("data-wc") || "";
     if (wc) copyText(wc, null);
   });
+
+  function setExportStatus(msg, ok) {
+    var el = document.getElementById("export-status");
+    if (!el) return;
+    el.textContent = msg || "";
+    el.style.color = ok === false ? "#8b2e1f" : "";
+  }
+
+  async function exportAllToFolder() {
+    var bundle = window.SR_EXPORT_BUNDLE;
+    var btn = document.getElementById("btn-export-folder");
+    if (!bundle || !bundle.files || !bundle.files.length) {
+      setExportStatus("Pacote em falta — volte a correr o pipeline (Run).", false);
+      return;
+    }
+    if (!window.showDirectoryPicker) {
+      setExportStatus("Seletor de pasta indisponível neste browser — use «Descarregar ZIP».", false);
+      var zip = document.getElementById("btn-export-zip");
+      if (zip) zip.focus();
+      return;
+    }
+    try {
+      var root = await window.showDirectoryPicker({ mode: "readwrite" });
+      var folderName = bundle.folder_name || (bundle.class_id + "_FINAL_RESULTS");
+      var target = await root.getDirectoryHandle(folderName, { create: true });
+      for (var i = 0; i < bundle.files.length; i++) {
+        var f = bundle.files[i];
+        var fh = await target.getFileHandle(f.name, { create: true });
+        var w = await fh.createWritable();
+        await w.write(f.text);
+        await w.close();
+      }
+      setExportStatus("Exportados " + bundle.files.length + " ficheiros → " + folderName, true);
+      if (btn) {
+        btn.classList.add("ok");
+        setTimeout(function () { btn.classList.remove("ok"); }, 1600);
+      }
+    } catch (err) {
+      if (err && err.name === "AbortError") {
+        setExportStatus("Exportação cancelada.");
+        return;
+      }
+      setExportStatus("Falha: " + (err && err.message ? err.message : err), false);
+    }
+  }
+
+  var exportBtn = document.getElementById("btn-export-folder");
+  if (exportBtn) exportBtn.addEventListener("click", exportAllToFolder);
 })();
 </script>
 </body>

@@ -5,13 +5,16 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix sr: <http://semantic-research.local/concept/> .
 
-# Concept model — DemoClass
-# generated 2026-07-27T11:39:54+00:00
+# Concept model (plain SKOS, not SKOS-XL) — DemoClass
+# generated 2026-07-31T03:21:28+00:00
+# policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:DemoClass a owl:Class, skos:Concept ;
-    skos:prefLabel "demo"@pt ;
-    skos:scopeNote "axis"@pt ;
+    skos:prefLabel "demo"@pt-PT ;
+    skos:scopeNote "axis"@pt-PT ;
     dct:identifier "DemoClass" ;
-    skos:altLabel "alpha"@pt ;
-    skos:altLabel "beta"@pt ;
-    rdfs:comment "UF senses=1; RT=0; ILI anchors=0"@en .
+    skos:editorialNote "SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint."@en ;
+    sr:mappingStatus "no_validated_cili" ;
+    skos:altLabel "alpha"@pt-PT ;
+    skos:altLabel "beta"@pt-PT ;
+    rdfs:comment "UF senses=1; RT=0; exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .

@@ -1,0 +1,26 @@
+{
+  "type": "oewn_facets",
+  "term": "intermitente",
+  "pos": "Todas",
+  "language": "English",
+  "class_id": "TexturaIntermitente",
+  "generated": "2026-07-27T21:14:37",
+  "count": 0,
+  "facets": [
+    "synsets_relations"
+  ],
+  "source": {
+    "lexicon": "oewn",
+    "backend": "wn",
+    "alignment": "ILI via translate()",
+    "via": "semantic.adapters.wordnet (workbench)",
+    "pt_coverage": "0/0 synsets com pt_lemmas"
+  },
+  "synsets": [],
+  "similarity": {
+    "pairs": [],
+    "note": "omitted in workbench search"
+  },
+  "hierarchy": {},
+  "visualization": {}
+}

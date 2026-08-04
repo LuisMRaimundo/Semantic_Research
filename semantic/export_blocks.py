@@ -1,4 +1,4 @@
-"""PASSO 7 sibling blocks: vocabulario (SKOS-XL) vs evidencia_delimitacao."""
+"""PASSO 7 sibling blocks: vocabulario (plain SKOS) vs evidencia_delimitacao."""
 
 from __future__ import annotations
 
@@ -19,28 +19,73 @@ _SIMILAR_RE = re.compile(r"vizinho\s+similar_to", re.I)
 
 
 def _ili_anchor(decisions: dict[str, Any], meta: dict[str, Any]) -> list[str]:
-    """Prefer PULO UF senses with ILI; fall back to any PULO ILI on the class."""
-    ilis: list[str] = []
-    seen = set()
-    for s in decisions.get("senses") or []:
-        if (s.get("source") or "").lower() != "pulo":
-            continue
-        if (s.get("decision") or "").strip() != "UF":
-            continue
-        ili = (s.get("ili") or "").strip()
-        if ili and ili not in seen:
-            seen.add(ili)
-            ilis.append(ili)
-    if ilis:
-        return ilis
-    for s in decisions.get("senses") or []:
-        if (s.get("source") or "").lower() != "pulo":
-            continue
-        ili = (s.get("ili") or "").strip()
-        if ili and ili not in seen:
-            seen.add(ili)
-            ilis.append(ili)
-    return ilis
+    """Validated CILI anchors only.
+
+    When ``concept_mapping`` is present, use ``cili_exact`` (+ ``cili_close``).
+    An empty mapping means *no* vocabulary anchor (harvested PULO CILI stays
+    in inventory / migration reports). Legacy ``ili-30-…`` is never labelled CILI.
+    """
+    cm = meta.get("concept_mapping") if isinstance(meta.get("concept_mapping"), dict) else None
+    if cm is not None:
+        out: list[str] = []
+        for key in ("cili_exact", "cili_close"):
+            for item in cm.get(key) or []:
+                cid = item.get("cili") if isinstance(item, dict) else item
+                cid = str(cid or "").strip()
+                if cid.startswith(("oewn-ili:", "ili:", "cili:")):
+                    cid = cid.rsplit(":", 1)[-1]
+                if cid.startswith("i") and cid[1:].isdigit() and cid not in out:
+                    out.append(cid)
+        return out
+
+    try:
+        from .engines import load_identifiers
+        ids = load_identifiers()
+    except Exception:  # noqa: BLE001
+        ids = None
+
+    def _display(sense: dict[str, Any]) -> Optional[str]:
+        for fld in ("cili_id", "cili", "ili"):
+            raw = (sense.get(fld) or "").strip()
+            if not raw:
+                continue
+            if ids is not None:
+                cid = ids.try_normalize_cili_id(raw)
+                if cid:
+                    return cid
+            if raw.startswith(("oewn-ili:", "ili:", "cili:")):
+                raw = raw.rsplit(":", 1)[-1]
+            if raw.startswith("i") and raw[1:].isdigit():
+                return raw
+        pwn = (sense.get("pwn_id") or "").strip()
+        if pwn.startswith("pwn30-"):
+            return pwn
+        ili = (sense.get("ili") or "").strip()
+        if ids is not None and ili:
+            ident = ids.parse_identifier(ili, resolve_cili=True)
+            if ident.cili_id or ident.cili:
+                return ident.cili_id or ident.cili
+            if ident.pwn_id:
+                return ident.pwn_id
+        if ili.startswith("ili-30-") and ids is not None:
+            return ids.to_pwn30(ili) or ili
+        return ili or None
+
+    anchors: list[str] = []
+    seen: set[str] = set()
+    for prefer_uf in (True, False):
+        for s in decisions.get("senses") or []:
+            if (s.get("source") or "").lower() != "pulo":
+                continue
+            if prefer_uf and (s.get("decision") or "").strip() != "UF":
+                continue
+            disp = _display(s)
+            if disp and disp not in seen:
+                seen.add(disp)
+                anchors.append(disp)
+        if anchors:
+            return anchors
+    return anchors
 
 
 def _collect_auto_signals(ws: ClassWorkspace) -> dict[str, list[dict[str, Any]]]:
@@ -109,9 +154,60 @@ def build_export_blocks(ws: ClassWorkspace) -> dict[str, Any]:
             ),
         }
         if decision == "UF":
-            for m in s.get("members") or []:
-                alt_labels.append({**base, "termo": m, "skos": "skosxl:altLabel"})
+            from .mapping_policy import sense_excluded, excluded_cili_ids as _excl_ids
+            if sense_excluded(s, _excl_ids(meta)):
+                continue
+            src = (s.get("source") or "").lower()
+            members = list(s.get("members") or [])
+            # Onto groups: only focus-stem members become altLabel candidates
+            if src == "onto":
+                focus = {
+                    (x or "").casefold().replace(" ", "")
+                    for x in (meta.get("focus_stems") or [])
+                }
+                focus.add((pref or "").casefold().replace(" ", ""))
+                cm = meta.get("concept_mapping") if isinstance(
+                    meta.get("concept_mapping"), dict
+                ) else {}
+                validated = {
+                    (x or "").casefold()
+                    for x in (cm.get("validated_alt_labels") or [])
+                }
+                members = [
+                    m for m in members
+                    if (m or "").casefold() in validated
+                    or (m or "").casefold().replace(" ", "") in focus
+                    or (m or "").casefold() in {
+                        (f or "").casefold() for f in (meta.get("focus_stems") or [])
+                    }
+                ]
+            for m in members:
+                alt_labels.append({**base, "termo": m, "skos": "skos:altLabel"})
         elif decision == "RT":
+            src = (s.get("source") or "").lower()
+            # Onto RT co-members are inventory noise — keep PULO/manual RT only
+            if src == "onto":
+                continue
+            cm0 = meta.get("concept_mapping") if isinstance(
+                meta.get("concept_mapping"), dict
+            ) else {}
+            excl_cili = {
+                str(x.get("cili") if isinstance(x, dict) else x).strip()
+                for x in (cm0.get("excluded_cili") or [])
+            }
+            sense_cili = str(s.get("cili") or s.get("ili") or s.get("key") or "").strip()
+            if sense_cili.startswith(("oewn-ili:", "ili:", "cili:")) and not sense_cili.startswith("ili-30-"):
+                sense_cili = sense_cili.rsplit(":", 1)[-1]
+            try:
+                from .engines import load_identifiers
+                resolved = load_identifiers().parse_identifier(
+                    sense_cili, resolve_cili=True
+                )
+                sense_cili = resolved.cili_id or resolved.cili or sense_cili
+            except Exception:  # noqa: BLE001
+                pass
+            if sense_cili in excl_cili:
+                continue
             for m in s.get("members") or []:
                 relacionados.append({
                     **base,
@@ -119,7 +215,31 @@ def build_export_blocks(ws: ClassWorkspace) -> dict[str, Any]:
                     "skos": "tex:termoRelacionado",
                 })
         elif decision == "exclude":
-            excludes.append(base)
+            # Sense/record exclusion — omit validated/focal lemmas from member lists
+            cm_ex = meta.get("concept_mapping") if isinstance(
+                meta.get("concept_mapping"), dict
+            ) else {}
+            skip = {
+                (x or "").casefold()
+                for x in (cm_ex.get("validated_alt_labels") or [])
+            }
+            for stem in meta.get("focus_stems") or []:
+                skip.add((stem or "").casefold())
+            skip.add((pref or "").casefold())
+            members = [
+                m for m in (base.get("membros") or [])
+                if (m or "").casefold() not in skip
+            ]
+            omitted = [
+                m for m in (base.get("membros") or [])
+                if (m or "").casefold() in skip
+            ]
+            excludes.append({
+                **base,
+                "membros": members,
+                "members_omitted_focal": omitted,
+                "exclusion_scope": "record_or_sense_not_lemma",
+            })
         elif decision == "atributo":
             atributos.append({**base, "eixo_vertente": axis})
         elif decision == "oposicao":
@@ -148,7 +268,7 @@ def build_export_blocks(ws: ClassWorkspace) -> dict[str, Any]:
             ),
         }
         if status == "UF":
-            alt_labels.append({**row, "skos": "skosxl:altLabel"})
+            alt_labels.append({**row, "skos": "skos:altLabel"})
         elif status == "RT":
             relacionados.append({**row, "skos": "tex:termoRelacionado"})
         elif status == "exclude":
@@ -172,13 +292,22 @@ def build_export_blocks(ws: ClassWorkspace) -> dict[str, Any]:
 
     auto = _collect_auto_signals(ws)
 
+    # If concept_mapping.validated_alt_labels is set, publish only those alts
+    cm = meta.get("concept_mapping") if isinstance(meta.get("concept_mapping"), dict) else {}
+    validated = [str(x).strip() for x in (cm.get("validated_alt_labels") or []) if str(x).strip()]
+    if validated:
+        # One row per validated form (no Onto-group duplication)
+        alt_labels = [{
+            "termo": v,
+            "fonte": "concept_mapping",
+            "skos": "skos:altLabel",
+            "destino": "vocabulario",
+        } for v in validated]
+
     vocabulario = {
         "prefLabel": {
             "termo": pref,
             "skos": "skos:prefLabel",
-            # SKOS-XL labelling of the preferred form is via skosxl:prefLabel
-            # when a label node is used; engines also emit skos:prefLabel literal.
-            "skosxl": "skosxl:prefLabel",
         },
         "altLabel": alt_labels,
         "termoRelacionado": relacionados,
@@ -259,12 +388,13 @@ def render_blocks_markdown(blocks: dict[str, Any]) -> str:
     ap = L.append
     ap(f"# Blocos de exportação — `{blocks.get('class_id')}`")
     ap("")
-    ap("## Vocabulário (SKOS-XL)")
+    ap("## Vocabulário (SKOS)")
     ap("")
     pref = (v.get("prefLabel") or {}).get("termo") or "—"
-    ap(f"- **prefLabel** (`skosxl:prefLabel` / `skos:prefLabel`): **{pref}**")
+    ap(f"- **prefLabel** (`skos:prefLabel`): **{pref}**")
     alts = [r.get("termo") for r in (v.get("altLabel") or []) if r.get("termo")]
-    ap(f"- **altLabel** (`skosxl:altLabel` ← UF): {', '.join(alts) or '—'}")
+    ap(f"- **altLabel** (`skos:altLabel` ← UF adjudicada / validated_alt_labels): "
+       f"{', '.join(alts) or '—'}")
     rts = [r.get("termo") for r in (v.get("termoRelacionado") or []) if r.get("termo")]
     ap(
         f"- **termoRelacionado** (`tex:termoRelacionado` ← RT): "
@@ -275,8 +405,22 @@ def render_blocks_markdown(blocks: dict[str, Any]) -> str:
     ap("")
     ap(EVIDENCE_NOTE)
     ap("")
-    ap(f"- **Âncora ILI:** {', '.join(e.get('ancora_ili') or []) or '—'}")
-    ap(f"- **exclude:** {_brief_exclude(e.get('exclude') or [])}")
+    anchors = e.get("ancora_ili") or []
+    cili_a = [a for a in anchors if str(a).startswith("i") and str(a)[1:].isdigit()]
+    pwn_a = [a for a in anchors if str(a).startswith("pwn30-")]
+    leg_a = [a for a in anchors if str(a).startswith("ili-30-")]
+    bits = []
+    if cili_a:
+        bits.append(f"CILI: {', '.join(cili_a)}")
+    if pwn_a:
+        bits.append(f"PWN 3.0: {', '.join(pwn_a)}")
+    if leg_a:
+        bits.append(f"chave legada PWN 3.0: {', '.join(leg_a)}")
+    ap(f"- **Âncoras:** {'; '.join(bits) if bits else ('—')}")
+    ap(
+        "- **exclude** (âmbito = aceção/registo, não necessariamente o lema focal): "
+        f"{_brief_exclude(e.get('exclude') or [])}"
+    )
     ap(
         f"- **material de contraste (auto):** "
         f"{_brief_auto(e.get('material_contraste_auto') or [])}"

@@ -1,0 +1,79 @@
+{
+  "type": "pulo_thesaurus_search",
+  "query": {
+    "query": "intermitente",
+    "pos": null,
+    "mode": "Contains"
+  },
+  "count": 1,
+  "synsets": [
+    {
+      "synset_offset": "por-30-00593836-a",
+      "pos": "a",
+      "gloss": "parar e iniciar a intervalos irregulares\n",
+      "synonyms": [
+        "intermitente"
+      ],
+      "ili": [
+        {
+          "ili_offset": "ili-30-00593836-a",
+          "ili_wn_id": "eng-30"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "similar to",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "recorrente em casos dispersos e irregulares ou imprevisíveis\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "recorrente em casos dispersos e irregulares ou imprevisíveis\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "a qualidade de ser intermitente; sujeito a interrupção ou suspensão periódica\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a qualidade de ser intermitente; sujeito a interrupção ou suspensão periódica\n"
+            }
+          ]
+        },
+        {
+          "relation": "has derived form",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "de forma intermitente\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "parar",
+              "gloss": "chegou a um impasse, parar de se mover\n"
+            },
+            {
+              "words": "começar, iniciar, partir",
+              "gloss": "tem um começo, em um sentido temporal, espacial ou avaliativo\n"
+            },
+            {
+              "words": "intervalo",
+              "gloss": "um comprimento definido de tempo demarcada por dois instantes\n"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

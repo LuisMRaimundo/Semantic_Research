@@ -25,20 +25,19 @@ Rótulo por fonte: inferido do caminho (ONTO / PULO / WordNet) ou explícito via
 
 Sai com código ≠ 0 se alguma asserção (T1–T9) falhar (CI-friendly).
 
-## Chave de junção — ILI primário, termo secundário (fraco), nunca silencioso
+## Chave de junção — CILI primário, termo secundário (fraco)
 
-- **Primário (ILI):** dois registos juntam-se sse partilharem um ILI canónico. Os
-  *namespaces* equivalentes são normalizados por uma **tabela declarada**
-  (`por-30-XXXXXXXX-p ↔ ili-30-XXXXXXXX-p`), **nunca** por edição cega de strings.
-  Um par de *namespace* não declarado é tratado como **não-juntável** e flagueado.
-  A WordNet (OEWN) usa ILIs `i…` (namespace próprio) — não são forçados a casar
-  com `ili-30-…`.
-- **Secundário (fraco):** termos sem ILI (garantia ∈ {`dominio`, `estipulativa`},
-  ex.: *politípica*) casam por **string normalizada** (casefold + sem diacríticos,
-  só para *matching*; o display mantém o original). Toda a junção é etiquetada
-  `join="weak(term)"`. Um termo com ILI **nunca** é fundido com um sem ILI.
+- **Primário (CILI):** dois registos juntam-se sse partilharem um id oficial
+  ``i…`` (resolvido via mapa CILI / OEWN). Offsets PWN 3.0 usam id local
+  ``pwn30-…``; legado OMW ``ili-30-…`` / ``por-30-…`` são **pivôs PWN 3.0**, não
+  CILI. A tabela legada ``ili_equivalence.json`` é **opcional** (auditoria /
+  migração); a sua ausência **não** significa que o CILI esteja indisponível.
+- **Secundário (fraco):** termos sem âncora CILI partilhável podem casar por
+  string normalizada (`join="weak(term)"`, tipicamente com gate de glosa).
 - Um termo presente em **apenas uma** fonte é mantido (`fonte única`), nunca
   descartado.
+- ``concept_mapping.excluded_cili`` anula ``proposta_final`` para CILIs
+  semanticamente rejeitados (resolução formal ≠ admissão).
 
 O conceito é ancorado no **termo (lema)** e **confirmado pelo ILI**: homógrafos com
 ILI disjunto ficam em linhas separadas (nunca fundidos por string), e membros

@@ -17,9 +17,17 @@ from pathlib import Path
 from typing import Any, Optional
 
 from .export_blocks import _collect_auto_signals, _ili_anchor
+from .mapping_policy import resolve_to_cili
 from .normalize import fold, normalize_word
 from . import settings as _settings
 from .settings import load_config, resolve_languages
+from .termos_focus import (
+    corpus_near_stem as _corpus_near_stem,
+    focus_morph_roots as _focus_morph_roots,
+    search_syntax_line as _search_syntax_line,
+    text_related_to_focus as _text_related_to_focus,
+    wildcard as _wildcard,
+)
 from .workspace import ClassWorkspace
 
 ADMIT_STATUSES = frozenset({"UF", "RT", "BT", "NT"})
@@ -41,13 +49,6 @@ _TEX_CURIE_RE = re.compile(r"^tex:", re.I)
 # ---------------------------------------------------------------------------
 # Small utilities
 # ---------------------------------------------------------------------------
-def _wildcard(form: str) -> str:
-    form = (form or "").strip()
-    if not form:
-        return ""
-    return form if form.endswith("*") else f"{form}*"
-
-
 def _is_registry_designation(name: str) -> bool:
     """R3(a): ontology class designations are never lexical candidates."""
     s = (name or "").strip()
@@ -100,17 +101,6 @@ def _pos_from_identifier(ident: str) -> Optional[str]:
         return m.group(1).lower()
     # bare CILI id has no POS — unknown
     return None
-
-
-def _corpus_near_stem(meta: dict[str, Any], pref: str) -> str:
-    for key in ("corpus_near_stem", "near_stem", "corpus_stem"):
-        raw = (meta.get(key) or "").strip()
-        if raw:
-            return raw if raw.endswith("*") else f"{raw}*"
-    stems = meta.get("focus_stems") or []
-    if stems:
-        return _wildcard(str(stems[0]))
-    return _wildcard(pref)
 
 
 # ---------------------------------------------------------------------------
@@ -236,13 +226,27 @@ def _load_concordance(ws: ClassWorkspace) -> Optional[dict[str, Any]]:
         return None
 
 
-def admitted_matrix_rows(concordance: Optional[dict[str, Any]]) -> list[dict[str, Any]]:
+def admitted_matrix_rows(
+    concordance: Optional[dict[str, Any]],
+    *,
+    excluded_cilis: Optional[set[str]] = None,
+) -> list[dict[str, Any]]:
     if not concordance:
         return []
-    return [
-        c for c in (concordance.get("concepts") or [])
-        if (c.get("proposta_final") or "").strip() in ADMIT_STATUSES
-    ]
+    from .mapping_policy import cili_ids_from_matrix_row
+
+    excl = excluded_cilis or set()
+    out: list[dict[str, Any]] = []
+    for c in concordance.get("concepts") or []:
+        if (c.get("proposta_final") or "").strip() not in ADMIT_STATUSES:
+            continue
+        if excl and (cili_ids_from_matrix_row(c) & excl):
+            continue
+        notes = " ".join(c.get("notes") or [])
+        if "excluded_cili:" in notes:
+            continue
+        out.append(c)
+    return out
 
 
 def _garantia_label(veredicto: str) -> str:
@@ -278,19 +282,26 @@ def _cili_resolve(ident: str) -> Optional[str]:
 
 
 def _extract_cili_ids(ili_list: Any) -> list[str]:
+    """Bare CILI ids only — strip contextual CURIEs like ``oewn-ili:``."""
     out: list[str] = []
     seen: set[str] = set()
+    try:
+        from .engines import load_identifiers
+        try_norm = load_identifiers().try_normalize_cili_id
+    except Exception:  # noqa: BLE001
+        try_norm = None
     for raw in ili_list or []:
         s = str(raw or "").strip()
         if not s:
             continue
-        cand = None
-        if s.startswith("oewn-ili:"):
-            cand = s.split(":", 1)[1]
-        elif re.match(r"^i\d+$", s):
-            cand = s
-        else:
-            cand = _cili_resolve(s)
+        cand = try_norm(s) if try_norm else None
+        if not cand:
+            if s.startswith(("oewn-ili:", "ili:", "cili:")):
+                cand = s.rsplit(":", 1)[-1]
+            elif re.match(r"^i\d+$", s):
+                cand = s
+            else:
+                cand = _cili_resolve(s)
         if cand and cand not in seen:
             seen.add(cand)
             out.append(cand)
@@ -537,6 +548,12 @@ def build_termos_pesquisa(ws: ClassWorkspace) -> dict[str, Any]:
     pref = meta.get("pref_label") or ws.class_id
     axis = meta.get("axis") or ""
     ancora = _ili_anchor(dec, meta)
+    cm = meta.get("concept_mapping") if isinstance(meta.get("concept_mapping"), dict) else {}
+    excluded_cili_ids = {
+        str(x.get("cili") if isinstance(x, dict) else x).strip().rsplit(":", 1)[-1]
+        for x in (cm.get("excluded_cili") or [])
+        if x
+    }
     near_stem = _corpus_near_stem(meta, pref)
     generated = datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds")
     registry = build_class_registry()
@@ -564,7 +581,7 @@ def build_termos_pesquisa(ws: ClassWorkspace) -> dict[str, Any]:
     anchor_pos = _anchor_pos(dec, ancora)
 
     concordance = _load_concordance(ws)
-    admits = admitted_matrix_rows(concordance)
+    admits = admitted_matrix_rows(concordance, excluded_cilis=excluded_cili_ids)
     n_admitidos_matriz = len(admits)
 
     # ---- F — label_lang vocabulary from matrix -----------------------------
@@ -585,6 +602,8 @@ def build_termos_pesquisa(ws: ClassWorkspace) -> dict[str, Any]:
         ili = c.get("ili") or []
         if isinstance(ili, str):
             ili = [ili] if ili else []
+        # Drop CILI ids that are domain-excluded even if still present on the row
+        ili = [x for x in ili if resolve_to_cili(x) not in excluded_cili_ids]
         sense_pos, sense_key = _sense_pos_for_term(term, dec)
         other = _soft_belongs_to_other_class(term, ws.class_id, registry)
         structural_other = _structural_other_class(term, dec, ws.class_id, registry)
@@ -604,6 +623,32 @@ def build_termos_pesquisa(ws: ClassWorkspace) -> dict[str, Any]:
             "cross_class": cross_class,
             "nota": "",
         })
+
+    # Adjudicated alt labels (concept_mapping) enter F even with empty matrix
+    have_f = {fold(r["forma"]) for r in vocab_f}
+    for alt in cm.get("validated_alt_labels") or []:
+        forma = str(alt or "").strip()
+        if not forma or fold(forma) in have_f:
+            continue
+        if fold(forma) in registry_designations or _is_registry_designation(forma):
+            continue
+        have_f.add(fold(forma))
+        vocab_f.append({
+            "forma": forma,
+            "wildcard": _wildcard(forma),
+            "lingua": label_lang,
+            "estatuto": "UF",
+            "ili": None,
+            "fontes": ["concept_mapping"],
+            "garantia": "adjudicada",
+            "ancora_ili": "ausente",
+            "em_espera": False,
+            "sense_key": None,
+            "sense_pos": None,
+            "cross_class": None,
+            "nota": "validated_alt_labels",
+        })
+    vocab_f.sort(key=lambda x: fold(x.get("forma") or ""))
 
     # ---- Search-lang forms from OEWN equivalents of adjudicated senses -----
     wn_by_ili = _en_lemmas_from_wordnet_result(ws)
@@ -639,13 +684,15 @@ def build_termos_pesquisa(ws: ClassWorkspace) -> dict[str, Any]:
             if status not in ("UF", "RT"):
                 continue
             for cili in _extract_cili_ids(c.get("ili")):
+                if cili in excluded_cili_ids:
+                    continue
                 lemmas = wn_by_ili.get(cili) or _en_lemmas_from_wn(cili)
                 for lem in lemmas:
                     _add_search(lem, status, cili, "OEWN")
             # Also resolve PULO ilis via CILI when concept ili lacks oewn-ili:
             for raw in c.get("ili") or []:
                 cili = _cili_resolve(str(raw))
-                if not cili:
+                if not cili or cili in excluded_cili_ids:
                     continue
                 lemmas = wn_by_ili.get(cili) or _en_lemmas_from_wn(cili)
                 for lem in lemmas:
@@ -828,6 +875,9 @@ def build_termos_pesquisa(ws: ClassWorkspace) -> dict[str, Any]:
     polo_alvo = _merge_manual(polo_alvo, manual_by_sec["A"])
     control_forms = _merge_manual(control_forms, manual_by_sec["C"])
     descritores = _merge_manual(descritores, manual_by_sec["D"])
+    # Do not advertise a PT stem as EN NEAR syntax when A is empty
+    if not polo_alvo:
+        near_stem = ""
     # B after C: control lemmas must not also appear as contrast
     control_norms = {fold(r["forma"]) for r in control_forms}
     polo_contraste = [
@@ -837,23 +887,52 @@ def build_termos_pesquisa(ws: ClassWorkspace) -> dict[str, Any]:
         r for r in manual_by_sec["B"] if fold(r["forma"]) not in control_norms
     ])
 
-    # ---- E — excluded acepções (not members) -------------------------------
+    # ---- E — excluded acepções (focus-related only; drop other-class residue)
     fronteiras = []
+    focus_roots = _focus_morph_roots(meta, pref)
+    try:
+        from .engines import load_identifiers
+        _ids = load_identifiers()
+    except Exception:  # noqa: BLE001
+        _ids = None
     for s in dec.get("senses") or []:
         if (s.get("decision") or "").strip() != "exclude":
             continue
         src = (s.get("source") or "").lower()
         if src == "onto":
             continue
-        ili = (s.get("ili") or "").strip() or None
+        ili = (s.get("ili") or s.get("cili") or "").strip() or None
         key = (s.get("key") or "").strip()
-        if not ili:
+        if not ili and not key:
             continue
         members = [m for m in (s.get("members") or []) if (m or "").strip()]
-        lema = members[0] if members else key
+        raw = ili or key
+        cili_id = None
+        pwn30 = None
+        legacy_key = None
+        if _ids is not None:
+            ident = _ids.parse_identifier(raw, resolve_cili=True)
+            cili_id = ident.cili_id or ident.cili
+            pwn30 = ident.pwn_id
+            legacy_key = ident.legacy_omw_ili
+        if str(raw).startswith("ili-30-"):
+            legacy_key = legacy_key or raw
+        # Keep adjudicated excluded_cili always; else require morphological proximity
+        on_topic = bool(cili_id and cili_id in excluded_cili_ids)
+        if not on_topic:
+            blob = " ".join([key] + members)
+            on_topic = _text_related_to_focus(blob, focus_roots)
+        if not on_topic:
+            continue
+        related = [m for m in members if _text_related_to_focus(m, focus_roots)]
+        lema = related[0] if related else (members[0] if members else key)
         fronteiras.append({
             "chave": key,
-            "ili": ili or key,
+            "chave_legada": legacy_key or (raw if str(raw).startswith("ili-30-") else None),
+            "pwn30": pwn30,
+            "cili": cili_id,
+            # Display field: never label ili-30- as CILI
+            "ili": cili_id or pwn30 or legacy_key or raw,
             "lema": lema,
             "motivo": ((s.get("note") or s.get("gloss") or "").strip())[:200],
             "fonte": src,
@@ -951,6 +1030,9 @@ def build_termos_pesquisa(ws: ClassWorkspace) -> dict[str, Any]:
         "label_lang": label_lang,
         "termos_manuais_presentes": manuals_present,
         "n_admitidos_matriz": n_admitidos_matriz,
+        "n_validated_alt_labels": sum(
+            1 for r in vocab_f if r.get("nota") == "validated_alt_labels"
+        ),
         "A_polo_alvo": polo_alvo,
         "B_polo_contrastante": polo_contraste,
         "C_conjunto_controlo": controlo_meta,
@@ -971,9 +1053,11 @@ def assert_termos_coherence(doc: dict[str, Any], html_text: str) -> None:
     """R7 — valid for any class."""
     n_f = len(doc.get("F_vocabulario_pt") or [])
     n_m = int(doc.get("n_admitidos_matriz") or 0)
-    if n_f != n_m:
+    n_val = int(doc.get("n_validated_alt_labels") or 0)
+    # F = matrix admits + adjudicated validated_alt_labels (may exceed matrix)
+    if n_f != n_m + n_val:
         raise AssertionError(
-            f"TERMOS F ({n_f}) ≠ linhas admitidas na matriz ({n_m})"
+            f"TERMOS F ({n_f}) ≠ matriz ({n_m}) + validated_alt_labels ({n_val})"
         )
     designations = set(doc.get("_registry_designations") or [])
     seeds = set(doc.get("_focus_seed_norms") or [])
@@ -1039,9 +1123,25 @@ def render_termos_md(doc: dict[str, Any]) -> str:
     if doc.get("axis"):
         ap(f"**Eixo / acepção a separar:** {doc['axis']}")
     if doc.get("ancora_ili"):
-        ap(f"**Âncora ILI:** {', '.join(doc['ancora_ili'])}")
+        cili_a, pwn_a, leg_a = [], [], []
+        for a in doc["ancora_ili"]:
+            s = str(a)
+            if s.startswith("i") and s[1:].isdigit():
+                cili_a.append(s)
+            elif s.startswith("pwn30-"):
+                pwn_a.append(s)
+            elif s.startswith("ili-30-"):
+                leg_a.append(s)
+            else:
+                cili_a.append(s)
+        if cili_a:
+            ap(f"**Âncora CILI:** {', '.join(cili_a)}")
+        if pwn_a:
+            ap(f"**Synset PWN 3.0 de origem:** {', '.join(pwn_a)}")
+        if leg_a:
+            ap(f"**Chave legada (offset PWN 3.0):** {', '.join(leg_a)}")
     ap(f"**Língua de pesquisa:** `{search_lang}` · **Língua de rótulos:** `{label_lang}`")
-    ap(f"**Sintaxe:** `{doc.get('near_stem') or '…*'} NEAR/4 <termo>`")
+    ap(f"**Sintaxe de pesquisa:** {_search_syntax_line(doc)}")
     ap(f"**Gerado:** {doc.get('generated') or '—'}")
     if not doc.get("termos_manuais_presentes"):
         ap("**Termos manuais:** ficheiro `termos_manuais.yaml` ausente nesta classe.")
@@ -1102,11 +1202,13 @@ def render_termos_md(doc: dict[str, Any]) -> str:
     if not doc["E_fronteiras_dominio"]:
         ap("_(nenhuma)_")
     else:
-        ap("| chave / ILI | lema | motivo |")
-        ap("|---|---|---|")
+        ap("| chave legada (PWN 3.0) | pwn30 | CILI | lema | motivo |")
+        ap("|---|---|---|---|---|")
         for r in doc["E_fronteiras_dominio"]:
             ap(
-                f"| `{r.get('ili') or r.get('chave') or '—'}` | "
+                f"| `{r.get('chave_legada') or r.get('chave') or '—'}` | "
+                f"`{r.get('pwn30') or '—'}` | "
+                f"`{r.get('cili') or '—'}` | "
                 f"{r.get('lema') or '—'} | {r.get('motivo') or '—'} |"
             )
     ap("")
@@ -1191,7 +1293,7 @@ def _token_html(
     elif ili:
         ili_s = str(ili)
     ili_bit = (
-        f'<span class="tok-ili" title="Âncora ILI">{_esc(ili_s)}</span>'
+        f'<span class="tok-ili" title="Identificador CILI ou chave PWN 3.0">{_esc(ili_s)}</span>'
         if ili_s else ""
     )
     cls = "tok"
@@ -1376,10 +1478,12 @@ def render_termos_html(doc: dict[str, Any]) -> str:
         )
 
     ancora_txt = ", ".join(ancora) if ancora else "—"
-    syntax = f"{_esc(near)} NEAR/4 &lt;termo&gt;"
+    syntax_plain = _search_syntax_line(doc)
+    # Strip markdown backticks for HTML display
+    syntax = _esc(syntax_plain.replace("`", ""))
 
     return f"""<!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-PT">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -1427,14 +1531,27 @@ header.page h1 {{ margin: 0 0 .35rem; font-size: clamp(1.5rem, 3vw, 2rem); lette
 }}
 .sec h2 {{ margin: 0; font-size: 1.15rem; }}
 .blurb {{ margin: 0 0 .85rem; color: var(--muted); font-size: .92rem; }}
-.btn-copy {{
+.btn-copy, .btn-export {{
   font: inherit; font-size: .85rem; font-weight: 600;
   padding: .4rem .75rem; border-radius: 999px; cursor: pointer;
   border: 1px solid var(--accent); color: var(--accent-ink); background: #e8f5f0;
 }}
-.btn-copy:hover {{ background: #d5eee5; }}
-.btn-copy:focus-visible {{ outline: 3px solid var(--focus); outline-offset: 2px; }}
-.btn-copy.ok {{ background: var(--accent); color: #fff; border-color: var(--accent); }}
+.btn-copy:hover, .btn-export:hover {{ background: #d5eee5; }}
+.btn-copy:focus-visible, .btn-export:focus-visible {{
+  outline: 3px solid var(--focus); outline-offset: 2px;
+}}
+.btn-copy.ok, .btn-export.ok {{ background: var(--accent); color: #fff; border-color: var(--accent); }}
+.btn-export {{ border-radius: 6px; text-decoration: none; display: inline-block; }}
+.btn-export.secondary {{
+  background: #fff; border-color: var(--line); color: var(--ink); font-weight: 600;
+}}
+.export-bar {{
+  display: flex; flex-wrap: wrap; gap: .55rem; align-items: center;
+  margin: 1rem 0 0; padding: .75rem 1rem; background: var(--card);
+  border: 1px solid var(--line); border-radius: 6px;
+}}
+.export-bar .hint {{ color: var(--muted); font-size: .85rem; flex: 1 1 12rem; }}
+#export-status {{ color: var(--accent-ink); font-size: .85rem; font-weight: 600; }}
 .tok-row {{ display: flex; flex-wrap: wrap; gap: .55rem; }}
 .tok {{
   display: inline-flex; flex-direction: column; gap: .1rem;
@@ -1478,7 +1595,7 @@ footer.page {{
   <h1>TERMOS — {_esc(pref)}</h1>
   <p class="meta">
     <strong>Classe:</strong> {_esc(class_id)} ·
-    <strong>Âncora ILI:</strong> {_esc(ancora_txt)} ·
+    <strong>Âncora CILI:</strong> {_esc(ancora_txt)} ·
     <strong>Acepção a separar:</strong> {_esc(axis)} ·
     <strong>Pesquisa:</strong> {_esc(search_lang)} ·
     <strong>Rótulos:</strong> {_esc(label_lang)} ·
@@ -1486,6 +1603,16 @@ footer.page {{
   </p>
   {manuals_note}
   <p class="syntax">Sintaxe de pesquisa: <code>{syntax}</code></p>
+  <div class="export-bar" role="group" aria-label="Exportar outputs">
+    <button type="button" class="btn-export" id="btn-export-folder">
+      Exportar tudo para pasta…
+    </button>
+    <a class="btn-export secondary" id="btn-export-zip" href="EXPORT_ALL.zip" download>
+      Descarregar ZIP
+    </a>
+    <span class="hint">Copia TERMOS, concordância, CONCEPT, coverage, etc. para a pasta que escolher (Chrome / Edge).</span>
+    <span id="export-status" aria-live="polite"></span>
+  </div>
 </header>
 
 {resolve_box}
@@ -1497,11 +1624,12 @@ footer.page {{
 {sec_f}
 
 <footer class="page">
-  Página gerada localmente — sem rede. Irmãos: TERMOS_PESQUISA.md / .csv.
+  Página gerada localmente — sem rede. Irmãos: TERMOS_PESQUISA.md / .csv · EXPORT_ALL.zip.
 </footer>
 </div>
 <textarea id="clip-fallback" aria-hidden="true" tabindex="-1"
   style="position:fixed;left:-9999px;top:0"></textarea>
+<script src="export_payload.js"></script>
 <script>
 (function () {{
   function fallbackCopy(text) {{
@@ -1537,6 +1665,54 @@ footer.page {{
     var wc = t.getAttribute("data-wc") || "";
     if (wc) copyText(wc, null);
   }});
+
+  function setExportStatus(msg, ok) {{
+    var el = document.getElementById("export-status");
+    if (!el) return;
+    el.textContent = msg || "";
+    el.style.color = ok === false ? "#8b2e1f" : "";
+  }}
+
+  async function exportAllToFolder() {{
+    var bundle = window.SR_EXPORT_BUNDLE;
+    var btn = document.getElementById("btn-export-folder");
+    if (!bundle || !bundle.files || !bundle.files.length) {{
+      setExportStatus("Pacote em falta — volte a correr o pipeline (Run).", false);
+      return;
+    }}
+    if (!window.showDirectoryPicker) {{
+      setExportStatus("Seletor de pasta indisponível neste browser — use «Descarregar ZIP».", false);
+      var zip = document.getElementById("btn-export-zip");
+      if (zip) zip.focus();
+      return;
+    }}
+    try {{
+      var root = await window.showDirectoryPicker({{ mode: "readwrite" }});
+      var folderName = bundle.folder_name || (bundle.class_id + "_FINAL_RESULTS");
+      var target = await root.getDirectoryHandle(folderName, {{ create: true }});
+      for (var i = 0; i < bundle.files.length; i++) {{
+        var f = bundle.files[i];
+        var fh = await target.getFileHandle(f.name, {{ create: true }});
+        var w = await fh.createWritable();
+        await w.write(f.text);
+        await w.close();
+      }}
+      setExportStatus("Exportados " + bundle.files.length + " ficheiros → " + folderName, true);
+      if (btn) {{
+        btn.classList.add("ok");
+        setTimeout(function () {{ btn.classList.remove("ok"); }}, 1600);
+      }}
+    }} catch (err) {{
+      if (err && err.name === "AbortError") {{
+        setExportStatus("Exportação cancelada.");
+        return;
+      }}
+      setExportStatus("Falha: " + (err && err.message ? err.message : err), false);
+    }}
+  }}
+
+  var exportBtn = document.getElementById("btn-export-folder");
+  if (exportBtn) exportBtn.addEventListener("click", exportAllToFolder);
 }})();
 </script>
 </body>
@@ -1566,9 +1742,15 @@ def write_termos_pesquisa(
         json.dumps(serial, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
     html_path.write_text(html_text, encoding="utf-8")
+    # ZIP + JS payload for «Exportar tudo para pasta…» on TERMOS.html
+    from .export_all import write_export_all
+
+    bundle = write_export_all(ws, dest_dir=folder)
     return {
         "md": str(md_path),
         "csv": str(csv_path),
         "json": str(json_path),
         "html": str(html_path),
+        "zip": bundle.get("zip", ""),
+        "payload_js": bundle.get("payload_js", ""),
     }

@@ -206,23 +206,27 @@ class TestEquivLoadVisible(unittest.TestCase):
                 "review": [1, 2], "unmatched": [1]}), encoding="utf-8")
             equiv = lw.EquivMap.load(p)
             out = self._capture(equiv, p)
-            self.assertIn("ili_equivalence:", out)
+            self.assertIn("legacy_equivalence:", out)
             self.assertIn("1 mapped", out)
             self.assertIn("2 review", out)
-            self.assertNotIn("NÃO CARREGADA", out)
+            self.assertNotIn("NAO CARREGADA", out)
 
-    def test_b2_loud_warning_when_zero_mapped(self):
+    def test_b2_info_when_zero_mapped(self):
         with tempfile.TemporaryDirectory() as d:
             p = Path(d) / "ili_equivalence.json"
             p.write_text(json.dumps({"class": "K", "map": [],
                                      "review": [1], "unmatched": []}), encoding="utf-8")
             equiv = lw.EquivMap.load(p)
             out = self._capture(equiv, p)
-            self.assertIn("TABELA DE EQUIVALENCIA NAO CARREGADA", out)
+            self.assertIn("legacy_equivalence:", out)
+            self.assertIn("CILI oficial", out)
+            self.assertNotIn("TABELA DE EQUIVALENCIA NAO CARREGADA", out)
 
-    def test_b2_loud_warning_when_absent(self):
+    def test_b2_info_when_absent(self):
         out = self._capture(None, None)
-        self.assertIn("TABELA DE EQUIVALENCIA NAO CARREGADA", out)
+        self.assertIn("legacy_equivalence:", out)
+        self.assertIn("CILI oficial", out)
+        self.assertNotIn("TABELA DE EQUIVALENCIA NAO CARREGADA", out)
 
 
 # ---------------------------------------------------------------------------

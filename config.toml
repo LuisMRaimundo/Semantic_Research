@@ -9,6 +9,12 @@ onto_engine_dir = "engines/ONTO"
 lexwarrant_dir = "engines/LexWarrant"
 wordnet_dir = "WordNet"
 sense_index = "data/sense_index.sqlite"
+pulo_sql_primary = "pulo.20160508.sql/pulo.20160508.sql"
+pulo_sql_secondary = "pulo.20150502.sql/pulo.20150502.sql"
+onto_rdf = "OntoPTv0.6_rdf/OntoPTv0.6.rdfs"
+ownpt_dir = "openWordnet-PT"
+papel_dir = "PAPEL.v.3.5_utf8"
+papel_sqlite = "data/papel.sqlite"
 
 [runtime]
 default_policy = "conservative"
@@ -17,10 +23,12 @@ sense_index_on_run = true
 weak_term_mode = "gloss_gated"
 gloss_min = 0.12
 publish_concept_model = true
-# Auto-accept unique high-confidence Onto→ILI proposals into inventory
-onto_ili_auto_accept = true
+# Auto-accept Onto→ILI (off by default — weak scores ≠ corroboração ontológica)
+onto_ili_auto_accept = false
 onto_ili_auto_accept_min = 0.85
 onto_ili_auto_accept_margin = 0.12
+# LexWarrant only sees accepted Onto→ILI at/above this score (as sinalização)
+onto_ili_emit_min = 0.85
 # Set true to enable sentence-transformers gloss cosine (downloads model once)
 gloss_use_embeddings = false
 

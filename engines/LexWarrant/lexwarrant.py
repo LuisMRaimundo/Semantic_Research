@@ -86,9 +86,10 @@ def project_status_for_comparison(status: str):
 class SourceError(ValueError):
     """A source file could not be used; the message is user-facing/actionable."""
 
-# --- Declared ILI namespace equivalence (NEVER blind string edits) -----------
-# Namespaces that share the OMW/MCR 3.0 offset numbering are cross-walkable:
-# their body (8 digits + POS letter) identifies the same interlingual concept.
+# --- Declared identity join keys (NEVER fabricate CILI) --------------------
+# Prefer bare official CILI ``i…``. Contextual CURIEs ``oewn-ili:i…`` are stripped.
+# PWN 3.0 offsets use local ``pwn30-…`` — never ``ili-30-…`` as if it were CILI.
+# Legacy OMW/MCR ``ili-30-…`` / ``por-30-…`` are parsed as PWN 3.0 pivots only.
 OMW30_NAMESPACES = {
     "ili-30", "por-30", "eng-30", "spa-30", "ita-30", "fra-30",
     "deu-30", "jpn-30", "nld-30", "pol-30",
@@ -97,21 +98,46 @@ _OMW30_RE = re.compile(r"^([a-z]{2,4})-30-(\d{8}-[a-z])$")
 _OEWN_ILI_RE = re.compile(r"^i\d+$")
 
 
-def canonical_ili(offset: str) -> tuple[Optional[str], bool]:
-    """Map an offset to a canonical ILI key via the DECLARED map only.
+def _public_ili(key: str) -> str:
+    """Bare CILI for reports; strip contextual ``oewn-ili:`` CURIEs."""
+    try:
+        from identifiers import public_id
+        return public_id(key)
+    except Exception:  # noqa: BLE001
+        s = str(key or "").strip()
+        for pfx in ("oewn-ili:", "ili:", "cili:"):
+            if s.startswith(pfx):
+                return s[len(pfx):]
+        return s
 
-    Returns (canonical_key, mapped). Unmapped namespaces return (None, False) and
-    MUST be flagged (never force-joined). The canonical key is derived only from
-    the library-provided value; it is never fabricated from unrelated ids.
+
+def canonical_ili(offset: str) -> tuple[Optional[str], bool]:
+    """Map a source identifier to a join key without fabricating CILI.
+
+    Returns (canonical_key, mapped). Prefer bare official CILI ``i…`` via the
+    vendored map / OEWN ``ili`` attribute. Fall back to local ``pwn30-…`` for
+    PWN 3.0 pivots that lack a CILI row. Never emits ``ili-30-…`` or
+    ``oewn-ili:`` as a join key.
     """
     if not offset:
         return (None, False)
-    m = _OMW30_RE.match(offset)
-    if m and f"{m.group(1)}-30" in OMW30_NAMESPACES:
-        return (f"ili-30-{m.group(2)}", True)     # por-30-… ↔ ili-30-… (declared)
-    if _OEWN_ILI_RE.match(offset):
-        return (f"oewn-ili:{offset}", True)        # OEWN ILI is its own namespace
-    return (None, False)
+    try:
+        from identifiers import join_key
+        return join_key(offset, resolve_cili=True)
+    except Exception:  # noqa: BLE001 — keep LexWarrant import-hardy
+        s = str(offset).strip()
+        for pfx in ("oewn-ili:", "ili:", "cili:"):
+            if s.startswith(pfx):
+                s = s[len(pfx):].strip()
+                break
+        if _OEWN_ILI_RE.match(s):
+            return (s, True)
+        m = _OMW30_RE.match(str(offset).strip())
+        if m and f"{m.group(1)}-30" in OMW30_NAMESPACES:
+            return (f"pwn30-{m.group(2)}", True)
+        if str(offset).strip().lower().startswith("pwn30-"):
+            return (str(offset).strip().lower(), True)
+        return (None, False)
 
 
 class EquivMap:
@@ -119,8 +145,8 @@ class EquivMap:
 
     LexWarrant never fabricates or extends this map — it only reads the `map`
     (high-confidence) rows of an ili_equivalence.json and unifies the canonical
-    ILI keys they declare equal (e.g. oewn-ili:i10771 ↔ ili-30-00744506-a). Two
-    entries then join by ILI iff their canonical keys are equal OR unified here.
+    Identity keys they declare equal (e.g. i10771 ↔ pwn30-00744506-a).
+    Two entries join iff their canonical keys are equal OR unified here.
     """
 
     def __init__(self) -> None:
@@ -610,12 +636,15 @@ def build_concept(entries: list[Entry], join_kind: str, policy: str,
     if veredicto == "divergência de relação":
         divergences = [{"source": s, "estatuto": st} for s, st in sorted(admit.items())]
 
-    ilis = sorted({i for e in entries for i in e.canon_ilis})
+    # Reports always use bare CILI / pwn30 — never contextual oewn-ili: CURIEs
+    ilis = sorted({_public_ili(i) for e in entries for i in e.canon_ilis})
     provenance = sorted({r for e in entries for r in e.resources})
     ili_by_source: dict[str, list] = {}
     for e in entries:
         if e.canon_ilis:
-            ili_by_source.setdefault(e.source, set()).update(e.canon_ilis)
+            ili_by_source.setdefault(e.source, set()).update(
+                _public_ili(i) for i in e.canon_ilis
+            )
     ili_by_source = {s: sorted(v) for s, v in ili_by_source.items()}
 
     # Did the declared equivalence table enable this join? (raw ILI keys differ by
@@ -626,7 +655,7 @@ def build_concept(entries: list[Entry], join_kind: str, policy: str,
         for a in raw_keys:
             for b in raw_keys:
                 if a < b and equiv.linked(a, b):
-                    via_table_pairs.append(f"{a} ↔ {b}")
+                    via_table_pairs.append(f"{_public_ili(a)} ↔ {_public_ili(b)}")
 
     notes: list[str] = []
     # Emenda 2 — marca obrigatória em toda convergência ILI PULO↔OWN-PT.
@@ -783,8 +812,8 @@ def build_concordance(sources: list[Source], policy: str,
         ili_entries = [e for e in entries if e.canon_ilis]
         noili_entries = [e for e in entries if not e.canon_ilis]
 
-        # Components use equivalence-FOLDED keys, so oewn-ili:i… and ili-30-…
-        # declared equal in the table merge into one interlingual concept.
+        # Components use equivalence-FOLDED keys, so bare CILI i… and pwn30-…
+        # (or legacy ili-30- resolved via CILI) merge into one interlingual concept.
         comps = _components(ili_entries, key=folded)
         multi_src = [c for c in comps if len({e.source for e in c}) >= 2]
         single_src = [c for c in comps if len({e.source for e in c}) < 2]
@@ -915,14 +944,31 @@ def run_asserts(concepts, sources, source_labels, policy, raw_entries,
         ),
     )
 
-    # T6 — absent WordNet ⇒ column all '—'
+    # T6 — WordNet column: distinguish available / queried / contributed
     if "WordNet" not in source_labels:
         t6 = all("WordNet" not in c.sources for c in concepts)
         add("T6", "Fonte WordNet ausente ⇒ coluna toda «—»; execução continua (exit 0).",
-            t6, "coluna WordNet ausente e uniformemente «—»")
+            t6, "source_available=false")
     else:
-        add("T6", "Fonte WordNet ausente ⇒ coluna toda «—».", True,
-            "WordNet presente — N/A")
+        contributed = any(
+            c.sources.get("WordNet") not in (None, "", ABSENT)
+            for c in concepts
+        )
+        add(
+            "T6",
+            "WordNet/OEWN: source_available / source_queried / "
+            "source_contributed_results distintos.",
+            True,
+            (
+                "source_available=true; source_queried=true; "
+                + (
+                    "source_contributed_results=true"
+                    if contributed
+                    else "source_contributed_results=false "
+                    "(sem formas PT admitidas na matriz)"
+                )
+            ),
+        )
 
     # T7 — proposta_final never a status the sources didn't support; conservative ⇒ null on divergence
     t7_bad = []
@@ -1058,7 +1104,7 @@ def summarize_auto_contrast(sources: list[Source]) -> dict:
             # also parse «de iNNNN» from reason when offsets empty
             m = re.search(r"\b(i\d+)\b", e.reason or "")
             if m:
-                anchored_with_contrast.add(f"oewn-ili:{m.group(1)}")
+                anchored_with_contrast.add(m.group(1))  # bare CILI
 
         for e in src.entries:
             if e.estatuto in ADMIT_STATUSES:
@@ -1084,15 +1130,58 @@ def render_json(class_id, policy, source_labels, concepts, assertions,
     equiv_counts = ({"mapped": equiv.n_map, "review": equiv.n_review,
                      "unmatched": equiv.n_unmatched} if equiv is not None
                     else {"mapped": 0, "review": 0, "unmatched": 0})
+    legacy_loaded = bool(equiv is not None and equiv.n_map > 0)
+    # Per-source contribution (available/queried vs actually in matrix)
+    source_status: dict[str, dict[str, bool]] = {}
+    for lab in source_labels:
+        contributed = any(
+            (c.sources.get(lab) not in (None, "", ABSENT))
+            for c in concepts
+        )
+        source_status[lab] = {
+            "source_available": True,
+            "source_queried": True,
+            "source_contributed_results": contributed,
+        }
+    for col in SOURCE_COLUMNS:
+        if col not in source_status:
+            # ONTO is discovery-only: never LexWarrant admission column content
+            if col == "ONTO":
+                source_status[col] = {
+                    "role": "discovery",
+                    "source_available": False,
+                    "source_queried": False,
+                    "contributed_discovery_evidence": False,
+                    "contributed_concordance_results": False,
+                    "source_contributed_results": False,
+                }
+            else:
+                source_status[col] = {
+                    "source_available": False,
+                    "source_queried": False,
+                    "source_contributed_results": False,
+                }
+        elif col == "ONTO":
+            st = source_status[col]
+            st.setdefault("role", "discovery")
+            st.setdefault(
+                "contributed_concordance_results",
+                st.get("source_contributed_results", False),
+            )
+            st.setdefault("contributed_discovery_evidence", False)
+    join_counts = Counter(c.join for c in concepts)
     return {
         "class": class_id,
         "policy": policy,
         "generated": datetime.now().isoformat(timespec="seconds"),
         "columns": SOURCE_COLUMNS,
         "sources": source_labels,
-        "ili_equivalence_map": map_path,
-        "ili_equivalence_counts": equiv_counts,
-        "ili_equivalence_loaded": bool(equiv is not None and equiv.n_map > 0),
+        "source_status": source_status,
+        "join_counts": dict(join_counts),
+        # Legacy human OEWN↔PULO table (distinct from official CILI resolution)
+        "legacy_equivalence_map": map_path,
+        "legacy_equivalence_counts": equiv_counts,
+        "legacy_equivalence_loaded": legacy_loaded,
         "concepts": [concept_to_json(c) for c in concepts],
         "summary": {
             "veredicto_totals": dict(totals),
@@ -1123,16 +1212,69 @@ def render_markdown(doc: dict, concepts) -> str:
     ap(f"- **Política de divergência:** {doc['policy']}")
     ap(f"- **Fontes:** {', '.join(doc['sources']) or '—'}  (colunas: "
        f"{', '.join(doc['columns'])})")
-    mp = doc.get("ili_equivalence_map")
-    ec = doc.get("ili_equivalence_counts") or {}
-    if doc.get("ili_equivalence_loaded"):
-        src = mp or "CILI"
-        ap(f"- **Junção ILI (CILI automático):** {src}  "
-           f"({ec.get('mapped', 0)} pares CILI; "
+    # Read legacy_* ; fall back to old ili_equivalence_* keys on older JSON only
+    mp = doc.get("legacy_equivalence_map") or doc.get("ili_equivalence_map")
+    ec = (
+        doc.get("legacy_equivalence_counts")
+        or doc.get("ili_equivalence_counts")
+        or {}
+    )
+    if "legacy_equivalence_loaded" in doc:
+        legacy_on = bool(doc.get("legacy_equivalence_loaded"))
+    else:
+        legacy_on = bool(doc.get("ili_equivalence_loaded"))
+    jc = doc.get("join_counts") or {}
+    n_ili = int(jc.get("ili") or 0)
+    n_weak = int(jc.get("weak(term)") or 0)
+    n_single = int(jc.get("single") or 0)
+    if legacy_on:
+        src = mp or "tabela legada"
+        ap(f"- **Tabela legada OEWN↔PULO** (`legacy_equivalence`): {src}  "
+           f"({ec.get('mapped', 0)} pares; "
            f"{ec.get('unmatched', 0)} sem âncora partilhada)")
     else:
-        ap("- **Junção ILI (CILI):** ⚠ sem pares — junções OEWN↔PULO por ILI "
-           "indisponíveis; só weak(term).")
+        ap("- **Tabela legada OEWN↔PULO** (`legacy_equivalence`): não carregada "
+           "(junção runtime usa CILI oficial quando ambas as fontes partilham "
+           "``i…``; isto não significa que os identificadores CILI estejam "
+           "indisponíveis).")
+    if n_ili:
+        ap(f"- **Junções interfontes por CILI:** {n_ili}")
+    elif n_weak:
+        ap(f"- **Junções interfontes:** {n_weak} weak(term) "
+           "(sem ILI CILI partilhado entre fontes)")
+    else:
+        # Typical PULO-only matrix: single rows with normalised CILI ids
+        sole = []
+        for lab in (doc.get("sources") or []):
+            st = (doc.get("source_status") or {}).get(lab) or {}
+            if st.get("source_contributed_results"):
+                sole.append(lab)
+        sole_txt = " + ".join(sole) if sole else "uma única fonte"
+        ap(
+            f"- **Junções interfontes:** nenhuma — {n_single or len(concepts)} "
+            f"item(ns) da matriz provenientes exclusivamente de {sole_txt} "
+            "(identificadores CILI normalizados na coluna ILI não implicam "
+            "junção OEWN↔PULO)."
+        )
+    # WordNet / OEWN contribution clarity
+    wn_st = (doc.get("source_status") or {}).get("WordNet") or {}
+    if wn_st.get("source_available") or "WordNet" in (doc.get("sources") or []):
+        if wn_st.get("source_contributed_results"):
+            ap("- **WordNet/OEWN:** consultada e com resultados na matriz")
+        else:
+            ap("- **WordNet/OEWN:** disponível/consultada, sem formas "
+               "portuguesas admitidas na matriz "
+               "(`source_contributed_results=false`)")
+    onto_st = (doc.get("source_status") or {}).get("ONTO") or {}
+    if onto_st.get("role") == "discovery" or "ONTO" in (doc.get("columns") or []):
+        ap(
+            "- **Onto.PT:** discovery-only — "
+            f"queried={onto_st.get('source_queried', False)}; "
+            f"discovery_evidence="
+            f"{onto_st.get('contributed_discovery_evidence', False)}; "
+            "concordance_results=false "
+            "(não admite na matriz LexWarrant)"
+        )
     ap(f"- **Gerado:** {doc['generated']}")
     ap(f"- **Descartados (só pendentes):** "
        f"{doc['summary'].get('descartados_pendentes', 0)} "
@@ -1273,28 +1415,55 @@ def _discover_map(input_specs, outdir: Path) -> Optional[Path]:
 
 
 def _report_equiv_load(equiv: Optional["EquivMap"], map_path: Optional[Path]) -> None:
-    """Make the equivalence-table load VISIBLE at run time (never silent).
+    """Report optional *legacy* OEWN↔PULO table load (not CILI availability).
 
-    Prints the ili_equivalence counts so it is provable the table was ingested,
-    and a LOUD warning when there is nothing to join by (absent or 0 mapped) — so
-    weak(term) fallback is never mistaken for the normal, healthy path."""
+    Runtime joins use official CILI ``i…`` when both sources share an id.
+    A missing legacy ``ili_equivalence.json`` is informational, not an error.
+    """
     if equiv is not None and equiv.n_map > 0:
-        print(f"ili_equivalence: {equiv.n_map} mapped, {equiv.n_review} review, "
-              f"{equiv.n_unmatched} unmatched  (tabela: {equiv.source_path})")
+        print(
+            f"legacy_equivalence: {equiv.n_map} mapped, {equiv.n_review} review, "
+            f"{equiv.n_unmatched} unmatched  (tabela: {equiv.source_path})"
+        )
         return
-    print("=" * 72)
-    print("AVISO: TABELA DE EQUIVALENCIA NAO CARREGADA (0 pares ILI utilizaveis).")
     if map_path is None:
-        print("   Nenhum ili_equivalence.json encontrado junto as fontes/saida.")
+        print(
+            "legacy_equivalence: não carregada (opcional). "
+            "Junção runtime = CILI oficial quando ambas as fontes partilham i…"
+        )
     elif equiv is None:
-        print(f"   Ficheiro nao encontrado: {map_path}")
+        print(
+            f"legacy_equivalence: ficheiro ausente ({map_path}). "
+            "Junção runtime = CILI oficial."
+        )
     else:
-        print(f"   {map_path}: {equiv.n_map} mapped, {equiv.n_review} review, "
-              f"{equiv.n_unmatched} unmatched.")
-        print("   Ha 0 pares de ALTA confianca — as juncoes OEWN<->PULO por ILI NAO "
-              "estao disponiveis.")
-    print("   As fontes so poderao juntar-se por TERMO (weak) — fiabilidade menor.")
-    print("=" * 72)
+        print(
+            f"legacy_equivalence: 0 pares de alta confiança em {map_path} "
+            f"(review={equiv.n_review}, unmatched={equiv.n_unmatched}). "
+            "Junção runtime = CILI oficial."
+        )
+
+
+def _apply_excluded_cili(
+    concepts: list,
+    excluded_cilis: Optional[set[str]],
+) -> None:
+    """Nullify admits whose resolved CILI is domain-excluded (concept_mapping)."""
+    if not excluded_cilis:
+        return
+    for c in concepts:
+        hit = sorted(
+            i for i in (getattr(c, "ilis", None) or [])
+            if str(i) in excluded_cilis
+        )
+        if not hit:
+            continue
+        c.proposta_final = None
+        note = f"excluded_cili:{','.join(hit)}"
+        notes = list(getattr(c, "notes", None) or [])
+        if note not in notes:
+            notes.append(note)
+        c.notes = notes
 
 
 def run_report(input_specs: list[tuple[Optional[str], Path]], outdir: Path,
@@ -1302,7 +1471,8 @@ def run_report(input_specs: list[tuple[Optional[str], Path]], outdir: Path,
                map_path: Optional[Path] = None,
                equiv: Optional["EquivMap"] = None,
                weak_term_mode: str = "gloss_gated",
-               gloss_min: float = 0.12) -> dict:
+               gloss_min: float = 0.12,
+               excluded_cilis: Optional[set[str]] = None) -> dict:
     sources = [load_source(path, label) for label, path in input_specs]
     if len(sources) < 2:
         raise ValueError("São necessárias pelo menos 2 fontes (result.json).")
@@ -1322,6 +1492,7 @@ def run_report(input_specs: list[tuple[Optional[str], Path]], outdir: Path,
         sources, policy, equiv,
         weak_term_mode=weak_term_mode, gloss_min=gloss_min,
     )
+    _apply_excluded_cili(concepts, excluded_cilis)
     auto_contrast = summarize_auto_contrast(sources)
 
     outdir.mkdir(parents=True, exist_ok=True)
@@ -1402,7 +1573,10 @@ def main() -> int:
     print("Veredictos: " + ", ".join(f"{k}={v}"
           for k, v in sorted(doc["summary"]["veredicto_totals"].items())))
     print(f"Descartados (só pendentes): {doc['summary'].get('descartados_pendentes', 0)}")
-    print(f"Tabela ILI: {doc.get('ili_equivalence_map') or '— (nenhuma)'}")
+    print(
+        f"Tabela legada OEWN↔PULO: "
+        f"{doc.get('legacy_equivalence_map') or doc.get('ili_equivalence_map') or '— (nenhuma)'}"
+    )
     print(f"Asserções: {passed}/{total} PASS "
           + ("— TODAS PASSARAM" if doc["all_passed"] else "— EXISTEM FALHAS"))
     for a in doc["assertions"]:

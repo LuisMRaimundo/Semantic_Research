@@ -1,0 +1,122 @@
+{
+  "type": "thesaurus_search",
+  "source": "papel",
+  "query": {
+    "query": "compósito",
+    "mode": "Exact",
+    "group": null
+  },
+  "count": 5,
+  "synsets": [
+    {
+      "resource": "papel35",
+      "resource_label": "PAPEL 3.5 / HIPERONIMIA",
+      "synset_id": "HIPERONIMIA:HIPERONIMO_DE:composito",
+      "pos": "",
+      "gloss": "PAPEL HIPERONIMO_DE (HIPERONIMIA)",
+      "members": [
+        {
+          "word": "compósito",
+          "weight": 1.0
+        },
+        {
+          "word": "material",
+          "weight": 1.0
+        }
+      ],
+      "relations": {
+        "papel_rel": "HIPERONIMO_DE",
+        "papel_group": "HIPERONIMIA"
+      }
+    },
+    {
+      "resource": "papel35",
+      "resource_label": "PAPEL 3.5 / PARTE",
+      "synset_id": "PARTE:PARTE_DE_ALGO_COM_PROPRIEDADE:composito",
+      "pos": "",
+      "gloss": "PAPEL PARTE_DE_ALGO_COM_PROPRIEDADE (PARTE)",
+      "members": [
+        {
+          "word": "compósito",
+          "weight": 1.0
+        },
+        {
+          "word": "utilidade",
+          "weight": 1.0
+        }
+      ],
+      "relations": {
+        "papel_rel": "PARTE_DE_ALGO_COM_PROPRIEDADE",
+        "papel_group": "PARTE"
+      }
+    },
+    {
+      "resource": "papel35",
+      "resource_label": "PAPEL 3.5 / PARTE",
+      "synset_id": "PARTE:PROPRIEDADE_DE_ALGO_PARTE_DE:composito",
+      "pos": "",
+      "gloss": "PAPEL PROPRIEDADE_DE_ALGO_PARTE_DE (PARTE)",
+      "members": [
+        {
+          "word": "compósito",
+          "weight": 1.0
+        },
+        {
+          "word": "substância",
+          "weight": 1.0
+        }
+      ],
+      "relations": {
+        "papel_rel": "PROPRIEDADE_DE_ALGO_PARTE_DE",
+        "papel_group": "PARTE"
+      }
+    },
+    {
+      "resource": "papel35",
+      "resource_label": "PAPEL 3.5 / REFERENTE",
+      "synset_id": "REFERENTE:DIZ_SE_DO_QUE:composito",
+      "pos": "",
+      "gloss": "PAPEL DIZ_SE_DO_QUE (REFERENTE)",
+      "members": [
+        {
+          "word": "compósito",
+          "weight": 1.0
+        },
+        {
+          "word": "ter diverso utilidade",
+          "weight": 1.0
+        }
+      ],
+      "relations": {
+        "papel_rel": "DIZ_SE_DO_QUE",
+        "papel_group": "REFERENTE"
+      }
+    },
+    {
+      "resource": "papel35",
+      "resource_label": "PAPEL 3.5 / SINONIMIA",
+      "synset_id": "SINONIMIA:SINONIMO_ADJ_DE:composito",
+      "pos": "",
+      "gloss": "PAPEL SINONIMO_ADJ_DE (SINONIMIA)",
+      "members": [
+        {
+          "word": "compósito",
+          "weight": 1.0
+        },
+        {
+          "word": "heterogéneo",
+          "weight": 1.0
+        },
+        {
+          "word": "mesclado",
+          "weight": 1.0
+        }
+      ],
+      "relations": {
+        "papel_rel": "SINONIMO_ADJ_DE",
+        "papel_group": "SINONIMIA"
+      }
+    }
+  ],
+  "_note": "PAPEL 3.5 discovery only — word–word dictionary relations; never LexWarrant admission."
+}

@@ -1,0 +1,19 @@
+{
+  "class_id": "TexturaIntermitente",
+  "pref_label": "TexturaIntermitente",
+  "axis": "(faixa OEWN — corroboração EN / relações tipadas; sem adjudicação)",
+  "generated": "2026-07-27T21:34:23",
+  "source": "WordNet (OEWN facets export)",
+  "facets_export": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\WordNet\\exports\\uniform_20260713_123000\\uniform.facets.json",
+  "convoked_ilis": [],
+  "skipped_ilis": [
+    "i60712",
+    "i33388",
+    "i10771",
+    "i4126"
+  ],
+  "provenance": [],
+  "synsets": [],
+  "sinalizacao": {},
+  "_note": "Faixa OEWN: lemas EN e relações tipadas em sinalizacao. Lemas PT via ILI → ficheiro OWN-PT.result.json (coluna própria)."
+}

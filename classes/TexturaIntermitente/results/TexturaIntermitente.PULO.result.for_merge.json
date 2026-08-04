@@ -1,0 +1,172 @@
+{
+  "class_id": "TexturaIntermitente",
+  "pref_label": "TexturaIntermitente",
+  "axis": "que ocorre espaçadamente, a intervalos, regulares ou irregulares",
+  "generated": "2026-07-27T21:34:22",
+  "source": "PULO / WordNet.PT export",
+  "stage1": {
+    "admitted": [
+      {
+        "ili_offset": "ili-30-00593836-a",
+        "glosa": "parar e iniciar a intervalos irregulares\n",
+        "decision": "UF",
+        "export_gloss": "parar e iniciar a intervalos irregulares\n"
+      }
+    ],
+    "admitted_offsets": [
+      "ili-30-00593836-a"
+    ],
+    "excluded_offsets": [],
+    "invalid": [],
+    "flagged_no_ili": []
+  },
+  "stage2_seeds": {
+    "intermitente": {
+      "display": "intermitente",
+      "offsets": [
+        "ili-30-00593836-a"
+      ]
+    }
+  },
+  "stage3": {
+    "contrast": {},
+    "rt_uf": {},
+    "family": {},
+    "BT": {},
+    "NT": {},
+    "attribute": {}
+  },
+  "dropped_no_lemma": 5,
+  "sinalizacao": {},
+  "stage4_excluded": {},
+  "stage5": {
+    "admitted": {
+      "intermitente": {
+        "display": "intermitente",
+        "offsets": [
+          "ili-30-00593836-a"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2)",
+        "status": "UF",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "ili-30-00593836-a"
+      }
+    },
+    "pending": {}
+  },
+  "family": {},
+  "skos": {
+    "UF": [
+      "intermitente"
+    ]
+  },
+  "provenance": [
+    {
+      "termo": "intermitente",
+      "estatuto": "UF",
+      "eixo": "que ocorre espaçadamente, a intervalos, regulares ou irregulares",
+      "via": "seed (Etapa 1/2)",
+      "offsets_ili": [
+        "ili-30-00593836-a"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "definicao": "",
+      "estrutural": "",
+      "gloss": "que apresenta suspensões ou intervalos desiguais, ( falando se de pulsações )."
+    }
+  ],
+  "attribute_terms": [],
+  "assertions": [
+    {
+      "stage": "Etapa 1",
+      "text": "Todo o synset admitido tem ili_offset e glosa mapeada ao eixo.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Etapa 1",
+      "text": "Nenhum synset off-axis (exclude) figura na lista branca admitida.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Etapa 1",
+      "text": "A lista branca é persistida por offset ILI e os offsets são únicos.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "ILI",
+      "text": "Nenhum id oewn-/por- é usado como chave de junção; a chave é o ILI.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "ILI",
+      "text": "Synsets sem ili_offset são sinalizados (não descartados em silêncio).",
+      "passed": true,
+      "evidence": "nenhum synset sem ILI no export"
+    },
+    {
+      "stage": "Etapa 2",
+      "text": "Os sinónimos colhidos provêm exclusivamente de synsets admitidos.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Etapa 3",
+      "text": "Alvos de relação são tipados pelo mapeamento; «(no lemma)» nunca admitido.",
+      "passed": true,
+      "evidence": "OK (5 alvos «(no lemma)» descartados)"
+    },
+    {
+      "stage": "Etapa 4",
+      "text": "«(no lemma)», colocações e termos só de relação não-nomeada (sem corroboração) são excluídos.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Etapa 5",
+      "text": "Cada admitido tem estatuto∈{UF,RT,BT,NT} (garantia calculada a jusante; atributo = evidência).",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Garantia",
+      "text": "Termos com garantia «estipulativa» têm definição E relação estrutural.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Consistência",
+      "text": "Nenhum termo é UF de duas classes com owl:disjointWith entre si.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Consistência",
+      "text": "Nenhum estatuto de evidência (contraste/atributo) em admitidos.",
+      "passed": true,
+      "evidence": "OK"
+    },
+    {
+      "stage": "Serialização",
+      "passed": true,
+      "text": "X.skos.ttl analisa com rdflib e tem a contagem de triplos esperada.",
+      "evidence": "triplos esperados=6, analisados=6"
+    }
+  ],
+  "all_passed": true,
+  "skos_triples": 6,
+  "_ttl_ok": true,
+  "_signals_sidelined": 5
+}

@@ -1,0 +1,22 @@
+{
+  "class_id": "TexturaIntermitente",
+  "pref_label": "TexturaIntermitente",
+  "axis": "que ocorre espaçadamente, a intervalos, regulares ou irregulares",
+  "stage1_whitelist": [
+    {
+      "ili_offset": "ili-30-00593836-a",
+      "glosa": "parar e iniciar a intervalos irregulares\n",
+      "decision": "UF",
+      "members": [
+        "intermitente"
+      ]
+    }
+  ],
+  "dictionary_attestations": [
+    "intermitente"
+  ],
+  "admitted_offsets": [
+    "ili-30-00593836-a"
+  ],
+  "excluded_offsets": []
+}

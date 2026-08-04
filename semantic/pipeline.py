@@ -352,13 +352,14 @@ def run_class(class_id: str, policy: Optional[str] = None,
         inputs.append(("OWN-PT", own_r))
     if wn_r.exists():
         inputs.append(("WordNet", wn_r))
-    # Accepted Onto→ILI projections (atestado inventory — review routine)
+    # Onto→ILI: inventory signals only (never weak 'atestado' corroboration)
     try:
         from .onto_ili import apply_accepted_to_decisions, emit_onto_ili_result
         apply_accepted_to_decisions(ws.class_id)
         onto_ili_path = emit_onto_ili_result(ws.class_id)
         if onto_ili_path:
             summary["onto_ili_result"] = onto_ili_path
+            summary["onto_ili_role"] = "sinalizacao_inventory"
     except Exception as exc:  # noqa: BLE001
         summary.setdefault("errors", []).append(f"Onto-ILI emit: {exc}")
         onto_ili_path = None
@@ -393,12 +394,30 @@ def run_class(class_id: str, policy: Optional[str] = None,
                 summary.setdefault("errors", []).append(f"ILI coverage: {exc}")
             weak_mode = str(cfg.get("weak_term_mode") or "gloss_gated")
             gloss_min = float(cfg.get("gloss_min") or 0.12)
+            # Keep decisions.json aligned with concept_mapping.excluded_cili
+            try:
+                from .mapping_policy import (
+                    excluded_cili_ids,
+                    sync_decisions_with_excluded_cili,
+                )
+                from . import decisions as decmod
+                meta = ws.load_meta()
+                dec = decmod.load_decisions(ws.decisions_json)
+                dec2, flips = sync_decisions_with_excluded_cili(dec, meta)
+                if flips:
+                    decmod.save_decisions(ws.decisions_json, dec2)
+                    summary["excluded_cili_sync"] = flips
+                excl_ids = excluded_cili_ids(meta, dec2)
+            except Exception as exc:  # noqa: BLE001
+                summary.setdefault("errors", []).append(f"mapping sync: {exc}")
+                excl_ids = set()
             buf = io.StringIO()
             with contextlib.redirect_stdout(buf), contextlib.redirect_stderr(buf):
                 doc = lexwarrant.run_report(
                     inputs, ws.out, policy=policy,
                     map_path=map_path, equiv=equiv,
                     weak_term_mode=weak_mode, gloss_min=gloss_min,
+                    excluded_cilis=excl_ids or None,
                 )
             summary["weak_term_mode"] = weak_mode
             summary["gloss_min"] = gloss_min
@@ -487,10 +506,55 @@ def run_class(class_id: str, policy: Optional[str] = None,
                 "md": recon.get("reconcile_md"),
             }
             summary["merge_ok"] = True
-            summary["ili_equivalence_loaded"] = bool(
-                doc.get("ili_equivalence_loaded")
+            summary["legacy_equivalence_loaded"] = bool(
+                doc.get(
+                    "legacy_equivalence_loaded",
+                    doc.get("ili_equivalence_loaded"),
+                )
             )
-            summary["ili_equivalence_counts"] = doc.get("ili_equivalence_counts")
+            summary["legacy_equivalence_counts"] = (
+                doc.get("legacy_equivalence_counts")
+                or doc.get("ili_equivalence_counts")
+            )
+            summary["source_status"] = doc.get("source_status") or {}
+            # ONTO is discovery-only: report separately from concordance admits
+            onto_result = ws.results / f"{ws.class_id}.ONTO.result.json"
+            onto_queried = onto_result.exists()
+            onto_has_evidence = False
+            if onto_queried:
+                try:
+                    od = json.loads(onto_result.read_text(encoding="utf-8"))
+                    onto_has_evidence = bool(
+                        od.get("sinalizacao") or od.get("provenance")
+                        or od.get("stage5")
+                    )
+                except (OSError, json.JSONDecodeError):
+                    onto_has_evidence = True
+            summary["source_status"]["ONTO"] = {
+                "role": "discovery",
+                "source_available": onto_queried,
+                "source_queried": onto_queried,
+                "contributed_discovery_evidence": onto_has_evidence,
+                "contributed_concordance_results": False,
+                "source_contributed_results": False,
+            }
+            # Persist enriched status onto concordance JSON copies
+            try:
+                doc["source_status"] = summary["source_status"]
+                for jp in (
+                    Path(published["json"]),
+                    ws.out / f"{ws.class_id}.concordance.json",
+                    ws.final_results / f"{ws.class_id}.concordance.json",
+                ):
+                    if jp.exists():
+                        cur = json.loads(jp.read_text(encoding="utf-8"))
+                        cur["source_status"] = summary["source_status"]
+                        jp.write_text(
+                            json.dumps(cur, ensure_ascii=False, indent=2) + "\n",
+                            encoding="utf-8",
+                        )
+            except Exception:  # noqa: BLE001
+                pass
             note_bits = [
                 f"FINAL RESULTS → {published['folder']}",
                 "Deliverable: TERMOS.html + TERMOS_PESQUISA.md/.csv",
@@ -522,8 +586,9 @@ def search_and_seed(class_id: str, query: str, source: str = "pulo",
                     mode: str = "Starts with", pos: Optional[str] = None,
                     limit: int = 80) -> dict:
     """Search lexicon, save export, seed undecided sense cards."""
-    from .adapters import OntoStore, PuloStore, WordNetStore
+    from .adapters import OntoStore, PapelStore, PuloStore, WordNetStore
     from . import decisions as decmod
+    from .resources import ensure_papel_index
 
     ws = ClassWorkspace.open(class_id)
     ws.ensure()
@@ -542,6 +607,14 @@ def search_and_seed(class_id: str, query: str, source: str = "pulo",
         )
         store.close()
         fname = f"onto_{query.strip().replace(' ', '_')}.json"
+    elif source == "papel":
+        ensure_papel_index()
+        store = PapelStore(Path(cfg["papel_sqlite"]))
+        export = store.export_search(
+            query, mode=mode, limit=min(limit, 40)
+        )
+        store.close()
+        fname = f"papel_{query.strip().replace(' ', '_')}.json"
     elif source in ("wordnet", "oewn", "wn"):
         source = "wordnet"
         export = WordNetStore().export_search(
@@ -551,7 +624,7 @@ def search_and_seed(class_id: str, query: str, source: str = "pulo",
         safe = query.strip().replace(" ", "_")
         fname = f"wordnet_{safe}.facets.json"
     else:
-        raise ValueError("source must be 'pulo', 'onto', or 'wordnet'")
+        raise ValueError("source must be 'pulo', 'onto', 'papel', or 'wordnet'")
 
     out_path = ws.exports / fname
     out_path.write_text(
@@ -563,6 +636,8 @@ def search_and_seed(class_id: str, query: str, source: str = "pulo",
         updated = decmod.from_pulo_export(export, existing)
     elif source == "onto":
         updated = decmod.from_onto_export(export, existing)
+    elif source == "papel":
+        updated = decmod.from_papel_export(export, existing)
     else:
         updated = decmod.from_wordnet_export(export, existing)
     decmod.save_decisions(ws.decisions_json, updated)

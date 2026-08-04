@@ -4,11 +4,12 @@
 
   sr new <Class> [--pref LABEL] [--axis TEXT]
   sr rename <OldClass> <NewClass>
-  sr search <Class> <query> [--source pulo|onto|wordnet]
+  sr search <Class> <query> [--source pulo|onto|papel|wordnet]
   sr status <Class>
   sr run <Class>
   sr index [--class Class] [--pulo-limit N]
   sr doctor [--deep] [--json]
+  sr resources [--build-papel] [--ensure-ownpt] [--json]
   sr smoke [--class Class] [--query LEMMA]
   sr onto-ili list|accept|reject|accept-top <Class> ...
   sr publish [<Class>|--all]
@@ -112,6 +113,19 @@ def cmd_doctor(args):
     else:
         print(format_report(report))
     return 0 if report.ok else 1
+
+
+def cmd_resources(args):
+    from semantic.resources import format_inventory, inventory
+    inv = inventory(
+        build_papel=args.build_papel,
+        ensure_ownpt=args.ensure_ownpt,
+    )
+    if args.json:
+        print(json.dumps(inv, ensure_ascii=False, indent=2))
+    else:
+        print(format_inventory(inv))
+    return 0 if inv["ok"] else 1
 
 
 def cmd_smoke(args):
@@ -235,7 +249,11 @@ def main(argv=None) -> int:
     p = sub.add_parser("search", help="search lexicon and seed sense cards")
     p.add_argument("cls")
     p.add_argument("query")
-    p.add_argument("--source", choices=("pulo", "onto", "wordnet"), default="pulo")
+    p.add_argument(
+        "--source",
+        choices=("pulo", "onto", "papel", "wordnet"),
+        default="pulo",
+    )
     p.add_argument("--mode", default="Starts with")
     p.set_defaults(func=cmd_search)
 
@@ -249,6 +267,23 @@ def main(argv=None) -> int:
     p.add_argument("--deep", action="store_true")
     p.add_argument("--json", action="store_true")
     p.set_defaults(func=cmd_doctor)
+
+    p = sub.add_parser(
+        "resources",
+        help="inventory lexical dumps (Onto RDF, PULO SQL, PAPEL, OWN-PT)",
+    )
+    p.add_argument("--json", action="store_true")
+    p.add_argument(
+        "--build-papel",
+        action="store_true",
+        help="index PAPEL.v.3.5_utf8 → data/papel.sqlite",
+    )
+    p.add_argument(
+        "--ensure-ownpt",
+        action="store_true",
+        help="clone https://github.com/own-pt/openWordnet-PT if missing",
+    )
+    p.set_defaults(func=cmd_resources)
 
     p = sub.add_parser(
         "smoke",

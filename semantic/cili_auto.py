@@ -139,7 +139,7 @@ def build_cili_equiv_map(identifiers: list[str]):
         cans_l = sorted(cans)
         if len(cans_l) < 2:
             continue
-        # Unify every pair sharing the same CILI id (typically oewn-ili:iX ↔ ili-30-Y)
+        # Unify every pair sharing the same CILI id (typically bare iX ↔ pwn30-Y)
         root = cans_l[0]
         for other in cans_l[1:]:
             m.add_equiv(root, other)
@@ -275,14 +275,7 @@ def prepare_cili_for_run(ws: ClassWorkspace) -> dict[str, Any]:
         "generated": datetime.now().isoformat(timespec="seconds"),
         "source": f"cili:{CILI_VERSION}",
         "cili": cili_counts(),
-        "map": [
-            {"oewn_ili": a.replace("oewn-ili:", ""), "pulo_ili": b,
-             "source": f"cili:{CILI_VERSION}", "confidence": "high"}
-            if a.startswith("oewn-ili:") else
-            {"oewn_ili": b.replace("oewn-ili:", ""), "pulo_ili": a,
-             "source": f"cili:{CILI_VERSION}", "confidence": "high"}
-            for a, b in equiv.pairs
-        ],
+        "map": [],  # filled below with bare CILI ids
         "review": [],
         "unmatched": [],
         "coverage": {
@@ -292,18 +285,22 @@ def prepare_cili_for_run(ws: ClassWorkspace) -> dict[str, Any]:
         },
         "policy": "cili-only (Corte 1) — sem adjudicação humana",
     }
-    # Fix map rows properly
+    # Fix map rows properly — store bare CILI (never oewn-ili: CURIE as primary)
     map_rows = []
     for a, b in equiv.pairs:
-        oewn = a.replace("oewn-ili:", "") if a.startswith("oewn-ili:") else (
-            b.replace("oewn-ili:", "") if b.startswith("oewn-ili:") else None
-        )
-        pulo = b if b.startswith("ili-30-") else (
-            a if a.startswith("ili-30-") else None
-        )
-        if oewn and pulo:
+        cili_side = None
+        pulo = None
+        for cand in (a, b):
+            bare = cand.replace("oewn-ili:", "").replace("ili:", "").replace("cili:", "")
+            if bare.startswith("i") and bare[1:].isdigit():
+                cili_side = bare
+            if cand.startswith("pwn30-") or cand.startswith("ili-30-"):
+                pulo = cand
+        if cili_side and pulo:
             map_rows.append({
-                "oewn_ili": oewn,
+                "cili_id": cili_side,
+                "cili_uri": f"http://ili.globalwordnet.org/ili/{cili_side}",
+                "oewn_ili": cili_side,  # legacy column name; value is bare CILI
                 "pulo_ili": pulo,
                 "source": f"cili:{CILI_VERSION}",
                 "confidence": "high",

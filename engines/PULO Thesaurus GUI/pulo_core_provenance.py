@@ -36,18 +36,30 @@ def fold(text: str) -> str:
     return strip_accents(text or "").lower().strip()
 
 
-def _canon_ili(synset_offset: str, ili_field=None) -> str:
-    """Report the canonical ILI for provenance display (OMW30 crosswalk).
+def _canon_pwn(synset_offset: str, ili_field=None) -> str:
+    """Local PWN 3.0 id for provenance (never fabricate CILI / ili-30-…).
 
-    por-30-XXXXXXXX-p → ili-30-XXXXXXXX-p. This is a namespace crosswalk for
-    DISPLAY only; it is NOT the equivalence-table decision (that needs lemma
-    evidence and lives in build_ili_equivalence.py)."""
+    ``por-30-XXXXXXXX-p`` / legacy ``ili-30-XXXXXXXX-p`` → ``pwn30-XXXXXXXX-p``.
+    Official CILI ``i…`` is resolved elsewhere via the CILI map / OEWN.
+    """
+    raw = ""
     if isinstance(ili_field, list) and ili_field:
-        off = (ili_field[0].get("ili_offset") or "").strip()
-        if off:
-            return off
-    m = re.match(r"^[a-z]{2,4}-30-(\d{8}-[a-z])$", synset_offset or "")
-    return f"ili-30-{m.group(1)}" if m else (synset_offset or "?")
+        first = ili_field[0] if isinstance(ili_field[0], dict) else {}
+        raw = (
+            (first.get("pwn_id") or first.get("ili_offset") or "").strip()
+        )
+    for candidate in (raw, synset_offset or ""):
+        m = re.match(
+            r"^(?:pwn30-|ili-30-|[a-z]{2,4}-30-)(\d{8}-[a-z])$",
+            candidate or "",
+            re.I,
+        )
+        if m:
+            return f"pwn30-{m.group(1).lower()}"
+        m = re.match(r"^(\d{8}-[a-z])$", candidate or "", re.I)
+        if m:
+            return f"pwn30-{m.group(1).lower()}"
+    return synset_offset or "?"
 
 
 def build_core_provenance(export: dict, axis_terms: list[str],
@@ -63,7 +75,7 @@ def build_core_provenance(export: dict, axis_terms: list[str],
 
     for syn in export.get("synsets", []):
         s_off = syn.get("synset_offset", "?")
-        ili = _canon_ili(s_off, syn.get("ili"))
+        pwn = _canon_pwn(s_off, syn.get("ili"))
         pos = syn.get("pos", "")
         gloss = (syn.get("gloss") or "").strip()
         # headword synonyms
@@ -71,7 +83,8 @@ def build_core_provenance(export: dict, axis_terms: list[str],
             key = fold(w)
             if key in core_norm:
                 hits[core_norm[key]].append({
-                    "synset_offset": s_off, "ili_offset": ili, "pos": pos,
+                    "synset_offset": s_off, "ili_offset": pwn, "pwn_id": pwn,
+                    "pos": pos,
                     "gloss": gloss, "relation": "sinónimo (cabeça do synset)",
                     "on_axis": on_axis(gloss)})
         # relation-target words
@@ -79,14 +92,15 @@ def build_core_provenance(export: dict, axis_terms: list[str],
             label = rel.get("relation", "")
             for tgt in rel.get("targets", []) or []:
                 t_off = tgt.get("synset_offset", s_off)
-                t_ili = _canon_ili(t_off)
+                t_pwn = _canon_pwn(t_off)
                 t_gloss = (tgt.get("gloss") or "").strip()
                 words = [w.strip() for w in re.split(r"[;,]", tgt.get("words", "")) if w.strip()]
                 for w in words:
                     key = fold(w)
                     if key in core_norm:
                         hits[core_norm[key]].append({
-                            "synset_offset": t_off, "ili_offset": t_ili, "pos": "",
+                            "synset_offset": t_off, "ili_offset": t_pwn,
+                            "pwn_id": t_pwn, "pos": "",
                             "gloss": t_gloss, "relation": f"alvo de «{label}»",
                             "on_axis": on_axis(t_gloss)})
 
@@ -139,11 +153,12 @@ def render_md(doc: dict, class_id: str = "") -> str:
                "nenhum synset desta pesquisa._")
             ap("")
             continue
-        ap("| synset_offset | ili_offset | POS | eixo? | relação | glosa |")
+        ap("| synset_offset | pwn_id (PWN 3.0) | POS | eixo? | relação | glosa |")
         ap("|---|---|---|---|---|---|")
         for r in rows:
             g = (r["gloss"] or "").replace("|", "\\|").replace("\n", " ").strip()
-            ap(f"| {r['synset_offset']} | {r['ili_offset']} | {r['pos'] or '—'} | "
+            pwn = r.get("pwn_id") or r.get("ili_offset") or "—"
+            ap(f"| {r['synset_offset']} | {pwn} | {r['pos'] or '—'} | "
                f"{'ON' if r['on_axis'] else 'off'} | {r['relation']} | {g} |")
         ap("")
     return "\n".join(L)

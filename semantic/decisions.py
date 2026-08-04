@@ -254,33 +254,122 @@ def undecided_count(decisions: dict[str, Any]) -> int:
     )
 
 
+def _pulo_identity(syn: dict[str, Any]) -> dict[str, Any]:
+    """Normalise PULO synset identity: pwn30 + optional official CILI."""
+    try:
+        from .engines import load_identifiers
+        ids = load_identifiers()
+    except Exception:  # noqa: BLE001
+        ids = None
+    item = {}
+    for raw in syn.get("ili") or []:
+        if isinstance(raw, dict):
+            item = raw
+            break
+    if ids is not None:
+        ident = ids.from_pulo_to_ili(
+            item.get("pwn_id") or item.get("ili_offset") or item.get("cili"),
+            synset_offset=syn.get("synset_offset"),
+            ili_wn_id=item.get("ili_wn_id"),
+            resolve_cili=True,
+        )
+        # Prefer CILI already present on the export item (from adapter)
+        if item.get("cili") and not ident.cili:
+            ident.cili = str(item["cili"]).strip()
+            ident.mapping_status = item.get("mapping_status") or "official"
+        if item.get("pwn_id") and not ident.pwn_id:
+            ident.pwn_id = str(item["pwn_id"]).strip()
+        cid = ident.cili_id or ident.cili
+        return {
+            "key": ident.pwn_id or ident.source_synset_id or "",
+            "pwn_id": ident.pwn_id,
+            "ili": cid,  # bare CILI only (never oewn-ili: CURIE)
+            "cili": cid,
+            "cili_id": cid,
+            "cili_uri": ident.cili_uri or item.get("cili_uri"),
+            "source_curie": ident.source_curie or item.get("source_curie"),
+            "legacy_omw_ili": ident.legacy_omw_ili or item.get("legacy_omw_ili"),
+            "mapping_status": ident.mapping_status,
+            "stable": ids.stable_key(
+                ident.pwn_id or item.get("ili_offset") or syn.get("synset_offset")
+            ),
+        }
+    # Fallback without identifiers module
+    raw = (item.get("ili_offset") or item.get("pwn_id") or "").strip()
+    return {
+        "key": raw or syn.get("synset_offset") or "",
+        "pwn_id": item.get("pwn_id") or raw,
+        "ili": item.get("cili"),
+        "cili": item.get("cili"),
+        "legacy_omw_ili": item.get("legacy_omw_ili"),
+        "mapping_status": item.get("mapping_status") or "unverified",
+        "stable": raw or syn.get("synset_offset") or "",
+    }
+
+
 def from_pulo_export(
     export: dict[str, Any], existing: Optional[dict] = None
 ) -> dict[str, Any]:
     """Seed sense cards from a PULO export (keeps prior decisions)."""
     class_id = (existing or {}).get("class_id") or "Unknown"
     out = existing or blank_decisions(class_id)
-    prior = {
-        sense_key(s["source"], s["key"]): s
-        for s in out.get("senses", []) if s.get("source") and s.get("key")
-    }
+    try:
+        from .engines import load_identifiers
+        stable = load_identifiers().stable_key
+    except Exception:  # noqa: BLE001
+        stable = lambda x: str(x or "").strip()  # noqa: E731
+
+    prior_by_stable: dict[str, dict] = {}
+    prior_by_sk: dict[str, dict] = {}
+    for s in out.get("senses", []):
+        if not s.get("source") or not s.get("key"):
+            continue
+        prior_by_sk[sense_key(s["source"], s["key"])] = s
+        prior_by_stable[stable(s.get("pwn_id") or s.get("key") or s.get("ili"))] = s
+        if s.get("legacy_omw_ili"):
+            prior_by_stable[stable(s["legacy_omw_ili"])] = s
+
     senses = list(out.get("senses", []))
-    seen = set()
     for syn in export.get("synsets", []):
-        ili = None
-        for item in syn.get("ili") or []:
-            ili = (item.get("ili_offset") or "").strip() or ili
-        key = ili or syn.get("synset_offset") or ""
+        ident = _pulo_identity(syn)
+        key = ident["key"]
         if not key:
             continue
         sk = sense_key("pulo", key)
-        seen.add(sk)
-        if sk in prior:
+        hit = prior_by_sk.get(sk) or prior_by_stable.get(ident["stable"])
+        if hit is not None:
+            # Upgrade legacy ili-30 keys / fill CILI when newly resolved
+            if (hit.get("key") or "").startswith("ili-30-") and ident.get("pwn_id"):
+                hit["key"] = ident["pwn_id"]
+                hit["pwn_id"] = ident["pwn_id"]
+            if ident.get("cili") and not hit.get("cili"):
+                hit["cili"] = ident["cili"]
+                hit["cili_id"] = ident.get("cili_id") or ident["cili"]
+                hit["ili"] = ident["cili"]
+                hit["cili_uri"] = ident.get("cili_uri")
+                hit["source_curie"] = ident.get("source_curie")
+                hit["mapping_status"] = ident.get("mapping_status") or "official"
+            # Strip legacy CURIE-as-primary if still stored
+            for fld in ("ili", "cili", "cili_id"):
+                val = str(hit.get(fld) or "")
+                if val.startswith(("oewn-ili:", "ili:")):
+                    hit[fld] = val.rsplit(":", 1)[-1]
+            if ident.get("pwn_id") and not hit.get("pwn_id"):
+                hit["pwn_id"] = ident["pwn_id"]
+            if ident.get("legacy_omw_ili") and not hit.get("legacy_omw_ili"):
+                hit["legacy_omw_ili"] = ident["legacy_omw_ili"]
             continue
         senses.append({
             "source": "pulo",
             "key": key,
-            "ili": ili,
+            "pwn_id": ident.get("pwn_id"),
+            "ili": ident.get("cili"),  # bare official CILI only (may be null)
+            "cili": ident.get("cili"),
+            "cili_id": ident.get("cili_id") or ident.get("cili"),
+            "cili_uri": ident.get("cili_uri"),
+            "source_curie": ident.get("source_curie"),
+            "legacy_omw_ili": ident.get("legacy_omw_ili"),
+            "mapping_status": ident.get("mapping_status") or "unverified",
             "local_id": syn.get("synset_offset"),
             "pos": syn.get("pos"),
             "gloss": syn.get("gloss") or "",
@@ -332,6 +421,48 @@ def from_onto_export(
     return out
 
 
+def from_papel_export(
+    export: dict[str, Any], existing: Optional[dict] = None
+) -> dict[str, Any]:
+    """Seed PAPEL discovery cards (dictionary relations — never LexWarrant admit)."""
+    class_id = (existing or {}).get("class_id") or "Unknown"
+    out = existing or blank_decisions(class_id)
+    prior = {
+        sense_key(s["source"], s["key"]): s
+        for s in out.get("senses", []) if s.get("source") and s.get("key")
+    }
+    senses = list(out.get("senses", []))
+    for syn in export.get("synsets", []):
+        res = syn.get("resource") or "papel35"
+        sid = str(syn.get("synset_id") or syn.get("sid") or "")
+        key = f"{res}:{sid}" if res and sid else sid
+        if not key:
+            continue
+        sk = sense_key("papel", key)
+        if sk in prior:
+            continue
+        members = []
+        for m in syn.get("members") or []:
+            if isinstance(m, dict):
+                members.append(m.get("word") or "")
+            else:
+                members.append(str(m))
+        rel = (syn.get("relations") or {}).get("papel_rel") or ""
+        senses.append({
+            "source": "papel",
+            "key": key,
+            "ili": None,
+            "local_id": key,
+            "pos": syn.get("pos"),
+            "gloss": syn.get("gloss") or (f"PAPEL {rel}" if rel else "PAPEL"),
+            "members": [m for m in members if m],
+            "decision": "",
+            "note": "discovery: PAPEL 3.5",
+        })
+    out["senses"] = senses
+    return out
+
+
 def from_wordnet_export(
     export: dict[str, Any], existing: Optional[dict] = None
 ) -> dict[str, Any]:
@@ -355,10 +486,27 @@ def from_wordnet_export(
         pt = list(syn.get("pt_lemmas") or [])
         if pt:
             members = members + [f"PT: {w}" for w in pt]
+        cili_uri = None
+        cili_page = None
+        if ili:
+            try:
+                from .engines import load_identifiers
+                ids = load_identifiers()
+                cid = ids.try_normalize_cili_id(ili)
+                if cid:
+                    ili = cid
+                    cili_uri = ids.cili_uri(cid)
+                    cili_page = ids.cili_page_url(cid)
+            except Exception:  # noqa: BLE001
+                pass
         senses.append({
             "source": "wordnet",
             "key": key,
             "ili": ili,
+            "cili": ili or None,
+            "cili_id": ili or None,
+            "cili_uri": cili_uri,
+            "cili_page": cili_page,
             "local_id": syn.get("name") or "",
             "pos": syn.get("pos") or "",
             "gloss": syn.get("definition") or "",

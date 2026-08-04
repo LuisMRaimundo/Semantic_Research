@@ -47,7 +47,11 @@ class TestBuilder(unittest.TestCase):
         self.assertEqual(len(doc["map"]), 1)
         row = doc["map"][0]
         self.assertEqual(row["oewn_ili"], "i10771")
-        self.assertEqual(row["pulo_ili"], "ili-30-00744506-a")
+        # pulo_ili may be legacy ili-30- (from fixture) or normalised pwn30-
+        self.assertIn(
+            row["pulo_ili"],
+            ("ili-30-00744506-a", "pwn30-00744506-a"),
+        )
         self.assertEqual(row["evidence"]["shared_lemmas"], ["uniforme"])
         self.assertEqual(row["confidence"], "high")
 
@@ -63,7 +67,10 @@ class TestBuilder(unittest.TestCase):
                             "toda a linha tem de carregar evidência de lema partilhado")
             # ILIs are taken verbatim from the inputs, never edited from each other
             self.assertEqual(row["oewn_ili"], "i10771")
-            self.assertTrue(row["pulo_ili"].startswith("ili-30-"))
+            self.assertTrue(
+                row["pulo_ili"].startswith("ili-30-")
+                or row["pulo_ili"].startswith("pwn30-")
+            )
             self.assertNotIn("i10771", row["pulo_ili"])
 
     def test_a3_multi_match_review_and_no_match_unmatched(self):

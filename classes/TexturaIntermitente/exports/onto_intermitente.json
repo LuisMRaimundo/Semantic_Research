@@ -1,0 +1,2494 @@
+{
+  "type": "thesaurus_search",
+  "query": {
+    "query": "intermitente",
+    "resource": null,
+    "pos": null,
+    "mode": "Contains"
+  },
+  "count": 27,
+  "synsets": [
+    {
+      "resource": "clip21",
+      "resource_label": "CLIP 2.1 (fuzzy sets)",
+      "synset_id": "17265",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "alternado",
+          "weight": 1.4285715
+        },
+        {
+          "word": "entremeado",
+          "weight": 0.9047619
+        },
+        {
+          "word": "salteado",
+          "weight": 0.9047619
+        },
+        {
+          "word": "revezado",
+          "weight": 0.7619048
+        },
+        {
+          "word": "alterno",
+          "weight": 0.6666667
+        },
+        {
+          "word": "intermeado",
+          "weight": 0.61904764
+        },
+        {
+          "word": "intervalado",
+          "weight": 0.61904764
+        },
+        {
+          "word": "alternativo",
+          "weight": 0.3809524
+        },
+        {
+          "word": "intercalado",
+          "weight": 0.3809524
+        },
+        {
+          "word": "intermitente",
+          "weight": 0.3809524
+        },
+        {
+          "word": "mesclado",
+          "weight": 0.3181818
+        },
+        {
+          "word": "alternante",
+          "weight": 0.2857143
+        },
+        {
+          "word": "interposto",
+          "weight": 0.27272728
+        },
+        {
+          "word": "raiado",
+          "weight": 0.27272728
+        },
+        {
+          "word": "entressachado",
+          "weight": 0.23809524
+        },
+        {
+          "word": "espaçado",
+          "weight": 0.22727273
+        },
+        {
+          "word": "alternativa",
+          "weight": 0.1904762
+        },
+        {
+          "word": "interpolado",
+          "weight": 0.1904762
+        },
+        {
+          "word": "assaltado",
+          "weight": 0.18181819
+        },
+        {
+          "word": "alternador",
+          "weight": 0.14285715
+        },
+        {
+          "word": "intercalar",
+          "weight": 0.14285715
+        },
+        {
+          "word": "recíproco",
+          "weight": 0.13636364
+        },
+        {
+          "word": "surpreendido",
+          "weight": 0.13636364
+        },
+        {
+          "word": "acessional",
+          "weight": 0.0952381
+        },
+        {
+          "word": "embolismal",
+          "weight": 0.0952381
+        },
+        {
+          "word": "intexto",
+          "weight": 0.0952381
+        },
+        {
+          "word": "parentético",
+          "weight": 0.0952381
+        },
+        {
+          "word": "repetir",
+          "weight": 0.0952381
+        },
+        {
+          "word": "intercadente",
+          "weight": 0.09090909
+        },
+        {
+          "word": "mútuo",
+          "weight": 0.09090909
+        },
+        {
+          "word": "sobressalteado",
+          "weight": 0.09090909
+        },
+        {
+          "word": "adicional",
+          "weight": 0.045454547
+        },
+        {
+          "word": "atacado",
+          "weight": 0.045454547
+        },
+        {
+          "word": "descontínuo",
+          "weight": 0.045454547
+        },
+        {
+          "word": "entrelaçado",
+          "weight": 0.045454547
+        },
+        {
+          "word": "interjacente",
+          "weight": 0.045454547
+        },
+        {
+          "word": "listrado",
+          "weight": 0.045454547
+        },
+        {
+          "word": "misturado",
+          "weight": 0.045454547
+        },
+        {
+          "word": "periódico",
+          "weight": 0.045454547
+        },
+        {
+          "word": "repetido",
+          "weight": 0.045454547
+        },
+        {
+          "word": "sobressaltado",
+          "weight": 0.045454547
+        },
+        {
+          "word": "sucessivo",
+          "weight": 0.045454547
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "clip21",
+      "resource_label": "CLIP 2.1 (fuzzy sets)",
+      "synset_id": "19004",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "contínuo",
+          "weight": 1.7954545
+        },
+        {
+          "word": "constante",
+          "weight": 1.7272727
+        },
+        {
+          "word": "ininterrupto",
+          "weight": 1.3181819
+        },
+        {
+          "word": "sucessivo",
+          "weight": 1.3181819
+        },
+        {
+          "word": "permanente",
+          "weight": 1.2727273
+        },
+        {
+          "word": "frequente",
+          "weight": 1.2272727
+        },
+        {
+          "word": "incessante",
+          "weight": 1.1363636
+        },
+        {
+          "word": "perpétuo",
+          "weight": 1.1363636
+        },
+        {
+          "word": "continuado",
+          "weight": 1.0454545
+        },
+        {
+          "word": "assíduo",
+          "weight": 1.0
+        },
+        {
+          "word": "seguido",
+          "weight": 0.97727275
+        },
+        {
+          "word": "perene",
+          "weight": 0.8888889
+        },
+        {
+          "word": "aturado",
+          "weight": 0.72727275
+        },
+        {
+          "word": "porfioso",
+          "weight": 0.7111111
+        },
+        {
+          "word": "incessável",
+          "weight": 0.6818182
+        },
+        {
+          "word": "ininterrompido",
+          "weight": 0.6818182
+        },
+        {
+          "word": "afio",
+          "weight": 0.65909094
+        },
+        {
+          "word": "consecutivo",
+          "weight": 0.6136364
+        },
+        {
+          "word": "estável",
+          "weight": 0.53333336
+        },
+        {
+          "word": "imutável",
+          "weight": 0.4318182
+        },
+        {
+          "word": "imudável",
+          "weight": 0.4090909
+        },
+        {
+          "word": "invariável",
+          "weight": 0.3409091
+        },
+        {
+          "word": "amiudado",
+          "weight": 0.3181818
+        },
+        {
+          "word": "repetido",
+          "weight": 0.3181818
+        },
+        {
+          "word": "manente",
+          "weight": 0.29545453
+        },
+        {
+          "word": "duradouro",
+          "weight": 0.26666668
+        },
+        {
+          "word": "imediato",
+          "weight": 0.26666668
+        },
+        {
+          "word": "jacente",
+          "weight": 0.25
+        },
+        {
+          "word": "conseguinte",
+          "weight": 0.20454545
+        },
+        {
+          "word": "subsecutivo",
+          "weight": 0.20454545
+        },
+        {
+          "word": "persistente",
+          "weight": 0.2
+        },
+        {
+          "word": "eterno",
+          "weight": 0.17777778
+        },
+        {
+          "word": "miúdo",
+          "weight": 0.17777778
+        },
+        {
+          "word": "vitalício",
+          "weight": 0.1590909
+        },
+        {
+          "word": "firme",
+          "weight": 0.15555556
+        },
+        {
+          "word": "inalterável",
+          "weight": 0.15555556
+        },
+        {
+          "word": "infindável",
+          "weight": 0.15555556
+        },
+        {
+          "word": "regular",
+          "weight": 0.15555556
+        },
+        {
+          "word": "crebro",
+          "weight": 0.13636364
+        },
+        {
+          "word": "periódico",
+          "weight": 0.13636364
+        },
+        {
+          "word": "permanecente",
+          "weight": 0.13636364
+        },
+        {
+          "word": "diligente",
+          "weight": 0.13333334
+        },
+        {
+          "word": "fiel",
+          "weight": 0.13333334
+        },
+        {
+          "word": "sempiterno",
+          "weight": 0.13333334
+        },
+        {
+          "word": "jazente",
+          "weight": 0.11363637
+        },
+        {
+          "word": "reiterado",
+          "weight": 0.11363637
+        },
+        {
+          "word": "sem paradas",
+          "weight": 0.11363637
+        },
+        {
+          "word": "aplicado",
+          "weight": 0.11111111
+        },
+        {
+          "word": "habitual",
+          "weight": 0.11111111
+        },
+        {
+          "word": "imóvel",
+          "weight": 0.11111111
+        },
+        {
+          "word": "ordinário",
+          "weight": 0.11111111
+        },
+        {
+          "word": "uniforme",
+          "weight": 0.11111111
+        },
+        {
+          "word": "usual",
+          "weight": 0.11111111
+        },
+        {
+          "word": "áfio",
+          "weight": 0.09090909
+        },
+        {
+          "word": "comum",
+          "weight": 0.08888889
+        },
+        {
+          "word": "consequente",
+          "weight": 0.08888889
+        },
+        {
+          "word": "consistente",
+          "weight": 0.08888889
+        },
+        {
+          "word": "duplicado",
+          "weight": 0.08888889
+        },
+        {
+          "word": "duradoiro",
+          "weight": 0.08888889
+        },
+        {
+          "word": "mencionado",
+          "weight": 0.08888889
+        },
+        {
+          "word": "perdurável",
+          "weight": 0.08888889
+        },
+        {
+          "word": "perenal",
+          "weight": 0.08888889
+        },
+        {
+          "word": "pontual",
+          "weight": 0.08888889
+        },
+        {
+          "word": "renovado",
+          "weight": 0.08888889
+        },
+        {
+          "word": "seguinte",
+          "weight": 0.08888889
+        },
+        {
+          "word": "usado",
+          "weight": 0.08888889
+        },
+        {
+          "word": "contino",
+          "weight": 0.06818182
+        },
+        {
+          "word": "redito",
+          "weight": 0.06818182
+        },
+        {
+          "word": "definitivo",
+          "weight": 0.06666667
+        },
+        {
+          "word": "esforçado",
+          "weight": 0.06666667
+        },
+        {
+          "word": "imanente",
+          "weight": 0.06666667
+        },
+        {
+          "word": "inabalável",
+          "weight": 0.06666667
+        },
+        {
+          "word": "interminável",
+          "weight": 0.06666667
+        },
+        {
+          "word": "irretratável",
+          "weight": 0.06666667
+        },
+        {
+          "word": "iterativo",
+          "weight": 0.06666667
+        },
+        {
+          "word": "monótono",
+          "weight": 0.06666667
+        },
+        {
+          "word": "perseverante",
+          "weight": 0.06666667
+        },
+        {
+          "word": "acontecedeiro",
+          "weight": 0.045454547
+        },
+        {
+          "word": "consignado",
+          "weight": 0.045454547
+        },
+        {
+          "word": "freqüente",
+          "weight": 0.045454547
+        },
+        {
+          "word": "inflexivo",
+          "weight": 0.045454547
+        },
+        {
+          "word": "invariante",
+          "weight": 0.045454547
+        },
+        {
+          "word": "jornal",
+          "weight": 0.045454547
+        },
+        {
+          "word": "periodico",
+          "weight": 0.045454547
+        },
+        {
+          "word": "por toda vida",
+          "weight": 0.045454547
+        },
+        {
+          "word": "sequencial",
+          "weight": 0.045454547
+        },
+        {
+          "word": "acostumado",
+          "weight": 0.044444446
+        },
+        {
+          "word": "adotado",
+          "weight": 0.044444446
+        },
+        {
+          "word": "atento",
+          "weight": 0.044444446
+        },
+        {
+          "word": "atilado",
+          "weight": 0.044444446
+        },
+        {
+          "word": "cadimo",
+          "weight": 0.044444446
+        },
+        {
+          "word": "consueto",
+          "weight": 0.044444446
+        },
+        {
+          "word": "consuetudinário",
+          "weight": 0.044444446
+        },
+        {
+          "word": "correntio",
+          "weight": 0.044444446
+        },
+        {
+          "word": "costumado",
+          "weight": 0.044444446
+        },
+        {
+          "word": "costumeiro",
+          "weight": 0.044444446
+        },
+        {
+          "word": "costumário",
+          "weight": 0.044444446
+        },
+        {
+          "word": "durador",
+          "weight": 0.044444446
+        },
+        {
+          "word": "durável",
+          "weight": 0.044444446
+        },
+        {
+          "word": "escrito",
+          "weight": 0.044444446
+        },
+        {
+          "word": "escrupuloso",
+          "weight": 0.044444446
+        },
+        {
+          "word": "exato",
+          "weight": 0.044444446
+        },
+        {
+          "word": "futuro",
+          "weight": 0.044444446
+        },
+        {
+          "word": "incansável",
+          "weight": 0.044444446
+        },
+        {
+          "word": "irretractável",
+          "weight": 0.044444446
+        },
+        {
+          "word": "irrevogável",
+          "weight": 0.044444446
+        },
+        {
+          "word": "metódico",
+          "weight": 0.044444446
+        },
+        {
+          "word": "ordenado",
+          "weight": 0.044444446
+        },
+        {
+          "word": "pertinaz",
+          "weight": 0.044444446
+        },
+        {
+          "word": "religioso",
+          "weight": 0.044444446
+        },
+        {
+          "word": "rente",
+          "weight": 0.044444446
+        },
+        {
+          "word": "resultante",
+          "weight": 0.044444446
+        },
+        {
+          "word": "rotineiro",
+          "weight": 0.044444446
+        },
+        {
+          "word": "rítmico",
+          "weight": 0.044444446
+        },
+        {
+          "word": "sólito",
+          "weight": 0.044444446
+        },
+        {
+          "word": "tenaz",
+          "weight": 0.044444446
+        },
+        {
+          "word": "vulgar",
+          "weight": 0.044444446
+        },
+        {
+          "word": "acompanhado",
+          "weight": 0.022222223
+        },
+        {
+          "word": "activo",
+          "weight": 0.022222223
+        },
+        {
+          "word": "adamantino",
+          "weight": 0.022222223
+        },
+        {
+          "word": "adoptado",
+          "weight": 0.022222223
+        },
+        {
+          "word": "alterno",
+          "weight": 0.022222223
+        },
+        {
+          "word": "ativo",
+          "weight": 0.022222223
+        },
+        {
+          "word": "coerente",
+          "weight": 0.022222223
+        },
+        {
+          "word": "crónico",
+          "weight": 0.022222223
+        },
+        {
+          "word": "cíclico",
+          "weight": 0.022222223
+        },
+        {
+          "word": "deitado",
+          "weight": 0.022222223
+        },
+        {
+          "word": "durativo",
+          "weight": 0.022222223
+        },
+        {
+          "word": "efectivo",
+          "weight": 0.022222223
+        },
+        {
+          "word": "escolhido",
+          "weight": 0.022222223
+        },
+        {
+          "word": "estendido",
+          "weight": 0.022222223
+        },
+        {
+          "word": "estereotipado",
+          "weight": 0.022222223
+        },
+        {
+          "word": "eterna",
+          "weight": 0.022222223
+        },
+        {
+          "word": "eternas",
+          "weight": 0.022222223
+        },
+        {
+          "word": "eternos",
+          "weight": 0.022222223
+        },
+        {
+          "word": "fixo",
+          "weight": 0.022222223
+        },
+        {
+          "word": "frequentado",
+          "weight": 0.022222223
+        },
+        {
+          "word": "hereditário",
+          "weight": 0.022222223
+        },
+        {
+          "word": "homogéneo",
+          "weight": 0.022222223
+        },
+        {
+          "word": "imperecível",
+          "weight": 0.022222223
+        },
+        {
+          "word": "inamovível",
+          "weight": 0.022222223
+        },
+        {
+          "word": "inextinguível",
+          "weight": 0.022222223
+        },
+        {
+          "word": "infinita",
+          "weight": 0.022222223
+        },
+        {
+          "word": "infinito",
+          "weight": 0.022222223
+        },
+        {
+          "word": "intemporal",
+          "weight": 0.022222223
+        },
+        {
+          "word": "intermitente",
+          "weight": 0.022222223
+        },
+        {
+          "word": "laborioso",
+          "weight": 0.022222223
+        },
+        {
+          "word": "localizado",
+          "weight": 0.022222223
+        },
+        {
+          "word": "matraqueado",
+          "weight": 0.022222223
+        },
+        {
+          "word": "normal",
+          "weight": 0.022222223
+        },
+        {
+          "word": "novo",
+          "weight": 0.022222223
+        },
+        {
+          "word": "nutrido",
+          "weight": 0.022222223
+        },
+        {
+          "word": "ocasional",
+          "weight": 0.022222223
+        },
+        {
+          "word": "operoso",
+          "weight": 0.022222223
+        },
+        {
+          "word": "pegado",
+          "weight": 0.022222223
+        },
+        {
+          "word": "porfiado",
+          "weight": 0.022222223
+        },
+        {
+          "word": "próximo",
+          "weight": 0.022222223
+        },
+        {
+          "word": "recalcado",
+          "weight": 0.022222223
+        },
+        {
+          "word": "revezado",
+          "weight": 0.022222223
+        },
+        {
+          "word": "sazonal",
+          "weight": 0.022222223
+        },
+        {
+          "word": "seguro",
+          "weight": 0.022222223
+        },
+        {
+          "word": "sem idade",
+          "weight": 0.022222223
+        },
+        {
+          "word": "sistemático",
+          "weight": 0.022222223
+        },
+        {
+          "word": "situado",
+          "weight": 0.022222223
+        },
+        {
+          "word": "sucedido",
+          "weight": 0.022222223
+        },
+        {
+          "word": "sínoco",
+          "weight": 0.022222223
+        },
+        {
+          "word": "trabalhador",
+          "weight": 0.022222223
+        },
+        {
+          "word": "trilhado",
+          "weight": 0.022222223
+        },
+        {
+          "word": "ulterior",
+          "weight": 0.022222223
+        },
+        {
+          "word": "unânime",
+          "weight": 0.022222223
+        },
+        {
+          "word": "vital",
+          "weight": 0.022222223
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "clip21",
+      "resource_label": "CLIP 2.1 (fuzzy sets)",
+      "synset_id": "19737",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "interrompido",
+          "weight": 1.9
+        },
+        {
+          "word": "descontínuo",
+          "weight": 1.1
+        },
+        {
+          "word": "suspenso",
+          "weight": 0.90909094
+        },
+        {
+          "word": "descontinuado",
+          "weight": 0.9
+        },
+        {
+          "word": "incontínuo",
+          "weight": 0.9
+        },
+        {
+          "word": "intercadente",
+          "weight": 0.9
+        },
+        {
+          "word": "interrupto",
+          "weight": 0.9
+        },
+        {
+          "word": "intercepto",
+          "weight": 0.7
+        },
+        {
+          "word": "interceptado",
+          "weight": 0.6
+        },
+        {
+          "word": "sustado",
+          "weight": 0.5
+        },
+        {
+          "word": "cortado",
+          "weight": 0.27272728
+        },
+        {
+          "word": "impedido",
+          "weight": 0.27272728
+        },
+        {
+          "word": "interruto",
+          "weight": 0.2
+        },
+        {
+          "word": "atalhado",
+          "weight": 0.18181819
+        },
+        {
+          "word": "bloqueado",
+          "weight": 0.18181819
+        },
+        {
+          "word": "inaccessível",
+          "weight": 0.18181819
+        },
+        {
+          "word": "inacessível",
+          "weight": 0.18181819
+        },
+        {
+          "word": "intermitente",
+          "weight": 0.18181819
+        },
+        {
+          "word": "irregular",
+          "weight": 0.18181819
+        },
+        {
+          "word": "obstruído",
+          "weight": 0.18181819
+        },
+        {
+          "word": "alternado",
+          "weight": 0.09090909
+        },
+        {
+          "word": "arretado",
+          "weight": 0.09090909
+        },
+        {
+          "word": "detido",
+          "weight": 0.09090909
+        },
+        {
+          "word": "empatado",
+          "weight": 0.09090909
+        },
+        {
+          "word": "interciso",
+          "weight": 0.09090909
+        },
+        {
+          "word": "paralisado",
+          "weight": 0.09090909
+        },
+        {
+          "word": "quebrado",
+          "weight": 0.09090909
+        },
+        {
+          "word": "quebrantado",
+          "weight": 0.09090909
+        },
+        {
+          "word": "solto",
+          "weight": 0.09090909
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "contopt",
+      "resource_label": "CONTO.PT 0.1 (fuzzy)",
+      "synset_id": "5236",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "alternado",
+          "weight": 1.4285715
+        },
+        {
+          "word": "entremeado",
+          "weight": 0.9047619
+        },
+        {
+          "word": "salteado",
+          "weight": 0.9047619
+        },
+        {
+          "word": "revezado",
+          "weight": 0.7619048
+        },
+        {
+          "word": "alterno",
+          "weight": 0.6666667
+        },
+        {
+          "word": "intermeado",
+          "weight": 0.61904764
+        },
+        {
+          "word": "intervalado",
+          "weight": 0.61904764
+        },
+        {
+          "word": "alternativo",
+          "weight": 0.3809524
+        },
+        {
+          "word": "intercalado",
+          "weight": 0.3809524
+        },
+        {
+          "word": "intermitente",
+          "weight": 0.3809524
+        },
+        {
+          "word": "mesclado",
+          "weight": 0.3181818
+        },
+        {
+          "word": "alternante",
+          "weight": 0.2857143
+        },
+        {
+          "word": "interposto",
+          "weight": 0.27272728
+        },
+        {
+          "word": "raiado",
+          "weight": 0.27272728
+        },
+        {
+          "word": "entressachado",
+          "weight": 0.23809524
+        },
+        {
+          "word": "espaçado",
+          "weight": 0.22727273
+        },
+        {
+          "word": "alternativa",
+          "weight": 0.1904762
+        },
+        {
+          "word": "interpolado",
+          "weight": 0.1904762
+        },
+        {
+          "word": "assaltado",
+          "weight": 0.18181819
+        },
+        {
+          "word": "alternador",
+          "weight": 0.14285715
+        },
+        {
+          "word": "intercalar",
+          "weight": 0.14285715
+        },
+        {
+          "word": "recíproco",
+          "weight": 0.13636364
+        },
+        {
+          "word": "surpreendido",
+          "weight": 0.13636364
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "contopt",
+      "resource_label": "CONTO.PT 0.1 (fuzzy)",
+      "synset_id": "33686",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "interrompido",
+          "weight": 1.9
+        },
+        {
+          "word": "descontínuo",
+          "weight": 1.1
+        },
+        {
+          "word": "suspenso",
+          "weight": 0.90909094
+        },
+        {
+          "word": "descontinuado",
+          "weight": 0.9
+        },
+        {
+          "word": "incontínuo",
+          "weight": 0.9
+        },
+        {
+          "word": "intercadente",
+          "weight": 0.9
+        },
+        {
+          "word": "interrupto",
+          "weight": 0.9
+        },
+        {
+          "word": "intercepto",
+          "weight": 0.7
+        },
+        {
+          "word": "interceptado",
+          "weight": 0.6
+        },
+        {
+          "word": "sustado",
+          "weight": 0.5
+        },
+        {
+          "word": "cortado",
+          "weight": 0.27272728
+        },
+        {
+          "word": "impedido",
+          "weight": 0.27272728
+        },
+        {
+          "word": "interruto",
+          "weight": 0.2
+        },
+        {
+          "word": "atalhado",
+          "weight": 0.18181819
+        },
+        {
+          "word": "bloqueado",
+          "weight": 0.18181819
+        },
+        {
+          "word": "inaccessível",
+          "weight": 0.18181819
+        },
+        {
+          "word": "inacessível",
+          "weight": 0.18181819
+        },
+        {
+          "word": "intermitente",
+          "weight": 0.18181819
+        },
+        {
+          "word": "irregular",
+          "weight": 0.18181819
+        },
+        {
+          "word": "obstruído",
+          "weight": 0.18181819
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "fuzzythes",
+      "resource_label": "Fuzzy thesaurus 5rec",
+      "synset_id": "23329",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "incontínuo",
+          "weight": 0.85392505
+        },
+        {
+          "word": "descontinuado",
+          "weight": 0.83151984
+        },
+        {
+          "word": "descontínuo",
+          "weight": 0.77282876
+        },
+        {
+          "word": "intercadente",
+          "weight": 0.6647435
+        },
+        {
+          "word": "interrupto",
+          "weight": 0.18798128
+        },
+        {
+          "word": "interrompido",
+          "weight": 0.1822841
+        },
+        {
+          "word": "intermitente",
+          "weight": 0.13477558
+        },
+        {
+          "word": "sustado",
+          "weight": 0.03337652
+        },
+        {
+          "word": "alternado",
+          "weight": 0.015951466
+        },
+        {
+          "word": "revezado",
+          "weight": 0.014744669
+        },
+        {
+          "word": "irregular",
+          "weight": 0.012749952
+        },
+        {
+          "word": "suspenso",
+          "weight": 0.011995442
+        },
+        {
+          "word": "salteado",
+          "weight": 0.010949937
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "fuzzythes",
+      "resource_label": "Fuzzy thesaurus 5rec",
+      "synset_id": "23659",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "alterno",
+          "weight": 0.6025363
+        },
+        {
+          "word": "revezado",
+          "weight": 0.5456561
+        },
+        {
+          "word": "alternado",
+          "weight": 0.42607638
+        },
+        {
+          "word": "alternativo",
+          "weight": 0.41658312
+        },
+        {
+          "word": "intermitente",
+          "weight": 0.23814277
+        },
+        {
+          "word": "salteado",
+          "weight": 0.15259299
+        },
+        {
+          "word": "intervalado",
+          "weight": 0.09659071
+        },
+        {
+          "word": "entremeado",
+          "weight": 0.083753206
+        },
+        {
+          "word": "recíproco",
+          "weight": 0.0699545
+        },
+        {
+          "word": "intermeado",
+          "weight": 0.06640065
+        },
+        {
+          "word": "mútuo",
+          "weight": 0.06499246
+        },
+        {
+          "word": "intercadente",
+          "weight": 0.03295082
+        },
+        {
+          "word": "descontínuo",
+          "weight": 0.023488438
+        },
+        {
+          "word": "espaçado",
+          "weight": 0.021977415
+        },
+        {
+          "word": "entressachado",
+          "weight": 0.017816402
+        },
+        {
+          "word": "assaltado",
+          "weight": 0.013994651
+        },
+        {
+          "word": "intercalado",
+          "weight": 0.010668469
+        },
+        {
+          "word": "sobressalteado",
+          "weight": 0.010297877
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "fuzzythes",
+      "resource_label": "Fuzzy thesaurus 5rec",
+      "synset_id": "23873",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "interpolado",
+          "weight": 0.19766265
+        },
+        {
+          "word": "intervalado",
+          "weight": 0.17161636
+        },
+        {
+          "word": "entremeado",
+          "weight": 0.080414444
+        },
+        {
+          "word": "salteado",
+          "weight": 0.0762681
+        },
+        {
+          "word": "intermeado",
+          "weight": 0.06526555
+        },
+        {
+          "word": "alternado",
+          "weight": 0.053622458
+        },
+        {
+          "word": "intercalado",
+          "weight": 0.05203812
+        },
+        {
+          "word": "espaçado",
+          "weight": 0.049347095
+        },
+        {
+          "word": "entressachado",
+          "weight": 0.03507137
+        },
+        {
+          "word": "alterno",
+          "weight": 0.023376377
+        },
+        {
+          "word": "revezado",
+          "weight": 0.02299995
+        },
+        {
+          "word": "espacioso",
+          "weight": 0.021034915
+        },
+        {
+          "word": "pausado",
+          "weight": 0.019934127
+        },
+        {
+          "word": "mesclado",
+          "weight": 0.01836514
+        },
+        {
+          "word": "intermitente",
+          "weight": 0.016818564
+        },
+        {
+          "word": "prorrogado",
+          "weight": 0.016291643
+        },
+        {
+          "word": "alternativo",
+          "weight": 0.016270095
+        },
+        {
+          "word": "distanciado",
+          "weight": 0.014840605
+        },
+        {
+          "word": "interposto",
+          "weight": 0.014762541
+        },
+        {
+          "word": "adiado",
+          "weight": 0.013437733
+        },
+        {
+          "word": "espaçoso",
+          "weight": 0.012953565
+        },
+        {
+          "word": "espacejado",
+          "weight": 0.012733294
+        },
+        {
+          "word": "arrastado",
+          "weight": 0.012095669
+        },
+        {
+          "word": "raiado",
+          "weight": 0.011925458
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "fuzzythes",
+      "resource_label": "Fuzzy thesaurus 5rec",
+      "synset_id": "24056",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "entremeado",
+          "weight": 0.14951265
+        },
+        {
+          "word": "intermeado",
+          "weight": 0.1475513
+        },
+        {
+          "word": "entressachado",
+          "weight": 0.1419788
+        },
+        {
+          "word": "intervalado",
+          "weight": 0.09230279
+        },
+        {
+          "word": "intercalado",
+          "weight": 0.06667594
+        },
+        {
+          "word": "alternado",
+          "weight": 0.05503707
+        },
+        {
+          "word": "salteado",
+          "weight": 0.05228761
+        },
+        {
+          "word": "interjacente",
+          "weight": 0.048025656
+        },
+        {
+          "word": "espaçado",
+          "weight": 0.044691086
+        },
+        {
+          "word": "mesclado",
+          "weight": 0.0426835
+        },
+        {
+          "word": "interposto",
+          "weight": 0.03843277
+        },
+        {
+          "word": "raiado",
+          "weight": 0.03634247
+        },
+        {
+          "word": "revezado",
+          "weight": 0.023256753
+        },
+        {
+          "word": "interpolado",
+          "weight": 0.022734318
+        },
+        {
+          "word": "alterno",
+          "weight": 0.02048554
+        },
+        {
+          "word": "intermitente",
+          "weight": 0.01887881
+        },
+        {
+          "word": "intermédio",
+          "weight": 0.017043961
+        },
+        {
+          "word": "misto",
+          "weight": 0.017007226
+        },
+        {
+          "word": "alternativo",
+          "weight": 0.014258055
+        },
+        {
+          "word": "assaltado",
+          "weight": 0.014069264
+        },
+        {
+          "word": "rajado",
+          "weight": 0.01042366
+        },
+        {
+          "word": "sobressalteado",
+          "weight": 0.010352781
+        },
+        {
+          "word": "misturado",
+          "weight": 0.010059412
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "fuzzythes",
+      "resource_label": "Fuzzy thesaurus 5rec",
+      "synset_id": "25210",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "adicional",
+          "weight": 0.17473215
+        },
+        {
+          "word": "acessional",
+          "weight": 0.17397004
+        },
+        {
+          "word": "aditivo",
+          "weight": 0.16919279
+        },
+        {
+          "word": "complementar",
+          "weight": 0.13883418
+        },
+        {
+          "word": "aditício",
+          "weight": 0.1319531
+        },
+        {
+          "word": "suplementário",
+          "weight": 0.12865026
+        },
+        {
+          "word": "complementário",
+          "weight": 0.121374644
+        },
+        {
+          "word": "suplementar",
+          "weight": 0.09616165
+        },
+        {
+          "word": "acessório",
+          "weight": 0.054833062
+        },
+        {
+          "word": "intermitente",
+          "weight": 0.04313605
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "fuzzythes",
+      "resource_label": "Fuzzy thesaurus 5rec",
+      "synset_id": "25214",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "interjacente",
+          "weight": 0.44190052
+        },
+        {
+          "word": "interposto",
+          "weight": 0.25616413
+        },
+        {
+          "word": "intermeado",
+          "weight": 0.18571506
+        },
+        {
+          "word": "entressachado",
+          "weight": 0.17549366
+        },
+        {
+          "word": "entremeado",
+          "weight": 0.1556253
+        },
+        {
+          "word": "intercalado",
+          "weight": 0.15374106
+        },
+        {
+          "word": "intervalado",
+          "weight": 0.06950593
+        },
+        {
+          "word": "intermédio",
+          "weight": 0.04951784
+        },
+        {
+          "word": "mesclado",
+          "weight": 0.04830474
+        },
+        {
+          "word": "salteado",
+          "weight": 0.04190303
+        },
+        {
+          "word": "raiado",
+          "weight": 0.04139337
+        },
+        {
+          "word": "alternado",
+          "weight": 0.041298963
+        },
+        {
+          "word": "intermediário",
+          "weight": 0.024329813
+        },
+        {
+          "word": "espaçado",
+          "weight": 0.022666987
+        },
+        {
+          "word": "interpolado",
+          "weight": 0.019625252
+        },
+        {
+          "word": "revezado",
+          "weight": 0.016537502
+        },
+        {
+          "word": "alterno",
+          "weight": 0.014559285
+        },
+        {
+          "word": "intermitente",
+          "weight": 0.013428967
+        },
+        {
+          "word": "intercalar",
+          "weight": 0.010165988
+        },
+        {
+          "word": "alternativo",
+          "weight": 0.0101333475
+        },
+        {
+          "word": "assaltado",
+          "weight": 0.010015197
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "fuzzythes",
+      "resource_label": "Fuzzy thesaurus 5rec",
+      "synset_id": "26922",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "interpolado",
+          "weight": 0.5766431
+        },
+        {
+          "word": "salteado",
+          "weight": 0.19134334
+        },
+        {
+          "word": "intervalado",
+          "weight": 0.1733222
+        },
+        {
+          "word": "intercalado",
+          "weight": 0.11504172
+        },
+        {
+          "word": "intermitente",
+          "weight": 0.095803276
+        },
+        {
+          "word": "assaltado",
+          "weight": 0.08244446
+        },
+        {
+          "word": "alternado",
+          "weight": 0.0729137
+        },
+        {
+          "word": "revezado",
+          "weight": 0.07065871
+        },
+        {
+          "word": "alterno",
+          "weight": 0.058693208
+        },
+        {
+          "word": "entremeado",
+          "weight": 0.05565718
+        },
+        {
+          "word": "intermeado",
+          "weight": 0.048074055
+        },
+        {
+          "word": "acometido",
+          "weight": 0.043386813
+        },
+        {
+          "word": "agredido",
+          "weight": 0.039031193
+        },
+        {
+          "word": "atacado",
+          "weight": 0.038982045
+        },
+        {
+          "word": "alternativo",
+          "weight": 0.031696234
+        },
+        {
+          "word": "sobressalteado",
+          "weight": 0.0316915
+        },
+        {
+          "word": "entressachado",
+          "weight": 0.023109697
+        },
+        {
+          "word": "espaçado",
+          "weight": 0.016905734
+        },
+        {
+          "word": "espaventado",
+          "weight": 0.014594001
+        },
+        {
+          "word": "intercadente",
+          "weight": 0.014555179
+        },
+        {
+          "word": "trépido",
+          "weight": 0.0128937205
+        },
+        {
+          "word": "estremecido",
+          "weight": 0.0126633765
+        },
+        {
+          "word": "mesclado",
+          "weight": 0.011579055
+        },
+        {
+          "word": "descontínuo",
+          "weight": 0.010704202
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "fuzzythes",
+      "resource_label": "Fuzzy thesaurus 5rec",
+      "synset_id": "26927",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "recíproco",
+          "weight": 0.2159563
+        },
+        {
+          "word": "alternativo",
+          "weight": 0.2057271
+        },
+        {
+          "word": "mútuo",
+          "weight": 0.17703079
+        },
+        {
+          "word": "alterno",
+          "weight": 0.16176926
+        },
+        {
+          "word": "revezado",
+          "weight": 0.12886405
+        },
+        {
+          "word": "alternado",
+          "weight": 0.101267055
+        },
+        {
+          "word": "intermitente",
+          "weight": 0.025667466
+        },
+        {
+          "word": "salteado",
+          "weight": 0.021640718
+        },
+        {
+          "word": "intervalado",
+          "weight": 0.013572419
+        },
+        {
+          "word": "respectivo",
+          "weight": 0.0116899265
+        },
+        {
+          "word": "entremeado",
+          "weight": 0.010362075
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "fuzzythes",
+      "resource_label": "Fuzzy thesaurus 5rec",
+      "synset_id": "26998",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "sustado",
+          "weight": 0.25675514
+        },
+        {
+          "word": "interrupto",
+          "weight": 0.23280752
+        },
+        {
+          "word": "intercadente",
+          "weight": 0.07768015
+        },
+        {
+          "word": "suspenso",
+          "weight": 0.06458457
+        },
+        {
+          "word": "interrompido",
+          "weight": 0.06283041
+        },
+        {
+          "word": "descontinuado",
+          "weight": 0.03133896
+        },
+        {
+          "word": "descontínuo",
+          "weight": 0.029270662
+        },
+        {
+          "word": "incontínuo",
+          "weight": 0.026115393
+        },
+        {
+          "word": "impedido",
+          "weight": 0.010664512
+        },
+        {
+          "word": "intermitente",
+          "weight": 0.010412841
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "fuzzythes",
+      "resource_label": "Fuzzy thesaurus 5rec",
+      "synset_id": "27907",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "acessional",
+          "weight": 0.7785598
+        },
+        {
+          "word": "intermitente",
+          "weight": 0.35481325
+        },
+        {
+          "word": "adicional",
+          "weight": 0.0955261
+        },
+        {
+          "word": "revezado",
+          "weight": 0.08584489
+        },
+        {
+          "word": "alternado",
+          "weight": 0.064136356
+        },
+        {
+          "word": "salteado",
+          "weight": 0.06009449
+        },
+        {
+          "word": "alterno",
+          "weight": 0.048797052
+        },
+        {
+          "word": "intercadente",
+          "weight": 0.04395621
+        },
+        {
+          "word": "descontínuo",
+          "weight": 0.040942654
+        },
+        {
+          "word": "alternativo",
+          "weight": 0.0235816
+        },
+        {
+          "word": "incontínuo",
+          "weight": 0.021501733
+        },
+        {
+          "word": "descontinuado",
+          "weight": 0.017311936
+        },
+        {
+          "word": "intervalado",
+          "weight": 0.012889806
+        },
+        {
+          "word": "entremeado",
+          "weight": 0.012605247
+        },
+        {
+          "word": "interrupto",
+          "weight": 0.0108259255
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "ontopt06",
+      "resource_label": "Onto.PT v0.6",
+      "synset_id": "1386",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "alternado",
+          "weight": 1.0
+        },
+        {
+          "word": "alternativo",
+          "weight": 1.0
+        },
+        {
+          "word": "alterno",
+          "weight": 1.0
+        },
+        {
+          "word": "intercadente",
+          "weight": 1.0
+        },
+        {
+          "word": "intermitente",
+          "weight": 1.0
+        },
+        {
+          "word": "repetir",
+          "weight": 1.0
+        },
+        {
+          "word": "revezado",
+          "weight": 1.0
+        },
+        {
+          "word": "salteado",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "ontopt06",
+      "resource_label": "Onto.PT v0.6",
+      "synset_id": "3833",
+      "pos": "a",
+      "gloss": "que apresenta suspensões ou intervalos desiguais, ( falando se de pulsações ).",
+      "members": [
+        {
+          "word": "acessional",
+          "weight": 1.0
+        },
+        {
+          "word": "intermitente",
+          "weight": 1.0
+        },
+        {
+          "word": "periódico",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "ontopt06",
+      "resource_label": "Onto.PT v0.6",
+      "synset_id": "4134",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "descontinuado",
+          "weight": 1.0
+        },
+        {
+          "word": "descontínuo",
+          "weight": 1.0
+        },
+        {
+          "word": "incontínuo",
+          "weight": 1.0
+        },
+        {
+          "word": "intercadente",
+          "weight": 1.0
+        },
+        {
+          "word": "interciso",
+          "weight": 1.0
+        },
+        {
+          "word": "intermitente",
+          "weight": 1.0
+        },
+        {
+          "word": "interrompido",
+          "weight": 1.0
+        },
+        {
+          "word": "interrupto",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "ontopt06",
+      "resource_label": "Onto.PT v0.6",
+      "synset_id": "4160",
+      "pos": "a",
+      "gloss": "em que há intervalos.",
+      "members": [
+        {
+          "word": "alternado",
+          "weight": 1.0
+        },
+        {
+          "word": "entremeado",
+          "weight": 1.0
+        },
+        {
+          "word": "intermeado",
+          "weight": 1.0
+        },
+        {
+          "word": "intermitente",
+          "weight": 1.0
+        },
+        {
+          "word": "interpolado",
+          "weight": 1.0
+        },
+        {
+          "word": "intervalado",
+          "weight": 1.0
+        },
+        {
+          "word": "intexto",
+          "weight": 1.0
+        },
+        {
+          "word": "salteado",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "ontopt06",
+      "resource_label": "Onto.PT v0.6",
+      "synset_id": "54924",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "intermitente",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "polaridades",
+      "resource_label": "Polarities of Onto.PT",
+      "synset_id": "13335",
+      "pos": "a",
+      "gloss": "Polaridade: -1 (método ANTONIMO_ADJ_DE, ANTONIMO_ADJ_DE)",
+      "members": [
+        {
+          "word": "descontinuado",
+          "weight": 1.0
+        },
+        {
+          "word": "descontínuo",
+          "weight": 1.0
+        },
+        {
+          "word": "incontínuo",
+          "weight": 1.0
+        },
+        {
+          "word": "intercadente",
+          "weight": 1.0
+        },
+        {
+          "word": "interciso",
+          "weight": 1.0
+        },
+        {
+          "word": "intermitente",
+          "weight": 1.0
+        },
+        {
+          "word": "interrompido",
+          "weight": 1.0
+        },
+        {
+          "word": "interrupto",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "thes5rec",
+      "resource_label": "Thesaurus 5rec (crisp)",
+      "synset_id": "18150",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "alternado",
+          "weight": 1.0
+        },
+        {
+          "word": "alterno",
+          "weight": 1.0
+        },
+        {
+          "word": "assaltado",
+          "weight": 1.0
+        },
+        {
+          "word": "entremeado",
+          "weight": 1.0
+        },
+        {
+          "word": "intercalado",
+          "weight": 1.0
+        },
+        {
+          "word": "intermitente",
+          "weight": 1.0
+        },
+        {
+          "word": "interpolado",
+          "weight": 1.0
+        },
+        {
+          "word": "intervalado",
+          "weight": 1.0
+        },
+        {
+          "word": "revezado",
+          "weight": 1.0
+        },
+        {
+          "word": "salteado",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "thes5rec",
+      "resource_label": "Thesaurus 5rec (crisp)",
+      "synset_id": "21772",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "atalhado",
+          "weight": 1.0
+        },
+        {
+          "word": "descontinuado",
+          "weight": 1.0
+        },
+        {
+          "word": "descontínuo",
+          "weight": 1.0
+        },
+        {
+          "word": "incontínuo",
+          "weight": 1.0
+        },
+        {
+          "word": "intercadente",
+          "weight": 1.0
+        },
+        {
+          "word": "interceptado",
+          "weight": 1.0
+        },
+        {
+          "word": "intercepto",
+          "weight": 1.0
+        },
+        {
+          "word": "interciso",
+          "weight": 1.0
+        },
+        {
+          "word": "intermitente",
+          "weight": 1.0
+        },
+        {
+          "word": "interrompido",
+          "weight": 1.0
+        },
+        {
+          "word": "interrupto",
+          "weight": 1.0
+        },
+        {
+          "word": "interruto",
+          "weight": 1.0
+        },
+        {
+          "word": "suspenso",
+          "weight": 1.0
+        },
+        {
+          "word": "sustado",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "thes5rec",
+      "resource_label": "Thesaurus 5rec (crisp)",
+      "synset_id": "23361",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "acessional",
+          "weight": 1.0
+        },
+        {
+          "word": "adicional",
+          "weight": 1.0
+        },
+        {
+          "word": "alternado",
+          "weight": 1.0
+        },
+        {
+          "word": "intermitente",
+          "weight": 1.0
+        },
+        {
+          "word": "revezado",
+          "weight": 1.0
+        },
+        {
+          "word": "salteado",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "thes5rec",
+      "resource_label": "Thesaurus 5rec (crisp)",
+      "synset_id": "23954",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "alternado",
+          "weight": 1.0
+        },
+        {
+          "word": "alternativo",
+          "weight": 1.0
+        },
+        {
+          "word": "alterno",
+          "weight": 1.0
+        },
+        {
+          "word": "entremeado",
+          "weight": 1.0
+        },
+        {
+          "word": "intermeado",
+          "weight": 1.0
+        },
+        {
+          "word": "intermitente",
+          "weight": 1.0
+        },
+        {
+          "word": "intervalado",
+          "weight": 1.0
+        },
+        {
+          "word": "mútuo",
+          "weight": 1.0
+        },
+        {
+          "word": "recíproco",
+          "weight": 1.0
+        },
+        {
+          "word": "revezado",
+          "weight": 1.0
+        },
+        {
+          "word": "salteado",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "fuzzythes",
+      "resource_label": "Fuzzy thesaurus 5rec",
+      "synset_id": "10163",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "sezões",
+          "weight": 1.0
+        },
+        {
+          "word": "febre intermitente",
+          "weight": 0.9764078
+        },
+        {
+          "word": "mefitismo",
+          "weight": 0.9740622
+        },
+        {
+          "word": "maleita-brava",
+          "weight": 0.96621764
+        },
+        {
+          "word": "maleita",
+          "weight": 0.7678413
+        },
+        {
+          "word": "impaludismo",
+          "weight": 0.7366149
+        },
+        {
+          "word": "malária",
+          "weight": 0.72523504
+        },
+        {
+          "word": "paludismo",
+          "weight": 0.72493696
+        },
+        {
+          "word": "sezão",
+          "weight": 0.5273355
+        },
+        {
+          "word": "sezonismo",
+          "weight": 0.48798501
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "thes5rec",
+      "resource_label": "Thesaurus 5rec (crisp)",
+      "synset_id": "8218",
+      "pos": "n",
+      "gloss": "",
+      "members": [
+        {
+          "word": "chucho",
+          "weight": 1.0
+        },
+        {
+          "word": "empaludismo",
+          "weight": 1.0
+        },
+        {
+          "word": "febre intermitente",
+          "weight": 1.0
+        },
+        {
+          "word": "impaludismo",
+          "weight": 1.0
+        },
+        {
+          "word": "maleita",
+          "weight": 1.0
+        },
+        {
+          "word": "maleita-brava",
+          "weight": 1.0
+        },
+        {
+          "word": "malária",
+          "weight": 1.0
+        },
+        {
+          "word": "mefitismo",
+          "weight": 1.0
+        },
+        {
+          "word": "paludismo",
+          "weight": 1.0
+        },
+        {
+          "word": "sezonismo",
+          "weight": 1.0
+        },
+        {
+          "word": "sezão",
+          "weight": 1.0
+        },
+        {
+          "word": "sezões",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    }
+  ]
+}

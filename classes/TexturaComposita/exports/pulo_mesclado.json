@@ -1,0 +1,91 @@
+{
+  "type": "pulo_thesaurus_search",
+  "query": {
+    "query": "mesclado",
+    "pos": null,
+    "mode": "Contains"
+  },
+  "count": 1,
+  "synsets": [
+    {
+      "synset_offset": "por-30-01199083-a",
+      "pos": "a",
+      "gloss": "que consiste em uma variedade aleatória de diferentes tipos\n",
+      "synonyms": [
+        "amalgamado",
+        "cabrito",
+        "diverso",
+        "híbrido",
+        "mesclado",
+        "mestiço",
+        "misto",
+        "misturado",
+        "mulato"
+      ],
+      "ili": [
+        {
+          "ili_offset": "pwn30-01199083-a",
+          "pwn_id": "pwn30-01199083-a",
+          "pwn_version": "3.0",
+          "pwn_offset": "01199083",
+          "part_of_speech": "a",
+          "cili": "i6556",
+          "cili_id": "i6556",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i6556",
+          "source_curie": "oewn-ili:i6556",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-01199083-a",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i6556.html"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "similar to",
+          "targets": [
+            {
+              "words": "heterogéneo",
+              "gloss": "que consiste em elementos que não são do mesmo tipo ou natureza\n"
+            },
+            {
+              "words": "heterogéneo",
+              "gloss": "que consiste em elementos que não são do mesmo tipo ou natureza\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "variedad, variedade, mistura",
+              "gloss": "uma coleção que contém uma variedade de tipos de coisas\n"
+            },
+            {
+              "words": "variedad, variedade, mistura",
+              "gloss": "uma coleção que contém uma variedade de tipos de coisas\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "consistir, constar",
+              "gloss": "ser composta de\n"
+            },
+            {
+              "words": "casta, condição, espécie, género, nação, raça, simulacro, sorte, tipo, forma, classe",
+              "gloss": "uma categoria de coisas distinguidos por alguma característica ou qualidade comum\n"
+            },
+            {
+              "words": "variedad, variedade, mistura",
+              "gloss": "uma coleção que contém uma variedade de tipos de coisas\n"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

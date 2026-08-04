@@ -1,0 +1,4325 @@
+{
+  "type": "pulo_thesaurus_search",
+  "query": {
+    "query": "mistura",
+    "pos": null,
+    "mode": "Contains"
+  },
+  "count": 25,
+  "synsets": [
+    {
+      "synset_offset": "por-30-00380083-n",
+      "pos": "n",
+      "gloss": "o ato de misturar juntos\n",
+      "synonyms": [
+        "mistura"
+      ],
+      "ili": [
+        {
+          "ili_offset": "pwn30-00380083-n",
+          "pwn_id": "pwn30-00380083-n",
+          "pwn_version": "3.0",
+          "pwn_offset": "00380083",
+          "part_of_speech": "n",
+          "cili": "i37405",
+          "cili_id": "i37405",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i37405",
+          "source_curie": "oewn-ili:i37405",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-00380083-n",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i37405.html"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "(química, física) incapaz de mistura\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(usada de metais) degradada pela mistura com um elemento inferior\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "misturar",
+              "gloss": "Adicionar como um elemento adicional ou parte\n"
+            },
+            {
+              "words": "combinar, misturar",
+              "gloss": "Misture diferentes elementos\n"
+            },
+            {
+              "words": "misturar",
+              "gloss": "mistura ou mistura\n"
+            },
+            {
+              "words": "misturar",
+              "gloss": "Combinar (sinais eletrônicos)\n"
+            },
+            {
+              "words": "misturar",
+              "gloss": "misturar de modo a fazer uma ordem aleatória ou arranjo\n"
+            },
+            {
+              "words": "misturar",
+              "gloss": "trazer ou combinar entre si ou com qualquer outra coisa\n"
+            },
+            {
+              "words": "alternar, entremear, intercalar, interpor, combinar, misturar",
+              "gloss": "combinar em uma\n"
+            },
+            {
+              "words": "misturar",
+              "gloss": "Adicionar como um elemento adicional ou parte\n"
+            },
+            {
+              "words": "combinar, misturar",
+              "gloss": "Misture diferentes elementos\n"
+            },
+            {
+              "words": "misturar",
+              "gloss": "mistura ou mistura\n"
+            },
+            {
+              "words": "misturar",
+              "gloss": "Combinar (sinais eletrônicos)\n"
+            },
+            {
+              "words": "misturar",
+              "gloss": "misturar de modo a fazer uma ordem aleatória ou arranjo\n"
+            },
+            {
+              "words": "misturar",
+              "gloss": "trazer ou combinar entre si ou com qualquer outra coisa\n"
+            },
+            {
+              "words": "alternar, entremear, intercalar, interpor, combinar, misturar",
+              "gloss": "combinar em uma\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "combinação, composição",
+              "gloss": "o ato de combinar as coisas para formar um todo novo\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "misturar",
+              "gloss": "trazer ou combinar entre si ou com qualquer outra coisa\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-00380696-n",
+      "pos": "n",
+      "gloss": "o ato de misturar componentes cuidadosamente\n",
+      "synonyms": [
+        "mistura"
+      ],
+      "ili": [
+        {
+          "ili_offset": "pwn30-00380696-n",
+          "pwn_id": "pwn30-00380696-n",
+          "pwn_version": "3.0",
+          "pwn_offset": "00380696",
+          "part_of_speech": "n",
+          "cili": "i37407",
+          "cili_id": "i37407",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i37407",
+          "source_curie": "oewn-ili:i37407",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-00380696-n",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i37407.html"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "hyponym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "um fluindo juntos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o ato de fazer algo homogênea ou uniforme em composição\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "rock",
+              "gloss": "um gênero de música popular originário da década de 1950; uma mistura de preto rhythm-and-blues com country-and-western branco\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "blend pungente de cominho e coentro em pó de sementes e açafrão e outras especiarias\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "combinar, misturar",
+              "gloss": "Misture diferentes elementos\n"
+            },
+            {
+              "words": "alternar, entremear, intercalar, interpor, combinar, misturar",
+              "gloss": "combinar em uma\n"
+            },
+            {
+              "words": "combinar, misturar",
+              "gloss": "Misture diferentes elementos\n"
+            },
+            {
+              "words": "alternar, entremear, intercalar, interpor, combinar, misturar",
+              "gloss": "combinar em uma\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "combinação, composição",
+              "gloss": "o ato de combinar as coisas para formar um todo novo\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "alternar, entremear, intercalar, interpor, combinar, misturar",
+              "gloss": "combinar em uma\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-07047505-n",
+      "pos": "n",
+      "gloss": "uma composição musical que consiste de uma série de músicas ou de outras peças musicais a partir de várias fontes\n",
+      "synonyms": [
+        "mistura"
+      ],
+      "ili": [
+        {
+          "ili_offset": "pwn30-07047505-n",
+          "pwn_id": "pwn30-07047505-n",
+          "pwn_version": "3.0",
+          "pwn_offset": "07047505",
+          "part_of_speech": "n",
+          "cili": "i73704",
+          "cili_id": "i73704",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i73704",
+          "source_curie": "oewn-ili:i73704",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-07047505-n",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i73704.html"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "um medley mudando constantemente de imagens reais ou imaginários (como em um sonho)\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "peça, obra, composição",
+              "gloss": "uma obra musical que tenha sido criado\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "musical",
+              "gloss": "caracterizado pela ou capaz de produzir música\n"
+            },
+            {
+              "words": "peça, obra, composição",
+              "gloss": "uma obra musical que tenha sido criado\n"
+            },
+            {
+              "words": "canção",
+              "gloss": "uma composição musical curto com palavras\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-07374756-n",
+      "pos": "n",
+      "gloss": "um evento que combina as coisas de uma mistura de\n",
+      "synonyms": [
+        "mistura"
+      ],
+      "ili": [
+        {
+          "ili_offset": "pwn30-07374756-n",
+          "pwn_id": "pwn30-07374756-n",
+          "pwn_version": "3.0",
+          "pwn_offset": "07374756",
+          "part_of_speech": "n",
+          "cili": "i75442",
+          "cili_id": "i75442",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i75442",
+          "source_curie": "oewn-ili:i75442",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-07374756-n",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i75442.html"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "hyponym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "uma ocorrência de uma mistura incomum\n"
+            },
+            {
+              "words": "liga",
+              "gloss": "uma ocorrência da mistura completa\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "tendo um gosto que é uma mistura de amargura e doçura\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "de ou que contenham uma mistura de palavras em latim e palavras vernaculares misturados\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura dura de sons\n"
+            },
+            {
+              "words": "atoarda, eco, nomeada, roleta, ruído, toada, versão, boato, rumor, voz",
+              "gloss": "gossip (geralmente uma mistura de verdade e mentira) passou em torno de boca em boca\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma ocorrência de uma mistura incomum\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "misturar",
+              "gloss": "Adicionar como um elemento adicional ou parte\n"
+            },
+            {
+              "words": "combinar, misturar",
+              "gloss": "Misture diferentes elementos\n"
+            },
+            {
+              "words": "misturar",
+              "gloss": "Combinar (sinais eletrônicos)\n"
+            },
+            {
+              "words": "misturar",
+              "gloss": "misturar de modo a fazer uma ordem aleatória ou arranjo\n"
+            },
+            {
+              "words": "misturar",
+              "gloss": "trazer ou combinar entre si ou com qualquer outra coisa\n"
+            },
+            {
+              "words": "misturar",
+              "gloss": "Adicionar como um elemento adicional ou parte\n"
+            },
+            {
+              "words": "combinar, misturar",
+              "gloss": "Misture diferentes elementos\n"
+            },
+            {
+              "words": "misturar",
+              "gloss": "Combinar (sinais eletrônicos)\n"
+            },
+            {
+              "words": "misturar",
+              "gloss": "misturar de modo a fazer uma ordem aleatória ou arranjo\n"
+            },
+            {
+              "words": "misturar",
+              "gloss": "trazer ou combinar entre si ou com qualquer outra coisa\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "combinação, mistura",
+              "gloss": "uma ocorrência que resulta em coisas que estão sendo unidos\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "acontecimento, evento",
+              "gloss": "algo que acontece em um determinado lugar e tempo\n"
+            },
+            {
+              "words": "combinar, misturar",
+              "gloss": "Misture diferentes elementos\n"
+            },
+            {
+              "words": "combinar",
+              "gloss": "combinar de modo a formar um todo; misturar\n"
+            },
+            {
+              "words": "coisa",
+              "gloss": "uma entidade que não é nomeada especificamente\n"
+            },
+            {
+              "words": "variedad, variedade, mistura",
+              "gloss": "uma coleção que contém uma variedade de tipos de coisas\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-07882497-n",
+      "pos": "n",
+      "gloss": "um género alimentício feita pela combinação de diferentes ingredientes\n",
+      "synonyms": [
+        "mistura"
+      ],
+      "ili": [
+        {
+          "ili_offset": "pwn30-07882497-n",
+          "pwn_id": "pwn30-07882497-n",
+          "pwn_version": "3.0",
+          "pwn_offset": "07882497",
+          "part_of_speech": "n",
+          "cili": "i78660",
+          "cili_id": "i78660",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i78660",
+          "source_curie": "oewn-ili:i78660",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-07882497-n",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i78660.html"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "hyponym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "mistura temperada de passas picadas e maçãs e outros ingredientes, com ou sem carne\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de ingredientes experientes usadas para carnes e vegetais stuff\n"
+            },
+            {
+              "words": "roux",
+              "gloss": "uma mistura de gordura e de farinha aquecida e usada como uma base para molhos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura líquida ou semi-líquida, a partir de farinha de trigo, ovos e leite, usado no cozimento\n"
+            },
+            {
+              "words": "pasta, massa",
+              "gloss": "uma mistura de farinha firme o suficiente para amassar ou rolo\n"
+            },
+            {
+              "words": "mistura",
+              "gloss": "uma mistura preparada comercialmente de ingredientes secos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de alimentos usados ​​para preencher pastelaria ou sanduíches etc.\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "acrescentar",
+              "gloss": "incorporar um ingrediente alimentar em uma mistura por vezes entregá-lo sem mexer ou bater\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Tempere com uma mistura de especiarias; típico da culinária indiana\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de frutas cortadas ou em cubos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "mistura saborosa ou líquido em que os alimentos mordida de tamanho são mergulhados\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma sobremesa gelada consistindo de uma mistura de pudim e porcas e (por vezes) de um licor\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "adoçado mistura de leite e ovos cozidos ou cozidos ou congelados\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "concha de massa pequena para misturas cremosas de alimentos picados\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "torta aberta preenchido com uma mistura de migalhas doces e melaço\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "shell colar sopro preenchido com uma mistura carne saborosa geralmente com um molho\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "inchado levemente doce mistura de ovos com sabor de limão polvilhado com açúcar de confeiteiro e servido com geléia ou um vinho ou frutas molho\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a mistura de gordura e magra em um corte de carne\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "mistura temperada de passas picadas e maçãs e outros ingredientes, com ou sem carne\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de ingredientes experientes usadas para carnes e vegetais stuff\n"
+            },
+            {
+              "words": "farsa",
+              "gloss": "mistura de frango cru chão e cogumelos com pistachios e trufas e cebola e salsa e muita manteiga e amarrados com ovos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "mistura de cereais secos untoasted e frutas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Cogumelos recheados com qualquer uma das numerosas misturas de por exemplo, carnes ou nozes, marisco ou espinafre\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "mistura de rações para animais terrestres\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de sementes utilizadas para alimentar as aves em gaiolas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "misturas de alimentos ou dispostos em uma placa ou jogou e servido com um curativo úmido; geralmente constituídos ou incluindo greens\n"
+            },
+            {
+              "words": "ingrediente",
+              "gloss": "alimentar que é um componente de uma mistura em cozedura\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Brown molho com tomates e uma mistura de cenouras caramelizadas picada e cebola e aipo temperado com Madeira\n"
+            },
+            {
+              "words": "roux",
+              "gloss": "uma mistura de gordura e de farinha aquecida e usada como uma base para molhos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "ovos batidos ou uma mistura de ovo cozido até ficar firme; pode ser dobrado em torno eg presunto ou queijo ou geléia\n"
+            },
+            {
+              "words": "pasta, massa",
+              "gloss": "uma mistura saborosa para ser espalhado no pão ou bolachas ou usado na preparação de outros pratos\n"
+            },
+            {
+              "words": "pasta, massa",
+              "gloss": "uma mistura de farinha firme o suficiente para amassar ou rolo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Descoberta italiana feita de pão fina massa de propagação com uma mistura temperada de molho por exemplo, tomate e queijo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "casos de tomate cheio de várias misturas e brevemente cozido\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "casos de tomate preenchido com várias misturas de saladas e servido frio\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "bife assado no molho de tomate e cebola\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "milho e massa de farinha de milho recheado com uma mistura de carne, em seguida, envolto em palha de milho e cozido no vapor\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de carne coberto com pão de milho recheio que se assemelha a um prato mexicano\n"
+            },
+            {
+              "words": "mistura",
+              "gloss": "uma mistura preparada comercialmente de ingredientes secos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de alimentos usados ​​para preencher pastelaria ou sanduíches etc.\n"
+            },
+            {
+              "words": "cerveja",
+              "gloss": "um nome genérico para as bebidas alcoólicas feitas por fermentação de um cereal (ou mistura de cereais) com sabor de lúpulo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um licor preparados com uma mistura de ingredientes (como ameixas e passas, leite e açúcar) que pode ser fermentada para produzir álcool; feita por presidiários\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "combinar, misturar",
+              "gloss": "Misture diferentes elementos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "preparar ou cozinhar misturando ingredientes\n"
+            },
+            {
+              "words": "combinar, misturar",
+              "gloss": "Misture diferentes elementos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "preparar ou cozinhar misturando ingredientes\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "alimento, comida",
+              "gloss": "uma substância que pode ser utilizada ou preparada para uso, como alimento\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "combinar, misturar",
+              "gloss": "Misture diferentes elementos\n"
+            },
+            {
+              "words": "compor, preparar, fazer, tornar, abrir",
+              "gloss": "fazer moldar ou reunindo constituintes\n"
+            },
+            {
+              "words": "alimento, comida",
+              "gloss": "uma substância que pode ser utilizada ou preparada para uso, como alimento\n"
+            },
+            {
+              "words": "ingrediente",
+              "gloss": "alimentar que é um componente de uma mistura em cozedura\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-07882886-n",
+      "pos": "n",
+      "gloss": "uma mistura preparada comercialmente de ingredientes secos\n",
+      "synonyms": [
+        "mistura"
+      ],
+      "ili": [
+        {
+          "ili_offset": "pwn30-07882886-n",
+          "pwn_id": "pwn30-07882886-n",
+          "pwn_version": "3.0",
+          "pwn_offset": "07882886",
+          "part_of_speech": "n",
+          "cili": "i78661",
+          "cili_id": "i78661",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i78661",
+          "source_curie": "oewn-ili:i78661",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-07882886-n",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i78661.html"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "hyponym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "uma preparação comercial contendo a maior parte dos ingredientes para um prato\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura comercialmente preparado de farinha e sal e um agente de fermentação\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura comercial para fazer brownies\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura comercial para fazer um bolo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura comercial para fazer limonada\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "mistura",
+              "gloss": "um género alimentício feita pela combinação de diferentes ingredientes\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "comercialmente",
+              "gloss": "de forma comercial\n"
+            },
+            {
+              "words": "seco",
+              "gloss": "livre de líquido ou umidade; falta de umidade natural ou normal ou deficiente em água; ou não está mais molhado\n"
+            },
+            {
+              "words": "ingrediente",
+              "gloss": "alimentar que é um componente de uma mistura em cozedura\n"
+            },
+            {
+              "words": "mistura",
+              "gloss": "um género alimentício feita pela combinação de diferentes ingredientes\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-08398773-n",
+      "pos": "n",
+      "gloss": "uma coleção que contém uma variedade de tipos de coisas\n",
+      "synonyms": [
+        "variedad",
+        "variedade",
+        "mistura"
+      ],
+      "ili": [
+        {
+          "ili_offset": "pwn30-08398773-n",
+          "pwn_id": "pwn30-08398773-n",
+          "pwn_version": "3.0",
+          "pwn_offset": "08398773",
+          "part_of_speech": "n",
+          "cili": "i81234",
+          "cili_id": "i81234",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i81234",
+          "source_curie": "oewn-ili:i81234",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-08398773-n",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i81234.html"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "hyponym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "uma variedade de produtos diversos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura temível\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma variedade de coisas ou atividades diferentes\n"
+            },
+            {
+              "words": "selecção",
+              "gloss": "uma variedade de coisas das quais a escolha pode ser feita\n"
+            },
+            {
+              "words": "amálgama, mistura",
+              "gloss": "um sortimento variado de coisas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma variedade desconcertante\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma variedade de várias amostras\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "balbúrdia, barafunda, bazar, certame, feira",
+              "gloss": "uma venda de miscelânea; muitas vezes, para a caridade\n"
+            },
+            {
+              "words": "amalgamado, cabrito, diverso, híbrido, mesclado, mestiço, misto, misturado, mulato",
+              "gloss": "que consiste em uma variedade aleatória de diferentes tipos\n"
+            },
+            {
+              "words": "grotesco",
+              "gloss": "arte caracteriza-se por uma mistura incongruente de partes de seres humanos e animais entrelaçada com plantas\n"
+            },
+            {
+              "words": "mistura",
+              "gloss": "um evento que combina as coisas de uma mistura de\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma variedade de alimentos começando com arenque ou enguia fumada ou salmão etc com pão e manteiga; em seguida, queijos e ovos e vegetais em conserva e aspics; alimentos quentes, finalmente; serviu como uma refeição buffet\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de ervas frescas picadinhas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma variedade de produtos diversos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura temível\n"
+            },
+            {
+              "words": "selecção",
+              "gloss": "uma variedade de coisas das quais a escolha pode ser feita\n"
+            },
+            {
+              "words": "amálgama, mistura",
+              "gloss": "um sortimento variado de coisas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma variedade desconcertante\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma variedade de várias amostras\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Estados Unidos escritor cujos romances e contos são uma mistura de realismo e da sátira e da ficção científica (nascido em 1922)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um tumor que consiste de uma mistura de tecidos não normalmente encontradas nesse local\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "combinar, misturar",
+              "gloss": "Misture diferentes elementos\n"
+            },
+            {
+              "words": "variar",
+              "gloss": "fazer algo mais diversas e variadas\n"
+            },
+            {
+              "words": "amalgamado, cabrito, diverso, híbrido, mesclado, mestiço, misto, misturado, mulato",
+              "gloss": "que consiste em uma variedade aleatória de diferentes tipos\n"
+            },
+            {
+              "words": "combinar, misturar",
+              "gloss": "Misture diferentes elementos\n"
+            },
+            {
+              "words": "variar",
+              "gloss": "fazer algo mais diversas e variadas\n"
+            },
+            {
+              "words": "amalgamado, cabrito, diverso, híbrido, mesclado, mestiço, misto, misturado, mulato",
+              "gloss": "que consiste em uma variedade aleatória de diferentes tipos\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "aglomeração, ajuntamento, concentração, convergência, grupo, reunião, série, acumulação, coleção, recolha, conjunto",
+              "gloss": "várias coisas agrupados ou considerados como um todo\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "coisa",
+              "gloss": "uma entidade que não é nomeada especificamente\n"
+            },
+            {
+              "words": "casta, condição, espécie, género, nação, raça, simulacro, sorte, tipo, forma, classe",
+              "gloss": "uma categoria de coisas distinguidos por alguma característica ou qualidade comum\n"
+            },
+            {
+              "words": "aglomeração, ajuntamento, concentração, convergência, grupo, reunião, série, acumulação, coleção, recolha, conjunto",
+              "gloss": "várias coisas agrupados ou considerados como um todo\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-08399977-n",
+      "pos": "n",
+      "gloss": "um sortimento variado de coisas\n",
+      "synonyms": [
+        "amálgama",
+        "mistura"
+      ],
+      "ili": [
+        {
+          "ili_offset": "pwn30-08399977-n",
+          "pwn_id": "pwn30-08399977-n",
+          "pwn_version": "3.0",
+          "pwn_offset": "08399977",
+          "part_of_speech": "n",
+          "cili": "i81239",
+          "cili_id": "i81239",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i81239",
+          "source_curie": "oewn-ili:i81239",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-08399977-n",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i81239.html"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "um invólucro ou recipiente para probabilidades e extremidades\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "adicional chances não especificadas e extremidades; mais da mesma\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um depósito em uma casa onde probabilidades e extremidades podem ser armazenados (principalmente móveis)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "recipiente que contém miudezas (como materiais de costura)\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "variedad, variedade, mistura",
+              "gloss": "uma coleção que contém uma variedade de tipos de coisas\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "coisa",
+              "gloss": "uma entidade que não é nomeada especificamente\n"
+            },
+            {
+              "words": "variedad, variedade, mistura",
+              "gloss": "uma coleção que contém uma variedade de tipos de coisas\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-14487598-n",
+      "pos": "n",
+      "gloss": "o estado de prejudicar a qualidade ou a redução do valor de algo\n",
+      "synonyms": [
+        "mistura"
+      ],
+      "ili": [
+        {
+          "ili_offset": "pwn30-14487598-n",
+          "pwn_id": "pwn30-14487598-n",
+          "pwn_version": "3.0",
+          "pwn_offset": "14487598",
+          "part_of_speech": "n",
+          "cili": "i113135",
+          "cili_id": "i113135",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i113135",
+          "source_curie": "oewn-ili:i113135",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-14487598-n",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i113135.html"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "limpo",
+              "gloss": "livre de mistura com elementos nocivos; limpar\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "a condição de ser impura\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "estado",
+              "gloss": "a forma como algo é com relação a seus principais atributos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "fazer pior ou menos eficaz\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-14586258-n",
+      "pos": "n",
+      "gloss": "(Química) uma substância composta por duas ou mais substâncias misturadas (não em proporções fixas e não com ligação química)\n",
+      "synonyms": [
+        "mistura"
+      ],
+      "ili": [
+        {
+          "ili_offset": "pwn30-14586258-n",
+          "pwn_id": "pwn30-14586258-n",
+          "pwn_version": "3.0",
+          "pwn_offset": "14586258",
+          "part_of_speech": "n",
+          "cili": "i113677",
+          "cili_id": "i113677",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i113677",
+          "source_curie": "oewn-ili:i113677",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-14586258-n",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i113677.html"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "hyponym",
+          "targets": [
+            {
+              "words": "liga",
+              "gloss": "uma mistura contendo dois ou mais elementos metálicos ou elementos metálicos e não metálicos geralmente fundidos ou dissolvendo-se uns aos outros quando fundido\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura com propriedades entre aqueles de uma solução e suspensão fina\n"
+            },
+            {
+              "words": "composição",
+              "gloss": "uma mistura de ingredientes\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura cujos componentes podem ser separados por meios mecânicos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de substâncias com um ponto de fusão mínimo\n"
+            },
+            {
+              "words": "dissolução, solução",
+              "gloss": "uma mistura homogénea de duas ou mais substâncias; frequentemente (mas não necessariamente) uma solução líquida\n"
+            },
+            {
+              "words": "suspensão",
+              "gloss": "uma mistura em que as partículas finas são suspensas num fluido, onde eles são apoiados por flutuabilidade\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de substâncias (geralmente de sal e gelo) para obter uma temperatura abaixo do ponto de congelação da água\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura usada por gregos bizantinos que foi muitas vezes dispararam contra adversários; pega fogo quando molhada\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de laranja gomoso de óxidos de urânio e silicatos que ocorrem naturalmente na hidratação e na oxidação das uranimita\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de substâncias que ocorrem em camadas distintas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de sulfuretos que se forma quando os minérios de sulfureto de metal são fundidas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de oxigênio e acetileno; utilizado para criar altas temperaturas, para corte ou soldadura de metais\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura semi-sólida de hidrocarbonetos obtidos a partir do petróleo; utilizados em pomadas medicinais e para a lubrificação\n"
+            },
+            {
+              "words": "morteiro, gesso",
+              "gloss": "uma mistura de cal ou gesso com areia e água; endurece na forma de um sólido liso; usado para cobrir paredes e tectos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de hidróxidos de sódio e de cálcio; absorve líquidos e gases\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": ""
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "cortar, diluir, reduzir",
+              "gloss": "diminuir a força ou o sabor de uma solução ou mistura\n"
+            },
+            {
+              "words": "concentração",
+              "gloss": "reforço da concentração (a partir de um soluto numa mistura) removendo material diluindo\n"
+            },
+            {
+              "words": "acrescentar",
+              "gloss": "incorporar um ingrediente alimentar em uma mistura por vezes entregá-lo sem mexer ou bater\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "nublado com uma mistura de fumaça e neblina\n"
+            },
+            {
+              "words": "compatível",
+              "gloss": "capazes de formar uma mistura homogênea que não separa nem é alterada pela interação química\n"
+            },
+            {
+              "words": "incompatível",
+              "gloss": "usado especialmente de sólidos ou soluções; incapaz de mesclagem em uma mistura homogênea e estável\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "revestimento com uma mistura de gesso e massa corrida\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "trabalhar uma mistura molhada, tais como concreto ou barro\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(dos alimentos), coberto com um revestimento brilhante, aplicando a mistura de ovo ou um açúcar ou gelatina, por exemplo, batida\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Tempere com uma mistura de especiarias; típico da culinária indiana\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de metila e cloreto de etilo; pulverizado sobre como anestésico local\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "precipitar-se como uma mistura de chuva e neve\n"
+            },
+            {
+              "words": "base",
+              "gloss": "o principal ingrediente de uma mistura\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de calomelano e o limewater é usado em feridas sifilíticos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "mistura de algodão-pólvora com nitroglicerina\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um queimador de gás utilizado em laboratórios; tem uma válvula de ar para regular a mistura de gás e ar\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "consagrada uma pomada consistindo de uma mistura de óleo e bálsamo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a gravação (coluna ou tira de papel) na qual os componentes de uma mistura são absorvidos em cromatografia\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um tubo vertical de vidro utilizado na cromatografia de coluna; uma mistura é deitada no topo e lavou-se através de uma substância estacionária onde os componentes da mistura são selectivamente adsorvido para formar bandas coloridas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de resinas e ceras para remover pêlos indesejáveis ​​cosmeticamente; mistura quente é aplicado à superfície e, após o arrefecimento é puxado para fora levando com ela os cabelos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "que é uma mistura explosiva\n"
+            },
+            {
+              "words": "ingrediente",
+              "gloss": "um componente de uma mistura ou combinação\n"
+            },
+            {
+              "words": "mina",
+              "gloss": "mistura de grafite com argila em diferentes graus de dureza; a substância de marcação em um lápis\n"
+            },
+            {
+              "words": "tinta, pintura",
+              "gloss": "uma substância utilizada como um revestimento para proteger ou decorar uma superfície (especialmente uma mistura de pigmento em suspensão num líquido); seca para formar um revestimento duro\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de verde-amarelo de antibióticos obtidos de bacilo de pus verde\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de antibióticos aplicados localmente para infecções causadas por bactérias Gram-positivas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um tecido feito a partir de uma mistura twilled de algodão e lã\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Química e física) direito indicando que a pressão exercida por uma mistura de gases é igual à soma das pressões parciais dos gases na mistura; a pressão de um gás numa mistura é igual à pressão que iria exercer se o mesmo volume ocupado por si só, à mesma temperatura\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura comercialmente preparado de farinha e sal e um agente de fermentação\n"
+            },
+            {
+              "words": "bolo",
+              "gloss": "bens cozidos produzidos a partir de ou com base em uma mistura de farinha, o açúcar, os ovos, e gordura\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "bolo ou coffeecake coberto com uma mistura de açúcar e manteiga e farinha\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "inchado levemente doce mistura de ovos com sabor de limão polvilhado com açúcar de confeiteiro e servido com geléia ou um vinho ou frutas molho\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "mistura temperada de passas picadas e maçãs e outros ingredientes, com ou sem carne\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de ingredientes experientes usadas para carnes e vegetais stuff\n"
+            },
+            {
+              "words": "farsa",
+              "gloss": "mistura de frango cru chão e cogumelos com pistachios e trufas e cebola e salsa e muita manteiga e amarrados com ovos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "pão de trigo branco criado por uma bactéria tolerante ao sal, em uma mistura de sal e ou polpa de farinha de milho ou de batata\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "mistura de cereais secos untoasted e frutas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Cogumelos recheados com qualquer uma das numerosas misturas de por exemplo, carnes ou nozes, marisco ou espinafre\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "mistura de rações para animais terrestres\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de sementes utilizadas para alimentar as aves em gaiolas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "misturas de alimentos ou dispostos em uma placa ou jogou e servido com um curativo úmido; geralmente constituídos ou incluindo greens\n"
+            },
+            {
+              "words": "ingrediente",
+              "gloss": "alimentar que é um componente de uma mistura em cozedura\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "misturas de vinagre ou vinho e azeite com diversas especiarias e temperos; utilizado para absorver os alimentos antes de cozinhar\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Brown molho com tomates e uma mistura de cenouras caramelizadas picada e cebola e aipo temperado com Madeira\n"
+            },
+            {
+              "words": "roux",
+              "gloss": "uma mistura de gordura e de farinha aquecida e usada como uma base para molhos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "ovos batidos ou uma mistura de ovo cozido até ficar firme; pode ser dobrado em torno eg presunto ou queijo ou geléia\n"
+            },
+            {
+              "words": "pasta, massa",
+              "gloss": "uma mistura de farinha firme o suficiente para amassar ou rolo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura contendo metade do volume de álcool a 60 graus Fahrenheit\n"
+            },
+            {
+              "words": "cerveja",
+              "gloss": "um nome genérico para as bebidas alcoólicas feitas por fermentação de um cereal (ou mistura de cereais) com sabor de lúpulo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "mistura de duas ou mais uísques ou de um uísque e álcool neutro\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um licor preparados com uma mistura de ingredientes (como ameixas e passas, leite e açúcar) que pode ser fermentada para produzir álcool; feita por presidiários\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "neve parcialmente derretida (ou uma mistura de chuva e neve)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "valioso prado e pastagem na Europa e especialmente central dos Estados Unidos ter caules altos e brilhantes folhas verdes esguios; um chefe constituinte em misturas grama gramado\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um processo industrial de fabricação de grafite por aquecimento de uma mistura de argila e coque\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um processo usado para a separação de misturas por virtude de diferenças na absorção\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o processo de obtenção de algo de uma mistura ou composto por meios químicos ou físicos ou mecânicos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a proporção de uma substância que está contida em uma mistura ou liga etc.\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "poluição do ar por uma mistura de fumaça e neblina\n"
+            },
+            {
+              "words": "liga",
+              "gloss": "uma mistura contendo dois ou mais elementos metálicos ou elementos metálicos e não metálicos geralmente fundidos ou dissolvendo-se uns aos outros quando fundido\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura com propriedades entre aqueles de uma solução e suspensão fina\n"
+            },
+            {
+              "words": "composição",
+              "gloss": "uma mistura de ingredientes\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura cujos componentes podem ser separados por meios mecânicos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de substâncias com um ponto de fusão mínimo\n"
+            },
+            {
+              "words": "dissolução, solução",
+              "gloss": "uma mistura homogénea de duas ou mais substâncias; frequentemente (mas não necessariamente) uma solução líquida\n"
+            },
+            {
+              "words": "suspensão",
+              "gloss": "uma mistura em que as partículas finas são suspensas num fluido, onde eles são apoiados por flutuabilidade\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um mineral de cera que é uma mistura de hidrocarbonetos e ocorre em associação com éter de petróleo; algumas variedades são usadas em fazer ceresin e velas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "mistura gasosa produzida por destilação de carvão betuminoso e utilizado para aquecimento e iluminação\n"
+            },
+            {
+              "words": "gasolina, petróleo",
+              "gloss": "uma mistura inflamável de hidrocarbonetos voláteis (hexano e heptano e octano, etc.) derivados de petróleo; usado principalmente como combustível em motores de combustão interna\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de massa semelhante a de badejo e óleo de linhaça fervido; utilizado especialmente para corrigir carpintaria ou seguras painéis de vidro\n"
+            },
+            {
+              "words": "pasta, massa",
+              "gloss": "qualquer mistura com uma consistência macia e maleável\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de sais solúveis encontradas em solos áridos e alguns corpos d&#39;água; prejudiciais para a agricultura\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma liga de mercúrio com outro metal (geralmente de prata) usado por dentistas para preencher cavidades nos dentes; com exceção de ferro e platina todos os metais se dissolvem em mercúrio e químicos referem-se às misturas de mercúrio resultantes como amálgamas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de gases tóxicos (incluindo dióxido de carbono e monóxido de carbono e de azoto) após uma explosão de uma mina no grisu\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de gases (principalmente metano) que se formam em minas de carvão e tornar-se explosivo quando misturado com o ar\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de dois ou mais álcoois isoméricos; usado como um solvente e na síntese orgânica\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura corrosiva amarelo fumegante de ácido nítrico e ácido clorídrico que se dissolve metais (incluindo ouro)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer uma das várias misturas em pó utilizados na panificação como um substituto para a levedura\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de néctar e pólen preparado por abelhas operárias e alimentado para larvas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de fibras de celulose\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "aço feito pela mistura de ferro fundido forjado, carvão vegetal, e outras substâncias em um cadinho\n"
+            },
+            {
+              "words": "cimento",
+              "gloss": "um material de construção que é um pó feito de uma mistura de calcário e de argila calcinada; usado com água e areia ou cascalho para fazer concreto e argamassa\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um óleo de origem animal viscoso amarelo extraída da lã; uma mistura de ácidos gordos e seus ésteres; utilizado em algumas pomadas e cosméticos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de vegetação em decomposição e estrume; utilizado como fertilizante\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de dois líquidos parcialmente miscíveis A e B produz duas soluções conjugadas: um de A em B, e outra de B em A\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de argilas e produtos químicos e de água; bombeado para baixo o tubo de perfuração para lubrificar e resfriar a broca de perfuração e para lavar as estacas e fortalecer os lados do buraco\n"
+            },
+            {
+              "words": "ar",
+              "gloss": "uma mistura de gases (especialmente oxigénio) necessários para a respiração; o material que o vento é composto por\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de pó de esmeril e um ligante; pode ser moldado em mós\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "pó constituída por uma mistura de fragmentos pequenos de carvão e de pó de carvão e sujidade que peneira para fora quando o carvão é passado através de um crivo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer substância, tal como esterco ou uma mistura de nitratos usadas para tornar o solo mais fértil\n"
+            },
+            {
+              "words": "gordura",
+              "gloss": "uma substância gordurosa macio que ocorre no tecido orgânico e que consiste de uma mistura de lípidos (principalmente triglicéridos)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de substâncias (geralmente de sal e gelo) para obter uma temperatura abaixo do ponto de congelação da água\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de hidrogénio e monóxido de carbono com pequenas quantidades de outros gases; feito por soprando vapor sobre coque quente ou carvão\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de glicerina e gelatina, que é utilizado para a montagem em histologia espécimes\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura usada por gregos bizantinos que foi muitas vezes dispararam contra adversários; pega fogo quando molhada\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de cimento e areia e água que é pulverizada sobre uma superfície sob pressão pneumática\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura que ocorre naturalmente de uma resina e um óleo essencial; obtida a partir de determinadas plantas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de resina e goma\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de laranja gomoso de óxidos de urânio e silicatos que ocorrem naturalmente na hidratação e na oxidação das uranimita\n"
+            },
+            {
+              "words": "betume",
+              "gloss": "qualquer de vários ocorrendo naturalmente misturas impuras de hidrocarbonetos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de partes iguais de glucose e frutose resultante da hidrólise de sacarose; encontrado naturalmente em frutas; mais doce do que a glicose\n"
+            },
+            {
+              "words": "fração",
+              "gloss": "um componente de uma mistura que tenha sido separado por um processo fraccionada\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de substâncias que ocorrem em camadas distintas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um minério de óxido de ferro que ocorre amplamente; uma mistura de goethita e hematita e lepidocrocita\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um solo rico consistindo de uma mistura de areia e argila e materiais orgânicos em decomposição\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de grãos de malte trufado e água quente; utilizado na fabricação de cerveja\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um mash com acidez ideal para a fermentação de levedura; uma mistura do velho e do novo mosto; utilizado na destilação de algumas whiskies\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de sulfuretos que se forma quando os minérios de sulfureto de metal são fundidas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma liga pirofórico feita a partir de uma mistura de metais das terras raras\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer uma das várias misturas de hidrocarbonetos líquidos inflamáveis ​​voláteis; usado principalmente como solventes\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de álcoois amílico e propanol e butanol formado a partir de licores de fermentação destilação\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de oxigênio e acetileno; utilizado para criar altas temperaturas, para corte ou soldadura de metais\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura semi-sólida de hidrocarbonetos obtidos a partir do petróleo; utilizados em pomadas medicinais e para a lubrificação\n"
+            },
+            {
+              "words": "morteiro, gesso",
+              "gloss": "uma mistura de cal ou gesso com areia e água; endurece na forma de um sólido liso; usado para cobrir paredes e tectos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de argila e areia molhada que pode ser usado para revestir um tanque e que é impermeável à água quando seco\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de nitrato de potássio, carvão e enxofre numa razão 75:15:10, que é usado em artilharia, fusos horários, e fogos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um agente químico que é adicionado a uma mistura de produtos químicos para neutralizar os efeitos de impurezas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de toxina e antitoxina usadas para imunizar contra a doença\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura líquida contendo pesticidas na qual ovelhas são mergulhadas para matar os parasitas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de hidróxidos de sódio e de cálcio; absorve líquidos e gases\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um produto químico que é adicionado a uma solução ou suspensão ou mistura de mantê-lo em um estado estável ou imutável\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura impura de óxidos de urânio obtido durante o processamento de minério de urânio\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "combinar, misturar",
+              "gloss": "Misture diferentes elementos\n"
+            },
+            {
+              "words": "combinar, misturar",
+              "gloss": "Misture diferentes elementos\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "substância",
+              "gloss": "o físico real importa-se de que uma pessoa ou coisa consiste\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "não",
+              "gloss": "negação de uma palavra ou grupo de palavras\n"
+            },
+            {
+              "words": "misturar",
+              "gloss": "trazer ou combinar entre si ou com qualquer outra coisa\n"
+            },
+            {
+              "words": "dimensão, proporção",
+              "gloss": "magnitude ou extensão\n"
+            }
+          ]
+        },
+        {
+          "relation": "domain topic",
+          "targets": [
+            {
+              "words": "química",
+              "gloss": "a ciência da matéria; o ramo das ciências naturais que lidam com a composição de substâncias e suas propriedades e reações\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-07373803-n",
+      "pos": "n",
+      "gloss": "uma ocorrência que resulta em coisas que estão sendo unidos\n",
+      "synonyms": [
+        "combinação",
+        "mistura"
+      ],
+      "ili": [
+        {
+          "ili_offset": "pwn30-07373803-n",
+          "pwn_id": "pwn30-07373803-n",
+          "pwn_version": "3.0",
+          "pwn_offset": "07373803",
+          "part_of_speech": "n",
+          "cili": "i75438",
+          "cili_id": "i75438",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i75438",
+          "source_curie": "oewn-ili:i75438",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-07373803-n",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i75438.html"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "hyponym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "(Genética) uma combinação de genes ou personagens diferentes do que eram nos pais\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Física), uma combinação de taxas ou de transferência de elétrons em um gás que resulta na neutralização de íons; importante para os iões resultantes da passagem de partículas de alta energia\n"
+            },
+            {
+              "words": "consolidação",
+              "gloss": "combinando em uma massa sólida\n"
+            },
+            {
+              "words": "mistura",
+              "gloss": "um evento que combina as coisas de uma mistura de\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma ocorrência da combinação coisas variado numa massa (mais ou menos) arredondada\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "valência",
+              "gloss": "(Química) uma propriedade de átomos ou radicais; o seu poder de combinação dada em termos do número de átomos de hidrogénio (ou o equivalente)\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "combinar, compor, unir",
+              "gloss": "colocar ou adicionar juntos\n"
+            },
+            {
+              "words": "combinar, misturar",
+              "gloss": "Misture diferentes elementos\n"
+            },
+            {
+              "words": "agregar",
+              "gloss": "reúnem-se em uma massa, soma, ou todo\n"
+            },
+            {
+              "words": "combinar",
+              "gloss": "combinar de modo a formar um todo; misturar\n"
+            },
+            {
+              "words": "agrupar, combinar, unir",
+              "gloss": "Adicionar juntos a partir de diferentes fontes\n"
+            },
+            {
+              "words": "combinar, unir",
+              "gloss": "ter ou possuir em combinação\n"
+            },
+            {
+              "words": "combinar, compor, unir",
+              "gloss": "colocar ou adicionar juntos\n"
+            },
+            {
+              "words": "combinar, misturar",
+              "gloss": "Misture diferentes elementos\n"
+            },
+            {
+              "words": "agregar",
+              "gloss": "reúnem-se em uma massa, soma, ou todo\n"
+            },
+            {
+              "words": "combinar",
+              "gloss": "combinar de modo a formar um todo; misturar\n"
+            },
+            {
+              "words": "agrupar, combinar, unir",
+              "gloss": "Adicionar juntos a partir de diferentes fontes\n"
+            },
+            {
+              "words": "combinar, unir",
+              "gloss": "ter ou possuir em combinação\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "união",
+              "gloss": "a ocorrência de uma união de partes separadas\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "unificar, unir",
+              "gloss": "juntar ou combinar\n"
+            },
+            {
+              "words": "coisa",
+              "gloss": "uma entidade que não é nomeada especificamente\n"
+            },
+            {
+              "words": "acontecido, coisa, cousa, evento, eventualidade, fato, incidente, notícia, ocorrência, realidade, sucedido, sucesso, acontecimento, facto",
+              "gloss": "um evento que ocorre\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-01199083-a",
+      "pos": "a",
+      "gloss": "que consiste em uma variedade aleatória de diferentes tipos\n",
+      "synonyms": [
+        "amalgamado",
+        "cabrito",
+        "diverso",
+        "híbrido",
+        "mesclado",
+        "mestiço",
+        "misto",
+        "misturado",
+        "mulato"
+      ],
+      "ili": [
+        {
+          "ili_offset": "pwn30-01199083-a",
+          "pwn_id": "pwn30-01199083-a",
+          "pwn_version": "3.0",
+          "pwn_offset": "01199083",
+          "part_of_speech": "a",
+          "cili": "i6556",
+          "cili_id": "i6556",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i6556",
+          "source_curie": "oewn-ili:i6556",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-01199083-a",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i6556.html"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "similar to",
+          "targets": [
+            {
+              "words": "heterogéneo",
+              "gloss": "que consiste em elementos que não são do mesmo tipo ou natureza\n"
+            },
+            {
+              "words": "heterogéneo",
+              "gloss": "que consiste em elementos que não são do mesmo tipo ou natureza\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "variedad, variedade, mistura",
+              "gloss": "uma coleção que contém uma variedade de tipos de coisas\n"
+            },
+            {
+              "words": "variedad, variedade, mistura",
+              "gloss": "uma coleção que contém uma variedade de tipos de coisas\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "consistir, constar",
+              "gloss": "ser composta de\n"
+            },
+            {
+              "words": "casta, condição, espécie, género, nação, raça, simulacro, sorte, tipo, forma, classe",
+              "gloss": "uma categoria de coisas distinguidos por alguma característica ou qualidade comum\n"
+            },
+            {
+              "words": "variedad, variedade, mistura",
+              "gloss": "uma coleção que contém uma variedade de tipos de coisas\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-02850732-n",
+      "pos": "n",
+      "gloss": "um eletricamente powered mixer com lâminas girando que misturar ou cortar ou liquefazer alimentos\n",
+      "synonyms": [
+        "misturador"
+      ],
+      "ili": [
+        {
+          "ili_offset": "pwn30-02850732-n",
+          "pwn_id": "pwn30-02850732-n",
+          "pwn_version": "3.0",
+          "pwn_offset": "02850732",
+          "part_of_speech": "n",
+          "cili": "i50840",
+          "cili_id": "i50840",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i50840",
+          "source_curie": "oewn-ili:i50840",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-02850732-n",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i50840.html"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "esfregue por uma peneira ou processo em um liquidificador elétrico\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "alimentos preparados por cozinhar e esticar ou processado em um liquidificador\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "liquidar",
+              "gloss": "fazer (uma substância sólida) de líquido, como por aquecimento\n"
+            },
+            {
+              "words": "alternar, entremear, intercalar, interpor, combinar, misturar",
+              "gloss": "combinar em uma\n"
+            },
+            {
+              "words": "liquidar",
+              "gloss": "fazer (uma substância sólida) de líquido, como por aquecimento\n"
+            },
+            {
+              "words": "alternar, entremear, intercalar, interpor, combinar, misturar",
+              "gloss": "combinar em uma\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "um utensílio de cozinha que é usado para misturar alimentos\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "electricamente",
+              "gloss": "por electricidade\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "cortado em pedaços\n"
+            },
+            {
+              "words": "misturar",
+              "gloss": "trazer ou combinar entre si ou com qualquer outra coisa\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "tornar-se líquido\n"
+            },
+            {
+              "words": "folha",
+              "gloss": "a parte plana de uma ferramenta ou uma arma que (geralmente) tem uma aresta de corte\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um utensílio de cozinha que é usado para misturar alimentos\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-00184117-v",
+      "pos": "v",
+      "gloss": "Adicionar como um elemento adicional ou parte\n",
+      "synonyms": [
+        "misturar"
+      ],
+      "ili": [
+        {
+          "ili_offset": "pwn30-00184117-v",
+          "pwn_id": "pwn30-00184117-v",
+          "pwn_version": "3.0",
+          "pwn_offset": "00184117",
+          "part_of_speech": "v",
+          "cili": "i22629",
+          "cili_id": "i22629",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i22629",
+          "source_curie": "oewn-ili:i22629",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-00184117-v",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i22629.html"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "hyponym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "Adicionar um elemento excitantes ou alterando a\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "falta de afinidade para a água; tendendo repelir e não absorve água; cuidando para não dissolver em mistura com ou ser molhadas por água\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "ativar misturando com açúcar água e às vezes ou leite\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "misturado com água\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um método de pintura no qual os pigmentos são misturados com água e um ligante; utilizado para pintura cartazes ou pinturas murais ou cenário fase\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um ingrediente adicional que é adicionado por mistura com a base\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "biscoitos contendo frutas picadas ou mistos na massa ou distribuídos entre camadas de massa, em seguida, cozido e cortado em bares\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um medicamento feito através da mistura de uma substância em glicerina\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "mistura",
+              "gloss": "o ato de misturar juntos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(química, física) capaz de ser misturado\n"
+            },
+            {
+              "words": "mistura",
+              "gloss": "um evento que combina as coisas de uma mistura de\n"
+            },
+            {
+              "words": "mistura",
+              "gloss": "o ato de misturar juntos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(química, física) capaz de ser misturado\n"
+            },
+            {
+              "words": "mistura",
+              "gloss": "um evento que combina as coisas de uma mistura de\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "acrescentar, adicionar, aditar, adjungir, anexar, jungir, agregar",
+              "gloss": "fazem uma adição (a); juntar ou combinar ou unir-se com os outros; aumentar a qualidade, quantidade, tamanho ou escopo de\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "acrescentar, adicionar, aditar, adjungir, anexar, jungir, agregar",
+              "gloss": "fazem uma adição (a); juntar ou combinar ou unir-se com os outros; aumentar a qualidade, quantidade, tamanho ou escopo de\n"
+            },
+            {
+              "words": "componente, elemento",
+              "gloss": "um artefato que é uma das partes individuais do que uma entidade composta é confeccionados; especialmente uma parte que pode ser separada da ou ligado a um sistema\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-00394813-v",
+      "pos": "v",
+      "gloss": "Misture diferentes elementos\n",
+      "synonyms": [
+        "combinar",
+        "misturar"
+      ],
+      "ili": [
+        {
+          "ili_offset": "pwn30-00394813-v",
+          "pwn_id": "pwn30-00394813-v",
+          "pwn_version": "3.0",
+          "pwn_offset": "00394813",
+          "part_of_speech": "v",
+          "cili": "i23707",
+          "cili_id": "i23707",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i23707",
+          "source_curie": "oewn-ili:i23707",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-00394813-v",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i23707.html"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "hyponym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "misturar em proporções específicas\n"
+            },
+            {
+              "words": "absorver",
+              "gloss": "causa para se tornar um com\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "perder seu contorno é indistinto ou forma; misturar-se gradualmente\n"
+            },
+            {
+              "words": "incorporar, acrescentar",
+              "gloss": "causar (algo) para ser misturado com (alguma coisa)\n"
+            },
+            {
+              "words": "acrecentar, acrescentar, aumentar",
+              "gloss": "crescer juntos (de plantas e órgãos)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "unir quimicamente para que o produto é facilmente dividido nos compostos originais\n"
+            },
+            {
+              "words": "misturar",
+              "gloss": "mistura ou mistura\n"
+            },
+            {
+              "words": "ligar",
+              "gloss": "fazer uma liga de\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "fundem-se\n"
+            }
+          ]
+        },
+        {
+          "relation": "see also",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "causa a ser perplexo ou confundidos\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "repelente, resistente",
+              "gloss": "incapaz de absorver ou mistura com\n"
+            },
+            {
+              "words": "agitada",
+              "gloss": "definido num movimento geralmente circular, a fim de misturar ou mistura\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "impregnar, combinar ou fornecer oxigênio\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "tratar ou combinar com cloro\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "para combinar ou juntar de novo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "tornar-se hidratado e combinam com água\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "adicionar oxigênio ou combinam com o oxigênio\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "tendo os cabelos escuros misturados com cinzento ou branco\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "combinar ou tratar com ou expor a hidrogênio; adicionar hidrogénio para a molécula de (um composto orgânico insaturado)\n"
+            },
+            {
+              "words": "fusão",
+              "gloss": "o ato de fusão (ou fusão) juntos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "perder seu contorno é indistinto ou forma; misturar-se gradualmente\n"
+            },
+            {
+              "words": "misturar",
+              "gloss": "mistura ou mistura\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "ou capaz de tendendo a combinar\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "não é capaz de combinar\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "tendo uma forte afinidade com a água; tendendo a dissolver-se em, misturar-se com, ou ser molhadas por água\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "causar a combinar com iodo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "ativar misturando com açúcar água e às vezes ou leite\n"
+            },
+            {
+              "words": "foxtrot",
+              "gloss": "a dança de salão em tempo quádruplo; combina sequências de passos fixos curtas e longas e rápidas e lentas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "fundem-se\n"
+            },
+            {
+              "words": "misturar",
+              "gloss": "Combinar (sinais eletrônicos)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "massagem combinado com um sistema de exercícios ativos e passivos para os músculos e articulações\n"
+            },
+            {
+              "words": "patético",
+              "gloss": "desprezo misturado inspirador e piedade\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(De cerâmica), tendo a superfície brilhante e não porosa feita por fusão de uma solução vítreo a ele\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "combinar ou causar a combinar com iodo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "combinados ou misturados em conjunto de modo a que as suas partes constituintes são indistinguíveis\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "não misturados ou misturados\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "sendo uma entidade única feita pela combinação de componentes separados\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "composta de vários componentes combinados numa única entidade\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "tratados ou misturados com chumbo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "fusível ou causa para crescer juntos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "combinar (uma onda de rádio frequência) com uma onda gerada localmente de uma frequência diferente, de modo a produzir uma nova frequência igual à soma ou a diferença entre os dois\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "combinar com enxofre\n"
+            },
+            {
+              "words": "misturar, combinar",
+              "gloss": "misturar ou mistura\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma das pequenas vilosidades que se destacam do córion fetal e combinam com tecido uterino da mãe para formar a placenta\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a membrana fetal muito vascular composto do córion fundido e a parede adjacente do alantóide\n"
+            },
+            {
+              "words": "incompatível",
+              "gloss": "não é fácil de combinar harmoniosamente\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "capaz de ser derretidos e fundidos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "misturar ou adicionar por agitação\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "tendo órgãos reprodutivos masculinos e femininos misturados no mesmo gametoecium\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Junte-se ou fundir-se com solda\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Combine com carbono\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "anteriormente uma subordem dos Stegocephalia; Amphibia tendo vértebras cujos elementos componentes são fundidos em uma única peça\n"
+            },
+            {
+              "words": "compor",
+              "gloss": "criar por mistura ou combinação de\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "preparar ou cozinhar misturando ingredientes\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um de pernas longas fósseis 75000000 anos de idade encontrado no deserto de Gobi ter ossos do pulso fundido de pássaro e esterno tombou e uma longa cauda parecida com um dinossauro do tamanho de peru; extremidade curta membros anteriores em uma única garra em vez de asas; classificação como ave ou dinossauro está em disputa\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "não misturados com elementos estranhos\n"
+            },
+            {
+              "words": "puro",
+              "gloss": "Não misturada com impurezas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "combinada com elementos estranhos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "misturada com impurezas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um órgão locomotor, consistindo de uma fileira de cílios fortes, cujas bases são fundidos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "crescer juntos, fundindo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "feita pela combinação de fibras com um fichário usando calor e pressão\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "desajeitado soft grosso-bodied Atlântico Norte peixes com nadadeiras pélvicas fundidas em um otário; ovas comestíveis utilizadas para caviar\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "peixes marinhos tropicais, tendo os dentes fundidos em um bico e espessura da pele coberta com placas ósseas ou espinhos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "tratadas ou combinado com bicromato\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "misturado ou impregnado com bórax\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "de ou relativa a um trabalho que combina autobiografia e ficção\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "combinado ou tratado com amoníaco\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "combinado com ou que tenham sofrido uma reacção química com o oxigénio\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um dispositivo que consiste em um recipiente de combustível e duas cargas explosivas; os estouros de carga primeiros abrir o recipiente de combustível a uma altura pré-determinada e espalha o combustível em uma nuvem que se mistura com o oxigênio atmosférico; a segunda carga detona a nuvem que cria uma onda enorme e incinera tudo o que está abaixo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma droga de clube disponível no estado líquido ou em pó é tomada por via oral (freqüentemente combinados com álcool); utilizadas para neutralizar os indivíduos para a Comissão de agressão sexual e estupro\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "dispositivo que transfere calor a partir de um líquido para outra sem que lhes permite misturar\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um receptor de rádio, que combina uma frequência gerado localmente com a frequência portadora para produzir um sinal que é desmodulado supersónico e amplificado\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma ordem romana que combina o acanto Corinthian deixa com os pergaminhos espirais da ordem jônica\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a mandíbula em vertebrados que é fundida ao crânio\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o núcleo do óvulo ou esperma após a fertilização, mas antes que eles se fundem para formar o núcleo do zigoto\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um dos 5 vértebras da coluna vertebral humana que se fundem no adulto para formar o Sacro.\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Química) lei afirmando que cada substância pura sempre contém os mesmos elementos combinados nas mesmas proporções, em peso\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Química) lei afirmando que as proporções em que dois elementos se combinam separadamente com um terceiro elemento também são as proporções em que se combinam\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Química) lei afirmando que, quando dois elementos podem se combinar para formar mais de um composto as quantidades de um deles, que combina com uma quantidade fixa de outro vai expor uma relação múltipla simples\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(psicanálise) um inconsciente processo pelo qual duas idéias ou imagens se combinam em um único símbolo; especialmente em sonhos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma nova palavra formada por juntar-se outros dois e combinando seus significados\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma palavra formada de duas ou mais palavras por omissão ou combinando alguns sons\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "caracteres consistindo de duas ou mais letras combinados em um\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um símbolo gráfico que consiste em duas ou mais letras combinadas (geralmente suas iniciais); impresso em papel de carta ou bordado em roupas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a apropriação de um novo estilo (especialmente na música popular) pela combinação de elementos de gêneros diferentes, a fim de apelar para um público mais amplo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "música do sul da Louisiana, que combina melodias de dança francês com música caribenha e blues\n"
+            },
+            {
+              "words": "funk",
+              "gloss": "um tipo de terra de jazz combinando-a com blues e soul; tem uma linha de baixo pesado que acentua a primeira batida no bar\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um estilo de música rock que surgiu na década de 1970; associada a tentativas de combinar rock com jazz e outras formas; destina-se a ouvir e não dançar\n"
+            },
+            {
+              "words": "mistura",
+              "gloss": "um evento que combina as coisas de uma mistura de\n"
+            },
+            {
+              "words": "liga",
+              "gloss": "uma ocorrência da mistura completa\n"
+            },
+            {
+              "words": "mistura",
+              "gloss": "um género alimentício feita pela combinação de diferentes ingredientes\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "movimento dentro do budismo combinando elementos do hinduísmo e do paganismo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma escola de pintores que usaram uma técnica de pintura com minúsculos pontos de cores puras que se misturam no olho do espectador; desenvolvido por Georges Seurat e seus seguidores no final do século 19 France\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a parte mais larga de um rio onde ele se aproxima do mar; mistura de água doce e salgada\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor checo que combinou elementos folclóricos com as formas tradicionais (1841-1904)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Cineasta japonês conhecido pela mistura folclore japonês com estilos ocidentais de atuação (1910-1998)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor francês de obras que combinam jazz e politonalidade e da música brasileira (1892-1974)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Compositor alemão de óperas e inventor do drama musical em que drama e espetáculo e música se fundem (1813-1883)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "grande género de orquídeas tropicais americanas principalmente epífitas cujas flores têm sépalas fundido na base formando um tubo; inclui orquídeas, por vezes, colocadas em gêneros Drácula e Dryadella e Scaphosepalum\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer um dos numerosos orquídeas do género Masdevallia; evergreen tufados frequentemente plantas cujas flores diminutas em uma notável gama de cores normalmente se assemelham a um tricórnio com sépalas fundidas na base para formar um tubo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Tipo de gênero do Marattiaceae: samambaias com o sporangia fundidos em duas linhas\n"
+            },
+            {
+              "words": "fusão",
+              "gloss": "uma reação nuclear em que os núcleos se combinam para formar núcleos mais maciças com a liberação simultânea de energia\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "partenogénese fêmea em que o embrião contém apenas cromossomas maternas devido ao fracasso do esperma para fundir-se com o núcleo do ovo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um processo industrial para a produção de amoníaco a partir de azoto e hidrogénio, combinando-os sob pressão elevada na presença de um catalisador de ferro\n"
+            },
+            {
+              "words": "liga",
+              "gloss": "uma mistura contendo dois ou mais elementos metálicos ou elementos metálicos e não metálicos geralmente fundidos ou dissolvendo-se uns aos outros quando fundido\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "rocha vulcânica constituído por fragmentos grandes fundidos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um ácido fraco conhecida apenas em solução; formado quando o dióxido de carbono se combina com água\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "nitrato de prata fundida em palitos e antigamente usado como um cáustica\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um sal do ácido thiocyanic; formado quando cianetos alcalinos são fundidos com enxofre\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "combinação, composição",
+              "gloss": "o ato de combinar as coisas para formar um todo novo\n"
+            },
+            {
+              "words": "mistura",
+              "gloss": "o ato de misturar juntos\n"
+            },
+            {
+              "words": "fusão",
+              "gloss": "o ato de fusão (ou fusão) juntos\n"
+            },
+            {
+              "words": "mistura",
+              "gloss": "o ato de misturar componentes cuidadosamente\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a União de diversas coisas em um corpo ou forma ou grupo; o crescer juntos de peças\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(química, física) capaz de ser misturado\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "capaz de ser derretidos e fundidos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um utensílio de cozinha que é usado para misturar alimentos\n"
+            },
+            {
+              "words": "unificação, fusão",
+              "gloss": "um acontecimento que envolve a produção de uma união\n"
+            },
+            {
+              "words": "combinação, mistura",
+              "gloss": "uma ocorrência que resulta em coisas que estão sendo unidos\n"
+            },
+            {
+              "words": "mistura",
+              "gloss": "um evento que combina as coisas de uma mistura de\n"
+            },
+            {
+              "words": "liga",
+              "gloss": "uma ocorrência da mistura completa\n"
+            },
+            {
+              "words": "mistura",
+              "gloss": "um género alimentício feita pela combinação de diferentes ingredientes\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma coleção de coisas que foram combinados; um conjunto de partes ou qualidades distintas\n"
+            },
+            {
+              "words": "variedad, variedade, mistura",
+              "gloss": "uma coleção que contém uma variedade de tipos de coisas\n"
+            },
+            {
+              "words": "coligação, fusão",
+              "gloss": "o estado de ser combinados em um corpo\n"
+            },
+            {
+              "words": "mistura",
+              "gloss": "(Química) uma substância composta por duas ou mais substâncias misturadas (não em proporções fixas e não com ligação química)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma substância adicionada aos metais fundidos de se relacionar com as impurezas que podem ser então facilmente removidos\n"
+            },
+            {
+              "words": "combinação, composição",
+              "gloss": "o ato de combinar as coisas para formar um todo novo\n"
+            },
+            {
+              "words": "mistura",
+              "gloss": "o ato de misturar juntos\n"
+            },
+            {
+              "words": "fusão",
+              "gloss": "o ato de fusão (ou fusão) juntos\n"
+            },
+            {
+              "words": "mistura",
+              "gloss": "o ato de misturar componentes cuidadosamente\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a União de diversas coisas em um corpo ou forma ou grupo; o crescer juntos de peças\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(química, física) capaz de ser misturado\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "capaz de ser derretidos e fundidos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um utensílio de cozinha que é usado para misturar alimentos\n"
+            },
+            {
+              "words": "unificação, fusão",
+              "gloss": "um acontecimento que envolve a produção de uma união\n"
+            },
+            {
+              "words": "combinação, mistura",
+              "gloss": "uma ocorrência que resulta em coisas que estão sendo unidos\n"
+            },
+            {
+              "words": "mistura",
+              "gloss": "um evento que combina as coisas de uma mistura de\n"
+            },
+            {
+              "words": "liga",
+              "gloss": "uma ocorrência da mistura completa\n"
+            },
+            {
+              "words": "mistura",
+              "gloss": "um género alimentício feita pela combinação de diferentes ingredientes\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma coleção de coisas que foram combinados; um conjunto de partes ou qualidades distintas\n"
+            },
+            {
+              "words": "variedad, variedade, mistura",
+              "gloss": "uma coleção que contém uma variedade de tipos de coisas\n"
+            },
+            {
+              "words": "coligação, fusão",
+              "gloss": "o estado de ser combinados em um corpo\n"
+            },
+            {
+              "words": "mistura",
+              "gloss": "(Química) uma substância composta por duas ou mais substâncias misturadas (não em proporções fixas e não com ligação química)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma substância adicionada aos metais fundidos de se relacionar com as impurezas que podem ser então facilmente removidos\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "mudança na composição física\n"
+            }
+          ]
+        },
+        {
+          "relation": "is entailed by",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "se unem por aquecimento\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "agente, constituinte, fator, componente, elemento, ingrediente",
+              "gloss": "uma parte abstrata de algo\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-00396703-v",
+      "pos": "v",
+      "gloss": "mistura ou mistura\n",
+      "synonyms": [
+        "misturar"
+      ],
+      "ili": [
+        {
+          "ili_offset": "pwn30-00396703-v",
+          "pwn_id": "pwn30-00396703-v",
+          "pwn_version": "3.0",
+          "pwn_offset": "00396703",
+          "part_of_speech": "v",
+          "cili": "i23715",
+          "cili_id": "i23715",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i23715",
+          "source_curie": "oewn-ili:i23715",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-00396703-v",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i23715.html"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "mistura",
+              "gloss": "o ato de misturar juntos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um ingrediente adicional que é adicionado por mistura com a base\n"
+            },
+            {
+              "words": "mistura",
+              "gloss": "o ato de misturar juntos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um ingrediente adicional que é adicionado por mistura com a base\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "combinar, misturar",
+              "gloss": "Misture diferentes elementos\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "combinar, misturar",
+              "gloss": "Misture diferentes elementos\n"
+            },
+            {
+              "words": "misturar",
+              "gloss": "trazer ou combinar entre si ou com qualquer outra coisa\n"
+            }
+          ]
+        },
+        {
+          "relation": "domain topic",
+          "targets": [
+            {
+              "words": "química",
+              "gloss": "a ciência da matéria; o ramo das ciências naturais que lidam com a composição de substâncias e suas propriedades e reações\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-00556193-v",
+      "pos": "v",
+      "gloss": "Combinar (sinais eletrônicos)\n",
+      "synonyms": [
+        "misturar"
+      ],
+      "ili": [
+        {
+          "ili_offset": "pwn30-00556193-v",
+          "pwn_id": "pwn30-00556193-v",
+          "pwn_version": "3.0",
+          "pwn_offset": "00556193",
+          "part_of_speech": "v",
+          "cili": "i24525",
+          "cili_id": "i24525",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i24525",
+          "source_curie": "oewn-ili:i24525",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-00556193-v",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i24525.html"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "Equipamento electrónico que mistura de dois ou mais sinais de entrada para dar um único sinal de saída\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "mistura",
+              "gloss": "o ato de misturar juntos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(química, física) capaz de ser misturado\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Equipamento electrónico que mistura de dois ou mais sinais de entrada para dar um único sinal de saída\n"
+            },
+            {
+              "words": "mistura",
+              "gloss": "um evento que combina as coisas de uma mistura de\n"
+            },
+            {
+              "words": "mistura",
+              "gloss": "o ato de misturar juntos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(química, física) capaz de ser misturado\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Equipamento electrónico que mistura de dois ou mais sinais de entrada para dar um único sinal de saída\n"
+            },
+            {
+              "words": "mistura",
+              "gloss": "um evento que combina as coisas de uma mistura de\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "combinar, compor, unir",
+              "gloss": "colocar ou adicionar juntos\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "combinar, misturar",
+              "gloss": "Misture diferentes elementos\n"
+            },
+            {
+              "words": "electrónico, eletrônico",
+              "gloss": "de ou relacionados à eletrônica; preocupado com ou usando dispositivos que operam nos princípios que regem o comportamento dos elétrons\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-00620673-v",
+      "pos": "v",
+      "gloss": "tornar obscuro, indistinto, ou borrada\n",
+      "synonyms": [
+        "confundir",
+        "misturar"
+      ],
+      "ili": [
+        {
+          "ili_offset": "pwn30-00620673-v",
+          "pwn_id": "pwn30-00620673-v",
+          "pwn_version": "3.0",
+          "pwn_offset": "00620673",
+          "part_of_speech": "v",
+          "cili": "i24857",
+          "cili_id": "i24857",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i24857",
+          "source_curie": "oewn-ili:i24857",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-00620673-v",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i24857.html"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "hyponym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "causar a tornar-se enlameada\n"
+            }
+          ]
+        },
+        {
+          "relation": "verb group",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "confundir uma coisa por outra\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "confundir uma coisa por outra\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "jogar para baixo ou obscuro\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma acção destinada a ocultar ou confundir ou obscura\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a atividade de obscurecer a compreensão das pessoas, deixando-os confusos ou desorientados\n"
+            },
+            {
+              "words": "contraditório",
+              "gloss": "que confunde ou contradiz ou confunde\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Gênesis 11:1-11), uma torre construída pelos descendentes de Noé (provavelmente na Babilônia), que se destina a alcançar até ao céu; Deus frustrou-lhes por confundir a língua para que eles já não podiam entender um ao outro\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "cambiar, converter, demudar, evolucionar, evoluir, falsificar, metamorfosear, perturbar, tornar, tranformar, transformar, alterar, mudar, modificar",
+              "gloss": "causar à mudança; fazer diferente; causar uma transformação\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "tornar, recrescer, converter, obter, recriar, voltar",
+              "gloss": "dar determinadas propriedades para alguma coisa\n"
+            },
+            {
+              "words": "confuso",
+              "gloss": "não está claro para a mente\n"
+            },
+            {
+              "words": "confuso",
+              "gloss": "não claramente definida ou fácil de perceber ou compreender\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-01418667-v",
+      "pos": "v",
+      "gloss": "misturar de modo a fazer uma ordem aleatória ou arranjo\n",
+      "synonyms": [
+        "misturar"
+      ],
+      "ili": [
+        {
+          "ili_offset": "pwn30-01418667-v",
+          "pwn_id": "pwn30-01418667-v",
+          "pwn_version": "3.0",
+          "pwn_offset": "01418667",
+          "part_of_speech": "v",
+          "cili": "i28823",
+          "cili_id": "i28823",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i28823",
+          "source_curie": "oewn-ili:i28823",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-01418667-v",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i28823.html"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "hyponym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "embaralhar novamente\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "shuffle (jogo de cartas), separando o baralho em duas partes e riffling com os polegares assim que os cartões Intermix\n"
+            },
+            {
+              "words": "cortar",
+              "gloss": "dividir um baralho de cartas ao acaso em duas partes para fazer a seleção difícil\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "o ato de misturar cartões a esmo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "baralhar novamente\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "embaralhar novamente\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "shuffle (jogo de cartas), separando o baralho em duas partes e riffling com os polegares assim que os cartões Intermix\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o jogador de cartão que embaralha as cartas\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "o ato de misturar cartões a esmo\n"
+            },
+            {
+              "words": "mistura",
+              "gloss": "o ato de misturar juntos\n"
+            },
+            {
+              "words": "mistura",
+              "gloss": "um evento que combina as coisas de uma mistura de\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o jogador de cartão que embaralha as cartas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o ato de misturar cartões a esmo\n"
+            },
+            {
+              "words": "mistura",
+              "gloss": "o ato de misturar juntos\n"
+            },
+            {
+              "words": "mistura",
+              "gloss": "um evento que combina as coisas de uma mistura de\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o jogador de cartão que embaralha as cartas\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "manipular",
+              "gloss": "segurar algo nas mãos de um e movê-lo\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "causar, realizar, criar, fazer, tornar, abrir",
+              "gloss": "fazer ou causar a ser ou tornar-se\n"
+            },
+            {
+              "words": "aleatório",
+              "gloss": "falta de qualquer plano definitivo ou ordem ou finalidade; regidas por, ou dependendo da oportunidade\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um agrupamento ordenado (de coisas ou pessoas), considerados como uma unidade; o resultado de um arranjo\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-01462005-v",
+      "pos": "v",
+      "gloss": "trazer ou combinar entre si ou com qualquer outra coisa\n",
+      "synonyms": [
+        "misturar"
+      ],
+      "ili": [
+        {
+          "ili_offset": "pwn30-01462005-v",
+          "pwn_id": "pwn30-01462005-v",
+          "pwn_version": "3.0",
+          "pwn_offset": "01462005",
+          "part_of_speech": "v",
+          "cili": "i29033",
+          "cili_id": "i29033",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i29033",
+          "source_curie": "oewn-ili:i29033",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-01462005-v",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i29033.html"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "hyponym",
+          "targets": [
+            {
+              "words": "agregar",
+              "gloss": "reúnem-se em uma massa, soma, ou todo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "fazer uma mistura (de) misturando\n"
+            },
+            {
+              "words": "combinar",
+              "gloss": "combinar de modo a formar um todo; misturar\n"
+            },
+            {
+              "words": "alternar, entremear, intercalar, interpor, combinar, misturar",
+              "gloss": "combinar em uma\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "mistura",
+              "gloss": "o ato de misturar juntos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "misturar em proporções específicas\n"
+            },
+            {
+              "words": "incorporar, acrescentar",
+              "gloss": "causar (algo) para ser misturado com (alguma coisa)\n"
+            },
+            {
+              "words": "misturar",
+              "gloss": "mistura ou mistura\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "causar a tornar-se igual ou homogénea como através da mistura de\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "se tornar homogénea ou semelhante, como através da mistura de\n"
+            },
+            {
+              "words": "cruzamento",
+              "gloss": "(genética), o ato de misturar diferentes espécies ou variedades de animais e plantas e, portanto, para a produção de híbridos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o ato de criar algo (um medicamento ou bebida ou sopa etc.) ou pela composição da mistura de uma variedade de componentes\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um método de pintura no qual os pigmentos são misturados com água e um ligante; utilizado para pintura cartazes ou pinturas murais ou cenário fase\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "fazer uma mistura (de) misturando\n"
+            },
+            {
+              "words": "combinar",
+              "gloss": "combinar de modo a formar um todo; misturar\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "toupeira da África Austral, tendo pêlos de guarda iridescentes misturados com o underfur\n"
+            },
+            {
+              "words": "histricídeo",
+              "gloss": "relativamente grandes roedores com cerdas de ereção afiadas se misturavam com a pele\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma conduta que admite ar a ser misturado com o combustível\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "baixo grau cocaína misturada com pasta de coca e maconha\n"
+            },
+            {
+              "words": "misturador",
+              "gloss": "um eletricamente powered mixer com lâminas girando que misturar ou cortar ou liquefazer alimentos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um queimador que mistura de ar e gás para produzir uma chama muito quente\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "mistura do ar com vapor de gasolina antes da explosão\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma pasta dura medicado feita de banha ou óleo misturado com cera ou resina\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um shaker para misturar cocktails\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma máquina com um grande tambor rotativo em que o cimento é misturado com outros materiais para fazer concreto\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "tinta feita por mistura dos pigmentos com água e com um aglutinante\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma tinta que consiste em pigmento misturado com cera de abelha derretida; ele é fixado com calor após a aplicação\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma aquarela executada com aquarelas opacas misturado com goma\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um tecido grosseiro de seda misturada com lã ou mohair e muitas vezes endurecido com goma\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer mercadoria de qualidade ou de tamanho intermediário (especialmente quando partículas grossas de trigo moído são misturadas com farelo)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um utensílio de cozinha que é usado para misturar alimentos\n"
+            },
+            {
+              "words": "argamassa, morteiro",
+              "gloss": "um recipiente em forma de taça em que as substâncias podem ser moídas e misturadas com um pilão\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "placa que proporciona uma superfície plana sobre a qual artistas misturam as tintas ea gama de cores utilizada\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma espátula usada por artistas para a mistura ou aplicação ou raspar as tintas de óleo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma ferramenta de mão com uma lâmina plana utilizada pelos oleiros para misturar e moldar barro\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma ferramenta de mão em forma de clube para moagem e mistura de substâncias em um almofariz\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma ferramenta pesada de pedra ou de ferro (geralmente com uma base plana e um identificador) que é usado para moer e misturar o material (como grãos, drogas ou pigmentos) contra uma laje de pedra\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma espátula usada para misturar ou aplicar massa de vidraceiro\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma tigela grande para misturar e servir uma salada\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "sabão em pó misturado com construtores alcalinos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma ferramenta de mão com uma fina lâmina flexível utilizada para misturar ou espalhar substâncias macias\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "pigmento misturado com a Water-soluble glutinosas materiais tais como tamanho e gema de ovo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um bar com bebidas de mistura que tem uma pia com água corrente\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "ou uma das duas cores cromáticas que, quando misturados em conjunto dar branco (no caso de luzes) ou cinzento (no caso de pigmentos)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "matéria de expectoração; saliva misturada com descargas das passagens respiratórias; na fisiologia antiga e medieval acreditava para causar lentidão\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um exame de sangue usado para identificar antígenos desconhecidos; sangue com antígeno desconhecido é misturado com um anticorpo conhecido e ou não ocorre aglutinação ajuda a identificar o antígeno; usado na correspondência de tecido e agrupamento de sangue e diagnóstico de infecções\n"
+            },
+            {
+              "words": "liga",
+              "gloss": "uma ocorrência da mistura completa\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "refeição feita de milho finamente moído misturado com açúcar e especiarias\n"
+            },
+            {
+              "words": "puré",
+              "gloss": "um mergulho feito de purê de abacate misturado com cebola picada e outros temperos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um pudim feito com ervilhas partidas tensas misturada com ovo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "magra carne seca bateu bem e misturado com gordura derretida; usado principalmente por índios norte-americanos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "ração úmida (especialmente para suínos), que consiste principalmente de resíduos de cozinha misturado com água ou leite desnatado ou de leite\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "pó feito de pimentas chão misturado com eg cominho e alho e orégano\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "prato luz macio de gemas e claras de ovos dura batido misturado com o queijo por exemplo, ou de peixe ou frutos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "propagação feita de queijo misturado com manteiga ou creme ou creme de queijo e temperos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um prato russo fez com rissóis de carne moída (misturado com cebola e pão e leite) e servido com um molho de creme de leite\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "frango cozido em caldo de carne com cebola e páprica então misturado com creme de leite\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "arroz cozido misturado com cebolinha picada e carne de porco ou camarão e rapidamente mexidos com ovos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "carne moída misturada com batatas e bronzeado\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "lagosta em cubos misturados com molho Mornay colocado de volta na casca e polvilhado com queijo ralado e bronzeado\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "carne moída misturada com ovo cru e por exemplo, as cebolas e as alcaparras e anchovas; comidos crus\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "vinho misturado com mel\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Sul-Africano bebida mista feita através da mistura de sorvete com uísque\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma bebida feita de bebida alcoólica misturada com água ou uma bebida gaseificada e servido em um copo alto\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "club soda ou sumo de fruta usado para misturar com álcool\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma bebida feita de vinho misturado com a água com gás\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um coquetel feito de um licor (especialmente whisky ou gin) misturado com limão ou suco de limão e açúcar\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um soco feito de sucos de frutas misturado com água ou água com gás (com ou sem álcool)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um soco feito de leite adoçado ou creme misturado com ovos e licor geralmente alcoólica\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma organização terrorista formada na década de 1960 por filhos de comerciantes iranianos; procurou contrariar o Xá de políticas pró-ocidentais do Irã de modernização e de oposição ao comunismo; seguindo uma filosofia que mistura marxismo eo Islã agora ataca os fundamentalistas islâmicos que depuseram o xá\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um membro de uma das raças autóctones da Índia (sul empurrado por caucasianos e agora misturada com eles)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um membro do povo mistos dravidianas e caucasianos do sul da Índia e Sri Lanka\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma pessoa de ascendência européia e Africano mista\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma pessoa de ascendência europeia e asiática mista\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma das pessoas de Ostyak mista e origem Samoyed na Sibéria\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um dos povos muçulmanos do norte da África; de misturado ascendência árabe e berbere; se converteu ao islamismo no século 8; conquistador de Espanha no século 8\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um funcionário que se mistura e serve bebidas alcoólicas em um bar\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um homem jurado (geralmente por uma cerimônia que envolve a mistura de sangue) para tratar o outro como seu irmão\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mulher de ascendência racial mista (ascendência americana Europeu e Native especialmente misto)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma pessoa de ascendência racial mista (ascendência americana Europeu e Native especialmente misto)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma criança concebida por fertilização que ocorre fora do corpo da mãe; óvulos da mulher são removidos e misturados com espermatozóides em um meio de cultura - se ocorre a fertilização de blastócitos é implantado no útero da mulher\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Orquídea da América do Norte, com um pico de flores violeta-púrpura misturadas com branco; sépalas e pétalas formam um capuz\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "vagens da planta cowage ou os pêlos urticantes que cobrem-los; usado como um vermífugo quando misturado com, por exemplo mel\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "palma dos Andes originando uma cera resinoso que é misturado com o sebo para fazer velas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma deficiência de visão de cores em que a pessoa que pode corresponder a qualquer matiz dado por mistura de apenas dois outros comprimentos de onda de luz (em oposição às três comprimentos de onda necessários por pessoas com visão de cor normal)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "doença de uma vasta gama de plantas (tomates, batatas, ervilhas), resultante de uma infecção mista de batata e tomate mosaico\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "ser misturado com o material estranho; o produto de adulterar\n"
+            },
+            {
+              "words": "mistura",
+              "gloss": "(Química) uma substância composta por duas ou mais substâncias misturadas (não em proporções fixas e não com ligação química)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um cimento semelhante a massa de vidraceiro; feita pela mistura de óxido férrico e óleo de linhaça fervido; é resistente aos ácidos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um cimento semelhante a massa de vidraceiro; feita através da mistura de chumbo branco e vermelho em óleo de linhaça fervido; usado como cimentação em acessórios para tubos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mistura de gases (principalmente metano) que se formam em minas de carvão e tornar-se explosivo quando misturado com o ar\n"
+            },
+            {
+              "words": "asfalto",
+              "gloss": "asfalto misturado e cascalho ou areia de britagem; utilizado especialmente para a pavimentação, mas também para coberturas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um sal de cálcio insolúvel de ácido esteárico e ácido palmítico; ele é formado quando o sabão é misturado com a água que contém iões de cálcio e a escória é produzido em zonas de água dura\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "pigmento verde que consiste em prussiano mista azul com gamboge\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "sebo misturada com óleo; usado para fazer couro macio e à prova d&#39;água\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "pigmento consistindo de um limonite misturados com argila e sílica\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "água misturada com dejetos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer um dos vários glicosídeos de plantas que formam lathers ensaboadas quando misturados e agitados com água; utilizados em detergentes e agentes de formação de espuma e emulsionantes\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um líquido com o qual o pigmento é misturado por um pintor\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "material que foi homogeneizada (especialmente tecido que tenha sido triturado e misturado)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um meio para-tintas a óleo; óleo de linhaça misturado com verniz de aroeira ou terebintina\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um material de piche e pedra quebrada pavimentação; misturado numa fábrica e em forma durante pavimentação\n"
+            },
+            {
+              "words": "pigmento",
+              "gloss": "material de coloração seca (especialmente um pó para ser misturado com um líquido para produzir tinta, etc.)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer um dos vários cimentos à base de gesso; um pó branco (uma forma de sulfato de cálcio) que forma uma pasta quando misturado com água e endurece num sólido; utilizado na fabricação de moldes e esculturas e lança para membros quebrados\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "pó (contendo gesso e cola) que, quando misturado com água forma uma pasta de plástico usado para preencher rachaduras e buracos em gesso\n"
+            },
+            {
+              "words": "till",
+              "gloss": "solo desestratificação térmica depositado por uma geleira; consiste de areia e argila e cascalho e pedras misturadas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer substância que facilita a utilização de uma droga ou pigmento ou outro material que é misturada com este\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "conjunto, unidade",
+              "gloss": "um conjunto de peças que é considerado como uma única entidade"
+            },
+            {
+              "words": "mistura",
+              "gloss": "o ato de misturar juntos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "caracterizado pela ou tendendo para amálgama\n"
+            },
+            {
+              "words": "mistura",
+              "gloss": "um evento que combina as coisas de uma mistura de\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma combinação ou mistura de diversas coisas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um empresário que organiza uma junção de duas ou mais sociedades comerciais\n"
+            },
+            {
+              "words": "conjunto, unidade",
+              "gloss": "um conjunto de peças que é considerado como uma única entidade"
+            },
+            {
+              "words": "mistura",
+              "gloss": "o ato de misturar juntos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "caracterizado pela ou tendendo para amálgama\n"
+            },
+            {
+              "words": "mistura",
+              "gloss": "um evento que combina as coisas de uma mistura de\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma combinação ou mistura de diversas coisas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um empresário que organiza uma junção de duas ou mais sociedades comerciais\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "cambiar, converter, demudar, evolucionar, evoluir, falsificar, metamorfosear, perturbar, tornar, tranformar, transformar, alterar, mudar, modificar",
+              "gloss": "causar à mudança; fazer diferente; causar uma transformação\n"
+            }
+          ]
+        },
+        {
+          "relation": "is entailed by",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "agitar\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "acoplar, unir, reunir",
+              "gloss": "causar a tornar-se unida ou ligada\n"
+            },
+            {
+              "words": "combinar",
+              "gloss": "combinar de modo a formar um todo; misturar\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-01462468-v",
+      "pos": "v",
+      "gloss": "combinar em uma\n",
+      "synonyms": [
+        "alternar",
+        "entremear",
+        "intercalar",
+        "interpor",
+        "combinar",
+        "misturar"
+      ],
+      "ili": [
+        {
+          "ili_offset": "pwn30-01462468-v",
+          "pwn_id": "pwn30-01462468-v",
+          "pwn_version": "3.0",
+          "pwn_offset": "01462468",
+          "part_of_speech": "v",
+          "cili": "i29034",
+          "cili_id": "i29034",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i29034",
+          "source_curie": "oewn-ili:i29034",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-01462468-v",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i29034.html"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "hyponym",
+          "targets": [
+            {
+              "words": "misturar, combinar",
+              "gloss": "misturar ou mistura\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "mistura",
+              "gloss": "o ato de misturar componentes cuidadosamente\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "formada pela mistura de elementos, ao contrário, especialmente através da redução de um elemento a partículas e dispersá-los em toda a outra substância\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "shuffle (jogo de cartas), separando o baralho em duas partes e riffling com os polegares assim que os cartões Intermix\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um aparelho de cozinha com lâminas intercambiáveis; usado para ralar ou mistura ou cortar ou cortar alimentos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma orientação política originárias da década de 1960; misturas de opiniões políticas liberais, com ênfase no crescimento econômico\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "por mistura de vários lotes de queijo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "amendoim misturado com um pouco de manteiga\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "manteiga misturada com cebola picada\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "manteiga misturada com pimento purê\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "manteiga misturada com camarão picado ou temperado com essência de cascas de camarão\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "manteiga misturada com lagosta picada ou temperado com essência de reservatórios de lagosta\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "manteiga misturada com anchovas purê\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "álcool nonflavored de 95 por cento ou 190 prova utilizado para a mistura com uísques retos e na tomada de gin e licores\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "forte aroma erva comum no sul dos Estados Unidos coberta com glândula entremeada e cabelos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma neoplasia maligna composta de carcinoma e sarcoma extensivamente misturados\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "mistura",
+              "gloss": "o ato de misturar juntos\n"
+            },
+            {
+              "words": "mistura",
+              "gloss": "o ato de misturar componentes cuidadosamente\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um ingrediente adicional que é adicionado por mistura com a base\n"
+            },
+            {
+              "words": "misturador",
+              "gloss": "um eletricamente powered mixer com lâminas girando que misturar ou cortar ou liquefazer alimentos\n"
+            },
+            {
+              "words": "liga",
+              "gloss": "uma ocorrência da mistura completa\n"
+            },
+            {
+              "words": "mistura",
+              "gloss": "o ato de misturar juntos\n"
+            },
+            {
+              "words": "mistura",
+              "gloss": "o ato de misturar componentes cuidadosamente\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um ingrediente adicional que é adicionado por mistura com a base\n"
+            },
+            {
+              "words": "misturador",
+              "gloss": "um eletricamente powered mixer com lâminas girando que misturar ou cortar ou liquefazer alimentos\n"
+            },
+            {
+              "words": "liga",
+              "gloss": "uma ocorrência da mistura completa\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "misturar",
+              "gloss": "trazer ou combinar entre si ou com qualquer outra coisa\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "combinar",
+              "gloss": "combinar de modo a formar um todo; misturar\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-01462806-v",
+      "pos": "v",
+      "gloss": "misturar ou mistura\n",
+      "synonyms": [
+        "misturar",
+        "combinar"
+      ],
+      "ili": [
+        {
+          "ili_offset": "pwn30-01462806-v",
+          "pwn_id": "pwn30-01462806-v",
+          "pwn_version": "3.0",
+          "pwn_offset": "01462806",
+          "part_of_speech": "v",
+          "cili": "i29035",
+          "cili_id": "i29035",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i29035",
+          "source_curie": "oewn-ili:i29035",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-01462806-v",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i29035.html"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "alternar, entremear, intercalar, interpor, combinar, misturar",
+              "gloss": "combinar em uma\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "combinar, misturar",
+              "gloss": "Misture diferentes elementos\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-01657254-v",
+      "pos": "v",
+      "gloss": "montar sem ordem ou sentido\n",
+      "synonyms": [
+        "desconcertar",
+        "confundir",
+        "misturar"
+      ],
+      "ili": [
+        {
+          "ili_offset": "pwn30-01657254-v",
+          "pwn_id": "pwn30-01657254-v",
+          "pwn_version": "3.0",
+          "pwn_offset": "01657254",
+          "part_of_speech": "v",
+          "cili": "i30019",
+          "cili_id": "i30019",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i30019",
+          "source_curie": "oewn-ili:i30019",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-01657254-v",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i30019.html"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "hyponym",
+          "targets": [
+            {
+              "words": "confundir",
+              "gloss": "misturar ou confundir\n"
+            }
+          ]
+        },
+        {
+          "relation": "verb group",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "confundir uma coisa por outra\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "confundir uma coisa por outra\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "confundir",
+              "gloss": "misturar ou confundir\n"
+            },
+            {
+              "words": "misturar",
+              "gloss": "ser todos misturados ou misturados\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "de ou que contenham uma mistura de palavras em latim e palavras vernaculares misturados\n"
+            },
+            {
+              "words": "complicação, confusão, dédalo, labirinto",
+              "gloss": "algo confuso ou confusa\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "um ato, causando uma desordem combinação de elementos com distinções e identidades perdidas misturado\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma teoria ou argumento composta de idéias diversas ou incongruentes\n"
+            },
+            {
+              "words": "confusão",
+              "gloss": "uma multidão confusa de coisas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um ato, causando uma desordem combinação de elementos com distinções e identidades perdidas misturado\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma teoria ou argumento composta de idéias diversas ou incongruentes\n"
+            },
+            {
+              "words": "confusão",
+              "gloss": "uma multidão confusa de coisas\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "juntar, armar, montar, reunir",
+              "gloss": "criar juntando componentes ou membros\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-01472807-v",
+      "pos": "v",
+      "gloss": "pôr em ordem aleatória\n",
+      "synonyms": [
+        "misturar"
+      ],
+      "ili": [
+        {
+          "ili_offset": "pwn30-01472807-v",
+          "pwn_id": "pwn30-01472807-v",
+          "pwn_version": "3.0",
+          "pwn_offset": "01472807",
+          "part_of_speech": "v",
+          "cili": "i29081",
+          "cili_id": "i29081",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i29081",
+          "source_curie": "oewn-ili:i29081",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-01472807-v",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i29081.html"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "hyponym",
+          "targets": [
+            {
+              "words": "cair",
+              "gloss": "jogar juntos em uma massa confusa\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "jogado juntos em uma pilha\n"
+            },
+            {
+              "words": "cair",
+              "gloss": "jogar juntos em uma massa confusa\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "jogado juntos em uma forma desordenada\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "uma luta sem cerimônia e desorganizada\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "equipamento eletrônico que faz o discurso ininteligível durante a transmissão e restaura-lo na recepção\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma teoria ou argumento composta de idéias diversas ou incongruentes\n"
+            },
+            {
+              "words": "confusão",
+              "gloss": "uma multidão confusa de coisas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma luta sem cerimônia e desorganizada\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "equipamento eletrônico que faz o discurso ininteligível durante a transmissão e restaura-lo na recepção\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma teoria ou argumento composta de idéias diversas ou incongruentes\n"
+            },
+            {
+              "words": "confusão",
+              "gloss": "uma multidão confusa de coisas\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "trazer a desordem\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "aleatório",
+              "gloss": "falta de qualquer plano definitivo ou ordem ou finalidade; regidas por, ou dependendo da oportunidade\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-02739861-v",
+      "pos": "v",
+      "gloss": "ser todos misturados ou misturados\n",
+      "synonyms": [
+        "misturar"
+      ],
+      "ili": [
+        {
+          "ili_offset": "pwn30-02739861-v",
+          "pwn_id": "pwn30-02739861-v",
+          "pwn_version": "3.0",
+          "pwn_offset": "02739861",
+          "part_of_speech": "v",
+          "cili": "i35368",
+          "cili_id": "i35368",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i35368",
+          "source_curie": "oewn-ili:i35368",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-02739861-v",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i35368.html"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "uma teoria ou argumento composta de idéias diversas ou incongruentes\n"
+            },
+            {
+              "words": "confusão",
+              "gloss": "uma multidão confusa de coisas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma teoria ou argumento composta de idéias diversas ou incongruentes\n"
+            },
+            {
+              "words": "confusão",
+              "gloss": "uma multidão confusa de coisas\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "ser",
+              "gloss": "tem a qualidade de ser; (cópula, usada com um adjetivo ou um substantivo predicado)\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "todos juntos",
+              "gloss": "utilizando-se de um grupo cujos membros agiram ou foram postos em prática coletivamente e quando 'todos' e 'juntos' podem ser separados por outras palavras\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "causa a ser perplexo ou confundidos\n"
+            },
+            {
+              "words": "desconcertar, confundir, misturar",
+              "gloss": "montar sem ordem ou sentido\n"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

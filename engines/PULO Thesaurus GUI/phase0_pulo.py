@@ -8,19 +8,19 @@ ao `phase0_skos.py` do Onto.PT mas adaptado à natureza do PULO. Importável + C
 
 DIFERENÇA CRÍTICA face ao motor ONTO
 ------------------------------------
-O PULO é DESAMBIGUADO por sentido e ancorado no ILI (1 synset = 1 acepção, como a
-entrada numerada de um dicionário). Os seus sinónimos NÃO têm pesos. A sua função
-é a de ÂNCORA: PRODUZ a lista branca de ILI que o motor ONTO consome como fonte de
-corroboração. É a montante, não a jusante.
+O PULO é DESAMBIGUADO por sentido e ancorado no pivô PWN 3.0 / CILI
+(1 synset = 1 acepção). Os seus sinónimos NÃO têm pesos. A sua função é a de
+ÂNCORA lexical (montante).
 
 Por isso NÃO existe porta estatística (peso/coocorrência). O equivalente da
 «Etapa 3» é a COLHEITA de relações tipadas (WordNet), não filtragem estatística.
 
 Chave canónica
 --------------
-Toda a decisão é ancorada no `ili_offset` (ili-30-…), a chave interlingual. O
-`synset_offset` (por-30-…) é um id local e qualquer id `oewn-` é estrangeiro — nunca
-usados como chave de junção directa. Synsets sem `ili_offset` são SINALIZADOS.
+Toda a decisão é ancorada no id PWN 3.0 local (`pwn30-…`, campo `ili_offset` por
+compatibilidade) e, quando existir, no CILI oficial (`i…`). O `synset_offset`
+(por-30-…) é id PULO/MCR. Nunca se fabrica CILI por concatenação `ili-30-…`.
+Synsets sem pivô PWN/`ili_offset` são SINALIZADOS.
 
 Uso:
     python phase0_pulo.py <spec.json> [--pulo-export <pulo.json>] [--outdir fase0]
@@ -28,7 +28,7 @@ Uso:
 Saídas (mesmos nomes do motor ONTO), para a classe X:
     X.report.md       relatório humano + quadro de ASSERTs (PASS/FAIL)
     X.result.json     admitidos[]/sinalizacao[]/attribute[]/family[]/descartados[]
-    X.skos.ttl        SKOS-XL/OWL (construído e validado com rdflib)
+    X.skos.ttl        SKOS/OWL (construído e validado com rdflib)
     X.whitelist.json  lista branca por ILI, no esquema que o phase0_skos.py lê
 
 Requer: biblioteca padrão + rdflib (para construir/validar o Turtle).
@@ -175,11 +175,48 @@ def load_pulo_export(path: Optional[Path], data: Optional[dict]) -> dict:
 
 
 def synset_ili(syn: dict) -> Optional[str]:
+    """Primary PWN 3.0 pivot for a synset (``pwn30-…``; legacy ``ili-30-…`` ok)."""
     for item in syn.get("ili", []) or []:
-        off = (item.get("ili_offset") or "").strip()
-        if off:
-            return off
+        if not isinstance(item, dict):
+            continue
+        for key in ("pwn_id", "ili_offset"):
+            off = (item.get(key) or "").strip()
+            if off:
+                return off
     return None
+
+
+def _synset_pivot_keys(syn: dict) -> list[str]:
+    """All lookup keys for a synset (pwn30 / legacy ili-30 / por-30)."""
+    keys: list[str] = []
+    seen: set[str] = set()
+
+    def add(raw: Optional[str]) -> None:
+        s = (raw or "").strip()
+        if not s or s in seen:
+            return
+        seen.add(s)
+        keys.append(s)
+        # Cross-register pwn30 ↔ legacy ili-30 spellings
+        m = re.match(
+            r"^(?:pwn30-|ili-30-|[a-z]{2,4}-30-)(\d{8}-[a-z])$", s, re.I
+        )
+        if m:
+            body = m.group(1).lower()
+            for alt in (f"pwn30-{body}", f"ili-30-{body}"):
+                if alt not in seen:
+                    seen.add(alt)
+                    keys.append(alt)
+
+    for item in syn.get("ili", []) or []:
+        if isinstance(item, dict):
+            add(item.get("pwn_id"))
+            add(item.get("ili_offset"))
+            add(item.get("legacy_omw_ili"))
+        else:
+            add(str(item))
+    add(syn.get("synset_offset"))
+    return keys
 
 
 # ---------------------------------------------------------------------------
@@ -190,13 +227,14 @@ class PuloPhase0Engine:
         self.spec = spec
         self.export = export
         self.assertions: list[Assertion] = []
-        # index export synsets by ILI (canonical) — never by por-/oewn- id.
+        # Index by PWN 3.0 pivot (pwn30- / legacy ili-30-) — never fabricate CILI.
         self.by_ili: dict[str, dict] = {}
         self.no_ili: list[dict] = []
         for syn in export.get("synsets", []):
-            ili = synset_ili(syn)
-            if ili:
-                self.by_ili.setdefault(ili, syn)
+            pivots = _synset_pivot_keys(syn)
+            if pivots:
+                for k in pivots:
+                    self.by_ili.setdefault(k, syn)
             else:
                 self.no_ili.append(syn)
 
@@ -589,25 +627,23 @@ class PuloPhase0Engine:
 
 
 # ---------------------------------------------------------------------------
-# SKOS-XL / OWL serialization (built + validated with rdflib)
+# SKOS / OWL serialization (built + validated with rdflib) — plain SKOS, not SKOS-XL
 # ---------------------------------------------------------------------------
 def build_graph(result: dict, disjoint_classes: list[str]):
-    from rdflib import Graph, Literal, BNode, Namespace, URIRef
+    from rdflib import Graph, Literal, Namespace
     from rdflib.namespace import RDF, SKOS, OWL
 
-    SKOSXL = Namespace("http://www.w3.org/2008/05/skos-xl#")
     TEX = Namespace("http://example.org/textura#")
     g = Graph()
     g.bind("skos", SKOS)
-    g.bind("skosxl", SKOSXL)
     g.bind("owl", OWL)
     g.bind("tex", TEX)
 
     cls = TEX[result["class_id"]]
     g.add((cls, RDF.type, SKOS.Concept))
     g.add((cls, RDF.type, OWL.Class))
-    g.add((cls, SKOS.prefLabel, Literal(result["pref_label"], lang="pt")))
-    g.add((cls, SKOS.scopeNote, Literal(f"Eixo definidor: {result['axis']}", lang="pt")))
+    g.add((cls, SKOS.prefLabel, Literal(result["pref_label"], lang="pt-PT")))
+    g.add((cls, SKOS.scopeNote, Literal(f"Eixo definidor: {result['axis']}", lang="pt-PT")))
 
     prov = result["provenance"]
 
@@ -615,11 +651,8 @@ def build_graph(result: dict, disjoint_classes: list[str]):
         return [p for p in prov if p["estatuto"] == status]
 
     for p in by("UF"):
-        node = BNode()
-        g.add((cls, SKOSXL.altLabel, node))
-        g.add((node, SKOSXL.literalForm, Literal(p["termo"], lang="pt")))
+        g.add((cls, SKOS.altLabel, Literal(p["termo"], lang="pt-PT")))
     for p in by("RT"):
-        # tex:termoRelacionado ⊑ skosxl:labelRelation (not skos:related)
         g.add((cls, TEX["termoRelacionado"], TEX[normalize_word(p["termo"])]))
     for p in by("BT"):
         g.add((cls, SKOS.broader, TEX[normalize_word(p["termo"])]))
@@ -718,16 +751,16 @@ def render_markdown(result: dict) -> str:
         ap(", ".join(sorted(v.get("display", k) for k, v in r["stage5"]["pending"].items())))
         ap("")
 
-    ap("## §6 — Mapeamento SKOS-XL / OWL (só Bloco A)")
+    ap("## §6 — Mapeamento SKOS / OWL (só Bloco A)")
     sk = r["skos"]
     ap(f"- `skos:prefLabel` → **{r['pref_label']}**")
-    ap(f"- `skosxl:altLabel` (UF) → {', '.join(sk.get('UF', [])) or '—'}")
+    ap(f"- `skos:altLabel` (UF) → {', '.join(sk.get('UF', [])) or '—'}")
     ap(f"- `:termoRelacionado` (RT) → {', '.join(sk.get('RT', [])) or '—'}")
     ap(f"- `skos:broader` (BT) → {', '.join(sk.get('BT', [])) or '—'}")
     ap(f"- `skos:narrower` (NT) → {', '.join(sk.get('NT', [])) or '—'}")
     ap("")
     ap("_Evidência (`atributo`, oposição, vizinha, sinalização) NÃO é serializada "
-       "como relação SKOS/SKOS-XL._")
+       "como relação SKOS._")
     ap("")
     return "\n".join(L)
 
