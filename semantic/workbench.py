@@ -48,7 +48,7 @@ ORDEM DE TRABALHO (numerada — igual ao checklist do painel direito)
 
 2 · PESQUISAR   (2a antes de 2b)
    2a  PULO — âncora ILI, desambiguado por sentido. SEMPRE primeiro.
-   2b  Onto.PT — cobertura difusa. Depois do PULO.
+   2b  Onto.PT / CONTO.PT — cobertura difusa. Depois do PULO.
    Cada synset vira um cartão de sentido à esquerda.
 
 3 · DECIDIR
@@ -80,7 +80,8 @@ What each source is for
 ───────────────────────
 • PULO     — Portuguese WordNet; 1 synset = 1 sense; linked to ILI
              (Interlingual Index). Prefer this as the sense anchor.
-• Onto.PT  — Discovery / triage only (PASSO 3). Does not admit vocabulary.
+• Onto.PT / CONTO.PT — Discovery / triage only (PASSO 3). Does not admit
+             vocabulary. CONTO.PT = fuzzy wordnet (contopt / clip21 in ontopt.sqlite).
 • WordNet  — OEWN (English), same folder WordNet\; search here in PASSO 2.
              Corroboration only (no UF/RT). Feeds WordNet/OWN-PT track + CILI join.
 • LexWarrant — Relator only: joins results by ILI (or weakly by term).
@@ -170,7 +171,7 @@ classes/<Class>/out/                ← scratch + PULO signals
 
 Tip
 ───
-Mark PULO senses first (ILI anchor), then Onto.PT for coverage.
+Mark PULO senses first (ILI anchor), then Onto.PT / CONTO.PT for coverage.
 When concordance shows divergência, that is a finding, not a bug.
 
 PULO “sinalização” (#NN / similar-to)
@@ -223,7 +224,7 @@ class Workbench(tk.Tk):
 
         search = ttk.LabelFrame(
             self,
-            text="PASSO 2 · Pesquisar  (PULO → Onto.PT → PAPEL → WordNet/OEWN)",
+            text="PASSO 2 · Pesquisar  (PULO → Onto/CONTO.PT → PAPEL → WordNet/OEWN)",
             padding=8)
         search.pack(fill="x", padx=10, pady=(0, 6))
         ttk.Radiobutton(
@@ -232,7 +233,7 @@ class Workbench(tk.Tk):
             command=self._sync_filter_to_search,
         ).pack(side="left")
         ttk.Radiobutton(
-            search, text="Onto.PT  — fuzzy / coverage",
+            search, text="Onto.PT / CONTO.PT  — fuzzy / coverage",
             variable=self.source_var, value="onto",
             command=self._sync_filter_to_search,
         ).pack(side="left", padx=(8, 0))
@@ -272,7 +273,7 @@ class Workbench(tk.Tk):
             command=self._render_senses,
         ).pack(side="left")
         ttk.Radiobutton(
-            filt, text="Onto.PT only", variable=self.filter_var, value="onto",
+            filt, text="Onto/CONTO only", variable=self.filter_var, value="onto",
             command=self._render_senses,
         ).pack(side="left", padx=8)
         ttk.Radiobutton(
@@ -639,7 +640,7 @@ class Workbench(tk.Tk):
             ("1", "Classe criada + meta (pref_label, axis)",
              bool(meta.get("pref_label")) and bool(meta.get("axis")), False),
             ("2a", f"Pesquisar PULO  ({n_pulo} cartões)", n_pulo > 0, False),
-            ("2b", f"Onto.PT descoberta  ({n_onto} cartões)", n_onto > 0, True),
+            ("2b", f"Onto/CONTO descoberta  ({n_onto} cartões)", n_onto > 0, True),
             ("2c", f"PAPEL descoberta  ({n_papel} cartões)", n_papel > 0, True),
             ("3", f"Decidir sentidos  ({decided}/{len(senses)})",
              len(senses) > 0 and decided == len(senses), False),
@@ -833,7 +834,8 @@ class Workbench(tk.Tk):
             if filt == "pulo":
                 msg = "No PULO cards. Search with «PULO — ILI» selected."
             elif filt == "onto":
-                msg = "No Onto.PT cards. Search with «Onto.PT» selected."
+                msg = ("No Onto/CONTO cards. Search with "
+                       "«Onto.PT / CONTO.PT» selected.")
             elif filt == "papel":
                 msg = ("No PAPEL cards. Search with «PAPEL» selected "
                        "(requires `python sr.py resources --build-papel`).")
@@ -849,10 +851,19 @@ class Workbench(tk.Tk):
             sk = decmod.sense_key(s["source"], s["key"])
             src = (s.get("source") or "").lower()
             if src == "onto":
-                bg, accent, banner = "#FFF6E5", "#8A5A00", (
-                    "Onto.PT  ·  fuzzy coverage  ·  options: UF · RT · exclude"
-                )
-                key_line = f"id: {s.get('key')}"
+                key = str(s.get("key") or "")
+                res = key.split(":", 1)[0].lower()
+                if res in ("contopt", "clip21", "clip01", "fuzzythes", "thes5rec", "top01"):
+                    banner = (
+                        f"CONTO.PT / {res}  ·  fuzzy coverage  ·  "
+                        "options: UF · RT · exclude"
+                    )
+                else:
+                    banner = (
+                        "Onto.PT  ·  coverage  ·  options: UF · RT · exclude"
+                    )
+                bg, accent = "#FFF6E5", "#8A5A00"
+                key_line = f"id: {key}"
             elif src == "papel":
                 bg, accent, banner = "#F3E5F5", "#4A148C", (
                     "PAPEL 3.5  ·  dictionary relations  ·  discovery only"

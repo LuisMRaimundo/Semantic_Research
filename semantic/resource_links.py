@@ -22,9 +22,11 @@ OEWN_PAGE_BASE = "https://en-word.net/synset/"
 ONTO_RDF_BASE = "http://ontopt.dei.uc.pt/OntoPT.owl#"
 # LEIAME §6: public site; RDF fragment URIs are dump identifiers, not live pages.
 ONTO_HOME = "http://ontopt.dei.uc.pt/"
+CONTO_HOME = "https://ontopt.dei.uc.pt/index.php?sec=contopt"
 OWNPT_REPO = "https://github.com/own-pt/openWordnet-PT"
 OWNPT_WEB = "http://openwordnet-pt.org"
 PAPEL_HOME = "https://www.linguateca.pt/PAPEL/"
+_CONTO_RES = frozenset({"contopt", "clip21", "clip01", "fuzzythes", "thes5rec", "top01"})
 
 
 @dataclass
@@ -425,11 +427,21 @@ def links_for_sense(sense: dict[str, Any]) -> list[ResourceLink]:
             identifier=ONTO_HOME,
             detail="ontopt.dei.uc.pt · LEIAME",
         ))
+        if res in _CONTO_RES or res.startswith("contopt"):
+            out.append(ResourceLink(
+                label="CONTO.PT (site)",
+                url=CONTO_HOME,
+                kind="onto",
+                verified=True,
+                identifier=CONTO_HOME,
+                detail="wordnet difusa · clip21 / contopt",
+            ))
         rdf_note = ""
         if res == "ontopt06" and sid:
             rdf_note = f" · RDF id {ONTO_RDF_BASE}{sid} (dump local)"
+        label_prefix = "CONTO" if res in _CONTO_RES else "Onto"
         out.append(ResourceLink(
-            label=f"Onto {key}" + ("" if ok else " (?)"),
+            label=f"{label_prefix} {key}" + ("" if ok else " (?)"),
             url="local:",
             kind="local",
             verified=ok,

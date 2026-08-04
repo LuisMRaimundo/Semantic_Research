@@ -21,6 +21,9 @@ pulo.20150502.sql/
 pulo.*.sql.xz
 openWordnet-PT/
 _resource_cache/
+# CONTO.PT / CLIP source dumps (runtime = ontopt.sqlite contopt/clip21)
+CONTO.PT/CONTO.PT.01/
+CONTO.PT/clip21/
 # OEWN dump archives (runtime = wn pin; see WordNet/downloads/README.md)
 WordNet/downloads/*
 !WordNet/downloads/README.md

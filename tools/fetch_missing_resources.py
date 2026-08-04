@@ -20,6 +20,8 @@ UA = {"User-Agent": "SemanticResearch-fetch/1.0"}
 
 PAPEL_ZIP = "https://www.linguateca.pt/PAPEL/PAPEL.v.3.5_utf8.zip"
 ONTO_RDF_ZIP = "https://ontopt.dei.uc.pt/recursos/OntoPTv0.6_rdf.zip"
+CONTOPT_ZIP = "https://ontopt.dei.uc.pt/recursos/CONTO.PT.01.zip"
+CLIP21_ZIP = "https://ontopt.dei.uc.pt/recursos/clip21.zip"
 
 
 def download(url: str, dest: Path) -> Path:
@@ -85,15 +87,16 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--papel", action="store_true", help="fetch PAPEL 3.5 utf8")
     ap.add_argument("--onto-rdf", action="store_true", help="fetch Onto.PT v0.6 RDF")
+    ap.add_argument("--contopt", action="store_true", help="fetch CONTO.PT 0.1 + CLIP 2.1")
     ap.add_argument("--build-papel", action="store_true", help="index papel.sqlite")
     ap.add_argument("--ownpt", action="store_true", help="clone openWordnet-PT")
     ap.add_argument("--all", action="store_true", help="fetch all + build + clone")
     args = ap.parse_args()
     if args.all:
-        args.papel = args.onto_rdf = args.build_papel = args.ownpt = True
-    if not any((args.papel, args.onto_rdf, args.build_papel, args.ownpt)):
+        args.papel = args.onto_rdf = args.contopt = args.build_papel = args.ownpt = True
+    if not any((args.papel, args.onto_rdf, args.contopt, args.build_papel, args.ownpt)):
         args.all = True
-        args.papel = args.onto_rdf = args.build_papel = args.ownpt = True
+        args.papel = args.onto_rdf = args.contopt = args.build_papel = args.ownpt = True
 
     sys.path.insert(0, str(ROOT))
     cache = ROOT / "_resource_cache"
@@ -106,6 +109,39 @@ def main() -> int:
     if args.onto_rdf:
         z = download(ONTO_RDF_ZIP, cache / "OntoPTv0.6_rdf.zip")
         unpack_zip(z, ROOT / "OntoPTv0.6_rdf", "onto_rdf")
+
+    if args.contopt:
+        # CONTO dumps use a looser layout check (txt LeiaMe), so unpack manually.
+        for url, zip_name, sub in (
+            (CONTOPT_ZIP, "CONTO.PT.01.zip", "CONTO.PT.01"),
+            (CLIP21_ZIP, "clip21.zip", "clip21"),
+        ):
+            z = download(url, cache / zip_name)
+            target = ROOT / "CONTO.PT" / sub
+            if target.exists():
+                shutil.rmtree(target)
+            target.mkdir(parents=True, exist_ok=True)
+            with tempfile.TemporaryDirectory(prefix="sr_conto_") as tmp:
+                tmp_path = Path(tmp)
+                with zipfile.ZipFile(z) as zf:
+                    zf.extractall(tmp_path)
+                children = [
+                    p for p in tmp_path.iterdir()
+                    if not p.name.startswith("__") and p.name != ".DS_Store"
+                ]
+                payload = (
+                    children[0]
+                    if len(children) == 1 and children[0].is_dir()
+                    else tmp_path
+                )
+                for item in payload.rglob("*"):
+                    if "__MACOSX" in item.parts or item.name.startswith("._"):
+                        continue
+                    if item.is_file():
+                        out = target / item.relative_to(payload)
+                        out.parent.mkdir(parents=True, exist_ok=True)
+                        shutil.copy2(item, out)
+            print(f"UNPACKED contopt -> {target}")
 
     if args.build_papel:
         from semantic.resources import ensure_papel_index

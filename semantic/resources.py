@@ -54,6 +54,16 @@ CATALOG: tuple[ResourceSpec, ...] = (
         "Onto.PT v0.6 RDF/OWL dump (source; runtime uses ontopt.sqlite).",
     ),
     ResourceSpec(
+        "contopt_dump", "dump", "contopt_dir",
+        "CONTO.PT/CONTO.PT.01", False,
+        "CONTO.PT 0.1 fuzzy wordnet dump (source; runtime = ontopt.sqlite contopt).",
+    ),
+    ResourceSpec(
+        "clip21_dump", "dump", "clip21_dir",
+        "CONTO.PT/clip21", False,
+        "CLIP 2.1 fuzzy synsets dump (source; runtime = ontopt.sqlite clip21).",
+    ),
+    ResourceSpec(
         "ownpt_wn", "runtime", "own_pt",
         "own-pt:1.0.0", True,
         "OpenWordNet-PT via Python ``wn`` pin (not a filesystem path).",

@@ -65,7 +65,7 @@ python sr.py doctor --deep
 | Layer | Role |
 |-------|------|
 | **PULO** | Sense / UF·RT authority (native `to_ili`; DB from `pulo.20160508.sql`) |
-| **Onto.PT** | Discovery only — runtime `ontopt.sqlite` (incl. Onto.PT v0.6); RDF dump `OntoPTv0.6_rdf/` |
+| **Onto.PT / CONTO.PT** | Discovery only — runtime `ontopt.sqlite` (`ontopt06` + fuzzy `contopt`/`clip21`); dumps `OntoPTv0.6_rdf/`, `CONTO.PT/` |
 | **PAPEL 3.5** | Discovery only — dictionary word–word relations (`PAPEL.v.3.5_utf8` → `data/papel.sqlite`) |
 | **OEWN** (runtime pin `oewn:2025`; companions `2024` + `2025+`) | EN corroboration via facets |
 | **OWN-PT** (pin `own-pt:1.0.0`) | PT lemmas via ILI (`atestado`); optional source clone `openWordnet-PT/` |

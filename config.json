@@ -9,6 +9,8 @@
   "pulo_sql_primary": "pulo.20160508.sql/pulo.20160508.sql",
   "pulo_sql_secondary": "pulo.20150502.sql/pulo.20150502.sql",
   "onto_rdf": "OntoPTv0.6_rdf/OntoPTv0.6.rdfs",
+  "contopt_dir": "CONTO.PT/CONTO.PT.01",
+  "clip21_dir": "CONTO.PT/clip21",
   "ownpt_dir": "openWordnet-PT",
   "papel_dir": "PAPEL.v.3.5_utf8",
   "papel_sqlite": "data/papel.sqlite",
