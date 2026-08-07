@@ -18,6 +18,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from semantic import decisions as decmod
+from semantic.normalize import normalize_word
 from semantic.pipeline import run_class, search_and_seed
 from semantic.settings import CLASSES_DIR, load_config
 from semantic.workspace import ClassWorkspace
@@ -193,6 +194,7 @@ class Workbench(tk.Tk):
         self.class_var = tk.StringVar()
         self.source_var = tk.StringVar(value="pulo")
         self.filter_var = tk.StringVar(value="pulo")  # which sense cards to show
+        self.card_search_var = tk.StringVar()  # live term filter over the cards
         self.query_var = tk.StringVar()
         self.mode_var = tk.StringVar(value="Starts with")
         self.status_var = tk.StringVar(value="Ready")
@@ -293,6 +295,18 @@ class Workbench(tk.Tk):
             filt, text="All", variable=self.filter_var, value="all",
             command=self._render_senses,
         ).pack(side="left")
+        ttk.Label(filt, text="Procurar termo:").pack(side="left", padx=(16, 4))
+        search_entry = ttk.Entry(filt, textvariable=self.card_search_var, width=16)
+        search_entry.pack(side="left")
+        search_entry.bind("<Escape>", lambda e: self.card_search_var.set(""))
+        ttk.Button(
+            filt, text="×", width=2,
+            command=lambda: self.card_search_var.set(""),
+        ).pack(side="left", padx=(2, 0))
+        self.card_search_count = ttk.Label(filt, text="", foreground="#555")
+        self.card_search_count.pack(side="left", padx=(6, 0))
+        # Live filtering; safe because unsaved radios survive re-renders.
+        self.card_search_var.trace_add("write", lambda *_: self._render_senses())
         self.decide_hint = ttk.Label(filt, text="", foreground="#333")
         self.decide_hint.pack(side="left", padx=12)
 
@@ -838,6 +852,19 @@ class Workbench(tk.Tk):
                 text="All · blue=PULO · amber=Onto · purple=PAPEL · green=WordNet"
             )
 
+    @staticmethod
+    def _card_matches(s: dict, query: str) -> bool:
+        """Accent-insensitive substring match over members, key, ILI, gloss."""
+        q = normalize_word(query)
+        if not q:
+            return True
+        hay = [normalize_word(m or "") for m in s.get("members") or []]
+        hay.append(normalize_word(s.get("gloss") or ""))
+        hay.append(str(s.get("key") or "").casefold())
+        hay.append(str(s.get("ili") or "").casefold())
+        hay.append(str(s.get("local_id") or "").casefold())
+        return any(q in h for h in hay if h)
+
     def _normalized_disk_decision(self, s: dict) -> str:
         """Same normalisation the card radios apply to the stored decision."""
         raw = s.get("decision") or ""
@@ -892,6 +919,23 @@ class Workbench(tk.Tk):
         if filt in ("pulo", "onto", "papel", "wordnet"):
             senses = [s for s in senses if (s.get("source") or "").lower() == filt]
 
+        query = (self.card_search_var.get() or "").strip()
+        if query:
+            senses = [s for s in senses if self._card_matches(s, query)]
+            self.card_search_count.configure(
+                text=f"{len(senses)} cartão(ões)"
+            )
+        else:
+            self.card_search_count.configure(text="")
+
+        if query and not senses:
+            tk.Label(
+                self.sense_frame,
+                text=f"Nenhum cartão corresponde a «{query}» "
+                     "(membros, id, ILI ou gloss).",
+                fg="#555", anchor="w", justify="left",
+            ).pack(anchor="w", padx=8, pady=12)
+            return
         if not senses:
             msg = "No senses yet. Search a lemma above (PULO / Onto / PAPEL / WordNet)."
             if filt == "pulo":
