@@ -4,31 +4,23 @@
   "axis": "invariância face a um parâmetro",
   "acepcao_a_separar": "invariância face a um parâmetro",
   "ancora_ili": [
-    "ili-30-01200095-a",
-    "ili-30-01966488-a"
+    "i6560",
+    "i10771"
   ],
-  "anchor_pos": "a",
+  "anchor_pos": null,
   "near_stem": "uniform*",
-  "generated": "2026-07-27T12:39:44+01:00",
+  "generated": "2026-08-07T13:35:46+01:00",
   "search_lang": "en",
   "label_lang": "pt-PT",
   "termos_manuais_presentes": true,
   "n_admitidos_matriz": 7,
+  "n_validated_alt_labels": 0,
   "A_polo_alvo": [
-    {
-      "forma": "consistent",
-      "wildcard": "consistent*",
-      "lingua": "en",
-      "ili": "i6560",
-      "fonte": "OEWN",
-      "estatuto": "UF",
-      "manual": false
-    },
     {
       "forma": "uniform",
       "wildcard": "uniform*",
       "lingua": "en",
-      "ili": "i6560",
+      "ili": "i10771",
       "fonte": "OEWN",
       "estatuto": "UF",
       "manual": false
@@ -38,6 +30,15 @@
       "wildcard": "unvarying*",
       "lingua": "en",
       "ili": "i10771",
+      "fonte": "OEWN",
+      "estatuto": "UF",
+      "manual": false
+    },
+    {
+      "forma": "consistent",
+      "wildcard": "consistent*",
+      "lingua": "en",
+      "ili": "i6560",
       "fonte": "OEWN",
       "estatuto": "UF",
       "manual": false
@@ -145,39 +146,54 @@
   ],
   "E_fronteiras_dominio": [
     {
-      "chave": "ili-30-00909545-a",
-      "ili": "ili-30-00909545-a",
-      "lema": "igual",
-      "motivo": "sem variações; regular e uniforme face ao parâmetro",
-      "fonte": "pulo"
+      "chave": "papel35:FINALIDADE:FAZ_SE_COM:uniforme",
+      "chave_legada": null,
+      "pwn30": null,
+      "cili": null,
+      "ili": "papel35:FINALIDADE:FAZ_SE_COM:uniforme",
+      "lema": "uniforme",
+      "motivo": "discovery: PAPEL 3.5",
+      "fonte": "papel"
     },
     {
-      "chave": "ili-30-02302187-a",
-      "ili": "ili-30-02302187-a",
-      "lema": "periódico",
-      "motivo": "que ocorre em intervalos fixos e regulares",
-      "fonte": "pulo"
+      "chave": "papel35:HIPERONIMIA:HIPERONIMO_DE:uniforme",
+      "chave_legada": null,
+      "pwn30": null,
+      "cili": null,
+      "ili": "papel35:HIPERONIMIA:HIPERONIMO_DE:uniforme",
+      "lema": "uniforme",
+      "motivo": "discovery: PAPEL 3.5",
+      "fonte": "papel"
     },
     {
-      "chave": "ili-30-00910101-a",
-      "ili": "ili-30-00910101-a",
-      "lema": "bonito",
-      "motivo": "de aparência agradável aos olhos",
-      "fonte": "pulo"
+      "chave": "papel35:PARTE:PARTE_DE_ALGO_COM_PROPRIEDADE:uniforme",
+      "chave_legada": null,
+      "pwn30": null,
+      "cili": null,
+      "ili": "papel35:PARTE:PARTE_DE_ALGO_COM_PROPRIEDADE:uniforme",
+      "lema": "uniforme",
+      "motivo": "discovery: PAPEL 3.5",
+      "fonte": "papel"
     },
     {
-      "chave": "ili-30-04509592-n",
-      "ili": "ili-30-04509592-n",
-      "lema": "medidor",
-      "motivo": "instrumento de medição de comprimento",
-      "fonte": "pulo"
+      "chave": "papel35:SINONIMIA:SINONIMO_N_DE:uniforme",
+      "chave_legada": null,
+      "pwn30": null,
+      "cili": null,
+      "ili": "papel35:SINONIMIA:SINONIMO_N_DE:uniforme",
+      "lema": "uniforme",
+      "motivo": "discovery: PAPEL 3.5",
+      "fonte": "papel"
     },
     {
-      "chave": "ili-30-00744506-a",
-      "ili": "ili-30-00744506-a",
-      "lema": "fardado",
-      "motivo": "relativo ao fardamento militar",
-      "fonte": "pulo"
+      "chave": "papel35:MANEIRA_SEM:MANEIRA_SEM:uniforme",
+      "chave_legada": null,
+      "pwn30": null,
+      "cili": null,
+      "ili": "papel35:MANEIRA_SEM:MANEIRA_SEM:uniforme",
+      "lema": "uniformemente",
+      "motivo": "discovery: PAPEL 3.5",
+      "fonte": "papel"
     }
   ],
   "F_vocabulario_pt": [
@@ -187,7 +203,7 @@
       "lingua": "pt-PT",
       "estatuto": "UF",
       "ili": [
-        "ili-30-01200095-a"
+        "i6560"
       ],
       "fontes": [
         "pulo"
@@ -195,8 +211,8 @@
       "garantia": "fonte_unica",
       "ancora_ili": "presente",
       "em_espera": true,
-      "sense_key": "ili-30-01200095-a",
-      "sense_pos": "a",
+      "sense_key": "i6560",
+      "sense_pos": null,
       "cross_class": null,
       "nota": ""
     },
@@ -206,7 +222,7 @@
       "lingua": "pt-PT",
       "estatuto": "UF",
       "ili": [
-        "ili-30-01966488-a"
+        "i10771"
       ],
       "fontes": [
         "pulo"
@@ -214,8 +230,8 @@
       "garantia": "fonte_unica",
       "ancora_ili": "presente",
       "em_espera": true,
-      "sense_key": "ili-30-01966488-a",
-      "sense_pos": "a",
+      "sense_key": "i10771",
+      "sense_pos": null,
       "cross_class": null,
       "nota": ""
     },
@@ -225,7 +241,7 @@
       "lingua": "pt-PT",
       "estatuto": "RT",
       "ili": [
-        "ili-30-04745370-n"
+        "i61962"
       ],
       "fontes": [
         "pulo"
@@ -244,7 +260,7 @@
       "lingua": "pt-PT",
       "estatuto": "UF",
       "ili": [
-        "ili-30-01200095-a"
+        "i6560"
       ],
       "fontes": [
         "pulo"
@@ -252,8 +268,8 @@
       "garantia": "fonte_unica",
       "ancora_ili": "presente",
       "em_espera": true,
-      "sense_key": "ili-30-01200095-a",
-      "sense_pos": "a",
+      "sense_key": "i6560",
+      "sense_pos": null,
       "cross_class": null,
       "nota": ""
     },
@@ -263,7 +279,7 @@
       "lingua": "pt-PT",
       "estatuto": "RT",
       "ili": [
-        "ili-30-04745370-n"
+        "i61962"
       ],
       "fontes": [
         "pulo"
@@ -282,9 +298,8 @@
       "lingua": "pt-PT",
       "estatuto": "UF",
       "ili": [
-        "ili-30-01200095-a",
-        "ili-30-01966488-a",
-        "oewn-ili:i10771"
+        "i10771",
+        "i6560"
       ],
       "fontes": [
         "own-pt",
@@ -293,8 +308,8 @@
       "garantia": "convergencia",
       "ancora_ili": "presente",
       "em_espera": false,
-      "sense_key": "ili-30-01200095-a",
-      "sense_pos": "a",
+      "sense_key": "i6560",
+      "sense_pos": null,
       "cross_class": null,
       "nota": ""
     },
@@ -304,7 +319,7 @@
       "lingua": "pt-PT",
       "estatuto": "RT",
       "ili": [
-        "ili-30-04745370-n"
+        "i61962"
       ],
       "fontes": [
         "pulo"
@@ -312,39 +327,249 @@
       "garantia": "fonte_unica",
       "ancora_ili": "presente",
       "em_espera": true,
-      "sense_key": "ili-30-04745370-n",
-      "sense_pos": "n",
+      "sense_key": "papel35:QUALIDADE:TEM_QUALIDADE:uniforme",
+      "sense_pos": null,
       "cross_class": null,
       "nota": ""
     }
   ],
   "a_resolver": [
     {
-      "forma": "invariância",
-      "estatuto": "RT",
-      "garantia": "fonte_unica",
+      "forma": "inalteravelmente",
+      "estatuto": "UF",
+      "garantia": null,
       "razoes": [
-        "categoria da acepção (n) diverge da âncora da classe (a)",
-        "três ou mais termos partilham a acepção ili-30-04745370-n (categoria n ≠ âncora a)"
+        "acepção adjudicada (papel35:SINONIMIA:SINONIMO_ADV_DE:uniforme) sem correspondência na matriz"
       ]
+    }
+  ],
+  "descartado_onto_discovery": [
+    {
+      "key": "contopt:28395",
+      "membros": [
+        "contínuo",
+        "constante",
+        "ininterrupto",
+        "sucessivo",
+        "permanente",
+        "frequente",
+        "incessante",
+        "perpétuo",
+        "continuado",
+        "assíduo",
+        "seguido",
+        "perene",
+        "aturado",
+        "porfioso",
+        "incessável",
+        "ininterrompido",
+        "afio",
+        "consecutivo",
+        "estável",
+        "imutável",
+        "imudável",
+        "invariável",
+        "amiudado",
+        "repetido",
+        "manente",
+        "duradouro",
+        "imediato",
+        "jacente",
+        "conseguinte",
+        "subsecutivo",
+        "persistente",
+        "eterno",
+        "miúdo",
+        "vitalício",
+        "firme",
+        "inalterável",
+        "infindável",
+        "regular",
+        "crebro",
+        "periódico",
+        "permanecente",
+        "diligente",
+        "fiel",
+        "sempiterno",
+        "jazente",
+        "reiterado",
+        "sem paradas",
+        "aplicado",
+        "habitual",
+        "imóvel",
+        "ordinário",
+        "uniforme",
+        "usual"
+      ],
+      "decision": "RT",
+      "motivo": "Onto.PT discovery-only — não admite na matriz LexWarrant"
     },
     {
-      "forma": "periódico",
-      "estatuto": "RT",
-      "garantia": "fonte_unica",
-      "razoes": [
-        "categoria da acepção (n) diverge da âncora da classe (a)",
-        "três ou mais termos partilham a acepção ili-30-04745370-n (categoria n ≠ âncora a)"
-      ]
+      "key": "fuzzythes:23298",
+      "membros": [
+        "consignado",
+        "constante",
+        "imudável",
+        "imutável",
+        "invariável",
+        "manente",
+        "incessável",
+        "estável",
+        "ininterrompido",
+        "aturado",
+        "afio",
+        "incessante",
+        "perseverante",
+        "permanente",
+        "continuado",
+        "imanente",
+        "escrito",
+        "ininterrupto",
+        "jazente",
+        "permanecente",
+        "contínuo",
+        "diamantino",
+        "estóico",
+        "assíduo",
+        "seguido",
+        "firme",
+        "sistemático",
+        "uniforme",
+        "jacente",
+        "sucessivo",
+        "adamantino",
+        "persistente",
+        "porfioso",
+        "mencionado",
+        "perene",
+        "metódico",
+        "perpétuo",
+        "ordenado"
+      ],
+      "decision": "RT",
+      "motivo": "Onto.PT discovery-only — não admite na matriz LexWarrant"
     },
     {
-      "forma": "uniformidade",
-      "estatuto": "RT",
-      "garantia": "fonte_unica",
-      "razoes": [
-        "categoria da acepção (n) diverge da âncora da classe (a)",
-        "três ou mais termos partilham a acepção ili-30-04745370-n (categoria n ≠ âncora a)"
-      ]
+      "key": "fuzzythes:25600",
+      "membros": [
+        "unímodo",
+        "uniforme",
+        "homótono",
+        "equável",
+        "homogéneo",
+        "monótono",
+        "recto"
+      ],
+      "decision": "RT",
+      "motivo": "Onto.PT discovery-only — não admite na matriz LexWarrant"
+    },
+    {
+      "key": "fuzzythes:26445",
+      "membros": [
+        "homogéneo",
+        "unívoco",
+        "similar",
+        "inequívoco",
+        "uniforme",
+        "análogo",
+        "idêntico",
+        "contínuo"
+      ],
+      "decision": "RT",
+      "motivo": "Onto.PT discovery-only — não admite na matriz LexWarrant"
+    },
+    {
+      "key": "fuzzythes:27091",
+      "membros": [
+        "inflexivo",
+        "invariável",
+        "intemporal",
+        "imudável",
+        "estereotipado",
+        "imutável",
+        "constante",
+        "imaterial",
+        "irretratável",
+        "estereótipo",
+        "imóvel",
+        "eterno",
+        "uniforme",
+        "inalterável",
+        "estável"
+      ],
+      "decision": "RT",
+      "motivo": "Onto.PT discovery-only — não admite na matriz LexWarrant"
+    },
+    {
+      "key": "ontopt06:2131",
+      "membros": [
+        "equável",
+        "uniforme"
+      ],
+      "decision": "UF",
+      "motivo": "Onto.PT discovery-only — não admite na matriz LexWarrant"
+    },
+    {
+      "key": "ontopt06:2133",
+      "membros": [
+        "uniforme",
+        "unímodo"
+      ],
+      "decision": "UF",
+      "motivo": "Onto.PT discovery-only — não admite na matriz LexWarrant"
+    },
+    {
+      "key": "ontopt06:2945",
+      "membros": [
+        "homótono",
+        "invariável",
+        "monótono",
+        "uniforme"
+      ],
+      "decision": "UF",
+      "motivo": "Onto.PT discovery-only — não admite na matriz LexWarrant"
+    },
+    {
+      "key": "polaridades:1656",
+      "membros": [
+        "equável",
+        "uniforme"
+      ],
+      "decision": "UF",
+      "motivo": "Onto.PT discovery-only — não admite na matriz LexWarrant"
+    },
+    {
+      "key": "polaridades:4484",
+      "membros": [
+        "homótono",
+        "invariável",
+        "monótono",
+        "uniforme"
+      ],
+      "decision": "UF",
+      "motivo": "Onto.PT discovery-only — não admite na matriz LexWarrant"
+    },
+    {
+      "key": "clip21:15521",
+      "membros": [
+        "uniformador",
+        "uniformizador"
+      ],
+      "decision": "UF",
+      "motivo": "Onto.PT discovery-only — não admite na matriz LexWarrant"
+    },
+    {
+      "key": "clip21:20421",
+      "membros": [
+        "inalteravelmente",
+        "uniformemente",
+        "de maneira justa",
+        "imutavelmente",
+        "monotonamente",
+        "unanimemente"
+      ],
+      "decision": "RT",
+      "motivo": "Onto.PT discovery-only — não admite na matriz LexWarrant"
     }
   ],
   "D_vocabulario_pt": [
@@ -354,7 +579,7 @@
       "lingua": "pt-PT",
       "estatuto": "UF",
       "ili": [
-        "ili-30-01200095-a"
+        "i6560"
       ],
       "fontes": [
         "pulo"
@@ -362,8 +587,8 @@
       "garantia": "fonte_unica",
       "ancora_ili": "presente",
       "em_espera": true,
-      "sense_key": "ili-30-01200095-a",
-      "sense_pos": "a",
+      "sense_key": "i6560",
+      "sense_pos": null,
       "cross_class": null,
       "nota": ""
     },
@@ -373,7 +598,7 @@
       "lingua": "pt-PT",
       "estatuto": "UF",
       "ili": [
-        "ili-30-01966488-a"
+        "i10771"
       ],
       "fontes": [
         "pulo"
@@ -381,8 +606,8 @@
       "garantia": "fonte_unica",
       "ancora_ili": "presente",
       "em_espera": true,
-      "sense_key": "ili-30-01966488-a",
-      "sense_pos": "a",
+      "sense_key": "i10771",
+      "sense_pos": null,
       "cross_class": null,
       "nota": ""
     },
@@ -392,7 +617,7 @@
       "lingua": "pt-PT",
       "estatuto": "RT",
       "ili": [
-        "ili-30-04745370-n"
+        "i61962"
       ],
       "fontes": [
         "pulo"
@@ -411,7 +636,7 @@
       "lingua": "pt-PT",
       "estatuto": "UF",
       "ili": [
-        "ili-30-01200095-a"
+        "i6560"
       ],
       "fontes": [
         "pulo"
@@ -419,8 +644,8 @@
       "garantia": "fonte_unica",
       "ancora_ili": "presente",
       "em_espera": true,
-      "sense_key": "ili-30-01200095-a",
-      "sense_pos": "a",
+      "sense_key": "i6560",
+      "sense_pos": null,
       "cross_class": null,
       "nota": ""
     },
@@ -430,7 +655,7 @@
       "lingua": "pt-PT",
       "estatuto": "RT",
       "ili": [
-        "ili-30-04745370-n"
+        "i61962"
       ],
       "fontes": [
         "pulo"
@@ -449,9 +674,8 @@
       "lingua": "pt-PT",
       "estatuto": "UF",
       "ili": [
-        "ili-30-01200095-a",
-        "ili-30-01966488-a",
-        "oewn-ili:i10771"
+        "i10771",
+        "i6560"
       ],
       "fontes": [
         "own-pt",
@@ -460,8 +684,8 @@
       "garantia": "convergencia",
       "ancora_ili": "presente",
       "em_espera": false,
-      "sense_key": "ili-30-01200095-a",
-      "sense_pos": "a",
+      "sense_key": "i6560",
+      "sense_pos": null,
       "cross_class": null,
       "nota": ""
     },
@@ -471,7 +695,7 @@
       "lingua": "pt-PT",
       "estatuto": "RT",
       "ili": [
-        "ili-30-04745370-n"
+        "i61962"
       ],
       "fontes": [
         "pulo"
@@ -479,8 +703,8 @@
       "garantia": "fonte_unica",
       "ancora_ili": "presente",
       "em_espera": true,
-      "sense_key": "ili-30-04745370-n",
-      "sense_pos": "n",
+      "sense_key": "papel35:QUALIDADE:TEM_QUALIDADE:uniforme",
+      "sense_pos": null,
       "cross_class": null,
       "nota": ""
     }
@@ -513,6 +737,7 @@
     "textura",
     "texturacomposita",
     "texturadensa",
+    "texturadireccional",
     "texturaheterogenea",
     "texturaintermitente",
     "texturametamorfica",

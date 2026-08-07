@@ -2,19 +2,60 @@
   "class_id": "TexturaComposita",
   "pref_label": "textura compósita",
   "axis": "(faixa OWN-PT — atestação PT via ILI; sem estatuto admissivo)",
-  "generated": "2026-07-31T04:21:27",
+  "generated": "2026-08-04T22:45:35",
   "source": "OWN-PT (OpenWordNet-PT)",
   "lexicon": "own-pt:1.0.0",
-  "facets_export": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\classes\\TexturaComposita\\exports\\wordnet_composite.facets.json",
-  "convoked_ilis": [],
+  "facets_export": "E:\\PYTHON CODES\\Semantic_Research\\classes\\TexturaComposita\\exports\\wordnet_compound.facets.json",
+  "convoked_ilis": [
+    "i67721",
+    "i114921"
+  ],
   "skipped_ilis": [
-    "i15148",
-    "i67722",
-    "i99843",
-    "i11972"
+    "i11935",
+    "i52230",
+    "i11973",
+    "i11970",
+    "i22857",
+    "i22685",
+    "i33063",
+    "i30022",
+    "i29030"
   ],
   "provenance": [],
-  "atestacao": {},
+  "atestacao": {
+    "composicao": {
+      "display": "Composição",
+      "reason": "atestado OWN-PT [own-pt:1.0.0] via ILI i67721 · oewn-05878802-n",
+      "offsets_ili": [
+        "i67721"
+      ],
+      "lexicon": "own-pt:1.0.0"
+    },
+    "composto": {
+      "display": "composto",
+      "reason": "atestado OWN-PT [own-pt:1.0.0] via ILI i67721 · oewn-05878802-n",
+      "offsets_ili": [
+        "i67721"
+      ],
+      "lexicon": "own-pt:1.0.0"
+    },
+    "composto quimico": {
+      "display": "composto químico",
+      "reason": "atestado OWN-PT [own-pt:1.0.0] via ILI i114921 · oewn-14842408-n",
+      "offsets_ili": [
+        "i114921"
+      ],
+      "lexicon": "own-pt:1.0.0"
+    },
+    "substancia quimica": {
+      "display": "substância química",
+      "reason": "atestado OWN-PT [own-pt:1.0.0] via ILI i114921 · oewn-14842408-n",
+      "offsets_ili": [
+        "i114921"
+      ],
+      "lexicon": "own-pt:1.0.0"
+    }
+  },
   "sinalizacao": {},
   "_note": "OpenWordNet-PT: fundamento de entrada (atestado) ancorado em ILI. NÃO atribui relação de vocabulário (UF/RT). Léxico: own-pt:1.0.0.",
   "_pwn_derived": true

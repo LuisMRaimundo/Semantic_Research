@@ -2,18 +2,53 @@
   "class_id": "TexturaComposita",
   "pref_label": "textura compósita",
   "axis": "(faixa OEWN — corroboração EN / relações tipadas; sem adjudicação)",
-  "generated": "2026-07-31T04:21:27",
+  "generated": "2026-08-04T22:45:35",
   "source": "WordNet (OEWN facets export)",
-  "facets_export": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\classes\\TexturaComposita\\exports\\wordnet_composite.facets.json",
-  "convoked_ilis": [],
+  "facets_export": "E:\\PYTHON CODES\\Semantic_Research\\classes\\TexturaComposita\\exports\\wordnet_compound.facets.json",
+  "convoked_ilis": [
+    "i67721",
+    "i114921"
+  ],
   "skipped_ilis": [
-    "i15148",
-    "i67722",
-    "i99843",
-    "i11972"
+    "i11935",
+    "i52230",
+    "i11973",
+    "i11970",
+    "i22857",
+    "i22685",
+    "i33063",
+    "i30022",
+    "i29030"
   ],
   "provenance": [],
-  "synsets": [],
+  "synsets": [
+    {
+      "name": "oewn-05878802-n",
+      "ili": "i67721",
+      "pos": "n",
+      "pt_lemmas": [
+        "Composição",
+        "composição",
+        "composto"
+      ],
+      "lemmas": [
+        "compound"
+      ]
+    },
+    {
+      "name": "oewn-14842408-n",
+      "ili": "i114921",
+      "pos": "n",
+      "pt_lemmas": [
+        "composto químico",
+        "substância química"
+      ],
+      "lemmas": [
+        "compound",
+        "chemical compound"
+      ]
+    }
+  ],
   "sinalizacao": {},
   "_note": "Faixa OEWN: lemas EN e relações tipadas em sinalizacao. Lemas PT via ILI → ficheiro OWN-PT.result.json (coluna própria)."
 }

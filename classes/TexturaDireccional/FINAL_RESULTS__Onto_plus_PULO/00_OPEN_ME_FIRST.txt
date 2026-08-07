@@ -1,0 +1,10 @@
+FINAL RESULTS — NOT READY YET
+==============================
+
+This folder is only a placeholder.
+There is no concordance until you:
+  1) Search in PULO + Onto.PT
+  2) Mark senses and Save
+  3) Click Run (needs ≥2 engine results)
+
+Then look for:  FINAL__Onto_plus_PULO__TexturaDireccional.concordance.md

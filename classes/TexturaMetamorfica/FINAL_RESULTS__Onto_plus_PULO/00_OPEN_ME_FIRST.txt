@@ -6,4 +6,6 @@ This folder is the class DELIVERABLE.
 1) Open:  OPEN_ME__FINAL_RESULTS.html  (green page)
 2) Or open:  FINAL__Onto_plus_PULO__TexturaMetamorfica.concordance.md
 
-WordNet is not included unless you add it later.
+WordNet/OEWN may be queried as a corroboration track;
+it only appears in the matrix when it contributes admitted forms.
+(source_available ≠ source_contributed_results)

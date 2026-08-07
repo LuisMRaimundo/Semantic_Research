@@ -156,6 +156,45 @@ def _sideline_pulo_signals(result_path: Path, out_dir: Path) -> Path:
     return clean_path
 
 
+def _onto_source_status(ws: ClassWorkspace, onto_sqlite: Path) -> dict[str, Any]:
+    """Real ONTO provenance flags (discovery-only source, never in the matrix).
+
+    ``source_queried`` = the source was actually consulted: the ONTO engine
+    produced a result for this class OR discovery cards were seeded into
+    decisions.json from GUI searches. Not merely "a file exists".
+    """
+    from . import decisions as decmod
+
+    onto_result = ws.results / f"{ws.class_id}.ONTO.result.json"
+    engine_ran = onto_result.exists()
+    engine_evidence = False
+    if engine_ran:
+        try:
+            od = json.loads(onto_result.read_text(encoding="utf-8"))
+            engine_evidence = bool(
+                od.get("sinalizacao") or od.get("provenance") or od.get("stage5")
+            )
+        except (OSError, json.JSONDecodeError):
+            engine_evidence = True
+    try:
+        dec = decmod.load_decisions(ws.decisions_json)
+        onto_cards = [
+            s for s in dec.get("senses") or []
+            if (s.get("source") or "").lower() == "onto"
+        ]
+    except (OSError, json.JSONDecodeError):
+        onto_cards = []
+    return {
+        "role": "discovery",
+        "source_available": onto_sqlite.exists(),
+        "source_queried": engine_ran or bool(onto_cards),
+        "contributed_discovery_evidence": engine_evidence or bool(onto_cards),
+        "contributed_concordance_results": False,
+        "source_contributed_results": False,
+        "n_discovery_cards": len(onto_cards),
+    }
+
+
 def _preflight(ws: ClassWorkspace, engines: list[str]) -> list[str]:
     """Human-readable blockers before engines run (empty axis, empty export…)."""
     problems: list[str] = []
@@ -411,6 +450,13 @@ def run_class(class_id: str, policy: Optional[str] = None,
             except Exception as exc:  # noqa: BLE001
                 summary.setdefault("errors", []).append(f"mapping sync: {exc}")
                 excl_ids = set()
+            # ONTO is discovery-only (never a LexWarrant input), so its real
+            # status must be computed here and rendered with the report —
+            # "queried" means the source was actually consulted (engine ran
+            # OR discovery cards were seeded from the GUI), not merely that
+            # a result file exists.
+            onto_status = _onto_source_status(ws, paths["onto_sqlite"])
+            summary["source_status_onto"] = onto_status
             buf = io.StringIO()
             with contextlib.redirect_stdout(buf), contextlib.redirect_stderr(buf):
                 doc = lexwarrant.run_report(
@@ -418,6 +464,7 @@ def run_class(class_id: str, policy: Optional[str] = None,
                     map_path=map_path, equiv=equiv,
                     weak_term_mode=weak_mode, gloss_min=gloss_min,
                     excluded_cilis=excl_ids or None,
+                    source_status_overrides={"ONTO": onto_status},
                 )
             summary["weak_term_mode"] = weak_mode
             summary["gloss_min"] = gloss_min
@@ -454,6 +501,21 @@ def run_class(class_id: str, policy: Optional[str] = None,
                     summary.setdefault("errors", []).append(
                         f"Concept model: {exc}"
                     )
+            # T15 — adjudication ↔ artefact traceability (same targets as T12)
+            try:
+                from .traceability import append_t15_to_concordance, run_t15
+                t15 = run_t15(ws)
+                if t15 is not None:
+                    for target in t12_targets:
+                        if target.exists():
+                            append_t15_to_concordance(target, t15)
+                    summary["t15"] = {
+                        "passed": t15["passed"],
+                        "evidence": t15["evidence"],
+                        "dropped_with_reason": t15["dropped_with_reason"],
+                    }
+            except Exception as exc:  # noqa: BLE001
+                summary.setdefault("errors", []).append(f"T15: {exc}")
             engines_ran = {e for e in engines if e in ("pulo", "onto")}
             exec_meta = {
                 "engines": list(engines),
@@ -516,45 +578,10 @@ def run_class(class_id: str, policy: Optional[str] = None,
                 doc.get("legacy_equivalence_counts")
                 or doc.get("ili_equivalence_counts")
             )
+            # MD and JSON are rendered from the same source_status dict
+            # (ONTO included via source_status_overrides above) — no
+            # post-hoc, JSON-only patching.
             summary["source_status"] = doc.get("source_status") or {}
-            # ONTO is discovery-only: report separately from concordance admits
-            onto_result = ws.results / f"{ws.class_id}.ONTO.result.json"
-            onto_queried = onto_result.exists()
-            onto_has_evidence = False
-            if onto_queried:
-                try:
-                    od = json.loads(onto_result.read_text(encoding="utf-8"))
-                    onto_has_evidence = bool(
-                        od.get("sinalizacao") or od.get("provenance")
-                        or od.get("stage5")
-                    )
-                except (OSError, json.JSONDecodeError):
-                    onto_has_evidence = True
-            summary["source_status"]["ONTO"] = {
-                "role": "discovery",
-                "source_available": onto_queried,
-                "source_queried": onto_queried,
-                "contributed_discovery_evidence": onto_has_evidence,
-                "contributed_concordance_results": False,
-                "source_contributed_results": False,
-            }
-            # Persist enriched status onto concordance JSON copies
-            try:
-                doc["source_status"] = summary["source_status"]
-                for jp in (
-                    Path(published["json"]),
-                    ws.out / f"{ws.class_id}.concordance.json",
-                    ws.final_results / f"{ws.class_id}.concordance.json",
-                ):
-                    if jp.exists():
-                        cur = json.loads(jp.read_text(encoding="utf-8"))
-                        cur["source_status"] = summary["source_status"]
-                        jp.write_text(
-                            json.dumps(cur, ensure_ascii=False, indent=2) + "\n",
-                            encoding="utf-8",
-                        )
-            except Exception:  # noqa: BLE001
-                pass
             note_bits = [
                 f"FINAL RESULTS → {published['folder']}",
                 "Deliverable: TERMOS.html + TERMOS_PESQUISA.md/.csv",

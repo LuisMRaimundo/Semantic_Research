@@ -5,7 +5,7 @@
   "n_onto": 68,
   "n_anchors": 56,
   "n_proposals": 3,
-  "n_accepted": 0,
+  "n_accepted": 2,
   "n_rejected": 0,
   "auto_accept": {
     "n": 0,
@@ -50,7 +50,7 @@
         },
         "lemma_score": 0.4333
       },
-      "status": "proposed"
+      "status": "accepted"
     },
     {
       "onto_key": "onto:contopt:29206",
@@ -124,7 +124,7 @@
         },
         "lemma_score": 0.5
       },
-      "status": "proposed"
+      "status": "accepted"
     }
   ]
 }

@@ -1,0 +1,63 @@
+{
+  "type": "thesaurus_search",
+  "source": "papel",
+  "query": {
+    "query": "metamórfico",
+    "mode": "Contains",
+    "group": null
+  },
+  "count": 2,
+  "synsets": [
+    {
+      "resource": "papel35",
+      "resource_label": "PAPEL 3.5 / REFERENTE",
+      "synset_id": "REFERENTE:DIZ_SE_DO_QUE:metamorfico",
+      "pos": "",
+      "gloss": "PAPEL DIZ_SE_DO_QUE (REFERENTE)",
+      "members": [
+        {
+          "word": "metamórfico",
+          "weight": 1.0
+        },
+        {
+          "word": "sofrer metamorfismo",
+          "weight": 1.0
+        }
+      ],
+      "relations": {
+        "papel_rel": "DIZ_SE_DO_QUE",
+        "papel_group": "REFERENTE"
+      }
+    },
+    {
+      "resource": "papel35",
+      "resource_label": "PAPEL 3.5 / REFERENTE",
+      "synset_id": "REFERENTE:DIZ_SE_SOBRE:metamorfico",
+      "pos": "",
+      "gloss": "PAPEL DIZ_SE_SOBRE (REFERENTE)",
+      "members": [
+        {
+          "word": "metamórfico",
+          "weight": 1.0
+        },
+        {
+          "word": "metamorfos de ser",
+          "weight": 1.0
+        },
+        {
+          "word": "pirometamorfismo",
+          "weight": 1.0
+        },
+        {
+          "word": "pirometamórfico",
+          "weight": 1.0
+        }
+      ],
+      "relations": {
+        "papel_rel": "DIZ_SE_SOBRE",
+        "papel_group": "REFERENTE"
+      }
+    }
+  ],
+  "_note": "PAPEL 3.5 discovery only — word–word dictionary relations; never LexWarrant admission."
+}

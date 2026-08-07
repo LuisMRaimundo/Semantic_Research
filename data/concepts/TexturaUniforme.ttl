@@ -6,7 +6,7 @@
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaUniforme
-# generated 2026-07-31T03:21:28+00:00
+# generated 2026-08-07T12:35:47+00:00
 # policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaUniforme a owl:Class, skos:Concept ;
@@ -18,7 +18,10 @@ sr:TexturaUniforme a owl:Class, skos:Concept ;
     skos:altLabel "constante"@pt-PT ;
     skos:altLabel "invariável"@pt-PT ;
     skos:altLabel "imutável"@pt-PT ;
-    skos:altLabel "politípica"@pt-PT ;
+    skos:altLabel "uniformemente"@pt-PT ;
+    skos:altLabel "uniformidade"@pt-PT ;
+    skos:altLabel "inalteravelmente"@pt-PT ;
+    skos:altLabel "monotonamente"@pt-PT ;
     sr:excludedCandidate [ rdf:value "igual"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "sem variações; regular e uniforme face ao parâmetro" ] ;
     sr:excludedCandidate [ rdf:value "regular"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "sem variações; regular e uniforme face ao parâmetro" ] ;
     sr:excludedCandidate [ rdf:value "periódico"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "que ocorre em intervalos fixos e regulares" ] ;
@@ -27,4 +30,16 @@ sr:TexturaUniforme a owl:Class, skos:Concept ;
     sr:excludedCandidate [ rdf:value "medidor"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "instrumento de medição de comprimento" ] ;
     sr:excludedCandidate [ rdf:value "fardado"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "relativo ao fardamento militar" ] ;
     sr:excludedCandidate [ rdf:value "idiossincrático"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "acepção local sem correspondência interlingual" ] ;
-    rdfs:comment "UF senses=9; RT=7; exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .
+    sr:excludedCandidate [ rdf:value "uso"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL FAZ_SE_COM (FINALIDADE)" ] ;
+    sr:excludedCandidate [ rdf:value "libré"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL HIPERONIMO_DE (HIPERONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "vestuário"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL HIPERONIMO_DE (HIPERONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "forma"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL PARTE_DE_ALGO_COM_PROPRIEDADE (PARTE)" ] ;
+    sr:excludedCandidate [ rdf:value "forma de ameixa"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL PARTE_DE_ALGO_COM_PROPRIEDADE (PARTE)" ] ;
+    sr:excludedCandidate [ rdf:value "luniforme"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL PARTE_DE_ALGO_COM_PROPRIEDADE (PARTE)" ] ;
+    sr:excludedCandidate [ rdf:value "parte"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL PARTE_DE_ALGO_COM_PROPRIEDADE (PARTE)" ] ;
+    sr:excludedCandidate [ rdf:value "pruniforme"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL PARTE_DE_ALGO_COM_PROPRIEDADE (PARTE)" ] ;
+    sr:excludedCandidate [ rdf:value "farda"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "fardamenta"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "mudança"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL MANEIRA_SEM (MANEIRA_SEM)" ] ;
+    sr:excludedCandidate [ rdf:value "variação"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL MANEIRA_SEM (MANEIRA_SEM)" ] ;
+    rdfs:comment "UF senses=11; RT=9; exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .

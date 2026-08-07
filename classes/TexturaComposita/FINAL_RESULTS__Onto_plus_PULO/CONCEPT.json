@@ -26,6 +26,33 @@
       },
       {
         "members": [
+          "heterogéneo",
+          "compósito",
+          "heterogêneo",
+          "dissimilar",
+          "composto",
+          "dessemelhante",
+          "mesclado",
+          "constituído"
+        ],
+        "source": "onto",
+        "ili": null,
+        "gloss": "",
+        "key": "fuzzythes:27069"
+      },
+      {
+        "members": [
+          "composto",
+          "compósito",
+          "heterogêneo"
+        ],
+        "source": "onto",
+        "ili": null,
+        "gloss": "que é formado de mais de um item.",
+        "key": "ontopt06:3928"
+      },
+      {
+        "members": [
           "compósito",
           "entremeado",
           "mesclado",
@@ -34,7 +61,7 @@
           "raiado"
         ],
         "source": "onto",
-        "ili": null,
+        "ili": "i6556",
         "gloss": "",
         "key": "ontopt06:6214"
       },
@@ -99,6 +126,26 @@
         "ili": null,
         "gloss": "",
         "key": "thes5rec:22375"
+      },
+      {
+        "members": [
+          "compósito",
+          "material"
+        ],
+        "source": "papel",
+        "ili": null,
+        "gloss": "PAPEL HIPERONIMO_DE (HIPERONIMIA)",
+        "key": "papel35:HIPERONIMIA:HIPERONIMO_DE:composito"
+      },
+      {
+        "members": [
+          "compósito",
+          "substância"
+        ],
+        "source": "papel",
+        "ili": null,
+        "gloss": "PAPEL PROPRIEDADE_DE_ALGO_PARTE_DE (PARTE)",
+        "key": "papel35:PARTE:PROPRIEDADE_DE_ALGO_PARTE_DE:composito"
       }
     ],
     "rt_candidates": [
@@ -292,30 +339,80 @@
       },
       {
         "members": [
-          "heterogéneo",
-          "compósito",
-          "heterogêneo",
-          "dissimilar",
-          "composto",
-          "dessemelhante",
-          "mesclado",
-          "constituído"
+          "combinação",
+          "composição"
         ],
-        "source": "onto",
-        "ili": null,
-        "gloss": "",
-        "key": "fuzzythes:27069"
+        "source": "pulo",
+        "ili": "i37400",
+        "gloss": "o ato de combinar as coisas para formar um todo novo\n",
+        "key": "ili-30-00378985-n"
       },
       {
         "members": [
-          "composto",
-          "compósito",
-          "heterogêneo"
+          "composição"
         ],
-        "source": "onto",
+        "source": "pulo",
+        "ili": "i52229",
+        "gloss": "algo que é criado por providenciar várias coisas de modo a formar um todo unificado\n",
+        "key": "ili-30-03081660-n"
+      },
+      {
+        "members": [
+          "constituição",
+          "composição"
+        ],
+        "source": "pulo",
+        "ili": "i62908",
+        "gloss": "a maneira em que alguém ou alguma coisa é composto\n",
+        "key": "ili-30-04933544-n"
+      },
+      {
+        "members": [
+          "amalgamado",
+          "cabrito",
+          "diverso",
+          "híbrido",
+          "mesclado",
+          "mestiço",
+          "misto",
+          "misturado",
+          "mulato"
+        ],
+        "source": "pulo",
+        "ili": "i6556",
+        "gloss": "que consiste em uma variedade aleatória de diferentes tipos\n",
+        "key": "pwn30-01199083-a"
+      },
+      {
+        "members": [
+          "compósito",
+          "utilidade"
+        ],
+        "source": "papel",
         "ili": null,
-        "gloss": "que é formado de mais de um item.",
-        "key": "ontopt06:3928"
+        "gloss": "PAPEL PARTE_DE_ALGO_COM_PROPRIEDADE (PARTE)",
+        "key": "papel35:PARTE:PARTE_DE_ALGO_COM_PROPRIEDADE:composito"
+      },
+      {
+        "members": [
+          "compósito",
+          "ter diverso utilidade"
+        ],
+        "source": "papel",
+        "ili": null,
+        "gloss": "PAPEL DIZ_SE_DO_QUE (REFERENTE)",
+        "key": "papel35:REFERENTE:DIZ_SE_DO_QUE:composito"
+      },
+      {
+        "members": [
+          "compósito",
+          "heterogéneo",
+          "mesclado"
+        ],
+        "source": "papel",
+        "ili": null,
+        "gloss": "PAPEL SINONIMO_ADJ_DE (SINONIMIA)",
+        "key": "papel35:SINONIMIA:SINONIMO_ADJ_DE:composito"
       }
     ],
     "exclude_records": [
@@ -705,18 +802,6 @@
       },
       {
         "members": [
-          "combinação",
-          "composição"
-        ],
-        "source": "pulo",
-        "ili": "i37400",
-        "gloss": "o ato de combinar as coisas para formar um todo novo\n",
-        "key": "ili-30-00378985-n",
-        "exclusion_scope": "record_or_sense_not_lemma",
-        "members_omitted_focal": []
-      },
-      {
-        "members": [
           "composição",
           "contextura",
           "edifício",
@@ -772,32 +857,23 @@
           "composição"
         ],
         "source": "pulo",
-        "ili": "i52229",
-        "gloss": "algo que é criado por providenciar várias coisas de modo a formar um todo unificado\n",
-        "key": "ili-30-03081660-n",
-        "exclusion_scope": "record_or_sense_not_lemma",
-        "members_omitted_focal": []
-      },
-      {
-        "members": [
-          "constituição",
-          "composição"
-        ],
-        "source": "pulo",
-        "ili": "i62908",
-        "gloss": "a maneira em que alguém ou alguma coisa é composto\n",
-        "key": "ili-30-04933544-n",
-        "exclusion_scope": "record_or_sense_not_lemma",
-        "members_omitted_focal": []
-      },
-      {
-        "members": [
-          "composição"
-        ],
-        "source": "pulo",
         "ili": "i63671",
         "gloss": "a propriedade espacial resultante do acordo das partes em relação às outras e a toda\n",
         "key": "ili-30-05076472-n",
+        "exclusion_scope": "record_or_sense_not_lemma",
+        "members_omitted_focal": []
+      },
+      {
+        "members": [
+          "relatório",
+          "redação",
+          "tema",
+          "composição"
+        ],
+        "source": "pulo",
+        "ili": "i70172",
+        "gloss": "um ensaio (especialmente um escrito como uma atribuição)\n",
+        "key": "ili-30-06409752-n",
         "exclusion_scope": "record_or_sense_not_lemma",
         "members_omitted_focal": []
       },
@@ -920,6 +996,18 @@
       },
       {
         "members": [
+          "contínuo",
+          "constante"
+        ],
+        "source": "pulo",
+        "ili": "i3303",
+        "gloss": "continuidade no tempo ou no espaço, sem interrupção\n",
+        "key": "ili-30-00594413-a",
+        "exclusion_scope": "record_or_sense_not_lemma",
+        "members_omitted_focal": []
+      },
+      {
+        "members": [
           "assíduo",
           "continuado",
           "imudável",
@@ -975,6 +1063,19 @@
         "ili": "i10902",
         "gloss": "marcado pela firme determinação ou resolução; Não shakable\n",
         "key": "ili-30-01990653-a",
+        "exclusion_scope": "record_or_sense_not_lemma",
+        "members_omitted_focal": []
+      },
+      {
+        "members": [
+          "regular",
+          "constante",
+          "estável"
+        ],
+        "source": "pulo",
+        "ili": "i12746",
+        "gloss": "não sujeitos a mudança ou variação, especialmente no comportamento\n",
+        "key": "ili-30-02301560-a",
         "exclusion_scope": "record_or_sense_not_lemma",
         "members_omitted_focal": []
       },
@@ -1069,6 +1170,12 @@
       "note": "evidence only — not vocabulary CILI"
     },
     {
+      "cili": "i6556",
+      "role": "uf_onto_candidate",
+      "key": "ontopt06:6214",
+      "note": "inventory only — not auto skos:exactMatch"
+    },
+    {
       "cili": "i36652",
       "role": "exclude_sense",
       "key": "ili-30-00237078-n",
@@ -1076,9 +1183,9 @@
     },
     {
       "cili": "i37400",
-      "role": "exclude_sense",
+      "role": "rt_candidate",
       "key": "ili-30-00378985-n",
-      "note": "evidence only — not vocabulary CILI"
+      "note": "inventory only — not auto skos:relatedMatch"
     },
     {
       "cili": "i59707",
@@ -1106,20 +1213,26 @@
     },
     {
       "cili": "i52229",
-      "role": "exclude_sense",
+      "role": "rt_candidate",
       "key": "ili-30-03081660-n",
-      "note": "evidence only — not vocabulary CILI"
+      "note": "inventory only — not auto skos:relatedMatch"
     },
     {
       "cili": "i62908",
-      "role": "exclude_sense",
+      "role": "rt_candidate",
       "key": "ili-30-04933544-n",
-      "note": "evidence only — not vocabulary CILI"
+      "note": "inventory only — not auto skos:relatedMatch"
     },
     {
       "cili": "i63671",
       "role": "exclude_sense",
       "key": "ili-30-05076472-n",
+      "note": "evidence only — not vocabulary CILI"
+    },
+    {
+      "cili": "i70172",
+      "role": "exclude_sense",
+      "key": "ili-30-06409752-n",
       "note": "evidence only — not vocabulary CILI"
     },
     {
@@ -1171,6 +1284,12 @@
       "note": "evidence only — not vocabulary CILI"
     },
     {
+      "cili": "i3303",
+      "role": "exclude_sense",
+      "key": "ili-30-00594413-a",
+      "note": "evidence only — not vocabulary CILI"
+    },
+    {
       "cili": "i3305",
       "role": "exclude_sense",
       "key": "ili-30-00595299-a",
@@ -1192,6 +1311,12 @@
       "cili": "i10902",
       "role": "exclude_sense",
       "key": "ili-30-01990653-a",
+      "note": "evidence only — not vocabulary CILI"
+    },
+    {
+      "cili": "i12746",
+      "role": "exclude_sense",
+      "key": "ili-30-02301560-a",
       "note": "evidence only — not vocabulary CILI"
     },
     {
@@ -1217,9 +1342,15 @@
       "role": "exclude_sense",
       "key": "ili-30-05858936-n",
       "note": "evidence only — not vocabulary CILI"
+    },
+    {
+      "cili": "i6556",
+      "role": "rt_candidate",
+      "key": "pwn30-01199083-a",
+      "note": "inventory only — not auto skos:relatedMatch"
     }
   ],
   "mapping_status": "no_validated_cili",
   "skos_policy": "SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.",
-  "generated": "2026-07-31T03:21:28+00:00"
+  "generated": "2026-08-04T21:45:49+00:00"
 }

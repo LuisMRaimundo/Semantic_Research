@@ -197,6 +197,11 @@ class Workbench(tk.Tk):
         self.mode_var = tk.StringVar(value="Starts with")
         self.status_var = tk.StringVar(value="Ready")
         self._sense_vars: dict[str, tk.StringVar] = {}
+        # Unsaved radio edits, kept in memory across filter switches.
+        # Persisting to disk remains an explicit act («4 · Guardar decisões»).
+        self._pending_decisions: dict[str, str] = {}
+        self._pending_class: str | None = None
+        self._has_unsaved = False
         self._guide_win: tk.Toplevel | None = None
         self._build()
         self.bind("<F1>", lambda e: self._open_guide())
@@ -348,6 +353,20 @@ class Workbench(tk.Tk):
             runrow, text="Exportar classe…",
             command=self._export_class_folder,
         ).pack(side="left", padx=(0, 6))
+        # Single dropdown instead of 4 buttons — the run row is already full.
+        src_btn = ttk.Menubutton(runrow, text="Exportar fonte…")
+        src_menu = tk.Menu(src_btn, tearoff=0)
+        for lab, src in (
+            ("Exportar ONTO…", "onto"),
+            ("Exportar PAPEL…", "papel"),
+            ("Exportar WordNet…", "wordnet"),
+            ("Exportar PULO…", "pulo"),
+        ):
+            src_menu.add_command(
+                label=lab, command=lambda s=src: self._export_source(s)
+            )
+        src_btn.configure(menu=src_menu)
+        src_btn.pack(side="left", padx=(0, 6))
         ttk.Button(
             runrow, text="concordância",
             command=self._open_concordance,
@@ -683,6 +702,7 @@ class Workbench(tk.Tk):
             f"{st['class_id']} · {st['senses_decided']}/{st['senses_total']} decided · "
             f"{st['next_step']}"
         )
+        self._mark_unsaved_status()
         self._log_clear()
         self._log(f"Loaded {ws.class_id}\nNext: {st['next_step']}\n")
         conc = ws.concordance_md()
@@ -815,7 +835,33 @@ class Workbench(tk.Tk):
                 text="All · blue=PULO · amber=Onto · purple=PAPEL · green=WordNet"
             )
 
+    def _normalized_disk_decision(self, s: dict) -> str:
+        """Same normalisation the card radios apply to the stored decision."""
+        raw = s.get("decision") or ""
+        src = (s.get("source") or "").lower()
+        if src in ("onto", "papel") and raw == "atributo":
+            raw = "UF"
+        if raw in self._choices_for(src) or raw in DECISIONS_FILE_ONLY:
+            return raw
+        return ""
+
+    def _flush_sense_vars(self):
+        """Carry current radio values into memory before cards are rebuilt."""
+        for sk, var in self._sense_vars.items():
+            self._pending_decisions[sk] = var.get()
+
+    def _mark_unsaved_status(self):
+        suffix = " · alterações por guardar"
+        cur = self.status_var.get() or ""
+        if self._has_unsaved and suffix not in cur:
+            self.status_var.set(cur + suffix)
+        elif not self._has_unsaved and suffix in cur:
+            self.status_var.set(cur.replace(suffix, ""))
+
     def _render_senses(self):
+        # Radio edits survive filter switches (in memory only — disk write
+        # still happens exclusively via «4 · Guardar decisões»).
+        self._flush_sense_vars()
         for child in self.sense_frame.winfo_children():
             child.destroy()
         self._sense_vars.clear()
@@ -823,7 +869,21 @@ class Workbench(tk.Tk):
         ws = self._ws()
         if not ws:
             return
+        if ws.class_id != self._pending_class:
+            # Never carry pending edits across classes.
+            self._pending_decisions.clear()
+            self._pending_class = ws.class_id
         dec = decmod.load_decisions(ws.decisions_json)
+        disk_by_sk = {
+            decmod.sense_key(s["source"], s["key"]): self._normalized_disk_decision(s)
+            for s in dec.get("senses") or []
+            if s.get("source") and s.get("key")
+        }
+        self._has_unsaved = any(
+            sk in disk_by_sk and val != disk_by_sk[sk]
+            for sk, val in self._pending_decisions.items()
+        )
+        self._mark_unsaved_status()
         senses = dec.get("senses") or []
         filt = self.filter_var.get()
         if filt in ("pulo", "onto", "papel", "wordnet"):
@@ -917,15 +977,10 @@ class Workbench(tk.Tk):
                 continue
             choice_set = self._choices_for(src)
             raw = s.get("decision") or ""
-            if src in ("onto", "papel") and raw == "atributo":
-                raw = "UF"
-            # Preserve file-only evidence statuses (oposicao/vizinha); do not wipe.
-            if raw in choice_set:
-                initial = raw
-            elif raw in DECISIONS_FILE_ONLY:
-                initial = raw
-            else:
-                initial = ""
+            # Unsaved in-memory edit wins over the disk value.
+            initial = self._pending_decisions.get(
+                sk, self._normalized_disk_decision(s)
+            )
             var = tk.StringVar(value=initial)
             self._sense_vars[sk] = var
             row = tk.Frame(card, bg=bg)
@@ -965,13 +1020,18 @@ class Workbench(tk.Tk):
                 meta["focus_stems"] = [x.strip() for x in raw.split(",") if x.strip()]
         ws.save_meta(meta)
 
+        # Include edits made under other filters this session, not only the
+        # cards currently rendered.
+        self._flush_sense_vars()
         dec = decmod.load_decisions(ws.decisions_json)
         migrated = bool(dec.get(decmod._MIGRATION_FLAG))
         for s in dec.get("senses", []):
             sk = decmod.sense_key(s["source"], s["key"])
-            if sk in self._sense_vars:
-                s["decision"] = self._sense_vars[sk].get()
+            if sk in self._pending_decisions:
+                s["decision"] = self._pending_decisions[sk]
         decmod.save_decisions(ws.decisions_json, dec)
+        self._pending_decisions.clear()
+        self._has_unsaved = False
         msg = "Decisions saved."
         if migrated:
             msg += " (migração contraste→oposicao gravada; .bak-AAAAMMDD criado)"
@@ -1166,6 +1226,35 @@ class Workbench(tk.Tk):
             import os
             os.startfile(out)  # type: ignore[attr-defined]
         except Exception:
+            pass
+
+    def _export_source(self, source: str):
+        """Per-source REPORT (cards + adjudications) — never touches artefacts."""
+        ws = self._ws()
+        if not ws:
+            messagebox.showinfo(APP, "Abra ou crie uma classe primeiro.")
+            return
+        try:
+            from semantic.source_export import export_source_report
+
+            out = export_source_report(ws, source)
+        except Exception as exc:  # noqa: BLE001
+            messagebox.showerror(APP, f"Exportação da fonte falhou:\n{exc}")
+            return
+        self._log(
+            f"Exportação {source.upper()} → {out['folder']} "
+            f"({out['cards']} cartões, {out['decided']} decididos)\n"
+        )
+        if not out["cards"]:
+            messagebox.showinfo(
+                APP,
+                f"Sem cartões {source.upper()} nesta classe — "
+                "o relatório foi criado vazio.",
+            )
+        try:
+            import os
+            os.startfile(out["folder"])  # type: ignore[attr-defined]
+        except Exception:  # noqa: BLE001
             pass
 
     def _export_class_folder(self):

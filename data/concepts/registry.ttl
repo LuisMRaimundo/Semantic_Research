@@ -5,7 +5,7 @@
 
 sr:Scheme a skos:ConceptScheme ;
     dct:title "Semantic Research concept registry"@en ;
-    dct:modified "2026-07-31" .
+    dct:modified "2026-08-07" .
 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -15,7 +15,7 @@ sr:Scheme a skos:ConceptScheme ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — DemoClass
-# generated 2026-07-31T03:21:28+00:00
+# generated 2026-08-07T12:35:47+00:00
 # policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:DemoClass a owl:Class, skos:Concept ;
@@ -36,7 +36,7 @@ sr:DemoClass a owl:Class, skos:Concept ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaComposita
-# generated 2026-07-31T03:21:28+00:00
+# generated 2026-08-07T12:35:47+00:00
 # policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaComposita a owl:Class, skos:Concept ;
@@ -60,8 +60,6 @@ sr:TexturaComposita a owl:Class, skos:Concept ;
     sr:excludedCandidate [ rdf:value "formação"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "o ato de formar ou estabelecer algo " ] ;
     sr:excludedCandidate [ rdf:value "organização"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "o ato de formar ou estabelecer algo " ] ;
     sr:excludedCandidate [ rdf:value "fundação"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "o ato de formar ou estabelecer algo " ] ;
-    sr:excludedCandidate [ rdf:value "combinação"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "o ato de combinar as coisas para formar um todo novo " ] ;
-    sr:excludedCandidate [ rdf:value "composição"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "o ato de combinar as coisas para formar um todo novo " ] ;
     sr:excludedCandidate [ rdf:value "composição"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "uma coisa construída; uma entidade complexa construída de muitas partes " ] ;
     sr:excludedCandidate [ rdf:value "contextura"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "uma coisa construída; uma entidade complexa construída de muitas partes " ] ;
     sr:excludedCandidate [ rdf:value "edifício"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "uma coisa construída; uma entidade complexa construída de muitas partes " ] ;
@@ -74,10 +72,11 @@ sr:TexturaComposita a owl:Class, skos:Concept ;
     sr:excludedCandidate [ rdf:value "escritura"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "o ato de criar obras escritas " ] ;
     sr:excludedCandidate [ rdf:value "escrita"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "o ato de criar obras escritas " ] ;
     sr:excludedCandidate [ rdf:value "composição"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "criação musical " ] ;
-    sr:excludedCandidate [ rdf:value "composição"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "algo que é criado por providenciar várias coisas de modo a formar um todo unificado " ] ;
-    sr:excludedCandidate [ rdf:value "constituição"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "a maneira em que alguém ou alguma coisa é composto " ] ;
-    sr:excludedCandidate [ rdf:value "composição"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "a maneira em que alguém ou alguma coisa é composto " ] ;
     sr:excludedCandidate [ rdf:value "composição"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "a propriedade espacial resultante do acordo das partes em relação às outras e a toda " ] ;
+    sr:excludedCandidate [ rdf:value "relatório"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "um ensaio (especialmente um escrito como uma atribuição) " ] ;
+    sr:excludedCandidate [ rdf:value "redação"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "um ensaio (especialmente um escrito como uma atribuição) " ] ;
+    sr:excludedCandidate [ rdf:value "tema"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "um ensaio (especialmente um escrito como uma atribuição) " ] ;
+    sr:excludedCandidate [ rdf:value "composição"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "um ensaio (especialmente um escrito como uma atribuição) " ] ;
     sr:excludedCandidate [ rdf:value "peça"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "uma obra musical que tenha sido criado " ] ;
     sr:excludedCandidate [ rdf:value "obra"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "uma obra musical que tenha sido criado " ] ;
     sr:excludedCandidate [ rdf:value "composição"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "uma obra musical que tenha sido criado " ] ;
@@ -115,6 +114,8 @@ sr:TexturaComposita a owl:Class, skos:Concept ;
     sr:excludedCandidate [ rdf:value "constante"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "firme no propósito ou devoção ou afeição " ] ;
     sr:excludedCandidate [ rdf:value "contínuo"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "ocorrendo sem interrupção; principalmente restrita ao que se repete regularmente ou freqüentemente de uma série prolongada e espaçados " ] ;
     sr:excludedCandidate [ rdf:value "constante"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "ocorrendo sem interrupção; principalmente restrita ao que se repete regularmente ou freqüentemente de uma série prolongada e espaçados " ] ;
+    sr:excludedCandidate [ rdf:value "contínuo"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "continuidade no tempo ou no espaço, sem interrupção " ] ;
+    sr:excludedCandidate [ rdf:value "constante"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "continuidade no tempo ou no espaço, sem interrupção " ] ;
     sr:excludedCandidate [ rdf:value "assíduo"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "ininterrupta no tempo indefinidamente longo e contínuo " ] ;
     sr:excludedCandidate [ rdf:value "continuado"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "ininterrupta no tempo indefinidamente longo e contínuo " ] ;
     sr:excludedCandidate [ rdf:value "imudável"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "ininterrupta no tempo indefinidamente longo e contínuo " ] ;
@@ -135,6 +136,9 @@ sr:TexturaComposita a owl:Class, skos:Concept ;
     sr:excludedCandidate [ rdf:value "inabalável"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "marcado pela firme determinação ou resolução; Não shakable " ] ;
     sr:excludedCandidate [ rdf:value "constante"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "marcado pela firme determinação ou resolução; Não shakable " ] ;
     sr:excludedCandidate [ rdf:value "firme"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "marcado pela firme determinação ou resolução; Não shakable " ] ;
+    sr:excludedCandidate [ rdf:value "regular"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "não sujeitos a mudança ou variação, especialmente no comportamento " ] ;
+    sr:excludedCandidate [ rdf:value "constante"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "não sujeitos a mudança ou variação, especialmente no comportamento " ] ;
+    sr:excludedCandidate [ rdf:value "estável"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "não sujeitos a mudança ou variação, especialmente no comportamento " ] ;
     sr:excludedCandidate [ rdf:value "constante"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "unvarying em natureza " ] ;
     sr:excludedCandidate [ rdf:value "fiel"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "inabalável em devoção ao amigo ou voto ou causa " ] ;
     sr:excludedCandidate [ rdf:value "firme"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "inabalável em devoção ao amigo ou voto ou causa " ] ;
@@ -143,7 +147,7 @@ sr:TexturaComposita a owl:Class, skos:Concept ;
     sr:excludedCandidate [ rdf:value "constante"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "uma quantidade que não varia " ] ;
     sr:excludedCili [ sr:cili <http://ili.globalwordnet.org/ili/i114921> ; sr:exclusionReason "aceção química: chemical compound" ] ;
     sr:excludedCili [ sr:cili <http://ili.globalwordnet.org/ili/i97733> ; sr:exclusionReason "aceção biológica: decay/decomposition" ] ;
-    rdfs:comment "UF senses=8; RT=6; exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .
+    rdfs:comment "UF senses=12; RT=11; exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .
 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -153,7 +157,7 @@ sr:TexturaComposita a owl:Class, skos:Concept ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaDensa
-# generated 2026-07-31T03:21:28+00:00
+# generated 2026-08-07T12:35:47+00:00
 # policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaDensa a owl:Class, skos:Concept ;
@@ -173,8 +177,100 @@ sr:TexturaDensa a owl:Class, skos:Concept ;
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix sr: <http://semantic-research.local/concept/> .
 
+# Concept model (plain SKOS, not SKOS-XL) — TexturaDireccional
+# generated 2026-08-07T12:35:47+00:00
+# policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
+
+sr:TexturaDireccional a owl:Class, skos:Concept ;
+    skos:prefLabel "TExtura Direccconal"@pt-PT ;
+    dct:identifier "TexturaDireccional" ;
+    skos:editorialNote "SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint."@en ;
+    sr:mappingStatus "no_validated_cili" ;
+    skos:altLabel "direcção"@pt-PT ;
+    skos:altLabel "orientação"@pt-PT ;
+    sr:excludedCandidate [ rdf:value "administração"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "auspício"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "banda"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "batuta"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "caminho"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "chefia"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "critério"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "cúpula"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "destino"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "directoria"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "encaminhamento"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "endereço"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "endireito"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "enfrontes"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "esteira"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "gerência"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "governalho"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "governo"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "guia"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "guiamento"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "lado"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "leme"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "linha"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "maneio"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "manejo"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "norma"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "norte"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "regime"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "regimento"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "regência"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "rota"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "rumo"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "rédea"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "senda"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "sentido"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "subdirectoria"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "subdirecção"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "timão"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "tramontana"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "travia"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "trilho"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "vereda"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "vezo"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "via"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "subdirecção"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL ACCAO_QUE_CAUSA (CAUSA)" ] ;
+    sr:excludedCandidate [ rdf:value "subdirigir"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL ACCAO_QUE_CAUSA (CAUSA)" ] ;
+    sr:excludedCandidate [ rdf:value "balão-de-ensaio"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL FINALIDADE_DE (FINALIDADE)" ] ;
+    sr:excludedCandidate [ rdf:value "dar direcção"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL FINALIDADE_DE (FINALIDADE)" ] ;
+    sr:excludedCandidate [ rdf:value "indicar mudança de direcção de veículo"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL FINALIDADE_DE (FINALIDADE)" ] ;
+    sr:excludedCandidate [ rdf:value "pisca-pisca"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL FINALIDADE_DE (FINALIDADE)" ] ;
+    sr:excludedCandidate [ rdf:value "rodízio"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL FINALIDADE_DE (FINALIDADE)" ] ;
+    sr:excludedCandidate [ rdf:value "verificar direcção de vento"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL FINALIDADE_DE (FINALIDADE)" ] ;
+    sr:excludedCandidate [ rdf:value "antimíssil"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
+    sr:excludedCandidate [ rdf:value "bidireccional"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
+    sr:excludedCandidate [ rdf:value "correr em determinada direcção"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
+    sr:excludedCandidate [ rdf:value "desencontrado"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
+    sr:excludedCandidate [ rdf:value "fazer em direcção de vento"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
+    sr:excludedCandidate [ rdf:value "funcionar em duas direcção"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
+    sr:excludedCandidate [ rdf:value "funcionar em várias direcção"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
+    sr:excludedCandidate [ rdf:value "indicar direcção de sismo"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
+    sr:excludedCandidate [ rdf:value "ir em direcção"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
+    sr:excludedCandidate [ rdf:value "mudar direcção de onda"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
+    sr:excludedCandidate [ rdf:value "multidireccional"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
+    sr:excludedCandidate [ rdf:value "profluente"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
+    sr:excludedCandidate [ rdf:value "rabavento"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
+    sr:excludedCandidate [ rdf:value "refrangente"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
+    sr:excludedCandidate [ rdf:value "seguir direcção de fio-de-prumo"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
+    sr:excludedCandidate [ rdf:value "ser lançado em direcção de outro míssil para interceptar"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
+    sr:excludedCandidate [ rdf:value "sismal"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
+    sr:excludedCandidate [ rdf:value "ter única direcção"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
+    sr:excludedCandidate [ rdf:value "unidireccional"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
+    sr:excludedCandidate [ rdf:value "vertical"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
+    rdfs:comment "UF senses=10; RT=16; exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix sr: <http://semantic-research.local/concept/> .
+
 # Concept model (plain SKOS, not SKOS-XL) — TexturaIntermitente
-# generated 2026-07-31T03:21:28+00:00
+# generated 2026-08-07T12:35:47+00:00
 # policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaIntermitente a owl:Class, skos:Concept ;
@@ -193,7 +289,7 @@ sr:TexturaIntermitente a owl:Class, skos:Concept ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaMetamorfica
-# generated 2026-07-31T03:21:28+00:00
+# generated 2026-08-07T12:35:47+00:00
 # policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaMetamorfica a owl:Class, skos:Concept ;
@@ -209,21 +305,12 @@ sr:TexturaMetamorfica a owl:Class, skos:Concept ;
     skos:altLabel "transmutação"@pt-PT ;
     skos:altLabel "transformação"@pt-PT ;
     skos:altLabel "alteração"@pt-PT ;
-    sr:excludedCandidate [ rdf:value "cambiar"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
-    sr:excludedCandidate [ rdf:value "converter"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
-    sr:excludedCandidate [ rdf:value "demudar"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
-    sr:excludedCandidate [ rdf:value "evolucionar"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
-    sr:excludedCandidate [ rdf:value "evoluir"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
-    sr:excludedCandidate [ rdf:value "falsificar"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
-    sr:excludedCandidate [ rdf:value "metamorfosear"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
-    sr:excludedCandidate [ rdf:value "perturbar"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
-    sr:excludedCandidate [ rdf:value "tornar"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
-    sr:excludedCandidate [ rdf:value "tranformar"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
-    sr:excludedCandidate [ rdf:value "transformar"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
-    sr:excludedCandidate [ rdf:value "alterar"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
-    sr:excludedCandidate [ rdf:value "mudar"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
-    sr:excludedCandidate [ rdf:value "modificar"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
-    rdfs:comment "UF senses=6; RT=0; exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .
+    skos:altLabel "metamórfico"@pt-PT ;
+    skos:altLabel "sofrer metamorfismo"@pt-PT ;
+    skos:altLabel "metamorfos de ser"@pt-PT ;
+    skos:altLabel "pirometamorfismo"@pt-PT ;
+    skos:altLabel "pirometamórfico"@pt-PT ;
+    rdfs:comment "UF senses=8; RT=1; exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .
 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -233,7 +320,7 @@ sr:TexturaMetamorfica a owl:Class, skos:Concept ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaPolitpica
-# generated 2026-07-31T03:21:28+00:00
+# generated 2026-08-07T12:35:47+00:00
 # policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaPolitpica a owl:Class, skos:Concept ;
@@ -251,7 +338,7 @@ sr:TexturaPolitpica a owl:Class, skos:Concept ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaUniforme
-# generated 2026-07-31T03:21:28+00:00
+# generated 2026-08-07T12:35:47+00:00
 # policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaUniforme a owl:Class, skos:Concept ;
@@ -263,7 +350,10 @@ sr:TexturaUniforme a owl:Class, skos:Concept ;
     skos:altLabel "constante"@pt-PT ;
     skos:altLabel "invariável"@pt-PT ;
     skos:altLabel "imutável"@pt-PT ;
-    skos:altLabel "politípica"@pt-PT ;
+    skos:altLabel "uniformemente"@pt-PT ;
+    skos:altLabel "uniformidade"@pt-PT ;
+    skos:altLabel "inalteravelmente"@pt-PT ;
+    skos:altLabel "monotonamente"@pt-PT ;
     sr:excludedCandidate [ rdf:value "igual"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "sem variações; regular e uniforme face ao parâmetro" ] ;
     sr:excludedCandidate [ rdf:value "regular"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "sem variações; regular e uniforme face ao parâmetro" ] ;
     sr:excludedCandidate [ rdf:value "periódico"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "que ocorre em intervalos fixos e regulares" ] ;
@@ -272,4 +362,16 @@ sr:TexturaUniforme a owl:Class, skos:Concept ;
     sr:excludedCandidate [ rdf:value "medidor"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "instrumento de medição de comprimento" ] ;
     sr:excludedCandidate [ rdf:value "fardado"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "relativo ao fardamento militar" ] ;
     sr:excludedCandidate [ rdf:value "idiossincrático"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "acepção local sem correspondência interlingual" ] ;
-    rdfs:comment "UF senses=9; RT=7; exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .
+    sr:excludedCandidate [ rdf:value "uso"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL FAZ_SE_COM (FINALIDADE)" ] ;
+    sr:excludedCandidate [ rdf:value "libré"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL HIPERONIMO_DE (HIPERONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "vestuário"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL HIPERONIMO_DE (HIPERONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "forma"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL PARTE_DE_ALGO_COM_PROPRIEDADE (PARTE)" ] ;
+    sr:excludedCandidate [ rdf:value "forma de ameixa"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL PARTE_DE_ALGO_COM_PROPRIEDADE (PARTE)" ] ;
+    sr:excludedCandidate [ rdf:value "luniforme"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL PARTE_DE_ALGO_COM_PROPRIEDADE (PARTE)" ] ;
+    sr:excludedCandidate [ rdf:value "parte"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL PARTE_DE_ALGO_COM_PROPRIEDADE (PARTE)" ] ;
+    sr:excludedCandidate [ rdf:value "pruniforme"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL PARTE_DE_ALGO_COM_PROPRIEDADE (PARTE)" ] ;
+    sr:excludedCandidate [ rdf:value "farda"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "fardamenta"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "mudança"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL MANEIRA_SEM (MANEIRA_SEM)" ] ;
+    sr:excludedCandidate [ rdf:value "variação"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL MANEIRA_SEM (MANEIRA_SEM)" ] ;
+    rdfs:comment "UF senses=11; RT=9; exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .

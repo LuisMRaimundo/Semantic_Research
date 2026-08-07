@@ -1,9 +1,9 @@
 # Fase 0 — Relatório de selecção lexical: **uniforme** (`TexturaUniforme`)
 
 - **Eixo definidor:** invariância face a um parâmetro
-- **Base de corroboração:** `C:\Users\lmr20\Desktop\Semantic_Research\engines\ONTO\ontopt.sqlite`  ·  recursos difusos: contopt
+- **Base de corroboração:** `E:\PYTHON CODES\Semantic_Research\engines\ONTO\ontopt.sqlite`  ·  recursos difusos: contopt
 - **Porta (Etapa 3):** peso ≥ 0.5, coocorrência ≥ 2
-- **Gerado:** 2026-07-27T12:38:24
+- **Gerado:** 2026-08-07T13:21:36
 - **Estado global:** ❌ EXISTEM ASSERÇÕES FALHADAS
 
 ## Quadro de asserções (protocolo)
@@ -130,8 +130,8 @@ Total de sementes: **89**
 | Termo | Coocorrência | Nuclear | Peso máx. | Synsets |
 |-------|--------------|---------|-----------|---------|
 | firme | 5 | True | 3.056 | contopt:10331, contopt:27200, contopt:28395, contopt:5675, contopt:8553 |
-| inalterável | 4 | True | 2.333 | contopt:10331, contopt:18050, contopt:28395, contopt:6511 |
 | imóvel | 4 | True | 0.286 | contopt:10331, contopt:18050, contopt:28395, contopt:6511 |
+| inalterável | 4 | True | 2.333 | contopt:10331, contopt:18050, contopt:28395, contopt:6511 |
 | regular | 3 | True | 1.727 | contopt:15361, contopt:28395, contopt:9502 |
 | imutável | 3 | True | 0.432 | contopt:10331, contopt:28395, contopt:6511 |
 | jacente | 3 | True | 0.25 | contopt:10331, contopt:28395, contopt:6511 |
@@ -140,68 +140,36 @@ Total de sementes: **89**
 | fiel | 3 | True | 1.125 | contopt:10331, contopt:28395, contopt:5675 |
 | ordenado | 2 | True | 1.286 | contopt:15361, contopt:9502 |
 | metódico | 2 | True | 1.071 | contopt:15361, contopt:9502 |
-| contínuo | 2 | True | 1.795 | contopt:27944, contopt:28395 |
-| unanimemente | 2 | True | 1.25 | contopt:21106, contopt:5990 |
-| monotonamente | 2 | True | 1.0 | contopt:21106, contopt:29177 |
+| ordinário | 2 | True | 1.0 | contopt:15361, contopt:28395 |
+| monótono | 2 | True | 0.417 | contopt:15361, contopt:30149 |
+| idêntico | 2 | True | 1.082 | contopt:15361, contopt:16491 |
+| periódico | 2 | True | 0.167 | contopt:15361, contopt:28395 |
+| habitual | 2 | True | 0.167 | contopt:15361, contopt:28395 |
+| frequente | 2 | True | 1.227 | contopt:15361, contopt:28395 |
 | eterno | 2 | True | 0.429 | contopt:28395, contopt:6511 |
 | estóico | 2 | True | 0.286 | contopt:10331, contopt:6511 |
 | perpétuo | 2 | True | 1.136 | contopt:28395, contopt:6511 |
+| contínuo | 2 | True | 1.795 | contopt:27944, contopt:28395 |
 | permanente | 2 | True | 1.273 | contopt:10331, contopt:28395 |
-| frequente | 2 | True | 1.227 | contopt:15361, contopt:28395 |
 | assíduo | 2 | True | 1.0 | contopt:28395, contopt:5675 |
 | porfioso | 2 | True | 0.762 | contopt:28395, contopt:8553 |
 | manente | 2 | True | 0.295 | contopt:10331, contopt:28395 |
 | duradouro | 2 | True | 0.316 | contopt:10331, contopt:28395 |
-| periódico | 2 | True | 0.167 | contopt:15361, contopt:28395 |
 | permanecente | 2 | True | 0.211 | contopt:10331, contopt:28395 |
-| habitual | 2 | True | 0.167 | contopt:15361, contopt:28395 |
-| ordinário | 2 | True | 1.0 | contopt:15361, contopt:28395 |
+| unanimemente | 2 | True | 1.25 | contopt:21106, contopt:5990 |
+| monotonamente | 2 | True | 1.0 | contopt:21106, contopt:29177 |
 | perseverante | 2 | True | 0.211 | contopt:10331, contopt:8553 |
-| monótono | 2 | True | 0.417 | contopt:15361, contopt:30149 |
-| idêntico | 2 | True | 1.082 | contopt:15361, contopt:16491 |
 
 ### Sinalização (revisão humana — NÃO admitidos)
 | Termo | Coocorrência | Peso máx. |
 |-------|--------------|-----------|
 | monotonia | 4 | 1.25 |
-| unissonância | 3 | 0.286 |
-| cotidianidade | 3 | 0.538 |
-| quotidianidade | 3 | 0.538 |
 | conformidade | 3 | 1.0 |
 | igual | 3 | 0.852 |
+| cotidianidade | 3 | 0.538 |
+| quotidianidade | 3 | 0.538 |
+| unissonância | 3 | 0.286 |
 | seguro | 3 | 2.278 |
-| continuamente | 2 | 1.882 |
-| incessantemente | 2 | 1.529 |
-| sempre | 2 | 1.529 |
-| eternamente | 2 | 1.333 |
-| permanentemente | 2 | 0.3 |
-| perpetuamente | 2 | 1.556 |
-| para sempre | 2 | 1.222 |
-| perenemente | 2 | 0.444 |
-| regularidade | 2 | 1.267 |
-| impassível | 2 | 3.333 |
-| imperturbável | 2 | 2.667 |
-| inabalável | 2 | 1.0 |
-| indestrutível | 2 | 0.571 |
-| insensível | 2 | 0.571 |
-| fixo | 2 | 2.278 |
-| certo | 2 | 0.485 |
-| efetivo | 2 | 0.242 |
-| agarrado | 2 | 0.211 |
-| resistente | 2 | 0.9 |
-| aferrado | 2 | 0.925 |
-| afincado | 2 | 0.787 |
-| apegado | 2 | 0.111 |
-| confiável | 2 | 0.438 |
-| tenaz | 2 | 0.975 |
-| leal | 2 | 0.438 |
-| obstinado | 2 | 1.438 |
-| verdadeiro | 2 | 2.125 |
-| pertinaz | 2 | 1.325 |
-| constância | 2 | 3.0 |
-| fixidez | 2 | 0.4 |
-| imobilidade | 2 | 0.4 |
-| coerência | 2 | 0.154 |
 | semelhança | 2 | 2.412 |
 | similitude | 2 | 1.294 |
 | paridade | 2 | 0.941 |
@@ -210,18 +178,50 @@ Total de sementes: **89**
 | relação | 2 | 0.278 |
 | paralelismo | 2 | 0.316 |
 | correspondência | 2 | 0.842 |
+| imobilidade | 2 | 0.4 |
+| fixidez | 2 | 0.4 |
+| platitude | 2 | 0.846 |
+| identidade | 2 | 0.842 |
+| constância | 2 | 3.0 |
 | moderado | 2 | 0.333 |
 | harmónico | 2 | 0.333 |
 | harmonioso | 2 | 1.222 |
-| identidade | 2 | 0.842 |
-| platitude | 2 | 0.846 |
+| regularidade | 2 | 1.267 |
+| coerência | 2 | 0.154 |
+| fixo | 2 | 2.278 |
+| impassível | 2 | 3.333 |
+| imperturbável | 2 | 2.667 |
+| inabalável | 2 | 1.0 |
+| indestrutível | 2 | 0.571 |
+| insensível | 2 | 0.571 |
+| verdadeiro | 2 | 2.125 |
+| certo | 2 | 0.485 |
+| confiável | 2 | 0.438 |
+| leal | 2 | 0.438 |
+| efetivo | 2 | 0.242 |
+| obstinado | 2 | 1.438 |
+| pertinaz | 2 | 1.325 |
+| tenaz | 2 | 0.975 |
+| aferrado | 2 | 0.925 |
+| resistente | 2 | 0.9 |
+| afincado | 2 | 0.787 |
+| agarrado | 2 | 0.211 |
+| apegado | 2 | 0.111 |
+| perpetuamente | 2 | 1.556 |
+| eternamente | 2 | 1.333 |
+| para sempre | 2 | 1.222 |
+| sempre | 2 | 1.529 |
+| perenemente | 2 | 0.444 |
+| continuamente | 2 | 1.882 |
+| permanentemente | 2 | 0.3 |
+| incessantemente | 2 | 1.529 |
 
 ## Etapa 4 — Exclusão automática (assinaturas de ruído)
 Nenhum candidato descartado por assinatura de ruído.
 
 ## Etapa 5 — Adjudicação UF / RT
 - Termos **admitidos** (decisão humana completa): **88**
-- Termos **pendentes** (aguardam decisão humana): **1**
+- Termos **pendentes** (aguardam decisão humana): **0**
 
 ### §7 — Registo de proveniência (termos admitidos)
 | termo | estatuto | eixo | recursos de atestação | offset/ILI | teste decisivo | garantia |
@@ -315,12 +315,9 @@ Nenhum candidato descartado por assinatura de ruído.
 | monotonamente | RT | invariância face a um parâmetro | clip21, contopt, fuzzythes, ontopt06, polaridades, thes5rec | clip21:20421 | derivado do sentido (PASSO 3) | sense_decision |
 | unanimemente | RT | invariância face a um parâmetro | clip21, contopt, fuzzythes, ontopt06, polaridades, thes5rec | clip21:20421 | derivado do sentido (PASSO 3) | sense_decision |
 
-### Pendentes (necessitam de decisão na spec `adjudication`)
-politípica
-
-## §6 — Mapeamento SKOS-XL / OWL (só Bloco A)
+## §6 — Mapeamento SKOS / OWL (só Bloco A)
 - `skos:prefLabel` → **uniforme**
-- `skosxl:altLabel` (UF) → equável, homótono, invariável, monótono, uniformador, uniformizador, unímodo
+- `skos:altLabel` (UF) → equável, homótono, invariável, monótono, uniformador, uniformizador, unímodo
 - `:termoRelacionado` (RT) → adamantino, afio, amiudado, análogo, aplicado, assíduo, aturado, consecutivo, conseguinte, consignado, constante, continuado, contínuo, crebro, de maneira justa, diamantino, diligente, duradouro, escrito, estereotipado, estereótipo, estável, estóico, eterno, fiel, firme, frequente, habitual, homogéneo, idêntico, imanente, imaterial, imediato, imudável, imutavelmente, imutável, imóvel, inalteravelmente, inalterável, incessante, incessável, inequívoco, infindável, inflexivo, ininterrompido, ininterrupto, intemporal, irretratável, jacente, jazente, manente, mencionado, metódico, miúdo, monotonamente, ordenado, ordinário, perene, periódico, permanecente, permanente, perpétuo, perseverante, persistente, porfioso, recto, regular, reiterado, repetido, seguido, sem paradas, sempiterno, similar, sistemático, subsecutivo, sucessivo, unanimemente, uniformemente, unívoco, usual, vitalício
 
-_Evidência (oposição, atributo, vizinha, sinalização) NÃO é serializada como relação SKOS/SKOS-XL._
+_Evidência (oposição, atributo, vizinha, sinalização) NÃO é serializada como relação SKOS._

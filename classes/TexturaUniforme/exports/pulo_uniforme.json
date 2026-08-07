@@ -3,7 +3,7 @@
   "query": {
     "query": "uniforme",
     "pos": null,
-    "mode": "Exact"
+    "mode": "Contains"
   },
   "count": 7,
   "synsets": [
@@ -16,8 +16,21 @@
       ],
       "ili": [
         {
-          "ili_offset": "ili-30-00744506-a",
-          "ili_wn_id": "eng-30"
+          "ili_offset": "pwn30-00744506-a",
+          "pwn_id": "pwn30-00744506-a",
+          "pwn_version": "3.0",
+          "pwn_offset": "00744506",
+          "part_of_speech": "a",
+          "cili": "i4126",
+          "cili_id": "i4126",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i4126",
+          "source_curie": "oewn-ili:i4126",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-00744506-a",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i4126.html"
         }
       ],
       "relations": [
@@ -161,8 +174,21 @@
       ],
       "ili": [
         {
-          "ili_offset": "ili-30-00910101-a",
-          "ili_wn_id": "eng-30"
+          "ili_offset": "pwn30-00910101-a",
+          "pwn_id": "pwn30-00910101-a",
+          "pwn_version": "3.0",
+          "pwn_offset": "00910101",
+          "part_of_speech": "a",
+          "cili": "i4980",
+          "cili_id": "i4980",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i4980",
+          "source_curie": "oewn-ili:i4980",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-00910101-a",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i4980.html"
         }
       ],
       "relations": [
@@ -230,8 +256,21 @@
       ],
       "ili": [
         {
-          "ili_offset": "ili-30-00909545-a",
-          "ili_wn_id": "eng-30"
+          "ili_offset": "pwn30-00909545-a",
+          "pwn_id": "pwn30-00909545-a",
+          "pwn_version": "3.0",
+          "pwn_offset": "00909545",
+          "part_of_speech": "a",
+          "cili": "i4979",
+          "cili_id": "i4979",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i4979",
+          "source_curie": "oewn-ili:i4979",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-00909545-a",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i4979.html"
         }
       ],
       "relations": [
@@ -503,8 +542,21 @@
       ],
       "ili": [
         {
-          "ili_offset": "ili-30-01200095-a",
-          "ili_wn_id": "eng-30"
+          "ili_offset": "pwn30-01200095-a",
+          "pwn_id": "pwn30-01200095-a",
+          "pwn_version": "3.0",
+          "pwn_offset": "01200095",
+          "part_of_speech": "a",
+          "cili": "i6560",
+          "cili_id": "i6560",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i6560",
+          "source_curie": "oewn-ili:i6560",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-01200095-a",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i6560.html"
         }
       ],
       "relations": [
@@ -575,8 +627,21 @@
       ],
       "ili": [
         {
-          "ili_offset": "ili-30-01966488-a",
-          "ili_wn_id": "eng-30"
+          "ili_offset": "pwn30-01966488-a",
+          "pwn_id": "pwn30-01966488-a",
+          "pwn_version": "3.0",
+          "pwn_offset": "01966488",
+          "part_of_speech": "a",
+          "cili": "i10771",
+          "cili_id": "i10771",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i10771",
+          "source_curie": "oewn-ili:i10771",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-01966488-a",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i10771.html"
         }
       ],
       "relations": [
@@ -738,8 +803,21 @@
       ],
       "ili": [
         {
-          "ili_offset": "ili-30-02302187-a",
-          "ili_wn_id": "eng-30"
+          "ili_offset": "pwn30-02302187-a",
+          "pwn_id": "pwn30-02302187-a",
+          "pwn_version": "3.0",
+          "pwn_offset": "02302187",
+          "part_of_speech": "a",
+          "cili": "i12748",
+          "cili_id": "i12748",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i12748",
+          "source_curie": "oewn-ili:i12748",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-02302187-a",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i12748.html"
         }
       ],
       "relations": [
@@ -806,8 +884,21 @@
       ],
       "ili": [
         {
-          "ili_offset": "ili-30-04509592-n",
-          "ili_wn_id": "eng-30"
+          "ili_offset": "pwn30-04509592-n",
+          "pwn_id": "pwn30-04509592-n",
+          "pwn_version": "3.0",
+          "pwn_offset": "04509592",
+          "part_of_speech": "n",
+          "cili": "i60712",
+          "cili_id": "i60712",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i60712",
+          "source_curie": "oewn-ili:i60712",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-04509592-n",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i60712.html"
         }
       ],
       "relations": [

@@ -1,7 +1,7 @@
 # Migração ILI humana → CILI — `TexturaComposita`
 
 - **CILI:** cili@upstream-master+pwn30+pwn31+wn.ili
-- **Tabela legada:** C:\Users\lmr20\Desktop\Semantic_Research\classes\TexturaComposita\out\ili_equivalence.json
+- **Tabela legada:** E:\PYTHON CODES\Semantic_Research\classes\TexturaComposita\out\ili_equivalence.json
 - **Confirmados pelo CILI:** 1
 - **Divergentes (NÃO aplicados):** 1
 - **Sem resolução CILI:** 0

@@ -1,6 +1,6 @@
 {
   "class": "TexturaComposita",
-  "generated": "2026-07-31T04:21:27",
+  "generated": "2026-08-04T22:45:36",
   "source": "cili:cili@upstream-master+pwn30+pwn31+wn.ili",
   "cili": {
     "version": "cili@upstream-master+pwn30+pwn31+wn.ili",
@@ -8,10 +8,10 @@
     "pwn_offsets": 234518,
     "pwn30_offsets": 234518,
     "data_files": [
-      "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\engines\\LexWarrant\\data\\cili\\ili-map-pwn30.tab",
-      "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\engines\\LexWarrant\\data\\cili\\ili-map-pwn31.tab"
+      "E:\\PYTHON CODES\\Semantic_Research\\engines\\LexWarrant\\data\\cili\\ili-map-pwn30.tab",
+      "E:\\PYTHON CODES\\Semantic_Research\\engines\\LexWarrant\\data\\cili\\ili-map-pwn31.tab"
     ],
-    "data_file": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\engines\\LexWarrant\\data\\cili\\ili-map-pwn30.tab",
+    "data_file": "E:\\PYTHON CODES\\Semantic_Research\\engines\\LexWarrant\\data\\cili\\ili-map-pwn30.tab",
     "wn_ili_bridge": null
   },
   "map": [],

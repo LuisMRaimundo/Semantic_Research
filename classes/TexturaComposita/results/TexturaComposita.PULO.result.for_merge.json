@@ -2,24 +2,52 @@
   "class_id": "TexturaComposita",
   "pref_label": "textura compósita",
   "axis": "heterogeneidade / composição de materiais ou partes distintas",
-  "generated": "2026-07-31T04:21:26",
+  "generated": "2026-08-04T22:45:34",
   "source": "PULO / WordNet.PT export",
   "stage1": {
-    "admitted": [],
-    "admitted_offsets": [],
+    "admitted": [
+      {
+        "ili_offset": "ili-30-00378985-n",
+        "glosa": "o ato de combinar as coisas para formar um todo novo\n",
+        "decision": "RT",
+        "export_gloss": "o ato de combinar as coisas para formar um todo novo\n"
+      },
+      {
+        "ili_offset": "ili-30-03081660-n",
+        "glosa": "algo que é criado por providenciar várias coisas de modo a formar um todo unificado\n",
+        "decision": "RT",
+        "export_gloss": "algo que é criado por providenciar várias coisas de modo a formar um todo unificado\n"
+      },
+      {
+        "ili_offset": "ili-30-04933544-n",
+        "glosa": "a maneira em que alguém ou alguma coisa é composto\n",
+        "decision": "RT",
+        "export_gloss": "a maneira em que alguém ou alguma coisa é composto\n"
+      },
+      {
+        "ili_offset": "pwn30-01199083-a",
+        "glosa": "que consiste em uma variedade aleatória de diferentes tipos\n",
+        "decision": "RT",
+        "export_gloss": ""
+      }
+    ],
+    "admitted_offsets": [
+      "ili-30-00378985-n",
+      "ili-30-03081660-n",
+      "ili-30-04933544-n",
+      "pwn30-01199083-a"
+    ],
     "excluded_offsets": [
       "ili-30-14818238-n",
       "ili-30-02424254-a",
       "ili-30-09947232-n",
       "ili-30-00237078-n",
-      "ili-30-00378985-n",
       "ili-30-04341686-n",
       "ili-30-06788785-n",
       "ili-30-00929718-n",
       "ili-30-00939452-n",
-      "ili-30-03081660-n",
-      "ili-30-04933544-n",
       "ili-30-05076472-n",
+      "ili-30-06409752-n",
       "ili-30-07037465-n",
       "ili-30-14588492-n",
       "ili-30-07331400-n",
@@ -28,10 +56,12 @@
       "ili-30-01754421-a",
       "ili-30-00583239-a",
       "ili-30-00592222-a",
+      "ili-30-00594413-a",
       "ili-30-00595299-a",
       "ili-30-00595863-a",
       "ili-30-00754393-a",
       "ili-30-01990653-a",
+      "ili-30-02301560-a",
       "ili-30-02506029-a",
       "ili-30-00959244-a",
       "ili-30-13585429-n",
@@ -40,27 +70,809 @@
     "invalid": [],
     "flagged_no_ili": []
   },
-  "stage2_seeds": {},
+  "stage2_seeds": {
+    "combinacao": {
+      "display": "combinação",
+      "offsets": [
+        "ili-30-00378985-n"
+      ]
+    },
+    "composicao": {
+      "display": "composição",
+      "offsets": [
+        "ili-30-00378985-n",
+        "ili-30-03081660-n",
+        "ili-30-04933544-n"
+      ]
+    },
+    "constituicao": {
+      "display": "constituição",
+      "offsets": [
+        "ili-30-04933544-n"
+      ]
+    },
+    "amalgamado": {
+      "display": "amalgamado",
+      "offsets": [
+        "pwn30-01199083-a"
+      ]
+    },
+    "cabrito": {
+      "display": "cabrito",
+      "offsets": [
+        "pwn30-01199083-a"
+      ]
+    },
+    "diverso": {
+      "display": "diverso",
+      "offsets": [
+        "pwn30-01199083-a"
+      ]
+    },
+    "hibrido": {
+      "display": "híbrido",
+      "offsets": [
+        "pwn30-01199083-a"
+      ]
+    },
+    "mesclado": {
+      "display": "mesclado",
+      "offsets": [
+        "pwn30-01199083-a"
+      ]
+    },
+    "mestico": {
+      "display": "mestiço",
+      "offsets": [
+        "pwn30-01199083-a"
+      ]
+    },
+    "misto": {
+      "display": "misto",
+      "offsets": [
+        "pwn30-01199083-a"
+      ]
+    },
+    "misturado": {
+      "display": "misturado",
+      "offsets": [
+        "pwn30-01199083-a"
+      ]
+    },
+    "mulato": {
+      "display": "mulato",
+      "offsets": [
+        "pwn30-01199083-a"
+      ]
+    }
+  },
   "stage3": {
     "contrast": {},
     "rt_uf": {},
-    "family": {},
-    "BT": {},
-    "NT": {},
+    "family": {
+      "combinar": {
+        "display": "combinar",
+        "via": "derivationally related form",
+        "source_ili": "ili-30-00378985-n",
+        "target_gloss": "colocar ou adicionar juntos\n"
+      },
+      "compor": {
+        "display": "compor",
+        "via": "derivationally related form",
+        "source_ili": "ili-30-00378985-n",
+        "target_gloss": "colocar ou adicionar juntos\n"
+      },
+      "unir": {
+        "display": "unir",
+        "via": "derivationally related form",
+        "source_ili": "ili-30-00378985-n",
+        "target_gloss": "colocar ou adicionar juntos\n"
+      },
+      "misturar": {
+        "display": "misturar",
+        "via": "derivationally related form",
+        "source_ili": "ili-30-00378985-n",
+        "target_gloss": "Misture diferentes elementos\n"
+      },
+      "agrupar": {
+        "display": "agrupar",
+        "via": "derivationally related form",
+        "source_ili": "ili-30-00378985-n",
+        "target_gloss": "Adicionar juntos a partir de diferentes fontes\n"
+      },
+      "corresponder_a": {
+        "display": "corresponder a",
+        "via": "derivationally related form",
+        "source_ili": "ili-30-04933544-n",
+        "target_gloss": "formar ou compor\n"
+      },
+      "denotar": {
+        "display": "denotar",
+        "via": "derivationally related form",
+        "source_ili": "ili-30-04933544-n",
+        "target_gloss": "formar ou compor\n"
+      },
+      "significar": {
+        "display": "significar",
+        "via": "derivationally related form",
+        "source_ili": "ili-30-04933544-n",
+        "target_gloss": "formar ou compor\n"
+      },
+      "constituir": {
+        "display": "constituir",
+        "via": "derivationally related form",
+        "source_ili": "ili-30-04933544-n",
+        "target_gloss": "formar ou compor\n"
+      },
+      "ser": {
+        "display": "ser",
+        "via": "derivationally related form",
+        "source_ili": "ili-30-04933544-n",
+        "target_gloss": "formar ou compor\n"
+      },
+      "representar": {
+        "display": "representar",
+        "via": "derivationally related form",
+        "source_ili": "ili-30-04933544-n",
+        "target_gloss": "formar ou compor\n"
+      },
+      "fazer": {
+        "display": "fazer",
+        "via": "derivationally related form",
+        "source_ili": "ili-30-04933544-n",
+        "target_gloss": "para compor ou representar: \"esta parede faz o fundo da configuração do palco\"\n"
+      },
+      "formar": {
+        "display": "formar",
+        "via": "derivationally related form",
+        "source_ili": "ili-30-04933544-n",
+        "target_gloss": "para compor ou representar: \"esta parede faz o fundo da configuração do palco\"\n"
+      },
+      "constitucional": {
+        "display": "constitucional",
+        "via": "has derived form",
+        "source_ili": "ili-30-04933544-n",
+        "target_gloss": "de benefício ou destinadas a beneficiar a sua constituição física\n"
+      }
+    },
+    "BT": {
+      "criacao": {
+        "display": "criação",
+        "via": "hypernym",
+        "source_ili": "ili-30-03081660-n",
+        "target_gloss": "um artefato que foi trazido à existência por alguém\n"
+      },
+      "propriedade": {
+        "display": "propriedade",
+        "via": "hypernym",
+        "source_ili": "ili-30-04933544-n",
+        "target_gloss": "um atributo básico ou essencial compartilhada por todos os membros de uma classe\n"
+      }
+    },
+    "NT": {
+      "mistura": {
+        "display": "mistura",
+        "via": "hyponym",
+        "source_ili": "ili-30-00378985-n",
+        "target_gloss": "o ato de misturar juntos\n"
+      },
+      "fusao": {
+        "display": "fusão",
+        "via": "hyponym",
+        "source_ili": "ili-30-00378985-n",
+        "target_gloss": "o ato de fusão (ou fusão) juntos\n"
+      },
+      "unificacao": {
+        "display": "unificação",
+        "via": "hyponym",
+        "source_ili": "ili-30-00378985-n",
+        "target_gloss": "o ato de fazer ou tornar-se uma única unidade\n"
+      },
+      "uniao": {
+        "display": "união",
+        "via": "hyponym",
+        "source_ili": "ili-30-00378985-n",
+        "target_gloss": "o ato de fazer ou tornar-se uma única unidade\n"
+      },
+      "consolidacao": {
+        "display": "consolidação",
+        "via": "hyponym",
+        "source_ili": "ili-30-00378985-n",
+        "target_gloss": "o ato de combinar em um todo integrante\n"
+      },
+      "integracao": {
+        "display": "integração",
+        "via": "hyponym",
+        "source_ili": "ili-30-00378985-n",
+        "target_gloss": "o ato de combinar em um todo integrante\n"
+      },
+      "estruturacao": {
+        "display": "estruturação",
+        "via": "hyponym",
+        "source_ili": "ili-30-04933544-n",
+        "target_gloss": "o modo de construção de alguma coisa e o arranjo das suas partes\n"
+      },
+      "estrutura": {
+        "display": "estrutura",
+        "via": "hyponym",
+        "source_ili": "ili-30-04933544-n",
+        "target_gloss": "o modo de construção de alguma coisa e o arranjo das suas partes\n"
+      }
+    },
     "attribute": {}
   },
-  "dropped_no_lemma": 0,
+  "dropped_no_lemma": 43,
   "sinalizacao": {},
   "stage4_excluded": {},
   "stage5": {
-    "admitted": {},
-    "pending": {}
+    "admitted": {
+      "combinacao": {
+        "display": "combinação",
+        "offsets": [
+          "ili-30-00378985-n"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2)",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "ili-30-00378985-n"
+      },
+      "composicao": {
+        "display": "composição",
+        "offsets": [
+          "ili-30-00378985-n",
+          "ili-30-03081660-n",
+          "ili-30-04933544-n"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2)",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "ili-30-04933544-n"
+      },
+      "constituicao": {
+        "display": "constituição",
+        "offsets": [
+          "ili-30-04933544-n"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2)",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "ili-30-04933544-n"
+      },
+      "amalgamado": {
+        "display": "amalgamado",
+        "offsets": [
+          "pwn30-01199083-a"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2)",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "pwn30-01199083-a"
+      },
+      "cabrito": {
+        "display": "cabrito",
+        "offsets": [
+          "pwn30-01199083-a"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2)",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "pwn30-01199083-a"
+      },
+      "diverso": {
+        "display": "diverso",
+        "offsets": [
+          "pwn30-01199083-a"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2)",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "pwn30-01199083-a"
+      },
+      "hibrido": {
+        "display": "híbrido",
+        "offsets": [
+          "pwn30-01199083-a"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2)",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "pwn30-01199083-a"
+      },
+      "mesclado": {
+        "display": "mesclado",
+        "offsets": [
+          "pwn30-01199083-a"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2)",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "pwn30-01199083-a"
+      },
+      "mestico": {
+        "display": "mestiço",
+        "offsets": [
+          "pwn30-01199083-a"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2)",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "pwn30-01199083-a"
+      },
+      "misto": {
+        "display": "misto",
+        "offsets": [
+          "pwn30-01199083-a"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2)",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "pwn30-01199083-a"
+      },
+      "misturado": {
+        "display": "misturado",
+        "offsets": [
+          "pwn30-01199083-a"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2)",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "pwn30-01199083-a"
+      },
+      "mulato": {
+        "display": "mulato",
+        "offsets": [
+          "pwn30-01199083-a"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2)",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "pwn30-01199083-a"
+      }
+    },
+    "pending": {
+      "criacao": {
+        "display": "criação",
+        "via": "hypernym",
+        "attested": false,
+        "origin": "relação hypernym (BT)",
+        "adjudication": null
+      },
+      "propriedade": {
+        "display": "propriedade",
+        "via": "hypernym",
+        "attested": false,
+        "origin": "relação hypernym (BT)",
+        "adjudication": null
+      },
+      "mistura": {
+        "display": "mistura",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "fusao": {
+        "display": "fusão",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "unificacao": {
+        "display": "unificação",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "uniao": {
+        "display": "união",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "consolidacao": {
+        "display": "consolidação",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "integracao": {
+        "display": "integração",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "estruturacao": {
+        "display": "estruturação",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "estrutura": {
+        "display": "estrutura",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      }
+    }
   },
-  "family": {},
+  "family": {
+    "combinar": {
+      "display": "combinar",
+      "via": "derivationally related form",
+      "source_ili": "ili-30-00378985-n",
+      "target_gloss": "colocar ou adicionar juntos\n"
+    },
+    "compor": {
+      "display": "compor",
+      "via": "derivationally related form",
+      "source_ili": "ili-30-00378985-n",
+      "target_gloss": "colocar ou adicionar juntos\n"
+    },
+    "unir": {
+      "display": "unir",
+      "via": "derivationally related form",
+      "source_ili": "ili-30-00378985-n",
+      "target_gloss": "colocar ou adicionar juntos\n"
+    },
+    "misturar": {
+      "display": "misturar",
+      "via": "derivationally related form",
+      "source_ili": "ili-30-00378985-n",
+      "target_gloss": "Misture diferentes elementos\n"
+    },
+    "agrupar": {
+      "display": "agrupar",
+      "via": "derivationally related form",
+      "source_ili": "ili-30-00378985-n",
+      "target_gloss": "Adicionar juntos a partir de diferentes fontes\n"
+    },
+    "corresponder_a": {
+      "display": "corresponder a",
+      "via": "derivationally related form",
+      "source_ili": "ili-30-04933544-n",
+      "target_gloss": "formar ou compor\n"
+    },
+    "denotar": {
+      "display": "denotar",
+      "via": "derivationally related form",
+      "source_ili": "ili-30-04933544-n",
+      "target_gloss": "formar ou compor\n"
+    },
+    "significar": {
+      "display": "significar",
+      "via": "derivationally related form",
+      "source_ili": "ili-30-04933544-n",
+      "target_gloss": "formar ou compor\n"
+    },
+    "constituir": {
+      "display": "constituir",
+      "via": "derivationally related form",
+      "source_ili": "ili-30-04933544-n",
+      "target_gloss": "formar ou compor\n"
+    },
+    "ser": {
+      "display": "ser",
+      "via": "derivationally related form",
+      "source_ili": "ili-30-04933544-n",
+      "target_gloss": "formar ou compor\n"
+    },
+    "representar": {
+      "display": "representar",
+      "via": "derivationally related form",
+      "source_ili": "ili-30-04933544-n",
+      "target_gloss": "formar ou compor\n"
+    },
+    "fazer": {
+      "display": "fazer",
+      "via": "derivationally related form",
+      "source_ili": "ili-30-04933544-n",
+      "target_gloss": "para compor ou representar: \"esta parede faz o fundo da configuração do palco\"\n"
+    },
+    "formar": {
+      "display": "formar",
+      "via": "derivationally related form",
+      "source_ili": "ili-30-04933544-n",
+      "target_gloss": "para compor ou representar: \"esta parede faz o fundo da configuração do palco\"\n"
+    },
+    "constitucional": {
+      "display": "constitucional",
+      "via": "has derived form",
+      "source_ili": "ili-30-04933544-n",
+      "target_gloss": "de benefício ou destinadas a beneficiar a sua constituição física\n"
+    }
+  },
   "skos": {
+    "RT": [
+      "amalgamado",
+      "cabrito",
+      "combinação",
+      "composição",
+      "constituição",
+      "diverso",
+      "híbrido",
+      "mesclado",
+      "mestiço",
+      "misto",
+      "misturado",
+      "mulato"
+    ],
     "UF": []
   },
-  "provenance": [],
+  "provenance": [
+    {
+      "termo": "combinação",
+      "estatuto": "RT",
+      "eixo": "heterogeneidade / composição de materiais ou partes distintas",
+      "via": "seed (Etapa 1/2)",
+      "offsets_ili": [
+        "ili-30-00378985-n"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "definicao": "",
+      "estrutural": "",
+      "gloss": "o ato de combinar as coisas para formar um todo novo\n"
+    },
+    {
+      "termo": "composição",
+      "estatuto": "RT",
+      "eixo": "heterogeneidade / composição de materiais ou partes distintas",
+      "via": "seed (Etapa 1/2)",
+      "offsets_ili": [
+        "ili-30-00378985-n",
+        "ili-30-03081660-n",
+        "ili-30-04933544-n"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "definicao": "",
+      "estrutural": "",
+      "gloss": "o ato de formar ou estabelecer algo\n"
+    },
+    {
+      "termo": "constituição",
+      "estatuto": "RT",
+      "eixo": "heterogeneidade / composição de materiais ou partes distintas",
+      "via": "seed (Etapa 1/2)",
+      "offsets_ili": [
+        "ili-30-04933544-n"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "definicao": "",
+      "estrutural": "",
+      "gloss": "o ato de formar ou estabelecer algo\n"
+    },
+    {
+      "termo": "amalgamado",
+      "estatuto": "RT",
+      "eixo": "heterogeneidade / composição de materiais ou partes distintas",
+      "via": "seed (Etapa 1/2)",
+      "offsets_ili": [
+        "pwn30-01199083-a"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "definicao": "",
+      "estrutural": "",
+      "gloss": "que consiste em uma variedade aleatória de diferentes tipos\n"
+    },
+    {
+      "termo": "cabrito",
+      "estatuto": "RT",
+      "eixo": "heterogeneidade / composição de materiais ou partes distintas",
+      "via": "seed (Etapa 1/2)",
+      "offsets_ili": [
+        "pwn30-01199083-a"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "definicao": "",
+      "estrutural": "",
+      "gloss": "que consiste em uma variedade aleatória de diferentes tipos\n"
+    },
+    {
+      "termo": "diverso",
+      "estatuto": "RT",
+      "eixo": "heterogeneidade / composição de materiais ou partes distintas",
+      "via": "seed (Etapa 1/2)",
+      "offsets_ili": [
+        "pwn30-01199083-a"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "definicao": "",
+      "estrutural": "",
+      "gloss": "que consiste em uma variedade aleatória de diferentes tipos\n"
+    },
+    {
+      "termo": "híbrido",
+      "estatuto": "RT",
+      "eixo": "heterogeneidade / composição de materiais ou partes distintas",
+      "via": "seed (Etapa 1/2)",
+      "offsets_ili": [
+        "pwn30-01199083-a"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "definicao": "",
+      "estrutural": "",
+      "gloss": "que consiste em uma variedade aleatória de diferentes tipos\n"
+    },
+    {
+      "termo": "mesclado",
+      "estatuto": "RT",
+      "eixo": "heterogeneidade / composição de materiais ou partes distintas",
+      "via": "seed (Etapa 1/2)",
+      "offsets_ili": [
+        "pwn30-01199083-a"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "definicao": "",
+      "estrutural": "",
+      "gloss": "que consiste em uma variedade aleatória de diferentes tipos\n"
+    },
+    {
+      "termo": "mestiço",
+      "estatuto": "RT",
+      "eixo": "heterogeneidade / composição de materiais ou partes distintas",
+      "via": "seed (Etapa 1/2)",
+      "offsets_ili": [
+        "pwn30-01199083-a"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "definicao": "",
+      "estrutural": "",
+      "gloss": "que consiste em uma variedade aleatória de diferentes tipos\n"
+    },
+    {
+      "termo": "misto",
+      "estatuto": "RT",
+      "eixo": "heterogeneidade / composição de materiais ou partes distintas",
+      "via": "seed (Etapa 1/2)",
+      "offsets_ili": [
+        "pwn30-01199083-a"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "definicao": "",
+      "estrutural": "",
+      "gloss": "que consiste em uma variedade aleatória de diferentes tipos\n"
+    },
+    {
+      "termo": "misturado",
+      "estatuto": "RT",
+      "eixo": "heterogeneidade / composição de materiais ou partes distintas",
+      "via": "seed (Etapa 1/2)",
+      "offsets_ili": [
+        "pwn30-01199083-a"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "definicao": "",
+      "estrutural": "",
+      "gloss": "que consiste em uma variedade aleatória de diferentes tipos\n"
+    },
+    {
+      "termo": "mulato",
+      "estatuto": "RT",
+      "eixo": "heterogeneidade / composição de materiais ou partes distintas",
+      "via": "seed (Etapa 1/2)",
+      "offsets_ili": [
+        "pwn30-01199083-a"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "definicao": "",
+      "estrutural": "",
+      "gloss": "que consiste em uma variedade aleatória de diferentes tipos\n"
+    }
+  ],
   "attribute_terms": [],
   "assertions": [
     {
@@ -84,8 +896,8 @@
     {
       "stage": "ILI",
       "text": "Nenhum id oewn-/por- é usado como chave de junção; a chave é o ILI.",
-      "passed": true,
-      "evidence": "OK"
+      "passed": false,
+      "evidence": "offsets não-ILI na lista branca: ['pwn30-01199083-a']"
     },
     {
       "stage": "ILI",
@@ -103,7 +915,7 @@
       "stage": "Etapa 3",
       "text": "Alvos de relação são tipados pelo mapeamento; «(no lemma)» nunca admitido.",
       "passed": true,
-      "evidence": "OK (0 alvos «(no lemma)» descartados)"
+      "evidence": "OK (43 alvos «(no lemma)» descartados)"
     },
     {
       "stage": "Etapa 4",
@@ -139,11 +951,11 @@
       "stage": "Serialização",
       "passed": true,
       "text": "X.skos.ttl analisa com rdflib e tem a contagem de triplos esperada.",
-      "evidence": "triplos esperados=4, analisados=4"
+      "evidence": "triplos esperados=16, analisados=16"
     }
   ],
-  "all_passed": true,
-  "skos_triples": 4,
+  "all_passed": false,
+  "skos_triples": 16,
   "_ttl_ok": true,
-  "_signals_sidelined": 0
+  "_signals_sidelined": 55
 }

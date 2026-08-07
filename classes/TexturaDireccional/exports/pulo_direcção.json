@@ -1,0 +1,1928 @@
+{
+  "type": "pulo_thesaurus_search",
+  "query": {
+    "query": "direcção",
+    "pos": null,
+    "mode": "Contains"
+  },
+  "count": 11,
+  "synsets": [
+    {
+      "synset_offset": "por-30-06197215-n",
+      "pos": "n",
+      "gloss": "um curso geral ao longo do qual algo tem uma tendência a desenvolver\n",
+      "synonyms": [
+        "direcção"
+      ],
+      "ili": [
+        {
+          "ili_offset": "pwn30-06197215-n",
+          "pwn_id": "pwn30-06197215-n",
+          "pwn_version": "3.0",
+          "pwn_offset": "06197215",
+          "part_of_speech": "n",
+          "cili": "i69097",
+          "cili_id": "i69097",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i69097",
+          "source_curie": "oewn-ili:i69097",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-06197215-n",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i69097.html"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "hyponym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "um curso estabelecido ou predominante ou habitual da vida de uma pessoa\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "tendência, inclinação",
+              "gloss": "uma atitude da mente, especialmente um que favorece uma alternativa sobre os outros\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "tendência, inclinação",
+              "gloss": "uma atitude da mente, especialmente um que favorece uma alternativa sobre os outros\n"
+            },
+            {
+              "words": "trajetória, curso, linha",
+              "gloss": "uma série de eventos relacionados ou ações ou desenvolvimentos\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-08381165-n",
+      "pos": "n",
+      "gloss": "os responsáveis ​​pela gestão de uma empresa\n",
+      "synonyms": [
+        "direcção",
+        "gestão",
+        "administração"
+      ],
+      "ili": [
+        {
+          "ili_offset": "pwn30-08381165-n",
+          "pwn_id": "pwn30-08381165-n",
+          "pwn_version": "3.0",
+          "pwn_offset": "08381165",
+          "part_of_speech": "n",
+          "cili": "i81149",
+          "cili_id": "i81149",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i81149",
+          "source_curie": "oewn-ili:i81149",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-08381165-n",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i81149.html"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "hyponym",
+          "targets": [
+            {
+              "words": "casa",
+              "gloss": "a gestão de uma casa de jogo ou casino\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "uma medida usada por um adquirente para ganhar o controle de um alvo de aquisição; adquirente tenta persuadir outros acionistas que a gestão do destino deve ser substituída\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma ação de gestão resistindo as demandas do empregado; os funcionários são impedidos de entrar no local de trabalho até que eles concordam com os termos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma aquisição que é resistido pela administração da empresa-alvo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma aquisição que é bem-vinda pela administração da empresa-alvo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma ação temporária de trabalhadores para protestar contra decisão de gestão ou de fazer exigências\n"
+            },
+            {
+              "words": "sucursal",
+              "gloss": "um de uma cadeia de lojas de varejo sob a mesma gestão e venda da mesma mercadoria\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "contrato entre trabalho e que regem a gestão de salários e benefícios e condições de trabalho\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o salário exigido de gestão para os trabalhadores por seus representantes sindicais\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um investidor corporativo que tem a intenção de adquirir uma empresa através da compra de uma participação majoritária em seu estoque e instalação de nova gestão\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma agência independente do governo dos Estados Unidos acusado de mediar disputas entre sindicatos patronais e trabalhistas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma reunião na qual a gestão informa aos acionistas de uma companhia\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma área residencial de habitações similares construídos pelos promotores imobiliários e, geralmente, sob uma gestão única\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um auditor que é um empregado da empresa cujos registros são auditados e que fornece informações para a gestão e o Conselho de administração\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um membro do sindicato que é eleito para representar colegas de trabalho na negociação com a gestão\n"
+            }
+          ]
+        },
+        {
+          "relation": "member meronym",
+          "targets": [
+            {
+              "words": "direção",
+              "gloss": "um grupo de pessoas escolhido para governar os assuntos de uma empresa ou outra instituição grande\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "governação, administração, organização",
+              "gloss": "as pessoas (ou comitês ou departamentos etc.) que compõem um corpo com a finalidade de administrar algo\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-05617467-n",
+      "pos": "n",
+      "gloss": "a capacidade de liderança de um general militar\n",
+      "synonyms": [
+        "direcção"
+      ],
+      "ili": [
+        {
+          "ili_offset": "pwn30-05617467-n",
+          "pwn_id": "pwn30-05617467-n",
+          "pwn_version": "3.0",
+          "pwn_offset": "05617467",
+          "part_of_speech": "n",
+          "cili": "i66429",
+          "cili_id": "i66429",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i66429",
+          "source_curie": "oewn-ili:i66429",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-05617467-n",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i66429.html"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "Marechal de campo alemão conhecido pela brilhante generalato no Norte da África durante a Segunda Guerra Mundial (1891-1944)\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "general, geral",
+              "gloss": "um oficial da mais alta patente\n"
+            },
+            {
+              "words": "general, geral",
+              "gloss": "um oficial da mais alta patente\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "a capacidade de liderar\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "militar",
+              "gloss": "característico de ou associado com os soldados ou os militares\n"
+            },
+            {
+              "words": "aptidão, capacidade",
+              "gloss": "a qualidade de ser capaz de executar; uma qualidade que permite ou facilita a realização ou realização\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a capacidade de liderar\n"
+            },
+            {
+              "words": "general, geral",
+              "gloss": "um oficial da mais alta patente\n"
+            }
+          ]
+        },
+        {
+          "relation": "domain topic",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "as forças militares de uma nação\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-00815320-n",
+      "pos": "n",
+      "gloss": "o ato da criação e realização de um curso\n",
+      "synonyms": [
+        "orientação",
+        "direcção"
+      ],
+      "ili": [
+        {
+          "ili_offset": "pwn30-00815320-n",
+          "pwn_id": "pwn30-00815320-n",
+          "pwn_version": "3.0",
+          "pwn_offset": "00815320",
+          "part_of_speech": "n",
+          "cili": "i39691",
+          "cili_id": "i39691",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i39691",
+          "source_curie": "oewn-ili:i39691",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-00815320-n",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i39691.html"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "hyponym",
+          "targets": [
+            {
+              "words": "condução",
+              "gloss": "o ato de controlar e dirigir o movimento de um veículo ou animal\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a acção de dirigir algo para um objecto\n"
+            },
+            {
+              "words": "navegação",
+              "gloss": "a orientação de navios ou aviões de lugar para lugar\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um método de controlar o vôo de um míssil ou nave espacial por referência às posições dos corpos celestes\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um método de controlar o voo de um míssil por dispositivos que respondem a forças de inércia\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um método de controlar o vôo de um míssil por comandos provenientes do solo ou de outro míssil\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um método de controlar o vôo de um míssil por dispositivos que respondem à força e direção do campo gravitacional da Terra\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "navegação",
+              "gloss": "a orientação de navios ou aviões de lugar para lugar\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "guiar",
+              "gloss": "ser uma força motivadora ou orientador ou unidade\n"
+            },
+            {
+              "words": "guiar",
+              "gloss": "ser uma força motivadora ou orientador ou unidade\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "controle, controlo",
+              "gloss": "a atividade de gestão ou exercer controle sobre alguma coisa\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "curso",
+              "gloss": "Modo de acção.\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "permanecer em um determinado estado, posição ou condição\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-01136519-n",
+      "pos": "n",
+      "gloss": "o ato de organizar um negócio ou uma atividade relacionada a um negócio\n",
+      "synonyms": [
+        "organização",
+        "direcção"
+      ],
+      "ili": [
+        {
+          "ili_offset": "pwn30-01136519-n",
+          "pwn_id": "pwn30-01136519-n",
+          "pwn_version": "3.0",
+          "pwn_offset": "01136519",
+          "part_of_speech": "n",
+          "cili": "i41359",
+          "cili_id": "i41359",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i41359",
+          "source_curie": "oewn-ili:i41359",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-01136519-n",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i41359.html"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "hyponym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "uma organização fretado para que não sejam atividades com fins lucrativos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a organização de um negócio de acordo com os princípios científicos de gestão, a fim de aumentar a eficiência\n"
+            },
+            {
+              "words": "reorganização",
+              "gloss": "a imposição de uma nova organização; organizar de forma diferente (muitas vezes envolvendo mudanças extensas e drásticas)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "organizar-se (especialmente a organizar o seu próprio sindicato)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "organizar em ou administrar como um sindicato\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "acabar com a organização militar e potencial de\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "organizar",
+              "gloss": "trazer ordem e organização para\n"
+            },
+            {
+              "words": "dirigir, organizar",
+              "gloss": "planejar e dirigir (uma empresa complexa)\n"
+            },
+            {
+              "words": "preparar, organizar",
+              "gloss": "Organize planejamento sistemático e esforço Unido\n"
+            },
+            {
+              "words": "organizar",
+              "gloss": "causa ser estruturado ou ordenado ou operacional de acordo com algum princípio ou idéia\n"
+            },
+            {
+              "words": "formar, organizar",
+              "gloss": "criar (como uma entidade)\n"
+            },
+            {
+              "words": "organizar",
+              "gloss": "trazer ordem e organização para\n"
+            },
+            {
+              "words": "dirigir, organizar",
+              "gloss": "planejar e dirigir (uma empresa complexa)\n"
+            },
+            {
+              "words": "preparar, organizar",
+              "gloss": "Organize planejamento sistemático e esforço Unido\n"
+            },
+            {
+              "words": "organizar",
+              "gloss": "causa ser estruturado ou ordenado ou operacional de acordo com algum princípio ou idéia\n"
+            },
+            {
+              "words": "formar, organizar",
+              "gloss": "criar (como uma entidade)\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "disposição, gestão, regulação, administração",
+              "gloss": "um método de tender ou gerir os negócios de um algum grupo de pessoas (especialmente os assuntos de negócios do grupo)\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "sendo conectado logicamente ou causalmente ou pelas características compartilhadas\n"
+            },
+            {
+              "words": "formar, organizar",
+              "gloss": "criar (como uma entidade)\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-08679972-n",
+      "pos": "n",
+      "gloss": "uma linha que conduz a um lugar ou ponto\n",
+      "synonyms": [
+        "rumo",
+        "trajetória",
+        "direcção",
+        "caminho"
+      ],
+      "ili": [
+        {
+          "ili_offset": "pwn30-08679972-n",
+          "pwn_id": "pwn30-08679972-n",
+          "pwn_version": "3.0",
+          "pwn_offset": "08679972",
+          "part_of_speech": "n",
+          "cili": "i82556",
+          "cili_id": "i82556",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i82556",
+          "source_curie": "oewn-ili:i82556",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-08679972-n",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i82556.html"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "hyponym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "a direção ou caminho ao longo de que algo se move, ou ao longo da qual encontra-se\n"
+            },
+            {
+              "words": "curso",
+              "gloss": "linha geral de orientação\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "em uma direção paralela com as linhas de latitude\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "em uma direção paralela com as linhas de longitude\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a direção da Kaaba em direção que sua vez muçulmanos para suas orações diárias\n"
+            },
+            {
+              "words": "tendência",
+              "gloss": "uma direção geral em que algo tende a subir\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "principal",
+              "gloss": "vai ou processo ou com antecedência; mostrando o caminho\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "mostrando o caminho por condução ou levando; direção a impor\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "em andamento o caminho e dificultando\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "de uma maneira oposta; de modo a ser revertida\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma bola de críquete rolou como se de uma maneira que realmente quebra no caminho oposto\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o sigilo dos policiais que mentem ou olhar para o outro lado para proteger outros policiais\n"
+            },
+            {
+              "words": "guia, orientação, controle",
+              "gloss": "o ato de guiar ou mostrar o caminho\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "incapaz de encontrar o seu caminho\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "transformar abruptamente e enfrentar o outro lado, seja fisicamente ou metaforicamente\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Março volta ao longo do mesmo caminho\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Cale-se para fora de vista ou atrapalhar a fim de esconder da vista\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um nó de Recife cruzou o caminho errado e, portanto, inseguro\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um ponto de um terço do caminho ao longo de uma linha traçada a partir do quadril para o umbigo; o ponto de máxima sensibilidade em apendicite aguda\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma passagem de volta (em tarifa reduzida) para viajar para os dois lados no mesmo dia\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um post com uma placa que dá as indicações ou mostra o caminho\n"
+            },
+            {
+              "words": "guia",
+              "gloss": "alguém que mostra o caminho, levando ou aconselhando\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um fungo com um boné marrom amplamente convexo e poros que se estendem de maneira da parte para baixo a haste\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "percurso, rota, itinerário, caminho",
+              "gloss": "uma linha estabelecida de viagens ou acesso\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "ponto",
+              "gloss": "a localização precisa de alguma coisa; uma localização espacialmente limitada\n"
+            },
+            {
+              "words": "local, lugar",
+              "gloss": "um ponto localizado no que diz respeito a características da superfície de uma região\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-09387222-n",
+      "pos": "n",
+      "gloss": "uma linha ou rota ao longo do qual algo viaja ou se move\n",
+      "synonyms": [
+        "trajetória",
+        "curso",
+        "direcção",
+        "caminho"
+      ],
+      "ili": [
+        {
+          "ili_offset": "pwn30-09387222-n",
+          "pwn_id": "pwn30-09387222-n",
+          "pwn_version": "3.0",
+          "pwn_offset": "09387222",
+          "part_of_speech": "n",
+          "cili": "i85949",
+          "cili_id": "i85949",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i85949",
+          "source_curie": "oewn-ili:i85949",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-09387222-n",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i85949.html"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "hyponym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "um curso de um objeto em movimento que levará a uma colisão se ele continua inalterado\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o lado interno de uma pista de corridas curvo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o curso ao longo do qual propagação de comunicações\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o curso ao longo do qual uma pessoa andou ou anda-se em\n"
+            },
+            {
+              "words": "cinto",
+              "gloss": "um caminho ou tiras (como cortar por um curso da Sega)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma faixa ou a marca deixada por algo que já passou\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "se movendo para trás e para a frente ao longo de um determinado curso\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um arremesso de uma bola de beisebol, que é jogado com rotação de modo que suas curvas de caminho que se aproxima a massa\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o ato de interseção (como juntar-se, causando o seu caminho para cruzar o caminho do seu destino)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um rolo em que o avião segue uma rota em espiral\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "fora do curso, vagando sem rumo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "distância do curso correto ou esperado\n"
+            },
+            {
+              "words": "ciclo, circuito, círculo, volta",
+              "gloss": "movimento, uma vez em torno de um curso\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "tomar um caminho em ziguezague em esquis\n"
+            },
+            {
+              "words": "etapa, fase",
+              "gloss": "uma seção ou parte de uma viagem ou curso\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "navegando em ziguezague\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a busca (de uma pessoa ou animal), seguindo pistas ou marcas que deixaram para trás\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "voando para baixo em um caminho helicoidal com um grande raio\n"
+            },
+            {
+              "words": "desvio",
+              "gloss": "uma viragem aparte (de seu curso ou atenção ou preocupação)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "patinação competitiva em patins de velocidade (geralmente em torno de um curso oval)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "montando cavalos em competições sobre cursos conjunto de demonstrar habilidade em saltar sobre obstáculos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "em um curso direto\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "em um curso em ziguezague ou em um caminho em zigue-zague\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "em linha reta; em um curso direto\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Futebol americano) bloqueando o caminho de um jogador com o seu corpo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "desviar muito de um curso destinado\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "indicar o caminho ou a direcção certa\n"
+            },
+            {
+              "words": "indirecto",
+              "gloss": "não dirigir na dimensão espacial; não levando por uma linha reta ou um curso para um destino\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "desviando-se de um curso em linha reta\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a inserção deliberada de energia eletromagnética em vias de transmissão, com o objetivo de operadores confusos ou enganadores\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "fazer faixas em cima\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Por exemplo, linhas de ou caminhos) não paralelas; convergência\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "curso de uma forma direta ou\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "vento ao redor; mover-se ao longo de um curso circular\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "mover para cima e para baixo sem nenhum caminho específico\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "para mover ou causar a mover-se em um curso sinuoso, espiral ou circular\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "mover ao longo de um caminho sinuoso\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "vagar de um curso direto ou aleatoriamente\n"
+            },
+            {
+              "words": "nortear, orientar, guiar, indicar, dirigir",
+              "gloss": "dirigir o curso; determinar a direção da viagem\n"
+            },
+            {
+              "words": "conduzir, guiar",
+              "gloss": "agir como o navegador em um carro, avião ou navio e plano, plano direto, o caminho e a posição do transporte\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "enviar em um curso ou em uma direção diferente do planejado ou pretendido\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "viajar ao longo de um caminho em zigue-zague\n"
+            },
+            {
+              "words": "seguir",
+              "gloss": "viajar ao longo de um determinado curso\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "fazer o curso ou viajar ao longo de um caminho; viajar ou passar por cima, ao redor ou ao longo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "refazer o curso\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "causa para fugir dos trilhos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Vire de lado e longe de um curso inicial ou pretendido\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "desviar-se momentaneamente fora do curso\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Vire-se de um curso em linha reta, direção fixa ou linha de interesse\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "ao vento ou mover-se em uma rota em espiral\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "mover-se em uma espiral ou curso em zigue-zague\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "prosseguir ao longo de um caminho\n"
+            },
+            {
+              "words": "desviar",
+              "gloss": "causa para afastar-se um curso anterior ou esperado\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "divergir de forma irregular de um curso conjunto\n"
+            },
+            {
+              "words": "sair, partir",
+              "gloss": "vaguear de um curso direto ou direto\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "mover para lá e para cá, ou de um lugar para outro, geralmente em um curso irregular\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Não tendo nenhum curso fixo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "observar ou traçar o caminho em movimento de algo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "suportada a partir de baixo, especialmente repousando sobre uma faixa em vez de suspenso a partir de cima\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "avançar para uma meta ou ao longo de um caminho ou por meio de uma atividade\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um dispositivo de navegação que mantém automaticamente navios ou aviões e naves espaciais em uma rota fixa\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um instrumento que registra as faixas de radiação ionizante as partículas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "aparelho que detecta o caminho de partículas de alta energia que passam através de um vapor supersaturado; cada partícula ioniza as moléculas ao longo do seu percurso e pequenas gotas de condensar-se-os a produzir uma faixa visível\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um sistema de equipamentos para automaticamente guiando o caminho de um veículo (especialmente um míssil)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um míssil-foguete cujo caminho pode ser controlado durante o vôo por sinais de rádio ou dispositivos emissores internos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Física) instrumento científico que traça o caminho de uma partícula carregada\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma faixa ou um caminho bem definido; para, por exemplo nadadores ou linhas de tráfego\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "íons são acelerados por um caminho linear por diferenças de tensão nos eletrodos ao longo do caminho\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um sistema que fornece informações úteis para determinar a posição eo curso de um navio ou aeronave\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um circuito fechado, no qual a corrente divide-se em duas ou mais caminhos antes de recombinar para completar o circuito\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um motor de foguete pequeno em um foguete maior ou nave espacial que é acionado para abrandar ou alterar o seu curso\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um condutor metálico oco que fornece um caminho para orientar micro-ondas; utilizado no radar\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "exatidão de curso em direção a um objetivo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "tendo a característica de falta de um curso de verdade em direção a um objetivo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um caminho ou canal ou ducto através de ou ao longo de algo que pode passar\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o caminho neural de um reflexo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um feixe de fibras mielinizadas de nervo seguindo um caminho através do cérebro\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um sol teórico que se move ao longo do equador celeste, a uma velocidade constante e completa o seu curso anual na mesma quantidade de tempo que o sol real leva em velocidades variáveis\n"
+            },
+            {
+              "words": "canal",
+              "gloss": "um caminho sobre o qual podem transmitir sinais elétricos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um sinal transmitido por um caminho estreito; orienta os pilotos de avião na escuridão ou mau tempo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a transmissão da Terra para uma nave espacial ou o caminho de tal transmissão\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma mudança abrupta no curso de um córrego que forma a fronteira entre duas parcelas de terreno, resultando na perda de parte do terreno de um fazendeiro e um conseqüente aumento na terra do outro\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o desvio (por um navio ou aeronave) de seu curso pretendido devido à deriva\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "desvio de uma linha reta ou normal\n"
+            },
+            {
+              "words": "trovão",
+              "gloss": "um ruído crescendo ou caindo causada pelo ar em expansão ao longo do trajeto de um raio\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma deflexão errático de um curso destina-se\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma corrida de cavalos ao longo de um curso obstruído\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma corrida de downhill ao longo de um curso sinuoso definido por postes verticais\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um grupo a avançar em um caminho sinuoso de arquivo único\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um ponto em duas linhas (caminhos ou arcos etc.) se cruzam\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o curso normal, realizadas pelos navios através de um porto ou águas costeiras\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma linha em uma esfera que corta todos os meridianos no mesmo ângulo; o caminho percorrido por um navio ou avião que mantém uma constante direção da bússola\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a direção ou caminho ao longo de que algo se move, ou ao longo da qual encontra-se\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um curso de um objeto em movimento que levará a uma colisão se ele continua inalterado\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o curso ao longo do qual propagação de comunicações\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o curso ao longo do qual uma pessoa andou ou anda-se em\n"
+            },
+            {
+              "words": "cinto",
+              "gloss": "um caminho ou tiras (como cortar por um curso da Sega)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um rio, formado pela confluência de dois outros rios, perto de Knoxville; Segue-se um curso em forma de U para se tornar um afluente do rio Ohio em Kentucky ocidental\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma faixa ou a marca deixada por algo que já passou\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o membro de uma tripulação que é responsável pelo curso da aeronave\n"
+            },
+            {
+              "words": "guia",
+              "gloss": "alguém que possa encontrar caminhos através de um território inexplorado\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um ice-patinador que corridas de concorrência; geralmente em torno de uma pista oval\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a força para fora em um corpo que se move em uma trajetória curva em torno de outro corpo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a força para dentro em um corpo que se move em uma trajetória curva em torno de outro corpo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "vento soprando através do caminho de um navio ou aeronave\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "vento soprando em frente ao caminho de um navio ou aeronave\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "vento soprando na mesma direção que o caminho de um navio ou aeronave\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma forma de raio que se move rapidamente em um caminho em ziguezague com uma extremidade dividida (fork-like)\n"
+            },
+            {
+              "words": "trajetória",
+              "gloss": "o caminho seguido por um objeto que se move através do espaço\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um mar no qual as ondas estão executando directamente contra o curso do navio\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o fenômeno no qual a luz é refletida por partículas muito pequenas em seu caminho; faz um feixe de luz visível; a luz espalhada é principalmente azul\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a saída gradual de um curso planejado devido a influências externas (como um navio ou avião)\n"
+            },
+            {
+              "words": "trajetória, curso, direcção, caminho",
+              "gloss": "a relação espacial entre uma coisa e o curso ao longo do qual ele aponta ou move\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um queima dor no membro ao longo do curso de um nervo periférico; geralmente associada com alterações da pele\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "dor espasmódica aguda ao longo do curso de um ou mais nervos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o tempo necessário para percorrer um percurso medido\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "atravessar, cruzar",
+              "gloss": "atravessar ou passar por cima\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "mover-se rapidamente através de ou sobre\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "continuar os pés e depósito\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "observar ou traçar o caminho em movimento de algo\n"
+            },
+            {
+              "words": "atravessar, cruzar",
+              "gloss": "atravessar ou passar por cima\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "mover-se rapidamente através de ou sobre\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "continuar os pés e depósito\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "observar ou traçar o caminho em movimento de algo\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "linha",
+              "gloss": "uma localização espacial definida por uma extensão unidimensional real ou imaginário\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-00591858-n",
+      "pos": "n",
+      "gloss": "a posição de um diretor de uma preocupação das empresas\n",
+      "synonyms": [
+        "direcção"
+      ],
+      "ili": [
+        {
+          "ili_offset": "pwn30-00591858-n",
+          "pwn_id": "pwn30-00591858-n",
+          "pwn_version": "3.0",
+          "pwn_offset": "00591858",
+          "part_of_speech": "n",
+          "cili": "i38508",
+          "cili_id": "i38508",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i38508",
+          "source_curie": "oewn-ili:i38508",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-00591858-n",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i38508.html"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "gestor, diretor",
+              "gloss": "alguém que controla os recursos e despesas\n"
+            },
+            {
+              "words": "diretivo, diretor",
+              "gloss": "membro do Conselho de administração\n"
+            },
+            {
+              "words": "gestor, diretor",
+              "gloss": "alguém que controla os recursos e despesas\n"
+            },
+            {
+              "words": "diretivo, diretor",
+              "gloss": "membro do Conselho de administração\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "função, local, posto, situação, cargo, lugar, posição",
+              "gloss": "um trabalho em uma organização\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "negócio, empresa",
+              "gloss": "uma empresa comercial ou industrial e as pessoas que a constituem\n"
+            },
+            {
+              "words": "gestor, diretor",
+              "gloss": "alguém que controla os recursos e despesas\n"
+            },
+            {
+              "words": "diretivo, diretor",
+              "gloss": "membro do Conselho de administração\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-08381436-n",
+      "pos": "n",
+      "gloss": "o corpo de pessoas que liderar um grupo\n",
+      "synonyms": [
+        "comando",
+        "liderança",
+        "direcção"
+      ],
+      "ili": [
+        {
+          "ili_offset": "pwn30-08381436-n",
+          "pwn_id": "pwn30-08381436-n",
+          "pwn_version": "3.0",
+          "pwn_offset": "08381436",
+          "part_of_speech": "n",
+          "cili": "i81151",
+          "cili_id": "i81151",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i81151",
+          "source_curie": "oewn-ili:i81151",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-08381436-n",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i81151.html"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "hyponym",
+          "targets": [
+            {
+              "words": "roma",
+              "gloss": "a liderança da Igreja Católica Romana\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "os mais altos dirigentes de uma organização (por exemplo, os agentes de comandante-em-chefe e superiores das forças militares)\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "inferior (especialmente da liderança de um país)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um livro do Velho Testamento, que narra a história de Israel sob os líderes conhecidos como juízes\n"
+            },
+            {
+              "words": "roma",
+              "gloss": "a liderança da Igreja Católica Romana\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a ala militar clandestina da liderança judaica durante o domínio britânico sobre o mandato da Palestina 1920-1948; tornou-se a base para a força de defesa de Israel\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "os mais altos dirigentes de uma organização (por exemplo, os agentes de comandante-em-chefe e superiores das forças militares)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma escola pública experimental para o jardim de infância através da classe 12; criado e organizado por professores e pais e líderes comunitários; opera independentemente de outras escolas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma tentativa organizada pelos trabalhadores para melhorar a sua situação por ação unida (especialmente via sindicatos) ou os líderes deste movimento\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "título eclesiástico dos líderes do Nestoriana e igrejas armênias\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um estadista idoso cujo conselho é procurado ser líderes do governo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Papa que, em 1122, forçou o Holy Roman Emperor Henry V para assinar uma concordata que reconheceu o direito da Igreja de escolher sua própria liderança (morrida em 1124)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Inglês pintor de retratos lembrado para a série de retratos de líderes da aliança contra Napoleão (1769-1830)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Filósofo espanhol que defendeu a liderança por uma elite intelectual (1883-1955)\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "dirigente, líder, chefia, autoridade",
+              "gloss": "uma pessoa que governa ou guias ou inspira outros\n"
+            },
+            {
+              "words": "dirigente, líder, chefia, autoridade",
+              "gloss": "uma pessoa que governa ou guias ou inspira outros\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "agremiação, cooperativa, corporação, grupo, organismo, comunidade, corpo, associação",
+              "gloss": "um grupo de pessoas associado por algum laço ou ocupação comum e considerada como uma entidade\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "agrupamento, agrupação, categoria, coletivo, grupo",
+              "gloss": "qualquer número de entidades (Membros), considerado como uma unidade\n"
+            },
+            {
+              "words": "agremiação, cooperativa, corporação, grupo, organismo, comunidade, corpo, associação",
+              "gloss": "um grupo de pessoas associado por algum laço ou ocupação comum e considerada como uma entidade\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-01133281-n",
+      "pos": "n",
+      "gloss": "o ato de administrar algo\n",
+      "synonyms": [
+        "gestão",
+        "direcção"
+      ],
+      "ili": [
+        {
+          "ili_offset": "pwn30-01133281-n",
+          "pwn_id": "pwn30-01133281-n",
+          "pwn_version": "3.0",
+          "pwn_offset": "01133281",
+          "part_of_speech": "n",
+          "cili": "i41343",
+          "cili_id": "i41343",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i41343",
+          "source_curie": "oewn-ili:i41343",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-01133281-n",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i41343.html"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "hyponym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "a direção de uma orquestra ou coro\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "criação e manutenção de um banco de dados\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a gestão da moeda e do crédito e bancários e investimentos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a gestão de um lar\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "gestão ruim ou desonesto por pessoas supostamente para agir em nome de outro\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "gestão que é descuidado ou ineficiente\n"
+            },
+            {
+              "words": "abordagem, trato, tratamento",
+              "gloss": "a gestão de alguém ou alguma coisa\n"
+            },
+            {
+              "words": "supervisão, vigilância",
+              "gloss": "gestão por supervisionar o desempenho ou a operação de uma pessoa ou grupo\n"
+            },
+            {
+              "words": "disposição, gestão, regulação, administração",
+              "gloss": "um método de tender ou gerir os negócios de um algum grupo de pessoas (especialmente os assuntos de negócios do grupo)\n"
+            },
+            {
+              "words": "autorização",
+              "gloss": "o ato de conferir legalidade ou sanção ou mandado formais\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o ato de cancelamento da certificação ou terminar uma franquia\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "gestão através de canais específicos de comunicação\n"
+            },
+            {
+              "words": "guia, orientação, controle",
+              "gloss": "o ato de guiar ou mostrar o caminho\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "conservação",
+              "gloss": "a preservação e gestão cuidadosa do ambiente e dos recursos naturais\n"
+            },
+            {
+              "words": "cuidado",
+              "gloss": "atenção e gestão implica a responsabilidade pela segurança\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "(Informal para enfatizar como é ruim) além da esperança de gestão ou reforma\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a gestão da moeda e do crédito e bancários e investimentos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a gestão de um lar\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "gestão ruim ou desonesto por pessoas supostamente para agir em nome de outro\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "gestão que é descuidado ou ineficiente\n"
+            },
+            {
+              "words": "abordagem, trato, tratamento",
+              "gloss": "a gestão de alguém ou alguma coisa\n"
+            },
+            {
+              "words": "supervisão, vigilância",
+              "gloss": "gestão por supervisionar o desempenho ou a operação de uma pessoa ou grupo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "gestão astuto ou astuto dos assuntos públicos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a organização de um negócio de acordo com os princípios científicos de gestão, a fim de aumentar a eficiência\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "gestão através de canais específicos de comunicação\n"
+            },
+            {
+              "words": "federação",
+              "gloss": "o ato de constituição de uma unidade política de um certo número de estados ou províncias ou colônias separadas para que cada membro mantém a gestão de seus assuntos internos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "hábeis na arte de governar ou de gestão\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "obter através de esforço ou de gestão\n"
+            },
+            {
+              "words": "económico, econômico",
+              "gloss": "de ou relativo a uma economia, o sistema de gestão de produção e de riqueza material\n"
+            },
+            {
+              "words": "administrativo",
+              "gloss": "de ou relacionados com a função ou a responsabilidade ou a actividade de gestão de\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "sabedoria na gestão dos assuntos públicos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a prudência e cuidado exercido por alguém na gestão dos recursos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a falta de prudência e cuidado por alguém na gestão dos recursos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Não tendo nenhuma voz na gestão ou controle de assuntos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "habilidade em gestão doméstica\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "habilidade na gestão de barcos\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a aplicação das ciências do solo e planta a gestão da terra ea produção agrícola\n"
+            },
+            {
+              "words": "silvicultura",
+              "gloss": "a ciência de plantar e cuidar de florestas ea gestão de madeira crescente\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o ramo da engenharia que lida com a criação e gestão de sistemas que integram as pessoas e materiais e energia de forma produtiva\n"
+            },
+            {
+              "words": "economia",
+              "gloss": "o ramo da ciência social que lida com a produção, distribuição e consumo de bens e serviços e sua gestão\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o ramo da economia que estuda a gestão do dinheiro e outros bens\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o ramo da criminologia preocupada com gestão prisional e prisioneiro de reabilitação\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma forma de teoria socialista, defendendo a propriedade estatal da indústria mas gestões por guildas dos trabalhadores\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a introdução de pesticidas e grãos de alto rendimento e uma melhor gestão durante os anos 1960 e 1970, que aumentou muito a produtividade agrícola\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o departamento responsável pela contratação e treinamento de funcionários e colocando e para a definição de políticas para a gestão de pessoal\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a agência independente que supervisiona a gestão de registros do governo federal, incluindo bibliotecas presidenciais e coleções históricas\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o departamento federal dos Estados Unidos que promove e administra comércio interno e externo (incluindo a gestão do censo e do escritório de patentes); criado em 1913\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "um comando que é o principal provedor de sistemas de armas de combate aéreo para a Força Aérea dos Estados Unidos; opera lutador, bombardeiro, reconhecimento, de gerenciamento de batalha, e aeronaves de resgate\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma agência de gestão central que define a política federal para a aquisição Federal e imóveis gestão e recursos de informação de gestão\n"
+            },
+            {
+              "words": "casa",
+              "gloss": "a gestão de uma casa de jogo ou casino\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "especialista em gestão e colheita de campo produção de solo\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Consultor de negócios sobre as práticas de gestão eficiente\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "aquele cujo negócio é a gestão dos funerais\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "uma pessoa que estuda a teoria ea prática da gestão de prisão\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "Soprano sueca que viajou pelos Estados Unidos sob a gestão do PT Barnum (1820-1887)\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "processamento de dados na gestão de contabilidade ou de negócios\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer processo que afeta a produção e desenvolvimento e gestão de riqueza material\n"
+            }
+          ]
+        },
+        {
+          "relation": "derivationally related form",
+          "targets": [
+            {
+              "words": "cuidar, manejar, tratar",
+              "gloss": "ser responsável, agir sobre ou dispor de\n"
+            },
+            {
+              "words": "policiar, vigiar, controlar",
+              "gloss": "relógio e direta\n"
+            },
+            {
+              "words": "cuidar, manejar, tratar",
+              "gloss": "ser responsável, agir sobre ou dispor de\n"
+            },
+            {
+              "words": "policiar, vigiar, controlar",
+              "gloss": "relógio e direta\n"
+            }
+          ]
+        },
+        {
+          "relation": "has derived form",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "relativas à direção em direção a um objetivo (nonspatial)\n"
+            },
+            {
+              "words": "administrativo",
+              "gloss": "de ou relacionados com a função ou a responsabilidade ou a actividade de gestão de\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "controle exercido (ativa ou passivamente) por ação do grupo\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "policiar, vigiar, controlar",
+              "gloss": "relógio e direta\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "synset_offset": "por-30-13827426-n",
+      "pos": "n",
+      "gloss": "a relação espacial entre uma coisa e o curso ao longo do qual ele aponta ou move\n",
+      "synonyms": [
+        "trajetória",
+        "curso",
+        "direcção",
+        "caminho"
+      ],
+      "ili": [
+        {
+          "ili_offset": "pwn30-13827426-n",
+          "pwn_id": "pwn30-13827426-n",
+          "pwn_version": "3.0",
+          "pwn_offset": "13827426",
+          "part_of_speech": "n",
+          "cili": "i109570",
+          "cili_id": "i109570",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i109570",
+          "source_curie": "oewn-ili:i109570",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-13827426-n",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i109570.html"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "attribute",
+          "targets": [
+            {
+              "words": "novo",
+              "gloss": "chegar a um lugar ou posição\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "deixando um lugar ou uma posição\n"
+            },
+            {
+              "words": "novo",
+              "gloss": "chegar a um lugar ou posição\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "deixando um lugar ou uma posição\n"
+            }
+          ]
+        },
+        {
+          "relation": "hyponym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "A direção em que algo (como um edifício) rostos\n"
+            },
+            {
+              "words": "orientação",
+              "gloss": "posição ou alinhamento relativo aos pontos cardeais ou outras indicações específicas\n"
+            },
+            {
+              "words": "oposição",
+              "gloss": "uma direção oposta à outra\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a direção de onde o vento vem\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a direção em que o vento está soprando\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a direção para o mar\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "qualquer um dos 32 direções horizontais, indicadas no cartão de uma bússola\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a direção em que a agulha de uma bússola\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a direção correspondente ao ponto de bússola cardeal norte\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o sentido correspondente ao ponto de compasso northeastward\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a direção correspondente ao ponto cardeal bússola para o leste\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o sentido correspondente ao ponto de compasso southeastward\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "a direção correspondente ao ponto de bússola cardeal sul\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o sentido correspondente ao ponto de compasso southwestward\n"
+            },
+            {
+              "words": "oeste, ocidente",
+              "gloss": "a direção correspondente ao ponto cardeal bússola para o oeste\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "o sentido correspondente ao ponto de compasso northwestward\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": ""
+            }
+          ]
+        },
+        {
+          "relation": "relation #61",
+          "targets": [
+            {
+              "words": "motivação, motivo, necessidade, causa",
+              "gloss": "o recurso psicológico que desperta um organismo para a ação em direção a um objetivo desejado; a razão para a ação; isso que dá propósito e direção para o comportamento\n"
+            }
+          ]
+        },
+        {
+          "relation": "has derived form",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "relativas ou indicando as direções no espaço\n"
+            },
+            {
+              "words": "omnidireccional",
+              "gloss": "não direcional\n"
+            }
+          ]
+        },
+        {
+          "relation": "hypernym",
+          "targets": [
+            {
+              "words": "campo, cargo, circunstância, condição, disposição, eido, emprego, função, lado, local, posicionamento, profissão, roça, roçado, sítio, colocação, localização, situação, lugar, posição",
+              "gloss": "a propriedade espacial de um lugar onde ou maneira em que alguma coisa está situada\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "dirigir",
+              "gloss": "intenção (algo) para mover em direção a uma determinada meta\n"
+            },
+            {
+              "words": "campo, cargo, circunstância, condição, disposição, eido, emprego, função, lado, local, posicionamento, profissão, roça, roçado, sítio, colocação, localização, situação, lugar, posição",
+              "gloss": "a propriedade espacial de um lugar onde ou maneira em que alguma coisa está situada\n"
+            },
+            {
+              "words": "trajetória, curso, direcção, caminho",
+              "gloss": "uma linha ou rota ao longo do qual algo viaja ou se move\n"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

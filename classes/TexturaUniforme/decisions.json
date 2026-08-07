@@ -3,8 +3,8 @@
   "senses": [
     {
       "source": "pulo",
-      "key": "ili-30-01200095-a",
-      "ili": "ili-30-01200095-a",
+      "key": "pwn30-01200095-a",
+      "ili": "i6560",
       "local_id": "por-30-01200095-a",
       "pos": "a",
       "gloss": "que se mantém o mesmo; constante e invariável ao longo do parâmetro",
@@ -15,12 +15,19 @@
       ],
       "decision": "UF",
       "note": "",
-      "destino": "vocabulario"
+      "destino": "vocabulario",
+      "pwn_id": "pwn30-01200095-a",
+      "cili": "i6560",
+      "cili_id": "i6560",
+      "cili_uri": "http://ili.globalwordnet.org/ili/i6560",
+      "source_curie": "oewn-ili:i6560",
+      "mapping_status": "official",
+      "legacy_omw_ili": "ili-30-01200095-a"
     },
     {
       "source": "pulo",
-      "key": "ili-30-01966488-a",
-      "ili": "ili-30-01966488-a",
+      "key": "pwn30-01966488-a",
+      "ili": "i10771",
       "local_id": "por-30-01966488-a",
       "pos": "a",
       "gloss": "sempre o mesmo parâmetro; imutável e uniforme",
@@ -30,12 +37,19 @@
       ],
       "decision": "UF",
       "note": "",
-      "destino": "vocabulario"
+      "destino": "vocabulario",
+      "pwn_id": "pwn30-01966488-a",
+      "cili": "i10771",
+      "cili_id": "i10771",
+      "cili_uri": "http://ili.globalwordnet.org/ili/i10771",
+      "source_curie": "oewn-ili:i10771",
+      "mapping_status": "official",
+      "legacy_omw_ili": "ili-30-01966488-a"
     },
     {
       "source": "pulo",
-      "key": "ili-30-00909545-a",
-      "ili": "ili-30-00909545-a",
+      "key": "pwn30-00909545-a",
+      "ili": "i4979",
       "local_id": "por-30-00909545-a",
       "pos": "a",
       "gloss": "sem variações; regular e uniforme face ao parâmetro",
@@ -45,7 +59,14 @@
       ],
       "decision": "exclude",
       "note": "",
-      "destino": "evidencia"
+      "destino": "evidencia",
+      "pwn_id": "pwn30-00909545-a",
+      "cili": "i4979",
+      "cili_id": "i4979",
+      "cili_uri": "http://ili.globalwordnet.org/ili/i4979",
+      "source_curie": "oewn-ili:i4979",
+      "mapping_status": "official",
+      "legacy_omw_ili": "ili-30-00909545-a"
     },
     {
       "source": "pulo",
@@ -65,8 +86,8 @@
     },
     {
       "source": "pulo",
-      "key": "ili-30-02302187-a",
-      "ili": "ili-30-02302187-a",
+      "key": "pwn30-02302187-a",
+      "ili": "i12748",
       "local_id": "por-30-02302187-a",
       "pos": "a",
       "gloss": "que ocorre em intervalos fixos e regulares",
@@ -76,12 +97,19 @@
       ],
       "decision": "exclude",
       "note": "",
-      "destino": "evidencia"
+      "destino": "evidencia",
+      "pwn_id": "pwn30-02302187-a",
+      "cili": "i12748",
+      "cili_id": "i12748",
+      "cili_uri": "http://ili.globalwordnet.org/ili/i12748",
+      "source_curie": "oewn-ili:i12748",
+      "mapping_status": "official",
+      "legacy_omw_ili": "ili-30-02302187-a"
     },
     {
       "source": "pulo",
-      "key": "ili-30-00910101-a",
-      "ili": "ili-30-00910101-a",
+      "key": "pwn30-00910101-a",
+      "ili": "i4980",
       "local_id": "por-30-00910101-a",
       "pos": "a",
       "gloss": "de aparência agradável aos olhos",
@@ -90,12 +118,19 @@
       ],
       "decision": "exclude",
       "note": "",
-      "destino": "evidencia"
+      "destino": "evidencia",
+      "pwn_id": "pwn30-00910101-a",
+      "cili": "i4980",
+      "cili_id": "i4980",
+      "cili_uri": "http://ili.globalwordnet.org/ili/i4980",
+      "source_curie": "oewn-ili:i4980",
+      "mapping_status": "official",
+      "legacy_omw_ili": "ili-30-00910101-a"
     },
     {
       "source": "pulo",
-      "key": "ili-30-04509592-n",
-      "ili": "ili-30-04509592-n",
+      "key": "pwn30-04509592-n",
+      "ili": "i60712",
       "local_id": "por-30-04509592-n",
       "pos": "n",
       "gloss": "instrumento de medição de comprimento",
@@ -104,12 +139,19 @@
       ],
       "decision": "exclude",
       "note": "",
-      "destino": "evidencia"
+      "destino": "evidencia",
+      "pwn_id": "pwn30-04509592-n",
+      "cili": "i60712",
+      "cili_id": "i60712",
+      "cili_uri": "http://ili.globalwordnet.org/ili/i60712",
+      "source_curie": "oewn-ili:i60712",
+      "mapping_status": "official",
+      "legacy_omw_ili": "ili-30-04509592-n"
     },
     {
       "source": "pulo",
-      "key": "ili-30-00744506-a",
-      "ili": "ili-30-00744506-a",
+      "key": "pwn30-00744506-a",
+      "ili": "i4126",
       "local_id": "por-30-00744506-a",
       "pos": "a",
       "gloss": "relativo ao fardamento militar",
@@ -118,7 +160,14 @@
       ],
       "decision": "exclude",
       "note": "",
-      "destino": "evidencia"
+      "destino": "evidencia",
+      "pwn_id": "pwn30-00744506-a",
+      "cili": "i4126",
+      "cili_id": "i4126",
+      "cili_uri": "http://ili.globalwordnet.org/ili/i4126",
+      "source_curie": "oewn-ili:i4126",
+      "mapping_status": "official",
+      "legacy_omw_ili": "ili-30-00744506-a"
     },
     {
       "source": "pulo",
@@ -1548,7 +1597,7 @@
     {
       "source": "onto",
       "key": "fuzzythes:1661",
-      "ili": null,
+      "ili": "i60712",
       "local_id": "fuzzythes:1661",
       "pos": "n",
       "gloss": "",
@@ -1562,7 +1611,8 @@
       ],
       "decision": "exclude",
       "note": "",
-      "destino": "evidencia"
+      "destino": "evidencia",
+      "ili_source": "onto_ili_accepted"
     },
     {
       "source": "onto",
@@ -1599,7 +1649,7 @@
     {
       "source": "onto",
       "key": "fuzzythes:2140",
-      "ili": null,
+      "ili": "i60712",
       "local_id": "fuzzythes:2140",
       "pos": "n",
       "gloss": "",
@@ -1613,12 +1663,13 @@
       ],
       "decision": "exclude",
       "note": "",
-      "destino": "evidencia"
+      "destino": "evidencia",
+      "ili_source": "onto_ili_accepted"
     },
     {
       "source": "onto",
       "key": "fuzzythes:3480",
-      "ili": null,
+      "ili": "i60712",
       "local_id": "fuzzythes:3480",
       "pos": "n",
       "gloss": "",
@@ -1633,7 +1684,8 @@
       ],
       "decision": "exclude",
       "note": "",
-      "destino": "evidencia"
+      "destino": "evidencia",
+      "ili_source": "onto_ili_accepted"
     },
     {
       "source": "onto",
@@ -2109,7 +2161,7 @@
     {
       "source": "onto",
       "key": "ontopt06:2131",
-      "ili": null,
+      "ili": "i12748",
       "local_id": "ontopt06:2131",
       "pos": "a",
       "gloss": "que, comparado a outro, é igual.",
@@ -2119,12 +2171,13 @@
       ],
       "decision": "UF",
       "note": "",
-      "destino": "vocabulario"
+      "destino": "vocabulario",
+      "ili_source": "onto_ili_accepted"
     },
     {
       "source": "onto",
       "key": "ontopt06:2133",
-      "ili": null,
+      "ili": "i4126",
       "local_id": "ontopt06:2133",
       "pos": "a",
       "gloss": "que tem uma só forma. que tem só uma forma.",
@@ -2134,12 +2187,13 @@
       ],
       "decision": "UF",
       "note": "",
-      "destino": "vocabulario"
+      "destino": "vocabulario",
+      "ili_source": "onto_ili_accepted"
     },
     {
       "source": "onto",
       "key": "ontopt06:2945",
-      "ili": null,
+      "ili": "i10771",
       "local_id": "ontopt06:2945",
       "pos": "a",
       "gloss": "",
@@ -2151,12 +2205,13 @@
       ],
       "decision": "UF",
       "note": "",
-      "destino": "vocabulario"
+      "destino": "vocabulario",
+      "ili_source": "onto_ili_accepted"
     },
     {
       "source": "onto",
       "key": "ontopt06:28292",
-      "ili": null,
+      "ili": "i60712",
       "local_id": "ontopt06:28292",
       "pos": "n",
       "gloss": "farda ou vestuário, feito segundo um modelo comum, para uma corporação ou uma classe.",
@@ -2169,12 +2224,13 @@
       ],
       "decision": "exclude",
       "note": "",
-      "destino": "evidencia"
+      "destino": "evidencia",
+      "ili_source": "onto_ili_accepted"
     },
     {
       "source": "onto",
       "key": "polaridades:1656",
-      "ili": null,
+      "ili": "i4980",
       "local_id": "polaridades:1656",
       "pos": "a",
       "gloss": "Polaridade: 0 (método BASE)",
@@ -2184,7 +2240,8 @@
       ],
       "decision": "UF",
       "note": "",
-      "destino": "vocabulario"
+      "destino": "vocabulario",
+      "ili_source": "onto_ili_accepted"
     },
     {
       "source": "onto",
@@ -2210,7 +2267,7 @@
     {
       "source": "onto",
       "key": "polaridades:4484",
-      "ili": null,
+      "ili": "i10771",
       "local_id": "polaridades:4484",
       "pos": "a",
       "gloss": "Polaridade: 0 (método BASE)",
@@ -2222,7 +2279,8 @@
       ],
       "decision": "UF",
       "note": "",
-      "destino": "vocabulario"
+      "destino": "vocabulario",
+      "ili_source": "onto_ili_accepted"
     },
     {
       "source": "onto",
@@ -7544,63 +7602,178 @@
       ],
       "decision": "",
       "note": "OEWN corroboration (Ponte ILI / WordNet track)"
+    },
+    {
+      "source": "papel",
+      "key": "papel35:FINALIDADE:FAZ_SE_COM:uniforme",
+      "ili": null,
+      "local_id": "papel35:FINALIDADE:FAZ_SE_COM:uniforme",
+      "pos": "",
+      "gloss": "PAPEL FAZ_SE_COM (FINALIDADE)",
+      "members": [
+        "uniforme",
+        "uso"
+      ],
+      "decision": "exclude",
+      "note": "discovery: PAPEL 3.5",
+      "destino": "evidencia"
+    },
+    {
+      "source": "papel",
+      "key": "papel35:HIPERONIMIA:HIPERONIMO_DE:uniforme",
+      "ili": null,
+      "local_id": "papel35:HIPERONIMIA:HIPERONIMO_DE:uniforme",
+      "pos": "",
+      "gloss": "PAPEL HIPERONIMO_DE (HIPERONIMIA)",
+      "members": [
+        "uniforme",
+        "libré",
+        "vestuário"
+      ],
+      "decision": "exclude",
+      "note": "discovery: PAPEL 3.5",
+      "destino": "evidencia"
+    },
+    {
+      "source": "papel",
+      "key": "papel35:MANEIRA:MANEIRA_POR_MEIO_DE:uniforme",
+      "ili": null,
+      "local_id": "papel35:MANEIRA:MANEIRA_POR_MEIO_DE:uniforme",
+      "pos": "",
+      "gloss": "PAPEL MANEIRA_POR_MEIO_DE (MANEIRA)",
+      "members": [
+        "uniforme",
+        "uniformemente"
+      ],
+      "decision": "UF",
+      "note": "discovery: PAPEL 3.5",
+      "destino": "vocabulario"
+    },
+    {
+      "source": "papel",
+      "key": "papel35:PARTE:PARTE_DE_ALGO_COM_PROPRIEDADE:uniforme",
+      "ili": null,
+      "local_id": "papel35:PARTE:PARTE_DE_ALGO_COM_PROPRIEDADE:uniforme",
+      "pos": "",
+      "gloss": "PAPEL PARTE_DE_ALGO_COM_PROPRIEDADE (PARTE)",
+      "members": [
+        "uniforme",
+        "forma",
+        "forma de ameixa",
+        "luniforme",
+        "parte",
+        "pruniforme"
+      ],
+      "decision": "exclude",
+      "note": "discovery: PAPEL 3.5",
+      "destino": "evidencia"
+    },
+    {
+      "source": "papel",
+      "key": "papel35:QUALIDADE:TEM_QUALIDADE:uniforme",
+      "ili": null,
+      "local_id": "papel35:QUALIDADE:TEM_QUALIDADE:uniforme",
+      "pos": "",
+      "gloss": "PAPEL TEM_QUALIDADE (QUALIDADE)",
+      "members": [
+        "uniforme",
+        "uniformidade"
+      ],
+      "decision": "UF",
+      "note": "discovery: PAPEL 3.5",
+      "destino": "vocabulario"
+    },
+    {
+      "source": "papel",
+      "key": "papel35:REFERENTE:DIZ_SE_DO_QUE:uniforme",
+      "ili": null,
+      "local_id": "papel35:REFERENTE:DIZ_SE_DO_QUE:uniforme",
+      "pos": "",
+      "gloss": "PAPEL DIZ_SE_DO_QUE (REFERENTE)",
+      "members": [
+        "uniforme",
+        "luniforme",
+        "pruniforme",
+        "ser sempre",
+        "ter forma",
+        "ter forma de ameixa",
+        "ter só forma"
+      ],
+      "decision": "RT",
+      "note": "discovery: PAPEL 3.5",
+      "destino": "vocabulario"
+    },
+    {
+      "source": "papel",
+      "key": "papel35:SINONIMIA:SINONIMO_ADJ_DE:uniforme",
+      "ili": null,
+      "local_id": "papel35:SINONIMIA:SINONIMO_ADJ_DE:uniforme",
+      "pos": "",
+      "gloss": "PAPEL SINONIMO_ADJ_DE (SINONIMIA)",
+      "members": [
+        "uniforme",
+        "homogéneo",
+        "homótono",
+        "igual",
+        "luniforme",
+        "lunulado",
+        "monótono",
+        "regular"
+      ],
+      "decision": "RT",
+      "note": "discovery: PAPEL 3.5",
+      "destino": "vocabulario"
+    },
+    {
+      "source": "papel",
+      "key": "papel35:SINONIMIA:SINONIMO_N_DE:uniforme",
+      "ili": null,
+      "local_id": "papel35:SINONIMIA:SINONIMO_N_DE:uniforme",
+      "pos": "",
+      "gloss": "PAPEL SINONIMO_N_DE (SINONIMIA)",
+      "members": [
+        "uniforme",
+        "farda",
+        "fardamenta"
+      ],
+      "decision": "exclude",
+      "note": "discovery: PAPEL 3.5",
+      "destino": "evidencia"
+    },
+    {
+      "source": "papel",
+      "key": "papel35:MANEIRA_SEM:MANEIRA_SEM:uniforme",
+      "ili": null,
+      "local_id": "papel35:MANEIRA_SEM:MANEIRA_SEM:uniforme",
+      "pos": "",
+      "gloss": "PAPEL MANEIRA_SEM (MANEIRA_SEM)",
+      "members": [
+        "mudança",
+        "uniformemente",
+        "variação"
+      ],
+      "decision": "exclude",
+      "note": "discovery: PAPEL 3.5",
+      "destino": "evidencia"
+    },
+    {
+      "source": "papel",
+      "key": "papel35:SINONIMIA:SINONIMO_ADV_DE:uniforme",
+      "ili": null,
+      "local_id": "papel35:SINONIMIA:SINONIMO_ADV_DE:uniforme",
+      "pos": "",
+      "gloss": "PAPEL SINONIMO_ADV_DE (SINONIMIA)",
+      "members": [
+        "inalteravelmente",
+        "monotonamente",
+        "uniformemente"
+      ],
+      "decision": "UF",
+      "note": "discovery: PAPEL 3.5",
+      "destino": "vocabulario"
     }
   ],
   "terms": [
-    {
-      "term": "constante",
-      "status": "UF",
-      "note": "Teste 1",
-      "guarantee": [
-        "lexical"
-      ],
-      "destino": "vocabulario"
-    },
-    {
-      "term": "invariável",
-      "status": "UF",
-      "note": "Teste 1",
-      "guarantee": [
-        "lexical"
-      ],
-      "destino": "vocabulario"
-    },
-    {
-      "term": "imutável",
-      "status": "UF",
-      "note": "Teste 1",
-      "guarantee": [
-        "lexical"
-      ],
-      "destino": "vocabulario"
-    },
-    {
-      "term": "igual",
-      "status": "RT",
-      "note": "Teste 1 falha",
-      "guarantee": [
-        "lexical"
-      ],
-      "destino": "vocabulario"
-    },
-    {
-      "term": "regular",
-      "status": "RT",
-      "note": "Teste 1 falha",
-      "guarantee": [
-        "lexical"
-      ],
-      "destino": "vocabulario"
-    },
-    {
-      "term": "periódico",
-      "status": "RT",
-      "note": "Teste 3",
-      "guarantee": [
-        "lexical"
-      ],
-      "destino": "vocabulario"
-    },
     {
       "term": "uniformidade",
       "status": "atributo",
@@ -7618,64 +7791,9 @@
         "lexical"
       ],
       "destino": "evidencia"
-    },
-    {
-      "term": "desigual",
-      "status": "oposicao",
-      "note": "Teste 3",
-      "guarantee": [
-        "lexical"
-      ],
-      "migrado_de": "contraste",
-      "revisao_pendente": true,
-      "destino": "evidencia"
-    },
-    {
-      "term": "irregular",
-      "status": "oposicao",
-      "note": "Teste 3",
-      "guarantee": [
-        "lexical"
-      ],
-      "migrado_de": "contraste",
-      "revisao_pendente": true,
-      "destino": "evidencia"
-    },
-    {
-      "term": "variável",
-      "status": "oposicao",
-      "note": "Teste 3",
-      "guarantee": [
-        "lexical"
-      ],
-      "migrado_de": "contraste",
-      "revisao_pendente": true,
-      "destino": "evidencia"
-    },
-    {
-      "term": "politípica",
-      "status": "oposicao",
-      "note": "Teste 3",
-      "guarantee": [
-        "estipulativa"
-      ],
-      "structural": "TexturaHeterogenea",
-      "definition": "textura composta por múltiplos tipos simultâneos",
-      "migrado_de": "contraste",
-      "revisao_pendente": true,
-      "destino": "evidencia"
     }
   ],
-  "manual_terms": [
-    {
-      "term": "politípica",
-      "provenance": [
-        "estipulativa"
-      ],
-      "definition": "textura composta por múltiplos tipos simultâneos",
-      "structural": "TexturaHeterogenea"
-    }
-  ],
+  "manual_terms": [],
   "exclude_terms": [
     "heterogéneo"
   ]

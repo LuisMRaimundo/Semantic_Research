@@ -1,23 +1,23 @@
 {
   "schema": "semantic_research.ili_coverage/1",
-  "generated": "2026-07-31T03:21:27+00:00",
+  "generated": "2026-08-04T21:45:36+00:00",
   "pins": {
-    "oewn": "oewn:2024",
+    "oewn": "oewn:2025",
     "cili_commit": "upstream-master+pwn30+pwn31+wn.ili",
-    "cili_map": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\engines\\LexWarrant\\data\\cili\\ili-map-pwn30.tab"
+    "cili_map": "E:\\PYTHON CODES\\Semantic_Research\\engines\\LexWarrant\\data\\cili\\ili-map-pwn30.tab"
   },
   "cili": {
     "version": "cili@upstream-master+pwn30+pwn31+wn.ili",
     "ili_ids": 117659,
     "note": "Resolver loads PWN-3.0 + PWN-3.1 offset maps, and validates bare i… ids via wn.ili when missing from the TSVs. Unresolved ids are listed here — never silently dropped."
   },
-  "n_identifiers": 111,
-  "n_resolved": 79,
+  "n_identifiers": 110,
+  "n_resolved": 78,
   "n_unresolved_oewn_ili": 0,
   "n_unresolved_pulo_offset": 1,
   "n_unresolved_other": 31,
-  "n_cili_joinable": 32,
-  "n_cili_singleton": 15,
+  "n_cili_joinable": 31,
+  "n_cili_singleton": 16,
   "joinable_cili": [
     {
       "cili": "i108091",
@@ -52,13 +52,6 @@
       "raw": [
         "i12746",
         "ili-30-02301560-a"
-      ]
-    },
-    {
-      "cili": "i13418",
-      "raw": [
-        "i13418",
-        "ili-30-02424254-a"
       ]
     },
     {
@@ -262,6 +255,10 @@
       "raw": "i11973"
     },
     {
+      "cili": "i13418",
+      "raw": "ili-30-02424254-a"
+    },
+    {
       "cili": "i15148",
       "raw": "i15148"
     },
@@ -345,80 +342,12 @@
   ],
   "resolved_sample": [
     {
-      "raw": "i114921",
-      "cili": "i114921"
+      "raw": "i6556",
+      "cili": "i6556"
     },
     {
-      "raw": "ili-30-14818238-n",
-      "cili": "i114921"
-    },
-    {
-      "raw": "i89134",
-      "cili": "i89134"
-    },
-    {
-      "raw": "ili-30-09947232-n",
-      "cili": "i89134"
-    },
-    {
-      "raw": "i2968",
-      "cili": "i2968"
-    },
-    {
-      "raw": "i15148",
-      "cili": "i15148"
-    },
-    {
-      "raw": "i67722",
-      "cili": "i67722"
-    },
-    {
-      "raw": "i99843",
-      "cili": "i99843"
-    },
-    {
-      "raw": "i11972",
-      "cili": "i11972"
-    },
-    {
-      "raw": "i11935",
-      "cili": "i11935"
-    },
-    {
-      "raw": "i67721",
-      "cili": "i67721"
-    },
-    {
-      "raw": "i52230",
-      "cili": "i52230"
-    },
-    {
-      "raw": "i11973",
-      "cili": "i11973"
-    },
-    {
-      "raw": "i11970",
-      "cili": "i11970"
-    },
-    {
-      "raw": "i22857",
-      "cili": "i22857"
-    },
-    {
-      "raw": "i22685",
-      "cili": "i22685"
-    },
-    {
-      "raw": "i33063",
-      "cili": "i33063"
-    },
-    {
-      "raw": "i30022",
-      "cili": "i30022"
-    },
-    {
-      "raw": "i29030",
-      "cili": "i29030"
+      "raw": "pwn30-01199083-a",
+      "cili": "i6556"
     },
     {
       "raw": "i36652",
@@ -533,6 +462,22 @@
       "cili": "i97733"
     },
     {
+      "raw": "i114921",
+      "cili": "i114921"
+    },
+    {
+      "raw": "ili-30-14818238-n",
+      "cili": "i114921"
+    },
+    {
+      "raw": "i89134",
+      "cili": "i89134"
+    },
+    {
+      "raw": "ili-30-09947232-n",
+      "cili": "i89134"
+    },
+    {
       "raw": "i3216",
       "cili": "i3216"
     },
@@ -645,20 +590,68 @@
       "cili": "i67660"
     },
     {
-      "raw": "i13418",
-      "cili": "i13418"
+      "raw": "i2968",
+      "cili": "i2968"
+    },
+    {
+      "raw": "i15148",
+      "cili": "i15148"
+    },
+    {
+      "raw": "i67722",
+      "cili": "i67722"
+    },
+    {
+      "raw": "i99843",
+      "cili": "i99843"
+    },
+    {
+      "raw": "i11972",
+      "cili": "i11972"
+    },
+    {
+      "raw": "i11935",
+      "cili": "i11935"
+    },
+    {
+      "raw": "i67721",
+      "cili": "i67721"
+    },
+    {
+      "raw": "i52230",
+      "cili": "i52230"
+    },
+    {
+      "raw": "i11973",
+      "cili": "i11973"
+    },
+    {
+      "raw": "i11970",
+      "cili": "i11970"
+    },
+    {
+      "raw": "i22857",
+      "cili": "i22857"
+    },
+    {
+      "raw": "i22685",
+      "cili": "i22685"
+    },
+    {
+      "raw": "i33063",
+      "cili": "i33063"
+    },
+    {
+      "raw": "i30022",
+      "cili": "i30022"
+    },
+    {
+      "raw": "i29030",
+      "cili": "i29030"
     },
     {
       "raw": "ili-30-02424254-a",
       "cili": "i13418"
-    },
-    {
-      "raw": "i6556",
-      "cili": "i6556"
-    },
-    {
-      "raw": "pwn30-01199083-a",
-      "cili": "i6556"
     }
   ],
   "class_id": "TexturaComposita"

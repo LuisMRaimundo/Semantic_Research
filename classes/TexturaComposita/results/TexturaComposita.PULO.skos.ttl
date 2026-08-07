@@ -4,6 +4,18 @@
 
 tex:TexturaComposita a owl:Class,
         skos:Concept ;
+    tex:termoRelacionado tex:amalgamado,
+        tex:cabrito,
+        tex:combinacao,
+        tex:composicao,
+        tex:constituicao,
+        tex:diverso,
+        tex:hibrido,
+        tex:mesclado,
+        tex:mestico,
+        tex:misto,
+        tex:misturado,
+        tex:mulato ;
     skos:prefLabel "textura compósita"@pt-PT ;
     skos:scopeNote "Eixo definidor: heterogeneidade / composição de materiais ou partes distintas"@pt-PT .
 

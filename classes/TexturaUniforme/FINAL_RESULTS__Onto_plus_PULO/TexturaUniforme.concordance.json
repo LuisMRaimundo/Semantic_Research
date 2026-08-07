@@ -1,7 +1,7 @@
 {
   "class": "TexturaUniforme",
   "policy": "conservative",
-  "generated": "2026-07-27T12:39:44",
+  "generated": "2026-08-07T13:35:46",
   "columns": [
     "ONTO",
     "PULO",
@@ -13,20 +13,49 @@
     "OWN-PT",
     "WordNet"
   ],
-  "ili_equivalence_map": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\classes\\TexturaUniforme\\out\\ili_equivalence.cili.json",
-  "ili_equivalence_counts": {
-    "mapped": 8,
-    "review": 0,
-    "unmatched": 69
+  "source_status": {
+    "PULO": {
+      "source_available": true,
+      "source_queried": true,
+      "source_contributed_results": true
+    },
+    "OWN-PT": {
+      "source_available": true,
+      "source_queried": true,
+      "source_contributed_results": true
+    },
+    "WordNet": {
+      "source_available": true,
+      "source_queried": true,
+      "source_contributed_results": true
+    },
+    "ONTO": {
+      "role": "discovery",
+      "source_available": true,
+      "source_queried": true,
+      "contributed_discovery_evidence": true,
+      "contributed_concordance_results": false,
+      "source_contributed_results": false,
+      "n_discovery_cards": 68
+    }
   },
-  "ili_equivalence_loaded": true,
+  "join_counts": {
+    "ili": 1,
+    "single": 16
+  },
+  "legacy_equivalence_map": "E:\\PYTHON CODES\\Semantic_Research\\classes\\TexturaUniforme\\out\\ili_equivalence.cili.json",
+  "legacy_equivalence_counts": {
+    "mapped": 0,
+    "review": 0,
+    "unmatched": 75
+  },
+  "legacy_equivalence_loaded": false,
   "concepts": [
     {
       "term": "uniforme",
       "ili": [
-        "ili-30-01200095-a",
-        "ili-30-01966488-a",
-        "oewn-ili:i10771"
+        "i10771",
+        "i6560"
       ],
       "sources": {
         "ONTO": "—",
@@ -48,7 +77,6 @@
       ],
       "notes": [
         "recursos_derivados: PWN — concordância entre recursos derivados da mesma estrutura conceptual; não constitui atestação independente do português",
-        "junção por ILI via tabela de equivalência: ili-30-01966488-a ↔ oewn-ili:i10771",
         "OWN-PT: atestado OWN-PT [own-pt:1.0.0] via ILI i10771 · oewn-01973553-a"
       ],
       "recursos_derivados": "PWN"
@@ -56,7 +84,7 @@
     {
       "term": "constante",
       "ili": [
-        "ili-30-01200095-a"
+        "i6560"
       ],
       "sources": {
         "ONTO": "—",
@@ -78,7 +106,7 @@
     {
       "term": "imutável",
       "ili": [
-        "ili-30-01966488-a"
+        "i10771"
       ],
       "sources": {
         "ONTO": "—",
@@ -100,7 +128,7 @@
     {
       "term": "invariável",
       "ili": [
-        "ili-30-01200095-a"
+        "i6560"
       ],
       "sources": {
         "ONTO": "—",
@@ -122,7 +150,7 @@
     {
       "term": "invariância",
       "ili": [
-        "ili-30-04745370-n"
+        "i61962"
       ],
       "sources": {
         "ONTO": "—",
@@ -144,7 +172,7 @@
     {
       "term": "periódico",
       "ili": [
-        "ili-30-04745370-n"
+        "i61962"
       ],
       "sources": {
         "ONTO": "—",
@@ -166,7 +194,7 @@
     {
       "term": "uniformidade",
       "ili": [
-        "ili-30-04745370-n"
+        "i61962"
       ],
       "sources": {
         "ONTO": "—",
@@ -188,7 +216,7 @@
     {
       "term": "consistent",
       "ili": [
-        "oewn-ili:i6560"
+        "i6560"
       ],
       "sources": {
         "ONTO": "—",
@@ -212,7 +240,7 @@
     {
       "term": "dedifferentiated",
       "ili": [
-        "oewn-ili:i4127"
+        "i4127"
       ],
       "sources": {
         "ONTO": "—",
@@ -236,7 +264,7 @@
     {
       "term": "differentiated",
       "ili": [
-        "oewn-ili:i4125"
+        "i4125"
       ],
       "sources": {
         "ONTO": "—",
@@ -260,7 +288,7 @@
     {
       "term": "homogeneous",
       "ili": [
-        "oewn-ili:i6559"
+        "i6559"
       ],
       "sources": {
         "ONTO": "—",
@@ -284,7 +312,7 @@
     {
       "term": "homogenous",
       "ili": [
-        "oewn-ili:i6559"
+        "i6559"
       ],
       "sources": {
         "ONTO": "—",
@@ -308,7 +336,7 @@
     {
       "term": "invariável",
       "ili": [
-        "oewn-ili:i10771"
+        "i10771"
       ],
       "sources": {
         "ONTO": "—",
@@ -334,7 +362,7 @@
     {
       "term": "multiform",
       "ili": [
-        "oewn-ili:i10773"
+        "i10773"
       ],
       "sources": {
         "ONTO": "—",
@@ -358,7 +386,7 @@
     {
       "term": "single",
       "ili": [
-        "oewn-ili:i10772"
+        "i10772"
       ],
       "sources": {
         "ONTO": "—",
@@ -382,7 +410,7 @@
     {
       "term": "undifferentiated",
       "ili": [
-        "oewn-ili:i4126"
+        "i4126"
       ],
       "sources": {
         "ONTO": "—",
@@ -406,7 +434,7 @@
     {
       "term": "uniform",
       "ili": [
-        "oewn-ili:i4126"
+        "i4126"
       ],
       "sources": {
         "ONTO": "—",
@@ -434,7 +462,7 @@
       "fonte única": 6,
       "sinalização": 10
     },
-    "descartados_pendentes": 11,
+    "descartados_pendentes": 10,
     "convergencia_plena": [],
     "convergencia_sentido": [
       "uniforme"
@@ -475,15 +503,14 @@
       },
       "anchored_ilis_total": 3,
       "anchored_ilis_with_auto_contrast": [
-        "oewn-ili:i10771",
-        "oewn-ili:i10773",
-        "oewn-ili:i4125",
-        "oewn-ili:i4126"
+        "i10771",
+        "i10773",
+        "i4125",
+        "i4126"
       ],
       "anchored_ilis_without_auto_contrast": [
-        "ili-30-01200095-a",
-        "ili-30-01966488-a",
-        "ili-30-04745370-n"
+        "i61962",
+        "i6560"
       ],
       "sources_without_antonymy": [
         "PULO"
@@ -523,9 +550,9 @@
     },
     {
       "id": "T6",
-      "text": "Fonte WordNet ausente ⇒ coluna toda «—».",
+      "text": "WordNet/OEWN: source_available / source_queried / source_contributed_results distintos.",
       "passed": true,
-      "evidence": "WordNet presente — N/A"
+      "evidence": "source_available=true; source_queried=true; source_contributed_results=true"
     },
     {
       "id": "T7",
@@ -576,15 +603,485 @@
       "evidence": "blocos A/B disjuntos"
     },
     {
+      "id": "T15",
+      "text": "Cada item exportado (altLabel/termoRelacionado/matriz/tabela F) rastreia a uma decisão desta classe; cada decisão UF/RT figura em ≥1 artefacto ou é listada como descartada com motivo declarado.",
+      "passed": true,
+      "evidence": "OK",
+      "dropped_with_reason": [
+        {
+          "forma": "continuo",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "ininterrupto",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "sucessivo",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "permanente",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "frequente",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "incessante",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "perpetuo",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "continuado",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "assiduo",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "seguido",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "perene",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "aturado",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "porfioso",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "incessavel",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "ininterrompido",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "afio",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "consecutivo",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "estavel",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "imudavel",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "amiudado",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "repetido",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "manente",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "duradouro",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "imediato",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "jacente",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "conseguinte",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "subsecutivo",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "persistente",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "eterno",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "miudo",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "vitalicio",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "firme",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "inalteravel",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "infindavel",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "crebro",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "permanecente",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "diligente",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "fiel",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "sempiterno",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "jazente",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "reiterado",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "sem_paradas",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "aplicado",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "habitual",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "imovel",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "ordinario",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "usual",
+          "reason": "onto_discovery_only",
+          "key": "contopt:28395",
+          "source": "onto"
+        },
+        {
+          "forma": "consignado",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:23298",
+          "source": "onto"
+        },
+        {
+          "forma": "perseverante",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:23298",
+          "source": "onto"
+        },
+        {
+          "forma": "imanente",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:23298",
+          "source": "onto"
+        },
+        {
+          "forma": "escrito",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:23298",
+          "source": "onto"
+        },
+        {
+          "forma": "diamantino",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:23298",
+          "source": "onto"
+        },
+        {
+          "forma": "estoico",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:23298",
+          "source": "onto"
+        },
+        {
+          "forma": "sistematico",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:23298",
+          "source": "onto"
+        },
+        {
+          "forma": "adamantino",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:23298",
+          "source": "onto"
+        },
+        {
+          "forma": "mencionado",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:23298",
+          "source": "onto"
+        },
+        {
+          "forma": "metodico",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:23298",
+          "source": "onto"
+        },
+        {
+          "forma": "ordenado",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:23298",
+          "source": "onto"
+        },
+        {
+          "forma": "unimodo",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:25600",
+          "source": "onto"
+        },
+        {
+          "forma": "equavel",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:25600",
+          "source": "onto"
+        },
+        {
+          "forma": "recto",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:25600",
+          "source": "onto"
+        },
+        {
+          "forma": "univoco",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:26445",
+          "source": "onto"
+        },
+        {
+          "forma": "similar",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:26445",
+          "source": "onto"
+        },
+        {
+          "forma": "inequivoco",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:26445",
+          "source": "onto"
+        },
+        {
+          "forma": "analogo",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:26445",
+          "source": "onto"
+        },
+        {
+          "forma": "identico",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:26445",
+          "source": "onto"
+        },
+        {
+          "forma": "inflexivo",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:27091",
+          "source": "onto"
+        },
+        {
+          "forma": "intemporal",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:27091",
+          "source": "onto"
+        },
+        {
+          "forma": "estereotipado",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:27091",
+          "source": "onto"
+        },
+        {
+          "forma": "imaterial",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:27091",
+          "source": "onto"
+        },
+        {
+          "forma": "irretratavel",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:27091",
+          "source": "onto"
+        },
+        {
+          "forma": "estereotipo",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:27091",
+          "source": "onto"
+        },
+        {
+          "forma": "uniformador",
+          "reason": "onto_discovery_only",
+          "key": "clip21:15521",
+          "source": "onto"
+        },
+        {
+          "forma": "uniformizador",
+          "reason": "onto_discovery_only",
+          "key": "clip21:15521",
+          "source": "onto"
+        },
+        {
+          "forma": "de_maneira_justa",
+          "reason": "onto_discovery_only",
+          "key": "clip21:20421",
+          "source": "onto"
+        },
+        {
+          "forma": "imutavelmente",
+          "reason": "onto_discovery_only",
+          "key": "clip21:20421",
+          "source": "onto"
+        },
+        {
+          "forma": "unanimemente",
+          "reason": "onto_discovery_only",
+          "key": "clip21:20421",
+          "source": "onto"
+        }
+      ]
+    },
+    {
       "id": "R1",
       "text": "Relatório residual: acepções UF/RT sem correspondência em motor (taxonomia T14 removida).",
       "passed": true,
-      "evidence": "n=0"
+      "evidence": "n=1"
     }
   ],
   "all_passed": true,
   "reconciliacao": {
     "t14_removed": true,
-    "acepcoes_sem_motor": 0
+    "acepcoes_sem_motor": 1
   }
 }

@@ -6,17 +6,135 @@
   "ancora_ili": [],
   "anchor_pos": null,
   "near_stem": "",
-  "generated": "2026-07-31T04:21:30+01:00",
+  "generated": "2026-08-04T22:45:51+01:00",
   "search_lang": "en",
   "label_lang": "pt-PT",
   "termos_manuais_presentes": false,
-  "n_admitidos_matriz": 0,
+  "n_admitidos_matriz": 12,
   "n_validated_alt_labels": 1,
   "A_polo_alvo": [],
   "B_polo_contrastante": [],
   "C_conjunto_controlo": [],
   "C_termos": [],
-  "D_descritores_adjacentes": [],
+  "D_descritores_adjacentes": [
+    {
+      "forma": "assorted",
+      "wildcard": "assorted*",
+      "lingua": "en",
+      "ili": "i6556",
+      "fonte": "OEWN",
+      "estatuto": "RT",
+      "manual": false
+    },
+    {
+      "forma": "miscellaneous",
+      "wildcard": "miscellaneous*",
+      "lingua": "en",
+      "ili": "i6556",
+      "fonte": "OEWN",
+      "estatuto": "RT",
+      "manual": false
+    },
+    {
+      "forma": "mixed",
+      "wildcard": "mixed*",
+      "lingua": "en",
+      "ili": "i6556",
+      "fonte": "OEWN",
+      "estatuto": "RT",
+      "manual": false
+    },
+    {
+      "forma": "motley",
+      "wildcard": "motley*",
+      "lingua": "en",
+      "ili": "i6556",
+      "fonte": "OEWN",
+      "estatuto": "RT",
+      "manual": false
+    },
+    {
+      "forma": "sundry",
+      "wildcard": "sundry*",
+      "lingua": "en",
+      "ili": "i6556",
+      "fonte": "OEWN",
+      "estatuto": "RT",
+      "manual": false
+    },
+    {
+      "forma": "combination",
+      "wildcard": "combination*",
+      "lingua": "en",
+      "ili": "i37400",
+      "fonte": "OEWN",
+      "estatuto": "RT",
+      "manual": false
+    },
+    {
+      "forma": "combining",
+      "wildcard": "combining*",
+      "lingua": "en",
+      "ili": "i37400",
+      "fonte": "OEWN",
+      "estatuto": "RT",
+      "manual": false
+    },
+    {
+      "forma": "compounding",
+      "wildcard": "compounding*",
+      "lingua": "en",
+      "ili": "i37400",
+      "fonte": "OEWN",
+      "estatuto": "RT",
+      "manual": false
+    },
+    {
+      "forma": "composition",
+      "wildcard": "composition*",
+      "lingua": "en",
+      "ili": "i52229",
+      "fonte": "OEWN",
+      "estatuto": "RT",
+      "manual": false
+    },
+    {
+      "forma": "constitution",
+      "wildcard": "constitution*",
+      "lingua": "en",
+      "ili": "i62908",
+      "fonte": "OEWN",
+      "estatuto": "RT",
+      "manual": false
+    },
+    {
+      "forma": "physical composition",
+      "wildcard": "physical composition*",
+      "lingua": "en",
+      "ili": "i62908",
+      "fonte": "OEWN",
+      "estatuto": "RT",
+      "manual": false
+    },
+    {
+      "forma": "makeup",
+      "wildcard": "makeup*",
+      "lingua": "en",
+      "ili": "i62908",
+      "fonte": "OEWN",
+      "estatuto": "RT",
+      "manual": false
+    },
+    {
+      "forma": "make-up",
+      "wildcard": "make-up*",
+      "lingua": "en",
+      "ili": "i62908",
+      "fonte": "OEWN",
+      "estatuto": "RT",
+      "manual": false
+    }
+  ],
   "E_fronteiras_dominio": [
     {
       "chave": "ili-30-14818238-n",
@@ -56,16 +174,6 @@
       "ili": "i36652",
       "lema": "composição",
       "motivo": "o ato de formar ou estabelecer algo",
-      "fonte": "pulo"
-    },
-    {
-      "chave": "ili-30-00378985-n",
-      "chave_legada": "ili-30-00378985-n",
-      "pwn30": "pwn30-00378985-n",
-      "cili": "i37400",
-      "ili": "i37400",
-      "lema": "composição",
-      "motivo": "o ato de combinar as coisas para formar um todo novo",
       "fonte": "pulo"
     },
     {
@@ -109,26 +217,6 @@
       "fonte": "pulo"
     },
     {
-      "chave": "ili-30-03081660-n",
-      "chave_legada": "ili-30-03081660-n",
-      "pwn30": "pwn30-03081660-n",
-      "cili": "i52229",
-      "ili": "i52229",
-      "lema": "composição",
-      "motivo": "algo que é criado por providenciar várias coisas de modo a formar um todo unificado",
-      "fonte": "pulo"
-    },
-    {
-      "chave": "ili-30-04933544-n",
-      "chave_legada": "ili-30-04933544-n",
-      "pwn30": "pwn30-04933544-n",
-      "cili": "i62908",
-      "ili": "i62908",
-      "lema": "composição",
-      "motivo": "a maneira em que alguém ou alguma coisa é composto",
-      "fonte": "pulo"
-    },
-    {
       "chave": "ili-30-05076472-n",
       "chave_legada": "ili-30-05076472-n",
       "pwn30": "pwn30-05076472-n",
@@ -136,6 +224,16 @@
       "ili": "i63671",
       "lema": "composição",
       "motivo": "a propriedade espacial resultante do acordo das partes em relação às outras e a toda",
+      "fonte": "pulo"
+    },
+    {
+      "chave": "ili-30-06409752-n",
+      "chave_legada": "ili-30-06409752-n",
+      "pwn30": "pwn30-06409752-n",
+      "cili": "i70172",
+      "ili": "i70172",
+      "lema": "composição",
+      "motivo": "um ensaio (especialmente um escrito como uma atribuição)",
       "fonte": "pulo"
     },
     {
@@ -181,25 +279,83 @@
   ],
   "F_vocabulario_pt": [
     {
-      "forma": "compósito",
-      "wildcard": "compósito*",
+      "forma": "amalgamado",
+      "wildcard": "amalgamado*",
       "lingua": "pt-PT",
-      "estatuto": "UF",
-      "ili": null,
-      "fontes": [
-        "concept_mapping"
+      "estatuto": "RT",
+      "ili": [
+        "i6556"
       ],
-      "garantia": "adjudicada",
-      "ancora_ili": "ausente",
-      "em_espera": false,
-      "sense_key": null,
+      "fontes": [
+        "pulo"
+      ],
+      "garantia": "fonte_unica",
+      "ancora_ili": "presente",
+      "em_espera": true,
+      "sense_key": "clip21:17923",
       "sense_pos": null,
       "cross_class": null,
-      "nota": "validated_alt_labels"
-    }
-  ],
-  "a_resolver": [],
-  "D_vocabulario_pt": [
+      "nota": ""
+    },
+    {
+      "forma": "cabrito",
+      "wildcard": "cabrito*",
+      "lingua": "pt-PT",
+      "estatuto": "RT",
+      "ili": [
+        "i6556"
+      ],
+      "fontes": [
+        "pulo"
+      ],
+      "garantia": "fonte_unica",
+      "ancora_ili": "presente",
+      "em_espera": true,
+      "sense_key": "i6556",
+      "sense_pos": null,
+      "cross_class": null,
+      "nota": ""
+    },
+    {
+      "forma": "combinação",
+      "wildcard": "combinação*",
+      "lingua": "pt-PT",
+      "estatuto": "RT",
+      "ili": [
+        "i37400"
+      ],
+      "fontes": [
+        "pulo"
+      ],
+      "garantia": "fonte_unica",
+      "ancora_ili": "presente",
+      "em_espera": true,
+      "sense_key": "ili-30-00378985-n",
+      "sense_pos": "n",
+      "cross_class": null,
+      "nota": ""
+    },
+    {
+      "forma": "composição",
+      "wildcard": "composição*",
+      "lingua": "pt-PT",
+      "estatuto": "RT",
+      "ili": [
+        "i37400",
+        "i52229",
+        "i62908"
+      ],
+      "fontes": [
+        "pulo"
+      ],
+      "garantia": "fonte_unica",
+      "ancora_ili": "presente",
+      "em_espera": true,
+      "sense_key": "ili-30-00378985-n",
+      "sense_pos": "n",
+      "cross_class": null,
+      "nota": ""
+    },
     {
       "forma": "compósito",
       "wildcard": "compósito*",
@@ -216,6 +372,408 @@
       "sense_pos": null,
       "cross_class": null,
       "nota": "validated_alt_labels"
+    },
+    {
+      "forma": "constituição",
+      "wildcard": "constituição*",
+      "lingua": "pt-PT",
+      "estatuto": "RT",
+      "ili": [
+        "i62908"
+      ],
+      "fontes": [
+        "pulo"
+      ],
+      "garantia": "fonte_unica",
+      "ancora_ili": "presente",
+      "em_espera": true,
+      "sense_key": "ili-30-04933544-n",
+      "sense_pos": "n",
+      "cross_class": null,
+      "nota": ""
+    },
+    {
+      "forma": "diverso",
+      "wildcard": "diverso*",
+      "lingua": "pt-PT",
+      "estatuto": "RT",
+      "ili": [
+        "i6556"
+      ],
+      "fontes": [
+        "pulo"
+      ],
+      "garantia": "fonte_unica",
+      "ancora_ili": "presente",
+      "em_espera": true,
+      "sense_key": "clip21:17923",
+      "sense_pos": null,
+      "cross_class": null,
+      "nota": ""
+    },
+    {
+      "forma": "híbrido",
+      "wildcard": "híbrido*",
+      "lingua": "pt-PT",
+      "estatuto": "RT",
+      "ili": [
+        "i6556"
+      ],
+      "fontes": [
+        "pulo"
+      ],
+      "garantia": "fonte_unica",
+      "ancora_ili": "presente",
+      "em_espera": true,
+      "sense_key": "clip21:17923",
+      "sense_pos": null,
+      "cross_class": null,
+      "nota": ""
+    },
+    {
+      "forma": "mesclado",
+      "wildcard": "mesclado*",
+      "lingua": "pt-PT",
+      "estatuto": "RT",
+      "ili": [
+        "i6556"
+      ],
+      "fontes": [
+        "pulo"
+      ],
+      "garantia": "fonte_unica",
+      "ancora_ili": "presente",
+      "em_espera": true,
+      "sense_key": "fuzzythes:27069",
+      "sense_pos": null,
+      "cross_class": null,
+      "nota": ""
+    },
+    {
+      "forma": "mestiço",
+      "wildcard": "mestiço*",
+      "lingua": "pt-PT",
+      "estatuto": "RT",
+      "ili": [
+        "i6556"
+      ],
+      "fontes": [
+        "pulo"
+      ],
+      "garantia": "fonte_unica",
+      "ancora_ili": "presente",
+      "em_espera": true,
+      "sense_key": "i6556",
+      "sense_pos": null,
+      "cross_class": null,
+      "nota": ""
+    },
+    {
+      "forma": "misto",
+      "wildcard": "misto*",
+      "lingua": "pt-PT",
+      "estatuto": "RT",
+      "ili": [
+        "i6556"
+      ],
+      "fontes": [
+        "pulo"
+      ],
+      "garantia": "fonte_unica",
+      "ancora_ili": "presente",
+      "em_espera": true,
+      "sense_key": "i6556",
+      "sense_pos": null,
+      "cross_class": null,
+      "nota": ""
+    },
+    {
+      "forma": "misturado",
+      "wildcard": "misturado*",
+      "lingua": "pt-PT",
+      "estatuto": "RT",
+      "ili": [
+        "i6556"
+      ],
+      "fontes": [
+        "pulo"
+      ],
+      "garantia": "fonte_unica",
+      "ancora_ili": "presente",
+      "em_espera": true,
+      "sense_key": "i6556",
+      "sense_pos": null,
+      "cross_class": null,
+      "nota": ""
+    },
+    {
+      "forma": "mulato",
+      "wildcard": "mulato*",
+      "lingua": "pt-PT",
+      "estatuto": "RT",
+      "ili": [
+        "i6556"
+      ],
+      "fontes": [
+        "pulo"
+      ],
+      "garantia": "fonte_unica",
+      "ancora_ili": "presente",
+      "em_espera": true,
+      "sense_key": "i6556",
+      "sense_pos": null,
+      "cross_class": null,
+      "nota": ""
+    }
+  ],
+  "a_resolver": [],
+  "D_vocabulario_pt": [
+    {
+      "forma": "amalgamado",
+      "wildcard": "amalgamado*",
+      "lingua": "pt-PT",
+      "estatuto": "RT",
+      "ili": [
+        "i6556"
+      ],
+      "fontes": [
+        "pulo"
+      ],
+      "garantia": "fonte_unica",
+      "ancora_ili": "presente",
+      "em_espera": true,
+      "sense_key": "clip21:17923",
+      "sense_pos": null,
+      "cross_class": null,
+      "nota": ""
+    },
+    {
+      "forma": "cabrito",
+      "wildcard": "cabrito*",
+      "lingua": "pt-PT",
+      "estatuto": "RT",
+      "ili": [
+        "i6556"
+      ],
+      "fontes": [
+        "pulo"
+      ],
+      "garantia": "fonte_unica",
+      "ancora_ili": "presente",
+      "em_espera": true,
+      "sense_key": "i6556",
+      "sense_pos": null,
+      "cross_class": null,
+      "nota": ""
+    },
+    {
+      "forma": "combinação",
+      "wildcard": "combinação*",
+      "lingua": "pt-PT",
+      "estatuto": "RT",
+      "ili": [
+        "i37400"
+      ],
+      "fontes": [
+        "pulo"
+      ],
+      "garantia": "fonte_unica",
+      "ancora_ili": "presente",
+      "em_espera": true,
+      "sense_key": "ili-30-00378985-n",
+      "sense_pos": "n",
+      "cross_class": null,
+      "nota": ""
+    },
+    {
+      "forma": "composição",
+      "wildcard": "composição*",
+      "lingua": "pt-PT",
+      "estatuto": "RT",
+      "ili": [
+        "i37400",
+        "i52229",
+        "i62908"
+      ],
+      "fontes": [
+        "pulo"
+      ],
+      "garantia": "fonte_unica",
+      "ancora_ili": "presente",
+      "em_espera": true,
+      "sense_key": "ili-30-00378985-n",
+      "sense_pos": "n",
+      "cross_class": null,
+      "nota": ""
+    },
+    {
+      "forma": "compósito",
+      "wildcard": "compósito*",
+      "lingua": "pt-PT",
+      "estatuto": "UF",
+      "ili": null,
+      "fontes": [
+        "concept_mapping"
+      ],
+      "garantia": "adjudicada",
+      "ancora_ili": "ausente",
+      "em_espera": false,
+      "sense_key": null,
+      "sense_pos": null,
+      "cross_class": null,
+      "nota": "validated_alt_labels"
+    },
+    {
+      "forma": "constituição",
+      "wildcard": "constituição*",
+      "lingua": "pt-PT",
+      "estatuto": "RT",
+      "ili": [
+        "i62908"
+      ],
+      "fontes": [
+        "pulo"
+      ],
+      "garantia": "fonte_unica",
+      "ancora_ili": "presente",
+      "em_espera": true,
+      "sense_key": "ili-30-04933544-n",
+      "sense_pos": "n",
+      "cross_class": null,
+      "nota": ""
+    },
+    {
+      "forma": "diverso",
+      "wildcard": "diverso*",
+      "lingua": "pt-PT",
+      "estatuto": "RT",
+      "ili": [
+        "i6556"
+      ],
+      "fontes": [
+        "pulo"
+      ],
+      "garantia": "fonte_unica",
+      "ancora_ili": "presente",
+      "em_espera": true,
+      "sense_key": "clip21:17923",
+      "sense_pos": null,
+      "cross_class": null,
+      "nota": ""
+    },
+    {
+      "forma": "híbrido",
+      "wildcard": "híbrido*",
+      "lingua": "pt-PT",
+      "estatuto": "RT",
+      "ili": [
+        "i6556"
+      ],
+      "fontes": [
+        "pulo"
+      ],
+      "garantia": "fonte_unica",
+      "ancora_ili": "presente",
+      "em_espera": true,
+      "sense_key": "clip21:17923",
+      "sense_pos": null,
+      "cross_class": null,
+      "nota": ""
+    },
+    {
+      "forma": "mesclado",
+      "wildcard": "mesclado*",
+      "lingua": "pt-PT",
+      "estatuto": "RT",
+      "ili": [
+        "i6556"
+      ],
+      "fontes": [
+        "pulo"
+      ],
+      "garantia": "fonte_unica",
+      "ancora_ili": "presente",
+      "em_espera": true,
+      "sense_key": "fuzzythes:27069",
+      "sense_pos": null,
+      "cross_class": null,
+      "nota": ""
+    },
+    {
+      "forma": "mestiço",
+      "wildcard": "mestiço*",
+      "lingua": "pt-PT",
+      "estatuto": "RT",
+      "ili": [
+        "i6556"
+      ],
+      "fontes": [
+        "pulo"
+      ],
+      "garantia": "fonte_unica",
+      "ancora_ili": "presente",
+      "em_espera": true,
+      "sense_key": "i6556",
+      "sense_pos": null,
+      "cross_class": null,
+      "nota": ""
+    },
+    {
+      "forma": "misto",
+      "wildcard": "misto*",
+      "lingua": "pt-PT",
+      "estatuto": "RT",
+      "ili": [
+        "i6556"
+      ],
+      "fontes": [
+        "pulo"
+      ],
+      "garantia": "fonte_unica",
+      "ancora_ili": "presente",
+      "em_espera": true,
+      "sense_key": "i6556",
+      "sense_pos": null,
+      "cross_class": null,
+      "nota": ""
+    },
+    {
+      "forma": "misturado",
+      "wildcard": "misturado*",
+      "lingua": "pt-PT",
+      "estatuto": "RT",
+      "ili": [
+        "i6556"
+      ],
+      "fontes": [
+        "pulo"
+      ],
+      "garantia": "fonte_unica",
+      "ancora_ili": "presente",
+      "em_espera": true,
+      "sense_key": "i6556",
+      "sense_pos": null,
+      "cross_class": null,
+      "nota": ""
+    },
+    {
+      "forma": "mulato",
+      "wildcard": "mulato*",
+      "lingua": "pt-PT",
+      "estatuto": "RT",
+      "ili": [
+        "i6556"
+      ],
+      "fontes": [
+        "pulo"
+      ],
+      "garantia": "fonte_unica",
+      "ancora_ili": "presente",
+      "em_espera": true,
+      "sense_key": "i6556",
+      "sense_pos": null,
+      "cross_class": null,
+      "nota": ""
     }
   ],
   "_sheet_meta_norms": [
