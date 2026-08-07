@@ -353,6 +353,20 @@ class Workbench(tk.Tk):
             runrow, text="Exportar classe…",
             command=self._export_class_folder,
         ).pack(side="left", padx=(0, 6))
+        # Single dropdown instead of 4 buttons — the run row is already full.
+        src_btn = ttk.Menubutton(runrow, text="Exportar fonte…")
+        src_menu = tk.Menu(src_btn, tearoff=0)
+        for lab, src in (
+            ("Exportar ONTO…", "onto"),
+            ("Exportar PAPEL…", "papel"),
+            ("Exportar WordNet…", "wordnet"),
+            ("Exportar PULO…", "pulo"),
+        ):
+            src_menu.add_command(
+                label=lab, command=lambda s=src: self._export_source(s)
+            )
+        src_btn.configure(menu=src_menu)
+        src_btn.pack(side="left", padx=(0, 6))
         ttk.Button(
             runrow, text="concordância",
             command=self._open_concordance,
@@ -1212,6 +1226,35 @@ class Workbench(tk.Tk):
             import os
             os.startfile(out)  # type: ignore[attr-defined]
         except Exception:
+            pass
+
+    def _export_source(self, source: str):
+        """Per-source REPORT (cards + adjudications) — never touches artefacts."""
+        ws = self._ws()
+        if not ws:
+            messagebox.showinfo(APP, "Abra ou crie uma classe primeiro.")
+            return
+        try:
+            from semantic.source_export import export_source_report
+
+            out = export_source_report(ws, source)
+        except Exception as exc:  # noqa: BLE001
+            messagebox.showerror(APP, f"Exportação da fonte falhou:\n{exc}")
+            return
+        self._log(
+            f"Exportação {source.upper()} → {out['folder']} "
+            f"({out['cards']} cartões, {out['decided']} decididos)\n"
+        )
+        if not out["cards"]:
+            messagebox.showinfo(
+                APP,
+                f"Sem cartões {source.upper()} nesta classe — "
+                "o relatório foi criado vazio.",
+            )
+        try:
+            import os
+            os.startfile(out["folder"])  # type: ignore[attr-defined]
+        except Exception:  # noqa: BLE001
             pass
 
     def _export_class_folder(self):
