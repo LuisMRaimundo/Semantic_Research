@@ -1,0 +1,91 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix sr: <http://semantic-research.local/concept/> .
+
+# Concept model (plain SKOS, not SKOS-XL) — TexturaDireccional
+# generated 2026-08-07T12:35:47+00:00
+# policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
+
+sr:TexturaDireccional a owl:Class, skos:Concept ;
+    skos:prefLabel "TExtura Direccconal"@pt-PT ;
+    dct:identifier "TexturaDireccional" ;
+    skos:editorialNote "SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint."@en ;
+    sr:mappingStatus "no_validated_cili" ;
+    skos:altLabel "direcção"@pt-PT ;
+    skos:altLabel "orientação"@pt-PT ;
+    sr:excludedCandidate [ rdf:value "administração"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "auspício"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "banda"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "batuta"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "caminho"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "chefia"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "critério"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "cúpula"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "destino"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "directoria"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "encaminhamento"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "endereço"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "endireito"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "enfrontes"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "esteira"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "gerência"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "governalho"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "governo"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "guia"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "guiamento"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "lado"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "leme"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "linha"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "maneio"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "manejo"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "norma"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "norte"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "regime"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "regimento"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "regência"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "rota"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "rumo"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "rédea"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "senda"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "sentido"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "subdirectoria"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "subdirecção"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "timão"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "tramontana"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "travia"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "trilho"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "vereda"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "vezo"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "via"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "subdirecção"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL ACCAO_QUE_CAUSA (CAUSA)" ] ;
+    sr:excludedCandidate [ rdf:value "subdirigir"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL ACCAO_QUE_CAUSA (CAUSA)" ] ;
+    sr:excludedCandidate [ rdf:value "balão-de-ensaio"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL FINALIDADE_DE (FINALIDADE)" ] ;
+    sr:excludedCandidate [ rdf:value "dar direcção"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL FINALIDADE_DE (FINALIDADE)" ] ;
+    sr:excludedCandidate [ rdf:value "indicar mudança de direcção de veículo"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL FINALIDADE_DE (FINALIDADE)" ] ;
+    sr:excludedCandidate [ rdf:value "pisca-pisca"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL FINALIDADE_DE (FINALIDADE)" ] ;
+    sr:excludedCandidate [ rdf:value "rodízio"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL FINALIDADE_DE (FINALIDADE)" ] ;
+    sr:excludedCandidate [ rdf:value "verificar direcção de vento"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL FINALIDADE_DE (FINALIDADE)" ] ;
+    sr:excludedCandidate [ rdf:value "antimíssil"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
+    sr:excludedCandidate [ rdf:value "bidireccional"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
+    sr:excludedCandidate [ rdf:value "correr em determinada direcção"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
+    sr:excludedCandidate [ rdf:value "desencontrado"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
+    sr:excludedCandidate [ rdf:value "fazer em direcção de vento"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
+    sr:excludedCandidate [ rdf:value "funcionar em duas direcção"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
+    sr:excludedCandidate [ rdf:value "funcionar em várias direcção"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
+    sr:excludedCandidate [ rdf:value "indicar direcção de sismo"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
+    sr:excludedCandidate [ rdf:value "ir em direcção"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
+    sr:excludedCandidate [ rdf:value "mudar direcção de onda"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
+    sr:excludedCandidate [ rdf:value "multidireccional"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
+    sr:excludedCandidate [ rdf:value "profluente"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
+    sr:excludedCandidate [ rdf:value "rabavento"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
+    sr:excludedCandidate [ rdf:value "refrangente"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
+    sr:excludedCandidate [ rdf:value "seguir direcção de fio-de-prumo"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
+    sr:excludedCandidate [ rdf:value "ser lançado em direcção de outro míssil para interceptar"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
+    sr:excludedCandidate [ rdf:value "sismal"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
+    sr:excludedCandidate [ rdf:value "ter única direcção"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
+    sr:excludedCandidate [ rdf:value "unidireccional"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
+    sr:excludedCandidate [ rdf:value "vertical"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
+    rdfs:comment "UF senses=10; RT=16; exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .

@@ -10,8 +10,275 @@
     "weak_term_mode": "gloss_gated",
     "gloss_min": 0.12
   },
-  "acepcoes_sem_motor": [],
-  "n_acepcoes_sem_motor": 0,
+  "acepcoes_sem_motor": [
+    {
+      "source": "papel",
+      "key": "papel35:SINONIMIA:SINONIMO_ADV_DE:uniforme",
+      "ili": null,
+      "decision": "UF",
+      "membros": [
+        "inalteravelmente",
+        "monotonamente",
+        "uniformemente"
+      ],
+      "nota": "acepção adjudicada sem correspondência em motor"
+    }
+  ],
+  "n_acepcoes_sem_motor": 1,
+  "descartado_onto_discovery": [
+    {
+      "source": "onto",
+      "key": "contopt:28395",
+      "ili": null,
+      "decision": "RT",
+      "membros": [
+        "contínuo",
+        "constante",
+        "ininterrupto",
+        "sucessivo",
+        "permanente",
+        "frequente",
+        "incessante",
+        "perpétuo",
+        "continuado",
+        "assíduo",
+        "seguido",
+        "perene",
+        "aturado",
+        "porfioso",
+        "incessável",
+        "ininterrompido",
+        "afio",
+        "consecutivo",
+        "estável",
+        "imutável",
+        "imudável",
+        "invariável",
+        "amiudado",
+        "repetido",
+        "manente",
+        "duradouro",
+        "imediato",
+        "jacente",
+        "conseguinte",
+        "subsecutivo",
+        "persistente",
+        "eterno",
+        "miúdo",
+        "vitalício",
+        "firme",
+        "inalterável",
+        "infindável",
+        "regular",
+        "crebro",
+        "periódico",
+        "permanecente",
+        "diligente",
+        "fiel",
+        "sempiterno",
+        "jazente",
+        "reiterado",
+        "sem paradas",
+        "aplicado",
+        "habitual",
+        "imóvel",
+        "ordinário",
+        "uniforme",
+        "usual"
+      ],
+      "nota": "descartado (Onto.PT discovery-only — não admite na matriz)"
+    },
+    {
+      "source": "onto",
+      "key": "fuzzythes:23298",
+      "ili": null,
+      "decision": "RT",
+      "membros": [
+        "consignado",
+        "constante",
+        "imudável",
+        "imutável",
+        "invariável",
+        "manente",
+        "incessável",
+        "estável",
+        "ininterrompido",
+        "aturado",
+        "afio",
+        "incessante",
+        "perseverante",
+        "permanente",
+        "continuado",
+        "imanente",
+        "escrito",
+        "ininterrupto",
+        "jazente",
+        "permanecente",
+        "contínuo",
+        "diamantino",
+        "estóico",
+        "assíduo",
+        "seguido",
+        "firme",
+        "sistemático",
+        "uniforme",
+        "jacente",
+        "sucessivo",
+        "adamantino",
+        "persistente",
+        "porfioso",
+        "mencionado",
+        "perene",
+        "metódico",
+        "perpétuo",
+        "ordenado"
+      ],
+      "nota": "descartado (Onto.PT discovery-only — não admite na matriz)"
+    },
+    {
+      "source": "onto",
+      "key": "fuzzythes:25600",
+      "ili": null,
+      "decision": "RT",
+      "membros": [
+        "unímodo",
+        "uniforme",
+        "homótono",
+        "equável",
+        "homogéneo",
+        "monótono",
+        "recto"
+      ],
+      "nota": "descartado (Onto.PT discovery-only — não admite na matriz)"
+    },
+    {
+      "source": "onto",
+      "key": "fuzzythes:26445",
+      "ili": null,
+      "decision": "RT",
+      "membros": [
+        "homogéneo",
+        "unívoco",
+        "similar",
+        "inequívoco",
+        "uniforme",
+        "análogo",
+        "idêntico",
+        "contínuo"
+      ],
+      "nota": "descartado (Onto.PT discovery-only — não admite na matriz)"
+    },
+    {
+      "source": "onto",
+      "key": "fuzzythes:27091",
+      "ili": null,
+      "decision": "RT",
+      "membros": [
+        "inflexivo",
+        "invariável",
+        "intemporal",
+        "imudável",
+        "estereotipado",
+        "imutável",
+        "constante",
+        "imaterial",
+        "irretratável",
+        "estereótipo",
+        "imóvel",
+        "eterno",
+        "uniforme",
+        "inalterável",
+        "estável"
+      ],
+      "nota": "descartado (Onto.PT discovery-only — não admite na matriz)"
+    },
+    {
+      "source": "onto",
+      "key": "ontopt06:2131",
+      "ili": "i12748",
+      "decision": "UF",
+      "membros": [
+        "equável",
+        "uniforme"
+      ],
+      "nota": "descartado (Onto.PT discovery-only — não admite na matriz)"
+    },
+    {
+      "source": "onto",
+      "key": "ontopt06:2133",
+      "ili": "i4126",
+      "decision": "UF",
+      "membros": [
+        "uniforme",
+        "unímodo"
+      ],
+      "nota": "descartado (Onto.PT discovery-only — não admite na matriz)"
+    },
+    {
+      "source": "onto",
+      "key": "ontopt06:2945",
+      "ili": "i10771",
+      "decision": "UF",
+      "membros": [
+        "homótono",
+        "invariável",
+        "monótono",
+        "uniforme"
+      ],
+      "nota": "descartado (Onto.PT discovery-only — não admite na matriz)"
+    },
+    {
+      "source": "onto",
+      "key": "polaridades:1656",
+      "ili": "i4980",
+      "decision": "UF",
+      "membros": [
+        "equável",
+        "uniforme"
+      ],
+      "nota": "descartado (Onto.PT discovery-only — não admite na matriz)"
+    },
+    {
+      "source": "onto",
+      "key": "polaridades:4484",
+      "ili": "i10771",
+      "decision": "UF",
+      "membros": [
+        "homótono",
+        "invariável",
+        "monótono",
+        "uniforme"
+      ],
+      "nota": "descartado (Onto.PT discovery-only — não admite na matriz)"
+    },
+    {
+      "source": "onto",
+      "key": "clip21:15521",
+      "ili": null,
+      "decision": "UF",
+      "membros": [
+        "uniformador",
+        "uniformizador"
+      ],
+      "nota": "descartado (Onto.PT discovery-only — não admite na matriz)"
+    },
+    {
+      "source": "onto",
+      "key": "clip21:20421",
+      "ili": null,
+      "decision": "RT",
+      "membros": [
+        "inalteravelmente",
+        "uniformemente",
+        "de maneira justa",
+        "imutavelmente",
+        "monotonamente",
+        "unanimemente"
+      ],
+      "nota": "descartado (Onto.PT discovery-only — não admite na matriz)"
+    }
+  ],
+  "n_descartado_onto_discovery": 12,
   "taxonomy_removed": [
     "conflitos_planos",
     "divergencia_sentidos",

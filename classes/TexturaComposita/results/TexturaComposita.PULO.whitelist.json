@@ -49,7 +49,7 @@
     {
       "ili_offset": "ili-30-00378985-n",
       "glosa": "o ato de combinar as coisas para formar um todo novo\n",
-      "decision": "exclude",
+      "decision": "RT",
       "members": [
         "combinação",
         "composição"
@@ -98,7 +98,7 @@
     {
       "ili_offset": "ili-30-03081660-n",
       "glosa": "algo que é criado por providenciar várias coisas de modo a formar um todo unificado\n",
-      "decision": "exclude",
+      "decision": "RT",
       "members": [
         "composição"
       ]
@@ -106,7 +106,7 @@
     {
       "ili_offset": "ili-30-04933544-n",
       "glosa": "a maneira em que alguém ou alguma coisa é composto\n",
-      "decision": "exclude",
+      "decision": "RT",
       "members": [
         "constituição",
         "composição"
@@ -117,6 +117,17 @@
       "glosa": "a propriedade espacial resultante do acordo das partes em relação às outras e a toda\n",
       "decision": "exclude",
       "members": [
+        "composição"
+      ]
+    },
+    {
+      "ili_offset": "ili-30-06409752-n",
+      "glosa": "um ensaio (especialmente um escrito como uma atribuição)\n",
+      "decision": "exclude",
+      "members": [
+        "relatório",
+        "redação",
+        "tema",
         "composição"
       ]
     },
@@ -214,6 +225,15 @@
       ]
     },
     {
+      "ili_offset": "ili-30-00594413-a",
+      "glosa": "continuidade no tempo ou no espaço, sem interrupção\n",
+      "decision": "exclude",
+      "members": [
+        "contínuo",
+        "constante"
+      ]
+    },
+    {
       "ili_offset": "ili-30-00595299-a",
       "glosa": "ininterrupta no tempo indefinidamente longo e contínuo\n",
       "decision": "exclude",
@@ -262,6 +282,16 @@
       ]
     },
     {
+      "ili_offset": "ili-30-02301560-a",
+      "glosa": "não sujeitos a mudança ou variação, especialmente no comportamento\n",
+      "decision": "exclude",
+      "members": [
+        "regular",
+        "constante",
+        "estável"
+      ]
+    },
+    {
       "ili_offset": "ili-30-02506029-a",
       "glosa": "unvarying em natureza\n",
       "decision": "exclude",
@@ -294,23 +324,55 @@
       "members": [
         "constante"
       ]
+    },
+    {
+      "ili_offset": "pwn30-01199083-a",
+      "glosa": "que consiste em uma variedade aleatória de diferentes tipos\n",
+      "decision": "RT",
+      "members": [
+        "amalgamado",
+        "cabrito",
+        "diverso",
+        "híbrido",
+        "mesclado",
+        "mestiço",
+        "misto",
+        "misturado",
+        "mulato"
+      ]
     }
   ],
-  "dictionary_attestations": [],
-  "admitted_offsets": [],
+  "dictionary_attestations": [
+    "amalgamado",
+    "cabrito",
+    "combinação",
+    "composição",
+    "constituição",
+    "diverso",
+    "híbrido",
+    "mesclado",
+    "mestiço",
+    "misto",
+    "misturado",
+    "mulato"
+  ],
+  "admitted_offsets": [
+    "ili-30-00378985-n",
+    "ili-30-03081660-n",
+    "ili-30-04933544-n",
+    "pwn30-01199083-a"
+  ],
   "excluded_offsets": [
     "ili-30-14818238-n",
     "ili-30-02424254-a",
     "ili-30-09947232-n",
     "ili-30-00237078-n",
-    "ili-30-00378985-n",
     "ili-30-04341686-n",
     "ili-30-06788785-n",
     "ili-30-00929718-n",
     "ili-30-00939452-n",
-    "ili-30-03081660-n",
-    "ili-30-04933544-n",
     "ili-30-05076472-n",
+    "ili-30-06409752-n",
     "ili-30-07037465-n",
     "ili-30-14588492-n",
     "ili-30-07331400-n",
@@ -319,10 +381,12 @@
     "ili-30-01754421-a",
     "ili-30-00583239-a",
     "ili-30-00592222-a",
+    "ili-30-00594413-a",
     "ili-30-00595299-a",
     "ili-30-00595863-a",
     "ili-30-00754393-a",
     "ili-30-01990653-a",
+    "ili-30-02301560-a",
     "ili-30-02506029-a",
     "ili-30-00959244-a",
     "ili-30-13585429-n",

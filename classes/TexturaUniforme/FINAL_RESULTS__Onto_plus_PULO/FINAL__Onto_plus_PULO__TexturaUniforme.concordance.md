@@ -2,9 +2,12 @@
 
 - **Política de divergência:** conservative
 - **Fontes:** PULO, OWN-PT, WordNet  (colunas: ONTO, PULO, OWN-PT, WordNet)
-- **Junção ILI (CILI automático):** C:\Users\lmr20\Desktop\Semantic_Research\classes\TexturaUniforme\out\ili_equivalence.cili.json  (8 pares CILI; 69 sem âncora partilhada)
-- **Gerado:** 2026-07-27T12:39:44
-- **Descartados (só pendentes):** 11 (termos ainda por adjudicar; contados, não listados)
+- **Tabela legada OEWN↔PULO** (`legacy_equivalence`): não carregada (junção runtime usa CILI oficial quando ambas as fontes partilham ``i…``; isto não significa que os identificadores CILI estejam indisponíveis).
+- **Junções interfontes por CILI:** 1
+- **WordNet/OEWN:** consultada e com resultados na matriz
+- **Onto.PT:** discovery-only — queried=True; discovery_evidence=True; concordance_results=false (não admite na matriz LexWarrant)
+- **Gerado:** 2026-08-07T13:35:46
+- **Descartados (só pendentes):** 10 (termos ainda por adjudicar; contados, não listados)
 - **Asserções:** 13/13 PASS ✅
 
 > Esta etapa **relata**; não admite nem reclassifica. `proposta_final` é uma sugestão para adjudicação humana, nunca uma auto-admissão.
@@ -13,23 +16,23 @@
 
 | termo | ili | ONTO | PULO | OWN-PT | WordNet | join | veredicto | proposta | notas |
 |---|---|---|---|---|---|---|---|---|---|
-| uniforme | ili-30-01200095-a, ili-30-01966488-a, oewn-ili:i10771 | — | UF | atestado | — | ili | convergência (sentido) 〔recursos_derivados:PWN〕 | UF | recursos_derivados: PWN — concordância entre recursos derivados da mesma estrutura conceptual; não constitui atestação independente do português; junção por ILI via tabela de equivalência: ili-30-01966488-a ↔ oewn-ili:i10771; OWN-PT: atestado OWN-PT [own-pt:1.0.0] via ILI i10771 · oewn-01973553-a |
-| constante | ili-30-01200095-a | — | UF | — | — | single | fonte única | UF |  |
-| imutável | ili-30-01966488-a | — | UF | — | — | single | fonte única | UF |  |
-| invariável | ili-30-01200095-a | — | UF | — | — | single | fonte única | UF |  |
-| invariância | ili-30-04745370-n | — | RT | — | — | single | fonte única | RT |  |
-| periódico | ili-30-04745370-n | — | RT | — | — | single | fonte única | RT |  |
-| uniformidade | ili-30-04745370-n | — | RT | — | — | single | fonte única | RT |  |
-| consistent | oewn-ili:i6560 | — | — | — | sinalização | single | sinalização | — | WordNet: atestado na WordNet [en_lemma (sem correspondência own-pt)] · oewn-01203638-s · ILI i6560 |
-| dedifferentiated | oewn-ili:i4127 | — | — | — | sinalização | single | sinalização | — | WordNet: vizinho similar_to de i4126 (oewn-00748118-a) — sem estatuto; adjudicação humana |
-| differentiated | oewn-ili:i4125 | — | — | — | sinalização | single | sinalização | — | WordNet: material de contraste (antonym) de i4126 (oewn-00748118-a) — sem estatuto; adjudicação humana |
-| homogeneous | oewn-ili:i6559 | — | — | — | sinalização | single | sinalização | — | WordNet: vizinho similar_to de i6560 (oewn-01203638-s) — sem estatuto; adjudicação humana |
-| homogenous | oewn-ili:i6559 | — | — | — | sinalização | single | sinalização | — | WordNet: vizinho similar_to de i6560 (oewn-01203638-s) — sem estatuto; adjudicação humana |
-| invariável | oewn-ili:i10771 | — | — | atestado | — | single | sinalização | — | OWN-PT: atestado OWN-PT [own-pt:1.0.0] via ILI i10771 · oewn-01973553-a |
-| multiform | oewn-ili:i10773 | — | — | — | sinalização | single | sinalização | — | WordNet: material de contraste (antonym) de i10771 (oewn-01973553-a) — sem estatuto; adjudicação humana |
-| single | oewn-ili:i10772 | — | — | — | sinalização | single | sinalização | — | WordNet: vizinho similar_to de i10771 (oewn-01973553-a) — sem estatuto; adjudicação humana |
-| undifferentiated | oewn-ili:i4126 | — | — | — | sinalização | single | sinalização | — | WordNet: atestado na WordNet [en_lemma (sem correspondência own-pt)] · oewn-00748118-a · ILI i4126 |
-| uniform | oewn-ili:i4126 | — | — | — | sinalização | single | sinalização | — | WordNet: atestado na WordNet [en_lemma (sem correspondência own-pt)] · oewn-00748118-a · ILI i4126 |
+| uniforme | i10771, i6560 | — | UF | atestado | — | ili | convergência (sentido) 〔recursos_derivados:PWN〕 | UF | recursos_derivados: PWN — concordância entre recursos derivados da mesma estrutura conceptual; não constitui atestação independente do português; OWN-PT: atestado OWN-PT [own-pt:1.0.0] via ILI i10771 · oewn-01973553-a |
+| constante | i6560 | — | UF | — | — | single | fonte única | UF |  |
+| imutável | i10771 | — | UF | — | — | single | fonte única | UF |  |
+| invariável | i6560 | — | UF | — | — | single | fonte única | UF |  |
+| invariância | i61962 | — | RT | — | — | single | fonte única | RT |  |
+| periódico | i61962 | — | RT | — | — | single | fonte única | RT |  |
+| uniformidade | i61962 | — | RT | — | — | single | fonte única | RT |  |
+| consistent | i6560 | — | — | — | sinalização | single | sinalização | — | WordNet: atestado na WordNet [en_lemma (sem correspondência own-pt)] · oewn-01203638-s · ILI i6560 |
+| dedifferentiated | i4127 | — | — | — | sinalização | single | sinalização | — | WordNet: vizinho similar_to de i4126 (oewn-00748118-a) — sem estatuto; adjudicação humana |
+| differentiated | i4125 | — | — | — | sinalização | single | sinalização | — | WordNet: material de contraste (antonym) de i4126 (oewn-00748118-a) — sem estatuto; adjudicação humana |
+| homogeneous | i6559 | — | — | — | sinalização | single | sinalização | — | WordNet: vizinho similar_to de i6560 (oewn-01203638-s) — sem estatuto; adjudicação humana |
+| homogenous | i6559 | — | — | — | sinalização | single | sinalização | — | WordNet: vizinho similar_to de i6560 (oewn-01203638-s) — sem estatuto; adjudicação humana |
+| invariável | i10771 | — | — | atestado | — | single | sinalização | — | OWN-PT: atestado OWN-PT [own-pt:1.0.0] via ILI i10771 · oewn-01973553-a |
+| multiform | i10773 | — | — | — | sinalização | single | sinalização | — | WordNet: material de contraste (antonym) de i10771 (oewn-01973553-a) — sem estatuto; adjudicação humana |
+| single | i10772 | — | — | — | sinalização | single | sinalização | — | WordNet: vizinho similar_to de i10771 (oewn-01973553-a) — sem estatuto; adjudicação humana |
+| undifferentiated | i4126 | — | — | — | sinalização | single | sinalização | — | WordNet: atestado na WordNet [en_lemma (sem correspondência own-pt)] · oewn-00748118-a · ILI i4126 |
+| uniform | i4126 | — | — | — | sinalização | single | sinalização | — | WordNet: atestado na WordNet [en_lemma (sem correspondência own-pt)] · oewn-00748118-a · ILI i4126 |
 
 ## Resumo por veredicto
 
@@ -45,7 +48,7 @@ _Verificação apenas — a lógica de recolha não é alterada nesta etapa._
 - **PULO:** 0 antónimo(s) auto — fonte sem antonímia consultável (esperado)
 - **WordNet:** 2 antónimo(s) auto — antonímia consultável (OEWN)
   - termos: differentiated, multiform
-- **ILIs ancorados (admitidos) sem material de contraste auto:** ili-30-01200095-a, ili-30-01966488-a, ili-30-04745370-n
+- **ILIs ancorados (admitidos) sem material de contraste auto:** i61962, i6560
 - **Fontes sem antonímia consultável (esperado):** PULO
 
 ## Conjunto mais defensável — «convergência plena» (requer junção por ILI)
@@ -73,7 +76,7 @@ constante, imutável, invariável, invariância, periódico, uniformidade
 | T3 | Nenhum ILI é fabricado; junção OEWN↔PULO só via CILI; pares sem âncora CILI ficam sem junção ILI (não fabricados). | PASS ✅ | bogus→(None, False); unmapped_flag=False |
 | T4 | Cada divergência de estatuto é registada por-fonte (sem colapso em contagem). | PASS ✅ | 0 divergência(s) |
 | T5 | Nenhum termo admitido pelos motores é descartado da matriz (PULO; OWN-PT/WordNet corroboram; Onto = descoberta) | PASS ✅ | 7 admitidos / 7 em matriz |
-| T6 | Fonte WordNet ausente ⇒ coluna toda «—». | PASS ✅ | WordNet presente — N/A |
+| T6 | WordNet/OEWN: source_available / source_queried / source_contributed_results distintos. | PASS ✅ | source_available=true; source_queried=true; source_contributed_results=true |
 | T7 | proposta_final nunca é um estatuto não suportado; conservador ⇒ null em divergência. | PASS ✅ | OK |
 | T8 | Entradas de classes diferentes são recusadas com erro claro. | PASS ✅ | ClassMismatch levantada para classes mistas |
 | T10 | «Convergência plena» / «convergência (sentido)» exigem junção por ILI (nunca só weak(term)). | PASS ✅ | OK |
@@ -82,6 +85,7 @@ constante, imutável, invariável, invariância, periódico, uniformidade
 | T9 | concordance.json faz round-trip (contagens de term/ili estáveis). | PASS ✅ | 17 conceitos |
 | T13 | Nenhuma célula nem proposta_final com valor «contraste» na matriz (migração completa: ver teste unitário de decisions). | PASS ✅ | OK |
 | T12 | Nenhum item do bloco de evidência figura no bloco de vocabulário, e vice-versa. | PASS ✅ | blocos A/B disjuntos |
+| T15 | Cada item exportado (altLabel/termoRelacionado/matriz/tabela F) rastreia a uma decisão desta classe; cada decisão UF/RT figura em ≥1 artefacto ou é listada como descartada com motivo declarado. | PASS ✅ | OK |
 
 # Relatório residual — `TexturaUniforme`
 
@@ -89,4 +93,21 @@ Taxonomia de reconciliação (b1/b2/c1/c2/estipulações) **removida** (Corte 2)
 
 ## Acepções adjudicadas sem correspondência em motor
 
-_(nenhuma)_
+- `UF` · papel:papel35:SINONIMIA:SINONIMO_ADV_DE:uniforme · inalteravelmente, monotonamente, uniformemente
+
+## Descartado (Onto.PT discovery-only)
+
+Acepções Onto.PT adjudicadas UF/RT — por desenho nunca entram na matriz LexWarrant (Corte 3). Listadas aqui para rastreabilidade.
+
+- `RT` · onto:contopt:28395 · contínuo, constante, ininterrupto, sucessivo, permanente, frequente, incessante, perpétuo, continuado, assíduo, seguido, perene, aturado, porfioso, incessável, ininterrompido, afio, consecutivo, estável, imutável, imudável, invariável, amiudado, repetido, manente, duradouro, imediato, jacente, conseguinte, subsecutivo, persistente, eterno, miúdo, vitalício, firme, inalterável, infindável, regular, crebro, periódico, permanecente, diligente, fiel, sempiterno, jazente, reiterado, sem paradas, aplicado, habitual, imóvel, ordinário, uniforme, usual
+- `RT` · onto:fuzzythes:23298 · consignado, constante, imudável, imutável, invariável, manente, incessável, estável, ininterrompido, aturado, afio, incessante, perseverante, permanente, continuado, imanente, escrito, ininterrupto, jazente, permanecente, contínuo, diamantino, estóico, assíduo, seguido, firme, sistemático, uniforme, jacente, sucessivo, adamantino, persistente, porfioso, mencionado, perene, metódico, perpétuo, ordenado
+- `RT` · onto:fuzzythes:25600 · unímodo, uniforme, homótono, equável, homogéneo, monótono, recto
+- `RT` · onto:fuzzythes:26445 · homogéneo, unívoco, similar, inequívoco, uniforme, análogo, idêntico, contínuo
+- `RT` · onto:fuzzythes:27091 · inflexivo, invariável, intemporal, imudável, estereotipado, imutável, constante, imaterial, irretratável, estereótipo, imóvel, eterno, uniforme, inalterável, estável
+- `UF` · onto:ontopt06:2131 · equável, uniforme
+- `UF` · onto:ontopt06:2133 · uniforme, unímodo
+- `UF` · onto:ontopt06:2945 · homótono, invariável, monótono, uniforme
+- `UF` · onto:polaridades:1656 · equável, uniforme
+- `UF` · onto:polaridades:4484 · homótono, invariável, monótono, uniforme
+- `UF` · onto:clip21:15521 · uniformador, uniformizador
+- `RT` · onto:clip21:20421 · inalteravelmente, uniformemente, de maneira justa, imutavelmente, monotonamente, unanimemente

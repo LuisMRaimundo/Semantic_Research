@@ -6,7 +6,7 @@
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaComposita
-# generated 2026-07-31T03:21:28+00:00
+# generated 2026-08-04T21:45:49+00:00
 # policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaComposita a owl:Class, skos:Concept ;
@@ -30,8 +30,6 @@ sr:TexturaComposita a owl:Class, skos:Concept ;
     sr:excludedCandidate [ rdf:value "formação"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "o ato de formar ou estabelecer algo " ] ;
     sr:excludedCandidate [ rdf:value "organização"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "o ato de formar ou estabelecer algo " ] ;
     sr:excludedCandidate [ rdf:value "fundação"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "o ato de formar ou estabelecer algo " ] ;
-    sr:excludedCandidate [ rdf:value "combinação"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "o ato de combinar as coisas para formar um todo novo " ] ;
-    sr:excludedCandidate [ rdf:value "composição"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "o ato de combinar as coisas para formar um todo novo " ] ;
     sr:excludedCandidate [ rdf:value "composição"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "uma coisa construída; uma entidade complexa construída de muitas partes " ] ;
     sr:excludedCandidate [ rdf:value "contextura"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "uma coisa construída; uma entidade complexa construída de muitas partes " ] ;
     sr:excludedCandidate [ rdf:value "edifício"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "uma coisa construída; uma entidade complexa construída de muitas partes " ] ;
@@ -44,10 +42,11 @@ sr:TexturaComposita a owl:Class, skos:Concept ;
     sr:excludedCandidate [ rdf:value "escritura"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "o ato de criar obras escritas " ] ;
     sr:excludedCandidate [ rdf:value "escrita"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "o ato de criar obras escritas " ] ;
     sr:excludedCandidate [ rdf:value "composição"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "criação musical " ] ;
-    sr:excludedCandidate [ rdf:value "composição"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "algo que é criado por providenciar várias coisas de modo a formar um todo unificado " ] ;
-    sr:excludedCandidate [ rdf:value "constituição"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "a maneira em que alguém ou alguma coisa é composto " ] ;
-    sr:excludedCandidate [ rdf:value "composição"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "a maneira em que alguém ou alguma coisa é composto " ] ;
     sr:excludedCandidate [ rdf:value "composição"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "a propriedade espacial resultante do acordo das partes em relação às outras e a toda " ] ;
+    sr:excludedCandidate [ rdf:value "relatório"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "um ensaio (especialmente um escrito como uma atribuição) " ] ;
+    sr:excludedCandidate [ rdf:value "redação"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "um ensaio (especialmente um escrito como uma atribuição) " ] ;
+    sr:excludedCandidate [ rdf:value "tema"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "um ensaio (especialmente um escrito como uma atribuição) " ] ;
+    sr:excludedCandidate [ rdf:value "composição"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "um ensaio (especialmente um escrito como uma atribuição) " ] ;
     sr:excludedCandidate [ rdf:value "peça"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "uma obra musical que tenha sido criado " ] ;
     sr:excludedCandidate [ rdf:value "obra"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "uma obra musical que tenha sido criado " ] ;
     sr:excludedCandidate [ rdf:value "composição"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "uma obra musical que tenha sido criado " ] ;
@@ -85,6 +84,8 @@ sr:TexturaComposita a owl:Class, skos:Concept ;
     sr:excludedCandidate [ rdf:value "constante"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "firme no propósito ou devoção ou afeição " ] ;
     sr:excludedCandidate [ rdf:value "contínuo"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "ocorrendo sem interrupção; principalmente restrita ao que se repete regularmente ou freqüentemente de uma série prolongada e espaçados " ] ;
     sr:excludedCandidate [ rdf:value "constante"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "ocorrendo sem interrupção; principalmente restrita ao que se repete regularmente ou freqüentemente de uma série prolongada e espaçados " ] ;
+    sr:excludedCandidate [ rdf:value "contínuo"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "continuidade no tempo ou no espaço, sem interrupção " ] ;
+    sr:excludedCandidate [ rdf:value "constante"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "continuidade no tempo ou no espaço, sem interrupção " ] ;
     sr:excludedCandidate [ rdf:value "assíduo"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "ininterrupta no tempo indefinidamente longo e contínuo " ] ;
     sr:excludedCandidate [ rdf:value "continuado"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "ininterrupta no tempo indefinidamente longo e contínuo " ] ;
     sr:excludedCandidate [ rdf:value "imudável"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "ininterrupta no tempo indefinidamente longo e contínuo " ] ;
@@ -105,6 +106,9 @@ sr:TexturaComposita a owl:Class, skos:Concept ;
     sr:excludedCandidate [ rdf:value "inabalável"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "marcado pela firme determinação ou resolução; Não shakable " ] ;
     sr:excludedCandidate [ rdf:value "constante"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "marcado pela firme determinação ou resolução; Não shakable " ] ;
     sr:excludedCandidate [ rdf:value "firme"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "marcado pela firme determinação ou resolução; Não shakable " ] ;
+    sr:excludedCandidate [ rdf:value "regular"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "não sujeitos a mudança ou variação, especialmente no comportamento " ] ;
+    sr:excludedCandidate [ rdf:value "constante"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "não sujeitos a mudança ou variação, especialmente no comportamento " ] ;
+    sr:excludedCandidate [ rdf:value "estável"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "não sujeitos a mudança ou variação, especialmente no comportamento " ] ;
     sr:excludedCandidate [ rdf:value "constante"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "unvarying em natureza " ] ;
     sr:excludedCandidate [ rdf:value "fiel"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "inabalável em devoção ao amigo ou voto ou causa " ] ;
     sr:excludedCandidate [ rdf:value "firme"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "inabalável em devoção ao amigo ou voto ou causa " ] ;
@@ -113,4 +117,4 @@ sr:TexturaComposita a owl:Class, skos:Concept ;
     sr:excludedCandidate [ rdf:value "constante"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "uma quantidade que não varia " ] ;
     sr:excludedCili [ sr:cili <http://ili.globalwordnet.org/ili/i114921> ; sr:exclusionReason "aceção química: chemical compound" ] ;
     sr:excludedCili [ sr:cili <http://ili.globalwordnet.org/ili/i97733> ; sr:exclusionReason "aceção biológica: decay/decomposition" ] ;
-    rdfs:comment "UF senses=8; RT=6; exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .
+    rdfs:comment "UF senses=12; RT=11; exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .

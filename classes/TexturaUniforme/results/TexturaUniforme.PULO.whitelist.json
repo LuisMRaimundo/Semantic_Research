@@ -4,7 +4,7 @@
   "axis": "invariância face a um parâmetro",
   "stage1_whitelist": [
     {
-      "ili_offset": "ili-30-01200095-a",
+      "ili_offset": "pwn30-01200095-a",
       "glosa": "que se mantém o mesmo; constante e invariável ao longo do parâmetro",
       "decision": "UF",
       "members": [
@@ -14,7 +14,7 @@
       ]
     },
     {
-      "ili_offset": "ili-30-01966488-a",
+      "ili_offset": "pwn30-01966488-a",
       "glosa": "sempre o mesmo parâmetro; imutável e uniforme",
       "decision": "UF",
       "members": [
@@ -23,7 +23,7 @@
       ]
     },
     {
-      "ili_offset": "ili-30-00909545-a",
+      "ili_offset": "pwn30-00909545-a",
       "glosa": "sem variações; regular e uniforme face ao parâmetro",
       "decision": "exclude",
       "members": [
@@ -42,7 +42,7 @@
       ]
     },
     {
-      "ili_offset": "ili-30-02302187-a",
+      "ili_offset": "pwn30-02302187-a",
       "glosa": "que ocorre em intervalos fixos e regulares",
       "decision": "exclude",
       "members": [
@@ -51,7 +51,7 @@
       ]
     },
     {
-      "ili_offset": "ili-30-00910101-a",
+      "ili_offset": "pwn30-00910101-a",
       "glosa": "de aparência agradável aos olhos",
       "decision": "exclude",
       "members": [
@@ -59,7 +59,7 @@
       ]
     },
     {
-      "ili_offset": "ili-30-04509592-n",
+      "ili_offset": "pwn30-04509592-n",
       "glosa": "instrumento de medição de comprimento",
       "decision": "exclude",
       "members": [
@@ -67,7 +67,7 @@
       ]
     },
     {
-      "ili_offset": "ili-30-00744506-a",
+      "ili_offset": "pwn30-00744506-a",
       "glosa": "relativo ao fardamento militar",
       "decision": "exclude",
       "members": [
@@ -75,7 +75,7 @@
       ]
     },
     {
-      "ili_offset": "",
+      "ili_offset": "por-30-99999999-x",
       "glosa": "acepção local sem correspondência interlingual",
       "decision": "exclude",
       "members": [
@@ -93,16 +93,16 @@
     "uniformidade"
   ],
   "admitted_offsets": [
-    "ili-30-01200095-a",
-    "ili-30-01966488-a",
+    "pwn30-01200095-a",
+    "pwn30-01966488-a",
     "ili-30-04745370-n"
   ],
   "excluded_offsets": [
-    "ili-30-00909545-a",
-    "ili-30-02302187-a",
-    "ili-30-00910101-a",
-    "ili-30-04509592-n",
-    "ili-30-00744506-a",
-    null
+    "pwn30-00909545-a",
+    "pwn30-02302187-a",
+    "pwn30-00910101-a",
+    "pwn30-04509592-n",
+    "pwn30-00744506-a",
+    "por-30-99999999-x"
   ]
 }

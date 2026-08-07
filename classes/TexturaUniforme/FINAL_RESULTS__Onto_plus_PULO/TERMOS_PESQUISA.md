@@ -2,18 +2,18 @@
 
 **Classe:** TexturaUniforme
 **Eixo / acepção a separar:** invariância face a um parâmetro
-**Âncora ILI:** ili-30-01200095-a, ili-30-01966488-a
+**Âncora CILI:** i6560, i10771
 **Língua de pesquisa:** `en` · **Língua de rótulos:** `pt-PT`
-**Sintaxe:** `uniform* NEAR/4 <termo>`
-**Gerado:** 2026-07-27T12:39:44+01:00
+**Sintaxe de pesquisa:** `uniform* NEAR/4 <termo>`
+**Gerado:** 2026-08-07T13:35:46+01:00
 
 ## A — Pólo alvo (`en`)
 
 | forma | wildcard | fonte | ili |
 |---|---|---|---|
-| consistent | consistent* | OEWN | i6560 |
-| uniform | uniform* | OEWN | i6560 |
+| uniform | uniform* | OEWN | i10771 |
 | unvarying | unvarying* | OEWN | i10771 |
+| consistent | consistent* | OEWN | i6560 |
 
 ## B — Pólo contrastante (`en`)
 
@@ -43,13 +43,13 @@
 
 ## E — Fronteiras de domínio
 
-| chave / ILI | lema | motivo |
-|---|---|---|
-| `ili-30-00909545-a` | igual | sem variações; regular e uniforme face ao parâmetro |
-| `ili-30-02302187-a` | periódico | que ocorre em intervalos fixos e regulares |
-| `ili-30-00910101-a` | bonito | de aparência agradável aos olhos |
-| `ili-30-04509592-n` | medidor | instrumento de medição de comprimento |
-| `ili-30-00744506-a` | fardado | relativo ao fardamento militar |
+| chave legada (PWN 3.0) | pwn30 | CILI | lema | motivo |
+|---|---|---|---|---|
+| `papel35:FINALIDADE:FAZ_SE_COM:uniforme` | `—` | `—` | uniforme | discovery: PAPEL 3.5 |
+| `papel35:HIPERONIMIA:HIPERONIMO_DE:uniforme` | `—` | `—` | uniforme | discovery: PAPEL 3.5 |
+| `papel35:PARTE:PARTE_DE_ALGO_COM_PROPRIEDADE:uniforme` | `—` | `—` | uniforme | discovery: PAPEL 3.5 |
+| `papel35:SINONIMIA:SINONIMO_N_DE:uniforme` | `—` | `—` | uniforme | discovery: PAPEL 3.5 |
+| `papel35:MANEIRA_SEM:MANEIRA_SEM:uniforme` | `—` | `—` | uniformemente | discovery: PAPEL 3.5 |
 
 ## F — Vocabulário (`pt-PT`)
 
@@ -62,3 +62,22 @@
 | periódico | periódico* | RT | fonte_unica | presente | pulo |
 | uniforme | uniforme* | UF | convergencia | presente | own-pt, pulo |
 | uniformidade | uniformidade* | RT | fonte_unica | presente | pulo |
+
+## Descartado (Onto.PT discovery-only)
+
+Acepções Onto.PT adjudicadas UF/RT — por desenho nunca entram na matriz LexWarrant (Corte 3). Listadas para rastreabilidade.
+
+| chave | decisão | membros |
+|---|---|---|
+| contopt:28395 | RT | contínuo, constante, ininterrupto, sucessivo, permanente, frequente, incessante, perpétuo, continuado, assíduo, seguido, perene, aturado, porfioso, incessável, ininterrompido, afio, consecutivo, estável, imutável, imudável, invariável, amiudado, repetido, manente, duradouro, imediato, jacente, conseguinte, subsecutivo, persistente, eterno, miúdo, vitalício, firme, inalterável, infindável, regular, crebro, periódico, permanecente, diligente, fiel, sempiterno, jazente, reiterado, sem paradas, aplicado, habitual, imóvel, ordinário, uniforme, usual |
+| fuzzythes:23298 | RT | consignado, constante, imudável, imutável, invariável, manente, incessável, estável, ininterrompido, aturado, afio, incessante, perseverante, permanente, continuado, imanente, escrito, ininterrupto, jazente, permanecente, contínuo, diamantino, estóico, assíduo, seguido, firme, sistemático, uniforme, jacente, sucessivo, adamantino, persistente, porfioso, mencionado, perene, metódico, perpétuo, ordenado |
+| fuzzythes:25600 | RT | unímodo, uniforme, homótono, equável, homogéneo, monótono, recto |
+| fuzzythes:26445 | RT | homogéneo, unívoco, similar, inequívoco, uniforme, análogo, idêntico, contínuo |
+| fuzzythes:27091 | RT | inflexivo, invariável, intemporal, imudável, estereotipado, imutável, constante, imaterial, irretratável, estereótipo, imóvel, eterno, uniforme, inalterável, estável |
+| ontopt06:2131 | UF | equável, uniforme |
+| ontopt06:2133 | UF | uniforme, unímodo |
+| ontopt06:2945 | UF | homótono, invariável, monótono, uniforme |
+| polaridades:1656 | UF | equável, uniforme |
+| polaridades:4484 | UF | homótono, invariável, monótono, uniforme |
+| clip21:15521 | UF | uniformador, uniformizador |
+| clip21:20421 | RT | inalteravelmente, uniformemente, de maneira justa, imutavelmente, monotonamente, unanimemente |

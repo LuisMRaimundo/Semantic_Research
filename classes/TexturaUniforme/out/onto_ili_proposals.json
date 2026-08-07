@@ -2,10 +2,10 @@
   "class_id": "TexturaUniforme",
   "policy": "Propose → review (GUI / CLI) → accepted links stamp Onto sense cards and feed ONTO-ILI atestado into LexWarrant. High-confidence unique proposals may auto-accept (config onto_ili_auto_accept_min).",
   "min_score": 0.35,
-  "n_onto": 68,
+  "n_onto": 78,
   "n_anchors": 16,
-  "n_proposals": 27,
-  "n_accepted": 0,
+  "n_proposals": 50,
+  "n_accepted": 50,
   "n_rejected": 0,
   "auto_accept": {
     "n": 0,
@@ -13,6 +13,38 @@
     "skipped": "disabled"
   },
   "proposals": [
+    {
+      "onto_key": "onto:papel35:SINONIMIA:SINONIMO_N_DE:uniforme",
+      "ili": "i60712",
+      "score": 0.5623,
+      "evidence": {
+        "shared_lemmas": [
+          "farda",
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "farda",
+          "fardamenta",
+          "uniforme"
+        ],
+        "anchor_sources": [
+          "own-pt",
+          "pulo"
+        ],
+        "n_anchors": 2,
+        "gloss": {
+          "score": 0.0853,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.1312,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.7667
+      },
+      "status": "accepted"
+    },
     {
       "onto_key": "onto:ontopt06:28292",
       "ili": "i60712",
@@ -46,7 +78,39 @@
         },
         "lemma_score": 0.7
       },
-      "status": "proposed"
+      "status": "accepted"
+    },
+    {
+      "onto_key": "onto:papel35:MANEIRA:MANEIRA_POR_MEIO_DE:uniforme",
+      "ili": "i60712",
+      "score": 0.4744,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "uniforme",
+          "uniformemente"
+        ],
+        "anchor_sources": [
+          "own-pt",
+          "pulo"
+        ],
+        "n_anchors": 2,
+        "gloss": {
+          "score": 0.1812,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0833,
+          "tfidf_cosine": 0.2339,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": [
+            "meio"
+          ]
+        },
+        "lemma_score": 0.6
+      },
+      "status": "accepted"
     },
     {
       "onto_key": "onto:ontopt06:2133",
@@ -76,7 +140,7 @@
         },
         "lemma_score": 0.6
       },
-      "status": "proposed"
+      "status": "accepted"
     },
     {
       "onto_key": "onto:polaridades:1656",
@@ -106,7 +170,38 @@
         },
         "lemma_score": 0.6
       },
-      "status": "proposed"
+      "status": "accepted"
+    },
+    {
+      "onto_key": "onto:papel35:QUALIDADE:TEM_QUALIDADE:uniforme",
+      "ili": "i61962",
+      "score": 0.4457,
+      "evidence": {
+        "shared_lemmas": [
+          "uniformidade"
+        ],
+        "onto_lemmas": [
+          "uniforme",
+          "uniformidade"
+        ],
+        "anchor_sources": [
+          "pulo"
+        ],
+        "n_anchors": 1,
+        "gloss": {
+          "score": 0.3191,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.1,
+          "tfidf_cosine": 0.4371,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": [
+            "qualidade"
+          ]
+        },
+        "lemma_score": 0.5
+      },
+      "status": "accepted"
     },
     {
       "onto_key": "onto:ontopt06:2131",
@@ -136,7 +231,37 @@
         },
         "lemma_score": 0.6
       },
-      "status": "proposed"
+      "status": "accepted"
+    },
+    {
+      "onto_key": "onto:papel35:QUALIDADE:TEM_QUALIDADE:uniforme",
+      "ili": "i60712",
+      "score": 0.4392,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "uniforme",
+          "uniformidade"
+        ],
+        "anchor_sources": [
+          "own-pt",
+          "pulo"
+        ],
+        "n_anchors": 2,
+        "gloss": {
+          "score": 0.064,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.0985,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.6
+      },
+      "status": "accepted"
     },
     {
       "onto_key": "onto:polaridades:1656",
@@ -166,7 +291,7 @@
         },
         "lemma_score": 0.6
       },
-      "status": "proposed"
+      "status": "accepted"
     },
     {
       "onto_key": "onto:polaridades:4484",
@@ -199,7 +324,37 @@
         },
         "lemma_score": 0.6
       },
-      "status": "proposed"
+      "status": "accepted"
+    },
+    {
+      "onto_key": "onto:papel35:FINALIDADE:FAZ_SE_COM:uniforme",
+      "ili": "i60712",
+      "score": 0.4386,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "uniforme",
+          "uso"
+        ],
+        "anchor_sources": [
+          "own-pt",
+          "pulo"
+        ],
+        "n_anchors": 2,
+        "gloss": {
+          "score": 0.062,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.0953,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.6
+      },
+      "status": "accepted"
     },
     {
       "onto_key": "onto:ontopt06:2133",
@@ -229,7 +384,7 @@
         },
         "lemma_score": 0.6
       },
-      "status": "proposed"
+      "status": "accepted"
     },
     {
       "onto_key": "onto:ontopt06:2131",
@@ -259,7 +414,7 @@
         },
         "lemma_score": 0.6
       },
-      "status": "proposed"
+      "status": "accepted"
     },
     {
       "onto_key": "onto:ontopt06:2133",
@@ -290,7 +445,97 @@
         },
         "lemma_score": 0.5
       },
-      "status": "proposed"
+      "status": "accepted"
+    },
+    {
+      "onto_key": "onto:papel35:MANEIRA:MANEIRA_POR_MEIO_DE:uniforme",
+      "ili": "i10771",
+      "score": 0.4255,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "uniforme",
+          "uniformemente"
+        ],
+        "anchor_sources": [
+          "own-pt",
+          "pulo"
+        ],
+        "n_anchors": 2,
+        "gloss": {
+          "score": 0.0184,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.0283,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.6
+      },
+      "status": "accepted"
+    },
+    {
+      "onto_key": "onto:papel35:QUALIDADE:TEM_QUALIDADE:uniforme",
+      "ili": "i10771",
+      "score": 0.4255,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "uniforme",
+          "uniformidade"
+        ],
+        "anchor_sources": [
+          "own-pt",
+          "pulo"
+        ],
+        "n_anchors": 2,
+        "gloss": {
+          "score": 0.0184,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.0283,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.6
+      },
+      "status": "accepted"
+    },
+    {
+      "onto_key": "onto:papel35:FINALIDADE:FAZ_SE_COM:uniforme",
+      "ili": "i10771",
+      "score": 0.4236,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "uniforme",
+          "uso"
+        ],
+        "anchor_sources": [
+          "own-pt",
+          "pulo"
+        ],
+        "n_anchors": 2,
+        "gloss": {
+          "score": 0.0119,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.0183,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.6
+      },
+      "status": "accepted"
     },
     {
       "onto_key": "onto:fuzzythes:1661",
@@ -326,7 +571,7 @@
         },
         "lemma_score": 0.6
       },
-      "status": "proposed"
+      "status": "accepted"
     },
     {
       "onto_key": "onto:fuzzythes:2140",
@@ -362,7 +607,7 @@
         },
         "lemma_score": 0.6
       },
-      "status": "proposed"
+      "status": "accepted"
     },
     {
       "onto_key": "onto:ontopt06:2945",
@@ -395,7 +640,7 @@
         },
         "lemma_score": 0.6
       },
-      "status": "proposed"
+      "status": "accepted"
     },
     {
       "onto_key": "onto:ontopt06:2131",
@@ -424,7 +669,7 @@
         },
         "lemma_score": 0.5
       },
-      "status": "proposed"
+      "status": "accepted"
     },
     {
       "onto_key": "onto:ontopt06:2131",
@@ -453,7 +698,7 @@
         },
         "lemma_score": 0.5
       },
-      "status": "proposed"
+      "status": "accepted"
     },
     {
       "onto_key": "onto:ontopt06:2133",
@@ -484,7 +729,38 @@
         },
         "lemma_score": 0.5
       },
-      "status": "proposed"
+      "status": "accepted"
+    },
+    {
+      "onto_key": "onto:papel35:QUALIDADE:TEM_QUALIDADE:uniforme",
+      "ili": "i4980",
+      "score": 0.3875,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "uniforme",
+          "uniformidade"
+        ],
+        "anchor_sources": [
+          "pulo"
+        ],
+        "n_anchors": 1,
+        "gloss": {
+          "score": 0.1251,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0833,
+          "tfidf_cosine": 0.1476,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": [
+            "tem"
+          ]
+        },
+        "lemma_score": 0.5
+      },
+      "status": "accepted"
     },
     {
       "onto_key": "onto:ontopt06:2131",
@@ -513,7 +789,36 @@
         },
         "lemma_score": 0.5
       },
-      "status": "proposed"
+      "status": "accepted"
+    },
+    {
+      "onto_key": "onto:papel35:MANEIRA:MANEIRA_POR_MEIO_DE:uniforme",
+      "ili": "i4979",
+      "score": 0.3723,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "uniforme",
+          "uniformemente"
+        ],
+        "anchor_sources": [
+          "pulo"
+        ],
+        "n_anchors": 1,
+        "gloss": {
+          "score": 0.0742,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.1141,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.5
+      },
+      "status": "accepted"
     },
     {
       "onto_key": "onto:fuzzythes:3480",
@@ -550,7 +855,65 @@
         },
         "lemma_score": 0.5286
       },
-      "status": "proposed"
+      "status": "accepted"
+    },
+    {
+      "onto_key": "onto:papel35:FINALIDADE:FAZ_SE_COM:uniforme",
+      "ili": "i4979",
+      "score": 0.3685,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "uniforme",
+          "uso"
+        ],
+        "anchor_sources": [
+          "pulo"
+        ],
+        "n_anchors": 1,
+        "gloss": {
+          "score": 0.0616,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.0947,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.5
+      },
+      "status": "accepted"
+    },
+    {
+      "onto_key": "onto:papel35:MANEIRA:MANEIRA_POR_MEIO_DE:uniforme",
+      "ili": "i4980",
+      "score": 0.3685,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "uniforme",
+          "uniformemente"
+        ],
+        "anchor_sources": [
+          "pulo"
+        ],
+        "n_anchors": 1,
+        "gloss": {
+          "score": 0.0617,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.0949,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.5
+      },
+      "status": "accepted"
     },
     {
       "onto_key": "onto:polaridades:1656",
@@ -579,7 +942,7 @@
         },
         "lemma_score": 0.5
       },
-      "status": "proposed"
+      "status": "accepted"
     },
     {
       "onto_key": "onto:ontopt06:2131",
@@ -608,7 +971,65 @@
         },
         "lemma_score": 0.5
       },
-      "status": "proposed"
+      "status": "accepted"
+    },
+    {
+      "onto_key": "onto:papel35:FINALIDADE:FAZ_SE_COM:uniforme",
+      "ili": "i4980",
+      "score": 0.3659,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "uniforme",
+          "uso"
+        ],
+        "anchor_sources": [
+          "pulo"
+        ],
+        "n_anchors": 1,
+        "gloss": {
+          "score": 0.0531,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.0816,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.5
+      },
+      "status": "accepted"
+    },
+    {
+      "onto_key": "onto:papel35:MANEIRA:MANEIRA_POR_MEIO_DE:uniforme",
+      "ili": "i6560",
+      "score": 0.3623,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "uniforme",
+          "uniformemente"
+        ],
+        "anchor_sources": [
+          "pulo"
+        ],
+        "n_anchors": 1,
+        "gloss": {
+          "score": 0.0411,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.0632,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.5
+      },
+      "status": "accepted"
     },
     {
       "onto_key": "onto:ontopt06:2131",
@@ -637,7 +1058,7 @@
         },
         "lemma_score": 0.5
       },
-      "status": "proposed"
+      "status": "accepted"
     },
     {
       "onto_key": "onto:polaridades:1656",
@@ -666,7 +1087,36 @@
         },
         "lemma_score": 0.5
       },
-      "status": "proposed"
+      "status": "accepted"
+    },
+    {
+      "onto_key": "onto:papel35:FINALIDADE:FAZ_SE_COM:uniforme",
+      "ili": "i6560",
+      "score": 0.3606,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "uniforme",
+          "uso"
+        ],
+        "anchor_sources": [
+          "pulo"
+        ],
+        "n_anchors": 1,
+        "gloss": {
+          "score": 0.0354,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.0544,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.5
+      },
+      "status": "accepted"
     },
     {
       "onto_key": "onto:polaridades:1656",
@@ -695,7 +1145,36 @@
         },
         "lemma_score": 0.5
       },
-      "status": "proposed"
+      "status": "accepted"
+    },
+    {
+      "onto_key": "onto:papel35:QUALIDADE:TEM_QUALIDADE:uniforme",
+      "ili": "i4979",
+      "score": 0.3579,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "uniforme",
+          "uniformidade"
+        ],
+        "anchor_sources": [
+          "pulo"
+        ],
+        "n_anchors": 1,
+        "gloss": {
+          "score": 0.0265,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.0408,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.5
+      },
+      "status": "accepted"
     },
     {
       "onto_key": "onto:ontopt06:2133",
@@ -724,7 +1203,36 @@
         },
         "lemma_score": 0.5
       },
-      "status": "proposed"
+      "status": "accepted"
+    },
+    {
+      "onto_key": "onto:papel35:MANEIRA:MANEIRA_POR_MEIO_DE:uniforme",
+      "ili": "i4126",
+      "score": 0.3565,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "uniforme",
+          "uniformemente"
+        ],
+        "anchor_sources": [
+          "pulo"
+        ],
+        "n_anchors": 1,
+        "gloss": {
+          "score": 0.0217,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.0333,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.5
+      },
+      "status": "accepted"
     },
     {
       "onto_key": "onto:polaridades:1656",
@@ -753,7 +1261,7 @@
         },
         "lemma_score": 0.5
       },
-      "status": "proposed"
+      "status": "accepted"
     },
     {
       "onto_key": "onto:ontopt06:2133",
@@ -782,7 +1290,94 @@
         },
         "lemma_score": 0.5
       },
-      "status": "proposed"
+      "status": "accepted"
+    },
+    {
+      "onto_key": "onto:papel35:FINALIDADE:FAZ_SE_COM:uniforme",
+      "ili": "i12748",
+      "score": 0.3561,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "uniforme",
+          "uso"
+        ],
+        "anchor_sources": [
+          "pulo"
+        ],
+        "n_anchors": 1,
+        "gloss": {
+          "score": 0.0204,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.0313,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.5
+      },
+      "status": "accepted"
+    },
+    {
+      "onto_key": "onto:papel35:QUALIDADE:TEM_QUALIDADE:uniforme",
+      "ili": "i12748",
+      "score": 0.3547,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "uniforme",
+          "uniformidade"
+        ],
+        "anchor_sources": [
+          "pulo"
+        ],
+        "n_anchors": 1,
+        "gloss": {
+          "score": 0.0158,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.0243,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.5
+      },
+      "status": "accepted"
+    },
+    {
+      "onto_key": "onto:papel35:QUALIDADE:TEM_QUALIDADE:uniforme",
+      "ili": "i6560",
+      "score": 0.3541,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "uniforme",
+          "uniformidade"
+        ],
+        "anchor_sources": [
+          "pulo"
+        ],
+        "n_anchors": 1,
+        "gloss": {
+          "score": 0.0137,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.0211,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.5
+      },
+      "status": "accepted"
     },
     {
       "onto_key": "onto:polaridades:1656",
@@ -811,7 +1406,7 @@
         },
         "lemma_score": 0.5
       },
-      "status": "proposed"
+      "status": "accepted"
     },
     {
       "onto_key": "onto:ontopt06:2133",
@@ -840,7 +1435,94 @@
         },
         "lemma_score": 0.5
       },
-      "status": "proposed"
+      "status": "accepted"
+    },
+    {
+      "onto_key": "onto:papel35:FINALIDADE:FAZ_SE_COM:uniforme",
+      "ili": "i4126",
+      "score": 0.35,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "uniforme",
+          "uso"
+        ],
+        "anchor_sources": [
+          "pulo"
+        ],
+        "n_anchors": 1,
+        "gloss": {
+          "score": 0.0,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.0,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.5
+      },
+      "status": "accepted"
+    },
+    {
+      "onto_key": "onto:papel35:MANEIRA:MANEIRA_POR_MEIO_DE:uniforme",
+      "ili": "i12748",
+      "score": 0.35,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "uniforme",
+          "uniformemente"
+        ],
+        "anchor_sources": [
+          "pulo"
+        ],
+        "n_anchors": 1,
+        "gloss": {
+          "score": 0.0,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.0,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.5
+      },
+      "status": "accepted"
+    },
+    {
+      "onto_key": "onto:papel35:QUALIDADE:TEM_QUALIDADE:uniforme",
+      "ili": "i4126",
+      "score": 0.35,
+      "evidence": {
+        "shared_lemmas": [
+          "uniforme"
+        ],
+        "onto_lemmas": [
+          "uniforme",
+          "uniformidade"
+        ],
+        "anchor_sources": [
+          "pulo"
+        ],
+        "n_anchors": 1,
+        "gloss": {
+          "score": 0.0,
+          "method": "tfidf+jaccard",
+          "jaccard": 0.0,
+          "tfidf_cosine": 0.0,
+          "embedding_cosine": null,
+          "lemma_boost": 0.0,
+          "shared_tokens": []
+        },
+        "lemma_score": 0.5
+      },
+      "status": "accepted"
     }
   ]
 }

@@ -1,7 +1,7 @@
 # Migração ILI humana → CILI — `TexturaUniforme`
 
 - **CILI:** cili@upstream-master+pwn30+pwn31+wn.ili
-- **Tabela legada:** C:\Users\lmr20\Desktop\Semantic_Research\classes\TexturaUniforme\out\ili_equivalence.json
+- **Tabela legada:** E:\PYTHON CODES\Semantic_Research\classes\TexturaUniforme\out\ili_equivalence.json
 - **Confirmados pelo CILI:** 2
 - **Divergentes (NÃO aplicados):** 1
 - **Sem resolução CILI:** 1

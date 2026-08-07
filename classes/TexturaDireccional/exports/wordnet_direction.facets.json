@@ -1,0 +1,477 @@
+{
+  "type": "oewn_facets",
+  "term": "direction",
+  "pos": "Todas",
+  "language": "English",
+  "class_id": "TexturaDireccional",
+  "generated": "2026-08-07T02:06:27",
+  "count": 9,
+  "facets": [
+    "synsets_relations"
+  ],
+  "source": {
+    "lexicon": "oewn",
+    "backend": "wn",
+    "alignment": "ILI via translate()",
+    "via": "semantic.adapters.wordnet (workbench)",
+    "pt_coverage": "8/9 synsets com pt_lemmas"
+  },
+  "synsets": [
+    {
+      "name": "oewn-08697710-n",
+      "ili": "i82556",
+      "pos": "n",
+      "definition": "a line leading to a place or point",
+      "examples": [
+        "he looked the other direction",
+        "didn't know the way home"
+      ],
+      "lemmas": [
+        "direction",
+        "way"
+      ],
+      "pt_lemmas": [
+        "curso",
+        "direcção",
+        "direção",
+        "rumo"
+      ],
+      "hypernyms": [
+        "oewn-08633886-n"
+      ],
+      "hyponyms": [
+        "oewn-08698626-n",
+        "oewn-08698960-n",
+        "oewn-08699160-n",
+        "oewn-08699272-n",
+        "oewn-08699387-n",
+        "oewn-08699515-n"
+      ],
+      "relations": {
+        "antonym": [],
+        "derivationally_related_form": [],
+        "similar_to": [],
+        "attribute": [],
+        "also_see": []
+      }
+    },
+    {
+      "name": "oewn-13849639-n",
+      "ili": "i109570",
+      "pos": "n",
+      "definition": "the spatial relation between something and the course along which it points or moves",
+      "examples": [
+        "he checked the direction and velocity of the wind"
+      ],
+      "lemmas": [
+        "direction"
+      ],
+      "pt_lemmas": [
+        "curso"
+      ],
+      "hypernyms": [
+        "oewn-05081943-n"
+      ],
+      "hyponyms": [
+        "oewn-13850156-n",
+        "oewn-13850288-n",
+        "oewn-13851118-n",
+        "oewn-13851799-n",
+        "oewn-13852047-n",
+        "oewn-13852283-n",
+        "oewn-13852504-n",
+        "oewn-13853640-n",
+        "oewn-13857626-n",
+        "oewn-13857745-n",
+        "oewn-13857863-n",
+        "oewn-13857980-n",
+        "oewn-13858098-n",
+        "oewn-13858217-n",
+        "oewn-13858335-n",
+        "oewn-13858452-n"
+      ],
+      "relations": {
+        "antonym": [],
+        "derivationally_related_form": [],
+        "similar_to": [],
+        "attribute": [
+          {
+            "id": "oewn-01297423-a",
+            "ili": "i7054",
+            "words": [
+              "incoming"
+            ],
+            "gloss": "arriving at a place or position"
+          },
+          {
+            "id": "oewn-01298564-a",
+            "ili": "i7062",
+            "words": [
+              "outgoing"
+            ],
+            "gloss": "leaving a place or a position"
+          }
+        ],
+        "also_see": []
+      }
+    },
+    {
+      "name": "oewn-06206950-n",
+      "ili": "i69097",
+      "pos": "n",
+      "definition": "a general course along which something has a tendency to develop",
+      "examples": [
+        "I couldn't follow the direction of his thoughts",
+        "his ideals determined the direction of his career",
+        "they proposed a new direction for the firm"
+      ],
+      "lemmas": [
+        "direction"
+      ],
+      "pt_lemmas": [
+        "direção"
+      ],
+      "hypernyms": [
+        "oewn-06206319-n"
+      ],
+      "hyponyms": [
+        "oewn-06207238-n"
+      ],
+      "relations": {
+        "antonym": [],
+        "derivationally_related_form": [],
+        "similar_to": [],
+        "attribute": [],
+        "also_see": []
+      }
+    },
+    {
+      "name": "oewn-06663446-n",
+      "ili": "i71431",
+      "pos": "n",
+      "definition": "something that provides direction or advice as to a decision or course of action",
+      "examples": [],
+      "lemmas": [
+        "guidance",
+        "counsel",
+        "counseling",
+        "counselling",
+        "direction"
+      ],
+      "pt_lemmas": [
+        "aconselhamento",
+        "conselho",
+        "direção"
+      ],
+      "hypernyms": [
+        "oewn-06611268-n"
+      ],
+      "hyponyms": [
+        "oewn-06663792-n",
+        "oewn-06663890-n",
+        "oewn-06664047-n",
+        "oewn-06664208-n",
+        "oewn-06664322-n",
+        "oewn-05921146-n"
+      ],
+      "relations": {
+        "antonym": [],
+        "derivationally_related_form": [
+          {
+            "id": "oewn-00874568-v",
+            "ili": "i25987",
+            "words": [
+              "counsel"
+            ],
+            "gloss": "give advice to"
+          }
+        ],
+        "similar_to": [],
+        "attribute": [],
+        "also_see": []
+      }
+    },
+    {
+      "name": "oewn-01135602-n",
+      "ili": "i41343",
+      "pos": "n",
+      "definition": "the act of managing something",
+      "examples": [
+        "he was given overall management of the program",
+        "is the direction of the economy a function of government?"
+      ],
+      "lemmas": [
+        "management",
+        "direction"
+      ],
+      "pt_lemmas": [
+        "administração",
+        "gestão"
+      ],
+      "hypernyms": [
+        "oewn-01125919-n"
+      ],
+      "hyponyms": [
+        "oewn-01136081-n",
+        "oewn-01136254-n",
+        "oewn-01136358-n",
+        "oewn-01136565-n",
+        "oewn-01136651-n",
+        "oewn-01136800-n",
+        "oewn-01137182-n",
+        "oewn-01137850-n",
+        "oewn-01138273-n",
+        "oewn-01140991-n",
+        "oewn-01142350-n",
+        "oewn-01144840-n",
+        "oewn-01147389-n"
+      ],
+      "relations": {
+        "antonym": [],
+        "derivationally_related_form": [
+          {
+            "id": "oewn-02447914-v",
+            "ili": "i33940",
+            "words": [
+              "manage"
+            ],
+            "gloss": "watch and direct"
+          },
+          {
+            "id": "oewn-02441196-v",
+            "ili": "i33908",
+            "words": [
+              "manage"
+            ],
+            "gloss": "be in charge of, act on, or dispose of"
+          }
+        ],
+        "similar_to": [],
+        "attribute": [],
+        "also_see": []
+      }
+    },
+    {
+      "name": "oewn-06799486-n",
+      "ili": "i72152",
+      "pos": "n",
+      "definition": "a message describing how something is to be done",
+      "examples": [
+        "he gave directions faster than she could follow them"
+      ],
+      "lemmas": [
+        "direction",
+        "instruction"
+      ],
+      "pt_lemmas": [
+        "instrução"
+      ],
+      "hypernyms": [
+        "oewn-06611268-n"
+      ],
+      "hyponyms": [
+        "oewn-06664809-n",
+        "oewn-06664987-n",
+        "oewn-06665457-n",
+        "oewn-06799894-n",
+        "oewn-06800007-n",
+        "oewn-06800459-n",
+        "oewn-06801422-n",
+        "oewn-06801642-n",
+        "oewn-06801754-n",
+        "oewn-06801937-n",
+        "oewn-06802072-n",
+        "oewn-07290947-n"
+      ],
+      "relations": {
+        "antonym": [],
+        "derivationally_related_form": [
+          {
+            "id": "oewn-02993191-a",
+            "ili": "i17019",
+            "words": [
+              "instructional"
+            ],
+            "gloss": "of or relating to or used in instruction"
+          }
+        ],
+        "similar_to": [],
+        "attribute": [],
+        "also_see": []
+      }
+    },
+    {
+      "name": "oewn-00816981-n",
+      "ili": "i39691",
+      "pos": "n",
+      "definition": "the act of setting and holding a course",
+      "examples": [
+        "a new council was installed under the direction of the king"
+      ],
+      "lemmas": [
+        "steering",
+        "guidance",
+        "direction"
+      ],
+      "pt_lemmas": [
+        "orientação"
+      ],
+      "hypernyms": [
+        "oewn-00805278-n"
+      ],
+      "hyponyms": [
+        "oewn-00299323-n",
+        "oewn-00817305-n",
+        "oewn-00817462-n",
+        "oewn-00818326-n",
+        "oewn-00818502-n",
+        "oewn-00818678-n",
+        "oewn-00818852-n"
+      ],
+      "relations": {
+        "antonym": [],
+        "derivationally_related_form": [
+          {
+            "id": "oewn-02444597-v",
+            "ili": "i33924",
+            "words": [
+              "steer"
+            ],
+            "gloss": "be a guiding or motivating force or drive"
+          }
+        ],
+        "similar_to": [],
+        "attribute": [],
+        "also_see": []
+      }
+    },
+    {
+      "name": "oewn-07184131-n",
+      "ili": "i74329",
+      "pos": "n",
+      "definition": "a formal statement of a command or injunction to do something",
+      "examples": [
+        "the judge's charge to the jury"
+      ],
+      "lemmas": [
+        "commission",
+        "charge",
+        "direction"
+      ],
+      "pt_lemmas": [],
+      "hypernyms": [
+        "oewn-07182782-n"
+      ],
+      "hyponyms": [
+        "oewn-07184394-n"
+      ],
+      "relations": {
+        "antonym": [],
+        "derivationally_related_form": [
+          {
+            "id": "oewn-09963290-n",
+            "ili": "i89112",
+            "words": [
+              "commissioner"
+            ],
+            "gloss": "a government administrator"
+          },
+          {
+            "id": "oewn-02486392-v",
+            "ili": "i34123",
+            "words": [
+              "commission"
+            ],
+            "gloss": "place an order for"
+          },
+          {
+            "id": "oewn-02481345-v",
+            "ili": "i34100",
+            "words": [
+              "charge"
+            ],
+            "gloss": "assign a duty, responsibility or obligation to"
+          },
+          {
+            "id": "oewn-00752351-v",
+            "ili": "i25450",
+            "words": [
+              "charge"
+            ],
+            "gloss": "instruct (a jury) about the law, its application, and the weighing of evidence"
+          }
+        ],
+        "similar_to": [],
+        "attribute": [],
+        "also_see": []
+      }
+    },
+    {
+      "name": "oewn-05712641-n",
+      "ili": "i66888",
+      "pos": "n",
+      "definition": "the concentration of attention or energy on something",
+      "examples": [
+        "the focus of activity shifted to molecular biology",
+        "he had no direction in his life"
+      ],
+      "lemmas": [
+        "focus",
+        "focusing",
+        "focussing",
+        "focal point",
+        "direction",
+        "centering",
+        "centring"
+      ],
+      "pt_lemmas": [
+        "concentração",
+        "foco"
+      ],
+      "hypernyms": [
+        "oewn-05712213-n"
+      ],
+      "hyponyms": [
+        "oewn-05713022-n"
+      ],
+      "relations": {
+        "antonym": [],
+        "derivationally_related_form": [
+          {
+            "id": "oewn-00733774-v",
+            "ili": "i25358",
+            "words": [
+              "focus"
+            ],
+            "gloss": "bring into focus or alignment; to converge or cause to converge; of ideas or emotions"
+          },
+          {
+            "id": "oewn-00724156-v",
+            "ili": "i25312",
+            "words": [
+              "focus"
+            ],
+            "gloss": "direct one's attention on something"
+          },
+          {
+            "id": "oewn-02682306-v",
+            "ili": "i35044",
+            "words": [
+              "center"
+            ],
+            "gloss": "center upon"
+          }
+        ],
+        "similar_to": [],
+        "attribute": [],
+        "also_see": []
+      }
+    }
+  ],
+  "similarity": {
+    "pairs": [],
+    "note": "omitted in workbench search"
+  },
+  "hierarchy": {},
+  "visualization": {}
+}

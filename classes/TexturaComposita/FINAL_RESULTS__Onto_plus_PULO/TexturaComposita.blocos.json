@@ -13,7 +13,367 @@
         "destino": "vocabulario"
       }
     ],
-    "termoRelacionado": []
+    "termoRelacionado": [
+      {
+        "fonte": "pulo",
+        "key": "ili-30-00378985-n",
+        "ili": "ili-30-00378985-n",
+        "membros": [
+          "combinação",
+          "composição"
+        ],
+        "gloss": "o ato de combinar as coisas para formar um todo novo\n",
+        "note": "",
+        "destino": "vocabulario",
+        "termo": "combinação",
+        "skos": "tex:termoRelacionado"
+      },
+      {
+        "fonte": "pulo",
+        "key": "ili-30-00378985-n",
+        "ili": "ili-30-00378985-n",
+        "membros": [
+          "combinação",
+          "composição"
+        ],
+        "gloss": "o ato de combinar as coisas para formar um todo novo\n",
+        "note": "",
+        "destino": "vocabulario",
+        "termo": "composição",
+        "skos": "tex:termoRelacionado"
+      },
+      {
+        "fonte": "pulo",
+        "key": "ili-30-03081660-n",
+        "ili": "ili-30-03081660-n",
+        "membros": [
+          "composição"
+        ],
+        "gloss": "algo que é criado por providenciar várias coisas de modo a formar um todo unificado\n",
+        "note": "",
+        "destino": "vocabulario",
+        "termo": "composição",
+        "skos": "tex:termoRelacionado"
+      },
+      {
+        "fonte": "pulo",
+        "key": "ili-30-04933544-n",
+        "ili": "ili-30-04933544-n",
+        "membros": [
+          "constituição",
+          "composição"
+        ],
+        "gloss": "a maneira em que alguém ou alguma coisa é composto\n",
+        "note": "",
+        "destino": "vocabulario",
+        "termo": "constituição",
+        "skos": "tex:termoRelacionado"
+      },
+      {
+        "fonte": "pulo",
+        "key": "ili-30-04933544-n",
+        "ili": "ili-30-04933544-n",
+        "membros": [
+          "constituição",
+          "composição"
+        ],
+        "gloss": "a maneira em que alguém ou alguma coisa é composto\n",
+        "note": "",
+        "destino": "vocabulario",
+        "termo": "composição",
+        "skos": "tex:termoRelacionado"
+      },
+      {
+        "fonte": "pulo",
+        "key": "pwn30-01199083-a",
+        "ili": "i6556",
+        "membros": [
+          "amalgamado",
+          "cabrito",
+          "diverso",
+          "híbrido",
+          "mesclado",
+          "mestiço",
+          "misto",
+          "misturado",
+          "mulato"
+        ],
+        "gloss": "que consiste em uma variedade aleatória de diferentes tipos\n",
+        "note": "",
+        "destino": "vocabulario",
+        "termo": "amalgamado",
+        "skos": "tex:termoRelacionado"
+      },
+      {
+        "fonte": "pulo",
+        "key": "pwn30-01199083-a",
+        "ili": "i6556",
+        "membros": [
+          "amalgamado",
+          "cabrito",
+          "diverso",
+          "híbrido",
+          "mesclado",
+          "mestiço",
+          "misto",
+          "misturado",
+          "mulato"
+        ],
+        "gloss": "que consiste em uma variedade aleatória de diferentes tipos\n",
+        "note": "",
+        "destino": "vocabulario",
+        "termo": "cabrito",
+        "skos": "tex:termoRelacionado"
+      },
+      {
+        "fonte": "pulo",
+        "key": "pwn30-01199083-a",
+        "ili": "i6556",
+        "membros": [
+          "amalgamado",
+          "cabrito",
+          "diverso",
+          "híbrido",
+          "mesclado",
+          "mestiço",
+          "misto",
+          "misturado",
+          "mulato"
+        ],
+        "gloss": "que consiste em uma variedade aleatória de diferentes tipos\n",
+        "note": "",
+        "destino": "vocabulario",
+        "termo": "diverso",
+        "skos": "tex:termoRelacionado"
+      },
+      {
+        "fonte": "pulo",
+        "key": "pwn30-01199083-a",
+        "ili": "i6556",
+        "membros": [
+          "amalgamado",
+          "cabrito",
+          "diverso",
+          "híbrido",
+          "mesclado",
+          "mestiço",
+          "misto",
+          "misturado",
+          "mulato"
+        ],
+        "gloss": "que consiste em uma variedade aleatória de diferentes tipos\n",
+        "note": "",
+        "destino": "vocabulario",
+        "termo": "híbrido",
+        "skos": "tex:termoRelacionado"
+      },
+      {
+        "fonte": "pulo",
+        "key": "pwn30-01199083-a",
+        "ili": "i6556",
+        "membros": [
+          "amalgamado",
+          "cabrito",
+          "diverso",
+          "híbrido",
+          "mesclado",
+          "mestiço",
+          "misto",
+          "misturado",
+          "mulato"
+        ],
+        "gloss": "que consiste em uma variedade aleatória de diferentes tipos\n",
+        "note": "",
+        "destino": "vocabulario",
+        "termo": "mesclado",
+        "skos": "tex:termoRelacionado"
+      },
+      {
+        "fonte": "pulo",
+        "key": "pwn30-01199083-a",
+        "ili": "i6556",
+        "membros": [
+          "amalgamado",
+          "cabrito",
+          "diverso",
+          "híbrido",
+          "mesclado",
+          "mestiço",
+          "misto",
+          "misturado",
+          "mulato"
+        ],
+        "gloss": "que consiste em uma variedade aleatória de diferentes tipos\n",
+        "note": "",
+        "destino": "vocabulario",
+        "termo": "mestiço",
+        "skos": "tex:termoRelacionado"
+      },
+      {
+        "fonte": "pulo",
+        "key": "pwn30-01199083-a",
+        "ili": "i6556",
+        "membros": [
+          "amalgamado",
+          "cabrito",
+          "diverso",
+          "híbrido",
+          "mesclado",
+          "mestiço",
+          "misto",
+          "misturado",
+          "mulato"
+        ],
+        "gloss": "que consiste em uma variedade aleatória de diferentes tipos\n",
+        "note": "",
+        "destino": "vocabulario",
+        "termo": "misto",
+        "skos": "tex:termoRelacionado"
+      },
+      {
+        "fonte": "pulo",
+        "key": "pwn30-01199083-a",
+        "ili": "i6556",
+        "membros": [
+          "amalgamado",
+          "cabrito",
+          "diverso",
+          "híbrido",
+          "mesclado",
+          "mestiço",
+          "misto",
+          "misturado",
+          "mulato"
+        ],
+        "gloss": "que consiste em uma variedade aleatória de diferentes tipos\n",
+        "note": "",
+        "destino": "vocabulario",
+        "termo": "misturado",
+        "skos": "tex:termoRelacionado"
+      },
+      {
+        "fonte": "pulo",
+        "key": "pwn30-01199083-a",
+        "ili": "i6556",
+        "membros": [
+          "amalgamado",
+          "cabrito",
+          "diverso",
+          "híbrido",
+          "mesclado",
+          "mestiço",
+          "misto",
+          "misturado",
+          "mulato"
+        ],
+        "gloss": "que consiste em uma variedade aleatória de diferentes tipos\n",
+        "note": "",
+        "destino": "vocabulario",
+        "termo": "mulato",
+        "skos": "tex:termoRelacionado"
+      },
+      {
+        "fonte": "papel",
+        "key": "papel35:PARTE:PARTE_DE_ALGO_COM_PROPRIEDADE:composito",
+        "ili": null,
+        "membros": [
+          "compósito",
+          "utilidade"
+        ],
+        "gloss": "PAPEL PARTE_DE_ALGO_COM_PROPRIEDADE (PARTE)",
+        "note": "discovery: PAPEL 3.5",
+        "destino": "vocabulario",
+        "termo": "compósito",
+        "skos": "tex:termoRelacionado"
+      },
+      {
+        "fonte": "papel",
+        "key": "papel35:PARTE:PARTE_DE_ALGO_COM_PROPRIEDADE:composito",
+        "ili": null,
+        "membros": [
+          "compósito",
+          "utilidade"
+        ],
+        "gloss": "PAPEL PARTE_DE_ALGO_COM_PROPRIEDADE (PARTE)",
+        "note": "discovery: PAPEL 3.5",
+        "destino": "vocabulario",
+        "termo": "utilidade",
+        "skos": "tex:termoRelacionado"
+      },
+      {
+        "fonte": "papel",
+        "key": "papel35:REFERENTE:DIZ_SE_DO_QUE:composito",
+        "ili": null,
+        "membros": [
+          "compósito",
+          "ter diverso utilidade"
+        ],
+        "gloss": "PAPEL DIZ_SE_DO_QUE (REFERENTE)",
+        "note": "discovery: PAPEL 3.5",
+        "destino": "vocabulario",
+        "termo": "compósito",
+        "skos": "tex:termoRelacionado"
+      },
+      {
+        "fonte": "papel",
+        "key": "papel35:REFERENTE:DIZ_SE_DO_QUE:composito",
+        "ili": null,
+        "membros": [
+          "compósito",
+          "ter diverso utilidade"
+        ],
+        "gloss": "PAPEL DIZ_SE_DO_QUE (REFERENTE)",
+        "note": "discovery: PAPEL 3.5",
+        "destino": "vocabulario",
+        "termo": "ter diverso utilidade",
+        "skos": "tex:termoRelacionado"
+      },
+      {
+        "fonte": "papel",
+        "key": "papel35:SINONIMIA:SINONIMO_ADJ_DE:composito",
+        "ili": null,
+        "membros": [
+          "compósito",
+          "heterogéneo",
+          "mesclado"
+        ],
+        "gloss": "PAPEL SINONIMO_ADJ_DE (SINONIMIA)",
+        "note": "discovery: PAPEL 3.5",
+        "destino": "vocabulario",
+        "termo": "compósito",
+        "skos": "tex:termoRelacionado"
+      },
+      {
+        "fonte": "papel",
+        "key": "papel35:SINONIMIA:SINONIMO_ADJ_DE:composito",
+        "ili": null,
+        "membros": [
+          "compósito",
+          "heterogéneo",
+          "mesclado"
+        ],
+        "gloss": "PAPEL SINONIMO_ADJ_DE (SINONIMIA)",
+        "note": "discovery: PAPEL 3.5",
+        "destino": "vocabulario",
+        "termo": "heterogéneo",
+        "skos": "tex:termoRelacionado"
+      },
+      {
+        "fonte": "papel",
+        "key": "papel35:SINONIMIA:SINONIMO_ADJ_DE:composito",
+        "ili": null,
+        "membros": [
+          "compósito",
+          "heterogéneo",
+          "mesclado"
+        ],
+        "gloss": "PAPEL SINONIMO_ADJ_DE (SINONIMIA)",
+        "note": "discovery: PAPEL 3.5",
+        "destino": "vocabulario",
+        "termo": "mesclado",
+        "skos": "tex:termoRelacionado"
+      }
+    ]
   },
   "evidencia_delimitacao": {
     "nota": "Registos documentais. Não constituem relações do vocabulário.",
@@ -437,20 +797,6 @@
       },
       {
         "fonte": "pulo",
-        "key": "ili-30-00378985-n",
-        "ili": "ili-30-00378985-n",
-        "membros": [
-          "combinação",
-          "composição"
-        ],
-        "gloss": "o ato de combinar as coisas para formar um todo novo\n",
-        "note": "",
-        "destino": "evidencia",
-        "members_omitted_focal": [],
-        "exclusion_scope": "record_or_sense_not_lemma"
-      },
-      {
-        "fonte": "pulo",
         "key": "ili-30-04341686-n",
         "ili": "ili-30-04341686-n",
         "membros": [
@@ -511,39 +857,28 @@
       },
       {
         "fonte": "pulo",
-        "key": "ili-30-03081660-n",
-        "ili": "ili-30-03081660-n",
-        "membros": [
-          "composição"
-        ],
-        "gloss": "algo que é criado por providenciar várias coisas de modo a formar um todo unificado\n",
-        "note": "",
-        "destino": "evidencia",
-        "members_omitted_focal": [],
-        "exclusion_scope": "record_or_sense_not_lemma"
-      },
-      {
-        "fonte": "pulo",
-        "key": "ili-30-04933544-n",
-        "ili": "ili-30-04933544-n",
-        "membros": [
-          "constituição",
-          "composição"
-        ],
-        "gloss": "a maneira em que alguém ou alguma coisa é composto\n",
-        "note": "",
-        "destino": "evidencia",
-        "members_omitted_focal": [],
-        "exclusion_scope": "record_or_sense_not_lemma"
-      },
-      {
-        "fonte": "pulo",
         "key": "ili-30-05076472-n",
         "ili": "ili-30-05076472-n",
         "membros": [
           "composição"
         ],
         "gloss": "a propriedade espacial resultante do acordo das partes em relação às outras e a toda\n",
+        "note": "",
+        "destino": "evidencia",
+        "members_omitted_focal": [],
+        "exclusion_scope": "record_or_sense_not_lemma"
+      },
+      {
+        "fonte": "pulo",
+        "key": "ili-30-06409752-n",
+        "ili": "ili-30-06409752-n",
+        "membros": [
+          "relatório",
+          "redação",
+          "tema",
+          "composição"
+        ],
+        "gloss": "um ensaio (especialmente um escrito como uma atribuição)\n",
         "note": "",
         "destino": "evidencia",
         "members_omitted_focal": [],
@@ -684,6 +1019,20 @@
       },
       {
         "fonte": "pulo",
+        "key": "ili-30-00594413-a",
+        "ili": "ili-30-00594413-a",
+        "membros": [
+          "contínuo",
+          "constante"
+        ],
+        "gloss": "continuidade no tempo ou no espaço, sem interrupção\n",
+        "note": "",
+        "destino": "evidencia",
+        "members_omitted_focal": [],
+        "exclusion_scope": "record_or_sense_not_lemma"
+      },
+      {
+        "fonte": "pulo",
         "key": "ili-30-00595299-a",
         "ili": "ili-30-00595299-a",
         "membros": [
@@ -745,6 +1094,21 @@
           "firme"
         ],
         "gloss": "marcado pela firme determinação ou resolução; Não shakable\n",
+        "note": "",
+        "destino": "evidencia",
+        "members_omitted_focal": [],
+        "exclusion_scope": "record_or_sense_not_lemma"
+      },
+      {
+        "fonte": "pulo",
+        "key": "ili-30-02301560-a",
+        "ili": "ili-30-02301560-a",
+        "membros": [
+          "regular",
+          "constante",
+          "estável"
+        ],
+        "gloss": "não sujeitos a mudança ou variação, especialmente no comportamento\n",
         "note": "",
         "destino": "evidencia",
         "members_omitted_focal": [],

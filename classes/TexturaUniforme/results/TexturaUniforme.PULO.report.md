@@ -2,8 +2,8 @@
 
 - **Eixo definidor:** invariância face a um parâmetro
 - **Fonte:** PULO / WordNet.PT export (âncora ILI; sem porta estatística)
-- **Gerado:** 2026-07-27T12:38:23
-- **Estado global:** ✅ TODAS AS ASSERÇÕES PASSARAM
+- **Gerado:** 2026-08-07T13:21:35
+- **Estado global:** ❌ EXISTEM ASSERÇÕES FALHADAS
 
 ## Quadro de asserções (protocolo)
 
@@ -12,7 +12,7 @@
 | Etapa 1 | Todo o synset admitido tem ili_offset e glosa mapeada ao eixo. | PASS ✅ | OK |
 | Etapa 1 | Nenhum synset off-axis (exclude) figura na lista branca admitida. | PASS ✅ | OK |
 | Etapa 1 | A lista branca é persistida por offset ILI e os offsets são únicos. | PASS ✅ | OK |
-| ILI | Nenhum id oewn-/por- é usado como chave de junção; a chave é o ILI. | PASS ✅ | OK |
+| ILI | Nenhum id oewn-/por- é usado como chave de junção; a chave é o ILI. | FAIL ❌ | offsets não-ILI na lista branca: ['pwn30-01200095-a', 'pwn30-01966488-a'] |
 | ILI | Synsets sem ili_offset são sinalizados (não descartados em silêncio). | PASS ✅ | nenhum synset sem ILI no export |
 | Etapa 2 | Os sinónimos colhidos provêm exclusivamente de synsets admitidos. | PASS ✅ | OK |
 | Etapa 3 | Alvos de relação são tipados pelo mapeamento; «(no lemma)» nunca admitido. | PASS ✅ | OK (35 alvos «(no lemma)» descartados) |
@@ -21,13 +21,13 @@
 | Garantia | Termos com garantia «estipulativa» têm definição E relação estrutural. | PASS ✅ | OK |
 | Consistência | Nenhum termo é UF de duas classes com owl:disjointWith entre si. | PASS ✅ | OK |
 | Consistência | Nenhum estatuto de evidência (contraste/atributo) em admitidos. | PASS ✅ | OK |
-| Serialização | X.skos.ttl analisa com rdflib e tem a contagem de triplos esperada. | PASS ✅ | triplos esperados=16, analisados=16 |
+| Serialização | X.skos.ttl analisa com rdflib e tem a contagem de triplos esperada. | PASS ✅ | triplos esperados=12, analisados=12 |
 
 ## Etapa 1 — Selecção de acepções (lista branca ILI)
-- **UF** `ili-30-01200095-a` — que se mantém o mesmo; constante e invariável ao longo do parâmetro
-- **UF** `ili-30-01966488-a` — sempre o mesmo parâmetro; imutável e uniforme
+- **UF** `pwn30-01200095-a` — que se mantém o mesmo; constante e invariável ao longo do parâmetro
+- **UF** `pwn30-01966488-a` — sempre o mesmo parâmetro; imutável e uniforme
 - **RT** `ili-30-04745370-n` — ausência de variação; invariância e uniformidade de um parâmetro
-- Excluídos (off-axis): `['ili-30-00909545-a', 'ili-30-02302187-a', 'ili-30-00910101-a', 'ili-30-04509592-n', 'ili-30-00744506-a', None]`
+- Excluídos (off-axis): `['pwn30-00909545-a', 'pwn30-02302187-a', 'pwn30-00910101-a', 'pwn30-04509592-n', 'pwn30-00744506-a', 'por-30-99999999-x']`
 
 ## Etapa 2 — Sementes (sinónimos de synsets admitidos)
 Total: **8** — coerente, constante, imutável, invariável, invariância, periódico, uniforme, uniformidade
@@ -114,26 +114,26 @@ Total: **8** — coerente, constante, imutável, invariável, invariância, peri
 Nenhum termo descartado.
 
 ## Etapa 5 — Adjudicação + §7 proveniência
-Admitidos: **7**  ·  Pendentes: **11**  ·  (atributo/oposicao/vizinha = evidência, fora de provenance)
+Admitidos: **7**  ·  Pendentes: **10**  ·  (atributo/oposicao/vizinha = evidência, fora de provenance)
 
 | termo | estatuto | via | offset/ILI | teste decisivo | garantia | definição |
 |-------|----------|-----|------------|----------------|----------|-----------|
-| uniforme | UF | derivationally related form | ili-30-01200095-a, ili-30-01966488-a | derivado do sentido (PASSO 3) | sense_decision | — |
-| constante | UF | seed (Etapa 1/2) | ili-30-01200095-a | derivado do sentido (PASSO 3) | sense_decision | — |
-| invariável | UF | seed (Etapa 1/2) | ili-30-01200095-a | derivado do sentido (PASSO 3) | sense_decision | — |
-| imutável | UF | seed (Etapa 1/2) | ili-30-01966488-a | derivado do sentido (PASSO 3) | sense_decision | — |
+| uniforme | UF | derivationally related form | pwn30-01200095-a, pwn30-01966488-a | derivado do sentido (PASSO 3) | sense_decision | — |
+| constante | UF | seed (Etapa 1/2) | pwn30-01200095-a | derivado do sentido (PASSO 3) | sense_decision | — |
+| invariável | UF | seed (Etapa 1/2) | pwn30-01200095-a | derivado do sentido (PASSO 3) | sense_decision | — |
+| imutável | UF | seed (Etapa 1/2) | pwn30-01966488-a | derivado do sentido (PASSO 3) | sense_decision | — |
 | uniformidade | RT | derivationally related form | ili-30-04745370-n | derivado do sentido (PASSO 3) | sense_decision | — |
 | invariância | RT | seed (Etapa 1/2) | ili-30-04745370-n | derivado do sentido (PASSO 3) | sense_decision | — |
 | periódico | RT | seed (Etapa 1/2) | ili-30-04745370-n | derivado do sentido (PASSO 3) | sense_decision | — |
 
 ### Pendentes (necessitam de decisão na spec `adjudication`)
-afinidade, analogia, coerente, conformidade, homogéneo, imagem, parecença, parentesco, politípica, semelhança, similitude
+afinidade, analogia, coerente, conformidade, homogéneo, imagem, parecença, parentesco, semelhança, similitude
 
-## §6 — Mapeamento SKOS-XL / OWL (só Bloco A)
+## §6 — Mapeamento SKOS / OWL (só Bloco A)
 - `skos:prefLabel` → **uniforme**
-- `skosxl:altLabel` (UF) → constante, imutável, invariável, uniforme
+- `skos:altLabel` (UF) → constante, imutável, invariável, uniforme
 - `:termoRelacionado` (RT) → invariância, periódico, uniformidade
 - `skos:broader` (BT) → —
 - `skos:narrower` (NT) → —
 
-_Evidência (`atributo`, oposição, vizinha, sinalização) NÃO é serializada como relação SKOS/SKOS-XL._
+_Evidência (`atributo`, oposição, vizinha, sinalização) NÃO é serializada como relação SKOS._

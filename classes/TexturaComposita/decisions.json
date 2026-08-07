@@ -476,7 +476,7 @@
         "mesclado",
         "constituído"
       ],
-      "decision": "RT",
+      "decision": "UF",
       "note": "",
       "destino": "vocabulario"
     },
@@ -492,14 +492,14 @@
         "compósito",
         "heterogêneo"
       ],
-      "decision": "RT",
+      "decision": "UF",
       "note": "",
       "destino": "vocabulario"
     },
     {
       "source": "onto",
       "key": "ontopt06:6214",
-      "ili": "",
+      "ili": "i6556",
       "local_id": "",
       "pos": "",
       "gloss": "",
@@ -513,7 +513,8 @@
       ],
       "decision": "UF",
       "note": "",
-      "destino": "vocabulario"
+      "destino": "vocabulario",
+      "ili_source": "onto_ili_accepted"
     },
     {
       "source": "onto",
@@ -1071,9 +1072,9 @@
         "combinação",
         "composição"
       ],
-      "decision": "exclude",
+      "decision": "RT",
       "note": "",
-      "destino": "evidencia"
+      "destino": "vocabulario"
     },
     {
       "source": "pulo",
@@ -1149,9 +1150,9 @@
       "members": [
         "composição"
       ],
-      "decision": "exclude",
+      "decision": "RT",
       "note": "",
-      "destino": "evidencia"
+      "destino": "vocabulario"
     },
     {
       "source": "pulo",
@@ -1164,9 +1165,9 @@
         "constituição",
         "composição"
       ],
-      "decision": "exclude",
+      "decision": "RT",
       "note": "",
-      "destino": "evidencia"
+      "destino": "vocabulario"
     },
     {
       "source": "pulo",
@@ -1195,8 +1196,9 @@
         "tema",
         "composição"
       ],
-      "decision": "",
-      "note": ""
+      "decision": "exclude",
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "pulo",
@@ -1350,8 +1352,9 @@
         "contínuo",
         "constante"
       ],
-      "decision": "",
-      "note": ""
+      "decision": "exclude",
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "pulo",
@@ -1437,8 +1440,9 @@
         "constante",
         "estável"
       ],
-      "decision": "",
-      "note": ""
+      "decision": "exclude",
+      "note": "",
+      "destino": "evidencia"
     },
     {
       "source": "pulo",
@@ -1523,8 +1527,9 @@
         "misturado",
         "mulato"
       ],
-      "decision": "",
-      "note": ""
+      "decision": "RT",
+      "note": "",
+      "destino": "vocabulario"
     },
     {
       "source": "papel",
@@ -1537,8 +1542,9 @@
         "compósito",
         "material"
       ],
-      "decision": "",
-      "note": "discovery: PAPEL 3.5"
+      "decision": "UF",
+      "note": "discovery: PAPEL 3.5",
+      "destino": "vocabulario"
     },
     {
       "source": "papel",
@@ -1551,8 +1557,9 @@
         "compósito",
         "utilidade"
       ],
-      "decision": "",
-      "note": "discovery: PAPEL 3.5"
+      "decision": "RT",
+      "note": "discovery: PAPEL 3.5",
+      "destino": "vocabulario"
     },
     {
       "source": "papel",
@@ -1565,8 +1572,9 @@
         "compósito",
         "substância"
       ],
-      "decision": "",
-      "note": "discovery: PAPEL 3.5"
+      "decision": "UF",
+      "note": "discovery: PAPEL 3.5",
+      "destino": "vocabulario"
     },
     {
       "source": "papel",
@@ -1579,8 +1587,9 @@
         "compósito",
         "ter diverso utilidade"
       ],
-      "decision": "",
-      "note": "discovery: PAPEL 3.5"
+      "decision": "RT",
+      "note": "discovery: PAPEL 3.5",
+      "destino": "vocabulario"
     },
     {
       "source": "papel",
@@ -1594,8 +1603,9 @@
         "heterogéneo",
         "mesclado"
       ],
-      "decision": "",
-      "note": "discovery: PAPEL 3.5"
+      "decision": "RT",
+      "note": "discovery: PAPEL 3.5",
+      "destino": "vocabulario"
     }
   ],
   "terms": [],

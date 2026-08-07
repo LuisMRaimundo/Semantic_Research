@@ -1,0 +1,75 @@
+{
+  "type": "pulo_thesaurus_search",
+  "query": {
+    "query": "direccional",
+    "pos": null,
+    "mode": "Contains"
+  },
+  "count": 1,
+  "synsets": [
+    {
+      "synset_offset": "por-30-02714141-a",
+      "pos": "a",
+      "gloss": "não direcional\n",
+      "synonyms": [
+        "omnidireccional"
+      ],
+      "ili": [
+        {
+          "ili_offset": "pwn30-02714141-a",
+          "pwn_id": "pwn30-02714141-a",
+          "pwn_version": "3.0",
+          "pwn_offset": "02714141",
+          "part_of_speech": "a",
+          "cili": "i15237",
+          "cili_id": "i15237",
+          "cili_uri": "http://ili.globalwordnet.org/ili/i15237",
+          "source_curie": "oewn-ili:i15237",
+          "oewn_id": null,
+          "mapping_status": "official",
+          "legacy_omw_ili": "ili-30-02714141-a",
+          "ili_wn_id": "eng-30",
+          "source": "PULO",
+          "cili_page": "https://globalwordnet.github.io/cili/i15237.html"
+        }
+      ],
+      "relations": [
+        {
+          "relation": "pertainym",
+          "targets": [
+            {
+              "words": "trajetória, curso, direcção, caminho",
+              "gloss": "a relação espacial entre uma coisa e o curso ao longo do qual ele aponta ou move\n"
+            }
+          ]
+        },
+        {
+          "relation": "antonym",
+          "targets": [
+            {
+              "words": "(no lemma)",
+              "gloss": "relativas ou indicando as direções no espaço\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "relativas ou indicando as direções no espaço\n"
+            }
+          ]
+        },
+        {
+          "relation": "relation #61 (inverse)",
+          "targets": [
+            {
+              "words": "não",
+              "gloss": "negação de uma palavra ou grupo de palavras\n"
+            },
+            {
+              "words": "(no lemma)",
+              "gloss": "relativas ou indicando as direções no espaço\n"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

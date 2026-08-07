@@ -6,7 +6,7 @@
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaMetamorfica
-# generated 2026-07-31T03:21:28+00:00
+# generated 2026-08-07T12:35:47+00:00
 # policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaMetamorfica a owl:Class, skos:Concept ;
@@ -22,18 +22,9 @@ sr:TexturaMetamorfica a owl:Class, skos:Concept ;
     skos:altLabel "transmutação"@pt-PT ;
     skos:altLabel "transformação"@pt-PT ;
     skos:altLabel "alteração"@pt-PT ;
-    sr:excludedCandidate [ rdf:value "cambiar"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
-    sr:excludedCandidate [ rdf:value "converter"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
-    sr:excludedCandidate [ rdf:value "demudar"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
-    sr:excludedCandidate [ rdf:value "evolucionar"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
-    sr:excludedCandidate [ rdf:value "evoluir"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
-    sr:excludedCandidate [ rdf:value "falsificar"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
-    sr:excludedCandidate [ rdf:value "metamorfosear"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
-    sr:excludedCandidate [ rdf:value "perturbar"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
-    sr:excludedCandidate [ rdf:value "tornar"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
-    sr:excludedCandidate [ rdf:value "tranformar"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
-    sr:excludedCandidate [ rdf:value "transformar"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
-    sr:excludedCandidate [ rdf:value "alterar"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
-    sr:excludedCandidate [ rdf:value "mudar"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
-    sr:excludedCandidate [ rdf:value "modificar"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "causar à mudança; fazer diferente; causar uma transformação " ] ;
-    rdfs:comment "UF senses=6; RT=0; exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .
+    skos:altLabel "metamórfico"@pt-PT ;
+    skos:altLabel "sofrer metamorfismo"@pt-PT ;
+    skos:altLabel "metamorfos de ser"@pt-PT ;
+    skos:altLabel "pirometamorfismo"@pt-PT ;
+    skos:altLabel "pirometamórfico"@pt-PT ;
+    rdfs:comment "UF senses=8; RT=1; exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .

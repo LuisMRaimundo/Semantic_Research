@@ -1,7 +1,7 @@
 {
   "class": "TexturaComposita",
   "policy": "conservative",
-  "generated": "2026-07-31T04:21:27",
+  "generated": "2026-08-04T22:45:36",
   "columns": [
     "ONTO",
     "PULO",
@@ -17,12 +17,12 @@
     "PULO": {
       "source_available": true,
       "source_queried": true,
-      "source_contributed_results": false
+      "source_contributed_results": true
     },
     "OWN-PT": {
       "source_available": true,
       "source_queried": true,
-      "source_contributed_results": false
+      "source_contributed_results": true
     },
     "WordNet": {
       "source_available": true,
@@ -38,23 +38,414 @@
       "source_contributed_results": false
     }
   },
-  "join_counts": {},
-  "legacy_equivalence_map": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\classes\\TexturaComposita\\out\\ili_equivalence.cili.json",
+  "join_counts": {
+    "single": 16
+  },
+  "legacy_equivalence_map": "E:\\PYTHON CODES\\Semantic_Research\\classes\\TexturaComposita\\out\\ili_equivalence.cili.json",
   "legacy_equivalence_counts": {
     "mapped": 0,
     "review": 0,
     "unmatched": 32
   },
   "legacy_equivalence_loaded": false,
-  "concepts": [],
+  "concepts": [
+    {
+      "term": "amalgamado",
+      "ili": [
+        "i6556"
+      ],
+      "sources": {
+        "ONTO": "—",
+        "PULO": "RT",
+        "OWN-PT": "—",
+        "WordNet": "—"
+      },
+      "join": "single",
+      "veredicto": "fonte única",
+      "proposta_final": "RT",
+      "unmapped_flag": false,
+      "status_projection": {},
+      "divergences": [],
+      "union_of_provenance": [
+        "PULO:seed (Etapa 1/2)"
+      ],
+      "notes": []
+    },
+    {
+      "term": "cabrito",
+      "ili": [
+        "i6556"
+      ],
+      "sources": {
+        "ONTO": "—",
+        "PULO": "RT",
+        "OWN-PT": "—",
+        "WordNet": "—"
+      },
+      "join": "single",
+      "veredicto": "fonte única",
+      "proposta_final": "RT",
+      "unmapped_flag": false,
+      "status_projection": {},
+      "divergences": [],
+      "union_of_provenance": [
+        "PULO:seed (Etapa 1/2)"
+      ],
+      "notes": []
+    },
+    {
+      "term": "combinação",
+      "ili": [
+        "i37400"
+      ],
+      "sources": {
+        "ONTO": "—",
+        "PULO": "RT",
+        "OWN-PT": "—",
+        "WordNet": "—"
+      },
+      "join": "single",
+      "veredicto": "fonte única",
+      "proposta_final": "RT",
+      "unmapped_flag": false,
+      "status_projection": {},
+      "divergences": [],
+      "union_of_provenance": [
+        "PULO:seed (Etapa 1/2)"
+      ],
+      "notes": []
+    },
+    {
+      "term": "composição",
+      "ili": [
+        "i37400",
+        "i52229",
+        "i62908"
+      ],
+      "sources": {
+        "ONTO": "—",
+        "PULO": "RT",
+        "OWN-PT": "—",
+        "WordNet": "—"
+      },
+      "join": "single",
+      "veredicto": "fonte única",
+      "proposta_final": "RT",
+      "unmapped_flag": false,
+      "status_projection": {},
+      "divergences": [],
+      "union_of_provenance": [
+        "PULO:seed (Etapa 1/2)"
+      ],
+      "notes": []
+    },
+    {
+      "term": "constituição",
+      "ili": [
+        "i62908"
+      ],
+      "sources": {
+        "ONTO": "—",
+        "PULO": "RT",
+        "OWN-PT": "—",
+        "WordNet": "—"
+      },
+      "join": "single",
+      "veredicto": "fonte única",
+      "proposta_final": "RT",
+      "unmapped_flag": false,
+      "status_projection": {},
+      "divergences": [],
+      "union_of_provenance": [
+        "PULO:seed (Etapa 1/2)"
+      ],
+      "notes": []
+    },
+    {
+      "term": "diverso",
+      "ili": [
+        "i6556"
+      ],
+      "sources": {
+        "ONTO": "—",
+        "PULO": "RT",
+        "OWN-PT": "—",
+        "WordNet": "—"
+      },
+      "join": "single",
+      "veredicto": "fonte única",
+      "proposta_final": "RT",
+      "unmapped_flag": false,
+      "status_projection": {},
+      "divergences": [],
+      "union_of_provenance": [
+        "PULO:seed (Etapa 1/2)"
+      ],
+      "notes": []
+    },
+    {
+      "term": "híbrido",
+      "ili": [
+        "i6556"
+      ],
+      "sources": {
+        "ONTO": "—",
+        "PULO": "RT",
+        "OWN-PT": "—",
+        "WordNet": "—"
+      },
+      "join": "single",
+      "veredicto": "fonte única",
+      "proposta_final": "RT",
+      "unmapped_flag": false,
+      "status_projection": {},
+      "divergences": [],
+      "union_of_provenance": [
+        "PULO:seed (Etapa 1/2)"
+      ],
+      "notes": []
+    },
+    {
+      "term": "mesclado",
+      "ili": [
+        "i6556"
+      ],
+      "sources": {
+        "ONTO": "—",
+        "PULO": "RT",
+        "OWN-PT": "—",
+        "WordNet": "—"
+      },
+      "join": "single",
+      "veredicto": "fonte única",
+      "proposta_final": "RT",
+      "unmapped_flag": false,
+      "status_projection": {},
+      "divergences": [],
+      "union_of_provenance": [
+        "PULO:seed (Etapa 1/2)"
+      ],
+      "notes": []
+    },
+    {
+      "term": "mestiço",
+      "ili": [
+        "i6556"
+      ],
+      "sources": {
+        "ONTO": "—",
+        "PULO": "RT",
+        "OWN-PT": "—",
+        "WordNet": "—"
+      },
+      "join": "single",
+      "veredicto": "fonte única",
+      "proposta_final": "RT",
+      "unmapped_flag": false,
+      "status_projection": {},
+      "divergences": [],
+      "union_of_provenance": [
+        "PULO:seed (Etapa 1/2)"
+      ],
+      "notes": []
+    },
+    {
+      "term": "misto",
+      "ili": [
+        "i6556"
+      ],
+      "sources": {
+        "ONTO": "—",
+        "PULO": "RT",
+        "OWN-PT": "—",
+        "WordNet": "—"
+      },
+      "join": "single",
+      "veredicto": "fonte única",
+      "proposta_final": "RT",
+      "unmapped_flag": false,
+      "status_projection": {},
+      "divergences": [],
+      "union_of_provenance": [
+        "PULO:seed (Etapa 1/2)"
+      ],
+      "notes": []
+    },
+    {
+      "term": "misturado",
+      "ili": [
+        "i6556"
+      ],
+      "sources": {
+        "ONTO": "—",
+        "PULO": "RT",
+        "OWN-PT": "—",
+        "WordNet": "—"
+      },
+      "join": "single",
+      "veredicto": "fonte única",
+      "proposta_final": "RT",
+      "unmapped_flag": false,
+      "status_projection": {},
+      "divergences": [],
+      "union_of_provenance": [
+        "PULO:seed (Etapa 1/2)"
+      ],
+      "notes": []
+    },
+    {
+      "term": "mulato",
+      "ili": [
+        "i6556"
+      ],
+      "sources": {
+        "ONTO": "—",
+        "PULO": "RT",
+        "OWN-PT": "—",
+        "WordNet": "—"
+      },
+      "join": "single",
+      "veredicto": "fonte única",
+      "proposta_final": "RT",
+      "unmapped_flag": false,
+      "status_projection": {},
+      "divergences": [],
+      "union_of_provenance": [
+        "PULO:seed (Etapa 1/2)"
+      ],
+      "notes": []
+    },
+    {
+      "term": "Composição",
+      "ili": [
+        "i67721"
+      ],
+      "sources": {
+        "ONTO": "—",
+        "PULO": "—",
+        "OWN-PT": "atestado",
+        "WordNet": "—"
+      },
+      "join": "single",
+      "veredicto": "sinalização",
+      "proposta_final": null,
+      "unmapped_flag": false,
+      "status_projection": {},
+      "divergences": [],
+      "union_of_provenance": [
+        "OWN-PT:atestado",
+        "OWN-PT:atestado OWN-PT [own-pt:1.0.0] via ILI i67721 · oewn-05878802-n",
+        "OWN-PT:lexicon=own-pt:1.0.0"
+      ],
+      "notes": [
+        "OWN-PT: atestado OWN-PT [own-pt:1.0.0] via ILI i67721 · oewn-05878802-n"
+      ]
+    },
+    {
+      "term": "composto",
+      "ili": [
+        "i67721"
+      ],
+      "sources": {
+        "ONTO": "—",
+        "PULO": "—",
+        "OWN-PT": "atestado",
+        "WordNet": "—"
+      },
+      "join": "single",
+      "veredicto": "sinalização",
+      "proposta_final": null,
+      "unmapped_flag": false,
+      "status_projection": {},
+      "divergences": [],
+      "union_of_provenance": [
+        "OWN-PT:atestado",
+        "OWN-PT:atestado OWN-PT [own-pt:1.0.0] via ILI i67721 · oewn-05878802-n",
+        "OWN-PT:lexicon=own-pt:1.0.0"
+      ],
+      "notes": [
+        "OWN-PT: atestado OWN-PT [own-pt:1.0.0] via ILI i67721 · oewn-05878802-n"
+      ]
+    },
+    {
+      "term": "composto químico",
+      "ili": [
+        "i114921"
+      ],
+      "sources": {
+        "ONTO": "—",
+        "PULO": "—",
+        "OWN-PT": "atestado",
+        "WordNet": "—"
+      },
+      "join": "single",
+      "veredicto": "sinalização",
+      "proposta_final": null,
+      "unmapped_flag": false,
+      "status_projection": {},
+      "divergences": [],
+      "union_of_provenance": [
+        "OWN-PT:atestado",
+        "OWN-PT:atestado OWN-PT [own-pt:1.0.0] via ILI i114921 · oewn-14842408-n",
+        "OWN-PT:lexicon=own-pt:1.0.0"
+      ],
+      "notes": [
+        "OWN-PT: atestado OWN-PT [own-pt:1.0.0] via ILI i114921 · oewn-14842408-n",
+        "excluded_cili:i114921"
+      ]
+    },
+    {
+      "term": "substância química",
+      "ili": [
+        "i114921"
+      ],
+      "sources": {
+        "ONTO": "—",
+        "PULO": "—",
+        "OWN-PT": "atestado",
+        "WordNet": "—"
+      },
+      "join": "single",
+      "veredicto": "sinalização",
+      "proposta_final": null,
+      "unmapped_flag": false,
+      "status_projection": {},
+      "divergences": [],
+      "union_of_provenance": [
+        "OWN-PT:atestado",
+        "OWN-PT:atestado OWN-PT [own-pt:1.0.0] via ILI i114921 · oewn-14842408-n",
+        "OWN-PT:lexicon=own-pt:1.0.0"
+      ],
+      "notes": [
+        "OWN-PT: atestado OWN-PT [own-pt:1.0.0] via ILI i114921 · oewn-14842408-n",
+        "excluded_cili:i114921"
+      ]
+    }
+  ],
   "summary": {
-    "veredicto_totals": {},
-    "descartados_pendentes": 0,
+    "veredicto_totals": {
+      "fonte única": 12,
+      "sinalização": 4
+    },
+    "descartados_pendentes": 10,
     "convergencia_plena": [],
     "convergencia_sentido": [],
     "convergencia_termo": [],
     "divergences": [],
-    "fonte_unica": [],
+    "fonte_unica": [
+      "amalgamado",
+      "cabrito",
+      "combinação",
+      "composição",
+      "constituição",
+      "diverso",
+      "híbrido",
+      "mesclado",
+      "mestiço",
+      "misto",
+      "misturado",
+      "mulato"
+    ],
     "auto_contrast_coverage": {
       "per_source": {
         "PULO": {
@@ -76,9 +467,14 @@
           "terms": []
         }
       },
-      "anchored_ilis_total": 0,
+      "anchored_ilis_total": 4,
       "anchored_ilis_with_auto_contrast": [],
-      "anchored_ilis_without_auto_contrast": [],
+      "anchored_ilis_without_auto_contrast": [
+        "i37400",
+        "i52229",
+        "i62908",
+        "i6556"
+      ],
       "sources_without_antonymy": [
         "PULO"
       ]
@@ -113,7 +509,7 @@
       "id": "T5",
       "text": "Nenhum termo admitido pelos motores é descartado da matriz (PULO; OWN-PT/WordNet corroboram; Onto = descoberta)",
       "passed": true,
-      "evidence": "0 admitidos / 0 em matriz"
+      "evidence": "12 admitidos / 12 em matriz"
     },
     {
       "id": "T6",
@@ -155,7 +551,7 @@
       "id": "T9",
       "text": "concordance.json faz round-trip (contagens de term/ili estáveis).",
       "passed": true,
-      "evidence": "0 conceitos"
+      "evidence": "16 conceitos"
     },
     {
       "id": "T13",

@@ -1,21 +1,21 @@
 {
   "schema": "semantic_research.ili_coverage/1",
-  "generated": "2026-07-27T11:39:44+00:00",
+  "generated": "2026-08-07T12:35:47+00:00",
   "pins": {
-    "oewn": "oewn:2024",
+    "oewn": "oewn:2025",
     "cili_commit": "upstream-master+pwn30+pwn31+wn.ili",
-    "cili_map": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\engines\\LexWarrant\\data\\cili\\ili-map-pwn30.tab"
+    "cili_map": "E:\\PYTHON CODES\\Semantic_Research\\engines\\LexWarrant\\data\\cili\\ili-map-pwn30.tab"
   },
   "cili": {
     "version": "cili@upstream-master+pwn30+pwn31+wn.ili",
     "ili_ids": 117659,
     "note": "Resolver loads PWN-3.0 + PWN-3.1 offset maps, and validates bare i… ids via wn.ili when missing from the TSVs. Unresolved ids are listed here — never silently dropped."
   },
-  "n_identifiers": 92,
-  "n_resolved": 23,
+  "n_identifiers": 105,
+  "n_resolved": 30,
   "n_unresolved_oewn_ili": 0,
   "n_unresolved_pulo_offset": 1,
-  "n_unresolved_other": 68,
+  "n_unresolved_other": 74,
   "n_cili_joinable": 8,
   "n_cili_singleton": 7,
   "joinable_cili": [
@@ -23,42 +23,48 @@
       "cili": "i10771",
       "raw": [
         "i10771",
-        "ili-30-01966488-a"
+        "ili-30-01966488-a",
+        "pwn30-01966488-a"
       ]
     },
     {
       "cili": "i12748",
       "raw": [
         "i12748",
-        "ili-30-02302187-a"
+        "ili-30-02302187-a",
+        "pwn30-02302187-a"
       ]
     },
     {
       "cili": "i4126",
       "raw": [
         "i4126",
-        "ili-30-00744506-a"
+        "ili-30-00744506-a",
+        "pwn30-00744506-a"
       ]
     },
     {
       "cili": "i4979",
       "raw": [
         "i4979",
-        "ili-30-00909545-a"
+        "ili-30-00909545-a",
+        "pwn30-00909545-a"
       ]
     },
     {
       "cili": "i4980",
       "raw": [
         "i4980",
-        "ili-30-00910101-a"
+        "ili-30-00910101-a",
+        "pwn30-00910101-a"
       ]
     },
     {
       "cili": "i60712",
       "raw": [
         "i60712",
-        "ili-30-04509592-n"
+        "ili-30-04509592-n",
+        "pwn30-04509592-n"
       ]
     },
     {
@@ -72,7 +78,8 @@
       "cili": "i6560",
       "raw": [
         "i6560",
-        "ili-30-01200095-a"
+        "ili-30-01200095-a",
+        "pwn30-01200095-a"
       ]
     }
   ],
@@ -153,9 +160,7 @@
     "contopt:5719",
     "contopt:9180",
     "contopt:9502",
-    "fuzzythes:1661",
     "fuzzythes:1920",
-    "fuzzythes:2140",
     "fuzzythes:23180",
     "fuzzythes:23298",
     "fuzzythes:23495",
@@ -166,14 +171,22 @@
     "fuzzythes:26484",
     "fuzzythes:27091",
     "fuzzythes:27110",
-    "fuzzythes:3480",
     "ontopt06:1186",
     "ontopt06:2131",
     "ontopt06:2133",
-    "ontopt06:28292",
     "ontopt06:2945",
     "ontopt06:787",
     "ontopt06:803",
+    "papel35:FINALIDADE:FAZ_SE_COM:uniforme",
+    "papel35:HIPERONIMIA:HIPERONIMO_DE:uniforme",
+    "papel35:MANEIRA:MANEIRA_POR_MEIO_DE:uniforme",
+    "papel35:MANEIRA_SEM:MANEIRA_SEM:uniforme",
+    "papel35:PARTE:PARTE_DE_ALGO_COM_PROPRIEDADE:uniforme",
+    "papel35:QUALIDADE:TEM_QUALIDADE:uniforme",
+    "papel35:REFERENTE:DIZ_SE_DO_QUE:uniforme",
+    "papel35:SINONIMIA:SINONIMO_ADJ_DE:uniforme",
+    "papel35:SINONIMIA:SINONIMO_ADV_DE:uniforme",
+    "papel35:SINONIMIA:SINONIMO_N_DE:uniforme",
     "polaridades:1656",
     "polaridades:4425",
     "polaridades:4484",
@@ -186,7 +199,7 @@
       "cili": "i4126"
     },
     {
-      "raw": "ili-30-00744506-a",
+      "raw": "pwn30-00744506-a",
       "cili": "i4126"
     },
     {
@@ -194,7 +207,7 @@
       "cili": "i4980"
     },
     {
-      "raw": "ili-30-00910101-a",
+      "raw": "pwn30-00910101-a",
       "cili": "i4980"
     },
     {
@@ -202,7 +215,7 @@
       "cili": "i4979"
     },
     {
-      "raw": "ili-30-00909545-a",
+      "raw": "pwn30-00909545-a",
       "cili": "i4979"
     },
     {
@@ -210,7 +223,7 @@
       "cili": "i6560"
     },
     {
-      "raw": "ili-30-01200095-a",
+      "raw": "pwn30-01200095-a",
       "cili": "i6560"
     },
     {
@@ -218,7 +231,7 @@
       "cili": "i10771"
     },
     {
-      "raw": "ili-30-01966488-a",
+      "raw": "pwn30-01966488-a",
       "cili": "i10771"
     },
     {
@@ -226,7 +239,7 @@
       "cili": "i12748"
     },
     {
-      "raw": "ili-30-02302187-a",
+      "raw": "pwn30-02302187-a",
       "cili": "i12748"
     },
     {
@@ -234,7 +247,7 @@
       "cili": "i60712"
     },
     {
-      "raw": "ili-30-04509592-n",
+      "raw": "pwn30-04509592-n",
       "cili": "i60712"
     },
     {
@@ -272,6 +285,34 @@
     {
       "raw": "i6559",
       "cili": "i6559"
+    },
+    {
+      "raw": "ili-30-00744506-a",
+      "cili": "i4126"
+    },
+    {
+      "raw": "ili-30-00910101-a",
+      "cili": "i4980"
+    },
+    {
+      "raw": "ili-30-00909545-a",
+      "cili": "i4979"
+    },
+    {
+      "raw": "ili-30-01200095-a",
+      "cili": "i6560"
+    },
+    {
+      "raw": "ili-30-01966488-a",
+      "cili": "i10771"
+    },
+    {
+      "raw": "ili-30-02302187-a",
+      "cili": "i12748"
+    },
+    {
+      "raw": "ili-30-04509592-n",
+      "cili": "i60712"
     }
   ],
   "class_id": "TexturaUniforme"

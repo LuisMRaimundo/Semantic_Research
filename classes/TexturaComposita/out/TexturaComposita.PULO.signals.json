@@ -1,27 +1,391 @@
 {
   "class_id": "TexturaComposita",
-  "count": 3,
+  "count": 55,
   "note": "PULO relation harvest (unnamed #NN / similar-to off-axis). Not decisions — review only if something looks useful; otherwise ignore.",
   "sinalizacao": {
-    "radioactividade": {
-      "display": "radioactividade",
+    "sintetico": {
+      "display": "sintético",
       "via": "relation #61",
-      "source_ili": "ili-30-11444643-n",
-      "target_gloss": "a emissão espontânea de um fluxo de partículas ou raios eletromagnéticos em decadência nuclear\n",
+      "source_ili": "ili-30-00378985-n",
+      "target_gloss": "sistemática de combinação de raiz e elementos em palavras simples modificar\n",
       "reason": "relação não-nomeada / #NN"
     },
-    "radiacao": {
-      "display": "radiação",
+    "fusao": {
+      "display": "fusão",
       "via": "relation #61",
-      "source_ili": "ili-30-11444643-n",
-      "target_gloss": "a emissão espontânea de um fluxo de partículas ou raios eletromagnéticos em decadência nuclear\n",
+      "source_ili": "ili-30-00378985-n",
+      "target_gloss": "a combinação de duas ou mais empresas comerciais\n",
       "reason": "relação não-nomeada / #NN"
     },
-    "conservante": {
-      "display": "conservante",
+    "associacao": {
+      "display": "associação",
       "via": "relation #61",
-      "source_ili": "ili-30-11444643-n",
-      "target_gloss": "um composto químico que é adicionado para proteger contra a deterioração ou decomposição\n",
+      "source_ili": "ili-30-00378985-n",
+      "target_gloss": "(Química) qualquer processo de combinação (especialmente em solução), que depende relativamente fraca ligação química\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "conjunto": {
+      "display": "conjunto",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-00378985-n",
+      "target_gloss": "um conjunto de peças que é considerado como uma única entidade",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "unidade": {
+      "display": "unidade",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-00378985-n",
+      "target_gloss": "um conjunto de peças que é considerado como uma única entidade",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "combinar": {
+      "display": "combinar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-00378985-n",
+      "target_gloss": "combinar de modo a formar um todo; misturar\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "calcar": {
+      "display": "calcar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-00378985-n",
+      "target_gloss": "fazer alguma coisa, geralmente por uma função específica\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "caldear": {
+      "display": "caldear",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-00378985-n",
+      "target_gloss": "fazer alguma coisa, geralmente por uma função específica\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "configurar": {
+      "display": "configurar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-00378985-n",
+      "target_gloss": "fazer alguma coisa, geralmente por uma função específica\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "conformar": {
+      "display": "conformar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-00378985-n",
+      "target_gloss": "fazer alguma coisa, geralmente por uma função específica\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "inventar": {
+      "display": "inventar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-00378985-n",
+      "target_gloss": "fazer alguma coisa, geralmente por uma função específica\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "modelar": {
+      "display": "modelar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-00378985-n",
+      "target_gloss": "fazer alguma coisa, geralmente por uma função específica\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "moldar": {
+      "display": "moldar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-00378985-n",
+      "target_gloss": "fazer alguma coisa, geralmente por uma função específica\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "plasmar": {
+      "display": "plasmar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-00378985-n",
+      "target_gloss": "fazer alguma coisa, geralmente por uma função específica\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "vazar": {
+      "display": "vazar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-00378985-n",
+      "target_gloss": "fazer alguma coisa, geralmente por uma função específica\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "forjar": {
+      "display": "forjar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-00378985-n",
+      "target_gloss": "fazer alguma coisa, geralmente por uma função específica\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "formar": {
+      "display": "formar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-00378985-n",
+      "target_gloss": "fazer alguma coisa, geralmente por uma função específica\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "fazer": {
+      "display": "fazer",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-00378985-n",
+      "target_gloss": "fazer alguma coisa, geralmente por uma função específica\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "coisa": {
+      "display": "coisa",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-00378985-n",
+      "target_gloss": "uma entidade que não é nomeada especificamente\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "todo": {
+      "display": "todo",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-00378985-n",
+      "target_gloss": "todos de alguma coisa, incluindo todos os seus elementos ou partes componentes\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "tudo": {
+      "display": "tudo",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-00378985-n",
+      "target_gloss": "todos de alguma coisa, incluindo todos os seus elementos ou partes componentes\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "totalidade": {
+      "display": "totalidade",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-00378985-n",
+      "target_gloss": "todos de alguma coisa, incluindo todos os seus elementos ou partes componentes\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "colocar": {
+      "display": "colocar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-03081660-n",
+      "target_gloss": "colocar em uma ordem adequada ou sistemática\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "arranjar": {
+      "display": "arranjar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-03081660-n",
+      "target_gloss": "colocar em uma ordem adequada ou sistemática\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "criar": {
+      "display": "criar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-03081660-n",
+      "target_gloss": "trazer à existência\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "produzir": {
+      "display": "produzir",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-03081660-n",
+      "target_gloss": "trazer à existência\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "tornar": {
+      "display": "tornar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-03081660-n",
+      "target_gloss": "trazer à existência\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "abrir": {
+      "display": "abrir",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-03081660-n",
+      "target_gloss": "trazer à existência\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "compor": {
+      "display": "compor",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-03081660-n",
+      "target_gloss": "para compor ou representar: \"esta parede faz o fundo da configuração do palco\"\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "constituir": {
+      "display": "constituir",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-03081660-n",
+      "target_gloss": "para compor ou representar: \"esta parede faz o fundo da configuração do palco\"\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "constituinte": {
+      "display": "constituinte",
+      "via": "relation #61",
+      "source_ili": "ili-30-04933544-n",
+      "target_gloss": "constitucional na estrutura de alguma coisa (especialmente sua constituição física)\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "constitutivo": {
+      "display": "constitutivo",
+      "via": "relation #61",
+      "source_ili": "ili-30-04933544-n",
+      "target_gloss": "constitucional na estrutura de alguma coisa (especialmente sua constituição física)\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "organico": {
+      "display": "orgânico",
+      "via": "relation #61",
+      "source_ili": "ili-30-04933544-n",
+      "target_gloss": "constitucional na estrutura de alguma coisa (especialmente sua constituição física)\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "uniforme": {
+      "display": "uniforme",
+      "via": "relation #61",
+      "source_ili": "ili-30-04933544-n",
+      "target_gloss": "o mesmo em toda a estrutura ou composição\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "coerente": {
+      "display": "coerente",
+      "via": "relation #61",
+      "source_ili": "ili-30-04933544-n",
+      "target_gloss": "o mesmo em toda a estrutura ou composição\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "constitucional": {
+      "display": "constitucional",
+      "via": "relation #61",
+      "source_ili": "ili-30-04933544-n",
+      "target_gloss": "de benefício ou destinadas a beneficiar a sua constituição física\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "constituicao": {
+      "display": "constituição",
+      "via": "relation #61",
+      "source_ili": "ili-30-04933544-n",
+      "target_gloss": "constituição do corpo humano\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "fisico": {
+      "display": "físico",
+      "via": "relation #61",
+      "source_ili": "ili-30-04933544-n",
+      "target_gloss": "constituição do corpo humano\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "resistencia": {
+      "display": "resistência",
+      "via": "relation #61",
+      "source_ili": "ili-30-04933544-n",
+      "target_gloss": "a propriedade de ser forte e saudável na constituição\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "eclesiologia": {
+      "display": "eclesiologia",
+      "via": "relation #61",
+      "source_ili": "ili-30-04933544-n",
+      "target_gloss": "o ramo da teologia em causa com a natureza e a constituição e as funções de uma igreja\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "equipamento": {
+      "display": "equipamento",
+      "via": "relation #61",
+      "source_ili": "ili-30-04933544-n",
+      "target_gloss": "a substância tangível que vai para a composição de um objeto físico\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "materia": {
+      "display": "matéria",
+      "via": "relation #61",
+      "source_ili": "ili-30-04933544-n",
+      "target_gloss": "a substância tangível que vai para a composição de um objeto físico\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "material": {
+      "display": "material",
+      "via": "relation #61",
+      "source_ili": "ili-30-04933544-n",
+      "target_gloss": "a substância tangível que vai para a composição de um objeto físico\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "alma": {
+      "display": "alma",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04933544-n",
+      "target_gloss": "Homo sapiens\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "cidadao": {
+      "display": "cidadão",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04933544-n",
+      "target_gloss": "Homo sapiens\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "corpo": {
+      "display": "corpo",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04933544-n",
+      "target_gloss": "Homo sapiens\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "individualidade": {
+      "display": "individualidade",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04933544-n",
+      "target_gloss": "Homo sapiens\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "individuo": {
+      "display": "indivíduo",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04933544-n",
+      "target_gloss": "Homo sapiens\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "pessoa": {
+      "display": "pessoa",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04933544-n",
+      "target_gloss": "Homo sapiens\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "sujeito": {
+      "display": "sujeito",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04933544-n",
+      "target_gloss": "Homo sapiens\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "humano": {
+      "display": "humano",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04933544-n",
+      "target_gloss": "Homo sapiens\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "mortal": {
+      "display": "mortal",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04933544-n",
+      "target_gloss": "Homo sapiens\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "modo": {
+      "display": "modo",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04933544-n",
+      "target_gloss": "como algo é feito ou como isso acontece\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "estilo": {
+      "display": "estilo",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04933544-n",
+      "target_gloss": "como algo é feito ou como isso acontece\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "forma": {
+      "display": "forma",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-04933544-n",
+      "target_gloss": "como algo é feito ou como isso acontece\n",
       "reason": "relação não-nomeada / #NN"
     }
   }

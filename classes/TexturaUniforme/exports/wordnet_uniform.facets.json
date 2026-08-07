@@ -4,7 +4,7 @@
   "pos": "Todas",
   "language": "English",
   "class_id": "TexturaUniforme",
-  "generated": "2026-07-26T21:36:38",
+  "generated": "2026-08-07T12:46:07",
   "count": 6,
   "facets": [
     "synsets_relations"
@@ -75,7 +75,17 @@
           }
         ],
         "attribute": [],
-        "also_see": []
+        "also_see": [
+          {
+            "id": "oewn-01203294-a",
+            "ili": "i6559",
+            "words": [
+              "homogeneous",
+              "homogenous"
+            ],
+            "gloss": "all of the same or similar kind or nature"
+          }
+        ]
       }
     },
     {

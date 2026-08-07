@@ -1,16 +1,17 @@
 {
   "schema": "semantic_research.concept_registry/3",
-  "generated": "2026-07-31T03:21:28+00:00",
-  "root": "C:\\Users\\lmr20\\Desktop\\Semantic_Research",
+  "generated": "2026-08-07T12:35:47+00:00",
+  "root": "E:\\PYTHON CODES\\Semantic_Research",
   "classes": [
     "DemoClass",
     "TexturaComposita",
     "TexturaDensa",
+    "TexturaDireccional",
     "TexturaIntermitente",
     "TexturaMetamorfica",
     "TexturaPolitpica",
     "TexturaUniforme"
   ],
-  "registry_ttl": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\data\\concepts\\registry.ttl",
+  "registry_ttl": "E:\\PYTHON CODES\\Semantic_Research\\data\\concepts\\registry.ttl",
   "skos_policy": "SKOS matches only from concept_mapping; no auto exactMatch from PULO CILI resolution"
 }

@@ -1,0 +1,10 @@
+{
+  "type": "pulo_thesaurus_search",
+  "query": {
+    "query": "direcional",
+    "pos": null,
+    "mode": "Contains"
+  },
+  "count": 0,
+  "synsets": []
+}

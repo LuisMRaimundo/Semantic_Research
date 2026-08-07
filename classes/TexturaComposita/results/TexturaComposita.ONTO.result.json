@@ -2,8 +2,8 @@
   "class_id": "TexturaComposita",
   "pref_label": "textura compósita",
   "axis": "heterogeneidade / composição de materiais ou partes distintas",
-  "generated": "2026-07-31T04:21:26",
-  "db": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\engines\\ONTO\\ontopt.sqlite",
+  "generated": "2026-08-04T22:45:34",
+  "db": "E:\\PYTHON CODES\\Semantic_Research\\engines\\ONTO\\ontopt.sqlite",
   "gating": {
     "weight_min": 0.5,
     "min_cooccurrence": 2,
@@ -267,7 +267,7 @@
         "entry": {
           "ili_offset": "fuzzythes:27069",
           "glosa": "",
-          "decision": "RT",
+          "decision": "UF",
           "members": [
             "heterogéneo",
             "compósito",

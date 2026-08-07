@@ -1,0 +1,657 @@
+{
+  "type": "thesaurus_search",
+  "source": "papel",
+  "query": {
+    "query": "direcção",
+    "mode": "Contains",
+    "group": null
+  },
+  "count": 12,
+  "synsets": [
+    {
+      "resource": "papel35",
+      "resource_label": "PAPEL 3.5 / CAUSA",
+      "synset_id": "CAUSA:CAUSADOR_DE:direccao",
+      "pos": "",
+      "gloss": "PAPEL CAUSADOR_DE (CAUSA)",
+      "members": [
+        {
+          "word": "direcção",
+          "weight": 1.0
+        },
+        {
+          "word": "diorama",
+          "weight": 1.0
+        }
+      ],
+      "relations": {
+        "papel_rel": "CAUSADOR_DE",
+        "papel_group": "CAUSA"
+      }
+    },
+    {
+      "resource": "papel35",
+      "resource_label": "PAPEL 3.5 / FINALIDADE",
+      "synset_id": "FINALIDADE:FAZ_SE_COM:direccao",
+      "pos": "",
+      "gloss": "PAPEL FAZ_SE_COM (FINALIDADE)",
+      "members": [
+        {
+          "word": "direcção",
+          "weight": 1.0
+        },
+        {
+          "word": "balão-piloto",
+          "weight": 1.0
+        },
+        {
+          "word": "sideromancia",
+          "weight": 1.0
+        },
+        {
+          "word": "tendência",
+          "weight": 1.0
+        }
+      ],
+      "relations": {
+        "papel_rel": "FAZ_SE_COM",
+        "papel_group": "FINALIDADE"
+      }
+    },
+    {
+      "resource": "papel35",
+      "resource_label": "PAPEL 3.5 / HIPERONIMIA",
+      "synset_id": "HIPERONIMIA:HIPERONIMO_DE:direccao",
+      "pos": "",
+      "gloss": "PAPEL HIPERONIMO_DE (HIPERONIMIA)",
+      "members": [
+        {
+          "word": "direcção",
+          "weight": 1.0
+        },
+        {
+          "word": "alinhamento",
+          "weight": 1.0
+        },
+        {
+          "word": "arbitragem",
+          "weight": 1.0
+        },
+        {
+          "word": "cargo",
+          "weight": 1.0
+        },
+        {
+          "word": "comando",
+          "weight": 1.0
+        },
+        {
+          "word": "dispositivo",
+          "weight": 1.0
+        },
+        {
+          "word": "encenação",
+          "weight": 1.0
+        },
+        {
+          "word": "este-oeste",
+          "weight": 1.0
+        },
+        {
+          "word": "função",
+          "weight": 1.0
+        },
+        {
+          "word": "hidráulica",
+          "weight": 1.0
+        },
+        {
+          "word": "indicação",
+          "weight": 1.0
+        },
+        {
+          "word": "lado",
+          "weight": 1.0
+        },
+        {
+          "word": "querena",
+          "weight": 1.0
+        },
+        {
+          "word": "regência",
+          "weight": 1.0
+        },
+        {
+          "word": "serviço",
+          "weight": 1.0
+        },
+        {
+          "word": "subdirecção",
+          "weight": 1.0
+        }
+      ],
+      "relations": {
+        "papel_rel": "HIPERONIMO_DE",
+        "papel_group": "HIPERONIMIA"
+      }
+    },
+    {
+      "resource": "papel35",
+      "resource_label": "PAPEL 3.5 / MANEIRA",
+      "synset_id": "MANEIRA:MANEIRA_POR_MEIO_DE:direccao",
+      "pos": "",
+      "gloss": "PAPEL MANEIRA_POR_MEIO_DE (MANEIRA)",
+      "members": [
+        {
+          "word": "direcção",
+          "weight": 1.0
+        },
+        {
+          "word": "acima",
+          "weight": 1.0
+        }
+      ],
+      "relations": {
+        "papel_rel": "MANEIRA_POR_MEIO_DE",
+        "papel_group": "MANEIRA"
+      }
+    },
+    {
+      "resource": "papel35",
+      "resource_label": "PAPEL 3.5 / MEMBRO",
+      "synset_id": "MEMBRO:MEMBRO_DE:direccao",
+      "pos": "",
+      "gloss": "PAPEL MEMBRO_DE (MEMBRO)",
+      "members": [
+        {
+          "word": "direcção",
+          "weight": 1.0
+        },
+        {
+          "word": "brigada",
+          "weight": 1.0
+        },
+        {
+          "word": "director",
+          "weight": 1.0
+        },
+        {
+          "word": "operário sob direcção de chefe",
+          "weight": 1.0
+        },
+        {
+          "word": "pessoa",
+          "weight": 1.0
+        },
+        {
+          "word": "serviço",
+          "weight": 1.0
+        },
+        {
+          "word": "órgão de direcção",
+          "weight": 1.0
+        }
+      ],
+      "relations": {
+        "papel_rel": "MEMBRO_DE",
+        "papel_group": "MEMBRO"
+      }
+    },
+    {
+      "resource": "papel35",
+      "resource_label": "PAPEL 3.5 / PARTE",
+      "synset_id": "PARTE:PARTE_DE:direccao",
+      "pos": "",
+      "gloss": "PAPEL PARTE_DE (PARTE)",
+      "members": [
+        {
+          "word": "direcção",
+          "weight": 1.0
+        },
+        {
+          "word": "torpedo",
+          "weight": 1.0
+        }
+      ],
+      "relations": {
+        "papel_rel": "PARTE_DE",
+        "papel_group": "PARTE"
+      }
+    },
+    {
+      "resource": "papel35",
+      "resource_label": "PAPEL 3.5 / PARTE",
+      "synset_id": "PARTE:PARTE_DE_ALGO_COM_PROPRIEDADE:direccao",
+      "pos": "",
+      "gloss": "PAPEL PARTE_DE_ALGO_COM_PROPRIEDADE (PARTE)",
+      "members": [
+        {
+          "word": "direcção",
+          "weight": 1.0
+        },
+        {
+          "word": "direcção de linha",
+          "weight": 1.0
+        },
+        {
+          "word": "rectilíneo",
+          "weight": 1.0
+        },
+        {
+          "word": "unidireccional",
+          "weight": 1.0
+        }
+      ],
+      "relations": {
+        "papel_rel": "PARTE_DE_ALGO_COM_PROPRIEDADE",
+        "papel_group": "PARTE"
+      }
+    },
+    {
+      "resource": "papel35",
+      "resource_label": "PAPEL 3.5 / REFERENTE",
+      "synset_id": "REFERENTE:DIZ_SE_SOBRE:direccao",
+      "pos": "",
+      "gloss": "PAPEL DIZ_SE_SOBRE (REFERENTE)",
+      "members": [
+        {
+          "word": "direcção",
+          "weight": 1.0
+        },
+        {
+          "word": "artigo de responsabilidade de direcção de publicação",
+          "weight": 1.0
+        },
+        {
+          "word": "direccional",
+          "weight": 1.0
+        },
+        {
+          "word": "directivo",
+          "weight": 1.0
+        },
+        {
+          "word": "directorial",
+          "weight": 1.0
+        },
+        {
+          "word": "direcção de linha",
+          "weight": 1.0
+        },
+        {
+          "word": "dirigente",
+          "weight": 1.0
+        },
+        {
+          "word": "editorial",
+          "weight": 1.0
+        },
+        {
+          "word": "ramificação em três direcção",
+          "weight": 1.0
+        },
+        {
+          "word": "rectilíneo",
+          "weight": 1.0
+        },
+        {
+          "word": "trirramoso",
+          "weight": 1.0
+        }
+      ],
+      "relations": {
+        "papel_rel": "DIZ_SE_SOBRE",
+        "papel_group": "REFERENTE"
+      }
+    },
+    {
+      "resource": "papel35",
+      "resource_label": "PAPEL 3.5 / SINONIMIA",
+      "synset_id": "SINONIMIA:SINONIMO_N_DE:direccao",
+      "pos": "",
+      "gloss": "PAPEL SINONIMO_N_DE (SINONIMIA)",
+      "members": [
+        {
+          "word": "direcção",
+          "weight": 1.0
+        },
+        {
+          "word": "administração",
+          "weight": 1.0
+        },
+        {
+          "word": "auspício",
+          "weight": 1.0
+        },
+        {
+          "word": "banda",
+          "weight": 1.0
+        },
+        {
+          "word": "batuta",
+          "weight": 1.0
+        },
+        {
+          "word": "caminho",
+          "weight": 1.0
+        },
+        {
+          "word": "chefia",
+          "weight": 1.0
+        },
+        {
+          "word": "critério",
+          "weight": 1.0
+        },
+        {
+          "word": "cúpula",
+          "weight": 1.0
+        },
+        {
+          "word": "destino",
+          "weight": 1.0
+        },
+        {
+          "word": "directoria",
+          "weight": 1.0
+        },
+        {
+          "word": "encaminhamento",
+          "weight": 1.0
+        },
+        {
+          "word": "endereço",
+          "weight": 1.0
+        },
+        {
+          "word": "endireito",
+          "weight": 1.0
+        },
+        {
+          "word": "enfrontes",
+          "weight": 1.0
+        },
+        {
+          "word": "esteira",
+          "weight": 1.0
+        },
+        {
+          "word": "gerência",
+          "weight": 1.0
+        },
+        {
+          "word": "governalho",
+          "weight": 1.0
+        },
+        {
+          "word": "governo",
+          "weight": 1.0
+        },
+        {
+          "word": "guia",
+          "weight": 1.0
+        },
+        {
+          "word": "guiamento",
+          "weight": 1.0
+        },
+        {
+          "word": "lado",
+          "weight": 1.0
+        },
+        {
+          "word": "leme",
+          "weight": 1.0
+        },
+        {
+          "word": "linha",
+          "weight": 1.0
+        },
+        {
+          "word": "maneio",
+          "weight": 1.0
+        },
+        {
+          "word": "manejo",
+          "weight": 1.0
+        },
+        {
+          "word": "norma",
+          "weight": 1.0
+        },
+        {
+          "word": "norte",
+          "weight": 1.0
+        },
+        {
+          "word": "orientação",
+          "weight": 1.0
+        },
+        {
+          "word": "regime",
+          "weight": 1.0
+        },
+        {
+          "word": "regimento",
+          "weight": 1.0
+        },
+        {
+          "word": "regência",
+          "weight": 1.0
+        },
+        {
+          "word": "rota",
+          "weight": 1.0
+        },
+        {
+          "word": "rumo",
+          "weight": 1.0
+        },
+        {
+          "word": "rédea",
+          "weight": 1.0
+        },
+        {
+          "word": "senda",
+          "weight": 1.0
+        },
+        {
+          "word": "sentido",
+          "weight": 1.0
+        },
+        {
+          "word": "subdirectoria",
+          "weight": 1.0
+        },
+        {
+          "word": "subdirecção",
+          "weight": 1.0
+        },
+        {
+          "word": "timão",
+          "weight": 1.0
+        },
+        {
+          "word": "tramontana",
+          "weight": 1.0
+        },
+        {
+          "word": "travia",
+          "weight": 1.0
+        },
+        {
+          "word": "trilho",
+          "weight": 1.0
+        },
+        {
+          "word": "vereda",
+          "weight": 1.0
+        },
+        {
+          "word": "vezo",
+          "weight": 1.0
+        },
+        {
+          "word": "via",
+          "weight": 1.0
+        }
+      ],
+      "relations": {
+        "papel_rel": "SINONIMO_N_DE",
+        "papel_group": "SINONIMIA"
+      }
+    },
+    {
+      "resource": "papel35",
+      "resource_label": "PAPEL 3.5 / CAUSA",
+      "synset_id": "CAUSA:ACCAO_QUE_CAUSA:direccao",
+      "pos": "",
+      "gloss": "PAPEL ACCAO_QUE_CAUSA (CAUSA)",
+      "members": [
+        {
+          "word": "subdirecção",
+          "weight": 1.0
+        },
+        {
+          "word": "subdirigir",
+          "weight": 1.0
+        }
+      ],
+      "relations": {
+        "papel_rel": "ACCAO_QUE_CAUSA",
+        "papel_group": "CAUSA"
+      }
+    },
+    {
+      "resource": "papel35",
+      "resource_label": "PAPEL 3.5 / FINALIDADE",
+      "synset_id": "FINALIDADE:FINALIDADE_DE:direccao",
+      "pos": "",
+      "gloss": "PAPEL FINALIDADE_DE (FINALIDADE)",
+      "members": [
+        {
+          "word": "balão-de-ensaio",
+          "weight": 1.0
+        },
+        {
+          "word": "dar direcção",
+          "weight": 1.0
+        },
+        {
+          "word": "indicar mudança de direcção de veículo",
+          "weight": 1.0
+        },
+        {
+          "word": "pisca-pisca",
+          "weight": 1.0
+        },
+        {
+          "word": "rodízio",
+          "weight": 1.0
+        },
+        {
+          "word": "verificar direcção de vento",
+          "weight": 1.0
+        }
+      ],
+      "relations": {
+        "papel_rel": "FINALIDADE_DE",
+        "papel_group": "FINALIDADE"
+      }
+    },
+    {
+      "resource": "papel35",
+      "resource_label": "PAPEL 3.5 / REFERENTE",
+      "synset_id": "REFERENTE:DIZ_SE_DO_QUE:direccao",
+      "pos": "",
+      "gloss": "PAPEL DIZ_SE_DO_QUE (REFERENTE)",
+      "members": [
+        {
+          "word": "antimíssil",
+          "weight": 1.0
+        },
+        {
+          "word": "bidireccional",
+          "weight": 1.0
+        },
+        {
+          "word": "correr em determinada direcção",
+          "weight": 1.0
+        },
+        {
+          "word": "desencontrado",
+          "weight": 1.0
+        },
+        {
+          "word": "fazer em direcção de vento",
+          "weight": 1.0
+        },
+        {
+          "word": "funcionar em duas direcção",
+          "weight": 1.0
+        },
+        {
+          "word": "funcionar em várias direcção",
+          "weight": 1.0
+        },
+        {
+          "word": "indicar direcção de sismo",
+          "weight": 1.0
+        },
+        {
+          "word": "ir em direcção",
+          "weight": 1.0
+        },
+        {
+          "word": "mudar direcção de onda",
+          "weight": 1.0
+        },
+        {
+          "word": "multidireccional",
+          "weight": 1.0
+        },
+        {
+          "word": "profluente",
+          "weight": 1.0
+        },
+        {
+          "word": "rabavento",
+          "weight": 1.0
+        },
+        {
+          "word": "refrangente",
+          "weight": 1.0
+        },
+        {
+          "word": "seguir direcção de fio-de-prumo",
+          "weight": 1.0
+        },
+        {
+          "word": "ser lançado em direcção de outro míssil para interceptar",
+          "weight": 1.0
+        },
+        {
+          "word": "sismal",
+          "weight": 1.0
+        },
+        {
+          "word": "ter única direcção",
+          "weight": 1.0
+        },
+        {
+          "word": "unidireccional",
+          "weight": 1.0
+        },
+        {
+          "word": "vertical",
+          "weight": 1.0
+        }
+      ],
+      "relations": {
+        "papel_rel": "DIZ_SE_DO_QUE",
+        "papel_group": "REFERENTE"
+      }
+    }
+  ],
+  "_note": "PAPEL 3.5 discovery only — word–word dictionary relations; never LexWarrant admission."
+}

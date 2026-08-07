@@ -2,18 +2,18 @@
   "class_id": "TexturaUniforme",
   "pref_label": "uniforme",
   "axis": "invariância face a um parâmetro",
-  "generated": "2026-07-27T12:38:23",
+  "generated": "2026-08-07T13:21:35",
   "source": "PULO / WordNet.PT export",
   "stage1": {
     "admitted": [
       {
-        "ili_offset": "ili-30-01200095-a",
+        "ili_offset": "pwn30-01200095-a",
         "glosa": "que se mantém o mesmo; constante e invariável ao longo do parâmetro",
         "decision": "UF",
         "export_gloss": "o mesmo em toda a estrutura ou composição\n"
       },
       {
-        "ili_offset": "ili-30-01966488-a",
+        "ili_offset": "pwn30-01966488-a",
         "glosa": "sempre o mesmo parâmetro; imutável e uniforme",
         "decision": "UF",
         "export_gloss": "sempre o mesmo; mostrando um único formulário ou personagem em todas as ocorrências\n"
@@ -26,17 +26,17 @@
       }
     ],
     "admitted_offsets": [
-      "ili-30-01200095-a",
-      "ili-30-01966488-a",
+      "pwn30-01200095-a",
+      "pwn30-01966488-a",
       "ili-30-04745370-n"
     ],
     "excluded_offsets": [
-      "ili-30-00909545-a",
-      "ili-30-02302187-a",
-      "ili-30-00910101-a",
-      "ili-30-04509592-n",
-      "ili-30-00744506-a",
-      null
+      "pwn30-00909545-a",
+      "pwn30-02302187-a",
+      "pwn30-00910101-a",
+      "pwn30-04509592-n",
+      "pwn30-00744506-a",
+      "por-30-99999999-x"
     ],
     "invalid": [],
     "flagged_no_ili": []
@@ -45,32 +45,32 @@
     "uniforme": {
       "display": "uniforme",
       "offsets": [
-        "ili-30-01200095-a",
-        "ili-30-01966488-a"
+        "pwn30-01200095-a",
+        "pwn30-01966488-a"
       ]
     },
     "constante": {
       "display": "constante",
       "offsets": [
-        "ili-30-01200095-a"
+        "pwn30-01200095-a"
       ]
     },
     "invariavel": {
       "display": "invariável",
       "offsets": [
-        "ili-30-01200095-a"
+        "pwn30-01200095-a"
       ]
     },
     "coerente": {
       "display": "coerente",
       "offsets": [
-        "ili-30-01200095-a"
+        "pwn30-01200095-a"
       ]
     },
     "imutavel": {
       "display": "imutável",
       "offsets": [
-        "ili-30-01966488-a"
+        "pwn30-01966488-a"
       ]
     },
     "uniformidade": {
@@ -98,7 +98,7 @@
       "homogeneo": {
         "display": "homogéneo",
         "via": "similar to",
-        "source_ili": "ili-30-01200095-a",
+        "source_ili": "pwn30-01200095-a",
         "target_gloss": "todos do mesmo tipo ou semelhante ou a natureza\n"
       }
     },
@@ -106,7 +106,7 @@
       "uniformidade": {
         "display": "uniformidade",
         "via": "derivationally related form",
-        "source_ili": "ili-30-01200095-a",
+        "source_ili": "pwn30-01200095-a",
         "target_gloss": "a qualidade de falta de diversidade ou variação (até mesmo ao ponto de tédio)\n"
       },
       "uniforme": {
@@ -183,8 +183,8 @@
       "uniforme": {
         "display": "uniforme",
         "offsets": [
-          "ili-30-01200095-a",
-          "ili-30-01966488-a"
+          "pwn30-01200095-a",
+          "pwn30-01966488-a"
         ],
         "attested": true,
         "origin": "seed (Etapa 1/2) + forma derivada (família)",
@@ -196,12 +196,12 @@
         ],
         "definition": "",
         "structural": "",
-        "from_sense": "ili-30-01966488-a"
+        "from_sense": "pwn30-01966488-a"
       },
       "constante": {
         "display": "constante",
         "offsets": [
-          "ili-30-01200095-a"
+          "pwn30-01200095-a"
         ],
         "attested": true,
         "origin": "seed (Etapa 1/2)",
@@ -212,12 +212,12 @@
         ],
         "definition": "",
         "structural": "",
-        "from_sense": "ili-30-01200095-a"
+        "from_sense": "pwn30-01200095-a"
       },
       "invariavel": {
         "display": "invariável",
         "offsets": [
-          "ili-30-01200095-a"
+          "pwn30-01200095-a"
         ],
         "attested": true,
         "origin": "seed (Etapa 1/2)",
@@ -228,12 +228,12 @@
         ],
         "definition": "",
         "structural": "",
-        "from_sense": "ili-30-01200095-a"
+        "from_sense": "pwn30-01200095-a"
       },
       "imutavel": {
         "display": "imutável",
         "offsets": [
-          "ili-30-01966488-a"
+          "pwn30-01966488-a"
         ],
         "attested": true,
         "origin": "seed (Etapa 1/2)",
@@ -244,7 +244,7 @@
         ],
         "definition": "",
         "structural": "",
-        "from_sense": "ili-30-01966488-a"
+        "from_sense": "pwn30-01966488-a"
       },
       "uniformidade": {
         "display": "uniformidade",
@@ -300,7 +300,7 @@
       "coerente": {
         "display": "coerente",
         "offsets": [
-          "ili-30-01200095-a"
+          "pwn30-01200095-a"
         ],
         "attested": true,
         "origin": "seed (Etapa 1/2) + forma derivada (família)",
@@ -369,13 +369,6 @@
         "attested": false,
         "origin": "relação hypernym (BT)",
         "adjudication": null
-      },
-      "politipica": {
-        "display": "politípica",
-        "attested": false,
-        "offset": "",
-        "origin": "manual (estipulativa)",
-        "adjudication": null
       }
     }
   },
@@ -383,7 +376,7 @@
     "uniformidade": {
       "display": "uniformidade",
       "via": "derivationally related form",
-      "source_ili": "ili-30-01200095-a",
+      "source_ili": "pwn30-01200095-a",
       "target_gloss": "a qualidade de falta de diversidade ou variação (até mesmo ao ponto de tédio)\n"
     },
     "uniforme": {
@@ -419,8 +412,8 @@
       "eixo": "invariância face a um parâmetro",
       "via": "derivationally related form",
       "offsets_ili": [
-        "ili-30-01200095-a",
-        "ili-30-01966488-a"
+        "pwn30-01200095-a",
+        "pwn30-01966488-a"
       ],
       "teste_decisivo": "derivado do sentido (PASSO 3)",
       "garantia": [
@@ -436,7 +429,7 @@
       "eixo": "invariância face a um parâmetro",
       "via": "seed (Etapa 1/2)",
       "offsets_ili": [
-        "ili-30-01200095-a"
+        "pwn30-01200095-a"
       ],
       "teste_decisivo": "derivado do sentido (PASSO 3)",
       "garantia": [
@@ -452,7 +445,7 @@
       "eixo": "invariância face a um parâmetro",
       "via": "seed (Etapa 1/2)",
       "offsets_ili": [
-        "ili-30-01200095-a"
+        "pwn30-01200095-a"
       ],
       "teste_decisivo": "derivado do sentido (PASSO 3)",
       "garantia": [
@@ -468,7 +461,7 @@
       "eixo": "invariância face a um parâmetro",
       "via": "seed (Etapa 1/2)",
       "offsets_ili": [
-        "ili-30-01966488-a"
+        "pwn30-01966488-a"
       ],
       "teste_decisivo": "derivado do sentido (PASSO 3)",
       "garantia": [
@@ -547,8 +540,8 @@
     {
       "stage": "ILI",
       "text": "Nenhum id oewn-/por- é usado como chave de junção; a chave é o ILI.",
-      "passed": true,
-      "evidence": "OK"
+      "passed": false,
+      "evidence": "offsets não-ILI na lista branca: ['pwn30-01200095-a', 'pwn30-01966488-a']"
     },
     {
       "stage": "ILI",
@@ -602,11 +595,11 @@
       "stage": "Serialização",
       "passed": true,
       "text": "X.skos.ttl analisa com rdflib e tem a contagem de triplos esperada.",
-      "evidence": "triplos esperados=16, analisados=16"
+      "evidence": "triplos esperados=12, analisados=12"
     }
   ],
-  "all_passed": true,
-  "skos_triples": 16,
+  "all_passed": false,
+  "skos_triples": 12,
   "_ttl_ok": true,
   "_signals_sidelined": 67
 }

@@ -13,8 +13,53 @@
     "weak_term_mode": "gloss_gated",
     "gloss_min": 0.12
   },
-  "acepcoes_sem_motor": [],
-  "n_acepcoes_sem_motor": 0,
+  "acepcoes_sem_motor": [
+    {
+      "source": "papel",
+      "key": "papel35:HIPERONIMIA:HIPERONIMO_DE:composito",
+      "ili": null,
+      "decision": "UF",
+      "membros": [
+        "compósito",
+        "material"
+      ],
+      "nota": "acepção adjudicada sem correspondência em motor"
+    },
+    {
+      "source": "papel",
+      "key": "papel35:PARTE:PARTE_DE_ALGO_COM_PROPRIEDADE:composito",
+      "ili": null,
+      "decision": "RT",
+      "membros": [
+        "compósito",
+        "utilidade"
+      ],
+      "nota": "acepção adjudicada sem correspondência em motor"
+    },
+    {
+      "source": "papel",
+      "key": "papel35:PARTE:PROPRIEDADE_DE_ALGO_PARTE_DE:composito",
+      "ili": null,
+      "decision": "UF",
+      "membros": [
+        "compósito",
+        "substância"
+      ],
+      "nota": "acepção adjudicada sem correspondência em motor"
+    },
+    {
+      "source": "papel",
+      "key": "papel35:REFERENTE:DIZ_SE_DO_QUE:composito",
+      "ili": null,
+      "decision": "RT",
+      "membros": [
+        "compósito",
+        "ter diverso utilidade"
+      ],
+      "nota": "acepção adjudicada sem correspondência em motor"
+    }
+  ],
+  "n_acepcoes_sem_motor": 4,
   "taxonomy_removed": [
     "conflitos_planos",
     "divergencia_sentidos",

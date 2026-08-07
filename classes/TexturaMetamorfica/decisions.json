@@ -18,7 +18,8 @@
         "alteração"
       ],
       "decision": "UF",
-      "note": ""
+      "note": "",
+      "destino": "vocabulario"
     },
     {
       "source": "pulo",
@@ -43,8 +44,9 @@
         "mudar",
         "modificar"
       ],
-      "decision": "exclude",
-      "note": ""
+      "decision": "RT",
+      "note": "",
+      "destino": "vocabulario"
     },
     {
       "source": "onto",
@@ -58,7 +60,8 @@
         "metamórfico"
       ],
       "decision": "UF",
-      "note": ""
+      "note": "",
+      "destino": "vocabulario"
     },
     {
       "source": "onto",
@@ -72,7 +75,8 @@
         "metamórfico"
       ],
       "decision": "UF",
-      "note": ""
+      "note": "",
+      "destino": "vocabulario"
     },
     {
       "source": "onto",
@@ -86,7 +90,8 @@
         "metamórfico"
       ],
       "decision": "UF",
-      "note": ""
+      "note": "",
+      "destino": "vocabulario"
     },
     {
       "source": "onto",
@@ -100,7 +105,8 @@
         "metamórfico"
       ],
       "decision": "UF",
-      "note": ""
+      "note": "",
+      "destino": "vocabulario"
     },
     {
       "source": "onto",
@@ -114,7 +120,8 @@
         "metamórfico"
       ],
       "decision": "UF",
-      "note": ""
+      "note": "",
+      "destino": "vocabulario"
     },
     {
       "source": "wordnet",
@@ -143,6 +150,38 @@
       ],
       "decision": "",
       "note": "OEWN corroboration (Ponte ILI / WordNet track)"
+    },
+    {
+      "source": "papel",
+      "key": "papel35:REFERENTE:DIZ_SE_DO_QUE:metamorfico",
+      "ili": null,
+      "local_id": "papel35:REFERENTE:DIZ_SE_DO_QUE:metamorfico",
+      "pos": "",
+      "gloss": "PAPEL DIZ_SE_DO_QUE (REFERENTE)",
+      "members": [
+        "metamórfico",
+        "sofrer metamorfismo"
+      ],
+      "decision": "UF",
+      "note": "discovery: PAPEL 3.5",
+      "destino": "vocabulario"
+    },
+    {
+      "source": "papel",
+      "key": "papel35:REFERENTE:DIZ_SE_SOBRE:metamorfico",
+      "ili": null,
+      "local_id": "papel35:REFERENTE:DIZ_SE_SOBRE:metamorfico",
+      "pos": "",
+      "gloss": "PAPEL DIZ_SE_SOBRE (REFERENTE)",
+      "members": [
+        "metamórfico",
+        "metamorfos de ser",
+        "pirometamorfismo",
+        "pirometamórfico"
+      ],
+      "decision": "UF",
+      "note": "discovery: PAPEL 3.5",
+      "destino": "vocabulario"
     }
   ],
   "terms": [],

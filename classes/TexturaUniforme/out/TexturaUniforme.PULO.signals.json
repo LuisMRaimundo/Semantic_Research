@@ -6,378 +6,378 @@
     "estruturacao": {
       "display": "estruturação",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01200095-a",
+      "source_ili": "pwn30-01200095-a",
       "target_gloss": "o modo de construção de alguma coisa e o arranjo das suas partes\n",
       "reason": "relação não-nomeada / #NN"
     },
     "estrutura": {
       "display": "estrutura",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01200095-a",
+      "source_ili": "pwn30-01200095-a",
       "target_gloss": "o modo de construção de alguma coisa e o arranjo das suas partes\n",
       "reason": "relação não-nomeada / #NN"
     },
     "constituicao": {
       "display": "constituição",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01200095-a",
+      "source_ili": "pwn30-01200095-a",
       "target_gloss": "a maneira em que alguém ou alguma coisa é composto\n",
       "reason": "relação não-nomeada / #NN"
     },
     "composicao": {
       "display": "composição",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01200095-a",
+      "source_ili": "pwn30-01200095-a",
       "target_gloss": "a maneira em que alguém ou alguma coisa é composto\n",
       "reason": "relação não-nomeada / #NN"
     },
     "nivelamento": {
       "display": "nivelamento",
       "via": "relation #61",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "o ato de fazer igual ou uniforme\n",
       "reason": "relação não-nomeada / #NN"
     },
     "nivelacao": {
       "display": "nivelação",
       "via": "relation #61",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "o ato de fazer igual ou uniforme\n",
       "reason": "relação não-nomeada / #NN"
     },
     "comparar": {
       "display": "comparar",
       "via": "relation #61",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "fazer igual, uniforme, correspondente, ou correspondência\n",
       "reason": "relação não-nomeada / #NN"
     },
     "compensar": {
       "display": "compensar",
       "via": "relation #61",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "fazer igual, uniforme, correspondente, ou correspondência\n",
       "reason": "relação não-nomeada / #NN"
     },
     "empatar": {
       "display": "empatar",
       "via": "relation #61",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "fazer igual, uniforme, correspondente, ou correspondência\n",
       "reason": "relação não-nomeada / #NN"
     },
     "equiparar": {
       "display": "equiparar",
       "via": "relation #61",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "fazer igual, uniforme, correspondente, ou correspondência\n",
       "reason": "relação não-nomeada / #NN"
     },
     "igualar": {
       "display": "igualar",
       "via": "relation #61",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "fazer igual, uniforme, correspondente, ou correspondência\n",
       "reason": "relação não-nomeada / #NN"
     },
     "nivelar": {
       "display": "nivelar",
       "via": "relation #61",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "fazer igual, uniforme, correspondente, ou correspondência\n",
       "reason": "relação não-nomeada / #NN"
     },
     "inercia": {
       "display": "inércia",
       "via": "relation #61",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "(Física) a tendência de um corpo para manter o seu estado de repouso ou de movimento uniforme, a menos que influenciado por uma força externa\n",
       "reason": "relação não-nomeada / #NN"
     },
     "homogeneo": {
       "display": "homogéneo",
       "via": "see also",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "todos do mesmo tipo ou semelhante ou a natureza\n",
       "reason": "relação não-nomeada / #NN"
     },
     "afetar": {
       "display": "afetar",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "fazer visível ou perceptível\n",
       "reason": "relação não-nomeada / #NN"
     },
     "afigurar": {
       "display": "afigurar",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "fazer visível ou perceptível\n",
       "reason": "relação não-nomeada / #NN"
     },
     "apresentar": {
       "display": "apresentar",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "fazer visível ou perceptível\n",
       "reason": "relação não-nomeada / #NN"
     },
     "assumir": {
       "display": "assumir",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "fazer visível ou perceptível\n",
       "reason": "relação não-nomeada / #NN"
     },
     "badalar": {
       "display": "badalar",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "fazer visível ou perceptível\n",
       "reason": "relação não-nomeada / #NN"
     },
     "descobrir": {
       "display": "descobrir",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "fazer visível ou perceptível\n",
       "reason": "relação não-nomeada / #NN"
     },
     "desenfardar": {
       "display": "desenfardar",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "fazer visível ou perceptível\n",
       "reason": "relação não-nomeada / #NN"
     },
     "desfraldar": {
       "display": "desfraldar",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "fazer visível ou perceptível\n",
       "reason": "relação não-nomeada / #NN"
     },
     "desinternar": {
       "display": "desinternar",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "fazer visível ou perceptível\n",
       "reason": "relação não-nomeada / #NN"
     },
     "divulgar": {
       "display": "divulgar",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "fazer visível ou perceptível\n",
       "reason": "relação não-nomeada / #NN"
     },
     "estampar": {
       "display": "estampar",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "fazer visível ou perceptível\n",
       "reason": "relação não-nomeada / #NN"
     },
     "exibir": {
       "display": "exibir",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "fazer visível ou perceptível\n",
       "reason": "relação não-nomeada / #NN"
     },
     "expandir": {
       "display": "expandir",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "fazer visível ou perceptível\n",
       "reason": "relação não-nomeada / #NN"
     },
     "exteriorizar": {
       "display": "exteriorizar",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "fazer visível ou perceptível\n",
       "reason": "relação não-nomeada / #NN"
     },
     "fazer_ver": {
       "display": "fazer ver",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "fazer visível ou perceptível\n",
       "reason": "relação não-nomeada / #NN"
     },
     "franquear": {
       "display": "franquear",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "fazer visível ou perceptível\n",
       "reason": "relação não-nomeada / #NN"
     },
     "patentear": {
       "display": "patentear",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "fazer visível ou perceptível\n",
       "reason": "relação não-nomeada / #NN"
     },
     "representar": {
       "display": "representar",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "fazer visível ou perceptível\n",
       "reason": "relação não-nomeada / #NN"
     },
     "reproduzir": {
       "display": "reproduzir",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "fazer visível ou perceptível\n",
       "reason": "relação não-nomeada / #NN"
     },
     "revelar-se": {
       "display": "revelar-se",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "fazer visível ou perceptível\n",
       "reason": "relação não-nomeada / #NN"
     },
     "revestir": {
       "display": "revestir",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "fazer visível ou perceptível\n",
       "reason": "relação não-nomeada / #NN"
     },
     "simular": {
       "display": "simular",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "fazer visível ou perceptível\n",
       "reason": "relação não-nomeada / #NN"
     },
     "soltar": {
       "display": "soltar",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "fazer visível ou perceptível\n",
       "reason": "relação não-nomeada / #NN"
     },
     "suar": {
       "display": "suar",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "fazer visível ou perceptível\n",
       "reason": "relação não-nomeada / #NN"
     },
     "vestir": {
       "display": "vestir",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "fazer visível ou perceptível\n",
       "reason": "relação não-nomeada / #NN"
     },
     "ensinar": {
       "display": "ensinar",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "fazer visível ou perceptível\n",
       "reason": "relação não-nomeada / #NN"
     },
     "manifestar": {
       "display": "manifestar",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "fazer visível ou perceptível\n",
       "reason": "relação não-nomeada / #NN"
     },
     "mostrar": {
       "display": "mostrar",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "fazer visível ou perceptível\n",
       "reason": "relação não-nomeada / #NN"
     },
     "casta": {
       "display": "casta",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "uma categoria de coisas distinguidos por alguma característica ou qualidade comum\n",
       "reason": "relação não-nomeada / #NN"
     },
     "condicao": {
       "display": "condição",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "uma categoria de coisas distinguidos por alguma característica ou qualidade comum\n",
       "reason": "relação não-nomeada / #NN"
     },
     "especie": {
       "display": "espécie",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "uma categoria de coisas distinguidos por alguma característica ou qualidade comum\n",
       "reason": "relação não-nomeada / #NN"
     },
     "genero": {
       "display": "género",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "uma categoria de coisas distinguidos por alguma característica ou qualidade comum\n",
       "reason": "relação não-nomeada / #NN"
     },
     "nacao": {
       "display": "nação",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "uma categoria de coisas distinguidos por alguma característica ou qualidade comum\n",
       "reason": "relação não-nomeada / #NN"
     },
     "raca": {
       "display": "raça",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "uma categoria de coisas distinguidos por alguma característica ou qualidade comum\n",
       "reason": "relação não-nomeada / #NN"
     },
     "simulacro": {
       "display": "simulacro",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "uma categoria de coisas distinguidos por alguma característica ou qualidade comum\n",
       "reason": "relação não-nomeada / #NN"
     },
     "sorte": {
       "display": "sorte",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "uma categoria de coisas distinguidos por alguma característica ou qualidade comum\n",
       "reason": "relação não-nomeada / #NN"
     },
     "tipo": {
       "display": "tipo",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "uma categoria de coisas distinguidos por alguma característica ou qualidade comum\n",
       "reason": "relação não-nomeada / #NN"
     },
     "forma": {
       "display": "forma",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "uma categoria de coisas distinguidos por alguma característica ou qualidade comum\n",
       "reason": "relação não-nomeada / #NN"
     },
     "classe": {
       "display": "classe",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "uma categoria de coisas distinguidos por alguma característica ou qualidade comum\n",
       "reason": "relação não-nomeada / #NN"
     },
     "existencia": {
       "display": "existência",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-01966488-a",
+      "source_ili": "pwn30-01966488-a",
       "target_gloss": "um exemplo de algo que ocorre\n",
       "reason": "relação não-nomeada / #NN"
     },

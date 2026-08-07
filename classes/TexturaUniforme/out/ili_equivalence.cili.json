@@ -1,6 +1,6 @@
 {
   "class": "TexturaUniforme",
-  "generated": "2026-07-27T12:39:44",
+  "generated": "2026-08-07T13:35:46",
   "source": "cili:cili@upstream-master+pwn30+pwn31+wn.ili",
   "cili": {
     "version": "cili@upstream-master+pwn30+pwn31+wn.ili",
@@ -8,68 +8,19 @@
     "pwn_offsets": 234518,
     "pwn30_offsets": 234518,
     "data_files": [
-      "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\engines\\LexWarrant\\data\\cili\\ili-map-pwn30.tab",
-      "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\engines\\LexWarrant\\data\\cili\\ili-map-pwn31.tab"
+      "E:\\PYTHON CODES\\Semantic_Research\\engines\\LexWarrant\\data\\cili\\ili-map-pwn30.tab",
+      "E:\\PYTHON CODES\\Semantic_Research\\engines\\LexWarrant\\data\\cili\\ili-map-pwn31.tab"
     ],
-    "data_file": "C:\\Users\\lmr20\\Desktop\\Semantic_Research\\engines\\LexWarrant\\data\\cili\\ili-map-pwn30.tab",
+    "data_file": "E:\\PYTHON CODES\\Semantic_Research\\engines\\LexWarrant\\data\\cili\\ili-map-pwn30.tab",
     "wn_ili_bridge": null
   },
-  "map": [
-    {
-      "oewn_ili": "i10771",
-      "pulo_ili": "ili-30-01966488-a",
-      "source": "cili:cili@upstream-master+pwn30+pwn31+wn.ili",
-      "confidence": "high"
-    },
-    {
-      "oewn_ili": "i12748",
-      "pulo_ili": "ili-30-02302187-a",
-      "source": "cili:cili@upstream-master+pwn30+pwn31+wn.ili",
-      "confidence": "high"
-    },
-    {
-      "oewn_ili": "i4126",
-      "pulo_ili": "ili-30-00744506-a",
-      "source": "cili:cili@upstream-master+pwn30+pwn31+wn.ili",
-      "confidence": "high"
-    },
-    {
-      "oewn_ili": "i4979",
-      "pulo_ili": "ili-30-00909545-a",
-      "source": "cili:cili@upstream-master+pwn30+pwn31+wn.ili",
-      "confidence": "high"
-    },
-    {
-      "oewn_ili": "i4980",
-      "pulo_ili": "ili-30-00910101-a",
-      "source": "cili:cili@upstream-master+pwn30+pwn31+wn.ili",
-      "confidence": "high"
-    },
-    {
-      "oewn_ili": "i60712",
-      "pulo_ili": "ili-30-04509592-n",
-      "source": "cili:cili@upstream-master+pwn30+pwn31+wn.ili",
-      "confidence": "high"
-    },
-    {
-      "oewn_ili": "i61962",
-      "pulo_ili": "ili-30-04745370-n",
-      "source": "cili:cili@upstream-master+pwn30+pwn31+wn.ili",
-      "confidence": "high"
-    },
-    {
-      "oewn_ili": "i6560",
-      "pulo_ili": "ili-30-01200095-a",
-      "source": "cili:cili@upstream-master+pwn30+pwn31+wn.ili",
-      "confidence": "high"
-    }
-  ],
+  "map": [],
   "review": [],
   "unmatched": [],
   "coverage": {
-    "map": 8,
+    "map": 0,
     "review": 0,
-    "unmatched": 69
+    "unmatched": 75
   },
   "policy": "cili-only (Corte 1) — sem adjudicação humana"
 }

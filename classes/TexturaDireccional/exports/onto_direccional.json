@@ -1,0 +1,144 @@
+{
+  "type": "thesaurus_search",
+  "query": {
+    "query": "direccional",
+    "resource": null,
+    "pos": null,
+    "mode": "Contains"
+  },
+  "count": 8,
+  "synsets": [
+    {
+      "resource": "clip21",
+      "resource_label": "CLIP 2.1 (fuzzy sets)",
+      "synset_id": "15245",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "direccional",
+          "weight": 1.0
+        },
+        {
+          "word": "directorial",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "contopt",
+      "resource_label": "CONTO.PT 0.1 (fuzzy)",
+      "synset_id": "18230",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "direccional",
+          "weight": 1.0
+        },
+        {
+          "word": "directorial",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "fuzzythes",
+      "resource_label": "Fuzzy thesaurus 5rec",
+      "synset_id": "30812",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "direccional",
+          "weight": 1.0
+        },
+        {
+          "word": "directorial",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "ontopt06",
+      "resource_label": "Onto.PT v0.6",
+      "synset_id": "5294",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "direccional",
+          "weight": 1.0
+        },
+        {
+          "word": "directorial",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "thes5rec",
+      "resource_label": "Thesaurus 5rec (crisp)",
+      "synset_id": "19617",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "direccional",
+          "weight": 1.0
+        },
+        {
+          "word": "directorial",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "ontopt06",
+      "resource_label": "Onto.PT v0.6",
+      "synset_id": "5778",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "bidireccional",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "ontopt06",
+      "resource_label": "Onto.PT v0.6",
+      "synset_id": "6094",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "multidireccional",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    },
+    {
+      "resource": "ontopt06",
+      "resource_label": "Onto.PT v0.6",
+      "synset_id": "5882",
+      "pos": "a",
+      "gloss": "",
+      "members": [
+        {
+          "word": "unidireccional",
+          "weight": 1.0
+        }
+      ],
+      "relations": {}
+    }
+  ]
+}
