@@ -501,6 +501,21 @@ def run_class(class_id: str, policy: Optional[str] = None,
                     summary.setdefault("errors", []).append(
                         f"Concept model: {exc}"
                     )
+            # T15 — adjudication ↔ artefact traceability (same targets as T12)
+            try:
+                from .traceability import append_t15_to_concordance, run_t15
+                t15 = run_t15(ws)
+                if t15 is not None:
+                    for target in t12_targets:
+                        if target.exists():
+                            append_t15_to_concordance(target, t15)
+                    summary["t15"] = {
+                        "passed": t15["passed"],
+                        "evidence": t15["evidence"],
+                        "dropped_with_reason": t15["dropped_with_reason"],
+                    }
+            except Exception as exc:  # noqa: BLE001
+                summary.setdefault("errors", []).append(f"T15: {exc}")
             engines_ran = {e for e in engines if e in ("pulo", "onto")}
             exec_meta = {
                 "engines": list(engines),
