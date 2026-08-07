@@ -1125,7 +1125,8 @@ def summarize_auto_contrast(sources: list[Source]) -> dict:
 def render_json(class_id, policy, source_labels, concepts, assertions,
                 descartados_pendentes: int = 0, map_path: Optional[str] = None,
                 equiv: Optional["EquivMap"] = None,
-                auto_contrast: Optional[dict] = None) -> dict:
+                auto_contrast: Optional[dict] = None,
+                source_status_overrides: Optional[dict] = None) -> dict:
     totals = Counter(c.veredicto for c in concepts)
     equiv_counts = ({"mapped": equiv.n_map, "review": equiv.n_review,
                      "unmatched": equiv.n_unmatched} if equiv is not None
@@ -1169,6 +1170,11 @@ def render_json(class_id, policy, source_labels, concepts, assertions,
                 st.get("source_contributed_results", False),
             )
             st.setdefault("contributed_discovery_evidence", False)
+    # Caller-supplied truth (e.g. pipeline knows whether ONTO was actually
+    # consulted even though it never enters the admission inputs). Applied
+    # before rendering so JSON and MD are produced from the same dict.
+    for col, st in (source_status_overrides or {}).items():
+        source_status.setdefault(col, {}).update(st or {})
     join_counts = Counter(c.join for c in concepts)
     return {
         "class": class_id,
@@ -1472,7 +1478,8 @@ def run_report(input_specs: list[tuple[Optional[str], Path]], outdir: Path,
                equiv: Optional["EquivMap"] = None,
                weak_term_mode: str = "gloss_gated",
                gloss_min: float = 0.12,
-               excluded_cilis: Optional[set[str]] = None) -> dict:
+               excluded_cilis: Optional[set[str]] = None,
+               source_status_overrides: Optional[dict] = None) -> dict:
     sources = [load_source(path, label) for label, path in input_specs]
     if len(sources) < 2:
         raise ValueError("São necessárias pelo menos 2 fontes (result.json).")
@@ -1503,7 +1510,8 @@ def run_report(input_specs: list[tuple[Optional[str], Path]], outdir: Path,
     doc = render_json(class_id, policy, source_labels, concepts, assertions=[],
                       descartados_pendentes=descartados_pendentes,
                       map_path=str(map_path) if map_path else None, equiv=equiv,
-                      auto_contrast=auto_contrast)
+                      auto_contrast=auto_contrast,
+                      source_status_overrides=source_status_overrides)
     json_path.write_text(json.dumps(doc, ensure_ascii=False, indent=2), encoding="utf-8")
 
     assertions = run_asserts(concepts, sources, source_labels, policy,
@@ -1511,7 +1519,8 @@ def run_report(input_specs: list[tuple[Optional[str], Path]], outdir: Path,
     doc = render_json(class_id, policy, source_labels, concepts, assertions,
                       descartados_pendentes=descartados_pendentes,
                       map_path=str(map_path) if map_path else None, equiv=equiv,
-                      auto_contrast=auto_contrast)
+                      auto_contrast=auto_contrast,
+                      source_status_overrides=source_status_overrides)
     json_path.write_text(json.dumps(doc, ensure_ascii=False, indent=2), encoding="utf-8")
     md_path.write_text(render_markdown(doc, concepts), encoding="utf-8")
 
