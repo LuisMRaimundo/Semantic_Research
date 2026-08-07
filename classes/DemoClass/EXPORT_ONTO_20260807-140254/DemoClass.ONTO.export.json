@@ -1,0 +1,17 @@
+{
+  "schema": "semantic_research.source_export/1",
+  "class_id": "DemoClass",
+  "source": "onto",
+  "source_label": "ONTO",
+  "source_title": "Onto.PT / CONTO.PT (discovery)",
+  "generated": "2026-08-07T14:02:54+01:00",
+  "source_version": {
+    "version_manifest": null
+  },
+  "counts": {
+    "cards": 0,
+    "decided": 0,
+    "by_status": {}
+  },
+  "senses": []
+}

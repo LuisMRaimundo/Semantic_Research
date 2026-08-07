@@ -5,7 +5,7 @@
 **Âncora CILI:** i6560, i10771
 **Língua de pesquisa:** `en` · **Língua de rótulos:** `pt-PT`
 **Sintaxe de pesquisa:** `uniform* NEAR/4 <termo>`
-**Gerado:** 2026-08-07T13:35:46+01:00
+**Gerado:** 2026-08-07T13:50:24+01:00
 
 ## A — Pólo alvo (`en`)
 
@@ -69,6 +69,7 @@ Acepções Onto.PT adjudicadas UF/RT — por desenho nunca entram na matriz LexW
 
 | chave | decisão | membros |
 |---|---|---|
+| clip21:19004 | RT | contínuo, constante, ininterrupto, sucessivo, permanente, frequente, incessante, perpétuo, continuado, assíduo, seguido, perene, aturado, porfioso, incessável, ininterrompido, afio, consecutivo, estável, imutável, imudável, invariável, amiudado, repetido, manente, duradouro, imediato, jacente, conseguinte, subsecutivo, persistente, eterno, miúdo, vitalício, firme, inalterável, infindável, regular, crebro, periódico, permanecente, diligente, fiel, sempiterno, jazente, reiterado, sem paradas, aplicado, habitual, imóvel, ordinário, uniforme, usual, áfio, comum, consequente, consistente, duplicado, duradoiro, mencionado, perdurável, perenal, pontual, renovado, seguinte, usado, contino, redito, definitivo, esforçado, imanente, inabalável, interminável, irretratável, iterativo, monótono, perseverante, acontecedeiro, consignado, freqüente, inflexivo, invariante, jornal, periodico, por toda vida, sequencial, acostumado, adotado, atento, atilado, cadimo, consueto, consuetudinário, correntio, costumado, costumeiro, costumário, durador, durável, escrito, escrupuloso, exato, futuro, incansável, irretractável, irrevogável, metódico, ordenado, pertinaz, religioso, rente, resultante, rotineiro, rítmico, sólito, tenaz, vulgar, acompanhado, activo, adamantino, adoptado, alterno, ativo, coerente, crónico, cíclico, deitado, durativo, efectivo, escolhido, estendido, estereotipado, eterna, eternas, eternos, fixo, frequentado, hereditário, homogéneo, imperecível, inamovível, inextinguível, infinita, infinito, intemporal, intermitente, laborioso, localizado, matraqueado, normal, novo, nutrido, ocasional, operoso, pegado, porfiado, próximo, recalcado, revezado, sazonal, seguro, sem idade, sistemático, situado, sucedido, sínoco, trabalhador, trilhado, ulterior, unânime, vital |
 | contopt:28395 | RT | contínuo, constante, ininterrupto, sucessivo, permanente, frequente, incessante, perpétuo, continuado, assíduo, seguido, perene, aturado, porfioso, incessável, ininterrompido, afio, consecutivo, estável, imutável, imudável, invariável, amiudado, repetido, manente, duradouro, imediato, jacente, conseguinte, subsecutivo, persistente, eterno, miúdo, vitalício, firme, inalterável, infindável, regular, crebro, periódico, permanecente, diligente, fiel, sempiterno, jazente, reiterado, sem paradas, aplicado, habitual, imóvel, ordinário, uniforme, usual |
 | fuzzythes:23298 | RT | consignado, constante, imudável, imutável, invariável, manente, incessável, estável, ininterrompido, aturado, afio, incessante, perseverante, permanente, continuado, imanente, escrito, ininterrupto, jazente, permanecente, contínuo, diamantino, estóico, assíduo, seguido, firme, sistemático, uniforme, jacente, sucessivo, adamantino, persistente, porfioso, mencionado, perene, metódico, perpétuo, ordenado |
 | fuzzythes:25600 | RT | unímodo, uniforme, homótono, equável, homogéneo, monótono, recto |

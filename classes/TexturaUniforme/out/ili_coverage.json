@@ -1,6 +1,6 @@
 {
   "schema": "semantic_research.ili_coverage/1",
-  "generated": "2026-08-07T12:35:46+00:00",
+  "generated": "2026-08-07T12:50:17+00:00",
   "pins": {
     "oewn": "oewn:2025",
     "cili_commit": "upstream-master+pwn30+pwn31+wn.ili",

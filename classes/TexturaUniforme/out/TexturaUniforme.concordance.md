@@ -6,7 +6,7 @@
 - **Junções interfontes por CILI:** 1
 - **WordNet/OEWN:** consultada e com resultados na matriz
 - **Onto.PT:** discovery-only — queried=True; discovery_evidence=True; concordance_results=false (não admite na matriz LexWarrant)
-- **Gerado:** 2026-08-07T13:35:46
+- **Gerado:** 2026-08-07T13:50:18
 - **Descartados (só pendentes):** 10 (termos ainda por adjudicar; contados, não listados)
 - **Asserções:** 13/13 PASS ✅
 

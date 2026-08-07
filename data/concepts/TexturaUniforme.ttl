@@ -6,7 +6,7 @@
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaUniforme
-# generated 2026-08-07T12:35:47+00:00
+# generated 2026-08-07T12:50:22+00:00
 # policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaUniforme a owl:Class, skos:Concept ;
@@ -42,4 +42,4 @@ sr:TexturaUniforme a owl:Class, skos:Concept ;
     sr:excludedCandidate [ rdf:value "fardamenta"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
     sr:excludedCandidate [ rdf:value "mudança"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL MANEIRA_SEM (MANEIRA_SEM)" ] ;
     sr:excludedCandidate [ rdf:value "variação"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL MANEIRA_SEM (MANEIRA_SEM)" ] ;
-    rdfs:comment "UF senses=11; RT=9; exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .
+    rdfs:comment "UF senses=11; RT=10; exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .

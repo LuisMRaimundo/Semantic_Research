@@ -1,6 +1,7 @@
 {
   "class_id": "TexturaUniforme",
   "admitted_offsets": [
+    "clip21:19004",
     "contopt:28395",
     "fuzzythes:23298",
     "fuzzythes:25600",
@@ -20,7 +21,6 @@
     "clip21:16596",
     "clip21:17576",
     "clip21:17930",
-    "clip21:19004",
     "clip21:19228",
     "clip21:19272",
     "clip21:19790",
