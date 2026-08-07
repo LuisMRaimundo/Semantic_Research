@@ -404,6 +404,9 @@ class Workbench(tk.Tk):
         ttk.Button(
             ili_btns, text="Aceitar top-5", command=self._onto_ili_accept_top
         ).pack(side="left", padx=4)
+        ttk.Button(
+            ili_btns, text="Aceitar tudo", command=self._onto_ili_accept_all
+        ).pack(side="left")
         self.onto_ili_status = ttk.Label(ili_box, text="—", foreground="#444")
         self.onto_ili_status.pack(anchor="w", pady=(2, 2))
         self.onto_ili_list = tk.Listbox(ili_box, height=6, font=("Consolas", 8))
@@ -1471,6 +1474,30 @@ class Workbench(tk.Tk):
             from semantic.onto_ili import accept_top
             out = accept_top(ws.class_id, n=5, min_score=0.6)
             self._log(f"Onto→ILI accept-top: {out}\n")
+            self._onto_ili_refresh()
+        except Exception as exc:  # noqa: BLE001
+            messagebox.showerror(APP, str(exc))
+
+    def _onto_ili_accept_all(self):
+        """Accept every still-proposed link, regardless of score (confirmed)."""
+        ws = self._ws()
+        if not ws:
+            return
+        try:
+            from semantic.onto_ili import accept_top, list_proposals
+            pending = list_proposals(ws.class_id, status="proposed")
+            if not pending:
+                messagebox.showinfo(APP, "Sem propostas pendentes para aceitar.")
+                return
+            low = sum(1 for p in pending if float(p.get("score") or 0) < 0.6)
+            warn = f"\n(inclui {low} com score < 0.60)" if low else ""
+            if not messagebox.askyesno(
+                APP,
+                f"Aceitar TODAS as {len(pending)} propostas pendentes?{warn}",
+            ):
+                return
+            out = accept_top(ws.class_id, n=len(pending), min_score=0.0)
+            self._log(f"Onto→ILI accept-all: {out['n']} aceites\n")
             self._onto_ili_refresh()
         except Exception as exc:  # noqa: BLE001
             messagebox.showerror(APP, str(exc))
