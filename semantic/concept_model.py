@@ -18,6 +18,7 @@ SKOS discipline (audit / Global WordNet practice)
 from __future__ import annotations
 
 import json
+import logging
 import re
 from datetime import datetime, timezone
 from pathlib import Path
@@ -26,6 +27,8 @@ from typing import Any, Optional
 from .normalize import normalize_word, pretty_word
 from .settings import DATA_DIR, ROOT
 from .workspace import ClassWorkspace
+
+log = logging.getLogger(__name__)
 
 _SAFE = re.compile(r"[^A-Za-z0-9_\-]+")
 
@@ -229,11 +232,31 @@ def build_class_concept_graph(ws: ClassWorkspace) -> dict[str, Any]:
                 # Adjudicated domain exclusions stay in concept_mapping;
                 # do not auto-inflate RDF excludedCili from every PULO exclude.
 
+    stipulated_terms: list[dict[str, Any]] = []
     for m in dec.get("manual_terms") or []:
         term = pretty_word(m.get("term") or m.get("lemma") or "")
         if not term:
             continue
-        st = (m.get("status") or m.get("decision") or "UF").strip()
+        st = (m.get("status") or m.get("decision") or "").strip()
+        if not st:
+            # No silent default to UF (same policy as compile_specs):
+            # a status-less manual term is a stipulation, never vocabulary.
+            entry = {
+                "term": term,
+                "provenance": list(m.get("provenance") or m.get("guarantee") or []),
+                "definition": m.get("definition") or "",
+                "structural": m.get("structural") or "",
+                "note": "manual_terms entry without status — not adjudicated; "
+                        "kept for audit only",
+            }
+            stipulated_terms.append(entry)
+            log.warning(
+                "concept_model [%s]: manual_terms «%s» sem status — "
+                "excluído de skos:altLabel (proveniência: %s)",
+                ws.class_id, term,
+                ", ".join(entry["provenance"]) or "—",
+            )
+            continue
         row = {
             "members": [term], "source": "manual", "ili": None,
             "gloss": "", "key": term,
@@ -277,6 +300,7 @@ def build_class_concept_graph(ws: ClassWorkspace) -> dict[str, Any]:
         "pref_label": pref,
         "axis": axis,
         "discovery_evidence": discovery,
+        "stipulated_terms": stipulated_terms,
         "cili_exact": exact,
         "cili_close": close_cili,
         "cili_related": related_cili,
