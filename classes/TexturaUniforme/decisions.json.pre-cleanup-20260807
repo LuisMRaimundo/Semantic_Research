@@ -7775,6 +7775,60 @@
   ],
   "terms": [
     {
+      "term": "constante",
+      "status": "UF",
+      "note": "Teste 1",
+      "guarantee": [
+        "lexical"
+      ],
+      "destino": "vocabulario"
+    },
+    {
+      "term": "invariável",
+      "status": "UF",
+      "note": "Teste 1",
+      "guarantee": [
+        "lexical"
+      ],
+      "destino": "vocabulario"
+    },
+    {
+      "term": "imutável",
+      "status": "UF",
+      "note": "Teste 1",
+      "guarantee": [
+        "lexical"
+      ],
+      "destino": "vocabulario"
+    },
+    {
+      "term": "igual",
+      "status": "RT",
+      "note": "Teste 1 falha",
+      "guarantee": [
+        "lexical"
+      ],
+      "destino": "vocabulario"
+    },
+    {
+      "term": "regular",
+      "status": "RT",
+      "note": "Teste 1 falha",
+      "guarantee": [
+        "lexical"
+      ],
+      "destino": "vocabulario"
+    },
+    {
+      "term": "periódico",
+      "status": "RT",
+      "note": "Teste 3",
+      "guarantee": [
+        "lexical"
+      ],
+      "destino": "vocabulario"
+    },
+    {
       "term": "uniformidade",
       "status": "atributo",
       "note": "qualidade",
@@ -7791,9 +7845,64 @@
         "lexical"
       ],
       "destino": "evidencia"
+    },
+    {
+      "term": "desigual",
+      "status": "oposicao",
+      "note": "Teste 3",
+      "guarantee": [
+        "lexical"
+      ],
+      "migrado_de": "contraste",
+      "revisao_pendente": true,
+      "destino": "evidencia"
+    },
+    {
+      "term": "irregular",
+      "status": "oposicao",
+      "note": "Teste 3",
+      "guarantee": [
+        "lexical"
+      ],
+      "migrado_de": "contraste",
+      "revisao_pendente": true,
+      "destino": "evidencia"
+    },
+    {
+      "term": "variável",
+      "status": "oposicao",
+      "note": "Teste 3",
+      "guarantee": [
+        "lexical"
+      ],
+      "migrado_de": "contraste",
+      "revisao_pendente": true,
+      "destino": "evidencia"
+    },
+    {
+      "term": "politípica",
+      "status": "oposicao",
+      "note": "Teste 3",
+      "guarantee": [
+        "estipulativa"
+      ],
+      "structural": "TexturaHeterogenea",
+      "definition": "textura composta por múltiplos tipos simultâneos",
+      "migrado_de": "contraste",
+      "revisao_pendente": true,
+      "destino": "evidencia"
     }
   ],
-  "manual_terms": [],
+  "manual_terms": [
+    {
+      "term": "politípica",
+      "provenance": [
+        "estipulativa"
+      ],
+      "definition": "textura composta por múltiplos tipos simultâneos",
+      "structural": "TexturaHeterogenea"
+    }
+  ],
   "exclude_terms": [
     "heterogéneo"
   ]
