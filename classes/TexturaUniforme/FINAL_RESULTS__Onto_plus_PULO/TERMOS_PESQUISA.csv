@@ -8,19 +8,17 @@ B,single,single*,en,,,,i10772,WordNet,similar_to,
 B,dedifferentiated,dedifferentiated*,en,,,,i4127,WordNet,similar_to,
 C,homogeneous,homogeneous*,en,,,,,,,conjunto de controlo — não pólo contrastante
 C,homogenous,homogenous*,en,,,,,,,conjunto de controlo — não pólo contrastante
-D,uniformity,uniformity*,en,RT,,,i61962,OEWN,,
-D,uniformness,uniformness*,en,RT,,,i61962,OEWN,,
+E,uniformidade,,,exclude,,,i61962,pulo,,ausência de variação; invariância e uniformidade de um parâmetro
 E,uniforme,,,exclude,,,papel35:FINALIDADE:FAZ_SE_COM:uniforme,papel,,discovery: PAPEL 3.5
 E,uniforme,,,exclude,,,papel35:HIPERONIMIA:HIPERONIMO_DE:uniforme,papel,,discovery: PAPEL 3.5
+E,uniforme,,,exclude,,,papel35:MANEIRA:MANEIRA_POR_MEIO_DE:uniforme,papel,,discovery: PAPEL 3.5
 E,uniforme,,,exclude,,,papel35:PARTE:PARTE_DE_ALGO_COM_PROPRIEDADE:uniforme,papel,,discovery: PAPEL 3.5
+E,uniforme,,,exclude,,,papel35:REFERENTE:DIZ_SE_DO_QUE:uniforme,papel,,discovery: PAPEL 3.5
 E,uniforme,,,exclude,,,papel35:SINONIMIA:SINONIMO_ADJ_DE:uniforme,papel,,discovery: PAPEL 3.5
 E,uniforme,,,exclude,,,papel35:SINONIMIA:SINONIMO_N_DE:uniforme,papel,,discovery: PAPEL 3.5
 E,uniformemente,,,exclude,,,papel35:MANEIRA_SEM:MANEIRA_SEM:uniforme,papel,,discovery: PAPEL 3.5
 E,uniformemente,,,exclude,,,papel35:SINONIMIA:SINONIMO_ADV_DE:uniforme,papel,,discovery: PAPEL 3.5
 F,constante,constante*,pt-PT,UF,fonte_unica,presente,i6560,pulo,,
 F,imutável,imutável*,pt-PT,UF,fonte_unica,presente,i10771,pulo,,
-F,invariância,invariância*,pt-PT,RT,fonte_unica,presente,i61962,pulo,,
 F,invariável,invariável*,pt-PT,UF,fonte_unica,presente,i6560,pulo,,
-F,periódico,periódico*,pt-PT,RT,fonte_unica,presente,i61962,pulo,,
 F,uniforme,uniforme*,pt-PT,UF,convergencia,presente,i10771;i6560,"own-pt, pulo",,
-F,uniformidade,uniformidade*,pt-PT,RT,fonte_unica,presente,i61962,pulo,,

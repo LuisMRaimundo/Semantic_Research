@@ -2,7 +2,7 @@
   "class_id": "TexturaUniforme",
   "pref_label": "uniforme",
   "axis": "invariância face a um parâmetro",
-  "generated": "2026-08-07T14:10:58",
+  "generated": "2026-08-07T14:22:35",
   "source": "PULO / WordNet.PT export",
   "stage1": {
     "admitted": [
@@ -17,21 +17,15 @@
         "glosa": "sempre o mesmo parâmetro; imutável e uniforme",
         "decision": "UF",
         "export_gloss": "sempre o mesmo; mostrando um único formulário ou personagem em todas as ocorrências\n"
-      },
-      {
-        "ili_offset": "ili-30-04745370-n",
-        "glosa": "ausência de variação; invariância e uniformidade de um parâmetro",
-        "decision": "RT",
-        "export_gloss": "a qualidade de falta de diversidade ou variação (até mesmo ao ponto de tédio)\n"
       }
     ],
     "admitted_offsets": [
       "pwn30-01200095-a",
-      "pwn30-01966488-a",
-      "ili-30-04745370-n"
+      "pwn30-01966488-a"
     ],
     "excluded_offsets": [
       "pwn30-00909545-a",
+      "ili-30-04745370-n",
       "pwn30-02302187-a",
       "pwn30-00910101-a",
       "pwn30-04509592-n",
@@ -72,24 +66,6 @@
       "offsets": [
         "pwn30-01966488-a"
       ]
-    },
-    "uniformidade": {
-      "display": "uniformidade",
-      "offsets": [
-        "ili-30-04745370-n"
-      ]
-    },
-    "invariancia": {
-      "display": "invariância",
-      "offsets": [
-        "ili-30-04745370-n"
-      ]
-    },
-    "periodico": {
-      "display": "periódico",
-      "offsets": [
-        "ili-30-04745370-n"
-      ]
     }
   },
   "stage3": {
@@ -108,74 +84,13 @@
         "via": "derivationally related form",
         "source_ili": "pwn30-01200095-a",
         "target_gloss": "a qualidade de falta de diversidade ou variação (até mesmo ao ponto de tédio)\n"
-      },
-      "uniforme": {
-        "display": "uniforme",
-        "via": "derivationally related form",
-        "source_ili": "ili-30-04745370-n",
-        "target_gloss": "não diferenciado\n"
-      },
-      "coerente": {
-        "display": "coerente",
-        "via": "derivationally related form",
-        "source_ili": "ili-30-04745370-n",
-        "target_gloss": "o mesmo em toda a estrutura ou composição\n"
       }
     },
-    "BT": {
-      "afinidade": {
-        "display": "afinidade",
-        "via": "hypernym",
-        "source_ili": "ili-30-04745370-n",
-        "target_gloss": "a qualidade de ser semelhante\n"
-      },
-      "analogia": {
-        "display": "analogia",
-        "via": "hypernym",
-        "source_ili": "ili-30-04745370-n",
-        "target_gloss": "a qualidade de ser semelhante\n"
-      },
-      "conformidade": {
-        "display": "conformidade",
-        "via": "hypernym",
-        "source_ili": "ili-30-04745370-n",
-        "target_gloss": "a qualidade de ser semelhante\n"
-      },
-      "imagem": {
-        "display": "imagem",
-        "via": "hypernym",
-        "source_ili": "ili-30-04745370-n",
-        "target_gloss": "a qualidade de ser semelhante\n"
-      },
-      "parecenca": {
-        "display": "parecença",
-        "via": "hypernym",
-        "source_ili": "ili-30-04745370-n",
-        "target_gloss": "a qualidade de ser semelhante\n"
-      },
-      "parentesco": {
-        "display": "parentesco",
-        "via": "hypernym",
-        "source_ili": "ili-30-04745370-n",
-        "target_gloss": "a qualidade de ser semelhante\n"
-      },
-      "semelhanca": {
-        "display": "semelhança",
-        "via": "hypernym",
-        "source_ili": "ili-30-04745370-n",
-        "target_gloss": "a qualidade de ser semelhante\n"
-      },
-      "similitude": {
-        "display": "similitude",
-        "via": "hypernym",
-        "source_ili": "ili-30-04745370-n",
-        "target_gloss": "a qualidade de ser semelhante\n"
-      }
-    },
+    "BT": {},
     "NT": {},
     "attribute": {}
   },
-  "dropped_no_lemma": 35,
+  "dropped_no_lemma": 23,
   "sinalizacao": {},
   "stage4_excluded": {},
   "stage5": {
@@ -187,8 +102,7 @@
           "pwn30-01966488-a"
         ],
         "attested": true,
-        "origin": "seed (Etapa 1/2) + forma derivada (família)",
-        "via": "derivationally related form",
+        "origin": "seed (Etapa 1/2)",
         "status": "UF",
         "test": "derivado do sentido (PASSO 3)",
         "guarantee": [
@@ -245,55 +159,6 @@
         "definition": "",
         "structural": "",
         "from_sense": "pwn30-01966488-a"
-      },
-      "uniformidade": {
-        "display": "uniformidade",
-        "offsets": [
-          "ili-30-04745370-n"
-        ],
-        "attested": true,
-        "origin": "seed (Etapa 1/2) + forma derivada (família)",
-        "via": "derivationally related form",
-        "status": "RT",
-        "test": "derivado do sentido (PASSO 3)",
-        "guarantee": [
-          "sense_decision"
-        ],
-        "definition": "",
-        "structural": "",
-        "from_sense": "ili-30-04745370-n"
-      },
-      "invariancia": {
-        "display": "invariância",
-        "offsets": [
-          "ili-30-04745370-n"
-        ],
-        "attested": true,
-        "origin": "seed (Etapa 1/2)",
-        "status": "RT",
-        "test": "derivado do sentido (PASSO 3)",
-        "guarantee": [
-          "sense_decision"
-        ],
-        "definition": "",
-        "structural": "",
-        "from_sense": "ili-30-04745370-n"
-      },
-      "periodico": {
-        "display": "periódico",
-        "offsets": [
-          "ili-30-04745370-n"
-        ],
-        "attested": true,
-        "origin": "seed (Etapa 1/2)",
-        "status": "RT",
-        "test": "derivado do sentido (PASSO 3)",
-        "guarantee": [
-          "sense_decision"
-        ],
-        "definition": "",
-        "structural": "",
-        "from_sense": "ili-30-04745370-n"
       }
     },
     "pending": {
@@ -303,8 +168,7 @@
           "pwn30-01200095-a"
         ],
         "attested": true,
-        "origin": "seed (Etapa 1/2) + forma derivada (família)",
-        "via": "derivationally related form",
+        "origin": "seed (Etapa 1/2)",
         "adjudication": null
       },
       "homogeneo": {
@@ -312,62 +176,6 @@
         "via": "similar to",
         "attested": false,
         "origin": "relação similar-to (RT/UF)",
-        "adjudication": null
-      },
-      "afinidade": {
-        "display": "afinidade",
-        "via": "hypernym",
-        "attested": false,
-        "origin": "relação hypernym (BT)",
-        "adjudication": null
-      },
-      "analogia": {
-        "display": "analogia",
-        "via": "hypernym",
-        "attested": false,
-        "origin": "relação hypernym (BT)",
-        "adjudication": null
-      },
-      "conformidade": {
-        "display": "conformidade",
-        "via": "hypernym",
-        "attested": false,
-        "origin": "relação hypernym (BT)",
-        "adjudication": null
-      },
-      "imagem": {
-        "display": "imagem",
-        "via": "hypernym",
-        "attested": false,
-        "origin": "relação hypernym (BT)",
-        "adjudication": null
-      },
-      "parecenca": {
-        "display": "parecença",
-        "via": "hypernym",
-        "attested": false,
-        "origin": "relação hypernym (BT)",
-        "adjudication": null
-      },
-      "parentesco": {
-        "display": "parentesco",
-        "via": "hypernym",
-        "attested": false,
-        "origin": "relação hypernym (BT)",
-        "adjudication": null
-      },
-      "semelhanca": {
-        "display": "semelhança",
-        "via": "hypernym",
-        "attested": false,
-        "origin": "relação hypernym (BT)",
-        "adjudication": null
-      },
-      "similitude": {
-        "display": "similitude",
-        "via": "hypernym",
-        "attested": false,
-        "origin": "relação hypernym (BT)",
         "adjudication": null
       }
     }
@@ -378,18 +186,6 @@
       "via": "derivationally related form",
       "source_ili": "pwn30-01200095-a",
       "target_gloss": "a qualidade de falta de diversidade ou variação (até mesmo ao ponto de tédio)\n"
-    },
-    "uniforme": {
-      "display": "uniforme",
-      "via": "derivationally related form",
-      "source_ili": "ili-30-04745370-n",
-      "target_gloss": "não diferenciado\n"
-    },
-    "coerente": {
-      "display": "coerente",
-      "via": "derivationally related form",
-      "source_ili": "ili-30-04745370-n",
-      "target_gloss": "o mesmo em toda a estrutura ou composição\n"
     }
   },
   "skos": {
@@ -398,11 +194,6 @@
       "imutável",
       "invariável",
       "uniforme"
-    ],
-    "RT": [
-      "invariância",
-      "periódico",
-      "uniformidade"
     ]
   },
   "provenance": [
@@ -410,7 +201,7 @@
       "termo": "uniforme",
       "estatuto": "UF",
       "eixo": "invariância face a um parâmetro",
-      "via": "derivationally related form",
+      "via": "seed (Etapa 1/2)",
       "offsets_ili": [
         "pwn30-01200095-a",
         "pwn30-01966488-a"
@@ -469,52 +260,6 @@
       ],
       "definicao": "",
       "estrutural": ""
-    },
-    {
-      "termo": "uniformidade",
-      "estatuto": "RT",
-      "eixo": "invariância face a um parâmetro",
-      "via": "derivationally related form",
-      "offsets_ili": [
-        "ili-30-04745370-n"
-      ],
-      "teste_decisivo": "derivado do sentido (PASSO 3)",
-      "garantia": [
-        "sense_decision"
-      ],
-      "definicao": "",
-      "estrutural": "",
-      "gloss": "a qualidade de falta de diversidade ou variação (até mesmo ao ponto de tédio)\n"
-    },
-    {
-      "termo": "invariância",
-      "estatuto": "RT",
-      "eixo": "invariância face a um parâmetro",
-      "via": "seed (Etapa 1/2)",
-      "offsets_ili": [
-        "ili-30-04745370-n"
-      ],
-      "teste_decisivo": "derivado do sentido (PASSO 3)",
-      "garantia": [
-        "sense_decision"
-      ],
-      "definicao": "",
-      "estrutural": ""
-    },
-    {
-      "termo": "periódico",
-      "estatuto": "RT",
-      "eixo": "invariância face a um parâmetro",
-      "via": "seed (Etapa 1/2)",
-      "offsets_ili": [
-        "ili-30-04745370-n"
-      ],
-      "teste_decisivo": "derivado do sentido (PASSO 3)",
-      "garantia": [
-        "sense_decision"
-      ],
-      "definicao": "",
-      "estrutural": ""
     }
   ],
   "attribute_terms": [],
@@ -559,7 +304,7 @@
       "stage": "Etapa 3",
       "text": "Alvos de relação são tipados pelo mapeamento; «(no lemma)» nunca admitido.",
       "passed": true,
-      "evidence": "OK (35 alvos «(no lemma)» descartados)"
+      "evidence": "OK (23 alvos «(no lemma)» descartados)"
     },
     {
       "stage": "Etapa 4",
@@ -595,11 +340,11 @@
       "stage": "Serialização",
       "passed": true,
       "text": "X.skos.ttl analisa com rdflib e tem a contagem de triplos esperada.",
-      "evidence": "triplos esperados=12, analisados=12"
+      "evidence": "triplos esperados=9, analisados=9"
     }
   ],
   "all_passed": false,
-  "skos_triples": 12,
+  "skos_triples": 9,
   "_ttl_ok": true,
-  "_signals_sidelined": 67
+  "_signals_sidelined": 54
 }

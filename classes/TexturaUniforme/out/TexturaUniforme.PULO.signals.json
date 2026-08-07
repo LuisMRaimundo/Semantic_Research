@@ -1,6 +1,6 @@
 {
   "class_id": "TexturaUniforme",
-  "count": 67,
+  "count": 54,
   "note": "PULO relation harvest (unnamed #NN / similar-to off-axis). Not decisions — review only if something looks useful; otherwise ignore.",
   "sinalizacao": {
     "estruturacao": {
@@ -379,97 +379,6 @@
       "via": "relation #61 (inverse)",
       "source_ili": "pwn30-01966488-a",
       "target_gloss": "um exemplo de algo que ocorre\n",
-      "reason": "relação não-nomeada / #NN"
-    },
-    "ainda": {
-      "display": "ainda",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-04745370-n",
-      "target_gloss": "em toda a extensão\n",
-      "reason": "relação não-nomeada / #NN"
-    },
-    "carecer": {
-      "display": "carecer",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-04745370-n",
-      "target_gloss": "ser sem\n",
-      "reason": "relação não-nomeada / #NN"
-    },
-    "manquejar": {
-      "display": "manquejar",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-04745370-n",
-      "target_gloss": "ser sem\n",
-      "reason": "relação não-nomeada / #NN"
-    },
-    "faltar": {
-      "display": "faltar",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-04745370-n",
-      "target_gloss": "ser sem\n",
-      "reason": "relação não-nomeada / #NN"
-    },
-    "qualidade": {
-      "display": "qualidade",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-04745370-n",
-      "target_gloss": "um atributo essencial e distintiva de algo ou alguém\n",
-      "reason": "relação não-nomeada / #NN"
-    },
-    "variedade": {
-      "display": "variedade",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-04745370-n",
-      "target_gloss": "heterogeneidade notável\n",
-      "reason": "relação não-nomeada / #NN"
-    },
-    "diversidade": {
-      "display": "diversidade",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-04745370-n",
-      "target_gloss": "heterogeneidade notável\n",
-      "reason": "relação não-nomeada / #NN"
-    },
-    "variacao": {
-      "display": "variação",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-04745370-n",
-      "target_gloss": "uma instância de mudança; a taxa ou a magnitude da mudança\n",
-      "reason": "relação não-nomeada / #NN"
-    },
-    "etapa": {
-      "display": "etapa",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-04745370-n",
-      "target_gloss": "uma posição específica identificável num contínuo ou em série ou em um processo especialmente\n",
-      "reason": "relação não-nomeada / #NN"
-    },
-    "fase": {
-      "display": "fase",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-04745370-n",
-      "target_gloss": "uma posição específica identificável num contínuo ou em série ou em um processo especialmente\n",
-      "reason": "relação não-nomeada / #NN"
-    },
-    "grau": {
-      "display": "grau",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-04745370-n",
-      "target_gloss": "uma posição específica identificável num contínuo ou em série ou em um processo especialmente\n",
-      "reason": "relação não-nomeada / #NN"
-    },
-    "nivel": {
-      "display": "nível",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-04745370-n",
-      "target_gloss": "uma posição específica identificável num contínuo ou em série ou em um processo especialmente\n",
-      "reason": "relação não-nomeada / #NN"
-    },
-    "ponto": {
-      "display": "ponto",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-04745370-n",
-      "target_gloss": "uma posição específica identificável num contínuo ou em série ou em um processo especialmente\n",
       "reason": "relação não-nomeada / #NN"
     }
   }

@@ -465,8 +465,13 @@ def render_skos_owl(
                 " ]"
             )
 
+    # Counts are discovery-evidence inventory, NOT emitted SKOS relations —
+    # say so explicitly so the metadata cannot contradict the graph (e.g.
+    # RT candidates exist while no skos:related* triple is warranted).
     preds.append(
-        f'    rdfs:comment "UF senses={len(uf_rows)}; RT={len(rt_rows)}; '
+        f'    rdfs:comment "discovery evidence (candidates, not SKOS '
+        f'relations): UF senses={len(uf_rows)}; RT senses={len(rt_rows)}. '
+        f'validated mappings: '
         f'exactCILI={len(graph.get("cili_exact") or [])}; '
         f'closeCILI={len(graph.get("cili_close") or [])}; '
         f'relatedCILI={len(graph.get("cili_related") or [])}; '

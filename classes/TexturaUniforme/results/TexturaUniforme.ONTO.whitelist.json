@@ -1,8 +1,6 @@
 {
   "class_id": "TexturaUniforme",
   "admitted_offsets": [
-    "clip21:19004",
-    "contopt:28395",
     "fuzzythes:23298",
     "fuzzythes:25600",
     "fuzzythes:26445",
@@ -12,8 +10,7 @@
     "ontopt06:2945",
     "polaridades:1656",
     "polaridades:4484",
-    "clip21:15521",
-    "clip21:20421"
+    "clip21:15521"
   ],
   "excluded_offsets": [
     "clip01:6948",
@@ -21,6 +18,7 @@
     "clip21:16596",
     "clip21:17576",
     "clip21:17930",
+    "clip21:19004",
     "clip21:19228",
     "clip21:19272",
     "clip21:19790",
@@ -28,6 +26,7 @@
     "contopt:9502",
     "contopt:15361",
     "contopt:16491",
+    "contopt:28395",
     "fuzzythes:1661",
     "fuzzythes:1920",
     "fuzzythes:2140",
@@ -57,6 +56,7 @@
     "clip21:14562",
     "clip21:19940",
     "clip21:20073",
+    "clip21:20421",
     "clip21:1403",
     "clip21:5416",
     "clip21:6019",

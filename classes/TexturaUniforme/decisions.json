@@ -80,9 +80,9 @@
         "invariância",
         "periódico"
       ],
-      "decision": "RT",
+      "decision": "exclude",
       "note": "",
-      "destino": "vocabulario"
+      "destino": "evidencia"
     },
     {
       "source": "pulo",
@@ -1140,9 +1140,9 @@
         "unânime",
         "vital"
       ],
-      "decision": "RT",
+      "decision": "exclude",
       "note": "",
-      "destino": "vocabulario"
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -1590,9 +1590,9 @@
         "uniforme",
         "usual"
       ],
-      "decision": "RT",
+      "decision": "exclude",
       "note": "",
-      "destino": "vocabulario"
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -3120,9 +3120,9 @@
         "monotonamente",
         "unanimemente"
       ],
-      "decision": "RT",
+      "decision": "exclude",
       "note": "",
-      "destino": "vocabulario"
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -7645,9 +7645,9 @@
         "uniforme",
         "uniformemente"
       ],
-      "decision": "UF",
+      "decision": "exclude",
       "note": "discovery: PAPEL 3.5",
-      "destino": "vocabulario"
+      "destino": "evidencia"
     },
     {
       "source": "papel",
@@ -7699,9 +7699,9 @@
         "ter forma de ameixa",
         "ter só forma"
       ],
-      "decision": "RT",
+      "decision": "exclude",
       "note": "discovery: PAPEL 3.5",
-      "destino": "vocabulario"
+      "destino": "evidencia"
     },
     {
       "source": "papel",

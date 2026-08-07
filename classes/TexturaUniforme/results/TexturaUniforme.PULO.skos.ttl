@@ -4,9 +4,6 @@
 
 tex:TexturaUniforme a owl:Class,
         skos:Concept ;
-    tex:termoRelacionado tex:invariancia,
-        tex:periodico,
-        tex:uniformidade ;
     owl:disjointWith tex:TexturaHeterogenea ;
     skos:altLabel "constante"@pt-PT,
         "imutável"@pt-PT,
