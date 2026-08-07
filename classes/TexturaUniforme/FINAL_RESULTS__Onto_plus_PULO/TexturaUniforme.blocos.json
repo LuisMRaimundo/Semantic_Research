@@ -208,51 +208,6 @@
         "destino": "vocabulario",
         "termo": "uniformidade",
         "skos": "skos:altLabel"
-      },
-      {
-        "fonte": "papel",
-        "key": "papel35:SINONIMIA:SINONIMO_ADV_DE:uniforme",
-        "ili": null,
-        "membros": [
-          "inalteravelmente",
-          "monotonamente",
-          "uniformemente"
-        ],
-        "gloss": "PAPEL SINONIMO_ADV_DE (SINONIMIA)",
-        "note": "discovery: PAPEL 3.5",
-        "destino": "vocabulario",
-        "termo": "inalteravelmente",
-        "skos": "skos:altLabel"
-      },
-      {
-        "fonte": "papel",
-        "key": "papel35:SINONIMIA:SINONIMO_ADV_DE:uniforme",
-        "ili": null,
-        "membros": [
-          "inalteravelmente",
-          "monotonamente",
-          "uniformemente"
-        ],
-        "gloss": "PAPEL SINONIMO_ADV_DE (SINONIMIA)",
-        "note": "discovery: PAPEL 3.5",
-        "destino": "vocabulario",
-        "termo": "monotonamente",
-        "skos": "skos:altLabel"
-      },
-      {
-        "fonte": "papel",
-        "key": "papel35:SINONIMIA:SINONIMO_ADV_DE:uniforme",
-        "ili": null,
-        "membros": [
-          "inalteravelmente",
-          "monotonamente",
-          "uniformemente"
-        ],
-        "gloss": "PAPEL SINONIMO_ADV_DE (SINONIMIA)",
-        "note": "discovery: PAPEL 3.5",
-        "destino": "vocabulario",
-        "termo": "uniformemente",
-        "skos": "skos:altLabel"
       }
     ],
     "termoRelacionado": [
@@ -432,166 +387,6 @@
         "note": "discovery: PAPEL 3.5",
         "destino": "vocabulario",
         "termo": "ter só forma",
-        "skos": "tex:termoRelacionado"
-      },
-      {
-        "fonte": "papel",
-        "key": "papel35:SINONIMIA:SINONIMO_ADJ_DE:uniforme",
-        "ili": null,
-        "membros": [
-          "uniforme",
-          "homogéneo",
-          "homótono",
-          "igual",
-          "luniforme",
-          "lunulado",
-          "monótono",
-          "regular"
-        ],
-        "gloss": "PAPEL SINONIMO_ADJ_DE (SINONIMIA)",
-        "note": "discovery: PAPEL 3.5",
-        "destino": "vocabulario",
-        "termo": "uniforme",
-        "skos": "tex:termoRelacionado"
-      },
-      {
-        "fonte": "papel",
-        "key": "papel35:SINONIMIA:SINONIMO_ADJ_DE:uniforme",
-        "ili": null,
-        "membros": [
-          "uniforme",
-          "homogéneo",
-          "homótono",
-          "igual",
-          "luniforme",
-          "lunulado",
-          "monótono",
-          "regular"
-        ],
-        "gloss": "PAPEL SINONIMO_ADJ_DE (SINONIMIA)",
-        "note": "discovery: PAPEL 3.5",
-        "destino": "vocabulario",
-        "termo": "homogéneo",
-        "skos": "tex:termoRelacionado"
-      },
-      {
-        "fonte": "papel",
-        "key": "papel35:SINONIMIA:SINONIMO_ADJ_DE:uniforme",
-        "ili": null,
-        "membros": [
-          "uniforme",
-          "homogéneo",
-          "homótono",
-          "igual",
-          "luniforme",
-          "lunulado",
-          "monótono",
-          "regular"
-        ],
-        "gloss": "PAPEL SINONIMO_ADJ_DE (SINONIMIA)",
-        "note": "discovery: PAPEL 3.5",
-        "destino": "vocabulario",
-        "termo": "homótono",
-        "skos": "tex:termoRelacionado"
-      },
-      {
-        "fonte": "papel",
-        "key": "papel35:SINONIMIA:SINONIMO_ADJ_DE:uniforme",
-        "ili": null,
-        "membros": [
-          "uniforme",
-          "homogéneo",
-          "homótono",
-          "igual",
-          "luniforme",
-          "lunulado",
-          "monótono",
-          "regular"
-        ],
-        "gloss": "PAPEL SINONIMO_ADJ_DE (SINONIMIA)",
-        "note": "discovery: PAPEL 3.5",
-        "destino": "vocabulario",
-        "termo": "igual",
-        "skos": "tex:termoRelacionado"
-      },
-      {
-        "fonte": "papel",
-        "key": "papel35:SINONIMIA:SINONIMO_ADJ_DE:uniforme",
-        "ili": null,
-        "membros": [
-          "uniforme",
-          "homogéneo",
-          "homótono",
-          "igual",
-          "luniforme",
-          "lunulado",
-          "monótono",
-          "regular"
-        ],
-        "gloss": "PAPEL SINONIMO_ADJ_DE (SINONIMIA)",
-        "note": "discovery: PAPEL 3.5",
-        "destino": "vocabulario",
-        "termo": "luniforme",
-        "skos": "tex:termoRelacionado"
-      },
-      {
-        "fonte": "papel",
-        "key": "papel35:SINONIMIA:SINONIMO_ADJ_DE:uniforme",
-        "ili": null,
-        "membros": [
-          "uniforme",
-          "homogéneo",
-          "homótono",
-          "igual",
-          "luniforme",
-          "lunulado",
-          "monótono",
-          "regular"
-        ],
-        "gloss": "PAPEL SINONIMO_ADJ_DE (SINONIMIA)",
-        "note": "discovery: PAPEL 3.5",
-        "destino": "vocabulario",
-        "termo": "lunulado",
-        "skos": "tex:termoRelacionado"
-      },
-      {
-        "fonte": "papel",
-        "key": "papel35:SINONIMIA:SINONIMO_ADJ_DE:uniforme",
-        "ili": null,
-        "membros": [
-          "uniforme",
-          "homogéneo",
-          "homótono",
-          "igual",
-          "luniforme",
-          "lunulado",
-          "monótono",
-          "regular"
-        ],
-        "gloss": "PAPEL SINONIMO_ADJ_DE (SINONIMIA)",
-        "note": "discovery: PAPEL 3.5",
-        "destino": "vocabulario",
-        "termo": "monótono",
-        "skos": "tex:termoRelacionado"
-      },
-      {
-        "fonte": "papel",
-        "key": "papel35:SINONIMIA:SINONIMO_ADJ_DE:uniforme",
-        "ili": null,
-        "membros": [
-          "uniforme",
-          "homogéneo",
-          "homótono",
-          "igual",
-          "luniforme",
-          "lunulado",
-          "monótono",
-          "regular"
-        ],
-        "gloss": "PAPEL SINONIMO_ADJ_DE (SINONIMIA)",
-        "note": "discovery: PAPEL 3.5",
-        "destino": "vocabulario",
-        "termo": "regular",
         "skos": "tex:termoRelacionado"
       }
     ],
@@ -7602,6 +7397,27 @@
       },
       {
         "fonte": "papel",
+        "key": "papel35:SINONIMIA:SINONIMO_ADJ_DE:uniforme",
+        "ili": null,
+        "membros": [
+          "homogéneo",
+          "homótono",
+          "igual",
+          "luniforme",
+          "lunulado",
+          "monótono",
+          "regular"
+        ],
+        "gloss": "PAPEL SINONIMO_ADJ_DE (SINONIMIA)",
+        "note": "discovery: PAPEL 3.5",
+        "destino": "evidencia",
+        "members_omitted_focal": [
+          "uniforme"
+        ],
+        "exclusion_scope": "record_or_sense_not_lemma"
+      },
+      {
+        "fonte": "papel",
         "key": "papel35:SINONIMIA:SINONIMO_N_DE:uniforme",
         "ili": null,
         "membros": [
@@ -7626,6 +7442,21 @@
           "variação"
         ],
         "gloss": "PAPEL MANEIRA_SEM (MANEIRA_SEM)",
+        "note": "discovery: PAPEL 3.5",
+        "destino": "evidencia",
+        "members_omitted_focal": [],
+        "exclusion_scope": "record_or_sense_not_lemma"
+      },
+      {
+        "fonte": "papel",
+        "key": "papel35:SINONIMIA:SINONIMO_ADV_DE:uniforme",
+        "ili": null,
+        "membros": [
+          "inalteravelmente",
+          "monotonamente",
+          "uniformemente"
+        ],
+        "gloss": "PAPEL SINONIMO_ADV_DE (SINONIMIA)",
         "note": "discovery: PAPEL 3.5",
         "destino": "evidencia",
         "members_omitted_focal": [],

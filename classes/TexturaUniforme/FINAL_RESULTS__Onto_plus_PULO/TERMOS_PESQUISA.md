@@ -5,7 +5,7 @@
 **Âncora CILI:** i6560, i10771
 **Língua de pesquisa:** `en` · **Língua de rótulos:** `pt-PT`
 **Sintaxe de pesquisa:** `uniform* NEAR/4 <termo>`
-**Gerado:** 2026-08-07T13:50:24+01:00
+**Gerado:** 2026-08-07T14:11:06+01:00
 
 ## A — Pólo alvo (`en`)
 
@@ -48,8 +48,10 @@
 | `papel35:FINALIDADE:FAZ_SE_COM:uniforme` | `—` | `—` | uniforme | discovery: PAPEL 3.5 |
 | `papel35:HIPERONIMIA:HIPERONIMO_DE:uniforme` | `—` | `—` | uniforme | discovery: PAPEL 3.5 |
 | `papel35:PARTE:PARTE_DE_ALGO_COM_PROPRIEDADE:uniforme` | `—` | `—` | uniforme | discovery: PAPEL 3.5 |
+| `papel35:SINONIMIA:SINONIMO_ADJ_DE:uniforme` | `—` | `—` | uniforme | discovery: PAPEL 3.5 |
 | `papel35:SINONIMIA:SINONIMO_N_DE:uniforme` | `—` | `—` | uniforme | discovery: PAPEL 3.5 |
 | `papel35:MANEIRA_SEM:MANEIRA_SEM:uniforme` | `—` | `—` | uniformemente | discovery: PAPEL 3.5 |
+| `papel35:SINONIMIA:SINONIMO_ADV_DE:uniforme` | `—` | `—` | uniformemente | discovery: PAPEL 3.5 |
 
 ## F — Vocabulário (`pt-PT`)
 

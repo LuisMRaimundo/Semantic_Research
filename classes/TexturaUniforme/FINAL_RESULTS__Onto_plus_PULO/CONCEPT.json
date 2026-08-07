@@ -131,17 +131,6 @@
         "ili": null,
         "gloss": "PAPEL TEM_QUALIDADE (QUALIDADE)",
         "key": "papel35:QUALIDADE:TEM_QUALIDADE:uniforme"
-      },
-      {
-        "members": [
-          "inalteravelmente",
-          "monotonamente",
-          "uniformemente"
-        ],
-        "source": "papel",
-        "ili": null,
-        "gloss": "PAPEL SINONIMO_ADV_DE (SINONIMIA)",
-        "key": "papel35:SINONIMIA:SINONIMO_ADV_DE:uniforme"
       }
     ],
     "rt_candidates": [
@@ -524,22 +513,6 @@
         "ili": null,
         "gloss": "PAPEL DIZ_SE_DO_QUE (REFERENTE)",
         "key": "papel35:REFERENTE:DIZ_SE_DO_QUE:uniforme"
-      },
-      {
-        "members": [
-          "uniforme",
-          "homogéneo",
-          "homótono",
-          "igual",
-          "luniforme",
-          "lunulado",
-          "monótono",
-          "regular"
-        ],
-        "source": "papel",
-        "ili": null,
-        "gloss": "PAPEL SINONIMO_ADJ_DE (SINONIMIA)",
-        "key": "papel35:SINONIMIA:SINONIMO_ADJ_DE:uniforme"
       }
     ],
     "exclude_records": [
@@ -7359,6 +7332,25 @@
       },
       {
         "members": [
+          "homogéneo",
+          "homótono",
+          "igual",
+          "luniforme",
+          "lunulado",
+          "monótono",
+          "regular"
+        ],
+        "source": "papel",
+        "ili": null,
+        "gloss": "PAPEL SINONIMO_ADJ_DE (SINONIMIA)",
+        "key": "papel35:SINONIMIA:SINONIMO_ADJ_DE:uniforme",
+        "exclusion_scope": "record_or_sense_not_lemma",
+        "members_omitted_focal": [
+          "uniforme"
+        ]
+      },
+      {
+        "members": [
           "farda",
           "fardamenta"
         ],
@@ -7381,6 +7373,19 @@
         "ili": null,
         "gloss": "PAPEL MANEIRA_SEM (MANEIRA_SEM)",
         "key": "papel35:MANEIRA_SEM:MANEIRA_SEM:uniforme",
+        "exclusion_scope": "record_or_sense_not_lemma",
+        "members_omitted_focal": []
+      },
+      {
+        "members": [
+          "inalteravelmente",
+          "monotonamente",
+          "uniformemente"
+        ],
+        "source": "papel",
+        "ili": null,
+        "gloss": "PAPEL SINONIMO_ADV_DE (SINONIMIA)",
+        "key": "papel35:SINONIMIA:SINONIMO_ADV_DE:uniforme",
         "exclusion_scope": "record_or_sense_not_lemma",
         "members_omitted_focal": []
       }
@@ -7505,5 +7510,5 @@
   ],
   "mapping_status": "no_validated_cili",
   "skos_policy": "SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.",
-  "generated": "2026-08-07T12:50:22+00:00"
+  "generated": "2026-08-07T13:11:04+00:00"
 }

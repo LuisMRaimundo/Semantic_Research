@@ -13,21 +13,8 @@
     "weak_term_mode": "gloss_gated",
     "gloss_min": 0.12
   },
-  "acepcoes_sem_motor": [
-    {
-      "source": "papel",
-      "key": "papel35:SINONIMIA:SINONIMO_ADV_DE:uniforme",
-      "ili": null,
-      "decision": "UF",
-      "membros": [
-        "inalteravelmente",
-        "monotonamente",
-        "uniformemente"
-      ],
-      "nota": "acepção adjudicada sem correspondência em motor"
-    }
-  ],
-  "n_acepcoes_sem_motor": 1,
+  "acepcoes_sem_motor": [],
+  "n_acepcoes_sem_motor": 0,
   "descartado_onto_discovery": [
     {
       "source": "onto",

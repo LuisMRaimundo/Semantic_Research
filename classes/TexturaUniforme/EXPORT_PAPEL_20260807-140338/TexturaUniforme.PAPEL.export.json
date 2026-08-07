@@ -1,0 +1,252 @@
+{
+  "schema": "semantic_research.source_export/1",
+  "class_id": "TexturaUniforme",
+  "source": "papel",
+  "source_label": "PAPEL",
+  "source_title": "PAPEL 3.5 (dictionary relations)",
+  "generated": "2026-08-07T14:03:38+01:00",
+  "source_version": {
+    "version_manifest": "E:\\PYTHON CODES\\Semantic_Research\\classes\\TexturaUniforme\\FINAL_RESULTS__Onto_plus_PULO\\VERSION_MANIFEST.json",
+    "manifest_generated": "2026-08-07T12:50:24.484493+00:00"
+  },
+  "counts": {
+    "cards": 10,
+    "decided": 10,
+    "by_status": {
+      "exclude": 5,
+      "UF": 3,
+      "RT": 2
+    }
+  },
+  "senses": [
+    {
+      "sense_key": "papel|papel35:FINALIDADE:FAZ_SE_COM:uniforme",
+      "source": "papel",
+      "key": "papel35:FINALIDADE:FAZ_SE_COM:uniforme",
+      "ili": null,
+      "members": [
+        "uniforme",
+        "uso"
+      ],
+      "gloss": "PAPEL FAZ_SE_COM (FINALIDADE)",
+      "decision": "exclude",
+      "local_id": "papel35:FINALIDADE:FAZ_SE_COM:uniforme",
+      "note": "discovery: PAPEL 3.5",
+      "links": [
+        {
+          "label": "PAPEL (Linguateca)",
+          "url": "https://www.linguateca.pt/PAPEL/",
+          "detail": "página do recurso"
+        }
+      ]
+    },
+    {
+      "sense_key": "papel|papel35:HIPERONIMIA:HIPERONIMO_DE:uniforme",
+      "source": "papel",
+      "key": "papel35:HIPERONIMIA:HIPERONIMO_DE:uniforme",
+      "ili": null,
+      "members": [
+        "uniforme",
+        "libré",
+        "vestuário"
+      ],
+      "gloss": "PAPEL HIPERONIMO_DE (HIPERONIMIA)",
+      "decision": "exclude",
+      "local_id": "papel35:HIPERONIMIA:HIPERONIMO_DE:uniforme",
+      "note": "discovery: PAPEL 3.5",
+      "links": [
+        {
+          "label": "PAPEL (Linguateca)",
+          "url": "https://www.linguateca.pt/PAPEL/",
+          "detail": "página do recurso"
+        }
+      ]
+    },
+    {
+      "sense_key": "papel|papel35:MANEIRA:MANEIRA_POR_MEIO_DE:uniforme",
+      "source": "papel",
+      "key": "papel35:MANEIRA:MANEIRA_POR_MEIO_DE:uniforme",
+      "ili": null,
+      "members": [
+        "uniforme",
+        "uniformemente"
+      ],
+      "gloss": "PAPEL MANEIRA_POR_MEIO_DE (MANEIRA)",
+      "decision": "UF",
+      "local_id": "papel35:MANEIRA:MANEIRA_POR_MEIO_DE:uniforme",
+      "note": "discovery: PAPEL 3.5",
+      "links": [
+        {
+          "label": "PAPEL (Linguateca)",
+          "url": "https://www.linguateca.pt/PAPEL/",
+          "detail": "página do recurso"
+        }
+      ]
+    },
+    {
+      "sense_key": "papel|papel35:PARTE:PARTE_DE_ALGO_COM_PROPRIEDADE:uniforme",
+      "source": "papel",
+      "key": "papel35:PARTE:PARTE_DE_ALGO_COM_PROPRIEDADE:uniforme",
+      "ili": null,
+      "members": [
+        "uniforme",
+        "forma",
+        "forma de ameixa",
+        "luniforme",
+        "parte",
+        "pruniforme"
+      ],
+      "gloss": "PAPEL PARTE_DE_ALGO_COM_PROPRIEDADE (PARTE)",
+      "decision": "exclude",
+      "local_id": "papel35:PARTE:PARTE_DE_ALGO_COM_PROPRIEDADE:uniforme",
+      "note": "discovery: PAPEL 3.5",
+      "links": [
+        {
+          "label": "PAPEL (Linguateca)",
+          "url": "https://www.linguateca.pt/PAPEL/",
+          "detail": "página do recurso"
+        }
+      ]
+    },
+    {
+      "sense_key": "papel|papel35:QUALIDADE:TEM_QUALIDADE:uniforme",
+      "source": "papel",
+      "key": "papel35:QUALIDADE:TEM_QUALIDADE:uniforme",
+      "ili": null,
+      "members": [
+        "uniforme",
+        "uniformidade"
+      ],
+      "gloss": "PAPEL TEM_QUALIDADE (QUALIDADE)",
+      "decision": "UF",
+      "local_id": "papel35:QUALIDADE:TEM_QUALIDADE:uniforme",
+      "note": "discovery: PAPEL 3.5",
+      "links": [
+        {
+          "label": "PAPEL (Linguateca)",
+          "url": "https://www.linguateca.pt/PAPEL/",
+          "detail": "página do recurso"
+        }
+      ]
+    },
+    {
+      "sense_key": "papel|papel35:REFERENTE:DIZ_SE_DO_QUE:uniforme",
+      "source": "papel",
+      "key": "papel35:REFERENTE:DIZ_SE_DO_QUE:uniforme",
+      "ili": null,
+      "members": [
+        "uniforme",
+        "luniforme",
+        "pruniforme",
+        "ser sempre",
+        "ter forma",
+        "ter forma de ameixa",
+        "ter só forma"
+      ],
+      "gloss": "PAPEL DIZ_SE_DO_QUE (REFERENTE)",
+      "decision": "RT",
+      "local_id": "papel35:REFERENTE:DIZ_SE_DO_QUE:uniforme",
+      "note": "discovery: PAPEL 3.5",
+      "links": [
+        {
+          "label": "PAPEL (Linguateca)",
+          "url": "https://www.linguateca.pt/PAPEL/",
+          "detail": "página do recurso"
+        }
+      ]
+    },
+    {
+      "sense_key": "papel|papel35:SINONIMIA:SINONIMO_ADJ_DE:uniforme",
+      "source": "papel",
+      "key": "papel35:SINONIMIA:SINONIMO_ADJ_DE:uniforme",
+      "ili": null,
+      "members": [
+        "uniforme",
+        "homogéneo",
+        "homótono",
+        "igual",
+        "luniforme",
+        "lunulado",
+        "monótono",
+        "regular"
+      ],
+      "gloss": "PAPEL SINONIMO_ADJ_DE (SINONIMIA)",
+      "decision": "RT",
+      "local_id": "papel35:SINONIMIA:SINONIMO_ADJ_DE:uniforme",
+      "note": "discovery: PAPEL 3.5",
+      "links": [
+        {
+          "label": "PAPEL (Linguateca)",
+          "url": "https://www.linguateca.pt/PAPEL/",
+          "detail": "página do recurso"
+        }
+      ]
+    },
+    {
+      "sense_key": "papel|papel35:SINONIMIA:SINONIMO_N_DE:uniforme",
+      "source": "papel",
+      "key": "papel35:SINONIMIA:SINONIMO_N_DE:uniforme",
+      "ili": null,
+      "members": [
+        "uniforme",
+        "farda",
+        "fardamenta"
+      ],
+      "gloss": "PAPEL SINONIMO_N_DE (SINONIMIA)",
+      "decision": "exclude",
+      "local_id": "papel35:SINONIMIA:SINONIMO_N_DE:uniforme",
+      "note": "discovery: PAPEL 3.5",
+      "links": [
+        {
+          "label": "PAPEL (Linguateca)",
+          "url": "https://www.linguateca.pt/PAPEL/",
+          "detail": "página do recurso"
+        }
+      ]
+    },
+    {
+      "sense_key": "papel|papel35:MANEIRA_SEM:MANEIRA_SEM:uniforme",
+      "source": "papel",
+      "key": "papel35:MANEIRA_SEM:MANEIRA_SEM:uniforme",
+      "ili": null,
+      "members": [
+        "mudança",
+        "uniformemente",
+        "variação"
+      ],
+      "gloss": "PAPEL MANEIRA_SEM (MANEIRA_SEM)",
+      "decision": "exclude",
+      "local_id": "papel35:MANEIRA_SEM:MANEIRA_SEM:uniforme",
+      "note": "discovery: PAPEL 3.5",
+      "links": [
+        {
+          "label": "PAPEL (Linguateca)",
+          "url": "https://www.linguateca.pt/PAPEL/",
+          "detail": "página do recurso"
+        }
+      ]
+    },
+    {
+      "sense_key": "papel|papel35:SINONIMIA:SINONIMO_ADV_DE:uniforme",
+      "source": "papel",
+      "key": "papel35:SINONIMIA:SINONIMO_ADV_DE:uniforme",
+      "ili": null,
+      "members": [
+        "inalteravelmente",
+        "monotonamente",
+        "uniformemente"
+      ],
+      "gloss": "PAPEL SINONIMO_ADV_DE (SINONIMIA)",
+      "decision": "UF",
+      "local_id": "papel35:SINONIMIA:SINONIMO_ADV_DE:uniforme",
+      "note": "discovery: PAPEL 3.5",
+      "links": [
+        {
+          "label": "PAPEL (Linguateca)",
+          "url": "https://www.linguateca.pt/PAPEL/",
+          "detail": "página do recurso"
+        }
+      ]
+    }
+  ]
+}

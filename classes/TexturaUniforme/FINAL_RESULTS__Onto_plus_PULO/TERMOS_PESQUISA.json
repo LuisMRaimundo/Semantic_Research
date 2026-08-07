@@ -9,7 +9,7 @@
   ],
   "anchor_pos": null,
   "near_stem": "uniform*",
-  "generated": "2026-08-07T13:50:24+01:00",
+  "generated": "2026-08-07T14:11:06+01:00",
   "search_lang": "en",
   "label_lang": "pt-PT",
   "termos_manuais_presentes": true,
@@ -176,6 +176,16 @@
       "fonte": "papel"
     },
     {
+      "chave": "papel35:SINONIMIA:SINONIMO_ADJ_DE:uniforme",
+      "chave_legada": null,
+      "pwn30": null,
+      "cili": null,
+      "ili": "papel35:SINONIMIA:SINONIMO_ADJ_DE:uniforme",
+      "lema": "uniforme",
+      "motivo": "discovery: PAPEL 3.5",
+      "fonte": "papel"
+    },
+    {
       "chave": "papel35:SINONIMIA:SINONIMO_N_DE:uniforme",
       "chave_legada": null,
       "pwn30": null,
@@ -191,6 +201,16 @@
       "pwn30": null,
       "cili": null,
       "ili": "papel35:MANEIRA_SEM:MANEIRA_SEM:uniforme",
+      "lema": "uniformemente",
+      "motivo": "discovery: PAPEL 3.5",
+      "fonte": "papel"
+    },
+    {
+      "chave": "papel35:SINONIMIA:SINONIMO_ADV_DE:uniforme",
+      "chave_legada": null,
+      "pwn30": null,
+      "cili": null,
+      "ili": "papel35:SINONIMIA:SINONIMO_ADV_DE:uniforme",
       "lema": "uniformemente",
       "motivo": "discovery: PAPEL 3.5",
       "fonte": "papel"
@@ -333,16 +353,7 @@
       "nota": ""
     }
   ],
-  "a_resolver": [
-    {
-      "forma": "inalteravelmente",
-      "estatuto": "UF",
-      "garantia": null,
-      "razoes": [
-        "acepção adjudicada (papel35:SINONIMIA:SINONIMO_ADV_DE:uniforme) sem correspondência na matriz"
-      ]
-    }
-  ],
+  "a_resolver": [],
   "descartado_onto_discovery": [
     {
       "key": "clip21:19004",

@@ -6,7 +6,7 @@
 - **Junções interfontes por CILI:** 1
 - **WordNet/OEWN:** consultada e com resultados na matriz
 - **Onto.PT:** discovery-only — queried=True; discovery_evidence=True; concordance_results=false (não admite na matriz LexWarrant)
-- **Gerado:** 2026-08-07T13:50:18
+- **Gerado:** 2026-08-07T14:11:01
 - **Descartados (só pendentes):** 10 (termos ainda por adjudicar; contados, não listados)
 - **Asserções:** 13/13 PASS ✅
 
@@ -93,7 +93,7 @@ Taxonomia de reconciliação (b1/b2/c1/c2/estipulações) **removida** (Corte 2)
 
 ## Acepções adjudicadas sem correspondência em motor
 
-- `UF` · papel:papel35:SINONIMIA:SINONIMO_ADV_DE:uniforme · inalteravelmente, monotonamente, uniformemente
+_(nenhuma)_
 
 ## Descartado (Onto.PT discovery-only)
 

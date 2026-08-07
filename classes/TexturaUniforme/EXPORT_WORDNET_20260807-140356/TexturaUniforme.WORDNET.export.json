@@ -1,0 +1,183 @@
+{
+  "schema": "semantic_research.source_export/1",
+  "class_id": "TexturaUniforme",
+  "source": "wordnet",
+  "source_label": "WORDNET",
+  "source_title": "WordNet (OEWN, corroboration)",
+  "generated": "2026-08-07T14:03:56+01:00",
+  "source_version": {
+    "version_manifest": "E:\\PYTHON CODES\\Semantic_Research\\classes\\TexturaUniforme\\FINAL_RESULTS__Onto_plus_PULO\\VERSION_MANIFEST.json",
+    "manifest_generated": "2026-08-07T12:50:24.484493+00:00",
+    "oewn_pin": "oewn:2025",
+    "own_pt_pin": "own-pt:1.0.0",
+    "wn": "1.1.0",
+    "cili": "cili@upstream-master+pwn30+pwn31+wn.ili"
+  },
+  "counts": {
+    "cards": 6,
+    "decided": 0,
+    "by_status": {
+      "": 6
+    }
+  },
+  "senses": [
+    {
+      "sense_key": "wordnet|i10771",
+      "source": "wordnet",
+      "key": "i10771",
+      "ili": "i10771",
+      "members": [
+        "uniform",
+        "unvarying",
+        "PT: invariável",
+        "PT: uniforme"
+      ],
+      "gloss": "always the same; showing a single form or character in all occurrences",
+      "decision": "",
+      "local_id": "oewn-01973553-a",
+      "note": "OEWN corroboration (Ponte ILI / WordNet track)",
+      "links": [
+        {
+          "label": "CILI i10771",
+          "url": "https://globalwordnet.github.io/cili/i10771.html",
+          "detail": "página oficial CILI"
+        },
+        {
+          "label": "OEWN oewn-01973553-a",
+          "url": "https://en-word.net/synset/01973553-a",
+          "detail": "en-word.net/synset"
+        }
+      ]
+    },
+    {
+      "sense_key": "wordnet|i4126",
+      "source": "wordnet",
+      "key": "i4126",
+      "ili": "i4126",
+      "members": [
+        "undifferentiated",
+        "uniform"
+      ],
+      "gloss": "not differentiated",
+      "decision": "",
+      "local_id": "oewn-00748118-a",
+      "note": "OEWN corroboration (Ponte ILI / WordNet track)",
+      "links": [
+        {
+          "label": "CILI i4126",
+          "url": "https://globalwordnet.github.io/cili/i4126.html",
+          "detail": "página oficial CILI"
+        },
+        {
+          "label": "OEWN oewn-00748118-a",
+          "url": "https://en-word.net/synset/00748118-a",
+          "detail": "en-word.net/synset"
+        }
+      ]
+    },
+    {
+      "sense_key": "wordnet|i60712",
+      "source": "wordnet",
+      "key": "i60712",
+      "ili": "i60712",
+      "members": [
+        "uniform",
+        "PT: farda",
+        "PT: fardamento",
+        "PT: uniforme"
+      ],
+      "gloss": "clothing of distinctive design worn by members of a particular group as a means of identification",
+      "decision": "",
+      "local_id": "oewn-04516887-n",
+      "note": "OEWN corroboration (Ponte ILI / WordNet track)",
+      "links": [
+        {
+          "label": "CILI i60712",
+          "url": "https://globalwordnet.github.io/cili/i60712.html",
+          "detail": "página oficial CILI"
+        },
+        {
+          "label": "OEWN oewn-04516887-n",
+          "url": "https://en-word.net/synset/04516887-n",
+          "detail": "en-word.net/synset"
+        }
+      ]
+    },
+    {
+      "sense_key": "wordnet|i6560",
+      "source": "wordnet",
+      "key": "i6560",
+      "ili": "i6560",
+      "members": [
+        "consistent",
+        "uniform"
+      ],
+      "gloss": "the same throughout in structure or composition",
+      "decision": "",
+      "local_id": "oewn-01203638-s",
+      "note": "OEWN corroboration (Ponte ILI / WordNet track)",
+      "links": [
+        {
+          "label": "CILI i6560",
+          "url": "https://globalwordnet.github.io/cili/i6560.html",
+          "detail": "página oficial CILI"
+        },
+        {
+          "label": "OEWN oewn-01203638-s",
+          "url": "https://en-word.net/synset/01203638-s",
+          "detail": "en-word.net/synset"
+        }
+      ]
+    },
+    {
+      "sense_key": "wordnet|i10734",
+      "source": "wordnet",
+      "key": "i10734",
+      "ili": "i10734",
+      "members": [
+        "uniform"
+      ],
+      "gloss": "evenly spaced",
+      "decision": "",
+      "local_id": "oewn-01967120-s",
+      "note": "OEWN corroboration (Ponte ILI / WordNet track)",
+      "links": [
+        {
+          "label": "CILI i10734",
+          "url": "https://globalwordnet.github.io/cili/i10734.html",
+          "detail": "página oficial CILI"
+        },
+        {
+          "label": "OEWN oewn-01967120-s",
+          "url": "https://en-word.net/synset/01967120-s",
+          "detail": "en-word.net/synset"
+        }
+      ]
+    },
+    {
+      "sense_key": "wordnet|i33388",
+      "source": "wordnet",
+      "key": "i33388",
+      "ili": "i33388",
+      "members": [
+        "uniform"
+      ],
+      "gloss": "provide with uniforms",
+      "decision": "",
+      "local_id": "oewn-02336782-v",
+      "note": "OEWN corroboration (Ponte ILI / WordNet track)",
+      "links": [
+        {
+          "label": "CILI i33388",
+          "url": "https://globalwordnet.github.io/cili/i33388.html",
+          "detail": "página oficial CILI"
+        },
+        {
+          "label": "OEWN oewn-02336782-v",
+          "url": "https://en-word.net/synset/02336782-v",
+          "detail": "en-word.net/synset"
+        }
+      ]
+    }
+  ]
+}

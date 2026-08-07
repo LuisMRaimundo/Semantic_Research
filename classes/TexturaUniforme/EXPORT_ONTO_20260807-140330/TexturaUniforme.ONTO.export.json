@@ -1,195 +1,30 @@
 {
+  "schema": "semantic_research.source_export/1",
   "class_id": "TexturaUniforme",
+  "source": "onto",
+  "source_label": "ONTO",
+  "source_title": "Onto.PT / CONTO.PT (discovery)",
+  "generated": "2026-08-07T14:03:30+01:00",
+  "source_version": {
+    "version_manifest": "E:\\PYTHON CODES\\Semantic_Research\\classes\\TexturaUniforme\\FINAL_RESULTS__Onto_plus_PULO\\VERSION_MANIFEST.json",
+    "manifest_generated": "2026-08-07T12:50:24.484493+00:00",
+    "onto_sqlite": "E:\\PYTHON CODES\\Semantic_Research\\engines\\ONTO\\ontopt.sqlite"
+  },
+  "counts": {
+    "cards": 68,
+    "decided": 68,
+    "by_status": {
+      "exclude": 55,
+      "RT": 7,
+      "UF": 6
+    }
+  },
   "senses": [
     {
-      "source": "pulo",
-      "key": "pwn30-01200095-a",
-      "ili": "i6560",
-      "local_id": "por-30-01200095-a",
-      "pos": "a",
-      "gloss": "que se mantém o mesmo; constante e invariável ao longo do parâmetro",
-      "members": [
-        "uniforme",
-        "constante",
-        "invariável"
-      ],
-      "decision": "UF",
-      "note": "",
-      "destino": "vocabulario",
-      "pwn_id": "pwn30-01200095-a",
-      "cili": "i6560",
-      "cili_id": "i6560",
-      "cili_uri": "http://ili.globalwordnet.org/ili/i6560",
-      "source_curie": "oewn-ili:i6560",
-      "mapping_status": "official",
-      "legacy_omw_ili": "ili-30-01200095-a"
-    },
-    {
-      "source": "pulo",
-      "key": "pwn30-01966488-a",
-      "ili": "i10771",
-      "local_id": "por-30-01966488-a",
-      "pos": "a",
-      "gloss": "sempre o mesmo parâmetro; imutável e uniforme",
-      "members": [
-        "imutável",
-        "uniforme"
-      ],
-      "decision": "UF",
-      "note": "",
-      "destino": "vocabulario",
-      "pwn_id": "pwn30-01966488-a",
-      "cili": "i10771",
-      "cili_id": "i10771",
-      "cili_uri": "http://ili.globalwordnet.org/ili/i10771",
-      "source_curie": "oewn-ili:i10771",
-      "mapping_status": "official",
-      "legacy_omw_ili": "ili-30-01966488-a"
-    },
-    {
-      "source": "pulo",
-      "key": "pwn30-00909545-a",
-      "ili": "i4979",
-      "local_id": "por-30-00909545-a",
-      "pos": "a",
-      "gloss": "sem variações; regular e uniforme face ao parâmetro",
-      "members": [
-        "igual",
-        "regular"
-      ],
-      "decision": "exclude",
-      "note": "",
-      "destino": "evidencia",
-      "pwn_id": "pwn30-00909545-a",
-      "cili": "i4979",
-      "cili_id": "i4979",
-      "cili_uri": "http://ili.globalwordnet.org/ili/i4979",
-      "source_curie": "oewn-ili:i4979",
-      "mapping_status": "official",
-      "legacy_omw_ili": "ili-30-00909545-a"
-    },
-    {
-      "source": "pulo",
-      "key": "ili-30-04745370-n",
-      "ili": "ili-30-04745370-n",
-      "local_id": "por-30-04745370-n",
-      "pos": "n",
-      "gloss": "ausência de variação; invariância e uniformidade de um parâmetro",
-      "members": [
-        "uniformidade",
-        "invariância",
-        "periódico"
-      ],
-      "decision": "RT",
-      "note": "",
-      "destino": "vocabulario"
-    },
-    {
-      "source": "pulo",
-      "key": "pwn30-02302187-a",
-      "ili": "i12748",
-      "local_id": "por-30-02302187-a",
-      "pos": "a",
-      "gloss": "que ocorre em intervalos fixos e regulares",
-      "members": [
-        "periódico",
-        "regular"
-      ],
-      "decision": "exclude",
-      "note": "",
-      "destino": "evidencia",
-      "pwn_id": "pwn30-02302187-a",
-      "cili": "i12748",
-      "cili_id": "i12748",
-      "cili_uri": "http://ili.globalwordnet.org/ili/i12748",
-      "source_curie": "oewn-ili:i12748",
-      "mapping_status": "official",
-      "legacy_omw_ili": "ili-30-02302187-a"
-    },
-    {
-      "source": "pulo",
-      "key": "pwn30-00910101-a",
-      "ili": "i4980",
-      "local_id": "por-30-00910101-a",
-      "pos": "a",
-      "gloss": "de aparência agradável aos olhos",
-      "members": [
-        "bonito"
-      ],
-      "decision": "exclude",
-      "note": "",
-      "destino": "evidencia",
-      "pwn_id": "pwn30-00910101-a",
-      "cili": "i4980",
-      "cili_id": "i4980",
-      "cili_uri": "http://ili.globalwordnet.org/ili/i4980",
-      "source_curie": "oewn-ili:i4980",
-      "mapping_status": "official",
-      "legacy_omw_ili": "ili-30-00910101-a"
-    },
-    {
-      "source": "pulo",
-      "key": "pwn30-04509592-n",
-      "ili": "i60712",
-      "local_id": "por-30-04509592-n",
-      "pos": "n",
-      "gloss": "instrumento de medição de comprimento",
-      "members": [
-        "medidor"
-      ],
-      "decision": "exclude",
-      "note": "",
-      "destino": "evidencia",
-      "pwn_id": "pwn30-04509592-n",
-      "cili": "i60712",
-      "cili_id": "i60712",
-      "cili_uri": "http://ili.globalwordnet.org/ili/i60712",
-      "source_curie": "oewn-ili:i60712",
-      "mapping_status": "official",
-      "legacy_omw_ili": "ili-30-04509592-n"
-    },
-    {
-      "source": "pulo",
-      "key": "pwn30-00744506-a",
-      "ili": "i4126",
-      "local_id": "por-30-00744506-a",
-      "pos": "a",
-      "gloss": "relativo ao fardamento militar",
-      "members": [
-        "fardado"
-      ],
-      "decision": "exclude",
-      "note": "",
-      "destino": "evidencia",
-      "pwn_id": "pwn30-00744506-a",
-      "cili": "i4126",
-      "cili_id": "i4126",
-      "cili_uri": "http://ili.globalwordnet.org/ili/i4126",
-      "source_curie": "oewn-ili:i4126",
-      "mapping_status": "official",
-      "legacy_omw_ili": "ili-30-00744506-a"
-    },
-    {
-      "source": "pulo",
-      "key": "por-30-99999999-x",
-      "ili": null,
-      "local_id": "por-30-99999999-x",
-      "pos": "a",
-      "gloss": "acepção local sem correspondência interlingual",
-      "members": [
-        "idiossincrático"
-      ],
-      "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
-    },
-    {
+      "sense_key": "onto|clip01:6948",
       "source": "onto",
       "key": "clip01:6948",
       "ili": null,
-      "local_id": "clip01:6948",
-      "pos": "n",
-      "gloss": "",
       "members": [
         "encadernação",
         "entraje",
@@ -210,17 +45,27 @@
         "vestidura",
         "vestuário"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "clip01:6948",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|clip21:12405",
       "source": "onto",
       "key": "clip21:12405",
       "ili": null,
-      "local_id": "clip21:12405",
-      "pos": "n",
-      "gloss": "",
       "members": [
         "farda",
         "fardamento",
@@ -232,17 +77,27 @@
         "roupa",
         "vestuário"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "clip21:12405",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|clip21:16596",
       "source": "onto",
       "key": "clip21:16596",
       "ili": null,
-      "local_id": "clip21:16596",
-      "pos": "a",
-      "gloss": "",
       "members": [
         "semelhante",
         "idêntico",
@@ -370,17 +225,27 @@
         "unívoco",
         "équo"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "clip21:16596",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|clip21:17576",
       "source": "onto",
       "key": "clip21:17576",
       "ili": null,
-      "local_id": "clip21:17576",
-      "pos": "a",
-      "gloss": "",
       "members": [
         "aborrecido",
         "enfadonho",
@@ -885,17 +750,27 @@
         "zangado",
         "áspero"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "clip21:17576",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|clip21:17930",
       "source": "onto",
       "key": "clip21:17930",
       "ili": null,
-      "local_id": "clip21:17930",
-      "pos": "a",
-      "gloss": "",
       "members": [
         "lógico",
         "coerente",
@@ -956,17 +831,27 @@
         "uniforme",
         "óbvio"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "clip21:17930",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|clip21:19004",
       "source": "onto",
       "key": "clip21:19004",
       "ili": null,
-      "local_id": "clip21:19004",
-      "pos": "a",
-      "gloss": "",
       "members": [
         "contínuo",
         "constante",
@@ -1140,17 +1025,27 @@
         "unânime",
         "vital"
       ],
+      "gloss": "",
       "decision": "RT",
-      "note": "",
-      "destino": "vocabulario"
+      "local_id": "clip21:19004",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|clip21:19228",
       "source": "onto",
       "key": "clip21:19228",
       "ili": null,
-      "local_id": "clip21:19228",
-      "pos": "a",
-      "gloss": "",
       "members": [
         "ordenado",
         "sistemático",
@@ -1196,17 +1091,27 @@
         "sugerido",
         "sério"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "clip21:19228",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|clip21:19272",
       "source": "onto",
       "key": "clip21:19272",
       "ili": null,
-      "local_id": "clip21:19272",
-      "pos": "a",
-      "gloss": "",
       "members": [
         "mediano",
         "médio",
@@ -1279,17 +1184,27 @@
         "standard",
         "usual"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "clip21:19272",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|clip21:19790",
       "source": "onto",
       "key": "clip21:19790",
       "ili": null,
-      "local_id": "clip21:19790",
-      "pos": "a",
-      "gloss": "",
       "members": [
         "justo",
         "imparcial",
@@ -1358,17 +1273,27 @@
         "verdadeiro",
         "válido"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "clip21:19790",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|contopt:9180",
       "source": "onto",
       "key": "contopt:9180",
       "ili": null,
-      "local_id": "contopt:9180",
-      "pos": "n",
-      "gloss": "",
       "members": [
         "farda",
         "fardamento",
@@ -1380,17 +1305,27 @@
         "roupa",
         "vestuário"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "contopt:9180",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|contopt:9502",
       "source": "onto",
       "key": "contopt:9502",
       "ili": null,
-      "local_id": "contopt:9502",
-      "pos": "a",
-      "gloss": "",
       "members": [
         "ordenado",
         "sistemático",
@@ -1427,17 +1362,27 @@
         "regrado",
         "sensato"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "contopt:9502",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|contopt:15361",
       "source": "onto",
       "key": "contopt:15361",
       "ili": null,
-      "local_id": "contopt:15361",
-      "pos": "a",
-      "gloss": "",
       "members": [
         "mediano",
         "médio",
@@ -1484,17 +1429,27 @@
         "suficiente",
         "trivial"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "contopt:15361",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|contopt:16491",
       "source": "onto",
       "key": "contopt:16491",
       "ili": null,
-      "local_id": "contopt:16491",
-      "pos": "a",
-      "gloss": "",
       "members": [
         "semelhante",
         "idêntico",
@@ -1524,17 +1479,27 @@
         "uniforme",
         "vizinho"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "contopt:16491",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|contopt:28395",
       "source": "onto",
       "key": "contopt:28395",
       "ili": null,
-      "local_id": "contopt:28395",
-      "pos": "a",
-      "gloss": "",
       "members": [
         "contínuo",
         "constante",
@@ -1590,17 +1555,27 @@
         "uniforme",
         "usual"
       ],
+      "gloss": "",
       "decision": "RT",
-      "note": "",
-      "destino": "vocabulario"
+      "local_id": "contopt:28395",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|fuzzythes:1661",
       "source": "onto",
       "key": "fuzzythes:1661",
       "ili": "i60712",
-      "local_id": "fuzzythes:1661",
-      "pos": "n",
-      "gloss": "",
       "members": [
         "libré",
         "libreia",
@@ -1609,18 +1584,32 @@
         "fardamento",
         "aparência"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia",
-      "ili_source": "onto_ili_accepted"
+      "local_id": "fuzzythes:1661",
+      "links": [
+        {
+          "label": "CILI i60712",
+          "url": "https://globalwordnet.github.io/cili/i60712.html",
+          "detail": "página oficial CILI"
+        },
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|fuzzythes:1920",
       "source": "onto",
       "key": "fuzzythes:1920",
       "ili": null,
-      "local_id": "fuzzythes:1920",
-      "pos": "n",
-      "gloss": "",
       "members": [
         "toilette",
         "vestuário",
@@ -1642,17 +1631,27 @@
         "farpela",
         "uniforme"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "fuzzythes:1920",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|fuzzythes:2140",
       "source": "onto",
       "key": "fuzzythes:2140",
       "ili": "i60712",
-      "local_id": "fuzzythes:2140",
-      "pos": "n",
-      "gloss": "",
       "members": [
         "libreia",
         "libré",
@@ -1661,18 +1660,32 @@
         "fardamento",
         "fardamenta"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia",
-      "ili_source": "onto_ili_accepted"
+      "local_id": "fuzzythes:2140",
+      "links": [
+        {
+          "label": "CILI i60712",
+          "url": "https://globalwordnet.github.io/cili/i60712.html",
+          "detail": "página oficial CILI"
+        },
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|fuzzythes:3480",
       "source": "onto",
       "key": "fuzzythes:3480",
       "ili": "i60712",
-      "local_id": "fuzzythes:3480",
-      "pos": "n",
-      "gloss": "",
       "members": [
         "fardamento",
         "uniforme",
@@ -1682,18 +1695,32 @@
         "roupa",
         "vestuário"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia",
-      "ili_source": "onto_ili_accepted"
+      "local_id": "fuzzythes:3480",
+      "links": [
+        {
+          "label": "CILI i60712",
+          "url": "https://globalwordnet.github.io/cili/i60712.html",
+          "detail": "página oficial CILI"
+        },
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|fuzzythes:23180",
       "source": "onto",
       "key": "fuzzythes:23180",
       "ili": null,
-      "local_id": "fuzzythes:23180",
-      "pos": "a",
-      "gloss": "",
       "members": [
         "distributivo",
         "equitativo",
@@ -1709,17 +1736,27 @@
         "uniforme",
         "íntegro"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "fuzzythes:23180",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|fuzzythes:23298",
       "source": "onto",
       "key": "fuzzythes:23298",
       "ili": null,
-      "local_id": "fuzzythes:23298",
-      "pos": "a",
-      "gloss": "",
       "members": [
         "consignado",
         "constante",
@@ -1760,17 +1797,27 @@
         "perpétuo",
         "ordenado"
       ],
+      "gloss": "",
       "decision": "RT",
-      "note": "",
-      "destino": "vocabulario"
+      "local_id": "fuzzythes:23298",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|fuzzythes:23495",
       "source": "onto",
       "key": "fuzzythes:23495",
       "ili": null,
-      "local_id": "fuzzythes:23495",
-      "pos": "a",
-      "gloss": "",
       "members": [
         "metodizado",
         "sistêmico",
@@ -1790,17 +1837,27 @@
         "uniforme",
         "comedido"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "fuzzythes:23495",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|fuzzythes:23527",
       "source": "onto",
       "key": "fuzzythes:23527",
       "ili": null,
-      "local_id": "fuzzythes:23527",
-      "pos": "a",
-      "gloss": "",
       "members": [
         "engembrado",
         "consubstanciado",
@@ -1832,17 +1889,27 @@
         "aparente",
         "tal"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "fuzzythes:23527",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|fuzzythes:24915",
       "source": "onto",
       "key": "fuzzythes:24915",
       "ili": null,
-      "local_id": "fuzzythes:24915",
-      "pos": "a",
-      "gloss": "",
       "members": [
         "metodizado",
         "sistêmico",
@@ -1888,17 +1955,27 @@
         "oscilante",
         "usual"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "fuzzythes:24915",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|fuzzythes:25600",
       "source": "onto",
       "key": "fuzzythes:25600",
       "ili": null,
-      "local_id": "fuzzythes:25600",
-      "pos": "a",
-      "gloss": "",
       "members": [
         "unímodo",
         "uniforme",
@@ -1908,17 +1985,27 @@
         "monótono",
         "recto"
       ],
+      "gloss": "",
       "decision": "RT",
-      "note": "",
-      "destino": "vocabulario"
+      "local_id": "fuzzythes:25600",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|fuzzythes:26445",
       "source": "onto",
       "key": "fuzzythes:26445",
       "ili": null,
-      "local_id": "fuzzythes:26445",
-      "pos": "a",
-      "gloss": "",
       "members": [
         "homogéneo",
         "unívoco",
@@ -1929,17 +2016,27 @@
         "idêntico",
         "contínuo"
       ],
+      "gloss": "",
       "decision": "RT",
-      "note": "",
-      "destino": "vocabulario"
+      "local_id": "fuzzythes:26445",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|fuzzythes:26484",
       "source": "onto",
       "key": "fuzzythes:26484",
       "ili": null,
-      "local_id": "fuzzythes:26484",
-      "pos": "a",
-      "gloss": "",
       "members": [
         "equável",
         "santoral",
@@ -1966,17 +2063,27 @@
         "frontal",
         "perpendicular"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "fuzzythes:26484",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|fuzzythes:27091",
       "source": "onto",
       "key": "fuzzythes:27091",
       "ili": null,
-      "local_id": "fuzzythes:27091",
-      "pos": "a",
-      "gloss": "",
       "members": [
         "inflexivo",
         "invariável",
@@ -1994,17 +2101,27 @@
         "inalterável",
         "estável"
       ],
+      "gloss": "",
       "decision": "RT",
-      "note": "",
-      "destino": "vocabulario"
+      "local_id": "fuzzythes:27091",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|fuzzythes:27110",
       "source": "onto",
       "key": "fuzzythes:27110",
       "ili": null,
-      "local_id": "fuzzythes:27110",
-      "pos": "a",
-      "gloss": "",
       "members": [
         "aladainhado",
         "homótono",
@@ -2029,17 +2146,27 @@
         "equíssono",
         "acromático"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "fuzzythes:27110",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|ontopt06:787",
       "source": "onto",
       "key": "ontopt06:787",
       "ili": null,
-      "local_id": "ontopt06:787",
-      "pos": "a",
-      "gloss": "que envolve a maior parte do organismo.",
       "members": [
         "constante",
         "metodizado",
@@ -2050,17 +2177,22 @@
         "sistêmico",
         "uniforme"
       ],
+      "gloss": "que envolve a maior parte do organismo.",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "ontopt06:787",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        }
+      ]
     },
     {
+      "sense_key": "onto|ontopt06:803",
       "source": "onto",
       "key": "ontopt06:803",
       "ili": null,
-      "local_id": "ontopt06:803",
-      "pos": "a",
-      "gloss": "que contém elementos ou características iguais ou parecidas com outra coisa.",
       "members": [
         "afim",
         "análogo",
@@ -2106,17 +2238,22 @@
         "vizinho",
         "équo"
       ],
+      "gloss": "que contém elementos ou características iguais ou parecidas com outra coisa.",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "ontopt06:803",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        }
+      ]
     },
     {
+      "sense_key": "onto|ontopt06:1186",
       "source": "onto",
       "key": "ontopt06:1186",
       "ili": null,
-      "local_id": "ontopt06:1186",
-      "pos": "a",
-      "gloss": "sucessivo, que não tem interrupção. que não cessa. que dura ou se repete incessantemente.",
       "members": [
         "adamantino",
         "afio",
@@ -2154,67 +2291,99 @@
         "unânime",
         "áfio"
       ],
+      "gloss": "sucessivo, que não tem interrupção. que não cessa. que dura ou se repete incessantemente.",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "ontopt06:1186",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        }
+      ]
     },
     {
+      "sense_key": "onto|ontopt06:2131",
       "source": "onto",
       "key": "ontopt06:2131",
       "ili": "i12748",
-      "local_id": "ontopt06:2131",
-      "pos": "a",
-      "gloss": "que, comparado a outro, é igual.",
       "members": [
         "equável",
         "uniforme"
       ],
+      "gloss": "que, comparado a outro, é igual.",
       "decision": "UF",
-      "note": "",
-      "destino": "vocabulario",
-      "ili_source": "onto_ili_accepted"
+      "local_id": "ontopt06:2131",
+      "links": [
+        {
+          "label": "CILI i12748",
+          "url": "https://globalwordnet.github.io/cili/i12748.html",
+          "detail": "página oficial CILI"
+        },
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        }
+      ]
     },
     {
+      "sense_key": "onto|ontopt06:2133",
       "source": "onto",
       "key": "ontopt06:2133",
       "ili": "i4126",
-      "local_id": "ontopt06:2133",
-      "pos": "a",
-      "gloss": "que tem uma só forma. que tem só uma forma.",
       "members": [
         "uniforme",
         "unímodo"
       ],
+      "gloss": "que tem uma só forma. que tem só uma forma.",
       "decision": "UF",
-      "note": "",
-      "destino": "vocabulario",
-      "ili_source": "onto_ili_accepted"
+      "local_id": "ontopt06:2133",
+      "links": [
+        {
+          "label": "CILI i4126",
+          "url": "https://globalwordnet.github.io/cili/i4126.html",
+          "detail": "página oficial CILI"
+        },
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        }
+      ]
     },
     {
+      "sense_key": "onto|ontopt06:2945",
       "source": "onto",
       "key": "ontopt06:2945",
       "ili": "i10771",
-      "local_id": "ontopt06:2945",
-      "pos": "a",
-      "gloss": "",
       "members": [
         "homótono",
         "invariável",
         "monótono",
         "uniforme"
       ],
+      "gloss": "",
       "decision": "UF",
-      "note": "",
-      "destino": "vocabulario",
-      "ili_source": "onto_ili_accepted"
+      "local_id": "ontopt06:2945",
+      "links": [
+        {
+          "label": "CILI i10771",
+          "url": "https://globalwordnet.github.io/cili/i10771.html",
+          "detail": "página oficial CILI"
+        },
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        }
+      ]
     },
     {
+      "sense_key": "onto|ontopt06:28292",
       "source": "onto",
       "key": "ontopt06:28292",
       "ili": "i60712",
-      "local_id": "ontopt06:28292",
-      "pos": "n",
-      "gloss": "farda ou vestuário, feito segundo um modelo comum, para uma corporação ou uma classe.",
       "members": [
         "farda",
         "fardamenta",
@@ -2222,34 +2391,52 @@
         "libré",
         "uniforme"
       ],
+      "gloss": "farda ou vestuário, feito segundo um modelo comum, para uma corporação ou uma classe.",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia",
-      "ili_source": "onto_ili_accepted"
+      "local_id": "ontopt06:28292",
+      "links": [
+        {
+          "label": "CILI i60712",
+          "url": "https://globalwordnet.github.io/cili/i60712.html",
+          "detail": "página oficial CILI"
+        },
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        }
+      ]
     },
     {
+      "sense_key": "onto|polaridades:1656",
       "source": "onto",
       "key": "polaridades:1656",
       "ili": "i4980",
-      "local_id": "polaridades:1656",
-      "pos": "a",
-      "gloss": "Polaridade: 0 (método BASE)",
       "members": [
         "equável",
         "uniforme"
       ],
+      "gloss": "Polaridade: 0 (método BASE)",
       "decision": "UF",
-      "note": "",
-      "destino": "vocabulario",
-      "ili_source": "onto_ili_accepted"
+      "local_id": "polaridades:1656",
+      "links": [
+        {
+          "label": "CILI i4980",
+          "url": "https://globalwordnet.github.io/cili/i4980.html",
+          "detail": "página oficial CILI"
+        },
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        }
+      ]
     },
     {
+      "sense_key": "onto|polaridades:4425",
       "source": "onto",
       "key": "polaridades:4425",
       "ili": null,
-      "local_id": "polaridades:4425",
-      "pos": "a",
-      "gloss": "Polaridade: 1 (método BASE)",
       "members": [
         "constante",
         "metodizado",
@@ -2260,35 +2447,49 @@
         "sistêmico",
         "uniforme"
       ],
+      "gloss": "Polaridade: 1 (método BASE)",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "polaridades:4425",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        }
+      ]
     },
     {
+      "sense_key": "onto|polaridades:4484",
       "source": "onto",
       "key": "polaridades:4484",
       "ili": "i10771",
-      "local_id": "polaridades:4484",
-      "pos": "a",
-      "gloss": "Polaridade: 0 (método BASE)",
       "members": [
         "homótono",
         "invariável",
         "monótono",
         "uniforme"
       ],
+      "gloss": "Polaridade: 0 (método BASE)",
       "decision": "UF",
-      "note": "",
-      "destino": "vocabulario",
-      "ili_source": "onto_ili_accepted"
+      "local_id": "polaridades:4484",
+      "links": [
+        {
+          "label": "CILI i10771",
+          "url": "https://globalwordnet.github.io/cili/i10771.html",
+          "detail": "página oficial CILI"
+        },
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        }
+      ]
     },
     {
+      "sense_key": "onto|polaridades:5083",
       "source": "onto",
       "key": "polaridades:5083",
       "ili": null,
-      "local_id": "polaridades:5083",
-      "pos": "a",
-      "gloss": "Polaridade: 1 (método BASE)",
       "members": [
         "adamantino",
         "afio",
@@ -2326,17 +2527,22 @@
         "unânime",
         "áfio"
       ],
+      "gloss": "Polaridade: 1 (método BASE)",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "polaridades:5083",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        }
+      ]
     },
     {
+      "sense_key": "onto|polaridades:5938",
       "source": "onto",
       "key": "polaridades:5938",
       "ili": null,
-      "local_id": "polaridades:5938",
-      "pos": "a",
-      "gloss": "Polaridade: 0 (método BASE)",
       "members": [
         "afim",
         "análogo",
@@ -2382,17 +2588,22 @@
         "vizinho",
         "équo"
       ],
+      "gloss": "Polaridade: 0 (método BASE)",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "polaridades:5938",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        }
+      ]
     },
     {
+      "sense_key": "onto|clip01:3425",
       "source": "onto",
       "key": "clip01:3425",
       "ili": null,
-      "local_id": "clip01:3425",
-      "pos": "n",
-      "gloss": "",
       "members": [
         "afinidade",
         "analogia",
@@ -2416,17 +2627,27 @@
         "unissonância",
         "vislumbre"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "clip01:3425",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|clip01:4659",
       "source": "onto",
       "key": "clip01:4659",
       "ili": null,
-      "local_id": "clip01:4659",
-      "pos": "n",
-      "gloss": "",
       "members": [
         "coerência",
         "equabilidade",
@@ -2437,17 +2658,27 @@
         "unidade",
         "uniformidade"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "clip01:4659",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|clip01:7405",
       "source": "onto",
       "key": "clip01:7405",
       "ili": null,
-      "local_id": "clip01:7405",
-      "pos": "n",
-      "gloss": "",
       "members": [
         "arranjamento",
         "arrumação",
@@ -2471,32 +2702,52 @@
         "unidade",
         "uniformidade"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "clip01:7405",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|clip01:1043",
       "source": "onto",
       "key": "clip01:1043",
       "ili": null,
-      "local_id": "clip01:1043",
-      "pos": "n",
-      "gloss": "",
       "members": [
         "homogeneização",
         "uniformização"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "clip01:1043",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|clip21:18187",
       "source": "onto",
       "key": "clip21:18187",
       "ili": null,
-      "local_id": "clip21:18187",
-      "pos": "a",
-      "gloss": "",
       "members": [
         "desnivelado",
         "despadronizado",
@@ -2507,81 +2758,131 @@
         "inclinado",
         "irregular"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
+      "local_id": "clip21:18187",
       "migrado_de": "contraste",
       "revisao_pendente": true,
-      "destino": "evidencia"
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|clip21:19074",
       "source": "onto",
       "key": "clip21:19074",
       "ili": null,
-      "local_id": "clip21:19074",
-      "pos": "a",
-      "gloss": "",
       "members": [
         "funicular",
         "funiforme"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "clip21:19074",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|clip21:16541",
       "source": "onto",
       "key": "clip21:16541",
       "ili": null,
-      "local_id": "clip21:16541",
-      "pos": "a",
-      "gloss": "",
       "members": [
         "lunulado",
         "luniforme",
         "lunular",
         "semilunar"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "clip21:16541",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|clip21:8149",
       "source": "onto",
       "key": "clip21:8149",
       "ili": null,
-      "local_id": "clip21:8149",
-      "pos": "n",
-      "gloss": "",
       "members": [
         "uniform resource locator",
         "url"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "clip21:8149",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|clip21:15521",
       "source": "onto",
       "key": "clip21:15521",
       "ili": null,
-      "local_id": "clip21:15521",
-      "pos": "a",
-      "gloss": "",
       "members": [
         "uniformador",
         "uniformizador"
       ],
+      "gloss": "",
       "decision": "UF",
-      "note": "",
-      "destino": "vocabulario"
+      "local_id": "clip21:15521",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|clip21:14314",
       "source": "onto",
       "key": "clip21:14314",
       "ili": null,
-      "local_id": "clip21:14314",
-      "pos": "v",
-      "gloss": "",
       "members": [
         "alisar",
         "igualar",
@@ -3033,17 +3334,27 @@
         "transbordar",
         "vanguejar"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "clip21:14314",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|clip21:14562",
       "source": "onto",
       "key": "clip21:14562",
       "ili": null,
-      "local_id": "clip21:14562",
-      "pos": "v",
-      "gloss": "",
       "members": [
         "uniformizar",
         "uniformar",
@@ -3059,17 +3370,27 @@
         "normalizar",
         "regrar"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "clip21:14562",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|clip21:19940",
       "source": "onto",
       "key": "clip21:19940",
       "ili": null,
-      "local_id": "clip21:19940",
-      "pos": "v",
-      "gloss": "",
       "members": [
         "monotonamente",
         "pesadamente",
@@ -3081,17 +3402,27 @@
         "rudemente",
         "uniformemente"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "clip21:19940",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|clip21:20073",
       "source": "onto",
       "key": "clip21:20073",
       "ili": null,
-      "local_id": "clip21:20073",
-      "pos": "v",
-      "gloss": "",
       "members": [
         "unanimemente",
         "indivisamente",
@@ -3101,17 +3432,27 @@
         "unanimimente",
         "uniformemente"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "clip21:20073",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|clip21:20421",
       "source": "onto",
       "key": "clip21:20421",
       "ili": null,
-      "local_id": "clip21:20421",
-      "pos": "v",
-      "gloss": "",
       "members": [
         "inalteravelmente",
         "uniformemente",
@@ -3120,17 +3461,27 @@
         "monotonamente",
         "unanimemente"
       ],
+      "gloss": "",
       "decision": "RT",
-      "note": "",
-      "destino": "vocabulario"
+      "local_id": "clip21:20421",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|clip21:1403",
       "source": "onto",
       "key": "clip21:1403",
       "ili": null,
-      "local_id": "clip21:1403",
-      "pos": "n",
-      "gloss": "",
       "members": [
         "igualdade",
         "equivalência",
@@ -3227,17 +3578,27 @@
         "unicidade",
         "unidade de medida"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "clip21:1403",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|clip21:5416",
       "source": "onto",
       "key": "clip21:5416",
       "ili": null,
-      "local_id": "clip21:5416",
-      "pos": "n",
-      "gloss": "",
       "members": [
         "união",
         "ligação",
@@ -3597,17 +3958,27 @@
         "vizinhança",
         "xâmego"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "clip21:5416",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|clip21:6019",
       "source": "onto",
       "key": "clip21:6019",
       "ili": null,
-      "local_id": "clip21:6019",
-      "pos": "n",
-      "gloss": "",
       "members": [
         "vulgaridade",
         "banalidade",
@@ -3647,17 +4018,27 @@
         "salabórdia",
         "truísmo"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "clip21:6019",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|clip21:7565",
       "source": "onto",
       "key": "clip21:7565",
       "ili": null,
-      "local_id": "clip21:7565",
-      "pos": "n",
-      "gloss": "",
       "members": [
         "semelhança",
         "similitude",
@@ -3709,17 +4090,27 @@
         "viso",
         "vizinhança"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "clip21:7565",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|clip21:7750",
       "source": "onto",
       "key": "clip21:7750",
       "ili": null,
-      "local_id": "clip21:7750",
-      "pos": "n",
-      "gloss": "",
       "members": [
         "constância",
         "firmeza",
@@ -3829,17 +4220,27 @@
         "viscosidade",
         "ânimo"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "clip21:7750",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|clip21:9132",
       "source": "onto",
       "key": "clip21:9132",
       "ili": null,
-      "local_id": "clip21:9132",
-      "pos": "n",
-      "gloss": "",
       "members": [
         "ritmo",
         "regularidade",
@@ -3907,17 +4308,27 @@
         "uso",
         "índice"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "clip21:9132",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|clip21:10543",
       "source": "onto",
       "key": "clip21:10543",
       "ili": null,
-      "local_id": "clip21:10543",
-      "pos": "n",
-      "gloss": "",
       "members": [
         "monotonia",
         "insipidez",
@@ -3959,17 +4370,27 @@
         "pasmaceira",
         "vulgaridade"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "clip21:10543",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|clip21:13406",
       "source": "onto",
       "key": "clip21:13406",
       "ili": null,
-      "local_id": "clip21:13406",
-      "pos": "n",
-      "gloss": "",
       "members": [
         "harmonia",
         "acordo",
@@ -4137,17 +4558,27 @@
         "sonância",
         "tonicidade"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "clip21:13406",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|clip21:14088",
       "source": "onto",
       "key": "clip21:14088",
       "ili": null,
-      "local_id": "clip21:14088",
-      "pos": "v",
-      "gloss": "",
       "members": [
         "diminuir",
         "abrandar",
@@ -5839,17 +6270,27 @@
         "vistoriar",
         "vulnerar"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "clip21:14088",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|clip21:14525",
       "source": "onto",
       "key": "clip21:14525",
       "ili": null,
-      "local_id": "clip21:14525",
-      "pos": "v",
-      "gloss": "",
       "members": [
         "fatigar",
         "cansar",
@@ -6403,17 +6844,27 @@
         "vencer",
         "verrumar"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "clip21:14525",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|clip21:14687",
       "source": "onto",
       "key": "clip21:14687",
       "ili": null,
-      "local_id": "clip21:14687",
-      "pos": "v",
-      "gloss": "",
       "members": [
         "ajustar",
         "combinar",
@@ -7428,17 +7879,27 @@
         "vidar",
         "vulgarizar"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "clip21:14687",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|clip21:1731",
       "source": "onto",
       "key": "clip21:1731",
       "ili": null,
-      "local_id": "clip21:1731",
-      "pos": "n",
-      "gloss": "",
       "members": [
         "nivelamento",
         "nivelação",
@@ -7469,17 +7930,27 @@
         "irresolução",
         "uniformização"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "clip21:1731",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|clip21:12874",
       "source": "onto",
       "key": "clip21:12874",
       "ili": null,
-      "local_id": "clip21:12874",
-      "pos": "n",
-      "gloss": "",
       "members": [
         "padronização",
         "estandardização",
@@ -7490,17 +7961,27 @@
         "confirmação",
         "homogeneização"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
-      "destino": "evidencia"
+      "local_id": "clip21:12874",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     },
     {
+      "sense_key": "onto|contopt:5719",
       "source": "onto",
       "key": "contopt:5719",
       "ili": null,
-      "local_id": "contopt:5719",
-      "pos": "a",
-      "gloss": "",
       "members": [
         "desnivelado",
         "despadronizado",
@@ -7511,290 +7992,23 @@
         "inclinado",
         "irregular"
       ],
+      "gloss": "",
       "decision": "exclude",
-      "note": "",
+      "local_id": "contopt:5719",
       "migrado_de": "contraste",
       "revisao_pendente": true,
-      "destino": "evidencia"
-    },
-    {
-      "source": "wordnet",
-      "key": "i10771",
-      "ili": "i10771",
-      "local_id": "oewn-01973553-a",
-      "pos": "a",
-      "gloss": "always the same; showing a single form or character in all occurrences",
-      "members": [
-        "uniform",
-        "unvarying",
-        "PT: invariável",
-        "PT: uniforme"
-      ],
-      "decision": "",
-      "note": "OEWN corroboration (Ponte ILI / WordNet track)"
-    },
-    {
-      "source": "wordnet",
-      "key": "i4126",
-      "ili": "i4126",
-      "local_id": "oewn-00748118-a",
-      "pos": "a",
-      "gloss": "not differentiated",
-      "members": [
-        "undifferentiated",
-        "uniform"
-      ],
-      "decision": "",
-      "note": "OEWN corroboration (Ponte ILI / WordNet track)"
-    },
-    {
-      "source": "wordnet",
-      "key": "i60712",
-      "ili": "i60712",
-      "local_id": "oewn-04516887-n",
-      "pos": "n",
-      "gloss": "clothing of distinctive design worn by members of a particular group as a means of identification",
-      "members": [
-        "uniform",
-        "PT: farda",
-        "PT: fardamento",
-        "PT: uniforme"
-      ],
-      "decision": "",
-      "note": "OEWN corroboration (Ponte ILI / WordNet track)"
-    },
-    {
-      "source": "wordnet",
-      "key": "i6560",
-      "ili": "i6560",
-      "local_id": "oewn-01203638-s",
-      "pos": "s",
-      "gloss": "the same throughout in structure or composition",
-      "members": [
-        "consistent",
-        "uniform"
-      ],
-      "decision": "",
-      "note": "OEWN corroboration (Ponte ILI / WordNet track)"
-    },
-    {
-      "source": "wordnet",
-      "key": "i10734",
-      "ili": "i10734",
-      "local_id": "oewn-01967120-s",
-      "pos": "s",
-      "gloss": "evenly spaced",
-      "members": [
-        "uniform"
-      ],
-      "decision": "",
-      "note": "OEWN corroboration (Ponte ILI / WordNet track)"
-    },
-    {
-      "source": "wordnet",
-      "key": "i33388",
-      "ili": "i33388",
-      "local_id": "oewn-02336782-v",
-      "pos": "v",
-      "gloss": "provide with uniforms",
-      "members": [
-        "uniform"
-      ],
-      "decision": "",
-      "note": "OEWN corroboration (Ponte ILI / WordNet track)"
-    },
-    {
-      "source": "papel",
-      "key": "papel35:FINALIDADE:FAZ_SE_COM:uniforme",
-      "ili": null,
-      "local_id": "papel35:FINALIDADE:FAZ_SE_COM:uniforme",
-      "pos": "",
-      "gloss": "PAPEL FAZ_SE_COM (FINALIDADE)",
-      "members": [
-        "uniforme",
-        "uso"
-      ],
-      "decision": "exclude",
-      "note": "discovery: PAPEL 3.5",
-      "destino": "evidencia"
-    },
-    {
-      "source": "papel",
-      "key": "papel35:HIPERONIMIA:HIPERONIMO_DE:uniforme",
-      "ili": null,
-      "local_id": "papel35:HIPERONIMIA:HIPERONIMO_DE:uniforme",
-      "pos": "",
-      "gloss": "PAPEL HIPERONIMO_DE (HIPERONIMIA)",
-      "members": [
-        "uniforme",
-        "libré",
-        "vestuário"
-      ],
-      "decision": "exclude",
-      "note": "discovery: PAPEL 3.5",
-      "destino": "evidencia"
-    },
-    {
-      "source": "papel",
-      "key": "papel35:MANEIRA:MANEIRA_POR_MEIO_DE:uniforme",
-      "ili": null,
-      "local_id": "papel35:MANEIRA:MANEIRA_POR_MEIO_DE:uniforme",
-      "pos": "",
-      "gloss": "PAPEL MANEIRA_POR_MEIO_DE (MANEIRA)",
-      "members": [
-        "uniforme",
-        "uniformemente"
-      ],
-      "decision": "UF",
-      "note": "discovery: PAPEL 3.5",
-      "destino": "vocabulario"
-    },
-    {
-      "source": "papel",
-      "key": "papel35:PARTE:PARTE_DE_ALGO_COM_PROPRIEDADE:uniforme",
-      "ili": null,
-      "local_id": "papel35:PARTE:PARTE_DE_ALGO_COM_PROPRIEDADE:uniforme",
-      "pos": "",
-      "gloss": "PAPEL PARTE_DE_ALGO_COM_PROPRIEDADE (PARTE)",
-      "members": [
-        "uniforme",
-        "forma",
-        "forma de ameixa",
-        "luniforme",
-        "parte",
-        "pruniforme"
-      ],
-      "decision": "exclude",
-      "note": "discovery: PAPEL 3.5",
-      "destino": "evidencia"
-    },
-    {
-      "source": "papel",
-      "key": "papel35:QUALIDADE:TEM_QUALIDADE:uniforme",
-      "ili": null,
-      "local_id": "papel35:QUALIDADE:TEM_QUALIDADE:uniforme",
-      "pos": "",
-      "gloss": "PAPEL TEM_QUALIDADE (QUALIDADE)",
-      "members": [
-        "uniforme",
-        "uniformidade"
-      ],
-      "decision": "UF",
-      "note": "discovery: PAPEL 3.5",
-      "destino": "vocabulario"
-    },
-    {
-      "source": "papel",
-      "key": "papel35:REFERENTE:DIZ_SE_DO_QUE:uniforme",
-      "ili": null,
-      "local_id": "papel35:REFERENTE:DIZ_SE_DO_QUE:uniforme",
-      "pos": "",
-      "gloss": "PAPEL DIZ_SE_DO_QUE (REFERENTE)",
-      "members": [
-        "uniforme",
-        "luniforme",
-        "pruniforme",
-        "ser sempre",
-        "ter forma",
-        "ter forma de ameixa",
-        "ter só forma"
-      ],
-      "decision": "RT",
-      "note": "discovery: PAPEL 3.5",
-      "destino": "vocabulario"
-    },
-    {
-      "source": "papel",
-      "key": "papel35:SINONIMIA:SINONIMO_ADJ_DE:uniforme",
-      "ili": null,
-      "local_id": "papel35:SINONIMIA:SINONIMO_ADJ_DE:uniforme",
-      "pos": "",
-      "gloss": "PAPEL SINONIMO_ADJ_DE (SINONIMIA)",
-      "members": [
-        "uniforme",
-        "homogéneo",
-        "homótono",
-        "igual",
-        "luniforme",
-        "lunulado",
-        "monótono",
-        "regular"
-      ],
-      "decision": "exclude",
-      "note": "discovery: PAPEL 3.5",
-      "destino": "evidencia"
-    },
-    {
-      "source": "papel",
-      "key": "papel35:SINONIMIA:SINONIMO_N_DE:uniforme",
-      "ili": null,
-      "local_id": "papel35:SINONIMIA:SINONIMO_N_DE:uniforme",
-      "pos": "",
-      "gloss": "PAPEL SINONIMO_N_DE (SINONIMIA)",
-      "members": [
-        "uniforme",
-        "farda",
-        "fardamenta"
-      ],
-      "decision": "exclude",
-      "note": "discovery: PAPEL 3.5",
-      "destino": "evidencia"
-    },
-    {
-      "source": "papel",
-      "key": "papel35:MANEIRA_SEM:MANEIRA_SEM:uniforme",
-      "ili": null,
-      "local_id": "papel35:MANEIRA_SEM:MANEIRA_SEM:uniforme",
-      "pos": "",
-      "gloss": "PAPEL MANEIRA_SEM (MANEIRA_SEM)",
-      "members": [
-        "mudança",
-        "uniformemente",
-        "variação"
-      ],
-      "decision": "exclude",
-      "note": "discovery: PAPEL 3.5",
-      "destino": "evidencia"
-    },
-    {
-      "source": "papel",
-      "key": "papel35:SINONIMIA:SINONIMO_ADV_DE:uniforme",
-      "ili": null,
-      "local_id": "papel35:SINONIMIA:SINONIMO_ADV_DE:uniforme",
-      "pos": "",
-      "gloss": "PAPEL SINONIMO_ADV_DE (SINONIMIA)",
-      "members": [
-        "inalteravelmente",
-        "monotonamente",
-        "uniformemente"
-      ],
-      "decision": "exclude",
-      "note": "discovery: PAPEL 3.5",
-      "destino": "evidencia"
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
     }
-  ],
-  "terms": [
-    {
-      "term": "uniformidade",
-      "status": "atributo",
-      "note": "qualidade",
-      "guarantee": [
-        "lexical"
-      ],
-      "destino": "evidencia"
-    },
-    {
-      "term": "invariância",
-      "status": "atributo",
-      "note": "qualidade",
-      "guarantee": [
-        "lexical"
-      ],
-      "destino": "evidencia"
-    }
-  ],
-  "manual_terms": [],
-  "exclude_terms": [
-    "heterogéneo"
   ]
 }

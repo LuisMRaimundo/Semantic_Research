@@ -1,0 +1,188 @@
+{
+  "schema": "semantic_research.source_export/1",
+  "class_id": "TexturaUniforme",
+  "source": "pulo",
+  "source_label": "PULO",
+  "source_title": "PULO (ILI anchor)",
+  "generated": "2026-08-07T14:04:06+01:00",
+  "source_version": {
+    "version_manifest": "E:\\PYTHON CODES\\Semantic_Research\\classes\\TexturaUniforme\\FINAL_RESULTS__Onto_plus_PULO\\VERSION_MANIFEST.json",
+    "manifest_generated": "2026-08-07T12:50:24.484493+00:00",
+    "pulo_sqlite": "E:\\PYTHON CODES\\Semantic_Research\\engines\\PULO Thesaurus GUI\\pulo.sqlite"
+  },
+  "counts": {
+    "cards": 9,
+    "decided": 9,
+    "by_status": {
+      "UF": 2,
+      "exclude": 6,
+      "RT": 1
+    }
+  },
+  "senses": [
+    {
+      "sense_key": "pulo|pwn30-01200095-a",
+      "source": "pulo",
+      "key": "pwn30-01200095-a",
+      "ili": "i6560",
+      "members": [
+        "uniforme",
+        "constante",
+        "invariável"
+      ],
+      "gloss": "que se mantém o mesmo; constante e invariável ao longo do parâmetro",
+      "decision": "UF",
+      "local_id": "por-30-01200095-a",
+      "links": [
+        {
+          "label": "CILI i6560",
+          "url": "https://globalwordnet.github.io/cili/i6560.html",
+          "detail": "página oficial CILI"
+        }
+      ]
+    },
+    {
+      "sense_key": "pulo|pwn30-01966488-a",
+      "source": "pulo",
+      "key": "pwn30-01966488-a",
+      "ili": "i10771",
+      "members": [
+        "imutável",
+        "uniforme"
+      ],
+      "gloss": "sempre o mesmo parâmetro; imutável e uniforme",
+      "decision": "UF",
+      "local_id": "por-30-01966488-a",
+      "links": [
+        {
+          "label": "CILI i10771",
+          "url": "https://globalwordnet.github.io/cili/i10771.html",
+          "detail": "página oficial CILI"
+        }
+      ]
+    },
+    {
+      "sense_key": "pulo|pwn30-00909545-a",
+      "source": "pulo",
+      "key": "pwn30-00909545-a",
+      "ili": "i4979",
+      "members": [
+        "igual",
+        "regular"
+      ],
+      "gloss": "sem variações; regular e uniforme face ao parâmetro",
+      "decision": "exclude",
+      "local_id": "por-30-00909545-a",
+      "links": [
+        {
+          "label": "CILI i4979",
+          "url": "https://globalwordnet.github.io/cili/i4979.html",
+          "detail": "página oficial CILI"
+        }
+      ]
+    },
+    {
+      "sense_key": "pulo|ili-30-04745370-n",
+      "source": "pulo",
+      "key": "ili-30-04745370-n",
+      "ili": "ili-30-04745370-n",
+      "members": [
+        "uniformidade",
+        "invariância",
+        "periódico"
+      ],
+      "gloss": "ausência de variação; invariância e uniformidade de um parâmetro",
+      "decision": "RT",
+      "local_id": "por-30-04745370-n"
+    },
+    {
+      "sense_key": "pulo|pwn30-02302187-a",
+      "source": "pulo",
+      "key": "pwn30-02302187-a",
+      "ili": "i12748",
+      "members": [
+        "periódico",
+        "regular"
+      ],
+      "gloss": "que ocorre em intervalos fixos e regulares",
+      "decision": "exclude",
+      "local_id": "por-30-02302187-a",
+      "links": [
+        {
+          "label": "CILI i12748",
+          "url": "https://globalwordnet.github.io/cili/i12748.html",
+          "detail": "página oficial CILI"
+        }
+      ]
+    },
+    {
+      "sense_key": "pulo|pwn30-00910101-a",
+      "source": "pulo",
+      "key": "pwn30-00910101-a",
+      "ili": "i4980",
+      "members": [
+        "bonito"
+      ],
+      "gloss": "de aparência agradável aos olhos",
+      "decision": "exclude",
+      "local_id": "por-30-00910101-a",
+      "links": [
+        {
+          "label": "CILI i4980",
+          "url": "https://globalwordnet.github.io/cili/i4980.html",
+          "detail": "página oficial CILI"
+        }
+      ]
+    },
+    {
+      "sense_key": "pulo|pwn30-04509592-n",
+      "source": "pulo",
+      "key": "pwn30-04509592-n",
+      "ili": "i60712",
+      "members": [
+        "medidor"
+      ],
+      "gloss": "instrumento de medição de comprimento",
+      "decision": "exclude",
+      "local_id": "por-30-04509592-n",
+      "links": [
+        {
+          "label": "CILI i60712",
+          "url": "https://globalwordnet.github.io/cili/i60712.html",
+          "detail": "página oficial CILI"
+        }
+      ]
+    },
+    {
+      "sense_key": "pulo|pwn30-00744506-a",
+      "source": "pulo",
+      "key": "pwn30-00744506-a",
+      "ili": "i4126",
+      "members": [
+        "fardado"
+      ],
+      "gloss": "relativo ao fardamento militar",
+      "decision": "exclude",
+      "local_id": "por-30-00744506-a",
+      "links": [
+        {
+          "label": "CILI i4126",
+          "url": "https://globalwordnet.github.io/cili/i4126.html",
+          "detail": "página oficial CILI"
+        }
+      ]
+    },
+    {
+      "sense_key": "pulo|por-30-99999999-x",
+      "source": "pulo",
+      "key": "por-30-99999999-x",
+      "ili": null,
+      "members": [
+        "idiossincrático"
+      ],
+      "gloss": "acepção local sem correspondência interlingual",
+      "decision": "exclude",
+      "local_id": "por-30-99999999-x"
+    }
+  ]
+}

@@ -15,7 +15,7 @@ sr:Scheme a skos:ConceptScheme ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — DemoClass
-# generated 2026-08-07T12:50:22+00:00
+# generated 2026-08-07T13:11:04+00:00
 # policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:DemoClass a owl:Class, skos:Concept ;
@@ -36,7 +36,7 @@ sr:DemoClass a owl:Class, skos:Concept ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaComposita
-# generated 2026-08-07T12:50:22+00:00
+# generated 2026-08-07T13:11:04+00:00
 # policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaComposita a owl:Class, skos:Concept ;
@@ -157,7 +157,7 @@ sr:TexturaComposita a owl:Class, skos:Concept ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaDensa
-# generated 2026-08-07T12:50:22+00:00
+# generated 2026-08-07T13:11:04+00:00
 # policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaDensa a owl:Class, skos:Concept ;
@@ -178,7 +178,7 @@ sr:TexturaDensa a owl:Class, skos:Concept ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaDireccional
-# generated 2026-08-07T12:50:22+00:00
+# generated 2026-08-07T13:11:04+00:00
 # policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaDireccional a owl:Class, skos:Concept ;
@@ -270,7 +270,7 @@ sr:TexturaDireccional a owl:Class, skos:Concept ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaIntermitente
-# generated 2026-08-07T12:50:22+00:00
+# generated 2026-08-07T13:11:04+00:00
 # policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaIntermitente a owl:Class, skos:Concept ;
@@ -289,7 +289,7 @@ sr:TexturaIntermitente a owl:Class, skos:Concept ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaMetamorfica
-# generated 2026-08-07T12:50:22+00:00
+# generated 2026-08-07T13:11:04+00:00
 # policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaMetamorfica a owl:Class, skos:Concept ;
@@ -320,7 +320,7 @@ sr:TexturaMetamorfica a owl:Class, skos:Concept ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaPolitpica
-# generated 2026-08-07T12:50:22+00:00
+# generated 2026-08-07T13:11:04+00:00
 # policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaPolitpica a owl:Class, skos:Concept ;
@@ -338,7 +338,7 @@ sr:TexturaPolitpica a owl:Class, skos:Concept ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaUniforme
-# generated 2026-08-07T12:50:22+00:00
+# generated 2026-08-07T13:11:04+00:00
 # policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaUniforme a owl:Class, skos:Concept ;
@@ -352,8 +352,6 @@ sr:TexturaUniforme a owl:Class, skos:Concept ;
     skos:altLabel "imutável"@pt-PT ;
     skos:altLabel "uniformemente"@pt-PT ;
     skos:altLabel "uniformidade"@pt-PT ;
-    skos:altLabel "inalteravelmente"@pt-PT ;
-    skos:altLabel "monotonamente"@pt-PT ;
     sr:excludedCandidate [ rdf:value "igual"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "sem variações; regular e uniforme face ao parâmetro" ] ;
     sr:excludedCandidate [ rdf:value "regular"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "sem variações; regular e uniforme face ao parâmetro" ] ;
     sr:excludedCandidate [ rdf:value "periódico"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "que ocorre em intervalos fixos e regulares" ] ;
@@ -370,8 +368,17 @@ sr:TexturaUniforme a owl:Class, skos:Concept ;
     sr:excludedCandidate [ rdf:value "luniforme"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL PARTE_DE_ALGO_COM_PROPRIEDADE (PARTE)" ] ;
     sr:excludedCandidate [ rdf:value "parte"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL PARTE_DE_ALGO_COM_PROPRIEDADE (PARTE)" ] ;
     sr:excludedCandidate [ rdf:value "pruniforme"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL PARTE_DE_ALGO_COM_PROPRIEDADE (PARTE)" ] ;
+    sr:excludedCandidate [ rdf:value "homogéneo"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_ADJ_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "homótono"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_ADJ_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "igual"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_ADJ_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "luniforme"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_ADJ_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "lunulado"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_ADJ_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "monótono"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_ADJ_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "regular"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_ADJ_DE (SINONIMIA)" ] ;
     sr:excludedCandidate [ rdf:value "farda"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
     sr:excludedCandidate [ rdf:value "fardamenta"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_N_DE (SINONIMIA)" ] ;
     sr:excludedCandidate [ rdf:value "mudança"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL MANEIRA_SEM (MANEIRA_SEM)" ] ;
     sr:excludedCandidate [ rdf:value "variação"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL MANEIRA_SEM (MANEIRA_SEM)" ] ;
-    rdfs:comment "UF senses=11; RT=10; exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .
+    sr:excludedCandidate [ rdf:value "inalteravelmente"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_ADV_DE (SINONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "monotonamente"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_ADV_DE (SINONIMIA)" ] ;
+    rdfs:comment "UF senses=10; RT=9; exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .

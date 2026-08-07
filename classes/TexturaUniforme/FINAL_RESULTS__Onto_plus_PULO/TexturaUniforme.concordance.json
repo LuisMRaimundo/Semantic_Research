@@ -1,7 +1,7 @@
 {
   "class": "TexturaUniforme",
   "policy": "conservative",
-  "generated": "2026-08-07T13:50:18",
+  "generated": "2026-08-07T14:11:01",
   "columns": [
     "ONTO",
     "PULO",
@@ -813,6 +813,12 @@
           "source": "onto"
         },
         {
+          "forma": "regular",
+          "reason": "onto_discovery_only",
+          "key": "clip21:19004",
+          "source": "onto"
+        },
+        {
           "forma": "crebro",
           "reason": "onto_discovery_only",
           "key": "clip21:19004",
@@ -1012,6 +1018,12 @@
         },
         {
           "forma": "iterativo",
+          "reason": "onto_discovery_only",
+          "key": "clip21:19004",
+          "source": "onto"
+        },
+        {
+          "forma": "monotono",
           "reason": "onto_discovery_only",
           "key": "clip21:19004",
           "source": "onto"
@@ -1377,6 +1389,12 @@
           "source": "onto"
         },
         {
+          "forma": "homogeneo",
+          "reason": "onto_discovery_only",
+          "key": "clip21:19004",
+          "source": "onto"
+        },
+        {
           "forma": "imperecivel",
           "reason": "onto_discovery_only",
           "key": "clip21:19004",
@@ -1587,6 +1605,12 @@
           "source": "onto"
         },
         {
+          "forma": "homotono",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:25600",
+          "source": "onto"
+        },
+        {
           "forma": "equavel",
           "reason": "onto_discovery_only",
           "key": "fuzzythes:25600",
@@ -1653,6 +1677,12 @@
           "source": "onto"
         },
         {
+          "forma": "inalteravelmente",
+          "reason": "onto_discovery_only",
+          "key": "clip21:20421",
+          "source": "onto"
+        },
+        {
           "forma": "de_maneira_justa",
           "reason": "onto_discovery_only",
           "key": "clip21:20421",
@@ -1660,6 +1690,12 @@
         },
         {
           "forma": "imutavelmente",
+          "reason": "onto_discovery_only",
+          "key": "clip21:20421",
+          "source": "onto"
+        },
+        {
+          "forma": "monotonamente",
           "reason": "onto_discovery_only",
           "key": "clip21:20421",
           "source": "onto"
@@ -1676,12 +1712,12 @@
       "id": "R1",
       "text": "Relatório residual: acepções UF/RT sem correspondência em motor (taxonomia T14 removida).",
       "passed": true,
-      "evidence": "n=1"
+      "evidence": "n=0"
     }
   ],
   "all_passed": true,
   "reconciliacao": {
     "t14_removed": true,
-    "acepcoes_sem_motor": 1
+    "acepcoes_sem_motor": 0
   }
 }
