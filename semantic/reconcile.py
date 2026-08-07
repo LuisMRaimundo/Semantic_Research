@@ -41,15 +41,24 @@ def build_residual_report(
     dec = load_decisions(ws.decisions_json)
     motor = _motor_lemmas(ws)
     orphans: list[dict[str, Any]] = []
+    descartado_onto: list[dict[str, Any]] = []
     for s in dec.get("senses") or []:
         decision = (s.get("decision") or "").strip()
         if decision not in VOCABULARIO:
             continue
         src = (s.get("source") or "").lower()
-        # Onto discovery-only: not expected in motor admission
-        if src == "onto":
-            continue
         members = [m for m in (s.get("members") or []) if m]
+        # Onto discovery-only: never in motor admission — declared, not silent
+        if src == "onto":
+            descartado_onto.append({
+                "source": src,
+                "key": s.get("key"),
+                "ili": s.get("ili"),
+                "decision": decision,
+                "membros": members,
+                "nota": "descartado (Onto.PT discovery-only — não admite na matriz)",
+            })
+            continue
         missing = [m for m in members if normalize_word(m) not in motor]
         if missing == members and members:
             orphans.append({
@@ -66,6 +75,8 @@ def build_residual_report(
         "execution": execution or {},
         "acepcoes_sem_motor": orphans,
         "n_acepcoes_sem_motor": len(orphans),
+        "descartado_onto_discovery": descartado_onto,
+        "n_descartado_onto_discovery": len(descartado_onto),
         "taxonomy_removed": [
             "conflitos_planos",
             "divergencia_sentidos",
@@ -92,6 +103,22 @@ def render_reconcile_markdown(report: dict[str, Any]) -> str:
         ap("_(nenhuma)_")
     else:
         for o in orphans:
+            mems = ", ".join(o.get("membros") or [])
+            ap(
+                f"- `{o.get('decision')}` · {o.get('source')}:{o.get('key')} · "
+                f"{mems}"
+            )
+    ap("")
+    ap("## Descartado (Onto.PT discovery-only)")
+    ap("")
+    ap("Acepções Onto.PT adjudicadas UF/RT — por desenho nunca entram na "
+       "matriz LexWarrant (Corte 3). Listadas aqui para rastreabilidade.")
+    ap("")
+    dropped = report.get("descartado_onto_discovery") or []
+    if not dropped:
+        ap("_(nenhuma)_")
+    else:
+        for o in dropped:
             mems = ", ".join(o.get("membros") or [])
             ap(
                 f"- `{o.get('decision')}` · {o.get('source')}:{o.get('key')} · "

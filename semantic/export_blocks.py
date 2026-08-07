@@ -137,6 +137,7 @@ def build_export_blocks(ws: ClassWorkspace) -> dict[str, Any]:
     atributos: list[dict[str, Any]] = []
     oposicoes: list[dict[str, Any]] = []
     vizinhas: list[dict[str, Any]] = []
+    dropped_focus_filter: list[dict[str, Any]] = []
 
     for s in dec.get("senses") or []:
         decision = (s.get("decision") or "").strip()
@@ -173,7 +174,7 @@ def build_export_blocks(ws: ClassWorkspace) -> dict[str, Any]:
                     (x or "").casefold()
                     for x in (cm.get("validated_alt_labels") or [])
                 }
-                members = [
+                kept = [
                     m for m in members
                     if (m or "").casefold() in validated
                     or (m or "").casefold().replace(" ", "") in focus
@@ -181,6 +182,16 @@ def build_export_blocks(ws: ClassWorkspace) -> dict[str, Any]:
                         (f or "").casefold() for f in (meta.get("focus_stems") or [])
                     }
                 ]
+                removed = [m for m in members if m not in kept]
+                if removed:
+                    # Declared drop — the focus filter removed these members
+                    dropped_focus_filter.append({
+                        "fonte": s.get("source"),
+                        "key": s.get("key"),
+                        "decision": decision,
+                        "members_dropped_focus_filter": removed,
+                    })
+                members = kept
             for m in members:
                 alt_labels.append({**base, "termo": m, "skos": "skos:altLabel"})
         elif decision == "RT":
@@ -311,6 +322,9 @@ def build_export_blocks(ws: ClassWorkspace) -> dict[str, Any]:
         },
         "altLabel": alt_labels,
         "termoRelacionado": relacionados,
+        # Audit only: members removed from altLabel by the Onto focus-stem
+        # filter — recorded, never silently discarded.
+        "members_dropped_focus_filter": dropped_focus_filter,
     }
     evidencia = {
         "nota": EVIDENCE_NOTE,

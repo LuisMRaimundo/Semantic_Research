@@ -989,11 +989,19 @@ def build_termos_pesquisa(ws: ClassWorkspace) -> dict[str, Any]:
 
     # Adjudicated senses with no matrix row
     matrix_norms = {normalize_word(r["forma"]) for r in vocab_f}
+    descartado_onto: list[dict[str, Any]] = []
     for s in dec.get("senses") or []:
         decision = (s.get("decision") or "").strip()
         if decision not in ADMIT_STATUSES:
             continue
         if (s.get("source") or "").lower() == "onto":
+            # Onto.PT discovery-only — declared drop, never silent
+            descartado_onto.append({
+                "key": s.get("key"),
+                "membros": [m for m in (s.get("members") or []) if (m or "").strip()],
+                "decision": decision,
+                "motivo": "Onto.PT discovery-only — não admite na matriz LexWarrant",
+            })
             continue
         key = s.get("ili") or s.get("key")
         members = [m for m in (s.get("members") or []) if (m or "").strip()]
@@ -1041,6 +1049,7 @@ def build_termos_pesquisa(ws: ClassWorkspace) -> dict[str, Any]:
         "E_fronteiras_dominio": fronteiras,
         "F_vocabulario_pt": vocab_f,
         "a_resolver": a_resolver,
+        "descartado_onto_discovery": descartado_onto,
         "D_vocabulario_pt": vocab_f,
         "_sheet_meta_norms": sorted(sheet_meta),
         "_focus_seed_norms": sorted(focus_seed_norms),
@@ -1228,6 +1237,19 @@ def render_termos_md(doc: dict[str, Any]) -> str:
                 f"{r.get('garantia')} | {r.get('ancora_ili')} | {fontes} |"
             )
     ap("")
+    dropped = doc.get("descartado_onto_discovery") or []
+    if dropped:
+        ap("## Descartado (Onto.PT discovery-only)")
+        ap("")
+        ap("Acepções Onto.PT adjudicadas UF/RT — por desenho nunca entram na "
+           "matriz LexWarrant (Corte 3). Listadas para rastreabilidade.")
+        ap("")
+        ap("| chave | decisão | membros |")
+        ap("|---|---|---|")
+        for r in dropped:
+            mems = ", ".join(r.get("membros") or []) or "—"
+            ap(f"| {r.get('key')} | {r.get('decision')} | {mems} |")
+        ap("")
     return "\n".join(L)
 
 
@@ -1448,7 +1470,8 @@ def render_termos_html(doc: dict[str, Any]) -> str:
 </section>
 """
 
-    if a_resolver:
+    descartado_onto = doc.get("descartado_onto_discovery") or []
+    if a_resolver or descartado_onto:
         items = "".join(
             "<li><strong>{f}</strong>"
             "{meta} — {r}</li>".format(
@@ -1460,11 +1483,27 @@ def render_termos_html(doc: dict[str, Any]) -> str:
             )
             for x in a_resolver
         )
+        onto_items = "".join(
+            "<li><strong>{m}</strong> ({d}) — {k}</li>".format(
+                m=_esc(", ".join(x.get("membros") or []) or "—"),
+                d=_esc(x.get("decision")),
+                k=_esc(x.get("key")),
+            )
+            for x in descartado_onto
+        )
+        onto_block = (
+            "<h3>Descartado (Onto.PT discovery-only)</h3>"
+            "<p>Acepções Onto.PT adjudicadas UF/RT — por desenho nunca entram "
+            "na matriz LexWarrant (Corte 3).</p>"
+            f"<ul>{onto_items}</ul>"
+        ) if descartado_onto else ""
+        list_block = f"<ul>{items}</ul>" if a_resolver else ""
         resolve_box = f"""
 <aside class="resolve" aria-labelledby="h-resolve">
   <h2 id="h-resolve">A resolver antes de fixar os rótulos</h2>
   <p>Anomalias que pedem decisão humana (não inclui «fonte única»).</p>
-  <ul>{items}</ul>
+  {list_block}
+  {onto_block}
 </aside>
 """
     else:

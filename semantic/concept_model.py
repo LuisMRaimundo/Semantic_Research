@@ -202,6 +202,12 @@ def build_class_concept_graph(ws: ClassWorkspace) -> dict[str, Any]:
                 m for m in members if normalize_word(m) in validated_skip
             ]
         if decision == "UF":
+            if source == "onto":
+                # Same focus-stem filter applied by _vocab_alt_labels at
+                # render time — declared here on the row, never silent.
+                row["members_dropped_focus_filter"] = [
+                    m for m in members if normalize_word(m) not in focus
+                ]
             uf.append(row)
             if cid:
                 role = "uf_pulo_candidate" if source == "pulo" else f"uf_{source or 'other'}_candidate"
