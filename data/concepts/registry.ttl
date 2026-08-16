@@ -15,7 +15,7 @@ sr:Scheme a skos:ConceptScheme ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — DemoClass
-# generated 2026-08-07T13:22:38+00:00
+# generated 2026-08-07T14:49:14+00:00
 # policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:DemoClass a owl:Class, skos:Concept ;
@@ -26,7 +26,7 @@ sr:DemoClass a owl:Class, skos:Concept ;
     sr:mappingStatus "no_validated_cili" ;
     skos:altLabel "alpha"@pt-PT ;
     skos:altLabel "beta"@pt-PT ;
-    rdfs:comment "UF senses=1; RT=0; exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .
+    rdfs:comment "discovery evidence (candidates, not SKOS relations): UF senses=1; RT senses=0. validated mappings: exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .
 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -36,7 +36,7 @@ sr:DemoClass a owl:Class, skos:Concept ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaComposita
-# generated 2026-08-07T13:22:38+00:00
+# generated 2026-08-07T14:49:14+00:00
 # policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaComposita a owl:Class, skos:Concept ;
@@ -147,7 +147,7 @@ sr:TexturaComposita a owl:Class, skos:Concept ;
     sr:excludedCandidate [ rdf:value "constante"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "uma quantidade que não varia " ] ;
     sr:excludedCili [ sr:cili <http://ili.globalwordnet.org/ili/i114921> ; sr:exclusionReason "aceção química: chemical compound" ] ;
     sr:excludedCili [ sr:cili <http://ili.globalwordnet.org/ili/i97733> ; sr:exclusionReason "aceção biológica: decay/decomposition" ] ;
-    rdfs:comment "UF senses=12; RT=11; exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .
+    rdfs:comment "discovery evidence (candidates, not SKOS relations): UF senses=12; RT senses=11. validated mappings: exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .
 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -157,7 +157,7 @@ sr:TexturaComposita a owl:Class, skos:Concept ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaDensa
-# generated 2026-08-07T13:22:38+00:00
+# generated 2026-08-07T14:49:14+00:00
 # policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaDensa a owl:Class, skos:Concept ;
@@ -168,7 +168,7 @@ sr:TexturaDensa a owl:Class, skos:Concept ;
     sr:mappingStatus "no_validated_cili" ;
     skos:altLabel "denso"@pt-PT ;
     skos:altLabel "densidade"@pt-PT ;
-    rdfs:comment "UF senses=5; RT=2; exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .
+    rdfs:comment "discovery evidence (candidates, not SKOS relations): UF senses=5; RT senses=2. validated mappings: exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .
 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -178,7 +178,7 @@ sr:TexturaDensa a owl:Class, skos:Concept ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaDireccional
-# generated 2026-08-07T13:22:38+00:00
+# generated 2026-08-07T14:49:14+00:00
 # policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaDireccional a owl:Class, skos:Concept ;
@@ -260,7 +260,7 @@ sr:TexturaDireccional a owl:Class, skos:Concept ;
     sr:excludedCandidate [ rdf:value "ter única direcção"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
     sr:excludedCandidate [ rdf:value "unidireccional"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
     sr:excludedCandidate [ rdf:value "vertical"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
-    rdfs:comment "UF senses=10; RT=16; exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .
+    rdfs:comment "discovery evidence (candidates, not SKOS relations): UF senses=10; RT senses=16. validated mappings: exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .
 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -270,7 +270,7 @@ sr:TexturaDireccional a owl:Class, skos:Concept ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaIntermitente
-# generated 2026-08-07T13:22:38+00:00
+# generated 2026-08-07T14:49:14+00:00
 # policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaIntermitente a owl:Class, skos:Concept ;
@@ -279,7 +279,7 @@ sr:TexturaIntermitente a owl:Class, skos:Concept ;
     dct:identifier "TexturaIntermitente" ;
     skos:editorialNote "SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint."@en ;
     sr:mappingStatus "no_validated_cili" ;
-    rdfs:comment "UF senses=8; RT=15; exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .
+    rdfs:comment "discovery evidence (candidates, not SKOS relations): UF senses=8; RT senses=15. validated mappings: exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .
 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -289,7 +289,7 @@ sr:TexturaIntermitente a owl:Class, skos:Concept ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaMetamorfica
-# generated 2026-08-07T13:22:38+00:00
+# generated 2026-08-07T14:49:14+00:00
 # policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaMetamorfica a owl:Class, skos:Concept ;
@@ -310,7 +310,7 @@ sr:TexturaMetamorfica a owl:Class, skos:Concept ;
     skos:altLabel "metamorfos de ser"@pt-PT ;
     skos:altLabel "pirometamorfismo"@pt-PT ;
     skos:altLabel "pirometamórfico"@pt-PT ;
-    rdfs:comment "UF senses=8; RT=1; exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .
+    rdfs:comment "discovery evidence (candidates, not SKOS relations): UF senses=8; RT senses=1. validated mappings: exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .
 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -320,7 +320,7 @@ sr:TexturaMetamorfica a owl:Class, skos:Concept ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaPolitpica
-# generated 2026-08-07T13:22:38+00:00
+# generated 2026-08-07T14:49:14+00:00
 # policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaPolitpica a owl:Class, skos:Concept ;
@@ -328,7 +328,7 @@ sr:TexturaPolitpica a owl:Class, skos:Concept ;
     dct:identifier "TexturaPolitpica" ;
     skos:editorialNote "SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint."@en ;
     sr:mappingStatus "no_validated_cili" ;
-    rdfs:comment "UF senses=0; RT=0; exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .
+    rdfs:comment "discovery evidence (candidates, not SKOS relations): UF senses=0; RT senses=0. validated mappings: exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .
 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -338,7 +338,7 @@ sr:TexturaPolitpica a owl:Class, skos:Concept ;
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaUniforme
-# generated 2026-08-07T13:22:38+00:00
+# generated 2026-08-07T14:49:14+00:00
 # policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaUniforme a owl:Class, skos:Concept ;
@@ -350,9 +350,9 @@ sr:TexturaUniforme a owl:Class, skos:Concept ;
     skos:altLabel "constante"@pt-PT ;
     skos:altLabel "invariável"@pt-PT ;
     skos:altLabel "imutável"@pt-PT ;
-    skos:altLabel "uniformidade"@pt-PT ;
     sr:excludedCandidate [ rdf:value "igual"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "sem variações; regular e uniforme face ao parâmetro" ] ;
     sr:excludedCandidate [ rdf:value "regular"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "sem variações; regular e uniforme face ao parâmetro" ] ;
+    sr:excludedCandidate [ rdf:value "uniformidade"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "ausência de variação; invariância e uniformidade de um parâmetro" ] ;
     sr:excludedCandidate [ rdf:value "invariância"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "ausência de variação; invariância e uniformidade de um parâmetro" ] ;
     sr:excludedCandidate [ rdf:value "periódico"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "ausência de variação; invariância e uniformidade de um parâmetro" ] ;
     sr:excludedCandidate [ rdf:value "periódico"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "que ocorre em intervalos fixos e regulares" ] ;
@@ -370,6 +370,7 @@ sr:TexturaUniforme a owl:Class, skos:Concept ;
     sr:excludedCandidate [ rdf:value "luniforme"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL PARTE_DE_ALGO_COM_PROPRIEDADE (PARTE)" ] ;
     sr:excludedCandidate [ rdf:value "parte"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL PARTE_DE_ALGO_COM_PROPRIEDADE (PARTE)" ] ;
     sr:excludedCandidate [ rdf:value "pruniforme"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL PARTE_DE_ALGO_COM_PROPRIEDADE (PARTE)" ] ;
+    sr:excludedCandidate [ rdf:value "uniformidade"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL TEM_QUALIDADE (QUALIDADE)" ] ;
     sr:excludedCandidate [ rdf:value "luniforme"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
     sr:excludedCandidate [ rdf:value "pruniforme"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
     sr:excludedCandidate [ rdf:value "ser sempre"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
@@ -391,4 +392,4 @@ sr:TexturaUniforme a owl:Class, skos:Concept ;
     sr:excludedCandidate [ rdf:value "inalteravelmente"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_ADV_DE (SINONIMIA)" ] ;
     sr:excludedCandidate [ rdf:value "monotonamente"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_ADV_DE (SINONIMIA)" ] ;
     sr:excludedCandidate [ rdf:value "uniformemente"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_ADV_DE (SINONIMIA)" ] ;
-    rdfs:comment "UF senses=9; RT=4; exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .
+    rdfs:comment "discovery evidence (candidates, not SKOS relations): UF senses=8; RT senses=4. validated mappings: exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .

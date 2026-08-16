@@ -7679,9 +7679,9 @@
         "uniforme",
         "uniformidade"
       ],
-      "decision": "UF",
+      "decision": "exclude",
       "note": "discovery: PAPEL 3.5",
-      "destino": "vocabulario"
+      "destino": "evidencia"
     },
     {
       "source": "papel",

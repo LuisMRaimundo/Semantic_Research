@@ -152,34 +152,6 @@
         "destino": "vocabulario",
         "termo": "uniforme",
         "skos": "skos:altLabel"
-      },
-      {
-        "fonte": "papel",
-        "key": "papel35:QUALIDADE:TEM_QUALIDADE:uniforme",
-        "ili": null,
-        "membros": [
-          "uniforme",
-          "uniformidade"
-        ],
-        "gloss": "PAPEL TEM_QUALIDADE (QUALIDADE)",
-        "note": "discovery: PAPEL 3.5",
-        "destino": "vocabulario",
-        "termo": "uniforme",
-        "skos": "skos:altLabel"
-      },
-      {
-        "fonte": "papel",
-        "key": "papel35:QUALIDADE:TEM_QUALIDADE:uniforme",
-        "ili": null,
-        "membros": [
-          "uniforme",
-          "uniformidade"
-        ],
-        "gloss": "PAPEL TEM_QUALIDADE (QUALIDADE)",
-        "note": "discovery: PAPEL 3.5",
-        "destino": "vocabulario",
-        "termo": "uniformidade",
-        "skos": "skos:altLabel"
       }
     ],
     "termoRelacionado": [],
@@ -7479,6 +7451,21 @@
           "pruniforme"
         ],
         "gloss": "PAPEL PARTE_DE_ALGO_COM_PROPRIEDADE (PARTE)",
+        "note": "discovery: PAPEL 3.5",
+        "destino": "evidencia",
+        "members_omitted_focal": [
+          "uniforme"
+        ],
+        "exclusion_scope": "record_or_sense_not_lemma"
+      },
+      {
+        "fonte": "papel",
+        "key": "papel35:QUALIDADE:TEM_QUALIDADE:uniforme",
+        "ili": null,
+        "membros": [
+          "uniformidade"
+        ],
+        "gloss": "PAPEL TEM_QUALIDADE (QUALIDADE)",
         "note": "discovery: PAPEL 3.5",
         "destino": "evidencia",
         "members_omitted_focal": [

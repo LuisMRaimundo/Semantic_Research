@@ -3,7 +3,7 @@
 - **Eixo definidor:** invariância face a um parâmetro
 - **Base de corroboração:** `E:\PYTHON CODES\Semantic_Research\engines\ONTO\ontopt.sqlite`  ·  recursos difusos: contopt
 - **Porta (Etapa 3):** peso ≥ 0.5, coocorrência ≥ 2
-- **Gerado:** 2026-08-07T14:22:36
+- **Gerado:** 2026-08-07T15:49:12
 - **Estado global:** ❌ EXISTEM ASSERÇÕES FALHADAS
 
 ## Quadro de asserções (protocolo)
@@ -101,69 +101,44 @@ Total de sementes: **60**
 | Termo | Coocorrência | Nuclear | Peso máx. | Synsets |
 |-------|--------------|---------|-----------|---------|
 | firme | 5 | True | 3.056 | contopt:10331, contopt:27200, contopt:28395, contopt:5675, contopt:8553 |
-| imóvel | 4 | True | 0.286 | contopt:10331, contopt:18050, contopt:28395, contopt:6511 |
 | inalterável | 4 | True | 2.333 | contopt:10331, contopt:18050, contopt:28395, contopt:6511 |
+| imóvel | 4 | True | 0.286 | contopt:10331, contopt:18050, contopt:28395, contopt:6511 |
 | estável | 3 | True | 2.167 | contopt:10331, contopt:28395, contopt:6511 |
-| jacente | 3 | True | 0.25 | contopt:10331, contopt:28395, contopt:6511 |
 | imutável | 3 | True | 0.432 | contopt:10331, contopt:28395, contopt:6511 |
+| jacente | 3 | True | 0.25 | contopt:10331, contopt:28395, contopt:6511 |
 | persistente | 3 | True | 0.963 | contopt:10331, contopt:28395, contopt:8553 |
-| assíduo | 2 | True | 1.0 | contopt:28395, contopt:5675 |
 | ordenado | 2 | True | 1.286 | contopt:15361, contopt:9502 |
 | metódico | 2 | True | 1.071 | contopt:15361, contopt:9502 |
-| manente | 2 | True | 0.295 | contopt:10331, contopt:28395 |
-| permanente | 2 | True | 1.273 | contopt:10331, contopt:28395 |
-| perseverante | 2 | True | 0.211 | contopt:10331, contopt:8553 |
-| permanecente | 2 | True | 0.211 | contopt:10331, contopt:28395 |
-| estóico | 2 | True | 0.286 | contopt:10331, contopt:6511 |
-| eterno | 2 | True | 0.429 | contopt:28395, contopt:6511 |
-| perpétuo | 2 | True | 1.136 | contopt:28395, contopt:6511 |
 | contínuo | 2 | True | 1.795 | contopt:27944, contopt:28395 |
+| permanente | 2 | True | 1.273 | contopt:10331, contopt:28395 |
+| perpétuo | 2 | True | 1.136 | contopt:28395, contopt:6511 |
+| assíduo | 2 | True | 1.0 | contopt:28395, contopt:5675 |
+| porfioso | 2 | True | 0.762 | contopt:28395, contopt:8553 |
+| manente | 2 | True | 0.295 | contopt:10331, contopt:28395 |
+| eterno | 2 | True | 0.429 | contopt:28395, contopt:6511 |
+| permanecente | 2 | True | 0.211 | contopt:10331, contopt:28395 |
+| perseverante | 2 | True | 0.211 | contopt:10331, contopt:8553 |
+| estóico | 2 | True | 0.286 | contopt:10331, contopt:6511 |
 | monótono | 2 | True | 0.417 | contopt:15361, contopt:30149 |
 | idêntico | 2 | True | 1.082 | contopt:15361, contopt:16491 |
-| porfioso | 2 | True | 0.762 | contopt:28395, contopt:8553 |
 
 ### Sinalização (revisão humana — NÃO admitidos)
 | Termo | Coocorrência | Peso máx. |
 |-------|--------------|-----------|
 | monotonia | 4 | 1.25 |
-| fiel | 3 | 1.125 |
-| seguro | 3 | 2.278 |
 | regular | 3 | 1.727 |
-| igual | 3 | 0.852 |
+| fiel | 3 | 1.125 |
 | conformidade | 3 | 1.0 |
 | cotidianidade | 3 | 0.538 |
 | quotidianidade | 3 | 0.538 |
 | unissonância | 3 | 0.286 |
-| verdadeiro | 2 | 2.125 |
-| certo | 2 | 0.485 |
-| confiável | 2 | 0.438 |
-| leal | 2 | 0.438 |
-| efetivo | 2 | 0.242 |
-| monotonamente | 2 | 1.0 |
-| unanimemente | 2 | 1.25 |
-| fixo | 2 | 2.278 |
-| inabalável | 2 | 1.0 |
+| seguro | 3 | 2.278 |
+| igual | 3 | 0.852 |
+| frequente | 2 | 1.227 |
 | duradouro | 2 | 0.316 |
-| agarrado | 2 | 0.211 |
-| indestrutível | 2 | 0.571 |
-| resistente | 2 | 0.9 |
-| aferrado | 2 | 0.925 |
-| afincado | 2 | 0.787 |
-| apegado | 2 | 0.111 |
-| tenaz | 2 | 0.975 |
-| impassível | 2 | 3.333 |
-| imperturbável | 2 | 2.667 |
-| insensível | 2 | 0.571 |
-| obstinado | 2 | 1.438 |
-| pertinaz | 2 | 1.325 |
-| perpetuamente | 2 | 1.556 |
-| eternamente | 2 | 1.333 |
-| para sempre | 2 | 1.222 |
-| sempre | 2 | 1.529 |
-| perenemente | 2 | 0.444 |
-| continuamente | 2 | 1.882 |
-| permanentemente | 2 | 0.3 |
-| incessantemente | 2 | 1.529 |
+| periódico | 2 | 0.167 |
+| habitual | 2 | 0.167 |
+| ordinário | 2 | 1.0 |
 | igualdade | 2 | 1.421 |
 | identidade | 2 | 0.842 |
 | correspondência | 2 | 0.842 |
@@ -175,17 +150,42 @@ Total de sementes: **60**
 | regularidade | 2 | 1.267 |
 | coerência | 2 | 0.154 |
 | relação | 2 | 0.278 |
-| constância | 2 | 3.0 |
-| fixidez | 2 | 0.4 |
-| imobilidade | 2 | 0.4 |
-| platitude | 2 | 0.846 |
-| harmonioso | 2 | 1.222 |
-| harmónico | 2 | 0.333 |
-| frequente | 2 | 1.227 |
-| periódico | 2 | 0.167 |
-| habitual | 2 | 0.167 |
-| ordinário | 2 | 1.0 |
+| monotonamente | 2 | 1.0 |
+| unanimemente | 2 | 1.25 |
+| fixo | 2 | 2.278 |
+| inabalável | 2 | 1.0 |
+| certo | 2 | 0.485 |
+| efetivo | 2 | 0.242 |
+| agarrado | 2 | 0.211 |
+| indestrutível | 2 | 0.571 |
+| resistente | 2 | 0.9 |
+| aferrado | 2 | 0.925 |
+| afincado | 2 | 0.787 |
+| apegado | 2 | 0.111 |
+| confiável | 2 | 0.438 |
+| tenaz | 2 | 0.975 |
+| leal | 2 | 0.438 |
+| impassível | 2 | 3.333 |
+| imperturbável | 2 | 2.667 |
+| insensível | 2 | 0.571 |
+| obstinado | 2 | 1.438 |
+| verdadeiro | 2 | 2.125 |
+| pertinaz | 2 | 1.325 |
 | moderado | 2 | 0.333 |
+| harmónico | 2 | 0.333 |
+| harmonioso | 2 | 1.222 |
+| imobilidade | 2 | 0.4 |
+| fixidez | 2 | 0.4 |
+| platitude | 2 | 0.846 |
+| constância | 2 | 3.0 |
+| perpetuamente | 2 | 1.556 |
+| eternamente | 2 | 1.333 |
+| para sempre | 2 | 1.222 |
+| sempre | 2 | 1.529 |
+| perenemente | 2 | 0.444 |
+| continuamente | 2 | 1.882 |
+| permanentemente | 2 | 0.3 |
+| incessantemente | 2 | 1.529 |
 
 ## Etapa 4 — Exclusão automática (assinaturas de ruído)
 Nenhum candidato descartado por assinatura de ruído.

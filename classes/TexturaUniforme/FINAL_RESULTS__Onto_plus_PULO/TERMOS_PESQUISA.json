@@ -9,7 +9,7 @@
   ],
   "anchor_pos": null,
   "near_stem": "uniform*",
-  "generated": "2026-08-07T14:22:41+01:00",
+  "generated": "2026-08-07T15:49:17+01:00",
   "search_lang": "en",
   "label_lang": "pt-PT",
   "termos_manuais_presentes": true,
@@ -172,6 +172,16 @@
       "pwn30": null,
       "cili": null,
       "ili": "papel35:PARTE:PARTE_DE_ALGO_COM_PROPRIEDADE:uniforme",
+      "lema": "uniforme",
+      "motivo": "discovery: PAPEL 3.5",
+      "fonte": "papel"
+    },
+    {
+      "chave": "papel35:QUALIDADE:TEM_QUALIDADE:uniforme",
+      "chave_legada": null,
+      "pwn30": null,
+      "cili": null,
+      "ili": "papel35:QUALIDADE:TEM_QUALIDADE:uniforme",
       "lema": "uniforme",
       "motivo": "discovery: PAPEL 3.5",
       "fonte": "papel"

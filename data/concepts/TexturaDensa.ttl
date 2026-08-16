@@ -6,7 +6,7 @@
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaDensa
-# generated 2026-08-07T13:22:38+00:00
+# generated 2026-08-07T14:49:14+00:00
 # policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaDensa a owl:Class, skos:Concept ;
@@ -17,4 +17,4 @@ sr:TexturaDensa a owl:Class, skos:Concept ;
     sr:mappingStatus "no_validated_cili" ;
     skos:altLabel "denso"@pt-PT ;
     skos:altLabel "densidade"@pt-PT ;
-    rdfs:comment "UF senses=5; RT=2; exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .
+    rdfs:comment "discovery evidence (candidates, not SKOS relations): UF senses=5; RT senses=2. validated mappings: exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .

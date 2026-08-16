@@ -6,7 +6,7 @@
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaIntermitente
-# generated 2026-08-07T13:22:38+00:00
+# generated 2026-08-07T14:49:14+00:00
 # policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaIntermitente a owl:Class, skos:Concept ;
@@ -15,4 +15,4 @@ sr:TexturaIntermitente a owl:Class, skos:Concept ;
     dct:identifier "TexturaIntermitente" ;
     skos:editorialNote "SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint."@en ;
     sr:mappingStatus "no_validated_cili" ;
-    rdfs:comment "UF senses=8; RT=15; exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .
+    rdfs:comment "discovery evidence (candidates, not SKOS relations): UF senses=8; RT senses=15. validated mappings: exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .

@@ -2,7 +2,7 @@
   "class_id": "TexturaUniforme",
   "pref_label": "uniforme",
   "axis": "invariância face a um parâmetro",
-  "generated": "2026-08-07T14:22:36",
+  "generated": "2026-08-07T15:49:12",
   "db": "E:\\PYTHON CODES\\Semantic_Research\\engines\\ONTO\\ontopt.sqlite",
   "gating": {
     "weight_min": 0.5,
@@ -611,31 +611,6 @@
     "n_focus_synsets": 38,
     "n_nuclear_synsets": 17,
     "admitted": {
-      "assiduo": {
-        "display": "assíduo",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": true,
-        "max_weight": 1.0,
-        "synsets": [
-          "contopt:28395",
-          "contopt:5675"
-        ]
-      },
-      "firme": {
-        "display": "firme",
-        "cooccurrence": 5,
-        "in_nuclear": true,
-        "corroborated": true,
-        "max_weight": 3.056,
-        "synsets": [
-          "contopt:10331",
-          "contopt:27200",
-          "contopt:28395",
-          "contopt:5675",
-          "contopt:8553"
-        ]
-      },
       "ordenado": {
         "display": "ordenado",
         "cooccurrence": 2,
@@ -658,12 +633,79 @@
           "contopt:9502"
         ]
       },
+      "continuo": {
+        "display": "contínuo",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": true,
+        "max_weight": 1.795,
+        "synsets": [
+          "contopt:27944",
+          "contopt:28395"
+        ]
+      },
+      "permanente": {
+        "display": "permanente",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": true,
+        "max_weight": 1.273,
+        "synsets": [
+          "contopt:10331",
+          "contopt:28395"
+        ]
+      },
+      "perpetuo": {
+        "display": "perpétuo",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": true,
+        "max_weight": 1.136,
+        "synsets": [
+          "contopt:28395",
+          "contopt:6511"
+        ]
+      },
+      "assiduo": {
+        "display": "assíduo",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": true,
+        "max_weight": 1.0,
+        "synsets": [
+          "contopt:28395",
+          "contopt:5675"
+        ]
+      },
+      "porfioso": {
+        "display": "porfioso",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": true,
+        "max_weight": 0.762,
+        "synsets": [
+          "contopt:28395",
+          "contopt:8553"
+        ]
+      },
       "estavel": {
         "display": "estável",
         "cooccurrence": 3,
         "in_nuclear": true,
         "corroborated": true,
         "max_weight": 2.167,
+        "synsets": [
+          "contopt:10331",
+          "contopt:28395",
+          "contopt:6511"
+        ]
+      },
+      "imutavel": {
+        "display": "imutável",
+        "cooccurrence": 3,
+        "in_nuclear": true,
+        "corroborated": true,
+        "max_weight": 0.432,
         "synsets": [
           "contopt:10331",
           "contopt:28395",
@@ -681,94 +723,12 @@
           "contopt:28395"
         ]
       },
-      "permanente": {
-        "display": "permanente",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": true,
-        "max_weight": 1.273,
-        "synsets": [
-          "contopt:10331",
-          "contopt:28395"
-        ]
-      },
-      "perseverante": {
-        "display": "perseverante",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": true,
-        "max_weight": 0.211,
-        "synsets": [
-          "contopt:10331",
-          "contopt:8553"
-        ]
-      },
-      "permanecente": {
-        "display": "permanecente",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": true,
-        "max_weight": 0.211,
-        "synsets": [
-          "contopt:10331",
-          "contopt:28395"
-        ]
-      },
-      "imovel": {
-        "display": "imóvel",
-        "cooccurrence": 4,
-        "in_nuclear": true,
-        "corroborated": true,
-        "max_weight": 0.286,
-        "synsets": [
-          "contopt:10331",
-          "contopt:18050",
-          "contopt:28395",
-          "contopt:6511"
-        ]
-      },
-      "inalteravel": {
-        "display": "inalterável",
-        "cooccurrence": 4,
-        "in_nuclear": true,
-        "corroborated": true,
-        "max_weight": 2.333,
-        "synsets": [
-          "contopt:10331",
-          "contopt:18050",
-          "contopt:28395",
-          "contopt:6511"
-        ]
-      },
-      "estoico": {
-        "display": "estóico",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": true,
-        "max_weight": 0.286,
-        "synsets": [
-          "contopt:10331",
-          "contopt:6511"
-        ]
-      },
       "jacente": {
         "display": "jacente",
         "cooccurrence": 3,
         "in_nuclear": true,
         "corroborated": true,
         "max_weight": 0.25,
-        "synsets": [
-          "contopt:10331",
-          "contopt:28395",
-          "contopt:6511"
-        ]
-      },
-      "imutavel": {
-        "display": "imutável",
-        "cooccurrence": 3,
-        "in_nuclear": true,
-        "corroborated": true,
-        "max_weight": 0.432,
         "synsets": [
           "contopt:10331",
           "contopt:28395",
@@ -798,26 +758,77 @@
           "contopt:6511"
         ]
       },
-      "perpetuo": {
-        "display": "perpétuo",
-        "cooccurrence": 2,
+      "firme": {
+        "display": "firme",
+        "cooccurrence": 5,
         "in_nuclear": true,
         "corroborated": true,
-        "max_weight": 1.136,
+        "max_weight": 3.056,
         "synsets": [
+          "contopt:10331",
+          "contopt:27200",
+          "contopt:28395",
+          "contopt:5675",
+          "contopt:8553"
+        ]
+      },
+      "inalteravel": {
+        "display": "inalterável",
+        "cooccurrence": 4,
+        "in_nuclear": true,
+        "corroborated": true,
+        "max_weight": 2.333,
+        "synsets": [
+          "contopt:10331",
+          "contopt:18050",
           "contopt:28395",
           "contopt:6511"
         ]
       },
-      "continuo": {
-        "display": "contínuo",
+      "permanecente": {
+        "display": "permanecente",
         "cooccurrence": 2,
         "in_nuclear": true,
         "corroborated": true,
-        "max_weight": 1.795,
+        "max_weight": 0.211,
         "synsets": [
-          "contopt:27944",
+          "contopt:10331",
           "contopt:28395"
+        ]
+      },
+      "imovel": {
+        "display": "imóvel",
+        "cooccurrence": 4,
+        "in_nuclear": true,
+        "corroborated": true,
+        "max_weight": 0.286,
+        "synsets": [
+          "contopt:10331",
+          "contopt:18050",
+          "contopt:28395",
+          "contopt:6511"
+        ]
+      },
+      "perseverante": {
+        "display": "perseverante",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": true,
+        "max_weight": 0.211,
+        "synsets": [
+          "contopt:10331",
+          "contopt:8553"
+        ]
+      },
+      "estoico": {
+        "display": "estóico",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": true,
+        "max_weight": 0.286,
+        "synsets": [
+          "contopt:10331",
+          "contopt:6511"
         ]
       },
       "monotono": {
@@ -841,29 +852,52 @@
           "contopt:15361",
           "contopt:16491"
         ]
-      },
-      "porfioso": {
-        "display": "porfioso",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": true,
-        "max_weight": 0.762,
-        "synsets": [
-          "contopt:28395",
-          "contopt:8553"
-        ]
       }
     },
     "sinalizacao": {
-      "verdadeiro": {
-        "display": "verdadeiro",
+      "regular": {
+        "display": "regular",
+        "cooccurrence": 3,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 1.727,
+        "synsets": [
+          "contopt:15361",
+          "contopt:28395",
+          "contopt:9502"
+        ]
+      },
+      "frequente": {
+        "display": "frequente",
         "cooccurrence": 2,
         "in_nuclear": true,
         "corroborated": false,
-        "max_weight": 2.125,
+        "max_weight": 1.227,
+        "synsets": [
+          "contopt:15361",
+          "contopt:28395"
+        ]
+      },
+      "duradouro": {
+        "display": "duradouro",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 0.316,
         "synsets": [
           "contopt:10331",
-          "contopt:5675"
+          "contopt:28395"
+        ]
+      },
+      "periodico": {
+        "display": "periódico",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 0.167,
+        "synsets": [
+          "contopt:15361",
+          "contopt:28395"
         ]
       },
       "fiel": {
@@ -878,359 +912,26 @@
           "contopt:5675"
         ]
       },
-      "certo": {
-        "display": "certo",
+      "habitual": {
+        "display": "habitual",
         "cooccurrence": 2,
         "in_nuclear": true,
         "corroborated": false,
-        "max_weight": 0.485,
-        "synsets": [
-          "contopt:10331",
-          "contopt:5675"
-        ]
-      },
-      "confiavel": {
-        "display": "confiável",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 0.438,
-        "synsets": [
-          "contopt:10331",
-          "contopt:5675"
-        ]
-      },
-      "leal": {
-        "display": "leal",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 0.438,
-        "synsets": [
-          "contopt:10331",
-          "contopt:5675"
-        ]
-      },
-      "seguro": {
-        "display": "seguro",
-        "cooccurrence": 3,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 2.278,
-        "synsets": [
-          "contopt:10331",
-          "contopt:5675",
-          "contopt:8553"
-        ]
-      },
-      "efetivo": {
-        "display": "efetivo",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 0.242,
-        "synsets": [
-          "contopt:10331",
-          "contopt:5675"
-        ]
-      },
-      "regular": {
-        "display": "regular",
-        "cooccurrence": 3,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 1.727,
+        "max_weight": 0.167,
         "synsets": [
           "contopt:15361",
-          "contopt:28395",
-          "contopt:9502"
-        ]
-      },
-      "monotonamente": {
-        "display": "monotonamente",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 1.0,
-        "synsets": [
-          "contopt:21106",
-          "contopt:29177"
-        ]
-      },
-      "unanimemente": {
-        "display": "unanimemente",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 1.25,
-        "synsets": [
-          "contopt:21106",
-          "contopt:5990"
-        ]
-      },
-      "fixo": {
-        "display": "fixo",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 2.278,
-        "synsets": [
-          "contopt:10331",
-          "contopt:18050"
-        ]
-      },
-      "inabalavel": {
-        "display": "inabalável",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 1.0,
-        "synsets": [
-          "contopt:10331",
-          "contopt:6511"
-        ]
-      },
-      "duradouro": {
-        "display": "duradouro",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 0.316,
-        "synsets": [
-          "contopt:10331",
           "contopt:28395"
         ]
       },
-      "agarrado": {
-        "display": "agarrado",
+      "ordinario": {
+        "display": "ordinário",
         "cooccurrence": 2,
         "in_nuclear": true,
         "corroborated": false,
-        "max_weight": 0.211,
-        "synsets": [
-          "contopt:10331",
-          "contopt:8553"
-        ]
-      },
-      "indestrutivel": {
-        "display": "indestrutível",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 0.571,
-        "synsets": [
-          "contopt:10331",
-          "contopt:6511"
-        ]
-      },
-      "resistente": {
-        "display": "resistente",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 0.9,
-        "synsets": [
-          "contopt:10331",
-          "contopt:8553"
-        ]
-      },
-      "aferrado": {
-        "display": "aferrado",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 0.925,
-        "synsets": [
-          "contopt:10331",
-          "contopt:8553"
-        ]
-      },
-      "afincado": {
-        "display": "afincado",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 0.787,
-        "synsets": [
-          "contopt:10331",
-          "contopt:8553"
-        ]
-      },
-      "apegado": {
-        "display": "apegado",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 0.111,
-        "synsets": [
-          "contopt:10331",
-          "contopt:8553"
-        ]
-      },
-      "tenaz": {
-        "display": "tenaz",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 0.975,
-        "synsets": [
-          "contopt:10331",
-          "contopt:8553"
-        ]
-      },
-      "impassivel": {
-        "display": "impassível",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 3.333,
-        "synsets": [
-          "contopt:10331",
-          "contopt:6511"
-        ]
-      },
-      "imperturbavel": {
-        "display": "imperturbável",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 2.667,
-        "synsets": [
-          "contopt:10331",
-          "contopt:6511"
-        ]
-      },
-      "insensivel": {
-        "display": "insensível",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 0.571,
-        "synsets": [
-          "contopt:10331",
-          "contopt:6511"
-        ]
-      },
-      "obstinado": {
-        "display": "obstinado",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 1.438,
-        "synsets": [
-          "contopt:10331",
-          "contopt:8553"
-        ]
-      },
-      "pertinaz": {
-        "display": "pertinaz",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 1.325,
-        "synsets": [
-          "contopt:10331",
-          "contopt:8553"
-        ]
-      },
-      "igual": {
-        "display": "igual",
-        "cooccurrence": 3,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 0.852,
+        "max_weight": 1.0,
         "synsets": [
           "contopt:15361",
-          "contopt:16491",
-          "contopt:6511"
-        ]
-      },
-      "perpetuamente": {
-        "display": "perpetuamente",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 1.556,
-        "synsets": [
-          "contopt:22926",
-          "contopt:27944"
-        ]
-      },
-      "eternamente": {
-        "display": "eternamente",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 1.333,
-        "synsets": [
-          "contopt:22926",
-          "contopt:27944"
-        ]
-      },
-      "para_sempre": {
-        "display": "para sempre",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 1.222,
-        "synsets": [
-          "contopt:22926",
-          "contopt:27944"
-        ]
-      },
-      "sempre": {
-        "display": "sempre",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 1.529,
-        "synsets": [
-          "contopt:22926",
-          "contopt:27944"
-        ]
-      },
-      "perenemente": {
-        "display": "perenemente",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 0.444,
-        "synsets": [
-          "contopt:22926",
-          "contopt:27944"
-        ]
-      },
-      "continuamente": {
-        "display": "continuamente",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 1.882,
-        "synsets": [
-          "contopt:22926",
-          "contopt:27944"
-        ]
-      },
-      "permanentemente": {
-        "display": "permanentemente",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 0.3,
-        "synsets": [
-          "contopt:22926",
-          "contopt:27944"
-        ]
-      },
-      "incessantemente": {
-        "display": "incessantemente",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 1.529,
-        "synsets": [
-          "contopt:22926",
-          "contopt:27944"
+          "contopt:28395"
         ]
       },
       "igualdade": {
@@ -1415,19 +1116,296 @@
           "contopt:20283"
         ]
       },
-      "constancia": {
-        "display": "constância",
+      "monotonamente": {
+        "display": "monotonamente",
         "cooccurrence": 2,
         "in_nuclear": true,
         "corroborated": false,
-        "max_weight": 3.0,
+        "max_weight": 1.0,
         "synsets": [
-          "contopt:10089",
-          "contopt:19305"
+          "contopt:21106",
+          "contopt:29177"
         ]
       },
-      "fixidez": {
-        "display": "fixidez",
+      "unanimemente": {
+        "display": "unanimemente",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 1.25,
+        "synsets": [
+          "contopt:21106",
+          "contopt:5990"
+        ]
+      },
+      "fixo": {
+        "display": "fixo",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 2.278,
+        "synsets": [
+          "contopt:10331",
+          "contopt:18050"
+        ]
+      },
+      "seguro": {
+        "display": "seguro",
+        "cooccurrence": 3,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 2.278,
+        "synsets": [
+          "contopt:10331",
+          "contopt:5675",
+          "contopt:8553"
+        ]
+      },
+      "inabalavel": {
+        "display": "inabalável",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 1.0,
+        "synsets": [
+          "contopt:10331",
+          "contopt:6511"
+        ]
+      },
+      "certo": {
+        "display": "certo",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 0.485,
+        "synsets": [
+          "contopt:10331",
+          "contopt:5675"
+        ]
+      },
+      "efetivo": {
+        "display": "efetivo",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 0.242,
+        "synsets": [
+          "contopt:10331",
+          "contopt:5675"
+        ]
+      },
+      "agarrado": {
+        "display": "agarrado",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 0.211,
+        "synsets": [
+          "contopt:10331",
+          "contopt:8553"
+        ]
+      },
+      "indestrutivel": {
+        "display": "indestrutível",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 0.571,
+        "synsets": [
+          "contopt:10331",
+          "contopt:6511"
+        ]
+      },
+      "resistente": {
+        "display": "resistente",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 0.9,
+        "synsets": [
+          "contopt:10331",
+          "contopt:8553"
+        ]
+      },
+      "aferrado": {
+        "display": "aferrado",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 0.925,
+        "synsets": [
+          "contopt:10331",
+          "contopt:8553"
+        ]
+      },
+      "afincado": {
+        "display": "afincado",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 0.787,
+        "synsets": [
+          "contopt:10331",
+          "contopt:8553"
+        ]
+      },
+      "apegado": {
+        "display": "apegado",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 0.111,
+        "synsets": [
+          "contopt:10331",
+          "contopt:8553"
+        ]
+      },
+      "confiavel": {
+        "display": "confiável",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 0.438,
+        "synsets": [
+          "contopt:10331",
+          "contopt:5675"
+        ]
+      },
+      "tenaz": {
+        "display": "tenaz",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 0.975,
+        "synsets": [
+          "contopt:10331",
+          "contopt:8553"
+        ]
+      },
+      "leal": {
+        "display": "leal",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 0.438,
+        "synsets": [
+          "contopt:10331",
+          "contopt:5675"
+        ]
+      },
+      "impassivel": {
+        "display": "impassível",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 3.333,
+        "synsets": [
+          "contopt:10331",
+          "contopt:6511"
+        ]
+      },
+      "imperturbavel": {
+        "display": "imperturbável",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 2.667,
+        "synsets": [
+          "contopt:10331",
+          "contopt:6511"
+        ]
+      },
+      "insensivel": {
+        "display": "insensível",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 0.571,
+        "synsets": [
+          "contopt:10331",
+          "contopt:6511"
+        ]
+      },
+      "obstinado": {
+        "display": "obstinado",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 1.438,
+        "synsets": [
+          "contopt:10331",
+          "contopt:8553"
+        ]
+      },
+      "verdadeiro": {
+        "display": "verdadeiro",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 2.125,
+        "synsets": [
+          "contopt:10331",
+          "contopt:5675"
+        ]
+      },
+      "pertinaz": {
+        "display": "pertinaz",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 1.325,
+        "synsets": [
+          "contopt:10331",
+          "contopt:8553"
+        ]
+      },
+      "igual": {
+        "display": "igual",
+        "cooccurrence": 3,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 0.852,
+        "synsets": [
+          "contopt:15361",
+          "contopt:16491",
+          "contopt:6511"
+        ]
+      },
+      "moderado": {
+        "display": "moderado",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 0.333,
+        "synsets": [
+          "contopt:14955",
+          "contopt:15361"
+        ]
+      },
+      "harmonico": {
+        "display": "harmónico",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 0.333,
+        "synsets": [
+          "contopt:15361",
+          "contopt:30149"
+        ]
+      },
+      "harmonioso": {
+        "display": "harmonioso",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 1.222,
+        "synsets": [
+          "contopt:15361",
+          "contopt:30149"
+        ]
+      },
+      "imobilidade": {
+        "display": "imobilidade",
         "cooccurrence": 2,
         "in_nuclear": true,
         "corroborated": false,
@@ -1437,8 +1415,8 @@
           "contopt:19305"
         ]
       },
-      "imobilidade": {
-        "display": "imobilidade",
+      "fixidez": {
+        "display": "fixidez",
         "cooccurrence": 2,
         "in_nuclear": true,
         "corroborated": false,
@@ -1459,81 +1437,103 @@
           "contopt:33005"
         ]
       },
-      "harmonioso": {
-        "display": "harmonioso",
+      "constancia": {
+        "display": "constância",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 3.0,
+        "synsets": [
+          "contopt:10089",
+          "contopt:19305"
+        ]
+      },
+      "perpetuamente": {
+        "display": "perpetuamente",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 1.556,
+        "synsets": [
+          "contopt:22926",
+          "contopt:27944"
+        ]
+      },
+      "eternamente": {
+        "display": "eternamente",
+        "cooccurrence": 2,
+        "in_nuclear": true,
+        "corroborated": false,
+        "max_weight": 1.333,
+        "synsets": [
+          "contopt:22926",
+          "contopt:27944"
+        ]
+      },
+      "para_sempre": {
+        "display": "para sempre",
         "cooccurrence": 2,
         "in_nuclear": true,
         "corroborated": false,
         "max_weight": 1.222,
         "synsets": [
-          "contopt:15361",
-          "contopt:30149"
+          "contopt:22926",
+          "contopt:27944"
         ]
       },
-      "harmonico": {
-        "display": "harmónico",
+      "sempre": {
+        "display": "sempre",
         "cooccurrence": 2,
         "in_nuclear": true,
         "corroborated": false,
-        "max_weight": 0.333,
+        "max_weight": 1.529,
         "synsets": [
-          "contopt:15361",
-          "contopt:30149"
+          "contopt:22926",
+          "contopt:27944"
         ]
       },
-      "frequente": {
-        "display": "frequente",
+      "perenemente": {
+        "display": "perenemente",
         "cooccurrence": 2,
         "in_nuclear": true,
         "corroborated": false,
-        "max_weight": 1.227,
+        "max_weight": 0.444,
         "synsets": [
-          "contopt:15361",
-          "contopt:28395"
+          "contopt:22926",
+          "contopt:27944"
         ]
       },
-      "periodico": {
-        "display": "periódico",
+      "continuamente": {
+        "display": "continuamente",
         "cooccurrence": 2,
         "in_nuclear": true,
         "corroborated": false,
-        "max_weight": 0.167,
+        "max_weight": 1.882,
         "synsets": [
-          "contopt:15361",
-          "contopt:28395"
+          "contopt:22926",
+          "contopt:27944"
         ]
       },
-      "habitual": {
-        "display": "habitual",
+      "permanentemente": {
+        "display": "permanentemente",
         "cooccurrence": 2,
         "in_nuclear": true,
         "corroborated": false,
-        "max_weight": 0.167,
+        "max_weight": 0.3,
         "synsets": [
-          "contopt:15361",
-          "contopt:28395"
+          "contopt:22926",
+          "contopt:27944"
         ]
       },
-      "ordinario": {
-        "display": "ordinário",
+      "incessantemente": {
+        "display": "incessantemente",
         "cooccurrence": 2,
         "in_nuclear": true,
         "corroborated": false,
-        "max_weight": 1.0,
+        "max_weight": 1.529,
         "synsets": [
-          "contopt:15361",
-          "contopt:28395"
-        ]
-      },
-      "moderado": {
-        "display": "moderado",
-        "cooccurrence": 2,
-        "in_nuclear": true,
-        "corroborated": false,
-        "max_weight": 0.333,
-        "synsets": [
-          "contopt:14955",
-          "contopt:15361"
+          "contopt:22926",
+          "contopt:27944"
         ]
       }
     }

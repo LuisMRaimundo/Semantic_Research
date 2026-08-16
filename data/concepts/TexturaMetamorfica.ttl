@@ -6,7 +6,7 @@
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaMetamorfica
-# generated 2026-08-07T13:22:38+00:00
+# generated 2026-08-07T14:49:14+00:00
 # policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaMetamorfica a owl:Class, skos:Concept ;
@@ -27,4 +27,4 @@ sr:TexturaMetamorfica a owl:Class, skos:Concept ;
     skos:altLabel "metamorfos de ser"@pt-PT ;
     skos:altLabel "pirometamorfismo"@pt-PT ;
     skos:altLabel "pirometamórfico"@pt-PT ;
-    rdfs:comment "UF senses=8; RT=1; exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .
+    rdfs:comment "discovery evidence (candidates, not SKOS relations): UF senses=8; RT senses=1. validated mappings: exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .

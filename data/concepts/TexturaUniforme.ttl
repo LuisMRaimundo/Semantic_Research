@@ -6,7 +6,7 @@
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaUniforme
-# generated 2026-08-07T13:22:38+00:00
+# generated 2026-08-07T14:49:14+00:00
 # policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaUniforme a owl:Class, skos:Concept ;
@@ -18,9 +18,9 @@ sr:TexturaUniforme a owl:Class, skos:Concept ;
     skos:altLabel "constante"@pt-PT ;
     skos:altLabel "invariável"@pt-PT ;
     skos:altLabel "imutável"@pt-PT ;
-    skos:altLabel "uniformidade"@pt-PT ;
     sr:excludedCandidate [ rdf:value "igual"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "sem variações; regular e uniforme face ao parâmetro" ] ;
     sr:excludedCandidate [ rdf:value "regular"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "sem variações; regular e uniforme face ao parâmetro" ] ;
+    sr:excludedCandidate [ rdf:value "uniformidade"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "ausência de variação; invariância e uniformidade de um parâmetro" ] ;
     sr:excludedCandidate [ rdf:value "invariância"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "ausência de variação; invariância e uniformidade de um parâmetro" ] ;
     sr:excludedCandidate [ rdf:value "periódico"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "ausência de variação; invariância e uniformidade de um parâmetro" ] ;
     sr:excludedCandidate [ rdf:value "periódico"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "que ocorre em intervalos fixos e regulares" ] ;
@@ -38,6 +38,7 @@ sr:TexturaUniforme a owl:Class, skos:Concept ;
     sr:excludedCandidate [ rdf:value "luniforme"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL PARTE_DE_ALGO_COM_PROPRIEDADE (PARTE)" ] ;
     sr:excludedCandidate [ rdf:value "parte"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL PARTE_DE_ALGO_COM_PROPRIEDADE (PARTE)" ] ;
     sr:excludedCandidate [ rdf:value "pruniforme"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL PARTE_DE_ALGO_COM_PROPRIEDADE (PARTE)" ] ;
+    sr:excludedCandidate [ rdf:value "uniformidade"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL TEM_QUALIDADE (QUALIDADE)" ] ;
     sr:excludedCandidate [ rdf:value "luniforme"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
     sr:excludedCandidate [ rdf:value "pruniforme"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
     sr:excludedCandidate [ rdf:value "ser sempre"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
@@ -59,4 +60,4 @@ sr:TexturaUniforme a owl:Class, skos:Concept ;
     sr:excludedCandidate [ rdf:value "inalteravelmente"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_ADV_DE (SINONIMIA)" ] ;
     sr:excludedCandidate [ rdf:value "monotonamente"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_ADV_DE (SINONIMIA)" ] ;
     sr:excludedCandidate [ rdf:value "uniformemente"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL SINONIMO_ADV_DE (SINONIMIA)" ] ;
-    rdfs:comment "UF senses=9; RT=4; exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .
+    rdfs:comment "discovery evidence (candidates, not SKOS relations): UF senses=8; RT senses=4. validated mappings: exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .

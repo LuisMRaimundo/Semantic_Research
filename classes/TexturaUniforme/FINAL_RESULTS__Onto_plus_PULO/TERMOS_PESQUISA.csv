@@ -13,6 +13,7 @@ E,uniforme,,,exclude,,,papel35:FINALIDADE:FAZ_SE_COM:uniforme,papel,,discovery: 
 E,uniforme,,,exclude,,,papel35:HIPERONIMIA:HIPERONIMO_DE:uniforme,papel,,discovery: PAPEL 3.5
 E,uniforme,,,exclude,,,papel35:MANEIRA:MANEIRA_POR_MEIO_DE:uniforme,papel,,discovery: PAPEL 3.5
 E,uniforme,,,exclude,,,papel35:PARTE:PARTE_DE_ALGO_COM_PROPRIEDADE:uniforme,papel,,discovery: PAPEL 3.5
+E,uniforme,,,exclude,,,papel35:QUALIDADE:TEM_QUALIDADE:uniforme,papel,,discovery: PAPEL 3.5
 E,uniforme,,,exclude,,,papel35:REFERENTE:DIZ_SE_DO_QUE:uniforme,papel,,discovery: PAPEL 3.5
 E,uniforme,,,exclude,,,papel35:SINONIMIA:SINONIMO_ADJ_DE:uniforme,papel,,discovery: PAPEL 3.5
 E,uniforme,,,exclude,,,papel35:SINONIMIA:SINONIMO_N_DE:uniforme,papel,,discovery: PAPEL 3.5
