@@ -456,6 +456,9 @@ def from_papel_export(
             "pos": syn.get("pos"),
             "gloss": syn.get("gloss") or (f"PAPEL {rel}" if rel else "PAPEL"),
             "members": [m for m in members if m],
+            "papel_focal": syn.get("papel_focal"),
+            "papel_arguments": list(syn.get("papel_arguments") or []),
+            "papel_direction": syn.get("papel_direction") or "",
             "decision": "",
             "note": "discovery: PAPEL 3.5",
         })

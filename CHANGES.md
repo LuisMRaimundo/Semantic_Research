@@ -17,6 +17,11 @@ Branch `fix/adjudication-export`, um commit por defeito (D7→D5→D8→D2→D3�
 - **Antes:** analisador por prefixo de linha; `axis` multilinha perdia continuações; `scope_note`/`axis_terms` inexistentes.
 - **Depois:** blocos `chave:` + continuação indentada; reconhece pref_label, axis, scope_note, focus_stems, axis_terms, axis_terms_locked; chaves extra ficam em meta com aviso.
 
+## D2 — PAPEL conserva a estrutura argumental
+- **Ficheiros:** `semantic/adapters/papel.py`, `semantic/decisions.py`
+- **Antes:** os dois argumentos do triplo iam para `members` sem papel nem direcção (HIPERONIMO_DE ≡ sinónimos).
+- **Depois:** cada bucket declara `papel_focal`, `papel_arguments`, `papel_direction`; `members` só inclui os argumentos em SINONIMIA.
+
 # CHANGES — fix pass pós-auditoria de rastreabilidade (2026-08-07)
 
 Branch `fix/traceability-pass`, um commit por item. Suite de testes corrida
