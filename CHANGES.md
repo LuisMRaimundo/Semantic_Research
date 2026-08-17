@@ -12,6 +12,11 @@ Branch `fix/adjudication-export`, um commit por defeito (D7→D5→D8→D2→D3�
 - **Antes:** cabeçalho 13, tabela 15, JSON 16 — T12/T15/R1 escreviam Markdown à parte (e R1 só no JSON).
 - **Depois:** `rewrite_assertions_block` lê o JSON e reescreve cabeçalho + secção `## Asserções` no sítio; os três módulos só anexam ao JSON.
 
+## D8 — caixa Meta já não trunca nem descarta scope_note
+- **Ficheiros:** `semantic/meta_box.py` (novo), `semantic/workbench.py`
+- **Antes:** analisador por prefixo de linha; `axis` multilinha perdia continuações; `scope_note`/`axis_terms` inexistentes.
+- **Depois:** blocos `chave:` + continuação indentada; reconhece pref_label, axis, scope_note, focus_stems, axis_terms, axis_terms_locked; chaves extra ficam em meta com aviso.
+
 # CHANGES — fix pass pós-auditoria de rastreabilidade (2026-08-07)
 
 Branch `fix/traceability-pass`, um commit por item. Suite de testes corrida
