@@ -2,7 +2,8 @@
 
 Resolve `ili-30-…` ↔ `i…` só pela tabela vendorizada. Pares humanos antigos
 em `ili_equivalence.json` são migrados: os que o CILI confirma entram no map
-automático; os que divergem ficam só no relatório (nunca aplicados).
+automático; os que divergem ficam em ``pending_ili_adjudication`` no CONCEPT
+(e no relatório) até adjudicação humana — nunca são aplicados em silêncio.
 """
 
 from __future__ import annotations
@@ -174,7 +175,8 @@ def migrate_human_ili_table(ws: ClassWorkspace) -> dict[str, Any]:
         "legacy_without_cili": [],
         "note": (
             "Pares humanos confirmados pelo CILI são cobertos pelo map automático. "
-            "Pares que divergem NÃO são aplicados — só listados aqui."
+            "Pares que divergem NÃO são aplicados: ficam em "
+            "CONCEPT.pending_ili_adjudication até adjudicação."
         ),
     }
     if not doc:
@@ -204,6 +206,21 @@ def migrate_human_ili_table(ws: ClassWorkspace) -> dict[str, Any]:
         else:
             report["legacy_without_cili"].append(entry)
     return report
+
+
+def pending_ili_from_report(report: dict[str, Any]) -> list[dict[str, Any]]:
+    """Pares ``diverged`` que exigem adjudicação (efeito verificável no CONCEPT)."""
+    out: list[dict[str, Any]] = []
+    for e in report.get("diverged") or []:
+        out.append({
+            "oewn_ili": e.get("oewn_ili"),
+            "pulo_ili": e.get("pulo_ili"),
+            "cili_oewn": e.get("cili_oewn"),
+            "cili_pulo": e.get("cili_pulo"),
+            "source": e.get("source") or "",
+            "human": e.get("human"),
+        })
+    return out
 
 
 def write_migration_report(ws: ClassWorkspace, dest: Optional[Path] = None) -> Path:

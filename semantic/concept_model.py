@@ -290,10 +290,19 @@ def build_class_concept_graph(ws: ClassWorkspace) -> dict[str, Any]:
     else:
         exact, close_cili, related_cili = [], [], []
 
+    pending_ili: list[dict[str, Any]] = []
+    try:
+        from .cili_auto import migrate_human_ili_table, pending_ili_from_report
+        pending_ili = pending_ili_from_report(migrate_human_ili_table(ws))
+    except Exception:  # noqa: BLE001
+        pending_ili = []
+
     mapping_status = str(
         cm.get("mapping_status")
         or ("validated_cili" if (exact or close_cili or related_cili) else "no_validated_cili")
     )
+    if pending_ili:
+        mapping_status = "pending_ili_divergence"
 
     validated_alts = [
         pretty_word(x) for x in (cm.get("validated_alt_labels") or []) if x
@@ -323,6 +332,7 @@ def build_class_concept_graph(ws: ClassWorkspace) -> dict[str, Any]:
         "focus_stems": sorted(focus - {""}),
         "ili_inventory": ili_inventory,
         "mapping_status": mapping_status,
+        "pending_ili_adjudication": pending_ili,
         "skos_policy": (
             "SKOS matches only from concept_mapping adjudication; "
             "discovery_evidence.uf/rt_candidates are not validated altLabels; "
@@ -532,6 +542,7 @@ def publish_class_concept(
         "n_uf": len((graph.get("discovery_evidence") or {}).get("uf_candidates") or []),
         "n_rt": len((graph.get("discovery_evidence") or {}).get("rt_candidates") or []),
         "mapping_status": graph.get("mapping_status"),
+        "n_pending_ili": len(graph.get("pending_ili_adjudication") or []),
     }
     if update_registry:
         out["registry"] = str(update_global_registry())

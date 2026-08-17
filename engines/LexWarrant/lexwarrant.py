@@ -1184,8 +1184,9 @@ def render_json(class_id, policy, source_labels, concepts, assertions,
         "sources": source_labels,
         "source_status": source_status,
         "join_counts": dict(join_counts),
-        # Legacy human OEWN↔PULO table (distinct from official CILI resolution)
-        "legacy_equivalence_map": map_path,
+        # Mapa CILI-only (prepare_cili_for_run). Leitura retrocompatível da
+        # chave antiga em render_markdown / CLI.
+        "cili_auto_map": map_path,
         "legacy_equivalence_counts": equiv_counts,
         "legacy_equivalence_loaded": legacy_loaded,
         "concepts": [concept_to_json(c) for c in concepts],
@@ -1218,8 +1219,12 @@ def render_markdown(doc: dict, concepts) -> str:
     ap(f"- **Política de divergência:** {doc['policy']}")
     ap(f"- **Fontes:** {', '.join(doc['sources']) or '—'}  (colunas: "
        f"{', '.join(doc['columns'])})")
-    # Read legacy_* ; fall back to old ili_equivalence_* keys on older JSON only
-    mp = doc.get("legacy_equivalence_map") or doc.get("ili_equivalence_map")
+    # cili_auto_map; fall back to chaves antigas em JSON já gravado
+    mp = (
+        doc.get("cili_auto_map")
+        or doc.get("legacy_equivalence_map")
+        or doc.get("ili_equivalence_map")
+    )
     ec = (
         doc.get("legacy_equivalence_counts")
         or doc.get("ili_equivalence_counts")
@@ -1234,12 +1239,12 @@ def render_markdown(doc: dict, concepts) -> str:
     n_weak = int(jc.get("weak(term)") or 0)
     n_single = int(jc.get("single") or 0)
     if legacy_on:
-        src = mp or "tabela legada"
-        ap(f"- **Tabela legada OEWN↔PULO** (`legacy_equivalence`): {src}  "
+        src = mp or "cili_auto"
+        ap(f"- **Mapa CILI automático** (`cili_auto_map`): {src}  "
            f"({ec.get('mapped', 0)} pares; "
            f"{ec.get('unmatched', 0)} sem âncora partilhada)")
     else:
-        ap("- **Tabela legada OEWN↔PULO** (`legacy_equivalence`): não carregada "
+        ap("- **Mapa CILI automático** (`cili_auto_map`): não carregado "
            "(junção runtime usa CILI oficial quando ambas as fontes partilham "
            "``i…``; isto não significa que os identificadores CILI estejam "
            "indisponíveis).")
@@ -1583,8 +1588,8 @@ def main() -> int:
           for k, v in sorted(doc["summary"]["veredicto_totals"].items())))
     print(f"Descartados (só pendentes): {doc['summary'].get('descartados_pendentes', 0)}")
     print(
-        f"Tabela legada OEWN↔PULO: "
-        f"{doc.get('legacy_equivalence_map') or doc.get('ili_equivalence_map') or '— (nenhuma)'}"
+        f"Mapa CILI automático: "
+        f"{doc.get('cili_auto_map') or doc.get('legacy_equivalence_map') or doc.get('ili_equivalence_map') or '— (nenhuma)'}"
     )
     print(f"Asserções: {passed}/{total} PASS "
           + ("— TODAS PASSARAM" if doc["all_passed"] else "— EXISTEM FALHAS"))

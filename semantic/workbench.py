@@ -66,8 +66,8 @@ ORDEM DE TRABALHO (numerada — igual ao checklist do painel direito)
 5 · JUNÇÃO ILI  (automática — CILI)
    Sem ecrã de decisão. No Run, OEWN↔PULO resolve-se só pela tabela
    CILI (ili-map). Pares sem CILI ficam sem âncora partilhada.
-   Mapeamentos humanos antigos: confirmados ∩ CILI; divergentes só
-   no relatório ili_migration_report (não aplicados).
+   Mapeamentos humanos antigos: confirmados ∩ CILI; divergentes
+   ficam em CONCEPT.pending_ili_adjudication até adjudicação.
 
 6 · RUN
    Botão «6 · ▶ Run»: compila decisões, corre PULO (+ Onto descoberta),

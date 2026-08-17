@@ -499,6 +499,14 @@ def run_class(class_id: str, policy: Optional[str] = None,
                     summary["concept_model"] = publish_class_concept(
                         ws.class_id, dest_dir=ws.final_results,
                     )
+                    n_pend = int(
+                        (summary["concept_model"] or {}).get("n_pending_ili") or 0
+                    )
+                    if n_pend:
+                        summary.setdefault("warnings", []).append(
+                            f"{n_pend} pares ILI humanos divergentes do CILI "
+                            "por adjudicar"
+                        )
                     # also keep coverage next to CONCEPT
                     from .ili_coverage import write_coverage_report as _cov
                     _cov(ws, dest=ws.final_results)

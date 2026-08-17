@@ -32,6 +32,11 @@ Branch `fix/adjudication-export`, um commit por defeito (D7→D5→D8→D2→D3�
 - **Antes:** a lista UF era substituída por `validated_alt_labels` sem rasto.
 - **Depois:** entradas suprimidas em `alt_labels_suppressed_by_validated`, linha no `blocos.md` e aviso no log do Run.
 
+## D6 — pares ILI divergentes passam a pending
+- **Ficheiros:** `semantic/cili_auto.py`, `semantic/concept_model.py`, `semantic/pipeline.py`, `engines/LexWarrant/lexwarrant.py`
+- **Antes:** `report["diverged"]` só era impresso; a chave `legacy_equivalence_map` apontava para um ficheiro CILI-only.
+- **Depois:** chave `cili_auto_map` (lê a antiga); cada par divergente vai para `pending_ili_adjudication` e `mapping_status: pending_ili_divergence`; aviso no Run.
+
 # CHANGES — fix pass pós-auditoria de rastreabilidade (2026-08-07)
 
 Branch `fix/traceability-pass`, um commit por item. Suite de testes corrida
