@@ -2,15 +2,15 @@
   "class_id": "TexturaComposita",
   "pref_label": "textura compósita",
   "axis": "heterogeneidade / composição de materiais ou partes distintas",
-  "generated": "2026-08-04T22:45:34",
+  "generated": "2026-08-17T06:35:15",
   "source": "PULO / WordNet.PT export",
   "stage1": {
     "admitted": [
       {
-        "ili_offset": "ili-30-00378985-n",
-        "glosa": "o ato de combinar as coisas para formar um todo novo\n",
+        "ili_offset": "ili-30-04341686-n",
+        "glosa": "uma coisa construída; uma entidade complexa construída de muitas partes\n",
         "decision": "RT",
-        "export_gloss": "o ato de combinar as coisas para formar um todo novo\n"
+        "export_gloss": "uma coisa construída; uma entidade complexa construída de muitas partes\n"
       },
       {
         "ili_offset": "ili-30-03081660-n",
@@ -25,28 +25,27 @@
         "export_gloss": "a maneira em que alguém ou alguma coisa é composto\n"
       },
       {
-        "ili_offset": "pwn30-01199083-a",
-        "glosa": "que consiste em uma variedade aleatória de diferentes tipos\n",
+        "ili_offset": "ili-30-05076472-n",
+        "glosa": "a propriedade espacial resultante do acordo das partes em relação às outras e a toda\n",
         "decision": "RT",
-        "export_gloss": ""
+        "export_gloss": "a propriedade espacial resultante do acordo das partes em relação às outras e a toda\n"
       }
     ],
     "admitted_offsets": [
-      "ili-30-00378985-n",
+      "ili-30-04341686-n",
       "ili-30-03081660-n",
       "ili-30-04933544-n",
-      "pwn30-01199083-a"
+      "ili-30-05076472-n"
     ],
     "excluded_offsets": [
       "ili-30-14818238-n",
       "ili-30-02424254-a",
       "ili-30-09947232-n",
       "ili-30-00237078-n",
-      "ili-30-04341686-n",
+      "ili-30-00378985-n",
       "ili-30-06788785-n",
       "ili-30-00929718-n",
       "ili-30-00939452-n",
-      "ili-30-05076472-n",
       "ili-30-06409752-n",
       "ili-30-07037465-n",
       "ili-30-14588492-n",
@@ -65,24 +64,44 @@
       "ili-30-02506029-a",
       "ili-30-00959244-a",
       "ili-30-13585429-n",
-      "ili-30-05858936-n"
+      "ili-30-05858936-n",
+      "pwn30-01199083-a"
     ],
     "invalid": [],
     "flagged_no_ili": []
   },
   "stage2_seeds": {
-    "combinacao": {
-      "display": "combinação",
-      "offsets": [
-        "ili-30-00378985-n"
-      ]
-    },
     "composicao": {
       "display": "composição",
       "offsets": [
-        "ili-30-00378985-n",
         "ili-30-03081660-n",
-        "ili-30-04933544-n"
+        "ili-30-04341686-n",
+        "ili-30-04933544-n",
+        "ili-30-05076472-n"
+      ]
+    },
+    "contextura": {
+      "display": "contextura",
+      "offsets": [
+        "ili-30-04341686-n"
+      ]
+    },
+    "edificio": {
+      "display": "edifício",
+      "offsets": [
+        "ili-30-04341686-n"
+      ]
+    },
+    "estrutura": {
+      "display": "estrutura",
+      "offsets": [
+        "ili-30-04341686-n"
+      ]
+    },
+    "construcao": {
+      "display": "construção",
+      "offsets": [
+        "ili-30-04341686-n"
       ]
     },
     "constituicao": {
@@ -90,96 +109,12 @@
       "offsets": [
         "ili-30-04933544-n"
       ]
-    },
-    "amalgamado": {
-      "display": "amalgamado",
-      "offsets": [
-        "pwn30-01199083-a"
-      ]
-    },
-    "cabrito": {
-      "display": "cabrito",
-      "offsets": [
-        "pwn30-01199083-a"
-      ]
-    },
-    "diverso": {
-      "display": "diverso",
-      "offsets": [
-        "pwn30-01199083-a"
-      ]
-    },
-    "hibrido": {
-      "display": "híbrido",
-      "offsets": [
-        "pwn30-01199083-a"
-      ]
-    },
-    "mesclado": {
-      "display": "mesclado",
-      "offsets": [
-        "pwn30-01199083-a"
-      ]
-    },
-    "mestico": {
-      "display": "mestiço",
-      "offsets": [
-        "pwn30-01199083-a"
-      ]
-    },
-    "misto": {
-      "display": "misto",
-      "offsets": [
-        "pwn30-01199083-a"
-      ]
-    },
-    "misturado": {
-      "display": "misturado",
-      "offsets": [
-        "pwn30-01199083-a"
-      ]
-    },
-    "mulato": {
-      "display": "mulato",
-      "offsets": [
-        "pwn30-01199083-a"
-      ]
     }
   },
   "stage3": {
     "contrast": {},
     "rt_uf": {},
     "family": {
-      "combinar": {
-        "display": "combinar",
-        "via": "derivationally related form",
-        "source_ili": "ili-30-00378985-n",
-        "target_gloss": "colocar ou adicionar juntos\n"
-      },
-      "compor": {
-        "display": "compor",
-        "via": "derivationally related form",
-        "source_ili": "ili-30-00378985-n",
-        "target_gloss": "colocar ou adicionar juntos\n"
-      },
-      "unir": {
-        "display": "unir",
-        "via": "derivationally related form",
-        "source_ili": "ili-30-00378985-n",
-        "target_gloss": "colocar ou adicionar juntos\n"
-      },
-      "misturar": {
-        "display": "misturar",
-        "via": "derivationally related form",
-        "source_ili": "ili-30-00378985-n",
-        "target_gloss": "Misture diferentes elementos\n"
-      },
-      "agrupar": {
-        "display": "agrupar",
-        "via": "derivationally related form",
-        "source_ili": "ili-30-00378985-n",
-        "target_gloss": "Adicionar juntos a partir de diferentes fontes\n"
-      },
       "corresponder_a": {
         "display": "corresponder a",
         "via": "derivationally related form",
@@ -216,6 +151,12 @@
         "source_ili": "ili-30-04933544-n",
         "target_gloss": "formar ou compor\n"
       },
+      "compor": {
+        "display": "compor",
+        "via": "derivationally related form",
+        "source_ili": "ili-30-04933544-n",
+        "target_gloss": "para compor ou representar: \"esta parede faz o fundo da configuração do palco\"\n"
+      },
       "fazer": {
         "display": "fazer",
         "via": "derivationally related form",
@@ -236,6 +177,18 @@
       }
     },
     "BT": {
+      "artefacto": {
+        "display": "artefacto",
+        "via": "hypernym",
+        "source_ili": "ili-30-04341686-n",
+        "target_gloss": "um objeto feito pelo homem como um todo\n"
+      },
+      "artefato": {
+        "display": "artefato",
+        "via": "hypernym",
+        "source_ili": "ili-30-04341686-n",
+        "target_gloss": "um objeto feito pelo homem como um todo\n"
+      },
       "criacao": {
         "display": "criação",
         "via": "hypernym",
@@ -250,41 +203,155 @@
       }
     },
     "NT": {
-      "mistura": {
-        "display": "mistura",
+      "altar": {
+        "display": "altar",
         "via": "hyponym",
-        "source_ili": "ili-30-00378985-n",
-        "target_gloss": "o ato de misturar juntos\n"
+        "source_ili": "ili-30-04341686-n",
+        "target_gloss": "uma estrutura levantada em que presentes ou sacrifícios a um deus são feitas\n"
       },
-      "fusao": {
-        "display": "fusão",
+      "arco": {
+        "display": "arco",
         "via": "hyponym",
-        "source_ili": "ili-30-00378985-n",
-        "target_gloss": "o ato de fusão (ou fusão) juntos\n"
+        "source_ili": "ili-30-04341686-n",
+        "target_gloss": "(arquitetura) uma construção de alvenaria (geralmente curvada) para uma abertura de abrangência e suportar o peso acima\n"
       },
-      "unificacao": {
-        "display": "unificação",
+      "zona": {
+        "display": "zona",
         "via": "hyponym",
-        "source_ili": "ili-30-00378985-n",
-        "target_gloss": "o ato de fazer ou tornar-se uma única unidade\n"
+        "source_ili": "ili-30-04341686-n",
+        "target_gloss": "uma parte de uma estrutura tendo alguma característica específica ou função\n"
       },
-      "uniao": {
-        "display": "união",
+      "area": {
+        "display": "área",
         "via": "hyponym",
-        "source_ili": "ili-30-00378985-n",
-        "target_gloss": "o ato de fazer ou tornar-se uma única unidade\n"
+        "source_ili": "ili-30-04341686-n",
+        "target_gloss": "uma parte de uma estrutura tendo alguma característica específica ou função\n"
       },
-      "consolidacao": {
-        "display": "consolidação",
+      "ponte": {
+        "display": "ponte",
         "via": "hyponym",
-        "source_ili": "ili-30-00378985-n",
-        "target_gloss": "o ato de combinar em um todo integrante\n"
+        "source_ili": "ili-30-04341686-n",
+        "target_gloss": "uma estrutura que permite que pessoas ou veículos para atravessar um obstáculo como um rio ou canal ou ferroviária etc.\n"
       },
-      "integracao": {
-        "display": "integração",
+      "edificio": {
+        "display": "edifício",
         "via": "hyponym",
-        "source_ili": "ili-30-00378985-n",
-        "target_gloss": "o ato de combinar em um todo integrante\n"
+        "source_ili": "ili-30-04341686-n",
+        "target_gloss": "uma estrutura que tem um telhado e paredes e fica mais ou menos permanentemente em um só lugar\n"
+      },
+      "imovel": {
+        "display": "imóvel",
+        "via": "hyponym",
+        "source_ili": "ili-30-04341686-n",
+        "target_gloss": "uma estrutura que tem um telhado e paredes e fica mais ou menos permanentemente em um só lugar\n"
+      },
+      "predio": {
+        "display": "prédio",
+        "via": "hyponym",
+        "source_ili": "ili-30-04341686-n",
+        "target_gloss": "uma estrutura que tem um telhado e paredes e fica mais ou menos permanentemente em um só lugar\n"
+      },
+      "complexo": {
+        "display": "complexo",
+        "via": "hyponym",
+        "source_ili": "ili-30-04341686-n",
+        "target_gloss": "uma estrutura inteira (como um prédio) composta por estruturas interconectadas ou relacionadas\n"
+      },
+      "coluna": {
+        "display": "coluna",
+        "via": "hyponym",
+        "source_ili": "ili-30-04341686-n",
+        "target_gloss": "uma estrutura vertical cilíndrica que está sozinho e não apoiar nada (tal como um monumento)\n"
+      },
+      "defesa": {
+        "display": "defesa",
+        "via": "hyponym",
+        "source_ili": "ili-30-04341686-n",
+        "target_gloss": "uma estrutura usada para defender contra o ataque\n"
+      },
+      "estabelecimento": {
+        "display": "estabelecimento",
+        "via": "hyponym",
+        "source_ili": "ili-30-04341686-n",
+        "target_gloss": "uma estrutura pública ou privada (empresarial ou governamental ou educacional), incluindo edifícios e equipamentos para empresa ou residência\n"
+      },
+      "piso": {
+        "display": "piso",
+        "via": "hyponym",
+        "source_ili": "ili-30-04341686-n",
+        "target_gloss": "uma estrutura que consiste de uma sala ou um conjunto de salas em uma posição única ao longo de uma escala vertical\n"
+      },
+      "planta": {
+        "display": "planta",
+        "via": "hyponym",
+        "source_ili": "ili-30-04341686-n",
+        "target_gloss": "uma estrutura que consiste de uma sala ou um conjunto de salas em uma posição única ao longo de uma escala vertical\n"
+      },
+      "andar": {
+        "display": "andar",
+        "via": "hyponym",
+        "source_ili": "ili-30-04341686-n",
+        "target_gloss": "uma estrutura que consiste de uma sala ou um conjunto de salas em uma posição única ao longo de uma escala vertical\n"
+      },
+      "fonte": {
+        "display": "fonte",
+        "via": "hyponym",
+        "source_ili": "ili-30-04341686-n",
+        "target_gloss": "uma estrutura da qual surge um artificialmente produzido jacto de água\n"
+      },
+      "casco": {
+        "display": "casco",
+        "via": "hyponym",
+        "source_ili": "ili-30-04341686-n",
+        "target_gloss": "o quadro ou corpo de navio\n"
+      },
+      "monumento": {
+        "display": "monumento",
+        "via": "hyponym",
+        "source_ili": "ili-30-04341686-n",
+        "target_gloss": "uma estrutura erigida para comemorar pessoas ou eventos\n"
+      },
+      "abrigo": {
+        "display": "abrigo",
+        "via": "hyponym",
+        "source_ili": "ili-30-04341686-n",
+        "target_gloss": "uma estrutura que proporciona privacidade e proteção de perigo\n"
+      },
+      "refugio": {
+        "display": "refúgio",
+        "via": "hyponym",
+        "source_ili": "ili-30-04341686-n",
+        "target_gloss": "uma estrutura que proporciona privacidade e proteção de perigo\n"
+      },
+      "asilo": {
+        "display": "asilo",
+        "via": "hyponym",
+        "source_ili": "ili-30-04341686-n",
+        "target_gloss": "uma estrutura que proporciona privacidade e proteção de perigo\n"
+      },
+      "estadio": {
+        "display": "estádio",
+        "via": "hyponym",
+        "source_ili": "ili-30-04341686-n",
+        "target_gloss": "uma grande estrutura para esportes ao ar livre ou entretenimentos\n"
+      },
+      "superstrutura": {
+        "display": "superstrutura",
+        "via": "hyponym",
+        "source_ili": "ili-30-04341686-n",
+        "target_gloss": "estrutura da parte do navio acima do convés principal\n"
+      },
+      "torre": {
+        "display": "torre",
+        "via": "hyponym",
+        "source_ili": "ili-30-04341686-n",
+        "target_gloss": "uma estrutura mais alta que seu diâmetro; podem ficar sozinha ou ser anexado a um edifício maior\n"
+      },
+      "equilibrio": {
+        "display": "equilíbrio",
+        "via": "hyponym",
+        "source_ili": "ili-30-04341686-n",
+        "target_gloss": "igualdade de distribuição\n"
       },
       "estruturacao": {
         "display": "estruturação",
@@ -301,160 +368,398 @@
     },
     "attribute": {}
   },
-  "dropped_no_lemma": 43,
+  "dropped_no_lemma": 192,
   "sinalizacao": {
-    "sintetico": {
-      "display": "sintético",
+    "estruturar": {
+      "display": "estruturar",
       "via": "relation #61",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "sistemática de combinação de raiz e elementos em palavras simples modificar\n",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura para dar\n",
       "reason": "relação não-nomeada / #NN"
     },
-    "fusao": {
-      "display": "fusão",
+    "rigido": {
+      "display": "rígido",
       "via": "relation #61",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "a combinação de duas ou mais empresas comerciais\n",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "designando um dirigível ou um dirigível tendo uma forma mantida por uma moldura inflexível rígida ou estrutura\n",
       "reason": "relação não-nomeada / #NN"
     },
-    "associacao": {
-      "display": "associação",
+    "estrutural": {
+      "display": "estrutural",
       "via": "relation #61",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "(Química) qualquer processo de combinação (especialmente em solução), que depende relativamente fraca ligação química\n",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "afetar ou envolver na estrutura ou construção\n",
       "reason": "relação não-nomeada / #NN"
     },
-    "conjunto": {
-      "display": "conjunto",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "um conjunto de peças que é considerado como uma única entidade",
+    "altar": {
+      "display": "altar",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura levantada em que presentes ou sacrifícios a um deus são feitas\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "arco": {
+      "display": "arco",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "(arquitetura) uma construção de alvenaria (geralmente curvada) para uma abertura de abrangência e suportar o peso acima\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "zona": {
+      "display": "zona",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma parte de uma estrutura tendo alguma característica específica ou função\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "area": {
+      "display": "área",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma parte de uma estrutura tendo alguma característica específica ou função\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "arsenal": {
+      "display": "arsenal",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura militar onde são armazenadas armas e munições e outros equipamentos militares e treinamento é dado no uso de armas\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "barreira": {
+      "display": "barreira",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura ou objeto que impede a livre circulação\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "obstaculo": {
+      "display": "obstáculo",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura ou objeto que impede a livre circulação\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "cave": {
+      "display": "cave",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "a parte inferior de uma estrutura parcialmente ou totalmente abaixo do nível do solo; usado frequentemente para o armazenamento\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "dique": {
+      "display": "dique",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura protetora de pedra ou concreto; estende-se na água para impedir a lavagem para retirar de uma praia da costa\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "ponte": {
+      "display": "ponte",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura que permite que pessoas ou veículos para atravessar um obstáculo como um rio ou canal ou ferroviária etc.\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "edificio": {
+      "display": "edifício",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura que tem um telhado e paredes e fica mais ou menos permanentemente em um só lugar\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "imovel": {
+      "display": "imóvel",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura que tem um telhado e paredes e fica mais ou menos permanentemente em um só lugar\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "predio": {
+      "display": "prédio",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura que tem um telhado e paredes e fica mais ou menos permanentemente em um só lugar\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "complexo": {
+      "display": "complexo",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura inteira (como um prédio) composta por estruturas interconectadas ou relacionadas\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "funcional": {
+      "display": "funcional",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "relacionada ou baseado em função especialmente em oposição a estruturar\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "coluna": {
+      "display": "coluna",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "(Arquitectura) uma estrutura cilíndrica vertical alta colocado na posição vertical e usado para suportar uma estrutura de\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "defesa": {
+      "display": "defesa",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura usada para defender contra o ataque\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "estabelecimento": {
+      "display": "estabelecimento",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura pública ou privada (empresarial ou governamental ou educacional), incluindo edifícios e equipamentos para empresa ou residência\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "piso": {
+      "display": "piso",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura que consiste de uma sala ou um conjunto de salas em uma posição única ao longo de uma escala vertical\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "planta": {
+      "display": "planta",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura que consiste de uma sala ou um conjunto de salas em uma posição única ao longo de uma escala vertical\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "andar": {
+      "display": "andar",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura que consiste de uma sala ou um conjunto de salas em uma posição única ao longo de uma escala vertical\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "alicerce": {
+      "display": "alicerce",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "menor apoio de uma estrutura\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "falda": {
+      "display": "falda",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "menor apoio de uma estrutura\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "peanha": {
+      "display": "peanha",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "menor apoio de uma estrutura\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "pedestal": {
+      "display": "pedestal",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "menor apoio de uma estrutura\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "sope": {
+      "display": "sopé",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "menor apoio de uma estrutura\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "fundamento": {
+      "display": "fundamento",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "menor apoio de uma estrutura\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "pe": {
+      "display": "pé",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "menor apoio de uma estrutura\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "base": {
+      "display": "base",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "menor apoio de uma estrutura\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "fonte": {
+      "display": "fonte",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura da qual surge um artificialmente produzido jacto de água\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "armacao": {
+      "display": "armação",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura de apoio ou algo contendo\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "estrutura": {
+      "display": "estrutura",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura de apoio ou algo contendo\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "armadura": {
+      "display": "armadura",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura de apoio ou algo contendo\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "monumento": {
+      "display": "monumento",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura erigida para comemorar pessoas ou eventos\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "plano": {
+      "display": "plano",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "escala de desenho de uma estrutura\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "cenario": {
+      "display": "cenário",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "as estruturas pintadas de um palco que se destinam a sugerir uma localidade específica\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "palco": {
+      "display": "palco",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "as estruturas pintadas de um palco que se destinam a sugerir uma localidade específica\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "cena": {
+      "display": "cena",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "as estruturas pintadas de um palco que se destinam a sugerir uma localidade específica\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "abrigo": {
+      "display": "abrigo",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura que proporciona privacidade e proteção de perigo\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "refugio": {
+      "display": "refúgio",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura que proporciona privacidade e proteção de perigo\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "asilo": {
+      "display": "asilo",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura que proporciona privacidade e proteção de perigo\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "estadio": {
+      "display": "estádio",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma grande estrutura para esportes ao ar livre ou entretenimentos\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "superstrutura": {
+      "display": "superstrutura",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "estrutura da parte do navio acima do convés principal\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "torre": {
+      "display": "torre",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura mais alta que seu diâmetro; podem ficar sozinha ou ser anexado a um edifício maior\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "instalacao": {
+      "display": "instalação",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma instalação composta por uma ou mais peças de equipamentos conectados a ou parte de uma estrutura e projetados para fornecer um serviço como o calor ou electricidade ou de água ou de esgoto\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "parede": {
+      "display": "parede",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma partição de arquitetura com uma altura e comprimento maior que sua espessura; usado para dividir ou delimitar uma área ou para apoiar uma outra estrutura\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "muro": {
+      "display": "muro",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma partição de arquitetura com uma altura e comprimento maior que sua espessura; usado para dividir ou delimitar uma área ou para apoiar uma outra estrutura\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "mecanismo": {
+      "display": "mecanismo",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "um objeto natural, assemelhando-se a uma máquina na estrutura ou função\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "elemento": {
+      "display": "elemento",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "um indivíduo ou grupo ou estrutura ou outra entidade considerada como um constituinte estrutural ou funcional de um todo\n",
       "reason": "relação não-nomeada / #NN"
     },
     "unidade": {
       "display": "unidade",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "um conjunto de peças que é considerado como uma única entidade",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "um indivíduo ou grupo ou estrutura ou outra entidade considerada como um constituinte estrutural ou funcional de um todo\n",
       "reason": "relação não-nomeada / #NN"
     },
-    "combinar": {
-      "display": "combinar",
+    "entidade": {
+      "display": "entidade",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "combinar de modo a formar um todo; misturar\n",
-      "reason": "relação não-nomeada / #NN"
-    },
-    "calcar": {
-      "display": "calcar",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "fazer alguma coisa, geralmente por uma função específica\n",
-      "reason": "relação não-nomeada / #NN"
-    },
-    "caldear": {
-      "display": "caldear",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "fazer alguma coisa, geralmente por uma função específica\n",
-      "reason": "relação não-nomeada / #NN"
-    },
-    "configurar": {
-      "display": "configurar",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "fazer alguma coisa, geralmente por uma função específica\n",
-      "reason": "relação não-nomeada / #NN"
-    },
-    "conformar": {
-      "display": "conformar",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "fazer alguma coisa, geralmente por uma função específica\n",
-      "reason": "relação não-nomeada / #NN"
-    },
-    "inventar": {
-      "display": "inventar",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "fazer alguma coisa, geralmente por uma função específica\n",
-      "reason": "relação não-nomeada / #NN"
-    },
-    "modelar": {
-      "display": "modelar",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "fazer alguma coisa, geralmente por uma função específica\n",
-      "reason": "relação não-nomeada / #NN"
-    },
-    "moldar": {
-      "display": "moldar",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "fazer alguma coisa, geralmente por uma função específica\n",
-      "reason": "relação não-nomeada / #NN"
-    },
-    "plasmar": {
-      "display": "plasmar",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "fazer alguma coisa, geralmente por uma função específica\n",
-      "reason": "relação não-nomeada / #NN"
-    },
-    "vazar": {
-      "display": "vazar",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "fazer alguma coisa, geralmente por uma função específica\n",
-      "reason": "relação não-nomeada / #NN"
-    },
-    "forjar": {
-      "display": "forjar",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "fazer alguma coisa, geralmente por uma função específica\n",
-      "reason": "relação não-nomeada / #NN"
-    },
-    "formar": {
-      "display": "formar",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "fazer alguma coisa, geralmente por uma função específica\n",
-      "reason": "relação não-nomeada / #NN"
-    },
-    "fazer": {
-      "display": "fazer",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "fazer alguma coisa, geralmente por uma função específica\n",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "aquilo que é percebido ou conhecido por ter a sua própria existência (vivo ou não vivo)",
       "reason": "relação não-nomeada / #NN"
     },
     "coisa": {
       "display": "coisa",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-00378985-n",
+      "source_ili": "ili-30-04341686-n",
       "target_gloss": "uma entidade que não é nomeada especificamente\n",
       "reason": "relação não-nomeada / #NN"
     },
-    "todo": {
-      "display": "todo",
+    "conjunto": {
+      "display": "conjunto",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "todos de alguma coisa, incluindo todos os seus elementos ou partes componentes\n",
-      "reason": "relação não-nomeada / #NN"
-    },
-    "tudo": {
-      "display": "tudo",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "todos de alguma coisa, incluindo todos os seus elementos ou partes componentes\n",
-      "reason": "relação não-nomeada / #NN"
-    },
-    "totalidade": {
-      "display": "totalidade",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "todos de alguma coisa, incluindo todos os seus elementos ou partes componentes\n",
+      "source_ili": "ili-30-03081660-n",
+      "target_gloss": "um conjunto de peças que é considerado como uma única entidade",
       "reason": "relação não-nomeada / #NN"
     },
     "colocar": {
@@ -499,6 +804,13 @@
       "target_gloss": "trazer à existência\n",
       "reason": "relação não-nomeada / #NN"
     },
+    "fazer": {
+      "display": "fazer",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-03081660-n",
+      "target_gloss": "trazer à existência\n",
+      "reason": "relação não-nomeada / #NN"
+    },
     "compor": {
       "display": "compor",
       "via": "relation #61 (inverse)",
@@ -511,6 +823,34 @@
       "via": "relation #61 (inverse)",
       "source_ili": "ili-30-03081660-n",
       "target_gloss": "para compor ou representar: \"esta parede faz o fundo da configuração do palco\"\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "formar": {
+      "display": "formar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-03081660-n",
+      "target_gloss": "para compor ou representar: \"esta parede faz o fundo da configuração do palco\"\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "todo": {
+      "display": "todo",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-03081660-n",
+      "target_gloss": "todos de alguma coisa, incluindo todos os seus elementos ou partes componentes\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "tudo": {
+      "display": "tudo",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-03081660-n",
+      "target_gloss": "todos de alguma coisa, incluindo todos os seus elementos ou partes componentes\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "totalidade": {
+      "display": "totalidade",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-03081660-n",
+      "target_gloss": "todos de alguma coisa, incluindo todos os seus elementos ou partes componentes\n",
       "reason": "relação não-nomeada / #NN"
     },
     "constituinte": {
@@ -687,33 +1027,32 @@
       "source_ili": "ili-30-04933544-n",
       "target_gloss": "como algo é feito ou como isso acontece\n",
       "reason": "relação não-nomeada / #NN"
+    },
+    "quadro": {
+      "display": "quadro",
+      "via": "relation #61",
+      "source_ili": "ili-30-05076472-n",
+      "target_gloss": "arte gráfica que consiste em uma composição artística feita através da aplicação de tintas a uma superfície\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "pintura": {
+      "display": "pintura",
+      "via": "relation #61",
+      "source_ili": "ili-30-05076472-n",
+      "target_gloss": "arte gráfica que consiste em uma composição artística feita através da aplicação de tintas a uma superfície\n",
+      "reason": "relação não-nomeada / #NN"
     }
   },
   "stage4_excluded": {},
   "stage5": {
     "admitted": {
-      "combinacao": {
-        "display": "combinação",
-        "offsets": [
-          "ili-30-00378985-n"
-        ],
-        "attested": true,
-        "origin": "seed (Etapa 1/2)",
-        "status": "RT",
-        "test": "derivado do sentido (PASSO 3)",
-        "guarantee": [
-          "sense_decision"
-        ],
-        "definition": "",
-        "structural": "",
-        "from_sense": "ili-30-00378985-n"
-      },
       "composicao": {
         "display": "composição",
         "offsets": [
-          "ili-30-00378985-n",
           "ili-30-03081660-n",
-          "ili-30-04933544-n"
+          "ili-30-04341686-n",
+          "ili-30-04933544-n",
+          "ili-30-05076472-n"
         ],
         "attested": true,
         "origin": "seed (Etapa 1/2)",
@@ -724,7 +1063,73 @@
         ],
         "definition": "",
         "structural": "",
-        "from_sense": "ili-30-04933544-n"
+        "from_sense": "ili-30-05076472-n"
+      },
+      "contextura": {
+        "display": "contextura",
+        "offsets": [
+          "ili-30-04341686-n"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2)",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "ili-30-04341686-n"
+      },
+      "edificio": {
+        "display": "edifício",
+        "offsets": [
+          "ili-30-04341686-n"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2) + relação hyponym (NT)",
+        "via": "hyponym",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "ili-30-04341686-n"
+      },
+      "estrutura": {
+        "display": "estrutura",
+        "offsets": [
+          "ili-30-04341686-n"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2) + relação hyponym (NT)",
+        "via": "hyponym",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "ili-30-04341686-n"
+      },
+      "construcao": {
+        "display": "construção",
+        "offsets": [
+          "ili-30-04341686-n"
+        ],
+        "attested": true,
+        "origin": "seed (Etapa 1/2)",
+        "status": "RT",
+        "test": "derivado do sentido (PASSO 3)",
+        "guarantee": [
+          "sense_decision"
+        ],
+        "definition": "",
+        "structural": "",
+        "from_sense": "ili-30-04341686-n"
       },
       "constituicao": {
         "display": "constituição",
@@ -741,153 +1146,23 @@
         "definition": "",
         "structural": "",
         "from_sense": "ili-30-04933544-n"
-      },
-      "amalgamado": {
-        "display": "amalgamado",
-        "offsets": [
-          "pwn30-01199083-a"
-        ],
-        "attested": true,
-        "origin": "seed (Etapa 1/2)",
-        "status": "RT",
-        "test": "derivado do sentido (PASSO 3)",
-        "guarantee": [
-          "sense_decision"
-        ],
-        "definition": "",
-        "structural": "",
-        "from_sense": "pwn30-01199083-a"
-      },
-      "cabrito": {
-        "display": "cabrito",
-        "offsets": [
-          "pwn30-01199083-a"
-        ],
-        "attested": true,
-        "origin": "seed (Etapa 1/2)",
-        "status": "RT",
-        "test": "derivado do sentido (PASSO 3)",
-        "guarantee": [
-          "sense_decision"
-        ],
-        "definition": "",
-        "structural": "",
-        "from_sense": "pwn30-01199083-a"
-      },
-      "diverso": {
-        "display": "diverso",
-        "offsets": [
-          "pwn30-01199083-a"
-        ],
-        "attested": true,
-        "origin": "seed (Etapa 1/2)",
-        "status": "RT",
-        "test": "derivado do sentido (PASSO 3)",
-        "guarantee": [
-          "sense_decision"
-        ],
-        "definition": "",
-        "structural": "",
-        "from_sense": "pwn30-01199083-a"
-      },
-      "hibrido": {
-        "display": "híbrido",
-        "offsets": [
-          "pwn30-01199083-a"
-        ],
-        "attested": true,
-        "origin": "seed (Etapa 1/2)",
-        "status": "RT",
-        "test": "derivado do sentido (PASSO 3)",
-        "guarantee": [
-          "sense_decision"
-        ],
-        "definition": "",
-        "structural": "",
-        "from_sense": "pwn30-01199083-a"
-      },
-      "mesclado": {
-        "display": "mesclado",
-        "offsets": [
-          "pwn30-01199083-a"
-        ],
-        "attested": true,
-        "origin": "seed (Etapa 1/2)",
-        "status": "RT",
-        "test": "derivado do sentido (PASSO 3)",
-        "guarantee": [
-          "sense_decision"
-        ],
-        "definition": "",
-        "structural": "",
-        "from_sense": "pwn30-01199083-a"
-      },
-      "mestico": {
-        "display": "mestiço",
-        "offsets": [
-          "pwn30-01199083-a"
-        ],
-        "attested": true,
-        "origin": "seed (Etapa 1/2)",
-        "status": "RT",
-        "test": "derivado do sentido (PASSO 3)",
-        "guarantee": [
-          "sense_decision"
-        ],
-        "definition": "",
-        "structural": "",
-        "from_sense": "pwn30-01199083-a"
-      },
-      "misto": {
-        "display": "misto",
-        "offsets": [
-          "pwn30-01199083-a"
-        ],
-        "attested": true,
-        "origin": "seed (Etapa 1/2)",
-        "status": "RT",
-        "test": "derivado do sentido (PASSO 3)",
-        "guarantee": [
-          "sense_decision"
-        ],
-        "definition": "",
-        "structural": "",
-        "from_sense": "pwn30-01199083-a"
-      },
-      "misturado": {
-        "display": "misturado",
-        "offsets": [
-          "pwn30-01199083-a"
-        ],
-        "attested": true,
-        "origin": "seed (Etapa 1/2)",
-        "status": "RT",
-        "test": "derivado do sentido (PASSO 3)",
-        "guarantee": [
-          "sense_decision"
-        ],
-        "definition": "",
-        "structural": "",
-        "from_sense": "pwn30-01199083-a"
-      },
-      "mulato": {
-        "display": "mulato",
-        "offsets": [
-          "pwn30-01199083-a"
-        ],
-        "attested": true,
-        "origin": "seed (Etapa 1/2)",
-        "status": "RT",
-        "test": "derivado do sentido (PASSO 3)",
-        "guarantee": [
-          "sense_decision"
-        ],
-        "definition": "",
-        "structural": "",
-        "from_sense": "pwn30-01199083-a"
       }
     },
     "pending": {
+      "artefacto": {
+        "display": "artefacto",
+        "via": "hypernym",
+        "attested": false,
+        "origin": "relação hypernym (BT)",
+        "adjudication": null
+      },
+      "artefato": {
+        "display": "artefato",
+        "via": "hypernym",
+        "attested": false,
+        "origin": "relação hypernym (BT)",
+        "adjudication": null
+      },
       "criacao": {
         "display": "criação",
         "via": "hypernym",
@@ -902,43 +1177,169 @@
         "origin": "relação hypernym (BT)",
         "adjudication": null
       },
-      "mistura": {
-        "display": "mistura",
+      "altar": {
+        "display": "altar",
         "via": "hyponym",
         "attested": false,
         "origin": "relação hyponym (NT)",
         "adjudication": null
       },
-      "fusao": {
-        "display": "fusão",
+      "arco": {
+        "display": "arco",
         "via": "hyponym",
         "attested": false,
         "origin": "relação hyponym (NT)",
         "adjudication": null
       },
-      "unificacao": {
-        "display": "unificação",
+      "zona": {
+        "display": "zona",
         "via": "hyponym",
         "attested": false,
         "origin": "relação hyponym (NT)",
         "adjudication": null
       },
-      "uniao": {
-        "display": "união",
+      "area": {
+        "display": "área",
         "via": "hyponym",
         "attested": false,
         "origin": "relação hyponym (NT)",
         "adjudication": null
       },
-      "consolidacao": {
-        "display": "consolidação",
+      "ponte": {
+        "display": "ponte",
         "via": "hyponym",
         "attested": false,
         "origin": "relação hyponym (NT)",
         "adjudication": null
       },
-      "integracao": {
-        "display": "integração",
+      "imovel": {
+        "display": "imóvel",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "predio": {
+        "display": "prédio",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "complexo": {
+        "display": "complexo",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "coluna": {
+        "display": "coluna",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "defesa": {
+        "display": "defesa",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "estabelecimento": {
+        "display": "estabelecimento",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "piso": {
+        "display": "piso",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "planta": {
+        "display": "planta",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "andar": {
+        "display": "andar",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "fonte": {
+        "display": "fonte",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "casco": {
+        "display": "casco",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "monumento": {
+        "display": "monumento",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "abrigo": {
+        "display": "abrigo",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "refugio": {
+        "display": "refúgio",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "asilo": {
+        "display": "asilo",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "estadio": {
+        "display": "estádio",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "superstrutura": {
+        "display": "superstrutura",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "torre": {
+        "display": "torre",
+        "via": "hyponym",
+        "attested": false,
+        "origin": "relação hyponym (NT)",
+        "adjudication": null
+      },
+      "equilibrio": {
+        "display": "equilíbrio",
         "via": "hyponym",
         "attested": false,
         "origin": "relação hyponym (NT)",
@@ -950,47 +1351,10 @@
         "attested": false,
         "origin": "relação hyponym (NT)",
         "adjudication": null
-      },
-      "estrutura": {
-        "display": "estrutura",
-        "via": "hyponym",
-        "attested": false,
-        "origin": "relação hyponym (NT)",
-        "adjudication": null
       }
     }
   },
   "family": {
-    "combinar": {
-      "display": "combinar",
-      "via": "derivationally related form",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "colocar ou adicionar juntos\n"
-    },
-    "compor": {
-      "display": "compor",
-      "via": "derivationally related form",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "colocar ou adicionar juntos\n"
-    },
-    "unir": {
-      "display": "unir",
-      "via": "derivationally related form",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "colocar ou adicionar juntos\n"
-    },
-    "misturar": {
-      "display": "misturar",
-      "via": "derivationally related form",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "Misture diferentes elementos\n"
-    },
-    "agrupar": {
-      "display": "agrupar",
-      "via": "derivationally related form",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "Adicionar juntos a partir de diferentes fontes\n"
-    },
     "corresponder_a": {
       "display": "corresponder a",
       "via": "derivationally related form",
@@ -1027,6 +1391,12 @@
       "source_ili": "ili-30-04933544-n",
       "target_gloss": "formar ou compor\n"
     },
+    "compor": {
+      "display": "compor",
+      "via": "derivationally related form",
+      "source_ili": "ili-30-04933544-n",
+      "target_gloss": "para compor ou representar: \"esta parede faz o fundo da configuração do palco\"\n"
+    },
     "fazer": {
       "display": "fazer",
       "via": "derivationally related form",
@@ -1048,47 +1418,26 @@
   },
   "skos": {
     "RT": [
-      "amalgamado",
-      "cabrito",
-      "combinação",
       "composição",
       "constituição",
-      "diverso",
-      "híbrido",
-      "mesclado",
-      "mestiço",
-      "misto",
-      "misturado",
-      "mulato"
+      "construção",
+      "contextura",
+      "edifício",
+      "estrutura"
     ],
     "UF": []
   },
   "provenance": [
-    {
-      "termo": "combinação",
-      "estatuto": "RT",
-      "eixo": "heterogeneidade / composição de materiais ou partes distintas",
-      "via": "seed (Etapa 1/2)",
-      "offsets_ili": [
-        "ili-30-00378985-n"
-      ],
-      "teste_decisivo": "derivado do sentido (PASSO 3)",
-      "garantia": [
-        "sense_decision"
-      ],
-      "definicao": "",
-      "estrutural": "",
-      "gloss": "o ato de combinar as coisas para formar um todo novo\n"
-    },
     {
       "termo": "composição",
       "estatuto": "RT",
       "eixo": "heterogeneidade / composição de materiais ou partes distintas",
       "via": "seed (Etapa 1/2)",
       "offsets_ili": [
-        "ili-30-00378985-n",
         "ili-30-03081660-n",
-        "ili-30-04933544-n"
+        "ili-30-04341686-n",
+        "ili-30-04933544-n",
+        "ili-30-05076472-n"
       ],
       "teste_decisivo": "derivado do sentido (PASSO 3)",
       "garantia": [
@@ -1097,6 +1446,70 @@
       "definicao": "",
       "estrutural": "",
       "gloss": "o ato de formar ou estabelecer algo\n"
+    },
+    {
+      "termo": "contextura",
+      "estatuto": "RT",
+      "eixo": "heterogeneidade / composição de materiais ou partes distintas",
+      "via": "seed (Etapa 1/2)",
+      "offsets_ili": [
+        "ili-30-04341686-n"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "definicao": "",
+      "estrutural": "",
+      "gloss": "uma coisa construída; uma entidade complexa construída de muitas partes\n"
+    },
+    {
+      "termo": "edifício",
+      "estatuto": "RT",
+      "eixo": "heterogeneidade / composição de materiais ou partes distintas",
+      "via": "hyponym",
+      "offsets_ili": [
+        "ili-30-04341686-n"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "definicao": "",
+      "estrutural": "",
+      "gloss": "uma coisa construída; uma entidade complexa construída de muitas partes\n"
+    },
+    {
+      "termo": "estrutura",
+      "estatuto": "RT",
+      "eixo": "heterogeneidade / composição de materiais ou partes distintas",
+      "via": "hyponym",
+      "offsets_ili": [
+        "ili-30-04341686-n"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "definicao": "",
+      "estrutural": "",
+      "gloss": "uma coisa construída; uma entidade complexa construída de muitas partes\n"
+    },
+    {
+      "termo": "construção",
+      "estatuto": "RT",
+      "eixo": "heterogeneidade / composição de materiais ou partes distintas",
+      "via": "seed (Etapa 1/2)",
+      "offsets_ili": [
+        "ili-30-04341686-n"
+      ],
+      "teste_decisivo": "derivado do sentido (PASSO 3)",
+      "garantia": [
+        "sense_decision"
+      ],
+      "definicao": "",
+      "estrutural": "",
+      "gloss": "uma coisa construída; uma entidade complexa construída de muitas partes\n"
     },
     {
       "termo": "constituição",
@@ -1113,150 +1526,6 @@
       "definicao": "",
       "estrutural": "",
       "gloss": "o ato de formar ou estabelecer algo\n"
-    },
-    {
-      "termo": "amalgamado",
-      "estatuto": "RT",
-      "eixo": "heterogeneidade / composição de materiais ou partes distintas",
-      "via": "seed (Etapa 1/2)",
-      "offsets_ili": [
-        "pwn30-01199083-a"
-      ],
-      "teste_decisivo": "derivado do sentido (PASSO 3)",
-      "garantia": [
-        "sense_decision"
-      ],
-      "definicao": "",
-      "estrutural": "",
-      "gloss": "que consiste em uma variedade aleatória de diferentes tipos\n"
-    },
-    {
-      "termo": "cabrito",
-      "estatuto": "RT",
-      "eixo": "heterogeneidade / composição de materiais ou partes distintas",
-      "via": "seed (Etapa 1/2)",
-      "offsets_ili": [
-        "pwn30-01199083-a"
-      ],
-      "teste_decisivo": "derivado do sentido (PASSO 3)",
-      "garantia": [
-        "sense_decision"
-      ],
-      "definicao": "",
-      "estrutural": "",
-      "gloss": "que consiste em uma variedade aleatória de diferentes tipos\n"
-    },
-    {
-      "termo": "diverso",
-      "estatuto": "RT",
-      "eixo": "heterogeneidade / composição de materiais ou partes distintas",
-      "via": "seed (Etapa 1/2)",
-      "offsets_ili": [
-        "pwn30-01199083-a"
-      ],
-      "teste_decisivo": "derivado do sentido (PASSO 3)",
-      "garantia": [
-        "sense_decision"
-      ],
-      "definicao": "",
-      "estrutural": "",
-      "gloss": "que consiste em uma variedade aleatória de diferentes tipos\n"
-    },
-    {
-      "termo": "híbrido",
-      "estatuto": "RT",
-      "eixo": "heterogeneidade / composição de materiais ou partes distintas",
-      "via": "seed (Etapa 1/2)",
-      "offsets_ili": [
-        "pwn30-01199083-a"
-      ],
-      "teste_decisivo": "derivado do sentido (PASSO 3)",
-      "garantia": [
-        "sense_decision"
-      ],
-      "definicao": "",
-      "estrutural": "",
-      "gloss": "que consiste em uma variedade aleatória de diferentes tipos\n"
-    },
-    {
-      "termo": "mesclado",
-      "estatuto": "RT",
-      "eixo": "heterogeneidade / composição de materiais ou partes distintas",
-      "via": "seed (Etapa 1/2)",
-      "offsets_ili": [
-        "pwn30-01199083-a"
-      ],
-      "teste_decisivo": "derivado do sentido (PASSO 3)",
-      "garantia": [
-        "sense_decision"
-      ],
-      "definicao": "",
-      "estrutural": "",
-      "gloss": "que consiste em uma variedade aleatória de diferentes tipos\n"
-    },
-    {
-      "termo": "mestiço",
-      "estatuto": "RT",
-      "eixo": "heterogeneidade / composição de materiais ou partes distintas",
-      "via": "seed (Etapa 1/2)",
-      "offsets_ili": [
-        "pwn30-01199083-a"
-      ],
-      "teste_decisivo": "derivado do sentido (PASSO 3)",
-      "garantia": [
-        "sense_decision"
-      ],
-      "definicao": "",
-      "estrutural": "",
-      "gloss": "que consiste em uma variedade aleatória de diferentes tipos\n"
-    },
-    {
-      "termo": "misto",
-      "estatuto": "RT",
-      "eixo": "heterogeneidade / composição de materiais ou partes distintas",
-      "via": "seed (Etapa 1/2)",
-      "offsets_ili": [
-        "pwn30-01199083-a"
-      ],
-      "teste_decisivo": "derivado do sentido (PASSO 3)",
-      "garantia": [
-        "sense_decision"
-      ],
-      "definicao": "",
-      "estrutural": "",
-      "gloss": "que consiste em uma variedade aleatória de diferentes tipos\n"
-    },
-    {
-      "termo": "misturado",
-      "estatuto": "RT",
-      "eixo": "heterogeneidade / composição de materiais ou partes distintas",
-      "via": "seed (Etapa 1/2)",
-      "offsets_ili": [
-        "pwn30-01199083-a"
-      ],
-      "teste_decisivo": "derivado do sentido (PASSO 3)",
-      "garantia": [
-        "sense_decision"
-      ],
-      "definicao": "",
-      "estrutural": "",
-      "gloss": "que consiste em uma variedade aleatória de diferentes tipos\n"
-    },
-    {
-      "termo": "mulato",
-      "estatuto": "RT",
-      "eixo": "heterogeneidade / composição de materiais ou partes distintas",
-      "via": "seed (Etapa 1/2)",
-      "offsets_ili": [
-        "pwn30-01199083-a"
-      ],
-      "teste_decisivo": "derivado do sentido (PASSO 3)",
-      "garantia": [
-        "sense_decision"
-      ],
-      "definicao": "",
-      "estrutural": "",
-      "gloss": "que consiste em uma variedade aleatória de diferentes tipos\n"
     }
   ],
   "attribute_terms": [],
@@ -1282,8 +1551,8 @@
     {
       "stage": "ILI",
       "text": "Nenhum id oewn-/por- é usado como chave de junção; a chave é o ILI.",
-      "passed": false,
-      "evidence": "offsets não-ILI na lista branca: ['pwn30-01199083-a']"
+      "passed": true,
+      "evidence": "OK"
     },
     {
       "stage": "ILI",
@@ -1301,7 +1570,7 @@
       "stage": "Etapa 3",
       "text": "Alvos de relação são tipados pelo mapeamento; «(no lemma)» nunca admitido.",
       "passed": true,
-      "evidence": "OK (43 alvos «(no lemma)» descartados)"
+      "evidence": "OK (192 alvos «(no lemma)» descartados)"
     },
     {
       "stage": "Etapa 4",
@@ -1337,10 +1606,10 @@
       "stage": "Serialização",
       "passed": true,
       "text": "X.skos.ttl analisa com rdflib e tem a contagem de triplos esperada.",
-      "evidence": "triplos esperados=16, analisados=16"
+      "evidence": "triplos esperados=10, analisados=10"
     }
   ],
-  "all_passed": false,
-  "skos_triples": 16,
+  "all_passed": true,
+  "skos_triples": 10,
   "_ttl_ok": true
 }

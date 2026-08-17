@@ -1,0 +1,957 @@
+{
+  "schema": "semantic_research.source_export/1",
+  "class_id": "TexturaComposita",
+  "source": "onto",
+  "source_label": "ONTO",
+  "source_title": "Onto.PT / CONTO.PT (discovery)",
+  "generated": "2026-08-16T22:48:36+01:00",
+  "source_version": {
+    "version_manifest": "E:\\PYTHON CODES\\Semantic_Research\\classes\\TexturaComposita\\FINAL_RESULTS__Onto_plus_PULO\\VERSION_MANIFEST.json",
+    "manifest_generated": "2026-08-16T21:38:48.501290+00:00",
+    "onto_sqlite": "E:\\PYTHON CODES\\Semantic_Research\\engines\\ONTO\\ontopt.sqlite"
+  },
+  "counts": {
+    "cards": 26,
+    "decided": 26,
+    "by_status": {
+      "UF": 6,
+      "exclude": 15,
+      "RT": 5
+    }
+  },
+  "senses": [
+    {
+      "sense_key": "onto|clip21:1320",
+      "source": "onto",
+      "key": "clip21:1320",
+      "ili": "",
+      "members": [
+        "compósito",
+        "materiais compostos"
+      ],
+      "gloss": "",
+      "decision": "UF",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
+    },
+    {
+      "sense_key": "onto|clip21:15438",
+      "source": "onto",
+      "key": "clip21:15438",
+      "ili": "",
+      "members": [
+        "amestrado",
+        "feito",
+        "adestrado",
+        "formado",
+        "ensinado",
+        "composto",
+        "treinado",
+        "instruído",
+        "exercitado",
+        "doutrinado",
+        "educado",
+        "trenado",
+        "explicado",
+        "constituído",
+        "industriado",
+        "leccionado",
+        "pontificado",
+        "compósito",
+        "heterogêneo",
+        "produzido",
+        "diplomado",
+        "graduado",
+        "acabado",
+        "concluído",
+        "fabricado",
+        "adulto",
+        "completo",
+        "inventado",
+        "terminado",
+        "heterogéneo",
+        "assente",
+        "esclarecido",
+        "resolvido",
+        "constituido",
+        "dissimilar",
+        "documentado",
+        "engendrado",
+        "heterogênea",
+        "maquiado",
+        "professo",
+        "aclarado",
+        "acostumado",
+        "alinhado",
+        "amansado",
+        "amassado",
+        "assentado",
+        "aviado",
+        "comentado",
+        "completado",
+        "conceituado",
+        "consumado",
+        "crescido",
+        "decidido",
+        "deliberado",
+        "determinado",
+        "distinto",
+        "domado",
+        "domesticado",
+        "elevado",
+        "elucidado",
+        "eminente",
+        "encapelado",
+        "encerrado",
+        "enucleado",
+        "hábil",
+        "ilustrado",
+        "manso",
+        "modesto",
+        "pintado",
+        "plasmado",
+        "pronto",
+        "recatado",
+        "rematado",
+        "resoluto",
+        "ultimado",
+        "afeito",
+        "ajeitado",
+        "amadurecido",
+        "arranjado",
+        "arrumado",
+        "bem-arranjado",
+        "circunspecto",
+        "combinado",
+        "concertado",
+        "conciliado",
+        "confeccionado",
+        "conformado",
+        "consertado",
+        "declarado",
+        "definido",
+        "desenvolvido",
+        "dessemelhante",
+        "divulgado",
+        "elaborado",
+        "elegante",
+        "estabelecido",
+        "executado",
+        "explícito",
+        "gerado",
+        "imaginado",
+        "indicado",
+        "justificado",
+        "licenciado",
+        "mesclado",
+        "misto",
+        "obediente",
+        "ordenado",
+        "perito",
+        "realizado",
+        "sério",
+        "sóbrio",
+        "tecido",
+        "usado"
+      ],
+      "gloss": "",
+      "decision": "exclude",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
+    },
+    {
+      "sense_key": "onto|clip21:17923",
+      "source": "onto",
+      "key": "clip21:17923",
+      "ili": "",
+      "members": [
+        "vário",
+        "variado",
+        "variegado",
+        "mesclado",
+        "matizado",
+        "diferente",
+        "diverso",
+        "versicolor",
+        "misturado",
+        "diversicolor",
+        "misto",
+        "desvairado",
+        "desvariado",
+        "diversificado",
+        "sortido",
+        "copioso",
+        "pintado",
+        "confuso",
+        "desigual",
+        "promíscuo",
+        "raiado",
+        "sorteado",
+        "colorido",
+        "cromatizado",
+        "discordante",
+        "distinto",
+        "entremeado",
+        "inconstante",
+        "multifário",
+        "multíplice",
+        "sarapintado",
+        "tingido",
+        "amalgamado",
+        "nuançado",
+        "confundido",
+        "envolto",
+        "indiscriminado",
+        "mudado",
+        "mudável",
+        "multímodo",
+        "versátil",
+        "abigarrado",
+        "alagartado",
+        "altamado",
+        "diversos",
+        "ecléctico",
+        "numerosos",
+        "pecilocromático",
+        "permixto",
+        "que oferece várias aspectos",
+        "variados",
+        "varioso",
+        "combinado",
+        "complexo",
+        "delirante",
+        "desirmanado",
+        "desirmão",
+        "discrepante",
+        "divergente",
+        "entressachado",
+        "impermanente",
+        "indistinto",
+        "instável",
+        "intermeado",
+        "mudadiço",
+        "mutável",
+        "místico",
+        "variável",
+        "voltário",
+        "voltívolo",
+        "volátil",
+        "volúvel",
+        "vários",
+        "abastecido",
+        "alterado",
+        "alucinado",
+        "bom",
+        "buliçoso",
+        "caprichoso",
+        "composto",
+        "compósito",
+        "contraditório",
+        "desconforme",
+        "dessemelhante",
+        "doido",
+        "embaralhado",
+        "esmaltado",
+        "furta-cor",
+        "hesitante",
+        "híbrido",
+        "incerto",
+        "indistinguível",
+        "irregular",
+        "junto",
+        "leviano",
+        "marchetado",
+        "múltiplo",
+        "numeroso",
+        "permisto",
+        "perplexo",
+        "pingado",
+        "precário",
+        "que oferece vários aspectos",
+        "recamado",
+        "salpicado",
+        "vasto",
+        "veiro"
+      ],
+      "gloss": "",
+      "decision": "exclude",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
+    },
+    {
+      "sense_key": "onto|contopt:16611",
+      "source": "onto",
+      "key": "contopt:16611",
+      "ili": "",
+      "members": [
+        "compósito",
+        "materiais compostos"
+      ],
+      "gloss": "",
+      "decision": "UF",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
+    },
+    {
+      "sense_key": "onto|contopt:26524",
+      "source": "onto",
+      "key": "contopt:26524",
+      "ili": "",
+      "members": [
+        "amestrado",
+        "feito",
+        "adestrado",
+        "formado",
+        "ensinado",
+        "composto",
+        "treinado",
+        "instruído",
+        "exercitado",
+        "doutrinado",
+        "educado",
+        "trenado",
+        "explicado",
+        "constituído",
+        "industriado",
+        "leccionado",
+        "pontificado",
+        "compósito",
+        "heterogêneo",
+        "produzido",
+        "diplomado",
+        "graduado",
+        "acabado",
+        "concluído",
+        "fabricado",
+        "adulto",
+        "completo",
+        "inventado",
+        "terminado",
+        "heterogéneo",
+        "assente",
+        "esclarecido",
+        "resolvido"
+      ],
+      "gloss": "",
+      "decision": "exclude",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
+    },
+    {
+      "sense_key": "onto|fuzzythes:25832",
+      "source": "onto",
+      "key": "fuzzythes:25832",
+      "ili": "",
+      "members": [
+        "amalgamado",
+        "entressachado",
+        "diversicolor",
+        "mesclado",
+        "versicolor",
+        "intermeado",
+        "envolto",
+        "misto",
+        "entremeado",
+        "variegado",
+        "raiado",
+        "matizado",
+        "misturado",
+        "variado",
+        "vário",
+        "intervalado",
+        "compósito",
+        "promíscuo",
+        "intercalado",
+        "salteado",
+        "heterogêneo",
+        "diversificado",
+        "cromatizado",
+        "alternado",
+        "composto",
+        "indiscriminado"
+      ],
+      "gloss": "",
+      "decision": "exclude",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
+    },
+    {
+      "sense_key": "onto|fuzzythes:26969",
+      "source": "onto",
+      "key": "fuzzythes:26969",
+      "ili": "",
+      "members": [
+        "dissimilar",
+        "heterogéneo",
+        "dessemelhante",
+        "absimilhante",
+        "dissímil",
+        "díspar",
+        "dissemelhante",
+        "diferente",
+        "compósito"
+      ],
+      "gloss": "",
+      "decision": "RT",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
+    },
+    {
+      "sense_key": "onto|fuzzythes:27002",
+      "source": "onto",
+      "key": "fuzzythes:27002",
+      "ili": "",
+      "members": [
+        "heterogêneo",
+        "compósito",
+        "constituído",
+        "composto",
+        "formado",
+        "elaborado",
+        "feito",
+        "heterogéneo",
+        "aprimorado",
+        "bem-avindo",
+        "misto",
+        "conciliado",
+        "mesclado",
+        "concordado"
+      ],
+      "gloss": "",
+      "decision": "RT",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
+    },
+    {
+      "sense_key": "onto|fuzzythes:27069",
+      "source": "onto",
+      "key": "fuzzythes:27069",
+      "ili": "",
+      "members": [
+        "heterogéneo",
+        "compósito",
+        "heterogêneo",
+        "dissimilar",
+        "composto",
+        "dessemelhante",
+        "mesclado",
+        "constituído"
+      ],
+      "gloss": "",
+      "decision": "UF",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
+    },
+    {
+      "sense_key": "onto|ontopt06:3928",
+      "source": "onto",
+      "key": "ontopt06:3928",
+      "ili": "",
+      "members": [
+        "composto",
+        "compósito",
+        "heterogêneo"
+      ],
+      "gloss": "que é formado de mais de um item.",
+      "decision": "UF",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        }
+      ]
+    },
+    {
+      "sense_key": "onto|ontopt06:6214",
+      "source": "onto",
+      "key": "ontopt06:6214",
+      "ili": "i6556",
+      "members": [
+        "compósito",
+        "entremeado",
+        "mesclado",
+        "misto",
+        "misturado",
+        "raiado"
+      ],
+      "gloss": "",
+      "decision": "exclude",
+      "links": [
+        {
+          "label": "CILI i6556",
+          "url": "https://globalwordnet.github.io/cili/i6556.html",
+          "detail": "página oficial CILI"
+        },
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        }
+      ]
+    },
+    {
+      "sense_key": "onto|ontopt06:7120",
+      "source": "onto",
+      "key": "ontopt06:7120",
+      "ili": "",
+      "members": [
+        "compósito",
+        "dessemelhante",
+        "dissimilar",
+        "heterogéneo"
+      ],
+      "gloss": "que é de diverso género ou espécie.",
+      "decision": "RT",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        }
+      ]
+    },
+    {
+      "sense_key": "onto|ontopt06:81042",
+      "source": "onto",
+      "key": "ontopt06:81042",
+      "ili": "",
+      "members": [
+        "compósito"
+      ],
+      "gloss": "",
+      "decision": "UF",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        }
+      ]
+    },
+    {
+      "sense_key": "onto|polaridades:1620",
+      "source": "onto",
+      "key": "polaridades:1620",
+      "ili": "",
+      "members": [
+        "compósito",
+        "dessemelhante",
+        "dissimilar",
+        "heterogéneo"
+      ],
+      "gloss": "Polaridade: -1 (método BASE)",
+      "decision": "RT",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        }
+      ]
+    },
+    {
+      "sense_key": "onto|thes5rec:19632",
+      "source": "onto",
+      "key": "thes5rec:19632",
+      "ili": "",
+      "members": [
+        "composto",
+        "compósito",
+        "dessemelhante",
+        "dissimilar",
+        "heterogéneo",
+        "heterogêneo"
+      ],
+      "gloss": "",
+      "decision": "RT",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
+    },
+    {
+      "sense_key": "onto|thes5rec:22375",
+      "source": "onto",
+      "key": "thes5rec:22375",
+      "ili": "",
+      "members": [
+        "composto",
+        "compósito",
+        "constituído",
+        "elaborado",
+        "feito",
+        "formado",
+        "heterogêneo"
+      ],
+      "gloss": "",
+      "decision": "UF",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
+    },
+    {
+      "sense_key": "onto|clip21:2083",
+      "source": "onto",
+      "key": "clip21:2083",
+      "ili": "",
+      "members": [
+        "músico",
+        "compositor",
+        "instrumentista",
+        "musicógrafo",
+        "impressor",
+        "impressora",
+        "tipógrafo",
+        "instrumentalista",
+        "solfista",
+        "compositeiro",
+        "impressoras",
+        "imprimidor",
+        "musico",
+        "solfejista",
+        "menestrel",
+        "musicista"
+      ],
+      "gloss": "",
+      "decision": "exclude",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
+    },
+    {
+      "sense_key": "onto|contopt:24966",
+      "source": "onto",
+      "key": "contopt:24966",
+      "ili": "",
+      "members": [
+        "músico",
+        "compositor",
+        "instrumentista",
+        "musicógrafo",
+        "impressor",
+        "impressora",
+        "tipógrafo",
+        "instrumentalista",
+        "solfista",
+        "compositeiro",
+        "impressoras",
+        "imprimidor",
+        "musico",
+        "solfejista"
+      ],
+      "gloss": "",
+      "decision": "exclude",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
+    },
+    {
+      "sense_key": "onto|fuzzythes:7161",
+      "source": "onto",
+      "key": "fuzzythes:7161",
+      "ili": "",
+      "members": [
+        "solfejista",
+        "instrumentista",
+        "musicista",
+        "compositor",
+        "musicógrafo",
+        "solfista",
+        "músico",
+        "menestrel"
+      ],
+      "gloss": "",
+      "decision": "exclude",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
+    },
+    {
+      "sense_key": "onto|ontopt06:23962",
+      "source": "onto",
+      "key": "ontopt06:23962",
+      "ili": "",
+      "members": [
+        "compositeiro",
+        "compositor",
+        "musicógrafo",
+        "músico",
+        "tipógrafo"
+      ],
+      "gloss": "instrumento, para escrever música.",
+      "decision": "exclude",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        }
+      ]
+    },
+    {
+      "sense_key": "onto|ontopt06:25561",
+      "source": "onto",
+      "key": "ontopt06:25561",
+      "ili": "",
+      "members": [
+        "compositor",
+        "impressor",
+        "impressora",
+        "imprimidor",
+        "tipógrafo"
+      ],
+      "gloss": "equipamento usado para imprimir. utensílio de artilharia, para dar forma às espoletas de papel vazadas.",
+      "decision": "exclude",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        }
+      ]
+    },
+    {
+      "sense_key": "onto|ontopt06:30747",
+      "source": "onto",
+      "key": "ontopt06:30747",
+      "ili": "",
+      "members": [
+        "compositora"
+      ],
+      "gloss": "",
+      "decision": "exclude",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        }
+      ]
+    },
+    {
+      "sense_key": "onto|ontopt06:49495",
+      "source": "onto",
+      "key": "ontopt06:49495",
+      "ili": "",
+      "members": [
+        "fotocompositor"
+      ],
+      "gloss": "",
+      "decision": "exclude",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        }
+      ]
+    },
+    {
+      "sense_key": "onto|ontopt06:43961",
+      "source": "onto",
+      "key": "ontopt06:43961",
+      "ili": "",
+      "members": [
+        "fotocompositora"
+      ],
+      "gloss": "",
+      "decision": "exclude",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        }
+      ]
+    },
+    {
+      "sense_key": "onto|thes5rec:13577",
+      "source": "onto",
+      "key": "thes5rec:13577",
+      "ili": "",
+      "members": [
+        "compositor",
+        "instrumentista",
+        "musicista",
+        "musicógrafo",
+        "músico",
+        "solfejista",
+        "solfista"
+      ],
+      "gloss": "",
+      "decision": "exclude",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
+    },
+    {
+      "sense_key": "onto|top01:2962",
+      "source": "onto",
+      "key": "top01:2962",
+      "ili": "",
+      "members": [
+        "compositor",
+        "musicógrafo",
+        "músico"
+      ],
+      "gloss": "",
+      "decision": "exclude",
+      "links": [
+        {
+          "label": "Onto.PT (site)",
+          "url": "http://ontopt.dei.uc.pt/",
+          "detail": "ontopt.dei.uc.pt · LEIAME"
+        },
+        {
+          "label": "CONTO.PT (site)",
+          "url": "https://ontopt.dei.uc.pt/index.php?sec=contopt",
+          "detail": "wordnet difusa · clip21 / contopt"
+        }
+      ]
+    }
+  ]
+}

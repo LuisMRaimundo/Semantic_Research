@@ -1,160 +1,398 @@
 {
   "class_id": "TexturaComposita",
-  "count": 55,
+  "count": 96,
   "note": "PULO relation harvest (unnamed #NN / similar-to off-axis). Not decisions — review only if something looks useful; otherwise ignore.",
   "sinalizacao": {
-    "sintetico": {
-      "display": "sintético",
+    "estruturar": {
+      "display": "estruturar",
       "via": "relation #61",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "sistemática de combinação de raiz e elementos em palavras simples modificar\n",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura para dar\n",
       "reason": "relação não-nomeada / #NN"
     },
-    "fusao": {
-      "display": "fusão",
+    "rigido": {
+      "display": "rígido",
       "via": "relation #61",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "a combinação de duas ou mais empresas comerciais\n",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "designando um dirigível ou um dirigível tendo uma forma mantida por uma moldura inflexível rígida ou estrutura\n",
       "reason": "relação não-nomeada / #NN"
     },
-    "associacao": {
-      "display": "associação",
+    "estrutural": {
+      "display": "estrutural",
       "via": "relation #61",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "(Química) qualquer processo de combinação (especialmente em solução), que depende relativamente fraca ligação química\n",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "afetar ou envolver na estrutura ou construção\n",
       "reason": "relação não-nomeada / #NN"
     },
-    "conjunto": {
-      "display": "conjunto",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "um conjunto de peças que é considerado como uma única entidade",
+    "altar": {
+      "display": "altar",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura levantada em que presentes ou sacrifícios a um deus são feitas\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "arco": {
+      "display": "arco",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "(arquitetura) uma construção de alvenaria (geralmente curvada) para uma abertura de abrangência e suportar o peso acima\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "zona": {
+      "display": "zona",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma parte de uma estrutura tendo alguma característica específica ou função\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "area": {
+      "display": "área",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma parte de uma estrutura tendo alguma característica específica ou função\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "arsenal": {
+      "display": "arsenal",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura militar onde são armazenadas armas e munições e outros equipamentos militares e treinamento é dado no uso de armas\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "barreira": {
+      "display": "barreira",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura ou objeto que impede a livre circulação\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "obstaculo": {
+      "display": "obstáculo",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura ou objeto que impede a livre circulação\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "cave": {
+      "display": "cave",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "a parte inferior de uma estrutura parcialmente ou totalmente abaixo do nível do solo; usado frequentemente para o armazenamento\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "dique": {
+      "display": "dique",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura protetora de pedra ou concreto; estende-se na água para impedir a lavagem para retirar de uma praia da costa\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "ponte": {
+      "display": "ponte",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura que permite que pessoas ou veículos para atravessar um obstáculo como um rio ou canal ou ferroviária etc.\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "edificio": {
+      "display": "edifício",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura que tem um telhado e paredes e fica mais ou menos permanentemente em um só lugar\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "imovel": {
+      "display": "imóvel",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura que tem um telhado e paredes e fica mais ou menos permanentemente em um só lugar\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "predio": {
+      "display": "prédio",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura que tem um telhado e paredes e fica mais ou menos permanentemente em um só lugar\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "complexo": {
+      "display": "complexo",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura inteira (como um prédio) composta por estruturas interconectadas ou relacionadas\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "funcional": {
+      "display": "funcional",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "relacionada ou baseado em função especialmente em oposição a estruturar\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "coluna": {
+      "display": "coluna",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "(Arquitectura) uma estrutura cilíndrica vertical alta colocado na posição vertical e usado para suportar uma estrutura de\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "defesa": {
+      "display": "defesa",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura usada para defender contra o ataque\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "estabelecimento": {
+      "display": "estabelecimento",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura pública ou privada (empresarial ou governamental ou educacional), incluindo edifícios e equipamentos para empresa ou residência\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "piso": {
+      "display": "piso",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura que consiste de uma sala ou um conjunto de salas em uma posição única ao longo de uma escala vertical\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "planta": {
+      "display": "planta",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura que consiste de uma sala ou um conjunto de salas em uma posição única ao longo de uma escala vertical\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "andar": {
+      "display": "andar",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura que consiste de uma sala ou um conjunto de salas em uma posição única ao longo de uma escala vertical\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "alicerce": {
+      "display": "alicerce",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "menor apoio de uma estrutura\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "falda": {
+      "display": "falda",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "menor apoio de uma estrutura\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "peanha": {
+      "display": "peanha",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "menor apoio de uma estrutura\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "pedestal": {
+      "display": "pedestal",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "menor apoio de uma estrutura\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "sope": {
+      "display": "sopé",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "menor apoio de uma estrutura\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "fundamento": {
+      "display": "fundamento",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "menor apoio de uma estrutura\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "pe": {
+      "display": "pé",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "menor apoio de uma estrutura\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "base": {
+      "display": "base",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "menor apoio de uma estrutura\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "fonte": {
+      "display": "fonte",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura da qual surge um artificialmente produzido jacto de água\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "armacao": {
+      "display": "armação",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura de apoio ou algo contendo\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "estrutura": {
+      "display": "estrutura",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura de apoio ou algo contendo\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "armadura": {
+      "display": "armadura",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura de apoio ou algo contendo\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "monumento": {
+      "display": "monumento",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura erigida para comemorar pessoas ou eventos\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "plano": {
+      "display": "plano",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "escala de desenho de uma estrutura\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "cenario": {
+      "display": "cenário",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "as estruturas pintadas de um palco que se destinam a sugerir uma localidade específica\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "palco": {
+      "display": "palco",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "as estruturas pintadas de um palco que se destinam a sugerir uma localidade específica\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "cena": {
+      "display": "cena",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "as estruturas pintadas de um palco que se destinam a sugerir uma localidade específica\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "abrigo": {
+      "display": "abrigo",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura que proporciona privacidade e proteção de perigo\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "refugio": {
+      "display": "refúgio",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura que proporciona privacidade e proteção de perigo\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "asilo": {
+      "display": "asilo",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura que proporciona privacidade e proteção de perigo\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "estadio": {
+      "display": "estádio",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma grande estrutura para esportes ao ar livre ou entretenimentos\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "superstrutura": {
+      "display": "superstrutura",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "estrutura da parte do navio acima do convés principal\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "torre": {
+      "display": "torre",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma estrutura mais alta que seu diâmetro; podem ficar sozinha ou ser anexado a um edifício maior\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "instalacao": {
+      "display": "instalação",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma instalação composta por uma ou mais peças de equipamentos conectados a ou parte de uma estrutura e projetados para fornecer um serviço como o calor ou electricidade ou de água ou de esgoto\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "parede": {
+      "display": "parede",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma partição de arquitetura com uma altura e comprimento maior que sua espessura; usado para dividir ou delimitar uma área ou para apoiar uma outra estrutura\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "muro": {
+      "display": "muro",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "uma partição de arquitetura com uma altura e comprimento maior que sua espessura; usado para dividir ou delimitar uma área ou para apoiar uma outra estrutura\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "mecanismo": {
+      "display": "mecanismo",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "um objeto natural, assemelhando-se a uma máquina na estrutura ou função\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "elemento": {
+      "display": "elemento",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "um indivíduo ou grupo ou estrutura ou outra entidade considerada como um constituinte estrutural ou funcional de um todo\n",
       "reason": "relação não-nomeada / #NN"
     },
     "unidade": {
       "display": "unidade",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "um conjunto de peças que é considerado como uma única entidade",
+      "via": "relation #61",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "um indivíduo ou grupo ou estrutura ou outra entidade considerada como um constituinte estrutural ou funcional de um todo\n",
       "reason": "relação não-nomeada / #NN"
     },
-    "combinar": {
-      "display": "combinar",
+    "entidade": {
+      "display": "entidade",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "combinar de modo a formar um todo; misturar\n",
-      "reason": "relação não-nomeada / #NN"
-    },
-    "calcar": {
-      "display": "calcar",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "fazer alguma coisa, geralmente por uma função específica\n",
-      "reason": "relação não-nomeada / #NN"
-    },
-    "caldear": {
-      "display": "caldear",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "fazer alguma coisa, geralmente por uma função específica\n",
-      "reason": "relação não-nomeada / #NN"
-    },
-    "configurar": {
-      "display": "configurar",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "fazer alguma coisa, geralmente por uma função específica\n",
-      "reason": "relação não-nomeada / #NN"
-    },
-    "conformar": {
-      "display": "conformar",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "fazer alguma coisa, geralmente por uma função específica\n",
-      "reason": "relação não-nomeada / #NN"
-    },
-    "inventar": {
-      "display": "inventar",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "fazer alguma coisa, geralmente por uma função específica\n",
-      "reason": "relação não-nomeada / #NN"
-    },
-    "modelar": {
-      "display": "modelar",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "fazer alguma coisa, geralmente por uma função específica\n",
-      "reason": "relação não-nomeada / #NN"
-    },
-    "moldar": {
-      "display": "moldar",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "fazer alguma coisa, geralmente por uma função específica\n",
-      "reason": "relação não-nomeada / #NN"
-    },
-    "plasmar": {
-      "display": "plasmar",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "fazer alguma coisa, geralmente por uma função específica\n",
-      "reason": "relação não-nomeada / #NN"
-    },
-    "vazar": {
-      "display": "vazar",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "fazer alguma coisa, geralmente por uma função específica\n",
-      "reason": "relação não-nomeada / #NN"
-    },
-    "forjar": {
-      "display": "forjar",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "fazer alguma coisa, geralmente por uma função específica\n",
-      "reason": "relação não-nomeada / #NN"
-    },
-    "formar": {
-      "display": "formar",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "fazer alguma coisa, geralmente por uma função específica\n",
-      "reason": "relação não-nomeada / #NN"
-    },
-    "fazer": {
-      "display": "fazer",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "fazer alguma coisa, geralmente por uma função específica\n",
+      "source_ili": "ili-30-04341686-n",
+      "target_gloss": "aquilo que é percebido ou conhecido por ter a sua própria existência (vivo ou não vivo)",
       "reason": "relação não-nomeada / #NN"
     },
     "coisa": {
       "display": "coisa",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-00378985-n",
+      "source_ili": "ili-30-04341686-n",
       "target_gloss": "uma entidade que não é nomeada especificamente\n",
       "reason": "relação não-nomeada / #NN"
     },
-    "todo": {
-      "display": "todo",
+    "conjunto": {
+      "display": "conjunto",
       "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "todos de alguma coisa, incluindo todos os seus elementos ou partes componentes\n",
-      "reason": "relação não-nomeada / #NN"
-    },
-    "tudo": {
-      "display": "tudo",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "todos de alguma coisa, incluindo todos os seus elementos ou partes componentes\n",
-      "reason": "relação não-nomeada / #NN"
-    },
-    "totalidade": {
-      "display": "totalidade",
-      "via": "relation #61 (inverse)",
-      "source_ili": "ili-30-00378985-n",
-      "target_gloss": "todos de alguma coisa, incluindo todos os seus elementos ou partes componentes\n",
+      "source_ili": "ili-30-03081660-n",
+      "target_gloss": "um conjunto de peças que é considerado como uma única entidade",
       "reason": "relação não-nomeada / #NN"
     },
     "colocar": {
@@ -199,6 +437,13 @@
       "target_gloss": "trazer à existência\n",
       "reason": "relação não-nomeada / #NN"
     },
+    "fazer": {
+      "display": "fazer",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-03081660-n",
+      "target_gloss": "trazer à existência\n",
+      "reason": "relação não-nomeada / #NN"
+    },
     "compor": {
       "display": "compor",
       "via": "relation #61 (inverse)",
@@ -211,6 +456,34 @@
       "via": "relation #61 (inverse)",
       "source_ili": "ili-30-03081660-n",
       "target_gloss": "para compor ou representar: \"esta parede faz o fundo da configuração do palco\"\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "formar": {
+      "display": "formar",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-03081660-n",
+      "target_gloss": "para compor ou representar: \"esta parede faz o fundo da configuração do palco\"\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "todo": {
+      "display": "todo",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-03081660-n",
+      "target_gloss": "todos de alguma coisa, incluindo todos os seus elementos ou partes componentes\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "tudo": {
+      "display": "tudo",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-03081660-n",
+      "target_gloss": "todos de alguma coisa, incluindo todos os seus elementos ou partes componentes\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "totalidade": {
+      "display": "totalidade",
+      "via": "relation #61 (inverse)",
+      "source_ili": "ili-30-03081660-n",
+      "target_gloss": "todos de alguma coisa, incluindo todos os seus elementos ou partes componentes\n",
       "reason": "relação não-nomeada / #NN"
     },
     "constituinte": {
@@ -386,6 +659,20 @@
       "via": "relation #61 (inverse)",
       "source_ili": "ili-30-04933544-n",
       "target_gloss": "como algo é feito ou como isso acontece\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "quadro": {
+      "display": "quadro",
+      "via": "relation #61",
+      "source_ili": "ili-30-05076472-n",
+      "target_gloss": "arte gráfica que consiste em uma composição artística feita através da aplicação de tintas a uma superfície\n",
+      "reason": "relação não-nomeada / #NN"
+    },
+    "pintura": {
+      "display": "pintura",
+      "via": "relation #61",
+      "source_ili": "ili-30-05076472-n",
+      "target_gloss": "arte gráfica que consiste em uma composição artística feita através da aplicação de tintas a uma superfície\n",
       "reason": "relação não-nomeada / #NN"
     }
   }

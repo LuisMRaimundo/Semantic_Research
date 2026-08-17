@@ -12,7 +12,10 @@
         "source": "onto",
         "ili": null,
         "gloss": "",
-        "key": "clip21:1320"
+        "key": "clip21:1320",
+        "members_dropped_focus_filter": [
+          "materiais compostos"
+        ]
       },
       {
         "members": [
@@ -22,7 +25,10 @@
         "source": "onto",
         "ili": null,
         "gloss": "",
-        "key": "contopt:16611"
+        "key": "contopt:16611",
+        "members_dropped_focus_filter": [
+          "materiais compostos"
+        ]
       },
       {
         "members": [
@@ -38,7 +44,15 @@
         "source": "onto",
         "ili": null,
         "gloss": "",
-        "key": "fuzzythes:27069"
+        "key": "fuzzythes:27069",
+        "members_dropped_focus_filter": [
+          "heterogéneo",
+          "heterogêneo",
+          "dissimilar",
+          "dessemelhante",
+          "mesclado",
+          "constituído"
+        ]
       },
       {
         "members": [
@@ -49,21 +63,10 @@
         "source": "onto",
         "ili": null,
         "gloss": "que é formado de mais de um item.",
-        "key": "ontopt06:3928"
-      },
-      {
-        "members": [
-          "compósito",
-          "entremeado",
-          "mesclado",
-          "misto",
-          "misturado",
-          "raiado"
-        ],
-        "source": "onto",
-        "ili": "i6556",
-        "gloss": "",
-        "key": "ontopt06:6214"
+        "key": "ontopt06:3928",
+        "members_dropped_focus_filter": [
+          "heterogêneo"
+        ]
       },
       {
         "members": [
@@ -75,7 +78,12 @@
         "source": "onto",
         "ili": null,
         "gloss": "que é de diverso género ou espécie.",
-        "key": "ontopt06:7120"
+        "key": "ontopt06:7120",
+        "members_dropped_focus_filter": [
+          "dessemelhante",
+          "dissimilar",
+          "heterogéneo"
+        ]
       },
       {
         "members": [
@@ -84,19 +92,8 @@
         "source": "onto",
         "ili": null,
         "gloss": "",
-        "key": "ontopt06:81042"
-      },
-      {
-        "members": [
-          "compósito",
-          "dessemelhante",
-          "dissimilar",
-          "heterogéneo"
-        ],
-        "source": "onto",
-        "ili": null,
-        "gloss": "Polaridade: -1 (método BASE)",
-        "key": "polaridades:1620"
+        "key": "ontopt06:81042",
+        "members_dropped_focus_filter": []
       },
       {
         "members": [
@@ -110,7 +107,13 @@
         "source": "onto",
         "ili": null,
         "gloss": "",
-        "key": "thes5rec:19632"
+        "key": "thes5rec:19632",
+        "members_dropped_focus_filter": [
+          "dessemelhante",
+          "dissimilar",
+          "heterogéneo",
+          "heterogêneo"
+        ]
       },
       {
         "members": [
@@ -125,179 +128,28 @@
         "source": "onto",
         "ili": null,
         "gloss": "",
-        "key": "thes5rec:22375"
+        "key": "thes5rec:22375",
+        "members_dropped_focus_filter": [
+          "constituído",
+          "elaborado",
+          "feito",
+          "formado",
+          "heterogêneo"
+        ]
       },
       {
         "members": [
           "compósito",
-          "material"
+          "heterogéneo",
+          "mesclado"
         ],
         "source": "papel",
         "ili": null,
-        "gloss": "PAPEL HIPERONIMO_DE (HIPERONIMIA)",
-        "key": "papel35:HIPERONIMIA:HIPERONIMO_DE:composito"
-      },
-      {
-        "members": [
-          "compósito",
-          "substância"
-        ],
-        "source": "papel",
-        "ili": null,
-        "gloss": "PAPEL PROPRIEDADE_DE_ALGO_PARTE_DE (PARTE)",
-        "key": "papel35:PARTE:PROPRIEDADE_DE_ALGO_PARTE_DE:composito"
+        "gloss": "PAPEL SINONIMO_ADJ_DE (SINONIMIA)",
+        "key": "papel35:SINONIMIA:SINONIMO_ADJ_DE:composito"
       }
     ],
     "rt_candidates": [
-      {
-        "members": [
-          "vário",
-          "variado",
-          "variegado",
-          "mesclado",
-          "matizado",
-          "diferente",
-          "diverso",
-          "versicolor",
-          "misturado",
-          "diversicolor",
-          "misto",
-          "desvairado",
-          "desvariado",
-          "diversificado",
-          "sortido",
-          "copioso",
-          "pintado",
-          "confuso",
-          "desigual",
-          "promíscuo",
-          "raiado",
-          "sorteado",
-          "colorido",
-          "cromatizado",
-          "discordante",
-          "distinto",
-          "entremeado",
-          "inconstante",
-          "multifário",
-          "multíplice",
-          "sarapintado",
-          "tingido",
-          "amalgamado",
-          "nuançado",
-          "confundido",
-          "envolto",
-          "indiscriminado",
-          "mudado",
-          "mudável",
-          "multímodo",
-          "versátil",
-          "abigarrado",
-          "alagartado",
-          "altamado",
-          "diversos",
-          "ecléctico",
-          "numerosos",
-          "pecilocromático",
-          "permixto",
-          "que oferece várias aspectos",
-          "variados",
-          "varioso",
-          "combinado",
-          "complexo",
-          "delirante",
-          "desirmanado",
-          "desirmão",
-          "discrepante",
-          "divergente",
-          "entressachado",
-          "impermanente",
-          "indistinto",
-          "instável",
-          "intermeado",
-          "mudadiço",
-          "mutável",
-          "místico",
-          "variável",
-          "voltário",
-          "voltívolo",
-          "volátil",
-          "volúvel",
-          "vários",
-          "abastecido",
-          "alterado",
-          "alucinado",
-          "bom",
-          "buliçoso",
-          "caprichoso",
-          "composto",
-          "compósito",
-          "contraditório",
-          "desconforme",
-          "dessemelhante",
-          "doido",
-          "embaralhado",
-          "esmaltado",
-          "furta-cor",
-          "hesitante",
-          "híbrido",
-          "incerto",
-          "indistinguível",
-          "irregular",
-          "junto",
-          "leviano",
-          "marchetado",
-          "múltiplo",
-          "numeroso",
-          "permisto",
-          "perplexo",
-          "pingado",
-          "precário",
-          "que oferece vários aspectos",
-          "recamado",
-          "salpicado",
-          "vasto",
-          "veiro"
-        ],
-        "source": "onto",
-        "ili": null,
-        "gloss": "",
-        "key": "clip21:17923"
-      },
-      {
-        "members": [
-          "amalgamado",
-          "entressachado",
-          "diversicolor",
-          "mesclado",
-          "versicolor",
-          "intermeado",
-          "envolto",
-          "misto",
-          "entremeado",
-          "variegado",
-          "raiado",
-          "matizado",
-          "misturado",
-          "variado",
-          "vário",
-          "intervalado",
-          "compósito",
-          "promíscuo",
-          "intercalado",
-          "salteado",
-          "heterogêneo",
-          "diversificado",
-          "cromatizado",
-          "alternado",
-          "composto",
-          "indiscriminado"
-        ],
-        "source": "onto",
-        "ili": null,
-        "gloss": "",
-        "key": "fuzzythes:25832"
-      },
       {
         "members": [
           "dissimilar",
@@ -339,13 +191,28 @@
       },
       {
         "members": [
-          "combinação",
-          "composição"
+          "compósito",
+          "dessemelhante",
+          "dissimilar",
+          "heterogéneo"
+        ],
+        "source": "onto",
+        "ili": null,
+        "gloss": "Polaridade: -1 (método BASE)",
+        "key": "polaridades:1620"
+      },
+      {
+        "members": [
+          "composição",
+          "contextura",
+          "edifício",
+          "estrutura",
+          "construção"
         ],
         "source": "pulo",
-        "ili": "i37400",
-        "gloss": "o ato de combinar as coisas para formar um todo novo\n",
-        "key": "ili-30-00378985-n"
+        "ili": "i59707",
+        "gloss": "uma coisa construída; uma entidade complexa construída de muitas partes\n",
+        "key": "ili-30-04341686-n"
       },
       {
         "members": [
@@ -368,51 +235,12 @@
       },
       {
         "members": [
-          "amalgamado",
-          "cabrito",
-          "diverso",
-          "híbrido",
-          "mesclado",
-          "mestiço",
-          "misto",
-          "misturado",
-          "mulato"
+          "composição"
         ],
         "source": "pulo",
-        "ili": "i6556",
-        "gloss": "que consiste em uma variedade aleatória de diferentes tipos\n",
-        "key": "pwn30-01199083-a"
-      },
-      {
-        "members": [
-          "compósito",
-          "utilidade"
-        ],
-        "source": "papel",
-        "ili": null,
-        "gloss": "PAPEL PARTE_DE_ALGO_COM_PROPRIEDADE (PARTE)",
-        "key": "papel35:PARTE:PARTE_DE_ALGO_COM_PROPRIEDADE:composito"
-      },
-      {
-        "members": [
-          "compósito",
-          "ter diverso utilidade"
-        ],
-        "source": "papel",
-        "ili": null,
-        "gloss": "PAPEL DIZ_SE_DO_QUE (REFERENTE)",
-        "key": "papel35:REFERENTE:DIZ_SE_DO_QUE:composito"
-      },
-      {
-        "members": [
-          "compósito",
-          "heterogéneo",
-          "mesclado"
-        ],
-        "source": "papel",
-        "ili": null,
-        "gloss": "PAPEL SINONIMO_ADJ_DE (SINONIMIA)",
-        "key": "papel35:SINONIMIA:SINONIMO_ADJ_DE:composito"
+        "ili": "i63671",
+        "gloss": "a propriedade espacial resultante do acordo das partes em relação às outras e a toda\n",
+        "key": "ili-30-05076472-n"
       }
     ],
     "exclude_records": [
@@ -581,6 +409,124 @@
       },
       {
         "members": [
+          "vário",
+          "variado",
+          "variegado",
+          "mesclado",
+          "matizado",
+          "diferente",
+          "diverso",
+          "versicolor",
+          "misturado",
+          "diversicolor",
+          "misto",
+          "desvairado",
+          "desvariado",
+          "diversificado",
+          "sortido",
+          "copioso",
+          "pintado",
+          "confuso",
+          "desigual",
+          "promíscuo",
+          "raiado",
+          "sorteado",
+          "colorido",
+          "cromatizado",
+          "discordante",
+          "distinto",
+          "entremeado",
+          "inconstante",
+          "multifário",
+          "multíplice",
+          "sarapintado",
+          "tingido",
+          "amalgamado",
+          "nuançado",
+          "confundido",
+          "envolto",
+          "indiscriminado",
+          "mudado",
+          "mudável",
+          "multímodo",
+          "versátil",
+          "abigarrado",
+          "alagartado",
+          "altamado",
+          "diversos",
+          "ecléctico",
+          "numerosos",
+          "pecilocromático",
+          "permixto",
+          "que oferece várias aspectos",
+          "variados",
+          "varioso",
+          "combinado",
+          "complexo",
+          "delirante",
+          "desirmanado",
+          "desirmão",
+          "discrepante",
+          "divergente",
+          "entressachado",
+          "impermanente",
+          "indistinto",
+          "instável",
+          "intermeado",
+          "mudadiço",
+          "mutável",
+          "místico",
+          "variável",
+          "voltário",
+          "voltívolo",
+          "volátil",
+          "volúvel",
+          "vários",
+          "abastecido",
+          "alterado",
+          "alucinado",
+          "bom",
+          "buliçoso",
+          "caprichoso",
+          "contraditório",
+          "desconforme",
+          "dessemelhante",
+          "doido",
+          "embaralhado",
+          "esmaltado",
+          "furta-cor",
+          "hesitante",
+          "híbrido",
+          "incerto",
+          "indistinguível",
+          "irregular",
+          "junto",
+          "leviano",
+          "marchetado",
+          "múltiplo",
+          "numeroso",
+          "permisto",
+          "perplexo",
+          "pingado",
+          "precário",
+          "que oferece vários aspectos",
+          "recamado",
+          "salpicado",
+          "vasto",
+          "veiro"
+        ],
+        "source": "onto",
+        "ili": null,
+        "gloss": "",
+        "key": "clip21:17923",
+        "exclusion_scope": "record_or_sense_not_lemma",
+        "members_omitted_focal": [
+          "composto",
+          "compósito"
+        ]
+      },
+      {
+        "members": [
           "amestrado",
           "feito",
           "adestrado",
@@ -620,6 +566,60 @@
         "exclusion_scope": "record_or_sense_not_lemma",
         "members_omitted_focal": [
           "composto",
+          "compósito"
+        ]
+      },
+      {
+        "members": [
+          "amalgamado",
+          "entressachado",
+          "diversicolor",
+          "mesclado",
+          "versicolor",
+          "intermeado",
+          "envolto",
+          "misto",
+          "entremeado",
+          "variegado",
+          "raiado",
+          "matizado",
+          "misturado",
+          "variado",
+          "vário",
+          "intervalado",
+          "promíscuo",
+          "intercalado",
+          "salteado",
+          "heterogêneo",
+          "diversificado",
+          "cromatizado",
+          "alternado",
+          "indiscriminado"
+        ],
+        "source": "onto",
+        "ili": null,
+        "gloss": "",
+        "key": "fuzzythes:25832",
+        "exclusion_scope": "record_or_sense_not_lemma",
+        "members_omitted_focal": [
+          "compósito",
+          "composto"
+        ]
+      },
+      {
+        "members": [
+          "entremeado",
+          "mesclado",
+          "misto",
+          "misturado",
+          "raiado"
+        ],
+        "source": "onto",
+        "ili": "i6556",
+        "gloss": "",
+        "key": "ontopt06:6214",
+        "exclusion_scope": "record_or_sense_not_lemma",
+        "members_omitted_focal": [
           "compósito"
         ]
       },
@@ -802,16 +802,13 @@
       },
       {
         "members": [
-          "composição",
-          "contextura",
-          "edifício",
-          "estrutura",
-          "construção"
+          "combinação",
+          "composição"
         ],
         "source": "pulo",
-        "ili": "i59707",
-        "gloss": "uma coisa construída; uma entidade complexa construída de muitas partes\n",
-        "key": "ili-30-04341686-n",
+        "ili": "i37400",
+        "gloss": "o ato de combinar as coisas para formar um todo novo\n",
+        "key": "ili-30-00378985-n",
         "exclusion_scope": "record_or_sense_not_lemma",
         "members_omitted_focal": []
       },
@@ -849,17 +846,6 @@
         "ili": "i40342",
         "gloss": "criação musical\n",
         "key": "ili-30-00939452-n",
-        "exclusion_scope": "record_or_sense_not_lemma",
-        "members_omitted_focal": []
-      },
-      {
-        "members": [
-          "composição"
-        ],
-        "source": "pulo",
-        "ili": "i63671",
-        "gloss": "a propriedade espacial resultante do acordo das partes em relação às outras e a toda\n",
-        "key": "ili-30-05076472-n",
         "exclusion_scope": "record_or_sense_not_lemma",
         "members_omitted_focal": []
       },
@@ -1124,10 +1110,82 @@
         "key": "ili-30-05858936-n",
         "exclusion_scope": "record_or_sense_not_lemma",
         "members_omitted_focal": []
+      },
+      {
+        "members": [
+          "amalgamado",
+          "cabrito",
+          "diverso",
+          "híbrido",
+          "mesclado",
+          "mestiço",
+          "misto",
+          "misturado",
+          "mulato"
+        ],
+        "source": "pulo",
+        "ili": "i6556",
+        "gloss": "que consiste em uma variedade aleatória de diferentes tipos\n",
+        "key": "pwn30-01199083-a",
+        "exclusion_scope": "record_or_sense_not_lemma",
+        "members_omitted_focal": []
+      },
+      {
+        "members": [
+          "material"
+        ],
+        "source": "papel",
+        "ili": null,
+        "gloss": "PAPEL HIPERONIMO_DE (HIPERONIMIA)",
+        "key": "papel35:HIPERONIMIA:HIPERONIMO_DE:composito",
+        "exclusion_scope": "record_or_sense_not_lemma",
+        "members_omitted_focal": [
+          "compósito"
+        ]
+      },
+      {
+        "members": [
+          "utilidade"
+        ],
+        "source": "papel",
+        "ili": null,
+        "gloss": "PAPEL PARTE_DE_ALGO_COM_PROPRIEDADE (PARTE)",
+        "key": "papel35:PARTE:PARTE_DE_ALGO_COM_PROPRIEDADE:composito",
+        "exclusion_scope": "record_or_sense_not_lemma",
+        "members_omitted_focal": [
+          "compósito"
+        ]
+      },
+      {
+        "members": [
+          "substância"
+        ],
+        "source": "papel",
+        "ili": null,
+        "gloss": "PAPEL PROPRIEDADE_DE_ALGO_PARTE_DE (PARTE)",
+        "key": "papel35:PARTE:PROPRIEDADE_DE_ALGO_PARTE_DE:composito",
+        "exclusion_scope": "record_or_sense_not_lemma",
+        "members_omitted_focal": [
+          "compósito"
+        ]
+      },
+      {
+        "members": [
+          "ter diverso utilidade"
+        ],
+        "source": "papel",
+        "ili": null,
+        "gloss": "PAPEL DIZ_SE_DO_QUE (REFERENTE)",
+        "key": "papel35:REFERENTE:DIZ_SE_DO_QUE:composito",
+        "exclusion_scope": "record_or_sense_not_lemma",
+        "members_omitted_focal": [
+          "compósito"
+        ]
       }
     ],
     "note": "Discovery / raw adjudication evidence — NOT validated vocabulary. Validated labels live only in validated_alt_labels; SKOS matches only in cili_exact/close/related."
   },
+  "stipulated_terms": [],
   "cili_exact": [],
   "cili_close": [],
   "cili_related": [],
@@ -1171,9 +1229,9 @@
     },
     {
       "cili": "i6556",
-      "role": "uf_onto_candidate",
+      "role": "exclude_sense",
       "key": "ontopt06:6214",
-      "note": "inventory only — not auto skos:exactMatch"
+      "note": "evidence only — not vocabulary CILI"
     },
     {
       "cili": "i36652",
@@ -1183,15 +1241,15 @@
     },
     {
       "cili": "i37400",
-      "role": "rt_candidate",
+      "role": "exclude_sense",
       "key": "ili-30-00378985-n",
-      "note": "inventory only — not auto skos:relatedMatch"
+      "note": "evidence only — not vocabulary CILI"
     },
     {
       "cili": "i59707",
-      "role": "exclude_sense",
+      "role": "rt_candidate",
       "key": "ili-30-04341686-n",
-      "note": "evidence only — not vocabulary CILI"
+      "note": "inventory only — not auto skos:relatedMatch"
     },
     {
       "cili": "i72162",
@@ -1225,9 +1283,9 @@
     },
     {
       "cili": "i63671",
-      "role": "exclude_sense",
+      "role": "rt_candidate",
       "key": "ili-30-05076472-n",
-      "note": "evidence only — not vocabulary CILI"
+      "note": "inventory only — not auto skos:relatedMatch"
     },
     {
       "cili": "i70172",
@@ -1345,12 +1403,12 @@
     },
     {
       "cili": "i6556",
-      "role": "rt_candidate",
+      "role": "exclude_sense",
       "key": "pwn30-01199083-a",
-      "note": "inventory only — not auto skos:relatedMatch"
+      "note": "evidence only — not vocabulary CILI"
     }
   ],
   "mapping_status": "no_validated_cili",
   "skos_policy": "SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.",
-  "generated": "2026-08-04T21:45:49+00:00"
+  "generated": "2026-08-17T05:35:25+00:00"
 }
