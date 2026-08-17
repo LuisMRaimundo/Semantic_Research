@@ -189,18 +189,26 @@ def build_class_concept_graph(ws: ClassWorkspace) -> dict[str, Any]:
         if decision == "exclude":
             # Exclusion targets the sense/record, not every lemma token in the group
             row["exclusion_scope"] = "record_or_sense_not_lemma"
-            validated_skip = {
-                normalize_word(x)
-                for x in (cm.get("validated_alt_labels") or [])
-                if x
-            }
-            validated_skip |= focus
-            row["members"] = [
-                m for m in members if normalize_word(m) not in validated_skip
-            ]
-            row["members_omitted_focal"] = [
-                m for m in members if normalize_word(m) in validated_skip
-            ]
+            if source == "papel":
+                focal = sense.get("papel_focal")
+                args = list(sense.get("papel_arguments") or [])
+                if focal:
+                    row["members"] = [pretty_word(focal)]
+                row["papel_arguments"] = [pretty_word(a) for a in args if a]
+                row["members_omitted_focal"] = []
+            else:
+                validated_skip = {
+                    normalize_word(x)
+                    for x in (cm.get("validated_alt_labels") or [])
+                    if x
+                }
+                validated_skip |= focus
+                row["members"] = [
+                    m for m in members if normalize_word(m) not in validated_skip
+                ]
+                row["members_omitted_focal"] = [
+                    m for m in members if normalize_word(m) in validated_skip
+                ]
         if decision == "UF":
             if source == "onto":
                 # Same focus-stem filter applied by _vocab_alt_labels at

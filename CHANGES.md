@@ -22,6 +22,11 @@ Branch `fix/adjudication-export`, um commit por defeito (D7→D5→D8→D2→D3�
 - **Antes:** os dois argumentos do triplo iam para `members` sem papel nem direcção (HIPERONIMO_DE ≡ sinónimos).
 - **Depois:** cada bucket declara `papel_focal`, `papel_arguments`, `papel_direction`; `members` só inclui os argumentos em SINONIMIA.
 
+## D3 — exclude PAPEL e termoRelacionado colapsado
+- **Ficheiros:** `semantic/export_blocks.py`, `semantic/concept_model.py`
+- **Antes:** o filtro «omitir o lema focal» invertia triplos PAPEL (retinha `material`); `termoRelacionado` repetia o mesmo termo por membro.
+- **Depois:** exclude PAPEL conserva `papel_focal` e lista `papel_arguments` à parte; RT colapsa por forma, com `keys`/`ilis` de todas as origens.
+
 # CHANGES — fix pass pós-auditoria de rastreabilidade (2026-08-07)
 
 Branch `fix/traceability-pass`, um commit por item. Suite de testes corrida

@@ -8,6 +8,7 @@ from pathlib import Path
 from typing import Any, Optional
 
 from .decisions import EVIDENCIA, VOCABULARIO, load_decisions
+from .normalize import normalize_word
 from .workspace import ClassWorkspace
 
 EVIDENCE_NOTE = (
@@ -16,6 +17,31 @@ EVIDENCE_NOTE = (
 
 _ANTONYM_RE = re.compile(r"material de contraste\s*\(antonym\)", re.I)
 _SIMILAR_RE = re.compile(r"vizinho\s+similar_to", re.I)
+
+
+def _collapse_relacionados(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Uma entrada por termo (forma normalizada); proveniência em keys/ilis."""
+    groups: dict[str, dict[str, Any]] = {}
+    display: dict[str, str] = {}
+    for row in rows:
+        termo = row.get("termo") or ""
+        n = normalize_word(str(termo))
+        if not n:
+            continue
+        if n not in groups:
+            display[n] = str(termo)
+            groups[n] = {**row, "termo": str(termo), "keys": [], "ilis": []}
+        g = groups[n]
+        k = row.get("key")
+        if k and k not in g["keys"]:
+            g["keys"].append(k)
+        ili = row.get("ili")
+        if ili and ili not in g["ilis"]:
+            g["ilis"].append(ili)
+    return [
+        groups[n]
+        for n in sorted(groups, key=lambda x: display[x].casefold())
+    ]
 
 
 def _ili_anchor(decisions: dict[str, Any], meta: dict[str, Any]) -> list[str]:
@@ -226,31 +252,51 @@ def build_export_blocks(ws: ClassWorkspace) -> dict[str, Any]:
                     "skos": "tex:termoRelacionado",
                 })
         elif decision == "exclude":
-            # Sense/record exclusion — omit validated/focal lemmas from member lists
-            cm_ex = meta.get("concept_mapping") if isinstance(
-                meta.get("concept_mapping"), dict
-            ) else {}
-            skip = {
-                (x or "").casefold()
-                for x in (cm_ex.get("validated_alt_labels") or [])
-            }
-            for stem in meta.get("focus_stems") or []:
-                skip.add((stem or "").casefold())
-            skip.add((pref or "").casefold())
-            members = [
-                m for m in (base.get("membros") or [])
-                if (m or "").casefold() not in skip
-            ]
-            omitted = [
-                m for m in (base.get("membros") or [])
-                if (m or "").casefold() in skip
-            ]
-            excludes.append({
-                **base,
-                "membros": members,
-                "members_omitted_focal": omitted,
-                "exclusion_scope": "record_or_sense_not_lemma",
-            })
+            src_ex = (s.get("source") or "").lower()
+            if src_ex == "papel":
+                # O filtro «omitir o lema focal» inverte o triplo PAPEL
+                # ([compósito, material] → material). Conservar o focal.
+                focal = s.get("papel_focal")
+                args = list(s.get("papel_arguments") or [])
+                if focal:
+                    members = [focal]
+                else:
+                    members = list(base.get("membros") or [])
+                excludes.append({
+                    **base,
+                    "membros": members,
+                    "papel_focal": focal,
+                    "papel_arguments": args,
+                    "papel_direction": s.get("papel_direction") or "",
+                    "members_omitted_focal": [],
+                    "exclusion_scope": "record_or_sense_not_lemma",
+                })
+            else:
+                # Sense/record exclusion — omit validated/focal lemmas
+                cm_ex = meta.get("concept_mapping") if isinstance(
+                    meta.get("concept_mapping"), dict
+                ) else {}
+                skip = {
+                    (x or "").casefold()
+                    for x in (cm_ex.get("validated_alt_labels") or [])
+                }
+                for stem in meta.get("focus_stems") or []:
+                    skip.add((stem or "").casefold())
+                skip.add((pref or "").casefold())
+                members = [
+                    m for m in (base.get("membros") or [])
+                    if (m or "").casefold() not in skip
+                ]
+                omitted = [
+                    m for m in (base.get("membros") or [])
+                    if (m or "").casefold() in skip
+                ]
+                excludes.append({
+                    **base,
+                    "membros": members,
+                    "members_omitted_focal": omitted,
+                    "exclusion_scope": "record_or_sense_not_lemma",
+                })
         elif decision == "atributo":
             atributos.append({**base, "eixo_vertente": axis})
         elif decision == "oposicao":
@@ -302,6 +348,7 @@ def build_export_blocks(ws: ClassWorkspace) -> dict[str, Any]:
             })
 
     auto = _collect_auto_signals(ws)
+    relacionados = _collapse_relacionados(relacionados)
 
     # If concept_mapping.validated_alt_labels is set, publish only those alts
     cm = meta.get("concept_mapping") if isinstance(meta.get("concept_mapping"), dict) else {}
