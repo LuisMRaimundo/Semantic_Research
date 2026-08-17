@@ -8,6 +8,7 @@ from pathlib import Path
 from typing import Any, Optional
 
 from .decisions import EVIDENCIA, VOCABULARIO, load_decisions
+from .normalize import normalize_word
 from .workspace import ClassWorkspace
 
 EVIDENCE_NOTE = (
@@ -16,6 +17,31 @@ EVIDENCE_NOTE = (
 
 _ANTONYM_RE = re.compile(r"material de contraste\s*\(antonym\)", re.I)
 _SIMILAR_RE = re.compile(r"vizinho\s+similar_to", re.I)
+
+
+def _collapse_relacionados(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Uma entrada por termo (forma normalizada); proveniência em keys/ilis."""
+    groups: dict[str, dict[str, Any]] = {}
+    display: dict[str, str] = {}
+    for row in rows:
+        termo = row.get("termo") or ""
+        n = normalize_word(str(termo))
+        if not n:
+            continue
+        if n not in groups:
+            display[n] = str(termo)
+            groups[n] = {**row, "termo": str(termo), "keys": [], "ilis": []}
+        g = groups[n]
+        k = row.get("key")
+        if k and k not in g["keys"]:
+            g["keys"].append(k)
+        ili = row.get("ili")
+        if ili and ili not in g["ilis"]:
+            g["ilis"].append(ili)
+    return [
+        groups[n]
+        for n in sorted(groups, key=lambda x: display[x].casefold())
+    ]
 
 
 def _ili_anchor(decisions: dict[str, Any], meta: dict[str, Any]) -> list[str]:
@@ -226,31 +252,51 @@ def build_export_blocks(ws: ClassWorkspace) -> dict[str, Any]:
                     "skos": "tex:termoRelacionado",
                 })
         elif decision == "exclude":
-            # Sense/record exclusion — omit validated/focal lemmas from member lists
-            cm_ex = meta.get("concept_mapping") if isinstance(
-                meta.get("concept_mapping"), dict
-            ) else {}
-            skip = {
-                (x or "").casefold()
-                for x in (cm_ex.get("validated_alt_labels") or [])
-            }
-            for stem in meta.get("focus_stems") or []:
-                skip.add((stem or "").casefold())
-            skip.add((pref or "").casefold())
-            members = [
-                m for m in (base.get("membros") or [])
-                if (m or "").casefold() not in skip
-            ]
-            omitted = [
-                m for m in (base.get("membros") or [])
-                if (m or "").casefold() in skip
-            ]
-            excludes.append({
-                **base,
-                "membros": members,
-                "members_omitted_focal": omitted,
-                "exclusion_scope": "record_or_sense_not_lemma",
-            })
+            src_ex = (s.get("source") or "").lower()
+            if src_ex == "papel":
+                # O filtro «omitir o lema focal» inverte o triplo PAPEL
+                # ([compósito, material] → material). Conservar o focal.
+                focal = s.get("papel_focal")
+                args = list(s.get("papel_arguments") or [])
+                if focal:
+                    members = [focal]
+                else:
+                    members = list(base.get("membros") or [])
+                excludes.append({
+                    **base,
+                    "membros": members,
+                    "papel_focal": focal,
+                    "papel_arguments": args,
+                    "papel_direction": s.get("papel_direction") or "",
+                    "members_omitted_focal": [],
+                    "exclusion_scope": "record_or_sense_not_lemma",
+                })
+            else:
+                # Sense/record exclusion — omit validated/focal lemmas
+                cm_ex = meta.get("concept_mapping") if isinstance(
+                    meta.get("concept_mapping"), dict
+                ) else {}
+                skip = {
+                    (x or "").casefold()
+                    for x in (cm_ex.get("validated_alt_labels") or [])
+                }
+                for stem in meta.get("focus_stems") or []:
+                    skip.add((stem or "").casefold())
+                skip.add((pref or "").casefold())
+                members = [
+                    m for m in (base.get("membros") or [])
+                    if (m or "").casefold() not in skip
+                ]
+                omitted = [
+                    m for m in (base.get("membros") or [])
+                    if (m or "").casefold() in skip
+                ]
+                excludes.append({
+                    **base,
+                    "membros": members,
+                    "members_omitted_focal": omitted,
+                    "exclusion_scope": "record_or_sense_not_lemma",
+                })
         elif decision == "atributo":
             atributos.append({**base, "eixo_vertente": axis})
         elif decision == "oposicao":
@@ -302,11 +348,23 @@ def build_export_blocks(ws: ClassWorkspace) -> dict[str, Any]:
             })
 
     auto = _collect_auto_signals(ws)
+    relacionados = _collapse_relacionados(relacionados)
 
     # If concept_mapping.validated_alt_labels is set, publish only those alts
     cm = meta.get("concept_mapping") if isinstance(meta.get("concept_mapping"), dict) else {}
     validated = [str(x).strip() for x in (cm.get("validated_alt_labels") or []) if str(x).strip()]
+    alt_labels_suppressed: list[dict[str, Any]] = []
     if validated:
+        kept_norms = {normalize_word(v) for v in validated}
+        alt_labels_suppressed = [
+            {
+                "fonte": r.get("fonte"),
+                "key": r.get("key"),
+                "termo": r.get("termo"),
+            }
+            for r in alt_labels
+            if normalize_word(str(r.get("termo") or "")) not in kept_norms
+        ]
         # One row per validated form (no Onto-group duplication)
         alt_labels = [{
             "termo": v,
@@ -325,6 +383,7 @@ def build_export_blocks(ws: ClassWorkspace) -> dict[str, Any]:
         # Audit only: members removed from altLabel by the Onto focus-stem
         # filter — recorded, never silently discarded.
         "members_dropped_focus_filter": dropped_focus_filter,
+        "alt_labels_suppressed_by_validated": alt_labels_suppressed,
     }
     evidencia = {
         "nota": EVIDENCE_NOTE,
@@ -414,6 +473,15 @@ def render_blocks_markdown(blocks: dict[str, Any]) -> str:
         f"- **termoRelacionado** (`tex:termoRelacionado` ← RT): "
         f"{', '.join(rts) or '—'}"
     )
+    suppressed = v.get("alt_labels_suppressed_by_validated") or []
+    if suppressed:
+        bits = ", ".join(
+            f"{r.get('termo')} ({r.get('fonte') or '—'}:{r.get('key') or '—'})"
+            for r in suppressed if r.get("termo")
+        )
+        ap(
+            f"- **altLabel suprimidos por validated_alt_labels:** {bits}"
+        )
     ap("")
     ap("## Evidência de delimitação (não serializada)")
     ap("")
@@ -513,13 +581,21 @@ def write_export_blocks(
         json.dumps(blocks, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
     md_path.write_text(render_blocks_markdown(blocks), encoding="utf-8")
-    return {"json": str(json_path), "md": str(md_path), "t12_ok": ok}
+    n_sup = len(
+        (blocks.get("vocabulario") or {}).get("alt_labels_suppressed_by_validated") or []
+    )
+    return {
+        "json": str(json_path),
+        "md": str(md_path),
+        "t12_ok": ok,
+        "n_alt_labels_suppressed": n_sup,
+    }
 
 
 def append_t12_to_concordance(
     json_path: Path, blocks_info: dict[str, Any]
 ) -> None:
-    """Attach T12 to the LexWarrant concordance JSON (+ MD assertions table)."""
+    """Anexa T12 ao JSON do concordance e reescreve a secção Markdown."""
     if not json_path.exists():
         return
     try:
@@ -546,16 +622,8 @@ def append_t12_to_concordance(
     json_path.write_text(
         json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
-    md_path = json_path.with_suffix(".md")
-    if not md_path.exists():
-        return
-    text = md_path.read_text(encoding="utf-8")
-    if "| T12 |" in text:
-        return
-    mark = "PASS ✅" if t12["passed"] else "FAIL ❌"
-    line = f"| T12 | {t12['text']} | {mark} | {t12['evidence']} |\n"
-    if "## Asserções" in text:
-        md_path.write_text(text.rstrip() + "\n" + line, encoding="utf-8")
+    from .assertions import rewrite_assertions_block
+    rewrite_assertions_block(json_path)
 
 
 def skos_serializable_terms(blocks: dict[str, Any]) -> set[str]:

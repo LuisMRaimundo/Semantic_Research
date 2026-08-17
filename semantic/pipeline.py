@@ -478,6 +478,11 @@ def run_class(class_id: str, policy: Optional[str] = None,
             from .reconcile import reconcile_class
             from .termos_pesquisa import write_termos_pesquisa
             blocks = write_export_blocks(ws, dest_dir=ws.final_results)
+            n_sup = int(blocks.get("n_alt_labels_suppressed") or 0)
+            if n_sup:
+                summary.setdefault("warnings", []).append(
+                    f"{n_sup} candidatos UF suprimidos por validated_alt_labels"
+                )
             # Attach T12 on every concordance JSON copy (FINAL__, short name, out/).
             t12_targets = {
                 Path(published["json"]),
@@ -494,6 +499,14 @@ def run_class(class_id: str, policy: Optional[str] = None,
                     summary["concept_model"] = publish_class_concept(
                         ws.class_id, dest_dir=ws.final_results,
                     )
+                    n_pend = int(
+                        (summary["concept_model"] or {}).get("n_pending_ili") or 0
+                    )
+                    if n_pend:
+                        summary.setdefault("warnings", []).append(
+                            f"{n_pend} pares ILI humanos divergentes do CILI "
+                            "por adjudicar"
+                        )
                     # also keep coverage next to CONCEPT
                     from .ili_coverage import write_coverage_report as _cov
                     _cov(ws, dest=ws.final_results)
@@ -516,6 +529,22 @@ def run_class(class_id: str, policy: Optional[str] = None,
                     }
             except Exception as exc:  # noqa: BLE001
                 summary.setdefault("errors", []).append(f"T15: {exc}")
+            try:
+                from .concept_model import append_t16_to_concordance, build_t16
+                cpath = ws.final_results / "CONCEPT.json"
+                if cpath.exists():
+                    t16 = build_t16(
+                        json.loads(cpath.read_text(encoding="utf-8"))
+                    )
+                    for target in t12_targets:
+                        if target.exists():
+                            append_t16_to_concordance(target, t16)
+                    summary["t16"] = {
+                        "passed": t16["passed"],
+                        "evidence": t16["evidence"],
+                    }
+            except Exception as exc:  # noqa: BLE001
+                summary.setdefault("errors", []).append(f"T16: {exc}")
             engines_ran = {e for e in engines if e in ("pulo", "onto")}
             exec_meta = {
                 "engines": list(engines),
@@ -591,6 +620,8 @@ def run_class(class_id: str, policy: Optional[str] = None,
                 note_bits.append(
                     f"{summary['pulo_signals']} PULO signals sidelined in out/"
                 )
+            for w in summary.get("warnings") or []:
+                note_bits.append(f"AVISO: {w}")
             summary["note"] = " · ".join(note_bits)
         except Exception as exc:  # noqa: BLE001
             summary["errors"].append(f"LexWarrant: {exc}")

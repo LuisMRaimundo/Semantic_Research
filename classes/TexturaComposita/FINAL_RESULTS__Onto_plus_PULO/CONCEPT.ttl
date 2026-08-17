@@ -6,7 +6,7 @@
 @prefix sr: <http://semantic-research.local/concept/> .
 
 # Concept model (plain SKOS, not SKOS-XL) — TexturaComposita
-# generated 2026-08-04T21:45:49+00:00
+# generated 2026-08-17T05:35:25+00:00
 # policy: SKOS matches only from concept_mapping adjudication; discovery_evidence.uf/rt_candidates are not validated altLabels; excludes → sr:excludedCandidate (sense scope, not every lemma); pref/alt/hidden mutually disjoint.
 
 sr:TexturaComposita a owl:Class, skos:Concept ;
@@ -30,11 +30,8 @@ sr:TexturaComposita a owl:Class, skos:Concept ;
     sr:excludedCandidate [ rdf:value "formação"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "o ato de formar ou estabelecer algo " ] ;
     sr:excludedCandidate [ rdf:value "organização"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "o ato de formar ou estabelecer algo " ] ;
     sr:excludedCandidate [ rdf:value "fundação"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "o ato de formar ou estabelecer algo " ] ;
-    sr:excludedCandidate [ rdf:value "composição"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "uma coisa construída; uma entidade complexa construída de muitas partes " ] ;
-    sr:excludedCandidate [ rdf:value "contextura"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "uma coisa construída; uma entidade complexa construída de muitas partes " ] ;
-    sr:excludedCandidate [ rdf:value "edifício"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "uma coisa construída; uma entidade complexa construída de muitas partes " ] ;
-    sr:excludedCandidate [ rdf:value "estrutura"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "uma coisa construída; uma entidade complexa construída de muitas partes " ] ;
-    sr:excludedCandidate [ rdf:value "construção"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "uma coisa construída; uma entidade complexa construída de muitas partes " ] ;
+    sr:excludedCandidate [ rdf:value "combinação"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "o ato de combinar as coisas para formar um todo novo " ] ;
+    sr:excludedCandidate [ rdf:value "composição"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "o ato de combinar as coisas para formar um todo novo " ] ;
     sr:excludedCandidate [ rdf:value "composição"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "instruções para fazer algo " ] ;
     sr:excludedCandidate [ rdf:value "receita"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "instruções para fazer algo " ] ;
     sr:excludedCandidate [ rdf:value "fórmula"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "instruções para fazer algo " ] ;
@@ -42,7 +39,6 @@ sr:TexturaComposita a owl:Class, skos:Concept ;
     sr:excludedCandidate [ rdf:value "escritura"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "o ato de criar obras escritas " ] ;
     sr:excludedCandidate [ rdf:value "escrita"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "o ato de criar obras escritas " ] ;
     sr:excludedCandidate [ rdf:value "composição"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "criação musical " ] ;
-    sr:excludedCandidate [ rdf:value "composição"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "a propriedade espacial resultante do acordo das partes em relação às outras e a toda " ] ;
     sr:excludedCandidate [ rdf:value "relatório"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "um ensaio (especialmente um escrito como uma atribuição) " ] ;
     sr:excludedCandidate [ rdf:value "redação"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "um ensaio (especialmente um escrito como uma atribuição) " ] ;
     sr:excludedCandidate [ rdf:value "tema"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "um ensaio (especialmente um escrito como uma atribuição) " ] ;
@@ -115,6 +111,19 @@ sr:TexturaComposita a owl:Class, skos:Concept ;
     sr:excludedCandidate [ rdf:value "constante"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "inabalável em devoção ao amigo ou voto ou causa " ] ;
     sr:excludedCandidate [ rdf:value "constante"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "um número que representa uma quantidade assumido como tendo um valor fixo num contexto matemático especificado " ] ;
     sr:excludedCandidate [ rdf:value "constante"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "uma quantidade que não varia " ] ;
+    sr:excludedCandidate [ rdf:value "amalgamado"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "que consiste em uma variedade aleatória de diferentes tipos " ] ;
+    sr:excludedCandidate [ rdf:value "cabrito"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "que consiste em uma variedade aleatória de diferentes tipos " ] ;
+    sr:excludedCandidate [ rdf:value "diverso"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "que consiste em uma variedade aleatória de diferentes tipos " ] ;
+    sr:excludedCandidate [ rdf:value "híbrido"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "que consiste em uma variedade aleatória de diferentes tipos " ] ;
+    sr:excludedCandidate [ rdf:value "mesclado"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "que consiste em uma variedade aleatória de diferentes tipos " ] ;
+    sr:excludedCandidate [ rdf:value "mestiço"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "que consiste em uma variedade aleatória de diferentes tipos " ] ;
+    sr:excludedCandidate [ rdf:value "misto"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "que consiste em uma variedade aleatória de diferentes tipos " ] ;
+    sr:excludedCandidate [ rdf:value "misturado"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "que consiste em uma variedade aleatória de diferentes tipos " ] ;
+    sr:excludedCandidate [ rdf:value "mulato"@pt-PT ; dct:source "pulo" ; sr:exclusionReason "que consiste em uma variedade aleatória de diferentes tipos " ] ;
+    sr:excludedCandidate [ rdf:value "material"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL HIPERONIMO_DE (HIPERONIMIA)" ] ;
+    sr:excludedCandidate [ rdf:value "utilidade"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL PARTE_DE_ALGO_COM_PROPRIEDADE (PARTE)" ] ;
+    sr:excludedCandidate [ rdf:value "substância"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL PROPRIEDADE_DE_ALGO_PARTE_DE (PARTE)" ] ;
+    sr:excludedCandidate [ rdf:value "ter diverso utilidade"@pt-PT ; dct:source "papel" ; sr:exclusionReason "PAPEL DIZ_SE_DO_QUE (REFERENTE)" ] ;
     sr:excludedCili [ sr:cili <http://ili.globalwordnet.org/ili/i114921> ; sr:exclusionReason "aceção química: chemical compound" ] ;
     sr:excludedCili [ sr:cili <http://ili.globalwordnet.org/ili/i97733> ; sr:exclusionReason "aceção biológica: decay/decomposition" ] ;
-    rdfs:comment "UF senses=12; RT=11; exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .
+    rdfs:comment "discovery evidence (candidates, not SKOS relations): UF senses=9; RT senses=7. validated mappings: exactCILI=0; closeCILI=0; relatedCILI=0; mapping=no_validated_cili"@en .

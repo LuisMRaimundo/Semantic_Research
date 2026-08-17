@@ -276,6 +276,32 @@ def run_doctor(*, deep: bool = False) -> DoctorReport:
                     "db_rows:PAPEL", False, str(exc), "warn",
                 ))
 
+    try:
+        from .compile_specs import axis_terms_exclusive_to_exclude
+        from .decisions import load_decisions
+        from .workspace import ClassWorkspace
+
+        for cid in ClassWorkspace.list_classes():
+            try:
+                ws = ClassWorkspace.open(cid)
+                bad = axis_terms_exclusive_to_exclude(
+                    ws.load_meta(), load_decisions(ws.decisions_json)
+                )
+            except Exception as exc:  # noqa: BLE001
+                report.checks.append(Check(
+                    f"axis_terms:{cid}", False, str(exc), "warn",
+                ))
+                continue
+            if bad:
+                report.checks.append(Check(
+                    f"axis_terms:{cid}",
+                    False,
+                    f"termos só de acepções exclude: {bad[:16]}",
+                    "warn",
+                ))
+    except Exception as exc:  # noqa: BLE001
+        report.checks.append(Check("axis_terms", False, str(exc), "warn"))
+
     return report
 
 

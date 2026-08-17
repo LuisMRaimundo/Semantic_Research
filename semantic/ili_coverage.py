@@ -31,7 +31,19 @@ def _is_cili_id(s: str) -> bool:
 
 
 def _is_pwn30ish(s: str) -> bool:
-    return "30-" in s or (len(s) >= 10 and s[-2] == "-" and s[-1].isalpha())
+    """Offset PULO/OMW? Prefixos conhecidos primeiro; a forma só como fallback.
+
+    Qualquer id com ≥10 caracteres terminado em ``-<letra>`` (incl. ``oewn-…-n``)
+    caía na heurística de forma e era classificado como PULO. Os prefixos
+    ``oewn-``, ``ili-30-``, ``pwn30-`` e ``por-`` resolvem-se antes disso.
+    """
+    t = (s or "").strip()
+    low = t.casefold()
+    if low.startswith("oewn-"):
+        return False
+    if low.startswith(("ili-30-", "pwn30-", "por-")):
+        return True
+    return "30-" in t or (len(t) >= 10 and t[-2] == "-" and t[-1].isalpha())
 
 
 def classify_identifiers(identifiers: list[str]) -> dict[str, Any]:

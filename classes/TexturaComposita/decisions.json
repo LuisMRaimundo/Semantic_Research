@@ -306,9 +306,9 @@
         "vasto",
         "veiro"
       ],
-      "decision": "RT",
+      "decision": "exclude",
       "note": "",
-      "destino": "vocabulario"
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -406,9 +406,9 @@
         "composto",
         "indiscriminado"
       ],
-      "decision": "RT",
+      "decision": "exclude",
       "note": "",
-      "destino": "vocabulario"
+      "destino": "evidencia"
     },
     {
       "source": "onto",
@@ -511,9 +511,9 @@
         "misturado",
         "raiado"
       ],
-      "decision": "UF",
+      "decision": "exclude",
       "note": "",
-      "destino": "vocabulario",
+      "destino": "evidencia",
       "ili_source": "onto_ili_accepted"
     },
     {
@@ -529,7 +529,7 @@
         "dissimilar",
         "heterogéneo"
       ],
-      "decision": "UF",
+      "decision": "RT",
       "note": "",
       "destino": "vocabulario"
     },
@@ -560,7 +560,7 @@
         "dissimilar",
         "heterogéneo"
       ],
-      "decision": "UF",
+      "decision": "RT",
       "note": "",
       "destino": "vocabulario"
     },
@@ -579,7 +579,7 @@
         "heterogéneo",
         "heterogêneo"
       ],
-      "decision": "UF",
+      "decision": "RT",
       "note": "",
       "destino": "vocabulario"
     },
@@ -1072,9 +1072,9 @@
         "combinação",
         "composição"
       ],
-      "decision": "RT",
+      "decision": "exclude",
       "note": "",
-      "destino": "vocabulario"
+      "destino": "evidencia"
     },
     {
       "source": "pulo",
@@ -1179,9 +1179,9 @@
       "members": [
         "composição"
       ],
-      "decision": "exclude",
+      "decision": "RT",
       "note": "",
-      "destino": "evidencia"
+      "destino": "vocabulario"
     },
     {
       "source": "pulo",
@@ -1527,9 +1527,9 @@
         "misturado",
         "mulato"
       ],
-      "decision": "RT",
+      "decision": "exclude",
       "note": "",
-      "destino": "vocabulario"
+      "destino": "evidencia"
     },
     {
       "source": "papel",
@@ -1542,9 +1542,9 @@
         "compósito",
         "material"
       ],
-      "decision": "UF",
+      "decision": "exclude",
       "note": "discovery: PAPEL 3.5",
-      "destino": "vocabulario"
+      "destino": "evidencia"
     },
     {
       "source": "papel",
@@ -1557,9 +1557,9 @@
         "compósito",
         "utilidade"
       ],
-      "decision": "RT",
+      "decision": "exclude",
       "note": "discovery: PAPEL 3.5",
-      "destino": "vocabulario"
+      "destino": "evidencia"
     },
     {
       "source": "papel",
@@ -1572,9 +1572,9 @@
         "compósito",
         "substância"
       ],
-      "decision": "UF",
+      "decision": "exclude",
       "note": "discovery: PAPEL 3.5",
-      "destino": "vocabulario"
+      "destino": "evidencia"
     },
     {
       "source": "papel",
@@ -1587,9 +1587,9 @@
         "compósito",
         "ter diverso utilidade"
       ],
-      "decision": "RT",
+      "decision": "exclude",
       "note": "discovery: PAPEL 3.5",
-      "destino": "vocabulario"
+      "destino": "evidencia"
     },
     {
       "source": "papel",

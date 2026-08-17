@@ -18,6 +18,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from semantic import decisions as decmod
+from semantic.meta_box import apply_meta_box, format_meta_box
 from semantic.normalize import normalize_word
 from semantic.pipeline import run_class, search_and_seed
 from semantic.settings import CLASSES_DIR, load_config
@@ -65,8 +66,8 @@ ORDEM DE TRABALHO (numerada — igual ao checklist do painel direito)
 5 · JUNÇÃO ILI  (automática — CILI)
    Sem ecrã de decisão. No Run, OEWN↔PULO resolve-se só pela tabela
    CILI (ili-map). Pares sem CILI ficam sem âncora partilhada.
-   Mapeamentos humanos antigos: confirmados ∩ CILI; divergentes só
-   no relatório ili_migration_report (não aplicados).
+   Mapeamentos humanos antigos: confirmados ∩ CILI; divergentes
+   ficam em CONCEPT.pending_ili_adjudication até adjudicação.
 
 6 · RUN
    Botão «6 · ▶ Run»: compila decisões, corre PULO (+ Onto descoberta),
@@ -345,7 +346,7 @@ class Workbench(tk.Tk):
         ttk.Label(right, text="Meta (axis / pref label)", font=("", 9, "bold")).pack(
             anchor="w"
         )
-        self.meta_box = scrolledtext.ScrolledText(right, height=5, wrap="word")
+        self.meta_box = scrolledtext.ScrolledText(right, height=10, wrap="word")
         self.meta_box.pack(fill="x", pady=(0, 6))
 
         runrow = ttk.Frame(right)
@@ -707,12 +708,7 @@ class Workbench(tk.Tk):
         self._render_steps(ws)
         meta = ws.load_meta()
         self.meta_box.delete("1.0", "end")
-        self.meta_box.insert(
-            "1.0",
-            f"pref_label: {meta.get('pref_label', '')}\n"
-            f"axis: {meta.get('axis', '')}\n"
-            f"focus_stems: {', '.join(meta.get('focus_stems') or [])}\n",
-        )
+        self.meta_box.insert("1.0", format_meta_box(meta))
         self._render_senses()
         st = ws.status()
         self.status_var.set(
@@ -1054,17 +1050,9 @@ class Workbench(tk.Tk):
         ws = self._ws()
         if not ws:
             return
-        # persist meta edits
+        # persist meta edits (blocos chave: + continuação indentada)
         text = self.meta_box.get("1.0", "end")
-        meta = ws.load_meta()
-        for line in text.splitlines():
-            if line.startswith("pref_label:"):
-                meta["pref_label"] = line.split(":", 1)[1].strip()
-            elif line.startswith("axis:"):
-                meta["axis"] = line.split(":", 1)[1].strip()
-            elif line.startswith("focus_stems:"):
-                raw = line.split(":", 1)[1].strip()
-                meta["focus_stems"] = [x.strip() for x in raw.split(",") if x.strip()]
+        meta, meta_warns = apply_meta_box(ws.load_meta(), text)
         ws.save_meta(meta)
 
         # Include edits made under other filters this session, not only the
@@ -1082,6 +1070,8 @@ class Workbench(tk.Tk):
         msg = "Decisions saved."
         if migrated:
             msg += " (migração contraste→oposicao gravada; .bak-AAAAMMDD criado)"
+        if meta_warns:
+            msg += " · " + " · ".join(meta_warns)
         self.status_var.set(msg)
         self._load_class()
 

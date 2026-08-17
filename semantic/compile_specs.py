@@ -20,22 +20,59 @@ _ENGINE_TERM = frozenset({"UF", "RT", "BT", "NT"})
 _RANK = {"UF": 2, "RT": 1}
 
 
-def _axis_terms(meta: dict, decisions: dict) -> list[str]:
-    existing = [fold(t) for t in meta.get("axis_terms") or []]
-    if existing:
-        return existing
+def _derive_axis_terms(meta: dict, decisions: dict) -> list[str]:
+    """focus_stems + membros das acepções actualmente UF/RT."""
     stems = [fold(s) for s in meta.get("focus_stems") or []]
     for s in decisions.get("senses", []):
         if (s.get("decision") or "").upper() in ("UF", "RT"):
             for m in s.get("members") or []:
                 stems.append(fold(m))
-    seen = set()
-    out = []
+    seen: set[str] = set()
+    out: list[str] = []
     for t in stems:
         if t and t not in seen:
             seen.add(t)
             out.append(t)
     return out
+
+
+def axis_terms_exclusive_to_exclude(meta: dict, decisions: dict) -> list[str]:
+    """Termos de ``axis_terms`` que só ocorrem em acepções exclude."""
+    axis = {fold(t) for t in meta.get("axis_terms") or [] if t}
+    live = {fold(s) for s in meta.get("focus_stems") or [] if s}
+    for s in decisions.get("senses") or []:
+        if (s.get("decision") or "").upper() in ("UF", "RT"):
+            for m in s.get("members") or []:
+                live.add(fold(m))
+    exclusive: list[str] = []
+    seen: set[str] = set()
+    for s in decisions.get("senses") or []:
+        if (s.get("decision") or "").upper() != "EXCLUDE":
+            continue
+        for m in s.get("members") or []:
+            n = fold(m)
+            if n and n in axis and n not in live and n not in seen:
+                seen.add(n)
+                exclusive.append(n)
+    return exclusive
+
+
+def _axis_terms(
+    meta: dict,
+    decisions: dict,
+    ws: Optional[ClassWorkspace] = None,
+) -> list[str]:
+    """Deriva axis_terms a cada compilação, salvo ``axis_terms_locked``."""
+    derived = _derive_axis_terms(meta, decisions)
+    existing = [fold(t) for t in meta.get("axis_terms") or []]
+    if meta.get("axis_terms_locked"):
+        return existing
+    if existing != derived:
+        meta["axis_terms_previous"] = list(existing)
+        meta["axis_terms"] = list(derived)
+        if ws is not None:
+            ws.save_meta(meta)
+    return derived
 
 
 def _derive_adjudication_from_senses(
@@ -214,7 +251,7 @@ def compile_pulo_spec(ws: ClassWorkspace) -> dict[str, Any]:
         "pref_label": meta.get("pref_label") or ws.class_id,
         "axis": meta.get("axis") or "",
         "focus_stems": list(meta.get("focus_stems") or []),
-        "axis_terms": _axis_terms(meta, dec),
+        "axis_terms": _axis_terms(meta, dec, ws=ws),
         "stage1_whitelist": whitelist,
         "dictionary_attestations": [],
         "manual_terms": manual,

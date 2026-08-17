@@ -196,6 +196,90 @@ class ExportBlocksTests(unittest.TestCase):
         self.assertIn("invariável", skos_serializable_terms(blocks))
         self.assertIn("invariável", evidence_terms(blocks))
 
+    def test_papel_exclude_keeps_focal_not_arguments(self):
+        """D3a — exclude PAPEL não inverte o triplo (não retém só o argumento)."""
+        dec = json.loads(self.ws.decisions_json.read_text(encoding="utf-8"))
+        dec["senses"].append({
+            "source": "papel",
+            "key": "papel35:HIPERONIMIA:HIPERONIMO_DE:composito",
+            "ili": None,
+            "members": ["compósito", "material"],
+            "papel_focal": "compósito",
+            "papel_arguments": ["material"],
+            "papel_direction": "focal_to_argument",
+            "decision": "exclude",
+            "gloss": "PAPEL HIPERONIMO_DE",
+            "note": "",
+        })
+        meta = self.ws.load_meta()
+        meta["pref_label"] = "compósito"
+        meta["focus_stems"] = ["compósito"]
+        self.ws.save_meta(meta)
+        self.ws.decisions_json.write_text(
+            json.dumps(dec, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+        )
+        blocks = build_export_blocks(self.ws)
+        papel_ex = [
+            r for r in blocks["evidencia_delimitacao"]["exclude"]
+            if (r.get("fonte") or "").lower() == "papel"
+        ]
+        self.assertEqual(len(papel_ex), 1)
+        self.assertEqual(papel_ex[0]["membros"], ["compósito"])
+        self.assertEqual(papel_ex[0]["papel_arguments"], ["material"])
+        self.assertNotIn("material", papel_ex[0]["membros"])
+
+    def test_termo_relacionado_collapses_by_form(self):
+        """D3b — uma entrada por termo, com todas as chaves de origem."""
+        dec = json.loads(self.ws.decisions_json.read_text(encoding="utf-8"))
+        dec["senses"].extend([
+            {
+                "source": "pulo",
+                "key": "ili-30-a-n",
+                "ili": "i1",
+                "members": ["composição", "estrutura"],
+                "decision": "RT",
+                "gloss": "g",
+                "note": "",
+            },
+            {
+                "source": "pulo",
+                "key": "ili-30-b-n",
+                "ili": "i2",
+                "members": ["composição", "constituição"],
+                "decision": "RT",
+                "gloss": "g",
+                "note": "",
+            },
+        ])
+        self.ws.decisions_json.write_text(
+            json.dumps(dec, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+        )
+        blocks = build_export_blocks(self.ws)
+        rts = blocks["vocabulario"]["termoRelacionado"]
+        terms = [r["termo"] for r in rts]
+        self.assertEqual(len(terms), len(set(t.casefold() for t in terms)))
+        self.assertEqual(terms, sorted(terms, key=str.casefold))
+        comp = next(r for r in rts if r["termo"] == "composição")
+        self.assertEqual(set(comp["keys"]), {"ili-30-a-n", "ili-30-b-n"})
+        self.assertEqual(set(comp["ilis"]), {"i1", "i2"})
+
+    def test_validated_alt_labels_records_suppressed_uf(self):
+        """D4 — candidatos UF substituídos por validated_alt_labels ficam auditados."""
+        meta = self.ws.load_meta()
+        meta["concept_mapping"] = {"validated_alt_labels": ["oficial"]}
+        self.ws.save_meta(meta)
+        blocks = build_export_blocks(self.ws)
+        alts = [r["termo"] for r in blocks["vocabulario"]["altLabel"]]
+        self.assertEqual(alts, ["oficial"])
+        suppressed = blocks["vocabulario"]["alt_labels_suppressed_by_validated"]
+        terms = {r["termo"] for r in suppressed}
+        self.assertIn("invariável", terms)
+        self.assertTrue(all(r.get("fonte") and r.get("key") for r in suppressed
+                            if r.get("termo") == "invariável"))
+        md = render_blocks_markdown(blocks)
+        self.assertIn("altLabel suprimidos por validated_alt_labels", md)
+        self.assertIn("invariável", md)
+
     def test_evidence_never_in_serialized_turtle(self):
         blocks = build_export_blocks(self.ws)
         ttl = _fake_turtle_from_bloco_a(blocks)

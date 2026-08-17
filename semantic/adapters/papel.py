@@ -128,6 +128,103 @@ def build_papel_sqlite(src_dir: Path, db_path: Path) -> dict[str, Any]:
     }
 
 
+def annotate_papel_bucket(bucket: dict[str, Any], query: str) -> dict[str, Any]:
+    """Marca focal / argumentos / direcção e restringe ``members``.
+
+    SINONIMIA: members = focal + argumentos (são de facto sinónimos).
+    Restantes grupos: members = só o focal; os outros ficam em
+    ``papel_arguments``. Se nenhum argumento coincidir com a consulta,
+    ``papel_focal`` é null e a direcção é ``unresolved`` — nunca se adivinha.
+    """
+    qn = normalize_word(query)
+    g = str((bucket.get("relations") or {}).get("papel_group") or "")
+    triples = list(bucket.pop("_triples", None) or [])
+    if not triples:
+        # Export antigo: só members planos. Recuperar focal/args pela consulta.
+        words: list[str] = []
+        for m in bucket.get("members") or []:
+            w = m.get("word") if isinstance(m, dict) else str(m)
+            if w:
+                words.append(w)
+        triples = []
+        for w in words:
+            if normalize_word(w) == qn:
+                triples.append((w, ""))
+            else:
+                triples.append(("", w))
+
+    focal: Optional[str] = None
+    arguments: list[str] = []
+    seen_args: set[str] = set()
+    dirs: list[str] = []
+
+    for w1, w2 in triples:
+        n1, n2 = normalize_word(w1), normalize_word(w2)
+        if n1 and n1 == qn:
+            focal = pretty_word(w1)
+            if n2:
+                dirs.append("focal_to_argument")
+            if n2 and n2 != qn and n2 not in seen_args:
+                seen_args.add(n2)
+                arguments.append(pretty_word(w2))
+        elif n2 and n2 == qn:
+            focal = pretty_word(w2)
+            if n1:
+                dirs.append("argument_to_focal")
+            if n1 and n1 != qn and n1 not in seen_args:
+                seen_args.add(n1)
+                arguments.append(pretty_word(w1))
+        else:
+            for w, n in ((w1, n1), (w2, n2)):
+                if n and n not in seen_args:
+                    seen_args.add(n)
+                    arguments.append(pretty_word(w))
+
+    if focal is None:
+        direction = "unresolved"
+    elif dirs and all(d == dirs[0] for d in dirs):
+        direction = dirs[0]
+    elif dirs:
+        direction = dirs[0]
+    else:
+        direction = "unresolved"
+
+    bucket["papel_focal"] = focal
+    bucket["papel_arguments"] = arguments
+    bucket["papel_direction"] = direction
+
+    if g.upper() == "SINONIMIA":
+        ordered = ([focal] if focal else []) + arguments
+        seen: set[str] = set()
+        members = []
+        for w in ordered:
+            n = normalize_word(w)
+            if n and n not in seen:
+                seen.add(n)
+                members.append({"word": w, "weight": 1.0})
+        bucket["members"] = members
+    else:
+        bucket["members"] = (
+            [{"word": focal, "weight": 1.0}] if focal else []
+        )
+    return bucket
+
+
+def upgrade_papel_export(export: dict[str, Any]) -> dict[str, Any]:
+    """Reaplica a estrutura argumental a um export PAPEL já gravado."""
+    query = ""
+    q = export.get("query")
+    if isinstance(q, dict):
+        query = str(q.get("query") or "")
+    elif isinstance(q, str):
+        query = q
+    out = dict(export)
+    out["synsets"] = [
+        annotate_papel_bucket(dict(s), query) for s in (export.get("synsets") or [])
+    ]
+    return out
+
+
 class PapelStore:
     """Read-only PAPEL index for discovery search."""
 
@@ -211,30 +308,14 @@ class PapelStore:
                     "gloss": f"PAPEL {rel} ({g})",
                     "members": [],
                     "relations": {"papel_rel": rel, "papel_group": g},
-                    "_seen": set(),
+                    "_triples": [],
                 }
                 clusters[key] = bucket
-            for w in (r["w1"], r["w2"]):
-                nw = normalize_word(w)
-                if not nw or nw in bucket["_seen"]:
-                    continue
-                bucket["_seen"].add(nw)
-                bucket["members"].append({"word": pretty_word(w), "weight": 1.0})
+            bucket["_triples"].append((r["w1"], r["w2"]))
             if len(clusters) >= limit:
                 break
 
-        synsets = []
-        for bucket in clusters.values():
-            bucket.pop("_seen", None)
-            # Keep query form first when present
-            mems = bucket["members"]
-            mems.sort(
-                key=lambda m: (
-                    0 if normalize_word(m["word"]) == qn else 1,
-                    m["word"].lower(),
-                )
-            )
-            synsets.append(bucket)
+        synsets = [annotate_papel_bucket(b, query) for b in clusters.values()]
 
         return {
             "type": "thesaurus_search",

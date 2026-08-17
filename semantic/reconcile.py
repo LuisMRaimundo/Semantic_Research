@@ -177,17 +177,19 @@ def reconcile_class(
             Path(concordance_json).write_text(
                 json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
             )
+            from .assertions import rewrite_assertions_block
+            rewrite_assertions_block(Path(concordance_json))
             md_path = Path(concordance_json).with_suffix(".md")
             if md_path.exists():
                 text = md_path.read_text(encoding="utf-8")
-                # Strip old T14 / reconciliação blocks if present
                 if "## Reconciliação" in text:
                     text = text.split("## Reconciliação")[0].rstrip() + "\n"
-                if "| T14 |" in text:
-                    lines = [ln for ln in text.splitlines() if "| T14 |" not in ln]
-                    text = "\n".join(lines) + "\n"
-                text += "\n" + render_reconcile_markdown(report)
-                md_path.write_text(text, encoding="utf-8")
+                if "# Relatório residual" in text:
+                    text = text.split("# Relatório residual")[0].rstrip() + "\n"
+                md_path.write_text(
+                    text.rstrip() + "\n\n" + render_reconcile_markdown(report),
+                    encoding="utf-8",
+                )
 
     report["reconcile_json"] = str(primary / f"{stem}.json")
     report["reconcile_md"] = str(primary / f"{stem}.md")

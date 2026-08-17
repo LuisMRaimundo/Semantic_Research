@@ -1,7 +1,7 @@
 {
   "class": "TexturaComposita",
   "policy": "conservative",
-  "generated": "2026-08-04T22:45:36",
+  "generated": "2026-08-17T06:35:17",
   "columns": [
     "ONTO",
     "PULO",
@@ -35,92 +35,28 @@
       "source_queried": true,
       "contributed_discovery_evidence": true,
       "contributed_concordance_results": false,
-      "source_contributed_results": false
+      "source_contributed_results": false,
+      "n_discovery_cards": 26
     }
   },
   "join_counts": {
-    "single": 16
+    "single": 10
   },
   "legacy_equivalence_map": "E:\\PYTHON CODES\\Semantic_Research\\classes\\TexturaComposita\\out\\ili_equivalence.cili.json",
   "legacy_equivalence_counts": {
     "mapped": 0,
     "review": 0,
-    "unmatched": 32
+    "unmatched": 31
   },
   "legacy_equivalence_loaded": false,
   "concepts": [
     {
-      "term": "amalgamado",
-      "ili": [
-        "i6556"
-      ],
-      "sources": {
-        "ONTO": "—",
-        "PULO": "RT",
-        "OWN-PT": "—",
-        "WordNet": "—"
-      },
-      "join": "single",
-      "veredicto": "fonte única",
-      "proposta_final": "RT",
-      "unmapped_flag": false,
-      "status_projection": {},
-      "divergences": [],
-      "union_of_provenance": [
-        "PULO:seed (Etapa 1/2)"
-      ],
-      "notes": []
-    },
-    {
-      "term": "cabrito",
-      "ili": [
-        "i6556"
-      ],
-      "sources": {
-        "ONTO": "—",
-        "PULO": "RT",
-        "OWN-PT": "—",
-        "WordNet": "—"
-      },
-      "join": "single",
-      "veredicto": "fonte única",
-      "proposta_final": "RT",
-      "unmapped_flag": false,
-      "status_projection": {},
-      "divergences": [],
-      "union_of_provenance": [
-        "PULO:seed (Etapa 1/2)"
-      ],
-      "notes": []
-    },
-    {
-      "term": "combinação",
-      "ili": [
-        "i37400"
-      ],
-      "sources": {
-        "ONTO": "—",
-        "PULO": "RT",
-        "OWN-PT": "—",
-        "WordNet": "—"
-      },
-      "join": "single",
-      "veredicto": "fonte única",
-      "proposta_final": "RT",
-      "unmapped_flag": false,
-      "status_projection": {},
-      "divergences": [],
-      "union_of_provenance": [
-        "PULO:seed (Etapa 1/2)"
-      ],
-      "notes": []
-    },
-    {
       "term": "composição",
       "ili": [
-        "i37400",
         "i52229",
-        "i62908"
+        "i59707",
+        "i62908",
+        "i63671"
       ],
       "sources": {
         "ONTO": "—",
@@ -162,9 +98,9 @@
       "notes": []
     },
     {
-      "term": "diverso",
+      "term": "construção",
       "ili": [
-        "i6556"
+        "i59707"
       ],
       "sources": {
         "ONTO": "—",
@@ -184,9 +120,9 @@
       "notes": []
     },
     {
-      "term": "híbrido",
+      "term": "contextura",
       "ili": [
-        "i6556"
+        "i59707"
       ],
       "sources": {
         "ONTO": "—",
@@ -206,9 +142,9 @@
       "notes": []
     },
     {
-      "term": "mesclado",
+      "term": "edifício",
       "ili": [
-        "i6556"
+        "i59707"
       ],
       "sources": {
         "ONTO": "—",
@@ -223,14 +159,14 @@
       "status_projection": {},
       "divergences": [],
       "union_of_provenance": [
-        "PULO:seed (Etapa 1/2)"
+        "PULO:hyponym"
       ],
       "notes": []
     },
     {
-      "term": "mestiço",
+      "term": "estrutura",
       "ili": [
-        "i6556"
+        "i59707"
       ],
       "sources": {
         "ONTO": "—",
@@ -245,73 +181,7 @@
       "status_projection": {},
       "divergences": [],
       "union_of_provenance": [
-        "PULO:seed (Etapa 1/2)"
-      ],
-      "notes": []
-    },
-    {
-      "term": "misto",
-      "ili": [
-        "i6556"
-      ],
-      "sources": {
-        "ONTO": "—",
-        "PULO": "RT",
-        "OWN-PT": "—",
-        "WordNet": "—"
-      },
-      "join": "single",
-      "veredicto": "fonte única",
-      "proposta_final": "RT",
-      "unmapped_flag": false,
-      "status_projection": {},
-      "divergences": [],
-      "union_of_provenance": [
-        "PULO:seed (Etapa 1/2)"
-      ],
-      "notes": []
-    },
-    {
-      "term": "misturado",
-      "ili": [
-        "i6556"
-      ],
-      "sources": {
-        "ONTO": "—",
-        "PULO": "RT",
-        "OWN-PT": "—",
-        "WordNet": "—"
-      },
-      "join": "single",
-      "veredicto": "fonte única",
-      "proposta_final": "RT",
-      "unmapped_flag": false,
-      "status_projection": {},
-      "divergences": [],
-      "union_of_provenance": [
-        "PULO:seed (Etapa 1/2)"
-      ],
-      "notes": []
-    },
-    {
-      "term": "mulato",
-      "ili": [
-        "i6556"
-      ],
-      "sources": {
-        "ONTO": "—",
-        "PULO": "RT",
-        "OWN-PT": "—",
-        "WordNet": "—"
-      },
-      "join": "single",
-      "veredicto": "fonte única",
-      "proposta_final": "RT",
-      "unmapped_flag": false,
-      "status_projection": {},
-      "divergences": [],
-      "union_of_provenance": [
-        "PULO:seed (Etapa 1/2)"
+        "PULO:hyponym"
       ],
       "notes": []
     },
@@ -424,27 +294,21 @@
   ],
   "summary": {
     "veredicto_totals": {
-      "fonte única": 12,
+      "fonte única": 6,
       "sinalização": 4
     },
-    "descartados_pendentes": 10,
+    "descartados_pendentes": 29,
     "convergencia_plena": [],
     "convergencia_sentido": [],
     "convergencia_termo": [],
     "divergences": [],
     "fonte_unica": [
-      "amalgamado",
-      "cabrito",
-      "combinação",
       "composição",
       "constituição",
-      "diverso",
-      "híbrido",
-      "mesclado",
-      "mestiço",
-      "misto",
-      "misturado",
-      "mulato"
+      "construção",
+      "contextura",
+      "edifício",
+      "estrutura"
     ],
     "auto_contrast_coverage": {
       "per_source": {
@@ -470,10 +334,10 @@
       "anchored_ilis_total": 4,
       "anchored_ilis_with_auto_contrast": [],
       "anchored_ilis_without_auto_contrast": [
-        "i37400",
         "i52229",
+        "i59707",
         "i62908",
-        "i6556"
+        "i63671"
       ],
       "sources_without_antonymy": [
         "PULO"
@@ -509,7 +373,7 @@
       "id": "T5",
       "text": "Nenhum termo admitido pelos motores é descartado da matriz (PULO; OWN-PT/WordNet corroboram; Onto = descoberta)",
       "passed": true,
-      "evidence": "12 admitidos / 12 em matriz"
+      "evidence": "6 admitidos / 6 em matriz"
     },
     {
       "id": "T6",
@@ -551,7 +415,7 @@
       "id": "T9",
       "text": "concordance.json faz round-trip (contagens de term/ili estáveis).",
       "passed": true,
-      "evidence": "16 conceitos"
+      "evidence": "10 conceitos"
     },
     {
       "id": "T13",
@@ -564,6 +428,128 @@
       "text": "Nenhum item do bloco de evidência figura no bloco de vocabulário, e vice-versa.",
       "passed": true,
       "evidence": "blocos A/B disjuntos"
+    },
+    {
+      "id": "T15",
+      "text": "Cada item exportado (altLabel/termoRelacionado/matriz/tabela F) rastreia a uma decisão desta classe; cada decisão UF/RT figura em ≥1 artefacto ou é listada como descartada com motivo declarado.",
+      "passed": true,
+      "evidence": "OK",
+      "dropped_with_reason": [
+        {
+          "forma": "materiais_compostos",
+          "reason": "onto_discovery_only",
+          "key": "clip21:1320",
+          "source": "onto"
+        },
+        {
+          "forma": "dissimilar",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:26969",
+          "source": "onto"
+        },
+        {
+          "forma": "heterogeneo",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:26969",
+          "source": "onto"
+        },
+        {
+          "forma": "dessemelhante",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:26969",
+          "source": "onto"
+        },
+        {
+          "forma": "absimilhante",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:26969",
+          "source": "onto"
+        },
+        {
+          "forma": "dissimil",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:26969",
+          "source": "onto"
+        },
+        {
+          "forma": "dispar",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:26969",
+          "source": "onto"
+        },
+        {
+          "forma": "dissemelhante",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:26969",
+          "source": "onto"
+        },
+        {
+          "forma": "diferente",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:26969",
+          "source": "onto"
+        },
+        {
+          "forma": "constituido",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:27002",
+          "source": "onto"
+        },
+        {
+          "forma": "formado",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:27002",
+          "source": "onto"
+        },
+        {
+          "forma": "elaborado",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:27002",
+          "source": "onto"
+        },
+        {
+          "forma": "feito",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:27002",
+          "source": "onto"
+        },
+        {
+          "forma": "aprimorado",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:27002",
+          "source": "onto"
+        },
+        {
+          "forma": "bem-avindo",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:27002",
+          "source": "onto"
+        },
+        {
+          "forma": "misto",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:27002",
+          "source": "onto"
+        },
+        {
+          "forma": "conciliado",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:27002",
+          "source": "onto"
+        },
+        {
+          "forma": "mesclado",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:27002",
+          "source": "onto"
+        },
+        {
+          "forma": "concordado",
+          "reason": "onto_discovery_only",
+          "key": "fuzzythes:27002",
+          "source": "onto"
+        }
+      ]
     }
   ],
   "all_passed": true

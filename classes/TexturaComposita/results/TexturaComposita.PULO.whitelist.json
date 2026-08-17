@@ -49,7 +49,7 @@
     {
       "ili_offset": "ili-30-00378985-n",
       "glosa": "o ato de combinar as coisas para formar um todo novo\n",
-      "decision": "RT",
+      "decision": "exclude",
       "members": [
         "combinação",
         "composição"
@@ -58,7 +58,7 @@
     {
       "ili_offset": "ili-30-04341686-n",
       "glosa": "uma coisa construída; uma entidade complexa construída de muitas partes\n",
-      "decision": "exclude",
+      "decision": "RT",
       "members": [
         "composição",
         "contextura",
@@ -115,7 +115,7 @@
     {
       "ili_offset": "ili-30-05076472-n",
       "glosa": "a propriedade espacial resultante do acordo das partes em relação às outras e a toda\n",
-      "decision": "exclude",
+      "decision": "RT",
       "members": [
         "composição"
       ]
@@ -328,7 +328,7 @@
     {
       "ili_offset": "pwn30-01199083-a",
       "glosa": "que consiste em uma variedade aleatória de diferentes tipos\n",
-      "decision": "RT",
+      "decision": "exclude",
       "members": [
         "amalgamado",
         "cabrito",
@@ -343,35 +343,28 @@
     }
   ],
   "dictionary_attestations": [
-    "amalgamado",
-    "cabrito",
-    "combinação",
     "composição",
     "constituição",
-    "diverso",
-    "híbrido",
-    "mesclado",
-    "mestiço",
-    "misto",
-    "misturado",
-    "mulato"
+    "construção",
+    "contextura",
+    "edifício",
+    "estrutura"
   ],
   "admitted_offsets": [
-    "ili-30-00378985-n",
+    "ili-30-04341686-n",
     "ili-30-03081660-n",
     "ili-30-04933544-n",
-    "pwn30-01199083-a"
+    "ili-30-05076472-n"
   ],
   "excluded_offsets": [
     "ili-30-14818238-n",
     "ili-30-02424254-a",
     "ili-30-09947232-n",
     "ili-30-00237078-n",
-    "ili-30-04341686-n",
+    "ili-30-00378985-n",
     "ili-30-06788785-n",
     "ili-30-00929718-n",
     "ili-30-00939452-n",
-    "ili-30-05076472-n",
     "ili-30-06409752-n",
     "ili-30-07037465-n",
     "ili-30-14588492-n",
@@ -390,6 +383,7 @@
     "ili-30-02506029-a",
     "ili-30-00959244-a",
     "ili-30-13585429-n",
-    "ili-30-05858936-n"
+    "ili-30-05858936-n",
+    "pwn30-01199083-a"
   ]
 }

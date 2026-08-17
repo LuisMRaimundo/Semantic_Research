@@ -1,3 +1,52 @@
+# CHANGES — fix pass adjudicação → artefactos (2026-08-17)
+
+Branch `fix/adjudication-export`, um commit por defeito (D7→D5→D8→D2→D3→D4→D6→D1→T16).
+
+## D7 — prefixos OEWN já não caem na heurística PULO
+- **Ficheiros:** `semantic/ili_coverage.py`
+- **Antes:** `_is_pwn30ish` tratava qualquer id ≥10 caracteres terminado em `-<letra>` como offset PULO, incluindo `oewn-92460746-n`.
+- **Depois:** prefixos conhecidos primeiro (`oewn-` → não-PULO; `ili-30-`/`pwn30-`/`por-` → PULO); a heurística de forma só corre depois.
+
+## D5 — contagem de asserções unificada
+- **Ficheiros:** `semantic/assertions.py` (novo), `export_blocks.py`, `traceability.py`, `reconcile.py`
+- **Antes:** cabeçalho 13, tabela 15, JSON 16 — T12/T15/R1 escreviam Markdown à parte (e R1 só no JSON).
+- **Depois:** `rewrite_assertions_block` lê o JSON e reescreve cabeçalho + secção `## Asserções` no sítio; os três módulos só anexam ao JSON.
+
+## D8 — caixa Meta já não trunca nem descarta scope_note
+- **Ficheiros:** `semantic/meta_box.py` (novo), `semantic/workbench.py`
+- **Antes:** analisador por prefixo de linha; `axis` multilinha perdia continuações; `scope_note`/`axis_terms` inexistentes.
+- **Depois:** blocos `chave:` + continuação indentada; reconhece pref_label, axis, scope_note, focus_stems, axis_terms, axis_terms_locked; chaves extra ficam em meta com aviso.
+
+## D2 — PAPEL conserva a estrutura argumental
+- **Ficheiros:** `semantic/adapters/papel.py`, `semantic/decisions.py`
+- **Antes:** os dois argumentos do triplo iam para `members` sem papel nem direcção (HIPERONIMO_DE ≡ sinónimos).
+- **Depois:** cada bucket declara `papel_focal`, `papel_arguments`, `papel_direction`; `members` só inclui os argumentos em SINONIMIA.
+
+## D3 — exclude PAPEL e termoRelacionado colapsado
+- **Ficheiros:** `semantic/export_blocks.py`, `semantic/concept_model.py`
+- **Antes:** o filtro «omitir o lema focal» invertia triplos PAPEL (retinha `material`); `termoRelacionado` repetia o mesmo termo por membro.
+- **Depois:** exclude PAPEL conserva `papel_focal` e lista `papel_arguments` à parte; RT colapsa por forma, com `keys`/`ilis` de todas as origens.
+
+## D4 — validated_alt_labels deixa de descartar UF em silêncio
+- **Ficheiros:** `semantic/export_blocks.py`, `semantic/pipeline.py`
+- **Antes:** a lista UF era substituída por `validated_alt_labels` sem rasto.
+- **Depois:** entradas suprimidas em `alt_labels_suppressed_by_validated`, linha no `blocos.md` e aviso no log do Run.
+
+## D6 — pares ILI divergentes passam a pending
+- **Ficheiros:** `semantic/cili_auto.py`, `semantic/concept_model.py`, `semantic/pipeline.py`, `engines/LexWarrant/lexwarrant.py`
+- **Antes:** `report["diverged"]` só era impresso; a chave `legacy_equivalence_map` apontava para um ficheiro CILI-only.
+- **Depois:** chave `cili_auto_map` (lê a antiga); cada par divergente vai para `pending_ili_adjudication` e `mapping_status: pending_ili_divergence`; aviso no Run.
+
+## D1 — axis_terms deixa de ficar congelado
+- **Ficheiros:** `semantic/compile_specs.py`, `semantic/doctor.py` (exposição Meta: D8)
+- **Antes:** `axis_terms` gravado era reutilizado para sempre, incluindo termos de cartões entretanto exclude.
+- **Depois:** derivado a cada compilação (focus_stems + UF/RT), salvo `axis_terms_locked`; o valor antigo vai para `axis_terms_previous`; doctor avisa termos exclusive-exclude.
+
+## T16 — CILI não pode estar em UF/RT e exclude ao mesmo tempo
+- **Ficheiros:** `semantic/concept_model.py`, `semantic/pipeline.py`
+- **Antes:** nenhuma asserção via incoerência de identificadores dentro do bloco de evidência (T12 só compara vocabulário ↔ evidência).
+- **Depois:** T16 anexa-se ao concordance após o CONCEPT; falha se o mesmo CILI estiver em `uf`/`rt_candidates` e em `exclude_records`.
+
 # CHANGES — fix pass pós-auditoria de rastreabilidade (2026-08-07)
 
 Branch `fix/traceability-pass`, um commit por item. Suite de testes corrida

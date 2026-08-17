@@ -1,6 +1,6 @@
 {
   "schema": "semantic_research.ili_coverage/1",
-  "generated": "2026-08-04T21:45:49+00:00",
+  "generated": "2026-08-17T05:35:25+00:00",
   "pins": {
     "oewn": "oewn:2025",
     "cili_commit": "upstream-master+pwn30+pwn31+wn.ili",
@@ -11,11 +11,11 @@
     "ili_ids": 117659,
     "note": "Resolver loads PWN-3.0 + PWN-3.1 offset maps, and validates bare i… ids via wn.ili when missing from the TSVs. Unresolved ids are listed here — never silently dropped."
   },
-  "n_identifiers": 110,
+  "n_identifiers": 109,
   "n_resolved": 78,
   "n_unresolved_oewn_ili": 0,
   "n_unresolved_pulo_offset": 1,
-  "n_unresolved_other": 31,
+  "n_unresolved_other": 30,
   "n_cili_joinable": 31,
   "n_cili_singleton": 16,
   "joinable_cili": [
@@ -326,7 +326,6 @@
     "ontopt06:3928",
     "ontopt06:43961",
     "ontopt06:49495",
-    "ontopt06:6214",
     "ontopt06:7120",
     "ontopt06:81042",
     "papel35:HIPERONIMIA:HIPERONIMO_DE:composito",

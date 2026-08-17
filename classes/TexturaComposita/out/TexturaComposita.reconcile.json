@@ -16,50 +16,180 @@
   "acepcoes_sem_motor": [
     {
       "source": "papel",
-      "key": "papel35:HIPERONIMIA:HIPERONIMO_DE:composito",
+      "key": "papel35:SINONIMIA:SINONIMO_ADJ_DE:composito",
       "ili": null,
       "decision": "UF",
       "membros": [
         "compósito",
-        "material"
-      ],
-      "nota": "acepção adjudicada sem correspondência em motor"
-    },
-    {
-      "source": "papel",
-      "key": "papel35:PARTE:PARTE_DE_ALGO_COM_PROPRIEDADE:composito",
-      "ili": null,
-      "decision": "RT",
-      "membros": [
-        "compósito",
-        "utilidade"
-      ],
-      "nota": "acepção adjudicada sem correspondência em motor"
-    },
-    {
-      "source": "papel",
-      "key": "papel35:PARTE:PROPRIEDADE_DE_ALGO_PARTE_DE:composito",
-      "ili": null,
-      "decision": "UF",
-      "membros": [
-        "compósito",
-        "substância"
-      ],
-      "nota": "acepção adjudicada sem correspondência em motor"
-    },
-    {
-      "source": "papel",
-      "key": "papel35:REFERENTE:DIZ_SE_DO_QUE:composito",
-      "ili": null,
-      "decision": "RT",
-      "membros": [
-        "compósito",
-        "ter diverso utilidade"
+        "heterogéneo",
+        "mesclado"
       ],
       "nota": "acepção adjudicada sem correspondência em motor"
     }
   ],
-  "n_acepcoes_sem_motor": 4,
+  "n_acepcoes_sem_motor": 1,
+  "descartado_onto_discovery": [
+    {
+      "source": "onto",
+      "key": "clip21:1320",
+      "ili": "",
+      "decision": "UF",
+      "membros": [
+        "compósito",
+        "materiais compostos"
+      ],
+      "nota": "descartado (Onto.PT discovery-only — não admite na matriz)"
+    },
+    {
+      "source": "onto",
+      "key": "contopt:16611",
+      "ili": "",
+      "decision": "UF",
+      "membros": [
+        "compósito",
+        "materiais compostos"
+      ],
+      "nota": "descartado (Onto.PT discovery-only — não admite na matriz)"
+    },
+    {
+      "source": "onto",
+      "key": "fuzzythes:26969",
+      "ili": "",
+      "decision": "RT",
+      "membros": [
+        "dissimilar",
+        "heterogéneo",
+        "dessemelhante",
+        "absimilhante",
+        "dissímil",
+        "díspar",
+        "dissemelhante",
+        "diferente",
+        "compósito"
+      ],
+      "nota": "descartado (Onto.PT discovery-only — não admite na matriz)"
+    },
+    {
+      "source": "onto",
+      "key": "fuzzythes:27002",
+      "ili": "",
+      "decision": "RT",
+      "membros": [
+        "heterogêneo",
+        "compósito",
+        "constituído",
+        "composto",
+        "formado",
+        "elaborado",
+        "feito",
+        "heterogéneo",
+        "aprimorado",
+        "bem-avindo",
+        "misto",
+        "conciliado",
+        "mesclado",
+        "concordado"
+      ],
+      "nota": "descartado (Onto.PT discovery-only — não admite na matriz)"
+    },
+    {
+      "source": "onto",
+      "key": "fuzzythes:27069",
+      "ili": "",
+      "decision": "UF",
+      "membros": [
+        "heterogéneo",
+        "compósito",
+        "heterogêneo",
+        "dissimilar",
+        "composto",
+        "dessemelhante",
+        "mesclado",
+        "constituído"
+      ],
+      "nota": "descartado (Onto.PT discovery-only — não admite na matriz)"
+    },
+    {
+      "source": "onto",
+      "key": "ontopt06:3928",
+      "ili": "",
+      "decision": "UF",
+      "membros": [
+        "composto",
+        "compósito",
+        "heterogêneo"
+      ],
+      "nota": "descartado (Onto.PT discovery-only — não admite na matriz)"
+    },
+    {
+      "source": "onto",
+      "key": "ontopt06:7120",
+      "ili": "",
+      "decision": "UF",
+      "membros": [
+        "compósito",
+        "dessemelhante",
+        "dissimilar",
+        "heterogéneo"
+      ],
+      "nota": "descartado (Onto.PT discovery-only — não admite na matriz)"
+    },
+    {
+      "source": "onto",
+      "key": "ontopt06:81042",
+      "ili": "",
+      "decision": "UF",
+      "membros": [
+        "compósito"
+      ],
+      "nota": "descartado (Onto.PT discovery-only — não admite na matriz)"
+    },
+    {
+      "source": "onto",
+      "key": "polaridades:1620",
+      "ili": "",
+      "decision": "RT",
+      "membros": [
+        "compósito",
+        "dessemelhante",
+        "dissimilar",
+        "heterogéneo"
+      ],
+      "nota": "descartado (Onto.PT discovery-only — não admite na matriz)"
+    },
+    {
+      "source": "onto",
+      "key": "thes5rec:19632",
+      "ili": "",
+      "decision": "UF",
+      "membros": [
+        "composto",
+        "compósito",
+        "dessemelhante",
+        "dissimilar",
+        "heterogéneo",
+        "heterogêneo"
+      ],
+      "nota": "descartado (Onto.PT discovery-only — não admite na matriz)"
+    },
+    {
+      "source": "onto",
+      "key": "thes5rec:22375",
+      "ili": "",
+      "decision": "UF",
+      "membros": [
+        "composto",
+        "compósito",
+        "constituído",
+        "elaborado",
+        "feito",
+        "formado",
+        "heterogêneo"
+      ],
+      "nota": "descartado (Onto.PT discovery-only — não admite na matriz)"
+    }
+  ],
+  "n_descartado_onto_discovery": 11,
   "taxonomy_removed": [
     "conflitos_planos",
     "divergencia_sentidos",

@@ -1,6 +1,6 @@
 {
   "class": "TexturaComposita",
-  "generated": "2026-08-04T22:45:36",
+  "generated": "2026-08-17T06:35:17",
   "source": "cili:cili@upstream-master+pwn30+pwn31+wn.ili",
   "cili": {
     "version": "cili@upstream-master+pwn30+pwn31+wn.ili",
@@ -20,7 +20,7 @@
   "coverage": {
     "map": 0,
     "review": 0,
-    "unmatched": 32
+    "unmatched": 31
   },
   "policy": "cili-only (Corte 1) — sem adjudicação humana"
 }
