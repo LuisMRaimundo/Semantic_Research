@@ -154,6 +154,7 @@ def build_class_concept_graph(ws: ClassWorkspace) -> dict[str, Any]:
     dec = decmod.load_decisions(ws.decisions_json)
     pref = (meta.get("pref_label") or ws.class_id).strip()
     axis = (meta.get("axis") or "").strip()
+    scope_note = (meta.get("scope_note") or "").strip()
     cm = _mapping_block(meta, dec)
     focus = {
         normalize_word(x)
@@ -322,6 +323,7 @@ def build_class_concept_graph(ws: ClassWorkspace) -> dict[str, Any]:
         "class_id": ws.class_id,
         "pref_label": pref,
         "axis": axis,
+        "scope_note": scope_note,
         "discovery_evidence": discovery,
         "stipulated_terms": stipulated_terms,
         "cili_exact": exact,
@@ -458,13 +460,16 @@ def render_skos_owl(
     local = _slug(cid)
     pref = _ttl_escape(graph.get("pref_label") or cid)
     axis = _ttl_escape(graph.get("axis") or "")
+    scope_note = _ttl_escape(graph.get("scope_note") or "")
     pref_lang = label_lang_tag(graph.get("pref_label") or cid)
 
     preds: list[str] = [
         f'    skos:prefLabel "{pref}"@{pref_lang}',
     ]
     if axis:
-        preds.append(f'    skos:scopeNote "{axis}"@pt-PT')
+        preds.append(f'    skos:definition "{axis}"@pt-PT')
+    if scope_note:
+        preds.append(f'    skos:scopeNote "{scope_note}"@pt-PT')
     preds.append(f'    dct:identifier "{_ttl_escape(cid)}"')
     preds.append(
         f'    skos:editorialNote "{_ttl_escape(graph.get("skos_policy") or "")}"@en'

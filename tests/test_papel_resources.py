@@ -12,9 +12,11 @@ sys.path.insert(0, str(ROOT))
 
 from semantic.adapters.papel import (  # noqa: E402
     PapelStore,
+    annotate_papel_bucket,
     build_papel_sqlite,
     upgrade_papel_export,
 )
+from semantic.decisions import blank_decisions, from_papel_export  # noqa: E402
 from semantic.normalize import normalize_word  # noqa: E402
 from semantic.resources import inventory  # noqa: E402
 
@@ -80,6 +82,7 @@ class PapelIndexTests(unittest.TestCase):
         resolved = [s for s in non_syn if s.get("papel_focal")]
         unresolved = [s for s in non_syn if not s.get("papel_focal")]
         self.assertGreaterEqual(len(resolved), 4)
+        self.assertEqual(unresolved, [])
         for s in resolved:
             self.assertEqual([m["word"] for m in s["members"]], ["compósito"])
         args = {a for s in resolved for a in s["papel_arguments"]}
@@ -87,9 +90,10 @@ class PapelIndexTests(unittest.TestCase):
             {"material", "utilidade", "substância", "ter diverso utilidade"}
             <= args
         )
-        for s in unresolved:
-            self.assertTrue(s["members"], "unresolved não pode ter members=[]")
-            self.assertEqual(s["papel_direction"], "unresolved")
+        dropped = upgraded.get("members_dropped_focus_filter") or []
+        for row in dropped:
+            self.assertEqual(row.get("reason"), "focal_nao_casa_com_consulta")
+            self.assertTrue(row.get("papel_arguments") or row.get("members"))
         syn = next(
             s for s in upgraded["synsets"]
             if (s.get("relations") or {}).get("papel_group") == "SINONIMIA"
@@ -120,32 +124,74 @@ class PapelIndexTests(unittest.TestCase):
             self.assertEqual([m["word"] for m in syn["members"]], ["composito"])
             self.assertEqual(syn["papel_arguments"], ["X"])
 
-    def test_unresolved_focal_keeps_arguments_in_members(self):
-        """D2 residual — sem focal, members conserva os argumentos (nunca [])."""
+    def test_prefix_hit_without_focal_is_not_seeded(self):
+        """D2 residual — «compósito» vs (compositor, DIZ_SE_SOBRE, X) → 0 cartões."""
         with tempfile.TemporaryDirectory() as td:
             src = Path(td) / "PAPEL"
             src.mkdir()
             (src / "relacoes_final_REFERENTE.txt").write_text(
-                "palestriniano DIZ_SE_SOBRE compositor\n"
-                "wagneriano DIZ_SE_SOBRE compositor\n",
+                "compositor DIZ_SE_SOBRE X\n",
                 encoding="utf-8",
             )
             db = Path(td) / "papel.sqlite"
             self.assertTrue(build_papel_sqlite(src, db)["ok"])
             store = PapelStore(db)
-            # «Starts with»: composito ⊂ compositor — hit sem lema exacto
             export = store.export_search("compósito", mode="Starts with", limit=20)
             store.close()
-            syn = next(
-                s for s in export["synsets"]
-                if (s.get("relations") or {}).get("papel_rel") == "DIZ_SE_SOBRE"
-            )
-            self.assertIsNone(syn["papel_focal"])
-            self.assertEqual(syn["papel_direction"], "unresolved")
-            mems = {m["word"] for m in syn["members"]}
-            self.assertTrue(mems, "members não pode ficar vazio")
-            self.assertEqual(mems, set(syn["papel_arguments"]))
-            self.assertIn("compositor", mems)
+            self.assertEqual(export["count"], 0)
+            self.assertEqual(export["synsets"], [])
+            dropped = export.get("members_dropped_focus_filter") or []
+            self.assertTrue(dropped)
+            self.assertEqual(dropped[0]["reason"], "focal_nao_casa_com_consulta")
+            self.assertIn("X", dropped[0].get("papel_arguments") or [])
+
+    def test_annotate_unresolved_never_empty_members(self):
+        """Se o bucket for anotado sem focal, members conserva os argumentos."""
+        bucket = annotate_papel_bucket(
+            {
+                "relations": {"papel_rel": "DIZ_SE_SOBRE", "papel_group": "REFERENTE"},
+                "members": [],
+                "_triples": [("compositor", "X")],
+            },
+            "compósito",
+        )
+        self.assertIsNone(bucket["papel_focal"])
+        self.assertEqual(bucket["papel_direction"], "unresolved")
+        self.assertTrue(bucket["members"])
+        self.assertEqual({m["word"] for m in bucket["members"]}, {"compositor", "X"})
+
+    def test_from_papel_export_skips_unresolved_keeps_legacy(self):
+        """from_papel_export: unresolved não semeia; export pré-D2 ainda semeia."""
+        export = {
+            "synsets": [
+                {
+                    "resource": "papel35",
+                    "synset_id": "REFERENTE:DIZ_SE_SOBRE:composito",
+                    "members": [{"word": "palestriniano"}],
+                    "papel_focal": None,
+                    "papel_arguments": ["palestriniano", "compositor"],
+                    "papel_direction": "unresolved",
+                },
+                {
+                    "resource": "papel35",
+                    "synset_id": "HIPERONIMIA:HIPERONIMO_DE:composito",
+                    "members": [{"word": "compósito"}],
+                    "papel_focal": "compósito",
+                    "papel_arguments": ["material"],
+                    "papel_direction": "focal_to_argument",
+                },
+                {
+                    "resource": "papel35",
+                    "synset_id": "LEGACY:SINONIMO_DE:composito",
+                    "members": [{"word": "composto"}],
+                },
+            ]
+        }
+        out = from_papel_export(export, blank_decisions("Probe"))
+        keys = [s["key"] for s in out["senses"]]
+        self.assertTrue(any("HIPERONIMIA" in k for k in keys))
+        self.assertTrue(any("LEGACY" in k for k in keys))
+        self.assertFalse(any("DIZ_SE_SOBRE" in k for k in keys))
 
 
 class ResourceInventoryTests(unittest.TestCase):
