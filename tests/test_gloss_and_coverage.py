@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from semantic.gloss_sim import gloss_jaccard, passes_gloss_gate, sense_similarity  # noqa: E402
-from semantic.ili_coverage import classify_identifiers  # noqa: E402
+from semantic.ili_coverage import _is_pwn30ish, classify_identifiers  # noqa: E402
 from semantic.engines import cili_api  # noqa: E402
 
 
@@ -40,6 +40,18 @@ class GlossSimTests(unittest.TestCase):
 
 
 class IliCoverageTests(unittest.TestCase):
+    def test_prefix_beats_form_heuristic(self):
+        """D7 — oewn-… não é PULO; ili-30-/pwn30- continuam a sê-lo."""
+        cases = (
+            ("oewn-92460746-n", False),
+            ("oewn-05878802-n", False),
+            ("ili-30-01199083-a", True),
+            ("pwn30-01199083-a", True),
+        )
+        for ident, expect_pulo in cases:
+            with self.subTest(ident=ident):
+                self.assertEqual(_is_pwn30ish(ident), expect_pulo)
+
     def test_resolved_and_drift_buckets(self):
         _, _, resolve, offset = cili_api()
         ili, off = "i1", offset("i1")

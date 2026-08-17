@@ -1,3 +1,12 @@
+# CHANGES — fix pass adjudicação → artefactos (2026-08-17)
+
+Branch `fix/adjudication-export`, um commit por defeito (D7→D5→D8→D2→D3→D4→D6→D1→T16).
+
+## D7 — prefixos OEWN já não caem na heurística PULO
+- **Ficheiros:** `semantic/ili_coverage.py`
+- **Antes:** `_is_pwn30ish` tratava qualquer id ≥10 caracteres terminado em `-<letra>` como offset PULO, incluindo `oewn-92460746-n`.
+- **Depois:** prefixos conhecidos primeiro (`oewn-` → não-PULO; `ili-30-`/`pwn30-`/`por-` → PULO); a heurística de forma só corre depois.
+
 # CHANGES — fix pass pós-auditoria de rastreabilidade (2026-08-07)
 
 Branch `fix/traceability-pass`, um commit por item. Suite de testes corrida
