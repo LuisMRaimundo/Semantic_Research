@@ -15,6 +15,7 @@ from semantic.adapters.papel import (  # noqa: E402
     build_papel_sqlite,
     upgrade_papel_export,
 )
+from semantic.normalize import normalize_word  # noqa: E402
 from semantic.resources import inventory  # noqa: E402
 
 
@@ -76,19 +77,75 @@ class PapelIndexTests(unittest.TestCase):
             s for s in upgraded["synsets"]
             if (s.get("relations") or {}).get("papel_group") != "SINONIMIA"
         ]
-        self.assertEqual(len(non_syn), 4)
-        for s in non_syn:
+        resolved = [s for s in non_syn if s.get("papel_focal")]
+        unresolved = [s for s in non_syn if not s.get("papel_focal")]
+        self.assertGreaterEqual(len(resolved), 4)
+        for s in resolved:
             self.assertEqual([m["word"] for m in s["members"]], ["compósito"])
-        args = [a for s in non_syn for a in s["papel_arguments"]]
-        self.assertEqual(
-            set(args),
-            {"material", "utilidade", "substância", "ter diverso utilidade"},
+        args = {a for s in resolved for a in s["papel_arguments"]}
+        self.assertTrue(
+            {"material", "utilidade", "substância", "ter diverso utilidade"}
+            <= args
         )
+        for s in unresolved:
+            self.assertTrue(s["members"], "unresolved não pode ter members=[]")
+            self.assertEqual(s["papel_direction"], "unresolved")
         syn = next(
             s for s in upgraded["synsets"]
             if (s.get("relations") or {}).get("papel_group") == "SINONIMIA"
         )
         self.assertIn("heterogéneo", [m["word"] for m in syn["members"]])
+
+    def test_focal_matches_unaccented_stored_form(self):
+        """D2 residual — query «compósito» casa com w1 armazenado «composito»."""
+        with tempfile.TemporaryDirectory() as td:
+            src = Path(td) / "PAPEL"
+            src.mkdir()
+            (src / "relacoes_final_REFERENTE.txt").write_text(
+                "composito DIZ_SE_SOBRE X\n",
+                encoding="utf-8",
+            )
+            db = Path(td) / "papel.sqlite"
+            self.assertTrue(build_papel_sqlite(src, db)["ok"])
+            store = PapelStore(db)
+            export = store.export_search("compósito", mode="Exact", limit=20)
+            store.close()
+            self.assertEqual(export["count"], 1)
+            syn = export["synsets"][0]
+            self.assertEqual((syn.get("relations") or {}).get("papel_rel"), "DIZ_SE_SOBRE")
+            self.assertEqual(
+                normalize_word(syn["papel_focal"]), normalize_word("compósito")
+            )
+            self.assertEqual(syn["papel_direction"], "focal_to_argument")
+            self.assertEqual([m["word"] for m in syn["members"]], ["composito"])
+            self.assertEqual(syn["papel_arguments"], ["X"])
+
+    def test_unresolved_focal_keeps_arguments_in_members(self):
+        """D2 residual — sem focal, members conserva os argumentos (nunca [])."""
+        with tempfile.TemporaryDirectory() as td:
+            src = Path(td) / "PAPEL"
+            src.mkdir()
+            (src / "relacoes_final_REFERENTE.txt").write_text(
+                "palestriniano DIZ_SE_SOBRE compositor\n"
+                "wagneriano DIZ_SE_SOBRE compositor\n",
+                encoding="utf-8",
+            )
+            db = Path(td) / "papel.sqlite"
+            self.assertTrue(build_papel_sqlite(src, db)["ok"])
+            store = PapelStore(db)
+            # «Starts with»: composito ⊂ compositor — hit sem lema exacto
+            export = store.export_search("compósito", mode="Starts with", limit=20)
+            store.close()
+            syn = next(
+                s for s in export["synsets"]
+                if (s.get("relations") or {}).get("papel_rel") == "DIZ_SE_SOBRE"
+            )
+            self.assertIsNone(syn["papel_focal"])
+            self.assertEqual(syn["papel_direction"], "unresolved")
+            mems = {m["word"] for m in syn["members"]}
+            self.assertTrue(mems, "members não pode ficar vazio")
+            self.assertEqual(mems, set(syn["papel_arguments"]))
+            self.assertIn("compositor", mems)
 
 
 class ResourceInventoryTests(unittest.TestCase):
