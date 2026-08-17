@@ -128,15 +128,37 @@ def build_papel_sqlite(src_dir: Path, db_path: Path) -> dict[str, Any]:
     }
 
 
+def _norm_lema(word: Any) -> str:
+    """Lema comparável: acentos, caixa, espaços/underscores; bytes → str."""
+    if word is None:
+        return ""
+    if isinstance(word, bytes):
+        word = word.decode("utf-8", errors="replace")
+    return normalize_word(str(word))
+
+
+def _member_rows(words: list[str]) -> list[dict[str, Any]]:
+    seen: set[str] = set()
+    out: list[dict[str, Any]] = []
+    for w in words:
+        n = _norm_lema(w)
+        if n and n not in seen:
+            seen.add(n)
+            out.append({"word": pretty_word(w) if w else w, "weight": 1.0})
+    return out
+
+
 def annotate_papel_bucket(bucket: dict[str, Any], query: str) -> dict[str, Any]:
     """Marca focal / argumentos / direcção e restringe ``members``.
 
     SINONIMIA: members = focal + argumentos (são de facto sinónimos).
     Restantes grupos: members = só o focal; os outros ficam em
-    ``papel_arguments``. Se nenhum argumento coincidir com a consulta,
-    ``papel_focal`` é null e a direcção é ``unresolved`` — nunca se adivinha.
+    ``papel_arguments``. Se nenhum argumento coincidir com a consulta
+    (após fold de acentos), ``papel_focal`` é null, a direcção é
+    ``unresolved`` e ``members`` conserva todos os argumentos — nunca
+    fica vazio.
     """
-    qn = normalize_word(query)
+    qn = _norm_lema(query)
     g = str((bucket.get("relations") or {}).get("papel_group") or "")
     triples = list(bucket.pop("_triples", None) or [])
     if not triples:
@@ -146,12 +168,24 @@ def annotate_papel_bucket(bucket: dict[str, Any], query: str) -> dict[str, Any]:
             w = m.get("word") if isinstance(m, dict) else str(m)
             if w:
                 words.append(w)
+        if not words:
+            for w in bucket.get("papel_arguments") or []:
+                if w:
+                    words.append(str(w))
         triples = []
         for w in words:
-            if normalize_word(w) == qn:
+            if _norm_lema(w) == qn:
                 triples.append((w, ""))
             else:
                 triples.append(("", w))
+        # Reanotar export já estruturado: não perder papel_arguments.
+        seen_n = {_norm_lema(a) for a, b in triples for a in (a, b) if _norm_lema(a)}
+        focal_w = next((w for w in words if _norm_lema(w) == qn), "")
+        for raw in bucket.get("papel_arguments") or []:
+            n = _norm_lema(raw)
+            if n and n not in seen_n:
+                seen_n.add(n)
+                triples.append((focal_w, str(raw)) if focal_w else ("", str(raw)))
 
     focal: Optional[str] = None
     arguments: list[str] = []
@@ -159,26 +193,26 @@ def annotate_papel_bucket(bucket: dict[str, Any], query: str) -> dict[str, Any]:
     dirs: list[str] = []
 
     for w1, w2 in triples:
-        n1, n2 = normalize_word(w1), normalize_word(w2)
+        n1, n2 = _norm_lema(w1), _norm_lema(w2)
         if n1 and n1 == qn:
-            focal = pretty_word(w1)
+            focal = pretty_word(str(w1))
             if n2:
                 dirs.append("focal_to_argument")
             if n2 and n2 != qn and n2 not in seen_args:
                 seen_args.add(n2)
-                arguments.append(pretty_word(w2))
+                arguments.append(pretty_word(str(w2)))
         elif n2 and n2 == qn:
-            focal = pretty_word(w2)
+            focal = pretty_word(str(w2))
             if n1:
                 dirs.append("argument_to_focal")
             if n1 and n1 != qn and n1 not in seen_args:
                 seen_args.add(n1)
-                arguments.append(pretty_word(w1))
+                arguments.append(pretty_word(str(w1)))
         else:
             for w, n in ((w1, n1), (w2, n2)):
                 if n and n not in seen_args:
                     seen_args.add(n)
-                    arguments.append(pretty_word(w))
+                    arguments.append(pretty_word(str(w)))
 
     if focal is None:
         direction = "unresolved"
@@ -194,19 +228,12 @@ def annotate_papel_bucket(bucket: dict[str, Any], query: str) -> dict[str, Any]:
     bucket["papel_direction"] = direction
 
     if g.upper() == "SINONIMIA":
-        ordered = ([focal] if focal else []) + arguments
-        seen: set[str] = set()
-        members = []
-        for w in ordered:
-            n = normalize_word(w)
-            if n and n not in seen:
-                seen.add(n)
-                members.append({"word": w, "weight": 1.0})
-        bucket["members"] = members
+        bucket["members"] = _member_rows(([focal] if focal else []) + arguments)
+    elif focal:
+        bucket["members"] = _member_rows([focal])
     else:
-        bucket["members"] = (
-            [{"word": focal, "weight": 1.0}] if focal else []
-        )
+        # Focal não encontrado — nunca emitir members vazio.
+        bucket["members"] = _member_rows(arguments)
     return bucket
 
 
@@ -311,7 +338,7 @@ class PapelStore:
                     "_triples": [],
                 }
                 clusters[key] = bucket
-            bucket["_triples"].append((r["w1"], r["w2"]))
+            bucket["_triples"].append((str(r["w1"] or ""), str(r["w2"] or "")))
             if len(clusters) >= limit:
                 break
 

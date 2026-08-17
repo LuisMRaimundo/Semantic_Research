@@ -21,6 +21,7 @@ Branch `fix/adjudication-export`, um commit por defeito (D7→D5→D8→D2→D3�
 - **Ficheiros:** `semantic/adapters/papel.py`, `semantic/decisions.py`
 - **Antes:** os dois argumentos do triplo iam para `members` sem papel nem direcção (HIPERONIMO_DE ≡ sinónimos).
 - **Depois:** cada bucket declara `papel_focal`, `papel_arguments`, `papel_direction`; `members` só inclui os argumentos em SINONIMIA.
+- **Residual:** se o fold não encontrar o focal (p.ex. hit por prefixo `composito`⊂`compositor`), `members` conserva todos os argumentos e `papel_direction` fica `unresolved` — nunca `[]`. A comparação de lema usa `_norm_lema` (acentos/caixa/bytes).
 
 ## D3 — exclude PAPEL e termoRelacionado colapsado
 - **Ficheiros:** `semantic/export_blocks.py`, `semantic/concept_model.py`
