@@ -7,6 +7,11 @@ Branch `fix/adjudication-export`, um commit por defeito (D7→D5→D8→D2→D3�
 - **Antes:** `_is_pwn30ish` tratava qualquer id ≥10 caracteres terminado em `-<letra>` como offset PULO, incluindo `oewn-92460746-n`.
 - **Depois:** prefixos conhecidos primeiro (`oewn-` → não-PULO; `ili-30-`/`pwn30-`/`por-` → PULO); a heurística de forma só corre depois.
 
+## D5 — contagem de asserções unificada
+- **Ficheiros:** `semantic/assertions.py` (novo), `export_blocks.py`, `traceability.py`, `reconcile.py`
+- **Antes:** cabeçalho 13, tabela 15, JSON 16 — T12/T15/R1 escreviam Markdown à parte (e R1 só no JSON).
+- **Depois:** `rewrite_assertions_block` lê o JSON e reescreve cabeçalho + secção `## Asserções` no sítio; os três módulos só anexam ao JSON.
+
 # CHANGES — fix pass pós-auditoria de rastreabilidade (2026-08-07)
 
 Branch `fix/traceability-pass`, um commit por item. Suite de testes corrida

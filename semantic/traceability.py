@@ -172,7 +172,7 @@ def run_t15(ws: ClassWorkspace) -> Optional[dict[str, Any]]:
 def append_t15_to_concordance(
     json_path: Path, t15: dict[str, Any]
 ) -> None:
-    """Attach T15 to a concordance JSON (+ MD assertions table) — T12 pattern."""
+    """Anexa T15 ao JSON do concordance e reescreve a secção Markdown."""
     if not json_path.exists():
         return
     doc = _read_json(json_path)
@@ -185,16 +185,8 @@ def append_t15_to_concordance(
     json_path.write_text(
         json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
-    md_path = json_path.with_suffix(".md")
-    if not md_path.exists():
-        return
-    text = md_path.read_text(encoding="utf-8")
-    if "| T15 |" in text:
-        return
-    mark = "PASS ✅" if t15["passed"] else "FAIL ❌"
-    line = f"| T15 | {t15['text']} | {mark} | {t15['evidence']} |\n"
-    if "## Asserções" in text:
-        md_path.write_text(text.rstrip() + "\n" + line, encoding="utf-8")
+    from .assertions import rewrite_assertions_block
+    rewrite_assertions_block(json_path)
 
 
 # ---------------------------------------------------------------------------

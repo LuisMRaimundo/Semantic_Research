@@ -519,7 +519,7 @@ def write_export_blocks(
 def append_t12_to_concordance(
     json_path: Path, blocks_info: dict[str, Any]
 ) -> None:
-    """Attach T12 to the LexWarrant concordance JSON (+ MD assertions table)."""
+    """Anexa T12 ao JSON do concordance e reescreve a secção Markdown."""
     if not json_path.exists():
         return
     try:
@@ -546,16 +546,8 @@ def append_t12_to_concordance(
     json_path.write_text(
         json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
-    md_path = json_path.with_suffix(".md")
-    if not md_path.exists():
-        return
-    text = md_path.read_text(encoding="utf-8")
-    if "| T12 |" in text:
-        return
-    mark = "PASS ✅" if t12["passed"] else "FAIL ❌"
-    line = f"| T12 | {t12['text']} | {mark} | {t12['evidence']} |\n"
-    if "## Asserções" in text:
-        md_path.write_text(text.rstrip() + "\n" + line, encoding="utf-8")
+    from .assertions import rewrite_assertions_block
+    rewrite_assertions_block(json_path)
 
 
 def skos_serializable_terms(blocks: dict[str, Any]) -> set[str]:
