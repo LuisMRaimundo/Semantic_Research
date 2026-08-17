@@ -6,7 +6,11 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from semantic.concept_model import build_class_concept_graph, render_skos_owl
+from semantic.concept_model import (
+    build_class_concept_graph,
+    build_t16,
+    render_skos_owl,
+)
 from semantic.workspace import ClassWorkspace
 
 
@@ -160,3 +164,26 @@ def test_skos_label_disjointness(tmp_path: Path, monkeypatch):
     assert ttl.count('skos:altLabel "compósito"') == 1
     assert 'rdf:value "compósito"' not in ttl  # not also excludedCandidate
     assert 'rdf:value "ruído"' in ttl
+
+
+def test_t16_flags_cili_in_rt_and_exclude():
+    """T16 — o mesmo CILI não pode estar em rt_candidates e exclude_records."""
+    graph = {
+        "discovery_evidence": {
+            "uf_candidates": [],
+            "rt_candidates": [{"ili": "i6556", "members": ["x"], "key": "ontopt06:6214"}],
+            "exclude_records": [{"ili": "i6556", "members": ["y"], "key": "pwn30-01199083-a"}],
+        }
+    }
+    t16 = build_t16(graph)
+    assert t16["id"] == "T16"
+    assert t16["passed"] is False
+    assert "i6556" in t16["evidence"]
+    clean = {
+        "discovery_evidence": {
+            "uf_candidates": [{"ili": "i1", "members": ["a"]}],
+            "rt_candidates": [{"ili": "i2", "members": ["b"]}],
+            "exclude_records": [{"ili": "i3", "members": ["c"]}],
+        }
+    }
+    assert build_t16(clean)["passed"] is True

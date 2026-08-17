@@ -343,6 +343,59 @@ def build_class_concept_graph(ws: ClassWorkspace) -> dict[str, Any]:
     }
 
 
+def _row_cili(row: dict[str, Any]) -> Optional[str]:
+    raw = str(row.get("ili") or row.get("cili") or "").strip()
+    if raw.startswith(("oewn-ili:", "ili:", "cili:")) and not raw.startswith("ili-30-"):
+        raw = raw.rsplit(":", 1)[-1]
+    if raw.startswith("i") and raw[1:].isdigit():
+        return raw
+    return None
+
+
+def build_t16(graph: dict[str, Any]) -> dict[str, Any]:
+    """T16 — nenhum CILI em uf/rt_candidates e exclude_records ao mesmo tempo."""
+    uf, rt, excl = discovery_lists(graph)
+    admitted: set[str] = set()
+    for row in uf + rt:
+        cid = _row_cili(row)
+        if cid:
+            admitted.add(cid)
+    excluded: set[str] = set()
+    for row in excl:
+        cid = _row_cili(row)
+        if cid:
+            excluded.add(cid)
+    conflict = sorted(admitted & excluded)
+    return {
+        "id": "T16",
+        "text": (
+            "Nenhum CILI figura simultaneamente em uf/rt_candidates e em "
+            "exclude_records."
+        ),
+        "passed": not conflict,
+        "evidence": "OK" if not conflict else f"conflito: {conflict}",
+    }
+
+
+def append_t16_to_concordance(json_path: Path, t16: dict[str, Any]) -> None:
+    """Anexa T16 ao JSON do concordance e reescreve a secção Markdown."""
+    if not json_path.exists():
+        return
+    try:
+        doc = json.loads(json_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return
+    asserts = [a for a in (doc.get("assertions") or []) if a.get("id") != "T16"]
+    asserts.append(t16)
+    doc["assertions"] = asserts
+    doc["all_passed"] = all(a.get("passed") or a.get("pass") for a in asserts)
+    json_path.write_text(
+        json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
+    from .assertions import rewrite_assertions_block
+    rewrite_assertions_block(json_path)
+
+
 def discovery_lists(graph: dict[str, Any]) -> tuple[list, list, list]:
     """(uf_candidates, rt_candidates, exclude_records) from CONCEPT graph."""
     disc = graph.get("discovery_evidence")

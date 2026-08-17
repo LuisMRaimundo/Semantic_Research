@@ -42,6 +42,11 @@ Branch `fix/adjudication-export`, um commit por defeito (D7→D5→D8→D2→D3�
 - **Antes:** `axis_terms` gravado era reutilizado para sempre, incluindo termos de cartões entretanto exclude.
 - **Depois:** derivado a cada compilação (focus_stems + UF/RT), salvo `axis_terms_locked`; o valor antigo vai para `axis_terms_previous`; doctor avisa termos exclusive-exclude.
 
+## T16 — CILI não pode estar em UF/RT e exclude ao mesmo tempo
+- **Ficheiros:** `semantic/concept_model.py`, `semantic/pipeline.py`
+- **Antes:** nenhuma asserção via incoerência de identificadores dentro do bloco de evidência (T12 só compara vocabulário ↔ evidência).
+- **Depois:** T16 anexa-se ao concordance após o CONCEPT; falha se o mesmo CILI estiver em `uf`/`rt_candidates` e em `exclude_records`.
+
 # CHANGES — fix pass pós-auditoria de rastreabilidade (2026-08-07)
 
 Branch `fix/traceability-pass`, um commit por item. Suite de testes corrida
