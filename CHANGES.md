@@ -37,6 +37,11 @@ Branch `fix/adjudication-export`, um commit por defeito (D7→D5→D8→D2→D3�
 - **Antes:** `report["diverged"]` só era impresso; a chave `legacy_equivalence_map` apontava para um ficheiro CILI-only.
 - **Depois:** chave `cili_auto_map` (lê a antiga); cada par divergente vai para `pending_ili_adjudication` e `mapping_status: pending_ili_divergence`; aviso no Run.
 
+## D1 — axis_terms deixa de ficar congelado
+- **Ficheiros:** `semantic/compile_specs.py`, `semantic/doctor.py` (exposição Meta: D8)
+- **Antes:** `axis_terms` gravado era reutilizado para sempre, incluindo termos de cartões entretanto exclude.
+- **Depois:** derivado a cada compilação (focus_stems + UF/RT), salvo `axis_terms_locked`; o valor antigo vai para `axis_terms_previous`; doctor avisa termos exclusive-exclude.
+
 # CHANGES — fix pass pós-auditoria de rastreabilidade (2026-08-07)
 
 Branch `fix/traceability-pass`, um commit por item. Suite de testes corrida
