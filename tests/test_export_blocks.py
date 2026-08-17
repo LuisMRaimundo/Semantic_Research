@@ -263,6 +263,23 @@ class ExportBlocksTests(unittest.TestCase):
         self.assertEqual(set(comp["keys"]), {"ili-30-a-n", "ili-30-b-n"})
         self.assertEqual(set(comp["ilis"]), {"i1", "i2"})
 
+    def test_validated_alt_labels_records_suppressed_uf(self):
+        """D4 — candidatos UF substituídos por validated_alt_labels ficam auditados."""
+        meta = self.ws.load_meta()
+        meta["concept_mapping"] = {"validated_alt_labels": ["oficial"]}
+        self.ws.save_meta(meta)
+        blocks = build_export_blocks(self.ws)
+        alts = [r["termo"] for r in blocks["vocabulario"]["altLabel"]]
+        self.assertEqual(alts, ["oficial"])
+        suppressed = blocks["vocabulario"]["alt_labels_suppressed_by_validated"]
+        terms = {r["termo"] for r in suppressed}
+        self.assertIn("invariável", terms)
+        self.assertTrue(all(r.get("fonte") and r.get("key") for r in suppressed
+                            if r.get("termo") == "invariável"))
+        md = render_blocks_markdown(blocks)
+        self.assertIn("altLabel suprimidos por validated_alt_labels", md)
+        self.assertIn("invariável", md)
+
     def test_evidence_never_in_serialized_turtle(self):
         blocks = build_export_blocks(self.ws)
         ttl = _fake_turtle_from_bloco_a(blocks)

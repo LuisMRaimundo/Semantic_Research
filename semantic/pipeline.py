@@ -478,6 +478,11 @@ def run_class(class_id: str, policy: Optional[str] = None,
             from .reconcile import reconcile_class
             from .termos_pesquisa import write_termos_pesquisa
             blocks = write_export_blocks(ws, dest_dir=ws.final_results)
+            n_sup = int(blocks.get("n_alt_labels_suppressed") or 0)
+            if n_sup:
+                summary.setdefault("warnings", []).append(
+                    f"{n_sup} candidatos UF suprimidos por validated_alt_labels"
+                )
             # Attach T12 on every concordance JSON copy (FINAL__, short name, out/).
             t12_targets = {
                 Path(published["json"]),
@@ -591,6 +596,8 @@ def run_class(class_id: str, policy: Optional[str] = None,
                 note_bits.append(
                     f"{summary['pulo_signals']} PULO signals sidelined in out/"
                 )
+            for w in summary.get("warnings") or []:
+                note_bits.append(f"AVISO: {w}")
             summary["note"] = " · ".join(note_bits)
         except Exception as exc:  # noqa: BLE001
             summary["errors"].append(f"LexWarrant: {exc}")

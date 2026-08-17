@@ -353,7 +353,18 @@ def build_export_blocks(ws: ClassWorkspace) -> dict[str, Any]:
     # If concept_mapping.validated_alt_labels is set, publish only those alts
     cm = meta.get("concept_mapping") if isinstance(meta.get("concept_mapping"), dict) else {}
     validated = [str(x).strip() for x in (cm.get("validated_alt_labels") or []) if str(x).strip()]
+    alt_labels_suppressed: list[dict[str, Any]] = []
     if validated:
+        kept_norms = {normalize_word(v) for v in validated}
+        alt_labels_suppressed = [
+            {
+                "fonte": r.get("fonte"),
+                "key": r.get("key"),
+                "termo": r.get("termo"),
+            }
+            for r in alt_labels
+            if normalize_word(str(r.get("termo") or "")) not in kept_norms
+        ]
         # One row per validated form (no Onto-group duplication)
         alt_labels = [{
             "termo": v,
@@ -372,6 +383,7 @@ def build_export_blocks(ws: ClassWorkspace) -> dict[str, Any]:
         # Audit only: members removed from altLabel by the Onto focus-stem
         # filter — recorded, never silently discarded.
         "members_dropped_focus_filter": dropped_focus_filter,
+        "alt_labels_suppressed_by_validated": alt_labels_suppressed,
     }
     evidencia = {
         "nota": EVIDENCE_NOTE,
@@ -461,6 +473,15 @@ def render_blocks_markdown(blocks: dict[str, Any]) -> str:
         f"- **termoRelacionado** (`tex:termoRelacionado` ← RT): "
         f"{', '.join(rts) or '—'}"
     )
+    suppressed = v.get("alt_labels_suppressed_by_validated") or []
+    if suppressed:
+        bits = ", ".join(
+            f"{r.get('termo')} ({r.get('fonte') or '—'}:{r.get('key') or '—'})"
+            for r in suppressed if r.get("termo")
+        )
+        ap(
+            f"- **altLabel suprimidos por validated_alt_labels:** {bits}"
+        )
     ap("")
     ap("## Evidência de delimitação (não serializada)")
     ap("")
@@ -560,7 +581,15 @@ def write_export_blocks(
         json.dumps(blocks, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
     md_path.write_text(render_blocks_markdown(blocks), encoding="utf-8")
-    return {"json": str(json_path), "md": str(md_path), "t12_ok": ok}
+    n_sup = len(
+        (blocks.get("vocabulario") or {}).get("alt_labels_suppressed_by_validated") or []
+    )
+    return {
+        "json": str(json_path),
+        "md": str(md_path),
+        "t12_ok": ok,
+        "n_alt_labels_suppressed": n_sup,
+    }
 
 
 def append_t12_to_concordance(

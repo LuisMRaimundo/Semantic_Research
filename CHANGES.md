@@ -27,6 +27,11 @@ Branch `fix/adjudication-export`, um commit por defeito (D7→D5→D8→D2→D3�
 - **Antes:** o filtro «omitir o lema focal» invertia triplos PAPEL (retinha `material`); `termoRelacionado` repetia o mesmo termo por membro.
 - **Depois:** exclude PAPEL conserva `papel_focal` e lista `papel_arguments` à parte; RT colapsa por forma, com `keys`/`ilis` de todas as origens.
 
+## D4 — validated_alt_labels deixa de descartar UF em silêncio
+- **Ficheiros:** `semantic/export_blocks.py`, `semantic/pipeline.py`
+- **Antes:** a lista UF era substituída por `validated_alt_labels` sem rasto.
+- **Depois:** entradas suprimidas em `alt_labels_suppressed_by_validated`, linha no `blocos.md` e aviso no log do Run.
+
 # CHANGES — fix pass pós-auditoria de rastreabilidade (2026-08-07)
 
 Branch `fix/traceability-pass`, um commit por item. Suite de testes corrida
