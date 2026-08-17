@@ -16,6 +16,7 @@ from semantic.termos_pesquisa import (
     HTML_MAX_BYTES,
     assert_termos_coherence,
     build_termos_pesquisa,
+    render_termos_md,
     write_termos_pesquisa,
 )
 from semantic.workspace import ClassWorkspace
@@ -186,6 +187,21 @@ class TermosPesquisaRulesTests(unittest.TestCase):
             "    lingua: en\n"
             "    fonte: teste\n",
             encoding="utf-8",
+        )
+
+    def test_scope_note_in_header(self):
+        meta = self.ws.load_meta()
+        meta["scope_note"] = "acepção schaefferiana; exclui o composto químico"
+        self.ws.save_meta(meta)
+        doc = build_termos_pesquisa(self.ws)
+        self.assertEqual(
+            doc["scope_note"],
+            "acepção schaefferiana; exclui o composto químico",
+        )
+        md = render_termos_md(doc)
+        self.assertIn(
+            "**Nota de âmbito:** acepção schaefferiana; exclui o composto químico",
+            md,
         )
 
     def test_manual_not_auto_uf(self):

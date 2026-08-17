@@ -87,6 +87,8 @@ class ConceptModelSmoke(unittest.TestCase):
             "generated": "now",
         })
         self.assertIn("skos:Concept", ttl)
+        self.assertIn('skos:definition "test axis"@pt-PT', ttl)
+        self.assertNotIn('skos:scopeNote "test axis"', ttl)
         self.assertIn("skos:exactMatch <", ttl)
         self.assertIn("ili.globalwordnet.org/ili/i1", ttl)
         self.assertIn('skos:altLabel "alpha"@pt-PT', ttl)

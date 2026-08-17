@@ -1029,6 +1029,7 @@ def build_termos_pesquisa(ws: ClassWorkspace) -> dict[str, Any]:
         "class_id": ws.class_id,
         "pref_label": pref,
         "axis": axis,
+        "scope_note": (meta.get("scope_note") or "").strip(),
         "acepcao_a_separar": axis or pref,
         "ancora_ili": ancora,
         "anchor_pos": anchor_pos,
@@ -1131,6 +1132,8 @@ def render_termos_md(doc: dict[str, Any]) -> str:
     ap(f"**Classe:** {doc.get('class_id')}")
     if doc.get("axis"):
         ap(f"**Eixo / acepção a separar:** {doc['axis']}")
+    if doc.get("scope_note"):
+        ap(f"**Nota de âmbito:** {doc['scope_note']}")
     if doc.get("ancora_ili"):
         cili_a, pwn_a, leg_a = [], [], []
         for a in doc["ancora_ili"]:

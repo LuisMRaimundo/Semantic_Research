@@ -441,6 +441,9 @@ def from_papel_export(
         sk = sense_key("papel", key)
         if sk in prior:
             continue
+        if not syn.get("papel_focal") and "papel_direction" in syn:
+            # Focal não casa com a consulta — não semear (auditoria no export).
+            continue
         members = []
         for m in syn.get("members") or []:
             if isinstance(m, dict):

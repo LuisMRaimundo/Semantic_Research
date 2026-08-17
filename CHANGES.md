@@ -1,3 +1,15 @@
+# CHANGES — scope_note SKOS + D2 residual (não semear) (2026-08-17)
+
+## scope_note chega ao CONCEPT e ao TTL
+- **Ficheiros:** `semantic/concept_model.py`, `semantic/termos_pesquisa.py`
+- **Antes:** `build_class_concept_graph` ignorava `meta["scope_note"]`; o TTL punha o `axis` em `skos:scopeNote`.
+- **Depois:** lê `scope_note`; `axis` → `skos:definition`; `scope_note` → `skos:scopeNote`. O campo vai para CONCEPT.json e para o cabeçalho de TERMOS_PESQUISA.md (`**Nota de âmbito:**`).
+
+## D2 residual — prefixo sem focal não semeia cartão
+- **Ficheiros:** `semantic/adapters/papel.py`, `semantic/decisions.py`
+- **Antes:** «Starts with» `compósito` apanhava `compositor DIZ_SE_SOBRE X` e semeava um cartão com `members=[]` (ou, após o residual anterior, com os argumentos).
+- **Depois:** se o focal não casa com a consulta, o bucket não é semeado — fica em `members_dropped_focus_filter` (`reason: focal_nao_casa_com_consulta`). Se o bucket for anotado à mesma, `papel_focal=null`, `papel_direction="unresolved"` e `members` nunca fica vazio. `from_papel_export` ignora synsets unresolved (exports pré-D2, sem esses campos, continuam a semear).
+
 # CHANGES — fix pass adjudicação → artefactos (2026-08-17)
 
 Branch `fix/adjudication-export`, um commit por defeito (D7→D5→D8→D2→D3→D4→D6→D1→T16).
@@ -21,7 +33,7 @@ Branch `fix/adjudication-export`, um commit por defeito (D7→D5→D8→D2→D3�
 - **Ficheiros:** `semantic/adapters/papel.py`, `semantic/decisions.py`
 - **Antes:** os dois argumentos do triplo iam para `members` sem papel nem direcção (HIPERONIMO_DE ≡ sinónimos).
 - **Depois:** cada bucket declara `papel_focal`, `papel_arguments`, `papel_direction`; `members` só inclui os argumentos em SINONIMIA.
-- **Residual:** se o fold não encontrar o focal (p.ex. hit por prefixo `composito`⊂`compositor`), `members` conserva todos os argumentos e `papel_direction` fica `unresolved` — nunca `[]`. A comparação de lema usa `_norm_lema` (acentos/caixa/bytes).
+- **Residual (superseded):** o fold sem focal já não semeia o cartão — ver secção «D2 residual — prefixo sem focal não semeia cartão». A comparação de lema usa `_norm_lema` (acentos/caixa/bytes).
 
 ## D3 — exclude PAPEL e termoRelacionado colapsado
 - **Ficheiros:** `semantic/export_blocks.py`, `semantic/concept_model.py`

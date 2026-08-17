@@ -166,6 +166,32 @@ def test_skos_label_disjointness(tmp_path: Path, monkeypatch):
     assert 'rdf:value "ruído"' in ttl
 
 
+def test_scope_note_and_axis_skos_predicates(tmp_path: Path, monkeypatch):
+    """scope_note vai para CONCEPT e skos:scopeNote; axis → skos:definition."""
+    classes = tmp_path / "classes"
+    classes.mkdir()
+    monkeypatch.setattr("semantic.settings.CLASSES_DIR", classes)
+    monkeypatch.setattr("semantic.workspace.settings.CLASSES_DIR", classes)
+    ws = ClassWorkspace.create("ScopeClass", pref_label="compósito", axis="heterogeneidade")
+    meta = ws.load_meta()
+    meta["scope_note"] = "acepção schaefferiana; exclui o composto químico"
+    ws.save_meta(meta)
+    ws.decisions_json.write_text(
+        json.dumps({
+            "class_id": "ScopeClass",
+            "senses": [], "terms": [], "manual_terms": [], "exclude_terms": [],
+        }),
+        encoding="utf-8",
+    )
+    graph = build_class_concept_graph(ws)
+    assert graph["axis"] == "heterogeneidade"
+    assert graph["scope_note"] == "acepção schaefferiana; exclui o composto químico"
+    ttl = render_skos_owl(graph)
+    assert 'skos:definition "heterogeneidade"@pt-PT' in ttl
+    assert 'skos:scopeNote "acepção schaefferiana; exclui o composto químico"@pt-PT' in ttl
+    assert 'skos:scopeNote "heterogeneidade"' not in ttl
+
+
 def test_t16_flags_cili_in_rt_and_exclude():
     """T16 — o mesmo CILI não pode estar em rt_candidates e exclude_records."""
     graph = {

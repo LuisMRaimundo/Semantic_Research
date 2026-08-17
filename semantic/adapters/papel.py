@@ -156,7 +156,8 @@ def annotate_papel_bucket(bucket: dict[str, Any], query: str) -> dict[str, Any]:
     ``papel_arguments``. Se nenhum argumento coincidir com a consulta
     (após fold de acentos), ``papel_focal`` é null, a direcção é
     ``unresolved`` e ``members`` conserva todos os argumentos — nunca
-    fica vazio.
+    fica vazio. ``export_search`` / ``upgrade_papel_export`` não semeiam
+    esses buckets: vão para ``members_dropped_focus_filter``.
     """
     qn = _norm_lema(query)
     g = str((bucket.get("relations") or {}).get("papel_group") or "")
@@ -237,6 +238,37 @@ def annotate_papel_bucket(bucket: dict[str, Any], query: str) -> dict[str, Any]:
     return bucket
 
 
+def _drop_record(syn: dict[str, Any]) -> dict[str, Any]:
+    """Auditoria: cartão PAPEL não semeado porque o focal não casa."""
+    mems = []
+    for m in syn.get("members") or []:
+        mems.append(m.get("word") if isinstance(m, dict) else m)
+    rels = syn.get("relations") or {}
+    return {
+        "fonte": "papel",
+        "key": syn.get("synset_id"),
+        "papel_rel": rels.get("papel_rel"),
+        "papel_group": rels.get("papel_group"),
+        "papel_arguments": list(syn.get("papel_arguments") or []),
+        "members": [m for m in mems if m],
+        "reason": "focal_nao_casa_com_consulta",
+    }
+
+
+def _keep_resolved_synsets(
+    synsets: list[dict[str, Any]],
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    """Semeia só buckets com focal; o resto vai para auditoria (nunca em silêncio)."""
+    kept: list[dict[str, Any]] = []
+    dropped: list[dict[str, Any]] = []
+    for syn in synsets:
+        if syn.get("papel_focal"):
+            kept.append(syn)
+        else:
+            dropped.append(_drop_record(syn))
+    return kept, dropped
+
+
 def upgrade_papel_export(export: dict[str, Any]) -> dict[str, Any]:
     """Reaplica a estrutura argumental a um export PAPEL já gravado."""
     query = ""
@@ -246,9 +278,13 @@ def upgrade_papel_export(export: dict[str, Any]) -> dict[str, Any]:
     elif isinstance(q, str):
         query = q
     out = dict(export)
-    out["synsets"] = [
+    annotated = [
         annotate_papel_bucket(dict(s), query) for s in (export.get("synsets") or [])
     ]
+    kept, dropped = _keep_resolved_synsets(annotated)
+    out["synsets"] = kept
+    out["count"] = len(kept)
+    out["members_dropped_focus_filter"] = dropped
     return out
 
 
@@ -342,7 +378,8 @@ class PapelStore:
             if len(clusters) >= limit:
                 break
 
-        synsets = [annotate_papel_bucket(b, query) for b in clusters.values()]
+        annotated = [annotate_papel_bucket(b, query) for b in clusters.values()]
+        synsets, dropped = _keep_resolved_synsets(annotated)
 
         return {
             "type": "thesaurus_search",
@@ -350,6 +387,7 @@ class PapelStore:
             "query": {"query": query, "mode": mode, "group": group},
             "count": len(synsets),
             "synsets": synsets,
+            "members_dropped_focus_filter": dropped,
             "_note": (
                 "PAPEL 3.5 discovery only — word–word dictionary relations; "
                 "never LexWarrant admission."
