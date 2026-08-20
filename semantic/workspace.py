@@ -127,6 +127,7 @@ def _write_final_folder_marker(folder: Path, class_id: str = "") -> None:
             local_name = "… FINAL RESULTS (not ready)"
         html.write_text(
             "<!DOCTYPE html><html><head><meta charset='utf-8'>"
+            "<base href='./'>"
             f"<title>FINAL RESULTS — {class_id or 'class'}</title>"
             "<style>"
             "body{margin:0;font-family:Segoe UI,Arial,sans-serif;"

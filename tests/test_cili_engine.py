@@ -214,7 +214,7 @@ def test_export_flag_off_leaves_md_unchanged(engine: CiliEngine, tmp_path, monke
         "cili_blocks": [{
             "ili": "i1",
             "rdf_uri": "http://ili.globalwordnet.org/ili/i1",
-            "page_uri": "https://globalwordnet.github.io/cili/i1.html",
+            "page_uri": "https://globalwordnet.github.io/cili/i1",
             "definition": "able",
             "pos": "a",
             "pos_norm": "a",
@@ -226,7 +226,37 @@ def test_export_flag_off_leaves_md_unchanged(engine: CiliEngine, tmp_path, monke
     assert "## CILI" not in off
     assert "## CILI" in on
     assert "i1" in on
+    assert "`http://ili.globalwordnet.org/ili/i1`" in on
+    assert "](https://globalwordnet.github.io/cili/i1)" in on
     assert render_cili_md([]) == ""
+
+
+def test_termos_html_stays_local_no_remote_cili_href():
+    from semantic.cili_export import html_ident
+    from semantic.termos_pesquisa import render_termos_html
+
+    assert html_ident("i1") == "<code>i1</code>"
+    html = render_termos_html({
+        "class_id": "Demo",
+        "pref_label": "demo",
+        "axis": "x",
+        "search_lang": "en",
+        "label_lang": "pt",
+        "ancora_ili": ["i1"],
+        "A_polo_alvo": [{"forma": "able", "wildcard": "abl*", "ili": "i1"}],
+        "B_polo_contrastante": [],
+        "C_conjunto_controlo": [],
+        "C_termos": [],
+        "D_descritores_adjacentes": [],
+        "E_fronteiras_dominio": [],
+        "F_vocabulario_pt": [],
+        "a_resolver": [],
+        "termos_manuais_presentes": True,
+    })
+    assert "i1" in html
+    assert "href=\"http" not in html
+    assert "ili.globalwordnet.org" not in html
+    assert "globalwordnet.github.io" not in html
 
 
 @pytest.mark.local_corpus

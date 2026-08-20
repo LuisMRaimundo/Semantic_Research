@@ -9,7 +9,7 @@ folders under `classes/` are just workspaces you created for specific studies.
 
 Decisão só por sentido; junção interlingual via **CILI oficial** canónico
 (`i114921`, nunca fabricado; URI RDF `http://ili.globalwordnet.org/ili/i…`;
-página `https://globalwordnet.github.io/cili/i….html`). Prefixos CURIE como
+página `https://globalwordnet.github.io/cili/i…`). Prefixos CURIE como
 `oewn-ili:` são só contextuais — não são o identificador primário. Offsets
 PWN 3.0 usam id local `pwn30-…` (legado OMW `ili-30-…` = pivô PWN 3.0, **não**
 CILI). Matches SKOS (`exactMatch`/…) só via `concept_mapping` adjudicada —

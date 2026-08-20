@@ -70,7 +70,7 @@ def build_bundle_payload(folder: Path, *, class_id: str = "") -> dict[str, Any]:
     cid = class_id or folder.parent.name
     return {
         "class_id": cid,
-        "folder_name": f"{cid}_{FINAL_DIR_NAME}",
+        "folder_name": f"{cid}_FINAL",
         "source_dir": FINAL_DIR_NAME,
         "n_files": len(files),
         "files": files,
@@ -128,22 +128,58 @@ def write_export_all(
     }
 
 
+def _final_export_folder_name(class_id: str) -> str:
+    return f"{class_id}_FINAL"
+
+
+def _looks_like_final_export(folder: Path, class_id: str) -> bool:
+    names = {
+        _final_export_folder_name(class_id),
+        f"{class_id}_{FINAL_DIR_NAME}",
+        FINAL_DIR_NAME,
+    }
+    if folder.name in names:
+        return True
+    return (folder / "TERMOS.html").is_file() or (
+        folder / "OPEN_ME__FINAL_RESULTS.html"
+    ).is_file()
+
+
 def copy_final_to_directory(
     ws: ClassWorkspace,
     dest_parent: Path,
 ) -> Path:
-    """Copy FINAL_RESULTS into ``dest_parent/<Class>_FINAL_RESULTS__…``."""
+    """Copy FINAL_RESULTS files into ``dest_parent/<Class>_FINAL``.
+
+    If *dest_parent* already is an export folder (or contains TERMOS.html),
+    write files in place — never nest ``…_FINAL_RESULTS/…_FINAL_RESULTS``.
+    """
     src = ws.final_results
     if not src.is_dir():
         raise FileNotFoundError(f"No FINAL_RESULTS folder: {src}")
-    dest = Path(dest_parent) / f"{ws.class_id}_{FINAL_DIR_NAME}"
-    if dest.exists():
+    dest_parent = Path(dest_parent)
+    name = _final_export_folder_name(ws.class_id)
+    dest = dest_parent if _looks_like_final_export(dest_parent, ws.class_id) else dest_parent / name
+    ignore = shutil.ignore_patterns(*_SKIP_NAMES, "desktop.ini")
+    if dest.resolve() == src.resolve():
+        return dest
+    if dest.exists() and dest != dest_parent:
         shutil.rmtree(dest)
-    shutil.copytree(
-        src,
-        dest,
-        ignore=shutil.ignore_patterns(*_SKIP_NAMES, "desktop.ini"),
-    )
+        shutil.copytree(src, dest, ignore=ignore)
+        return dest
+    if dest.exists():
+        for item in src.iterdir():
+            if item.name in _SKIP_NAMES or item.name.startswith("."):
+                continue
+            target = dest / item.name
+            if item.is_file():
+                shutil.copy2(item, target)
+            elif item.is_dir():
+                if target.exists():
+                    shutil.rmtree(target)
+                shutil.copytree(item, target, ignore=ignore)
+        return dest
+    shutil.copytree(src, dest, ignore=ignore)
     return dest
 
 

@@ -138,7 +138,7 @@ sense / synset
             One meaning: a set of synonyms + gloss. Decisions are
             per sense, not per spelling.
 
-CILI        Bare iNNNNN (URI …/ili/i… ; page …/cili/i….html). Not oewn-ili: CURIE.
+CILI        Bare iNNNNN (URI …/ili/i… ; page …/cili/i…). Not oewn-ili: CURIE.
             id across wordnets. Primary join key in LexWarrant.
 
 lemma       Dictionary citation form (not inflected).
@@ -427,6 +427,12 @@ class Workbench(tk.Tk):
         ttk.Button(
             ili_btns, text="Aceitar tudo", command=self._onto_ili_accept_all
         ).pack(side="left")
+        ttk.Button(
+            ili_btns, text="Rejeitar tudo", command=self._onto_ili_reject_all
+        ).pack(side="left", padx=4)
+        ttk.Button(
+            ili_btns, text="Exportar", command=self._export_onto_ili
+        ).pack(side="left", padx=(8, 0))
         self.onto_ili_status = ttk.Label(ili_box, text="—", foreground="#444")
         self.onto_ili_status.pack(anchor="w", pady=(2, 2))
         self.onto_ili_list = tk.Listbox(ili_box, height=6, font=("Consolas", 8))
@@ -828,12 +834,32 @@ class Workbench(tk.Tk):
                 row, text=f"CILI · {definition}", bg=bg, fg="#333",
                 wraplength=500, justify="left", anchor="w", font=("", 8, "italic"),
             ).pack(fill="x")
+        links = tk.Frame(row, bg=bg)
+        links.pack(anchor="w")
         btn = tk.Label(
-            row, text="CILI: open concept", bg=bg, fg=accent,
+            links, text="CILI: open concept", bg=bg, fg=accent,
             font=("", 8, "underline"), cursor="hand2",
         )
-        btn.pack(anchor="w")
+        btn.pack(side="left")
         btn.bind("<Button-1>", lambda _e, cid=ili: self._open_cili_panel(ili=cid))
+        tk.Label(links, text=" · ", bg=bg, fg="#999").pack(side="left")
+        web = tk.Label(
+            links, text="página CILI", bg=bg, fg="#0B5E20",
+            font=("", 8, "underline"), cursor="hand2",
+        )
+        web.pack(side="left")
+
+        def _open_page(_evt=None, cid=ili):
+            from engines.CILI.cili_engine import CILI_PAGE
+            import webbrowser
+
+            url = CILI_PAGE.format(ili=cid)
+            if url.endswith(".html"):
+                url = url[: -len(".html")]
+            webbrowser.open(url)
+            self.status_var.set(f"Aberto: {url}")
+
+        web.bind("<Button-1>", _open_page)
 
     def _open_cili_panel(self, ili: str | None = None, lemma: str | None = None):
         from semantic.cili_panel import CiliPanel
@@ -1280,9 +1306,9 @@ class Workbench(tk.Tk):
         )
         try:
             import os
-            os.startfile(path)  # type: ignore[attr-defined]
+            os.startfile(str(path.resolve()))  # type: ignore[attr-defined]
         except Exception:
-            webbrowser.open(path.as_uri())
+            webbrowser.open(path.resolve().as_uri())
 
     def _export_final_folder(self):
         """Copy FINAL_RESULTS only (deliverable) — separate from full-class export."""
@@ -1508,6 +1534,36 @@ class Workbench(tk.Tk):
             return None
         return self._onto_ili_rows[idx]
 
+    def _export_onto_ili(self):
+        """Report of the Onto→ILI inventory — does not change decisions."""
+        ws = self._ws()
+        if not ws:
+            messagebox.showinfo(APP, "Abra ou crie uma classe primeiro.")
+            return
+        try:
+            from semantic.onto_ili_export import export_onto_ili_report
+
+            out = export_onto_ili_report(ws)
+        except Exception as exc:  # noqa: BLE001
+            messagebox.showerror(APP, f"Exportação Onto→ILI falhou:\n{exc}")
+            return
+        self._log(
+            f"Exportação Onto→ILI → {out['folder']} "
+            f"({out['total']} links · {out['accepted']} accepted · "
+            f"{out['proposed']} proposed · {out['rejected']} rejected)\n"
+        )
+        if not out["total"]:
+            messagebox.showinfo(
+                APP,
+                "Sem propostas Onto→ILI nesta classe — "
+                "o relatório foi criado vazio. Clique «Propor» primeiro.",
+            )
+        try:
+            import os
+            os.startfile(out["folder"])  # type: ignore[attr-defined]
+        except Exception:  # noqa: BLE001
+            pass
+
     def _onto_ili_propose(self):
         ws = self._ws()
         if not ws:
@@ -1593,6 +1649,40 @@ class Workbench(tk.Tk):
                 return
             out = accept_top(ws.class_id, n=len(pending), min_score=0.0)
             self._log(f"Onto→ILI accept-all: {out['n']} aceites\n")
+            self._onto_ili_refresh()
+        except Exception as exc:  # noqa: BLE001
+            messagebox.showerror(APP, str(exc))
+
+    def _onto_ili_reject_all(self):
+        """Reject every proposed and accepted link (confirmed)."""
+        ws = self._ws()
+        if not ws:
+            return
+        try:
+            from semantic.onto_ili import list_proposals, reject_all
+            rows = list_proposals(ws.class_id)
+            targets = [
+                r for r in rows
+                if (r.get("status") or "") in ("proposed", "accepted")
+            ]
+            if not targets:
+                messagebox.showinfo(
+                    APP,
+                    "Nada para rejeitar — o inventário está vazio "
+                    "ou já está todo rejeitado.",
+                )
+                return
+            n_acc = sum(1 for r in targets if r.get("status") == "accepted")
+            n_prop = sum(1 for r in targets if r.get("status") == "proposed")
+            if not messagebox.askyesno(
+                APP,
+                f"Rejeitar em bloco {len(targets)} ligações?\n"
+                f"({n_acc} já aceites · {n_prop} propostas)\n"
+                "As já rejeitadas não mudam.",
+            ):
+                return
+            out = reject_all(ws.class_id)
+            self._log(f"Onto→ILI reject-all: {out['n']} rejeitadas\n")
             self._onto_ili_refresh()
         except Exception as exc:  # noqa: BLE001
             messagebox.showerror(APP, str(exc))

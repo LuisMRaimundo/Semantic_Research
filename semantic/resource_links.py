@@ -55,7 +55,7 @@ def _try_cili_page(raw: Any) -> Optional[tuple[str, str]]:
     except Exception:  # noqa: BLE001
         s = str(raw).strip()
         if s.startswith("i") and s[1:].isdigit():
-            return s, f"https://globalwordnet.github.io/cili/{s}.html"
+            return s, f"https://globalwordnet.github.io/cili/{s}"
         return None
 
 
@@ -386,7 +386,13 @@ def links_for_sense(sense: dict[str, Any]) -> list[ResourceLink]:
     out: list[ResourceLink] = []
 
     # CILI (any source that carries it)
-    cili_raw = sense.get("cili") or sense.get("cili_id") or sense.get("ili")
+    cili_raw = (
+        sense.get("cili")
+        or sense.get("cili_id")
+        or sense.get("to_ili")
+        or sense.get("ili")
+        or sense.get("cili_uri")
+    )
     cili_hit = _try_cili_page(cili_raw)
     if cili_hit:
         cid, page = cili_hit
@@ -560,5 +566,14 @@ def open_resource_link(link: ResourceLink, sense: Optional[dict[str, Any]] = Non
         return True
     if not url:
         return False
+    if "ili.globalwordnet.org" in url:
+        from engines.CILI.cili_engine import CILI_PAGE, canonical_ili
+
+        cid = canonical_ili(url.rstrip("/").rsplit("/", 1)[-1])
+        if not cid:
+            return False
+        url = CILI_PAGE.format(ili=cid)
+    if "globalwordnet.github.io/cili/" in url and url.endswith(".html"):
+        url = url[: -len(".html")]
     webbrowser.open(url)
     return True

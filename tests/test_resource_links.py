@@ -28,6 +28,13 @@ class ResourceLinkTests(unittest.TestCase):
         links = links_for_sense(sense)
         kinds = {ln.kind for ln in links}
         self.assertIn("cili", kinds)
+        self.assertTrue(
+            any(ln.kind == "cili" and ln.url.endswith("/cili/i1") and ".html" not in ln.url
+                for ln in links)
+        )
+        self.assertFalse(
+            any("ili.globalwordnet.org" in (ln.url or "") for ln in links)
+        )
         self.assertTrue(any(ln.kind == "local" and ln.verified for ln in links))
         self.assertTrue(verify_pulo_offset("por-30-00001740-a"))
 

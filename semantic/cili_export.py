@@ -8,6 +8,33 @@ from .decisions import VOCABULARIO
 from engines.CILI.cili_engine import CiliEngine, canonical_ili
 
 
+def html_ident(ident: Any, *, text: str | None = None) -> str:
+    """Plain identifier for TERMOS.html — never a remote ``<a href>``.
+
+    FINAL_RESULTS HTML is a local document; links stay inside the export folder.
+    """
+    import html as _html
+
+    raw = "" if ident is None else str(ident).strip()
+    display = raw if text is None else str(text)
+    if not raw or raw == "—":
+        return _html.escape(display or "—", quote=True)
+    return f"<code>{_html.escape(display or raw, quote=True)}</code>"
+
+
+def html_idents(value: Any) -> str:
+    if value is None or value == "" or value == "—":
+        return "—"
+    if isinstance(value, (list, tuple)):
+        parts = [html_ident(x) for x in value if str(x).strip()]
+        return "; ".join(parts) if parts else "—"
+    s = str(value).strip()
+    if ";" in s:
+        bits = [html_ident(p.strip()) for p in s.split(";") if p.strip()]
+        return "; ".join(bits) if bits else "—"
+    return html_ident(s)
+
+
 def export_cili_block_enabled(meta: dict[str, Any] | None, cfg: dict[str, Any] | None = None) -> bool:
     if meta and "export_cili_block" in meta:
         return bool(meta.get("export_cili_block"))
@@ -111,8 +138,10 @@ def render_cili_md(blocks: list[dict[str, Any]]) -> str:
     for b in blocks:
         lines.append(f"### {b['ili']}")
         lines.append("")
-        lines.append(f"- **RDF:** `{b.get('rdf_uri')}`")
-        lines.append(f"- **page:** {b.get('page_uri')}")
+        rdf = b.get("rdf_uri") or ""
+        page = b.get("page_uri") or ""
+        lines.append(f"- **RDF:** `{rdf}`" if rdf else "- **RDF:** —")
+        lines.append(f"- **page:** [{page}]({page})" if page else "- **page:** —")
         if b.get("pos_name"):
             lines.append(
                 f"- **POS:** {b['pos_name']} (raw `{b.get('pos')}`, "
@@ -146,9 +175,11 @@ def render_cili_html(blocks: list[dict[str, Any]]) -> str:
         eq_html = " · ".join(eq_bits) if eq_bits else "<span class=\"empty\">—</span>"
         items.append(
             "<article class=\"cili-block\">"
-            f"<h3>{_esc(b['ili'])}</h3>"
-            f"<p class=\"mono\"><a href=\"{_esc(b.get('page_uri'))}\">{_esc(b.get('page_uri'))}</a><br>"
-            f"<code>{_esc(b.get('rdf_uri'))}</code></p>"
+            f"<h3>{html_ident(b.get('ili'))}</h3>"
+            f"<p class=\"mono\">"
+            f"<code>{_esc(b.get('page_uri'))}</code><br>"
+            f"<code>{_esc(b.get('rdf_uri'))}</code>"
+            f"</p>"
             f"<p>{_esc(b.get('definition') or '(no definition)')}</p>"
             f"<p>{eq_html}</p>"
             "</article>"

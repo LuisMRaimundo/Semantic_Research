@@ -60,9 +60,15 @@ def test_write_export_all_and_copy(tmp_path: Path, monkeypatch):
     dest_parent = tmp_path / "outbox"
     dest_parent.mkdir()
     copied = copy_final_to_directory(ws, dest_parent)
-    assert copied.name == f"DemoClass_{FINAL_DIR_NAME}"
+    assert copied.name == "DemoClass_FINAL"
     assert (copied / "TERMOS.html").exists()
     assert (copied / "a.md").exists()
+
+    # Re-export into the same folder must not nest Class_FINAL_RESULTS/Class_FINAL_RESULTS
+    again = copy_final_to_directory(ws, copied)
+    assert again == copied
+    assert not (copied / copied.name).exists()
+    assert (copied / "TERMOS.html").exists()
 
 
 def test_export_class_bundle_separate_from_final(tmp_path: Path, monkeypatch):

@@ -351,6 +351,27 @@ def accept_top(class_id: str, n: int = 5, min_score: float = 0.6) -> dict[str, A
     return {"class_id": class_id, "accepted": accepted, "n": len(accepted)}
 
 
+def reject_all(class_id: str) -> dict[str, Any]:
+    """Reject every proposed *and* accepted link (already-rejected stay put)."""
+    targets = [
+        p for p in list_proposals(class_id)
+        if (p.get("status") or "") in ("proposed", "accepted")
+    ]
+    rejected = []
+    for p in targets:
+        rejected.append(set_proposal_status(
+            class_id, p["onto_key"], p["ili"], "rejected",
+        ))
+    emit_onto_ili_result(class_id)
+    unstamped = unstamp_rejected_from_decisions(class_id)
+    return {
+        "class_id": class_id,
+        "rejected": rejected,
+        "n": len(rejected),
+        "unstamped": unstamped.get("unstamped"),
+    }
+
+
 def apply_accepted_to_decisions(class_id: str) -> dict[str, Any]:
     """Stamp accepted ILIs onto Onto sense cards in decisions.json."""
     from . import decisions as decmod
@@ -384,6 +405,36 @@ def apply_accepted_to_decisions(class_id: str) -> dict[str, Any]:
     if stamped:
         decmod.save_decisions(ws.decisions_json, data)
     return {"stamped": stamped, "n_accepted": len(accepted)}
+
+
+def unstamp_rejected_from_decisions(class_id: str) -> dict[str, Any]:
+    """Clear Onto-card ILIs that were stamped only by now-rejected accepts."""
+    from . import decisions as decmod
+
+    ws = ClassWorkspace.open(class_id)
+    accepted = {
+        (p["onto_key"], p["ili"])
+        for p in list_proposals(class_id, status="accepted")
+    }
+    data = decmod.load_decisions(ws.decisions_json)
+    unstamped = 0
+    for sense in data.get("senses") or []:
+        if (sense.get("source") or "").lower() != "onto":
+            continue
+        if (sense.get("ili_source") or "") != "onto_ili_accepted":
+            continue
+        key = str(sense.get("key") or "")
+        ili = sense.get("ili")
+        candidates = [key, f"onto:{key}"]
+        still = any((cand, ili) in accepted for cand in candidates)
+        if still:
+            continue
+        sense["ili"] = None
+        sense.pop("ili_source", None)
+        unstamped += 1
+    if unstamped:
+        decmod.save_decisions(ws.decisions_json, data)
+    return {"unstamped": unstamped}
 
 
 def emit_onto_ili_result(class_id: str) -> Optional[str]:

@@ -3,16 +3,22 @@
 from __future__ import annotations
 
 import json
+import re
 import tkinter as tk
+import webbrowser
 from pathlib import Path
 from tkinter import messagebox, ttk
 from typing import Any, Callable, Optional
 
-from engines.CILI.cili_engine import CiliEngine, canonical_ili
+from engines.CILI.cili_engine import CILI_PAGE, CILI_RDF, CiliEngine, canonical_ili
+
+# Only the official HTML page is a live website. The RDF URI is an identifier
+# (ili.globalwordnet.org does not resolve — NXDOMAIN).
+_PAGE_URL_RE = re.compile(r"https://globalwordnet\.github\.io/cili/i\d+(?:\.html)?")
 
 
 def sense_ili(sense: dict[str, Any]) -> Optional[str]:
-    for fld in ("cili_id", "cili", "to_ili", "ili"):
+    for fld in ("cili_id", "cili", "to_ili", "ili", "cili_uri"):
         cid = canonical_ili(sense.get(fld))
         if cid:
             return cid
@@ -74,8 +80,20 @@ class CiliPanel(tk.Toplevel):
         self.detail.pack(fill="both", expand=True)
         self.detail.tag_configure("ili", foreground="#7a3b2e", font=("Consolas", 10, "bold"))
         self.detail.tag_configure("lemma", foreground="#7a3b2e", underline=True)
+        self.detail.tag_configure("url", foreground="#0B5E20", underline=True)
+        self.detail.tag_bind("url", "<Button-1>", self._open_tagged_url)
+        self.detail.tag_bind("url", "<Enter>", lambda _e: self.detail.configure(cursor="hand2"))
+        self.detail.tag_bind("url", "<Leave>", lambda _e: self.detail.configure(cursor=""))
         self.detail.bind("<Button-1>", self._on_detail_click)
         self._lemma_spans: list[tuple[str, str]] = []
+        linkrow = ttk.Frame(right)
+        linkrow.pack(fill="x", pady=(4, 0))
+        ttk.Button(linkrow, text="Open CILI page", command=self._open_current_page).pack(
+            side="left"
+        )
+        ttk.Button(linkrow, text="Copy RDF URI", command=self._copy_current_rdf).pack(
+            side="left", padx=6
+        )
 
         self.protocol("WM_DELETE_WINDOW", self.destroy)
         self.bind("<Escape>", lambda _e: self.destroy())
@@ -103,8 +121,60 @@ class CiliPanel(tk.Toplevel):
         self.detail.configure(state="normal")
         self.detail.delete("1.0", "end")
         self.detail.insert("1.0", text)
+        for m in _PAGE_URL_RE.finditer(text):
+            self.detail.tag_add("url", f"1.0+{m.start()}c", f"1.0+{m.end()}c")
         self.detail.configure(state="disabled")
         self._lemma_spans = []
+
+    def _current_ili(self) -> Optional[str]:
+        cur = getattr(self, "_current", None)
+        if isinstance(cur, dict):
+            return canonical_ili(cur.get("ili"))
+        return None
+
+    def _open_url(self, url: str) -> None:
+        url = (url or "").strip().rstrip(".,);")
+        if not url.startswith("http"):
+            return
+        # RDF namespace is not a website — open the official page instead.
+        if "ili.globalwordnet.org" in url:
+            cid = canonical_ili(url.rsplit("/", 1)[-1])
+            if cid:
+                url = CILI_PAGE.format(ili=cid)
+            else:
+                return
+        # Stale exports used …/cili/iN.html; GitHub Pages only serves …/cili/iN
+        if "globalwordnet.github.io/cili/" in url and url.endswith(".html"):
+            url = url[: -len(".html")]
+        webbrowser.open(url)
+        self.on_status(f"Aberto: {url}")
+
+    def _open_tagged_url(self, evt) -> None:
+        idx = self.detail.index(f"@{evt.x},{evt.y}")
+        ranges = self.detail.tag_ranges("url")
+        for start, end in zip(ranges[0::2], ranges[1::2]):
+            if self.detail.compare(start, "<=", idx) and self.detail.compare(idx, "<", end):
+                self._open_url(self.detail.get(start, end))
+                return
+
+    def _open_current_page(self) -> None:
+        cid = self._current_ili()
+        if not cid:
+            messagebox.showinfo("CILI", "Open a concept first.")
+            return
+        self._open_url(CILI_PAGE.format(ili=cid))
+
+    def _copy_current_rdf(self) -> None:
+        cid = self._current_ili()
+        if not cid:
+            messagebox.showinfo("CILI", "Open a concept first.")
+            return
+        uri = CILI_RDF.format(ili=cid)
+        self.clipboard_clear()
+        self.clipboard_append(uri)
+        self.on_status(
+            f"RDF copiado (identificador, não é um site): {uri}"
+        )
 
     def _search(self) -> None:
         q = self.q_var.get().strip()

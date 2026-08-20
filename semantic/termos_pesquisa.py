@@ -1451,6 +1451,7 @@ def render_termos_html(doc: dict[str, Any]) -> str:
             "; ".join(r["ili"]) if isinstance(r.get("ili"), list)
             else (r.get("ili") or "—")
         )
+        ili_html = f"<code>{_esc(ili)}</code>"
         fontes = ", ".join(r.get("fontes") or []) or "—"
         flag_cls = ' class="row-flag"' if r["forma"] in flagged else ""
         f_rows_html.append(
@@ -1460,7 +1461,7 @@ def render_termos_html(doc: dict[str, Any]) -> str:
             f"<td>{_esc(r.get('estatuto'))}</td>"
             f"<td>{_esc(r.get('garantia'))}</td>"
             f"<td>{_esc(fontes)}</td>"
-            f"<td><code>{_esc(ili)}</code></td>"
+            f"<td>{ili_html}</td>"
             f"</tr>"
         )
     f_body = (
@@ -1535,7 +1536,7 @@ def render_termos_html(doc: dict[str, Any]) -> str:
             "<code>termos_manuais.yaml</code> ausente nesta classe.</p>"
         )
 
-    ancora_txt = ", ".join(ancora) if ancora else "—"
+    ancora_txt = ", ".join(_esc(a) for a in ancora) if ancora else "—"
     syntax_plain = _search_syntax_line(doc)
     # Strip markdown backticks for HTML display
     syntax = _esc(syntax_plain.replace("`", ""))
@@ -1544,6 +1545,7 @@ def render_termos_html(doc: dict[str, Any]) -> str:
 <html lang="pt-PT">
 <head>
 <meta charset="utf-8">
+<base href="./">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>TERMOS — {_esc(pref)} ({_esc(class_id)})</title>
 <style>
@@ -1653,7 +1655,7 @@ footer.page {{
   <h1>TERMOS — {_esc(pref)}</h1>
   <p class="meta">
     <strong>Classe:</strong> {_esc(class_id)} ·
-    <strong>Âncora CILI:</strong> {_esc(ancora_txt)} ·
+    <strong>Âncora CILI:</strong> {ancora_txt} ·
     <strong>Acepção a separar:</strong> {_esc(axis)} ·
     <strong>Pesquisa:</strong> {_esc(search_lang)} ·
     <strong>Rótulos:</strong> {_esc(label_lang)} ·
@@ -1746,8 +1748,21 @@ footer.page {{
     }}
     try {{
       var root = await window.showDirectoryPicker({{ mode: "readwrite" }});
-      var folderName = bundle.folder_name || (bundle.class_id + "_FINAL_RESULTS");
-      var target = await root.getDirectoryHandle(folderName, {{ create: true }});
+      var folderName = bundle.folder_name || (bundle.class_id + "_FINAL");
+      var target = root;
+      var already = false;
+      try {{
+        await root.getFileHandle("TERMOS.html");
+        already = true;
+      }} catch (e1) {{
+        try {{
+          await root.getFileHandle("OPEN_ME__FINAL_RESULTS.html");
+          already = true;
+        }} catch (e2) {{}}
+      }}
+      if (!already && root.name !== folderName) {{
+        target = await root.getDirectoryHandle(folderName, {{ create: true }});
+      }}
       for (var i = 0; i < bundle.files.length; i++) {{
         var f = bundle.files[i];
         var fh = await target.getFileHandle(f.name, {{ create: true }});

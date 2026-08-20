@@ -48,7 +48,7 @@ def main() -> int:
     rows.append((
         "CILI page pattern",
         page,
-        page == "https://globalwordnet.github.io/cili/i1.html",
+        page == "https://globalwordnet.github.io/cili/i1",
         "HEADER.txt + identifiers.py",
     ))
     rows.append((

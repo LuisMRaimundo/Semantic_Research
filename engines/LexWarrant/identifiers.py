@@ -8,7 +8,8 @@ Rules
 * ``oewn-ili:i…`` / ``ili:i…`` are *contextual* CURIEs only — strip to bare id.
 * Official concept URI: ``http://ili.globalwordnet.org/ili/<id>``
   (GWA / WN-LMF RDF namespace; older ``http://globalwordnet.org/ili/`` still accepted on input)
-* Official browser page: ``https://globalwordnet.github.io/cili/<id>.html``
+* Official browser page: ``https://globalwordnet.github.io/cili/<id>``
+  (no ``.html`` — GitHub Pages 404s the suffixed form)
 * Princeton WordNet 3.0 offsets are local ids: ``pwn30-XXXXXXXX-p``.
 * Legacy OMW/MCR ``ili-30-XXXXXXXX-p`` are PWN 3.0 pivots, **not** CILI.
 
@@ -95,9 +96,9 @@ def cili_uri(cili_id: str) -> str:
 
 
 def cili_page_url(cili_id: str) -> str:
-    """Official CILI browser page (``.html`` required by the site generator)."""
+    """Official CILI browser page (extensionless; ``.html`` 404s on GitHub Pages)."""
     cid = normalize_cili_id(cili_id)
-    return f"{CILI_PAGE_BASE}{cid}.html"
+    return f"{CILI_PAGE_BASE}{cid}"
 
 
 def cili_ref(
@@ -493,5 +494,5 @@ def export_ili_item(ident: SenseIdentity) -> dict[str, Any]:
         "source": ident.source or "PULO",
     }
     if cid:
-        out["cili_page"] = f"{CILI_PAGE_BASE}{cid}.html"
+        out["cili_page"] = f"{CILI_PAGE_BASE}{cid}"
     return out

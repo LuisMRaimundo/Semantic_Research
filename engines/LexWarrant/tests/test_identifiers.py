@@ -42,6 +42,10 @@ class TestIdentifiers(unittest.TestCase):
             normalize_cili_id("https://globalwordnet.github.io/cili/i97733.html"),
             "i97733",
         )
+        self.assertEqual(
+            normalize_cili_id("https://globalwordnet.github.io/cili/i97733"),
+            "i97733",
+        )
         with self.assertRaises(ValueError):
             normalize_cili_id("ili-30-14818238-n")
         with self.assertRaises(ValueError):
@@ -53,7 +57,7 @@ class TestIdentifiers(unittest.TestCase):
         )
         self.assertEqual(
             cili_page_url("i97733"),
-            "https://globalwordnet.github.io/cili/i97733.html",
+            "https://globalwordnet.github.io/cili/i97733",
         )
         ref = cili_ref("oewn-ili:i114921", source="OEWN")
         self.assertEqual(ref["cili_id"], "i114921")

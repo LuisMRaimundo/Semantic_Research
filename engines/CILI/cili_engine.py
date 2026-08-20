@@ -75,7 +75,7 @@ _RESOURCE_LANG = {
 }
 
 CILI_RDF = "http://ili.globalwordnet.org/ili/{ili}"
-CILI_PAGE = "https://globalwordnet.github.io/cili/{ili}.html"
+CILI_PAGE = "https://globalwordnet.github.io/cili/{ili}"
 
 
 def pos_norm(pos: str) -> str:
