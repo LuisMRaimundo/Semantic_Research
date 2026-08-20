@@ -1,3 +1,13 @@
+# CHANGES — R9 — CILI lexicographical engine (2026-08-20)
+
+## R9 — CILI lexicographical engine
+- **WP1** — `engines/CILI/cili_engine.py`: read-only `CiliEngine` (index + FTS5, `concept` / `entry` / `search` / `stats`, exact `ili_for_pwn30` / `pwn30_for_ili`). Satellite `pos` + `pos_norm` (`s→a`). `[cili]` in `config.toml` (root = folder that contains `ili.ttl`; live pwn30 map = LexWarrant). First index writes `[pins] cili`; mismatch is a doctor warning, never an auto-update. Languages discovered from mapping files + OMW packs.
+- **WP2** — `sr.py cili index|entry|concept|search|translate` (human text or `--json`).
+- **WP3** — workbench: CILI Toplevel (search / entry / concept / copy-as-candidate into `_specs/`, not decisions) + inline CILI definition on sense cards that already carry an ILI id. TERMOS CILI block gated by `export_cili_block` (config or `class.json`); flag off leaves existing exports unchanged.
+- **WP4** — `sr doctor` / `--deep`: config, root/`ili.ttl`, pwn30 map, index freshness, pin, languages, FTS5, map-hash warning.
+- **WP5** — `tests/test_cili_engine.py` (fixture corpus; `@pytest.mark.local_corpus` smoke). `.gitignore`: `engines/CILI/data/` + `/CILI/` dump patterns. README architecture + CLI. Dumps stay local.
+- **Local corpus actuals** (this machine): 117,659 concepts; labels en=207,061 (wn31), nl=58,786 (odwn13), por=69,154, fra=95,762, spa=133,347. OMW pack *lines* are ~73k/100k/165k; the engine indexes only rows whose PWN-3.0 offset is in the live map (unmapped offsets stay unmapped).
+
 # CHANGES — scope_note SKOS + D2 residual (não semear) (2026-08-17)
 
 ## scope_note chega ao CONCEPT e ao TTL

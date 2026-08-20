@@ -90,6 +90,14 @@ def load_oewn_backend() -> ModuleType:
     return importlib.import_module("oewn_backend")
 
 
+@lru_cache(maxsize=1)
+def load_cili_engine() -> Any:
+    """CILI lexicographical engine (read-only; ``engines/CILI``)."""
+    from engines.CILI.cili_engine import CiliEngine
+
+    return CiliEngine.from_config()
+
+
 def cili_api() -> tuple[str, Any, Any, Any]:
     """Return (version, counts_fn, resolve_fn, offset_fn)."""
     mod = load_cili_resolver()
@@ -110,3 +118,4 @@ def clear_engine_caches() -> None:
     load_cili_resolver.cache_clear()
     load_identifiers.cache_clear()
     load_oewn_backend.cache_clear()
+    load_cili_engine.cache_clear()

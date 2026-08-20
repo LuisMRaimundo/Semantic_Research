@@ -206,6 +206,9 @@ class Workbench(tk.Tk):
         self._pending_class: str | None = None
         self._has_unsaved = False
         self._guide_win: tk.Toplevel | None = None
+        self._cili_win = None
+        self._cili_engine = None
+        self._cili_def_cache: dict[str, str] = {}
         self._build()
         self.bind("<F1>", lambda e: self._open_guide())
         self._refresh_classes()
@@ -226,6 +229,8 @@ class Workbench(tk.Tk):
             side="left", padx=4
         )
         ttk.Button(top, text="↻", width=3, command=self._load_class).pack(side="left")
+        ttk.Button(top, text="CILI", command=self._open_cili_panel).pack(
+            side="left", padx=(8, 0))
         ttk.Button(top, text="? Guide", command=self._open_guide).pack(
             side="right"
         )
@@ -793,6 +798,61 @@ class Workbench(tk.Tk):
 
             lbl.bind("<Button-1>", _open)
 
+    def _cili_engine_lazy(self):
+        if self._cili_engine is not None:
+            return self._cili_engine
+        try:
+            from engines.CILI.cili_engine import CiliEngine
+
+            eng = CiliEngine.from_config()
+            if not eng.index_path.exists():
+                return None
+            self._cili_engine = eng
+            return eng
+        except Exception:  # noqa: BLE001
+            return None
+
+    def _add_cili_inline(self, parent: tk.Misc, sense: dict, *, bg: str, accent: str) -> None:
+        from semantic.cili_panel import inline_definition, sense_ili
+
+        ili = sense_ili(sense)
+        if not ili:
+            return
+        if ili not in self._cili_def_cache:
+            self._cili_def_cache[ili] = inline_definition(self._cili_engine_lazy(), ili)
+        definition = self._cili_def_cache[ili]
+        row = tk.Frame(parent, bg=bg)
+        row.pack(fill="x", pady=(0, 2))
+        if definition:
+            tk.Label(
+                row, text=f"CILI · {definition}", bg=bg, fg="#333",
+                wraplength=500, justify="left", anchor="w", font=("", 8, "italic"),
+            ).pack(fill="x")
+        btn = tk.Label(
+            row, text="CILI: open concept", bg=bg, fg=accent,
+            font=("", 8, "underline"), cursor="hand2",
+        )
+        btn.pack(anchor="w")
+        btn.bind("<Button-1>", lambda _e, cid=ili: self._open_cili_panel(ili=cid))
+
+    def _open_cili_panel(self, ili: str | None = None, lemma: str | None = None):
+        from semantic.cili_panel import CiliPanel
+
+        ws = self._ws()
+        if self._cili_win is None or not self._cili_win.winfo_exists():
+            self._cili_win = CiliPanel(
+                self,
+                class_root=ws.root if ws else None,
+                on_status=lambda s: self.status_var.set(s),
+            )
+        else:
+            self._cili_win.class_root = ws.root if ws else None
+            self._cili_win.lift()
+        if ili:
+            self._cili_win.open_concept(ili)
+        elif lemma:
+            self._cili_win.open_entry(lemma)
+
     def _onto_ili_open_links(self, _evt=None):
         row = self._onto_ili_selected()
         if not row:
@@ -999,6 +1059,7 @@ class Workbench(tk.Tk):
                 card, text=key_line, bg=bg, fg="#444", anchor="w"
             ).pack(fill="x")
             self._add_resource_links(card, s, bg=bg, accent=accent)
+            self._add_cili_inline(card, s, bg=bg, accent=accent)
             members = ", ".join(s.get("members") or [])
             gloss = s.get("gloss") or "(no gloss)"
             tk.Label(

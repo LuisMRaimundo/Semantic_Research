@@ -37,6 +37,9 @@ class SettingsPathTests(unittest.TestCase):
         self.assertIn("oewn:2025+", comps)
         self.assertEqual(cfg.get("own_pt"), "own-pt:1.0.0")
         self.assertGreaterEqual(int(cfg.get("cili_min_pairs") or 0), 117000)
+        self.assertTrue(cfg.get("cili_root"))
+        self.assertTrue(str(cfg.get("cili_pwn30_map") or "").endswith("ili-map-pwn30.tab"))
+        self.assertFalse(bool(cfg.get("export_cili_block")))
 
 
 if __name__ == "__main__":

@@ -8,8 +8,15 @@ data/sense_index.sqlite
 data/papel.sqlite
 data/link_views/
 .DS_Store
-# Vendored CILI lives in engines/LexWarrant/data/cili/ — not dumps
+# Vendored CILI identity maps live in engines/LexWarrant/data/cili/ — not dumps
 cili-master/
+# Source dump at repo root only (do not ignore engines/CILI/)
+/CILI/
+/CILI/**/*.ttl
+/CILI/**/*.tab
+/CILI/**/*.sqlite3
+/CILI/**/*.sqlite
+engines/CILI/data/
 _quarantine/
 # Large local lexical dumps / clones (paths registered in config.toml)
 OntoPTv0.6_rdf/

@@ -37,6 +37,9 @@ _PATH_KEYS = (
     "ownpt_dir",
     "papel_dir",
     "papel_sqlite",
+    "cili_root",
+    "cili_omw_dir",
+    "cili_pwn30_map",
 )
 _RUNTIME_KEYS = (
     "default_policy",
@@ -50,6 +53,7 @@ _RUNTIME_KEYS = (
     "onto_ili_auto_accept_margin",
     "onto_ili_emit_min",
     "gloss_use_embeddings",
+    "export_cili_block",
 )
 _PIN_KEYS = (
     "oewn",
@@ -57,6 +61,7 @@ _PIN_KEYS = (
     "own_pt",
     "cili_commit",
     "cili_min_pairs",
+    "cili",
 )
 _LANGUAGE_KEYS = ("search_lang", "label_lang")
 _DEFAULT_SEARCH_LANG = "en"
@@ -79,6 +84,10 @@ _DEFAULTS: dict[str, Any] = {
     "ownpt_dir": "openWordnet-PT",
     "papel_dir": "PAPEL.v.3.5_utf8",
     "papel_sqlite": "data/papel.sqlite",
+    "cili_root": "cili-master/cili-master",
+    "cili_omw_dir": "cili-master/cili-master",
+    "cili_pwn30_map": "engines/LexWarrant/data/cili/ili-map-pwn30.tab",
+    "export_cili_block": False,
     "default_policy": "conservative",
     "hide_pulo_signals": True,
     "sense_index_on_run": True,
@@ -100,6 +109,7 @@ _DEFAULTS: dict[str, Any] = {
     "own_pt": "own-pt:1.0.0",
     "cili_commit": "eeab8003a3200e6293e8f7569de7d15a7a426d76",
     "cili_min_pairs": 117000,
+    "cili": "",
     "search_lang": _DEFAULT_SEARCH_LANG,
     "label_lang": _DEFAULT_LABEL_LANG,
 }
@@ -156,7 +166,16 @@ def _from_toml(path: Path) -> dict[str, Any]:
     runtime = raw.get("runtime") or {}
     pins = raw.get("pins") or {}
     languages = raw.get("languages") or {}
+    cili = raw.get("cili") or {}
     out: dict[str, Any] = dict(_DEFAULTS)
+    if "root" in cili:
+        out["cili_root"] = cili["root"]
+    if "omw_dir" in cili:
+        out["cili_omw_dir"] = cili["omw_dir"]
+    if "pwn30_map" in cili:
+        out["cili_pwn30_map"] = cili["pwn30_map"]
+    if "export_cili_block" in cili:
+        out["export_cili_block"] = cili["export_cili_block"]
     for k in _PATH_KEYS:
         if k in paths:
             out[k] = paths[k]
@@ -194,6 +213,8 @@ def _normalize_loaded(data: dict[str, Any], source: Path) -> dict[str, Any]:
     out["weak_term_mode"] = str(out.get("weak_term_mode") or "gloss_gated")
     out["publish_concept_model"] = bool(out.get("publish_concept_model", True))
     out["onto_ili_auto_accept"] = bool(out.get("onto_ili_auto_accept", False))
+    out["export_cili_block"] = bool(out.get("export_cili_block", False))
+    out["cili"] = str(out.get("cili") or "").strip()
     try:
         out["onto_ili_auto_accept_min"] = float(
             out.get("onto_ili_auto_accept_min", 0.85)
@@ -300,6 +321,19 @@ def save_config(data: dict[str, Any]) -> None:
     lines.append(f'cili_map = "{_rel_or_abs(str(cili_map))}"')
     lines.append(f'cili_commit = "{payload.get("cili_commit", _DEFAULTS["cili_commit"])}"')
     lines.append(f'cili_min_pairs = {int(payload.get("cili_min_pairs", 117000))}')
+    cili_pin = str(payload.get("cili") or "").strip()
+    if cili_pin:
+        lines.append(f'cili = "{cili_pin}"')
+    lines += ["", "[cili]"]
+    lines.append(f'root = "{_rel_or_abs(str(payload.get("cili_root", _DEFAULTS["cili_root"])))}"')
+    lines.append(
+        f'omw_dir = "{_rel_or_abs(str(payload.get("cili_omw_dir", _DEFAULTS["cili_omw_dir"])))}"'
+    )
+    lines.append(
+        f'pwn30_map = "{_rel_or_abs(str(payload.get("cili_pwn30_map", _DEFAULTS["cili_pwn30_map"])))}"'
+    )
+    exp_cili = bool(payload.get("export_cili_block", False))
+    lines.append(f"export_cili_block = {'true' if exp_cili else 'false'}")
     lines += ["", "[languages]"]
     lines.append(
         f'search_lang = "{payload.get("search_lang", _DEFAULT_SEARCH_LANG)}"'
@@ -317,3 +351,28 @@ def path_from_config(key: str) -> Path:
     if not raw:
         raise KeyError(f"config missing key: {key}")
     return Path(raw)
+
+
+def write_cili_pin_if_absent(prefix: str) -> bool:
+    """Insert ``[pins] cili = "<prefix>"`` once. Never overwrite an existing pin."""
+    prefix = (prefix or "").strip()
+    if not prefix or not CONFIG_TOML.exists():
+        return False
+    text = CONFIG_TOML.read_text(encoding="utf-8")
+    if re.search(r"(?m)^cili\s*=", text):
+        return False
+    pin_line = f'cili = "{prefix}"\n'
+    m = re.search(r"(?m)^\[pins\]\s*$", text)
+    if m:
+        # Insert after the last key of the [pins] section.
+        rest = text[m.end():]
+        nxt = re.search(r"(?m)^\[", rest)
+        insert_at = m.end() + (nxt.start() if nxt else len(rest))
+        # Walk back to the last non-empty line before the next section.
+        head, tail = text[:insert_at], text[insert_at:]
+        if not head.endswith("\n"):
+            head += "\n"
+        CONFIG_TOML.write_text(head + pin_line + tail, encoding="utf-8")
+        return True
+    CONFIG_TOML.write_text(text.rstrip() + "\n\n[pins]\n" + pin_line, encoding="utf-8")
+    return True
