@@ -13,6 +13,7 @@
   sr smoke [--class Class] [--query LEMMA]
   sr onto-ili list|accept|reject|accept-top <Class> ...
   sr publish [<Class>|--all]
+  sr cili index|entry|concept|search|translate
   sr list
   sr gui
 """
@@ -189,6 +190,94 @@ def cmd_publish(args):
     return 0
 
 
+def cmd_cili(args):
+    from semantic.cili_cli import (
+        dumps,
+        engine_from_config,
+        format_concept,
+        format_entry,
+        format_index,
+        format_search,
+    )
+
+    eng = engine_from_config()
+    if args.cili_cmd == "index":
+        info = eng.build_index(force=args.force, verbose=not args.json)
+        if args.json:
+            print(dumps({k: v for k, v in info.items() if k != "stats"} | {
+                "stats": {
+                    "concepts": (info.get("stats") or {}).get("concepts"),
+                    "labels_by_lang": (info.get("stats") or {}).get("labels_by_lang"),
+                    "languages": (info.get("stats") or {}).get("languages"),
+                }
+            }))
+        else:
+            print(format_index(info))
+        return 0
+
+    if not eng.index_is_fresh() and not eng.index_path.exists():
+        print(
+            f"CILI index missing: {eng.index_path} — run `python sr.py cili index`",
+            file=sys.stderr,
+        )
+        return 1
+
+    if args.cili_cmd == "concept":
+        row = eng.concept(args.ili)
+        if args.json:
+            print(dumps(row))
+        else:
+            print(format_concept(row))
+        return 0 if row else 1
+
+    if args.cili_cmd == "entry":
+        row = eng.entry(args.lemma)
+        if args.json:
+            print(dumps(row))
+        else:
+            print(format_entry(row, lang=args.lang))
+        return 0 if row.get("count") else 1
+
+    if args.cili_cmd == "search":
+        row = eng.search(
+            args.query,
+            mode=args.mode,
+            pos=args.pos or "",
+            lang=args.lang or "",
+            limit=args.limit,
+        )
+        if args.json:
+            print(dumps(row))
+        else:
+            print(format_search(row))
+        return 0
+
+    if args.cili_cmd == "translate":
+        row = eng.entry(args.lemma)
+        if not row.get("count"):
+            print(
+                f"unknown lemma: {args.lemma!r} — try `python sr.py cili search {args.lemma}`",
+                file=sys.stderr,
+            )
+            return 1
+        target = args.to
+        restricted = {
+            **row,
+            "equivalents": {
+                k: v for k, v in (row.get("equivalents") or {}).items()
+                if k == target or k.startswith(target)
+            },
+        }
+        if args.json:
+            print(dumps(restricted))
+        else:
+            print(format_entry(restricted, lang=target))
+        return 0
+
+    print(f"unknown cili command: {args.cili_cmd}", file=sys.stderr)
+    return 2
+
+
 def cmd_index(args):
     from semantic.onto_ili import propose_for_class
     from semantic.sense_index import (
@@ -328,6 +417,40 @@ def main(argv=None) -> int:
     p.add_argument("cls", nargs="?", default=None, help="class_id (omit = registry only)")
     p.add_argument("--all", action="store_true", help="publish every class + registry")
     p.set_defaults(func=cmd_publish)
+
+    p = sub.add_parser("cili", help="CILI lexicographical engine (read-only)")
+    cili_sub = p.add_subparsers(dest="cili_cmd", required=True)
+
+    p_idx = cili_sub.add_parser("index", help="build / refresh the CILI FTS index")
+    p_idx.add_argument("--force", action="store_true")
+    p_idx.add_argument("--json", action="store_true")
+    p_idx.set_defaults(func=cmd_cili)
+
+    p_ent = cili_sub.add_parser("entry", help="dictionary entry for a lemma")
+    p_ent.add_argument("lemma")
+    p_ent.add_argument("--lang", default=None)
+    p_ent.add_argument("--json", action="store_true")
+    p_ent.set_defaults(func=cmd_cili)
+
+    p_con = cili_sub.add_parser("concept", help="inspect a CILI concept (iN)")
+    p_con.add_argument("ili")
+    p_con.add_argument("--json", action="store_true")
+    p_con.set_defaults(func=cmd_cili)
+
+    p_sea = cili_sub.add_parser("search", help="FTS search over lemmas / definitions")
+    p_sea.add_argument("query")
+    p_sea.add_argument("--mode", choices=("any", "lemma", "definition"), default="any")
+    p_sea.add_argument("--pos", choices=("n", "v", "a", "r", "s"), default="")
+    p_sea.add_argument("--lang", default=None)
+    p_sea.add_argument("--limit", type=int, default=20)
+    p_sea.add_argument("--json", action="store_true")
+    p_sea.set_defaults(func=cmd_cili)
+
+    p_tr = cili_sub.add_parser("translate", help="equivalents of a lemma in one language")
+    p_tr.add_argument("lemma")
+    p_tr.add_argument("--to", required=True, help="target language code (en, pt, fra, …)")
+    p_tr.add_argument("--json", action="store_true")
+    p_tr.set_defaults(func=cmd_cili)
 
     args = ap.parse_args(argv)
     return args.func(args)

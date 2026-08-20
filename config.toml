@@ -43,6 +43,18 @@ cili_map = "engines/LexWarrant/data/cili/ili-map-pwn30.tab"
 cili_commit = "upstream-master+pwn30+pwn31+wn.ili"
 cili_min_pairs = 117000
 
+cili = "15009ab5c17b"
+
+[cili]
+# Folder that directly contains ili.ttl (verified nesting on this machine).
+root = "cili-master/cili-master"
+# wn-data-<lang>.tab packs; falls back to <root>/omw if none sit in this folder.
+omw_dir = "cili-master/cili-master"
+# Live identity map (LexWarrant). A second copy lives in the dump; doctor warns if they differ.
+pwn30_map = "engines/LexWarrant/data/cili/ili-map-pwn30.tab"
+# Per-class override: class.json export_cili_block = true
+export_cili_block = false
+
 [languages]
 search_lang = "en"
 label_lang = "pt-PT"

@@ -1056,6 +1056,13 @@ def build_termos_pesquisa(ws: ClassWorkspace) -> dict[str, Any]:
         "_focus_seed_norms": sorted(focus_seed_norms),
         "_registry_designations": sorted(registry_designations),
     }
+    from .cili_export import build_cili_blocks, export_cili_block_enabled
+
+    if export_cili_block_enabled(meta):
+        try:
+            doc["cili_blocks"] = build_cili_blocks(dec.get("senses") or [], meta)
+        except Exception:  # noqa: BLE001 — export must not fail the TERMOS write
+            doc["cili_blocks"] = []
     return doc
 
 
@@ -1252,6 +1259,12 @@ def render_termos_md(doc: dict[str, Any]) -> str:
         for r in dropped:
             mems = ", ".join(r.get("membros") or []) or "—"
             ap(f"| {r.get('key')} | {r.get('decision')} | {mems} |")
+        ap("")
+    from .cili_export import render_cili_md
+
+    cili_md = render_cili_md(doc.get("cili_blocks") or [])
+    if cili_md:
+        ap(cili_md.rstrip())
         ap("")
     return "\n".join(L)
 
@@ -1468,10 +1481,13 @@ def render_termos_html(doc: dict[str, Any]) -> str:
     <h2 id="h-F">F — Vocabulário ({_esc(label_lang)})</h2>
     {"<button type='button' class='btn-copy' data-copy='" + _esc(f_payload) + "' aria-label='Copiar vocabulário'>Copiar linha</button>" if vocab else ""}
   </header>
-  <p class="blurb">Termos admitidos na matriz (língua de rótulos).</p>
+    <p class="blurb">Termos admitidos na matriz (língua de rótulos).</p>
   {f_body}
 </section>
 """
+    from .cili_export import render_cili_html
+
+    sec_cili = render_cili_html(doc.get("cili_blocks") or [])
 
     descartado_onto = doc.get("descartado_onto_discovery") or []
     if a_resolver or descartado_onto:
@@ -1663,7 +1679,7 @@ footer.page {{
 {sec_c}
 {sec_d}
 {sec_e}
-{sec_f}
+{sec_f}{sec_cili}
 
 <footer class="page">
   Página gerada localmente — sem rede. Irmãos: TERMOS_PESQUISA.md / .csv · EXPORT_ALL.zip.

@@ -58,6 +58,11 @@ python sr.py run <ClassId>
 python sr.py index --class <ClassId>
 python sr.py smoke --class <ClassId> --query <lemma>
 python sr.py doctor --deep
+python sr.py cili index
+python sr.py cili entry <lemma>
+python sr.py cili concept <iN>
+python sr.py cili search <query> [--mode any|lemma|definition] [--pos n|v|a|r] [--lang xx]
+python sr.py cili translate <lemma> --to <lang>
 ```
 
 ## Architecture (R8)
@@ -69,12 +74,20 @@ python sr.py doctor --deep
 | **PAPEL 3.5** | Discovery only — dictionary word–word relations (`PAPEL.v.3.5_utf8` → `data/papel.sqlite`) |
 | **OEWN** (runtime pin `oewn:2025`; companions `2024` + `2025+`) | EN corroboration via facets |
 | **OWN-PT** (pin `own-pt:1.0.0`) | PT lemmas via ILI (`atestado`); optional source clone `openWordnet-PT/` |
-| **CILI** | Pure identity `i…` ↔ PWN-3.0 offset (+ a↔s satellite norm) |
+| **CILI** | Lexicographical reference + interlingual equivalents; read-only; identity via live pwn30 map |
 | **SenseIndex** | `data/sense_index.sqlite` — durable sense registry |
 | **Onto→ILI proposals** | Scored lemma overlap; status=`proposed` only |
 | **LexWarrant** | Concordance / diagnostic merge by ILI |
 
 Config: prefer **`config.toml`** (repo-relative paths + `[pins]`).
+
+`[cili]` points at the local dump (folder that **directly** contains `ili.ttl`;
+on this machine `cili-master/cili-master/`) and the live identity map
+`engines/LexWarrant/data/cili/ili-map-pwn30.tab`. Lexical dumps stay local and
+are gitignored. First `sr cili index` builds `engines/CILI/data/cili.sqlite`
+(gitignored) and records `[pins] cili` (ili.ttl sha256 prefix). A pin mismatch
+is a doctor warning — never an auto-update. TERMOS CILI blocks are gated by
+`export_cili_block = true` (config or per-class `class.json`).
 
 ```powershell
 python verify_pipeline.py                  # auto-picks any existing class

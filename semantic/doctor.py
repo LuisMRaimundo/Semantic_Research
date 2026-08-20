@@ -83,6 +83,175 @@ def _own_pt_bridge_smoke(backend) -> tuple[bool, str]:
     return False, f"no OWN-PT lemmas for probe set ({tried} synsets tried)"
 
 
+def _append_cili_engine_checks(
+    report: DoctorReport, cfg: dict[str, Any], root: Path, *, deep: bool
+) -> None:
+    """WP4 — one line per CILI lexicographical-engine check."""
+    from engines.CILI.cili_engine import (
+        CiliEngine,
+        CONCEPT_RE,
+        EXPECTED_CONCEPTS,
+        fts5_available,
+        load_pwn30_map,
+        sha256_file,
+    )
+
+    missing_keys = [
+        k for k in ("cili_root", "cili_omw_dir", "cili_pwn30_map")
+        if not cfg.get(k)
+    ]
+    report.checks.append(Check(
+        "cili_config",
+        not missing_keys,
+        "ok" if not missing_keys else f"missing keys: {missing_keys}",
+        "error" if missing_keys else "info",
+    ))
+
+    try:
+        eng = CiliEngine.from_config(cfg)
+    except Exception as exc:  # noqa: BLE001
+        report.checks.append(Check("cili_engine", False, str(exc), "error"))
+        return
+
+    ttl = eng.ili_ttl
+    if not eng.root.is_dir():
+        report.checks.append(Check(
+            "cili_root", False,
+            f"{eng.root} missing — [cili] root must be the folder that contains ili.ttl",
+            "error",
+        ))
+    elif not ttl.exists():
+        report.checks.append(Check(
+            "cili_root", False,
+            f"ili.ttl missing under {eng.root}",
+            "error",
+        ))
+    else:
+        report.checks.append(Check("cili_root", True, str(eng.root), "info"))
+
+    if ttl.exists():
+        if deep:
+            try:
+                text = ttl.read_text(encoding="utf-8")
+                n = sum(1 for _ in CONCEPT_RE.finditer(text))
+                lo, hi = EXPECTED_CONCEPTS * 0.99, EXPECTED_CONCEPTS * 1.01
+                in_band = lo <= n <= hi
+                report.checks.append(Check(
+                    "cili_ili_ttl",
+                    True,
+                    f"{n} concepts (expect ~{EXPECTED_CONCEPTS})"
+                    + ("" if in_band else " — newer/older release; reported, not failed"),
+                    "info" if in_band else "warn",
+                ))
+            except Exception as exc:  # noqa: BLE001
+                report.checks.append(Check(
+                    "cili_ili_ttl", False, f"unparseable: {exc}", "error",
+                ))
+        else:
+            report.checks.append(Check(
+                "cili_ili_ttl", True, f"{ttl.name} present", "info",
+            ))
+
+    pwn = Path(cfg.get("cili_pwn30_map") or cfg.get("cili_map") or "")
+    if not pwn.is_absolute():
+        pwn = settings.resolve_path(pwn)
+    if not pwn.exists():
+        report.checks.append(Check(
+            "cili_pwn30_map", False, f"{pwn} missing", "error",
+        ))
+    else:
+        off2ili, _ = load_pwn30_map(pwn)
+        report.checks.append(Check(
+            "cili_pwn30_map",
+            bool(off2ili),
+            f"{pwn.name} · {len(off2ili)} pairs",
+            "error" if not off2ili else "info",
+        ))
+
+    dump_map = eng.dump_pwn30_map
+    if pwn.exists() and dump_map.exists() and dump_map.resolve() != pwn.resolve():
+        live_h = sha256_file(pwn)
+        dump_h = sha256_file(dump_map)
+        if live_h != dump_h:
+            report.checks.append(Check(
+                "cili_pwn30_map_hash",
+                False,
+                f"live {pwn} ({live_h[:12]}) ≠ dump {dump_map} ({dump_h[:12]}) "
+                "— identity joins use the configured live map",
+                "warn",
+            ))
+        else:
+            report.checks.append(Check(
+                "cili_pwn30_map_hash", True, "live and dump pwn30 maps match", "info",
+            ))
+
+    if eng.index_is_fresh():
+        report.checks.append(Check(
+            "cili_index", True, str(eng.index_path), "info",
+        ))
+    elif eng.index_path.exists():
+        report.checks.append(Check(
+            "cili_index",
+            False,
+            f"stale {eng.index_path} — run `python sr.py cili index`",
+            "warn",
+        ))
+    else:
+        report.checks.append(Check(
+            "cili_index",
+            False,
+            f"missing — run `python sr.py cili index` ({eng.index_path})",
+            "error" if ttl.exists() else "warn",
+        ))
+
+    pin = str(cfg.get("cili") or "").strip()
+    meta = eng.meta() if eng.index_path.exists() else {}
+    current = meta.get("ili_ttl_sha256_prefix") or (
+        sha256_file(ttl)[:12] if ttl.exists() else ""
+    )
+    if not pin:
+        report.checks.append(Check(
+            "cili_pin",
+            True,
+            "unset — will be written on first `sr cili index`",
+            "info",
+        ))
+    elif current and pin != current:
+        report.checks.append(Check(
+            "cili_pin",
+            False,
+            f"pin {pin} ≠ ili.ttl {current} (not auto-updated)",
+            "warn",
+        ))
+    else:
+        report.checks.append(Check(
+            "cili_pin", True, pin or current, "info",
+        ))
+
+    langs = []
+    if eng.index_path.exists():
+        try:
+            langs = list(eng.stats().get("languages") or [])
+        except Exception:  # noqa: BLE001
+            langs = eng.discovered_languages()
+    else:
+        langs = eng.discovered_languages()
+    report.checks.append(Check(
+        "cili_languages",
+        bool(langs),
+        ", ".join(langs) if langs else "none found",
+        "warn" if not langs else "info",
+    ))
+
+    fts = fts5_available()
+    report.checks.append(Check(
+        "cili_fts5",
+        fts,
+        "available" if fts else "SQLite FTS5 missing in this Python build",
+        "error" if not fts else "info",
+    ))
+
+
 def run_doctor(*, deep: bool = False) -> DoctorReport:
     """Run install / pin / lexicon checks. ``deep`` hits SQLite + wn translate."""
     clear_engine_caches()
@@ -112,13 +281,30 @@ def run_doctor(*, deep: bool = False) -> DoctorReport:
         else:
             report.checks.append(Check(f"path:{key}", True, str(p), "info"))
 
+    _append_cili_engine_checks(report, cfg, root, deep=deep)
+
     dup = root / "cili-master"
     qdup = root / "_quarantine" / "cili-master"
-    if dup.exists():
+    cili_root_cfg = Path(cfg.get("cili_root") or "")
+    dump_is_engine_root = False
+    try:
+        dump_is_engine_root = bool(
+            cili_root_cfg
+            and cili_root_cfg.resolve().is_relative_to((root / "cili-master").resolve())
+        )
+    except Exception:  # noqa: BLE001
+        dump_is_engine_root = "cili-master" in str(cili_root_cfg).replace("\\", "/")
+    if dump_is_engine_root and dup.exists():
+        report.checks.append(Check(
+            "cili_duplicate", True,
+            f"cili-master/ is the configured [cili] root ({cili_root_cfg})",
+            "info",
+        ))
+    elif dup.exists():
         report.checks.append(Check(
             "cili_duplicate", False,
             f"{dup} still present — move to _quarantine/ or delete "
-            "(live map is engines/LexWarrant/data/cili/)",
+            "(live identity map is engines/LexWarrant/data/cili/)",
             "warn",
         ))
     elif qdup.exists():
@@ -127,7 +313,7 @@ def run_doctor(*, deep: bool = False) -> DoctorReport:
         ))
     else:
         report.checks.append(Check(
-            "cili_duplicate", True, "no cili-master/ dump", "info",
+            "cili_duplicate", True, "no stray cili-master/ dump", "info",
         ))
 
     try:
